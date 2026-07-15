@@ -9,11 +9,7 @@ from statistics import mean
 
 from rdflib import OWL, RDF, Graph, URIRef
 
-try:
-    from experiments.metrics.precision_recall import deduplicate_by_synonymy, get_predicate_name
-except ModuleNotFoundError:
-    # Allows running this file directly via: python experiments/characterize_my_dataset.py
-    from experiments.metrics.precision_recall import deduplicate_by_synonymy, get_predicate_name
+from experiments.metrics.precision_recall import get_predicate_name
 
 try:
     from experiments.dataset_characterization.count_unconnected_fragments import (
@@ -48,7 +44,7 @@ def _collect_text_lengths(text_dir: Path) -> dict[str, int]:
 
 
 def _collect_ttl_paths(ground_truth_dir: Path) -> dict[str, Path]:
-    return {path.stem: path for path in sorted(ground_truth_dir.glob("*.ttl"))}
+    return {path.stem.removesuffix("_inferred"): path for path in sorted(ground_truth_dir.glob("*_inferred.ttl"))}
 
 
 def _uri_local_name(uri: URIRef) -> str:
@@ -111,9 +107,7 @@ def _count_people_relation_triples(graph: Graph, person_class_uris: set[URIRef])
                 )
             )
 
-    # Count only semantically distinct relations using the same closure rules
-    # as experiments/precision_recall.py.
-    return len(deduplicate_by_synonymy(triples))
+    return len(triples)
 
 
 def characterize_dataset(tbox_path: Path, ground_truth_dir: Path, text_dir: Path) -> dict[str, float | int]:
@@ -148,6 +142,7 @@ def characterize_dataset(tbox_path: Path, ground_truth_dir: Path, text_dir: Path
         "num_tbox_classes": _count_tbox_classes(tbox_graph),
         "num_tbox_object_properties": _count_tbox_object_properties(tbox_graph),
         "num_paired_samples": len(common_ids),
+        "num_triples": sum(triples_per_text),
         "avg_sentences_per_text": mean(text_lengths[item_id] for item_id in common_ids),
         "avg_people_relation_triples_per_text": mean(triples_per_text),
         "avg_unconnected_fragments_per_graph": mean(fragments_per_text),
@@ -167,6 +162,7 @@ def main() -> None:
     print(f"TBox classes: {metrics['num_tbox_classes']}")
     print(f"TBox object properties: {metrics['num_tbox_object_properties']}")
     print(f"Paired text/KG samples: {metrics['num_paired_samples']}")
+    print(f"Total Number of Triples: {metrics['num_triples']}")
     print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
     print(
         "Average semantically distinct people-to-people triples per text: "
