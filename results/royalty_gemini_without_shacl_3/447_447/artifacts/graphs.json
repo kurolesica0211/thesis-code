@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LadyCharlotteWellesley a :Woman ;\n    :hasAncestor data:QueenVictoria,\n        data:WilhelmII ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:ArthurWellesley ;\n    :hasFather data:CharlesWellesley ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:PrincessAntonia ;\n    :hasRelation data:AlejandroSantoDomingo ;\n    :hasSister data:LadyMaryWellesley .\n\ndata:AlejandroSantoDomingo a :Man .\n\ndata:ArthurWellesley a :Man .\n\ndata:CharlesWellesley a :Man ;\n    :hasFather data:ValerianWellesley .\n\ndata:LadyBrigidGuinness a :Woman .\n\ndata:LadyMaryWellesley a :Woman .\n\ndata:PrinceFrederickOfPrussia a :Man .\n\ndata:PrincessAntonia a :Woman ;\n    :hasFather data:PrinceFrederickOfPrussia ;\n    :hasMother data:LadyBrigidGuinness .\n\ndata:QueenVictoria a :Woman .\n\ndata:ValerianWellesley a :Man .\n\ndata:WilhelmII a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LadyCharlotteWellesley a :Woman ;\n    :hasAncestor data:QueenVictoria,\n        data:WilhelmII ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:ArthurWellesley ;\n    :hasFather data:CharlesWellesley ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:PrincessAntonia ;\n    :hasRelation data:AlejandroSantoDomingo ;\n    :hasSister data:LadyMaryWellesley .\n\ndata:AlejandroSantoDomingo a :Man .\n\ndata:ArthurWellesley a :Man .\n\ndata:CharlesWellesley a :Man ;\n    :hasFather data:ValerianWellesley .\n\ndata:LadyBrigidGuinness a :Woman .\n\ndata:LadyMaryWellesley a :Woman .\n\ndata:PrinceFrederickOfPrussia a :Man .\n\ndata:PrincessAntonia a :Woman ;\n    :hasFather data:PrinceFrederickOfPrussia ;\n    :hasMother data:LadyBrigidGuinness .\n\ndata:QueenVictoria a :Woman .\n\ndata:ValerianWellesley a :Man .\n\ndata:WilhelmII a :Man .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Nightingale_Hicks a :Man ;\n    :hasBirthYear \"1929\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1998\"^^xsd:positiveInteger ;\n    :hasFather data:Herbert_Hicks ;\n    :hasMother data:Iris_Elsie_Platten .\n\ndata:India_Hicks a :Woman ;\n    :hasMother data:Lady_Pamela_Hicks .\n\ndata:Baron_Mount_Temple a :Man .\n\ndata:Edwina_Ashley a :Woman ;\n    :hasFather data:Baron_Mount_Temple .\n\ndata:Herbert_Hicks a :Man .\n\ndata:Iris_Elsie_Platten a :Woman .\n\ndata:Lady_Pamela_Hicks a :Woman ;\n    :hasBirthYear \"1929\"^^xsd:positiveInteger ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley ;\n    :hasSister data:Patricia_Mountbatten .\n\ndata:Louis_Mountbatten a :Man ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Princess_Victoria_of_Hesse .\n\ndata:Patricia_Mountbatten a :Woman .\n\ndata:Prince_Louis_of_Battenberg a :Man .\n\ndata:Princess_Victoria_of_Hesse a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Nightingale_Hicks a :Man ;\n    :hasBirthYear \"1929\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1998\"^^xsd:positiveInteger ;\n    :hasFather data:Herbert_Hicks ;\n    :hasMother data:Iris_Elsie_Platten .\n\ndata:India_Hicks a :Woman ;\n    :hasMother data:Lady_Pamela_Hicks .\n\ndata:Baron_Mount_Temple a :Man .\n\ndata:Edwina_Ashley a :Woman ;\n    :hasFather data:Baron_Mount_Temple .\n\ndata:Herbert_Hicks a :Man .\n\ndata:Iris_Elsie_Platten a :Woman .\n\ndata:Lady_Pamela_Hicks a :Woman ;\n    :hasBirthYear \"1929\"^^xsd:positiveInteger ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley ;\n    :hasSister data:Patricia_Mountbatten .\n\ndata:Louis_Mountbatten a :Man ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Princess_Victoria_of_Hesse .\n\ndata:Patricia_Mountbatten a :Woman .\n\ndata:Prince_Louis_of_Battenberg a :Man .\n\ndata:Princess_Victoria_of_Hesse a :Woman .\n\n"
+    }
+]

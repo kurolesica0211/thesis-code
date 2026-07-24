@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Harry .
+
+data:Meghan a :Person,
+        :Woman ;
+    :isMotherOf data:Archie_Harrison_Mountbatten-Windsor .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Prince_Harry a :Man,
+        :Person ;
+    :isFatherOf data:Archie_Harrison_Mountbatten-Windsor .
+
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasBirthYear 2019 .
+

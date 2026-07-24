@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carl_of_Leiningen ;
+    :hasRelation data:Carl_of_Leiningen ;
+    :isBloodrelationOf data:Carl_of_Leiningen ;
+    :isBrotherOf data:Carl_of_Leiningen ;
+    :isSiblingOf data:Carl_of_Leiningen .
+
+data:Ileana_of_Romania a :Person,
+        :Woman ;
+    :hasRelation data:Ileana_of_Romania ;
+    :hasSister data:Ileana_of_Romania ;
+    :isBloodrelationOf data:Ileana_of_Romania ;
+    :isSiblingOf data:Ileana_of_Romania ;
+    :isSisterOf data:Ileana_of_Romania .
+
+data:Maria_Alexandrovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Maria_Alexandrovna_of_Russia ;
+    :hasSister data:Maria_Alexandrovna_of_Russia ;
+    :isBloodrelationOf data:Maria_Alexandrovna_of_Russia ;
+    :isSiblingOf data:Maria_Alexandrovna_of_Russia ;
+    :isSisterOf data:Maria_Alexandrovna_of_Russia .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Marie_of_Romania ;
+    :hasSister data:Marie_of_Romania ;
+    :isBloodrelationOf data:Marie_of_Romania ;
+    :isSiblingOf data:Marie_of_Romania ;
+    :isSisterOf data:Marie_of_Romania .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Karl_6th_Prince_of_Leiningen ;
+    :hasChild data:Emich_Kirill_of_Leiningen ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Emich_Kirill_of_Leiningen,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSon data:Emich_Kirill_of_Leiningen ;
+    :isAncestorOf data:Emich_Kirill_of_Leiningen ;
+    :isBloodrelationOf data:Karl_6th_Prince_of_Leiningen ;
+    :isBrotherOf data:Karl_6th_Prince_of_Leiningen ;
+    :isFatherOf data:Emich_Kirill_of_Leiningen ;
+    :isParentOf data:Emich_Kirill_of_Leiningen ;
+    :isSiblingOf data:Karl_6th_Prince_of_Leiningen ;
+    :isUncleOf data:Emich_Kirill_of_Leiningen .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Emich_Kirill_of_Leiningen,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isAncestorOf data:Emich_Kirill_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Maria_Kirillovna_of_Russia .
+
+data:Victoria_Melita_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Emich_Kirill_of_Leiningen,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Victoria_Melita_of_Edinburgh ;
+    :isAncestorOf data:Emich_Kirill_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isAuntOf data:Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Victoria_Melita_of_Edinburgh ;
+    :isMotherOf data:Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Victoria_Melita_of_Edinburgh ;
+    :isSisterOf data:Victoria_Melita_of_Edinburgh .
+
+data:Emich_Kirill_of_Leiningen a :Man,
+        :Person ;
+    :hasAncestor data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasBrother data:Emich_Kirill_of_Leiningen ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasParent data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Emich_Kirill_of_Leiningen,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isBloodrelationOf data:Emich_Kirill_of_Leiningen ;
+    :isBrotherOf data:Emich_Kirill_of_Leiningen ;
+    :isChildOf data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Emich_Kirill_of_Leiningen ;
+    :isSonOf data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia .
+
+data:Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasBirthYear 1907 ;
+    :hasChild data:Emich_Kirill_of_Leiningen ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Victoria_Melita_of_Edinburgh ;
+    :hasParent data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasRelation data:Emich_Kirill_of_Leiningen,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Maria_Kirillovna_of_Russia ;
+    :hasSon data:Emich_Kirill_of_Leiningen ;
+    :isAncestorOf data:Emich_Kirill_of_Leiningen ;
+    :isAuntOf data:Emich_Kirill_of_Leiningen ;
+    :isBloodrelationOf data:Maria_Kirillovna_of_Russia ;
+    :isChildOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isDaughterOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isMotherOf data:Emich_Kirill_of_Leiningen ;
+    :isParentOf data:Emich_Kirill_of_Leiningen ;
+    :isSiblingOf data:Maria_Kirillovna_of_Russia ;
+    :isSisterOf data:Maria_Kirillovna_of_Russia .
+

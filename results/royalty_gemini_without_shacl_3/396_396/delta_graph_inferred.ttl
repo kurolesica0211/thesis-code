@@ -1,0 +1,141 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Clarissa_of_Hesse a :Woman ;
+    :hasRelation data:Clarissa_of_Hesse ;
+    :hasSister data:Clarissa_of_Hesse ;
+    :isBloodrelationOf data:Clarissa_of_Hesse ;
+    :isSiblingOf data:Clarissa_of_Hesse ;
+    :isSisterOf data:Clarissa_of_Hesse .
+
+data:Dorothea_of_Hesse a :Woman ;
+    :hasRelation data:Dorothea_of_Hesse ;
+    :hasSister data:Dorothea_of_Hesse ;
+    :isBloodrelationOf data:Dorothea_of_Hesse ;
+    :isSiblingOf data:Dorothea_of_Hesse ;
+    :isSisterOf data:Dorothea_of_Hesse .
+
+data:Friederike_of_Hanover a :Woman ;
+    :hasRelation data:Friederike_of_Hanover ;
+    :hasSister data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Friederike_of_Hanover ;
+    :isSiblingOf data:Friederike_of_Hanover ;
+    :isSisterOf data:Friederike_of_Hanover .
+
+data:Georg_of_Hanover a :Man ;
+    :hasBrother data:Georg_of_Hanover ;
+    :hasRelation data:Georg_of_Hanover ;
+    :isBloodrelationOf data:Georg_of_Hanover ;
+    :isBrotherOf data:Georg_of_Hanover ;
+    :isSiblingOf data:Georg_of_Hanover .
+
+data:Karl_of_Hesse a :Man ;
+    :hasBrother data:Karl_of_Hesse ;
+    :hasRelation data:Karl_of_Hesse ;
+    :isBloodrelationOf data:Karl_of_Hesse ;
+    :isBrotherOf data:Karl_of_Hesse ;
+    :isSiblingOf data:Karl_of_Hesse .
+
+data:Rainer_of_Hesse a :Man ;
+    :hasBrother data:Rainer_of_Hesse ;
+    :hasRelation data:Rainer_of_Hesse ;
+    :isBloodrelationOf data:Rainer_of_Hesse ;
+    :isBrotherOf data:Rainer_of_Hesse ;
+    :isSiblingOf data:Rainer_of_Hesse .
+
+data:Welf_of_Hanover a :Man ;
+    :hasBrother data:Welf_of_Hanover ;
+    :hasRelation data:Welf_of_Hanover ;
+    :isBloodrelationOf data:Welf_of_Hanover ;
+    :isBrotherOf data:Welf_of_Hanover ;
+    :isSiblingOf data:Welf_of_Hanover .
+
+data:Andrew_of_Yugoslavia a :Man ;
+    :hasBrother data:Andrew_of_Yugoslavia ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Andrew_of_Yugoslavia ;
+    :isBrotherOf data:Andrew_of_Yugoslavia ;
+    :isSiblingOf data:Andrew_of_Yugoslavia .
+
+data:Robert_van_Eyck a :Man ;
+    :hasBrother data:Robert_van_Eyck ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Robert_van_Eyck ;
+    :isBrotherOf data:Robert_van_Eyck ;
+    :isSiblingOf data:Robert_van_Eyck .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Christoph_of_Hesse ;
+    :hasChild data:Christina_Margarethe_of_Hesse ;
+    :hasDaughter data:Christina_Margarethe_of_Hesse ;
+    :hasDeathYear 1943 ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christina_Margarethe_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse ;
+    :isFatherOf data:Christina_Margarethe_of_Hesse ;
+    :isParentOf data:Christina_Margarethe_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse ;
+    :isUncleOf data:Christina_Margarethe_of_Hesse .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasChild data:Christina_Margarethe_of_Hesse ;
+    :hasDaughter data:Christina_Margarethe_of_Hesse ;
+    :hasDeathYear 2001 ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christina_Margarethe_of_Hesse ;
+    :isAuntOf data:Christina_Margarethe_of_Hesse ;
+    :isBloodrelationOf data:Sophie_of_Greece_and_Denmark ;
+    :isMotherOf data:Christina_Margarethe_of_Hesse ;
+    :isParentOf data:Christina_Margarethe_of_Hesse ;
+    :isSiblingOf data:Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Sophie_of_Greece_and_Denmark .
+
+data:Christina_Margarethe_of_Hesse a :Woman ;
+    :alsoKnownAs "Krista"^^xsd:string ;
+    :hasAncestor data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Christina_Margarethe_of_Hesse ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse ;
+    :isChildOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse ;
+    :isSisterOf data:Christina_Margarethe_of_Hesse .
+

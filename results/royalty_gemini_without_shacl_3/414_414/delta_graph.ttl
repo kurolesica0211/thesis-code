@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Orleans_y_Borbon a :Man,
+        :Person .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBrotherOf data:Juan_Carlos_I_of_Spain .
+
+data:Fernando_Cento a :Man,
+        :Person .
+
+data:Francisco_Franco a :Man,
+        :Person .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Juan_Count_of_Barcelona .
+
+data:Pilar a :Person,
+        :Woman ;
+    :isSisterOf data:Juan_Carlos_I_of_Spain .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,
+        :Woman .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Don_Marco_Alfonso_Torlonia a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Alessandro_Torlonia ;\n    :hasMother data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Olimpia .\n\ndata:King_Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\ndata:Princess_Sibilla_of_Luxembourg a :Person,\n        :Woman ;\n    :hasMother data:Olimpia .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Olimpia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Don_Marco_Alfonso_Torlonia a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Alessandro_Torlonia ;\n    :hasMother data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Olimpia .\n\ndata:King_Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\ndata:Princess_Sibilla_of_Luxembourg a :Person,\n        :Woman ;\n    :hasMother data:Olimpia .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Olimpia a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,104 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasChild data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasRelation data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasSon data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isAncestorOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBloodrelationOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isParentOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSiblingOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig .
+
+data:Rosa_of_Austria_Princess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasRelation data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasSister data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasSon data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isAncestorOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isAuntOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBloodrelationOf data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isMotherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isParentOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSiblingOf data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isSisterOf data:Rosa_of_Austria_Princess_of_Tuscany .
+
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasAncestor data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasParent data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasRelation data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isBloodrelationOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isChildOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isSiblingOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSonOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany .
+
+data:Ludwig a :Man,
+        :Person ;
+    :hasAncestor data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasBrother data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasParent data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasRelation data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isBloodrelationOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isChildOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :isSiblingOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSonOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg,
+        data:Rosa_of_Austria_Princess_of_Tuscany .
+

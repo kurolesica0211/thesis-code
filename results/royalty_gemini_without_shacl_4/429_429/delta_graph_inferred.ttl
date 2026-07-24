@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Charlotte_of_Croy a :Woman ;
+    :hasRelation data:Princess_Charlotte_of_Croy ;
+    :hasSister data:Princess_Charlotte_of_Croy ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Croy ;
+    :isSiblingOf data:Princess_Charlotte_of_Croy ;
+    :isSisterOf data:Princess_Charlotte_of_Croy .
+
+data:Princess_Beatrix a :Woman ;
+    :hasBrother data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix ;
+    :isSiblingOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix ;
+    :isSisterOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasChild data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isFatherOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isUncleOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isMotherOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Kraft_9th_Prince_of_Hohenlohe-Langenburg a :Man ;
+    :hasAncestor data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:Kraft_9th_Prince_of_Hohenlohe-Langenburg ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear data:Princess_Charlotte_of_Croy,
+        1965 ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix ;
+    :isBrotherOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix ;
+    :isChildOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Kraft_9th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix ;
+    :isSonOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark .
+

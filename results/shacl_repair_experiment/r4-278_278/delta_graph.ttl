@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine a :Ancestor .
+
+data:Christian_X a :Ancestor .
+
+data:Christian_son_of_Knud :hasBirthYear "1944"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud a :Ancestor .
+
+data:Frederik_IX a :Ancestor .
+
+data:Frederik_VIII a :Ancestor .
+
+data:Gustav a :Ancestor ;
+    :isUncleOf data:Knud .
+
+data:Harald a :Ancestor ;
+    :hasMother data:Helena .
+
+data:Ingolf :hasBirthYear "1940"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Elisabeth :hasBirthYear "1935"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Helena a :Ancestor .
+
+data:Caroline_Mathilde a :Ancestor ;
+    :isSisterOf data:Elisabeth .
+

@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_Friedrich_Mecklenburg-Schwerin a :Man ;
+    :hasBirthYear 1873 ;
+    :hasBrother data:John_Albert_Mecklenburg-Schwerin ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1917,
+        1924 ;
+    :hasMother data:Marie_Schwarzburg-Rudolstadt .
+
+data:Elisabeth_Stolberg-Rossla a :Woman .
+
+data:Viktoria_Feodora_Reuss-Schleiz a :Woman ;
+    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :hasMother data:Elise_Hohenlohe-Langenburg .
+
+data:Elise_Hohenlohe-Langenburg a :Woman .
+
+data:Frederick_Francis_II_Mecklenburg-Schwerin a :Man .
+
+data:Heinrich_XXVII_Reuss_Younger_Line a :Man .
+
+data:John_Albert_Mecklenburg-Schwerin a :Man .
+
+data:Marie_Schwarzburg-Rudolstadt a :Woman .
+

@@ -1,0 +1,12 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Eloise_of_Orange-Nassau :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien .
+
+data:Prince_Constantijn a :Ancestor .
+
+data:Princess_Laurentien a :Ancestor .
+

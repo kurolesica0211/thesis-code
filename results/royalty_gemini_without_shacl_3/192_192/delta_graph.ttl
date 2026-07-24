@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabelle_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasRelation data:Prince_Jean_Duke_of_Guise .
+
+data:Francoise_d_Orleans a :Person,
+        :Woman .
+
+data:Infanta_Maria_Isabel_of_Spain a :Person,
+        :Woman .
+
+data:Philippe_of_Orleans_Duke_of_Orleans a :Man,
+        :Person .
+
+data:Prince_Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :hasFather data:Prince_Robert_Duke_of_Chartres ;
+    :hasMother data:Francoise_d_Orleans .
+
+data:Prince_Philippe_Count_of_Paris a :Man,
+        :Person .
+
+data:Prince_Robert_Duke_of_Chartres a :Man,
+        :Person .
+

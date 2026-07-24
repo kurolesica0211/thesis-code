@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Elena a :Woman ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:King_Constantine_I a :Man .\n\ndata:King_Constantine_II a :Man .\n\ndata:King_Paul_of_Greece a :Man ;\n    :hasFather data:King_Constantine_I ;\n    :hasMother data:Queen_Sophia_of_Greece .\n\ndata:Princess_Irene a :Woman .\n\ndata:Princess_Victoria_Louise_of_Prussia a :Woman .\n\ndata:Queen_Frederica_of_Greece a :Woman ;\n    :hasMother data:Princess_Victoria_Louise_of_Prussia .\n\ndata:Queen_Sophia_of_Greece a :Woman .\n\ndata:King_Juan_Carlos_I a :Man .\n\ndata:Queen_Sof%C3%ADa_of_Spain a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:King_Constantine_II ;\n    :hasFather data:King_Paul_of_Greece ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Queen_Frederica_of_Greece ;\n    :hasSister data:Princess_Irene .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Elena a :Woman ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:King_Constantine_I a :Man .\n\ndata:King_Constantine_II a :Man .\n\ndata:King_Paul_of_Greece a :Man ;\n    :hasFather data:King_Constantine_I ;\n    :hasMother data:Queen_Sophia_of_Greece .\n\ndata:Princess_Irene a :Woman .\n\ndata:Princess_Victoria_Louise_of_Prussia a :Woman .\n\ndata:Queen_Frederica_of_Greece a :Woman ;\n    :hasMother data:Princess_Victoria_Louise_of_Prussia .\n\ndata:Queen_Sophia_of_Greece a :Woman .\n\ndata:King_Juan_Carlos_I a :Man .\n\ndata:Queen_Sof%C3%ADa_of_Spain a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:King_Constantine_II ;\n    :hasFather data:King_Paul_of_Greece ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Queen_Frederica_of_Greece ;\n    :hasSister data:Princess_Irene .\n\n"
+    }
+]

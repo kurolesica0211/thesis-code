@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man ;\n    :isBrotherOf data:Mary_Princess_Royal .\n\ndata:George_VI a :Man ;\n    :isBrotherOf data:Mary_Princess_Royal .\n\ndata:King_George_V a :Man ;\n    :isFatherOf data:Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :isMotherOf data:Mary_Princess_Royal .\n\ndata:Henry_Lascelles_6th_Earl_of_Harewood a :Man ;\n    :isFatherOf data:George_Lascelles_7th_Earl_of_Harewood,\n        data:Gerald_David_Lascelles .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:George_Lascelles_7th_Earl_of_Harewood a :Man .\n\ndata:Gerald_David_Lascelles a :Man .\n\ndata:Mary_Princess_Royal a :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasMarriageYear 1922 ;\n    :hasRelation data:Henry_Lascelles_6th_Earl_of_Harewood ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isMotherOf data:George_Lascelles_7th_Earl_of_Harewood,\n        data:Gerald_David_Lascelles .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man ;\n    :isBrotherOf data:Mary_Princess_Royal .\n\ndata:George_VI a :Man ;\n    :isBrotherOf data:Mary_Princess_Royal .\n\ndata:King_George_V a :Man ;\n    :isFatherOf data:Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :isMotherOf data:Mary_Princess_Royal .\n\ndata:Henry_Lascelles_6th_Earl_of_Harewood a :Man ;\n    :isFatherOf data:George_Lascelles_7th_Earl_of_Harewood,\n        data:Gerald_David_Lascelles .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:George_Lascelles_7th_Earl_of_Harewood a :Man .\n\ndata:Gerald_David_Lascelles a :Man .\n\ndata:Mary_Princess_Royal a :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasMarriageYear 1922 ;\n    :hasRelation data:Henry_Lascelles_6th_Earl_of_Harewood ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isMotherOf data:George_Lascelles_7th_Earl_of_Harewood,\n        data:Gerald_David_Lascelles .\n\n"
+    }
+]

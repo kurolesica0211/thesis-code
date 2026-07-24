@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia a :Man,
+        :Person ;
+    :isFatherOf data:Don_Marco_Alfonso_Torlonia .
+
+data:King_Alfonso_XIII_of_Spain a :Man,
+        :Person ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain .
+
+data:King_Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Olimpia a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSisterOf data:Don_Marco_Alfonso_Torlonia .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :isMotherOf data:Don_Marco_Alfonso_Torlonia .
+
+data:Princess_Sibilla_of_Luxembourg a :Person,
+        :Woman .
+
+data:Don_Marco_Alfonso_Torlonia a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2014 ;
+    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+

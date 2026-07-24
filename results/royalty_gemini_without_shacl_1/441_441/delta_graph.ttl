@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Katherine_Juliet_Bowes-Lyon a :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Major_Henry_Nevile_Fane a :Man .
+
+data:Nerissa_Jane_Irene_Bowes-Lyon a :Woman ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Woman .
+
+data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Man .
+
+data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasMother data:Lady_Jane_McDonnell .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Woman .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasMother data:Lady_Jane_McDonnell ;
+    :hasSister data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Herbert_Bowes-Lyon a :Man ;
+    :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Lady_Jane_McDonnell a :Woman .
+

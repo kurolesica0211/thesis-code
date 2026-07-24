@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Marie_Esme_Margarita a :Woman ;\n    :hasBirthYear 1991 ;\n    :hasFather data:Desmond_de_Silva ;\n    :hasMother data:Katarina_of_Yugoslavia .\n\ndata:Desmond_de_Silva a :Man .\n\ndata:George_of_Yugoslavia a :Man .\n\ndata:Katarina_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1959 ;\n    :hasBrother data:George_of_Yugoslavia,\n        data:Michael_of_Yugoslavia,\n        data:Nikola_of_Yugoslavia ;\n    :hasFather data:Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Margarita_of_Baden .\n\ndata:Margarita_of_Baden a :Woman .\n\ndata:Michael_of_Yugoslavia a :Man .\n\ndata:Nikola_of_Yugoslavia a :Man .\n\ndata:Tomislav_of_Yugoslavia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Marie_Esme_Margarita a :Woman ;\n    :hasBirthYear 1991 ;\n    :hasFather data:Desmond_de_Silva ;\n    :hasMother data:Katarina_of_Yugoslavia .\n\ndata:Desmond_de_Silva a :Man .\n\ndata:George_of_Yugoslavia a :Man .\n\ndata:Katarina_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1959 ;\n    :hasBrother data:George_of_Yugoslavia,\n        data:Michael_of_Yugoslavia,\n        data:Nikola_of_Yugoslavia ;\n    :hasFather data:Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Margarita_of_Baden .\n\ndata:Margarita_of_Baden a :Woman .\n\ndata:Michael_of_Yugoslavia a :Man .\n\ndata:Nikola_of_Yugoslavia a :Man .\n\ndata:Tomislav_of_Yugoslavia a :Man .\n\n"
+    }
+]

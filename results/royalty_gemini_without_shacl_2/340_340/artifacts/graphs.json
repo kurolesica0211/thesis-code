@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Sissy\"^^xsd:string ;\n    :hasBirthYear 1892 ;\n    :hasBrother data:Crown_Prince_Wilhelm,\n        data:Prince_August_Wilhelm,\n        data:Prince_Eitel_Friedrich,\n        data:Prince_Joachim ;\n    :hasChild data:Prince_Christian_Oscar,\n        data:Prince_Ernest_Augustus,\n        data:Prince_George_William,\n        data:Prince_Welf_Henry,\n        data:Princess_Frederica ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ernest_Augustus_of_Hanover .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Person,\n        :Woman .\n\ndata:Crown_Prince_Wilhelm a :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Prince_August_Wilhelm a :Man,\n        :Person .\n\ndata:Prince_Christian_Oscar a :Man,\n        :Person .\n\ndata:Prince_Eitel_Friedrich a :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus a :Man,\n        :Person .\n\ndata:Prince_George_William a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\ndata:Prince_Welf_Henry a :Man,\n        :Person .\n\ndata:Princess_Frederica a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Sissy\"^^xsd:string ;\n    :hasBirthYear 1892 ;\n    :hasBrother data:Crown_Prince_Wilhelm,\n        data:Prince_August_Wilhelm,\n        data:Prince_Eitel_Friedrich,\n        data:Prince_Joachim ;\n    :hasChild data:Prince_Christian_Oscar,\n        data:Prince_Ernest_Augustus,\n        data:Prince_George_William,\n        data:Prince_Welf_Henry,\n        data:Princess_Frederica ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ernest_Augustus_of_Hanover .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Person,\n        :Woman .\n\ndata:Crown_Prince_Wilhelm a :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Prince_August_Wilhelm a :Man,\n        :Person .\n\ndata:Prince_Christian_Oscar a :Man,\n        :Person .\n\ndata:Prince_Eitel_Friedrich a :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus a :Man,\n        :Person .\n\ndata:Prince_George_William a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\ndata:Prince_Welf_Henry a :Man,\n        :Person .\n\ndata:Princess_Frederica a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    }
+]

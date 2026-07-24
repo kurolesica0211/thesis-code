@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Georg_Donatus a :Man ;
+    :hasBirthYear 1906 ;
+    :hasChild data:Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine,
+        data:Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Ernest_Louis ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Louis .
+
+data:Alice_of_Battenberg a :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Man .
+
+data:Cecilie_of_Greece_and_Denmark a :Woman ;
+    :hasChild data:Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine,
+        data:Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Alice_of_Battenberg .
+
+data:Louis a :Man ;
+    :hasFather data:Ernest_Louis ;
+    :hasMother data:Eleonore_of_Solms-Hohensolms-Lich .
+
+data:Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine a :Man ;
+    :hasDeathYear 1937 .
+
+data:Eleonore_of_Solms-Hohensolms-Lich a :Woman .
+
+data:Ernest_Louis a :Man .
+
+data:Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine a :Woman ;
+    :hasDeathYear 1939 .
+
+data:Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine a :Man ;
+    :hasDeathYear 1937 .
+

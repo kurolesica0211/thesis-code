@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pieter_van_Vollenhoven a :Man ;
+    :hasChild data:Prince_Pieter-Christiaan .
+
+data:Princess_Anita a :Woman ;
+    :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven .
+
+data:Princess_Margriet a :Woman ;
+    :hasChild data:Prince_Pieter-Christiaan .
+
+data:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;
+    :hasFather data:Prince_Pieter-Christiaan ;
+    :hasMother data:Princess_Anita .
+
+data:Prince_Pieter-Christiaan a :Man ;
+    :hasBirthYear 1972 ;
+    :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+

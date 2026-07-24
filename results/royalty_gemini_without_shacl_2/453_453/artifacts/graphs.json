@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Herbert_Bowes-Lyon a :Man ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1930 ;\n    :hasMarriageYear 1914 ;\n    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon ;\n    :isSonOf data:Countess_of_Strathmore_and_Kinghorne,\n        data:Earl_of_Strathmore_and_Kinghorne_14th ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Philip_Mountbatten a :Man .\n\ndata:Princess_Margaret a :Woman .\n\ndata:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .\n\ndata:Countess_of_Strathmore_and_Kinghorne a :Woman .\n\ndata:Earl_of_Strathmore_and_Kinghorne_14th a :Man .\n\ndata:Elizabeth_Bowes-Lyon a :Woman .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1966 ;\n    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .\n\ndata:Queen_Elizabeth_II a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Herbert_Bowes-Lyon a :Man ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1930 ;\n    :hasMarriageYear 1914 ;\n    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon ;\n    :isSonOf data:Countess_of_Strathmore_and_Kinghorne,\n        data:Earl_of_Strathmore_and_Kinghorne_14th ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Philip_Mountbatten a :Man .\n\ndata:Princess_Margaret a :Woman .\n\ndata:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .\n\ndata:Countess_of_Strathmore_and_Kinghorne a :Woman .\n\ndata:Earl_of_Strathmore_and_Kinghorne_14th a :Man .\n\ndata:Elizabeth_Bowes-Lyon a :Woman .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1966 ;\n    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .\n\ndata:Queen_Elizabeth_II a :Woman .\n\n"
+    }
+]

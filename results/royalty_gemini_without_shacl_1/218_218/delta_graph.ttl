@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    :hasAncestor data:Izabela_Czartoryska ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Ludwik_Piotr ;
+    :hasDaughter data:Tamara_Czartoryska ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Mar%C3%ADa_de_los_Dolores .
+
+data:Adam_Jerzy_Czartoryski a :Man,
+        :Person .
+
+data:Augustyn_J%C3%B3zef_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1946 .
+
+data:Izabela_Czartoryska a :Person,
+        :Woman ;
+    :hasSon data:Adam_Jerzy_Czartoryski .
+
+data:Ludwik_Piotr a :Man,
+        :Person ;
+    :hasBirthYear 1945 ;
+    :hasDeathYear 1946 .
+
+data:Mar%C3%ADa_de_los_Dolores a :Person,
+        :Woman ;
+    :hasDeathYear 1996 .
+
+data:Tamara_Czartoryska a :Person,
+        :Woman .
+

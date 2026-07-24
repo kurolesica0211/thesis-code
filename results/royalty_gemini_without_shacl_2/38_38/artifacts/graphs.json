@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Mirzayantz a :Person,\n        :Woman ;\n    :alsoKnownAs \"Princess Alexandra Elli Francisca Maria of Greece\"^^xsd:string ;\n    :hasAncestor data:Christian_IX_of_Denmark,\n        data:George_I_of_Greece,\n        data:Olga_Constantinovna_of_Russia,\n        data:Prince_Christopher_of_Greece_and_Denmark,\n        data:Prince_Jean_Duke_of_Guise ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:Marina_Karella ;\n    :hasRelation data:Nicolas_Mirzayantz ;\n    :hasSister data:Princess_Olga ;\n    :knownAs \"Alexandra Mirzayantz\"^^xsd:string .\n\ndata:Constantine_II_of_Greece a :Person .\n\ndata:Crown_Prince_Pavlos a :Person .\n\ndata:Queen_Anne_Marie_of_Greece a :Person .\n\ndata:Queen_Sofia_of_Spain a :Person .\n\ndata:Christian_IX_of_Denmark a :Ancestor .\n\ndata:George_I_of_Greece a :Ancestor .\n\ndata:Marina_Karella a :Person,\n        :Woman .\n\ndata:Nicolas_Mirzayantz a :Man,\n        :Person .\n\ndata:Olga_Constantinovna_of_Russia a :Ancestor .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Ancestor .\n\ndata:Prince_Jean_Duke_of_Guise a :Ancestor .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Mirzayantz a :Person,\n        :Woman ;\n    :alsoKnownAs \"Princess Alexandra Elli Francisca Maria of Greece\"^^xsd:string ;\n    :hasAncestor data:Christian_IX_of_Denmark,\n        data:George_I_of_Greece,\n        data:Olga_Constantinovna_of_Russia,\n        data:Prince_Christopher_of_Greece_and_Denmark,\n        data:Prince_Jean_Duke_of_Guise ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:Marina_Karella ;\n    :hasRelation data:Nicolas_Mirzayantz ;\n    :hasSister data:Princess_Olga ;\n    :knownAs \"Alexandra Mirzayantz\"^^xsd:string .\n\ndata:Constantine_II_of_Greece a :Person .\n\ndata:Crown_Prince_Pavlos a :Person .\n\ndata:Queen_Anne_Marie_of_Greece a :Person .\n\ndata:Queen_Sofia_of_Spain a :Person .\n\ndata:Christian_IX_of_Denmark a :Ancestor .\n\ndata:George_I_of_Greece a :Ancestor .\n\ndata:Marina_Karella a :Person,\n        :Woman .\n\ndata:Nicolas_Mirzayantz a :Man,\n        :Person .\n\ndata:Olga_Constantinovna_of_Russia a :Ancestor .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Ancestor .\n\ndata:Prince_Jean_Duke_of_Guise a :Ancestor .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donatus a :Man ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Floria_Franziska,\n        data:Moritz ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Tatiana .\n\ndata:Floria_Franziska a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Hubertus_von_Faber-Castell .\n\ndata:Hubertus_von_Faber-Castell a :Man .\n\ndata:Moritz a :Man ;\n    :hasFather data:Philipp .\n\ndata:Philipp a :Man ;\n    :hasDeathYear 1980 .\n\ndata:Tatiana a :Woman ;\n    :hasBirthYear 1940 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donatus a :Man ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Floria_Franziska,\n        data:Moritz ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Tatiana .\n\ndata:Floria_Franziska a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Hubertus_von_Faber-Castell .\n\ndata:Hubertus_von_Faber-Castell a :Man .\n\ndata:Moritz a :Man ;\n    :hasFather data:Philipp .\n\ndata:Philipp a :Man ;\n    :hasDeathYear 1980 .\n\ndata:Tatiana a :Woman ;\n    :hasBirthYear 1940 .\n\n"
+    }
+]

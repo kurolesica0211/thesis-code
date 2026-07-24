@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Duchess_Helene_of_Mecklenburg_Schwerin a :Ancestor .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor .
+
+data:Isabel_de_Ibarreta_y_Uhagon a :Ancestor .
+
+data:Louis_Philippe_I a :Ancestor .
+
+data:Marie_Isabelle_dOrleans a :Ancestor .
+
+data:Philippe_dOrleans_Count_of_Paris a :Ancestor .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Ancestor .
+
+data:Prince_Ferdinand_Duke_of_Orleans_grandfather a :Ancestor .
+
+data:Queen_Maria_Amalia_of_the_Two_Sicilies a :Ancestor .
+
+data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Ancestor .
+

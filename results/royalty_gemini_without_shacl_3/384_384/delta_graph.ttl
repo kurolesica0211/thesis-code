@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis a :Man ;
+    :hasDeathYear 1968 ;
+    :isUncleOf data:Moritz .
+
+data:Margaret_Campbell_Geddes a :Woman ;
+    :isAuntOf data:Moritz .
+
+data:Elisabeth a :Woman .
+
+data:Gustav_Albrecht a :Man .
+
+data:Heinrich a :Man .
+
+data:Mafalda_of_Savoy a :Woman ;
+    :hasDeathYear 1944 .
+
+data:Otto a :Man .
+
+data:Philip a :Man ;
+    :hasDeathYear 1980 .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasFather data:Gustav_Albrecht .
+
+data:Moritz a :Man ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Philip ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :hasRelation data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Otto .
+

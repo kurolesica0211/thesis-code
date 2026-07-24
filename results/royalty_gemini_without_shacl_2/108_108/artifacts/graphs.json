@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hans_Veit_of_T%C3%B6rring-Jettenbach a :Man,\n        :Person ;\n    :isSonOf data:Carl_Theodor_of_T%C3%B6rring-Jettenbach,\n        data:Princess_Elizabeth_of_Greece_and_Denmark .\n\ndata:Count_Hans_Veit_zu_Toerring-Jettenbach a :Man,\n        :Person .\n\ndata:Duchess_Sophie_in_Bavaria a :Person,\n        :Woman .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,\n        :Woman .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Elizabeth_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1904 ;\n    :hasDeathYear 1955 ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;\n    :hasRelation data:Carl_Theodor_of_T%C3%B6rring-Jettenbach ;\n    :isSisterOf data:Princess_Marina,\n        data:Princess_Olga .\n\ndata:Princess_Marina a :Person,\n        :Woman .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\ndata:Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Man,\n        :Person ;\n    :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;\n    :hasMother data:Duchess_Sophie_in_Bavaria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hans_Veit_of_T%C3%B6rring-Jettenbach a :Man,\n        :Person ;\n    :isSonOf data:Carl_Theodor_of_T%C3%B6rring-Jettenbach,\n        data:Princess_Elizabeth_of_Greece_and_Denmark .\n\ndata:Count_Hans_Veit_zu_Toerring-Jettenbach a :Man,\n        :Person .\n\ndata:Duchess_Sophie_in_Bavaria a :Person,\n        :Woman .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,\n        :Woman .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Elizabeth_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1904 ;\n    :hasDeathYear 1955 ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;\n    :hasRelation data:Carl_Theodor_of_T%C3%B6rring-Jettenbach ;\n    :isSisterOf data:Princess_Marina,\n        data:Princess_Olga .\n\ndata:Princess_Marina a :Person,\n        :Woman .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\ndata:Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Man,\n        :Person ;\n    :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;\n    :hasMother data:Duchess_Sophie_in_Bavaria .\n\n"
+    }
+]

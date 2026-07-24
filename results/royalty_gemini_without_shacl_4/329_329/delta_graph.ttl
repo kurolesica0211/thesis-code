@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina_de_Borbon a :Woman ;
+    :isSisterOf data:Elena_de_Borbon .
+
+data:Felipe_VI a :Man ;
+    :isBrotherOf data:Elena_de_Borbon .
+
+data:Felipe_de_Marichalar a :Man ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Elena_de_Borbon .
+
+data:Maria_de_las_Mercedes a :Woman .
+
+data:Victoria_de_Marichalar a :Woman ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Elena_de_Borbon .
+
+data:Juan_Carlos_I a :Man .
+
+data:Sofia a :Woman .
+
+data:Jaime_de_Marichalar a :Man .
+
+data:Elena_de_Borbon a :Woman ;
+    :hasBirthYear 1963 ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear 1995 ;
+    :hasMother data:Sofia .
+

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antoine_Duke_of_Montpensier a :Man,
+        :Person ;
+    :isFatherOf data:Marie_Isabelle_d%27Orl%C3%A9ans .
+
+data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1958 ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .
+
+data:Luisa_Fernanda_of_Spain a :Person,
+        :Woman ;
+    :isMotherOf data:Marie_Isabelle_d%27Orl%C3%A9ans .
+
+data:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
+        :Person ;
+    :hasRelation data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias .
+
+data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman .
+
+data:Marie_Isabelle_d%27Orl%C3%A9ans a :Person,
+        :Woman .
+

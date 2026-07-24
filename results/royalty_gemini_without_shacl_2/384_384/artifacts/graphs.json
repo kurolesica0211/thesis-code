@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Prince_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Margaret_Campbell_Geddes a :Person,\n        :Woman .\n\ndata:Moritz a :Man,\n        :Person ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Philip ;\n    :hasMother data:Mafalda_of_Savoy ;\n    :hasRelation data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :isSiblingOf data:Elisabeth,\n        data:Heinrich,\n        data:Otto .\n\ndata:Elisabeth a :Person,\n        :Woman .\n\ndata:Gustav_Albrecht a :Man,\n        :Person .\n\ndata:Heinrich a :Man,\n        :Person .\n\ndata:Mafalda_of_Savoy a :Person,\n        :Woman .\n\ndata:Otto a :Man,\n        :Person .\n\ndata:Philip a :Man,\n        :Person .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasFather data:Gustav_Albrecht .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Prince_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Margaret_Campbell_Geddes a :Person,\n        :Woman .\n\ndata:Moritz a :Man,\n        :Person ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Philip ;\n    :hasMother data:Mafalda_of_Savoy ;\n    :hasRelation data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :isSiblingOf data:Elisabeth,\n        data:Heinrich,\n        data:Otto .\n\ndata:Elisabeth a :Person,\n        :Woman .\n\ndata:Gustav_Albrecht a :Man,\n        :Person .\n\ndata:Heinrich a :Man,\n        :Person .\n\ndata:Mafalda_of_Savoy a :Person,\n        :Woman .\n\ndata:Otto a :Man,\n        :Person .\n\ndata:Philip a :Man,\n        :Person .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasFather data:Gustav_Albrecht .\n\n"
+    }
+]

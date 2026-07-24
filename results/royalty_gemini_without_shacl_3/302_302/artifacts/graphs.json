@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceNikolaOfYugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikola Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Nicholas\"^^xsd:string ;\n    :hasBirthYear 1928 ;\n    :hasBrother data:PrinceAlexander ;\n    :hasDeathYear 1954 ;\n    :hasFather data:PrincePaulOfYugoslavia ;\n    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;\n    :hasSister data:PrincessElizabeth ;\n    :knownAs \"Nicky\"^^xsd:string .\n\ndata:PrincessElizabethCountessOfToerringJettenbach a :Person,\n        :Woman .\n\ndata:PrincessMarinaDuchessOfKent a :Person,\n        :Woman .\n\ndata:ArsenKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceAlexander a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincePaulOfYugoslavia a :Man,\n        :Person ;\n    :hasFather data:ArsenKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:PrincessAuroraPavlovnaDemidovaDiSanDonato .\n\ndata:PrincessAuroraPavlovnaDemidovaDiSanDonato a :Person,\n        :Woman .\n\ndata:PrincessElizabeth a :Person,\n        :Woman .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceNikolaOfYugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikola Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Nicholas\"^^xsd:string ;\n    :hasBirthYear 1928 ;\n    :hasBrother data:PrinceAlexander ;\n    :hasDeathYear 1954 ;\n    :hasFather data:PrincePaulOfYugoslavia ;\n    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;\n    :hasSister data:PrincessElizabeth ;\n    :knownAs \"Nicky\"^^xsd:string .\n\ndata:PrincessElizabethCountessOfToerringJettenbach a :Person,\n        :Woman .\n\ndata:PrincessMarinaDuchessOfKent a :Person,\n        :Woman .\n\ndata:ArsenKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceAlexander a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincePaulOfYugoslavia a :Man,\n        :Person ;\n    :hasFather data:ArsenKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:PrincessAuroraPavlovnaDemidovaDiSanDonato .\n\ndata:PrincessAuroraPavlovnaDemidovaDiSanDonato a :Person,\n        :Woman .\n\ndata:PrincessElizabeth a :Person,\n        :Woman .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\n"
+    }
+]

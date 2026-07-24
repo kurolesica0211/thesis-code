@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Person,
+        :Woman .
+
+data:PrinceChristianOscar a :Man,
+        :Person ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia .
+
+data:PrinceErnestAugustus a :Man,
+        :Person ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia .
+
+data:PrinceGeorgeWilliam a :Man,
+        :Person ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia .
+
+data:PrinceJoachim a :Man,
+        :Person .
+
+data:PrinceWelfHenry a :Man,
+        :Person ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia .
+
+data:PrincessFrederica a :Person,
+        :Woman ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:WilhelmII a :Man,
+        :Person .
+
+data:VictoriaLouiseOfPrussia a :Person,
+        :Woman ;
+    :hasAncestor data:QueenVictoria ;
+    :hasBirthYear 1892 ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasDeathYear 1980 ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasRelation data:ErnestAugustusOfHanover ;
+    :hasSon data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :isSiblingOf data:PrinceJoachim ;
+    :knownAs "Sissy"^^xsd:string .
+
+data:ErnestAugustusOfHanover a :Man,
+        :Person .
+

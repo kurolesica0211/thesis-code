@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Berthold_Prinz_und_Markgraf_von_Baden a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Prince_Maximilian_Margrave_of_Baden ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Princess_Marie_Louise_of_Hanover ;\n    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasSon data:Max_Margrave_of_Baden .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Max_Margrave_of_Baden a :Man .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Maximilian_Margrave_of_Baden a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Princess_Marie_Louise_of_Hanover a :Woman .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Berthold_Prinz_und_Markgraf_von_Baden a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Prince_Maximilian_Margrave_of_Baden ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Princess_Marie_Louise_of_Hanover ;\n    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasSon data:Max_Margrave_of_Baden .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Max_Margrave_of_Baden a :Man .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Maximilian_Margrave_of_Baden a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Princess_Marie_Louise_of_Hanover a :Woman .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\n"
+    }
+]

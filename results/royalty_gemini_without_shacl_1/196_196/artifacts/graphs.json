@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear data:1908 ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear data:1908,\n        1908 ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear data:1908,\n        \"1908\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear data:1908,\n        1908 ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francis_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isBrotherOf data:Alfonso_Count_of_Caserta .\n\ndata:Maria_Pia_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Luiz_of_Orleans-Braganza ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Robert_I_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Gaston_of_Orleans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .\n\n"
+    }
+]

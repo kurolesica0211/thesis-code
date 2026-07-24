@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heather_Tonkin a :Woman ;\n    :isMotherOf data:Felicity_Wade .\n\ndata:King_Charles_III a :Man .\n\ndata:Queen_Elizabeth_II a :Woman ;\n    :isMotherOf data:Anne_Princess_Royal .\n\ndata:Sandy_Pflueger a :Woman ;\n    :isMotherOf data:Stephanie_Phillips .\n\ndata:William_Prince_of_Wales a :Man ;\n    :isParentOf data:Prince_George_of_Wales .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasMarriageYear 2011 ;\n    :hasRelation data:Mike_Tindall ;\n    :isDaughterOf data:Anne_Princess_Royal,\n        data:Mark_Phillips ;\n    :isMotherOf data:Lena_Elizabeth_Tindall,\n        data:Mia_Grace_Tindall ;\n    :isSiblingOf data:Peter_Phillips .\n\ndata:Felicity_Wade a :Woman ;\n    :isDaughterOf data:Mark_Phillips .\n\ndata:Mike_Tindall a :Man ;\n    :isFatherOf data:Lena_Elizabeth_Tindall,\n        data:Mia_Grace_Tindall .\n\ndata:Peter_Phillips a :Man .\n\ndata:Prince_George_of_Wales a :Man .\n\ndata:Stephanie_Phillips a :Woman ;\n    :isDaughterOf data:Mark_Phillips .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Lena_Elizabeth_Tindall a :Woman .\n\ndata:Mia_Grace_Tindall a :Woman .\n\ndata:Mark_Phillips a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heather_Tonkin a :Woman ;\n    :isMotherOf data:Felicity_Wade .\n\ndata:King_Charles_III a :Man .\n\ndata:Queen_Elizabeth_II a :Woman ;\n    :isMotherOf data:Anne_Princess_Royal .\n\ndata:Sandy_Pflueger a :Woman ;\n    :isMotherOf data:Stephanie_Phillips .\n\ndata:William_Prince_of_Wales a :Man ;\n    :isParentOf data:Prince_George_of_Wales .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasMarriageYear 2011 ;\n    :hasRelation data:Mike_Tindall ;\n    :isDaughterOf data:Anne_Princess_Royal,\n        data:Mark_Phillips ;\n    :isMotherOf data:Lena_Elizabeth_Tindall,\n        data:Mia_Grace_Tindall ;\n    :isSiblingOf data:Peter_Phillips .\n\ndata:Felicity_Wade a :Woman ;\n    :isDaughterOf data:Mark_Phillips .\n\ndata:Mike_Tindall a :Man ;\n    :isFatherOf data:Lena_Elizabeth_Tindall,\n        data:Mia_Grace_Tindall .\n\ndata:Peter_Phillips a :Man .\n\ndata:Prince_George_of_Wales a :Man .\n\ndata:Stephanie_Phillips a :Woman ;\n    :isDaughterOf data:Mark_Phillips .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Lena_Elizabeth_Tindall a :Woman .\n\ndata:Mia_Grace_Tindall a :Woman .\n\ndata:Mark_Phillips a :Man .\n\n"
+    }
+]

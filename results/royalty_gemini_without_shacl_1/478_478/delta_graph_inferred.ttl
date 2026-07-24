@@ -1,0 +1,410 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ConstantineII a :Man,
+        :Person ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :isBloodrelationOf data:ConstantineII ;
+    :isBrotherOf data:ConstantineII ;
+    :isSiblingOf data:ConstantineII .
+
+data:Richard a :Man,
+        :Person ;
+    :hasBrother data:Richard ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :isBloodrelationOf data:Richard ;
+    :isBrotherOf data:Richard ;
+    :isSiblingOf data:Richard .
+
+data:Alexandrine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FrederikIX ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:Alexandrine ;
+    :hasSon data:FrederikIX ;
+    :isAncestorOf data:Benedikte,
+        data:FrederikIX,
+        data:Nathalie ;
+    :isAuntOf data:FrederikIX ;
+    :isBloodrelationOf data:Alexandrine ;
+    :isMotherOf data:FrederikIX ;
+    :isParentOf data:FrederikIX ;
+    :isSiblingOf data:Alexandrine ;
+    :isSisterOf data:Alexandrine .
+
+data:ChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianX ;
+    :hasChild data:FrederikIX ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSon data:FrederikIX ;
+    :isAncestorOf data:Benedikte,
+        data:FrederikIX,
+        data:Nathalie ;
+    :isBloodrelationOf data:ChristianX ;
+    :isBrotherOf data:ChristianX ;
+    :isFatherOf data:FrederikIX ;
+    :isParentOf data:FrederikIX ;
+    :isSiblingOf data:ChristianX ;
+    :isUncleOf data:FrederikIX .
+
+data:GustavAdolf a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GustavAdolf ;
+    :hasChild data:Ingrid ;
+    :hasDaughter data:Ingrid ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :isAncestorOf data:Benedikte,
+        data:Ingrid,
+        data:Nathalie ;
+    :isBloodrelationOf data:GustavAdolf ;
+    :isBrotherOf data:GustavAdolf ;
+    :isFatherOf data:Ingrid ;
+    :isParentOf data:Ingrid ;
+    :isSiblingOf data:GustavAdolf ;
+    :isUncleOf data:Ingrid .
+
+data:MargaretConnaught a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ingrid ;
+    :hasDaughter data:Ingrid ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:MargaretConnaught ;
+    :isAncestorOf data:Benedikte,
+        data:Ingrid,
+        data:Nathalie ;
+    :isAuntOf data:Ingrid ;
+    :isBloodrelationOf data:MargaretConnaught ;
+    :isMotherOf data:Ingrid ;
+    :isParentOf data:Ingrid ;
+    :isSiblingOf data:MargaretConnaught ;
+    :isSisterOf data:MargaretConnaught .
+
+data:AnneMarie a :Person,
+        :Woman ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isAuntOf data:FrederikX,
+        data:Nathalie ;
+    :isBloodrelationOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSiblingOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII .
+
+data:FrederikX a :Man,
+        :Person ;
+    :hasAncestor data:MargretheII ;
+    :hasBrother data:FrederikX ;
+    :hasMother data:MargretheII ;
+    :hasParent data:MargretheII ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :isBloodrelationOf data:FrederikX ;
+    :isBrotherOf data:FrederikX ;
+    :isChildOf data:MargretheII ;
+    :isSiblingOf data:FrederikX ;
+    :isSonOf data:MargretheII .
+
+data:MargretheII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FrederikX ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :hasSon data:FrederikX ;
+    :isAncestorOf data:FrederikX ;
+    :isAuntOf data:FrederikX,
+        data:Nathalie ;
+    :isBloodrelationOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isMotherOf data:FrederikX ;
+    :isParentOf data:FrederikX ;
+    :isSiblingOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII .
+
+data:Nathalie a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine,
+        data:Benedikte,
+        data:ChristianX,
+        data:FrederikIX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught ;
+    :hasMother data:Benedikte ;
+    :hasParent data:Benedikte ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:Nathalie ;
+    :isBloodrelationOf data:Nathalie ;
+    :isChildOf data:Benedikte ;
+    :isDaughterOf data:Benedikte ;
+    :isSiblingOf data:Nathalie ;
+    :isSisterOf data:Nathalie .
+
+data:FrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:ChristianX ;
+    :hasBrother data:FrederikIX ;
+    :hasChild data:Benedikte ;
+    :hasDaughter data:Benedikte ;
+    :hasFather data:ChristianX ;
+    :hasMother data:Alexandrine ;
+    :hasParent data:Alexandrine,
+        data:ChristianX ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :isAncestorOf data:Benedikte,
+        data:Nathalie ;
+    :isBloodrelationOf data:FrederikIX ;
+    :isBrotherOf data:FrederikIX ;
+    :isChildOf data:Alexandrine,
+        data:ChristianX ;
+    :isFatherOf data:Benedikte ;
+    :isParentOf data:Benedikte ;
+    :isSiblingOf data:FrederikIX ;
+    :isSonOf data:Alexandrine,
+        data:ChristianX ;
+    :isUncleOf data:Benedikte .
+
+data:Ingrid a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GustavAdolf,
+        data:MargaretConnaught ;
+    :hasChild data:Benedikte ;
+    :hasDaughter data:Benedikte ;
+    :hasFather data:GustavAdolf ;
+    :hasMother data:MargaretConnaught ;
+    :hasParent data:GustavAdolf,
+        data:MargaretConnaught ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:Ingrid ;
+    :isAncestorOf data:Benedikte,
+        data:Nathalie ;
+    :isAuntOf data:Benedikte ;
+    :isBloodrelationOf data:Ingrid ;
+    :isChildOf data:GustavAdolf,
+        data:MargaretConnaught ;
+    :isDaughterOf data:GustavAdolf,
+        data:MargaretConnaught ;
+    :isMotherOf data:Benedikte ;
+    :isParentOf data:Benedikte ;
+    :isSiblingOf data:Ingrid ;
+    :isSisterOf data:Ingrid .
+
+data:Benedikte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine,
+        data:ChristianX,
+        data:FrederikIX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught ;
+    :hasBirthYear 1944 ;
+    :hasChild data:Nathalie ;
+    :hasDaughter data:Nathalie ;
+    :hasFather data:FrederikIX ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Ingrid ;
+    :hasParent data:FrederikIX,
+        data:Ingrid ;
+    :hasRelation data:Alexandrine,
+        data:AnneMarie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:FrederikX,
+        data:GustavAdolf,
+        data:Ingrid,
+        data:MargaretConnaught,
+        data:MargretheII,
+        data:Nathalie,
+        data:Richard ;
+    :hasSister data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isAncestorOf data:Nathalie ;
+    :isAuntOf data:FrederikX,
+        data:Nathalie ;
+    :isBloodrelationOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isChildOf data:FrederikIX,
+        data:Ingrid ;
+    :isDaughterOf data:FrederikIX,
+        data:Ingrid ;
+    :isMotherOf data:Nathalie ;
+    :isParentOf data:Nathalie ;
+    :isSiblingOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:AnneMarie,
+        data:Benedikte,
+        data:MargretheII .
+

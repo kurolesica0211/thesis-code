@@ -1,0 +1,7 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Lady_Margarita_Armstrong-Jones :hasBrother data:Viscount_Linley_brother .
+
+data:Serena_Stanhope a :Ancestor .
+

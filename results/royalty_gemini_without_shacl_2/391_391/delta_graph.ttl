@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AmandaKnatchbull a :Person,
+        :Woman ;
+    :alsoKnownAs data:LadyAmandaEllingworth ;
+    :formerlyKnownAs data:TheHonourableAmandaKnatchbull ;
+    :hasAncestor data:LouisMountbatten,
+        data:QueenVictoria ;
+    :hasBirthYear 1957 ;
+    :hasFather data:BaronBrabourne7th ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:CountessMountbatten2nd ;
+    :hasRelation data:CharlesVincentEllingworth .
+
+data:PrinceCharles a :Man,
+        :Person .
+
+data:PrincessAlice a :Ancestor,
+        :Person,
+        :Woman ;
+    :isDaughterOf data:QueenVictoria .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:BaronBrabourne7th a :Man,
+        :Person .
+
+data:CharlesVincentEllingworth a :Man,
+        :Person .
+
+data:CountessMountbatten2nd a :Person,
+        :Woman .
+
+data:LadyAmandaEllingworth a :Person .
+
+data:LouisMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1979 ;
+    :isUncleOf data:PrincePhilip .
+
+data:PrincePhilip a :Man,
+        :Person .
+
+data:TheHonourableAmandaKnatchbull a :Person .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman .
+

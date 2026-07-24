@@ -1,0 +1,72 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person ;\n    :hasFather data:Prince_Georg_of_Denmark .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMarriageYear data:Prince_Georg_of_Denmark .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMarriageYear data:Prince_Georg_of_Denmark .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasRelation data:Prince_Georg_of_Denmark .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "1f2a0a65-e307-4c9d-b167-2909a5e035b1",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasRelation data:Prince_Georg_of_Denmark .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 8,
+        "source": "validate_shacl",
+        "tool_call_id": "32ea4a43-44ae-4ccb-89df-6d16252e20ab",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Anson> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value <http://example.org/data/Female> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasRelation data:Prince_Georg_of_Denmark .\n\ndata:Female a :Sex .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 10,
+        "source": "validate_shacl",
+        "tool_call_id": "8921bb1d-693a-4188-a172-0687a0c92287",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Sir_Geoffrey_Shakerley_6th_Bt ;\n    :hasSex data:Female .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasRelation data:Prince_Georg_of_Denmark .\n\ndata:Female a :Sex .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Sir_Geoffrey_Shakerley_6th_Bt a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\n"
+    }
+]

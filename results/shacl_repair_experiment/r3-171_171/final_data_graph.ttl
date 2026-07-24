@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EnricoEugenio a :Man,
+        :Person .
+
+data:MariaCristinaOfSpain a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg ;
+    :isAuntOf data:JuanCarlosI ;
+    :isSisterOf data:BeatrizOfSpain .
+
+data:AlfonsoOfSpain a :Man,
+        :Person ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :isBrotherOf data:GonzaloOfSpain .
+
+data:BeatrizOfSpain a :Person,
+        :Woman ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg .
+
+data:GonzaloOfSpain a :Man,
+        :Person ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain .
+
+data:JuanCarlosI a :Man,
+        :Person .
+
+data:VictoriaEugenieOfBattenberg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:AlfonsoXIIIOfSpain a :Ancestor,
+        :Man,
+        :Person .
+

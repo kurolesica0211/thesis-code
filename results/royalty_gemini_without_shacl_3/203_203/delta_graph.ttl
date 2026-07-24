@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ari a :Man,
+        :Person ;
+    :hasBirthYear 1992 ;
+    :isSonOf data:Gary_Lewis .
+
+data:Senna_Kowhai a :Person,
+        :Woman ;
+    :isDaughterOf data:Davina_Windsor,
+        data:Gary_Lewis .
+
+data:Tane_Mahuta a :Man,
+        :Person ;
+    :isSonOf data:Davina_Windsor,
+        data:Gary_Lewis .
+
+data:Birgitte a :Person,
+        :Woman .
+
+data:Lady_Davina_Lewis a :Person .
+
+data:Prince_Richard a :Man,
+        :Person .
+
+data:Davina_Windsor a :Person,
+        :Woman ;
+    :alsoKnownAs data:Lady_Davina_Lewis ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Richard ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Birgitte .
+
+data:Gary_Lewis a :Man,
+        :Person ;
+    :hasBirthYear 1970 .
+

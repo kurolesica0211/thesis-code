@@ -1,0 +1,224 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Maria_Ludwika_Krasinska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :hasDaughter data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Countess_Maria_Ludwika_Krasinska ;
+    :isAncestorOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isAuntOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isBloodrelationOf data:Countess_Maria_Ludwika_Krasinska ;
+    :isMotherOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isParentOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isSiblingOf data:Countess_Maria_Ludwika_Krasinska ;
+    :isSisterOf data:Countess_Maria_Ludwika_Krasinska .
+
+data:Countess_Maria_Theresia_Granow-Wodicka a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Cecylia_Lubomirska ;
+    :hasDaughter data:Princess_Cecylia_Lubomirska ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Countess_Maria_Theresia_Granow-Wodicka ;
+    :isAncestorOf data:Princess_Cecylia_Lubomirska ;
+    :isAuntOf data:Princess_Cecylia_Lubomirska ;
+    :isBloodrelationOf data:Countess_Maria_Theresia_Granow-Wodicka ;
+    :isMotherOf data:Princess_Cecylia_Lubomirska ;
+    :isParentOf data:Princess_Cecylia_Lubomirska ;
+    :isSiblingOf data:Countess_Maria_Theresia_Granow-Wodicka ;
+    :isSisterOf data:Countess_Maria_Theresia_Granow-Wodicka .
+
+data:Prince_Adam_Ludwik_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasChild data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :hasDaughter data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isBloodrelationOf data:Prince_Adam_Ludwik_Czartoryski ;
+    :isBrotherOf data:Prince_Adam_Ludwik_Czartoryski ;
+    :isFatherOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isParentOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isSiblingOf data:Prince_Adam_Ludwik_Czartoryski ;
+    :isUncleOf data:Princess_Malgorzata_Izabella_Czartoryska .
+
+data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alfonso_Count_of_Caserta ;
+    :hasChild data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isBrotherOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isFatherOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isUncleOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies .
+
+data:Prince_Kasimierz_Lubomirski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Kasimierz_Lubomirski ;
+    :hasChild data:Princess_Cecylia_Lubomirska ;
+    :hasDaughter data:Princess_Cecylia_Lubomirska ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_Cecylia_Lubomirska ;
+    :isBloodrelationOf data:Prince_Kasimierz_Lubomirski ;
+    :isBrotherOf data:Prince_Kasimierz_Lubomirski ;
+    :isFatherOf data:Princess_Cecylia_Lubomirska ;
+    :isParentOf data:Princess_Cecylia_Lubomirska ;
+    :isSiblingOf data:Prince_Kasimierz_Lubomirski ;
+    :isUncleOf data:Princess_Cecylia_Lubomirska .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1897 ;
+    :hasBrother data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1927,
+        1932 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Gabriele_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Cecylia_Lubomirska a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Kasimierz_Lubomirski ;
+    :hasFather data:Prince_Kasimierz_Lubomirski ;
+    :hasMother data:Countess_Maria_Theresia_Granow-Wodicka ;
+    :hasParent data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Kasimierz_Lubomirski ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Cecylia_Lubomirska ;
+    :isBloodrelationOf data:Princess_Cecylia_Lubomirska ;
+    :isChildOf data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Kasimierz_Lubomirski ;
+    :isDaughterOf data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Kasimierz_Lubomirski ;
+    :isSiblingOf data:Princess_Cecylia_Lubomirska ;
+    :isSisterOf data:Princess_Cecylia_Lubomirska .
+
+data:Princess_Malgorzata_Izabella_Czartoryska a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Maria_Ludwika_Krasinska,
+        data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasMother data:Countess_Maria_Ludwika_Krasinska ;
+    :hasParent data:Countess_Maria_Ludwika_Krasinska,
+        data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasRelation data:Countess_Maria_Ludwika_Krasinska,
+        data:Countess_Maria_Theresia_Granow-Wodicka,
+        data:Prince_Adam_Ludwik_Czartoryski,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Gabriele_of_Bourbon-Two_Sicilies,
+        data:Prince_Kasimierz_Lubomirski,
+        data:Princess_Cecylia_Lubomirska,
+        data:Princess_Malgorzata_Izabella_Czartoryska,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isBloodrelationOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isChildOf data:Countess_Maria_Ludwika_Krasinska,
+        data:Prince_Adam_Ludwik_Czartoryski ;
+    :isDaughterOf data:Countess_Maria_Ludwika_Krasinska,
+        data:Prince_Adam_Ludwik_Czartoryski ;
+    :isSiblingOf data:Princess_Malgorzata_Izabella_Czartoryska ;
+    :isSisterOf data:Princess_Malgorzata_Izabella_Czartoryska .
+

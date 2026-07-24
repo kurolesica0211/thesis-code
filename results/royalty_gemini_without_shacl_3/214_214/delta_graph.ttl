@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine-Alexios a :Man,
+        :Person ;
+    :hasBirthYear 1998 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal .
+
+data:Marina a :Person,
+        :Woman .
+
+data:Michael a :Man,
+        :Person .
+
+data:Sofia a :Person,
+        :Woman .
+
+data:Anne-Marie a :Person,
+        :Woman .
+
+data:ConstantineII a :Man,
+        :Person .
+
+data:Marie-Chantal a :Person,
+        :Woman .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie .
+

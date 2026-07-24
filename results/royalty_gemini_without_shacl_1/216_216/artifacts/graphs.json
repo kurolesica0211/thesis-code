@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Bodo_von_Oeynhausen a :Man,\n        :Person ;\n    :hasFather data:Count_Erich_von_Oeynhausen ;\n    :hasMother data:Therese_von_Lenthe .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasMother data:Armgard_von_Cramm .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld_Senior a :Man,\n        :Person ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMother data:Countess_Karoline_von_Wartensleben .\n\ndata:Armgard_von_Cramm a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1971 ;\n    :hasFather data:Baron_Aschwin_of_Sierstorpff-Cramm ;\n    :hasMarriageYear 1905,\n        1909 ;\n    :hasMother data:Baroness_Hedwig_of_Sierstorpff-Driburg ;\n    :knownAs \"Armgard Kunigunde Alharda Agnes Oda von Cramm\"^^xsd:string .\n\ndata:Baron_Aschwin_of_Sierstorpff-Cramm a :Man,\n        :Person .\n\ndata:Baroness_Hedwig_of_Sierstorpff-Driburg a :Person,\n        :Woman .\n\ndata:Count_Erich_von_Oeynhausen a :Man,\n        :Person .\n\ndata:Countess_Karoline_von_Wartensleben a :Person,\n        :Woman .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Therese_von_Lenthe a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Bodo_von_Oeynhausen a :Man,\n        :Person ;\n    :hasFather data:Count_Erich_von_Oeynhausen ;\n    :hasMother data:Therese_von_Lenthe .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasMother data:Armgard_von_Cramm .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld_Senior a :Man,\n        :Person ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMother data:Countess_Karoline_von_Wartensleben .\n\ndata:Armgard_von_Cramm a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1971 ;\n    :hasFather data:Baron_Aschwin_of_Sierstorpff-Cramm ;\n    :hasMarriageYear 1905,\n        1909 ;\n    :hasMother data:Baroness_Hedwig_of_Sierstorpff-Driburg ;\n    :knownAs \"Armgard Kunigunde Alharda Agnes Oda von Cramm\"^^xsd:string .\n\ndata:Baron_Aschwin_of_Sierstorpff-Cramm a :Man,\n        :Person .\n\ndata:Baroness_Hedwig_of_Sierstorpff-Driburg a :Person,\n        :Woman .\n\ndata:Count_Erich_von_Oeynhausen a :Man,\n        :Person .\n\ndata:Countess_Karoline_von_Wartensleben a :Person,\n        :Woman .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Therese_von_Lenthe a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leopold_Mountbatten a :Man,\n        :Person ;\n    :formerlyKnownAs \"Prince Leopold of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1922 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :knownAs \"Lord Leopold Arthur Louis Mountbatten\"^^xsd:string .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julia_Princess_of_Battenberg .\n\ndata:Julia_Princess_of_Battenberg a :Person,\n        :Woman .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leopold_Mountbatten a :Man,\n        :Person ;\n    :formerlyKnownAs \"Prince Leopold of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1922 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :knownAs \"Lord Leopold Arthur Louis Mountbatten\"^^xsd:string .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julia_Princess_of_Battenberg .\n\ndata:Julia_Princess_of_Battenberg a :Person,\n        :Woman .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\n"
+    }
+]

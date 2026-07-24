@@ -1,0 +1,9 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Anne_Bowes-Lyon :hasRelation data:Prince_Georg_of_Denmark .
+
+data:Elizabeth_Georgiana_Anson :hasSex data:Female .
+
+data:Female a :Sex .
+

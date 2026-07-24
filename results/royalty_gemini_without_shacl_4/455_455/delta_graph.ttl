@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man .
+
+data:Felipe_VI%2Ctype a :Person .
+
+data:Kyril%2Ctarget a :DomainEntity ;
+    :hasFather data:Simeon .
+
+data:Kyril%2Ctype a :Person .
+
+data:Kyril_target a :DomainEntity .
+
+data:Mafalda a :Person,
+        :Woman ;
+    :hasFather data:Kyril .
+
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :isChildOf data:Pavlos .
+
+data:Simeon%2Ctype a :Person .
+
+data:Sofia a :Woman .
+
+data:Sofia%2Ctarget a :DomainEntity ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark .
+
+data:Sofia%2Ctype a :Person .
+
+data:Sofia_target a :DomainEntity .
+
+data:Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1965"^^xsd:positiveInteger ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear "1999"^^xsd:positiveInteger ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana ;
+    :isSiblingOf data:Pavlos,
+        data:Theodora .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person .
+
+data:Kyril a :Man .
+
+data:Simeon a :Man .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:Anne-Marie a :Person,
+        :Woman .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda a :Man,
+        :Person ;
+    :isFatherOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada .
+
+data:Cristina a :Person,
+        :Woman ;
+    :isSisterOf data:Elena .
+
+data:Felipe_VI a :Man ;
+    :isBrotherOf data:Elena .
+
+data:Felipe_VI%2Ctype a :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :isFatherOf data:Elena .
+
+data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona a :Person,
+        :Woman ;
+    :isAncestorOf data:Elena .
+
+data:Sof%C3%ADa a :Person,
+        :Woman ;
+    :isMotherOf data:Elena .
+
+data:Felipe_de_Marichalar_y_Borb%C3%B3n a :Man,
+        :Person .
+
+data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada a :Man,
+        :Person ;
+    :isFatherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
+        :Woman .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasRelation data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isMotherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+

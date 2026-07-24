@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Wurttemberg a :Man,
+        :Person ;
+    :isUncleOf data:Jean_dOrleans .
+
+data:Princess_Chantal_of_Orleans a :Person,
+        :Woman ;
+    :isAuntOf data:Jean_dOrleans .
+
+data:Charles_X a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 .
+
+data:Henri_VI_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri_dOrleans_Ancestor a :Ancestor,
+        :Man,
+        :Person .
+
+data:Louis_Philippe_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philippe_I_Duke_of_Orleans .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:Philippe_I_Duke_of_Orleans a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philomena_de_Tornos_y_Steinhart a :Person,
+        :Woman ;
+    :hasBirthYear 1977 .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Charles_X,
+        data:Henri_VI_Count_of_Paris,
+        data:Henri_dOrleans_Ancestor,
+        data:Louis_Philippe_I ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Philomena_de_Tornos_y_Steinhart .
+

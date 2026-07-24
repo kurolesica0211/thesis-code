@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_de_Marichalar a :Man,\n        :Person ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena .\n\ndata:Infanta_Sofia a :Person,\n        :Woman ;\n    :hasFather data:King_Felipe_VI .\n\ndata:Leonor_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:King_Felipe_VI .\n\ndata:Victoria_Federica_de_Marichalar_y_Borbon a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena ;\n    :hasSex \"Female\"^^xsd:string .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Queen_Sofia a :Person,\n        :Woman .\n\ndata:Infanta_Elena a :Person,\n        :Woman ;\n    :hasParent data:King_Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person .\n\ndata:King_Felipe_VI a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_de_Marichalar a :Man,\n        :Person ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena .\n\ndata:Infanta_Sofia a :Person,\n        :Woman ;\n    :hasFather data:King_Felipe_VI .\n\ndata:Leonor_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:King_Felipe_VI .\n\ndata:Victoria_Federica_de_Marichalar_y_Borbon a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena ;\n    :hasSex \"Female\"^^xsd:string .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Queen_Sofia a :Person,\n        :Woman .\n\ndata:Infanta_Elena a :Person,\n        :Woman ;\n    :hasParent data:King_Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person .\n\ndata:King_Felipe_VI a :Man,\n        :Person .\n\n"
+    }
+]

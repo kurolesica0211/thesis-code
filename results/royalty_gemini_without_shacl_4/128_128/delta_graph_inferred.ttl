@@ -1,0 +1,449 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anna-Elisabeth_von_Pfuel a :Woman ;
+    :hasRelation data:Anna-Elisabeth_von_Pfuel ;
+    :hasSister data:Anna-Elisabeth_von_Pfuel ;
+    :isBloodrelationOf data:Anna-Elisabeth_von_Pfuel ;
+    :isSiblingOf data:Anna-Elisabeth_von_Pfuel ;
+    :isSisterOf data:Anna-Elisabeth_von_Pfuel .
+
+data:Beatrix_of_the_Netherlands a :Woman ;
+    :hasRelation data:Beatrix_of_the_Netherlands ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man ;
+    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Bodo_von_Oeynhausen a :Man ;
+    :hasBrother data:Bodo_von_Oeynhausen ;
+    :hasRelation data:Bodo_von_Oeynhausen ;
+    :isBloodrelationOf data:Bodo_von_Oeynhausen ;
+    :isBrotherOf data:Bodo_von_Oeynhausen ;
+    :isSiblingOf data:Bodo_von_Oeynhausen .
+
+data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff a :Man ;
+    :hasBrother data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff ;
+    :hasRelation data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff ;
+    :isBloodrelationOf data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff ;
+    :isBrotherOf data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff ;
+    :isSiblingOf data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff .
+
+data:Caroline_Rahlenbeck a :Ancestor,
+        :Woman ;
+    :hasChild data:Dorothea_von_Salviati ;
+    :hasDaughter data:Dorothea_von_Salviati ;
+    :hasRelation data:Caroline_Rahlenbeck,
+        data:Dorothea_von_Salviati,
+        data:Heinrich_von_Salviati ;
+    :hasSister data:Caroline_Rahlenbeck ;
+    :isAncestorOf data:Dorothea_von_Salviati ;
+    :isAuntOf data:Dorothea_von_Salviati ;
+    :isBloodrelationOf data:Caroline_Rahlenbeck ;
+    :isMotherOf data:Dorothea_von_Salviati ;
+    :isParentOf data:Dorothea_von_Salviati ;
+    :isSiblingOf data:Caroline_Rahlenbeck ;
+    :isSisterOf data:Caroline_Rahlenbeck .
+
+data:Heinrich_von_Salviati a :Ancestor,
+        :Man ;
+    :hasBrother data:Heinrich_von_Salviati ;
+    :hasChild data:Dorothea_von_Salviati ;
+    :hasDaughter data:Dorothea_von_Salviati ;
+    :hasRelation data:Caroline_Rahlenbeck,
+        data:Dorothea_von_Salviati,
+        data:Heinrich_von_Salviati ;
+    :isAncestorOf data:Dorothea_von_Salviati ;
+    :isBloodrelationOf data:Heinrich_von_Salviati ;
+    :isBrotherOf data:Heinrich_von_Salviati ;
+    :isFatherOf data:Dorothea_von_Salviati ;
+    :isParentOf data:Dorothea_von_Salviati ;
+    :isSiblingOf data:Heinrich_von_Salviati ;
+    :isUncleOf data:Dorothea_von_Salviati .
+
+data:Clamor_von_dem_Bussche a :Ancestor,
+        :Man ;
+    :hasBrother data:Clamor_von_dem_Bussche ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Clamor_von_dem_Bussche ;
+    :isBrotherOf data:Clamor_von_dem_Bussche ;
+    :isSiblingOf data:Clamor_von_dem_Bussche .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1977 ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Claus_von_Amsberg .
+
+data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
+        :Man ;
+    :hasBrother data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasChild data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :hasDaughter data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :hasRelation data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :isAncestorOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isBloodrelationOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isBrotherOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isFatherOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isParentOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isSiblingOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isUncleOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm .
+
+data:Hedwig_von_Sierstorpff-Driburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :hasDaughter data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :hasRelation data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasSister data:Hedwig_von_Sierstorpff-Driburg ;
+    :isAncestorOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isAuntOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isBloodrelationOf data:Hedwig_von_Sierstorpff-Driburg ;
+    :isMotherOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isParentOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isSiblingOf data:Hedwig_von_Sierstorpff-Driburg ;
+    :isSisterOf data:Hedwig_von_Sierstorpff-Driburg .
+
+data:Dorothea_von_Salviati a :Woman ;
+    :hasAncestor data:Caroline_Rahlenbeck,
+        data:Heinrich_von_Salviati ;
+    :hasFather data:Heinrich_von_Salviati ;
+    :hasMother data:Caroline_Rahlenbeck ;
+    :hasParent data:Caroline_Rahlenbeck,
+        data:Heinrich_von_Salviati ;
+    :hasRelation data:Caroline_Rahlenbeck,
+        data:Dorothea_von_Salviati,
+        data:Heinrich_von_Salviati ;
+    :hasSister data:Dorothea_von_Salviati ;
+    :isBloodrelationOf data:Dorothea_von_Salviati ;
+    :isChildOf data:Caroline_Rahlenbeck,
+        data:Heinrich_von_Salviati ;
+    :isDaughterOf data:Caroline_Rahlenbeck,
+        data:Heinrich_von_Salviati ;
+    :isSiblingOf data:Dorothea_von_Salviati ;
+    :isSisterOf data:Dorothea_von_Salviati .
+
+data:Elise_von_Vieregge a :Ancestor,
+        :Woman ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:Elise_von_Vieregge ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg ;
+    :isAuntOf data:Claus_Felix_von_Amsberg ;
+    :isBloodrelationOf data:Elise_von_Vieregge ;
+    :isMotherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Elise_von_Vieregge ;
+    :isSisterOf data:Elise_von_Vieregge .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_von_Amsberg ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:Wilhelm_von_Amsberg ;
+    :isBrotherOf data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Claus_Felix_von_Amsberg .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Clamor_von_dem_Bussche,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :hasBirthYear 1877 ;
+    :hasChild data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1973 ;
+    :hasMother data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isAncestorOf data:Claus_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isAuntOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isChildOf data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :isDaughterOf data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :isMotherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isSisterOf data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man ;
+    :hasAncestor data:Clamor_von_dem_Bussche ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:George_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1923 ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg a :Man ;
+    :hasBrother data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :hasRelation data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :isBloodrelationOf data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :isBrotherOf data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg ;
+    :isSiblingOf data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg .
+
+data:Armgard_von_Cramm a :Woman ;
+    :hasAncestor data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasMother data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasParent data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasRelation data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasSister data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isBloodrelationOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isChildOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :isDaughterOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :isSiblingOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm .
+
+data:Hedwig_von_Sierstorpff-Cramm a :Woman ;
+    :hasAncestor data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasMother data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasParent data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasRelation data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :hasSister data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isBloodrelationOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isChildOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :isDaughterOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_von_Sierstorpff-Driburg ;
+    :isSiblingOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_von_Cramm,
+        data:Hedwig_von_Sierstorpff-Cramm .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasBrother data:Claus_Felix_von_Amsberg ;
+    :hasChild data:Claus_von_Amsberg ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Claus_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:Claus_Felix_von_Amsberg ;
+    :isBrotherOf data:Claus_Felix_von_Amsberg ;
+    :isChildOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Claus_von_Amsberg ;
+    :isParentOf data:Claus_von_Amsberg ;
+    :isSiblingOf data:Claus_Felix_von_Amsberg ;
+    :isSonOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Claus_von_Amsberg .
+
+data:Claus_von_Amsberg a :Man ;
+    :hasAncestor data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasBrother data:Claus_von_Amsberg ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :isBloodrelationOf data:Claus_von_Amsberg ;
+    :isBrotherOf data:Claus_von_Amsberg ;
+    :isChildOf data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Claus_von_Amsberg ;
+    :isSonOf data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Clamor_von_dem_Bussche,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Claus_von_Amsberg ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Clamor_von_dem_Bussche,
+        data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Claus_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg ;
+    :isAuntOf data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Claus_von_Amsberg ;
+    :isParentOf data:Claus_von_Amsberg ;
+    :isSiblingOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen .
+

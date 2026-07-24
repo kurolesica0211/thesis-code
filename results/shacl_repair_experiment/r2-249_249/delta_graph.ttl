@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:James_Ogilvy :isSiblingOf data:Marina_Ogilvy .
+
+data:Paul_Julian_Mowatt a :Ancestor .
+
+data:Princess_Alexandra_of_Kent a :Ancestor .
+
+data:Sir_Angus_Ogilvy a :Ancestor .
+
+data:Marina_Ogilvy a :Ancestor .
+

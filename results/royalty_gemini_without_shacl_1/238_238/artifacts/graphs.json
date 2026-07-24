@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Ulrich_Kinsky a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich_Kinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Helena_Victoria_Hutten-Czapska,\n        data:Roberta_Cavanagh .\n\ndata:Anne_Rowell a :Woman .\n\ndata:Helena_Victoria_Hutten-Czapska a :Woman .\n\ndata:Hilmar_von_dem_Bussche-Haddenhausen a :Man .\n\ndata:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .\n\ndata:Roberta_Cavanagh a :Woman ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Roberto_Cavanagh ;\n    :hasMother data:Anne_Rowell .\n\ndata:Roberto_Cavanagh a :Man .\n\ndata:Ulrich_Kinsky a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Ulrich_Kinsky a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich_Kinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Helena_Victoria_Hutten-Czapska,\n        data:Roberta_Cavanagh .\n\ndata:Anne_Rowell a :Woman .\n\ndata:Helena_Victoria_Hutten-Czapska a :Woman .\n\ndata:Hilmar_von_dem_Bussche-Haddenhausen a :Man .\n\ndata:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .\n\ndata:Roberta_Cavanagh a :Woman ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Roberto_Cavanagh ;\n    :hasMother data:Anne_Rowell .\n\ndata:Roberto_Cavanagh a :Man .\n\ndata:Ulrich_Kinsky a :Man .\n\n"
+    }
+]

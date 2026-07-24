@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear 1992 ;
+    :hasFather data:George_Windsor ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :hasSex data:Female ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick .
+
+data:Amelia_Windsor a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:George_Windsor a :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasSex data:Male .
+
+data:Katharine_Duchess_of_Kent a :Person,
+        :Woman ;
+    :hasFather data:William_Worsley ;
+    :hasSex data:Female .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Sylvana_Tomaselli a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:William_Worsley a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

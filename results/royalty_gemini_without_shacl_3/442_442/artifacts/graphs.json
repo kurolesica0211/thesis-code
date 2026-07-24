@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren_Limpurg a :Man .\n\ndata:Beatrix a :Woman .\n\ndata:Bernhard_of_Lippe_Biesterfeld a :Man .\n\ndata:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;\n    :formerlyKnownAs \"Hugo Klynstra\"^^xsd:string ;\n    :hasBirthYear \"1997-01-20\"^^xsd:date ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme ;\n    :hasMother data:Brigitte_Klynstra .\n\ndata:Carlos_of_Parma a :Man ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Cecilia_of_Parma a :Woman ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Juliana a :Woman .\n\ndata:Luisa_of_Parma a :Woman ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Madeleine_de_Bourbon_Busset a :Woman .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Xavier_of_Bourbon_Parma a :Man .\n\ndata:Brigitte_Klynstra a :Woman ;\n    :hasMother data:Ingrid_Pieksma_Klynstra .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Ingrid_Pieksma_Klynstra a :Woman .\n\ndata:Irene_of_the_Netherlands a :Woman .\n\ndata:Carlos_de_Bourbon_de_Parme a :Man ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Irene_of_the_Netherlands .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren_Limpurg a :Man .\n\ndata:Beatrix a :Woman .\n\ndata:Bernhard_of_Lippe_Biesterfeld a :Man .\n\ndata:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;\n    :formerlyKnownAs \"Hugo Klynstra\"^^xsd:string ;\n    :hasBirthYear \"1997-01-20\"^^xsd:date ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme ;\n    :hasMother data:Brigitte_Klynstra .\n\ndata:Carlos_of_Parma a :Man ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Cecilia_of_Parma a :Woman ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Juliana a :Woman .\n\ndata:Luisa_of_Parma a :Woman ;\n    :hasFather data:Carlos_de_Bourbon_de_Parme .\n\ndata:Madeleine_de_Bourbon_Busset a :Woman .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Xavier_of_Bourbon_Parma a :Man .\n\ndata:Brigitte_Klynstra a :Woman ;\n    :hasMother data:Ingrid_Pieksma_Klynstra .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Ingrid_Pieksma_Klynstra a :Woman .\n\ndata:Irene_of_the_Netherlands a :Woman .\n\ndata:Carlos_de_Bourbon_de_Parme a :Man ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Irene_of_the_Netherlands .\n\n"
+    }
+]

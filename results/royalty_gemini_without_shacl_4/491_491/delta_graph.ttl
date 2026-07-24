@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :isAncestorOf data:Don_Gonzalo .
+
+data:Emmanuelle_de_Dampierre a :Person,
+        :Woman ;
+    :isMotherOf data:Don_Gonzalo .
+
+data:Infante_Jaime a :Man,
+        :Person ;
+    :isFatherOf data:Don_Gonzalo .
+
+data:Queen_Victoria_Eugenie a :Person,
+        :Woman .
+
+data:Alfonso_brother a :Man,
+        :Person .
+
+data:Don_Gonzalo a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2000 ;
+    :isSiblingOf data:Alfonso_brother .
+

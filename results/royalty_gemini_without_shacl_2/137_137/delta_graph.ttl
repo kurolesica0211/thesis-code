@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Leopold_Mountbatten a :Man,
+        :Person ;
+    :formerlyKnownAs "Prince Leopold of Battenberg"^^xsd:string ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1922 ;
+    :hasFather data:Henry_of_Battenberg ;
+    :hasMother data:Beatrice_of_the_United_Kingdom ;
+    :knownAs "Lord Leopold Arthur Louis Mountbatten"^^xsd:string .
+
+data:Alexander_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Henry_of_Battenberg a :Man,
+        :Person ;
+    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg .
+
+data:Julia_Princess_of_Battenberg a :Person,
+        :Woman .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+

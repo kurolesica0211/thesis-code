@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Ludwig_III_of_Bavaria a :Man,
+        :Person .
+
+data:Pedro_Carlos_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
+
+data:Prince_Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Princess_Isabel a :Person,
+        :Woman ;
+    :hasFather data:Emperor_Pedro_II .
+
+data:Emperor_Pedro_II a :Man,
+        :Person .
+
+data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person,
+        :Woman .
+

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Mountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Louis_Mountbatten_1st_Marquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Nadejda_Mikhailovna_de_Torby ;
+    :isSiblingOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person .
+
+data:Louis_Mountbatten_1st_Marquess a :Man,
+        :Person .
+
+data:Michael_Mikhailovich_Romanov a :Man,
+        :Person .
+
+data:Nadejda_Mikhailovna_de_Torby a :Person,
+        :Woman ;
+    :hasFather data:Michael_Mikhailovich_Romanov ;
+    :hasMother data:Sophie_von_Merenberg .
+
+data:Princess_Alice a :Person,
+        :Woman .
+
+data:Queen_Louise_of_Sweden a :Person,
+        :Woman .
+
+data:Sophie_von_Merenberg a :Person,
+        :Woman .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+

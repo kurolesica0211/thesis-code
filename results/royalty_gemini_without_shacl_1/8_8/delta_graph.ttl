@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Daniel_Chatto a :Man,
+        :Person ;
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto .
+
+data:Sarah_Chatto a :Person,
+        :Woman ;
+    :alsoKnownAs "Sarah Armstrong-Jones"^^xsd:string ;
+    :hasBrother data:David_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :knownAs "Lady Sarah Frances Elizabeth Chatto"^^xsd:string .
+
+data:David_Armstrong-Jones a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:Ros_Chatto a :Ancestor,
+        :Woman .
+
+data:Tom_Chatto a :Ancestor,
+        :Man .
+
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man .
+
+data:Princess_Margaret a :Ancestor,
+        :Woman .
+

@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Antoine_Duke_of_Montpensier a :Ancestor ;
+    :isFatherOf data:Princess_Marie_Isabelle_dOrleans .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor ;
+    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .
+
+data:Princess_Marie_Isabelle_dOrleans a :Ancestor .
+

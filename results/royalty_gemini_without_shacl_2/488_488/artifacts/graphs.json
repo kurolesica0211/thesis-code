@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_David_Chavchavadze a :Man,\n        :Person ;\n    :hasFather data:Prince_Paul_Chavchavadze ;\n    :hasMother data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_Michael_Nicolaievich a :Man,\n        :Person .\n\ndata:Princess_Nina_Georgievna a :Person,\n        :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Grand_Duke_George_Mikhailovich ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Grand_Duchess_Maria_Georgievna ;\n    :hasRelation data:Prince_Paul_Chavchavadze ;\n    :hasSister data:Princess_Xenia .\n\ndata:Princess_Xenia a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_George_Mikhailovich ;\n    :hasMother data:Grand_Duchess_Maria_Georgievna .\n\ndata:Grand_Duchess_Maria_Georgievna a :Person,\n        :Woman .\n\ndata:Grand_Duke_George_Mikhailovich a :Man,\n        :Person ;\n    :hasFather data:Grand_Duke_Michael_Nicolaievich .\n\ndata:Prince_Paul_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_David_Chavchavadze a :Man,\n        :Person ;\n    :hasFather data:Prince_Paul_Chavchavadze ;\n    :hasMother data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_Michael_Nicolaievich a :Man,\n        :Person .\n\ndata:Princess_Nina_Georgievna a :Person,\n        :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Grand_Duke_George_Mikhailovich ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Grand_Duchess_Maria_Georgievna ;\n    :hasRelation data:Prince_Paul_Chavchavadze ;\n    :hasSister data:Princess_Xenia .\n\ndata:Princess_Xenia a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_George_Mikhailovich ;\n    :hasMother data:Grand_Duchess_Maria_Georgievna .\n\ndata:Grand_Duchess_Maria_Georgievna a :Person,\n        :Woman .\n\ndata:Grand_Duke_George_Mikhailovich a :Man,\n        :Person ;\n    :hasFather data:Grand_Duke_Michael_Nicolaievich .\n\ndata:Prince_Paul_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    }
+]

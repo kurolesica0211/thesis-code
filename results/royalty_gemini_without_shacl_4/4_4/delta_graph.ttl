@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie a :Person,
+        :Woman ;
+    :isSisterOf data:Margrethe_II .
+
+data:Benedikte a :Person,
+        :Woman ;
+    :isSisterOf data:Margrethe_II .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :isSonOf data:Henrik,
+        data:Margrethe_II .
+
+data:Joachim a :Man,
+        :Person ;
+    :isSonOf data:Henrik,
+        data:Margrethe_II .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasFather data:Christian_X .
+
+data:Ingrid a :Person,
+        :Woman .
+
+data:Henrik a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Frederik_IX ;
+    :hasMarriageYear 1967 ;
+    :hasMother data:Ingrid ;
+    :hasRelation data:Henrik .
+

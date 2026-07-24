@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Henrietta_Conyngham a :Woman ;
+    :hasRelation data:Lady_Henrietta_Conyngham ;
+    :hasSister data:Lady_Henrietta_Conyngham ;
+    :isBloodrelationOf data:Lady_Henrietta_Conyngham ;
+    :isSiblingOf data:Lady_Henrietta_Conyngham ;
+    :isSisterOf data:Lady_Henrietta_Conyngham .
+
+data:Thomas_Anson_1st_Viscount_Anson a :Ancestor,
+        :Man ;
+    :hasBrother data:Thomas_Anson_1st_Viscount_Anson ;
+    :hasChild data:Thomas_Anson_2nd_Viscount_Anson ;
+    :hasRelation data:Thomas_Anson_1st_Viscount_Anson,
+        data:Thomas_Anson_2nd_Viscount_Anson ;
+    :hasSon data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isAncestorOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isBloodrelationOf data:Thomas_Anson_1st_Viscount_Anson ;
+    :isBrotherOf data:Thomas_Anson_1st_Viscount_Anson ;
+    :isFatherOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isParentOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isSiblingOf data:Thomas_Anson_1st_Viscount_Anson ;
+    :isUncleOf data:Thomas_Anson_2nd_Viscount_Anson .
+
+data:Thomas_Anson_2nd_Viscount_Anson a :Man ;
+    :hasAncestor data:Thomas_Anson_1st_Viscount_Anson ;
+    :hasBirthYear 1795 ;
+    :hasBrother data:Thomas_Anson_2nd_Viscount_Anson ;
+    :hasDeathYear 1854 ;
+    :hasFather data:Thomas_Anson_1st_Viscount_Anson ;
+    :hasParent data:Thomas_Anson_1st_Viscount_Anson ;
+    :hasRelation data:Thomas_Anson_1st_Viscount_Anson,
+        data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isBloodrelationOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isBrotherOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isChildOf data:Thomas_Anson_1st_Viscount_Anson ;
+    :isSiblingOf data:Thomas_Anson_2nd_Viscount_Anson ;
+    :isSonOf data:Thomas_Anson_1st_Viscount_Anson .
+
+data:Lady_Leonora_Mary_Grosvenor a :Ancestor,
+        :Woman ;
+    :hasChild data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasSister data:Lady_Leonora_Mary_Grosvenor ;
+    :hasSon data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isAncestorOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isAuntOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Lady_Leonora_Mary_Grosvenor ;
+    :isMotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isParentOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Lady_Leonora_Mary_Grosvenor ;
+    :isSisterOf data:Lady_Leonora_Mary_Grosvenor .
+
+data:Thomas_William_Arnold_Anson_Viscount_Anson a :Ancestor,
+        :Man ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :hasChild data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasDeathYear 1958 ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasSon data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Finnian_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :isBrotherOf data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :isFatherOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isParentOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :isUncleOf data:Patrick_Anson_5th_Earl_of_Lichfield .
+
+data:Finnian_Anson a :Man ;
+    :hasAncestor data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasBirthYear 2014 ;
+    :hasBrother data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasParent data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isBrotherOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isChildOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isSonOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+
+data:Patrick_Anson_5th_Earl_of_Lichfield a :Ancestor,
+        :Man ;
+    :hasAncestor data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasChild data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasFather data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :hasParent data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasSon data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isAncestorOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isBrotherOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isChildOf data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :isFatherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isParentOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSonOf data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :isUncleOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+
+data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man ;
+    :hasAncestor data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasBirthYear 2011 ;
+    :hasBrother data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasParent data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isBrotherOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isChildOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isSonOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+
+data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Ancestor,
+        :Man ;
+    :hasAncestor data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson ;
+    :hasBirthYear 1978 ;
+    :hasBrother data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasChild data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :hasFather data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasMarriageYear 2009 ;
+    :hasMother data:Lady_Leonora_Mary_Grosvenor ;
+    :hasParent data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasRelation data:Finnian_Anson,
+        data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson,
+        data:Thomas_William_Arnold_Anson_Viscount_Anson,
+        data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :hasSon data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isAncestorOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isBloodrelationOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isBrotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isChildOf data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isFatherOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isParentOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson ;
+    :isSiblingOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;
+    :isSonOf data:Lady_Leonora_Mary_Grosvenor,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isUncleOf data:Finnian_Anson,
+        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson .
+

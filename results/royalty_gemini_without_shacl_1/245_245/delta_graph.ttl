@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:India_Hicks a :Woman ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+
+data:David_Nightingale_Hicks a :Man ;
+    :hasBirthYear 1929 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten .
+
+data:Herbert_Hicks a :Man .
+
+data:Iris_Elsie_Platten a :Woman .
+
+data:Lady_Pamela_Hicks a :Woman ;
+    :hasBirthYear 1929 ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley ;
+    :isSisterOf data:Patricia_Mountbatten .
+
+data:Patricia_Mountbatten a :Woman ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley .
+
+data:Edwina_Ashley a :Woman .
+
+data:Louis_Mountbatten a :Man .
+

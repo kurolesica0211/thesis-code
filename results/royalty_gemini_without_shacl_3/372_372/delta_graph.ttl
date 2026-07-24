@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FredericaQueenOfTheHellenes a :Person,
+        :Woman ;
+    :hasRelation data:KingPaulOfGreece ;
+    :isSisterOf data:GeorgeWilliamOfHanover .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Person,
+        :Woman .
+
+data:ErnestAugustusDukeOfBrunswick a :Man,
+        :Person .
+
+data:GeorgeWilliamOfHanover a :Man,
+        :Person ;
+    :hasBirthYear 1915 ;
+    :hasChild data:Friederike,
+        data:Georg,
+        data:Welf ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustusDukeOfBrunswick ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:SophieOfGreeceAndDenmark .
+
+data:KingPaulOfGreece a :Man,
+        :Person .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincePhilipDukeOfEdinburgh a :Man,
+        :Person .
+
+data:PrincessAliceOfBattenberg a :Person,
+        :Woman .
+
+data:SophieOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasChild data:Friederike,
+        data:Georg,
+        data:Welf ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:PrincePhilipDukeOfEdinburgh .
+
+data:VictoriaLouiseOfPrussia a :Person,
+        :Woman ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein .
+
+data:WilhelmII a :Man,
+        :Person .
+
+data:Friederike a :Person,
+        :Woman .
+
+data:Georg a :Man,
+        :Person .
+
+data:Welf a :Man,
+        :Person .
+

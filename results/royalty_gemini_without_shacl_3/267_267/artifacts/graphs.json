@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Feodorovna a :Person,\n        :Woman ;\n    :hasMother data:Alexandra_Feodorovna_Sister .\n\ndata:Paul_Romanovsky_Ilyinsky a :Man,\n        :Person ;\n    :hasFather data:Dmitri_Pavlovich ;\n    :hasMother data:Audrey_Emery .\n\ndata:Dmitri_Pavlovich a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMarriageYear 1926 ;\n    :hasMother data:Alexandra_Georgievna ;\n    :hasRelation data:Audrey_Emery ;\n    :hasSister data:Maria_Pavlovna .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMother data:Alexandra_Georgievna .\n\ndata:Sergei_Alexandrovich a :Man,\n        :Person ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\ndata:Alexander_II a :Man,\n        :Person .\n\ndata:Alexandra_Georgievna a :Person,\n        :Woman .\n\ndata:Audrey_Emery a :Person,\n        :Woman .\n\ndata:Maria_Alexandrovna a :Person,\n        :Woman .\n\ndata:Paul_Alexandrovich a :Man,\n        :Person ;\n    :hasBrother data:Sergei_Alexandrovich ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Feodorovna a :Person,\n        :Woman ;\n    :hasMother data:Alexandra_Feodorovna_Sister .\n\ndata:Paul_Romanovsky_Ilyinsky a :Man,\n        :Person ;\n    :hasFather data:Dmitri_Pavlovich ;\n    :hasMother data:Audrey_Emery .\n\ndata:Alexandra_Feodorovna_Sister a :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMarriageYear 1926 ;\n    :hasMother data:Alexandra_Georgievna ;\n    :hasRelation data:Audrey_Emery ;\n    :hasSister data:Maria_Pavlovna .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMother data:Alexandra_Georgievna .\n\ndata:Sergei_Alexandrovich a :Man,\n        :Person ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\ndata:Alexander_II a :Man,\n        :Person .\n\ndata:Alexandra_Georgievna a :Person,\n        :Woman .\n\ndata:Audrey_Emery a :Person,\n        :Woman .\n\ndata:Maria_Alexandrovna a :Person,\n        :Woman .\n\ndata:Paul_Alexandrovich a :Man,\n        :Person ;\n    :hasBrother data:Sergei_Alexandrovich ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Feodorovna a :Person,\n        :Woman ;\n    :hasMother data:Alexandra_Feodorovna_Sister .\n\ndata:Paul_Romanovsky_Ilyinsky a :Man,\n        :Person ;\n    :hasFather data:Dmitri_Pavlovich ;\n    :hasMother data:Audrey_Emery .\n\ndata:Alexandra_Feodorovna_Sister a :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMarriageYear 1926 ;\n    :hasMother data:Alexandra_Georgievna ;\n    :hasRelation data:Audrey_Emery ;\n    :hasSister data:Maria_Pavlovna .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman ;\n    :hasFather data:Paul_Alexandrovich ;\n    :hasMother data:Alexandra_Georgievna .\n\ndata:Sergei_Alexandrovich a :Man,\n        :Person ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\ndata:Alexander_II a :Man,\n        :Person .\n\ndata:Alexandra_Georgievna a :Person,\n        :Woman .\n\ndata:Audrey_Emery a :Person,\n        :Woman .\n\ndata:Maria_Alexandrovna a :Person,\n        :Woman .\n\ndata:Paul_Alexandrovich a :Man,\n        :Person ;\n    :hasBrother data:Sergei_Alexandrovich ;\n    :hasFather data:Alexander_II ;\n    :hasMother data:Maria_Alexandrovna .\n\n"
+    }
+]

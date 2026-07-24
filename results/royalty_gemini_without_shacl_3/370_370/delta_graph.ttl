@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica_of_Hanover a :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sophia_of_Greece ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Paul_of_Greece .
+
+data:Wilhelm_II a :Man ;
+    :isFatherOf data:Viktoria_Luise_of_Prussia .
+
+data:Constantine_I_of_Greece a :Man .
+
+data:Ernest_Augustus_of_Brunswick a :Man .
+
+data:George_II_of_Greece a :Man .
+
+data:Juan_Carlos_I_of_Spain a :Man .
+
+data:Paul_of_Greece a :Man ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sophia_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :isBrotherOf data:George_II_of_Greece .
+
+data:Sophia_of_Prussia a :Woman .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:Irene_of_Greece a :Woman .
+
+data:Sophia_of_Greece a :Woman ;
+    :hasRelation data:Juan_Carlos_I_of_Spain .
+
+data:Viktoria_Luise_of_Prussia a :Woman .
+

@@ -1,0 +1,266 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isSiblingOf data:Paul_of_Greece .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasChild data:Ernest_Augustus_of_Brunswick ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Ernest_Augustus_of_Brunswick ;
+    :isAncestorOf data:Ernest_Augustus_of_Brunswick,
+        data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isFatherOf data:Ernest_Augustus_of_Brunswick ;
+    :isParentOf data:Ernest_Augustus_of_Brunswick ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover ;
+    :isUncleOf data:Ernest_Augustus_of_Brunswick .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ernest_Augustus_of_Brunswick ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Thyra_of_Denmark ;
+    :hasSon data:Ernest_Augustus_of_Brunswick ;
+    :isAncestorOf data:Ernest_Augustus_of_Brunswick,
+        data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isAuntOf data:Ernest_Augustus_of_Brunswick ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isMotherOf data:Ernest_Augustus_of_Brunswick ;
+    :isParentOf data:Ernest_Augustus_of_Brunswick ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+
+data:Christian_of_Cumberland a :Man,
+        :Person ;
+    :hasBrother data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isSiblingOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isUncleOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior .
+
+data:George_of_Cumberland a :Man,
+        :Person ;
+    :hasBrother data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isSiblingOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isUncleOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :hasDaughter data:Frederica_of_Brunswick ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isAncestorOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isAuntOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isBloodrelationOf data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isParentOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isSiblingOf data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Victoria_Louise_of_Prussia .
+
+data:Frederica_of_Brunswick a :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Brunswick ;
+    :isBloodrelationOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isChildOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isSisterOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior .
+
+data:Prince_Ernest_Augustus_of_Brunswick_Junior a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Brunswick ;
+    :isBloodrelationOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isBrotherOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isChildOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isSonOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia .
+
+data:Ernest_Augustus_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :hasChild data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :hasDaughter data:Frederica_of_Brunswick ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica_of_Brunswick,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isAncestorOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isBloodrelationOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isFatherOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isParentOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior ;
+    :isSiblingOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Brunswick,
+        data:George_of_Cumberland ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isUncleOf data:Frederica_of_Brunswick,
+        data:Prince_Ernest_Augustus_of_Brunswick_Junior .
+

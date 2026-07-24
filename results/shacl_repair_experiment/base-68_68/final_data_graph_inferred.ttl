@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charles_Augustus ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Female ;
+    :hasSister data:Feodora_of_Saxe-Meiningen ;
+    :hasSon data:Charles_Augustus ;
+    :isAncestorOf data:Charles_Augustus,
+        data:Michael ;
+    :isAuntOf data:Charles_Augustus ;
+    :isBloodrelationOf data:Feodora_of_Saxe-Meiningen ;
+    :isMotherOf data:Charles_Augustus ;
+    :isParentOf data:Charles_Augustus ;
+    :isSiblingOf data:Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Feodora_of_Saxe-Meiningen .
+
+data:Maud_von_Tr%C3%BCtzschler a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasDaughter data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Female ;
+    :hasSister data:Maud_von_Tr%C3%BCtzschler ;
+    :isAncestorOf data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Michael ;
+    :isAuntOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isBloodrelationOf data:Maud_von_Tr%C3%BCtzschler ;
+    :isMotherOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isParentOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isSiblingOf data:Maud_von_Tr%C3%BCtzschler ;
+    :isSisterOf data:Maud_von_Tr%C3%BCtzschler .
+
+data:Othmar_Baron_von_Wangenheim-Winterstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasChild data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasDaughter data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Michael ;
+    :isBloodrelationOf data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :isBrotherOf data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :isFatherOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isParentOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isSiblingOf data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :isUncleOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Wilhelm_Ernst a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_Ernst ;
+    :hasChild data:Charles_Augustus ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Male ;
+    :hasSon data:Charles_Augustus ;
+    :isAncestorOf data:Charles_Augustus,
+        data:Michael ;
+    :isBloodrelationOf data:Wilhelm_Ernst ;
+    :isBrotherOf data:Wilhelm_Ernst ;
+    :isFatherOf data:Charles_Augustus ;
+    :isParentOf data:Charles_Augustus ;
+    :isSiblingOf data:Wilhelm_Ernst ;
+    :isUncleOf data:Charles_Augustus .
+
+data:Michael a :Man,
+        :Person ;
+    :hasAncestor data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasBrother data:Michael ;
+    :hasFather data:Charles_Augustus ;
+    :hasMother data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasParent data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Michael ;
+    :isBrotherOf data:Michael ;
+    :isChildOf data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isSiblingOf data:Michael ;
+    :isSonOf data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Charles_Augustus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Charles_Augustus ;
+    :hasChild data:Michael ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Wilhelm_Ernst ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasParent data:Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Male ;
+    :hasSon data:Michael ;
+    :isAncestorOf data:Michael ;
+    :isBloodrelationOf data:Charles_Augustus ;
+    :isBrotherOf data:Charles_Augustus ;
+    :isChildOf data:Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst ;
+    :isFatherOf data:Michael ;
+    :isParentOf data:Michael ;
+    :isSiblingOf data:Charles_Augustus ;
+    :isSonOf data:Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst ;
+    :isUncleOf data:Michael .
+
+data:Elisabeth_of_Wangenheim-Winterstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Maud_von_Tr%C3%BCtzschler,
+        data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasBirthYear 1912 ;
+    :hasChild data:Michael ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasMother data:Maud_von_Tr%C3%BCtzschler ;
+    :hasParent data:Maud_von_Tr%C3%BCtzschler,
+        data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasRelation data:Charles_Augustus,
+        data:Elisabeth_of_Wangenheim-Winterstein,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Maud_von_Tr%C3%BCtzschler,
+        data:Michael,
+        data:Othmar_Baron_von_Wangenheim-Winterstein,
+        data:Wilhelm_Ernst ;
+    :hasSex data:Female ;
+    :hasSister data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasSon data:Michael ;
+    :isAncestorOf data:Michael ;
+    :isAuntOf data:Michael ;
+    :isBloodrelationOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isChildOf data:Maud_von_Tr%C3%BCtzschler,
+        data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :isDaughterOf data:Maud_von_Tr%C3%BCtzschler,
+        data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :isMotherOf data:Michael ;
+    :isParentOf data:Michael ;
+    :isSiblingOf data:Elisabeth_of_Wangenheim-Winterstein ;
+    :isSisterOf data:Elisabeth_of_Wangenheim-Winterstein .
+

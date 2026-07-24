@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sophia_of_Greece_and_Spain ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Paul_of_Greece .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Brunswick a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sophia_of_Greece_and_Spain ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman .
+
+data:Viktoria_Luise_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person .
+
+data:Irene_of_Greece a :Person,
+        :Woman .
+
+data:Sophia_of_Greece_and_Spain a :Person,
+        :Woman .
+

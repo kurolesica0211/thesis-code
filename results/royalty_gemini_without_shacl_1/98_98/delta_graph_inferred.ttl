@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Claus a :Man,
+        :Person ;
+    :hasBrother data:Prince_Claus ;
+    :hasRelation data:Prince_Claus ;
+    :isBloodrelationOf data:Prince_Claus ;
+    :isBrotherOf data:Prince_Claus ;
+    :isSiblingOf data:Prince_Claus .
+
+data:Queen_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Beatrix ;
+    :hasSister data:Queen_Beatrix ;
+    :isBloodrelationOf data:Queen_Beatrix ;
+    :isSiblingOf data:Queen_Beatrix ;
+    :isSisterOf data:Queen_Beatrix .
+
+data:Prince_Constantijn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Constantijn ;
+    :hasChild data:Countess_Eloise_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Eloise_of_Orange-Nassau ;
+    :hasRelation data:Countess_Eloise_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isAncestorOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isBloodrelationOf data:Prince_Constantijn ;
+    :isBrotherOf data:Prince_Constantijn ;
+    :isFatherOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isParentOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isSiblingOf data:Prince_Constantijn ;
+    :isUncleOf data:Countess_Eloise_of_Orange-Nassau .
+
+data:Princess_Laurentien a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Countess_Eloise_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Eloise_of_Orange-Nassau ;
+    :hasRelation data:Countess_Eloise_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasSister data:Princess_Laurentien ;
+    :isAncestorOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isAuntOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isBloodrelationOf data:Princess_Laurentien ;
+    :isMotherOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isParentOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isSiblingOf data:Princess_Laurentien ;
+    :isSisterOf data:Princess_Laurentien .
+
+data:Countess_Eloise_of_Orange-Nassau a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien ;
+    :hasParent data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasRelation data:Countess_Eloise_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasSister data:Countess_Eloise_of_Orange-Nassau ;
+    :isBloodrelationOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isChildOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isDaughterOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isSiblingOf data:Countess_Eloise_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Eloise_of_Orange-Nassau .
+

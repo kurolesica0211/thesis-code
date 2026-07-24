@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:Samuel_Chatto a :Man,
+        :Person ;
+    :hasBirthYear 1996 ;
+    :hasFather data:Daniel_Chatto ;
+    :hasMother data:Lady_Sarah_Chatto ;
+    :hasSex "Male"^^xsd:string .
+
+data:Daniel_Chatto a :Man,
+        :Person .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :hasMother data:Princess_Margaret_Countess_of_Snowdon .
+
+data:Princess_Margaret_Countess_of_Snowdon a :Person,
+        :Woman .
+

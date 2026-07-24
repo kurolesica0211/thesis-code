@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig_of_Baden a :Man,
+        :Person ;
+    :hasFather data:Berthold_of_Baden ;
+    :hasMother data:Theodora .
+
+data:Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasFather data:Berthold_of_Baden ;
+    :hasMother data:Theodora .
+
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasFather data:Berthold_of_Baden ;
+    :hasMother data:Theodora .
+
+data:Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Margarita_sister_of_Theodora a :Person,
+        :Woman .
+
+data:Maximilian_father_of_Berthold a :Man,
+        :Person .
+
+data:Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Philip_of_Greece_and_Denmark ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:Berthold_of_Baden ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_sister_of_Theodora,
+        data:Sophie_of_Greece_and_Denmark .
+
+data:Berthold_of_Baden a :Man,
+        :Person ;
+    :hasFather data:Maximilian_father_of_Berthold .
+

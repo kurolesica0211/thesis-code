@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person ;
+    :isAncestorOf data:Ernest_Augustus_of_Brunswick .
+
+data:Christian_of_Cumberland a :Man,
+        :Person ;
+    :isBrotherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Ernest_Augustus_Jr_of_Brunswick a :Man,
+        :Person ;
+    :isSonOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person ;
+    :isFatherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Frederica_of_Greece a :Person,
+        :Woman ;
+    :hasMarriageYear data:1938 ;
+    :hasRelation data:Paul_of_Greece ;
+    :isDaughterOf data:Ernest_Augustus_of_Brunswick,
+        data:Victoria_Louise_of_Prussia .
+
+data:George_of_Cumberland a :Man,
+        :Person ;
+    :isBrotherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Wilhelm_II_of_Germany a :Man,
+        :Person ;
+    :isFatherOf data:Victoria_Louise_of_Prussia .
+
+data:1913 a :DomainEntity .
+
+data:1938 a :DomainEntity .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman .
+
+data:Ernest_Augustus_of_Brunswick a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasMarriageYear data:1913 ;
+    :hasRelation data:Victoria_Louise_of_Prussia .
+

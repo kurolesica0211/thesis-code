@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man .
+
+data:Kraft a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Princess_Charlotte_of_Croy ;
+    :hasSister data:Princess_Beatrix .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man .
+
+data:Princess_Beatrix a :Woman .
+
+data:Princess_Charlotte_of_Croy a :Woman .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Woman .
+

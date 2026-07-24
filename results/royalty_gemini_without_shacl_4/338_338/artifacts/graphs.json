@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1942 ;\n    :hasBrother data:Ingolf_of_Denmark ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Knud_of_Denmark ;\n    :hasMarriageYear 1971 ;\n    :hasMother data:Caroline-Mathilde_of_Denmark ;\n    :hasRelation data:Anne_Dorte_of_Rosenborg,\n        data:Frederik_IX_of_Denmark .\n\ndata:Margrethe_II_of_Denmark a :Person,\n        :Woman .\n\ndata:Anne_Dorte_of_Rosenborg a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2014 .\n\ndata:Caroline-Mathilde_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederik_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ingolf_of_Denmark a :Man,\n        :Person .\n\ndata:Knud_of_Denmark a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1942 ;\n    :hasBrother data:Ingolf_of_Denmark ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Knud_of_Denmark ;\n    :hasMarriageYear 1971 ;\n    :hasMother data:Caroline-Mathilde_of_Denmark ;\n    :hasRelation data:Anne_Dorte_of_Rosenborg,\n        data:Frederik_IX_of_Denmark .\n\ndata:Margrethe_II_of_Denmark a :Person,\n        :Woman .\n\ndata:Anne_Dorte_of_Rosenborg a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2014 .\n\ndata:Caroline-Mathilde_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederik_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ingolf_of_Denmark a :Man,\n        :Person .\n\ndata:Knud_of_Denmark a :Man,\n        :Person .\n\n"
+    }
+]

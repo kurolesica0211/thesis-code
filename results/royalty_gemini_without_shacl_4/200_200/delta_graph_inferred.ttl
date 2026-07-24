@@ -1,0 +1,255 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ann-Kathrin_Johannsmann a :Person,
+        :Woman ;
+    :hasRelation data:Ann-Kathrin_Johannsmann ;
+    :hasSister data:Ann-Kathrin_Johannsmann ;
+    :isBloodrelationOf data:Ann-Kathrin_Johannsmann ;
+    :isSiblingOf data:Ann-Kathrin_Johannsmann ;
+    :isSisterOf data:Ann-Kathrin_Johannsmann .
+
+data:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person ;
+    :hasBrother data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Gustav_of_Sayn-Wittgenstein-Berleburg .
+
+data:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Benedikte_of_Denmark ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Benedikte_of_Denmark ;
+    :isMotherOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Benedikte_of_Denmark ;
+    :isSisterOf data:Benedikte_of_Denmark .
+
+data:Heinrich-Wilhelm_Johannsmann a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Heinrich-Wilhelm_Johannsmann ;
+    :hasChild data:Alexander_Johannsmann ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Alexander_Johannsmann ;
+    :isAncestorOf data:Alexander_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isBrotherOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isFatherOf data:Alexander_Johannsmann ;
+    :isParentOf data:Alexander_Johannsmann ;
+    :isSiblingOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isUncleOf data:Alexander_Johannsmann .
+
+data:Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Alexander_Johannsmann a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Heinrich-Wilhelm_Johannsmann ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Alexander_Johannsmann ;
+    :hasChild data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasDaughter data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasFather data:Heinrich-Wilhelm_Johannsmann ;
+    :hasParent data:Heinrich-Wilhelm_Johannsmann ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Konstantin_Gustav_Heinrich_Richard ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Alexander_Johannsmann ;
+    :isBrotherOf data:Alexander_Johannsmann ;
+    :isChildOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isFatherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isParentOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSiblingOf data:Alexander_Johannsmann ;
+    :isSonOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isUncleOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna .
+
+data:Konstantin_Gustav_Heinrich_Richard a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Johannsmann,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Konstantin_Gustav_Heinrich_Richard ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBrotherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSonOf data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Louisa_Margareta_Benedikte_Hanna a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Johannsmann,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Konstantin_Gustav_Heinrich_Richard ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Alexander_Johannsmann,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSisterOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna .
+
+data:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 1975 ;
+    :hasChild data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasDaughter data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Benedikte_of_Denmark ;
+    :hasParent data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Konstantin_Gustav_Heinrich_Richard ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isAuntOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isParentOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+

@@ -1,0 +1,99 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Calixta_of_Lippe a :Person,
+        :Woman ;
+    :hasRelation data:Calixta_of_Lippe,
+        data:Henry_brother_of_Waldemar,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Waldemar_of_Prussia ;
+    :hasSister data:Calixta_of_Lippe ;
+    :isBloodrelationOf data:Calixta_of_Lippe ;
+    :isSiblingOf data:Calixta_of_Lippe ;
+    :isSisterOf data:Calixta_of_Lippe .
+
+data:Henry_brother_of_Waldemar a :Man,
+        :Person ;
+    :hasBrother data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :hasRelation data:Calixta_of_Lippe,
+        data:Henry_brother_of_Waldemar,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :isBrotherOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia .
+
+data:Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_of_Prussia ;
+    :hasChild data:Waldemar_of_Prussia ;
+    :hasRelation data:Calixta_of_Lippe,
+        data:Henry_brother_of_Waldemar,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Waldemar_of_Prussia ;
+    :hasSon data:Waldemar_of_Prussia ;
+    :isAncestorOf data:Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Henry_of_Prussia ;
+    :isBrotherOf data:Henry_of_Prussia ;
+    :isFatherOf data:Waldemar_of_Prussia ;
+    :isParentOf data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Henry_of_Prussia ;
+    :isUncleOf data:Waldemar_of_Prussia .
+
+data:Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Waldemar_of_Prussia ;
+    :hasRelation data:Calixta_of_Lippe,
+        data:Henry_brother_of_Waldemar,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Waldemar_of_Prussia ;
+    :hasSister data:Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Waldemar_of_Prussia ;
+    :isAncestorOf data:Waldemar_of_Prussia ;
+    :isAuntOf data:Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Irene_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Waldemar_of_Prussia ;
+    :isParentOf data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Irene_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Irene_of_Hesse_and_by_Rhine .
+
+data:Waldemar_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Calixta_of_Lippe,
+        data:Henry_brother_of_Waldemar,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :isBrotherOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :isChildOf data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Henry_brother_of_Waldemar,
+        data:Waldemar_of_Prussia ;
+    :isSonOf data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine .
+

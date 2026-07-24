@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrei a :Man,
+        :Person .
+
+data:Boris a :Man,
+        :Person .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:Kirill a :Man,
+        :Person .
+
+data:Marie_of_Mecklenburg_Schwerin a :Person,
+        :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Princess_Elizabeth_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Elena_Vladimirovna .
+
+data:Princess_Marina_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Elena_Vladimirovna .
+
+data:Princess_Olga_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Elena_Vladimirovna .
+
+data:Vladimir_Alexandrovich a :Man,
+        :Person .
+
+data:Elena_Vladimirovna a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:Marie_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Nicholas_of_Greece_and_Denmark .
+
+data:Nicholas_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
+

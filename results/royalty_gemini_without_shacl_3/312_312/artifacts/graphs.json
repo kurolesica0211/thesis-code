@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marija_Kara%C4%91or%C4%91evi%C4%87 a :Woman ;\n    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Danica_Marinkovi%C4%87 .\n\ndata:Stefan_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Danica_Marinkovi%C4%87 .\n\ndata:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasFather data:Alexander_%28Crown_Prince%29 ;\n    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .\n\ndata:Alexander_%28Crown_Prince%29 a :Man .\n\ndata:Danica_Marinkovi%C4%87 a :Woman .\n\ndata:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_%28Crown_Prince%29 ;\n    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;\n    :isBrotherOf data:Peter_Kara%C4%91or%C4%91evi%C4%87 .\n\ndata:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marija_Kara%C4%91or%C4%91evi%C4%87 a :Woman ;\n    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Danica_Marinkovi%C4%87 .\n\ndata:Stefan_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Danica_Marinkovi%C4%87 .\n\ndata:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasFather data:Alexander_%28Crown_Prince%29 ;\n    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .\n\ndata:Alexander_%28Crown_Prince%29 a :Man .\n\ndata:Danica_Marinkovi%C4%87 a :Woman .\n\ndata:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Man ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_%28Crown_Prince%29 ;\n    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;\n    :isBrotherOf data:Peter_Kara%C4%91or%C4%91evi%C4%87 .\n\ndata:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Woman .\n\n"
+    }
+]

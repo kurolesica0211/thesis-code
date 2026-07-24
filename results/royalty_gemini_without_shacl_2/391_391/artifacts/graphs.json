@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AmandaKnatchbull a :Person,\n        :Woman ;\n    :alsoKnownAs data:LadyAmandaEllingworth ;\n    :formerlyKnownAs data:TheHonourableAmandaKnatchbull ;\n    :hasAncestor data:LouisMountbatten,\n        data:QueenVictoria ;\n    :hasBirthYear 1957 ;\n    :hasFather data:BaronBrabourne7th ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:CountessMountbatten2nd ;\n    :hasRelation data:CharlesVincentEllingworth .\n\ndata:PrinceCharles a :Man,\n        :Person .\n\ndata:PrincessAlice a :Ancestor,\n        :Person,\n        :Woman ;\n    :isDaughterOf data:QueenVictoria .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:BaronBrabourne7th a :Man,\n        :Person .\n\ndata:CharlesVincentEllingworth a :Man,\n        :Person .\n\ndata:CountessMountbatten2nd a :Person,\n        :Woman .\n\ndata:LouisMountbatten a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear 1979 ;\n    :isUncleOf data:PrincePhilip .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AmandaKnatchbull a :Person,\n        :Woman ;\n    :alsoKnownAs data:LadyAmandaEllingworth ;\n    :formerlyKnownAs data:TheHonourableAmandaKnatchbull ;\n    :hasAncestor data:LouisMountbatten,\n        data:QueenVictoria ;\n    :hasBirthYear 1957 ;\n    :hasFather data:BaronBrabourne7th ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:CountessMountbatten2nd ;\n    :hasRelation data:CharlesVincentEllingworth .\n\ndata:PrinceCharles a :Man,\n        :Person .\n\ndata:PrincessAlice a :Ancestor,\n        :Person,\n        :Woman ;\n    :isDaughterOf data:QueenVictoria .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:BaronBrabourne7th a :Man,\n        :Person .\n\ndata:CharlesVincentEllingworth a :Man,\n        :Person .\n\ndata:CountessMountbatten2nd a :Person,\n        :Woman .\n\ndata:LadyAmandaEllingworth a :Person .\n\ndata:LouisMountbatten a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear 1979 ;\n    :isUncleOf data:PrincePhilip .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:TheHonourableAmandaKnatchbull a :Person .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AmandaKnatchbull a :Person,\n        :Woman ;\n    :alsoKnownAs data:LadyAmandaEllingworth ;\n    :formerlyKnownAs data:TheHonourableAmandaKnatchbull ;\n    :hasAncestor data:LouisMountbatten,\n        data:QueenVictoria ;\n    :hasBirthYear 1957 ;\n    :hasFather data:BaronBrabourne7th ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:CountessMountbatten2nd ;\n    :hasRelation data:CharlesVincentEllingworth .\n\ndata:PrinceCharles a :Man,\n        :Person .\n\ndata:PrincessAlice a :Ancestor,\n        :Person,\n        :Woman ;\n    :isDaughterOf data:QueenVictoria .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:BaronBrabourne7th a :Man,\n        :Person .\n\ndata:CharlesVincentEllingworth a :Man,\n        :Person .\n\ndata:CountessMountbatten2nd a :Person,\n        :Woman .\n\ndata:LadyAmandaEllingworth a :Person .\n\ndata:LouisMountbatten a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear 1979 ;\n    :isUncleOf data:PrincePhilip .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:TheHonourableAmandaKnatchbull a :Person .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

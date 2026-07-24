@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear "1870-06-14"^^xsd:date ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasDaughter data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :hasDeathYear "1932-01-13"^^xsd:date ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_I ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :hasSon data:Alexander_I,
+        data:George_II .
+
+data:Alexander_I a :Man,
+        :Person .
+
+data:Constantine_I a :Man,
+        :Person .
+
+data:Frederick_III a :Man,
+        :Person .
+
+data:George_II a :Man,
+        :Person .
+
+data:Helen_of_Greece a :Person,
+        :Woman .
+
+data:Katherine_of_Greece a :Person,
+        :Woman .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman .
+
+data:Viktoria_of_Prussia a :Person,
+        :Woman .
+
+data:Waldemar_of_Prussia a :Man,
+        :Person .
+
+data:William_II a :Man,
+        :Person .
+

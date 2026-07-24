@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasBirthYear 1955 ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Man,
+        :Person .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Rupert_Guinness_2nd_Earl_of_Iveagh a :Man,
+        :Person .
+
+data:Wilhelm_II a :Man,
+        :Person .
+

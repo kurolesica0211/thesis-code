@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person .
+
+data:Emich_Kirill_of_Leiningen a :Man,
+        :Person ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMother data:Maria_Kirillovna_of_Russia .
+
+data:Ileana_of_Romania a :Person,
+        :Woman .
+
+data:Maria_Alexandrovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Victoria_Melita_of_Edinburgh ;
+    :hasRelation data:Karl_6th_Prince_of_Leiningen .
+
+data:Victoria_Melita_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 .
+

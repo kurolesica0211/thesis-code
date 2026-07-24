@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Infanta_Margarita a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Princess_Mercedes ;
+    :hasRelation data:Carlos_Zurita_y_Delgado ;
+    :isAuntOf data:Felipe_VI ;
+    :isSisterOf data:Juan_Carlos_I .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasSister data:Infanta_Margarita .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Mercedes a :Ancestor,
+        :Person,
+        :Woman .
+

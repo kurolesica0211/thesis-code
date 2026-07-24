@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Prince_Philippe_Count_of_Paris ;\n    :hasMarriageYear 1895,\n        1936 ;\n    :hasMother data:Infanta_Maria_Isabel_of_Spain ;\n    :hasRelation data:Otto_Campini,\n        data:Prince_Emanuele_Filiberto_of_Savoy ;\n    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,\n        data:Isabelle_Duchess_of_Guise .\n\ndata:Louis_Philippe_I a :Ancestor ;\n    :isFatherOf data:Prince_Philippe_Count_of_Paris .\n\ndata:Prince_Albert_Victor_Duke_of_Clarence a :Man .\n\ndata:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman .\n\ndata:Infanta_Maria_Isabel_of_Spain a :Ancestor,\n        :Woman .\n\ndata:Isabelle_Duchess_of_Guise a :Woman .\n\ndata:Otto_Campini a :Man .\n\ndata:Philippe_Duke_of_Orl%C3%A9ans a :Man .\n\ndata:Prince_Emanuele_Filiberto_of_Savoy a :Man .\n\ndata:Prince_Philippe_Count_of_Paris a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Prince_Philippe_Count_of_Paris ;\n    :hasMarriageYear 1895,\n        1936 ;\n    :hasMother data:Infanta_Maria_Isabel_of_Spain ;\n    :hasRelation data:Otto_Campini,\n        data:Prince_Emanuele_Filiberto_of_Savoy ;\n    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,\n        data:Isabelle_Duchess_of_Guise .\n\ndata:Louis_Philippe_I a :Ancestor ;\n    :isFatherOf data:Prince_Philippe_Count_of_Paris .\n\ndata:Prince_Albert_Victor_Duke_of_Clarence a :Man .\n\ndata:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman .\n\ndata:Infanta_Maria_Isabel_of_Spain a :Ancestor,\n        :Woman .\n\ndata:Isabelle_Duchess_of_Guise a :Woman .\n\ndata:Otto_Campini a :Man .\n\ndata:Philippe_Duke_of_Orl%C3%A9ans a :Man .\n\ndata:Prince_Emanuele_Filiberto_of_Savoy a :Man .\n\ndata:Prince_Philippe_Count_of_Paris a :Ancestor,\n        :Man .\n\n"
+    }
+]

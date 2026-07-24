@@ -1,0 +1,91 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Person,
+        :Woman ;
+    :isMotherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Diane_dOrleans a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Francois_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Luis_Cousino_y_Sebire a :Man,
+        :Person ;
+    :isFatherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Michel_Count_of_Evreux a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Prince_Charles-Louis_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear "1972"^^xsd:nonNegativeInteger ;
+    :isSonOf data:Prince_Jacques_Duke_of_Orleans .
+
+data:Prince_Foulques_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear "1974"^^xsd:nonNegativeInteger ;
+    :isSonOf data:Prince_Jacques_Duke_of_Orleans .
+
+data:Prince_Jean_Duke_of_Vendome a :Man,
+        :Person ;
+    :isBrotherOf data:Francois_Count_of_Clermont .
+
+data:Thibaut_Count_of_La_Marche a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Francois_Count_of_Clermont a :Man,
+        :Person ;
+    :isSonOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :hasBirthYear "1908"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1999"^^xsd:nonNegativeInteger .
+
+data:Jean-Robert_Boeuf a :Man,
+        :Person .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person .
+
+data:Princess_Isabelle_of_Orleans-Braganza a :Person,
+        :Woman .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear "1934"^^xsd:nonNegativeInteger ;
+    :isMotherOf data:Marie_dOrleans .
+
+data:Marie_dOrleans a :Person,
+        :Woman ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein .
+
+data:Prince_Jacques_Duke_of_Orleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasBirthYear "1938"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2022"^^xsd:nonNegativeInteger ;
+    :hasMarriageYear "1984"^^xsd:nonNegativeInteger ;
+    :hasRelation data:Jean-Robert_Boeuf .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear "1933"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2019"^^xsd:nonNegativeInteger ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isFatherOf data:Marie_dOrleans .
+

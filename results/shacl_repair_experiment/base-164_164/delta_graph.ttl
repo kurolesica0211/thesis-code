@@ -1,0 +1,7 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor .
+

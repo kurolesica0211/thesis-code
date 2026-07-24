@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Konstantin_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :isParentOf data:Olga_of_Greece .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Sophia_of_Prussia .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSonOf data:Constantine_I .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Konstantin_Romanov ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1923 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_of_Greece ;
+    :hasRelation data:Sophia_of_Prussia ;
+    :hasSex data:Male ;
+    :isFatherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece .
+
+data:Female a :Sex .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSonOf data:Constantine_I .
+
+data:Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Male a :Sex .
+

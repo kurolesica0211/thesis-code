@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amedeo_of_Austria-Este a :Man,\n        :Person ;\n    :hasBirthYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Lorenz%2C_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Astrid_of_Belgium ;\n    :isBloodrelationOf data:Princess_Elisabeth%2C_Duchess_of_Brabant .\n\ndata:Lorenz%2C_Archduke_of_Austria-Este a :Man,\n        :Person .\n\ndata:Princess_Astrid_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth%2C_Duchess_of_Brabant a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amedeo_of_Austria-Este a :Man,\n        :Person ;\n    :hasBirthYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Lorenz%2C_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Astrid_of_Belgium ;\n    :isBloodrelationOf data:Princess_Elisabeth%2C_Duchess_of_Brabant .\n\ndata:Lorenz%2C_Archduke_of_Austria-Este a :Man,\n        :Person .\n\ndata:Princess_Astrid_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth%2C_Duchess_of_Brabant a :Person,\n        :Woman .\n\n"
+    }
+]

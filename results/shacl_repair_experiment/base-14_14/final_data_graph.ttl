@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceArchie a :Man,
+        :Person ;
+    :isBrotherOf data:LilibetDianaMountbattenWindsor ;
+    :isChildOf data:MeghanDuchessOfSussex,
+        data:PrinceHarry .
+
+data:KingCharlesIII a :Ancestor,
+        :Man,
+        :Person ;
+    :isAncestorOf data:LilibetDianaMountbattenWindsor .
+
+data:LilibetDianaMountbattenWindsor a :Person,
+        :Woman ;
+    :hasBirthYear 2021 ;
+    :isDaughterOf data:MeghanDuchessOfSussex,
+        data:PrinceHarry .
+
+data:MeghanDuchessOfSussex a :Ancestor,
+        :Person,
+        :Woman .
+
+data:PrinceHarry a :Ancestor,
+        :Man,
+        :Person ;
+    :isChildOf data:KingCharlesIII .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1953 ;\n    :hasDeathYear 1994 ;\n    :hasFather data:Andrew_Charles_Victor_Elphinstone ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Jean_Frances_Hambro ;\n    :hasSon data:Alexander_Elphinstone .\n\ndata:Willa_Mary_Gabrielle_Chetwode a :Woman ;\n    :hasFather data:George_David_Chetwode ;\n    :hasMother data:Willa_Elliot-Murray-Kynynmound .\n\ndata:Alexander_Elphinstone a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man ;\n    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon .\n\ndata:Elizabeth_The_Queen_Mother a :Woman .\n\ndata:George_David_Chetwode a :Man .\n\ndata:Jean_Frances_Hambro a :Woman .\n\ndata:Marion_Cook a :Woman .\n\ndata:Mary_Bowes-Lyon a :Woman ;\n    :isSisterOf data:Elizabeth_The_Queen_Mother .\n\ndata:Sidney_Buller-Fullerton-Elphinstone a :Man .\n\ndata:Victor_Elliot-Murray-Kynynmound a :Man .\n\ndata:Willa_Elliot-Murray-Kynynmound a :Woman ;\n    :hasFather data:Victor_Elliot-Murray-Kynynmound ;\n    :hasMother data:Marion_Cook .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1953 ;\n    :hasDeathYear 1994 ;\n    :hasFather data:Andrew_Charles_Victor_Elphinstone ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Jean_Frances_Hambro ;\n    :hasSon data:Alexander_Elphinstone .\n\ndata:Willa_Mary_Gabrielle_Chetwode a :Woman ;\n    :hasFather data:George_David_Chetwode ;\n    :hasMother data:Willa_Elliot-Murray-Kynynmound .\n\ndata:Alexander_Elphinstone a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man ;\n    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon .\n\ndata:Elizabeth_The_Queen_Mother a :Woman .\n\ndata:George_David_Chetwode a :Man .\n\ndata:Jean_Frances_Hambro a :Woman .\n\ndata:Marion_Cook a :Woman .\n\ndata:Mary_Bowes-Lyon a :Woman ;\n    :isSisterOf data:Elizabeth_The_Queen_Mother .\n\ndata:Sidney_Buller-Fullerton-Elphinstone a :Man .\n\ndata:Victor_Elliot-Murray-Kynynmound a :Man .\n\ndata:Willa_Elliot-Murray-Kynynmound a :Woman ;\n    :hasFather data:Victor_Elliot-Murray-Kynynmound ;\n    :hasMother data:Marion_Cook .\n\n"
+    }
+]

@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Marina a :Woman ;
+    :hasRelation data:Marina ;
+    :hasSex data:Female ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Michael a :Man ;
+    :hasBrother data:Michael ;
+    :hasRelation data:Michael ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Michael ;
+    :isBrotherOf data:Michael ;
+    :isSiblingOf data:Michael .
+
+data:Sofia_of_Spain a :Woman ;
+    :hasRelation data:Sofia_of_Spain ;
+    :hasSister data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasChild data:Philippos_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos_of_Greece_and_Denmark ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Philippos_of_Greece_and_Denmark ;
+    :isAuntOf data:Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Philippos_of_Greece_and_Denmark ;
+    :isParentOf data:Philippos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Philippos_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos_of_Greece_and_Denmark ;
+    :hasSon data:Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Philippos_of_Greece_and_Denmark ;
+    :isParentOf data:Philippos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Philippos_of_Greece_and_Denmark .
+
+data:Philippos_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Philippos_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Philippos_of_Greece_and_Denmark ;
+    :isBrotherOf data:Philippos_of_Greece_and_Denmark ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isSiblingOf data:Philippos_of_Greece_and_Denmark ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II .
+

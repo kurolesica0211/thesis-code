@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Philip_of_Hesse ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :hasRelation data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Elisabeth_of_Hesse a :Person,
+        :Woman .
+
+data:Gustav_Albrecht a :Man,
+        :Person .
+
+data:Heinrich_of_Hesse a :Man,
+        :Person .
+
+data:Mafalda_of_Savoy a :Person,
+        :Woman .
+
+data:Otto_of_Hesse a :Man,
+        :Person .
+
+data:Philip_of_Hesse a :Man,
+        :Person .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasFather data:Gustav_Albrecht .
+

@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmKarlPrinzVonPreussen a :Man,
+        :Person ;
+    :hasBirthYear "1922"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2007"^^xsd:nonNegativeInteger ;
+    :hasFather data:OskarOfPrussia ;
+    :hasMarriageYear "1952"^^xsd:nonNegativeInteger ;
+    :hasMother data:InaMarieVonBassewitz ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim .
+
+data:ArmgardElseHeleneVonVeltheim a :Person,
+        :Woman ;
+    :hasBirthYear "1926"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2019"^^xsd:nonNegativeInteger ;
+    :hasFather data:FriedrichVonVeltheim ;
+    :hasMother data:OttonieVonAlvensleben .
+
+data:FriedrichVonVeltheim a :Man,
+        :Person ;
+    :hasBirthYear "1881"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1955"^^xsd:nonNegativeInteger .
+
+data:InaMarieVonBassewitz a :Person,
+        :Woman .
+
+data:OskarOfPrussia a :Man,
+        :Person .
+
+data:OttonieVonAlvensleben a :Person,
+        :Woman ;
+    :hasBirthYear "1883"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1960"^^xsd:nonNegativeInteger .
+

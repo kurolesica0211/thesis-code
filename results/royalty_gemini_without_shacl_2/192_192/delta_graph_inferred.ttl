@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_I_of_Belgium a :Man ;
+    :hasBrother data:Albert_I_of_Belgium ;
+    :hasRelation data:Albert_I_of_Belgium ;
+    :isBloodrelationOf data:Albert_I_of_Belgium ;
+    :isBrotherOf data:Albert_I_of_Belgium ;
+    :isSiblingOf data:Albert_I_of_Belgium .
+
+data:King_Leopold_II a :Man ;
+    :hasBrother data:King_Leopold_II ;
+    :hasRelation data:King_Leopold_II ;
+    :isBloodrelationOf data:King_Leopold_II ;
+    :isBrotherOf data:King_Leopold_II ;
+    :isSiblingOf data:King_Leopold_II .
+
+data:Francoise_dOrleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Jean_Duke_of_Guise ;
+    :hasRelation data:Francoise_dOrleans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSister data:Francoise_dOrleans ;
+    :hasSon data:Prince_Jean_Duke_of_Guise ;
+    :isAncestorOf data:Prince_Jean_Duke_of_Guise ;
+    :isAuntOf data:Prince_Jean_Duke_of_Guise ;
+    :isBloodrelationOf data:Francoise_dOrleans ;
+    :isMotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isParentOf data:Prince_Jean_Duke_of_Guise ;
+    :isSiblingOf data:Francoise_dOrleans ;
+    :isSisterOf data:Francoise_dOrleans .
+
+data:Prince_Robert_Duke_of_Chartres a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Robert_Duke_of_Chartres ;
+    :hasChild data:Prince_Jean_Duke_of_Guise ;
+    :hasRelation data:Francoise_dOrleans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSon data:Prince_Jean_Duke_of_Guise ;
+    :isAncestorOf data:Prince_Jean_Duke_of_Guise ;
+    :isBloodrelationOf data:Prince_Robert_Duke_of_Chartres ;
+    :isBrotherOf data:Prince_Robert_Duke_of_Chartres ;
+    :isFatherOf data:Prince_Jean_Duke_of_Guise ;
+    :isParentOf data:Prince_Jean_Duke_of_Guise ;
+    :isSiblingOf data:Prince_Robert_Duke_of_Chartres ;
+    :isUncleOf data:Prince_Jean_Duke_of_Guise .
+
+data:Infanta_Maria_Isabel_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :hasDaughter data:Isabelle_of_Orleans ;
+    :hasRelation data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Infanta_Maria_Isabel_of_Spain ;
+    :hasSon data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isAncestorOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isAuntOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isBloodrelationOf data:Infanta_Maria_Isabel_of_Spain ;
+    :isMotherOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isParentOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isSiblingOf data:Infanta_Maria_Isabel_of_Spain ;
+    :isSisterOf data:Infanta_Maria_Isabel_of_Spain .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Philippe_Count_of_Paris ;
+    :hasChild data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :hasDaughter data:Isabelle_of_Orleans ;
+    :hasRelation data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSon data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isAncestorOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isBloodrelationOf data:Prince_Philippe_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe_Count_of_Paris ;
+    :isFatherOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isParentOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isSiblingOf data:Prince_Philippe_Count_of_Paris ;
+    :isUncleOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans .
+
+data:Prince_Jean_Duke_of_Guise a :Man ;
+    :hasAncestor data:Francoise_dOrleans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasBrother data:Prince_Jean_Duke_of_Guise ;
+    :hasFather data:Prince_Robert_Duke_of_Chartres ;
+    :hasMother data:Francoise_dOrleans ;
+    :hasParent data:Francoise_dOrleans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasRelation data:Francoise_dOrleans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :isBloodrelationOf data:Prince_Jean_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isChildOf data:Francoise_dOrleans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :isSiblingOf data:Prince_Jean_Duke_of_Guise ;
+    :isSonOf data:Francoise_dOrleans,
+        data:Prince_Robert_Duke_of_Chartres .
+
+data:Isabelle_of_Orleans a :Woman ;
+    :hasAncestor data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasBirthYear 1878 ;
+    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasParent data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasRelation data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Isabelle_of_Orleans ;
+    :isBloodrelationOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isChildOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isDaughterOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isSisterOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans .
+
+data:Philippe_of_Orleans_Duke_of_Orleans a :Man ;
+    :hasAncestor data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasParent data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasRelation data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Isabelle_of_Orleans ;
+    :isBloodrelationOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isBrotherOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isChildOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Isabelle_of_Orleans,
+        data:Philippe_of_Orleans_Duke_of_Orleans ;
+    :isSonOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris .
+

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Teresa_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear "1882"^^xsd:string ;
+    :hasDeathYear "1912"^^xsd:string ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMarriageYear "1906"^^xsd:string ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasRelation data:Ferdinand_of_Bavaria .
+
+data:Alfonso_XII_of_Spain a :Man,
+        :Person .
+
+data:Ferdinand_of_Bavaria a :Man,
+        :Person ;
+    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;
+    :hasMother data:Maria_de_la_Paz_of_Spain .
+
+data:Ludwig_Ferdinand_of_Bavaria a :Man,
+        :Person .
+
+data:Maria_Christina_of_Austria a :Person,
+        :Woman .
+
+data:Maria_de_la_Paz_of_Spain a :Person,
+        :Woman .
+

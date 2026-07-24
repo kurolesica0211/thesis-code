@@ -1,0 +1,147 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/346_346",
+  "text_file": "Q57974.txt",
+  "text_key": "Q57974",
+  "article": "https://en.wikipedia.org/wiki/Frederick_Francis_III",
+  "article_key": "Frederick Francis III",
+  "main_entity": {
+    "uri": "http://example.com/data#Frederick_Francis_III",
+    "qid": "Q57974",
+    "label": "Frederick Francis III"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Frederick_Francis_III",
+      "qid": "Q57974",
+      "label": "Frederick Francis III",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_II",
+      "qid": "Q57976",
+      "label": "Frederick Francis II",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_IV",
+      "qid": "Q57930",
+      "label": "Frederick Francis IV",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "qid": "Q63095",
+      "label": "Princess Augusta Reuss of Köstritz",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "qid": "Q232159",
+      "label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_II",
+      "extracted_local_name": "Frederick_Francis_II",
+      "embedding_text": "Frederick Francis II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_II",
+      "ground_truth_qid": "Q57976",
+      "ground_truth_label": "Frederick Francis II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederick Francis II",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_III",
+      "extracted_local_name": "Frederick_Francis_III",
+      "embedding_text": "Frederick Francis III",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_III",
+      "ground_truth_qid": "Q57974",
+      "ground_truth_label": "Frederick Francis III",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederick Francis III",
+      "best_candidate_label": "Frederick Francis III",
+      "best_candidate_qid": "Q57974",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_IV",
+      "extracted_local_name": "Frederick_Francis_IV",
+      "embedding_text": "Frederick Francis IV",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_IV",
+      "ground_truth_qid": "Q57930",
+      "ground_truth_label": "Frederick Francis IV",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederick Francis IV",
+      "best_candidate_label": "Frederick Francis IV",
+      "best_candidate_qid": "Q57930",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "extracted_local_name": "Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "embedding_text": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "ground_truth_qid": "Q232159",
+      "ground_truth_label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "best_candidate_label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "best_candidate_qid": "Q232159",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Augusta_Reuss_of_K%C3%B6stritz",
+      "extracted_local_name": "Princess_Augusta_Reuss_of_K%C3%B6stritz",
+      "embedding_text": "Princess Augusta Reuss of Köstritz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "ground_truth_qid": "Q63095",
+      "ground_truth_label": "Princess Augusta Reuss of Köstritz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_label": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_qid": "Q63095",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 5,
+    "entities_unmatched": 0
+  }
+}

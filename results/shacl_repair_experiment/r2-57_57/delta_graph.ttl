@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Antony_Armstrong-Jones a :Ancestor .
+
+data:Cecilia_Bowes-Lyon a :Ancestor .
+
+data:Claude_Bowes-Lyon a :Ancestor .
+
+data:King_George_V a :Ancestor .
+
+data:King_George_VI a :Ancestor .
+
+data:Princess_Margaret a :Ancestor .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Ancestor .
+
+data:Queen_Mary a :Ancestor .
+

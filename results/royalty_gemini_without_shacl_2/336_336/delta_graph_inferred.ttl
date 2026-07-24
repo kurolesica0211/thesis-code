@@ -1,0 +1,418 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Nicholas_I_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Nicholas_I_of_Russia ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna ;
+    :isBloodrelationOf data:Nicholas_I_of_Russia ;
+    :isBrotherOf data:Nicholas_I_of_Russia ;
+    :isSiblingOf data:Nicholas_I_of_Russia .
+
+data:Louise_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_X ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Louise_of_Denmark ;
+    :hasSon data:Christian_X ;
+    :isAncestorOf data:Christian_X ;
+    :isAuntOf data:Christian_X ;
+    :isBloodrelationOf data:Louise_of_Denmark ;
+    :isMotherOf data:Christian_X ;
+    :isParentOf data:Christian_X ;
+    :isSiblingOf data:Louise_of_Denmark ;
+    :isSisterOf data:Louise_of_Denmark .
+
+data:William_II_of_Germany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_II_of_Germany ;
+    :hasChild data:Wilhelm_of_Prussia ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSon data:Wilhelm_of_Prussia ;
+    :isAncestorOf data:Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:William_II_of_Germany ;
+    :isBrotherOf data:William_II_of_Germany ;
+    :isFatherOf data:Wilhelm_of_Prussia ;
+    :isParentOf data:Wilhelm_of_Prussia ;
+    :isSiblingOf data:William_II_of_Germany ;
+    :isUncleOf data:Wilhelm_of_Prussia .
+
+data:Anastasia_Mikhailovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Nicholas_I_of_Russia ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Anastasia_Mikhailovna ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna ;
+    :isSisterOf data:Anastasia_Mikhailovna .
+
+data:Christian_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX ;
+    :hasChild data:Frederik_VIII ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSon data:Frederik_VIII ;
+    :isAncestorOf data:Christian_X,
+        data:Frederik_VIII ;
+    :isBloodrelationOf data:Christian_IX ;
+    :isBrotherOf data:Christian_IX ;
+    :isFatherOf data:Frederik_VIII ;
+    :isParentOf data:Frederik_VIII ;
+    :isSiblingOf data:Christian_IX ;
+    :isUncleOf data:Frederik_VIII .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_III .
+
+data:Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:William_II_of_Germany ;
+    :hasBrother data:Wilhelm_of_Prussia ;
+    :hasFather data:William_II_of_Germany ;
+    :hasParent data:William_II_of_Germany ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :isBloodrelationOf data:Wilhelm_of_Prussia ;
+    :isBrotherOf data:Wilhelm_of_Prussia ;
+    :isChildOf data:William_II_of_Germany ;
+    :isSiblingOf data:Wilhelm_of_Prussia ;
+    :isSonOf data:William_II_of_Germany .
+
+data:Duchess_Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Duke_Frederick_Francis ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis .
+
+data:Duke_Frederick_Francis a :Man,
+        :Person ;
+    :hasBrother data:Duke_Frederick_Francis ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isBrotherOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II ;
+    :isUncleOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederik_VIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX ;
+    :hasBrother data:Frederik_VIII ;
+    :hasChild data:Christian_X ;
+    :hasFather data:Christian_IX ;
+    :hasParent data:Christian_IX ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSon data:Christian_X ;
+    :isAncestorOf data:Christian_X ;
+    :isBloodrelationOf data:Frederik_VIII ;
+    :isBrotherOf data:Frederik_VIII ;
+    :isChildOf data:Christian_IX ;
+    :isFatherOf data:Christian_X ;
+    :isParentOf data:Christian_X ;
+    :isSiblingOf data:Frederik_VIII ;
+    :isSonOf data:Christian_IX ;
+    :isUncleOf data:Christian_X .
+
+data:Christian_X a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX,
+        data:Frederik_VIII,
+        data:Louise_of_Denmark ;
+    :hasBrother data:Christian_X ;
+    :hasFather data:Frederik_VIII ;
+    :hasMother data:Louise_of_Denmark ;
+    :hasParent data:Frederik_VIII,
+        data:Louise_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :isBloodrelationOf data:Christian_X ;
+    :isBrotherOf data:Christian_X ;
+    :isChildOf data:Frederik_VIII,
+        data:Louise_of_Denmark ;
+    :isSiblingOf data:Christian_X ;
+    :isSonOf data:Frederik_VIII,
+        data:Louise_of_Denmark .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasAncestor data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Nicholas_I_of_Russia ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Duke_Frederick_Francis ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasParent data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_IX,
+        data:Christian_X,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Ingrid_of_Sweden,
+        data:Louise_of_Denmark,
+        data:Nicholas_I_of_Russia,
+        data:Wilhelm_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isChildOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isDaughterOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Cecilie,
+        data:Duke_Frederick_Francis .
+

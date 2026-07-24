@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Princess_Josephine_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 2011 ;
+    :isChildOf data:King_Frederik_X,
+        data:Queen_Mary ;
+    :isSiblingOf data:Crown_Prince_Christian,
+        data:Prince_Vincent,
+        data:Princess_Isabella .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Crown_Prince_Christian a :Man,
+        :Person .
+
+data:Prince_Vincent a :Man,
+        :Person ;
+    :isChildOf data:King_Frederik_X,
+        data:Queen_Mary .
+
+data:Princess_Isabella a :Person,
+        :Woman .
+
+data:King_Frederik_X a :Man,
+        :Person .
+
+data:Queen_Mary a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karadordevic a :Man,\n        :Person ;\n    :isFatherOf data:Peter_Karadordevic,\n        data:Philip_Karadordevic .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :isMotherOf data:Peter_Karadordevic,\n        data:Philip_Karadordevic .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman ;\n    :isMotherOf data:Marija_Karadordevic,\n        data:Stefan_Karadordevic .\n\ndata:Marija_Karadordevic a :Person,\n        :Woman .\n\ndata:Peter_Karadordevic a :Man,\n        :Person ;\n    :isBrotherOf data:Philip_Karadordevic .\n\ndata:Stefan_Karadordevic a :Man,\n        :Person .\n\ndata:Philip_Karadordevic a :Man,\n        :Person ;\n    :hasBirthYear \"1982\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2017\"^^xsd:positiveInteger ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isFatherOf data:Marija_Karadordevic,\n        data:Stefan_Karadordevic .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karadordevic a :Man,\n        :Person ;\n    :isFatherOf data:Peter_Karadordevic,\n        data:Philip_Karadordevic .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :isMotherOf data:Peter_Karadordevic,\n        data:Philip_Karadordevic .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman ;\n    :isMotherOf data:Marija_Karadordevic,\n        data:Stefan_Karadordevic .\n\ndata:Marija_Karadordevic a :Person,\n        :Woman .\n\ndata:Peter_Karadordevic a :Man,\n        :Person ;\n    :isBrotherOf data:Philip_Karadordevic .\n\ndata:Stefan_Karadordevic a :Man,\n        :Person .\n\ndata:Philip_Karadordevic a :Man,\n        :Person ;\n    :hasBirthYear \"1982\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2017\"^^xsd:positiveInteger ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isFatherOf data:Marija_Karadordevic,\n        data:Stefan_Karadordevic .\n\n"
+    }
+]

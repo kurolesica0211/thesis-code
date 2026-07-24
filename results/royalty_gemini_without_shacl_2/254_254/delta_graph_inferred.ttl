@@ -1,0 +1,204 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marion_Stein a :Woman ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSister data:Marion_Stein ;
+    :isBloodrelationOf data:Marion_Stein ;
+    :isSiblingOf data:Marion_Stein ;
+    :isSisterOf data:Marion_Stein .
+
+data:Patricia_Bambi_Tuckwell a :Ancestor,
+        :Woman ;
+    :hasChild data:Mark_Lascelles ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSister data:Patricia_Bambi_Tuckwell ;
+    :hasSon data:Mark_Lascelles ;
+    :isAncestorOf data:Mark_Lascelles ;
+    :isAuntOf data:Mark_Lascelles ;
+    :isBloodrelationOf data:Patricia_Bambi_Tuckwell ;
+    :isMotherOf data:Mark_Lascelles ;
+    :isParentOf data:Mark_Lascelles ;
+    :isSiblingOf data:Patricia_Bambi_Tuckwell ;
+    :isSisterOf data:Patricia_Bambi_Tuckwell .
+
+data:Henry_Viscount_Lascelles a :Ancestor,
+        :Man ;
+    :hasBrother data:Henry_Viscount_Lascelles ;
+    :hasChild data:George_Henry_Hubert_Lascelles ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSon data:George_Henry_Hubert_Lascelles ;
+    :isAncestorOf data:George_Henry_Hubert_Lascelles,
+        data:Mark_Lascelles ;
+    :isBloodrelationOf data:Henry_Viscount_Lascelles ;
+    :isBrotherOf data:Henry_Viscount_Lascelles ;
+    :isFatherOf data:George_Henry_Hubert_Lascelles ;
+    :isParentOf data:George_Henry_Hubert_Lascelles ;
+    :isSiblingOf data:Henry_Viscount_Lascelles ;
+    :isUncleOf data:George_Henry_Hubert_Lascelles .
+
+data:King_George_V a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Princess_Mary_Viscountess_Lascelles ;
+    :hasDaughter data:Princess_Mary_Viscountess_Lascelles ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :isAncestorOf data:George_Henry_Hubert_Lascelles,
+        data:Mark_Lascelles,
+        data:Princess_Mary_Viscountess_Lascelles ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isFatherOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isParentOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isSiblingOf data:King_George_V ;
+    :isUncleOf data:Princess_Mary_Viscountess_Lascelles .
+
+data:Queen_Mary a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Mary_Viscountess_Lascelles ;
+    :hasDaughter data:Princess_Mary_Viscountess_Lascelles ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :isAncestorOf data:George_Henry_Hubert_Lascelles,
+        data:Mark_Lascelles,
+        data:Princess_Mary_Viscountess_Lascelles ;
+    :isAuntOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isParentOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Mark_Lascelles a :Man ;
+    :hasAncestor data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasBrother data:Mark_Lascelles ;
+    :hasFather data:George_Henry_Hubert_Lascelles ;
+    :hasMother data:Patricia_Bambi_Tuckwell ;
+    :hasParent data:George_Henry_Hubert_Lascelles,
+        data:Patricia_Bambi_Tuckwell ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Mark_Lascelles ;
+    :isBrotherOf data:Mark_Lascelles ;
+    :isChildOf data:George_Henry_Hubert_Lascelles,
+        data:Patricia_Bambi_Tuckwell ;
+    :isSiblingOf data:Mark_Lascelles ;
+    :isSonOf data:George_Henry_Hubert_Lascelles,
+        data:Patricia_Bambi_Tuckwell .
+
+data:Princess_Mary_Viscountess_Lascelles a :Ancestor,
+        :Woman ;
+    :hasAncestor data:King_George_V,
+        data:Queen_Mary ;
+    :hasChild data:George_Henry_Hubert_Lascelles ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_George_V,
+        data:Queen_Mary ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary_Viscountess_Lascelles ;
+    :hasSon data:George_Henry_Hubert_Lascelles ;
+    :isAncestorOf data:George_Henry_Hubert_Lascelles,
+        data:Mark_Lascelles ;
+    :isAuntOf data:George_Henry_Hubert_Lascelles ;
+    :isBloodrelationOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isChildOf data:King_George_V,
+        data:Queen_Mary ;
+    :isDaughterOf data:King_George_V,
+        data:Queen_Mary ;
+    :isMotherOf data:George_Henry_Hubert_Lascelles ;
+    :isParentOf data:George_Henry_Hubert_Lascelles ;
+    :isSiblingOf data:Princess_Mary_Viscountess_Lascelles ;
+    :isSisterOf data:Princess_Mary_Viscountess_Lascelles .
+
+data:George_Henry_Hubert_Lascelles a :Ancestor,
+        :Man ;
+    :hasAncestor data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:George_Henry_Hubert_Lascelles ;
+    :hasChild data:Mark_Lascelles ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Henry_Viscount_Lascelles ;
+    :hasMarriageYear 1949,
+        1967 ;
+    :hasMother data:Princess_Mary_Viscountess_Lascelles ;
+    :hasParent data:Henry_Viscount_Lascelles,
+        data:Princess_Mary_Viscountess_Lascelles ;
+    :hasRelation data:George_Henry_Hubert_Lascelles,
+        data:Henry_Viscount_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Mark_Lascelles,
+        data:Patricia_Bambi_Tuckwell,
+        data:Princess_Mary_Viscountess_Lascelles,
+        data:Queen_Mary ;
+    :hasSon data:Mark_Lascelles ;
+    :isAncestorOf data:Mark_Lascelles ;
+    :isBloodrelationOf data:George_Henry_Hubert_Lascelles ;
+    :isBrotherOf data:George_Henry_Hubert_Lascelles ;
+    :isChildOf data:Henry_Viscount_Lascelles,
+        data:Princess_Mary_Viscountess_Lascelles ;
+    :isFatherOf data:Mark_Lascelles ;
+    :isParentOf data:Mark_Lascelles ;
+    :isSiblingOf data:George_Henry_Hubert_Lascelles ;
+    :isSonOf data:Henry_Viscount_Lascelles,
+        data:Princess_Mary_Viscountess_Lascelles ;
+    :isUncleOf data:Mark_Lascelles .
+

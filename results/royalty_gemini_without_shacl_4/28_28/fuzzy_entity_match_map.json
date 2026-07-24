@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/28_28",
+  "text_file": "Q11801765.txt",
+  "text_key": "Q11801765",
+  "article": "https://en.wikipedia.org/wiki/Simon_Bowes-Lyon",
+  "article_key": "Simon Bowes-Lyon",
+  "main_entity": {
+    "uri": "http://example.com/data#Simon_Bowes-Lyon",
+    "qid": "Q11801765",
+    "label": "Simon Bowes-Lyon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Simon_Bowes-Lyon",
+      "qid": "Q11801765",
+      "label": "Simon Bowes-Lyon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#David_Bowes-Lyon",
+      "qid": "Q5231604",
+      "label": "David Bowes-Lyon",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Rachel_Spender-Clay",
+      "qid": "Q75240077",
+      "label": "Rachel Spender-Clay",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/RachelPaulineSpenderClay",
+      "extracted_local_name": "RachelPaulineSpenderClay",
+      "embedding_text": "Rachel Pauline Spender Clay",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Rachel_Spender-Clay",
+      "ground_truth_qid": "Q75240077",
+      "ground_truth_label": "Rachel Spender-Clay",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Rachel Pauline Spender Clay",
+      "best_candidate_label": "Rachel Spender-Clay",
+      "best_candidate_qid": "Q75240077",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/SimonAlexanderBowesLyon",
+      "extracted_local_name": "SimonAlexanderBowesLyon",
+      "embedding_text": "Simon Alexander Bowes Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9615384615384616,
+      "ground_truth_uri": "http://example.com/data#Simon_Bowes-Lyon",
+      "ground_truth_qid": "Q11801765",
+      "ground_truth_label": "Simon Bowes-Lyon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Simon Alexander Bowes-Lyon",
+      "best_candidate_label": "Simon Bowes-Lyon",
+      "best_candidate_qid": "Q11801765",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9615384615384616
+    },
+    {
+      "extracted_uri": "http://example.org/data/DavidBowesLyon",
+      "extracted_local_name": "DavidBowesLyon",
+      "embedding_text": "David Bowes Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9375,
+      "ground_truth_uri": "http://example.com/data#David_Bowes-Lyon",
+      "ground_truth_qid": "Q5231604",
+      "ground_truth_label": "David Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "David Bowes-Lyon",
+      "best_candidate_label": "David Bowes-Lyon",
+      "best_candidate_qid": "Q5231604",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9375
+    },
+    {
+      "extracted_uri": "http://example.org/data/HerbertSpenderClay",
+      "extracted_local_name": "HerbertSpenderClay",
+      "embedding_text": "Herbert Spender Clay",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Rachel Spender-Clay",
+      "best_candidate_label": "Rachel Spender-Clay",
+      "best_candidate_qid": "Q75240077",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.717948717948718
+    },
+    {
+      "extracted_uri": "http://example.org/data/PaulineAstor",
+      "extracted_local_name": "PaulineAstor",
+      "embedding_text": "Pauline Astor",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Rachel Pauline Spender Clay",
+      "best_candidate_label": "Rachel Spender-Clay",
+      "best_candidate_qid": "Q75240077",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.45
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenElizabethTheQueenMother",
+      "extracted_local_name": "QueenElizabethTheQueenMother",
+      "embedding_text": "Queen Elizabeth The Queen Mother",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Simon Alexander Bowes-Lyon",
+      "best_candidate_label": "Simon Bowes-Lyon",
+      "best_candidate_qid": "Q11801765",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2413793103448276
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

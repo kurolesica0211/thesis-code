@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mark_Lascelles a :Man ;\n    :hasFather data:George_Henry_Hubert_Lascelles ;\n    :hasMother data:Patricia_Bambi_Tuckwell .\n\ndata:George_Henry_Hubert_Lascelles a :Man ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Henry_Viscount_Lascelles ;\n    :hasMarriageYear 1949,\n        1967 ;\n    :hasMother data:Princess_Mary_Viscountess_Lascelles ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Bambi_Tuckwell .\n\ndata:Henry_Viscount_Lascelles a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Marion_Stein a :Woman .\n\ndata:Princess_Mary_Viscountess_Lascelles a :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Woman .\n\ndata:Patricia_Bambi_Tuckwell a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mark_Lascelles a :Man ;\n    :hasFather data:George_Henry_Hubert_Lascelles ;\n    :hasMother data:Patricia_Bambi_Tuckwell .\n\ndata:George_Henry_Hubert_Lascelles a :Man ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Henry_Viscount_Lascelles ;\n    :hasMarriageYear 1949,\n        1967 ;\n    :hasMother data:Princess_Mary_Viscountess_Lascelles ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Bambi_Tuckwell .\n\ndata:Henry_Viscount_Lascelles a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Marion_Stein a :Woman .\n\ndata:Princess_Mary_Viscountess_Lascelles a :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Woman .\n\ndata:Patricia_Bambi_Tuckwell a :Woman .\n\n"
+    }
+]

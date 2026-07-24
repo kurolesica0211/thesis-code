@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :alsoKnownAs \"Athena Marguerite Fran\u00e7oise Marie\"^^xsd:string ;\n    :hasAncestor data:Henrik_Prince_Consort,\n        data:Margrethe_II ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Joachim_of_Denmark ;\n    :hasMother data:Marie_of_Denmark ;\n    :isSiblingOf data:Felix_of_Monpezat,\n        data:Henrik_of_Monpezat,\n        data:Nikolai_of_Monpezat .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Felix_of_Monpezat a :Man,\n        :Person .\n\ndata:Henrik_Prince_Consort a :Man,\n        :Person .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Nikolai_of_Monpezat a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :alsoKnownAs \"Athena Marguerite Fran\u00e7oise Marie\"^^xsd:string ;\n    :hasAncestor data:Henrik_Prince_Consort,\n        data:Margrethe_II ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Joachim_of_Denmark ;\n    :hasMother data:Marie_of_Denmark ;\n    :isSiblingOf data:Felix_of_Monpezat,\n        data:Henrik_of_Monpezat,\n        data:Nikolai_of_Monpezat .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Felix_of_Monpezat a :Man,\n        :Person .\n\ndata:Henrik_Prince_Consort a :Man,\n        :Person .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Nikolai_of_Monpezat a :Man,\n        :Person .\n\n"
+    }
+]

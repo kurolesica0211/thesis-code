@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Astrid_of_Sweden a :Woman ;\n    :hasDeathYear \"1935\"^^xsd:positiveInteger .\n\ndata:Fabrizio_Ruffo_di_Calabria_Santapau a :Man .\n\ndata:Josephine_Charlotte_of_Luxembourg a :Woman .\n\ndata:Leopold_III a :Man .\n\ndata:Albert_II a :Man .\n\ndata:Astrid_of_Belgium a :Woman ;\n    :hasBirthYear \"1962\"^^xsd:positiveInteger ;\n    :hasBrother data:Philippe ;\n    :hasFather data:Albert_II ;\n    :hasMarriageYear \"1984\"^^xsd:positiveInteger ;\n    :hasMother data:Paola ;\n    :hasRelation data:Lorenz_of_Belgium .\n\ndata:Lorenz_of_Belgium a :Man ;\n    :hasFather data:Robert_Archduke_of_Austria_Este ;\n    :hasMother data:Margherita_of_Savoy_Aosta .\n\ndata:Margherita_of_Savoy_Aosta a :Woman ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger .\n\ndata:Paola a :Woman .\n\ndata:Philippe a :Man ;\n    :hasSister data:Astrid_of_Belgium .\n\ndata:Robert_Archduke_of_Austria_Este a :Man ;\n    :hasDeathYear \"1996\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Astrid_of_Sweden a :Woman ;\n    :hasDeathYear \"1935\"^^xsd:positiveInteger .\n\ndata:Fabrizio_Ruffo_di_Calabria_Santapau a :Man .\n\ndata:Josephine_Charlotte_of_Luxembourg a :Woman .\n\ndata:Leopold_III a :Man .\n\ndata:Albert_II a :Man .\n\ndata:Astrid_of_Belgium a :Woman ;\n    :hasBirthYear \"1962\"^^xsd:positiveInteger ;\n    :hasBrother data:Philippe ;\n    :hasFather data:Albert_II ;\n    :hasMarriageYear \"1984\"^^xsd:positiveInteger ;\n    :hasMother data:Paola ;\n    :hasRelation data:Lorenz_of_Belgium .\n\ndata:Lorenz_of_Belgium a :Man ;\n    :hasFather data:Robert_Archduke_of_Austria_Este ;\n    :hasMother data:Margherita_of_Savoy_Aosta .\n\ndata:Margherita_of_Savoy_Aosta a :Woman ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger .\n\ndata:Paola a :Woman .\n\ndata:Philippe a :Man ;\n    :hasSister data:Astrid_of_Belgium .\n\ndata:Robert_Archduke_of_Austria_Este a :Man ;\n    :hasDeathYear \"1996\"^^xsd:positiveInteger .\n\n"
+    }
+]

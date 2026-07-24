@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLouisOfBattenberg a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man ;\n    :hasSex data:Male .\n\ndata:EmilieCharlotteLeBreton a :Woman ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :hasSex data:Female .\n\ndata:EmilieDavisMartin a :Woman ;\n    :hasSex data:Female .\n\ndata:HugoGeraldDeBathe a :Man ;\n    :hasSex data:Male .\n\ndata:JeanneMarieLangtry a :Woman ;\n    :hasSex data:Female ;\n    :isDaughterOf data:EmilieCharlotteLeBreton .\n\ndata:WilliamCorbetLeBreton a :Man ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLouisOfBattenberg a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man ;\n    :hasSex data:Male .\n\ndata:EmilieCharlotteLeBreton a :Woman ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :hasSex data:Female .\n\ndata:EmilieDavisMartin a :Woman ;\n    :hasSex data:Female .\n\ndata:HugoGeraldDeBathe a :Man ;\n    :hasSex data:Male .\n\ndata:JeanneMarieLangtry a :Woman ;\n    :hasSex data:Female ;\n    :isDaughterOf data:EmilieCharlotteLeBreton .\n\ndata:WilliamCorbetLeBreton a :Man ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLouisOfBattenberg a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man ;\n    :hasSex data:Male .\n\ndata:EmilieCharlotteLeBreton a :Woman ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :hasSex data:Female .\n\ndata:EmilieDavisMartin a :Woman ;\n    :hasSex data:Female .\n\ndata:HugoGeraldDeBathe a :Man ;\n    :hasSex data:Male .\n\ndata:JeanneMarieLangtry a :Woman ;\n    :hasSex data:Female ;\n    :isDaughterOf data:EmilieCharlotteLeBreton .\n\ndata:WilliamCorbetLeBreton a :Man ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

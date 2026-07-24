@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Constantine_of_Greece a :Ancestor ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor ;
+    :hasChild data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Princess_Alice_of_Battenberg a :Ancestor .
+
+data:King_Christian_IX_of_Denmark a :Ancestor .
+
+data:King_George_I_of_Greece a :Ancestor ;
+    :hasFather data:King_Christian_IX_of_Denmark .
+
+data:Queen_Olga_of_Greece a :Ancestor .
+

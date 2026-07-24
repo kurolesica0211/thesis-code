@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJaime a :Man ;\n    :isBrotherOf data:PrinceCarlos .\n\ndata:PrincessCarolina a :Woman ;\n    :isSisterOf data:PrinceCarlos .\n\ndata:PrincessMargarita a :Woman ;\n    :isSisterOf data:PrinceCarlos .\n\ndata:CarlosHugo a :Man .\n\ndata:PrinceXavier a :Man .\n\ndata:PrincessIrene a :Woman .\n\ndata:PrinceCarlos a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:CarlosHugo,\n        data:PrinceXavier ;\n    :hasMother data:PrincessIrene .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJaime a :Man ;\n    :isBrotherOf data:PrinceCarlos .\n\ndata:PrincessCarolina a :Woman ;\n    :isSisterOf data:PrinceCarlos .\n\ndata:PrincessMargarita a :Woman ;\n    :isSisterOf data:PrinceCarlos .\n\ndata:CarlosHugo a :Man .\n\ndata:PrinceXavier a :Man .\n\ndata:PrincessIrene a :Woman .\n\ndata:PrinceCarlos a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:CarlosHugo,\n        data:PrinceXavier ;\n    :hasMother data:PrincessIrene .\n\n"
+    }
+]

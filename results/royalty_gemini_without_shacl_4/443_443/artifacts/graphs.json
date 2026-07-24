@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francesca_Sofia_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Charlotte_Lindesay-Bethune .\n\ndata:Ines_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Charlotte_Lindesay-Bethune .\n\ndata:Anne_of_Orleans a :Person,\n        :Woman .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:Diana_Mary_Chamberlayne-Macdonald a :Person,\n        :Woman .\n\ndata:James_Lindesay-Bethune a :Man,\n        :Person .\n\ndata:Pedro_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Anne_of_Orleans .\n\ndata:Sofia_Landaluce_y_Melgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\ndata:Jaime_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1993 ;\n    :hasFather data:Pedro_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 2021 ;\n    :hasMother data:Sofia_Landaluce_y_Melgarejo ;\n    :hasRelation data:Charlotte_Lindesay-Bethune .\n\ndata:Charlotte_Lindesay-Bethune a :Person,\n        :Woman ;\n    :hasFather data:James_Lindesay-Bethune ;\n    :hasMother data:Diana_Mary_Chamberlayne-Macdonald .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francesca_Sofia_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Charlotte_Lindesay-Bethune .\n\ndata:Ines_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Charlotte_Lindesay-Bethune .\n\ndata:Anne_of_Orleans a :Person,\n        :Woman .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:Diana_Mary_Chamberlayne-Macdonald a :Person,\n        :Woman .\n\ndata:James_Lindesay-Bethune a :Man,\n        :Person .\n\ndata:Pedro_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Anne_of_Orleans .\n\ndata:Sofia_Landaluce_y_Melgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\ndata:Jaime_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1993 ;\n    :hasFather data:Pedro_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 2021 ;\n    :hasMother data:Sofia_Landaluce_y_Melgarejo ;\n    :hasRelation data:Charlotte_Lindesay-Bethune .\n\ndata:Charlotte_Lindesay-Bethune a :Person,\n        :Woman ;\n    :hasFather data:James_Lindesay-Bethune ;\n    :hasMother data:Diana_Mary_Chamberlayne-Macdonald .\n\n"
+    }
+]

@@ -1,0 +1,311 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LudwigIIIOfBavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LudwigIIIOfBavaria ;
+    :hasChild data:PrinceHenryOfBavaria ;
+    :hasRelation data:LudwigIIIOfBavaria,
+        data:PrinceHenryOfBavaria ;
+    :hasSon data:PrinceHenryOfBavaria ;
+    :isAncestorOf data:PrinceHenryOfBavaria ;
+    :isBloodrelationOf data:LudwigIIIOfBavaria ;
+    :isBrotherOf data:LudwigIIIOfBavaria ;
+    :isFatherOf data:PrinceHenryOfBavaria ;
+    :isParentOf data:PrinceHenryOfBavaria ;
+    :isSiblingOf data:LudwigIIIOfBavaria ;
+    :isUncleOf data:PrinceHenryOfBavaria .
+
+data:PrinceHenryOfBavaria a :Man,
+        :Person ;
+    :hasAncestor data:LudwigIIIOfBavaria ;
+    :hasBrother data:PrinceHenryOfBavaria ;
+    :hasFather data:LudwigIIIOfBavaria ;
+    :hasParent data:LudwigIIIOfBavaria ;
+    :hasRelation data:LudwigIIIOfBavaria,
+        data:PrinceHenryOfBavaria ;
+    :isBloodrelationOf data:PrinceHenryOfBavaria ;
+    :isBrotherOf data:PrinceHenryOfBavaria ;
+    :isChildOf data:LudwigIIIOfBavaria ;
+    :isSiblingOf data:PrinceHenryOfBavaria ;
+    :isSonOf data:LudwigIIIOfBavaria .
+
+data:KaiserWilliamIIOfGermany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KaiserWilliamIIOfGermany ;
+    :hasChild data:PrinceAdalbertOfPrussia ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSon data:PrinceAdalbertOfPrussia ;
+    :isAncestorOf data:PrinceAdalbertOfPrussia ;
+    :isBloodrelationOf data:KaiserWilliamIIOfGermany ;
+    :isBrotherOf data:KaiserWilliamIIOfGermany ;
+    :isFatherOf data:PrinceAdalbertOfPrussia ;
+    :isParentOf data:PrinceAdalbertOfPrussia ;
+    :isSiblingOf data:KaiserWilliamIIOfGermany ;
+    :isUncleOf data:PrinceAdalbertOfPrussia .
+
+data:ErnstCountOfLippeBiesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnstCountOfLippeBiesterfeld ;
+    :hasChild data:CountessAdelaideOfLippeBiesterfeld ;
+    :hasDaughter data:CountessAdelaideOfLippeBiesterfeld ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :isAncestorOf data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld ;
+    :isBloodrelationOf data:ErnstCountOfLippeBiesterfeld ;
+    :isBrotherOf data:ErnstCountOfLippeBiesterfeld ;
+    :isFatherOf data:CountessAdelaideOfLippeBiesterfeld ;
+    :isParentOf data:CountessAdelaideOfLippeBiesterfeld ;
+    :isSiblingOf data:ErnstCountOfLippeBiesterfeld ;
+    :isUncleOf data:CountessAdelaideOfLippeBiesterfeld .
+
+data:FeodoraOfHohenloheLangenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSister data:FeodoraOfHohenloheLangenburg ;
+    :hasSon data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isAncestorOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isAuntOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isBloodrelationOf data:FeodoraOfHohenloheLangenburg ;
+    :isMotherOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isParentOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isSiblingOf data:FeodoraOfHohenloheLangenburg ;
+    :isSisterOf data:FeodoraOfHohenloheLangenburg .
+
+data:GeorgeIIOfSaxeMeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIIOfSaxeMeiningen ;
+    :hasChild data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSon data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isAncestorOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isBloodrelationOf data:GeorgeIIOfSaxeMeiningen ;
+    :isBrotherOf data:GeorgeIIOfSaxeMeiningen ;
+    :isFatherOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isParentOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isSiblingOf data:GeorgeIIOfSaxeMeiningen ;
+    :isUncleOf data:PrinceFrederickJohnOfSaxeMeiningen .
+
+data:PrinceAdalbertOfPrussia a :Man,
+        :Person ;
+    :hasAncestor data:KaiserWilliamIIOfGermany ;
+    :hasBrother data:PrinceAdalbertOfPrussia ;
+    :hasFather data:KaiserWilliamIIOfGermany ;
+    :hasParent data:KaiserWilliamIIOfGermany ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :isBloodrelationOf data:PrinceAdalbertOfPrussia ;
+    :isBrotherOf data:PrinceAdalbertOfPrussia ;
+    :isChildOf data:KaiserWilliamIIOfGermany ;
+    :isSiblingOf data:PrinceAdalbertOfPrussia ;
+    :isSonOf data:KaiserWilliamIIOfGermany .
+
+data:PrinceBernard a :Man,
+        :Person ;
+    :hasBrother data:PrinceBernard,
+        data:PrinceGeorge ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSister data:AdelaideOfSaxeMeiningen ;
+    :isBloodrelationOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isBrotherOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isSiblingOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge .
+
+data:PrinceGeorge a :Man,
+        :Person ;
+    :hasBrother data:PrinceBernard,
+        data:PrinceGeorge ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSister data:AdelaideOfSaxeMeiningen ;
+    :isBloodrelationOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isBrotherOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isSiblingOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge .
+
+data:CountessAdelaideOfLippeBiesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:ErnstCountOfLippeBiesterfeld ;
+    :hasChild data:AdelaideOfSaxeMeiningen ;
+    :hasDaughter data:AdelaideOfSaxeMeiningen ;
+    :hasFather data:ErnstCountOfLippeBiesterfeld ;
+    :hasParent data:ErnstCountOfLippeBiesterfeld ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSister data:CountessAdelaideOfLippeBiesterfeld ;
+    :isAncestorOf data:AdelaideOfSaxeMeiningen ;
+    :isAuntOf data:AdelaideOfSaxeMeiningen ;
+    :isBloodrelationOf data:CountessAdelaideOfLippeBiesterfeld ;
+    :isChildOf data:ErnstCountOfLippeBiesterfeld ;
+    :isDaughterOf data:ErnstCountOfLippeBiesterfeld ;
+    :isMotherOf data:AdelaideOfSaxeMeiningen ;
+    :isParentOf data:AdelaideOfSaxeMeiningen ;
+    :isSiblingOf data:CountessAdelaideOfLippeBiesterfeld ;
+    :isSisterOf data:CountessAdelaideOfLippeBiesterfeld .
+
+data:PrinceFrederickJohnOfSaxeMeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen ;
+    :hasBrother data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasChild data:AdelaideOfSaxeMeiningen ;
+    :hasDaughter data:AdelaideOfSaxeMeiningen ;
+    :hasFather data:GeorgeIIOfSaxeMeiningen ;
+    :hasMother data:FeodoraOfHohenloheLangenburg ;
+    :hasParent data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :isAncestorOf data:AdelaideOfSaxeMeiningen ;
+    :isBloodrelationOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isBrotherOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isChildOf data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen ;
+    :isFatherOf data:AdelaideOfSaxeMeiningen ;
+    :isParentOf data:AdelaideOfSaxeMeiningen ;
+    :isSiblingOf data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isSonOf data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen ;
+    :isUncleOf data:AdelaideOfSaxeMeiningen .
+
+data:AdelaideOfSaxeMeiningen a :Person,
+        :Woman ;
+    :alsoKnownAs "Adelaide Erna Caroline Marie Elisabeth"^^xsd:string,
+        "Adelheid"^^xsd:string ;
+    :hasAncestor data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasBirthYear 1891 ;
+    :hasBrother data:PrinceBernard,
+        data:PrinceGeorge ;
+    :hasDeathYear 1971 ;
+    :hasFather data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:CountessAdelaideOfLippeBiesterfeld ;
+    :hasParent data:CountessAdelaideOfLippeBiesterfeld,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasRelation data:AdelaideOfSaxeMeiningen,
+        data:CountessAdelaideOfLippeBiesterfeld,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FeodoraOfHohenloheLangenburg,
+        data:GeorgeIIOfSaxeMeiningen,
+        data:KaiserWilliamIIOfGermany,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceBernard,
+        data:PrinceFrederickJohnOfSaxeMeiningen,
+        data:PrinceGeorge ;
+    :hasSister data:AdelaideOfSaxeMeiningen ;
+    :isBloodrelationOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isChildOf data:CountessAdelaideOfLippeBiesterfeld,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isDaughterOf data:CountessAdelaideOfLippeBiesterfeld,
+        data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :isSiblingOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge ;
+    :isSisterOf data:AdelaideOfSaxeMeiningen,
+        data:PrinceBernard,
+        data:PrinceGeorge .
+

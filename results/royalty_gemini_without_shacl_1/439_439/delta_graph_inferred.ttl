@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_Margaret_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Mary_Cecilia_Colman ;
+    :hasDaughter data:Lady_Mary_Cecilia_Colman ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSister data:Elizabeth_Margaret_Cator ;
+    :isAncestorOf data:Lady_Mary_Cecilia_Colman ;
+    :isAuntOf data:Lady_Mary_Cecilia_Colman ;
+    :isBloodrelationOf data:Elizabeth_Margaret_Cator ;
+    :isMotherOf data:Lady_Mary_Cecilia_Colman ;
+    :isParentOf data:Lady_Mary_Cecilia_Colman ;
+    :isSiblingOf data:Elizabeth_Margaret_Cator ;
+    :isSisterOf data:Elizabeth_Margaret_Cator .
+
+data:Geoffrey_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Geoffrey_Colman ;
+    :hasChild data:Timothy_Colman ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSon data:Timothy_Colman ;
+    :isAncestorOf data:Timothy_Colman ;
+    :isBloodrelationOf data:Geoffrey_Colman ;
+    :isBrotherOf data:Geoffrey_Colman ;
+    :isFatherOf data:Timothy_Colman ;
+    :isParentOf data:Timothy_Colman ;
+    :isSiblingOf data:Geoffrey_Colman ;
+    :isUncleOf data:Timothy_Colman .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Lady_Mary_Cecilia_Colman ;
+    :hasDaughter data:Lady_Mary_Cecilia_Colman ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :isAncestorOf data:Lady_Mary_Cecilia_Colman ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Lady_Mary_Cecilia_Colman ;
+    :isParentOf data:Lady_Mary_Cecilia_Colman ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Lady_Mary_Cecilia_Colman .
+
+data:Timothy_Colman a :Man,
+        :Person ;
+    :hasAncestor data:Geoffrey_Colman ;
+    :hasBrother data:Timothy_Colman ;
+    :hasFather data:Geoffrey_Colman ;
+    :hasParent data:Geoffrey_Colman ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :isBloodrelationOf data:Timothy_Colman ;
+    :isBrotherOf data:Timothy_Colman ;
+    :isChildOf data:Geoffrey_Colman ;
+    :isSiblingOf data:Timothy_Colman ;
+    :isSonOf data:Geoffrey_Colman .
+
+data:Fergus_Michael_Claude a :Man,
+        :Person ;
+    :hasBrother data:Fergus_Michael_Claude,
+        data:Michael_Albemarle ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSister data:Lady_Mary_Cecilia_Colman,
+        data:Patricia_Maud ;
+    :isBloodrelationOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isBrotherOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isSiblingOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud .
+
+data:Michael_Albemarle a :Man,
+        :Person ;
+    :hasBrother data:Fergus_Michael_Claude,
+        data:Michael_Albemarle ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSister data:Lady_Mary_Cecilia_Colman,
+        data:Patricia_Maud ;
+    :isBloodrelationOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isBrotherOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isSiblingOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud .
+
+data:Patricia_Maud a :Person,
+        :Woman ;
+    :hasBrother data:Fergus_Michael_Claude,
+        data:Michael_Albemarle ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSister data:Lady_Mary_Cecilia_Colman,
+        data:Patricia_Maud ;
+    :isBloodrelationOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isSiblingOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isSisterOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud .
+
+data:Lady_Mary_Cecilia_Colman a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_Margaret_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:Fergus_Michael_Claude,
+        data:Michael_Albemarle ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasParent data:Elizabeth_Margaret_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude,
+        data:Geoffrey_Colman,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Michael_Bowes-Lyon,
+        data:Patricia_Maud,
+        data:Timothy_Colman ;
+    :hasSister data:Lady_Mary_Cecilia_Colman,
+        data:Patricia_Maud ;
+    :isBloodrelationOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isChildOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isDaughterOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud ;
+    :isSisterOf data:Fergus_Michael_Claude,
+        data:Lady_Mary_Cecilia_Colman,
+        data:Michael_Albemarle,
+        data:Patricia_Maud .
+

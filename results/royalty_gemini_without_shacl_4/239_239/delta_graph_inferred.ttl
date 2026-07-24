@@ -1,0 +1,113 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :isAncestorOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Juan_Urquijo a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Teresa ;
+    :hasBrother data:Juan_Urquijo ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :isBloodrelationOf data:Juan_Urquijo ;
+    :isBrotherOf data:Juan_Urquijo ;
+    :isSiblingOf data:Juan_Urquijo .
+
+data:Princess_Teresa a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :hasSister data:Princess_Teresa ;
+    :isAncestorOf data:Juan_Urquijo ;
+    :isBloodrelationOf data:Princess_Teresa ;
+    :isSiblingOf data:Princess_Teresa ;
+    :isSisterOf data:Princess_Teresa .
+
+data:Inaki_Urdangarin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Inaki_Urdangarin ;
+    :hasChild data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :hasDaughter data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :isAncestorOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isBloodrelationOf data:Inaki_Urdangarin ;
+    :isBrotherOf data:Inaki_Urdangarin ;
+    :isFatherOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isParentOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isSiblingOf data:Inaki_Urdangarin ;
+    :isUncleOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon .
+
+data:Infanta_Cristina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :hasDaughter data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :hasSister data:Infanta_Cristina ;
+    :isAncestorOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isAuntOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isBloodrelationOf data:Infanta_Cristina ;
+    :isMotherOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isParentOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isSiblingOf data:Infanta_Cristina ;
+    :isSisterOf data:Infanta_Cristina .
+
+data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,
+        :Woman ;
+    :hasAncestor data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Juan_Carlos_I ;
+    :hasBirthYear "2005-06-05"^^xsd:date ;
+    :hasFather data:Inaki_Urdangarin ;
+    :hasMother data:Infanta_Cristina ;
+    :hasParent data:Inaki_Urdangarin,
+        data:Infanta_Cristina ;
+    :hasRelation data:Inaki_Urdangarin,
+        data:Infanta_Cristina,
+        data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_Urquijo,
+        data:Princess_Teresa ;
+    :hasSister data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isBloodrelationOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isChildOf data:Inaki_Urdangarin,
+        data:Infanta_Cristina ;
+    :isDaughterOf data:Inaki_Urdangarin,
+        data:Infanta_Cristina ;
+    :isSiblingOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon ;
+    :isSisterOf data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon .
+

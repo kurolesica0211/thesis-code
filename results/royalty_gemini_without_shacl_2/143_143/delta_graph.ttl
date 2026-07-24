@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1854 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1874 ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .
+
+data:Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Alexander_II_of_Russia .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman .
+

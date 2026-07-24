@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/140_140",
+  "text_file": "Q2290508.txt",
+  "text_key": "Q2290508",
+  "article": "https://en.wikipedia.org/wiki/Prince_Ferdinand_Pius,_Duke_of_Castro",
+  "article_key": "Prince Ferdinand Pius, Duke of Castro",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
+    "qid": "Q2290508",
+    "label": "Prince Ferdinand Pius, Duke of Calabria"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
+      "qid": "Q2290508",
+      "label": "Prince Ferdinand Pius, Duke of Calabria",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Alfonso-_Count_of_Caserta",
+      "qid": "Q439014",
+      "label": "Prince Alfonso, Count of Caserta",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies",
+      "qid": "Q255400",
+      "label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Filippo_of_the_Two_Sicilies",
+      "qid": "Q3745365",
+      "label": "Prince Filippo of the Two Sicilies",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Gabriel_of_the_Two_Sicilies",
+      "qid": "Q3756709",
+      "label": "Prince Gabriel of the Two Sicilies",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ranieri-_Duke_of_Castro",
+      "qid": "Q1943652",
+      "label": "Prince Ranieri, Duke of Castro",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_Count_of_Caserta",
+      "extracted_local_name": "Alfonso_Count_of_Caserta",
+      "embedding_text": "Alfonso Count of Caserta",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8823529411764706,
+      "ground_truth_uri": "http://example.com/data#Prince_Alfonso-_Count_of_Caserta",
+      "ground_truth_qid": "Q439014",
+      "ground_truth_label": "Prince Alfonso, Count of Caserta",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Alfonso- Count of Caserta",
+      "best_candidate_label": "Prince Alfonso, Count of Caserta",
+      "best_candidate_qid": "Q439014",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8823529411764706
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ferdinand_Pius",
+      "extracted_local_name": "Ferdinand_Pius",
+      "embedding_text": "Ferdinand Pius",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8,
+      "ground_truth_uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
+      "ground_truth_qid": "Q2290508",
+      "ground_truth_label": "Prince Ferdinand Pius, Duke of Calabria",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Ferdinand Pius",
+      "best_candidate_label": "Prince Ferdinand Pius, Duke of Calabria",
+      "best_candidate_qid": "Q2290508",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ferdinand_II_of_Two_Sicilies",
+      "extracted_local_name": "Ferdinand_II_of_Two_Sicilies",
+      "embedding_text": "Ferdinand II of Two Sicilies",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinand Prinz von Bourbon-Sizilien",
+      "best_candidate_label": "Prince Ferdinand Pius, Duke of Calabria",
+      "best_candidate_qid": "Q2290508",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.65625
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ludwig_III_of_Bavaria",
+      "extracted_local_name": "Ludwig_III_of_Bavaria",
+      "embedding_text": "Ludwig III of Bavaria",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Filippo di Borbone-Due Sicilie",
+      "best_candidate_label": "Prince Filippo of the Two Sicilies",
+      "best_candidate_qid": "Q3745365",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.27450980392156865
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Antonietta",
+      "extracted_local_name": "Maria_Antonietta",
+      "embedding_text": "Maria Antonietta",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria Antonietta of Bourbon-Two Sicilies",
+      "best_candidate_label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
+      "best_candidate_qid": "Q255400",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.49230769230769234
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Ludwiga_Theresia_of_Bavaria",
+      "extracted_local_name": "Maria_Ludwiga_Theresia_of_Bavaria",
+      "embedding_text": "Maria Ludwiga Theresia of Bavaria",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Gabriele di Borbone-Due Sicilie",
+      "best_candidate_label": "Prince Gabriel of the Two Sicilies",
+      "best_candidate_qid": "Q3756709",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.28125
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:BaronessArmgardVonSierstorpffCramm a :Person,
+        :Woman ;
+    :isMotherOf data:PrinceBernhardOfLippeBiesterfeld .
+
+data:Christina a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana .
+
+data:Irene a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana .
+
+data:LeopoldIV a :Man,
+        :Person .
+
+data:LeopoldIV%2Ctarget a :Man ;
+    :isSiblingOf data:PrinceBernhardOfLippe .
+
+data:Margriet a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana .
+
+data:QueenBeatrix a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana .
+
+data:PrinceBernhardOfLippe a :Man,
+        :Person ;
+    :isFatherOf data:PrinceBernhardOfLippeBiesterfeld .
+
+data:QueenJuliana a :Person,
+        :Woman .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man,
+        :Person ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 2004 ;
+    :hasMarriageYear 1937 ;
+    :hasRelation data:QueenJuliana .
+

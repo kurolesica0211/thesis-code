@@ -1,0 +1,306 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Edward_Duke_of_Kent a :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra .
+
+data:David_Ogilvy_12th_Earl_of_Airlie a :Ancestor,
+        :Man ;
+    :hasBrother data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :hasChild data:Sir_Angus_Ogilvy ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSon data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:Sir_Angus_Ogilvy ;
+    :isBloodrelationOf data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :isBrotherOf data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :isFatherOf data:Sir_Angus_Ogilvy ;
+    :isParentOf data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :isUncleOf data:Sir_Angus_Ogilvy .
+
+data:Lady_Alexandra_Coke a :Ancestor,
+        :Woman ;
+    :hasChild data:Sir_Angus_Ogilvy ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Lady_Alexandra_Coke ;
+    :hasSon data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:Sir_Angus_Ogilvy ;
+    :isAuntOf data:Sir_Angus_Ogilvy ;
+    :isBloodrelationOf data:Lady_Alexandra_Coke ;
+    :isMotherOf data:Sir_Angus_Ogilvy ;
+    :isParentOf data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:Lady_Alexandra_Coke ;
+    :isSisterOf data:Lady_Alexandra_Coke .
+
+data:George_V a :Ancestor,
+        :Man ;
+    :hasBrother data:George_V ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Prince_George_Duke_of_Kent .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Queen_Mary a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isAuntOf data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Sir_Angus_Ogilvy a :Man ;
+    :hasAncestor data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:Lady_Alexandra_Coke ;
+    :hasBrother data:Sir_Angus_Ogilvy ;
+    :hasDeathYear 2004 ;
+    :hasFather data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :hasMother data:Lady_Alexandra_Coke ;
+    :hasParent data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:Lady_Alexandra_Coke ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :isBloodrelationOf data:Sir_Angus_Ogilvy ;
+    :isBrotherOf data:Sir_Angus_Ogilvy ;
+    :isChildOf data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:Lady_Alexandra_Coke ;
+    :isSiblingOf data:Sir_Angus_Ogilvy ;
+    :isSonOf data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:Lady_Alexandra_Coke .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBrother data:Prince_George_Duke_of_Kent ;
+    :hasChild data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George_Duke_of_Kent ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Princess_Alexandra ;
+    :isParentOf data:Princess_Alexandra ;
+    :isSiblingOf data:Prince_George_Duke_of_Kent ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Princess_Alexandra .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Alexandra ;
+    :isAuntOf data:Princess_Alexandra ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Alexandra ;
+    :isParentOf data:Princess_Alexandra ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Alexandra a :Woman ;
+    :hasAncestor data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear 1963 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:David_Ogilvy_12th_Earl_of_Airlie,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Lady_Alexandra_Coke,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra ;
+    :isSisterOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra .
+

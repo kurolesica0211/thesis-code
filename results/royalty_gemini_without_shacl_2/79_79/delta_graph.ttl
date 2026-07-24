@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_of_Bourbon_Parma a :Person,
+        :Woman ;
+    :hasMarriageYear 1948 .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Constantine_I_of_Greece .
+
+data:Nicolae_of_Romania a :Man,
+        :Person ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:Alexander_I_of_Greece a :Man,
+        :Person .
+
+data:Carol_II_of_Romania a :Man,
+        :Person ;
+    :hasMarriageYear 1921 ;
+    :hasSister data:Elisabeth_of_Romania .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasMother data:Marie_of_Romania ;
+    :hasSister data:Maria_of_Yugoslavia .
+
+data:George_II_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasSister data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :knownAs "Helen of Greece and Denmark"^^xsd:string .
+
+data:Ileana_of_Romania a :Person,
+        :Woman .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Katherine_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Maria_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasSister data:Ileana_of_Romania .
+
+data:Marie_of_Romania a :Person,
+        :Woman .
+
+data:Michael_I_of_Romania a :Man,
+        :Person ;
+    :hasFather data:Carol_II_of_Romania ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Helen_of_Greece_and_Denmark .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Victoria_Dowager_Empress .
+
+data:Victoria_Dowager_Empress a :Person,
+        :Woman .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+

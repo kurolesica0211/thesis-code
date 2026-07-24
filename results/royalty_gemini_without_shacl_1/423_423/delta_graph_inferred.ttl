@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kirby_William_Patterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Kirby_William_Patterson ;
+    :hasDeathYear 1984 ;
+    :hasRelation data:Kirby_William_Patterson ;
+    :isBloodrelationOf data:Kirby_William_Patterson ;
+    :isBrotherOf data:Kirby_William_Patterson ;
+    :isSiblingOf data:Kirby_William_Patterson .
+
+data:Princess_Viktoria_Marina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1981 ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSister data:Princess_Viktoria_Marina ;
+    :isBloodrelationOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina ;
+    :isSiblingOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina ;
+    :isSisterOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina .
+
+data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasChild data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :hasDaughter data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSister data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isAncestorOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isAuntOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isMotherOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isParentOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isSiblingOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isSisterOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .
+
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasChild data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :hasDaughter data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :hasDeathYear 1951 ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :isAncestorOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isBrotherOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isFatherOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isParentOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isSiblingOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isUncleOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein .
+
+data:Prince_Adalbert_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Prince_Adalbert_of_Prussia ;
+    :hasChild data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1948 ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSon data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isBloodrelationOf data:Prince_Adalbert_of_Prussia ;
+    :isBrotherOf data:Prince_Adalbert_of_Prussia ;
+    :isFatherOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Prince_Adalbert_of_Prussia ;
+    :isUncleOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Princess_Adelheid_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasChild data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSister data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasSon data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isAuntOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isBloodrelationOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isMotherOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Adelheid_of_Saxe-Meiningen .
+
+data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasMother data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasParent data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSister data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isChildOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isDaughterOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isSiblingOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :isSisterOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein .
+
+data:Prince_Wilhelm_Victor_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Prince_Adalbert_of_Prussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasParent data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Princess_Viktoria_Marina ;
+    :hasSister data:Princess_Viktoria_Marina ;
+    :isBloodrelationOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina ;
+    :isBrotherOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina ;
+    :isChildOf data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isSiblingOf data:Prince_Wilhelm_Victor_of_Prussia,
+        data:Princess_Viktoria_Marina ;
+    :isSonOf data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelheid_of_Saxe-Meiningen .
+

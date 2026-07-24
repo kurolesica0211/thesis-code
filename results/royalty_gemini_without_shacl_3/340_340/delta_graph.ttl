@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christian_Oscar a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_Ernest_Augustus_1914 a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_George_William a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_Welf_Henry a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Princess_Frederica a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
+
+data:Crown_Prince_Wilhelm a :Man,
+        :Person .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person .
+
+data:Prince_Joachim a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman ;
+    :alsoKnownAs "Viktoria Luise Adelheid Mathilde Charlotte"^^xsd:string ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Ernest_Augustus_of_Hanover ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :knownAs "Sissy"^^xsd:string .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+

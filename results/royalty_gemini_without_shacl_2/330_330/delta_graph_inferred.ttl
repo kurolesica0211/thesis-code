@@ -1,0 +1,156 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_II a :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Lady_Christian_Norah_Dawson-Damer a :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1959 ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSister data:Lady_Christian_Norah_Dawson-Damer ;
+    :isBloodrelationOf data:Lady_Christian_Norah_Dawson-Damer ;
+    :isSiblingOf data:Lady_Christian_Norah_Dawson-Damer ;
+    :isSisterOf data:Lady_Christian_Norah_Dawson-Damer .
+
+data:William_Frederick_Martin a :Man ;
+    :hasBrother data:William_Frederick_Martin ;
+    :hasDeathYear 1947 ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :isBloodrelationOf data:William_Frederick_Martin ;
+    :isBrotherOf data:William_Frederick_Martin ;
+    :isSiblingOf data:William_Frederick_Martin .
+
+data:Cecilia_Bowes-Lyon a :Ancestor,
+        :Woman ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSister data:Cecilia_Bowes-Lyon ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon ;
+    :isAuntOf data:Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon ;
+    :isMotherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon ;
+    :isSisterOf data:Cecilia_Bowes-Lyon .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Fergus_Bowes-Lyon .
+
+data:Elizabeth_Bowes-Lyon a :Woman ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon .
+
+data:John_Bowes-Lyon a :Man ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon .
+
+data:Fergus_Bowes-Lyon a :Man ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :hasParent data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:William_Frederick_Martin ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isChildOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSonOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon .
+

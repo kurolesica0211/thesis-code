@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :isSiblingOf data:Victoria_de_Marichalar_y_Borb%C3%B3n ;\n    :isSonOf data:Infanta_Elena_Duchess_of_Lugo,\n        data:Jaime_de_Marichalar ;\n    :knownAs \"Froil\u00e1n\"^^xsd:string .\n\ndata:King_Felipe_VI a :Man,\n        :Person .\n\ndata:Amalio_de_Marichalar_y_Bruguera a :Man,\n        :Person .\n\ndata:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Person,\n        :Woman .\n\ndata:Infanta_Elena_Duchess_of_Lugo a :Person,\n        :Woman ;\n    :isSonOf data:King_Juan_Carlos_I,\n        data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person ;\n    :isSonOf data:Amalio_de_Marichalar_y_Bruguera,\n        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Queen_Sof%C3%ADa_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :isSiblingOf data:Victoria_de_Marichalar_y_Borb%C3%B3n ;\n    :isSonOf data:Infanta_Elena_Duchess_of_Lugo,\n        data:Jaime_de_Marichalar ;\n    :knownAs \"Froil\u00e1n\"^^xsd:string .\n\ndata:King_Felipe_VI a :Man,\n        :Person .\n\ndata:Amalio_de_Marichalar_y_Bruguera a :Man,\n        :Person .\n\ndata:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Person,\n        :Woman .\n\ndata:Infanta_Elena_Duchess_of_Lugo a :Person,\n        :Woman ;\n    :isSonOf data:King_Juan_Carlos_I,\n        data:Queen_Sof%C3%ADa_of_Spain .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person ;\n    :isSonOf data:Amalio_de_Marichalar_y_Bruguera,\n        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Queen_Sof%C3%ADa_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman .\n\n"
+    }
+]

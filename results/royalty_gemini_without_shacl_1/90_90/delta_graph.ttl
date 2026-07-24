@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina a :Woman ;
+    :hasBirthYear 1906 ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Nicholas ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna ;
+    :hasRelation data:Prince_George_Duke_of_Kent ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Olga .
+
+data:George_I_of_Greece a :Man .
+
+data:Grand_Duchess_Elena_Vladimirovna a :Woman .
+
+data:King_George_V a :Man .
+
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Prince_Nicholas a :Man ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Queen_Olga .
+
+data:Princess_Elizabeth a :Woman .
+
+data:Princess_Olga a :Woman .
+
+data:Queen_Mary a :Woman .
+
+data:Queen_Olga a :Woman .
+
+data:Alexandra a :Woman .
+
+data:Edward a :Man .
+
+data:Michael a :Man .
+

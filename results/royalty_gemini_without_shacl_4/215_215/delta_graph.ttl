@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountessAugusta a :Woman ;
+    :isMotherOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld .
+
+data:DukeFrancis a :Man ;
+    :isFatherOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld .
+
+data:QueenVictoria a :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasMarriageYear 1840 ;
+    :hasRelation data:PrinceAlbert .
+
+data:DukeErnestI a :Man ;
+    :isFatherOf data:PrinceAlbert .
+
+data:PrinceAlbert a :Man ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1861 .
+
+data:PrincessVictoriaOfSaxeCoburgSaalfeld a :Woman ;
+    :isMotherOf data:QueenVictoria .
+

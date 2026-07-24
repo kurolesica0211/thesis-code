@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_William_I_of_Prussia a :Man,
+        :Person .
+
+data:Georg_Friedrich_Prince_of_Prussia a :Man,
+        :Person ;
+    :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+data:Grand_Duke_Kyril_Vladimirovich a :Man,
+        :Person ;
+    :isFatherOf data:Kira_Kirillovna .
+
+data:Prince_Ferdinand_of_Hohenzollern a :Man,
+        :Person .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Princess_Victoria_Melita a :Person,
+        :Woman ;
+    :isMotherOf data:Kira_Kirillovna .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:William_German_Crown_Prince a :Man,
+        :Person ;
+    :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Prince_Louis_Ferdinand_Jr a :Man,
+        :Person ;
+    :isSonOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Kira_Kirillovna a :Person,
+        :Woman .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1994 ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Kira_Kirillovna .
+

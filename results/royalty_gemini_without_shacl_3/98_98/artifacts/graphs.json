@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isChildOf data:Prince_Constantijn,\n        data:Princess_Laurentien .\n\ndata:Prince_Claus a :Man,\n        :Person .\n\ndata:Prince_Constantijn a :Man,\n        :Person ;\n    :isChildOf data:Prince_Claus,\n        data:Queen_Beatrix .\n\ndata:Princess_Laurentien a :Person,\n        :Woman .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isChildOf data:Prince_Constantijn,\n        data:Princess_Laurentien .\n\ndata:Prince_Claus a :Man,\n        :Person .\n\ndata:Prince_Constantijn a :Man,\n        :Person ;\n    :isChildOf data:Prince_Claus,\n        data:Queen_Beatrix .\n\ndata:Princess_Laurentien a :Person,\n        :Woman .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\n"
+    }
+]

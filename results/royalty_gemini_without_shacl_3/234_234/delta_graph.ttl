@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasRelation data:Sofia ;
+    :isSonOf data:Juan_Count_of_Barcelona .
+
+data:Pilar a :Person,
+        :Woman ;
+    :isChildOf data:Juan_Count_of_Barcelona .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man,
+        :Person .
+
+data:Maria_de_las_Mercedes a :Person,
+        :Woman .
+
+data:Sofia a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia .
+

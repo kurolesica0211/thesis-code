@@ -1,0 +1,327 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LeopoldIV a :Man,
+        :Person ;
+    :hasBrother data:LeopoldIV ;
+    :hasRelation data:LeopoldIV ;
+    :isBloodrelationOf data:LeopoldIV ;
+    :isBrotherOf data:LeopoldIV ;
+    :isSiblingOf data:LeopoldIV .
+
+data:LeopoldIV%2Ctarget a :Man ;
+    :hasBrother data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :hasRelation data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld ;
+    :isBloodrelationOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isBrotherOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isSiblingOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isUncleOf data:PrinceBernhardOfLippeBiesterfeld .
+
+data:BaronessArmgardVonSierstorpffCramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix ;
+    :hasSister data:BaronessArmgardVonSierstorpffCramm ;
+    :hasSon data:PrinceBernhardOfLippeBiesterfeld ;
+    :isAncestorOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix ;
+    :isAuntOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isBloodrelationOf data:BaronessArmgardVonSierstorpffCramm ;
+    :isMotherOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isParentOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isSiblingOf data:BaronessArmgardVonSierstorpffCramm ;
+    :isSisterOf data:BaronessArmgardVonSierstorpffCramm .
+
+data:PrinceBernhardOfLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :hasChild data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasRelation data:Christina,
+        data:Irene,
+        data:LeopoldIV%2Ctarget,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix ;
+    :hasSon data:PrinceBernhardOfLippeBiesterfeld ;
+    :isAncestorOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isBrotherOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isFatherOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isParentOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isSiblingOf data:LeopoldIV%2Ctarget,
+        data:PrinceBernhardOfLippe ;
+    :isUncleOf data:PrinceBernhardOfLippeBiesterfeld .
+
+data:QueenJuliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :hasDaughter data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :hasRelation data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:QueenJuliana ;
+    :isAncestorOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isAuntOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:QueenJuliana ;
+    :isMotherOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isParentOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSiblingOf data:QueenJuliana ;
+    :isSisterOf data:QueenJuliana .
+
+data:Christina a :Person,
+        :Woman ;
+    :hasAncestor data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasMother data:QueenJuliana ;
+    :hasParent data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isChildOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isSiblingOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSisterOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasAncestor data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasMother data:QueenJuliana ;
+    :hasParent data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isChildOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isSiblingOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSisterOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasMother data:QueenJuliana ;
+    :hasParent data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isChildOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isSiblingOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSisterOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix .
+
+data:QueenBeatrix a :Person,
+        :Woman ;
+    :hasAncestor data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasMother data:QueenJuliana ;
+    :hasParent data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isChildOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenJuliana ;
+    :isSiblingOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSisterOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasChild data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :hasDaughter data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :hasDeathYear 2004 ;
+    :hasFather data:PrinceBernhardOfLippe ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:BaronessArmgardVonSierstorpffCramm ;
+    :hasParent data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe ;
+    :hasRelation data:BaronessArmgardVonSierstorpffCramm,
+        data:Christina,
+        data:Irene,
+        data:LeopoldIV%2Ctarget,
+        data:Margriet,
+        data:PrinceBernhardOfLippe,
+        data:PrinceBernhardOfLippeBiesterfeld,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :isAncestorOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isBrotherOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isChildOf data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe ;
+    :isFatherOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isParentOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix ;
+    :isSiblingOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isSonOf data:BaronessArmgardVonSierstorpffCramm,
+        data:PrinceBernhardOfLippe ;
+    :isUncleOf data:Christina,
+        data:Irene,
+        data:Margriet,
+        data:QueenBeatrix .
+

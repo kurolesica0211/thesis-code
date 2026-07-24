@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MargaretRhodes a :Person,
+        :Woman ;
+    :formerlyKnownAs "Margaret Elphinstone"^^xsd:string ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2016 ;
+    :hasMarriageYear 1950 ;
+    :hasRelation data:DenysGravenorRhodes ;
+    :isDaughterOf data:LadyMaryBowesLyon,
+        data:LordElphinstone16th .
+
+data:DenysGravenorRhodes a :Man,
+        :Person .
+
+data:LadyMaryBowesLyon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:LordElphinstone16th a :Ancestor,
+        :Man,
+        :Person .
+

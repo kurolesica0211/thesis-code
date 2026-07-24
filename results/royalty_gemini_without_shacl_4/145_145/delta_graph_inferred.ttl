@@ -1,0 +1,126 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingFrederikX a :Man ;
+    :hasBrother data:KingFrederikX ;
+    :hasRelation data:KingFrederikX ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isSiblingOf data:KingFrederikX .
+
+data:PrinceJoachim a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :hasChild data:CountHenrikOfMonpezat ;
+    :hasRelation data:CountHenrikOfMonpezat,
+        data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :hasSon data:CountHenrikOfMonpezat ;
+    :isAncestorOf data:CountHenrikOfMonpezat ;
+    :isBloodrelationOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isBrotherOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isFatherOf data:CountHenrikOfMonpezat ;
+    :isParentOf data:CountHenrikOfMonpezat ;
+    :isSiblingOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isUncleOf data:CountHenrikOfMonpezat .
+
+data:PrincessMarie a :Ancestor,
+        :Woman ;
+    :hasChild data:CountHenrikOfMonpezat ;
+    :hasRelation data:CountHenrikOfMonpezat,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasSister data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasSon data:CountHenrikOfMonpezat ;
+    :isAncestorOf data:CountHenrikOfMonpezat ;
+    :isAuntOf data:CountHenrikOfMonpezat ;
+    :isBloodrelationOf data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isMotherOf data:CountHenrikOfMonpezat ;
+    :isParentOf data:CountHenrikOfMonpezat ;
+    :isSiblingOf data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isSisterOf data:PrincessMarie,
+        data:QueenMargretheII .
+
+data:PrinceHenrik a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :hasChild data:CountHenrikOfMonpezat ;
+    :hasRelation data:CountHenrikOfMonpezat,
+        data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:QueenMargretheII ;
+    :hasSon data:CountHenrikOfMonpezat ;
+    :isAncestorOf data:CountHenrikOfMonpezat ;
+    :isBloodrelationOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isBrotherOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isFatherOf data:CountHenrikOfMonpezat ;
+    :isParentOf data:CountHenrikOfMonpezat ;
+    :isSiblingOf data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :isUncleOf data:CountHenrikOfMonpezat .
+
+data:QueenMargretheII a :Ancestor,
+        :Woman ;
+    :hasChild data:CountHenrikOfMonpezat ;
+    :hasRelation data:CountHenrikOfMonpezat,
+        data:PrinceHenrik,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasSister data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasSon data:CountHenrikOfMonpezat ;
+    :isAncestorOf data:CountHenrikOfMonpezat ;
+    :isAuntOf data:CountHenrikOfMonpezat ;
+    :isBloodrelationOf data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isMotherOf data:CountHenrikOfMonpezat ;
+    :isParentOf data:CountHenrikOfMonpezat ;
+    :isSiblingOf data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isSisterOf data:PrincessMarie,
+        data:QueenMargretheII .
+
+data:CountHenrikOfMonpezat a :Man ;
+    :hasAncestor data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasBirthYear 2009 ;
+    :hasBrother data:CountHenrikOfMonpezat ;
+    :hasFather data:PrinceHenrik,
+        data:PrinceJoachim ;
+    :hasMother data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasParent data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :hasRelation data:CountHenrikOfMonpezat,
+        data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isBloodrelationOf data:CountHenrikOfMonpezat ;
+    :isBrotherOf data:CountHenrikOfMonpezat ;
+    :isChildOf data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :isSiblingOf data:CountHenrikOfMonpezat ;
+    :isSonOf data:PrinceHenrik,
+        data:PrinceJoachim,
+        data:PrincessMarie,
+        data:QueenMargretheII ;
+    :knownAs "His Excellency Count Henrik of Monpezat"^^xsd:string .
+

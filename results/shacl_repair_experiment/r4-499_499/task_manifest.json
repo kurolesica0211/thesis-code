@@ -1,0 +1,7 @@
+{
+    "entry_id": "r4-499_499",
+    "done_reason": "llm_finished",
+    "artifacts_dir": "results/shacl_repair_experiment/r4-499_499/artifacts",
+    "results": "results/shacl_repair_experiment/r4-499_499/final_data_graph.ttl",
+    "iterations": 3
+}

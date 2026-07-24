@@ -1,0 +1,119 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/145_145",
+  "text_file": "Q2317090.txt",
+  "text_key": "Q2317090",
+  "article": "https://en.wikipedia.org/wiki/Count_Henrik_of_Monpezat",
+  "article_key": "Count Henrik of Monpezat",
+  "main_entity": {
+    "uri": "http://example.com/data#Count_Henrik_of_Monpezat",
+    "qid": "Q2317090",
+    "label": "Count Henrik of Monpezat"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Count_Henrik_of_Monpezat",
+      "qid": "Q2317090",
+      "label": "Count Henrik of Monpezat",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Count_Henrik_of_Monpezat",
+      "extracted_local_name": "Count_Henrik_of_Monpezat",
+      "embedding_text": "Count Henrik of Monpezat",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Count_Henrik_of_Monpezat",
+      "ground_truth_qid": "Q2317090",
+      "ground_truth_label": "Count Henrik of Monpezat",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Count Henrik of Monpezat",
+      "best_candidate_label": "Count Henrik of Monpezat",
+      "best_candidate_qid": "Q2317090",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Henrik",
+      "extracted_local_name": "Prince_Henrik",
+      "embedding_text": "Prince Henrik",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Joachim",
+      "extracted_local_name": "Prince_Joachim",
+      "embedding_text": "Prince Joachim",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Marie",
+      "extracted_local_name": "Princess_Marie",
+      "embedding_text": "Princess Marie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Margrethe_II",
+      "extracted_local_name": "Queen_Margrethe_II",
+      "embedding_text": "Queen Margrethe II",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

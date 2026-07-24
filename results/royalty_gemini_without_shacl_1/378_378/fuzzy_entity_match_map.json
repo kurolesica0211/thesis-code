@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/378_378",
+  "text_file": "Q62385.txt",
+  "text_key": "Q62385",
+  "article": "https://en.wikipedia.org/wiki/Carl,_Duke_of_W%C3%BCrttemberg",
+  "article_key": "Carl, Duke of Württemberg",
+  "main_entity": {
+    "uri": "http://example.com/data#Duke_Carl-_Duke_of_Württemberg",
+    "qid": "Q62385",
+    "label": "Duke Carl, Duke of Württemberg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duke_Carl-_Duke_of_Württemberg",
+      "qid": "Q62385",
+      "label": "Duke Carl, Duke of Württemberg",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Duchess_Rosa-_Duchess_of_Württemberg",
+      "qid": "Q84971",
+      "label": "Duchess Rosa, Duchess of Württemberg",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Philipp_Albrecht-_Duke_of_Württemberg",
+      "qid": "Q62965",
+      "label": "Philipp Albrecht, Duke of Württemberg",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Philipp_Albrecht_Duke_of_W%C3%BCrttemberg",
+      "extracted_local_name": "Philipp_Albrecht_Duke_of_W%C3%BCrttemberg",
+      "embedding_text": "Philipp Albrecht Duke of Württemberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9883720930232558,
+      "ground_truth_uri": "http://example.com/data#Philipp_Albrecht-_Duke_of_Württemberg",
+      "ground_truth_qid": "Q62965",
+      "ground_truth_label": "Philipp Albrecht, Duke of Württemberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Philipp Albrecht- Duke of Württemberg",
+      "best_candidate_label": "Philipp Albrecht, Duke of Württemberg",
+      "best_candidate_qid": "Q62965",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9883720930232558
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carl_Herzog_von_W%C3%BCrttemberg",
+      "extracted_local_name": "Carl_Herzog_von_W%C3%BCrttemberg",
+      "embedding_text": "Carl Herzog von Württemberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8571428571428572,
+      "ground_truth_uri": "http://example.com/data#Duke_Carl-_Duke_of_Württemberg",
+      "ground_truth_qid": "Q62385",
+      "ground_truth_label": "Duke Carl, Duke of Württemberg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Karl Maria Herzog von Württemberg",
+      "best_candidate_label": "Duke Carl, Duke of Württemberg",
+      "best_candidate_qid": "Q62385",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8571428571428572
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ludwig",
+      "extracted_local_name": "Ludwig",
+      "embedding_text": "Ludwig",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duchess Rosa- Duchess of Württemberg",
+      "best_candidate_label": "Duchess Rosa, Duchess of Württemberg",
+      "best_candidate_qid": "Q84971",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.19047619047619047
+    },
+    {
+      "extracted_uri": "http://example.org/data/Rosa_of_Austria_Princess_of_Tuscany",
+      "extracted_local_name": "Rosa_of_Austria_Princess_of_Tuscany",
+      "embedding_text": "Rosa of Austria Princess of Tuscany",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duchess Rosa- Duchess of Württemberg",
+      "best_candidate_label": "Duchess Rosa, Duchess of Württemberg",
+      "best_candidate_qid": "Q84971",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

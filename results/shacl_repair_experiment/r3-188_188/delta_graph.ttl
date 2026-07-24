@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alfonso_XII_of_Spain a :Ancestor .
+
+data:Infanta_Maria_de_la_Paz_of_Spain a :Ancestor .
+
+data:Maria_Christina_of_Austria a :Ancestor .
+
+data:Prince_Ludwig_Ferdinand_of_Bavaria a :Ancestor .
+

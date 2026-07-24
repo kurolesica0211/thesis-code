@@ -1,0 +1,7 @@
+{
+    "entry_id": "base-344_344",
+    "done_reason": "max_iter_reached",
+    "artifacts_dir": "results/shacl_repair_experiment/base-344_344/artifacts",
+    "results": "results/shacl_repair_experiment/base-344_344/final_data_graph.ttl",
+    "iterations": 20
+}

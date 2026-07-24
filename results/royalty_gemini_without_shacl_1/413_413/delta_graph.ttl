@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Borbon_son a :Man ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1979 ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein .
+
+data:Gonzalo_de_Borbon_son a :Man ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_Prince_of_Asturias a :Man .
+
+data:Alfonso_XIII a :Man .
+
+data:Infanta_Beatriz a :Woman .
+
+data:Infanta_Maria_Cristina a :Woman .
+
+data:Infante_Gonzalo a :Man .
+
+data:Infante_Juan a :Man .
+
+data:Juan_Carlos_I a :Man .
+
+data:Luise_Amalia_Klein a :Woman .
+
+data:Otto_Eugen_Tiedemann a :Man .
+
+data:Victoria_Eugenie_of_Battenberg a :Woman .
+
+data:Emmanuelle_de_Dampierre a :Woman .
+
+data:Infante_Jaime a :Man ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Juan .
+

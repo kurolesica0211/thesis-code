@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lu%C3%ADsFilipe a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1908 ;\n    :hasFather data:CarlosI ;\n    :hasMother data:Am%C3%A9lieDOrl%C3%A9ans .\n\ndata:ManuelII a :Man,\n        :Person ;\n    :hasFather data:CarlosI ;\n    :hasMother data:Am%C3%A9lieDOrl%C3%A9ans .\n\ndata:PatriciaOfConnaught a :Person,\n        :Woman ;\n    :hasFather data:PrinceArthur ;\n    :hasMother data:LouiseMargaretOfPrussia .\n\ndata:PrinceAlbert a :Man,\n        :Person .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:LouiseMargaretOfPrussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADsI a :Man,\n        :Person .\n\ndata:PrinceArthur a :Man,\n        :Person .\n\ndata:Am%C3%A9lieDOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:CarlosI a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADsI .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lu%C3%ADsFilipe a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1908 ;\n    :hasFather data:CarlosI ;\n    :hasMother data:Am%C3%A9lieDOrl%C3%A9ans .\n\ndata:ManuelII a :Man,\n        :Person ;\n    :hasFather data:CarlosI ;\n    :hasMother data:Am%C3%A9lieDOrl%C3%A9ans .\n\ndata:PatriciaOfConnaught a :Person,\n        :Woman ;\n    :hasFather data:PrinceArthur ;\n    :hasMother data:LouiseMargaretOfPrussia .\n\ndata:PrinceAlbert a :Man,\n        :Person .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:LouiseMargaretOfPrussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADsI a :Man,\n        :Person .\n\ndata:PrinceArthur a :Man,\n        :Person .\n\ndata:Am%C3%A9lieDOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:CarlosI a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADsI .\n\n"
+    }
+]

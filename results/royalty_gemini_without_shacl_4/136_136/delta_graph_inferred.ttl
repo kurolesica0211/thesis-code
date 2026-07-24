@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Werner_Rosendorff a :Man,
+        :Person ;
+    :hasBrother data:Werner_Rosendorff ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :isBloodrelationOf data:Werner_Rosendorff ;
+    :isBrotherOf data:Werner_Rosendorff ;
+    :isSiblingOf data:Werner_Rosendorff .
+
+data:Karla_Franziska_Oheim a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Armgard_Weygand ;
+    :hasDaughter data:Armgard_Weygand ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :hasSister data:Karla_Franziska_Oheim ;
+    :isAncestorOf data:Armgard_Weygand ;
+    :isAuntOf data:Armgard_Weygand ;
+    :isBloodrelationOf data:Karla_Franziska_Oheim ;
+    :isMotherOf data:Armgard_Weygand ;
+    :isParentOf data:Armgard_Weygand ;
+    :isSiblingOf data:Karla_Franziska_Oheim ;
+    :isSisterOf data:Karla_Franziska_Oheim .
+
+data:Major_Friedrich_Weygand a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Major_Friedrich_Weygand ;
+    :hasChild data:Armgard_Weygand ;
+    :hasDaughter data:Armgard_Weygand ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :isAncestorOf data:Armgard_Weygand ;
+    :isBloodrelationOf data:Major_Friedrich_Weygand ;
+    :isBrotherOf data:Major_Friedrich_Weygand ;
+    :isFatherOf data:Armgard_Weygand ;
+    :isParentOf data:Armgard_Weygand ;
+    :isSiblingOf data:Major_Friedrich_Weygand ;
+    :isUncleOf data:Armgard_Weygand .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :hasSister data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAuntOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Kaiser_Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kaiser_Wilhelm_II ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Kaiser_Wilhelm_II ;
+    :isBrotherOf data:Kaiser_Wilhelm_II ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Kaiser_Wilhelm_II ;
+    :isUncleOf data:Prince_August_Wilhelm_of_Prussia .
+
+data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Kaiser_Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasFather data:Kaiser_Wilhelm_II ;
+    :hasParent data:Kaiser_Wilhelm_II ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isChildOf data:Kaiser_Wilhelm_II ;
+    :isFatherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSonOf data:Kaiser_Wilhelm_II ;
+    :isUncleOf data:Prince_Alexander_Ferdinand_of_Prussia .
+
+data:Armgard_Weygand a :Person,
+        :Woman ;
+    :hasAncestor data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand ;
+    :hasFather data:Major_Friedrich_Weygand ;
+    :hasMother data:Karla_Franziska_Oheim ;
+    :hasParent data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :hasSister data:Armgard_Weygand ;
+    :isBloodrelationOf data:Armgard_Weygand ;
+    :isChildOf data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand ;
+    :isDaughterOf data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand ;
+    :isSiblingOf data:Armgard_Weygand ;
+    :isSisterOf data:Armgard_Weygand .
+
+data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Kaiser_Wilhelm_II,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasDeathYear 1985 ;
+    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Armgard_Weygand,
+        data:Kaiser_Wilhelm_II,
+        data:Karla_Franziska_Oheim,
+        data:Major_Friedrich_Weygand,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Werner_Rosendorff ;
+    :isBloodrelationOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isChildOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSiblingOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSonOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+

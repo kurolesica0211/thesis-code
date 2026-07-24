@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GustafVIAdolf a :Man,
+        :Person ;
+    :hasBrother data:GustafVIAdolf ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isBloodrelationOf data:GustafVIAdolf ;
+    :isBrotherOf data:GustafVIAdolf ;
+    :isSiblingOf data:GustafVIAdolf .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:LouiseMountbatten ;
+    :hasDaughter data:LouiseMountbatten ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isAncestorOf data:LouiseMountbatten ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isFatherOf data:LouiseMountbatten ;
+    :isParentOf data:LouiseMountbatten ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isUncleOf data:LouiseMountbatten .
+
+data:PrincessVictoriaOfHesse a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LouiseMountbatten ;
+    :hasDaughter data:LouiseMountbatten ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:PrincessVictoriaOfHesse ;
+    :isAncestorOf data:LouiseMountbatten ;
+    :isAuntOf data:LouiseMountbatten ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesse ;
+    :isMotherOf data:LouiseMountbatten ;
+    :isParentOf data:LouiseMountbatten ;
+    :isSiblingOf data:PrincessVictoriaOfHesse ;
+    :isSisterOf data:PrincessVictoriaOfHesse .
+
+data:LordMountbatten a :Man,
+        :Person ;
+    :hasBrother data:LordMountbatten ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isBrotherOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:PrincePhilip .
+
+data:PrincePhilip a :Man,
+        :Person ;
+    :hasAncestor data:PrincessAliceOfBattenberg ;
+    :hasBrother data:PrincePhilip ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrincessAliceOfBattenberg ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isBloodrelationOf data:PrincePhilip ;
+    :isBrotherOf data:PrincePhilip ;
+    :isChildOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrincePhilip ;
+    :isSonOf data:PrincessAliceOfBattenberg .
+
+data:PrincessAliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:LordMountbatten ;
+    :hasChild data:PrincePhilip ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :hasSon data:PrincePhilip ;
+    :isAncestorOf data:PrincePhilip ;
+    :isAuntOf data:PrincePhilip ;
+    :isBloodrelationOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isMotherOf data:PrincePhilip ;
+    :isParentOf data:PrincePhilip ;
+    :isSiblingOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg .
+
+data:LouiseMountbatten a :Person,
+        :Woman ;
+    :formerlyKnownAs "Princess Louise of Battenberg"^^xsd:string ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:LordMountbatten ;
+    :hasDeathYear 1965 ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:PrincessVictoriaOfHesse ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasRelation data:GustafVIAdolf,
+        data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isAuntOf data:PrincePhilip ;
+    :isBloodrelationOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isDaughterOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isSiblingOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:LordMountbatten,
+        data:LouiseMountbatten,
+        data:PrincessAliceOfBattenberg ;
+    :knownAs "Lady Louise Mountbatten"^^xsd:string .
+

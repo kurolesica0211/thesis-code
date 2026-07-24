@@ -1,0 +1,199 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mafalda_of_Italy a :Person,
+        :Woman ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Mafalda_of_Italy ;
+    :isBloodrelationOf data:Mafalda_of_Italy ;
+    :isSiblingOf data:Mafalda_of_Italy ;
+    :isSisterOf data:Mafalda_of_Italy .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_Charles_of_Hesse ;
+    :hasChild data:Prince_Richard_of_Hesse ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Richard_of_Hesse ;
+    :isAncestorOf data:Prince_Richard_of_Hesse ;
+    :isBloodrelationOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Prince_Richard_of_Hesse ;
+    :isParentOf data:Prince_Richard_of_Hesse ;
+    :isSiblingOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Prince_Richard_of_Hesse .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Richard_of_Hesse ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_Richard_of_Hesse ;
+    :isAncestorOf data:Prince_Richard_of_Hesse ;
+    :isAuntOf data:Prince_Richard_of_Hesse ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia ;
+    :isMotherOf data:Prince_Richard_of_Hesse ;
+    :isParentOf data:Prince_Richard_of_Hesse ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Man,
+        :Person ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasMarriageYear 1930 ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Philippe_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Richard_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Mafalda_of_Italy,
+        data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Philippe_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia .
+

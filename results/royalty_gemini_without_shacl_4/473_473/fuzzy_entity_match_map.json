@@ -1,0 +1,108 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/473_473",
+  "text_file": "Q78201.txt",
+  "text_key": "Q78201",
+  "article": "https://en.wikipedia.org/wiki/Karl_Friedrich_von_Hohenzollern",
+  "article_key": "Karl Friedrich von Hohenzollern",
+  "main_entity": {
+    "uri": "http://example.com/data#Karl_Friedrich-_Prince_of_Hohenzollern",
+    "qid": "Q78201",
+    "label": "Karl Friedrich, Prince of Hohenzollern"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Karl_Friedrich-_Prince_of_Hohenzollern",
+      "qid": "Q78201",
+      "label": "Karl Friedrich, Prince of Hohenzollern",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margarita_of_Leiningen",
+      "qid": "Q2591944",
+      "label": "Princess Margarita of Leiningen",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Margarita_of_Leiningen",
+      "extracted_local_name": "Margarita_of_Leiningen",
+      "embedding_text": "Margarita of Leiningen",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8333333333333333,
+      "ground_truth_uri": "http://example.com/data#Princess_Margarita_of_Leiningen",
+      "ground_truth_qid": "Q2591944",
+      "ground_truth_label": "Princess Margarita of Leiningen",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Margarita of Leiningen",
+      "best_candidate_label": "Princess Margarita of Leiningen",
+      "best_candidate_qid": "Q2591944",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_Wilhelm_von_Hohenzollern",
+      "extracted_local_name": "Friedrich_Wilhelm_von_Hohenzollern",
+      "embedding_text": "Friedrich Wilhelm von Hohenzollern",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Karl_Friedrich-_Prince_of_Hohenzollern",
+      "ground_truth_qid": "Q78201",
+      "ground_truth_label": "Karl Friedrich, Prince of Hohenzollern",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Karl Friedrich- Prince of Hohenzollern",
+      "best_candidate_label": "Karl Friedrich, Prince of Hohenzollern",
+      "best_candidate_qid": "Q78201",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/Albrecht_von_Hohenzollern",
+      "extracted_local_name": "Albrecht_von_Hohenzollern",
+      "embedding_text": "Albrecht von Hohenzollern",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Karl Friedrich- Prince of Hohenzollern",
+      "best_candidate_label": "Karl Friedrich, Prince of Hohenzollern",
+      "best_candidate_qid": "Q78201",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6666666666666666
+    },
+    {
+      "extracted_uri": "http://example.org/data/Karl_Friedrich_von_Hohenzollern",
+      "extracted_local_name": "Karl_Friedrich_von_Hohenzollern",
+      "embedding_text": "Karl Friedrich von Hohenzollern",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margarita, Princess of Hohenzollern",
+      "best_candidate_label": "Princess Margarita of Leiningen",
+      "best_candidate_qid": "Q2591944",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6666666666666666
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

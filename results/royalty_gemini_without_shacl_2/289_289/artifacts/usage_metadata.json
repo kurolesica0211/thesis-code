@@ -1,0 +1,50 @@
+{
+    "translation": [],
+    "final": [
+        {
+            "iteration": 5,
+            "metadata": [
+                {
+                    "input_tokens": 11717,
+                    "output_tokens": 1057,
+                    "total_tokens": 12774,
+                    "input_token_details": {
+                        "cache_read": 11712
+                    }
+                },
+                {
+                    "input_tokens": 14155,
+                    "output_tokens": 126,
+                    "total_tokens": 14281,
+                    "input_token_details": {
+                        "cache_read": 11712
+                    }
+                },
+                {
+                    "input_tokens": 15071,
+                    "output_tokens": 186,
+                    "total_tokens": 15257,
+                    "input_token_details": {
+                        "cache_read": 11712
+                    }
+                },
+                {
+                    "input_tokens": 16080,
+                    "output_tokens": 145,
+                    "total_tokens": 16225,
+                    "input_token_details": {
+                        "cache_read": 11712
+                    }
+                },
+                {
+                    "input_tokens": 17060,
+                    "output_tokens": 55,
+                    "total_tokens": 17115,
+                    "input_token_details": {
+                        "cache_read": 11712
+                    }
+                }
+            ]
+        }
+    ]
+}

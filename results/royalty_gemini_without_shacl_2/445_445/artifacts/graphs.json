@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasParent data:Prince_Georg_of_Denmark ;\n    :isSiblingOf data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :knownAs \"Lady Elizabeth Georgiana Shakerley\"^^xsd:string .\n\ndata:Geoffrey_Shakerley a :Man,\n        :Person .\n\ndata:Anne_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson_Viscount_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasParent data:Prince_Georg_of_Denmark ;\n    :isSiblingOf data:Patrick_Anson_5th_Earl_of_Lichfield ;\n    :knownAs \"Lady Elizabeth Georgiana Shakerley\"^^xsd:string .\n\ndata:Geoffrey_Shakerley a :Man,\n        :Person .\n\ndata:Anne_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person .\n\ndata:Prince_Georg_of_Denmark a :Man,\n        :Person .\n\ndata:Thomas_Anson_Viscount_Anson a :Man,\n        :Person .\n\n"
+    }
+]

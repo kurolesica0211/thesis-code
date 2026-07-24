@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Nathalie a :Woman ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:Crown_Prince_Gustav_Adolf_of_Sweden a :Man .
+
+data:King_Christian_X a :Man .
+
+data:King_Frederik_X a :Man .
+
+data:Princess_Benedikte a :Woman ;
+    :hasBirthYear 1944 ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Queen_Ingrid ;
+    :isSisterOf data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II .
+
+data:Princess_Margaret_of_Connaught a :Woman .
+
+data:Queen_Alexandrine a :Woman .
+
+data:Queen_Anne-Marie a :Woman ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMother data:Queen_Ingrid ;
+    :isMotherOf data:Constantine_II_of_Greece .
+
+data:Queen_Margrethe_II a :Woman ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMother data:Queen_Ingrid ;
+    :isMotherOf data:King_Frederik_X .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :hasDeathYear 2017 .
+
+data:King_Frederik_IX a :Man ;
+    :hasFather data:King_Christian_X ;
+    :hasMother data:Queen_Alexandrine .
+
+data:Queen_Ingrid a :Woman ;
+    :hasFather data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :hasMother data:Princess_Margaret_of_Connaught .
+

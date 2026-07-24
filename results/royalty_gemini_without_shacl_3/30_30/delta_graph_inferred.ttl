@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_II_of_Monaco a :Man,
+        :Person ;
+    :hasBrother data:Albert_II_of_Monaco ;
+    :hasRelation data:Albert_II_of_Monaco ;
+    :isBloodrelationOf data:Albert_II_of_Monaco ;
+    :isBrotherOf data:Albert_II_of_Monaco ;
+    :isSiblingOf data:Albert_II_of_Monaco ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Princess_Caroline_of_Monaco ;
+    :isMotherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Princess_Caroline_of_Monaco ;
+    :isSisterOf data:Princess_Caroline_of_Monaco .
+
+data:Ernst_August_Hereditary_Prince a :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Princess_Caroline_of_Monaco ;
+    :hasParent data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernst_August_Hereditary_Prince,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isChildOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isDaughterOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover,
+        data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover .
+

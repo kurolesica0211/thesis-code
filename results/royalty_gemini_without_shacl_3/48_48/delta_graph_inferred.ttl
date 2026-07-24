@@ -1,0 +1,298 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Frederick a :Man,
+        :Person ;
+    :hasBrother data:Frederick ;
+    :hasRelation data:Frederick ;
+    :isBloodrelationOf data:Frederick ;
+    :isBrotherOf data:Frederick ;
+    :isSiblingOf data:Frederick .
+
+data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Sophie_of_W%C3%BCrttemberg ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander ;
+    :isAuntOf data:Alexander ;
+    :isBloodrelationOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isMotherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isSisterOf data:Sophie_of_W%C3%BCrttemberg .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_of_Mecklenburg-Schwerin ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet ;
+    :isBloodrelationOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Juliana .
+
+data:Emma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Emma ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isAuntOf data:Wilhelmina ;
+    :isBloodrelationOf data:Emma ;
+    :isMotherOf data:Wilhelmina ;
+    :isParentOf data:Wilhelmina ;
+    :isSiblingOf data:Emma ;
+    :isSisterOf data:Emma .
+
+data:William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_III ;
+    :hasChild data:Alexander,
+        data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Beatrix,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isBloodrelationOf data:William_III ;
+    :isBrotherOf data:William_III ;
+    :isFatherOf data:Alexander,
+        data:Wilhelmina ;
+    :isParentOf data:Alexander,
+        data:Wilhelmina ;
+    :isSiblingOf data:William_III ;
+    :isUncleOf data:Alexander,
+        data:Wilhelmina .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasMother data:Juliana ;
+    :hasParent data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Margriet ;
+    :isChildOf data:Juliana ;
+    :isDaughterOf data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Margriet .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasMother data:Juliana ;
+    :hasParent data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Margriet ;
+    :isChildOf data:Juliana ;
+    :isDaughterOf data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Margriet .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III ;
+    :hasBrother data:Alexander ;
+    :hasFather data:William_III ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :hasParent data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Wilhelmina ;
+    :isBrotherOf data:Alexander,
+        data:Wilhelmina ;
+    :isChildOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III ;
+    :isSiblingOf data:Alexander,
+        data:Wilhelmina ;
+    :isSonOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III ;
+    :isUncleOf data:Juliana .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:William_III ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:Alexander ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasDeathYear 1962 ;
+    :hasFather data:William_III ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Emma ;
+    :hasParent data:Emma,
+        data:William_III ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Wilhelmina ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet ;
+    :isAuntOf data:Juliana ;
+    :isBloodrelationOf data:Alexander,
+        data:Wilhelmina ;
+    :isChildOf data:Emma,
+        data:William_III ;
+    :isDaughterOf data:Emma,
+        data:William_III ;
+    :isMotherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Alexander,
+        data:Wilhelmina ;
+    :isSisterOf data:Alexander,
+        data:Wilhelmina .
+
+data:Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasChild data:Beatrix,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Margriet ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Juliana ;
+    :isAncestorOf data:Beatrix,
+        data:Margriet ;
+    :isAuntOf data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Juliana ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isDaughterOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isMotherOf data:Beatrix,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Margriet ;
+    :isSiblingOf data:Juliana ;
+    :isSisterOf data:Juliana .
+

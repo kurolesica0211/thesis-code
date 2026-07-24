@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Benedikte_of_Denmark a :Woman ;
+    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMarriageYear "1998"^^xsd:string,
+        "2019"^^xsd:string ;
+    :hasMother data:Benedikte_of_Denmark .
+
+data:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .
+
+data:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .
+

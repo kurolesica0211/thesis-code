@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;\n    :hasMother data:Alicia_of_Bourbon-Parma ;\n    :hasRelation data:Anne_of_Orleans ;\n    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias .\n\ndata:Anne_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Henri_Count_of_Paris .\n\ndata:Carlo_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person .\n\ndata:Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 .\n\ndata:Teresa_of_Bourbon-Dos_Sicilias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;\n    :hasMother data:Alicia_of_Bourbon-Parma .\n\ndata:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Mercedes_Princess_of_Asturias .\n\ndata:Alicia_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;\n    :hasMother data:Alicia_of_Bourbon-Parma ;\n    :hasRelation data:Anne_of_Orleans ;\n    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias .\n\ndata:Anne_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Henri_Count_of_Paris .\n\ndata:Carlo_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person .\n\ndata:Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 .\n\ndata:Teresa_of_Bourbon-Dos_Sicilias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;\n    :hasMother data:Alicia_of_Bourbon-Parma .\n\ndata:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Mercedes_Princess_of_Asturias .\n\ndata:Alicia_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
+    }
+]

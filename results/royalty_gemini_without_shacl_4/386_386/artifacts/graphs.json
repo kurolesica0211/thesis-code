@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_Franz_of_Prussia a :Man,\n        :Person ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear \"1916\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1975\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Joachim_of_Prussia ;\n    :hasMarriageYear \"1940\"^^xsd:nonNegativeInteger,\n        \"1946\"^^xsd:nonNegativeInteger,\n        \"1959\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marie_Auguste_of_Anhalt ;\n    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,\n        data:Henriette_of_Schoenaich_Carolath,\n        data:Luise_Dora_Hartmann .\n\ndata:Eitel_Friedrich_of_Prussia a :Man,\n        :Person .\n\ndata:Eva_Maria_Herrera_y_Valdeavellano a :Person,\n        :Woman .\n\ndata:Henriette_of_Schoenaich_Carolath a :Person,\n        :Woman ;\n    :hasMother data:Hermine_Reuss_of_Greiz .\n\ndata:Hermine_Reuss_of_Greiz a :Person,\n        :Woman .\n\ndata:Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasBrother data:Eitel_Friedrich_of_Prussia .\n\ndata:Luise_Dora_Hartmann a :Person,\n        :Woman .\n\ndata:Marie_Auguste_of_Anhalt a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_Franz_of_Prussia a :Man,\n        :Person ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear \"1916\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1975\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Joachim_of_Prussia ;\n    :hasMarriageYear \"1940\"^^xsd:nonNegativeInteger,\n        \"1946\"^^xsd:nonNegativeInteger,\n        \"1959\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marie_Auguste_of_Anhalt ;\n    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,\n        data:Henriette_of_Schoenaich_Carolath,\n        data:Luise_Dora_Hartmann .\n\ndata:Eitel_Friedrich_of_Prussia a :Man,\n        :Person .\n\ndata:Eva_Maria_Herrera_y_Valdeavellano a :Person,\n        :Woman .\n\ndata:Henriette_of_Schoenaich_Carolath a :Person,\n        :Woman ;\n    :hasMother data:Hermine_Reuss_of_Greiz .\n\ndata:Hermine_Reuss_of_Greiz a :Person,\n        :Woman .\n\ndata:Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasBrother data:Eitel_Friedrich_of_Prussia .\n\ndata:Luise_Dora_Hartmann a :Person,\n        :Woman .\n\ndata:Marie_Auguste_of_Anhalt a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    }
+]

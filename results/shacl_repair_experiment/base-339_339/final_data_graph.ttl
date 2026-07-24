@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Friedrich_Franz_Alexander a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Friedrich_Wilhelm a :Man,
+        :Person ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Heinrich_Albert_Johann_Georg a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Michael a :Man,
+        :Person ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Donata_of_Castell_R%C3%BCdenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1950 ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Friedrich_August_of_Oldenburg .
+
+data:Friedrich_August_of_Oldenburg a :Man,
+        :Person ;
+    :hasRelation data:Marie_C%C3%A9cile_of_Prussia .
+
+data:Kira_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Marie_C%C3%A9cile_of_Prussia a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1976 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Donata_of_Castell_R%C3%BCdenhausen ;
+    :hasRelation data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1944 ;
+    :hasDeathYear 1977 ;
+    :hasMother data:Kira_of_Russia .
+
+data:Sophie_of_Isenburg a :Ancestor,
+        :Person,
+        :Woman .
+

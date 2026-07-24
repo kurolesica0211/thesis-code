@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nicholas_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Earl_of_St_Andrews ;
+    :hasFather data:Prince_Edward%2C_Duke_of_Kent ;
+    :hasMother data:Katharine%2C_Duchess_of_Kent ;
+    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski ;
+    :hasSister data:Lady_Helen_Taylor .
+
+data:Earl_of_St_Andrews a :Man,
+        :Person .
+
+data:Katharine%2C_Duchess_of_Kent a :Person,
+        :Woman .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman .
+
+data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski a :Person,
+        :Woman .
+
+data:Prince_Edward%2C_Duke_of_Kent a :Man,
+        :Person .
+

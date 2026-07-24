@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Woman ;
+    :isAncestorOf data:Bertrand_of_Orleans-Braganza,
+        data:Pedro_Carlos_of_Orleans-Braganza ;
+    :isDaughterOf data:Pedro_II_of_Brazil .
+
+data:Ludwig_III_of_Bavaria a :Man ;
+    :isAncestorOf data:Bertrand_of_Orleans-Braganza .
+
+data:Eudes_of_Orleans-Braganza a :Man .
+
+data:Luiz_of_Orleans-Braganza a :Man .
+
+data:Maria_Elisabeth_of_Bavaria a :Woman .
+
+data:Pedro_Carlos_of_Orleans-Braganza a :Man .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Man .
+
+data:Pedro_II_of_Brazil a :Man .
+
+data:Bertrand_of_Orleans-Braganza a :Man ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Maria_Elisabeth_of_Bavaria ;
+    :isSiblingOf data:Eudes_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza .
+

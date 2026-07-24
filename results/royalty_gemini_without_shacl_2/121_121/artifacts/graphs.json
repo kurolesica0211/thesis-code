@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_of_Savoy-Aosta a :Man,\n        :Person ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasFather data:Amedeo_of_Savoy ;\n    :hasMother data:Claude_of_Orl%C3%A9ans .\n\ndata:Emanuele_Filiberto_of_Savoy a :Man,\n        :Person ;\n    :hasFather data:Vittorio_Emanuele_of_Savoy .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Olga_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Michael_of_Greece_and_Denmark .\n\ndata:Amedeo_of_Savoy a :Man,\n        :Person .\n\ndata:Claude_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Vittorio_Emanuele_of_Savoy a :Man,\n        :Person ;\n    :hasDeathYear \"2024\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_of_Savoy-Aosta a :Man,\n        :Person ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasFather data:Amedeo_of_Savoy ;\n    :hasMother data:Claude_of_Orl%C3%A9ans .\n\ndata:Emanuele_Filiberto_of_Savoy a :Man,\n        :Person ;\n    :hasFather data:Vittorio_Emanuele_of_Savoy .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Olga_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Michael_of_Greece_and_Denmark .\n\ndata:Amedeo_of_Savoy a :Man,\n        :Person .\n\ndata:Claude_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Vittorio_Emanuele_of_Savoy a :Man,\n        :Person ;\n    :hasDeathYear \"2024\"^^xsd:positiveInteger .\n\n"
+    }
+]

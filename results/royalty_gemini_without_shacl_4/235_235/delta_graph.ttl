@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Eleonoor_Stammeijer a :Woman .
+
+data:Hans_S%C3%B6hngen a :Man .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Bernhard_van_Vollenhoven a :Man .
+
+data:Prince_Maurits_van_Vollenhoven a :Man .
+
+data:Prince_Pieter-Christiaan_van_Vollenhoven a :Man .
+
+data:Princess_Margriet a :Woman .
+
+data:Aim%C3%A9e_S%C3%B6hngen a :Woman ;
+    :hasFather data:Hans_S%C3%B6hngen ;
+    :hasMother data:Eleonoor_Stammeijer .
+
+data:Prince_Floris_van_Vollenhoven a :Man ;
+    :hasBirthYear "10 April 1975"^^xsd:string ;
+    :hasBrother data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Maurits_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+

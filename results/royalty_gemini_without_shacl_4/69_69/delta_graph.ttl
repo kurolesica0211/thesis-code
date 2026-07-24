@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :isDaughterOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
+
+data:Benedikte_of_Denmark a :Person,
+        :Woman ;
+    :isAuntOf data:Joachim_of_Denmark .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :isFatherOf data:Margrethe_II .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :isBrotherOf data:Joachim_of_Denmark .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :isSonOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
+
+data:Ingrid_of_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Margrethe_II .
+
+data:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,
+        :Person ;
+    :isUncleOf data:Joachim_of_Denmark .
+
+data:Alexandra_Christina_Manley a :Person,
+        :Woman .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :isMotherOf data:Joachim_of_Denmark .
+
+data:Marie_Cavallier a :Person,
+        :Woman .
+
+data:Joachim_of_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Marie_Cavallier .
+

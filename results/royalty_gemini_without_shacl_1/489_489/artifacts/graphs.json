@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessInaMarieVonBassewitz a :Person,\n        :Woman ;\n    :isMotherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .\n\ndata:FriedrichVonVeltheim a :Man,\n        :Person ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1955 ;\n    :isFatherOf data:ArmgardElseHeleneVonVeltheim .\n\ndata:OttonieVonAlvensleben a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1960 ;\n    :isMotherOf data:ArmgardElseHeleneVonVeltheim .\n\ndata:PrinceOskarOfPrussia a :Man,\n        :Person ;\n    :isFatherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .\n\ndata:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen a :Man,\n        :Person ;\n    :hasBirthYear 1922 ;\n    :hasDeathYear 2007 ;\n    :hasMarriageYear 1952 ;\n    :hasRelation data:ArmgardElseHeleneVonVeltheim .\n\ndata:ArmgardElseHeleneVonVeltheim a :Person,\n        :Woman ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2019 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessInaMarieVonBassewitz a :Person,\n        :Woman ;\n    :isMotherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .\n\ndata:FriedrichVonVeltheim a :Man,\n        :Person ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1955 ;\n    :isFatherOf data:ArmgardElseHeleneVonVeltheim .\n\ndata:OttonieVonAlvensleben a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1960 ;\n    :isMotherOf data:ArmgardElseHeleneVonVeltheim .\n\ndata:PrinceOskarOfPrussia a :Man,\n        :Person ;\n    :isFatherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .\n\ndata:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen a :Man,\n        :Person ;\n    :hasBirthYear 1922 ;\n    :hasDeathYear 2007 ;\n    :hasMarriageYear 1952 ;\n    :hasRelation data:ArmgardElseHeleneVonVeltheim .\n\ndata:ArmgardElseHeleneVonVeltheim a :Person,\n        :Woman ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2019 .\n\n"
+    }
+]

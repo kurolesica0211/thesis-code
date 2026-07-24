@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain ;
+    :knownAs "Infanta Maria Cristina of Spain, Countess Marone-Cinzano"^^xsd:string .
+
+data:StepSon_of_Maria_Cristina a :Man,
+        :Person ;
+    :hasFather data:Enrico_Eugenio ;
+    :hasMother data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Alfonso_of_Spain a :Man,
+        :Person .
+
+data:Enrico_Eugenio a :Man,
+        :Person .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

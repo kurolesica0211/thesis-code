@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nonnie_May_Stewart_Worthington_Leeds a :Woman ;\n    :hasDeathYear 1923 .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Francoise_of_Orleans .\n\ndata:Princess_Xenia_Georgievna_of_Russia a :Woman ;\n    :hasMother data:Marie_of_Greece .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\ndata:Constantine_I_of_Greece a :Man .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:Prince_Andrew_of_Greece a :Man .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1888 ;\n    :hasBrother data:Constantine_I_of_Greece,\n        data:Prince_Andrew_of_Greece,\n        data:Prince_George_of_Greece,\n        data:Prince_Nicholas_of_Greece ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1920 ;\n    :hasMother data:Queen_Olga_of_Greece ;\n    :hasSister data:Marie_of_Greece ;\n    :knownAs \"Christo\"^^xsd:string .\n\ndata:Prince_George_of_Greece a :Man .\n\ndata:Prince_Nicholas_of_Greece a :Man .\n\ndata:Princess_Francoise_of_Orleans a :Woman .\n\ndata:Queen_Olga_of_Greece a :Woman .\n\ndata:Marie_of_Greece a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nonnie_May_Stewart_Worthington_Leeds a :Woman ;\n    :hasDeathYear 1923 .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Francoise_of_Orleans .\n\ndata:Princess_Xenia_Georgievna_of_Russia a :Woman ;\n    :hasMother data:Marie_of_Greece .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\ndata:Constantine_I_of_Greece a :Man .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:Prince_Andrew_of_Greece a :Man .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1888 ;\n    :hasBrother data:Constantine_I_of_Greece,\n        data:Prince_Andrew_of_Greece,\n        data:Prince_George_of_Greece,\n        data:Prince_Nicholas_of_Greece ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1920 ;\n    :hasMother data:Queen_Olga_of_Greece ;\n    :hasSister data:Marie_of_Greece ;\n    :knownAs \"Christo\"^^xsd:string .\n\ndata:Prince_George_of_Greece a :Man .\n\ndata:Prince_Nicholas_of_Greece a :Man .\n\ndata:Princess_Francoise_of_Orleans a :Woman .\n\ndata:Queen_Olga_of_Greece a :Woman .\n\ndata:Marie_of_Greece a :Woman .\n\n"
+    }
+]

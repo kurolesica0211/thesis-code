@@ -1,0 +1,232 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandIV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FerdinandIV ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :isAncestorOf data:LeopoldoFranz,
+        data:Sigismund ;
+    :isBloodrelationOf data:FerdinandIV ;
+    :isBrotherOf data:FerdinandIV ;
+    :isSiblingOf data:FerdinandIV .
+
+data:ArchibaldBruceEdmonstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ArchibaldBruceEdmonstone ;
+    :hasChild data:ElyssaEdmonstone ;
+    :hasDaughter data:ElyssaEdmonstone ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :isAncestorOf data:ElyssaEdmonstone ;
+    :isBloodrelationOf data:ArchibaldBruceEdmonstone ;
+    :isBrotherOf data:ArchibaldBruceEdmonstone ;
+    :isFatherOf data:ElyssaEdmonstone ;
+    :isParentOf data:ElyssaEdmonstone ;
+    :isSiblingOf data:ArchibaldBruceEdmonstone ;
+    :isUncleOf data:ElyssaEdmonstone .
+
+data:LaetitiaDArenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sigismund ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :hasSister data:LaetitiaDArenberg ;
+    :hasSon data:Sigismund ;
+    :isAncestorOf data:Sigismund ;
+    :isAuntOf data:Sigismund ;
+    :isBloodrelationOf data:LaetitiaDArenberg ;
+    :isMotherOf data:Sigismund ;
+    :isParentOf data:Sigismund ;
+    :isSiblingOf data:LaetitiaDArenberg ;
+    :isSisterOf data:LaetitiaDArenberg .
+
+data:Gottfried a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gottfried ;
+    :hasChild data:LeopoldoFranz ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :hasSon data:LeopoldoFranz ;
+    :isAncestorOf data:LeopoldoFranz,
+        data:Sigismund ;
+    :isBloodrelationOf data:Gottfried ;
+    :isBrotherOf data:Gottfried ;
+    :isFatherOf data:LeopoldoFranz ;
+    :isParentOf data:LeopoldoFranz ;
+    :isSiblingOf data:Gottfried ;
+    :isUncleOf data:LeopoldoFranz .
+
+data:PeterDeakin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PeterDeakin ;
+    :hasChild data:JulietaIsabelDeakin ;
+    :hasDaughter data:JulietaIsabelDeakin ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :isAncestorOf data:ElyssaEdmonstone,
+        data:JulietaIsabelDeakin ;
+    :isBloodrelationOf data:PeterDeakin ;
+    :isBrotherOf data:PeterDeakin ;
+    :isFatherOf data:JulietaIsabelDeakin ;
+    :isParentOf data:JulietaIsabelDeakin ;
+    :isSiblingOf data:PeterDeakin ;
+    :isUncleOf data:JulietaIsabelDeakin .
+
+data:JulietaIsabelDeakin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:PeterDeakin ;
+    :hasChild data:ElyssaEdmonstone ;
+    :hasDaughter data:ElyssaEdmonstone ;
+    :hasFather data:PeterDeakin ;
+    :hasParent data:PeterDeakin ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :hasSister data:JulietaIsabelDeakin ;
+    :isAncestorOf data:ElyssaEdmonstone ;
+    :isAuntOf data:ElyssaEdmonstone ;
+    :isBloodrelationOf data:JulietaIsabelDeakin ;
+    :isChildOf data:PeterDeakin ;
+    :isDaughterOf data:PeterDeakin ;
+    :isMotherOf data:ElyssaEdmonstone ;
+    :isParentOf data:ElyssaEdmonstone ;
+    :isSiblingOf data:JulietaIsabelDeakin ;
+    :isSisterOf data:JulietaIsabelDeakin .
+
+data:LeopoldoFranz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FerdinandIV,
+        data:Gottfried ;
+    :hasBrother data:LeopoldoFranz ;
+    :hasChild data:Sigismund ;
+    :hasFather data:Gottfried ;
+    :hasParent data:Gottfried ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :hasSon data:Sigismund ;
+    :isAncestorOf data:Sigismund ;
+    :isBloodrelationOf data:LeopoldoFranz ;
+    :isBrotherOf data:LeopoldoFranz ;
+    :isChildOf data:Gottfried ;
+    :isFatherOf data:Sigismund ;
+    :isParentOf data:Sigismund ;
+    :isSiblingOf data:LeopoldoFranz ;
+    :isSonOf data:Gottfried ;
+    :isUncleOf data:Sigismund .
+
+data:ElyssaEdmonstone a :Person,
+        :Woman ;
+    :hasAncestor data:ArchibaldBruceEdmonstone,
+        data:JulietaIsabelDeakin,
+        data:PeterDeakin ;
+    :hasBirthYear "1973"^^xsd:nonNegativeInteger ;
+    :hasFather data:ArchibaldBruceEdmonstone ;
+    :hasMother data:JulietaIsabelDeakin ;
+    :hasParent data:ArchibaldBruceEdmonstone,
+        data:JulietaIsabelDeakin ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :hasSister data:ElyssaEdmonstone ;
+    :isBloodrelationOf data:ElyssaEdmonstone ;
+    :isChildOf data:ArchibaldBruceEdmonstone,
+        data:JulietaIsabelDeakin ;
+    :isDaughterOf data:ArchibaldBruceEdmonstone,
+        data:JulietaIsabelDeakin ;
+    :isSiblingOf data:ElyssaEdmonstone ;
+    :isSisterOf data:ElyssaEdmonstone .
+
+data:Sigismund a :Man,
+        :Person ;
+    :hasAncestor data:FerdinandIV,
+        data:Gottfried,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz ;
+    :hasBirthYear "1966"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Sigismund ;
+    :hasFather data:LeopoldoFranz ;
+    :hasMarriageYear "1999"^^xsd:nonNegativeInteger ;
+    :hasMother data:LaetitiaDArenberg ;
+    :hasParent data:LaetitiaDArenberg,
+        data:LeopoldoFranz ;
+    :hasRelation data:ArchibaldBruceEdmonstone,
+        data:ElyssaEdmonstone,
+        data:FerdinandIV,
+        data:Gottfried,
+        data:JulietaIsabelDeakin,
+        data:LaetitiaDArenberg,
+        data:LeopoldoFranz,
+        data:PeterDeakin,
+        data:Sigismund ;
+    :isBloodrelationOf data:Sigismund ;
+    :isBrotherOf data:Sigismund ;
+    :isChildOf data:LaetitiaDArenberg,
+        data:LeopoldoFranz ;
+    :isSiblingOf data:Sigismund ;
+    :isSonOf data:LaetitiaDArenberg,
+        data:LeopoldoFranz .
+

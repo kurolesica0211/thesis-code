@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceMichaelOfGreeceAndDenmark a :Man ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:PrinceChristopherOfGreeceAndDenmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:PrincessFrancoiseDOrleans ;\n    :hasRelation data:MarinaKarella .\n\ndata:ElliChalikiopoulos a :Woman .\n\ndata:JeanDOrleansDukeOfGuise a :Man .\n\ndata:KingGeorgeIOfGreece a :Man .\n\ndata:MarinaKarella a :Woman ;\n    :hasFather data:TheodorosKarellas ;\n    :hasMother data:ElliChalikiopoulos .\n\ndata:PrinceChristopherOfGreeceAndDenmark a :Man ;\n    :hasFather data:KingGeorgeIOfGreece .\n\ndata:PrincessFrancoiseDOrleans a :Woman ;\n    :hasFather data:JeanDOrleansDukeOfGuise .\n\ndata:TheodorosKarellas a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceMichaelOfGreeceAndDenmark a :Man ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:PrinceChristopherOfGreeceAndDenmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:PrincessFrancoiseDOrleans ;\n    :hasRelation data:MarinaKarella .\n\ndata:ElliChalikiopoulos a :Woman .\n\ndata:JeanDOrleansDukeOfGuise a :Man .\n\ndata:KingGeorgeIOfGreece a :Man .\n\ndata:MarinaKarella a :Woman ;\n    :hasFather data:TheodorosKarellas ;\n    :hasMother data:ElliChalikiopoulos .\n\ndata:PrinceChristopherOfGreeceAndDenmark a :Man ;\n    :hasFather data:KingGeorgeIOfGreece .\n\ndata:PrincessFrancoiseDOrleans a :Woman ;\n    :hasFather data:JeanDOrleansDukeOfGuise .\n\ndata:TheodorosKarellas a :Man .\n\n"
+    }
+]

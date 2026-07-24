@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Valerie_of_Austria :hasSex data:Female .
+
+data:Beatrix_of_Hohenlohe-Langenburg :hasSex data:Female .
+
+data:Gottfried_of_Hohenlohe-Langenburg :hasSex data:Male .
+
+data:King_Charles_III :hasSex data:Male ;
+    :knownAs "King Charles III"^^xsd:string .
+
+data:Margaret_Princess_of_Hesse_and_by_Rhine :hasSex data:Female .
+
+data:Margarita_of_Greece_and_Denmark :hasSex data:Female .
+
+data:Maximilian_Hereditary_Prince_of_Baden :hasSex data:Male .
+
+data:Prince_Andrew_of_Yugoslavia :hasSex data:Male ;
+    :knownAs "Prince Andrew of Yugoslavia"^^xsd:string .
+
+data:Prince_Philip_Duke_of_Edinburgh :hasSex data:Male ;
+    :knownAs "Prince Philip, Duke of Edinburgh"^^xsd:string .
+
+data:Princess_Cecilie :hasSex data:Female .
+
+data:Princess_Christina_of_Hesse :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

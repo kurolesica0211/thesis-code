@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :formerlyKnownAs "Marijke"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person .
+
+data:Irene_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Wilhelmina_of_the_Netherlands .
+
+data:Margriet_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman .
+

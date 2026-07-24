@@ -97,6 +97,22 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_GLOBAL_OUTPUT,
         help="Global JSON debug output path.",
     )
+    parser.add_argument(
+        "--data-graph-filename",
+        default="delta_graph.ttl",
+        help="Which per-task extracted graph file to match entities from.",
+    )
+    parser.add_argument(
+        "--qid-map",
+        type=Path,
+        default=None,
+        help=(
+            "Optional JSON file mapping task-folder name -> QID directly, "
+            "bypassing the sorted-text-file positional-index pairing. Use "
+            "this when task folder names don't follow the default index "
+            "convention (e.g. a custom sample of documents)."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -660,10 +676,11 @@ def build_folder_payload(
     label_by_qid: dict[str, str],
     nlp: spacy.language.Language,
     threshold: float,
+    data_graph_filename: str = "delta_graph.ttl",
 ) -> tuple[dict[str, Any], int]:
-    delta_graph_path = task_directory / "delta_graph.ttl"
+    delta_graph_path = task_directory / data_graph_filename
     if not delta_graph_path.exists():
-        raise FileNotFoundError(f"Missing delta_graph.ttl: {delta_graph_path}")
+        raise FileNotFoundError(f"Missing {data_graph_filename}: {delta_graph_path}")
 
     delta_graph = Graph()
     delta_graph.parse(delta_graph_path.as_posix(), format="turtle")
@@ -766,6 +783,10 @@ def main() -> None:
 
     article_to_row, qid_to_row = load_csv_index(args.csv)
 
+    qid_map: dict[str, str] | None = None
+    if args.qid_map is not None:
+        qid_map = json.loads(args.qid_map.read_text(encoding="utf-8"))
+
     run_directories = args.run_directories or discover_run_directories(args.results_root)
     if not run_directories:
         raise FileNotFoundError(
@@ -780,34 +801,54 @@ def main() -> None:
 
     for run_directory in sorted(run_directories):
         task_directories = sorted(
-            [task_dir for task_dir in run_directory.iterdir() if task_dir.is_dir() and (task_dir / "delta_graph.ttl").exists()],
+            [
+                task_dir for task_dir in run_directory.iterdir()
+                if task_dir.is_dir() and (task_dir / args.data_graph_filename).exists()
+            ],
             key=sort_key,
         )
 
-        if len(task_directories) != len(text_files):
+        if qid_map is None and len(task_directories) != len(text_files):
             print(
                 f"Warning: {run_directory} has {len(task_directories)} task folders but {len(text_files)} text files.",
                 file=sys.stderr,
             )
 
         for index, task_directory in enumerate(task_directories):
-            if index >= len(text_files):
-                print(
-                    f"Warning: skipping {task_directory} because there is no matching text file index {index}.",
-                    file=sys.stderr,
-                )
-                continue
+            if qid_map is not None:
+                # Resolve the QID directly from the map instead of pairing by
+                # sorted positional index, since task folder names here don't
+                # follow the default "N_N" convention.
+                item_qid = qid_map.get(task_directory.name)
+                if not item_qid:
+                    print(f"Warning: no QID in --qid-map for {task_directory.name}", file=sys.stderr)
+                    continue
+                text_file = args.text_dir / f"{item_qid}.txt"
+                if not text_file.exists():
+                    print(f"Warning: no text file for QID {item_qid} ({text_file})", file=sys.stderr)
+                    continue
+                csv_row = resolve_text_row(text_file, article_to_row)
+                if csv_row is None:
+                    print(f"Warning: no CSV row found for {text_file.name}", file=sys.stderr)
+                    continue
+            else:
+                if index >= len(text_files):
+                    print(
+                        f"Warning: skipping {task_directory} because there is no matching text file index {index}.",
+                        file=sys.stderr,
+                    )
+                    continue
 
-            text_file = text_files[index]
-            csv_row = resolve_text_row(text_file, article_to_row)
-            if csv_row is None:
-                print(f"Warning: no CSV row found for {text_file.name}", file=sys.stderr)
-                continue
+                text_file = text_files[index]
+                csv_row = resolve_text_row(text_file, article_to_row)
+                if csv_row is None:
+                    print(f"Warning: no CSV row found for {text_file.name}", file=sys.stderr)
+                    continue
 
-            item_qid = qid_from_uri(URIRef((csv_row.get("item") or "").strip()))
-            if not item_qid:
-                print(f"Warning: no QID found for {text_file.name}", file=sys.stderr)
-                continue
+                item_qid = qid_from_uri(URIRef((csv_row.get("item") or "").strip()))
+                if not item_qid:
+                    print(f"Warning: no QID found for {text_file.name}", file=sys.stderr)
+                    continue
 
             if item_qid in qid_to_row:
                 csv_row = qid_to_row[item_qid]
@@ -816,7 +857,7 @@ def main() -> None:
             if not ground_truth_graph:
                 continue
             entity_by_qid, label_by_qid = load_entity_index(ground_truth_graph)
-            
+
             payload, matched_count = build_folder_payload(
                 run_directory=run_directory,
                 task_directory=task_directory,
@@ -827,6 +868,7 @@ def main() -> None:
                 label_by_qid=label_by_qid,
                 nlp=nlp,
                 threshold=args.threshold,
+                data_graph_filename=args.data_graph_filename,
             )
 
             total_matched += matched_count

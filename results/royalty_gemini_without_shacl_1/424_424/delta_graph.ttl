@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman ;
+    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman ;
+    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Person,
+        :Woman .
+
+data:Rupert_Guinness_2nd_Earl_of_Iveagh a :Man,
+        :Person .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1955 ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Man,
+        :Person .
+

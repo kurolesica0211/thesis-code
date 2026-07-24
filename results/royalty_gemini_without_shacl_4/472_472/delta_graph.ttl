@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andreas_Felix_Paul_von_Bismarck a :Man,
+        :Person ;
+    :hasBirthYear 1979 ;
+    :hasDeathYear 2019 .
+
+data:Kira-Marina_Liepsner a :Person,
+        :Woman ;
+    :hasBirthYear 1977 ;
+    :isDaughterOf data:Princess_Kira_of_Prussia .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Woman .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+        :Man .
+
+data:Princess_Kira_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+

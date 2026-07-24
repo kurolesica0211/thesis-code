@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceMauriceOfBattenberg a :Man,\n        :Person ;\n    :alsoKnownAs \"Maurice Victor Donald\"^^xsd:string ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:PrinceHenryOfBattenberg ;\n    :hasMother data:PrincessBeatrice .\n\ndata:VictoriaEugenieOfBattenberg a :Person,\n        :Woman ;\n    :hasFather data:PrinceHenryOfBattenberg ;\n    :hasMother data:PrincessBeatrice ;\n    :hasRelation data:AlfonsoXIIIOfSpain .\n\ndata:AlbertPrinceConsort a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\ndata:JulieThereseHauke a :Person,\n        :Woman .\n\ndata:PrinceAlexanderOfHesseAndByRhine a :Man,\n        :Person .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:PrinceHenryOfBattenberg a :Man,\n        :Person ;\n    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;\n    :hasMother data:JulieThereseHauke .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasFather data:AlbertPrinceConsort ;\n    :hasMother data:QueenVictoria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceMauriceOfBattenberg a :Man,\n        :Person ;\n    :alsoKnownAs \"Maurice Victor Donald\"^^xsd:string ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:PrinceHenryOfBattenberg ;\n    :hasMother data:PrincessBeatrice .\n\ndata:VictoriaEugenieOfBattenberg a :Person,\n        :Woman ;\n    :hasFather data:PrinceHenryOfBattenberg ;\n    :hasMother data:PrincessBeatrice ;\n    :hasRelation data:AlfonsoXIIIOfSpain .\n\ndata:AlbertPrinceConsort a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\ndata:JulieThereseHauke a :Person,\n        :Woman .\n\ndata:PrinceAlexanderOfHesseAndByRhine a :Man,\n        :Person .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:PrinceHenryOfBattenberg a :Man,\n        :Person ;\n    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;\n    :hasMother data:JulieThereseHauke .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasFather data:AlbertPrinceConsort ;\n    :hasMother data:QueenVictoria .\n\n"
+    }
+]

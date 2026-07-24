@@ -1,0 +1,373 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasChild data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Anne_Princess_Royal ;
+    :isAncestorOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall,
+        data:Zara_Tindall ;
+    :isAuntOf data:Zara_Tindall ;
+    :isBloodrelationOf data:Anne_Princess_Royal ;
+    :isMotherOf data:Zara_Tindall ;
+    :isParentOf data:Zara_Tindall ;
+    :isSiblingOf data:Anne_Princess_Royal ;
+    :isSisterOf data:Anne_Princess_Royal .
+
+data:Peter_Phillips a :Man ;
+    :hasBrother data:Peter_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isBrotherOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isUncleOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall .
+
+data:Mike_Tindall a :Ancestor,
+        :Man ;
+    :hasBrother data:Mike_Tindall ;
+    :hasChild data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :hasDaughter data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSon data:Lucas_Tindall ;
+    :isAncestorOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Mike_Tindall ;
+    :isBrotherOf data:Mike_Tindall ;
+    :isFatherOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isParentOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isSiblingOf data:Mike_Tindall ;
+    :isUncleOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall .
+
+data:Felicity_Wade a :Woman ;
+    :hasAncestor data:Mark_Phillips ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasParent data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Mark_Phillips ;
+    :isDaughterOf data:Mark_Phillips ;
+    :isSiblingOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall .
+
+data:Mark_Phillips a :Ancestor,
+        :Man ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasDaughter data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isAncestorOf data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isParentOf data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall .
+
+data:Stephanie_Phillips a :Woman ;
+    :hasAncestor data:Mark_Phillips ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasParent data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Mark_Phillips ;
+    :isDaughterOf data:Mark_Phillips ;
+    :isSiblingOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall .
+
+data:Lena_Tindall a :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasBrother data:Lucas_Tindall ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isChildOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isDaughterOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isSisterOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall .
+
+data:Lucas_Tindall a :Man ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasBrother data:Lucas_Tindall ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isBrotherOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isChildOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isSonOf data:Mike_Tindall,
+        data:Zara_Tindall .
+
+data:Mia_Tindall a :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasBrother data:Lucas_Tindall ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isChildOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isDaughterOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isSisterOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall .
+
+data:Zara_Tindall a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :hasDaughter data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasParent data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Felicity_Wade,
+        data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mark_Phillips,
+        data:Mia_Tindall,
+        data:Mike_Tindall,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Felicity_Wade,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :hasSon data:Lucas_Tindall ;
+    :isAncestorOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isAuntOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isBloodrelationOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isDaughterOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isMotherOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isParentOf data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :isSiblingOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Felicity_Wade,
+        data:Peter_Phillips,
+        data:Stephanie_Phillips,
+        data:Zara_Tindall .
+

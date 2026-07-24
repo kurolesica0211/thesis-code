@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix_von_Storch a :Person,
+        :Woman ;
+    :hasBirthYear "1971"^^xsd:positiveInteger ;
+    :hasMarriageYear "2010"^^xsd:positiveInteger ;
+    :hasRelation data:Sven_von_Storch ;
+    :knownAs "Beatrix Amelie Ehrengard Eilika von Storch"^^xsd:string .
+
+data:Antje_Liete_Kruger-Franke a :Person,
+        :Woman ;
+    :hasBirthYear "1938"^^xsd:positiveInteger .
+
+data:Berndt_Detlev_von_Storch a :Man,
+        :Person ;
+    :hasBirthYear "1930"^^xsd:positiveInteger ;
+    :hasDeathYear "2004"^^xsd:positiveInteger .
+
+data:Sven_von_Storch a :Man,
+        :Person ;
+    :hasBirthYear "1970"^^xsd:positiveInteger ;
+    :hasFather data:Berndt_Detlev_von_Storch ;
+    :hasMother data:Antje_Liete_Kruger-Franke .
+

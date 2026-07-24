@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasFather data:King_George_VI .
+
+data:Prince_William_of_Gloucester a :Man,
+        :Person ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Prince_Richard ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:George_V a :Man,
+        :Person .
+
+data:Prince_Richard a :Man,
+        :Person ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:King_George_VI a :Man,
+        :Person .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:King_George_VI ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Princess_Alice_Duchess_of_Gloucester a :Person,
+        :Woman .
+

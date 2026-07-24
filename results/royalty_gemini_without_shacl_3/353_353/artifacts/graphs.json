@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear data:1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear data:1908,\n        1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    }
+]

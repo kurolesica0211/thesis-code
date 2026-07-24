@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :hasBirthYear 2010 ;\n    :isDaughterOf data:George_Gilman,\n        data:Rose_Windsor .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :hasBirthYear 2012 ;\n    :isSonOf data:George_Gilman,\n        data:Rose_Windsor .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Rose_Windsor a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Rose Victoria Birgitte Louise Windsor\"^^xsd:string ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:George_Gilman ;\n    :knownAs \"Lady Rose Victoria Birgitte Louise Gilman\"^^xsd:string .\n\ndata:George_Gilman a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :hasBirthYear 2010 ;\n    :isDaughterOf data:George_Gilman,\n        data:Rose_Windsor .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :hasBirthYear 2012 ;\n    :isSonOf data:George_Gilman,\n        data:Rose_Windsor .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Rose_Windsor a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Rose Victoria Birgitte Louise Windsor\"^^xsd:string ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:George_Gilman ;\n    :knownAs \"Lady Rose Victoria Birgitte Louise Gilman\"^^xsd:string .\n\ndata:George_Gilman a :Man,\n        :Person .\n\n"
+    }
+]

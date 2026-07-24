@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie a :Woman ;\n    :hasBirthYear 1946 ;\n    :hasChild data:Alexia,\n        data:Nikolaos,\n        data:Pavlos,\n        data:Philippos,\n        data:Theodora ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Ingrid_of_Sweden ;\n    :hasRelation data:Constantine_II ;\n    :isSisterOf data:Benedikte,\n        data:Margrethe_II .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Benedikte a :Woman .\n\ndata:Christian_X a :Man .\n\ndata:Constantine_II a :Man ;\n    :hasChild data:Alexia,\n        data:Nikolaos,\n        data:Pavlos,\n        data:Philippos,\n        data:Theodora ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Greece .\n\ndata:Frederica_of_Greece a :Woman .\n\ndata:Frederik_IX a :Man ;\n    :hasFather data:Christian_X ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .\n\ndata:Gustaf_VI_Adolf a :Man .\n\ndata:Ingrid_of_Sweden a :Woman ;\n    :hasFather data:Gustaf_VI_Adolf ;\n    :hasMother data:Margaret_of_Connaught .\n\ndata:Margaret_of_Connaught a :Woman .\n\ndata:Margrethe_II a :Woman .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Alexia a :Woman .\n\ndata:Nikolaos a :Man .\n\ndata:Pavlos a :Man .\n\ndata:Philippos a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie a :Woman ;\n    :hasBirthYear 1946 ;\n    :hasChild data:Alexia,\n        data:Nikolaos,\n        data:Pavlos,\n        data:Philippos,\n        data:Theodora ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Ingrid_of_Sweden ;\n    :hasRelation data:Constantine_II ;\n    :isSisterOf data:Benedikte,\n        data:Margrethe_II .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Benedikte a :Woman .\n\ndata:Christian_X a :Man .\n\ndata:Constantine_II a :Man ;\n    :hasChild data:Alexia,\n        data:Nikolaos,\n        data:Pavlos,\n        data:Philippos,\n        data:Theodora ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Greece .\n\ndata:Frederica_of_Greece a :Woman .\n\ndata:Frederik_IX a :Man ;\n    :hasFather data:Christian_X ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .\n\ndata:Gustaf_VI_Adolf a :Man .\n\ndata:Ingrid_of_Sweden a :Woman ;\n    :hasFather data:Gustaf_VI_Adolf ;\n    :hasMother data:Margaret_of_Connaught .\n\ndata:Margaret_of_Connaught a :Woman .\n\ndata:Margrethe_II a :Woman .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Alexia a :Woman .\n\ndata:Nikolaos a :Man .\n\ndata:Pavlos a :Man .\n\ndata:Philippos a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    }
+]

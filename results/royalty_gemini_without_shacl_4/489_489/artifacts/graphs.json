@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:WilhelmKarlPrinzVonPreussen a :Man,\n        :Person ;\n    :hasBirthYear \"1922\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2007\"^^xsd:nonNegativeInteger ;\n    :hasFather data:OskarOfPrussia ;\n    :hasMarriageYear \"1952\"^^xsd:nonNegativeInteger ;\n    :hasMother data:InaMarieVonBassewitz ;\n    :hasRelation data:ArmgardElseHeleneVonVeltheim .\n\ndata:ArmgardElseHeleneVonVeltheim a :Person,\n        :Woman ;\n    :hasBirthYear \"1926\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2019\"^^xsd:nonNegativeInteger ;\n    :hasFather data:FriedrichVonVeltheim ;\n    :hasMother data:OttonieVonAlvensleben .\n\ndata:FriedrichVonVeltheim a :Man,\n        :Person ;\n    :hasBirthYear \"1881\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1955\"^^xsd:nonNegativeInteger .\n\ndata:InaMarieVonBassewitz a :Person,\n        :Woman .\n\ndata:OskarOfPrussia a :Man,\n        :Person .\n\ndata:OttonieVonAlvensleben a :Person,\n        :Woman ;\n    :hasBirthYear \"1883\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1960\"^^xsd:nonNegativeInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:WilhelmKarlPrinzVonPreussen a :Man,\n        :Person ;\n    :hasBirthYear \"1922\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2007\"^^xsd:nonNegativeInteger ;\n    :hasFather data:OskarOfPrussia ;\n    :hasMarriageYear \"1952\"^^xsd:nonNegativeInteger ;\n    :hasMother data:InaMarieVonBassewitz ;\n    :hasRelation data:ArmgardElseHeleneVonVeltheim .\n\ndata:ArmgardElseHeleneVonVeltheim a :Person,\n        :Woman ;\n    :hasBirthYear \"1926\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2019\"^^xsd:nonNegativeInteger ;\n    :hasFather data:FriedrichVonVeltheim ;\n    :hasMother data:OttonieVonAlvensleben .\n\ndata:FriedrichVonVeltheim a :Man,\n        :Person ;\n    :hasBirthYear \"1881\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1955\"^^xsd:nonNegativeInteger .\n\ndata:InaMarieVonBassewitz a :Person,\n        :Woman .\n\ndata:OskarOfPrussia a :Man,\n        :Person .\n\ndata:OttonieVonAlvensleben a :Person,\n        :Woman ;\n    :hasBirthYear \"1883\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1960\"^^xsd:nonNegativeInteger .\n\n"
+    }
+]

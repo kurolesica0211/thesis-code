@@ -1,0 +1,506 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isSiblingOf data:Constantine_I .
+
+data:Frederick_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_III ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isAncestorOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III ;
+    :isBrotherOf data:Frederick_III ;
+    :isFatherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Frederick_III ;
+    :isUncleOf data:Sophia_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasRelation data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Viktoria_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasRelation data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II .
+
+data:Waldemar_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasRelation data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece .
+
+data:William_II a :Man,
+        :Person ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasRelation data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II .
+
+data:Alexander_I a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Alexander_I,
+        data:George_II ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBrotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isSonOf data:Sophia_of_Prussia .
+
+data:George_II a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Alexander_I,
+        data:George_II ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBrotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isSonOf data:Sophia_of_Prussia .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Alexander_I,
+        data:George_II ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Alexander_I,
+        data:George_II ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear "1870-06-14"^^xsd:date ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasChild data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :hasDaughter data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :hasDeathYear "1932-01-13"^^xsd:date ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece,
+        data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :hasSon data:Alexander_I,
+        data:George_II ;
+    :isAncestorOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isChildOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isParentOf data:Alexander_I,
+        data:George_II,
+        data:Helen_of_Greece,
+        data:Katherine_of_Greece ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II .
+

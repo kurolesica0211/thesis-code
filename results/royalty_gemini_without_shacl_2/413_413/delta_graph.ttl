@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+        :Woman ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein .
+
+data:Donna_Emanuela a :Person,
+        :Woman ;
+    :hasChild data:Alfonso_de_Borbon_son,
+        data:Gonzalo_de_Borbon_son .
+
+data:Infante_Jaime a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasChild data:Alfonso_de_Borbon_son,
+        data:Gonzalo_de_Borbon_son ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Victoria_Eugenie ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Juan .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :isSiblingOf data:Infante_Juan .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Infanta_Beatriz a :Person,
+        :Woman .
+
+data:Infanta_Maria_Cristina a :Person,
+        :Woman .
+
+data:Infante_Gonzalo a :Man,
+        :Person .
+
+data:Luise_Amalia_Klein a :Person,
+        :Woman .
+
+data:Otto_Eugen_Tiedemann a :Man,
+        :Person .
+
+data:Victoria_Eugenie a :Person,
+        :Woman .
+
+data:Alfonso_de_Borbon_son a :Man,
+        :Person .
+
+data:Gonzalo_de_Borbon_son a :Man,
+        :Person .
+
+data:Infante_Juan a :Man,
+        :Person .
+

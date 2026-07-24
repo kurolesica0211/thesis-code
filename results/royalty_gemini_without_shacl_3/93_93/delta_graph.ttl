@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:King_Christian_IX ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Prince_Constantine,
+        data:Prince_Nicholas ;
+    :hasDaughter data:Evgenia ;
+    :hasDeathYear 1957 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Olga_Konstantinovna_of_Russia ;
+    :hasRelation data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSon data:Petros .
+
+data:Evgenia a :Person,
+        :Woman .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:King_Christian_IX a :Man,
+        :Person .
+
+data:Olga_Konstantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Petros a :Man,
+        :Person .
+
+data:Prince_Constantine a :Man,
+        :Person .
+
+data:Prince_Nicholas a :Man,
+        :Person .
+
+data:Prince_Valdemar_of_Denmark a :Man,
+        :Person .
+
+data:Princess_Marie_Bonaparte a :Person,
+        :Woman .
+

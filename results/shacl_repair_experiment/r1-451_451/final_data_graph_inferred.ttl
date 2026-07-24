@@ -1,0 +1,242 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Heinrich_XIV_Fuerst_Reuss a :Man ;
+    :hasBrother data:Heinrich_XIV_Fuerst_Reuss ;
+    :hasRelation data:Heinrich_XIV_Fuerst_Reuss ;
+    :isBloodrelationOf data:Heinrich_XIV_Fuerst_Reuss ;
+    :isBrotherOf data:Heinrich_XIV_Fuerst_Reuss ;
+    :isSiblingOf data:Heinrich_XIV_Fuerst_Reuss .
+
+data:Vitalia_B a :Woman ;
+    :hasRelation data:Vitalia_B ;
+    :hasSister data:Vitalia_B ;
+    :isBloodrelationOf data:Vitalia_B ;
+    :isSiblingOf data:Vitalia_B ;
+    :isSisterOf data:Vitalia_B .
+
+data:Henry_II_Count_of_Reuss_Gera a :Ancestor,
+        :Man ;
+    :hasBrother data:Henry_II_Count_of_Reuss_Gera ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII ;
+    :isBloodrelationOf data:Henry_II_Count_of_Reuss_Gera ;
+    :isBrotherOf data:Henry_II_Count_of_Reuss_Gera ;
+    :isSiblingOf data:Henry_II_Count_of_Reuss_Gera .
+
+data:Heinrich_I_Reuss a :Ancestor,
+        :Man ;
+    :hasBrother data:Heinrich_I_Reuss ;
+    :hasChild data:Heinrich_XIII_Prinz_Reuss ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSon data:Heinrich_XIII_Prinz_Reuss ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII ;
+    :isBloodrelationOf data:Heinrich_I_Reuss ;
+    :isBrotherOf data:Heinrich_I_Reuss ;
+    :isFatherOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isParentOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isSiblingOf data:Heinrich_I_Reuss ;
+    :isUncleOf data:Heinrich_XIII_Prinz_Reuss .
+
+data:Adolf_Friedrich_of_Mecklenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg ;
+    :hasChild data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasDaughter data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isBloodrelationOf data:Adolf_Friedrich_of_Mecklenburg ;
+    :isBrotherOf data:Adolf_Friedrich_of_Mecklenburg ;
+    :isFatherOf data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isParentOf data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isSiblingOf data:Adolf_Friedrich_of_Mecklenburg ;
+    :isUncleOf data:Woizlawa_Feodora_of_Mecklenburg .
+
+data:Susan_Doukht_Jalali a :Ancestor,
+        :Woman ;
+    :hasChild data:Elena,
+        data:Heinrich_XXVIII ;
+    :hasDaughter data:Elena ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSister data:Susan_Doukht_Jalali ;
+    :hasSon data:Heinrich_XXVIII ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isAuntOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isBloodrelationOf data:Susan_Doukht_Jalali ;
+    :isMotherOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isParentOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isSiblingOf data:Susan_Doukht_Jalali ;
+    :isSisterOf data:Susan_Doukht_Jalali .
+
+data:Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Adolf_Friedrich_of_Mecklenburg ;
+    :hasChild data:Heinrich_XIII_Prinz_Reuss ;
+    :hasFather data:Adolf_Friedrich_of_Mecklenburg ;
+    :hasParent data:Adolf_Friedrich_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSister data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSon data:Heinrich_XIII_Prinz_Reuss ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII ;
+    :isAuntOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isBloodrelationOf data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isChildOf data:Adolf_Friedrich_of_Mecklenburg ;
+    :isDaughterOf data:Adolf_Friedrich_of_Mecklenburg ;
+    :isMotherOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isParentOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isSiblingOf data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isSisterOf data:Woizlawa_Feodora_of_Mecklenburg .
+
+data:Elena a :Woman ;
+    :hasAncestor data:Adolf_Friedrich_of_Mecklenburg,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasBrother data:Heinrich_XXVIII ;
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali ;
+    :hasParent data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSister data:Elena ;
+    :isBloodrelationOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isChildOf data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali ;
+    :isDaughterOf data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali ;
+    :isSiblingOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isSisterOf data:Elena,
+        data:Heinrich_XXVIII .
+
+data:Heinrich_XXVIII a :Man ;
+    :hasAncestor data:Adolf_Friedrich_of_Mecklenburg,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasBrother data:Heinrich_XXVIII ;
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali ;
+    :hasParent data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSister data:Elena ;
+    :isBloodrelationOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isBrotherOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isChildOf data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali ;
+    :isSiblingOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isSonOf data:Heinrich_XIII_Prinz_Reuss,
+        data:Susan_Doukht_Jalali .
+
+data:Heinrich_XIII_Prinz_Reuss a :Ancestor,
+        :Man ;
+    :hasAncestor data:Adolf_Friedrich_of_Mecklenburg,
+        data:Heinrich_I_Reuss,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasBirthYear 1951 ;
+    :hasBrother data:Heinrich_XIII_Prinz_Reuss ;
+    :hasChild data:Elena,
+        data:Heinrich_XXVIII ;
+    :hasDaughter data:Elena ;
+    :hasFather data:Heinrich_I_Reuss ;
+    :hasMother data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasParent data:Heinrich_I_Reuss,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Elena,
+        data:Heinrich_I_Reuss,
+        data:Heinrich_XIII_Prinz_Reuss,
+        data:Heinrich_XXVIII,
+        data:Henry_II_Count_of_Reuss_Gera,
+        data:Susan_Doukht_Jalali,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSon data:Heinrich_XXVIII ;
+    :isAncestorOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isBloodrelationOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isBrotherOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isChildOf data:Heinrich_I_Reuss,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isFatherOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isParentOf data:Elena,
+        data:Heinrich_XXVIII ;
+    :isSiblingOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isSonOf data:Heinrich_I_Reuss,
+        data:Woizlawa_Feodora_of_Mecklenburg ;
+    :isUncleOf data:Elena,
+        data:Heinrich_XXVIII .
+

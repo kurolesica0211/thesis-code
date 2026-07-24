@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceCarloDukeOfCastro a :Man,\n        :Person .\n\ndata:PrinceCarlosDukeOfCalabria1900 a :Man,\n        :Person ;\n    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias ;\n    :isBrotherOf data:PrinceFerdinand .\n\ndata:PrincePedroOfBourbonTwoSicilies a :Man,\n        :Person ;\n    :alsoKnownAs \"Pedro Juan Mar\u00eda Alejo Saturnino de Todos los Santos\"^^xsd:string ;\n    :hasBirthYear 1968 ;\n    :hasFather data:InfanteCarlosDukeOfCalabria ;\n    :hasMarriageYear data:SofiaLandaluceYMelgarejo,\n        2001 ;\n    :hasMother data:PrincessAnneOfOrleans .\n\ndata:InfanteCarlosDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:JoseManuelLandaluceYDominguez a :Man,\n        :Person .\n\ndata:MariaDeLasMercedesPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:MariaDeLasNievesBlancaMelgarejoYGonzalez a :Person,\n        :Woman .\n\ndata:PrinceFerdinand a :Man,\n        :Person .\n\ndata:PrincessAnneOfOrleans a :Person,\n        :Woman .\n\ndata:SofiaLandaluceYMelgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:JoseManuelLandaluceYDominguez ;\n    :hasMother data:MariaDeLasNievesBlancaMelgarejoYGonzalez .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceCarloDukeOfCastro a :Man,\n        :Person .\n\ndata:PrinceCarlosDukeOfCalabria1900 a :Man,\n        :Person ;\n    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias ;\n    :isBrotherOf data:PrinceFerdinand .\n\ndata:PrincePedroOfBourbonTwoSicilies a :Man,\n        :Person ;\n    :alsoKnownAs \"Pedro Juan Mar\u00eda Alejo Saturnino de Todos los Santos\"^^xsd:string ;\n    :hasBirthYear 1968 ;\n    :hasFather data:InfanteCarlosDukeOfCalabria ;\n    :hasMarriageYear data:SofiaLandaluceYMelgarejo,\n        2001 ;\n    :hasMother data:PrincessAnneOfOrleans .\n\ndata:InfanteCarlosDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:JoseManuelLandaluceYDominguez a :Man,\n        :Person .\n\ndata:MariaDeLasMercedesPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:MariaDeLasNievesBlancaMelgarejoYGonzalez a :Person,\n        :Woman .\n\ndata:PrinceFerdinand a :Man,\n        :Person .\n\ndata:PrincessAnneOfOrleans a :Person,\n        :Woman .\n\ndata:SofiaLandaluceYMelgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:JoseManuelLandaluceYDominguez ;\n    :hasMother data:MariaDeLasNievesBlancaMelgarejoYGonzalez .\n\n"
+    }
+]

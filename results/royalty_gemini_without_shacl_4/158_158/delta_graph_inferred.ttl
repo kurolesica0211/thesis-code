@@ -1,0 +1,334 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Pavlovna_the_Younger a :Person ;
+    :hasRelation data:Maria_Pavlovna_the_Younger ;
+    :isBloodrelationOf data:Maria_Pavlovna_the_Younger ;
+    :isSiblingOf data:Maria_Pavlovna_the_Younger .
+
+data:Elizabeth_Feodorovna_of_Russia a :Person,
+        :Woman ;
+    :hasRelation data:Elizabeth_Feodorovna_of_Russia ;
+    :hasSister data:Elizabeth_Feodorovna_of_Russia ;
+    :isBloodrelationOf data:Elizabeth_Feodorovna_of_Russia ;
+    :isSiblingOf data:Elizabeth_Feodorovna_of_Russia ;
+    :isSisterOf data:Elizabeth_Feodorovna_of_Russia .
+
+data:Sergei_Putyatin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sergei_Putyatin ;
+    :hasChild data:Roman_Sergeievich_Putyatin ;
+    :hasRelation data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :hasSon data:Roman_Sergeievich_Putyatin ;
+    :isAncestorOf data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Sergei_Putyatin ;
+    :isBrotherOf data:Sergei_Putyatin ;
+    :isFatherOf data:Roman_Sergeievich_Putyatin ;
+    :isParentOf data:Roman_Sergeievich_Putyatin ;
+    :isSiblingOf data:Sergei_Putyatin ;
+    :isUncleOf data:Roman_Sergeievich_Putyatin .
+
+data:Wilhelm_of_Sweden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_of_Sweden ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Sergei_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Wilhelm_of_Sweden ;
+    :isBrotherOf data:Wilhelm_of_Sweden ;
+    :isFatherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Wilhelm_of_Sweden ;
+    :isUncleOf data:Lennart_Bernadotte .
+
+data:Alexandra_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :hasSister data:Alexandra_Georgievna_of_Russia ;
+    :hasSon data:Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAuntOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Alexandra_Georgievna_of_Russia ;
+    :isMotherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Alexandra_Georgievna_of_Russia ;
+    :isSisterOf data:Alexandra_Georgievna_of_Russia .
+
+data:Sergei_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasParent data:Alexander_II_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isChildOf data:Alexander_II_of_Russia ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isSonOf data:Alexander_II_of_Russia ;
+    :isUncleOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia .
+
+data:Alexander_II_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_II_of_Russia ;
+    :hasChild data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :hasSon data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isBloodrelationOf data:Alexander_II_of_Russia ;
+    :isBrotherOf data:Alexander_II_of_Russia ;
+    :isFatherOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isParentOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Alexander_II_of_Russia ;
+    :isUncleOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia .
+
+data:Dmitri_Pavlovich_of_Russia a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_Georgievna_of_Russia ;
+    :hasParent data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :hasSister data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isBrotherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isChildOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSonOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isUncleOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin .
+
+data:Roman_Sergeievich_Putyatin a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Putyatin ;
+    :hasBrother data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasFather data:Sergei_Putyatin ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasParent data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Putyatin ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Sergei_Putyatin ;
+    :isBloodrelationOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBrotherOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isChildOf data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Putyatin ;
+    :isSiblingOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSonOf data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Putyatin .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :hasBrother data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasFather data:Wilhelm_of_Sweden ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasParent data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Sergei_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :isBloodrelationOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBrotherOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isChildOf data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :isSiblingOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSonOf data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_of_Sweden .
+
+data:Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :hasChild data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasParent data:Alexander_II_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Wilhelm_of_Sweden ;
+    :hasSon data:Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isChildOf data:Alexander_II_of_Russia ;
+    :isFatherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich_of_Russia ;
+    :isSonOf data:Alexander_II_of_Russia ;
+    :isUncleOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia .
+
+data:Maria_Pavlovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasChild data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:Alexandra_Georgievna_of_Russia ;
+    :hasParent data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich_of_Russia,
+        data:Sergei_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :hasSister data:Maria_Pavlovna_of_Russia ;
+    :hasSon data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAncestorOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAuntOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isChildOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isMotherOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isParentOf data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSiblingOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSisterOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :knownAs data:Maria_Pavlovna_the_Younger .
+

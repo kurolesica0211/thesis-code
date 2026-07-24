@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Juan_Carlos_I a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Juan_Carlos_I ;
+    :hasChild data:King_Felipe_VI ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasSon data:King_Felipe_VI ;
+    :isAncestorOf data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:King_Juan_Carlos_I ;
+    :isBrotherOf data:King_Juan_Carlos_I ;
+    :isFatherOf data:King_Felipe_VI ;
+    :isParentOf data:King_Felipe_VI ;
+    :isSiblingOf data:King_Juan_Carlos_I ;
+    :isUncleOf data:King_Felipe_VI .
+
+data:Queen_Sof%C3%ADa a :Ancestor,
+        :Woman ;
+    :hasChild data:King_Felipe_VI ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasSister data:Queen_Sof%C3%ADa ;
+    :hasSon data:King_Felipe_VI ;
+    :isAncestorOf data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isAuntOf data:King_Felipe_VI ;
+    :isBloodrelationOf data:Queen_Sof%C3%ADa ;
+    :isMotherOf data:King_Felipe_VI ;
+    :isParentOf data:King_Felipe_VI ;
+    :isSiblingOf data:Queen_Sof%C3%ADa ;
+    :isSisterOf data:Queen_Sof%C3%ADa .
+
+data:Queen_Letizia a :Ancestor,
+        :Woman ;
+    :hasChild data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasSister data:Queen_Letizia ;
+    :isAncestorOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isAuntOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Queen_Letizia ;
+    :isMotherOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSiblingOf data:Queen_Letizia ;
+    :isSisterOf data:Queen_Letizia .
+
+data:Infanta_Sof%C3%ADa a :Woman ;
+    :hasAncestor data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasFather data:King_Felipe_VI ;
+    :hasMother data:Queen_Letizia ;
+    :hasParent data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasSister data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isChildOf data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :isDaughterOf data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :isSiblingOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias .
+
+data:Leonor%2C_Princess_of_Asturias a :Woman ;
+    :hasAncestor data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasBirthYear 2005 ;
+    :hasFather data:King_Felipe_VI ;
+    :hasMother data:Queen_Letizia ;
+    :hasParent data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :hasSister data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isChildOf data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :isDaughterOf data:King_Felipe_VI,
+        data:Queen_Letizia ;
+    :isSiblingOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias .
+
+data:King_Felipe_VI a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa ;
+    :hasBrother data:King_Felipe_VI ;
+    :hasChild data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa ;
+    :hasParent data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Letizia,
+        data:Queen_Sof%C3%ADa ;
+    :isAncestorOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:King_Felipe_VI ;
+    :isBrotherOf data:King_Felipe_VI ;
+    :isChildOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa ;
+    :isFatherOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSiblingOf data:King_Felipe_VI ;
+    :isSonOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa ;
+    :isUncleOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias .
+

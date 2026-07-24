@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/353_353",
+  "text_file": "Q58777.txt",
+  "text_key": "Q58777",
+  "article": "https://en.wikipedia.org/wiki/Prince_August_Wilhelm_of_Prussia",
+  "article_key": "Prince August Wilhelm of Prussia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+    "qid": "Q58777",
+    "label": "Prince August Wilhelm of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+      "qid": "Q58777",
+      "label": "Prince August Wilhelm of Prussia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "qid": "Q161247",
+      "label": "Augusta Victoria of Schleswig-Holstein",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Alexander_Ferdinand_of_Prussia",
+      "qid": "Q2189056",
+      "label": "Prince Alexander Ferdinand of Prussia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "qid": "Q2419996",
+      "label": "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
+      "qid": "Q57621",
+      "label": "Wilhelm, German Crown Prince",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein",
+      "extracted_local_name": "Augusta_Victoria_of_Schleswig-Holstein",
+      "embedding_text": "Augusta Victoria of Schleswig-Holstein",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q161247",
+      "ground_truth_label": "Augusta Victoria of Schleswig-Holstein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_label": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_qid": "Q161247",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Alexander_Ferdinand_of_Prussia",
+      "extracted_local_name": "Prince_Alexander_Ferdinand_of_Prussia",
+      "embedding_text": "Prince Alexander Ferdinand of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Alexander_Ferdinand_of_Prussia",
+      "ground_truth_qid": "Q2189056",
+      "ground_truth_label": "Prince Alexander Ferdinand of Prussia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Alexander Ferdinand of Prussia",
+      "best_candidate_label": "Prince Alexander Ferdinand of Prussia",
+      "best_candidate_qid": "Q2189056",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_August_Wilhelm_of_Prussia",
+      "extracted_local_name": "Prince_August_Wilhelm_of_Prussia",
+      "embedding_text": "Prince August Wilhelm of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+      "ground_truth_qid": "Q58777",
+      "ground_truth_label": "Prince August Wilhelm of Prussia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince August Wilhelm of Prussia",
+      "best_candidate_label": "Prince August Wilhelm of Prussia",
+      "best_candidate_qid": "Q58777",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg",
+      "extracted_local_name": "Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg",
+      "embedding_text": "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "ground_truth_qid": "Q2419996",
+      "ground_truth_label": "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_label": "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_qid": "Q2419996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Wilhelm_II",
+      "extracted_local_name": "Wilhelm_II",
+      "embedding_text": "Wilhelm II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
+      "ground_truth_qid": "Q2677",
+      "ground_truth_label": "Wilhelm II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Margaret_of_Prussia",
+      "extracted_local_name": "Princess_Margaret_of_Prussia",
+      "embedding_text": "Princess Margaret of Prussia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Wilhelm Viktor Albrecht von Preußen",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.410958904109589
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

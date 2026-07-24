@@ -1,0 +1,236 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Albert_Victor_Duke_of_Clarence a :Man ;
+    :hasBrother data:Prince_Albert_Victor_Duke_of_Clarence ;
+    :hasRelation data:Prince_Albert_Victor_Duke_of_Clarence ;
+    :isBloodrelationOf data:Prince_Albert_Victor_Duke_of_Clarence ;
+    :isBrotherOf data:Prince_Albert_Victor_Duke_of_Clarence ;
+    :isSiblingOf data:Prince_Albert_Victor_Duke_of_Clarence .
+
+data:Otto_Campini a :Man ;
+    :hasBrother data:Otto_Campini ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isBloodrelationOf data:Otto_Campini ;
+    :isBrotherOf data:Otto_Campini ;
+    :isSiblingOf data:Otto_Campini .
+
+data:Prince_Emanuele_Filiberto_of_Savoy a :Man ;
+    :hasBrother data:Prince_Emanuele_Filiberto_of_Savoy ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto_of_Savoy ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto_of_Savoy ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto_of_Savoy .
+
+data:Infanta_Maria_Isabel_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :hasDaughter data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Infanta_Maria_Isabel_of_Spain ;
+    :isAncestorOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isAuntOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Infanta_Maria_Isabel_of_Spain ;
+    :isMotherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isParentOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Infanta_Maria_Isabel_of_Spain ;
+    :isSisterOf data:Infanta_Maria_Isabel_of_Spain .
+
+data:Louis_Philippe_I a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis_Philippe_I ;
+    :hasChild data:Prince_Philippe_Count_of_Paris ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSon data:Prince_Philippe_Count_of_Paris ;
+    :isAncestorOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isBloodrelationOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_Philippe_I ;
+    :isFatherOf data:Prince_Philippe_Count_of_Paris ;
+    :isParentOf data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Louis_Philippe_I ;
+    :isUncleOf data:Prince_Philippe_Count_of_Paris .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasAncestor data:Louis_Philippe_I ;
+    :hasBrother data:Prince_Philippe_Count_of_Paris ;
+    :hasChild data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :hasDaughter data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :hasFather data:Louis_Philippe_I ;
+    :hasParent data:Louis_Philippe_I ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isAncestorOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Philippe_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe_Count_of_Paris ;
+    :isChildOf data:Louis_Philippe_I ;
+    :isFatherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isParentOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Prince_Philippe_Count_of_Paris ;
+    :isSonOf data:Louis_Philippe_I ;
+    :isUncleOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman ;
+    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Isabelle_Duchess_of_Guise a :Woman ;
+    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Philippe_Duke_of_Orl%C3%A9ans a :Man ;
+    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isBrotherOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans .
+
+data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Woman ;
+    :hasAncestor data:Infanta_Maria_Isabel_of_Spain,
+        data:Louis_Philippe_I,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasBirthYear 1871 ;
+    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1895,
+        1936 ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasParent data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Infanta_Maria_Isabel_of_Spain,
+        data:Isabelle_Duchess_of_Guise,
+        data:Louis_Philippe_I,
+        data:Otto_Campini,
+        data:Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Emanuele_Filiberto_of_Savoy,
+        data:Prince_Philippe_Count_of_Paris ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isChildOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isDaughterOf data:Infanta_Maria_Isabel_of_Spain,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise,
+        data:Philippe_Duke_of_Orl%C3%A9ans .
+

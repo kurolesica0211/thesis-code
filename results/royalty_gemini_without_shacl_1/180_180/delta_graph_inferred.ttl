@@ -1,0 +1,184 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Annunziata_Asquith a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSister data:Lady_Annunziata_Asquith ;
+    :isBloodrelationOf data:Lady_Annunziata_Asquith ;
+    :isSiblingOf data:Lady_Annunziata_Asquith ;
+    :isSisterOf data:Lady_Annunziata_Asquith .
+
+data:Lady_Leonora_Grosvenor a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSister data:Lady_Leonora_Grosvenor ;
+    :isBloodrelationOf data:Lady_Leonora_Grosvenor ;
+    :isSiblingOf data:Lady_Leonora_Grosvenor ;
+    :isSisterOf data:Lady_Leonora_Grosvenor .
+
+data:Thomas_Edward_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:Thomas_Edward_Anson ;
+    :hasChild data:Thomas_William_Arnold_Anson ;
+    :hasDeathYear 1960 ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSon data:Thomas_William_Arnold_Anson ;
+    :isAncestorOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :isBloodrelationOf data:Thomas_Edward_Anson ;
+    :isBrotherOf data:Thomas_Edward_Anson ;
+    :isFatherOf data:Thomas_William_Arnold_Anson ;
+    :isParentOf data:Thomas_William_Arnold_Anson ;
+    :isSiblingOf data:Thomas_Edward_Anson ;
+    :isUncleOf data:Thomas_William_Arnold_Anson .
+
+data:Anne_Bowes_Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :hasDaughter data:Lady_Elizabeth_Georgiana_Anson ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSister data:Anne_Bowes_Lyon ;
+    :hasSon data:Thomas_Patrick_John_Anson ;
+    :isAncestorOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isAuntOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isBloodrelationOf data:Anne_Bowes_Lyon ;
+    :isMotherOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isParentOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isSiblingOf data:Anne_Bowes_Lyon ;
+    :isSisterOf data:Anne_Bowes_Lyon .
+
+data:Thomas_William_Arnold_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Thomas_Edward_Anson ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Thomas_William_Arnold_Anson ;
+    :hasChild data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :hasDaughter data:Lady_Elizabeth_Georgiana_Anson ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Thomas_Edward_Anson ;
+    :hasParent data:Thomas_Edward_Anson ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSon data:Thomas_Patrick_John_Anson ;
+    :isAncestorOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isBloodrelationOf data:Thomas_William_Arnold_Anson ;
+    :isBrotherOf data:Thomas_William_Arnold_Anson ;
+    :isChildOf data:Thomas_Edward_Anson ;
+    :isFatherOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isParentOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isSiblingOf data:Thomas_William_Arnold_Anson ;
+    :isSonOf data:Thomas_Edward_Anson ;
+    :isUncleOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson .
+
+data:Lady_Elizabeth_Georgiana_Anson a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_Bowes_Lyon,
+        data:Thomas_Edward_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Thomas_Patrick_John_Anson ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_William_Arnold_Anson ;
+    :hasMother data:Anne_Bowes_Lyon ;
+    :hasParent data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSister data:Lady_Elizabeth_Georgiana_Anson ;
+    :isBloodrelationOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isChildOf data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :isDaughterOf data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :isSiblingOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isSisterOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson .
+
+data:Thomas_Patrick_John_Anson a :Man,
+        :Person ;
+    :hasAncestor data:Anne_Bowes_Lyon,
+        data:Thomas_Edward_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Thomas_Patrick_John_Anson ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Thomas_William_Arnold_Anson ;
+    :hasMarriageYear 1975 ;
+    :hasMother data:Anne_Bowes_Lyon ;
+    :hasParent data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Lady_Annunziata_Asquith,
+        data:Lady_Elizabeth_Georgiana_Anson,
+        data:Lady_Leonora_Grosvenor,
+        data:Thomas_Edward_Anson,
+        data:Thomas_Patrick_John_Anson,
+        data:Thomas_William_Arnold_Anson ;
+    :hasSister data:Lady_Elizabeth_Georgiana_Anson ;
+    :isBloodrelationOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isBrotherOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isChildOf data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :isSiblingOf data:Lady_Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson ;
+    :isSonOf data:Anne_Bowes_Lyon,
+        data:Thomas_William_Arnold_Anson ;
+    :knownAs "Patrick Lichfield"^^xsd:string .
+

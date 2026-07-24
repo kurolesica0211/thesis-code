@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,\n        :Woman ;\n    :alsoKnownAs data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor ;\n    :hasBirthYear 1981 ;\n    :hasMarriageYear 2019 ;\n    :isDaughterOf data:Prince_Michael_of_Kent,\n        data:Princess_Michael_of_Kent .\n\ndata:Thomas_Henry_Robin_Kingston a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasMarriageYear 2019 .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person .\n\ndata:Princess_Michael_of_Kent a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,\n        :Woman ;\n    :alsoKnownAs data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor ;\n    :hasBirthYear 1981 ;\n    :hasMarriageYear 2019 ;\n    :isDaughterOf data:Prince_Michael_of_Kent,\n        data:Princess_Michael_of_Kent .\n\ndata:Thomas_Henry_Robin_Kingston a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasMarriageYear 2019 .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor a :Person,\n        :Woman .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person .\n\ndata:Princess_Michael_of_Kent a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,\n        :Woman ;\n    :alsoKnownAs data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor ;\n    :hasBirthYear 1981 ;\n    :hasMarriageYear 2019 ;\n    :isDaughterOf data:Prince_Michael_of_Kent,\n        data:Princess_Michael_of_Kent .\n\ndata:Thomas_Henry_Robin_Kingston a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasMarriageYear 2019 .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor a :Person,\n        :Woman .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person .\n\ndata:Princess_Michael_of_Kent a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Prince_Philip ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isSiblingOf data:Prince_Philip .
+
+data:Charles_Vincent_Ellingworth a :Man,
+        :Person ;
+    :hasBrother data:Charles_Vincent_Ellingworth ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :isBloodrelationOf data:Charles_Vincent_Ellingworth ;
+    :isBrotherOf data:Charles_Vincent_Ellingworth ;
+    :isSiblingOf data:Charles_Vincent_Ellingworth .
+
+data:Charles_Prince_of_Wales a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasBrother data:Charles_Prince_of_Wales ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :isBloodrelationOf data:Charles_Prince_of_Wales ;
+    :isBrotherOf data:Charles_Prince_of_Wales ;
+    :isSiblingOf data:Charles_Prince_of_Wales .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :isAncestorOf data:Amanda_Ellingworth,
+        data:Charles_Prince_of_Wales ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Louis_Mountbatten ;
+    :isUncleOf data:Prince_Philip .
+
+data:Baron_Brabourne_7th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Baron_Brabourne_7th ;
+    :hasChild data:Amanda_Ellingworth ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :isAncestorOf data:Amanda_Ellingworth ;
+    :isBloodrelationOf data:Baron_Brabourne_7th ;
+    :isBrotherOf data:Baron_Brabourne_7th ;
+    :isFatherOf data:Amanda_Ellingworth ;
+    :isParentOf data:Amanda_Ellingworth ;
+    :isSiblingOf data:Baron_Brabourne_7th ;
+    :isUncleOf data:Amanda_Ellingworth .
+
+data:Countess_Mountbatten_2nd a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Amanda_Ellingworth ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :hasSister data:Countess_Mountbatten_2nd ;
+    :isAncestorOf data:Amanda_Ellingworth ;
+    :isAuntOf data:Amanda_Ellingworth ;
+    :isBloodrelationOf data:Countess_Mountbatten_2nd ;
+    :isMotherOf data:Amanda_Ellingworth ;
+    :isParentOf data:Amanda_Ellingworth ;
+    :isSiblingOf data:Countess_Mountbatten_2nd ;
+    :isSisterOf data:Countess_Mountbatten_2nd .
+
+data:Amanda_Ellingworth a :Person,
+        :Woman ;
+    :formerlyKnownAs "The Honourable Amanda Knatchbull"^^xsd:string ;
+    :hasAncestor data:Baron_Brabourne_7th,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :hasBirthYear 1957 ;
+    :hasFather data:Baron_Brabourne_7th ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Countess_Mountbatten_2nd ;
+    :hasParent data:Baron_Brabourne_7th,
+        data:Countess_Mountbatten_2nd ;
+    :hasRelation data:Amanda_Ellingworth,
+        data:Baron_Brabourne_7th,
+        data:Charles_Prince_of_Wales,
+        data:Charles_Vincent_Ellingworth,
+        data:Countess_Mountbatten_2nd,
+        data:Louis_Mountbatten ;
+    :hasSister data:Amanda_Ellingworth ;
+    :isBloodrelationOf data:Amanda_Ellingworth ;
+    :isChildOf data:Baron_Brabourne_7th,
+        data:Countess_Mountbatten_2nd ;
+    :isDaughterOf data:Baron_Brabourne_7th,
+        data:Countess_Mountbatten_2nd ;
+    :isSiblingOf data:Amanda_Ellingworth ;
+    :isSisterOf data:Amanda_Ellingworth ;
+    :knownAs "Lady Amanda Patricia Victoria Ellingworth"^^xsd:string .
+

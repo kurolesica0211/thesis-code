@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_I a :Man,\n        :Person ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Carol_II ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Elena_of_Romania ;\n    :hasRelation data:Anne_of_Bourbon-Parma .\n\ndata:Anne_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Carol_II a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_I .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:Constantine_I_of_Greece .\n\ndata:Ferdinand_I a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_I a :Man,\n        :Person ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Carol_II ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Elena_of_Romania ;\n    :hasRelation data:Anne_of_Bourbon-Parma .\n\ndata:Anne_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Carol_II a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_I .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:Constantine_I_of_Greece .\n\ndata:Ferdinand_I a :Man,\n        :Person .\n\n"
+    }
+]

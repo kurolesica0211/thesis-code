@@ -1,0 +1,235 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olympia a :Ancestor,
+        :Woman ;
+    :hasChild data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSister data:Olympia ;
+    :hasSon data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Olympia ;
+    :isMotherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Olympia ;
+    :isSisterOf data:Olympia .
+
+data:Louis_Napol%C3%A9on a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis_Napol%C3%A9on ;
+    :hasChild data:Charles_Napol%C3%A9on ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Charles_Napol%C3%A9on ;
+    :isAncestorOf data:Charles_Napol%C3%A9on,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Louis_Napol%C3%A9on ;
+    :isBrotherOf data:Louis_Napol%C3%A9on ;
+    :isFatherOf data:Charles_Napol%C3%A9on ;
+    :isParentOf data:Charles_Napol%C3%A9on ;
+    :isSiblingOf data:Louis_Napol%C3%A9on ;
+    :isUncleOf data:Charles_Napol%C3%A9on .
+
+data:Charles_Napol%C3%A9on a :Ancestor,
+        :Man ;
+    :hasAncestor data:Louis_Napol%C3%A9on ;
+    :hasBrother data:Charles_Napol%C3%A9on ;
+    :hasChild data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasFather data:Louis_Napol%C3%A9on ;
+    :hasParent data:Louis_Napol%C3%A9on ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isAncestorOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Charles_Napol%C3%A9on ;
+    :isBrotherOf data:Charles_Napol%C3%A9on ;
+    :isChildOf data:Louis_Napol%C3%A9on ;
+    :isFatherOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isParentOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isSiblingOf data:Charles_Napol%C3%A9on ;
+    :isSonOf data:Louis_Napol%C3%A9on ;
+    :isUncleOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte .
+
+data:Ferdinand_of_Bourbon a :Ancestor,
+        :Man ;
+    :hasBrother data:Ferdinand_of_Bourbon ;
+    :hasChild data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasDaughter data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :isAncestorOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Ferdinand_of_Bourbon ;
+    :isBrotherOf data:Ferdinand_of_Bourbon ;
+    :isFatherOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isParentOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isSiblingOf data:Ferdinand_of_Bourbon ;
+    :isUncleOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium .
+
+data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ferdinand_of_Bourbon ;
+    :hasChild data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasFather data:Ferdinand_of_Bourbon ;
+    :hasParent data:Ferdinand_of_Bourbon ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSister data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasSon data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isAncestorOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isBloodrelationOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isChildOf data:Ferdinand_of_Bourbon ;
+    :isDaughterOf data:Ferdinand_of_Bourbon ;
+    :isMotherOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isParentOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isSiblingOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isSisterOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium .
+
+data:Cl%C3%A9mentine_of_Belgium a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ferdinand_of_Bourbon ;
+    :hasChild data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasFather data:Ferdinand_of_Bourbon ;
+    :hasParent data:Ferdinand_of_Bourbon ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSister data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasSon data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isAncestorOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isBloodrelationOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isChildOf data:Ferdinand_of_Bourbon ;
+    :isDaughterOf data:Ferdinand_of_Bourbon ;
+    :isMotherOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isParentOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isSiblingOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isSisterOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium .
+
+data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+    :hasAncestor data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasBirthYear 2022 ;
+    :hasBrother data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasMother data:Olympia ;
+    :hasParent data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Olympia ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :isBloodrelationOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBrotherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isChildOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Olympia ;
+    :isSiblingOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSonOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Olympia .
+
+data:Jean-Christophe_Napol%C3%A9on_Bonaparte a :Ancestor,
+        :Man ;
+    :hasAncestor data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Louis_Napol%C3%A9on ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasChild data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Charles_Napol%C3%A9on ;
+    :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasParent data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :hasRelation data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium,
+        data:Ferdinand_of_Bourbon,
+        data:Jean-Christophe_Napol%C3%A9on_Bonaparte,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Louis_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isBrotherOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isChildOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isFatherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :isSonOf data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Charles_Napol%C3%A9on,
+        data:Cl%C3%A9mentine_of_Belgium ;
+    :isUncleOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on .
+

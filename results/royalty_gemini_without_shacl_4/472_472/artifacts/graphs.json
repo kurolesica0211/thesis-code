@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andreas_Felix_Paul_von_Bismarck a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasDeathYear 2019 .\n\ndata:Kira-Marina_Liepsner a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :isDaughterOf data:Princess_Kira_of_Prussia .\n\ndata:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,\n        :Man .\n\ndata:Princess_Kira_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;\n    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andreas_Felix_Paul_von_Bismarck a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasDeathYear 2019 .\n\ndata:Kira-Marina_Liepsner a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :isDaughterOf data:Princess_Kira_of_Prussia .\n\ndata:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,\n        :Man .\n\ndata:Princess_Kira_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;\n    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .\n\n"
+    }
+]

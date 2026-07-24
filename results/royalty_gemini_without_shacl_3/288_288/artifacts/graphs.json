@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man,\n        :Person ;\n    :hasChild data:Lyla_Gilman,\n        data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman ;\n    :hasChild data:Rose_Windsor ;\n    :isParentOf data:Rose_Windsor .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :hasBirthYear 2010 .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasChild data:Rose_Windsor ;\n    :isParentOf data:Rose_Windsor .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :hasBirthYear 2012 .\n\ndata:Rose_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1980 ;\n    :hasChild data:Lyla_Gilman,\n        data:Rufus_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :isChildOf data:Birgitte_Duchess_of_Gloucester,\n        data:Prince_Richard_Duke_of_Gloucester .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man,\n        :Person ;\n    :hasChild data:Lyla_Gilman,\n        data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman ;\n    :hasChild data:Rose_Windsor ;\n    :isParentOf data:Rose_Windsor .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :hasBirthYear 2010 .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasChild data:Rose_Windsor ;\n    :isParentOf data:Rose_Windsor .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :hasBirthYear 2012 .\n\ndata:Rose_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1980 ;\n    :hasChild data:Lyla_Gilman,\n        data:Rufus_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :isChildOf data:Birgitte_Duchess_of_Gloucester,\n        data:Prince_Richard_Duke_of_Gloucester .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Fergus_Bowes-Lyon a :Man ;\n    :alsoKnownAs \"Mikey Strathmore\"^^xsd:string ;\n    :hasBirthYear 1957 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:Fergus_Bowes-Lyon ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Mary_Pamela_McCorquodale ;\n    :hasRelation data:Damaris_Stuart-William,\n        data:Isobel_Charlotte_Weatherall,\n        data:Karen_Baxter .\n\ndata:Percy_Weatherall a :Man ;\n    :hasSister data:Isobel_Charlotte_Weatherall .\n\ndata:Damaris_Stuart-William a :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man ;\n    :hasFather data:Michael_Bowes-Lyon_LtCol .\n\ndata:Karen_Baxter a :Woman .\n\ndata:Mary_Pamela_McCorquodale a :Woman .\n\ndata:Michael_Bowes-Lyon_LtCol a :Man ;\n    :hasSister data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Woman .\n\ndata:Isobel_Charlotte_Weatherall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Fergus_Bowes-Lyon a :Man ;\n    :alsoKnownAs \"Mikey Strathmore\"^^xsd:string ;\n    :hasBirthYear 1957 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:Fergus_Bowes-Lyon ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Mary_Pamela_McCorquodale ;\n    :hasRelation data:Damaris_Stuart-William,\n        data:Isobel_Charlotte_Weatherall,\n        data:Karen_Baxter .\n\ndata:Percy_Weatherall a :Man ;\n    :hasSister data:Isobel_Charlotte_Weatherall .\n\ndata:Damaris_Stuart-William a :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man ;\n    :hasFather data:Michael_Bowes-Lyon_LtCol .\n\ndata:Karen_Baxter a :Woman .\n\ndata:Mary_Pamela_McCorquodale a :Woman .\n\ndata:Michael_Bowes-Lyon_LtCol a :Man ;\n    :hasSister data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Woman .\n\ndata:Isobel_Charlotte_Weatherall a :Woman .\n\n"
+    }
+]

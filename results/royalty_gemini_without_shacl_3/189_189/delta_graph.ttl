@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Prince_Peter a :Man ;
+    :hasFather data:King_Alexander_I .
+
+data:Howard_Oxenberg a :Man .
+
+data:Kara%C4%91or%C4%91e a :Man .
+
+data:Manuel_Ulloa_Elias a :Man .
+
+data:Neil_Balfour_of_Dawyck a :Man .
+
+data:Prince_Andrew a :Man ;
+    :hasFather data:King_Alexander_I .
+
+data:Prince_Tomislav a :Man ;
+    :hasFather data:King_Alexander_I .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Yugoslavia a :Man ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Yugoslavia a :Man ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:King_Alexander_I a :Man .
+
+data:Prince_Paul_of_Yugoslavia a :Man .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+

@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Aimone_4th_Duke_of_Aosta ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:Princess_Helene ;
+    :hasRelation data:Princess_Anne_of_Orleans .
+
+data:Aimone_4th_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Amadeo_I_of_Spain a :Man,
+        :Person .
+
+data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasFather data:Amadeo_I_of_Spain ;
+    :hasMother data:Princess_Maria_Vittoria .
+
+data:Prince_Jean_Duke_of_Guise a :Man,
+        :Person .
+
+data:Prince_Philippe_of_Orleans a :Man,
+        :Person .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMother data:Princess_Isabelle_of_Orleans .
+
+data:Princess_Helene a :Person,
+        :Woman ;
+    :hasFather data:Prince_Philippe_of_Orleans ;
+    :hasMother data:Princess_Marie_Isabelle_of_Orleans .
+
+data:Princess_Isabelle_of_Orleans a :Person,
+        :Woman .
+
+data:Princess_Maria_Vittoria a :Person,
+        :Woman .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Person,
+        :Woman .
+

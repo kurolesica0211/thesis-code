@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Boris_III_Bulgaria a :Ancestor ;
+    :isFatherOf data:Marie_Louise_Bulgaria .
+
+data:Hermann_Leiningen :hasSex data:Male .
+
+data:Karl_Leiningen a :Ancestor .
+
+data:Nicholas_Montenegro a :Ancestor .
+
+data:Victor_Emmanuel_III_Italy a :Ancestor .
+
+data:Male a :Sex .
+
+data:Marie_Louise_Bulgaria a :Ancestor .
+

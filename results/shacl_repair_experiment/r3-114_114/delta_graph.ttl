@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:John_Knatchbull a :Ancestor .
+
+data:Marian_Elizabeth a :Ancestor .
+
+data:Patricia_Knatchbull a :Ancestor ;
+    :hasFather data:Louis_Mountbatten .
+
+data:Reginald_Wray_Frank_Eastwood a :Ancestor .
+
+data:Louis_Mountbatten a :Ancestor .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeth_Victoire_Jeanne_Marie_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 2026 ;\n    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;\n    :hasMother data:Naomi_Valeska .\n\ndata:Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\ndata:Henri_dOrleans a :Man,\n        :Person .\n\ndata:Michel_dOrleans a :Man,\n        :Person ;\n    :hasFather data:Henri_dOrleans .\n\ndata:Naomi_Valeska a :Person,\n        :Woman .\n\ndata:Beatrice_Pasquier_de_Franclieu a :Person,\n        :Woman .\n\ndata:Charles_Philippe_Marie_Louis_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Michel_dOrleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeth_Victoire_Jeanne_Marie_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 2026 ;\n    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;\n    :hasMother data:Naomi_Valeska .\n\ndata:Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\ndata:Henri_dOrleans a :Man,\n        :Person .\n\ndata:Michel_dOrleans a :Man,\n        :Person ;\n    :hasFather data:Henri_dOrleans .\n\ndata:Naomi_Valeska a :Person,\n        :Woman .\n\ndata:Beatrice_Pasquier_de_Franclieu a :Person,\n        :Woman .\n\ndata:Charles_Philippe_Marie_Louis_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Michel_dOrleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\n"
+    }
+]

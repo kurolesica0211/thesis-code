@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria-Olympia a :Person,
+        :Woman .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :isBrotherOf data:Alexia .
+
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Alexia .
+
+data:Anne-Marie a :Person,
+        :Woman .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana ;
+    :hasSister data:Theodora ;
+    :isBloodrelationOf data:Felipe_VI .
+

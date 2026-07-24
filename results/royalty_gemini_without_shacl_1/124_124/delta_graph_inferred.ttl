@@ -1,0 +1,245 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FabrizioPrinceRuffoDiCalabriaSantapau a :Man,
+        :Person ;
+    :hasBrother data:FabrizioPrinceRuffoDiCalabriaSantapau ;
+    :hasRelation data:FabrizioPrinceRuffoDiCalabriaSantapau ;
+    :isBloodrelationOf data:FabrizioPrinceRuffoDiCalabriaSantapau ;
+    :isBrotherOf data:FabrizioPrinceRuffoDiCalabriaSantapau ;
+    :isSiblingOf data:FabrizioPrinceRuffoDiCalabriaSantapau .
+
+data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg a :Person,
+        :Woman ;
+    :hasRelation data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg ;
+    :hasSister data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg ;
+    :isBloodrelationOf data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg ;
+    :isSiblingOf data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg ;
+    :isSisterOf data:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg .
+
+data:ArchdukeRobertOfAustriaEste a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1915 ;
+    :hasBrother data:ArchdukeRobertOfAustriaEste ;
+    :hasChild data:PrinceLorenz ;
+    :hasDeathYear 1996 ;
+    :hasRelation data:ArchdukeRobertOfAustriaEste,
+        data:PrinceLorenz,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :hasSon data:PrinceLorenz ;
+    :isAncestorOf data:PrinceLorenz ;
+    :isBloodrelationOf data:ArchdukeRobertOfAustriaEste ;
+    :isBrotherOf data:ArchdukeRobertOfAustriaEste ;
+    :isFatherOf data:PrinceLorenz ;
+    :isParentOf data:PrinceLorenz ;
+    :isSiblingOf data:ArchdukeRobertOfAustriaEste ;
+    :isUncleOf data:PrinceLorenz .
+
+data:PrincessMargheritaOfSavoyAosta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1930 ;
+    :hasChild data:PrinceLorenz ;
+    :hasDeathYear 2022 ;
+    :hasRelation data:ArchdukeRobertOfAustriaEste,
+        data:PrinceLorenz,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :hasSister data:PrincessMargheritaOfSavoyAosta ;
+    :hasSon data:PrinceLorenz ;
+    :isAncestorOf data:PrinceLorenz ;
+    :isAuntOf data:PrinceLorenz ;
+    :isBloodrelationOf data:PrincessMargheritaOfSavoyAosta ;
+    :isMotherOf data:PrinceLorenz ;
+    :isParentOf data:PrinceLorenz ;
+    :isSiblingOf data:PrincessMargheritaOfSavoyAosta ;
+    :isSisterOf data:PrincessMargheritaOfSavoyAosta .
+
+data:AstridOfSweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingAlbertII ;
+    :hasDeathYear 1935 ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSister data:AstridOfSweden ;
+    :hasSon data:KingAlbertII ;
+    :isAncestorOf data:KingAlbertII,
+        data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isAuntOf data:KingAlbertII ;
+    :isBloodrelationOf data:AstridOfSweden ;
+    :isMotherOf data:KingAlbertII ;
+    :isParentOf data:KingAlbertII ;
+    :isSiblingOf data:AstridOfSweden ;
+    :isSisterOf data:AstridOfSweden .
+
+data:KingLeopoldIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingLeopoldIII ;
+    :hasChild data:KingAlbertII ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSon data:KingAlbertII ;
+    :isAncestorOf data:KingAlbertII,
+        data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isBloodrelationOf data:KingLeopoldIII ;
+    :isBrotherOf data:KingLeopoldIII ;
+    :isFatherOf data:KingAlbertII ;
+    :isParentOf data:KingAlbertII ;
+    :isSiblingOf data:KingLeopoldIII ;
+    :isUncleOf data:KingAlbertII .
+
+data:PrinceLorenz a :Man,
+        :Person ;
+    :hasAncestor data:ArchdukeRobertOfAustriaEste,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :hasBrother data:PrinceLorenz ;
+    :hasFather data:ArchdukeRobertOfAustriaEste ;
+    :hasMother data:PrincessMargheritaOfSavoyAosta ;
+    :hasParent data:ArchdukeRobertOfAustriaEste,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :hasRelation data:ArchdukeRobertOfAustriaEste,
+        data:PrinceLorenz,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :isBloodrelationOf data:PrinceLorenz ;
+    :isBrotherOf data:PrinceLorenz ;
+    :isChildOf data:ArchdukeRobertOfAustriaEste,
+        data:PrincessMargheritaOfSavoyAosta ;
+    :isSiblingOf data:PrinceLorenz ;
+    :isSonOf data:ArchdukeRobertOfAustriaEste,
+        data:PrincessMargheritaOfSavoyAosta .
+
+data:QueenPaola a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingPhilippe,
+        data:PrincessAstrid ;
+    :hasDaughter data:PrincessAstrid ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSister data:QueenPaola ;
+    :hasSon data:KingPhilippe ;
+    :isAncestorOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isAuntOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isBloodrelationOf data:QueenPaola ;
+    :isMotherOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isParentOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isSiblingOf data:QueenPaola ;
+    :isSisterOf data:QueenPaola .
+
+data:KingPhilippe a :Man,
+        :Person ;
+    :hasAncestor data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:QueenPaola ;
+    :hasBrother data:KingPhilippe ;
+    :hasFather data:KingAlbertII ;
+    :hasMother data:QueenPaola ;
+    :hasParent data:KingAlbertII,
+        data:QueenPaola ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSister data:PrincessAstrid ;
+    :isBloodrelationOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isBrotherOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isChildOf data:KingAlbertII,
+        data:QueenPaola ;
+    :isSiblingOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isSonOf data:KingAlbertII,
+        data:QueenPaola .
+
+data:PrincessAstrid a :Person,
+        :Woman ;
+    :hasAncestor data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:QueenPaola ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:KingPhilippe ;
+    :hasFather data:KingAlbertII ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:QueenPaola ;
+    :hasParent data:KingAlbertII,
+        data:QueenPaola ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSister data:PrincessAstrid ;
+    :isBloodrelationOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isChildOf data:KingAlbertII,
+        data:QueenPaola ;
+    :isDaughterOf data:KingAlbertII,
+        data:QueenPaola ;
+    :isSiblingOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isSisterOf data:KingPhilippe,
+        data:PrincessAstrid .
+
+data:KingAlbertII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AstridOfSweden,
+        data:KingLeopoldIII ;
+    :hasBrother data:KingAlbertII ;
+    :hasChild data:KingPhilippe,
+        data:PrincessAstrid ;
+    :hasDaughter data:PrincessAstrid ;
+    :hasFather data:KingLeopoldIII ;
+    :hasMother data:AstridOfSweden ;
+    :hasParent data:AstridOfSweden,
+        data:KingLeopoldIII ;
+    :hasRelation data:AstridOfSweden,
+        data:KingAlbertII,
+        data:KingLeopoldIII,
+        data:KingPhilippe,
+        data:PrincessAstrid,
+        data:QueenPaola ;
+    :hasSon data:KingPhilippe ;
+    :isAncestorOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isBloodrelationOf data:KingAlbertII ;
+    :isBrotherOf data:KingAlbertII ;
+    :isChildOf data:AstridOfSweden,
+        data:KingLeopoldIII ;
+    :isFatherOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isParentOf data:KingPhilippe,
+        data:PrincessAstrid ;
+    :isSiblingOf data:KingAlbertII ;
+    :isSonOf data:AstridOfSweden,
+        data:KingLeopoldIII ;
+    :isUncleOf data:KingPhilippe,
+        data:PrincessAstrid .
+

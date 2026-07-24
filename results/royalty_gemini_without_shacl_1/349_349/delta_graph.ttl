@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountessNadejdaMikhailovnaDeTorby a :Person,
+        :Woman .
+
+data:GeorgeMountbatten a :Man,
+        :Person .
+
+data:HenryMountbatten a :Man,
+        :Person ;
+    :isBrotherOf data:TatianaMountbatten .
+
+data:PrinceGeorgeOfBattenberg a :Man,
+        :Person .
+
+data:SarahGeorginaWalker a :Person,
+        :Woman .
+
+data:TatianaMountbatten a :Person,
+        :Woman ;
+    :hasAncestor data:CountessNadejdaMikhailovnaDeTorby,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasBirthYear "1990-04-16"^^xsd:date ;
+    :hasBrother data:HenryMountbatten ;
+    :hasFather data:GeorgeMountbatten ;
+    :hasMother data:SarahGeorginaWalker ;
+    :knownAs "Tatiana Helen Georgia Dru"^^xsd:string .
+

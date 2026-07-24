@@ -1,0 +1,301 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander a :Man ;
+    :hasBrother data:Alexander ;
+    :hasRelation data:Alexander ;
+    :isBloodrelationOf data:Alexander ;
+    :isBrotherOf data:Alexander ;
+    :isSiblingOf data:Alexander .
+
+data:Irene a :Woman ;
+    :hasRelation data:Irene ;
+    :hasSister data:Irene ;
+    :isBloodrelationOf data:Irene ;
+    :isSiblingOf data:Irene ;
+    :isSisterOf data:Irene .
+
+data:Margareta a :Woman ;
+    :hasRelation data:Margareta ;
+    :hasSister data:Margareta ;
+    :isBloodrelationOf data:Margareta ;
+    :isSiblingOf data:Margareta ;
+    :isSisterOf data:Margareta .
+
+data:Marina a :Woman ;
+    :hasRelation data:Marina ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Michael a :Man ;
+    :hasBrother data:Michael ;
+    :hasRelation data:Michael ;
+    :isBloodrelationOf data:Michael ;
+    :isBrotherOf data:Michael ;
+    :isSiblingOf data:Michael .
+
+data:Sofia a :Woman ;
+    :hasRelation data:Sofia ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:TatianaEllinkaBlatnik a :Woman ;
+    :hasRelation data:TatianaEllinkaBlatnik ;
+    :hasSister data:TatianaEllinkaBlatnik ;
+    :isBloodrelationOf data:TatianaEllinkaBlatnik ;
+    :isSiblingOf data:TatianaEllinkaBlatnik ;
+    :isSisterOf data:TatianaEllinkaBlatnik .
+
+data:AgapiPoliti a :Ancestor,
+        :Woman ;
+    :hasChild data:ChrysiVardinogianni ;
+    :hasDaughter data:ChrysiVardinogianni ;
+    :hasRelation data:AgapiPoliti,
+        data:ChrysiVardinogianni,
+        data:GiorgosVardinogiannis ;
+    :hasSister data:AgapiPoliti ;
+    :isAncestorOf data:ChrysiVardinogianni ;
+    :isAuntOf data:ChrysiVardinogianni ;
+    :isBloodrelationOf data:AgapiPoliti ;
+    :isMotherOf data:ChrysiVardinogianni ;
+    :isParentOf data:ChrysiVardinogianni ;
+    :isSiblingOf data:AgapiPoliti ;
+    :isSisterOf data:AgapiPoliti .
+
+data:GiorgosVardinogiannis a :Ancestor,
+        :Man ;
+    :hasBrother data:GiorgosVardinogiannis ;
+    :hasChild data:ChrysiVardinogianni ;
+    :hasDaughter data:ChrysiVardinogianni ;
+    :hasRelation data:AgapiPoliti,
+        data:ChrysiVardinogianni,
+        data:GiorgosVardinogiannis ;
+    :isAncestorOf data:ChrysiVardinogianni ;
+    :isBloodrelationOf data:GiorgosVardinogiannis ;
+    :isBrotherOf data:GiorgosVardinogiannis ;
+    :isFatherOf data:ChrysiVardinogianni ;
+    :isParentOf data:ChrysiVardinogianni ;
+    :isSiblingOf data:GiorgosVardinogiannis ;
+    :isUncleOf data:ChrysiVardinogianni .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasChild data:Nikolaos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Nikolaos ;
+    :isAncestorOf data:Nikolaos ;
+    :isAuntOf data:Nikolaos ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Nikolaos ;
+    :isParentOf data:Nikolaos ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:ConstantineII a :Ancestor,
+        :Man ;
+    :hasBrother data:ConstantineII ;
+    :hasChild data:Nikolaos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSon data:Nikolaos ;
+    :isAncestorOf data:Nikolaos ;
+    :isBloodrelationOf data:ConstantineII ;
+    :isBrotherOf data:ConstantineII ;
+    :isFatherOf data:Nikolaos ;
+    :isParentOf data:Nikolaos ;
+    :isSiblingOf data:ConstantineII ;
+    :isUncleOf data:Nikolaos .
+
+data:ChrysiVardinogianni a :Woman ;
+    :hasAncestor data:AgapiPoliti,
+        data:GiorgosVardinogiannis ;
+    :hasFather data:GiorgosVardinogiannis ;
+    :hasMother data:AgapiPoliti ;
+    :hasParent data:AgapiPoliti,
+        data:GiorgosVardinogiannis ;
+    :hasRelation data:AgapiPoliti,
+        data:ChrysiVardinogianni,
+        data:GiorgosVardinogiannis ;
+    :hasSister data:ChrysiVardinogianni ;
+    :isBloodrelationOf data:ChrysiVardinogianni ;
+    :isChildOf data:AgapiPoliti,
+        data:GiorgosVardinogiannis ;
+    :isDaughterOf data:AgapiPoliti,
+        data:GiorgosVardinogiannis ;
+    :isSiblingOf data:ChrysiVardinogianni ;
+    :isSisterOf data:ChrysiVardinogianni .
+
+data:Alexia a :Woman ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Pavlos a :Man ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Philippos a :Man ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Theodora a :Woman ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Nikolaos a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII .
+

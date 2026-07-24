@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_of_Greece a :Woman ;
+    :isChildOf data:Elena_Vladimirovna_of_Russia,
+        data:Nicholas_of_Greece_and_Denmark .
+
+data:Marina_of_Greece a :Woman ;
+    :isChildOf data:Elena_Vladimirovna_of_Russia,
+        data:Nicholas_of_Greece_and_Denmark .
+
+data:Olga_of_Greece a :Woman ;
+    :isChildOf data:Elena_Vladimirovna_of_Russia,
+        data:Nicholas_of_Greece_and_Denmark .
+
+data:Andrei_of_Russia a :Man .
+
+data:Boris_of_Russia a :Man .
+
+data:Kirill_of_Russia a :Man .
+
+data:Marie_of_Mecklenburg-Schwerin a :Woman .
+
+data:Vladimir_Alexandrovich_of_Russia a :Man .
+
+data:Elena_Vladimirovna_of_Russia a :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:Marie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Andrei_of_Russia,
+        data:Boris_of_Russia,
+        data:Kirill_of_Russia .
+
+data:Nicholas_of_Greece_and_Denmark a :Man ;
+    :hasDeathYear 1938 .
+

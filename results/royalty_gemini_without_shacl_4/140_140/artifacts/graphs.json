@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear \"1869\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1960\"^^xsd:positiveInteger ;\n    :hasFather data:AlfonsoCountOfCaserta,\n        data:FerdinandII ;\n    :hasMarriageYear \"1897\"^^xsd:positiveInteger ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia ;\n    :isSiblingOf data:CarlosOfBourbonTwoSicilies,\n        data:GabrielOfBourbonTwoSicilies,\n        data:MariaCristina,\n        data:MariaDiGrazia,\n        data:MariaImmaculata,\n        data:PhilipOfBourbonTwoSicilies,\n        data:RanieriDukeOfCastro .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:CarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:FerdinandII a :Man,\n        :Person .\n\ndata:GabrielOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:LudwigIIIOfBavaria a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaCristina a :Person,\n        :Woman .\n\ndata:MariaDiGrazia a :Person,\n        :Woman .\n\ndata:MariaImmaculata a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIIIOfBavaria .\n\ndata:PhilipOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear \"1869\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1960\"^^xsd:positiveInteger ;\n    :hasFather data:AlfonsoCountOfCaserta,\n        data:FerdinandII ;\n    :hasMarriageYear \"1897\"^^xsd:positiveInteger ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia ;\n    :isSiblingOf data:CarlosOfBourbonTwoSicilies,\n        data:GabrielOfBourbonTwoSicilies,\n        data:MariaCristina,\n        data:MariaDiGrazia,\n        data:MariaImmaculata,\n        data:PhilipOfBourbonTwoSicilies,\n        data:RanieriDukeOfCastro .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:CarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:FerdinandII a :Man,\n        :Person .\n\ndata:GabrielOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:LudwigIIIOfBavaria a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaCristina a :Person,\n        :Woman .\n\ndata:MariaDiGrazia a :Person,\n        :Woman .\n\ndata:MariaImmaculata a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIIIOfBavaria .\n\ndata:PhilipOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person .\n\n"
+    }
+]

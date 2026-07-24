@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francisco_Franco a :Man,\n        :Person .\n\ndata:Infanta_Maria_Cristina_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Infante_Juan_Count_of_Barcelona .\n\ndata:Infante_Alfonso_de_Orleans_y_Borbon a :Man,\n        :Person .\n\ndata:Infante_Alfonso_of_Spain a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:King_Juan_Carlos_I_of_Spain ;\n    :knownAs \"Alfonso\"^^xsd:string .\n\ndata:King_Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Infante_Juan_Count_of_Barcelona .\n\ndata:Pilar a :Person,\n        :Woman ;\n    :isSisterOf data:King_Juan_Carlos_I_of_Spain .\n\ndata:King_Juan_Carlos_I_of_Spain a :Man,\n        :Person ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Francisco_Franco a :Man,\n        :Person .\n\ndata:Infanta_Maria_Cristina_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Infante_Juan_Count_of_Barcelona .\n\ndata:Infante_Alfonso_de_Orleans_y_Borbon a :Man,\n        :Person .\n\ndata:Infante_Alfonso_of_Spain a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:King_Juan_Carlos_I_of_Spain ;\n    :knownAs \"Alfonso\"^^xsd:string .\n\ndata:King_Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Infante_Juan_Count_of_Barcelona .\n\ndata:Pilar a :Person,\n        :Woman ;\n    :isSisterOf data:King_Juan_Carlos_I_of_Spain .\n\ndata:King_Juan_Carlos_I_of_Spain a :Man,\n        :Person ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    }
+]

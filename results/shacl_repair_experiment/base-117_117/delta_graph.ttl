@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:AlfonsoXIII a :Ancestor .
+
+data:InfanteJuan a :Ancestor .
+
+data:JuanCarlosI a :Ancestor .
+
+data:PrincessMariaDeLasMercedes a :Ancestor .
+
+data:QueenSofia a :Ancestor ;
+    :hasFather data:KingPaulOfGreece .
+
+data:KingPaulOfGreece a :Ancestor .
+

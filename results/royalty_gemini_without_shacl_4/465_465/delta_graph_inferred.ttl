@@ -1,0 +1,145 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LadyGabriella a :Person,
+        :Woman ;
+    :hasBrother data:FrederickWindsor ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSister data:LadyGabriella ;
+    :isAuntOf data:IsabellaAlexandraMay ;
+    :isBloodrelationOf data:FrederickWindsor,
+        data:LadyGabriella ;
+    :isSiblingOf data:FrederickWindsor,
+        data:LadyGabriella ;
+    :isSisterOf data:FrederickWindsor,
+        data:LadyGabriella .
+
+data:SophieWinkleman a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:IsabellaAlexandraMay ;
+    :hasDaughter data:IsabellaAlexandraMay ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSister data:SophieWinkleman ;
+    :isAncestorOf data:IsabellaAlexandraMay ;
+    :isAuntOf data:IsabellaAlexandraMay ;
+    :isBloodrelationOf data:SophieWinkleman ;
+    :isMotherOf data:IsabellaAlexandraMay ;
+    :isParentOf data:IsabellaAlexandraMay ;
+    :isSiblingOf data:SophieWinkleman ;
+    :isSisterOf data:SophieWinkleman .
+
+data:PrinceMichaelOfKent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceMichaelOfKent ;
+    :hasChild data:FrederickWindsor ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSon data:FrederickWindsor ;
+    :isAncestorOf data:FrederickWindsor,
+        data:IsabellaAlexandraMay ;
+    :isBloodrelationOf data:PrinceMichaelOfKent ;
+    :isBrotherOf data:PrinceMichaelOfKent ;
+    :isFatherOf data:FrederickWindsor ;
+    :isParentOf data:FrederickWindsor ;
+    :isSiblingOf data:PrinceMichaelOfKent ;
+    :isUncleOf data:FrederickWindsor .
+
+data:PrincessMichaelOfKent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FrederickWindsor ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSister data:PrincessMichaelOfKent ;
+    :hasSon data:FrederickWindsor ;
+    :isAncestorOf data:FrederickWindsor,
+        data:IsabellaAlexandraMay ;
+    :isAuntOf data:FrederickWindsor ;
+    :isBloodrelationOf data:PrincessMichaelOfKent ;
+    :isMotherOf data:FrederickWindsor ;
+    :isParentOf data:FrederickWindsor ;
+    :isSiblingOf data:PrincessMichaelOfKent ;
+    :isSisterOf data:PrincessMichaelOfKent .
+
+data:IsabellaAlexandraMay a :Person,
+        :Woman ;
+    :hasAncestor data:FrederickWindsor,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasBirthYear 2016 ;
+    :hasFather data:FrederickWindsor ;
+    :hasMother data:SophieWinkleman ;
+    :hasParent data:FrederickWindsor,
+        data:SophieWinkleman ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSister data:IsabellaAlexandraMay ;
+    :isBloodrelationOf data:IsabellaAlexandraMay ;
+    :isChildOf data:FrederickWindsor,
+        data:SophieWinkleman ;
+    :isDaughterOf data:FrederickWindsor,
+        data:SophieWinkleman ;
+    :isSiblingOf data:IsabellaAlexandraMay ;
+    :isSisterOf data:IsabellaAlexandraMay .
+
+data:FrederickWindsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent ;
+    :hasBirthYear 1979 ;
+    :hasBrother data:FrederickWindsor ;
+    :hasChild data:IsabellaAlexandraMay ;
+    :hasDaughter data:IsabellaAlexandraMay ;
+    :hasFather data:PrinceMichaelOfKent ;
+    :hasMother data:PrincessMichaelOfKent ;
+    :hasParent data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent ;
+    :hasRelation data:FrederickWindsor,
+        data:IsabellaAlexandraMay,
+        data:LadyGabriella,
+        data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent,
+        data:SophieWinkleman ;
+    :hasSister data:LadyGabriella ;
+    :isAncestorOf data:IsabellaAlexandraMay ;
+    :isBloodrelationOf data:FrederickWindsor,
+        data:LadyGabriella ;
+    :isBrotherOf data:FrederickWindsor,
+        data:LadyGabriella ;
+    :isChildOf data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent ;
+    :isFatherOf data:IsabellaAlexandraMay ;
+    :isParentOf data:IsabellaAlexandraMay ;
+    :isSiblingOf data:FrederickWindsor,
+        data:LadyGabriella ;
+    :isSonOf data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent ;
+    :isUncleOf data:IsabellaAlexandraMay .
+

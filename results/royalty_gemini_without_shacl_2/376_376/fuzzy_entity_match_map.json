@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/376_376",
+  "text_file": "Q621866.txt",
+  "text_key": "Q621866",
+  "article": "https://en.wikipedia.org/wiki/Alexander_Windsor,_Earl_of_Ulster",
+  "article_key": "Alexander Windsor, Earl of Ulster",
+  "main_entity": {
+    "uri": "http://example.com/data#Alexander_Windsor-_Earl_of_Ulster",
+    "qid": "Q621866",
+    "label": "Alexander Windsor, Earl of Ulster"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Alexander_Windsor-_Earl_of_Ulster",
+      "qid": "Q621866",
+      "label": "Alexander Windsor, Earl of Ulster",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Birgitte-_Duchess_of_Gloucester",
+      "qid": "Q241584",
+      "label": "Birgitte, Duchess of Gloucester",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Richard-_Duke_of_Gloucester",
+      "qid": "Q170294",
+      "label": "Prince Richard, Duke of Gloucester",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alexander_Windsor",
+      "extracted_local_name": "Alexander_Windsor",
+      "embedding_text": "Alexander Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alexander_Windsor-_Earl_of_Ulster",
+      "ground_truth_qid": "Q621866",
+      "ground_truth_label": "Alexander Windsor, Earl of Ulster",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexander Windsor",
+      "best_candidate_label": "Alexander Windsor, Earl of Ulster",
+      "best_candidate_qid": "Q621866",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Richard",
+      "extracted_local_name": "Prince_Richard",
+      "embedding_text": "Prince Richard",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Prince_Richard-_Duke_of_Gloucester",
+      "ground_truth_qid": "Q170294",
+      "ground_truth_label": "Prince Richard, Duke of Gloucester",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Richard of Gloucester",
+      "best_candidate_label": "Prince Richard, Duke of Gloucester",
+      "best_candidate_qid": "Q170294",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/Birgitte",
+      "extracted_local_name": "Birgitte",
+      "embedding_text": "Birgitte",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Birgitte Eva Henriksen",
+      "best_candidate_label": "Birgitte, Duchess of Gloucester",
+      "best_candidate_qid": "Q241584",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Claire_Booth",
+      "extracted_local_name": "Claire_Booth",
+      "embedding_text": "Claire Booth",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Birgitte- Duchess of Gloucester",
+      "best_candidate_label": "Birgitte, Duchess of Gloucester",
+      "best_candidate_qid": "Q241584",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32558139534883723
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

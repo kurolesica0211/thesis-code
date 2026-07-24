@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Norton_Louis_Philip_Knatchbull a :Man,\n        :Person ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Nicholas_Knatchbull ;\n    :hasFather data:John_Knatchbull ;\n    :hasMarriageYear 1979 ;\n    :hasMother data:Patricia_Knatchbull ;\n    :hasRelation data:Eugenie_Lady_Nuttall,\n        data:Penelope_Meredith_Eastwood .\n\ndata:Doreen_Knatchbull a :Person,\n        :Woman .\n\ndata:Eugenie_Lady_Nuttall a :Person,\n        :Woman .\n\ndata:John_Knatchbull a :Man,\n        :Person ;\n    :hasMother data:Doreen_Knatchbull .\n\ndata:Louis_Mountbatten a :Man,\n        :Person .\n\ndata:Marian_Elizabeth a :Person,\n        :Woman .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person .\n\ndata:Patricia_Knatchbull a :Person,\n        :Woman ;\n    :hasFather data:Louis_Mountbatten .\n\ndata:Penelope_Meredith_Eastwood a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Reginald_Wray_Frank_Eastwood ;\n    :hasMother data:Marian_Elizabeth .\n\ndata:Reginald_Wray_Frank_Eastwood a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Norton_Louis_Philip_Knatchbull a :Man,\n        :Person ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Nicholas_Knatchbull ;\n    :hasFather data:John_Knatchbull ;\n    :hasMarriageYear 1979 ;\n    :hasMother data:Patricia_Knatchbull ;\n    :hasRelation data:Eugenie_Lady_Nuttall,\n        data:Penelope_Meredith_Eastwood .\n\ndata:Doreen_Knatchbull a :Person,\n        :Woman .\n\ndata:Eugenie_Lady_Nuttall a :Person,\n        :Woman .\n\ndata:John_Knatchbull a :Man,\n        :Person ;\n    :hasMother data:Doreen_Knatchbull .\n\ndata:Louis_Mountbatten a :Man,\n        :Person .\n\ndata:Marian_Elizabeth a :Person,\n        :Woman .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person .\n\ndata:Patricia_Knatchbull a :Person,\n        :Woman ;\n    :hasFather data:Louis_Mountbatten .\n\ndata:Penelope_Meredith_Eastwood a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Reginald_Wray_Frank_Eastwood ;\n    :hasMother data:Marian_Elizabeth .\n\ndata:Reginald_Wray_Frank_Eastwood a :Man,\n        :Person .\n\n"
+    }
+]

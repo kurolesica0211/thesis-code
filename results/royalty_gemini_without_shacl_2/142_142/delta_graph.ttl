@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina a :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :knownAs "Infanta Cristina"^^xsd:string .
+
+data:Elena a :Woman ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia .
+
+data:FelipeVI a :Man ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia .
+
+data:InakiUrdangarin a :Man .
+
+data:JuanCarlosI a :Man .
+
+data:Sofia a :Woman .
+

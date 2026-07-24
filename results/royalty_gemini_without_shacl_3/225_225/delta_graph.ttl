@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_Victoire_Jeanne_Marie_dOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 2026 ;
+    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasMother data:Naomi_Valeska .
+
+data:Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+
+data:Henri_dOrleans a :Man,
+        :Person .
+
+data:Michel_dOrleans a :Man,
+        :Person ;
+    :hasFather data:Henri_dOrleans .
+
+data:Naomi_Valeska a :Person,
+        :Woman .
+
+data:Beatrice_Pasquier_de_Franclieu a :Person,
+        :Woman .
+
+data:Charles_Philippe_Marie_Louis_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Michel_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+

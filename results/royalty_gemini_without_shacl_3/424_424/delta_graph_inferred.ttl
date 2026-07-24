@@ -1,0 +1,170 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isBloodrelationOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSiblingOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld .
+
+data:Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :hasSister data:Brigid_Guinness ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isAuntOf data:Antonia_of_Prussia ;
+    :isBloodrelationOf data:Brigid_Guinness ;
+    :isMotherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Brigid_Guinness ;
+    :isSisterOf data:Brigid_Guinness .
+
+data:Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_of_Prussia ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Frederick_of_Prussia ;
+    :isBrotherOf data:Frederick_of_Prussia ;
+    :isFatherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Frederick_of_Prussia ;
+    :isUncleOf data:Antonia_of_Prussia .
+
+data:Charles_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley ;
+    :hasChild data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :hasDaughter data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isAncestorOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley ;
+    :isBrotherOf data:Charles_Wellesley ;
+    :isFatherOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isParentOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley ;
+    :isUncleOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+
+data:Charlotte_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Frederick_of_Prussia ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley ;
+    :hasSister data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isDaughterOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isSiblingOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSisterOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+
+data:Mary_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Frederick_of_Prussia ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley ;
+    :hasSister data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isDaughterOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isSiblingOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSisterOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+
+data:Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasAncestor data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :hasBirthYear 1955 ;
+    :hasChild data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :hasDaughter data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :hasFather data:Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Brigid_Guinness ;
+    :hasParent data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley ;
+    :hasSister data:Antonia_of_Prussia ;
+    :isAncestorOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isAuntOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Antonia_of_Prussia ;
+    :isChildOf data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :isDaughterOf data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :isMotherOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isParentOf data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSiblingOf data:Antonia_of_Prussia ;
+    :isSisterOf data:Antonia_of_Prussia .
+

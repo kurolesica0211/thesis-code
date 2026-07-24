@@ -1,0 +1,173 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Caroline_Reuss a :Woman ;
+    :hasDeathYear 1905 ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Caroline_Reuss ;
+    :isBloodrelationOf data:Caroline_Reuss ;
+    :isSiblingOf data:Caroline_Reuss ;
+    :isSisterOf data:Caroline_Reuss .
+
+data:Ellen_Franz a :Woman ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Ellen_Franz ;
+    :isBloodrelationOf data:Ellen_Franz ;
+    :isSiblingOf data:Ellen_Franz ;
+    :isSisterOf data:Ellen_Franz .
+
+data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man ;
+    :hasBrother data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :isBrotherOf data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach .
+
+data:Ernst_of_Lippe-Biesterfeld a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernst_of_Lippe-Biesterfeld ;
+    :hasChild data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasDaughter data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :isAncestorOf data:Adelaide_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Ernst_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Ernst_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isParentOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernst_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Adelaide_of_Lippe-Biesterfeld .
+
+data:Georg_II_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasBrother data:Georg_II_of_Saxe-Meiningen ;
+    :hasChild data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasSon data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isAncestorOf data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Georg_II_of_Saxe-Meiningen ;
+    :isBrotherOf data:Georg_II_of_Saxe-Meiningen ;
+    :isFatherOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isParentOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isSiblingOf data:Georg_II_of_Saxe-Meiningen ;
+    :isUncleOf data:Friedrich_Johann_of_Saxe-Meiningen .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ernst_of_Lippe-Biesterfeld ;
+    :hasChild data:Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Feodora_of_Saxe-Meiningen ;
+    :hasFather data:Ernst_of_Lippe-Biesterfeld ;
+    :hasParent data:Ernst_of_Lippe-Biesterfeld ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Adelaide_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Feodora_of_Saxe-Meiningen ;
+    :isAuntOf data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isChildOf data:Ernst_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Ernst_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Adelaide_of_Lippe-Biesterfeld .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasAncestor data:Georg_II_of_Saxe-Meiningen ;
+    :hasBrother data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasChild data:Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Feodora_of_Saxe-Meiningen ;
+    :hasFather data:Georg_II_of_Saxe-Meiningen ;
+    :hasParent data:Georg_II_of_Saxe-Meiningen ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :isAncestorOf data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isBrotherOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isChildOf data:Georg_II_of_Saxe-Meiningen ;
+    :isFatherOf data:Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isSonOf data:Georg_II_of_Saxe-Meiningen ;
+    :isUncleOf data:Feodora_of_Saxe-Meiningen .
+
+data:Feodora_of_Saxe-Meiningen a :Woman ;
+    :hasAncestor data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1910 ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Adelaide_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Caroline_Reuss,
+        data:Ellen_Franz,
+        data:Ernst_of_Lippe-Biesterfeld,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Feodora_of_Saxe-Meiningen ;
+    :isChildOf data:Adelaide_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isDaughterOf data:Adelaide_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isSiblingOf data:Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Feodora_of_Saxe-Meiningen ;
+    :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
+

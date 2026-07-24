@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Karageorgevitch a :Man,
+        :Person ;
+    :alsoKnownAs data:Prince_Aleksandar_III_Karadjordjevic,
+        data:Prince_Alexander_of_Serbia_and_Yugoslavia ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Sr_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_da_Gloria .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Princess_Maria_da_Gloria .
+
+data:Ignacio_Duke_of_Segorbe a :Man,
+        :Person .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Princess_Maria_da_Gloria .
+
+data:Alexander_Sr_of_Yugoslavia a :Man,
+        :Person ;
+    :hasFather data:King_Peter_II ;
+    :hasMother data:Queen_Alexandra .
+
+data:King_Peter_II a :Man,
+        :Person .
+
+data:Prince_Aleksandar_III_Karadjordjevic a :Person .
+
+data:Prince_Alexander_of_Serbia_and_Yugoslavia a :Person .
+
+data:Queen_Alexandra a :Person,
+        :Woman .
+
+data:Princess_Maria_da_Gloria a :Person,
+        :Woman .
+

@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor .
+
+data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasMother data:Lady_Jane_McDonnell ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Harriet_Williamina_Hepburn-Forbes a :Ancestor .
+
+data:Lady_Elizabeth_Bowes-Lyon a :Woman ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :isSisterOf data:John_Herbert_Bowes-Lyon .
+
+data:Major_Henry_Nevile_Fane a :Ancestor,
+        :Man .
+
+data:Cecilia_Bowes-Lyon a :Ancestor .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor .
+
+data:Claude_Bowes-Lyon a :Ancestor .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor .
+
+data:Lady_Jane_McDonnell a :Ancestor .
+
+data:John_Herbert_Bowes-Lyon a :Ancestor .
+

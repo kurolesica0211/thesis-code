@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary_Pamela_McCorquodale a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1932 ;
+    :hasChild data:Michael_Bowes-Lyon ;
+    :hasDeathYear 2025 ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSister data:Mary_Pamela_McCorquodale ;
+    :hasSon data:Michael_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Bowes-Lyon ;
+    :isAuntOf data:Michael_Bowes-Lyon ;
+    :isBloodrelationOf data:Mary_Pamela_McCorquodale ;
+    :isMotherOf data:Michael_Bowes-Lyon ;
+    :isParentOf data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Mary_Pamela_McCorquodale ;
+    :isSisterOf data:Mary_Pamela_McCorquodale .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasChild data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSon data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isFatherOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isParentOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isUncleOf data:Fergus_Michael_Claude_Bowes-Lyon .
+
+data:John_Cator a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:John_Cator ;
+    :hasChild data:Elizabeth_Margaret_Cator ;
+    :hasDaughter data:Elizabeth_Margaret_Cator ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isAncestorOf data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :isBloodrelationOf data:John_Cator ;
+    :isBrotherOf data:John_Cator ;
+    :isFatherOf data:Elizabeth_Margaret_Cator ;
+    :isParentOf data:Elizabeth_Margaret_Cator ;
+    :isSiblingOf data:John_Cator ;
+    :isUncleOf data:Elizabeth_Margaret_Cator .
+
+data:Elizabeth_Margaret_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:John_Cator ;
+    :hasBirthYear 1899 ;
+    :hasChild data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :hasDeathYear 1959 ;
+    :hasFather data:John_Cator ;
+    :hasParent data:John_Cator ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Margaret_Cator ;
+    :hasSon data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :isAuntOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Margaret_Cator ;
+    :isChildOf data:John_Cator ;
+    :isDaughterOf data:John_Cator ;
+    :isMotherOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isParentOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Margaret_Cator ;
+    :isSisterOf data:Elizabeth_Margaret_Cator .
+
+data:Michael_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasFather data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasParent data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isChildOf data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isSonOf data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale .
+
+data:Fergus_Michael_Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_Margaret_Cator,
+        data:John_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :hasChild data:Michael_Bowes-Lyon ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMarriageYear 1956 ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasParent data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:John_Cator,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSon data:Michael_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Bowes-Lyon ;
+    :isBloodrelationOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isBrotherOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isChildOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isFatherOf data:Michael_Bowes-Lyon ;
+    :isParentOf data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :isSonOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isUncleOf data:Michael_Bowes-Lyon .
+

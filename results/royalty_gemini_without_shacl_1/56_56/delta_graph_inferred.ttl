@@ -1,0 +1,177 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sarah_Ferguson a :Person,
+        :Woman ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Sarah_Ferguson ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isUncleOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor ;
+    :isParentOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSon data:Andrew_Mountbatten-Windsor ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor ;
+    :isParentOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Philip ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Prince_Philip ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasParent data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isSisterOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Prince_Philip ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasParent data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isSisterOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip ;
+    :hasBirthYear 1960 ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasChild data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :hasDaughter data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :hasFather data:Prince_Philip ;
+    :hasMarriageYear 1986 ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip,
+        data:Princess_Beatrice,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isAncestorOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip ;
+    :isFatherOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isParentOf data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip ;
+    :isUncleOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+

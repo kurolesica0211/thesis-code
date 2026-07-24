@@ -1,0 +1,10 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Henrik a :Ancestor .
+
+data:MargretheII a :Ancestor ;
+    :hasFather data:FrederikIX .
+
+data:FrederikIX a :Ancestor .
+

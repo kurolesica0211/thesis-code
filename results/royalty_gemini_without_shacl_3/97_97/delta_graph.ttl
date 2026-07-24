@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margarita_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina .
+
+data:Carlos_Hugo_Duke_of_Parma a :Man,
+        :Person .
+
+data:Prince_Bernhard a :Man,
+        :Person .
+
+data:Prince_Carlos a :Man,
+        :Person .
+
+data:Prince_Jaime a :Man,
+        :Person .
+
+data:Princess_Carolina a :Person,
+        :Woman .
+
+data:Princess_Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+

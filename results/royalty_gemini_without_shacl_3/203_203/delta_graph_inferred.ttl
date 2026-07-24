@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Davina_Lewis a :Person ;
+    :hasRelation data:Lady_Davina_Lewis ;
+    :isBloodrelationOf data:Lady_Davina_Lewis ;
+    :isSiblingOf data:Lady_Davina_Lewis .
+
+data:Birgitte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Davina_Windsor ;
+    :hasDaughter data:Davina_Windsor ;
+    :hasRelation data:Birgitte,
+        data:Davina_Windsor,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Birgitte ;
+    :isAncestorOf data:Davina_Windsor,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAuntOf data:Davina_Windsor ;
+    :isBloodrelationOf data:Birgitte ;
+    :isMotherOf data:Davina_Windsor ;
+    :isParentOf data:Davina_Windsor ;
+    :isSiblingOf data:Birgitte ;
+    :isSisterOf data:Birgitte .
+
+data:Prince_Richard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard ;
+    :hasChild data:Davina_Windsor ;
+    :hasDaughter data:Davina_Windsor ;
+    :hasRelation data:Davina_Windsor,
+        data:Prince_Richard,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAncestorOf data:Davina_Windsor,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Prince_Richard ;
+    :isBrotherOf data:Prince_Richard ;
+    :isFatherOf data:Davina_Windsor ;
+    :isParentOf data:Davina_Windsor ;
+    :isSiblingOf data:Prince_Richard ;
+    :isUncleOf data:Davina_Windsor .
+
+data:Ari a :Man,
+        :Person ;
+    :hasAncestor data:Gary_Lewis ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Ari,
+        data:Tane_Mahuta ;
+    :hasFather data:Gary_Lewis ;
+    :hasParent data:Gary_Lewis ;
+    :hasRelation data:Ari,
+        data:Gary_Lewis,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Senna_Kowhai ;
+    :isBloodrelationOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBrotherOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isChildOf data:Gary_Lewis ;
+    :isSiblingOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSonOf data:Gary_Lewis .
+
+data:Gary_Lewis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Gary_Lewis ;
+    :hasChild data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasDaughter data:Senna_Kowhai ;
+    :hasRelation data:Ari,
+        data:Gary_Lewis,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSon data:Ari,
+        data:Tane_Mahuta ;
+    :isAncestorOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Gary_Lewis ;
+    :isBrotherOf data:Gary_Lewis ;
+    :isFatherOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isParentOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSiblingOf data:Gary_Lewis ;
+    :isUncleOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta .
+
+data:Davina_Windsor a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs data:Lady_Davina_Lewis ;
+    :hasAncestor data:Birgitte,
+        data:Prince_Richard ;
+    :hasBirthYear 1977 ;
+    :hasChild data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasDaughter data:Senna_Kowhai ;
+    :hasFather data:Prince_Richard ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Birgitte ;
+    :hasParent data:Birgitte,
+        data:Prince_Richard ;
+    :hasRelation data:Birgitte,
+        data:Davina_Windsor,
+        data:Prince_Richard,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Davina_Windsor ;
+    :hasSon data:Tane_Mahuta ;
+    :isAncestorOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAuntOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Davina_Windsor ;
+    :isChildOf data:Birgitte,
+        data:Prince_Richard ;
+    :isDaughterOf data:Birgitte,
+        data:Prince_Richard ;
+    :isMotherOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isParentOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSiblingOf data:Davina_Windsor ;
+    :isSisterOf data:Davina_Windsor .
+
+data:Senna_Kowhai a :Person,
+        :Woman ;
+    :hasAncestor data:Birgitte,
+        data:Davina_Windsor,
+        data:Gary_Lewis,
+        data:Prince_Richard ;
+    :hasBrother data:Ari,
+        data:Tane_Mahuta ;
+    :hasFather data:Gary_Lewis ;
+    :hasMother data:Davina_Windsor ;
+    :hasParent data:Davina_Windsor,
+        data:Gary_Lewis ;
+    :hasRelation data:Ari,
+        data:Birgitte,
+        data:Davina_Windsor,
+        data:Gary_Lewis,
+        data:Prince_Richard,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Senna_Kowhai ;
+    :isBloodrelationOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isChildOf data:Davina_Windsor,
+        data:Gary_Lewis ;
+    :isDaughterOf data:Davina_Windsor,
+        data:Gary_Lewis ;
+    :isSiblingOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSisterOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta .
+
+data:Tane_Mahuta a :Man,
+        :Person ;
+    :hasAncestor data:Birgitte,
+        data:Davina_Windsor,
+        data:Gary_Lewis,
+        data:Prince_Richard ;
+    :hasBrother data:Ari,
+        data:Tane_Mahuta ;
+    :hasFather data:Gary_Lewis ;
+    :hasMother data:Davina_Windsor ;
+    :hasParent data:Davina_Windsor,
+        data:Gary_Lewis ;
+    :hasRelation data:Ari,
+        data:Birgitte,
+        data:Davina_Windsor,
+        data:Gary_Lewis,
+        data:Prince_Richard,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Senna_Kowhai ;
+    :isBloodrelationOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBrotherOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isChildOf data:Davina_Windsor,
+        data:Gary_Lewis ;
+    :isSiblingOf data:Ari,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSonOf data:Davina_Windsor,
+        data:Gary_Lewis .
+

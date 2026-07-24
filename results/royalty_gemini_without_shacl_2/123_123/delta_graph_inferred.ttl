@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:James_Edward_Lascelles,
+        data:King_Charles_III,
+        data:Marion ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:7th_Earl_of_Harewood ;
+    :hasChild data:James_Edward_Lascelles ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:James_Edward_Lascelles,
+        data:King_Charles_III,
+        data:Marion ;
+    :hasSon data:James_Edward_Lascelles ;
+    :isAncestorOf data:James_Edward_Lascelles ;
+    :isBloodrelationOf data:7th_Earl_of_Harewood ;
+    :isBrotherOf data:7th_Earl_of_Harewood ;
+    :isFatherOf data:James_Edward_Lascelles ;
+    :isParentOf data:James_Edward_Lascelles ;
+    :isSiblingOf data:7th_Earl_of_Harewood ;
+    :isUncleOf data:James_Edward_Lascelles .
+
+data:Marion a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:James_Edward_Lascelles ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:James_Edward_Lascelles,
+        data:King_Charles_III,
+        data:Marion ;
+    :hasSister data:Marion ;
+    :hasSon data:James_Edward_Lascelles ;
+    :isAncestorOf data:James_Edward_Lascelles ;
+    :isAuntOf data:James_Edward_Lascelles ;
+    :isBloodrelationOf data:Marion ;
+    :isMotherOf data:James_Edward_Lascelles ;
+    :isParentOf data:James_Edward_Lascelles ;
+    :isSiblingOf data:Marion ;
+    :isSisterOf data:Marion .
+
+data:James_Edward_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:7th_Earl_of_Harewood,
+        data:Marion ;
+    :hasBirthYear 1953 ;
+    :hasBrother data:James_Edward_Lascelles ;
+    :hasFather data:7th_Earl_of_Harewood ;
+    :hasMother data:Marion ;
+    :hasParent data:7th_Earl_of_Harewood,
+        data:Marion ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:James_Edward_Lascelles,
+        data:King_Charles_III,
+        data:Marion ;
+    :isBloodrelationOf data:James_Edward_Lascelles,
+        data:King_Charles_III ;
+    :isBrotherOf data:James_Edward_Lascelles ;
+    :isChildOf data:7th_Earl_of_Harewood,
+        data:Marion ;
+    :isSiblingOf data:James_Edward_Lascelles ;
+    :isSonOf data:7th_Earl_of_Harewood,
+        data:Marion .
+

@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/471_471",
+  "text_file": "Q778200.txt",
+  "text_key": "Q778200",
+  "article": "https://en.wikipedia.org/wiki/Grand_Duchess_Maria_Kirillovna_of_Russia",
+  "article_key": "Grand Duchess Maria Kirillovna of Russia",
+  "main_entity": {
+    "uri": "http://example.com/data#Grand_Duchess_Maria_Kirillovna_of_Russia",
+    "qid": "Q778200",
+    "label": "Grand Duchess Maria Kirillovna of Russia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Grand_Duchess_Maria_Kirillovna_of_Russia",
+      "qid": "Q778200",
+      "label": "Grand Duchess Maria Kirillovna of Russia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duke_Kirill_Vladimirovich_of_Russia",
+      "qid": "Q160948",
+      "label": "Grand Duke Kirill Vladimirovich of Russia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha",
+      "qid": "Q164500",
+      "label": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Maria_Kirillovna_of_Russia",
+      "extracted_local_name": "Maria_Kirillovna_of_Russia",
+      "embedding_text": "Maria Kirillovna of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Grand_Duchess_Maria_Kirillovna_of_Russia",
+      "ground_truth_qid": "Q778200",
+      "ground_truth_label": "Grand Duchess Maria Kirillovna of Russia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria Kirillovna of Russia",
+      "best_candidate_label": "Grand Duchess Maria Kirillovna of Russia",
+      "best_candidate_qid": "Q778200",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Victoria_Melita_of_Edinburgh",
+      "extracted_local_name": "Victoria_Melita_of_Edinburgh",
+      "embedding_text": "Victoria Melita of Edinburgh",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha",
+      "ground_truth_qid": "Q164500",
+      "ground_truth_label": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Melita of Edinburgh",
+      "best_candidate_label": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+      "best_candidate_qid": "Q164500",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Kirill_Vladimirovich_of_Russia",
+      "extracted_local_name": "Kirill_Vladimirovich_of_Russia",
+      "embedding_text": "Kirill Vladimirovich of Russia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.892156862745098,
+      "ground_truth_uri": "http://example.com/data#Grand_Duke_Kirill_Vladimirovich_of_Russia",
+      "ground_truth_qid": "Q160948",
+      "ground_truth_label": "Grand Duke Kirill Vladimirovich of Russia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duke Kirill Vladimirovich of Russia",
+      "best_candidate_label": "Grand Duke Kirill Vladimirovich of Russia",
+      "best_candidate_qid": "Q160948",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.892156862745098
+    },
+    {
+      "extracted_uri": "http://example.org/data/Emich_Kirill_of_Leiningen",
+      "extracted_local_name": "Emich_Kirill_of_Leiningen",
+      "embedding_text": "Emich Kirill of Leiningen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria Kirillovna",
+      "best_candidate_label": "Grand Duchess Maria Kirillovna of Russia",
+      "best_candidate_qid": "Q778200",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5365853658536586
+    },
+    {
+      "extracted_uri": "http://example.org/data/Karl_6th_Prince_of_Leiningen",
+      "extracted_local_name": "Karl_6th_Prince_of_Leiningen",
+      "embedding_text": "Karl 6th Prince of Leiningen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Melita",
+      "best_candidate_label": "Princess Victoria Melita of Saxe-Coburg and Gotha",
+      "best_candidate_qid": "Q164500",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.27906976744186046
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

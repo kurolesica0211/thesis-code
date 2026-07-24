@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasAncestor data:Queen_Victoria ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSiblingOf data:Charlotte,\n        data:Henry,\n        data:Sophie,\n        data:Viktoria,\n        data:Wilhelm_II .\n\ndata:Charlotte a :Person,\n        :Woman .\n\ndata:Frederick_Charles_of_Hesse a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Frederick_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Henry a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Viktoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasAncestor data:Queen_Victoria ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSiblingOf data:Charlotte,\n        data:Henry,\n        data:Sophie,\n        data:Viktoria,\n        data:Wilhelm_II .\n\ndata:Charlotte a :Person,\n        :Woman .\n\ndata:Frederick_Charles_of_Hesse a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Frederick_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Henry a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Viktoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    }
+]

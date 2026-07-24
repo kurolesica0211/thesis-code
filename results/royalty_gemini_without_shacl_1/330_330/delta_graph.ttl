@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Fergus_Bowes-Lyon .
+
+data:John_Bowes-Lyon a :Man,
+        :Person ;
+    :isBrotherOf data:Fergus_Bowes-Lyon .
+
+data:Rosemary_Bowes-Lyon a :Person,
+        :Woman ;
+    :isChildOf data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon .
+
+data:Cecilia_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Christian_Norah_Dawson-Damer a :Person,
+        :Woman .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :hasRelation data:Christian_Norah_Dawson-Damer .
+

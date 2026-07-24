@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ColinGrahamThompson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ColinGrahamThompson ;
+    :hasChild data:PenelopeAnneVereThompson ;
+    :hasDaughter data:PenelopeAnneVereThompson ;
+    :hasRelation data:ColinGrahamThompson,
+        data:PenelopeAnneVereThompson,
+        data:RosemaryVereEdwardes ;
+    :isAncestorOf data:PenelopeAnneVereThompson ;
+    :isBloodrelationOf data:ColinGrahamThompson ;
+    :isBrotherOf data:ColinGrahamThompson ;
+    :isFatherOf data:PenelopeAnneVereThompson ;
+    :isParentOf data:PenelopeAnneVereThompson ;
+    :isSiblingOf data:ColinGrahamThompson ;
+    :isUncleOf data:PenelopeAnneVereThompson .
+
+data:RosemaryVereEdwardes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PenelopeAnneVereThompson ;
+    :hasDaughter data:PenelopeAnneVereThompson ;
+    :hasRelation data:ColinGrahamThompson,
+        data:PenelopeAnneVereThompson,
+        data:RosemaryVereEdwardes ;
+    :hasSister data:RosemaryVereEdwardes ;
+    :isAncestorOf data:PenelopeAnneVereThompson ;
+    :isAuntOf data:PenelopeAnneVereThompson ;
+    :isBloodrelationOf data:RosemaryVereEdwardes ;
+    :isMotherOf data:PenelopeAnneVereThompson ;
+    :isParentOf data:PenelopeAnneVereThompson ;
+    :isSiblingOf data:RosemaryVereEdwardes ;
+    :isSisterOf data:RosemaryVereEdwardes .
+
+data:GeorgeMountbatten a :Man,
+        :Person ;
+    :hasBrother data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :hasRelation data:DavidMountbatten,
+        data:GeorgeMountbatten,
+        data:IvarMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :isBrotherOf data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:IvarMountbatten .
+
+data:JanetMercedesBryce a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:IvarMountbatten ;
+    :hasRelation data:DavidMountbatten,
+        data:GeorgeMountbatten,
+        data:IvarMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasSister data:JanetMercedesBryce ;
+    :hasSon data:IvarMountbatten ;
+    :isAncestorOf data:IvarMountbatten ;
+    :isAuntOf data:IvarMountbatten ;
+    :isBloodrelationOf data:JanetMercedesBryce ;
+    :isMotherOf data:IvarMountbatten ;
+    :isParentOf data:IvarMountbatten ;
+    :isSiblingOf data:JanetMercedesBryce ;
+    :isSisterOf data:JanetMercedesBryce .
+
+data:PrinceGeorgeOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceGeorgeOfBattenberg ;
+    :hasChild data:DavidMountbatten ;
+    :hasRelation data:DavidMountbatten,
+        data:GeorgeMountbatten,
+        data:IvarMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasSon data:DavidMountbatten ;
+    :isAncestorOf data:DavidMountbatten,
+        data:IvarMountbatten ;
+    :isBloodrelationOf data:PrinceGeorgeOfBattenberg ;
+    :isBrotherOf data:PrinceGeorgeOfBattenberg ;
+    :isFatherOf data:DavidMountbatten ;
+    :isParentOf data:DavidMountbatten ;
+    :isSiblingOf data:PrinceGeorgeOfBattenberg ;
+    :isUncleOf data:DavidMountbatten .
+
+data:PenelopeAnneVereThompson a :Person,
+        :Woman ;
+    :hasAncestor data:ColinGrahamThompson,
+        data:RosemaryVereEdwardes ;
+    :hasBirthYear 1966 ;
+    :hasFather data:ColinGrahamThompson ;
+    :hasMother data:RosemaryVereEdwardes ;
+    :hasParent data:ColinGrahamThompson,
+        data:RosemaryVereEdwardes ;
+    :hasRelation data:ColinGrahamThompson,
+        data:PenelopeAnneVereThompson,
+        data:RosemaryVereEdwardes ;
+    :hasSister data:PenelopeAnneVereThompson ;
+    :isBloodrelationOf data:PenelopeAnneVereThompson ;
+    :isChildOf data:ColinGrahamThompson,
+        data:RosemaryVereEdwardes ;
+    :isDaughterOf data:ColinGrahamThompson,
+        data:RosemaryVereEdwardes ;
+    :isSiblingOf data:PenelopeAnneVereThompson ;
+    :isSisterOf data:PenelopeAnneVereThompson .
+
+data:DavidMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceGeorgeOfBattenberg ;
+    :hasBrother data:DavidMountbatten ;
+    :hasChild data:IvarMountbatten ;
+    :hasFather data:PrinceGeorgeOfBattenberg ;
+    :hasParent data:PrinceGeorgeOfBattenberg ;
+    :hasRelation data:DavidMountbatten,
+        data:GeorgeMountbatten,
+        data:IvarMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasSon data:IvarMountbatten ;
+    :isAncestorOf data:IvarMountbatten ;
+    :isBloodrelationOf data:DavidMountbatten ;
+    :isBrotherOf data:DavidMountbatten ;
+    :isChildOf data:PrinceGeorgeOfBattenberg ;
+    :isFatherOf data:IvarMountbatten ;
+    :isParentOf data:IvarMountbatten ;
+    :isSiblingOf data:DavidMountbatten ;
+    :isSonOf data:PrinceGeorgeOfBattenberg ;
+    :isUncleOf data:IvarMountbatten .
+
+data:IvarMountbatten a :Man,
+        :Person ;
+    :hasAncestor data:DavidMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :hasFather data:DavidMountbatten ;
+    :hasMother data:JanetMercedesBryce ;
+    :hasParent data:DavidMountbatten,
+        data:JanetMercedesBryce ;
+    :hasRelation data:DavidMountbatten,
+        data:GeorgeMountbatten,
+        data:IvarMountbatten,
+        data:JanetMercedesBryce,
+        data:PrinceGeorgeOfBattenberg ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :isBrotherOf data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :isChildOf data:DavidMountbatten,
+        data:JanetMercedesBryce ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:IvarMountbatten ;
+    :isSonOf data:DavidMountbatten,
+        data:JanetMercedesBryce .
+

@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Camilla_Parker_Bowles a :Person,
+        :Woman .
+
+data:Camilla_Parker_Bowles%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:Charles_III%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Diana_Spencer%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:Elizabeth_II%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:George_VI%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Harry%2Cdata_William a :Person ;
+    :hasFather data:Charles_III .
+
+data:Harry%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philip_Duke_of_Edinburgh%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:William%2Cdata_Harry a :Person ;
+    :hasMother data:Elizabeth_II .
+
+data:William%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBirthYear 1948 ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear "1996"^^xsd:long,
+        "2005"^^xsd:long ;
+    :hasMother data:Elizabeth_II ;
+    :hasSon data:Harry,
+        data:William ;
+    :knownAs "Charles Philip Arthur George"^^xsd:string .
+
+data:Harry a :Man,
+        :Person ;
+    :hasMother data:Diana_Spencer .
+
+data:William a :Man,
+        :Person ;
+    :hasMother data:Diana_Spencer .
+
+data:Diana_Spencer a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:George_VI .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

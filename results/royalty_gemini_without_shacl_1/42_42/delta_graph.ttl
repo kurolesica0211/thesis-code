@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:George_of_Wales a :Man,
+        :Person ;
+    :alsoKnownAs "George Alexander Louis"^^xsd:string ;
+    :hasBrother data:Louis_of_Wales ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :hasSister data:Charlotte_of_Wales .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:Charlotte_of_Wales a :Person,
+        :Woman .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Louis_of_Wales a :Man,
+        :Person .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
+

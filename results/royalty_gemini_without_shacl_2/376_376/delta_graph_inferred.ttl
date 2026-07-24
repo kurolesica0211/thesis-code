@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claire_Booth a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Windsor,
+        data:Birgitte,
+        data:Claire_Booth,
+        data:Prince_Richard ;
+    :hasSister data:Claire_Booth ;
+    :isBloodrelationOf data:Claire_Booth ;
+    :isSiblingOf data:Claire_Booth ;
+    :isSisterOf data:Claire_Booth .
+
+data:Birgitte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Windsor ;
+    :hasRelation data:Alexander_Windsor,
+        data:Birgitte,
+        data:Claire_Booth,
+        data:Prince_Richard ;
+    :hasSister data:Birgitte ;
+    :hasSon data:Alexander_Windsor ;
+    :isAncestorOf data:Alexander_Windsor ;
+    :isAuntOf data:Alexander_Windsor ;
+    :isBloodrelationOf data:Birgitte ;
+    :isMotherOf data:Alexander_Windsor ;
+    :isParentOf data:Alexander_Windsor ;
+    :isSiblingOf data:Birgitte ;
+    :isSisterOf data:Birgitte .
+
+data:Prince_Richard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard ;
+    :hasChild data:Alexander_Windsor ;
+    :hasRelation data:Alexander_Windsor,
+        data:Birgitte,
+        data:Claire_Booth,
+        data:Prince_Richard ;
+    :hasSon data:Alexander_Windsor ;
+    :isAncestorOf data:Alexander_Windsor ;
+    :isBloodrelationOf data:Prince_Richard ;
+    :isBrotherOf data:Prince_Richard ;
+    :isFatherOf data:Alexander_Windsor ;
+    :isParentOf data:Alexander_Windsor ;
+    :isSiblingOf data:Prince_Richard ;
+    :isUncleOf data:Alexander_Windsor .
+
+data:Alexander_Windsor a :Man,
+        :Person ;
+    :alsoKnownAs "Alex Ulster"^^xsd:string ;
+    :hasAncestor data:Birgitte,
+        data:Prince_Richard ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Alexander_Windsor ;
+    :hasFather data:Prince_Richard ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Birgitte ;
+    :hasParent data:Birgitte,
+        data:Prince_Richard ;
+    :hasRelation data:Alexander_Windsor,
+        data:Birgitte,
+        data:Claire_Booth,
+        data:Prince_Richard ;
+    :isBloodrelationOf data:Alexander_Windsor ;
+    :isBrotherOf data:Alexander_Windsor ;
+    :isChildOf data:Birgitte,
+        data:Prince_Richard ;
+    :isSiblingOf data:Alexander_Windsor ;
+    :isSonOf data:Birgitte,
+        data:Prince_Richard .
+

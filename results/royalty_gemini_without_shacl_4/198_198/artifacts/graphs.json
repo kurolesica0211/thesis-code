@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,\n        :Person ;\n    :hasFather data:Xavier_Duke_of_Parma .\n\ndata:Princess_Irene_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Queen_Juliana_of_the_Netherlands ;\n    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,\n        data:Princess_Christina,\n        data:Princess_Margriet .\n\ndata:Jorge_Guillermo a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person ;\n    :hasMother data:Princess_Armgard_of_Sierstorpff-Cramm .\n\ndata:Princess_Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman .\n\ndata:Princess_Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Princess_Christina a :Person,\n        :Woman ;\n    :isSisterOf data:Jorge_Guillermo .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Queen_Juliana_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Xavier_Duke_of_Parma a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,\n        :Person ;\n    :hasFather data:Xavier_Duke_of_Parma .\n\ndata:Princess_Irene_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Queen_Juliana_of_the_Netherlands ;\n    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,\n        data:Princess_Christina,\n        data:Princess_Margriet .\n\ndata:Jorge_Guillermo a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person ;\n    :hasMother data:Princess_Armgard_of_Sierstorpff-Cramm .\n\ndata:Princess_Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman .\n\ndata:Princess_Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Princess_Christina a :Person,\n        :Woman ;\n    :isSisterOf data:Jorge_Guillermo .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Queen_Juliana_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Xavier_Duke_of_Parma a :Man,\n        :Person .\n\n"
+    }
+]

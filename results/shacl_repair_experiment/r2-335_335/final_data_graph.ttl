@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Prince_Knud .
+
+data:Frederick_Walter_Pedersen a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Sussie_Hjorhoy_Pedersen .
+
+data:Georg_Terney a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1977 ;
+    :isFatherOf data:Inge_Terney .
+
+data:Jenny_Kamilla_Hansen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1990 ;
+    :isMotherOf data:Inge_Terney .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman .
+
+data:Ruth_Hjorhoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Sussie_Hjorhoy_Pedersen .
+
+data:Christian_of_Rosenborg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Leopold_Rosanes_af_Rosenborg_Father_Unknown .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :formerlyKnownAs "Prince Ingolf of Denmark"^^xsd:string ;
+    :hasBirthYear 1940 ;
+    :hasMarriageYear 1968,
+        1998 ;
+    :hasRelation data:Inge_Terney,
+        data:Sussie_Hjorhoy_Pedersen ;
+    :isBrotherOf data:Christian_of_Rosenborg ;
+    :knownAs "Count Ingolf of Rosenborg"^^xsd:string .
+
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person .
+
+data:Leopold_Rosanes_af_Rosenborg_Father_Unknown a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Leopold_Rosanes_af_Rosenborg .
+
+data:Prince_Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Ingolf_of_Rosenborg .
+
+data:Inge_Terney a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 1996 .
+
+data:Sussie_Hjorhoy_Pedersen a :Person,
+        :Woman ;
+    :hasBirthYear 1950 .
+

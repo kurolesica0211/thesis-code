@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolphus_Frederick_VI a :Man,
+        :Person .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Frederick_Francis_II a :Man,
+        :Person ;
+    :isFatherOf data:Frederick_Francis_III .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_IV .
+
+data:Johann_Albrecht a :Man,
+        :Person .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Ernest_Augustus_Hanover a :Man,
+        :Person .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :isSonOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX .
+
+data:Anastasia_Mikhailovna a :Person,
+        :Woman .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+

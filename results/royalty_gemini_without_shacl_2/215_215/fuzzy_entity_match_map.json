@@ -1,0 +1,200 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/215_215",
+  "text_file": "Q2800847.txt",
+  "text_key": "Q2800847",
+  "article": "https://en.wikipedia.org/wiki/Prince_Sigismund_of_Prussia_(born_1864)",
+  "article_key": "Prince Sigismund of Prussia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Sigismund_of_Prussia_1",
+    "qid": "Q2800847",
+    "label": "Prince Sigismund of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Sigismund_of_Prussia_1",
+      "qid": "Q2800847",
+      "label": "Prince Sigismund of Prussia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria-_Princess_Royal",
+      "qid": "Q116728",
+      "label": "Victoria, Princess Royal",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Charlotte_of_Prussia",
+      "qid": "Q58670",
+      "label": "Princess Charlotte of Prussia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret_of_Prussia",
+      "qid": "Q61338",
+      "label": "Princess Margaret of Prussia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sophia_of_Prussia",
+      "qid": "Q155822",
+      "label": "Sophia of Prussia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+      "qid": "Q58777",
+      "label": "Prince August Wilhelm of Prussia",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Feodora_of_Saxe-Meiningen_1",
+      "qid": "Q177769",
+      "label": "Princess Feodora of Saxe-Meiningen",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Katherine_of_Greece_and_Denmark",
+      "qid": "Q242338",
+      "label": "Princess Katherine of Greece and Denmark",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Viktoria_Luise_of_Prussia",
+      "qid": "Q57529",
+      "label": "Princess Viktoria Luise of Prussia",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/PrincessVictoriaOfSaxeCoburgSaalfeld",
+      "extracted_local_name": "PrincessVictoriaOfSaxeCoburgSaalfeld",
+      "embedding_text": "Princess Victoria Of Saxe Coburg Saalfeld",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7622950819672132,
+      "ground_truth_uri": "http://example.com/data#Victoria-_Princess_Royal",
+      "ground_truth_qid": "Q116728",
+      "ground_truth_label": "Victoria, Princess Royal",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Victoria Adelaide Mary Louise",
+      "best_candidate_label": "Victoria, Princess Royal",
+      "best_candidate_qid": "Q116728",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7622950819672132
+    },
+    {
+      "extracted_uri": "http://example.org/data/CountessAugusta",
+      "extracted_local_name": "CountessAugusta",
+      "embedding_text": "Countess Augusta",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria- Princess Royal",
+      "best_candidate_label": "Victoria, Princess Royal",
+      "best_candidate_qid": "Q116728",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/DukeErnestI",
+      "extracted_local_name": "DukeErnestI",
+      "embedding_text": "Duke Ernest I",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Kaiser Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/DukeFrancis",
+      "extracted_local_name": "DukeFrancis",
+      "embedding_text": "Duke Francis",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Franz Friedrich Sigismund",
+      "best_candidate_label": "Prince Sigismund of Prussia",
+      "best_candidate_qid": "Q2800847",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3783783783783784
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceAlbert",
+      "extracted_local_name": "PrinceAlbert",
+      "embedding_text": "Prince Albert",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria- Princess Royal",
+      "best_candidate_label": "Victoria, Princess Royal",
+      "best_candidate_qid": "Q116728",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4864864864864865
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenVictoria",
+      "extracted_local_name": "QueenVictoria",
+      "embedding_text": "Queen Victoria",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederick William Victor Albert of Prussia",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.39285714285714285
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 1,
+    "entities_unmatched": 5
+  }
+}

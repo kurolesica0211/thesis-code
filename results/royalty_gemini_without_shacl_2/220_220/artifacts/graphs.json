@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Anne_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Felicity_Wade a :Person,\n        :Woman .\n\ndata:Heather_Tonkin a :Person,\n        :Woman .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Lena_Elizabeth_Tindall a :Person,\n        :Woman .\n\ndata:Mark_Phillips a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Mia_Grace_Tindall a :Person,\n        :Woman .\n\ndata:Mike_Tindall a :Man,\n        :Person .\n\ndata:Peter_Phillips a :Man,\n        :Person .\n\ndata:Prince_George_of_Wales a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sandy_Pflueger a :Person,\n        :Woman .\n\ndata:Stephanie_Phillips a :Person,\n        :Woman .\n\ndata:William_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Zara_Tindall a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felicity_Wade a :Person,\n        :Woman ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Heather_Tonkin .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Lena_Elizabeth_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Mia_Grace_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Prince_George_of_Wales a :Man,\n        :Person ;\n    :hasFather data:William_Prince_of_Wales .\n\ndata:Stephanie_Phillips a :Person,\n        :Woman ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Sandy_Pflueger .\n\ndata:Anne_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Elizabeth_II .\n\ndata:Heather_Tonkin a :Person,\n        :Woman .\n\ndata:Peter_Phillips a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sandy_Pflueger a :Person,\n        :Woman .\n\ndata:William_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Mike_Tindall a :Man,\n        :Person .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal ;\n    :knownAs \"Zara Anne Elizabeth Phillips\"^^xsd:string .\n\ndata:Mark_Phillips a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felicity_Wade a :Person,\n        :Woman ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Heather_Tonkin .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Lena_Elizabeth_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Mia_Grace_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Prince_George_of_Wales a :Man,\n        :Person ;\n    :hasFather data:William_Prince_of_Wales .\n\ndata:Stephanie_Phillips a :Person,\n        :Woman ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Sandy_Pflueger .\n\ndata:Anne_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Elizabeth_II .\n\ndata:Heather_Tonkin a :Person,\n        :Woman .\n\ndata:Peter_Phillips a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sandy_Pflueger a :Person,\n        :Woman .\n\ndata:William_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Mike_Tindall a :Man,\n        :Person .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal ;\n    :knownAs \"Zara Anne Elizabeth Phillips\"^^xsd:string .\n\ndata:Mark_Phillips a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

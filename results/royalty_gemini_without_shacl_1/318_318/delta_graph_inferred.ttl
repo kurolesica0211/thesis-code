@@ -1,0 +1,143 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edelmira_Sampedro_y_Robato a :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Bourbon,
+        data:Edelmira_Sampedro_y_Robato,
+        data:Gonzalo ;
+    :hasSister data:Edelmira_Sampedro_y_Robato ;
+    :isBloodrelationOf data:Edelmira_Sampedro_y_Robato ;
+    :isSiblingOf data:Edelmira_Sampedro_y_Robato ;
+    :isSisterOf data:Edelmira_Sampedro_y_Robato .
+
+data:Marta_Esther_Rocafort-Altuzarra a :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Bourbon,
+        data:Gonzalo,
+        data:Marta_Esther_Rocafort-Altuzarra ;
+    :hasSister data:Marta_Esther_Rocafort-Altuzarra ;
+    :isBloodrelationOf data:Marta_Esther_Rocafort-Altuzarra ;
+    :isSiblingOf data:Marta_Esther_Rocafort-Altuzarra ;
+    :isSisterOf data:Marta_Esther_Rocafort-Altuzarra .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Alfonso_Prince_of_Asturias ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Bourbon,
+        data:Gonzalo ;
+    :hasSon data:Alfonso_Prince_of_Asturias ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Bourbon ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Alfonso_Prince_of_Asturias ;
+    :isParentOf data:Alfonso_Prince_of_Asturias ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Alfonso_Prince_of_Asturias .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_Prince_of_Asturias ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Bourbon,
+        data:Gonzalo,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso_Prince_of_Asturias ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Bourbon ;
+    :isAuntOf data:Alfonso_Prince_of_Asturias ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Alfonso_Prince_of_Asturias ;
+    :isParentOf data:Alfonso_Prince_of_Asturias ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Bourbon,
+        data:Edelmira_Sampedro_y_Robato,
+        data:Gonzalo,
+        data:Marta_Esther_Rocafort-Altuzarra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isUncleOf data:Alfonso_de_Bourbon .
+
+data:Alfonso_de_Bourbon a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_de_Bourbon ;
+    :hasFather data:Alfonso_Prince_of_Asturias ;
+    :hasParent data:Alfonso_Prince_of_Asturias ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Bourbon,
+        data:Edelmira_Sampedro_y_Robato,
+        data:Gonzalo,
+        data:Marta_Esther_Rocafort-Altuzarra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Bourbon ;
+    :isBrotherOf data:Alfonso_de_Bourbon ;
+    :isChildOf data:Alfonso_Prince_of_Asturias ;
+    :isSiblingOf data:Alfonso_de_Bourbon ;
+    :isSonOf data:Alfonso_Prince_of_Asturias .
+
+data:Alfonso_Prince_of_Asturias a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :hasChild data:Alfonso_de_Bourbon ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1933,
+        1937 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Bourbon,
+        data:Edelmira_Sampedro_y_Robato,
+        data:Gonzalo,
+        data:Marta_Esther_Rocafort-Altuzarra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso_de_Bourbon ;
+    :isAncestorOf data:Alfonso_de_Bourbon ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isFatherOf data:Alfonso_de_Bourbon ;
+    :isParentOf data:Alfonso_de_Bourbon ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Alfonso_de_Bourbon .
+

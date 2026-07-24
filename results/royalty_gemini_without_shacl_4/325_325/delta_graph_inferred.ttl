@@ -1,0 +1,277 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:NikolausHereditaryGrandDukeOfOldenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasChild data:DuchessEilikaOfOldenburg ;
+    :hasDaughter data:DuchessEilikaOfOldenburg ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isAncestorOf data:DuchessEilikaOfOldenburg ;
+    :isBloodrelationOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isBrotherOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isFatherOf data:DuchessEilikaOfOldenburg ;
+    :isParentOf data:DuchessEilikaOfOldenburg ;
+    :isSiblingOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isUncleOf data:DuchessEilikaOfOldenburg .
+
+data:PrincessHelenaOfWaldeckAndPyrmont a :Ancestor,
+        :Woman ;
+    :hasChild data:DuchessEilikaOfOldenburg ;
+    :hasDaughter data:DuchessEilikaOfOldenburg ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSister data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isAncestorOf data:DuchessEilikaOfOldenburg ;
+    :isAuntOf data:DuchessEilikaOfOldenburg ;
+    :isBloodrelationOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isMotherOf data:DuchessEilikaOfOldenburg ;
+    :isParentOf data:DuchessEilikaOfOldenburg ;
+    :isSiblingOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSisterOf data:PrincessHelenaOfWaldeckAndPyrmont .
+
+data:Emich5thPrinceOfLeiningen a :Ancestor,
+        :Man ;
+    :hasBrother data:Emich5thPrinceOfLeiningen ;
+    :hasChild data:KarlPrinceOfLeiningen ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSon data:KarlPrinceOfLeiningen ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen,
+        data:KarlPrinceOfLeiningen ;
+    :isBloodrelationOf data:Emich5thPrinceOfLeiningen ;
+    :isBrotherOf data:Emich5thPrinceOfLeiningen ;
+    :isFatherOf data:KarlPrinceOfLeiningen ;
+    :isParentOf data:KarlPrinceOfLeiningen ;
+    :isSiblingOf data:Emich5thPrinceOfLeiningen ;
+    :isUncleOf data:KarlPrinceOfLeiningen .
+
+data:GrandDukeKirillVladimirovichOfRussia a :Ancestor,
+        :Man ;
+    :hasBrother data:GrandDukeKirillVladimirovichOfRussia ;
+    :hasChild data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasDaughter data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isBloodrelationOf data:GrandDukeKirillVladimirovichOfRussia ;
+    :isBrotherOf data:GrandDukeKirillVladimirovichOfRussia ;
+    :isFatherOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isParentOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isSiblingOf data:GrandDukeKirillVladimirovichOfRussia ;
+    :isUncleOf data:GrandDuchessMariaKirillovnaOfRussia .
+
+data:PrincessFeodoreOfHohenloheLangenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:KarlPrinceOfLeiningen ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSister data:PrincessFeodoreOfHohenloheLangenburg ;
+    :hasSon data:KarlPrinceOfLeiningen ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen,
+        data:KarlPrinceOfLeiningen ;
+    :isAuntOf data:KarlPrinceOfLeiningen ;
+    :isBloodrelationOf data:PrincessFeodoreOfHohenloheLangenburg ;
+    :isMotherOf data:KarlPrinceOfLeiningen ;
+    :isParentOf data:KarlPrinceOfLeiningen ;
+    :isSiblingOf data:PrincessFeodoreOfHohenloheLangenburg ;
+    :isSisterOf data:PrincessFeodoreOfHohenloheLangenburg .
+
+data:PrincessVictoriaMelitaOfEdinburgh a :Ancestor,
+        :Woman ;
+    :hasChild data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasDaughter data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSister data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isAuntOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isBloodrelationOf data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isMotherOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isParentOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isSiblingOf data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isSisterOf data:PrincessVictoriaMelitaOfEdinburgh .
+
+data:DuchessEilikaOfOldenburg a :Woman ;
+    :hasAncestor data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasParent data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSister data:DuchessEilikaOfOldenburg ;
+    :isBloodrelationOf data:DuchessEilikaOfOldenburg ;
+    :isChildOf data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isDaughterOf data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSiblingOf data:DuchessEilikaOfOldenburg ;
+    :isSisterOf data:DuchessEilikaOfOldenburg .
+
+data:EmichKyrillPrinceOfLeiningen a :Man ;
+    :hasAncestor data:Emich5thPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:EmichKyrillPrinceOfLeiningen ;
+    :hasDeathYear 1991 ;
+    :hasFather data:KarlPrinceOfLeiningen ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasParent data:GrandDuchessMariaKirillovnaOfRussia,
+        data:KarlPrinceOfLeiningen ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isBloodrelationOf data:EmichKyrillPrinceOfLeiningen ;
+    :isBrotherOf data:EmichKyrillPrinceOfLeiningen ;
+    :isChildOf data:GrandDuchessMariaKirillovnaOfRussia,
+        data:KarlPrinceOfLeiningen ;
+    :isSiblingOf data:EmichKyrillPrinceOfLeiningen ;
+    :isSonOf data:GrandDuchessMariaKirillovnaOfRussia,
+        data:KarlPrinceOfLeiningen .
+
+data:GrandDuchessMariaKirillovnaOfRussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:GrandDukeKirillVladimirovichOfRussia,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasBirthYear 1907 ;
+    :hasChild data:EmichKyrillPrinceOfLeiningen ;
+    :hasDeathYear 1951 ;
+    :hasFather data:GrandDukeKirillVladimirovichOfRussia ;
+    :hasMother data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasParent data:GrandDukeKirillVladimirovichOfRussia,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSister data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasSon data:EmichKyrillPrinceOfLeiningen ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen ;
+    :isAuntOf data:EmichKyrillPrinceOfLeiningen ;
+    :isBloodrelationOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isChildOf data:GrandDukeKirillVladimirovichOfRussia,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isDaughterOf data:GrandDukeKirillVladimirovichOfRussia,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :isMotherOf data:EmichKyrillPrinceOfLeiningen ;
+    :isParentOf data:EmichKyrillPrinceOfLeiningen ;
+    :isSiblingOf data:GrandDuchessMariaKirillovnaOfRussia ;
+    :isSisterOf data:GrandDuchessMariaKirillovnaOfRussia .
+
+data:KarlPrinceOfLeiningen a :Ancestor,
+        :Man ;
+    :hasAncestor data:Emich5thPrinceOfLeiningen,
+        data:PrincessFeodoreOfHohenloheLangenburg ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:KarlPrinceOfLeiningen ;
+    :hasChild data:EmichKyrillPrinceOfLeiningen ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Emich5thPrinceOfLeiningen ;
+    :hasMother data:PrincessFeodoreOfHohenloheLangenburg ;
+    :hasParent data:Emich5thPrinceOfLeiningen,
+        data:PrincessFeodoreOfHohenloheLangenburg ;
+    :hasRelation data:DuchessEilikaOfOldenburg,
+        data:Emich5thPrinceOfLeiningen,
+        data:EmichKyrillPrinceOfLeiningen,
+        data:GrandDuchessMariaKirillovnaOfRussia,
+        data:GrandDukeKirillVladimirovichOfRussia,
+        data:KarlPrinceOfLeiningen,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessFeodoreOfHohenloheLangenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessVictoriaMelitaOfEdinburgh ;
+    :hasSon data:EmichKyrillPrinceOfLeiningen ;
+    :isAncestorOf data:EmichKyrillPrinceOfLeiningen ;
+    :isBloodrelationOf data:KarlPrinceOfLeiningen ;
+    :isBrotherOf data:KarlPrinceOfLeiningen ;
+    :isChildOf data:Emich5thPrinceOfLeiningen,
+        data:PrincessFeodoreOfHohenloheLangenburg ;
+    :isFatherOf data:EmichKyrillPrinceOfLeiningen ;
+    :isParentOf data:EmichKyrillPrinceOfLeiningen ;
+    :isSiblingOf data:KarlPrinceOfLeiningen ;
+    :isSonOf data:Emich5thPrinceOfLeiningen,
+        data:PrincessFeodoreOfHohenloheLangenburg ;
+    :isUncleOf data:EmichKyrillPrinceOfLeiningen .
+

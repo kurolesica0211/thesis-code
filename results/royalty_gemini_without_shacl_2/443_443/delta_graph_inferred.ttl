@@ -1,0 +1,295 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DianaMaryChamberlayneMacdonald a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LadyCharlotteLindesayBethune ;
+    :hasDaughter data:LadyCharlotteLindesayBethune ;
+    :hasRelation data:DianaMaryChamberlayneMacdonald,
+        data:FrancescaSofia,
+        data:Ines,
+        data:LadyCharlotteLindesayBethune ;
+    :hasSister data:DianaMaryChamberlayneMacdonald ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:LadyCharlotteLindesayBethune ;
+    :isAuntOf data:LadyCharlotteLindesayBethune ;
+    :isBloodrelationOf data:DianaMaryChamberlayneMacdonald ;
+    :isMotherOf data:LadyCharlotteLindesayBethune ;
+    :isParentOf data:LadyCharlotteLindesayBethune ;
+    :isSiblingOf data:DianaMaryChamberlayneMacdonald ;
+    :isSisterOf data:DianaMaryChamberlayneMacdonald .
+
+data:JamesLindesayBethune16thEarlOfLindsay a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JamesLindesayBethune16thEarlOfLindsay ;
+    :hasChild data:LadyCharlotteLindesayBethune ;
+    :hasDaughter data:LadyCharlotteLindesayBethune ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:LadyCharlotteLindesayBethune ;
+    :isBloodrelationOf data:JamesLindesayBethune16thEarlOfLindsay ;
+    :isBrotherOf data:JamesLindesayBethune16thEarlOfLindsay ;
+    :isFatherOf data:LadyCharlotteLindesayBethune ;
+    :isParentOf data:LadyCharlotteLindesayBethune ;
+    :isSiblingOf data:JamesLindesayBethune16thEarlOfLindsay ;
+    :isUncleOf data:LadyCharlotteLindesayBethune .
+
+data:SofiaLandaluceYMelgarejo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasChild data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasSister data:SofiaLandaluceYMelgarejo ;
+    :hasSon data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isAuntOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:SofiaLandaluceYMelgarejo ;
+    :isMotherOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isParentOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isSiblingOf data:SofiaLandaluceYMelgarejo ;
+    :isSisterOf data:SofiaLandaluceYMelgarejo .
+
+data:InfanteCarlosDukeOfCalabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:InfanteCarlosDukeOfCalabria ;
+    :hasChild data:PrincePedroDukeOfCalabria ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:InfanteCarlosDukeOfCalabria,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria ;
+    :hasSon data:PrincePedroDukeOfCalabria ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria ;
+    :isBloodrelationOf data:InfanteCarlosDukeOfCalabria ;
+    :isBrotherOf data:InfanteCarlosDukeOfCalabria ;
+    :isFatherOf data:PrincePedroDukeOfCalabria ;
+    :isParentOf data:PrincePedroDukeOfCalabria ;
+    :isSiblingOf data:InfanteCarlosDukeOfCalabria ;
+    :isUncleOf data:PrincePedroDukeOfCalabria .
+
+data:PrincessAnneOfOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincePedroDukeOfCalabria ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasSister data:PrincessAnneOfOrleans ;
+    :hasSon data:PrincePedroDukeOfCalabria ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria ;
+    :isAuntOf data:PrincePedroDukeOfCalabria ;
+    :isBloodrelationOf data:PrincessAnneOfOrleans ;
+    :isMotherOf data:PrincePedroDukeOfCalabria ;
+    :isParentOf data:PrincePedroDukeOfCalabria ;
+    :isSiblingOf data:PrincessAnneOfOrleans ;
+    :isSisterOf data:PrincessAnneOfOrleans .
+
+data:PrincePedroDukeOfCalabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:PrincePedroDukeOfCalabria ;
+    :hasChild data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasFather data:InfanteCarlosDukeOfCalabria ;
+    :hasMother data:PrincessAnneOfOrleans ;
+    :hasParent data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:InfanteCarlosDukeOfCalabria,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasSon data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrincePedroDukeOfCalabria ;
+    :isBrotherOf data:PrincePedroDukeOfCalabria ;
+    :isChildOf data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :isFatherOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isParentOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincePedroDukeOfCalabria ;
+    :isSonOf data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :isUncleOf data:PrinceJaimeOfBourbonTwoSicilies .
+
+data:LadyCharlotteLindesayBethune a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:DianaMaryChamberlayneMacdonald,
+        data:JamesLindesayBethune16thEarlOfLindsay ;
+    :hasChild data:FrancescaSofia,
+        data:Ines ;
+    :hasDaughter data:FrancescaSofia,
+        data:Ines ;
+    :hasFather data:JamesLindesayBethune16thEarlOfLindsay ;
+    :hasMother data:DianaMaryChamberlayneMacdonald ;
+    :hasParent data:DianaMaryChamberlayneMacdonald,
+        data:JamesLindesayBethune16thEarlOfLindsay ;
+    :hasRelation data:DianaMaryChamberlayneMacdonald,
+        data:FrancescaSofia,
+        data:Ines,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasSister data:LadyCharlotteLindesayBethune ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines ;
+    :isAuntOf data:FrancescaSofia,
+        data:Ines ;
+    :isBloodrelationOf data:LadyCharlotteLindesayBethune ;
+    :isChildOf data:DianaMaryChamberlayneMacdonald,
+        data:JamesLindesayBethune16thEarlOfLindsay ;
+    :isDaughterOf data:DianaMaryChamberlayneMacdonald,
+        data:JamesLindesayBethune16thEarlOfLindsay ;
+    :isMotherOf data:FrancescaSofia,
+        data:Ines ;
+    :isParentOf data:FrancescaSofia,
+        data:Ines ;
+    :isSiblingOf data:LadyCharlotteLindesayBethune ;
+    :isSisterOf data:LadyCharlotteLindesayBethune .
+
+data:FrancescaSofia a :Person,
+        :Woman ;
+    :hasAncestor data:DianaMaryChamberlayneMacdonald,
+        data:InfanteCarlosDukeOfCalabria,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasFather data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasMother data:LadyCharlotteLindesayBethune ;
+    :hasParent data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasRelation data:DianaMaryChamberlayneMacdonald,
+        data:FrancescaSofia,
+        data:Ines,
+        data:InfanteCarlosDukeOfCalabria,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasSister data:FrancescaSofia,
+        data:Ines ;
+    :isBloodrelationOf data:FrancescaSofia,
+        data:Ines ;
+    :isChildOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isDaughterOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isSiblingOf data:FrancescaSofia,
+        data:Ines ;
+    :isSisterOf data:FrancescaSofia,
+        data:Ines .
+
+data:Ines a :Person,
+        :Woman ;
+    :hasAncestor data:DianaMaryChamberlayneMacdonald,
+        data:InfanteCarlosDukeOfCalabria,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasFather data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasMother data:LadyCharlotteLindesayBethune ;
+    :hasParent data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasRelation data:DianaMaryChamberlayneMacdonald,
+        data:FrancescaSofia,
+        data:Ines,
+        data:InfanteCarlosDukeOfCalabria,
+        data:JamesLindesayBethune16thEarlOfLindsay,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasSister data:FrancescaSofia,
+        data:Ines ;
+    :isBloodrelationOf data:FrancescaSofia,
+        data:Ines ;
+    :isChildOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isDaughterOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isSiblingOf data:FrancescaSofia,
+        data:Ines ;
+    :isSisterOf data:FrancescaSofia,
+        data:Ines .
+
+data:PrinceJaimeOfBourbonTwoSicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:InfanteCarlosDukeOfCalabria,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasBirthYear 1993 ;
+    :hasBrother data:PrinceJaimeOfBourbonTwoSicilies ;
+    :hasChild data:FrancescaSofia,
+        data:Ines ;
+    :hasDaughter data:FrancescaSofia,
+        data:Ines ;
+    :hasFather data:PrincePedroDukeOfCalabria ;
+    :hasMother data:SofiaLandaluceYMelgarejo ;
+    :hasParent data:PrincePedroDukeOfCalabria,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasRelation data:FrancescaSofia,
+        data:Ines,
+        data:InfanteCarlosDukeOfCalabria,
+        data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies,
+        data:PrincePedroDukeOfCalabria,
+        data:PrincessAnneOfOrleans,
+        data:SofiaLandaluceYMelgarejo ;
+    :isAncestorOf data:FrancescaSofia,
+        data:Ines ;
+    :isBloodrelationOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isChildOf data:PrincePedroDukeOfCalabria,
+        data:SofiaLandaluceYMelgarejo ;
+    :isFatherOf data:FrancescaSofia,
+        data:Ines ;
+    :isParentOf data:FrancescaSofia,
+        data:Ines ;
+    :isSiblingOf data:PrinceJaimeOfBourbonTwoSicilies ;
+    :isSonOf data:PrincePedroDukeOfCalabria,
+        data:SofiaLandaluceYMelgarejo ;
+    :isUncleOf data:FrancescaSofia,
+        data:Ines .
+

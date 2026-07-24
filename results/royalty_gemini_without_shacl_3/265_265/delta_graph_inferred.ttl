@@ -1,0 +1,418 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Spencer a :Man,
+        :Person ;
+    :hasBrother data:Charles_Spencer ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Diana ;
+    :isBloodrelationOf data:Charles_Spencer,
+        data:Diana ;
+    :isBrotherOf data:Charles_Spencer,
+        data:Diana ;
+    :isSiblingOf data:Charles_Spencer,
+        data:Diana ;
+    :isUncleOf data:Harry,
+        data:William .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Charlotte,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:William ;
+    :isAuntOf data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philip ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Charlotte,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:William ;
+    :isBloodrelationOf data:Philip ;
+    :isBrotherOf data:Philip ;
+    :isFatherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Philip ;
+    :isUncleOf data:Charles_III .
+
+data:Catherine_Middleton a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charlotte,
+        data:George,
+        data:Louis ;
+    :hasDaughter data:Charlotte ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Catherine_Middleton ;
+    :hasSon data:George,
+        data:Louis ;
+    :isAncestorOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isAuntOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isBloodrelationOf data:Catherine_Middleton ;
+    :isMotherOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isParentOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isSiblingOf data:Catherine_Middleton ;
+    :isSisterOf data:Catherine_Middleton .
+
+data:Diana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Charles_Spencer ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Diana ;
+    :hasSon data:Harry,
+        data:William ;
+    :isAncestorOf data:Charlotte,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:William ;
+    :isAuntOf data:Harry,
+        data:William ;
+    :isBloodrelationOf data:Charles_Spencer,
+        data:Diana ;
+    :isMotherOf data:Harry,
+        data:William ;
+    :isParentOf data:Harry,
+        data:William ;
+    :isSiblingOf data:Charles_Spencer,
+        data:Diana ;
+    :isSisterOf data:Charles_Spencer,
+        data:Diana .
+
+data:Harry a :Man,
+        :Person ;
+    :hasAncestor data:Charles_III,
+        data:Diana,
+        data:Elizabeth_II,
+        data:Philip ;
+    :hasBrother data:Harry,
+        data:William ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana ;
+    :hasParent data:Charles_III,
+        data:Diana ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :isBloodrelationOf data:Harry,
+        data:William ;
+    :isBrotherOf data:Harry,
+        data:William ;
+    :isChildOf data:Charles_III,
+        data:Diana ;
+    :isSiblingOf data:Harry,
+        data:William ;
+    :isSonOf data:Charles_III,
+        data:Diana ;
+    :isUncleOf data:Charlotte,
+        data:George,
+        data:Louis .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:Philip ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasFather data:Philip ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSon data:Harry,
+        data:William ;
+    :isAncestorOf data:Charlotte,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:William ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip ;
+    :isFatherOf data:Harry,
+        data:William ;
+    :isParentOf data:Harry,
+        data:William ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Philip ;
+    :isUncleOf data:Harry,
+        data:William .
+
+data:Charlotte a :Person,
+        :Woman ;
+    :hasAncestor data:Catherine_Middleton,
+        data:Charles_III,
+        data:Diana,
+        data:Elizabeth_II,
+        data:Philip,
+        data:William ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William ;
+    :hasMother data:Catherine_Middleton ;
+    :hasParent data:Catherine_Middleton,
+        data:William ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Charlotte ;
+    :isBloodrelationOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Middleton,
+        data:William ;
+    :isDaughterOf data:Catherine_Middleton,
+        data:William ;
+    :isSiblingOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isSisterOf data:Charlotte,
+        data:George,
+        data:Louis .
+
+data:George a :Man,
+        :Person ;
+    :hasAncestor data:Catherine_Middleton,
+        data:Charles_III,
+        data:Diana,
+        data:Elizabeth_II,
+        data:Philip,
+        data:William ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William ;
+    :hasMother data:Catherine_Middleton ;
+    :hasParent data:Catherine_Middleton,
+        data:William ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Charlotte ;
+    :isBloodrelationOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isBrotherOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Middleton,
+        data:William ;
+    :isSiblingOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isSonOf data:Catherine_Middleton,
+        data:William .
+
+data:Louis a :Man,
+        :Person ;
+    :hasAncestor data:Catherine_Middleton,
+        data:Charles_III,
+        data:Diana,
+        data:Elizabeth_II,
+        data:Philip,
+        data:William ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William ;
+    :hasMother data:Catherine_Middleton ;
+    :hasParent data:Catherine_Middleton,
+        data:William ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSister data:Charlotte ;
+    :isBloodrelationOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isBrotherOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Middleton,
+        data:William ;
+    :isSiblingOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isSonOf data:Catherine_Middleton,
+        data:William .
+
+data:William a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Charles_III,
+        data:Diana,
+        data:Elizabeth_II,
+        data:Philip ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Harry,
+        data:William ;
+    :hasChild data:Charlotte,
+        data:George,
+        data:Louis ;
+    :hasDaughter data:Charlotte ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana ;
+    :hasParent data:Charles_III,
+        data:Diana ;
+    :hasRelation data:Catherine_Middleton,
+        data:Charles_III,
+        data:Charles_Spencer,
+        data:Charlotte,
+        data:Diana,
+        data:Elizabeth_II,
+        data:George,
+        data:Harry,
+        data:Louis,
+        data:Philip,
+        data:William ;
+    :hasSon data:George,
+        data:Louis ;
+    :isAncestorOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isBloodrelationOf data:Harry,
+        data:William ;
+    :isBrotherOf data:Harry,
+        data:William ;
+    :isChildOf data:Charles_III,
+        data:Diana ;
+    :isFatherOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isParentOf data:Charlotte,
+        data:George,
+        data:Louis ;
+    :isSiblingOf data:Harry,
+        data:William ;
+    :isSonOf data:Charles_III,
+        data:Diana ;
+    :isUncleOf data:Charlotte,
+        data:George,
+        data:Louis .
+

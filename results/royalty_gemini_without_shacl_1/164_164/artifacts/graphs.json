@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Feodorovna a :Person,\n        :Woman ;\n    :isSisterOf data:Ernest_Louis_of_Hesse .\n\ndata:Andrei_Vladimirovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Vladimir_of_Russia .\n\ndata:Maria_of_Russia a :Person,\n        :Woman ;\n    :isSisterOf data:Kira_Kirillovna_of_Russia .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :isAncestorOf data:Louis_Ferdinand_of_Prussia .\n\ndata:Cecilie_of_Prussia a :Person,\n        :Woman .\n\ndata:Ernest_Louis_of_Hesse a :Man,\n        :Person ;\n    :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha .\n\ndata:Friedrich_Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Vladimir_of_Russia a :Man,\n        :Person ;\n    :isBrotherOf data:Kira_Kirillovna_of_Russia .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1967 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;\n    :hasRelation data:Louis_Ferdinand_of_Prussia ;\n    :hasSon data:Friedrich_Wilhelm_of_Prussia .\n\ndata:Louis_Ferdinand_of_Prussia a :Man,\n        :Person ;\n    :hasMother data:Cecilie_of_Prussia .\n\ndata:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_Feodorovna a :Person,\n        :Woman ;\n    :isSisterOf data:Ernest_Louis_of_Hesse .\n\ndata:Andrei_Vladimirovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Vladimir_of_Russia .\n\ndata:Maria_of_Russia a :Person,\n        :Woman ;\n    :isSisterOf data:Kira_Kirillovna_of_Russia .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :isAncestorOf data:Louis_Ferdinand_of_Prussia .\n\ndata:Cecilie_of_Prussia a :Person,\n        :Woman .\n\ndata:Ernest_Louis_of_Hesse a :Man,\n        :Person ;\n    :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha .\n\ndata:Friedrich_Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Vladimir_of_Russia a :Man,\n        :Person ;\n    :isBrotherOf data:Kira_Kirillovna_of_Russia .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1967 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;\n    :hasRelation data:Louis_Ferdinand_of_Prussia ;\n    :hasSon data:Friedrich_Wilhelm_of_Prussia .\n\ndata:Louis_Ferdinand_of_Prussia a :Man,\n        :Person ;\n    :hasMother data:Cecilie_of_Prussia .\n\ndata:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,\n        :Woman .\n\n"
+    }
+]

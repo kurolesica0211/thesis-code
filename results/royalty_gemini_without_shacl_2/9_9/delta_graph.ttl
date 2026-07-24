@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AugustBrooksbank a :Man ;
+    :hasFather data:JackBrooksbank ;
+    :hasMother data:Eugenie .
+
+data:CharlesIII a :Man .
+
+data:ErnestBrooksbank a :Man ;
+    :hasFather data:JackBrooksbank ;
+    :hasMother data:Eugenie .
+
+data:Beatrice a :Woman ;
+    :hasFather data:AndrewMountbattenWindsor ;
+    :hasMother data:SarahFerguson ;
+    :isSisterOf data:Eugenie .
+
+data:PrincePhilip a :Man .
+
+data:QueenElizabethII a :Woman .
+
+data:AndrewMountbattenWindsor a :Man ;
+    :hasFather data:PrincePhilip ;
+    :hasMother data:QueenElizabethII .
+
+data:SarahFerguson a :Woman .
+
+data:Eugenie a :Woman ;
+    :hasBirthYear "1990"^^xsd:positiveInteger ;
+    :hasFather data:AndrewMountbattenWindsor ;
+    :hasMarriageYear "2018"^^xsd:positiveInteger ;
+    :hasMother data:SarahFerguson ;
+    :hasRelation data:JackBrooksbank ;
+    :isSisterOf data:Beatrice .
+
+data:JackBrooksbank a :Man .
+

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Francis_II a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Alfonso .
+
+data:Maria_di_Grazia a :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Princess_Antonietta ;
+    :hasRelation data:Prince_Luiz_Maria ;
+    :knownAs "Maria Pia"^^xsd:string .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Ferdinand_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Gaston_of_Orleans a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Luiz_Maria a :Man,
+        :Person ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Prince_Gaston_of_Orleans ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Princess_Antonietta a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Alfonso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Ferdinand_II .
+

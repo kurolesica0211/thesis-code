@@ -1,0 +1,90 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philip_Mountbatten a :Man,
+        :Person ;
+    :hasBrother data:Philip_Mountbatten ;
+    :hasRelation data:Philip_Mountbatten ;
+    :isBloodrelationOf data:Philip_Mountbatten ;
+    :isBrotherOf data:Philip_Mountbatten ;
+    :isSiblingOf data:Philip_Mountbatten .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Sidney_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Sidney_Elphinstone ;
+    :hasDeathYear 1955 ;
+    :hasRelation data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :isBloodrelationOf data:Sidney_Elphinstone ;
+    :isBrotherOf data:Sidney_Elphinstone ;
+    :isSiblingOf data:Sidney_Elphinstone .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasRelation data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :hasSister data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:Mary_Frances_Elphinstone ;
+    :hasDaughter data:Mary_Frances_Elphinstone ;
+    :hasRelation data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :isAncestorOf data:Mary_Frances_Elphinstone ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Mary_Frances_Elphinstone ;
+    :isParentOf data:Mary_Frances_Elphinstone ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Mary_Frances_Elphinstone .
+
+data:Mary_Frances_Elphinstone a :Person,
+        :Woman ;
+    :hasAncestor data:Claude_Bowes-Lyon ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1961 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1910 ;
+    :hasParent data:Claude_Bowes-Lyon ;
+    :hasRelation data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :hasSister data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isChildOf data:Claude_Bowes-Lyon ;
+    :isDaughterOf data:Claude_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Mary_Frances_Elphinstone .
+

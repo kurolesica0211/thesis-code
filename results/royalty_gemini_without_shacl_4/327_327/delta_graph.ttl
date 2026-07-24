@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kira_Kirillovna a :Person,
+        :Woman ;
+    :isSisterOf data:Vladimir_Kirillovich .
+
+data:Kirill_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Vladimir_Kirillovich .
+
+data:Leonida_Bagration_Mukhrani a :Person,
+        :Woman ;
+    :isMotherOf data:Maria_Vladimirovna .
+
+data:Victoria_Fyodorovna a :Person,
+        :Woman ;
+    :isMotherOf data:Vladimir_Kirillovich .
+
+data:Victoria_Romanovna a :Person,
+        :Woman ;
+    :isMotherOf data:Kira_Georgievna .
+
+data:Franz_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :isFatherOf data:George_Mikhailovich .
+
+data:George_Mikhailovich a :Man,
+        :Person ;
+    :isFatherOf data:Kira_Georgievna .
+
+data:Kira_Georgievna a :Person,
+        :Woman .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasBirthYear "1953"^^xsd:positiveInteger ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia ;
+    :isMotherOf data:George_Mikhailovich .
+
+data:Vladimir_Kirillovich a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Maria_Vladimirovna .
+

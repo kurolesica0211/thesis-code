@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg,
+        data:Emperor_Wilhelm_II_of_Germany,
+        data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasSister data:Duchess_Sophia_Charlotte_of_Oldenburg ;
+    :isBloodrelationOf data:Duchess_Sophia_Charlotte_of_Oldenburg ;
+    :isSiblingOf data:Duchess_Sophia_Charlotte_of_Oldenburg ;
+    :isSisterOf data:Duchess_Sophia_Charlotte_of_Oldenburg .
+
+data:Emperor_Wilhelm_II_of_Germany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Emperor_Wilhelm_II_of_Germany ;
+    :hasChild data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg,
+        data:Emperor_Wilhelm_II_of_Germany,
+        data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasSon data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isBloodrelationOf data:Emperor_Wilhelm_II_of_Germany ;
+    :isBrotherOf data:Emperor_Wilhelm_II_of_Germany ;
+    :isFatherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isSiblingOf data:Emperor_Wilhelm_II_of_Germany ;
+    :isUncleOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia .
+
+data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg,
+        data:Emperor_Wilhelm_II_of_Germany,
+        data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasSister data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasSon data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isAuntOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isBloodrelationOf data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :isMotherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isSiblingOf data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :isSisterOf data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .
+
+data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Emperor_Wilhelm_II_of_Germany,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Emperor_Wilhelm_II_of_Germany ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasParent data:Emperor_Wilhelm_II_of_Germany,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg,
+        data:Emperor_Wilhelm_II_of_Germany,
+        data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :isBloodrelationOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isChildOf data:Emperor_Wilhelm_II_of_Germany,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;
+    :isSiblingOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia ;
+    :isSonOf data:Emperor_Wilhelm_II_of_Germany,
+        data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .
+

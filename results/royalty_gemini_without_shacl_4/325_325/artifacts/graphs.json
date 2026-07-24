@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:EmichKyrillPrinceOfLeiningen a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 1991 ;\n    :hasFather data:KarlPrinceOfLeiningen ;\n    :hasMarriageYear 1950 ;\n    :hasMother data:GrandDuchessMariaKirillovnaOfRussia ;\n    :hasRelation data:DuchessEilikaOfOldenburg .\n\ndata:DuchessEilikaOfOldenburg a :Woman ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;\n    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont .\n\ndata:Emich5thPrinceOfLeiningen a :Man .\n\ndata:GrandDuchessMariaKirillovnaOfRussia a :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:GrandDukeKirillVladimirovichOfRussia ;\n    :hasMother data:PrincessVictoriaMelitaOfEdinburgh .\n\ndata:GrandDukeKirillVladimirovichOfRussia a :Man .\n\ndata:KarlPrinceOfLeiningen a :Man ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Emich5thPrinceOfLeiningen ;\n    :hasMother data:PrincessFeodoreOfHohenloheLangenburg .\n\ndata:NikolausHereditaryGrandDukeOfOldenburg a :Man .\n\ndata:PrincessFeodoreOfHohenloheLangenburg a :Woman .\n\ndata:PrincessHelenaOfWaldeckAndPyrmont a :Woman .\n\ndata:PrincessVictoriaMelitaOfEdinburgh a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:EmichKyrillPrinceOfLeiningen a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 1991 ;\n    :hasFather data:KarlPrinceOfLeiningen ;\n    :hasMarriageYear 1950 ;\n    :hasMother data:GrandDuchessMariaKirillovnaOfRussia ;\n    :hasRelation data:DuchessEilikaOfOldenburg .\n\ndata:DuchessEilikaOfOldenburg a :Woman ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;\n    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont .\n\ndata:Emich5thPrinceOfLeiningen a :Man .\n\ndata:GrandDuchessMariaKirillovnaOfRussia a :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:GrandDukeKirillVladimirovichOfRussia ;\n    :hasMother data:PrincessVictoriaMelitaOfEdinburgh .\n\ndata:GrandDukeKirillVladimirovichOfRussia a :Man .\n\ndata:KarlPrinceOfLeiningen a :Man ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Emich5thPrinceOfLeiningen ;\n    :hasMother data:PrincessFeodoreOfHohenloheLangenburg .\n\ndata:NikolausHereditaryGrandDukeOfOldenburg a :Man .\n\ndata:PrincessFeodoreOfHohenloheLangenburg a :Woman .\n\ndata:PrincessHelenaOfWaldeckAndPyrmont a :Woman .\n\ndata:PrincessVictoriaMelitaOfEdinburgh a :Woman .\n\n"
+    }
+]

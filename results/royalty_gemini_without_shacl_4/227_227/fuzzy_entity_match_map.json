@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/227_227",
+  "text_file": "Q29966442.txt",
+  "text_key": "Q29966442",
+  "article": "https://en.wikipedia.org/wiki/Princess_Maria_Chiara_of_Bourbon-Two_Sicilies",
+  "article_key": "Princess Maria Chiara of Bourbon-Two Sicilies",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Maria_Chiara-_Duchess_of_Noto",
+    "qid": "Q29966442",
+    "label": "Princess Maria Chiara, Duchess of Noto"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Maria_Chiara-_Duchess_of_Noto",
+      "qid": "Q29966442",
+      "label": "Princess Maria Chiara, Duchess of Noto",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Carlo-_Duke_of_Castro",
+      "qid": "Q1850305",
+      "label": "Prince Carlo, Duke of Castro",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Camilla-_Duchess_of_Castro",
+      "qid": "Q4994262",
+      "label": "Princess Camilla, Duchess of Castro",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Camilla_Crociani",
+      "extracted_local_name": "Camilla_Crociani",
+      "embedding_text": "Camilla Crociani",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Camilla-_Duchess_of_Castro",
+      "ground_truth_qid": "Q4994262",
+      "ground_truth_label": "Princess Camilla, Duchess of Castro",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Camilla Crociani",
+      "best_candidate_label": "Princess Camilla, Duchess of Castro",
+      "best_candidate_qid": "Q4994262",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Carlo_Duke_of_Castro",
+      "extracted_local_name": "Prince_Carlo_Duke_of_Castro",
+      "embedding_text": "Prince Carlo Duke of Castro",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9841269841269842,
+      "ground_truth_uri": "http://example.com/data#Prince_Carlo-_Duke_of_Castro",
+      "ground_truth_qid": "Q1850305",
+      "ground_truth_label": "Prince Carlo, Duke of Castro",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Carlo- Duke of Castro",
+      "best_candidate_label": "Prince Carlo, Duke of Castro",
+      "best_candidate_qid": "Q1850305",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9841269841269842
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Carolina_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Maria_Carolina_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Maria Carolina of Bourbon-Two Sicilies",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7857142857142857,
+      "ground_truth_uri": "http://example.com/data#Princess_Maria_Chiara-_Duchess_of_Noto",
+      "ground_truth_qid": "Q29966442",
+      "ground_truth_label": "Princess Maria Chiara, Duchess of Noto",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria Chiara of Bourbon-Two Sicilies",
+      "best_candidate_label": "Princess Maria Chiara, Duchess of Noto",
+      "best_candidate_qid": "Q29966442",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Chiara_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Maria_Chiara_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Maria Chiara of Bourbon-Two Sicilies",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Carlo- Duke of Castro",
+      "best_candidate_label": "Prince Carlo, Duke of Castro",
+      "best_candidate_qid": "Q1850305",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

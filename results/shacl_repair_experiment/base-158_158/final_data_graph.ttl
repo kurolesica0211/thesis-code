@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DmitriPavlovich a :Man,
+        :Person ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMother data:AlexandraGeorgievna ;
+    :isBrotherOf data:MariaPavlovna .
+
+data:ElizabethFeodorovna a :Person,
+        :Woman .
+
+data:LennartBernadotte a :Man,
+        :Person ;
+    :hasFather data:WilhelmSweden ;
+    :hasMother data:MariaPavlovna .
+
+data:RomanSergeievichPutyatin a :Man,
+        :Person ;
+    :hasFather data:SergeiPutyatin ;
+    :hasMother data:MariaPavlovna .
+
+data:SergeiAlexandrovich a :Man,
+        :Person ;
+    :isBrotherOf data:PaulAlexandrovich .
+
+data:SergeiPutyatin a :Ancestor,
+        :Man,
+        :Person .
+
+data:WilhelmSweden a :Ancestor,
+        :Man,
+        :Person .
+
+data:AlexandraGeorgievna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:MariaPavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1958 ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:AlexandraGeorgievna ;
+    :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+
+data:PaulAlexandrovich a :Ancestor,
+        :Man,
+        :Person .
+

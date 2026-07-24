@@ -1,0 +1,317 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasRelation data:King_George_I_of_Greece,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isSiblingOf data:King_George_I_of_Greece .
+
+data:Princess_Elizabeth a :Person,
+        :Woman ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Marina a :Person,
+        :Woman ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Prince_Alexander_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasBirthYear 1903 ;
+    :hasChild data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAuntOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina,
+        data:Princess_Olga_of_Greece_and_Denmark .
+

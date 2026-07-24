@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eudes_Duke_of_Angouleme a :Man,
+        :Person ;
+    :isSonOf data:Henri_the_son .
+
+data:Michel a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Thibaut a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Henri_the_son a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Henri_dOrleans ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Philippe_Duke_of_Orleans a :Man,
+        :Person ;
+    :isBrotherOf data:Jean_Duke_of_Guise .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_Duke_of_Orleans .
+
+data:Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Jean_Duke_of_Guise ;
+    :hasMarriageYear 1931 ;
+    :hasRelation data:Isabelle_of_Orleans_Braganza ;
+    :isSonOf data:Jean_Duke_of_Guise .
+

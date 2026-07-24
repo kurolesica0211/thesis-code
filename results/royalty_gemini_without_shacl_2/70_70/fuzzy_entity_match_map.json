@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/70_70",
+  "text_file": "Q159609.txt",
+  "text_key": "Q159609",
+  "article": "https://en.wikipedia.org/wiki/Prince_Claus_of_the_Netherlands",
+  "article_key": "Prince Claus of the Netherlands",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Claus-_Prince_Consort_of_the_Netherlands",
+    "qid": "Q159609",
+    "label": "Prince Claus, Prince Consort of the Netherlands"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Claus-_Prince_Consort_of_the_Netherlands",
+      "qid": "Q159609",
+      "label": "Prince Claus, Prince Consort of the Netherlands",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Baroness_Gösta_von_dem_Bussche-Haddenhausen",
+      "qid": "Q2099997",
+      "label": "Baroness Gösta von dem Bussche-Haddenhausen",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Claus_Felix_von_Amsberg",
+      "qid": "Q2439092",
+      "label": "Claus Felix von Amsberg",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Claus_Felix_von_Amsberg",
+      "extracted_local_name": "Claus_Felix_von_Amsberg",
+      "embedding_text": "Claus Felix von Amsberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Claus_Felix_von_Amsberg",
+      "ground_truth_qid": "Q2439092",
+      "ground_truth_label": "Claus Felix von Amsberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Claus Felix von Amsberg",
+      "best_candidate_label": "Claus Felix von Amsberg",
+      "best_candidate_qid": "Q2439092",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Baroness_Gosta_von_dem_Bussche-Haddenhausen",
+      "extracted_local_name": "Baroness_Gosta_von_dem_Bussche-Haddenhausen",
+      "embedding_text": "Baroness Gosta von dem Bussche-Haddenhausen",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9333333333333332,
+      "ground_truth_uri": "http://example.com/data#Baroness_Gösta_von_dem_Bussche-Haddenhausen",
+      "ground_truth_qid": "Q2099997",
+      "ground_truth_label": "Baroness Gösta von dem Bussche-Haddenhausen",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Baroness Gösta von dem Bussche-Haddenhausen",
+      "best_candidate_label": "Baroness Gösta von dem Bussche-Haddenhausen",
+      "best_candidate_qid": "Q2099997",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9333333333333332
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Claus_of_the_Netherlands",
+      "extracted_local_name": "Prince_Claus_of_the_Netherlands",
+      "embedding_text": "Prince Claus of the Netherlands",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8589743589743589,
+      "ground_truth_uri": "http://example.com/data#Prince_Claus-_Prince_Consort_of_the_Netherlands",
+      "ground_truth_qid": "Q159609",
+      "ground_truth_label": "Prince Claus, Prince Consort of the Netherlands",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Claus of the Netherlands, Jonkheer van Amsberg",
+      "best_candidate_label": "Prince Claus, Prince Consort of the Netherlands",
+      "best_candidate_qid": "Q159609",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8589743589743589
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Beatrix",
+      "extracted_local_name": "Queen_Beatrix",
+      "embedding_text": "Queen Beatrix",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Juliana",
+      "extracted_local_name": "Queen_Juliana",
+      "embedding_text": "Queen Juliana",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

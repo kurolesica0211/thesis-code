@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Beatriz_of_Spain,\n        data:Juan%2C_Count_of_Barcelona .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"1910\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2000\"^^xsd:positiveInteger ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Louise_of_Orl%C3%A9ans ;\n    :hasRelation data:Juan%2C_Count_of_Barcelona ;\n    :isMotherOf data:Juan_Carlos_I .\n\ndata:Philippe%2C_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Louise_of_Orl%C3%A9ans .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman ;\n    :isMotherOf data:Juan%2C_Count_of_Barcelona .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman .\n\ndata:Elena_of_Spain a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isMotherOf data:Elena_of_Spain .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Louise_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Juan%2C_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Beatriz_of_Spain,\n        data:Juan%2C_Count_of_Barcelona .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"1910\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2000\"^^xsd:positiveInteger ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Louise_of_Orl%C3%A9ans ;\n    :hasRelation data:Juan%2C_Count_of_Barcelona ;\n    :isMotherOf data:Juan_Carlos_I .\n\ndata:Philippe%2C_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Louise_of_Orl%C3%A9ans .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman ;\n    :isMotherOf data:Juan%2C_Count_of_Barcelona .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman .\n\ndata:Elena_of_Spain a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isMotherOf data:Elena_of_Spain .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Louise_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Juan%2C_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    }
+]

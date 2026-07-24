@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophia_of_Prussia a :Woman ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:William_II_of_Germany ;
+    :hasDaughter data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_I ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :hasSon data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :knownAs "Sophia of Prussia"^^xsd:string .
+
+data:Alexander_I_of_Greece a :Man .
+
+data:Constantine_I a :Man ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece .
+
+data:Frederick_III a :Man ;
+    :hasFather data:William_I_of_Prussia .
+
+data:George_II_of_Greece a :Man .
+
+data:George_I_of_Greece a :Man .
+
+data:Helen_of_Greece a :Woman .
+
+data:Irene_of_Greece a :Woman .
+
+data:Katherine_of_Greece a :Woman .
+
+data:Margaret_of_Prussia a :Woman .
+
+data:Paul_of_Greece a :Man .
+
+data:Prince_Albert a :Man .
+
+data:Queen_Olga_of_Greece a :Woman .
+
+data:Queen_Victoria a :Woman .
+
+data:Sigismund_of_Prussia a :Man .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Viktoria_of_Prussia a :Woman .
+
+data:Waldemar_of_Prussia a :Man .
+
+data:William_II_of_Germany a :Man .
+
+data:William_I_of_Prussia a :Man .
+

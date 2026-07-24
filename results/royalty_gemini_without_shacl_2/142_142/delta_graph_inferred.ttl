@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:InakiUrdangarin a :Man ;
+    :hasBrother data:InakiUrdangarin ;
+    :hasRelation data:InakiUrdangarin ;
+    :isBloodrelationOf data:InakiUrdangarin ;
+    :isBrotherOf data:InakiUrdangarin ;
+    :isSiblingOf data:InakiUrdangarin .
+
+data:JuanCarlosI a :Ancestor,
+        :Man ;
+    :hasBrother data:JuanCarlosI ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:JuanCarlosI,
+        data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isFatherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSiblingOf data:JuanCarlosI ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:Sofia a :Ancestor,
+        :Woman ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:JuanCarlosI,
+        data:Sofia ;
+    :hasSister data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBloodrelationOf data:Sofia ;
+    :isMotherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Cristina a :Woman ;
+    :hasAncestor data:JuanCarlosI,
+        data:Sofia ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:JuanCarlosI,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isDaughterOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :knownAs "Infanta Cristina"^^xsd:string .
+
+data:Elena a :Woman ;
+    :hasAncestor data:JuanCarlosI,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:JuanCarlosI,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isDaughterOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:FelipeVI a :Man ;
+    :hasAncestor data:JuanCarlosI,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:JuanCarlosI,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBrotherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSonOf data:JuanCarlosI,
+        data:Sofia .
+

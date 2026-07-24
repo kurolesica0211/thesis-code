@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon a :Man,
+        :Person ;
+    :hasBirthYear 1998 ;
+    :hasFather data:JaimedeMarichalar ;
+    :hasMother data:InfantaElenaDuchessofLugo ;
+    :hasSister data:VictoriaDeMarichalaryBorbon ;
+    :knownAs "Froilan"^^xsd:string .
+
+data:AmaliodeMarichalaryBruguera a :Man,
+        :Person .
+
+data:ConcepcionSaenzdeTejada a :Person,
+        :Woman .
+
+data:JuanCarlosI a :Man,
+        :Person .
+
+data:SofiaofSpain a :Person,
+        :Woman .
+
+data:VictoriaDeMarichalaryBorbon a :Person,
+        :Woman ;
+    :hasFather data:JaimedeMarichalar ;
+    :hasMother data:InfantaElenaDuchessofLugo .
+
+data:InfantaElenaDuchessofLugo a :Person,
+        :Woman ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:SofiaofSpain .
+
+data:JaimedeMarichalar a :Man,
+        :Person ;
+    :hasFather data:AmaliodeMarichalaryBruguera ;
+    :hasMother data:ConcepcionSaenzdeTejada .
+

@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Heinrich_Prinz_von_Hannover a :Man,
+        :Person ;
+    :hasBirthYear "1961"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;
+    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSex data:Male .
+
+data:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Prince_Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
+

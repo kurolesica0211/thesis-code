@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kraft_9th_Prince_of_Hohenlohe-Langenburg a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear data:Princess_Charlotte_of_Croy,
+        1965 ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .
+
+data:Princess_Beatrix a :Woman .
+
+data:Princess_Charlotte_of_Croy a :Woman .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+

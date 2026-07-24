@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :hasRelation data:MarieTherese_of_Wurttemberg .\n\ndata:Jean_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:MarieTherese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Chantal_of_Orleans a :Person,\n        :Woman .\n\ndata:Henri_Count_of_Paris_1933 a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Henri_VI_Count_of_Paris ;\n    :hasSister data:Chantal_of_Orleans .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 .\n\ndata:MarieTherese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :hasRelation data:MarieTherese_of_Wurttemberg .\n\ndata:Jean_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:MarieTherese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Chantal_of_Orleans a :Person,\n        :Woman .\n\ndata:Henri_Count_of_Paris_1933 a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Henri_VI_Count_of_Paris ;\n    :hasSister data:Chantal_of_Orleans .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 .\n\ndata:MarieTherese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 .\n\n"
+    }
+]

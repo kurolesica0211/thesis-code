@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archie_Harrison_Mountbatten-Windsor a :Man,\n        :Person ;\n    :hasAncestor data:Prince_Philip,\n        data:Queen_Elizabeth_II ;\n    :hasBirthYear 2019 ;\n    :hasFather data:Prince_Harry ;\n    :hasMother data:Meghan .\n\ndata:King_Charles_III a :Man,\n        :Person ;\n    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor .\n\ndata:Meghan a :Person,\n        :Woman .\n\ndata:Prince_Harry a :Man,\n        :Person ;\n    :hasParent data:King_Charles_III .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archie_Harrison_Mountbatten-Windsor a :Man,\n        :Person ;\n    :hasAncestor data:Prince_Philip,\n        data:Queen_Elizabeth_II ;\n    :hasBirthYear 2019 ;\n    :hasFather data:Prince_Harry ;\n    :hasMother data:Meghan .\n\ndata:King_Charles_III a :Man,\n        :Person ;\n    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor .\n\ndata:Meghan a :Person,\n        :Woman .\n\ndata:Prince_Harry a :Man,\n        :Person ;\n    :hasParent data:King_Charles_III .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\n"
+    }
+]

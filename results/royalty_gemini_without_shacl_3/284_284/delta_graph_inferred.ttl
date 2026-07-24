@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret ;
+    :hasSister data:Princess_Margaret ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:King_George_VI a :Man,
+        :Person ;
+    :hasBrother data:King_George_VI ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:King_George_VI ;
+    :isBrotherOf data:King_George_VI ;
+    :isSiblingOf data:King_George_VI .
+
+data:Captain_Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBrother data:Captain_Fergus_Bowes-Lyon ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon ;
+    :isBrotherOf data:Captain_Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Captain_Fergus_Bowes-Lyon .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman ;
+    :hasBrother data:Patrick_Lord_Glamis ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAuntOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSiblingOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Lady_Dorothy_Osborne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1888 ;
+    :hasChild data:Timothy_Patrick_Bowes-Lyon ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :hasSister data:Lady_Dorothy_Osborne ;
+    :hasSon data:Timothy_Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isAuntOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Lady_Dorothy_Osborne ;
+    :isMotherOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isParentOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Lady_Dorothy_Osborne ;
+    :isSisterOf data:Lady_Dorothy_Osborne .
+
+data:Patrick_Lord_Glamis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Patrick_Lord_Glamis ;
+    :hasChild data:Timothy_Patrick_Bowes-Lyon ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSon data:Timothy_Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isBrotherOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isFatherOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isParentOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isUncleOf data:Timothy_Patrick_Bowes-Lyon .
+
+data:Timothy_Patrick_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:Timothy_Patrick_Bowes-Lyon ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Patrick_Lord_Glamis ;
+    :hasMother data:Lady_Dorothy_Osborne ;
+    :hasParent data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis ;
+    :hasRelation data:Captain_Fergus_Bowes-Lyon,
+        data:King_George_VI,
+        data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon,
+        data:Timothy_Patrick_Bowes-Lyon ;
+    :isBrotherOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isChildOf data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis ;
+    :isSiblingOf data:Timothy_Patrick_Bowes-Lyon ;
+    :isSonOf data:Lady_Dorothy_Osborne,
+        data:Patrick_Lord_Glamis .
+

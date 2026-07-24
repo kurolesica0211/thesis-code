@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall .\n\ndata:Anthony_Edward_Weatherall a :Man .\n\ndata:Isobel_Weatherall a :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall .\n\ndata:Michael_Bowes-Lyon a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall .\n\ndata:Anthony_Edward_Weatherall a :Man .\n\ndata:Isobel_Weatherall a :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall .\n\ndata:Michael_Bowes-Lyon a :Man .\n\n"
+    }
+]

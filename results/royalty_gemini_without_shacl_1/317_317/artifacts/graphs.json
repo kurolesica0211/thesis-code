@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceCarlosEnrique a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrincessCecilia a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrincessLuisa a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrinceJaime a :Man,\n        :Person ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:PrinceXavier a :Man,\n        :Person .\n\ndata:PrincessCarolina a :Person,\n        :Woman ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:PrincessMargarita a :Person,\n        :Woman ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:AnnemarieGualtherieVanWeezel a :Person,\n        :Woman .\n\ndata:PrinceCarlos a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasBrother data:PrinceJaime ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene ;\n    :hasSister data:PrincessCarolina,\n        data:PrincessMargarita .\n\ndata:CarlosHugo a :Man,\n        :Person ;\n    :hasFather data:PrinceXavier .\n\ndata:PrincessIrene a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceCarlosEnrique a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrincessCecilia a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrincessLuisa a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlos ;\n    :hasMother data:AnnemarieGualtherieVanWeezel .\n\ndata:PrinceJaime a :Man,\n        :Person ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:PrinceXavier a :Man,\n        :Person .\n\ndata:PrincessCarolina a :Person,\n        :Woman ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:PrincessMargarita a :Person,\n        :Woman ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene .\n\ndata:AnnemarieGualtherieVanWeezel a :Person,\n        :Woman .\n\ndata:PrinceCarlos a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasBrother data:PrinceJaime ;\n    :hasFather data:CarlosHugo ;\n    :hasMother data:PrincessIrene ;\n    :hasSister data:PrincessCarolina,\n        data:PrincessMargarita .\n\ndata:CarlosHugo a :Man,\n        :Person ;\n    :hasFather data:PrinceXavier .\n\ndata:PrincessIrene a :Person,\n        :Woman .\n\n"
+    }
+]

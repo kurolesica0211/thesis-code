@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarieAntoinetteOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:DukePaulFrederickOfMecklenburg ;\n    :hasMother data:PrincessMarieOfWindischGraetz ;\n    :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,\n        data:DukeHeinrichBorwinOfMecklenburgSchwerin,\n        data:DukeJosephOfMecklenburgSchwerin,\n        data:DukePaulFriedrichOfMecklenburg .\n\ndata:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:DukeJosephOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:DukePaulFrederickOfMecklenburg a :Man,\n        :Person .\n\ndata:DukePaulFriedrichOfMecklenburg a :Man,\n        :Person .\n\ndata:PrincessMarieOfWindischGraetz a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarieAntoinetteOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:DukePaulFrederickOfMecklenburg ;\n    :hasMother data:PrincessMarieOfWindischGraetz ;\n    :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,\n        data:DukeHeinrichBorwinOfMecklenburgSchwerin,\n        data:DukeJosephOfMecklenburgSchwerin,\n        data:DukePaulFriedrichOfMecklenburg .\n\ndata:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:DukeJosephOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:DukePaulFrederickOfMecklenburg a :Man,\n        :Person .\n\ndata:DukePaulFriedrichOfMecklenburg a :Man,\n        :Person .\n\ndata:PrincessMarieOfWindischGraetz a :Person,\n        :Woman .\n\n"
+    }
+]

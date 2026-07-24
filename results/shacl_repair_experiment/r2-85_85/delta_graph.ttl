@@ -1,0 +1,15 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Tomislav_of_Yugoslavia a :Ancestor .
+
+data:Princess_Margarita_of_Baden a :Ancestor .
+
+data:Sir_Desmond_de_Silva a :Ancestor .
+
+data:Victoria_Marie_Esm%C3%A9_Margarita :hasMother data:Princess_Katarina_of_Yugoslavia .
+
+data:Princess_Katarina_of_Yugoslavia a :Ancestor ;
+    :alsoKnownAs "Lady de Silva"^^xsd:string .
+

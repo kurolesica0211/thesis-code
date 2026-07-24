@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armin_Prince_of_Lippe a :Man ;\n    :hasChild data:Stephan_Prince_of_Lippe .\n\ndata:Princess_Maria a :Woman .\n\ndata:Traute_Becker a :Woman ;\n    :hasChild data:Stephan_Prince_of_Lippe .\n\ndata:Stephan_Prince_of_Lippe a :Man ;\n    :hasBirthYear \"1959\"^^xsd:positiveInteger ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armin_Prince_of_Lippe a :Man ;\n    :hasChild data:Stephan_Prince_of_Lippe .\n\ndata:Princess_Maria a :Woman .\n\ndata:Traute_Becker a :Woman ;\n    :hasChild data:Stephan_Prince_of_Lippe .\n\ndata:Stephan_Prince_of_Lippe a :Man ;\n    :hasBirthYear \"1959\"^^xsd:positiveInteger ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria .\n\n"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daisy_Isadora_Louise_Knatchbull a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Atalanta_Cowan .\n\ndata:Frederick_Knatchbull a :Man,\n        :Person ;\n    :alsoKnownAs data:Freddy ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Wendy_Leach ;\n    :knownAs data:Freddy .\n\ndata:Atalanta_Cowan a :Person,\n        :Woman ;\n    :hasBirthYear 1962 .\n\ndata:Wendy_Leach a :Person,\n        :Woman ;\n    :hasBirthYear 1966 .\n\ndata:Philip_Knatchbull a :Man,\n        :Person ;\n    :hasBirthYear 1961 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daisy_Isadora_Louise_Knatchbull a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Atalanta_Cowan .\n\ndata:Frederick_Knatchbull a :Man,\n        :Person ;\n    :alsoKnownAs data:Freddy ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Wendy_Leach ;\n    :knownAs data:Freddy .\n\ndata:Atalanta_Cowan a :Person,\n        :Woman ;\n    :hasBirthYear 1962 .\n\ndata:Wendy_Leach a :Person,\n        :Woman ;\n    :hasBirthYear 1966 .\n\ndata:Freddy a :Person .\n\ndata:Philip_Knatchbull a :Man,\n        :Person ;\n    :hasBirthYear 1961 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daisy_Isadora_Louise_Knatchbull a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Atalanta_Cowan .\n\ndata:Frederick_Knatchbull a :Man,\n        :Person ;\n    :alsoKnownAs data:Freddy ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Philip_Knatchbull ;\n    :hasMother data:Wendy_Leach ;\n    :knownAs data:Freddy .\n\ndata:Atalanta_Cowan a :Person,\n        :Woman ;\n    :hasBirthYear 1962 .\n\ndata:Wendy_Leach a :Person,\n        :Woman ;\n    :hasBirthYear 1966 .\n\ndata:Freddy a :Person .\n\ndata:Philip_Knatchbull a :Man,\n        :Person ;\n    :hasBirthYear 1961 .\n\n"
+    }
+]

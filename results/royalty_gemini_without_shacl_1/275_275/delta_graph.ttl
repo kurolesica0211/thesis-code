@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincePhilipOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :hasBirthYear 1885 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :hasRelation data:PrincessMarieLouiseOfOrleans .
+
+data:PrinceAlfonsoOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:PrinceEmmanuelDukeOfVendome a :Man,
+        :Person .
+
+data:PrincessHenrietteOfBelgium a :Person,
+        :Woman .
+
+data:PrincessMariaAntoniettaOfBourbonTwoSicilies a :Person,
+        :Woman .
+
+data:PrincessMarieLouiseOfOrleans a :Person,
+        :Woman ;
+    :hasFather data:PrinceEmmanuelDukeOfVendome ;
+    :hasMother data:PrincessHenrietteOfBelgium .
+

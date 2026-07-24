@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,
+        :Woman ;
+    :hasBirthYear "1981"^^xsd:positiveInteger ;
+    :hasMarriageYear "2019"^^xsd:positiveInteger ;
+    :hasRelation data:Thomas_Henry_Robin_Kingston ;
+    :isDaughterOf data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person .
+
+data:Princess_Michael_of_Kent a :Person,
+        :Woman .
+
+data:Thomas_Henry_Robin_Kingston a :Man,
+        :Person ;
+    :hasBirthYear "1978"^^xsd:positiveInteger ;
+    :hasDeathYear "2024"^^xsd:positiveInteger .
+

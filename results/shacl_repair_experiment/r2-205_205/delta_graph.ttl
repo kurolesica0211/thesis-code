@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia :hasSex data:Male .
+
+data:Alfonso_XIII_of_Spain a :Ancestor ;
+    :hasSex data:Male .
+
+data:Infanta_Beatriz_of_Spain :hasSex data:Female ;
+    :knownAs "Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg"^^xsd:string .
+
+data:Juan_Carlos_I :hasSex data:Male .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Female .
+
+data:Male a :Sex .
+

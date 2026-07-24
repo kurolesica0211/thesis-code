@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Matthew_Kumar a :Man,
+        :Person .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Princess_Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos%2C_Crown_Prince_of_Greece .
+
+data:Princess_Maria-Olympia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1996 ;
+    :hasFather data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :isSiblingOf data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :knownAs "Olympia"^^xsd:string .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos%2C_Crown_Prince_of_Greece .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person .
+
+data:Marie-Chantal_Miller a :Person,
+        :Woman ;
+    :hasFather data:Robert_Warren_Miller .
+
+data:Prince_Achileas-Andreas a :Man,
+        :Person .
+
+data:Prince_Aristidis-Stavros a :Man,
+        :Person .
+
+data:Prince_Constantine-Alexios a :Man,
+        :Person .
+
+data:Prince_Odysseas_Kimon a :Man,
+        :Person .
+
+data:Robert_Warren_Miller a :Man,
+        :Person .
+
+data:Pavlos%2C_Crown_Prince_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark .
+

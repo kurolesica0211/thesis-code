@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :isFatherOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon .
+
+data:Mercedes_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    :isMotherOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon .
+
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Margarita_de_Borbon a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasMarriageYear 1972 ;
+    :hasRelation data:Carlos_Zurita_y_Delgado ;
+    :isAuntOf data:Felipe_VI ;
+    :isSisterOf data:Juan_Carlos_I .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+

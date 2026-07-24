@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ludwig a :Man,\n        :Person ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Rosa_of_Austria ;\n    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .\n\ndata:Carl_Herzog_von_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Rosa_of_Austria .\n\ndata:Philipp_Albrecht a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ludwig a :Man,\n        :Person ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Rosa_of_Austria ;\n    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .\n\ndata:Carl_Herzog_von_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Rosa_of_Austria .\n\ndata:Philipp_Albrecht a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman .\n\n"
+    }
+]

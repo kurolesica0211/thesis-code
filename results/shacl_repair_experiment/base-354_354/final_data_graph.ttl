@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Mathilde_van_Limburg-Stirum a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Duke_de_Gramont-Caderousse a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Grand_Duchess_Maria_Alexandrovna_of_Russia a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Alice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria ;
+    :hasSex data:Female .
+
+data:William_Prince_of_Orange a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Lemon"^^xsd:string ;
+    :hasBirthYear 1840 ;
+    :hasBrother data:Alexander ;
+    :hasDeathYear 1879 ;
+    :hasFather data:King_William_III ;
+    :hasMother data:Princess_Sophie_of_Wurttemberg ;
+    :hasSex data:Male ;
+    :hasSister data:Wilhelmina .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasFather data:King_William_III ;
+    :hasSex data:Male .
+
+data:King_William_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:King_William_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_William_I ;
+    :hasSex data:Male .
+
+data:Princess_Augusta_of_Great_Britain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Sophie_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Princess_Augusta_of_Great_Britain ;
+    :hasSex data:Female .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:King_William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_William_II ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

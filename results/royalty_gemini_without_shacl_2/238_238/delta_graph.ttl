@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HelenaVictoriaHuttenCzapska a :Person,
+        :Woman .
+
+data:KinskySon a :Man,
+        :Person ;
+    :hasFather data:FranzUlrich .
+
+data:AnneRowell a :Person,
+        :Woman .
+
+data:FranzUlrich a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich10thPrinceKinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :hasRelation data:RobertaCavanagh .
+
+data:HilmarVondemBusscheHaddenhausen a :Ancestor,
+        :Man .
+
+data:MarieJuliaMathildeVondemBusscheHaddenhausen a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:HilmarVondemBusscheHaddenhausen .
+
+data:RobertaCavanagh a :Person,
+        :Woman ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:RobertoCavanagh ;
+    :hasMother data:AnneRowell .
+
+data:RobertoCavanagh a :Man,
+        :Person .
+
+data:Ulrich10thPrinceKinsky a :Ancestor,
+        :Man .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Caroline_of_Monaco a :Person,\n        :Woman .\n\ndata:Christian_of_Hanover a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Ernst_August_von_Hannover ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Chantal_Hochuli ;\n    :hasRelation data:Alessandra_de_Osma .\n\ndata:Alessandra_de_Osma a :Person,\n        :Woman .\n\ndata:Chantal_Hochuli a :Person,\n        :Woman .\n\ndata:Ernst_August_von_Hannover a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Caroline_of_Monaco a :Person,\n        :Woman .\n\ndata:Christian_of_Hanover a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Ernst_August_von_Hannover ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Chantal_Hochuli ;\n    :hasRelation data:Alessandra_de_Osma .\n\ndata:Alessandra_de_Osma a :Person,\n        :Woman .\n\ndata:Chantal_Hochuli a :Person,\n        :Woman .\n\ndata:Ernst_August_von_Hannover a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Henry_George_Lascelles a :Man,
+        :Person ;
+    :formerlyKnownAs "Viscount Lascelles"^^xsd:string ;
+    :hasBirthYear 1950 ;
+    :hasFather data:7th_Earl_of_Harewood ;
+    :hasMarriageYear 1979,
+        1990 ;
+    :hasMother data:Marion_Stein ;
+    :hasRelation data:Diane_Howse,
+        data:Margaret_Rosalind_Messenger .
+
+data:7th_Earl_of_Harewood a :Man,
+        :Person .
+
+data:Diane_Howse a :Person,
+        :Woman .
+
+data:Edgar_Frank_Messenger a :Man,
+        :Person .
+
+data:Margaret_Rosalind_Messenger a :Person,
+        :Woman ;
+    :hasFather data:Edgar_Frank_Messenger .
+
+data:Marion_Stein a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sof%C3%ADa a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Constantine_II ;\n    :hasChild data:Cristina,\n        data:Elena,\n        data:Felipe_VI ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Frederica_of_Hanover ;\n    :hasParent data:Juan_Carlos_I ;\n    :hasSister data:Irene .\n\ndata:Constantine_I a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Frederica_of_Hanover a :Woman .\n\ndata:Irene a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasChild data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Paul_of_Greece a :Man ;\n    :hasFather data:Constantine_I ;\n    :hasMother data:Sophia_of_Greece .\n\ndata:Sophia_of_Greece a :Woman .\n\ndata:Cristina a :Woman .\n\ndata:Elena a :Woman .\n\ndata:Felipe_VI a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sof%C3%ADa a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Constantine_II ;\n    :hasChild data:Cristina,\n        data:Elena,\n        data:Felipe_VI ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Frederica_of_Hanover ;\n    :hasParent data:Juan_Carlos_I ;\n    :hasSister data:Irene .\n\ndata:Constantine_I a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Frederica_of_Hanover a :Woman .\n\ndata:Irene a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasChild data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Paul_of_Greece a :Man ;\n    :hasFather data:Constantine_I ;\n    :hasMother data:Sophia_of_Greece .\n\ndata:Sophia_of_Greece a :Woman .\n\ndata:Cristina a :Woman .\n\ndata:Elena a :Woman .\n\ndata:Felipe_VI a :Man .\n\n"
+    }
+]

@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_Duke_of_Aosta a :Man .
+
+data:Christopher_of_Greece a :Man .
+
+data:Constantine_II a :Man ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Ferdinand_I_of_Romania a :Man ;
+    :hasDaughter data:Elisabeth_of_Romania ;
+    :hasSon data:Carol_of_Romania .
+
+data:George_II a :Man ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Constantine_I ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasRelation data:Elisabeth_of_Romania ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Marie_of_Romania a :Woman ;
+    :hasDaughter data:Elisabeth_of_Romania ;
+    :hasSon data:Carol_of_Romania .
+
+data:Olga_Constantinovna a :Woman .
+
+data:Philip_of_Edinburgh a :Man ;
+    :hasFather data:Andrew_of_Greece .
+
+data:Alexander_of_Greece a :Man ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Andrew_of_Greece a :Man ;
+    :hasFather data:George_I_of_Greece .
+
+data:Frederica_of_Hanover a :Woman .
+
+data:Helen_of_Greece a :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Irene_of_Greece a :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Katherine_of_Greece a :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Carol_of_Romania a :Man .
+
+data:George_I_of_Greece a :Man .
+
+data:Paul_of_Greece a :Man ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Elisabeth_of_Romania a :Woman .
+
+data:Constantine_I a :Man ;
+    :hasFather data:George_I_of_Greece .
+
+data:Sophia_of_Prussia a :Woman .
+

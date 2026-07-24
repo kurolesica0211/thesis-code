@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :isChildOf data:Heather_Tonkin,
+        data:Mark_Phillips .
+
+data:Isla_Elizabeth_Phillips a :Person,
+        :Woman ;
+    :isChildOf data:Autumn_Kelly,
+        data:Peter_Phillips .
+
+data:Savannah_Anne_Kathleen_Phillips a :Person,
+        :Woman ;
+    :isChildOf data:Autumn_Kelly,
+        data:Peter_Phillips .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :isChildOf data:Mark_Phillips,
+        data:Sandy_Pflueger .
+
+data:Harriet_Sperling a :Person,
+        :Woman ;
+    :isChildOf data:Rupert_Sanders .
+
+data:Heather_Tonkin a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lindsay_Wallace a :Person,
+        :Woman .
+
+data:Prince_Philip%2C_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Rupert_Sanders a :Man,
+        :Person .
+
+data:Sandy_Pflueger a :Person,
+        :Woman .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :isChildOf data:Anne%2C_Princess_Royal,
+        data:Mark_Phillips .
+
+data:Anne%2C_Princess_Royal a :Person,
+        :Woman ;
+    :isChildOf data:Prince_Philip%2C_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II .
+
+data:Peter_Phillips a :Man,
+        :Person ;
+    :hasBirthYear "1977"^^xsd:positiveInteger ;
+    :hasMarriageYear "2008"^^xsd:positiveInteger ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:King_Charles_III,
+        data:Lindsay_Wallace ;
+    :isSiblingOf data:Zara_Tindall ;
+    :isSonOf data:Anne%2C_Princess_Royal,
+        data:Mark_Phillips .
+
+data:Autumn_Kelly a :Person,
+        :Woman .
+
+data:Mark_Phillips a :Man,
+        :Person .
+

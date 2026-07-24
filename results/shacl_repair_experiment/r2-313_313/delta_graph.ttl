@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Grand_Duchess_Maria_Pavlovna a :Ancestor .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Ancestor .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor .
+
+data:Mathilde_Kschessinska a :Ancestor .
+

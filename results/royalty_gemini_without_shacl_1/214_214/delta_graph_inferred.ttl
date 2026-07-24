@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina a :Woman ;
+    :hasRelation data:Marina ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Queen_Sofia_of_Spain a :Woman ;
+    :hasRelation data:Queen_Sofia_of_Spain ;
+    :hasSister data:Queen_Sofia_of_Spain ;
+    :isBloodrelationOf data:Queen_Sofia_of_Spain ;
+    :isSiblingOf data:Queen_Sofia_of_Spain ;
+    :isSisterOf data:Queen_Sofia_of_Spain .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine-Alexios_of_Greece_and_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasSister data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :hasSon data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :isMotherOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :isSisterOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasChild data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine-Alexios_of_Greece_and_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasSon data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isFatherOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isUncleOf data:Constantine-Alexios_of_Greece_and_Denmark .
+
+data:Marie-Chantal_of_Greece a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine-Alexios_of_Greece_and_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasSister data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :hasSon data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :isMotherOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :isSisterOf data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece .
+
+data:Pavlos_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasChild data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine-Alexios_of_Greece_and_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasSon data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isFatherOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isUncleOf data:Constantine-Alexios_of_Greece_and_Denmark .
+
+data:Constantine-Alexios_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece ;
+    :hasParent data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine-Alexios_of_Greece_and_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isBloodrelationOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isChildOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece ;
+    :isSiblingOf data:Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSonOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_of_Greece,
+        data:Pavlos_of_Greece .
+

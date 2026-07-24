@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary_Malcolm a :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Sir_Ian_Malcolm ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Jeanne_Langtry ;
+    :hasRelation data:Sir_Basil_Bartlett .
+
+data:Jeanne_Langtry a :Woman ;
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1964 ;
+    :hasMother data:Lillie_Langtry .
+
+data:King_Edward_VII a :Man .
+
+data:Lillie_Langtry a :Woman ;
+    :hasRelation data:King_Edward_VII .
+
+data:Sir_Basil_Bartlett a :Man .
+
+data:Sir_Ian_Malcolm a :Man .
+

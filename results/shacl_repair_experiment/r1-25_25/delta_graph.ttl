@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alice_of_Battenberg a :Ancestor ;
+    :hasSex data:Female ;
+    :knownAs "Princess Alice of Battenberg"^^xsd:string .
+
+data:Gustaf_VI_Adolf :hasSex data:Male .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma :hasSex data:Male ;
+    :knownAs "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string .
+
+data:Louis_of_Battenberg a :Ancestor ;
+    :hasSex data:Male ;
+    :knownAs "Prince Louis of Battenberg"^^xsd:string .
+
+data:Louise_Mountbatten :hasSex data:Female .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Ancestor ;
+    :hasSex data:Female ;
+    :knownAs "Princess Victoria of Hesse and by Rhine"^^xsd:string .
+
+data:Prince_Philip_Duke_of_Edinburgh :hasFather data:Prince_Philip_Father_Placeholder ;
+    :hasSex data:Male .
+
+data:Prince_Philip_Father_Placeholder a :Ancestor,
+        :Man ;
+    :isFatherOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

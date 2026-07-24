@@ -1,0 +1,287 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Enrico_Gandolfi a :Man,
+        :Person ;
+    :hasBrother data:Enrico_Gandolfi ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isBloodrelationOf data:Enrico_Gandolfi ;
+    :isBrotherOf data:Enrico_Gandolfi ;
+    :isSiblingOf data:Enrico_Gandolfi .
+
+data:Luigi_Arnaldo_La_Cagnina a :Man,
+        :Person ;
+    :hasBrother data:Luigi_Arnaldo_La_Cagnina ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isBloodrelationOf data:Luigi_Arnaldo_La_Cagnina ;
+    :isBrotherOf data:Luigi_Arnaldo_La_Cagnina ;
+    :isSiblingOf data:Luigi_Arnaldo_La_Cagnina .
+
+data:Silvia_Patern%C3%B2_di_Spedalotto a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isBloodrelationOf data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isSiblingOf data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isSisterOf data:Silvia_Patern%C3%B2_di_Spedalotto .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Princess_Claude_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Claude_of_Orl%C3%A9ans ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isAncestorOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Princess_Claude_of_Orl%C3%A9ans .
+
+data:Prince_Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Aimone_Duke_of_Aosta ;
+    :hasChild data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSon data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isBloodrelationOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isParentOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Claude_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Claude_of_Orl%C3%A9ans ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isAuntOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Aimone_Duke_of_Aosta ;
+    :hasBrother data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :hasFather data:Prince_Aimone_Duke_of_Aosta ;
+    :hasParent data:Prince_Aimone_Duke_of_Aosta ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :isBloodrelationOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isChildOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :isSonOf data:Prince_Aimone_Duke_of_Aosta .
+
+data:Anne_Duchess_of_Calabria a :Person,
+        :Woman ;
+    :hasBrother data:Henri_Count_of_Paris_jr ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSisterOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans .
+
+data:Diane_Duchess_of_W%C3%BCrttemberg a :Person,
+        :Woman ;
+    :hasBrother data:Henri_Count_of_Paris_jr ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSisterOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans .
+
+data:Henri_Count_of_Paris_jr a :Man,
+        :Person ;
+    :hasBrother data:Henri_Count_of_Paris_jr ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBrotherOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans .
+
+data:Princess_Claude_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Henri_Count_of_Paris_jr ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Enrico_Gandolfi,
+        data:Henri_Count_of_Paris,
+        data:Henri_Count_of_Paris_jr,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza,
+        data:Silvia_Patern%C3%B2_di_Spedalotto ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSisterOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris_jr,
+        data:Princess_Claude_of_Orl%C3%A9ans .
+

@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_IV a :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_IV ;
+    :hasRelation data:Ferdinand_IV ;
+    :isBloodrelationOf data:Ferdinand_IV ;
+    :isBrotherOf data:Ferdinand_IV ;
+    :isSiblingOf data:Ferdinand_IV .
+
+data:Archibald_Bruce_Edmonstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Archibald_Bruce_Edmonstone ;
+    :hasChild data:Elyssa_Edmonstone ;
+    :hasDaughter data:Elyssa_Edmonstone ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :isAncestorOf data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Archibald_Bruce_Edmonstone ;
+    :isBrotherOf data:Archibald_Bruce_Edmonstone ;
+    :isFatherOf data:Elyssa_Edmonstone ;
+    :isParentOf data:Elyssa_Edmonstone ;
+    :isSiblingOf data:Archibald_Bruce_Edmonstone ;
+    :isUncleOf data:Elyssa_Edmonstone .
+
+data:Laetitia_d_Arenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sigismund ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :hasSister data:Laetitia_d_Arenberg ;
+    :hasSon data:Sigismund ;
+    :isAncestorOf data:Sigismund ;
+    :isAuntOf data:Sigismund ;
+    :isBloodrelationOf data:Laetitia_d_Arenberg ;
+    :isMotherOf data:Sigismund ;
+    :isParentOf data:Sigismund ;
+    :isSiblingOf data:Laetitia_d_Arenberg ;
+    :isSisterOf data:Laetitia_d_Arenberg .
+
+data:Gottfried_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gottfried_of_Austria ;
+    :hasChild data:Leopoldo_Franz ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :hasSon data:Leopoldo_Franz ;
+    :isAncestorOf data:Leopoldo_Franz,
+        data:Sigismund ;
+    :isBloodrelationOf data:Gottfried_of_Austria ;
+    :isBrotherOf data:Gottfried_of_Austria ;
+    :isFatherOf data:Leopoldo_Franz ;
+    :isParentOf data:Leopoldo_Franz ;
+    :isSiblingOf data:Gottfried_of_Austria ;
+    :isUncleOf data:Leopoldo_Franz .
+
+data:Peter_Deakin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Peter_Deakin ;
+    :hasChild data:Julieta_Isabel_Deakin ;
+    :hasDaughter data:Julieta_Isabel_Deakin ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :isAncestorOf data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin ;
+    :isBloodrelationOf data:Peter_Deakin ;
+    :isBrotherOf data:Peter_Deakin ;
+    :isFatherOf data:Julieta_Isabel_Deakin ;
+    :isParentOf data:Julieta_Isabel_Deakin ;
+    :isSiblingOf data:Peter_Deakin ;
+    :isUncleOf data:Julieta_Isabel_Deakin .
+
+data:Julieta_Isabel_Deakin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Peter_Deakin ;
+    :hasChild data:Elyssa_Edmonstone ;
+    :hasDaughter data:Elyssa_Edmonstone ;
+    :hasFather data:Peter_Deakin ;
+    :hasParent data:Peter_Deakin ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :hasSister data:Julieta_Isabel_Deakin ;
+    :isAncestorOf data:Elyssa_Edmonstone ;
+    :isAuntOf data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Julieta_Isabel_Deakin ;
+    :isChildOf data:Peter_Deakin ;
+    :isDaughterOf data:Peter_Deakin ;
+    :isMotherOf data:Elyssa_Edmonstone ;
+    :isParentOf data:Elyssa_Edmonstone ;
+    :isSiblingOf data:Julieta_Isabel_Deakin ;
+    :isSisterOf data:Julieta_Isabel_Deakin .
+
+data:Leopoldo_Franz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Gottfried_of_Austria ;
+    :hasBrother data:Leopoldo_Franz ;
+    :hasChild data:Sigismund ;
+    :hasFather data:Gottfried_of_Austria ;
+    :hasParent data:Gottfried_of_Austria ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :hasSon data:Sigismund ;
+    :isAncestorOf data:Sigismund ;
+    :isBloodrelationOf data:Leopoldo_Franz ;
+    :isBrotherOf data:Leopoldo_Franz ;
+    :isChildOf data:Gottfried_of_Austria ;
+    :isFatherOf data:Sigismund ;
+    :isParentOf data:Sigismund ;
+    :isSiblingOf data:Leopoldo_Franz ;
+    :isSonOf data:Gottfried_of_Austria ;
+    :isUncleOf data:Sigismund .
+
+data:Elyssa_Edmonstone a :Person,
+        :Woman ;
+    :hasAncestor data:Archibald_Bruce_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Peter_Deakin ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Archibald_Bruce_Edmonstone ;
+    :hasMother data:Julieta_Isabel_Deakin ;
+    :hasParent data:Archibald_Bruce_Edmonstone,
+        data:Julieta_Isabel_Deakin ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :hasSister data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Elyssa_Edmonstone ;
+    :isChildOf data:Archibald_Bruce_Edmonstone,
+        data:Julieta_Isabel_Deakin ;
+    :isDaughterOf data:Archibald_Bruce_Edmonstone,
+        data:Julieta_Isabel_Deakin ;
+    :isSiblingOf data:Elyssa_Edmonstone ;
+    :isSisterOf data:Elyssa_Edmonstone .
+
+data:Sigismund a :Man,
+        :Person ;
+    :hasAncestor data:Gottfried_of_Austria,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Sigismund ;
+    :hasFather data:Leopoldo_Franz ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Laetitia_d_Arenberg ;
+    :hasParent data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz ;
+    :hasRelation data:Archibald_Bruce_Edmonstone,
+        data:Elyssa_Edmonstone,
+        data:Gottfried_of_Austria,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz,
+        data:Peter_Deakin,
+        data:Sigismund ;
+    :isBloodrelationOf data:Sigismund ;
+    :isBrotherOf data:Sigismund ;
+    :isChildOf data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz ;
+    :isSiblingOf data:Sigismund ;
+    :isSonOf data:Laetitia_d_Arenberg,
+        data:Leopoldo_Franz .
+

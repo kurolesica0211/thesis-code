@@ -1,0 +1,15 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Hubertus_von_Faber-Castell a :Ancestor .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Ancestor .
+
+data:Margaret_Campbell_Geddes a :Ancestor .
+
+data:Moritz a :Ancestor .
+
+data:Philipp a :Ancestor .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor .
+

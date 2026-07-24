@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Woman ;
+    :hasRelation data:Beatrix ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Margriet a :Woman ;
+    :hasRelation data:Margriet ;
+    :hasSister data:Margriet ;
+    :isBloodrelationOf data:Margriet ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:Pieter_van_Vollenhoven a :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Friso a :Man ;
+    :hasBrother data:Friso,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia_of_the_Netherlands,
+        data:Friso,
+        data:Juan_Zorreguieta,
+        data:Maxima,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Friso,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Alexia_of_the_Netherlands .
+
+data:Juan_Zorreguieta a :Man ;
+    :hasBrother data:Juan_Zorreguieta ;
+    :hasRelation data:Alexia_of_the_Netherlands,
+        data:Friso,
+        data:Juan_Zorreguieta,
+        data:Maxima,
+        data:Willem-Alexander ;
+    :hasSister data:Maxima ;
+    :isBloodrelationOf data:Juan_Zorreguieta,
+        data:Maxima ;
+    :isBrotherOf data:Juan_Zorreguieta,
+        data:Maxima ;
+    :isSiblingOf data:Juan_Zorreguieta,
+        data:Maxima ;
+    :isUncleOf data:Alexia_of_the_Netherlands .
+
+data:Maxima a :Ancestor,
+        :Woman ;
+    :hasBrother data:Juan_Zorreguieta ;
+    :hasChild data:Alexia_of_the_Netherlands ;
+    :hasDaughter data:Alexia_of_the_Netherlands ;
+    :hasRelation data:Alexia_of_the_Netherlands,
+        data:Friso,
+        data:Juan_Zorreguieta,
+        data:Maxima,
+        data:Willem-Alexander ;
+    :hasSister data:Maxima ;
+    :isAncestorOf data:Alexia_of_the_Netherlands ;
+    :isAuntOf data:Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Juan_Zorreguieta,
+        data:Maxima ;
+    :isMotherOf data:Alexia_of_the_Netherlands ;
+    :isParentOf data:Alexia_of_the_Netherlands ;
+    :isSiblingOf data:Juan_Zorreguieta,
+        data:Maxima ;
+    :isSisterOf data:Juan_Zorreguieta,
+        data:Maxima .
+
+data:Willem-Alexander a :Ancestor,
+        :Man ;
+    :hasBrother data:Friso,
+        data:Willem-Alexander ;
+    :hasChild data:Alexia_of_the_Netherlands ;
+    :hasDaughter data:Alexia_of_the_Netherlands ;
+    :hasRelation data:Alexia_of_the_Netherlands,
+        data:Friso,
+        data:Juan_Zorreguieta,
+        data:Maxima,
+        data:Willem-Alexander ;
+    :isAncestorOf data:Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Friso,
+        data:Willem-Alexander ;
+    :isFatherOf data:Alexia_of_the_Netherlands ;
+    :isParentOf data:Alexia_of_the_Netherlands ;
+    :isSiblingOf data:Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Alexia_of_the_Netherlands .
+
+data:Alexia_of_the_Netherlands a :Woman ;
+    :hasAncestor data:Maxima,
+        data:Willem-Alexander ;
+    :hasBirthYear 2005 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:Maxima ;
+    :hasParent data:Maxima,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia_of_the_Netherlands,
+        data:Friso,
+        data:Juan_Zorreguieta,
+        data:Maxima,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Alexia_of_the_Netherlands ;
+    :isChildOf data:Maxima,
+        data:Willem-Alexander ;
+    :isDaughterOf data:Maxima,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia_of_the_Netherlands ;
+    :isSisterOf data:Alexia_of_the_Netherlands .
+

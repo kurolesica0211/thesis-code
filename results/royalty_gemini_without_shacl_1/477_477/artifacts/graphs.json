@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Crown_Princess_Katherine a :Person,\n        :Woman ;\n    :hasFather data:Robert_Batis ;\n    :hasMother data:Anna_Dosti .\n\ndata:Peter_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Philip_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Princess_Aspasia_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Anna_Dosti a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Man,\n        :Person .\n\ndata:Queen_Alexandra_of_Yugoslavia a :Person,\n        :Woman .\n\ndata:Robert_Batis a :Man,\n        :Person .\n\ndata:Alexander_Crown_Prince_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasFather data:King_Peter_II ;\n    :hasMother data:Queen_Alexandra_of_Yugoslavia .\n\ndata:Princess_Maria_da_Gloria_of_Orleans-Braganza a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Crown_Princess_Katherine a :Person,\n        :Woman ;\n    :hasFather data:Robert_Batis ;\n    :hasMother data:Anna_Dosti .\n\ndata:Peter_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Philip_son_of_Alexander a :Man,\n        :Person ;\n    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .\n\ndata:Princess_Aspasia_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Anna_Dosti a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Man,\n        :Person .\n\ndata:Queen_Alexandra_of_Yugoslavia a :Person,\n        :Woman .\n\ndata:Robert_Batis a :Man,\n        :Person .\n\ndata:Alexander_Crown_Prince_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasFather data:King_Peter_II ;\n    :hasMother data:Queen_Alexandra_of_Yugoslavia .\n\ndata:Princess_Maria_da_Gloria_of_Orleans-Braganza a :Person,\n        :Woman .\n\n"
+    }
+]

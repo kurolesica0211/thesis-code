@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:11th_Earl_of_Scarbrough a :Man,\n        :Person ;\n    :isFatherOf data:Lady_Lily_Serena_Lumley .\n\ndata:Oliver_Worsley a :Man,\n        :Person ;\n    :isUncleOf data:George_Philip_Nicholas_Windsor .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :isAuntOf data:George_Philip_Nicholas_Windsor .\n\ndata:Sir_William_Worsley a :Man,\n        :Person ;\n    :isFatherOf data:Katharine_Duchess_of_Kent .\n\ndata:Lady_Lily_Serena_Lumley a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\ndata:George_Philip_Nicholas_Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1962 ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasRelation data:Sylvana_Tomaselli ;\n    :knownAs data:Earl_of_St_Andrews .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:11th_Earl_of_Scarbrough a :Man,\n        :Person ;\n    :isFatherOf data:Lady_Lily_Serena_Lumley .\n\ndata:Oliver_Worsley a :Man,\n        :Person ;\n    :isUncleOf data:George_Philip_Nicholas_Windsor .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :isAuntOf data:George_Philip_Nicholas_Windsor .\n\ndata:Sir_William_Worsley a :Man,\n        :Person ;\n    :isFatherOf data:Katharine_Duchess_of_Kent .\n\ndata:Earl_of_St_Andrews a :Person .\n\ndata:Lady_Lily_Serena_Lumley a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\ndata:George_Philip_Nicholas_Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1962 ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasRelation data:Sylvana_Tomaselli ;\n    :knownAs data:Earl_of_St_Andrews .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:11th_Earl_of_Scarbrough a :Man,\n        :Person ;\n    :isFatherOf data:Lady_Lily_Serena_Lumley .\n\ndata:Oliver_Worsley a :Man,\n        :Person ;\n    :isUncleOf data:George_Philip_Nicholas_Windsor .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :isAuntOf data:George_Philip_Nicholas_Windsor .\n\ndata:Sir_William_Worsley a :Man,\n        :Person ;\n    :isFatherOf data:Katharine_Duchess_of_Kent .\n\ndata:Earl_of_St_Andrews a :Person .\n\ndata:Lady_Lily_Serena_Lumley a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\ndata:George_Philip_Nicholas_Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1962 ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasRelation data:Sylvana_Tomaselli ;\n    :knownAs data:Earl_of_St_Andrews .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\n"
+    }
+]

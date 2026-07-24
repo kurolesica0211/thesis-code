@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hermann_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear "1963"^^xsd:nonNegativeInteger ;
+    :hasFather data:Karl_Leiningen ;
+    :hasMarriageYear "1987"^^xsd:nonNegativeInteger ;
+    :hasMother data:Marie_Louise_Bulgaria ;
+    :hasRelation data:Deborah_Cully ;
+    :knownAs "Hermann Leiningen"^^xsd:string .
+
+data:Boris_III_Bulgaria a :Man,
+        :Person ;
+    :hasFather data:Victor_Emmanuel_III_Italy .
+
+data:Deborah_Cully a :Person,
+        :Woman .
+
+data:Karl_Leiningen a :Man,
+        :Person .
+
+data:Marie_Louise_Bulgaria a :Person,
+        :Woman ;
+    :hasFather data:Boris_III_Bulgaria .
+
+data:Nicholas_Montenegro a :Man,
+        :Person .
+
+data:Victor_Emmanuel_III_Italy a :Man,
+        :Person ;
+    :hasFather data:Nicholas_Montenegro .
+

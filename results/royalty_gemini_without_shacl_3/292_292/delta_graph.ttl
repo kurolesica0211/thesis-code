@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JorgeGuillermo a :Man,
+        :Person .
+
+data:PrinceBernhardJr a :Man,
+        :Person .
+
+data:PrinceFelix a :Man,
+        :Person .
+
+data:PrincessAnne a :Person,
+        :Woman .
+
+data:PrincessChristina a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana ;
+    :isSiblingOf data:PrincessBeatrix,
+        data:PrincessIrene,
+        data:PrincessMargriet .
+
+data:WilliamII a :Man,
+        :Person .
+
+data:PrinceBernhard a :Man,
+        :Person ;
+    :hasMother data:PrincessArmgard .
+
+data:PrinceCarlosHugo a :Man,
+        :Person .
+
+data:PrincessArmgard a :Person,
+        :Woman .
+
+data:PrincessBeatrix a :Person,
+        :Woman .
+
+data:PrincessIrene a :Person,
+        :Woman ;
+    :isSiblingOf data:PrinceCarlosHugo .
+
+data:PrincessMargriet a :Person,
+        :Woman .
+
+data:QueenJuliana a :Person,
+        :Woman ;
+    :hasMother data:QueenWilhelmina .
+
+data:QueenWilhelmina a :Person,
+        :Woman .
+

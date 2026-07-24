@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1930 ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Emperor_Frederick_III a :Man,
+        :Person .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
+
+data:Maximilian_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Prince_Frederick_Charles_of_Hesse a :Man,
+        :Person .
+
+data:Prince_George_William_of_Hanover a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Prince_Philipp_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Richard_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Emperor_Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_George_William_of_Hanover ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman .
+

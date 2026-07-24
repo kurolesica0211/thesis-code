@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:IndiaHicks a :Person,
+        :Woman ;
+    :isChildOf data:DavidNightingaleHicks,
+        data:LadyPamelaHicks .
+
+data:PrinceLouisOfBattenberg a :Man,
+        :Person ;
+    :isFatherOf data:LordLouisMountbatten .
+
+data:PrincessVictoriaOfHesse a :Person,
+        :Woman ;
+    :isMotherOf data:LordLouisMountbatten .
+
+data:DavidNightingaleHicks a :Man,
+        :Person ;
+    :hasBirthYear 1929 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:HerbertHicks ;
+    :hasMother data:IrisElsiePlatten .
+
+data:EdwinaAshley a :Person,
+        :Woman .
+
+data:HerbertHicks a :Man,
+        :Person .
+
+data:IrisElsiePlatten a :Person,
+        :Woman .
+
+data:LadyPamelaHicks a :Person,
+        :Woman ;
+    :hasBirthYear 1929 ;
+    :hasFather data:LordLouisMountbatten ;
+    :hasMother data:EdwinaAshley ;
+    :isSisterOf data:PatriciaKnatchbull .
+
+data:PatriciaKnatchbull a :Person,
+        :Woman .
+
+data:LordLouisMountbatten a :Man,
+        :Person .
+

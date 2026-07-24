@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    :hasBirthYear 1918 ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Willemina_Martina_Wenneker .
+
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Henry_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :alsoKnownAs "Heinrich Wladimir Albrecht Ernst"^^xsd:string,
+        "Hendrik Vladimir Albrecht Ernst"^^xsd:string ;
+    :hasBirthYear 1876 ;
+    :hasChild data:Juliana ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasMother data:Wilhelmina .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman .
+
+data:Wilhelmina a :Person,
+        :Woman .
+
+data:Willemina_Martina_Wenneker a :Person,
+        :Woman .
+

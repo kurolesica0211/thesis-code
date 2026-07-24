@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Ranieri_Maria_Gaetano .\n\ndata:Countess_Maria_Carolina_Zamoyska a :Person,\n        :Woman ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1968 .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Prince_Ranieri_Maria_Gaetano a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Countess_Maria_Carolina_Zamoyska .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasDeathYear 1938 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Ranieri_Maria_Gaetano .\n\ndata:Countess_Maria_Carolina_Zamoyska a :Person,\n        :Woman ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1968 .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Prince_Ranieri_Maria_Gaetano a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Countess_Maria_Carolina_Zamoyska .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasDeathYear 1938 .\n\n"
+    }
+]

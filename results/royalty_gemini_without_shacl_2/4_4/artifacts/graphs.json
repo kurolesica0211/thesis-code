@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman ;\n    :hasFather data:Gustaf_VI_Adolf .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1967 ;\n    :hasMother data:Ingrid_of_Sweden ;\n    :hasSon data:Frederik_X,\n        data:Joachim_of_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman ;\n    :hasFather data:Gustaf_VI_Adolf .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1967 ;\n    :hasMother data:Ingrid_of_Sweden ;\n    :hasSon data:Frederik_X,\n        data:Joachim_of_Denmark .\n\n"
+    }
+]

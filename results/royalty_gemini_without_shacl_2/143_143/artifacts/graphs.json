@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duchess_Maria_Pavlovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1854 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1874 ;\n    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .\n\ndata:Alexander_II_of_Russia a :Man,\n        :Person .\n\ndata:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Alexander_II_of_Russia .\n\ndata:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duchess_Maria_Pavlovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1854 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1874 ;\n    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .\n\ndata:Alexander_II_of_Russia a :Man,\n        :Person .\n\ndata:Grand_Duke_Friedrich_Franz_II_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Alexander_II_of_Russia .\n\ndata:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,216 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nina%2Ctype a :Person ;
+    :hasRelation data:Nina%2Ctype ;
+    :isBloodrelationOf data:Nina%2Ctype ;
+    :isSiblingOf data:Nina%2Ctype .
+
+data:Nina a :Ancestor,
+        :Woman ;
+    :hasChild data:Philippe_Debien ;
+    :hasRelation data:Nina,
+        data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasSister data:Nina ;
+    :hasSon data:Philippe_Debien ;
+    :isAncestorOf data:Philippe_Debien ;
+    :isAuntOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Nina ;
+    :isMotherOf data:Philippe_Debien ;
+    :isParentOf data:Philippe_Debien ;
+    :isSiblingOf data:Nina ;
+    :isSisterOf data:Nina .
+
+data:Archduke_Joseph_Karl_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Archduke_Joseph_Karl_of_Austria ;
+    :hasChild data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasDaughter data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isAncestorOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isBrotherOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isFatherOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isParentOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isSiblingOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isUncleOf data:Archduchess_Maria_Dorothea_of_Austria .
+
+data:Archduchess_Maria_Dorothea_of_Austria a :Person,
+        :Woman ;
+    :hasAncestor data:Archduke_Joseph_Karl_of_Austria ;
+    :hasFather data:Archduke_Joseph_Karl_of_Austria ;
+    :hasParent data:Archduke_Joseph_Karl_of_Austria ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasSister data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isChildOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isDaughterOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isSiblingOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isSisterOf data:Archduchess_Maria_Dorothea_of_Austria .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Prince_Philippe_Duke_of_Orleans ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasSon data:Prince_Philippe_Duke_of_Orleans ;
+    :isAncestorOf data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Prince_Philippe_Duke_of_Orleans ;
+    :isParentOf data:Prince_Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Prince_Philippe_Duke_of_Orleans .
+
+data:Princess_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Philippe_Duke_of_Orleans ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Isabelle_of_Orleans ;
+    :hasSon data:Prince_Philippe_Duke_of_Orleans ;
+    :isAncestorOf data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isAuntOf data:Prince_Philippe_Duke_of_Orleans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orleans ;
+    :isMotherOf data:Prince_Philippe_Duke_of_Orleans ;
+    :isParentOf data:Prince_Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orleans ;
+    :isSisterOf data:Princess_Isabelle_of_Orleans .
+
+data:Amelie_of_Orleans a :Person,
+        :Woman ;
+    :hasBrother data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Jean_Duke_of_Guise,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasSister data:Amelie_of_Orleans ;
+    :isAuntOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isSisterOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :hasBrother data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Jean_Duke_of_Guise,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasSister data:Amelie_of_Orleans ;
+    :isBloodrelationOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isBrotherOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isUncleOf data:Philippe_Debien .
+
+data:Philippe_Debien a :Man,
+        :Person ;
+    :hasAncestor data:Nina,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasBrother data:Philippe_Debien ;
+    :hasFather data:Prince_Philippe_Duke_of_Orleans ;
+    :hasMother data:Nina ;
+    :hasParent data:Nina,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasRelation data:Nina,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :isBloodrelationOf data:Philippe_Debien ;
+    :isBrotherOf data:Philippe_Debien ;
+    :isChildOf data:Nina,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Philippe_Debien ;
+    :isSonOf data:Nina,
+        data:Prince_Philippe_Duke_of_Orleans .
+
+data:Prince_Philippe_Duke_of_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :hasChild data:Philippe_Debien ;
+    :hasDeathYear 1926 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Princess_Isabelle_of_Orleans ;
+    :hasParent data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Jean_Duke_of_Guise,
+        data:Nina,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Prince_Philippe_Duke_of_Orleans,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasSister data:Amelie_of_Orleans ;
+    :hasSon data:Philippe_Debien ;
+    :isAncestorOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isBrotherOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isChildOf data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans ;
+    :isFatherOf data:Philippe_Debien ;
+    :isParentOf data:Philippe_Debien ;
+    :isSiblingOf data:Amelie_of_Orleans,
+        data:Jean_Duke_of_Guise,
+        data:Prince_Philippe_Duke_of_Orleans ;
+    :isSonOf data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans ;
+    :isUncleOf data:Philippe_Debien ;
+    :knownAs "Philippe VIII"^^xsd:string .
+

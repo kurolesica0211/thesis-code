@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasChild data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora .
+
+data:Berthold%2C_Margrave_of_Baden a :Man,
+        :Person ;
+    :hasFather data:Prince_Maximilian_of_Baden .
+
+data:Cecilie%2C_sister_of_Theodora a :Person,
+        :Woman .
+
+data:Ludwig%2C_son_of_Theodora a :Man,
+        :Person .
+
+data:Margarita%2C_daughter_of_Theodora a :Person,
+        :Woman .
+
+data:Margarita%2C_sister_of_Theodora a :Person,
+        :Woman .
+
+data:Maximilian%2C_son_of_Theodora a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Prince_Maximilian_of_Baden a :Man,
+        :Person .
+
+data:Prince_Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Sophie%2C_sister_of_Theodora a :Person,
+        :Woman .
+

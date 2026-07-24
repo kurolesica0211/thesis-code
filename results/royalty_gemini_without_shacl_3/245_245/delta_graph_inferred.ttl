@@ -1,0 +1,298 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PatriciaKnatchbull a :Person,
+        :Woman ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isAuntOf data:IndiaHicks ;
+    :isBloodrelationOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isSiblingOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isSisterOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull .
+
+data:EdwinaAshley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LadyPamelaHicks ;
+    :hasDaughter data:LadyPamelaHicks ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:EdwinaAshley ;
+    :isAncestorOf data:IndiaHicks,
+        data:LadyPamelaHicks ;
+    :isAuntOf data:LadyPamelaHicks ;
+    :isBloodrelationOf data:EdwinaAshley ;
+    :isMotherOf data:LadyPamelaHicks ;
+    :isParentOf data:LadyPamelaHicks ;
+    :isSiblingOf data:EdwinaAshley ;
+    :isSisterOf data:EdwinaAshley .
+
+data:HerbertHicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HerbertHicks ;
+    :hasChild data:DavidNightingaleHicks ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSon data:DavidNightingaleHicks ;
+    :isAncestorOf data:DavidNightingaleHicks,
+        data:IndiaHicks ;
+    :isBloodrelationOf data:HerbertHicks ;
+    :isBrotherOf data:HerbertHicks ;
+    :isFatherOf data:DavidNightingaleHicks ;
+    :isParentOf data:DavidNightingaleHicks ;
+    :isSiblingOf data:HerbertHicks ;
+    :isUncleOf data:DavidNightingaleHicks .
+
+data:IrisElsiePlatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DavidNightingaleHicks ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:IrisElsiePlatten ;
+    :hasSon data:DavidNightingaleHicks ;
+    :isAncestorOf data:DavidNightingaleHicks,
+        data:IndiaHicks ;
+    :isAuntOf data:DavidNightingaleHicks ;
+    :isBloodrelationOf data:IrisElsiePlatten ;
+    :isMotherOf data:DavidNightingaleHicks ;
+    :isParentOf data:DavidNightingaleHicks ;
+    :isSiblingOf data:IrisElsiePlatten ;
+    :isSisterOf data:IrisElsiePlatten .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:LordLouisMountbatten ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSon data:LordLouisMountbatten ;
+    :isAncestorOf data:IndiaHicks,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isFatherOf data:LordLouisMountbatten ;
+    :isParentOf data:LordLouisMountbatten ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isUncleOf data:LordLouisMountbatten .
+
+data:PrincessVictoriaOfHesse a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LordLouisMountbatten ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:PrincessVictoriaOfHesse ;
+    :hasSon data:LordLouisMountbatten ;
+    :isAncestorOf data:IndiaHicks,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten ;
+    :isAuntOf data:LordLouisMountbatten ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesse ;
+    :isMotherOf data:LordLouisMountbatten ;
+    :isParentOf data:LordLouisMountbatten ;
+    :isSiblingOf data:PrincessVictoriaOfHesse ;
+    :isSisterOf data:PrincessVictoriaOfHesse .
+
+data:DavidNightingaleHicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:HerbertHicks,
+        data:IrisElsiePlatten ;
+    :hasBirthYear 1929 ;
+    :hasBrother data:DavidNightingaleHicks ;
+    :hasChild data:IndiaHicks ;
+    :hasDaughter data:IndiaHicks ;
+    :hasDeathYear 1998 ;
+    :hasFather data:HerbertHicks ;
+    :hasMother data:IrisElsiePlatten ;
+    :hasParent data:HerbertHicks,
+        data:IrisElsiePlatten ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isAncestorOf data:IndiaHicks ;
+    :isBloodrelationOf data:DavidNightingaleHicks ;
+    :isBrotherOf data:DavidNightingaleHicks ;
+    :isChildOf data:HerbertHicks,
+        data:IrisElsiePlatten ;
+    :isFatherOf data:IndiaHicks ;
+    :isParentOf data:IndiaHicks ;
+    :isSiblingOf data:DavidNightingaleHicks ;
+    :isSonOf data:HerbertHicks,
+        data:IrisElsiePlatten ;
+    :isUncleOf data:IndiaHicks .
+
+data:LordLouisMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasBrother data:LordLouisMountbatten ;
+    :hasChild data:LadyPamelaHicks ;
+    :hasDaughter data:LadyPamelaHicks ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMother data:PrincessVictoriaOfHesse ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isAncestorOf data:IndiaHicks,
+        data:LadyPamelaHicks ;
+    :isBloodrelationOf data:LordLouisMountbatten ;
+    :isBrotherOf data:LordLouisMountbatten ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isFatherOf data:LadyPamelaHicks ;
+    :isParentOf data:LadyPamelaHicks ;
+    :isSiblingOf data:LordLouisMountbatten ;
+    :isSonOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :isUncleOf data:LadyPamelaHicks .
+
+data:IndiaHicks a :Person,
+        :Woman ;
+    :hasAncestor data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasFather data:DavidNightingaleHicks ;
+    :hasMother data:LadyPamelaHicks ;
+    :hasParent data:DavidNightingaleHicks,
+        data:LadyPamelaHicks ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:IndiaHicks ;
+    :isBloodrelationOf data:IndiaHicks ;
+    :isChildOf data:DavidNightingaleHicks,
+        data:LadyPamelaHicks ;
+    :isDaughterOf data:DavidNightingaleHicks,
+        data:LadyPamelaHicks ;
+    :isSiblingOf data:IndiaHicks ;
+    :isSisterOf data:IndiaHicks .
+
+data:LadyPamelaHicks a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:EdwinaAshley,
+        data:LordLouisMountbatten,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasBirthYear 1929 ;
+    :hasChild data:IndiaHicks ;
+    :hasDaughter data:IndiaHicks ;
+    :hasFather data:LordLouisMountbatten ;
+    :hasMother data:EdwinaAshley ;
+    :hasParent data:EdwinaAshley,
+        data:LordLouisMountbatten ;
+    :hasRelation data:DavidNightingaleHicks,
+        data:EdwinaAshley,
+        data:HerbertHicks,
+        data:IndiaHicks,
+        data:IrisElsiePlatten,
+        data:LadyPamelaHicks,
+        data:LordLouisMountbatten,
+        data:PatriciaKnatchbull,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesse ;
+    :hasSister data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isAncestorOf data:IndiaHicks ;
+    :isAuntOf data:IndiaHicks ;
+    :isBloodrelationOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isChildOf data:EdwinaAshley,
+        data:LordLouisMountbatten ;
+    :isDaughterOf data:EdwinaAshley,
+        data:LordLouisMountbatten ;
+    :isMotherOf data:IndiaHicks ;
+    :isParentOf data:IndiaHicks ;
+    :isSiblingOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :isSisterOf data:LadyPamelaHicks,
+        data:PatriciaKnatchbull .
+

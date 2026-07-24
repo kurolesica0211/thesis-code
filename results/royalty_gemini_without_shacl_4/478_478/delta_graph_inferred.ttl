@@ -1,0 +1,395 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ConstantineIIOfGreece a :Man,
+        :Person ;
+    :hasBrother data:ConstantineIIOfGreece ;
+    :hasRelation data:ConstantineIIOfGreece ;
+    :isBloodrelationOf data:ConstantineIIOfGreece ;
+    :isBrotherOf data:ConstantineIIOfGreece ;
+    :isSiblingOf data:ConstantineIIOfGreece .
+
+data:Richard6thPrinceOfSaynWittgensteinBerleburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear "1934"^^xsd:positiveInteger ;
+    :hasBrother data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasChild data:PrincessNathalie ;
+    :hasDaughter data:PrincessNathalie ;
+    :hasDeathYear "2017"^^xsd:positiveInteger ;
+    :hasRelation data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenAnneMarieOfGreece,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isAncestorOf data:PrincessNathalie ;
+    :isBloodrelationOf data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isBrotherOf data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isFatherOf data:PrincessNathalie ;
+    :isParentOf data:PrincessNathalie ;
+    :isSiblingOf data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isUncleOf data:PrincessNathalie .
+
+data:CrownPrinceGustavAdolfOfSweden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CrownPrinceGustavAdolfOfSweden ;
+    :hasChild data:QueenIngridOfDenmark ;
+    :hasDaughter data:QueenIngridOfDenmark ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingFrederikX,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII ;
+    :isAncestorOf data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenIngridOfDenmark ;
+    :isBloodrelationOf data:CrownPrinceGustavAdolfOfSweden ;
+    :isBrotherOf data:CrownPrinceGustavAdolfOfSweden ;
+    :isFatherOf data:QueenIngridOfDenmark ;
+    :isParentOf data:QueenIngridOfDenmark ;
+    :isSiblingOf data:CrownPrinceGustavAdolfOfSweden ;
+    :isUncleOf data:QueenIngridOfDenmark .
+
+data:PrincessMargaretOfConnaught a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:QueenIngridOfDenmark ;
+    :hasDaughter data:QueenIngridOfDenmark ;
+    :hasRelation data:KingFrederikX,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:PrincessNathalie,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII ;
+    :hasSister data:PrincessMargaretOfConnaught ;
+    :isAncestorOf data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenIngridOfDenmark ;
+    :isAuntOf data:QueenIngridOfDenmark ;
+    :isBloodrelationOf data:PrincessMargaretOfConnaught ;
+    :isMotherOf data:QueenIngridOfDenmark ;
+    :isParentOf data:QueenIngridOfDenmark ;
+    :isSiblingOf data:PrincessMargaretOfConnaught ;
+    :isSisterOf data:PrincessMargaretOfConnaught .
+
+data:QueenAnneMarieOfGreece a :Person,
+        :Woman ;
+    :hasRelation data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasSister data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isAuntOf data:KingFrederikX,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isSiblingOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isSisterOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII .
+
+data:KingFrederikX a :Man,
+        :Person ;
+    :hasAncestor data:QueenMargretheII ;
+    :hasBrother data:KingFrederikX ;
+    :hasMother data:QueenMargretheII ;
+    :hasParent data:QueenMargretheII ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessMargaretOfConnaught,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isChildOf data:QueenMargretheII ;
+    :isSiblingOf data:KingFrederikX ;
+    :isSonOf data:QueenMargretheII .
+
+data:KingChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingChristianX ;
+    :hasChild data:KingFrederikIX,
+        data:PrinceKnud ;
+    :hasRelation data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenMargretheII ;
+    :hasSon data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isAncestorOf data:KingFrederikIX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:KingChristianX ;
+    :isBrotherOf data:KingChristianX ;
+    :isFatherOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isParentOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isSiblingOf data:KingChristianX ;
+    :isUncleOf data:KingFrederikIX,
+        data:PrinceKnud .
+
+data:QueenAlexandrineOfDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingFrederikIX,
+        data:PrinceKnud ;
+    :hasRelation data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenMargretheII ;
+    :hasSister data:QueenAlexandrineOfDenmark ;
+    :hasSon data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isAncestorOf data:KingFrederikIX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie ;
+    :isAuntOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isBloodrelationOf data:QueenAlexandrineOfDenmark ;
+    :isMotherOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isParentOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isSiblingOf data:QueenAlexandrineOfDenmark ;
+    :isSisterOf data:QueenAlexandrineOfDenmark .
+
+data:PrinceKnud a :Man,
+        :Person ;
+    :hasAncestor data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :hasBrother data:KingFrederikIX,
+        data:PrinceKnud ;
+    :hasFather data:KingChristianX ;
+    :hasMother data:QueenAlexandrineOfDenmark ;
+    :hasParent data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :hasRelation data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenMargretheII ;
+    :isBloodrelationOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isBrotherOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isChildOf data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :isSiblingOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isSonOf data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :isUncleOf data:PrincessBenedikteOfDenmark .
+
+data:QueenMargretheII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingFrederikX ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII ;
+    :hasSister data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :hasSon data:KingFrederikX ;
+    :isAncestorOf data:KingFrederikX ;
+    :isAuntOf data:KingFrederikX,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isMotherOf data:KingFrederikX ;
+    :isParentOf data:KingFrederikX ;
+    :isSiblingOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isSisterOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII .
+
+data:QueenIngridOfDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CrownPrinceGustavAdolfOfSweden,
+        data:PrincessMargaretOfConnaught ;
+    :hasChild data:PrincessBenedikteOfDenmark ;
+    :hasDaughter data:PrincessBenedikteOfDenmark ;
+    :hasFather data:CrownPrinceGustavAdolfOfSweden ;
+    :hasMother data:PrincessMargaretOfConnaught ;
+    :hasParent data:CrownPrinceGustavAdolfOfSweden,
+        data:PrincessMargaretOfConnaught ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingFrederikX,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:PrincessNathalie,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII ;
+    :hasSister data:QueenIngridOfDenmark ;
+    :isAncestorOf data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie ;
+    :isAuntOf data:PrincessBenedikteOfDenmark ;
+    :isBloodrelationOf data:QueenIngridOfDenmark ;
+    :isChildOf data:CrownPrinceGustavAdolfOfSweden,
+        data:PrincessMargaretOfConnaught ;
+    :isDaughterOf data:CrownPrinceGustavAdolfOfSweden,
+        data:PrincessMargaretOfConnaught ;
+    :isMotherOf data:PrincessBenedikteOfDenmark ;
+    :isParentOf data:PrincessBenedikteOfDenmark ;
+    :isSiblingOf data:QueenIngridOfDenmark ;
+    :isSisterOf data:QueenIngridOfDenmark .
+
+data:KingFrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :hasBrother data:KingFrederikIX,
+        data:PrinceKnud ;
+    :hasChild data:PrincessBenedikteOfDenmark ;
+    :hasDaughter data:PrincessBenedikteOfDenmark ;
+    :hasFather data:KingChristianX ;
+    :hasMother data:QueenAlexandrineOfDenmark ;
+    :hasParent data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :hasRelation data:KingChristianX,
+        data:KingFrederikIX,
+        data:KingFrederikX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenMargretheII ;
+    :isAncestorOf data:PrincessBenedikteOfDenmark,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isBrotherOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isChildOf data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :isFatherOf data:PrincessBenedikteOfDenmark ;
+    :isParentOf data:PrincessBenedikteOfDenmark ;
+    :isSiblingOf data:KingFrederikIX,
+        data:PrinceKnud ;
+    :isSonOf data:KingChristianX,
+        data:QueenAlexandrineOfDenmark ;
+    :isUncleOf data:PrincessBenedikteOfDenmark .
+
+data:PrincessNathalie a :Person,
+        :Woman ;
+    :hasAncestor data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenIngridOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasFather data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasMother data:PrincessBenedikteOfDenmark ;
+    :hasParent data:PrincessBenedikteOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:PrincessNathalie,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenIngridOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasSister data:PrincessNathalie ;
+    :isBloodrelationOf data:PrincessNathalie ;
+    :isChildOf data:PrincessBenedikteOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isDaughterOf data:PrincessBenedikteOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isSiblingOf data:PrincessNathalie ;
+    :isSisterOf data:PrincessNathalie .
+
+data:PrincessBenedikteOfDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:PrincessMargaretOfConnaught,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenIngridOfDenmark ;
+    :hasBirthYear "1944"^^xsd:positiveInteger ;
+    :hasChild data:PrincessNathalie ;
+    :hasDaughter data:PrincessNathalie ;
+    :hasFather data:KingFrederikIX ;
+    :hasMarriageYear "1968"^^xsd:positiveInteger ;
+    :hasMother data:QueenIngridOfDenmark ;
+    :hasParent data:KingFrederikIX,
+        data:QueenIngridOfDenmark ;
+    :hasRelation data:CrownPrinceGustavAdolfOfSweden,
+        data:KingChristianX,
+        data:KingFrederikIX,
+        data:PrinceKnud,
+        data:PrincessBenedikteOfDenmark,
+        data:PrincessMargaretOfConnaught,
+        data:PrincessNathalie,
+        data:QueenAlexandrineOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenIngridOfDenmark,
+        data:QueenMargretheII,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :hasSister data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isAncestorOf data:PrincessNathalie ;
+    :isAuntOf data:KingFrederikX,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isChildOf data:KingFrederikIX,
+        data:QueenIngridOfDenmark ;
+    :isDaughterOf data:KingFrederikIX,
+        data:QueenIngridOfDenmark ;
+    :isMotherOf data:PrincessNathalie ;
+    :isParentOf data:PrincessNathalie ;
+    :isSiblingOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII ;
+    :isSisterOf data:PrincessBenedikteOfDenmark,
+        data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII .
+

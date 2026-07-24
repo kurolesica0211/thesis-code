@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanofver_1887 .\n\ndata:Ernest_Augustus_Prince_of_Hanover_1914 a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:Frederica_of_Hanover a :Woman ;\n    :hasRelation data:Paul_of_Greece ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:George_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887 .\n\ndata:Ernest_Augustus_of_Hanover_Senior a :Man .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Thyra_of_Denmark a :Woman .\n\ndata:Ernest_Augustus_of_Hanover_1887 a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Ernest_Augustus_of_Hanover_Senior ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_of_Denmark ;\n    :hasRelation data:Victoria_Louise_of_Prussia .\n\ndata:Victoria_Louise_of_Prussia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanofver_1887 .\n\ndata:Ernest_Augustus_Prince_of_Hanover_1914 a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:Frederica_of_Hanover a :Woman ;\n    :hasRelation data:Paul_of_Greece ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:George_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887 .\n\ndata:Ernest_Augustus_of_Hanofver_1887 a :Man .\n\ndata:Ernest_Augustus_of_Hanover_Senior a :Man .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Thyra_of_Denmark a :Woman .\n\ndata:Ernest_Augustus_of_Hanover_1887 a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Ernest_Augustus_of_Hanover_Senior ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_of_Denmark ;\n    :hasRelation data:Victoria_Louise_of_Prussia .\n\ndata:Victoria_Louise_of_Prussia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanofver_1887 .\n\ndata:Ernest_Augustus_Prince_of_Hanover_1914 a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:Frederica_of_Hanover a :Woman ;\n    :hasRelation data:Paul_of_Greece ;\n    :isChildOf data:Ernest_Augustus_of_Hanover_1887,\n        data:Victoria_Louise_of_Prussia .\n\ndata:George_of_Cumberland a :Man ;\n    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887 .\n\ndata:Ernest_Augustus_of_Hanofver_1887 a :Man .\n\ndata:Ernest_Augustus_of_Hanover_Senior a :Man .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Thyra_of_Denmark a :Woman .\n\ndata:Ernest_Augustus_of_Hanover_1887 a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Ernest_Augustus_of_Hanover_Senior ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_of_Denmark ;\n    :hasRelation data:Victoria_Louise_of_Prussia .\n\ndata:Victoria_Louise_of_Prussia a :Woman .\n\n"
+    }
+]

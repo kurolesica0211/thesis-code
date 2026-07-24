@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Regina_of_Austria a :DomainEntity .
+
+data:Otto_von_Habsburg a :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasRelation data:Otto_von_Habsburg,
+        data:Regina_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg .
+
+data:Regina_von_Habsburg a :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2010 ;
+    :hasRelation data:Otto_von_Habsburg,
+        data:Regina_von_Habsburg ;
+    :hasSister data:Regina_von_Habsburg ;
+    :isBloodrelationOf data:Regina_von_Habsburg ;
+    :isSiblingOf data:Regina_von_Habsburg ;
+    :isSisterOf data:Regina_von_Habsburg ;
+    :knownAs data:Archduchess_Regina_of_Austria .
+

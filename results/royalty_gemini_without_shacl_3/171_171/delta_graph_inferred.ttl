@@ -1,0 +1,215 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EnricoEugenio a :Man,
+        :Person ;
+    :hasBrother data:EnricoEugenio ;
+    :hasRelation data:EnricoEugenio ;
+    :isBloodrelationOf data:EnricoEugenio ;
+    :isBrotherOf data:EnricoEugenio ;
+    :isSiblingOf data:EnricoEugenio .
+
+data:JuanCarlosI a :Man,
+        :Person ;
+    :hasBrother data:JuanCarlosI ;
+    :hasRelation data:JuanCarlosI ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isSiblingOf data:JuanCarlosI .
+
+data:VictoriaEugenieOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaCristinaOfSpain ;
+    :hasDaughter data:MariaCristinaOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:VictoriaEugenieOfBattenberg ;
+    :isAncestorOf data:MariaCristinaOfSpain ;
+    :isAuntOf data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:VictoriaEugenieOfBattenberg ;
+    :isMotherOf data:MariaCristinaOfSpain ;
+    :isParentOf data:MariaCristinaOfSpain ;
+    :isSiblingOf data:VictoriaEugenieOfBattenberg ;
+    :isSisterOf data:VictoriaEugenieOfBattenberg .
+
+data:BeatrizOfSpain a :Person,
+        :Woman ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSisterOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:AlfonsoOfSpain a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXIIIOfSpain ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasParent data:AlfonsoXIIIOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isChildOf data:AlfonsoXIIIOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSonOf data:AlfonsoXIIIOfSpain ;
+    :isUncleOf data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:AlfonsoXIIIOfSpain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :hasChild data:AlfonsoOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :hasDaughter data:MariaCristinaOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSon data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :isAncestorOf data:AlfonsoOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :isFatherOf data:AlfonsoOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isParentOf data:AlfonsoOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :isUncleOf data:AlfonsoOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:GonzaloOfSpain a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXIIIOfSpain ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:GonzaloOfSpain ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasParent data:AlfonsoXIIIOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isChildOf data:AlfonsoXIIIOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSonOf data:AlfonsoXIIIOfSpain ;
+    :isUncleOf data:AlfonsoOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:MariaCristinaOfSpain a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasDeathYear 1996 ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg ;
+    :hasParent data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isAuntOf data:JuanCarlosI ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isChildOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isDaughterOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSisterOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+

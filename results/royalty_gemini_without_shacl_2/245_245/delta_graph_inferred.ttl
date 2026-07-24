@@ -1,0 +1,216 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+
+data:Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSister data:Edwina_Ashley ;
+    :isAncestorOf data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isAuntOf data:Lady_Pamela_Hicks ;
+    :isBloodrelationOf data:Edwina_Ashley ;
+    :isMotherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Edwina_Ashley ;
+    :isSisterOf data:Edwina_Ashley .
+
+data:Herbert_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Herbert_Hicks ;
+    :hasChild data:David_Nightingale_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSon data:David_Nightingale_Hicks ;
+    :isAncestorOf data:David_Nightingale_Hicks,
+        data:India_Hicks ;
+    :isBloodrelationOf data:Herbert_Hicks ;
+    :isBrotherOf data:Herbert_Hicks ;
+    :isFatherOf data:David_Nightingale_Hicks ;
+    :isParentOf data:David_Nightingale_Hicks ;
+    :isSiblingOf data:Herbert_Hicks ;
+    :isUncleOf data:David_Nightingale_Hicks .
+
+data:Iris_Elsie_Platten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:David_Nightingale_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSister data:Iris_Elsie_Platten ;
+    :hasSon data:David_Nightingale_Hicks ;
+    :isAncestorOf data:David_Nightingale_Hicks,
+        data:India_Hicks ;
+    :isAuntOf data:David_Nightingale_Hicks ;
+    :isBloodrelationOf data:Iris_Elsie_Platten ;
+    :isMotherOf data:David_Nightingale_Hicks ;
+    :isParentOf data:David_Nightingale_Hicks ;
+    :isSiblingOf data:Iris_Elsie_Platten ;
+    :isSisterOf data:Iris_Elsie_Platten .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :isAncestorOf data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isFatherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Louis_Mountbatten ;
+    :isUncleOf data:Lady_Pamela_Hicks .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :hasBirthYear 1929 ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten ;
+    :hasParent data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :isAncestorOf data:India_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isChildOf data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isSonOf data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :isUncleOf data:India_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSister data:India_Hicks ;
+    :isBloodrelationOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:India_Hicks ;
+    :isSisterOf data:India_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :hasBirthYear 1929 ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley ;
+    :hasParent data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isAncestorOf data:India_Hicks ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isChildOf data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :isDaughterOf data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+

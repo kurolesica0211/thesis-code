@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Thyra_sister_of_Christian_Louis a :Person,
+        :Woman ;
+    :isSisterOf data:Christian_Louis_of_Mecklenburg .
+
+data:Barbara_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :isDaughterOf data:Charlotte_of_Saxe_Altenburg,
+        data:Sigismund_of_Prussia .
+
+data:Charlotte_of_Saxe_Altenburg a :Person,
+        :Woman .
+
+data:Christian_Louis_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1996 ;
+    :hasMarriageYear 1954 ;
+    :hasRelation data:Barbara_of_Prussia ;
+    :isChildOf data:Alexandra_of_Hanover,
+        data:Frederick_Francis_IV ;
+    :isSonOf data:Alexandra_of_Hanover,
+        data:Frederick_Francis_IV .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :isDaughterOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark .
+
+data:Frederick_Francis_IV a :Man,
+        :Person .
+

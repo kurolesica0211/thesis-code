@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasBirthYear "1926"^^xsd:positiveInteger ;
+    :hasChild data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDeathYear "2022"^^xsd:positiveInteger ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear "1947"^^xsd:positiveInteger ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasRelation data:Philip_Mountbatten ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasFather data:Philip_Mountbatten .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:George_V a :Man,
+        :Person .
+
+data:Prince_Andrew a :Man,
+        :Person ;
+    :hasFather data:Philip_Mountbatten .
+
+data:Prince_Edward a :Man,
+        :Person ;
+    :hasFather data:Philip_Mountbatten .
+
+data:Princess_Anne a :Person,
+        :Woman ;
+    :hasFather data:Philip_Mountbatten .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman .
+
+data:Philip_Mountbatten a :Man,
+        :Person .
+

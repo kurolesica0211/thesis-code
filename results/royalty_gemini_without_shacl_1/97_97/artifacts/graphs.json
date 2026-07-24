@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Carlos a :Man ;\n    :isBrotherOf data:Princess_Margarita_of_Bourbon-Parma .\n\ndata:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man .\n\ndata:Princess_Carolina a :Woman ;\n    :isSisterOf data:Princess_Margarita_of_Bourbon-Parma .\n\ndata:Queen_Beatrix a :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Princess_Margarita_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :hasRelation data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn ;\n    :isSisterOf data:Prince_Jaime .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Carlos a :Man ;\n    :isBrotherOf data:Princess_Margarita_of_Bourbon-Parma .\n\ndata:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man .\n\ndata:Princess_Carolina a :Woman ;\n    :isSisterOf data:Princess_Margarita_of_Bourbon-Parma .\n\ndata:Queen_Beatrix a :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Princess_Margarita_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :hasRelation data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn ;\n    :isSisterOf data:Prince_Jaime .\n\n"
+    }
+]

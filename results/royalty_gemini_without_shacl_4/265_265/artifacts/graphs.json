@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:George a :Man,\n        :Person ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:CharlesSpencer a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasFather data:CharlesIII ;\n    :hasMother data:Diana .\n\ndata:Philip a :Man,\n        :Person .\n\ndata:CharlesIII a :Man,\n        :Person ;\n    :hasFather data:Philip ;\n    :hasMother data:ElizabethII .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:CharlesSpencer .\n\ndata:CatherineMiddleton a :Person,\n        :Woman .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:CharlesIII ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:George a :Man,\n        :Person ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasFather data:William ;\n    :hasMother data:CatherineMiddleton .\n\ndata:CharlesSpencer a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasFather data:CharlesIII ;\n    :hasMother data:Diana .\n\ndata:Philip a :Man,\n        :Person .\n\ndata:CharlesIII a :Man,\n        :Person ;\n    :hasFather data:Philip ;\n    :hasMother data:ElizabethII .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:CharlesSpencer .\n\ndata:CatherineMiddleton a :Person,\n        :Woman .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:CharlesIII ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    }
+]

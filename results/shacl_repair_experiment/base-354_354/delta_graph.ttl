@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alexander :hasSex data:Male .
+
+data:Countess_Mathilde_van_Limburg-Stirum a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Duke_de_Gramont-Caderousse a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Grand_Duchess_Maria_Alexandrovna_of_Russia a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:King_William_I a :Ancestor ;
+    :hasSex data:Male .
+
+data:King_William_II a :Ancestor ;
+    :hasSex data:Male .
+
+data:King_William_III a :Ancestor ;
+    :hasSex data:Male .
+
+data:Princess_Alice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria ;
+    :hasSex data:Female .
+
+data:Princess_Augusta_of_Great_Britain a :Ancestor ;
+    :hasSex data:Female .
+
+data:Princess_Sophie_of_Wurttemberg a :Ancestor ;
+    :hasSex data:Female .
+
+data:Wilhelmina :hasSex data:Female .
+
+data:William_Prince_of_Orange :hasSex data:Male .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aschwin a :Man,
+        :Person ;
+    :isSonOf data:PrinceBernhardOfLippe .
+
+data:BaronessArmgardVonSierstorpffCramm a :Person,
+        :Woman .
+
+data:CountFrederickWilliam a :Man,
+        :Person ;
+    :hasBirthYear 1737 ;
+    :hasDeathYear 1803 ;
+    :hasMarriageYear 1770 .
+
+data:CountessKarolineVonWartensleben a :Person,
+        :Woman ;
+    :isMotherOf data:PrinceBernhardOfLippe .
+
+data:ElisabethJohanna_EdleVonMeinertzhagen a :Person,
+        :Woman ;
+    :hasBirthYear 1752 ;
+    :hasDeathYear 1811 .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man,
+        :Person ;
+    :isSonOf data:PrinceBernhardOfLippe .
+
+data:ErnestII_CountOfLippeBiesterfeld a :Man,
+        :Person .
+
+data:LeopoldIV_PrinceOfLippe a :Man,
+        :Person .
+
+data:PrinceBernhardOfLippe a :Man,
+        :Person ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1934 ;
+    :hasMarriageYear 1909 ;
+    :isBrotherOf data:LeopoldIV_PrinceOfLippe ;
+    :isSonOf data:ErnestII_CountOfLippeBiesterfeld .
+

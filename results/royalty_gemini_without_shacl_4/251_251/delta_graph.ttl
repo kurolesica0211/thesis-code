@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Mountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Louis_Mountbatten_1st_Marquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Princess_Victoria_of_Hesse ;
+    :hasRelation data:Nadejda_Mikhailovna_de_Torby ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_of_Sweden .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasMother data:Princess_Alice .
+
+data:Countess_Sophie_von_Merenberg a :Person,
+        :Woman .
+
+data:Ernest_Louis_Grand_Duke_of_Hesse a :Man,
+        :Person .
+
+data:Grand_Duke_Michael_Mikhailovich_Romanov a :Man,
+        :Person .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person .
+
+data:Louis_Mountbatten_1st_Marquess a :Man,
+        :Person .
+
+data:Nadejda_Mikhailovna_de_Torby a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_Michael_Mikhailovich_Romanov ;
+    :hasMother data:Countess_Sophie_von_Merenberg .
+
+data:Princess_Victoria_of_Hesse a :Person,
+        :Woman ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse .
+
+data:Queen_Louise_of_Sweden a :Person,
+        :Woman .
+
+data:Princess_Alice a :Person,
+        :Woman .
+

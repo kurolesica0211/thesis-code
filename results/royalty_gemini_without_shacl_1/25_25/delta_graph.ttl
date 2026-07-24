@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    :alsoKnownAs "Lady Louise Mountbatten"^^xsd:string ;
+    :formerlyKnownAs "Princess Louise of Battenberg"^^xsd:string ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Louis_of_Battenberg ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Gustaf_VI_Adolf ;
+    :hasSister data:Alice_of_Battenberg ;
+    :knownAs "Louise Alexandra Marie Irene Mountbatten"^^xsd:string .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasMother data:Alice_of_Battenberg .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person .
+
+data:Louis_of_Battenberg a :Man,
+        :Person .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Alice_of_Battenberg a :Person,
+        :Woman .
+

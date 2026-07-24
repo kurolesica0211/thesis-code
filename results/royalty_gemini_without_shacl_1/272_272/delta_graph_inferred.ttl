@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Robert_Bruce_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:James_Robert_Bruce_Ogilvy ;
+    :hasMarriageYear 1988 ;
+    :hasRelation data:Charles_Frederick_Melville_Rawlinson,
+        data:James_Robert_Bruce_Ogilvy,
+        data:Julia_Caroline_Rawlinson,
+        data:Marina_Ogilvy ;
+    :hasSister data:Marina_Ogilvy ;
+    :isBloodrelationOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isBrotherOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSiblingOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Marina_Ogilvy a :Person,
+        :Woman ;
+    :hasBrother data:James_Robert_Bruce_Ogilvy ;
+    :hasRelation data:Charles_Frederick_Melville_Rawlinson,
+        data:James_Robert_Bruce_Ogilvy,
+        data:Julia_Caroline_Rawlinson,
+        data:Marina_Ogilvy ;
+    :hasSister data:Marina_Ogilvy ;
+    :isBloodrelationOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSiblingOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSisterOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Frederick_Melville_Rawlinson ;
+    :hasChild data:Julia_Caroline_Rawlinson ;
+    :hasDaughter data:Julia_Caroline_Rawlinson ;
+    :hasRelation data:Charles_Frederick_Melville_Rawlinson,
+        data:James_Robert_Bruce_Ogilvy,
+        data:Julia_Caroline_Rawlinson,
+        data:Marina_Ogilvy ;
+    :isAncestorOf data:Julia_Caroline_Rawlinson ;
+    :isBloodrelationOf data:Charles_Frederick_Melville_Rawlinson ;
+    :isBrotherOf data:Charles_Frederick_Melville_Rawlinson ;
+    :isFatherOf data:Julia_Caroline_Rawlinson ;
+    :isParentOf data:Julia_Caroline_Rawlinson ;
+    :isSiblingOf data:Charles_Frederick_Melville_Rawlinson ;
+    :isUncleOf data:Julia_Caroline_Rawlinson .
+
+data:Julia_Caroline_Rawlinson a :Person,
+        :Woman ;
+    :hasAncestor data:Charles_Frederick_Melville_Rawlinson ;
+    :hasFather data:Charles_Frederick_Melville_Rawlinson ;
+    :hasParent data:Charles_Frederick_Melville_Rawlinson ;
+    :hasRelation data:Charles_Frederick_Melville_Rawlinson,
+        data:James_Robert_Bruce_Ogilvy,
+        data:Julia_Caroline_Rawlinson,
+        data:Marina_Ogilvy ;
+    :hasSister data:Julia_Caroline_Rawlinson ;
+    :isBloodrelationOf data:Julia_Caroline_Rawlinson ;
+    :isChildOf data:Charles_Frederick_Melville_Rawlinson ;
+    :isDaughterOf data:Charles_Frederick_Melville_Rawlinson ;
+    :isSiblingOf data:Julia_Caroline_Rawlinson ;
+    :isSisterOf data:Julia_Caroline_Rawlinson .
+

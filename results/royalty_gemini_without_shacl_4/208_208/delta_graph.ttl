@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Bruno_dHarcourt a :Man ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1930 ;
+    :hasFather data:Count_Eugene_dHarcourt ;
+    :hasMother data:Armande_de_Pierre_de_Bernis .
+
+data:Prince_Michel_dOrleans a :Man ;
+    :hasFather data:Henri_Count_of_Paris .
+
+data:Prince_Pierre_Murat a :Man ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Prince_Lucien_Murat .
+
+data:Princess_Isabelle_dOrleans a :Woman ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasSister data:Princess_Francoise_of_Greece .
+
+data:Armande_de_Pierre_de_Bernis a :Woman .
+
+data:Count_Eugene_dHarcourt a :Man .
+
+data:Prince_Christopher_of_Greece a :Man .
+
+data:Prince_Jean_Duke_of_Guise a :Man ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1940 .
+
+data:Prince_Lucien_Murat a :Man .
+
+data:Princess_Francoise_of_Greece a :Woman ;
+    :hasFather data:Prince_Christopher_of_Greece .
+
+data:Princess_Isabelle_of_Orleans_Mother a :Woman .
+
+data:Henri_Count_of_Paris a :Man .
+

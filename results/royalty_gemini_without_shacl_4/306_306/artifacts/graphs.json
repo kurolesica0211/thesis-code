@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Edgar_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:David_Lascelles ;\n    :hasMother data:Margaret_Lascelles ;\n    :isFatherOf data:Ivy_Lascelles,\n        data:Kit_Lascelles,\n        data:Leo_Lascelles .\n\ndata:Annika_Reed a :Person,\n        :Woman ;\n    :hasMarriageYear 2017 ;\n    :isMotherOf data:Ivy_Lascelles,\n        data:Kit_Lascelles .\n\ndata:Laleh_Yeganegy a :Person,\n        :Woman ;\n    :isMotherOf data:Leo_Lascelles .\n\ndata:David_Lascelles a :Man,\n        :Person .\n\ndata:Margaret_Lascelles a :Person,\n        :Woman .\n\ndata:Ivy_Lascelles a :Person,\n        :Woman .\n\ndata:Kit_Lascelles a :Man,\n        :Person .\n\ndata:Leo_Lascelles a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Edgar_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:David_Lascelles ;\n    :hasMother data:Margaret_Lascelles ;\n    :isFatherOf data:Ivy_Lascelles,\n        data:Kit_Lascelles,\n        data:Leo_Lascelles .\n\ndata:Annika_Reed a :Person,\n        :Woman ;\n    :hasMarriageYear 2017 ;\n    :isMotherOf data:Ivy_Lascelles,\n        data:Kit_Lascelles .\n\ndata:Laleh_Yeganegy a :Person,\n        :Woman ;\n    :isMotherOf data:Leo_Lascelles .\n\ndata:David_Lascelles a :Man,\n        :Person .\n\ndata:Margaret_Lascelles a :Person,\n        :Woman .\n\ndata:Ivy_Lascelles a :Person,\n        :Woman .\n\ndata:Kit_Lascelles a :Man,\n        :Person .\n\ndata:Leo_Lascelles a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MabelWisseSmit a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:CountessEmmaLuana,
+        data:CountessJoannaZaria .
+
+data:PrinceFriso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:ClausVonAmsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:QueenBeatrix ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn ;
+    :isFatherOf data:CountessEmmaLuana,
+        data:CountessJoannaZaria .
+
+data:ClausVonAmsberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:KingWillemAlexander a :Man,
+        :Person ;
+    :hasBirthYear 1967 .
+
+data:PrinceBernhard a :Ancestor,
+        :Man,
+        :Person .
+
+data:PrinceConstantijn a :Man,
+        :Person ;
+    :hasBirthYear 1969 .
+
+data:QueenBeatrix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana .
+
+data:QueenJuliana a :Ancestor,
+        :Person,
+        :Woman .
+
+data:CountessEmmaLuana a :Person,
+        :Woman .
+
+data:CountessJoannaZaria a :Person,
+        :Woman .
+

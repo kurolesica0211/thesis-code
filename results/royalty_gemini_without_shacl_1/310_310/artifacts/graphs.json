@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marilene_van_den_Broek a :Woman ;\n    :hasBirthYear 1970 ;\n    :isDaughterOf data:Hans_van_den_Broek,\n        data:Josee_van_Schendel .\n\ndata:Prince_Bernhard_of_the_Netherlands a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Bernhard a :Man .\n\ndata:Floris a :Man .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Pieter-Christiaan a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man ;\n    :hasSon data:Prince_Maurits .\n\ndata:Princess_Margriet a :Woman ;\n    :hasSon data:Prince_Maurits .\n\ndata:Prince_Maurits a :Man ;\n    :hasBirthYear 1968 ;\n    :hasBrother data:Bernhard,\n        data:Floris,\n        data:Pieter-Christiaan ;\n    :hasMarriageYear 1989 ;\n    :isSonOf data:Pieter_van_Vollenhoven,\n        data:Princess_Margriet .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marilene_van_den_Broek a :Woman ;\n    :hasBirthYear 1970 ;\n    :isDaughterOf data:Hans_van_den_Broek,\n        data:Josee_van_Schendel .\n\ndata:Prince_Bernhard_of_the_Netherlands a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Bernhard a :Man .\n\ndata:Floris a :Man .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Pieter-Christiaan a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man ;\n    :hasSon data:Prince_Maurits .\n\ndata:Princess_Margriet a :Woman ;\n    :hasSon data:Prince_Maurits .\n\ndata:Prince_Maurits a :Man ;\n    :hasBirthYear 1968 ;\n    :hasBrother data:Bernhard,\n        data:Floris,\n        data:Pieter-Christiaan ;\n    :hasMarriageYear 1989 ;\n    :isSonOf data:Pieter_van_Vollenhoven,\n        data:Princess_Margriet .\n\n"
+    }
+]

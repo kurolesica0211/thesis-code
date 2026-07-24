@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,
+        :Person ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Man,
+        :Person .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Man,
+        :Person .
+
+data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2016 .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 .
+
+data:Nikolaus_of_Oldenburg a :Man,
+        :Person ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 .
+

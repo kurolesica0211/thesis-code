@@ -1,0 +1,161 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Leiningen a :Man,
+        :Person ;
+    :hasBrother data:Carl_of_Leiningen ;
+    :hasRelation data:Carl_of_Leiningen ;
+    :isBloodrelationOf data:Carl_of_Leiningen ;
+    :isBrotherOf data:Carl_of_Leiningen ;
+    :isSiblingOf data:Carl_of_Leiningen .
+
+data:Ileana_of_Romania a :Person,
+        :Woman ;
+    :hasRelation data:Ileana_of_Romania ;
+    :hasSister data:Ileana_of_Romania ;
+    :isBloodrelationOf data:Ileana_of_Romania ;
+    :isSiblingOf data:Ileana_of_Romania ;
+    :isSisterOf data:Ileana_of_Romania .
+
+data:Maria_Alexandrovna a :Person,
+        :Woman ;
+    :hasRelation data:Maria_Alexandrovna ;
+    :hasSister data:Maria_Alexandrovna ;
+    :isBloodrelationOf data:Maria_Alexandrovna ;
+    :isSiblingOf data:Maria_Alexandrovna ;
+    :isSisterOf data:Maria_Alexandrovna .
+
+data:Marie_of_Romania a :Person,
+        :Woman ;
+    :hasRelation data:Marie_of_Romania ;
+    :hasSister data:Marie_of_Romania ;
+    :isBloodrelationOf data:Marie_of_Romania ;
+    :isSiblingOf data:Marie_of_Romania ;
+    :isSisterOf data:Marie_of_Romania .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Karl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Karl_of_Leiningen ;
+    :hasChild data:Emich_Kirill ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Emich_Kirill,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :hasSon data:Emich_Kirill ;
+    :isAncestorOf data:Emich_Kirill ;
+    :isBloodrelationOf data:Karl_of_Leiningen ;
+    :isBrotherOf data:Karl_of_Leiningen ;
+    :isFatherOf data:Emich_Kirill ;
+    :isParentOf data:Emich_Kirill ;
+    :isSiblingOf data:Karl_of_Leiningen ;
+    :isUncleOf data:Emich_Kirill .
+
+data:Kirill_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kirill_Vladimirovich ;
+    :hasChild data:Maria_Kirillovna ;
+    :hasDaughter data:Maria_Kirillovna ;
+    :hasRelation data:Emich_Kirill,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :isAncestorOf data:Emich_Kirill,
+        data:Maria_Kirillovna ;
+    :isBloodrelationOf data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Kirill_Vladimirovich ;
+    :isFatherOf data:Maria_Kirillovna ;
+    :isParentOf data:Maria_Kirillovna ;
+    :isSiblingOf data:Kirill_Vladimirovich ;
+    :isUncleOf data:Maria_Kirillovna .
+
+data:Victoria_Melita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Kirillovna ;
+    :hasDaughter data:Maria_Kirillovna ;
+    :hasRelation data:Emich_Kirill,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :hasSister data:Victoria_Melita ;
+    :isAncestorOf data:Emich_Kirill,
+        data:Maria_Kirillovna ;
+    :isAuntOf data:Maria_Kirillovna ;
+    :isBloodrelationOf data:Victoria_Melita ;
+    :isMotherOf data:Maria_Kirillovna ;
+    :isParentOf data:Maria_Kirillovna ;
+    :isSiblingOf data:Victoria_Melita ;
+    :isSisterOf data:Victoria_Melita .
+
+data:Emich_Kirill a :Man,
+        :Person ;
+    :hasAncestor data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :hasBrother data:Emich_Kirill ;
+    :hasFather data:Karl_of_Leiningen ;
+    :hasMother data:Maria_Kirillovna ;
+    :hasParent data:Karl_of_Leiningen,
+        data:Maria_Kirillovna ;
+    :hasRelation data:Emich_Kirill,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :isBloodrelationOf data:Emich_Kirill ;
+    :isBrotherOf data:Emich_Kirill ;
+    :isChildOf data:Karl_of_Leiningen,
+        data:Maria_Kirillovna ;
+    :isSiblingOf data:Emich_Kirill ;
+    :isSonOf data:Karl_of_Leiningen,
+        data:Maria_Kirillovna .
+
+data:Maria_Kirillovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kirill_Vladimirovich,
+        data:Victoria_Melita ;
+    :hasBirthYear 1907 ;
+    :hasChild data:Emich_Kirill ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Kirill_Vladimirovich ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Victoria_Melita ;
+    :hasParent data:Kirill_Vladimirovich,
+        data:Victoria_Melita ;
+    :hasRelation data:Emich_Kirill,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich,
+        data:Maria_Kirillovna,
+        data:Victoria_Melita ;
+    :hasSister data:Maria_Kirillovna ;
+    :hasSon data:Emich_Kirill ;
+    :isAncestorOf data:Emich_Kirill ;
+    :isAuntOf data:Emich_Kirill ;
+    :isBloodrelationOf data:Maria_Kirillovna ;
+    :isChildOf data:Kirill_Vladimirovich,
+        data:Victoria_Melita ;
+    :isDaughterOf data:Kirill_Vladimirovich,
+        data:Victoria_Melita ;
+    :isMotherOf data:Emich_Kirill ;
+    :isParentOf data:Emich_Kirill ;
+    :isSiblingOf data:Maria_Kirillovna ;
+    :isSisterOf data:Maria_Kirillovna .
+

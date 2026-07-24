@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lennart_Bernadotte a :Man ;\n    :hasAncestor data:George_I_of_Greece,\n        data:Gustaf_V_of_Sweden ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;\n    :hasMarriageYear 1932,\n        1972 ;\n    :hasMother data:Maria_Pavlovna_of_Russia ;\n    :hasRelation data:Karin_Emma_Louise_Nissvandt,\n        data:Sonja_Anita_Maria_Haunz .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Gustaf_V_of_Sweden a :Man .\n\ndata:Karin_Emma_Louise_Nissvandt a :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1991 .\n\ndata:Maria_Pavlovna_of_Russia a :Woman .\n\ndata:Sonja_Anita_Maria_Haunz a :Woman ;\n    :hasBirthYear 1944 ;\n    :hasDeathYear 2008 .\n\ndata:Wilhelm_Duke_of_S%C3%B6dermanland a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lennart_Bernadotte a :Man ;\n    :hasAncestor data:George_I_of_Greece,\n        data:Gustaf_V_of_Sweden ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;\n    :hasMarriageYear 1932,\n        1972 ;\n    :hasMother data:Maria_Pavlovna_of_Russia ;\n    :hasRelation data:Karin_Emma_Louise_Nissvandt,\n        data:Sonja_Anita_Maria_Haunz .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Gustaf_V_of_Sweden a :Man .\n\ndata:Karin_Emma_Louise_Nissvandt a :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1991 .\n\ndata:Maria_Pavlovna_of_Russia a :Woman .\n\ndata:Sonja_Anita_Maria_Haunz a :Woman ;\n    :hasBirthYear 1944 ;\n    :hasDeathYear 2008 .\n\ndata:Wilhelm_Duke_of_S%C3%B6dermanland a :Man .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :isDaughterOf data:Joachim_of_Denmark,\n        data:Marie_Cavallier .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman ;\n    :isAuntOf data:Joachim_of_Denmark .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :isFatherOf data:Margrethe_II .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :isBrotherOf data:Joachim_of_Denmark .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person ;\n    :isSonOf data:Joachim_of_Denmark,\n        data:Marie_Cavallier .\n\ndata:Ingrid_of_Denmark a :Person,\n        :Woman ;\n    :isMotherOf data:Margrethe_II .\n\ndata:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,\n        :Person ;\n    :isUncleOf data:Joachim_of_Denmark .\n\ndata:Alexandra_Christina_Manley a :Person,\n        :Woman .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :isMotherOf data:Joachim_of_Denmark .\n\ndata:Marie_Cavallier a :Person,\n        :Woman .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasMarriageYear 1995,\n        2007 ;\n    :hasRelation data:Alexandra_Christina_Manley,\n        data:Marie_Cavallier .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :isDaughterOf data:Joachim_of_Denmark,\n        data:Marie_Cavallier .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman ;\n    :isAuntOf data:Joachim_of_Denmark .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :isFatherOf data:Margrethe_II .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :isBrotherOf data:Joachim_of_Denmark .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person ;\n    :isSonOf data:Joachim_of_Denmark,\n        data:Marie_Cavallier .\n\ndata:Ingrid_of_Denmark a :Person,\n        :Woman ;\n    :isMotherOf data:Margrethe_II .\n\ndata:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,\n        :Person ;\n    :isUncleOf data:Joachim_of_Denmark .\n\ndata:Alexandra_Christina_Manley a :Person,\n        :Woman .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :isMotherOf data:Joachim_of_Denmark .\n\ndata:Marie_Cavallier a :Person,\n        :Woman .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasMarriageYear 1995,\n        2007 ;\n    :hasRelation data:Alexandra_Christina_Manley,\n        data:Marie_Cavallier .\n\n"
+    }
+]

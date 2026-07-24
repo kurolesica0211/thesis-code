@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IndiaHicks a :Person,\n        :Woman ;\n    :isChildOf data:DavidNightingaleHicks,\n        data:LadyPamelaHicks .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person ;\n    :isFatherOf data:LordLouisMountbatten .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman ;\n    :isMotherOf data:LordLouisMountbatten .\n\ndata:DavidNightingaleHicks a :Man,\n        :Person ;\n    :hasBirthYear 1929 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:HerbertHicks ;\n    :hasMother data:IrisElsiePlatten .\n\ndata:EdwinaAshley a :Person,\n        :Woman .\n\ndata:HerbertHicks a :Man,\n        :Person .\n\ndata:IrisElsiePlatten a :Person,\n        :Woman .\n\ndata:LadyPamelaHicks a :Person,\n        :Woman ;\n    :hasBirthYear 1929 ;\n    :hasFather data:LordLouisMountbatten ;\n    :hasMother data:EdwinaAshley ;\n    :isSisterOf data:PatriciaKnatchbull .\n\ndata:PatriciaKnatchbull a :Person,\n        :Woman .\n\ndata:LordLouisMountbatten a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IndiaHicks a :Person,\n        :Woman ;\n    :isChildOf data:DavidNightingaleHicks,\n        data:LadyPamelaHicks .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person ;\n    :isFatherOf data:LordLouisMountbatten .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman ;\n    :isMotherOf data:LordLouisMountbatten .\n\ndata:DavidNightingaleHicks a :Man,\n        :Person ;\n    :hasBirthYear 1929 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:HerbertHicks ;\n    :hasMother data:IrisElsiePlatten .\n\ndata:EdwinaAshley a :Person,\n        :Woman .\n\ndata:HerbertHicks a :Man,\n        :Person .\n\ndata:IrisElsiePlatten a :Person,\n        :Woman .\n\ndata:LadyPamelaHicks a :Person,\n        :Woman ;\n    :hasBirthYear 1929 ;\n    :hasFather data:LordLouisMountbatten ;\n    :hasMother data:EdwinaAshley ;\n    :isSisterOf data:PatriciaKnatchbull .\n\ndata:PatriciaKnatchbull a :Person,\n        :Woman .\n\ndata:LordLouisMountbatten a :Man,\n        :Person .\n\n"
+    }
+]

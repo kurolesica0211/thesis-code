@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Andrew_Charles_Victor_Elphinstone a :Ancestor .
+
+data:George_David_Chetwode a :Ancestor .
+
+data:James_Alexander_Elphinstone a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Alexander .
+
+data:Jean_Frances_Hambro a :Ancestor .
+
+data:Marion_Cook a :Ancestor .
+
+data:Mary_Bowes-Lyon a :Ancestor .
+
+data:Sidney_Buller-Fullerton-Elphinstone a :Ancestor .
+
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor .
+
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor .
+
+data:Male a :Sex .
+

@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrancescaSofia a :Person,
+        :Woman ;
+    :isDaughterOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies .
+
+data:Ines a :Person,
+        :Woman ;
+    :isDaughterOf data:LadyCharlotteLindesayBethune,
+        data:PrinceJaimeOfBourbonTwoSicilies .
+
+data:InfanteCarlosDukeOfCalabria a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 ;
+    :isFatherOf data:PrincePedroDukeOfCalabria .
+
+data:PrincessAnneOfOrleans a :Person,
+        :Woman ;
+    :isMotherOf data:PrincePedroDukeOfCalabria .
+
+data:DianaMaryChamberlayneMacdonald a :Person,
+        :Woman .
+
+data:JamesLindesayBethune16thEarlOfLindsay a :Man,
+        :Person .
+
+data:SofiaLandaluceYMelgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 .
+
+data:PrinceJaimeOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :hasBirthYear 1993 ;
+    :hasRelation data:LadyCharlotteLindesayBethune ;
+    :isSonOf data:PrincePedroDukeOfCalabria,
+        data:SofiaLandaluceYMelgarejo .
+
+data:LadyCharlotteLindesayBethune a :Person,
+        :Woman ;
+    :isDaughterOf data:DianaMaryChamberlayneMacdonald,
+        data:JamesLindesayBethune16thEarlOfLindsay .
+
+data:PrincePedroDukeOfCalabria a :Man,
+        :Person ;
+    :hasBirthYear 1968 .
+

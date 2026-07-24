@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasMother data:Olympia .
+
+data:Charles_Prince_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasFather data:Louis_Prince_Napol%C3%A9on .
+
+data:Jean-Christophe_Prince_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Prince_Napol%C3%A9on ;
+    :hasMother data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Louis_Prince_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasDeathYear 1997 .
+
+data:Olympia a :Person,
+        :Woman .
+
+data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Man,
+        :Person .
+
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro .
+

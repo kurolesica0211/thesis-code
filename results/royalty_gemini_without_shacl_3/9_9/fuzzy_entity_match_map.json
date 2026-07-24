@@ -1,0 +1,204 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/9_9",
+  "text_file": "Q105597990.txt",
+  "text_key": "Q105597990",
+  "article": "https://en.wikipedia.org/wiki/August_Brooksbank",
+  "article_key": "August Brooksbank",
+  "main_entity": {
+    "uri": "http://example.com/data#August_Brooksbank",
+    "qid": "Q105597990",
+    "label": "August Brooksbank"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#August_Brooksbank",
+      "qid": "Q105597990",
+      "label": "August Brooksbank",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Jack_Brooksbank",
+      "qid": "Q57401350",
+      "label": "Jack Brooksbank",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Eugenie_of_York",
+      "qid": "Q165709",
+      "label": "Princess Eugenie of York",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernest_Brooksbank",
+      "qid": "Q119133052",
+      "label": "Ernest Brooksbank",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sarah_Ferguson",
+      "qid": "Q55720",
+      "label": "Sarah Ferguson",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Andrew_Mountbatten-Windsor",
+      "extracted_local_name": "Andrew_Mountbatten-Windsor",
+      "embedding_text": "Andrew Mountbatten-Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "ground_truth_qid": "Q153330",
+      "ground_truth_label": "Andrew Mountbatten-Windsor",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Andrew Mountbatten-Windsor",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/August_Brooksbank",
+      "extracted_local_name": "August_Brooksbank",
+      "embedding_text": "August Brooksbank",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#August_Brooksbank",
+      "ground_truth_qid": "Q105597990",
+      "ground_truth_label": "August Brooksbank",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "August Brooksbank",
+      "best_candidate_label": "August Brooksbank",
+      "best_candidate_qid": "Q105597990",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ernest_Brooksbank",
+      "extracted_local_name": "Ernest_Brooksbank",
+      "embedding_text": "Ernest Brooksbank",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Ernest_Brooksbank",
+      "ground_truth_qid": "Q119133052",
+      "ground_truth_label": "Ernest Brooksbank",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ernest Brooksbank",
+      "best_candidate_label": "Ernest Brooksbank",
+      "best_candidate_qid": "Q119133052",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jack_Brooksbank",
+      "extracted_local_name": "Jack_Brooksbank",
+      "embedding_text": "Jack Brooksbank",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Jack_Brooksbank",
+      "ground_truth_qid": "Q57401350",
+      "ground_truth_label": "Jack Brooksbank",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Jack Brooksbank",
+      "best_candidate_label": "Jack Brooksbank",
+      "best_candidate_qid": "Q57401350",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Eugenie",
+      "extracted_local_name": "Princess_Eugenie",
+      "embedding_text": "Princess Eugenie",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Eugenie_of_York",
+      "ground_truth_qid": "Q165709",
+      "ground_truth_label": "Princess Eugenie of York",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Eugenie",
+      "best_candidate_label": "Princess Eugenie of York",
+      "best_candidate_qid": "Q165709",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sarah_Ferguson",
+      "extracted_local_name": "Sarah_Ferguson",
+      "embedding_text": "Sarah Ferguson",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Sarah_Ferguson",
+      "ground_truth_qid": "Q55720",
+      "ground_truth_label": "Sarah Ferguson",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sarah Ferguson",
+      "best_candidate_label": "Sarah Ferguson",
+      "best_candidate_qid": "Q55720",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Beatrice",
+      "extracted_local_name": "Princess_Beatrice",
+      "embedding_text": "Princess Beatrice",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "H.R.H. Prince Philip",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43243243243243246
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 6,
+    "entities_unmatched": 1
+  }
+}

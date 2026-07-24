@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:Elena a :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:FelipeVI a :Man ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:ConstantineII a :Man .\n\ndata:FredericaOfHanover a :Woman .\n\ndata:Irene a :Woman .\n\ndata:PaulOfGreece a :Man .\n\ndata:Sofia a :Woman ;\n    :hasBirthYear \"1938\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:ConstantineII ;\n    :hasFather data:PaulOfGreece ;\n    :hasMarriageYear \"1962\"^^xsd:nonNegativeInteger ;\n    :hasMother data:FredericaOfHanover ;\n    :hasRelation data:JuanCarlosI ;\n    :hasSister data:Irene .\n\ndata:JuanCarlosI a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:Elena a :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:FelipeVI a :Man ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:Sofia .\n\ndata:ConstantineII a :Man .\n\ndata:FredericaOfHanover a :Woman .\n\ndata:Irene a :Woman .\n\ndata:PaulOfGreece a :Man .\n\ndata:Sofia a :Woman ;\n    :hasBirthYear \"1938\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:ConstantineII ;\n    :hasFather data:PaulOfGreece ;\n    :hasMarriageYear \"1962\"^^xsd:nonNegativeInteger ;\n    :hasMother data:FredericaOfHanover ;\n    :hasRelation data:JuanCarlosI ;\n    :hasSister data:Irene .\n\ndata:JuanCarlosI a :Man .\n\n"
+    }
+]

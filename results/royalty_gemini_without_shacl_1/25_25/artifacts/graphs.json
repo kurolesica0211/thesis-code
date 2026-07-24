@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louise_Mountbatten a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lady Louise Mountbatten\"^^xsd:string ;\n    :formerlyKnownAs \"Princess Louise of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Louis_of_Battenberg ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Gustaf_VI_Adolf ;\n    :hasSister data:Alice_of_Battenberg ;\n    :knownAs \"Louise Alexandra Marie Irene Mountbatten\"^^xsd:string .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasMother data:Alice_of_Battenberg .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Alice_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louise_Mountbatten a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lady Louise Mountbatten\"^^xsd:string ;\n    :formerlyKnownAs \"Princess Louise of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Louis_of_Battenberg ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Gustaf_VI_Adolf ;\n    :hasSister data:Alice_of_Battenberg ;\n    :knownAs \"Louise Alexandra Marie Irene Mountbatten\"^^xsd:string .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasMother data:Alice_of_Battenberg .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Alice_of_Battenberg a :Person,\n        :Woman .\n\n"
+    }
+]

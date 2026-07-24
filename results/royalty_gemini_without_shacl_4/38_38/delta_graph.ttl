@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianIXOfDenmark a :Man,
+        :Person .
+
+data:ConstantineIIOfGreece a :Man,
+        :Person .
+
+data:CrownPrincePavlos a :Man,
+        :Person .
+
+data:GeorgeIOfGreece a :Man,
+        :Person .
+
+data:OlgaConstantinovnaOfRussia a :Person,
+        :Woman .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasFather data:PrinceMichael ;
+    :isFatherOf data:PrinceMichael .
+
+data:PrinceJeanDukeOfGuise a :Man,
+        :Person .
+
+data:QueenAnneMarie a :Person,
+        :Woman .
+
+data:QueenSofiaOfSpain a :Person,
+        :Woman .
+
+data:NicolasMirzayantz a :Man,
+        :Person .
+
+data:MarinaKarella a :Person,
+        :Woman ;
+    :isMotherOf data:PrincessAlexandra,
+        data:PrincessOlga .
+
+data:PrincessAlexandra a :Person,
+        :Woman ;
+    :hasBirthYear 1968 ;
+    :hasFather data:PrinceMichael ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:MarinaKarella ;
+    :hasRelation data:NicolasMirzayantz ;
+    :hasSister data:PrincessOlga ;
+    :knownAs "Alexandra Mirzayantz"^^xsd:string .
+
+data:PrincessOlga a :Person,
+        :Woman ;
+    :hasFather data:PrinceMichael ;
+    :hasMother data:MarinaKarella ;
+    :isSisterOf data:PrincessAlexandra .
+
+data:PrinceMichael a :Man,
+        :Person ;
+    :isFatherOf data:PrincessAlexandra,
+        data:PrincessOlga .
+

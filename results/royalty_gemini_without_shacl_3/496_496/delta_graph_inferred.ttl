@@ -1,0 +1,427 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philip_Mountbatten a :Man,
+        :Person ;
+    :hasBrother data:Philip_Mountbatten ;
+    :hasRelation data:Elizabeth_II,
+        data:Margaret,
+        data:Philip_Mountbatten ;
+    :isBloodrelationOf data:Philip_Mountbatten ;
+    :isBrotherOf data:Philip_Mountbatten ;
+    :isSiblingOf data:Philip_Mountbatten .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Mary_of_Teck ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Mary_of_Teck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Mary_of_Teck ;
+    :hasSister data:Mary_of_Teck ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isAuntOf data:George_VI ;
+    :isBloodrelationOf data:Mary_of_Teck ;
+    :isMotherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:Mary_of_Teck ;
+    :isSisterOf data:Mary_of_Teck .
+
+data:Elizabeth_the_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:Margaret ;
+    :hasSister data:Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :isAuntOf data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Elizabeth_the_Queen_Mother .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:Edward_VIII,
+        data:George_VI ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret ;
+    :hasSon data:Edward_VIII,
+        data:George_VI ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Edward_VIII,
+        data:George_VI .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_the_Queen_Mother ;
+    :hasParent data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Mary_of_Teck,
+        data:Philip_Mountbatten ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Andrew a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasBrother data:Andrew,
+        data:Charles_III,
+        data:Edward ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isSonOf data:Elizabeth_II .
+
+data:Anne a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasBrother data:Andrew,
+        data:Charles_III,
+        data:Edward ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isChildOf data:Elizabeth_II ;
+    :isDaughterOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isSisterOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasBrother data:Andrew,
+        data:Charles_III,
+        data:Edward ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isSonOf data:Elizabeth_II .
+
+data:Edward a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasBrother data:Andrew,
+        data:Charles_III,
+        data:Edward ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isSonOf data:Elizabeth_II .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Mary_of_Teck ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasFather data:George_V ;
+    :hasMother data:Mary_of_Teck ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Mary_of_Teck ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isChildOf data:George_V,
+        data:Mary_of_Teck ;
+    :isFatherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isSonOf data:George_V,
+        data:Mary_of_Teck ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Mary_of_Teck ;
+    :hasBirthYear 1926 ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :hasDaughter data:Anne ;
+    :hasDeathYear 2022 ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Elizabeth_the_Queen_Mother ;
+    :hasParent data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:Elizabeth_the_Queen_Mother,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Mary_of_Teck,
+        data:Philip_Mountbatten ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :hasSon data:Andrew,
+        data:Charles_III,
+        data:Edward ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :isMotherOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isParentOf data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+

@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman ;
+    :hasBrother data:Patrick_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isBloodrelationOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSiblingOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Patrick_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Cecilia_Cavendish-Bentinck ;
+    :hasSon data:Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Patrick_Bowes-Lyon ;
+    :isAuntOf data:Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Cavendish-Bentinck ;
+    :isMotherOf data:Patrick_Bowes-Lyon ;
+    :isParentOf data:Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Cavendish-Bentinck ;
+    :isSisterOf data:Cecilia_Cavendish-Bentinck .
+
+data:Claude_Lord_Glamis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Lord_Glamis ;
+    :hasChild data:Patrick_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSon data:Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Lord_Glamis ;
+    :isBrotherOf data:Claude_Lord_Glamis ;
+    :isFatherOf data:Patrick_Bowes-Lyon ;
+    :isParentOf data:Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Lord_Glamis ;
+    :isUncleOf data:Patrick_Bowes-Lyon .
+
+data:George_10th_Duke_of_Leeds a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_10th_Duke_of_Leeds ;
+    :hasChild data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :hasDaughter data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isBloodrelationOf data:George_10th_Duke_of_Leeds ;
+    :isBrotherOf data:George_10th_Duke_of_Leeds ;
+    :isFatherOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isParentOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isSiblingOf data:George_10th_Duke_of_Leeds ;
+    :isUncleOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne .
+
+data:Lady_Dorothy_Beatrix_Godolphin_Osborne a :Person,
+        :Woman ;
+    :hasAncestor data:George_10th_Duke_of_Leeds ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:George_10th_Duke_of_Leeds ;
+    :hasParent data:George_10th_Duke_of_Leeds ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isBloodrelationOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isChildOf data:George_10th_Duke_of_Leeds ;
+    :isDaughterOf data:George_10th_Duke_of_Leeds ;
+    :isSiblingOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :isSisterOf data:Lady_Dorothy_Beatrix_Godolphin_Osborne .
+
+data:Patrick_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Patrick_Bowes-Lyon ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Claude_Lord_Glamis ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasParent data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis,
+        data:George_10th_Duke_of_Leeds,
+        data:Lady_Dorothy_Beatrix_Godolphin_Osborne,
+        data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isBloodrelationOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isBrotherOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isChildOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis ;
+    :isSiblingOf data:Patrick_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSonOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Lord_Glamis .
+

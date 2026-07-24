@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Sex .
+
+data:King_Charles_III :hasSex "Male"^^xsd:string .
+
+data:Male a :Sex .
+
+data:Prince_Edward a :Ancestor ;
+    :hasSex "Male"^^xsd:string ;
+    :isFatherOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Philip a :Ancestor ;
+    :hasSex "Male"^^xsd:string .
+
+data:Queen_Elizabeth_II a :Ancestor ;
+    :hasSex "Female"^^xsd:string .
+
+data:Sophie_Duchess_of_Edinburgh a :Ancestor ;
+    :hasSex "Female"^^xsd:string ;
+    :isMotherOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:James :hasSex "Male"^^xsd:string .
+
+data:Lady_Louise_Mountbatten-Windsor :hasSex "Female"^^xsd:string .
+

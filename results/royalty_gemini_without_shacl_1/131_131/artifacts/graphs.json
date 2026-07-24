@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infanta_Sof%C3%ADa a :Woman ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia .\n\ndata:Leonor%2C_Princess_of_Asturias a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia .\n\ndata:King_Juan_Carlos_I a :Man .\n\ndata:Queen_Sof%C3%ADa a :Woman .\n\ndata:King_Felipe_VI a :Man ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa .\n\ndata:Queen_Letizia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infanta_Sof%C3%ADa a :Woman ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia .\n\ndata:Leonor%2C_Princess_of_Asturias a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia .\n\ndata:King_Juan_Carlos_I a :Man .\n\ndata:Queen_Sof%C3%ADa a :Woman .\n\ndata:King_Felipe_VI a :Man ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sof%C3%ADa .\n\ndata:Queen_Letizia a :Woman .\n\n"
+    }
+]

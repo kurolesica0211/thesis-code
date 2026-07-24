@@ -1,0 +1,252 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasRelation data:Nicholas_Knatchbull ;
+    :isBloodrelationOf data:Nicholas_Knatchbull ;
+    :isBrotherOf data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Nicholas_Knatchbull .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :isAncestorOf data:Ashley_Louis_David_Hicks ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Louis_Mountbatten .
+
+data:Dr_Carlo_Tondato a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Dr_Carlo_Tondato ;
+    :hasChild data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasDaughter data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasRelation data:Dr_Carlo_Tondato,
+        data:Marina_Allegra_Federica_Silvia_Tondato,
+        data:Rosy_Maza ;
+    :isAncestorOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isBloodrelationOf data:Dr_Carlo_Tondato ;
+    :isBrotherOf data:Dr_Carlo_Tondato ;
+    :isFatherOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isParentOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isSiblingOf data:Dr_Carlo_Tondato ;
+    :isUncleOf data:Marina_Allegra_Federica_Silvia_Tondato .
+
+data:Rosalie_Solis a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kathryn_Sharkey ;
+    :hasDaughter data:Kathryn_Sharkey ;
+    :hasRelation data:Kathryn_Sharkey,
+        data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :hasSister data:Rosalie_Solis ;
+    :isAncestorOf data:Kathryn_Sharkey ;
+    :isAuntOf data:Kathryn_Sharkey ;
+    :isBloodrelationOf data:Rosalie_Solis ;
+    :isMotherOf data:Kathryn_Sharkey ;
+    :isParentOf data:Kathryn_Sharkey ;
+    :isSiblingOf data:Rosalie_Solis ;
+    :isSisterOf data:Rosalie_Solis .
+
+data:Rosy_Maza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasDaughter data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasRelation data:Dr_Carlo_Tondato,
+        data:Marina_Allegra_Federica_Silvia_Tondato,
+        data:Rosy_Maza ;
+    :hasSister data:Rosy_Maza ;
+    :isAncestorOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isAuntOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isBloodrelationOf data:Rosy_Maza ;
+    :isMotherOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isParentOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isSiblingOf data:Rosy_Maza ;
+    :isSisterOf data:Rosy_Maza .
+
+data:William_T_Sharkey a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_T_Sharkey ;
+    :hasChild data:Kathryn_Sharkey ;
+    :hasDaughter data:Kathryn_Sharkey ;
+    :hasRelation data:Kathryn_Sharkey,
+        data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :isAncestorOf data:Kathryn_Sharkey ;
+    :isBloodrelationOf data:William_T_Sharkey ;
+    :isBrotherOf data:William_T_Sharkey ;
+    :isFatherOf data:Kathryn_Sharkey ;
+    :isParentOf data:Kathryn_Sharkey ;
+    :isSiblingOf data:William_T_Sharkey ;
+    :isUncleOf data:Kathryn_Sharkey .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:Ashley_Louis_David_Hicks ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasSon data:Ashley_Louis_David_Hicks ;
+    :isAncestorOf data:Ashley_Louis_David_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isFatherOf data:Ashley_Louis_David_Hicks ;
+    :isParentOf data:Ashley_Louis_David_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isUncleOf data:Ashley_Louis_David_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ashley_Louis_David_Hicks ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasSister data:Lady_Pamela_Hicks ;
+    :hasSon data:Ashley_Louis_David_Hicks ;
+    :isAncestorOf data:Ashley_Louis_David_Hicks ;
+    :isAuntOf data:Ashley_Louis_David_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks ;
+    :isMotherOf data:Ashley_Louis_David_Hicks ;
+    :isParentOf data:Ashley_Louis_David_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Hicks ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:Edwina_Brudenell a :Person,
+        :Woman ;
+    :hasBrother data:Ashley_Louis_David_Hicks ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasSister data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isBloodrelationOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isSiblingOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isSisterOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasBrother data:Ashley_Louis_David_Hicks ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasSister data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isBloodrelationOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isSiblingOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isSisterOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks .
+
+data:Kathryn_Sharkey a :Person,
+        :Woman ;
+    :hasAncestor data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :hasFather data:William_T_Sharkey ;
+    :hasMother data:Rosalie_Solis ;
+    :hasParent data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :hasRelation data:Kathryn_Sharkey,
+        data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :hasSister data:Kathryn_Sharkey ;
+    :isBloodrelationOf data:Kathryn_Sharkey ;
+    :isChildOf data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :isDaughterOf data:Rosalie_Solis,
+        data:William_T_Sharkey ;
+    :isSiblingOf data:Kathryn_Sharkey ;
+    :isSisterOf data:Kathryn_Sharkey .
+
+data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
+        :Woman ;
+    :hasAncestor data:Dr_Carlo_Tondato,
+        data:Rosy_Maza ;
+    :hasFather data:Dr_Carlo_Tondato ;
+    :hasMother data:Rosy_Maza ;
+    :hasParent data:Dr_Carlo_Tondato,
+        data:Rosy_Maza ;
+    :hasRelation data:Dr_Carlo_Tondato,
+        data:Marina_Allegra_Federica_Silvia_Tondato,
+        data:Rosy_Maza ;
+    :hasSister data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isBloodrelationOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isChildOf data:Dr_Carlo_Tondato,
+        data:Rosy_Maza ;
+    :isDaughterOf data:Dr_Carlo_Tondato,
+        data:Rosy_Maza ;
+    :isSiblingOf data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :isSisterOf data:Marina_Allegra_Federica_Silvia_Tondato .
+
+data:Ashley_Louis_David_Hicks a :Man,
+        :Person ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasBirthYear "1963"^^xsd:positiveInteger ;
+    :hasBrother data:Ashley_Louis_David_Hicks ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMarriageYear "1990"^^xsd:positiveInteger,
+        "2015"^^xsd:positiveInteger ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasRelation data:Ashley_Louis_David_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten ;
+    :hasSister data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isBloodrelationOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isBrotherOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Ashley_Louis_David_Hicks,
+        data:Edwina_Brudenell,
+        data:India_Hicks ;
+    :isSonOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+

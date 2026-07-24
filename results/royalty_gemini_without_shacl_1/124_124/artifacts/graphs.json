@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AstridOfSweden a :Person,\n        :Woman ;\n    :hasDeathYear 1935 ;\n    :isMotherOf data:KingAlbertII .\n\ndata:FabrizioPrinceRuffoDiCalabriaSantapau a :Man,\n        :Person .\n\ndata:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg a :Person,\n        :Woman .\n\ndata:KingLeopoldIII a :Man,\n        :Person ;\n    :isFatherOf data:KingAlbertII .\n\ndata:PrinceLorenz a :Man,\n        :Person ;\n    :hasFather data:ArchdukeRobertOfAustriaEste ;\n    :hasMother data:PrincessMargheritaOfSavoyAosta .\n\ndata:PrincessAstrid a :Person,\n        :Woman ;\n    :hasBirthYear 1962 ;\n    :hasFather data:KingAlbertII ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:QueenPaola ;\n    :isSisterOf data:KingPhilippe .\n\ndata:ArchdukeRobertOfAustriaEste a :Man,\n        :Person ;\n    :hasBirthYear 1915 ;\n    :hasDeathYear 1996 .\n\ndata:KingPhilippe a :Man,\n        :Person ;\n    :hasFather data:KingAlbertII ;\n    :hasMother data:QueenPaola .\n\ndata:PrincessMargheritaOfSavoyAosta a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2022 .\n\ndata:QueenPaola a :Person,\n        :Woman .\n\ndata:KingAlbertII a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AstridOfSweden a :Person,\n        :Woman ;\n    :hasDeathYear 1935 ;\n    :isMotherOf data:KingAlbertII .\n\ndata:FabrizioPrinceRuffoDiCalabriaSantapau a :Man,\n        :Person .\n\ndata:HereditaryGrandDuchessJosephineCharlotteOfLuxembourg a :Person,\n        :Woman .\n\ndata:KingLeopoldIII a :Man,\n        :Person ;\n    :isFatherOf data:KingAlbertII .\n\ndata:PrinceLorenz a :Man,\n        :Person ;\n    :hasFather data:ArchdukeRobertOfAustriaEste ;\n    :hasMother data:PrincessMargheritaOfSavoyAosta .\n\ndata:PrincessAstrid a :Person,\n        :Woman ;\n    :hasBirthYear 1962 ;\n    :hasFather data:KingAlbertII ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:QueenPaola ;\n    :isSisterOf data:KingPhilippe .\n\ndata:ArchdukeRobertOfAustriaEste a :Man,\n        :Person ;\n    :hasBirthYear 1915 ;\n    :hasDeathYear 1996 .\n\ndata:KingPhilippe a :Man,\n        :Person ;\n    :hasFather data:KingAlbertII ;\n    :hasMother data:QueenPaola .\n\ndata:PrincessMargheritaOfSavoyAosta a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2022 .\n\ndata:QueenPaola a :Person,\n        :Woman .\n\ndata:KingAlbertII a :Man,\n        :Person .\n\n"
+    }
+]

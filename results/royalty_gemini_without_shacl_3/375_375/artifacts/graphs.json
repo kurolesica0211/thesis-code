@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:WilhelmEitelFriedrichOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:WilhelmIIOfGermany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:AugustaViktoriaOfSchleswigHolstein ;\n    :hasRelation data:SophiaCharlotteOfOldenburg .\n\ndata:AugustaViktoriaOfSchleswigHolstein a :Person,\n        :Woman .\n\ndata:SophiaCharlotteOfOldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1964 .\n\ndata:WilhelmIIOfGermany a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:WilhelmEitelFriedrichOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:WilhelmIIOfGermany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:AugustaViktoriaOfSchleswigHolstein ;\n    :hasRelation data:SophiaCharlotteOfOldenburg .\n\ndata:AugustaViktoriaOfSchleswigHolstein a :Person,\n        :Woman .\n\ndata:SophiaCharlotteOfOldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1964 .\n\ndata:WilhelmIIOfGermany a :Man,\n        :Person .\n\n"
+    }
+]

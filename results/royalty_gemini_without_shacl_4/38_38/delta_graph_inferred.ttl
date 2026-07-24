@@ -1,0 +1,252 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianIXOfDenmark a :Man,
+        :Person ;
+    :hasBrother data:ChristianIXOfDenmark ;
+    :hasRelation data:ChristianIXOfDenmark ;
+    :isBloodrelationOf data:ChristianIXOfDenmark ;
+    :isBrotherOf data:ChristianIXOfDenmark ;
+    :isSiblingOf data:ChristianIXOfDenmark .
+
+data:ConstantineIIOfGreece a :Man,
+        :Person ;
+    :hasBrother data:ConstantineIIOfGreece ;
+    :hasRelation data:ConstantineIIOfGreece ;
+    :isBloodrelationOf data:ConstantineIIOfGreece ;
+    :isBrotherOf data:ConstantineIIOfGreece ;
+    :isSiblingOf data:ConstantineIIOfGreece .
+
+data:CrownPrincePavlos a :Man,
+        :Person ;
+    :hasBrother data:CrownPrincePavlos ;
+    :hasRelation data:CrownPrincePavlos ;
+    :isBloodrelationOf data:CrownPrincePavlos ;
+    :isBrotherOf data:CrownPrincePavlos ;
+    :isSiblingOf data:CrownPrincePavlos .
+
+data:GeorgeIOfGreece a :Man,
+        :Person ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasRelation data:GeorgeIOfGreece ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isSiblingOf data:GeorgeIOfGreece .
+
+data:OlgaConstantinovnaOfRussia a :Person,
+        :Woman ;
+    :hasRelation data:OlgaConstantinovnaOfRussia ;
+    :hasSister data:OlgaConstantinovnaOfRussia ;
+    :isBloodrelationOf data:OlgaConstantinovnaOfRussia ;
+    :isSiblingOf data:OlgaConstantinovnaOfRussia ;
+    :isSisterOf data:OlgaConstantinovnaOfRussia .
+
+data:PrinceJeanDukeOfGuise a :Man,
+        :Person ;
+    :hasBrother data:PrinceJeanDukeOfGuise ;
+    :hasRelation data:PrinceJeanDukeOfGuise ;
+    :isBloodrelationOf data:PrinceJeanDukeOfGuise ;
+    :isBrotherOf data:PrinceJeanDukeOfGuise ;
+    :isSiblingOf data:PrinceJeanDukeOfGuise .
+
+data:QueenAnneMarie a :Person,
+        :Woman ;
+    :hasRelation data:QueenAnneMarie ;
+    :hasSister data:QueenAnneMarie ;
+    :isBloodrelationOf data:QueenAnneMarie ;
+    :isSiblingOf data:QueenAnneMarie ;
+    :isSisterOf data:QueenAnneMarie .
+
+data:QueenSofiaOfSpain a :Person,
+        :Woman ;
+    :hasRelation data:QueenSofiaOfSpain ;
+    :hasSister data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:QueenSofiaOfSpain ;
+    :isSiblingOf data:QueenSofiaOfSpain ;
+    :isSisterOf data:QueenSofiaOfSpain .
+
+data:NicolasMirzayantz a :Man,
+        :Person ;
+    :hasBrother data:NicolasMirzayantz ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isBloodrelationOf data:NicolasMirzayantz ;
+    :isBrotherOf data:NicolasMirzayantz ;
+    :isSiblingOf data:NicolasMirzayantz .
+
+data:MarinaKarella a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasDaughter data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSister data:MarinaKarella ;
+    :isAncestorOf data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isAuntOf data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isBloodrelationOf data:MarinaKarella ;
+    :isMotherOf data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isParentOf data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isSiblingOf data:MarinaKarella ;
+    :isSisterOf data:MarinaKarella .
+
+data:PrincessAlexandra a :Person,
+        :Woman ;
+    :hasAncestor data:MarinaKarella,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasFather data:PrinceMichael ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:MarinaKarella ;
+    :hasParent data:MarinaKarella,
+        data:PrinceMichael ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isAuntOf data:PrinceMichael ;
+    :isBloodrelationOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isChildOf data:MarinaKarella,
+        data:PrinceMichael ;
+    :isDaughterOf data:MarinaKarella,
+        data:PrinceMichael ;
+    :isSiblingOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isSisterOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :knownAs "Alexandra Mirzayantz"^^xsd:string .
+
+data:PrincessOlga a :Person,
+        :Woman ;
+    :hasAncestor data:MarinaKarella,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael ;
+    :hasBrother data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasFather data:PrinceMichael ;
+    :hasMother data:MarinaKarella ;
+    :hasParent data:MarinaKarella,
+        data:PrinceMichael ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isAuntOf data:PrinceMichael ;
+    :isBloodrelationOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isChildOf data:MarinaKarella,
+        data:PrinceMichael ;
+    :isDaughterOf data:MarinaKarella,
+        data:PrinceMichael ;
+    :isSiblingOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isSisterOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael ;
+    :hasBrother data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasChild data:PrinceMichael ;
+    :hasFather data:PrinceMichael ;
+    :hasParent data:PrinceMichael ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSon data:PrinceMichael ;
+    :isAncestorOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isBloodrelationOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isBrotherOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isChildOf data:PrinceMichael ;
+    :isFatherOf data:PrinceMichael ;
+    :isParentOf data:PrinceMichael ;
+    :isSiblingOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isSonOf data:PrinceMichael ;
+    :isUncleOf data:PrinceMichael .
+
+data:PrinceMichael a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael ;
+    :hasBrother data:PrinceMichael ;
+    :hasChild data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasDaughter data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasFather data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasParent data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasRelation data:MarinaKarella,
+        data:NicolasMirzayantz,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :hasSon data:PrinceChristopherOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichael,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isBloodrelationOf data:PrinceMichael ;
+    :isBrotherOf data:PrinceMichael ;
+    :isChildOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isFatherOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isParentOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga ;
+    :isSiblingOf data:PrinceMichael ;
+    :isSonOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isUncleOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrincessAlexandra,
+        data:PrincessOlga .
+

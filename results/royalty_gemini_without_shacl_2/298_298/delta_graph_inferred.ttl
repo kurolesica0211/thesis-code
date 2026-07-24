@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isAncestorOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Maria_Cristina_of_Bourbon-Two_Sicilies .
+
+data:Alice_of_Bourbon-Parma a :Ancestor,
+        :Woman ;
+    :hasChild data:Peter_Ferdinand_of_Austria ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Alice_of_Bourbon-Parma ;
+    :hasSon data:Peter_Ferdinand_of_Austria ;
+    :isAncestorOf data:Peter_Ferdinand_of_Austria ;
+    :isAuntOf data:Peter_Ferdinand_of_Austria ;
+    :isBloodrelationOf data:Alice_of_Bourbon-Parma ;
+    :isMotherOf data:Peter_Ferdinand_of_Austria ;
+    :isParentOf data:Peter_Ferdinand_of_Austria ;
+    :isSiblingOf data:Alice_of_Bourbon-Parma ;
+    :isSisterOf data:Alice_of_Bourbon-Parma .
+
+data:Ferdinand_IV_of_Tuscany a :Ancestor,
+        :Man ;
+    :hasBrother data:Ferdinand_IV_of_Tuscany ;
+    :hasChild data:Peter_Ferdinand_of_Austria ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSon data:Peter_Ferdinand_of_Austria ;
+    :isAncestorOf data:Peter_Ferdinand_of_Austria ;
+    :isBloodrelationOf data:Ferdinand_IV_of_Tuscany ;
+    :isBrotherOf data:Ferdinand_IV_of_Tuscany ;
+    :isFatherOf data:Peter_Ferdinand_of_Austria ;
+    :isParentOf data:Peter_Ferdinand_of_Austria ;
+    :isSiblingOf data:Ferdinand_IV_of_Tuscany ;
+    :isUncleOf data:Peter_Ferdinand_of_Austria .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies .
+
+data:Peter_Ferdinand_of_Austria a :Man,
+        :Person ;
+    :hasAncestor data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany ;
+    :hasBrother data:Peter_Ferdinand_of_Austria ;
+    :hasFather data:Ferdinand_IV_of_Tuscany ;
+    :hasMother data:Alice_of_Bourbon-Parma ;
+    :hasParent data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies,
+        data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isBloodrelationOf data:Peter_Ferdinand_of_Austria ;
+    :isBrotherOf data:Peter_Ferdinand_of_Austria ;
+    :isChildOf data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany ;
+    :isSiblingOf data:Peter_Ferdinand_of_Austria ;
+    :isSonOf data:Alice_of_Bourbon-Parma,
+        data:Ferdinand_IV_of_Tuscany .
+

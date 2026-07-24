@@ -1,0 +1,170 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Fran%C3%A7oise_d_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Jean_Duke_of_Guise ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSister data:Fran%C3%A7oise_d_Orl%C3%A9ans ;
+    :hasSon data:Prince_Jean_Duke_of_Guise ;
+    :isAncestorOf data:Prince_Jean_Duke_of_Guise ;
+    :isAuntOf data:Prince_Jean_Duke_of_Guise ;
+    :isBloodrelationOf data:Fran%C3%A7oise_d_Orl%C3%A9ans ;
+    :isMotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isParentOf data:Prince_Jean_Duke_of_Guise ;
+    :isSiblingOf data:Fran%C3%A7oise_d_Orl%C3%A9ans ;
+    :isSisterOf data:Fran%C3%A7oise_d_Orl%C3%A9ans .
+
+data:Prince_Robert_Duke_of_Chartres a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Robert_Duke_of_Chartres ;
+    :hasChild data:Prince_Jean_Duke_of_Guise ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSon data:Prince_Jean_Duke_of_Guise ;
+    :isAncestorOf data:Prince_Jean_Duke_of_Guise ;
+    :isBloodrelationOf data:Prince_Robert_Duke_of_Chartres ;
+    :isBrotherOf data:Prince_Robert_Duke_of_Chartres ;
+    :isFatherOf data:Prince_Jean_Duke_of_Guise ;
+    :isParentOf data:Prince_Jean_Duke_of_Guise ;
+    :isSiblingOf data:Prince_Robert_Duke_of_Chartres ;
+    :isUncleOf data:Prince_Jean_Duke_of_Guise .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasDaughter data:Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasSon data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isParentOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans .
+
+data:Maria_Isabel_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasDaughter data:Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSister data:Maria_Isabel_of_Spain ;
+    :hasSon data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isAuntOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Maria_Isabel_of_Spain ;
+    :isMotherOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isParentOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Maria_Isabel_of_Spain ;
+    :isSisterOf data:Maria_Isabel_of_Spain .
+
+data:Prince_Jean_Duke_of_Guise a :Man ;
+    :hasAncestor data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasBrother data:Prince_Jean_Duke_of_Guise ;
+    :hasFather data:Prince_Robert_Duke_of_Chartres ;
+    :hasMother data:Fran%C3%A7oise_d_Orl%C3%A9ans ;
+    :hasParent data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :isBloodrelationOf data:Prince_Jean_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isChildOf data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :isSiblingOf data:Prince_Jean_Duke_of_Guise ;
+    :isSonOf data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Prince_Robert_Duke_of_Chartres .
+
+data:Isabelle_of_Orl%C3%A9ans a :Woman ;
+    :hasAncestor data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :hasBirthYear 1878 ;
+    :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Maria_Isabel_of_Spain ;
+    :hasParent data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSister data:Isabelle_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isChildOf data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :isDaughterOf data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :isSiblingOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isSisterOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans .
+
+data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man ;
+    :hasAncestor data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMother data:Maria_Isabel_of_Spain ;
+    :hasParent data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :hasRelation data:Fran%C3%A7oise_d_Orl%C3%A9ans,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Robert_Duke_of_Chartres ;
+    :hasSister data:Isabelle_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isBrotherOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isChildOf data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris ;
+    :isSiblingOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :isSonOf data:Maria_Isabel_of_Spain,
+        data:Philippe_Count_of_Paris .
+

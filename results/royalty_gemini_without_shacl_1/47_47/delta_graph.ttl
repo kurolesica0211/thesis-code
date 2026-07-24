@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antje_Liete_Kruger-Franke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :isMotherOf data:Sven_von_Storch .
+
+data:Beatrix_von_Storch a :Person,
+        :Woman ;
+    :hasBirthYear 1971 ;
+    :hasMarriageYear 2010 ;
+    :hasRelation data:Sven_von_Storch .
+
+data:Berndt_Detlev_von_Storch a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1930 ;
+    :hasDeathYear 2004 ;
+    :isFatherOf data:Sven_von_Storch .
+
+data:Sven_von_Storch a :Man,
+        :Person ;
+    :hasBirthYear 1970 .
+

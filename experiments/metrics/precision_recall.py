@@ -268,26 +268,35 @@ def calculate_metrics(extracted_triples: Set[Tuple[str, str, str]],
     }
 
 
-def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]]:
+def _subrun_sort_key(name: str):
+    """Sort numerically by the leading "N_" index when present, else alphabetically."""
+    prefix = name.split('_')[0]
+    try:
+        return (0, int(prefix))
+    except ValueError:
+        return (1, name)
+
+
+def process_run(run_path: str, ground_truths_dir: str, data_graph_filename: str = "delta_graph_inferred.ttl") -> Tuple[Dict, List[Dict]]:
     """Process a single run and calculate metrics for all subruns."""
-    
+
     run_name = os.path.basename(run_path)
     subrun_metrics = []
     all_precision = []
     all_recall = []
     all_f1 = []
-    
+
     # Get all subrun directories
-    subrun_dirs = [d for d in os.listdir(run_path) 
+    subrun_dirs = [d for d in os.listdir(run_path)
                 if os.path.isdir(os.path.join(run_path, d)) and '_' in d and
                 d != "ontology_conformance_metrics"]
-    
-    for subrun_dir in sorted(subrun_dirs, key=lambda x: int(x.split('_')[0])):
+
+    for subrun_dir in sorted(subrun_dirs, key=_subrun_sort_key):
         try:
             subrun_path = os.path.join(run_path, subrun_dir)
-            
+
             # Load file paths
-            delta_graph_file = os.path.join(subrun_path, "delta_graph_inferred.ttl")
+            delta_graph_file = os.path.join(subrun_path, data_graph_filename)
             # Get Q-id from fuzzy match file
             fuzzy_match_file = os.path.join(subrun_path, "fuzzy_entity_match_map.json")
             qid = get_qid_from_fuzzy_match(fuzzy_match_file)
@@ -302,7 +311,7 @@ def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]
                 continue
             
             if not os.path.exists(delta_graph_file):
-                print(f"Warning: delta_graph.ttl not found in {subrun_path}")
+                print(f"Warning: {data_graph_filename} not found in {subrun_path}")
                 continue
             
             # Load graphs
@@ -384,6 +393,16 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="Root results directory containing run subdirectories.",
     )
+    parser.add_argument(
+        "--data-graph-filename",
+        default="delta_graph_inferred.ttl",
+        help="Which per-subrun inferred graph file to score (e.g. final_data_graph_inferred.ttl).",
+    )
+    parser.add_argument(
+        "--output-filename",
+        default="metrics.json",
+        help="Filename to write the resulting metrics to, inside the run directory.",
+    )
 
     return parser.parse_args()
 
@@ -391,14 +410,14 @@ def main():
     """Main execution function."""
     args = parse_args()
     run_dir = args.results_root
-    
+
     ground_truths_dir = Path("custom_family_bench") / "royalty" / "ground_truths"
-    
+
     if not os.path.isdir(run_dir):
         raise Exception("The provided run directory isn't a directory...")
-    
+
     final_metrics = {}
-    aggregated, subrun_metrics = process_run(str(run_dir), str(ground_truths_dir))
+    aggregated, subrun_metrics = process_run(str(run_dir), str(ground_truths_dir), args.data_graph_filename)
     final_metrics["aggregated"] = aggregated
     final_metrics["subrun_metrics"] = subrun_metrics
     
@@ -410,7 +429,7 @@ def main():
             f"F1: {aggregated['macro']['f1']:.4f}")
     
     # Output results
-    output_file = run_dir / "metrics.json"
+    output_file = run_dir / args.output_filename
     print(f"\nWriting results to {output_file}")
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(final_metrics, f, indent=2)

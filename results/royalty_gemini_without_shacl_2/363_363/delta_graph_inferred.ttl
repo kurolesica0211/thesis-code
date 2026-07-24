@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_Stolberg-Rossla a :Woman ;
+    :hasRelation data:Elisabeth_Stolberg-Rossla ;
+    :hasSister data:Elisabeth_Stolberg-Rossla ;
+    :isBloodrelationOf data:Elisabeth_Stolberg-Rossla ;
+    :isSiblingOf data:Elisabeth_Stolberg-Rossla ;
+    :isSisterOf data:Elisabeth_Stolberg-Rossla .
+
+data:Elise_Hohenlohe-Langenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasRelation data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line,
+        data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasSister data:Elise_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isAuntOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isBloodrelationOf data:Elise_Hohenlohe-Langenburg ;
+    :isMotherOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isParentOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isSiblingOf data:Elise_Hohenlohe-Langenburg ;
+    :isSisterOf data:Elise_Hohenlohe-Langenburg .
+
+data:Heinrich_XXVII_Reuss_Younger_Line a :Ancestor,
+        :Man ;
+    :hasBrother data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :hasChild data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasRelation data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line,
+        data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isAncestorOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isBloodrelationOf data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :isBrotherOf data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :isFatherOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isParentOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isSiblingOf data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :isUncleOf data:Viktoria_Feodora_Reuss-Schleiz .
+
+data:John_Albert_Mecklenburg-Schwerin a :Man ;
+    :hasBrother data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :hasRelation data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_II_Mecklenburg-Schwerin a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :hasChild data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :hasRelation data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :hasSon data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :isFatherOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isParentOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :isUncleOf data:Adolf_Friedrich_Mecklenburg-Schwerin .
+
+data:Marie_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasChild data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :hasRelation data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :hasSister data:Marie_Schwarzburg-Rudolstadt ;
+    :hasSon data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isAuntOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isParentOf data:Adolf_Friedrich_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_Schwarzburg-Rudolstadt .
+
+data:Viktoria_Feodora_Reuss-Schleiz a :Woman ;
+    :hasAncestor data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :hasMother data:Elise_Hohenlohe-Langenburg ;
+    :hasParent data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :hasRelation data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line,
+        data:Viktoria_Feodora_Reuss-Schleiz ;
+    :hasSister data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isBloodrelationOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isChildOf data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :isDaughterOf data:Elise_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Reuss_Younger_Line ;
+    :isSiblingOf data:Viktoria_Feodora_Reuss-Schleiz ;
+    :isSisterOf data:Viktoria_Feodora_Reuss-Schleiz .
+
+data:Adolf_Friedrich_Mecklenburg-Schwerin a :Man ;
+    :hasAncestor data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :hasBirthYear 1873 ;
+    :hasBrother data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Francis_II_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1917,
+        1924 ;
+    :hasMother data:Marie_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Adolf_Friedrich_Mecklenburg-Schwerin,
+        data:John_Albert_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II_Mecklenburg-Schwerin,
+        data:Marie_Schwarzburg-Rudolstadt .
+

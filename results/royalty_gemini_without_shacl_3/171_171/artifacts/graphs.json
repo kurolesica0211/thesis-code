@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoOfSpain a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :isBrotherOf data:AlfonsoXIIIOfSpain .\n\ndata:EnricoEugenio a :Man,\n        :Person .\n\ndata:GonzaloOfSpain a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :isBrotherOf data:AlfonsoXIIIOfSpain .\n\ndata:MariaCristinaOfSpain a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :hasMother data:VictoriaEugenieOfBattenberg ;\n    :isAuntOf data:JuanCarlosI ;\n    :isSisterOf data:BeatrizOfSpain .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:VictoriaEugenieOfBattenberg a :Person,\n        :Woman .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoOfSpain a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :isBrotherOf data:AlfonsoXIIIOfSpain .\n\ndata:EnricoEugenio a :Man,\n        :Person .\n\ndata:GonzaloOfSpain a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :isBrotherOf data:AlfonsoXIIIOfSpain .\n\ndata:MariaCristinaOfSpain a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :hasMother data:VictoriaEugenieOfBattenberg ;\n    :isAuntOf data:JuanCarlosI ;\n    :isSisterOf data:BeatrizOfSpain .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:VictoriaEugenieOfBattenberg a :Person,\n        :Woman .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\n"
+    }
+]

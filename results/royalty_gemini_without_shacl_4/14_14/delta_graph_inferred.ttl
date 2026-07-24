@@ -1,0 +1,142 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DianaPrincessOfWales a :Person,
+        :Woman ;
+    :hasRelation data:DianaPrincessOfWales ;
+    :hasSister data:DianaPrincessOfWales ;
+    :isBloodrelationOf data:DianaPrincessOfWales ;
+    :isSiblingOf data:DianaPrincessOfWales ;
+    :isSisterOf data:DianaPrincessOfWales .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :hasRelation data:QueenElizabethII ;
+    :hasSister data:QueenElizabethII ;
+    :isBloodrelationOf data:QueenElizabethII ;
+    :isSiblingOf data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethII .
+
+data:PrincessLilibetOfSussex a :Person,
+        :Woman ;
+    :hasRelation data:PrincessLilibetOfSussex ;
+    :hasSister data:PrincessLilibetOfSussex ;
+    :isBloodrelationOf data:PrincessLilibetOfSussex ;
+    :isSiblingOf data:PrincessLilibetOfSussex ;
+    :isSisterOf data:PrincessLilibetOfSussex .
+
+data:PrinceArchie a :Man,
+        :Person ;
+    :hasBrother data:PrinceArchie ;
+    :hasRelation data:KingCharlesIII,
+        data:LilibetDianaMountbattenWindsor,
+        data:MeghanDuchessOfSussex,
+        data:PrinceArchie,
+        data:PrinceHarry ;
+    :hasSister data:LilibetDianaMountbattenWindsor ;
+    :isBloodrelationOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie ;
+    :isBrotherOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie ;
+    :isSiblingOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie .
+
+data:MeghanDuchessOfSussex a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LilibetDianaMountbattenWindsor ;
+    :hasDaughter data:LilibetDianaMountbattenWindsor ;
+    :hasRelation data:KingCharlesIII,
+        data:LilibetDianaMountbattenWindsor,
+        data:MeghanDuchessOfSussex,
+        data:PrinceArchie,
+        data:PrinceHarry ;
+    :hasSister data:MeghanDuchessOfSussex ;
+    :isAncestorOf data:LilibetDianaMountbattenWindsor ;
+    :isAuntOf data:LilibetDianaMountbattenWindsor ;
+    :isBloodrelationOf data:MeghanDuchessOfSussex ;
+    :isMotherOf data:LilibetDianaMountbattenWindsor ;
+    :isParentOf data:LilibetDianaMountbattenWindsor ;
+    :isSiblingOf data:MeghanDuchessOfSussex ;
+    :isSisterOf data:MeghanDuchessOfSussex .
+
+data:KingCharlesIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingCharlesIII,
+        data:PrinceHarry ;
+    :hasChild data:LilibetDianaMountbattenWindsor ;
+    :hasDaughter data:LilibetDianaMountbattenWindsor ;
+    :hasRelation data:KingCharlesIII,
+        data:LilibetDianaMountbattenWindsor,
+        data:MeghanDuchessOfSussex,
+        data:PrinceArchie,
+        data:PrinceHarry ;
+    :isAncestorOf data:LilibetDianaMountbattenWindsor ;
+    :isBloodrelationOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isBrotherOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isFatherOf data:LilibetDianaMountbattenWindsor ;
+    :isParentOf data:LilibetDianaMountbattenWindsor ;
+    :isSiblingOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isUncleOf data:LilibetDianaMountbattenWindsor .
+
+data:PrinceHarry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingCharlesIII,
+        data:PrinceHarry ;
+    :hasChild data:LilibetDianaMountbattenWindsor ;
+    :hasDaughter data:LilibetDianaMountbattenWindsor ;
+    :hasRelation data:KingCharlesIII,
+        data:LilibetDianaMountbattenWindsor,
+        data:MeghanDuchessOfSussex,
+        data:PrinceArchie,
+        data:PrinceHarry ;
+    :isAncestorOf data:LilibetDianaMountbattenWindsor ;
+    :isBloodrelationOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isBrotherOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isFatherOf data:LilibetDianaMountbattenWindsor ;
+    :isParentOf data:LilibetDianaMountbattenWindsor ;
+    :isSiblingOf data:KingCharlesIII,
+        data:PrinceHarry ;
+    :isUncleOf data:LilibetDianaMountbattenWindsor .
+
+data:LilibetDianaMountbattenWindsor a :Person,
+        :Woman ;
+    :alsoKnownAs data:PrincessLilibetOfSussex ;
+    :hasAncestor data:KingCharlesIII,
+        data:MeghanDuchessOfSussex,
+        data:PrinceHarry ;
+    :hasBirthYear 2021 ;
+    :hasBrother data:PrinceArchie ;
+    :hasFather data:KingCharlesIII,
+        data:PrinceHarry ;
+    :hasMother data:MeghanDuchessOfSussex ;
+    :hasParent data:KingCharlesIII,
+        data:MeghanDuchessOfSussex,
+        data:PrinceHarry ;
+    :hasRelation data:KingCharlesIII,
+        data:LilibetDianaMountbattenWindsor,
+        data:MeghanDuchessOfSussex,
+        data:PrinceArchie,
+        data:PrinceHarry ;
+    :hasSister data:LilibetDianaMountbattenWindsor ;
+    :isBloodrelationOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie ;
+    :isChildOf data:KingCharlesIII,
+        data:MeghanDuchessOfSussex,
+        data:PrinceHarry ;
+    :isDaughterOf data:KingCharlesIII,
+        data:MeghanDuchessOfSussex,
+        data:PrinceHarry ;
+    :isSiblingOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie ;
+    :isSisterOf data:LilibetDianaMountbattenWindsor,
+        data:PrinceArchie .
+

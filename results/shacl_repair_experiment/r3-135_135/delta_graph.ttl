@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Ernst-Johann_Biron :hasFather data:Karl_Biron_von_Courland ;
+    :hasSex data:Male .
+
+data:Francoise_Levisse_de_Montigny :hasSex data:Female ;
+    :isMotherOf data:Karl_Biron_von_Courland .
+
+data:Gustav_Biron_of_Courland :hasSex data:Male ;
+    :isFatherOf data:Karl_Biron_von_Courland .
+
+data:Ina_Marie_von_Bassewitz :hasSex data:Female ;
+    :isMotherOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia .
+
+data:Oskar_of_Prussia :hasSex data:Male ;
+    :isFatherOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia .
+
+data:Burchard_of_Prussia a :Ancestor ;
+    :hasSex data:Male .
+
+data:Herzeleide_of_Prussia a :Ancestor ;
+    :hasSex data:Female .
+
+data:Oscar_of_Prussia_brother a :Ancestor ;
+    :hasSex data:Male .
+
+data:Wilhelm-Karl_of_Prussia a :Ancestor ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Karl_Biron_von_Courland a :Ancestor ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+

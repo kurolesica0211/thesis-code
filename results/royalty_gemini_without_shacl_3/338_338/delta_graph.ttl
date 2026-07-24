@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:Ingolf_of_Denmark ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:Caroline-Mathilde_of_Denmark ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Margrethe_II_of_Denmark .
+
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 .
+
+data:Benedikte_of_Denmark a :Person,
+        :Woman .
+
+data:Caroline-Mathilde_of_Denmark a :Person,
+        :Woman .
+
+data:Ingolf_of_Denmark a :Man,
+        :Person .
+
+data:Knud_of_Denmark a :Man,
+        :Person .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman ;
+    :hasSister data:Benedikte_of_Denmark .
+

@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Daniel_Chatto a :Man ;
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto .
+
+data:David_Armstrong-Jones a :Man ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:King_Charles_III a :Man .
+
+data:Lady_Sarah_Frances_Elizabeth_Chatto a :Woman ;
+    :alsoKnownAs data:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones a :Woman .
+
+data:Ros_Chatto a :Woman ;
+    :alsoKnownAs data:Rosalind_Joan_Thompson ;
+    :hasDeathYear 2012 .
+
+data:Rosalind_Joan_Thompson a :Woman .
+
+data:Tom_Chatto a :Man ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1982 .
+
+data:Antony_Armstrong-Jones a :Man .
+
+data:Princess_Margaret a :Woman .
+

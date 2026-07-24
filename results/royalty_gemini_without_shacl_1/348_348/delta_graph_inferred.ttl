@@ -1,0 +1,267 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessViktor%C3%ADa a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GloriaIrene ;
+    :hasDaughter data:GloriaIrene ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessViktor%C3%ADa ;
+    :isAncestorOf data:GloriaIrene ;
+    :isAuntOf data:GloriaIrene ;
+    :isBloodrelationOf data:PrincessViktor%C3%ADa ;
+    :isMotherOf data:GloriaIrene ;
+    :isParentOf data:GloriaIrene ;
+    :isSiblingOf data:PrincessViktor%C3%ADa ;
+    :isSisterOf data:PrincessViktor%C3%ADa .
+
+data:CarlosHugoDukeOfParma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CarlosHugoDukeOfParma ;
+    :hasChild data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSon data:PrinceJaimeBernardoOfBourbonParma ;
+    :isAncestorOf data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :isBloodrelationOf data:CarlosHugoDukeOfParma ;
+    :isBrotherOf data:CarlosHugoDukeOfParma ;
+    :isFatherOf data:PrinceJaimeBernardoOfBourbonParma ;
+    :isParentOf data:PrinceJaimeBernardoOfBourbonParma ;
+    :isSiblingOf data:CarlosHugoDukeOfParma ;
+    :isUncleOf data:PrinceJaimeBernardoOfBourbonParma .
+
+data:PrincessIreneOfTheNetherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessIreneOfTheNetherlands ;
+    :hasSon data:PrinceJaimeBernardoOfBourbonParma ;
+    :isAncestorOf data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :isAuntOf data:PrinceJaimeBernardoOfBourbonParma ;
+    :isBloodrelationOf data:PrincessIreneOfTheNetherlands ;
+    :isMotherOf data:PrinceJaimeBernardoOfBourbonParma ;
+    :isParentOf data:PrinceJaimeBernardoOfBourbonParma ;
+    :isSiblingOf data:PrincessIreneOfTheNetherlands ;
+    :isSisterOf data:PrincessIreneOfTheNetherlands .
+
+data:CarlosEnrique a :Man,
+        :Person ;
+    :hasAncestor data:CarlosDukeOfParma ;
+    :hasBrother data:CarlosEnrique ;
+    :hasFather data:CarlosDukeOfParma ;
+    :hasParent data:CarlosDukeOfParma ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :isBloodrelationOf data:CarlosEnrique ;
+    :isBrotherOf data:CarlosEnrique ;
+    :isChildOf data:CarlosDukeOfParma ;
+    :isSiblingOf data:CarlosEnrique ;
+    :isSonOf data:CarlosDukeOfParma .
+
+data:PrincessCarolina a :Person,
+        :Woman ;
+    :hasBrother data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isAuntOf data:CarlosEnrique,
+        data:GloriaIrene ;
+    :isBloodrelationOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSiblingOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSisterOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrincessMargarita a :Person,
+        :Woman ;
+    :hasBrother data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isAuntOf data:CarlosEnrique,
+        data:GloriaIrene ;
+    :isBloodrelationOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSiblingOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSisterOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:CarlosDukeOfParma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasChild data:CarlosEnrique ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :hasSon data:CarlosEnrique ;
+    :isAncestorOf data:CarlosEnrique ;
+    :isBloodrelationOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBrotherOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isFatherOf data:CarlosEnrique ;
+    :isParentOf data:CarlosEnrique ;
+    :isSiblingOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isUncleOf data:CarlosEnrique,
+        data:GloriaIrene .
+
+data:GloriaIrene a :Person,
+        :Woman ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessViktor%C3%ADa ;
+    :hasFather data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasMother data:PrincessViktor%C3%ADa ;
+    :hasParent data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessViktor%C3%ADa ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:GloriaIrene ;
+    :isBloodrelationOf data:GloriaIrene ;
+    :isChildOf data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessViktor%C3%ADa ;
+    :isDaughterOf data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessViktor%C3%ADa ;
+    :isSiblingOf data:GloriaIrene ;
+    :isSisterOf data:GloriaIrene .
+
+data:PrinceJaimeBernardoOfBourbonParma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma ;
+    :hasChild data:GloriaIrene ;
+    :hasDaughter data:GloriaIrene ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands ;
+    :hasParent data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasRelation data:CarlosDukeOfParma,
+        data:CarlosEnrique,
+        data:CarlosHugoDukeOfParma,
+        data:GloriaIrene,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessMargarita,
+        data:PrincessViktor%C3%ADa ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isAncestorOf data:GloriaIrene ;
+    :isBloodrelationOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBrotherOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isChildOf data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :isFatherOf data:GloriaIrene ;
+    :isParentOf data:GloriaIrene ;
+    :isSiblingOf data:CarlosDukeOfParma,
+        data:PrinceJaimeBernardoOfBourbonParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSonOf data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :isUncleOf data:CarlosEnrique,
+        data:GloriaIrene .
+

@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeVI a :Man ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:QueenSofia .
+
+data:1962 a :DomainEntity .
+
+data:Alfonso a :Man .
+
+data:AlfonsoXIII a :Ancestor,
+        :Man .
+
+data:InfantaMargarita a :Woman .
+
+data:InfantaPilar a :Woman .
+
+data:InfanteJuan a :Ancestor,
+        :Man ;
+    :hasFather data:AlfonsoXIII .
+
+data:JuanCarlosI a :Ancestor,
+        :Man ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Alfonso ;
+    :hasFather data:InfanteJuan ;
+    :hasMarriageYear data:1962 ;
+    :hasMother data:PrincessMariaDeLasMercedes ;
+    :hasSister data:InfantaMargarita,
+        data:InfantaPilar .
+
+data:KingPaulOfGreece a :Ancestor,
+        :Man .
+
+data:PrincessMariaDeLasMercedes a :Ancestor,
+        :Woman .
+
+data:QueenSofia a :Ancestor,
+        :Woman ;
+    :hasFather data:KingPaulOfGreece .
+

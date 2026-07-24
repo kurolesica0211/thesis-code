@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Charlotte_of_Wales a :Person,
+        :Woman ;
+    :alsoKnownAs data:Charlotte_Elizabeth_Diana ;
+    :hasAncestor data:Queen_Elizabeth_II ;
+    :hasBirthYear 2015 ;
+    :isChildOf data:Catherine_Princess_of_Wales,
+        data:Prince_William_of_Wales ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Louis .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Charlotte_Elizabeth_Diana a :Person .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Prince_Louis a :Man,
+        :Person .
+
+data:Prince_William_of_Wales a :Man,
+        :Person ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+

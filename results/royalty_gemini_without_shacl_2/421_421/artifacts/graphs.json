@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichWilhelmOfLippe a :Man ;\n    :hasBirthYear 1947 ;\n    :hasFather data:PrinceErnstAugustOfLippe ;\n    :hasMarriageYear 1991 ;\n    :hasMother data:ChristaVonArnim ;\n    :hasRelation data:AndreaMessner .\n\ndata:HereditaryPrinceErnst a :Man .\n\ndata:PrinceLeopold a :Man .\n\ndata:PrinceSimonCasimir a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1980 .\n\ndata:StephanPrinceOfLippe a :Man ;\n    :hasFather data:PrinceArmin .\n\ndata:AndreaMessner a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:G%C3%BCntherMessner ;\n    :hasMother data:LieselotteTrzoska .\n\ndata:ChristaVonArnim a :Woman ;\n    :hasBirthYear 1923 ;\n    :hasFather data:CurtDavidVonArnim ;\n    :hasMother data:StephanieVonStechow .\n\ndata:CurtDavidVonArnim a :Man .\n\ndata:DuchessMarieOfMecklenburgStrelitz a :Woman .\n\ndata:G%C3%BCntherMessner a :Man .\n\ndata:LeopoldIV a :Man .\n\ndata:LieselotteTrzoska a :Woman .\n\ndata:PrinceArmin a :Man ;\n    :hasDeathYear 2015 ;\n    :hasFather data:LeopoldIV .\n\ndata:PrinceErnstAugustOfLippe a :Man ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:PrinceJuliusErnstOfLippe ;\n    :hasMother data:DuchessMarieOfMecklenburgStrelitz .\n\ndata:PrinceJuliusErnstOfLippe a :Man .\n\ndata:StephanieVonStechow a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichWilhelmOfLippe a :Man ;\n    :hasBirthYear 1947 ;\n    :hasFather data:PrinceErnstAugustOfLippe ;\n    :hasMarriageYear 1991 ;\n    :hasMother data:ChristaVonArnim ;\n    :hasRelation data:AndreaMessner .\n\ndata:HereditaryPrinceErnst a :Man .\n\ndata:PrinceLeopold a :Man .\n\ndata:PrinceSimonCasimir a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1980 .\n\ndata:StephanPrinceOfLippe a :Man ;\n    :hasFather data:PrinceArmin .\n\ndata:AndreaMessner a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:G%C3%BCntherMessner ;\n    :hasMother data:LieselotteTrzoska .\n\ndata:ChristaVonArnim a :Woman ;\n    :hasBirthYear 1923 ;\n    :hasFather data:CurtDavidVonArnim ;\n    :hasMother data:StephanieVonStechow .\n\ndata:CurtDavidVonArnim a :Man .\n\ndata:DuchessMarieOfMecklenburgStrelitz a :Woman .\n\ndata:G%C3%BCntherMessner a :Man .\n\ndata:LeopoldIV a :Man .\n\ndata:LieselotteTrzoska a :Woman .\n\ndata:PrinceArmin a :Man ;\n    :hasDeathYear 2015 ;\n    :hasFather data:LeopoldIV .\n\ndata:PrinceErnstAugustOfLippe a :Man ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:PrinceJuliusErnstOfLippe ;\n    :hasMother data:DuchessMarieOfMecklenburgStrelitz .\n\ndata:PrinceJuliusErnstOfLippe a :Man .\n\ndata:StephanieVonStechow a :Woman .\n\n"
+    }
+]

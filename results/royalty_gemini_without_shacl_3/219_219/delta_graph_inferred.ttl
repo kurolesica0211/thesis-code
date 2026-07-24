@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sex_Female a :Female .
+
+data:Isabelle_d%27Orl%C3%A9ans a :Ancestor ;
+    :hasRelation data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre,
+        data:Isabelle_d%27Orl%C3%A9ans ;
+    :isAncestorOf data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre ;
+    :isBloodrelationOf data:Isabelle_d%27Orl%C3%A9ans ;
+    :isSiblingOf data:Isabelle_d%27Orl%C3%A9ans .
+
+data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+        :Woman ;
+    :hasAncestor data:Isabelle_d%27Orl%C3%A9ans ;
+    :hasBirthYear 1976 ;
+    :hasRelation data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre,
+        data:Isabelle_d%27Orl%C3%A9ans ;
+    :hasSex data:Sex_Female ;
+    :hasSister data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre ;
+    :isBloodrelationOf data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre ;
+    :isSiblingOf data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre ;
+    :isSisterOf data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre .
+

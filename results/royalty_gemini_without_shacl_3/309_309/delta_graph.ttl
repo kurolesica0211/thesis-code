@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Carlo_Duke_of_Castro a :Man ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasMother data:Chantal_de_Chevron-Villette ;
+    :isBrotherOf data:Princess_B%C3%A9atrice_Marie_Caroline_Louise_Fran%C3%A7oise_of_Bourbon-Two_Sicilies .
+
+data:Alix_de_Foresta a :Woman .
+
+data:Charles_Napol%C3%A9on_Bonaparte a :Man ;
+    :hasFather data:Louis_Prince_Napol%C3%A9on ;
+    :hasMother data:Alix_de_Foresta .
+
+data:Louis_Prince_Napol%C3%A9on a :Man .
+
+data:Princess_B%C3%A9atrice_Marie_Caroline_Louise_Fran%C3%A7oise_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Chantal_de_Chevron-Villette ;
+    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .
+
+data:Chantal_de_Chevron-Villette a :Woman .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Man .
+

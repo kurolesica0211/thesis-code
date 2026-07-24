@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Wilhelmina a :Woman .\n\ndata:Willem-Alexander a :Man ;\n    :hasBirthYear 1967 ;\n    :hasBrother data:Constantijn,\n        data:Friso ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:William_III a :Man .\n\ndata:Bernhard a :Man .\n\ndata:Constantijn a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Friso a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Juliana a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Ariane a :Woman .\n\ndata:Catharina-Amalia a :Woman .\n\ndata:Beatrix a :Woman ;\n    :hasFather data:Bernhard ;\n    :hasMother data:Juliana .\n\ndata:Claus a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Wilhelmina a :Woman .\n\ndata:Willem-Alexander a :Man ;\n    :hasBirthYear 1967 ;\n    :hasBrother data:Constantijn,\n        data:Friso ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:William_III a :Man .\n\ndata:Bernhard a :Man .\n\ndata:Constantijn a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Friso a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Juliana a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Ariane a :Woman .\n\ndata:Catharina-Amalia a :Woman .\n\ndata:Beatrix a :Woman ;\n    :hasFather data:Bernhard ;\n    :hasMother data:Juliana .\n\ndata:Claus a :Man .\n\n"
+    }
+]

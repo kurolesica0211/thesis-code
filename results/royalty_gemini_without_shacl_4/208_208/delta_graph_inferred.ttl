@@ -1,0 +1,258 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Lucien_Murat a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Lucien_Murat ;
+    :hasChild data:Prince_Pierre_Murat ;
+    :hasRelation data:Prince_Lucien_Murat,
+        data:Prince_Pierre_Murat ;
+    :hasSon data:Prince_Pierre_Murat ;
+    :isAncestorOf data:Prince_Pierre_Murat ;
+    :isBloodrelationOf data:Prince_Lucien_Murat ;
+    :isBrotherOf data:Prince_Lucien_Murat ;
+    :isFatherOf data:Prince_Pierre_Murat ;
+    :isParentOf data:Prince_Pierre_Murat ;
+    :isSiblingOf data:Prince_Lucien_Murat ;
+    :isUncleOf data:Prince_Pierre_Murat .
+
+data:Armande_de_Pierre_de_Bernis a :Ancestor,
+        :Woman ;
+    :hasChild data:Count_Bruno_dHarcourt ;
+    :hasRelation data:Armande_de_Pierre_de_Bernis,
+        data:Count_Bruno_dHarcourt,
+        data:Count_Eugene_dHarcourt ;
+    :hasSister data:Armande_de_Pierre_de_Bernis ;
+    :hasSon data:Count_Bruno_dHarcourt ;
+    :isAncestorOf data:Count_Bruno_dHarcourt ;
+    :isAuntOf data:Count_Bruno_dHarcourt ;
+    :isBloodrelationOf data:Armande_de_Pierre_de_Bernis ;
+    :isMotherOf data:Count_Bruno_dHarcourt ;
+    :isParentOf data:Count_Bruno_dHarcourt ;
+    :isSiblingOf data:Armande_de_Pierre_de_Bernis ;
+    :isSisterOf data:Armande_de_Pierre_de_Bernis .
+
+data:Count_Eugene_dHarcourt a :Ancestor,
+        :Man ;
+    :hasBrother data:Count_Eugene_dHarcourt ;
+    :hasChild data:Count_Bruno_dHarcourt ;
+    :hasRelation data:Armande_de_Pierre_de_Bernis,
+        data:Count_Bruno_dHarcourt,
+        data:Count_Eugene_dHarcourt ;
+    :hasSon data:Count_Bruno_dHarcourt ;
+    :isAncestorOf data:Count_Bruno_dHarcourt ;
+    :isBloodrelationOf data:Count_Eugene_dHarcourt ;
+    :isBrotherOf data:Count_Eugene_dHarcourt ;
+    :isFatherOf data:Count_Bruno_dHarcourt ;
+    :isParentOf data:Count_Bruno_dHarcourt ;
+    :isSiblingOf data:Count_Eugene_dHarcourt ;
+    :isUncleOf data:Count_Bruno_dHarcourt .
+
+data:Prince_Pierre_Murat a :Man ;
+    :hasAncestor data:Prince_Lucien_Murat ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Pierre_Murat ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Prince_Lucien_Murat ;
+    :hasParent data:Prince_Lucien_Murat ;
+    :hasRelation data:Prince_Lucien_Murat,
+        data:Prince_Pierre_Murat ;
+    :isBloodrelationOf data:Prince_Pierre_Murat ;
+    :isBrotherOf data:Prince_Pierre_Murat ;
+    :isChildOf data:Prince_Lucien_Murat ;
+    :isSiblingOf data:Prince_Pierre_Murat ;
+    :isSonOf data:Prince_Lucien_Murat .
+
+data:Prince_Christopher_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Christopher_of_Greece ;
+    :hasChild data:Princess_Francoise_of_Greece ;
+    :hasDaughter data:Princess_Francoise_of_Greece ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :isAncestorOf data:Princess_Francoise_of_Greece ;
+    :isBloodrelationOf data:Prince_Christopher_of_Greece ;
+    :isBrotherOf data:Prince_Christopher_of_Greece ;
+    :isFatherOf data:Princess_Francoise_of_Greece ;
+    :isParentOf data:Princess_Francoise_of_Greece ;
+    :isSiblingOf data:Prince_Christopher_of_Greece ;
+    :isUncleOf data:Princess_Francoise_of_Greece .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man ;
+    :hasBirthYear 1874 ;
+    :hasBrother data:Prince_Jean_Duke_of_Guise ;
+    :hasChild data:Princess_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Isabelle_dOrleans ;
+    :hasDeathYear 1940 ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :isAncestorOf data:Princess_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Prince_Jean_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isFatherOf data:Princess_Isabelle_dOrleans ;
+    :isParentOf data:Princess_Isabelle_dOrleans ;
+    :isSiblingOf data:Prince_Jean_Duke_of_Guise ;
+    :isUncleOf data:Princess_Isabelle_dOrleans .
+
+data:Princess_Isabelle_of_Orleans_Mother a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Isabelle_dOrleans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasSister data:Princess_Isabelle_of_Orleans_Mother ;
+    :isAncestorOf data:Princess_Isabelle_dOrleans ;
+    :isAuntOf data:Princess_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orleans_Mother ;
+    :isMotherOf data:Princess_Isabelle_dOrleans ;
+    :isParentOf data:Princess_Isabelle_dOrleans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orleans_Mother ;
+    :isSisterOf data:Princess_Isabelle_of_Orleans_Mother .
+
+data:Count_Bruno_dHarcourt a :Man ;
+    :hasAncestor data:Armande_de_Pierre_de_Bernis,
+        data:Count_Eugene_dHarcourt ;
+    :hasBirthYear 1899 ;
+    :hasBrother data:Count_Bruno_dHarcourt ;
+    :hasDeathYear 1930 ;
+    :hasFather data:Count_Eugene_dHarcourt ;
+    :hasMother data:Armande_de_Pierre_de_Bernis ;
+    :hasParent data:Armande_de_Pierre_de_Bernis,
+        data:Count_Eugene_dHarcourt ;
+    :hasRelation data:Armande_de_Pierre_de_Bernis,
+        data:Count_Bruno_dHarcourt,
+        data:Count_Eugene_dHarcourt ;
+    :isBloodrelationOf data:Count_Bruno_dHarcourt ;
+    :isBrotherOf data:Count_Bruno_dHarcourt ;
+    :isChildOf data:Armande_de_Pierre_de_Bernis,
+        data:Count_Eugene_dHarcourt ;
+    :isSiblingOf data:Count_Bruno_dHarcourt ;
+    :isSonOf data:Armande_de_Pierre_de_Bernis,
+        data:Count_Eugene_dHarcourt .
+
+data:Prince_Michel_dOrleans a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris ;
+    :hasBrother data:Prince_Michel_dOrleans ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasParent data:Henri_Count_of_Paris ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :isBloodrelationOf data:Prince_Michel_dOrleans ;
+    :isBrotherOf data:Prince_Michel_dOrleans ;
+    :isChildOf data:Henri_Count_of_Paris ;
+    :isSiblingOf data:Prince_Michel_dOrleans ;
+    :isSonOf data:Henri_Count_of_Paris .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Prince_Michel_dOrleans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasSister data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSon data:Prince_Michel_dOrleans ;
+    :isAncestorOf data:Prince_Michel_dOrleans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isBrotherOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isFatherOf data:Prince_Michel_dOrleans ;
+    :isParentOf data:Prince_Michel_dOrleans ;
+    :isSiblingOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isUncleOf data:Prince_Michel_dOrleans .
+
+data:Princess_Francoise_of_Greece a :Woman ;
+    :hasAncestor data:Prince_Christopher_of_Greece ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasFather data:Prince_Christopher_of_Greece ;
+    :hasParent data:Prince_Christopher_of_Greece ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasSister data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isAuntOf data:Prince_Michel_dOrleans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isChildOf data:Prince_Christopher_of_Greece ;
+    :isDaughterOf data:Prince_Christopher_of_Greece ;
+    :isSiblingOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isSisterOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans .
+
+data:Princess_Isabelle_dOrleans a :Woman ;
+    :hasAncestor data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasParent data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Prince_Christopher_of_Greece,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :hasSister data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isAuntOf data:Prince_Michel_dOrleans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isChildOf data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :isDaughterOf data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans_Mother ;
+    :isSiblingOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans ;
+    :isSisterOf data:Henri_Count_of_Paris,
+        data:Princess_Francoise_of_Greece,
+        data:Princess_Isabelle_dOrleans .
+

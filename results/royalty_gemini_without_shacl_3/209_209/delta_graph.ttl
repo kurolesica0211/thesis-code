@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maurice a :Man,
+        :Person ;
+    :hasBirthYear 1843 ;
+    :hasDeathYear 1850 ;
+    :hasFather data:William_III ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Alexander,
+        data:William_brother .
+
+data:William_brother a :Man,
+        :Person ;
+    :isChildOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III ;
+    :isSiblingOf data:Alexander .
+
+data:Alexander a :Man,
+        :Person ;
+    :isChildOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III .
+
+data:Sophie_of_W%C3%BCrttemberg a :Person,
+        :Woman .
+
+data:William_III a :Man,
+        :Person .
+

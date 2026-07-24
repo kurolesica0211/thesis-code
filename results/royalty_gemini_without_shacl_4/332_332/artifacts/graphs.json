@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lennart_Bernadotte a :Man,\n        :Person ;\n    :hasBirthYear \"1909\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2004\"^^xsd:positiveInteger ;\n    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;\n    :hasMarriageYear \"1932\"^^xsd:positiveInteger,\n        \"1972\"^^xsd:positiveInteger ;\n    :hasMother data:Maria_Pavlovna_of_Russia ;\n    :hasRelation data:Karin_Emma_Louise_Nissvandt,\n        data:Sonja_Anita_Maria_Haunz .\n\ndata:Karin_Emma_Louise_Nissvandt a :Person,\n        :Woman .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman .\n\ndata:Sonja_Anita_Maria_Haunz a :Person,\n        :Woman .\n\ndata:Wilhelm_Duke_of_S%C3%B6dermanland a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lennart_Bernadotte a :Man,\n        :Person ;\n    :hasBirthYear \"1909\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2004\"^^xsd:positiveInteger ;\n    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;\n    :hasMarriageYear \"1932\"^^xsd:positiveInteger,\n        \"1972\"^^xsd:positiveInteger ;\n    :hasMother data:Maria_Pavlovna_of_Russia ;\n    :hasRelation data:Karin_Emma_Louise_Nissvandt,\n        data:Sonja_Anita_Maria_Haunz .\n\ndata:Karin_Emma_Louise_Nissvandt a :Person,\n        :Woman .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman .\n\ndata:Sonja_Anita_Maria_Haunz a :Person,\n        :Woman .\n\ndata:Wilhelm_Duke_of_S%C3%B6dermanland a :Man,\n        :Person .\n\n"
+    }
+]

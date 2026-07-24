@@ -1,0 +1,229 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/329_329",
+  "text_file": "Q54386.txt",
+  "text_key": "Q54386",
+  "article": "https://en.wikipedia.org/wiki/Infanta_Elena,_Duchess_of_Lugo",
+  "article_key": "Infanta Elena, Duchess of Lugo",
+  "main_entity": {
+    "uri": "http://example.com/data#Infanta_Elena-_Duchess_of_Lugo",
+    "qid": "Q54386",
+    "label": "Infanta Elena, Duchess of Lugo"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Infanta_Elena-_Duchess_of_Lugo",
+      "qid": "Q54386",
+      "label": "Infanta Elena, Duchess of Lugo",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Felipe_de_Marichalar_y_Borbón",
+      "qid": "Q3239518",
+      "label": "Felipe de Marichalar y Borbón",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "qid": "Q19943",
+      "label": "Juan Carlos I of Spain",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Sofía_of_Spain",
+      "qid": "Q156548",
+      "label": "Queen Sofía of Spain",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria_de_Marichalar_y_Borbón",
+      "qid": "Q3232562",
+      "label": "Victoria de Marichalar y Borbón",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "qid": "Q191045",
+      "label": "Felipe VI of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Cristina_of_Spain",
+      "qid": "Q230580",
+      "label": "Infanta Cristina of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Jaime_de_Marichalar",
+      "qid": "Q726890",
+      "label": "Jaime de Marichalar",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Leonor-_Princess_of_Asturias",
+      "qid": "Q214369",
+      "label": "Leonor, Princess of Asturias",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Felipe_VI",
+      "extracted_local_name": "Felipe_VI",
+      "embedding_text": "Felipe VI",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "ground_truth_qid": "Q191045",
+      "ground_truth_label": "Felipe VI of Spain",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Felipe VI",
+      "best_candidate_label": "Felipe VI of Spain",
+      "best_candidate_qid": "Q191045",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jaime_de_Marichalar",
+      "extracted_local_name": "Jaime_de_Marichalar",
+      "embedding_text": "Jaime de Marichalar",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Jaime_de_Marichalar",
+      "ground_truth_qid": "Q726890",
+      "ground_truth_label": "Jaime de Marichalar",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Jaime de Marichalar",
+      "best_candidate_label": "Jaime de Marichalar",
+      "best_candidate_qid": "Q726890",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
+      "extracted_local_name": "Juan_Carlos_I",
+      "embedding_text": "Juan Carlos I",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "ground_truth_qid": "Q19943",
+      "ground_truth_label": "Juan Carlos I of Spain",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elena_de_Borbon",
+      "extracted_local_name": "Elena_de_Borbon",
+      "embedding_text": "Elena de Borbon",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9166666666666667,
+      "ground_truth_uri": "http://example.com/data#Infanta_Elena-_Duchess_of_Lugo",
+      "ground_truth_qid": "Q54386",
+      "ground_truth_label": "Infanta Elena, Duchess of Lugo",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elena de Borbón",
+      "best_candidate_label": "Infanta Elena, Duchess of Lugo",
+      "best_candidate_qid": "Q54386",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9166666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/Felipe_de_Marichalar",
+      "extracted_local_name": "Felipe_de_Marichalar",
+      "embedding_text": "Felipe de Marichalar",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8448275862068966,
+      "ground_truth_uri": "http://example.com/data#Felipe_de_Marichalar_y_Borbón",
+      "ground_truth_qid": "Q3239518",
+      "ground_truth_label": "Felipe de Marichalar y Borbón",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Felipe de Marichalar y Borbón",
+      "best_candidate_label": "Felipe de Marichalar y Borbón",
+      "best_candidate_qid": "Q3239518",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8448275862068966
+    },
+    {
+      "extracted_uri": "http://example.org/data/Victoria_de_Marichalar",
+      "extracted_local_name": "Victoria_de_Marichalar",
+      "embedding_text": "Victoria de Marichalar",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8448275862068966,
+      "ground_truth_uri": "http://example.com/data#Victoria_de_Marichalar_y_Borbón",
+      "ground_truth_qid": "Q3232562",
+      "ground_truth_label": "Victoria de Marichalar y Borbón",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria de Marichalar y Borbón",
+      "best_candidate_label": "Victoria de Marichalar y Borbón",
+      "best_candidate_qid": "Q3232562",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8448275862068966
+    },
+    {
+      "extracted_uri": "http://example.org/data/Cristina_de_Borbon",
+      "extracted_local_name": "Cristina_de_Borbon",
+      "embedding_text": "Cristina de Borbon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infanta Cristina of Spain",
+      "best_candidate_label": "Infanta Cristina of Spain",
+      "best_candidate_qid": "Q230580",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5116279069767442
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sofia",
+      "extracted_local_name": "Sofia",
+      "embedding_text": "Sofia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Sofía",
+      "best_candidate_label": "Queen Sofía of Spain",
+      "best_candidate_qid": "Q156548",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5
+    }
+  ],
+  "summary": {
+    "entities_total": 8,
+    "entities_matched": 6,
+    "entities_unmatched": 2
+  }
+}

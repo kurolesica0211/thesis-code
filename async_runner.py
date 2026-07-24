@@ -14,6 +14,7 @@ from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
 from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
 from loaders.bernhard_loader import get_loader as bernhard_loader
+from loaders.shacl_repair_loader import get_loader as shacl_repair_get_loader
 from orchestration.tools import ToolClass
 from orchestration.tracing import (
     append_trace,
@@ -36,6 +37,8 @@ def _build_loader(config: RunConfig):
         loader = look_up_family_get_loader()
     elif config.dataset.source == "example_run":
         loader = bernhard_loader()
+    elif config.dataset.source == "shacl_repair":
+        loader = shacl_repair_get_loader()
     return loader
 
 

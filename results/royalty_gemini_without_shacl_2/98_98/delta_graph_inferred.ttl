@@ -1,0 +1,133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Johan_Friso a :Man ;
+    :hasBrother data:Johan_Friso ;
+    :hasRelation data:Johan_Friso ;
+    :isBloodrelationOf data:Johan_Friso ;
+    :isBrotherOf data:Johan_Friso ;
+    :isSiblingOf data:Johan_Friso .
+
+data:Margriet a :Woman ;
+    :hasRelation data:Margriet ;
+    :hasSister data:Margriet ;
+    :isBloodrelationOf data:Margriet ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:Pieter_van_Vollenhoven a :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Laurentien a :Ancestor,
+        :Woman ;
+    :hasChild data:Eloise_van_Oranje-Nassau ;
+    :hasDaughter data:Eloise_van_Oranje-Nassau ;
+    :hasRelation data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Eloise_van_Oranje-Nassau,
+        data:Laurentien ;
+    :hasSister data:Laurentien ;
+    :isAncestorOf data:Eloise_van_Oranje-Nassau ;
+    :isAuntOf data:Eloise_van_Oranje-Nassau ;
+    :isBloodrelationOf data:Laurentien ;
+    :isMotherOf data:Eloise_van_Oranje-Nassau ;
+    :isParentOf data:Eloise_van_Oranje-Nassau ;
+    :isSiblingOf data:Laurentien ;
+    :isSisterOf data:Laurentien .
+
+data:Beatrix a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantijn ;
+    :hasRelation data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Eloise_van_Oranje-Nassau,
+        data:Laurentien ;
+    :hasSister data:Beatrix ;
+    :hasSon data:Constantijn ;
+    :isAncestorOf data:Constantijn,
+        data:Eloise_van_Oranje-Nassau ;
+    :isAuntOf data:Constantijn ;
+    :isBloodrelationOf data:Beatrix ;
+    :isMotherOf data:Constantijn ;
+    :isParentOf data:Constantijn ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Claus a :Ancestor,
+        :Man ;
+    :hasBrother data:Claus ;
+    :hasChild data:Constantijn ;
+    :hasRelation data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Eloise_van_Oranje-Nassau,
+        data:Laurentien ;
+    :hasSon data:Constantijn ;
+    :isAncestorOf data:Constantijn,
+        data:Eloise_van_Oranje-Nassau ;
+    :isBloodrelationOf data:Claus ;
+    :isBrotherOf data:Claus ;
+    :isFatherOf data:Constantijn ;
+    :isParentOf data:Constantijn ;
+    :isSiblingOf data:Claus ;
+    :isUncleOf data:Constantijn .
+
+data:Eloise_van_Oranje-Nassau a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Laurentien ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien ;
+    :hasParent data:Constantijn,
+        data:Laurentien ;
+    :hasRelation data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Eloise_van_Oranje-Nassau,
+        data:Laurentien ;
+    :hasSister data:Eloise_van_Oranje-Nassau ;
+    :isBloodrelationOf data:Eloise_van_Oranje-Nassau ;
+    :isChildOf data:Constantijn,
+        data:Laurentien ;
+    :isDaughterOf data:Constantijn,
+        data:Laurentien ;
+    :isSiblingOf data:Eloise_van_Oranje-Nassau ;
+    :isSisterOf data:Eloise_van_Oranje-Nassau .
+
+data:Constantijn a :Ancestor,
+        :Man ;
+    :hasAncestor data:Beatrix,
+        data:Claus ;
+    :hasBrother data:Constantijn ;
+    :hasChild data:Eloise_van_Oranje-Nassau ;
+    :hasDaughter data:Eloise_van_Oranje-Nassau ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix ;
+    :hasParent data:Beatrix,
+        data:Claus ;
+    :hasRelation data:Beatrix,
+        data:Claus,
+        data:Constantijn,
+        data:Eloise_van_Oranje-Nassau,
+        data:Laurentien ;
+    :isAncestorOf data:Eloise_van_Oranje-Nassau ;
+    :isBloodrelationOf data:Constantijn ;
+    :isBrotherOf data:Constantijn ;
+    :isChildOf data:Beatrix,
+        data:Claus ;
+    :isFatherOf data:Eloise_van_Oranje-Nassau ;
+    :isParentOf data:Eloise_van_Oranje-Nassau ;
+    :isSiblingOf data:Constantijn ;
+    :isSonOf data:Beatrix,
+        data:Claus ;
+    :isUncleOf data:Eloise_van_Oranje-Nassau .
+

@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amelie_Queen_of_Portugal a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Helene_of_Orleans .
+
+data:Isabelle_Duchess_of_Guise a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Helene_of_Orleans .
+
+data:Philippe_Duke_of_Orleans a :Man,
+        :Person ;
+    :isBrotherOf data:Princess_Helene_of_Orleans .
+
+data:Colonel_Otto_Campini a :Man,
+        :Person .
+
+data:Infanta_Maria_Isabel_of_Spain a :Person,
+        :Woman .
+
+data:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Prince_Philippe_Count_of_Paris a :Man,
+        :Person .
+
+data:Princess_Helene_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1871 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1895,
+        1936 ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasRelation data:Colonel_Otto_Campini,
+        data:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta .
+

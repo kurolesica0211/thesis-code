@@ -1,0 +1,456 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Woman ;
+    :hasChild data:Alice_of_Battenberg ;
+    :hasDaughter data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Alice_of_Battenberg ;
+    :isParentOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Alice_of_Battenberg ;
+    :hasDaughter data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Alice_of_Battenberg ;
+    :isParentOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Alice_of_Battenberg .
+
+data:George_Mountbatten_2nd_Marquess_of_Milford_Haven a :Man ;
+    :hasBrother data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isBrotherOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isUncleOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man ;
+    :hasBrother data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isBrotherOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isUncleOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Louise_Mountbatten a :Woman ;
+    :hasBrother data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :isAuntOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:Cecilie_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isDaughterOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Margarita_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isDaughterOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSonOf data:Alice_of_Battenberg .
+
+data:Sophie_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isDaughterOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Theodora_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isDaughterOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Alice_of_Battenberg,
+        data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+

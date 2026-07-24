@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederikX a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Joachim ;
+    :hasFather data:Henrik ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:MargretheII .
+
+data:MaryDonaldson a :Person,
+        :Woman .
+
+data:FrederikIX a :Man,
+        :Person .
+
+data:Joachim a :Man,
+        :Person ;
+    :hasFather data:Henrik ;
+    :hasMother data:MargretheII .
+
+data:Henrik a :Man,
+        :Person .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasMother data:FrederikIX .
+

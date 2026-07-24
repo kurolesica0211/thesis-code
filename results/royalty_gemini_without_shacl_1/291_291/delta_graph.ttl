@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duke_Nicholas_Mikhailovich a :Man,
+        :Person ;
+    :isBrotherOf data:Grand_Duke_George_Mihailovich_of_Russia .
+
+data:Nancy_Helen_Marie_Leeds a :Person,
+        :Woman ;
+    :isDaughterOf data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr .
+
+data:Princess_Nina_Georgievna a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_George_Mihailovich_of_Russia ;
+    :hasMother data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Herman_Jud a :Man,
+        :Person ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1987 .
+
+data:Princess_Maria_Georgievna_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Grand_Duke_George_Mihailovich_of_Russia a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:William_Bateman_Leeds_Jr a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1971 .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1965 ;
+    :hasRelation data:Herman_Jud,
+        data:William_Bateman_Leeds_Jr .
+

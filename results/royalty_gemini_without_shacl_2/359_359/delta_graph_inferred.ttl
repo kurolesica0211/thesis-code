@@ -1,0 +1,304 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Do%C3%B1a_Carmen_Franco_y_Polo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :hasDaughter data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSister data:Do%C3%B1a_Carmen_Franco_y_Polo ;
+    :isAncestorOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isAuntOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isBloodrelationOf data:Do%C3%B1a_Carmen_Franco_y_Polo ;
+    :isMotherOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isParentOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isSiblingOf data:Do%C3%B1a_Carmen_Franco_y_Polo ;
+    :isSisterOf data:Do%C3%B1a_Carmen_Franco_y_Polo .
+
+data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :hasChild data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :hasDaughter data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isAncestorOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isBloodrelationOf data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :isBrotherOf data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :isFatherOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isParentOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isSiblingOf data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :isUncleOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .
+
+data:Donna_Vittoria_Ruspoli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Donna_Emanuela_de_Dampierre ;
+    :hasDaughter data:Donna_Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSister data:Donna_Vittoria_Ruspoli ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Gonzalo ;
+    :isAuntOf data:Donna_Emanuela_de_Dampierre ;
+    :isBloodrelationOf data:Donna_Vittoria_Ruspoli ;
+    :isMotherOf data:Donna_Emanuela_de_Dampierre ;
+    :isParentOf data:Donna_Emanuela_de_Dampierre ;
+    :isSiblingOf data:Donna_Vittoria_Ruspoli ;
+    :isSisterOf data:Donna_Vittoria_Ruspoli .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Infante_Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSon data:Infante_Jaime_Duke_of_Segovia ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :isBloodrelationOf data:King_Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infante_Jaime_Duke_of_Segovia ;
+    :isParentOf data:Infante_Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infante_Jaime_Duke_of_Segovia .
+
+data:Roger_Duke_of_San_Lorenzo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Roger_Duke_of_San_Lorenzo ;
+    :hasChild data:Donna_Emanuela_de_Dampierre ;
+    :hasDaughter data:Donna_Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Roger_Duke_of_San_Lorenzo ;
+    :isBrotherOf data:Roger_Duke_of_San_Lorenzo ;
+    :isFatherOf data:Donna_Emanuela_de_Dampierre ;
+    :isParentOf data:Donna_Emanuela_de_Dampierre ;
+    :isSiblingOf data:Roger_Duke_of_San_Lorenzo ;
+    :isUncleOf data:Donna_Emanuela_de_Dampierre .
+
+data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco a :Person,
+        :Woman ;
+    :hasAncestor data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :hasFather data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :hasMother data:Do%C3%B1a_Carmen_Franco_y_Polo ;
+    :hasParent data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSister data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isBloodrelationOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isChildOf data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :isDaughterOf data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA ;
+    :isSiblingOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco ;
+    :isSisterOf data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .
+
+data:Infante_Jaime_Duke_of_Segovia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Alfonso_XIII_of_Spain ;
+    :hasBrother data:Infante_Jaime_Duke_of_Segovia ;
+    :hasChild data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasParent data:King_Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSon data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Infante_Jaime_Duke_of_Segovia ;
+    :isBrotherOf data:Infante_Jaime_Duke_of_Segovia ;
+    :isChildOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isParentOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isSiblingOf data:Infante_Jaime_Duke_of_Segovia ;
+    :isSonOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo .
+
+data:Alfonso_Duke_of_Anjou a :Man,
+        :Person ;
+    :hasAncestor data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Infante_Jaime_Duke_of_Segovia ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Donna_Emanuela_de_Dampierre ;
+    :hasParent data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isBloodrelationOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isChildOf data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isSonOf data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :knownAs "Alfonso, Duke of Anjou, Duke of Cádiz, Grandee of Spain"^^xsd:string .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasAncestor data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasBrother data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :hasFather data:Infante_Jaime_Duke_of_Segovia ;
+    :hasMother data:Donna_Emanuela_de_Dampierre ;
+    :hasParent data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isBloodrelationOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isChildOf data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isSonOf data:Donna_Emanuela_de_Dampierre,
+        data:Infante_Jaime_Duke_of_Segovia .
+
+data:Donna_Emanuela_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Donna_Vittoria_Ruspoli,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasChild data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :hasFather data:Roger_Duke_of_San_Lorenzo ;
+    :hasMother data:Donna_Vittoria_Ruspoli ;
+    :hasParent data:Donna_Vittoria_Ruspoli,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Do%C3%B1a_Carmen_Franco_y_Polo,
+        data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco,
+        data:Don_Crist%C3%B3bal_Mart%C3%ADnez-Bordi%C3%BA,
+        data:Donna_Emanuela_de_Dampierre,
+        data:Donna_Vittoria_Ruspoli,
+        data:Gonzalo,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :hasSister data:Donna_Emanuela_de_Dampierre ;
+    :hasSon data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isAuntOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Donna_Emanuela_de_Dampierre ;
+    :isChildOf data:Donna_Vittoria_Ruspoli,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isDaughterOf data:Donna_Vittoria_Ruspoli,
+        data:Roger_Duke_of_San_Lorenzo ;
+    :isMotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isParentOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo ;
+    :isSiblingOf data:Donna_Emanuela_de_Dampierre ;
+    :isSisterOf data:Donna_Emanuela_de_Dampierre .
+

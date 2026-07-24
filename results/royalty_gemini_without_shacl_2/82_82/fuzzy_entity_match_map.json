@@ -1,0 +1,225 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/82_82",
+  "text_file": "Q165657.txt",
+  "text_key": "Q165657",
+  "article": "https://en.wikipedia.org/wiki/Princess_Beatrice",
+  "article_key": "Princess Beatrice",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Beatrice_of_York",
+    "qid": "Q165657",
+    "label": "Princess Beatrice of York"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Beatrice_of_York",
+      "qid": "Q165657",
+      "label": "Princess Beatrice of York",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sarah_Ferguson",
+      "qid": "Q55720",
+      "label": "Sarah Ferguson",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sienna_Mapelli_Mozzi",
+      "qid": "Q108703114",
+      "label": "Sienna Mapelli Mozzi",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Edoardo_Mapelli_Mozzi",
+      "qid": "Q68688016",
+      "label": "Edoardo Mapelli Mozzi",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Eugenie_of_York",
+      "qid": "Q165709",
+      "label": "Princess Eugenie of York",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/EdoardoMapelliMozzi",
+      "extracted_local_name": "EdoardoMapelliMozzi",
+      "embedding_text": "Edoardo Mapelli Mozzi",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Edoardo_Mapelli_Mozzi",
+      "ground_truth_qid": "Q68688016",
+      "ground_truth_label": "Edoardo Mapelli Mozzi",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Edoardo Mapelli Mozzi",
+      "best_candidate_label": "Edoardo Mapelli Mozzi",
+      "best_candidate_qid": "Q68688016",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/SarahFerguson",
+      "extracted_local_name": "SarahFerguson",
+      "embedding_text": "Sarah Ferguson",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Sarah_Ferguson",
+      "ground_truth_qid": "Q55720",
+      "ground_truth_label": "Sarah Ferguson",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sarah Ferguson",
+      "best_candidate_label": "Sarah Ferguson",
+      "best_candidate_qid": "Q55720",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/SiennaElizabethMapelliMozzi",
+      "extracted_local_name": "SiennaElizabethMapelliMozzi",
+      "embedding_text": "Sienna Elizabeth Mapelli Mozzi",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Sienna_Mapelli_Mozzi",
+      "ground_truth_qid": "Q108703114",
+      "ground_truth_label": "Sienna Mapelli Mozzi",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sienna Elizabeth Mapelli Mozzi",
+      "best_candidate_label": "Sienna Mapelli Mozzi",
+      "best_candidate_qid": "Q108703114",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/AndrewMountbattenWindsor",
+      "extracted_local_name": "AndrewMountbattenWindsor",
+      "embedding_text": "Andrew Mountbatten Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9615384615384616,
+      "ground_truth_uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "ground_truth_qid": "Q153330",
+      "ground_truth_label": "Andrew Mountbatten-Windsor",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Andrew Mountbatten-Windsor",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9615384615384616
+    },
+    {
+      "extracted_uri": "http://example.org/data/Beatrice",
+      "extracted_local_name": "Beatrice",
+      "embedding_text": "Beatrice",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7619047619047619,
+      "ground_truth_uri": "http://example.com/data#Princess_Beatrice_of_York",
+      "ground_truth_qid": "Q165657",
+      "ground_truth_label": "Princess Beatrice of York",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Beatrice York",
+      "best_candidate_label": "Princess Beatrice of York",
+      "best_candidate_qid": "Q165657",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7619047619047619
+    },
+    {
+      "extracted_uri": "http://example.org/data/AthenaElizabethRose",
+      "extracted_local_name": "AthenaElizabethRose",
+      "embedding_text": "Athena Elizabeth Rose",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6666666666666666
+    },
+    {
+      "extracted_uri": "http://example.org/data/Eugenie",
+      "extracted_local_name": "Eugenie",
+      "embedding_text": "Eugenie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fergie",
+      "best_candidate_label": "Sarah Ferguson",
+      "best_candidate_qid": "Q55720",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6153846153846154
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 5,
+    "entities_unmatched": 2
+  }
+}

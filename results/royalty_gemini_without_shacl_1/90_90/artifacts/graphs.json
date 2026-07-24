@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman ;\n    :hasBirthYear 1906 ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasDeathYear 1968 ;\n    :hasFather data:Prince_Nicholas ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna ;\n    :hasRelation data:Prince_George_Duke_of_Kent ;\n    :hasSister data:Princess_Elizabeth,\n        data:Princess_Olga .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Grand_Duchess_Elena_Vladimirovna a :Woman .\n\ndata:King_George_V a :Man .\n\ndata:Prince_George_Duke_of_Kent a :Man ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Nicholas a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Queen_Olga .\n\ndata:Princess_Elizabeth a :Woman .\n\ndata:Princess_Olga a :Woman .\n\ndata:Queen_Mary a :Woman .\n\ndata:Queen_Olga a :Woman .\n\ndata:Alexandra a :Woman .\n\ndata:Edward a :Man .\n\ndata:Michael a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman ;\n    :hasBirthYear 1906 ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasDeathYear 1968 ;\n    :hasFather data:Prince_Nicholas ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna ;\n    :hasRelation data:Prince_George_Duke_of_Kent ;\n    :hasSister data:Princess_Elizabeth,\n        data:Princess_Olga .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Grand_Duchess_Elena_Vladimirovna a :Woman .\n\ndata:King_George_V a :Man .\n\ndata:Prince_George_Duke_of_Kent a :Man ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Nicholas a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Queen_Olga .\n\ndata:Princess_Elizabeth a :Woman .\n\ndata:Princess_Olga a :Woman .\n\ndata:Queen_Mary a :Woman .\n\ndata:Queen_Olga a :Woman .\n\ndata:Alexandra a :Woman .\n\ndata:Edward a :Man .\n\ndata:Michael a :Man .\n\n"
+    }
+]

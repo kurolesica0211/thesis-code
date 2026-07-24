@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Oliver_Worsley a :Man,
+        :Person ;
+    :hasBrother data:Oliver_Worsley ;
+    :hasRelation data:Oliver_Worsley ;
+    :isBloodrelationOf data:Oliver_Worsley ;
+    :isBrotherOf data:Oliver_Worsley ;
+    :isSiblingOf data:Oliver_Worsley .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Alexandra_of_Kent ;
+    :hasSister data:Princess_Alexandra_of_Kent ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Kent ;
+    :isSiblingOf data:Princess_Alexandra_of_Kent ;
+    :isSisterOf data:Princess_Alexandra_of_Kent .
+
+data:Sylvana_Tomaselli a :Person,
+        :Woman ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Sylvana_Tomaselli ;
+    :isBloodrelationOf data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Sylvana_Tomaselli ;
+    :isSisterOf data:Sylvana_Tomaselli .
+
+data:Earl_of_Scarbrough a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Earl_of_Scarbrough ;
+    :hasChild data:Lady_Lily_Serena_Lumley ;
+    :hasDaughter data:Lady_Lily_Serena_Lumley ;
+    :hasRelation data:Earl_of_Scarbrough,
+        data:Lady_Lily_Serena_Lumley ;
+    :isAncestorOf data:Lady_Lily_Serena_Lumley ;
+    :isBloodrelationOf data:Earl_of_Scarbrough ;
+    :isBrotherOf data:Earl_of_Scarbrough ;
+    :isFatherOf data:Lady_Lily_Serena_Lumley ;
+    :isParentOf data:Lady_Lily_Serena_Lumley ;
+    :isSiblingOf data:Earl_of_Scarbrough ;
+    :isUncleOf data:Lady_Lily_Serena_Lumley .
+
+data:Lady_Lily_Serena_Lumley a :Person,
+        :Woman ;
+    :hasAncestor data:Earl_of_Scarbrough ;
+    :hasFather data:Earl_of_Scarbrough ;
+    :hasParent data:Earl_of_Scarbrough ;
+    :hasRelation data:Earl_of_Scarbrough,
+        data:Lady_Lily_Serena_Lumley ;
+    :hasSister data:Lady_Lily_Serena_Lumley ;
+    :isBloodrelationOf data:Lady_Lily_Serena_Lumley ;
+    :isChildOf data:Earl_of_Scarbrough ;
+    :isDaughterOf data:Earl_of_Scarbrough ;
+    :isSiblingOf data:Lady_Lily_Serena_Lumley ;
+    :isSisterOf data:Lady_Lily_Serena_Lumley .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:George_Philip_Nicholas_Windsor ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley,
+        data:Sylvana_Tomaselli ;
+    :hasSon data:George_Philip_Nicholas_Windsor ;
+    :isAncestorOf data:George_Philip_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:George_Philip_Nicholas_Windsor ;
+    :isParentOf data:George_Philip_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:George_Philip_Nicholas_Windsor .
+
+data:Sir_William_Worsley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_William_Worsley ;
+    :hasChild data:Katharine_Duchess_of_Kent ;
+    :hasDaughter data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley,
+        data:Sylvana_Tomaselli ;
+    :isAncestorOf data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent ;
+    :isBloodrelationOf data:Sir_William_Worsley ;
+    :isBrotherOf data:Sir_William_Worsley ;
+    :isFatherOf data:Katharine_Duchess_of_Kent ;
+    :isParentOf data:Katharine_Duchess_of_Kent ;
+    :isSiblingOf data:Sir_William_Worsley ;
+    :isUncleOf data:Katharine_Duchess_of_Kent .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Sir_William_Worsley ;
+    :hasChild data:George_Philip_Nicholas_Windsor ;
+    :hasFather data:Sir_William_Worsley ;
+    :hasParent data:Sir_William_Worsley ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :hasSon data:George_Philip_Nicholas_Windsor ;
+    :isAncestorOf data:George_Philip_Nicholas_Windsor ;
+    :isAuntOf data:George_Philip_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isChildOf data:Sir_William_Worsley ;
+    :isDaughterOf data:Sir_William_Worsley ;
+    :isMotherOf data:George_Philip_Nicholas_Windsor ;
+    :isParentOf data:George_Philip_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:George_Philip_Nicholas_Windsor a :Man,
+        :Person ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:George_Philip_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley,
+        data:Sylvana_Tomaselli ;
+    :isBloodrelationOf data:George_Philip_Nicholas_Windsor ;
+    :isBrotherOf data:George_Philip_Nicholas_Windsor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:George_Philip_Nicholas_Windsor ;
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent .
+

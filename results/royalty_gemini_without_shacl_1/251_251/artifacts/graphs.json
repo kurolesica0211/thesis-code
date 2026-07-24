@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:Louis_Mountbatten_1st_Marquess ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Nadejda_Mikhailovna_de_Torby ;\n    :isSiblingOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,\n        data:Princess_Alice,\n        data:Queen_Louise_of_Sweden .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Louis_Mountbatten_1st_Marquess a :Man,\n        :Person .\n\ndata:Michael_Mikhailovich_Romanov a :Man,\n        :Person .\n\ndata:Nadejda_Mikhailovna_de_Torby a :Person,\n        :Woman ;\n    :hasFather data:Michael_Mikhailovich_Romanov ;\n    :hasMother data:Sophie_von_Merenberg .\n\ndata:Princess_Alice a :Person,\n        :Woman .\n\ndata:Queen_Louise_of_Sweden a :Person,\n        :Woman .\n\ndata:Sophie_von_Merenberg a :Person,\n        :Woman .\n\ndata:Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:Louis_Mountbatten_1st_Marquess ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Nadejda_Mikhailovna_de_Torby ;\n    :isSiblingOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,\n        data:Princess_Alice,\n        data:Queen_Louise_of_Sweden .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Louis_Mountbatten_1st_Marquess a :Man,\n        :Person .\n\ndata:Michael_Mikhailovich_Romanov a :Man,\n        :Person .\n\ndata:Nadejda_Mikhailovna_de_Torby a :Person,\n        :Woman ;\n    :hasFather data:Michael_Mikhailovich_Romanov ;\n    :hasMother data:Sophie_von_Merenberg .\n\ndata:Princess_Alice a :Person,\n        :Woman .\n\ndata:Queen_Louise_of_Sweden a :Person,\n        :Woman .\n\ndata:Sophie_von_Merenberg a :Person,\n        :Woman .\n\ndata:Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Flint_Wood a :Man .\n\ndata:India_Hicks a :Woman ;\n    :hasBirthYear 1967 ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMother data:Lady_Pamela_Hicks ;\n    :hasParent data:David_Nightingale_Hicks,\n        data:Lady_Pamela_Hicks .\n\ndata:David_Nightingale_Hicks a :Man .\n\ndata:Lady_Pamela_Hicks a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Flint_Wood a :Man .\n\ndata:India_Hicks a :Woman ;\n    :hasBirthYear 1967 ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMother data:Lady_Pamela_Hicks ;\n    :hasParent data:David_Nightingale_Hicks,\n        data:Lady_Pamela_Hicks .\n\ndata:David_Nightingale_Hicks a :Man .\n\ndata:Lady_Pamela_Hicks a :Woman .\n\n"
+    }
+]

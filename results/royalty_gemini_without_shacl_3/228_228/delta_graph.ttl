@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alice_Grand_Duchess_of_Hesse a :Person,
+        :Woman .
+
+data:Marie_cousin a :Person,
+        :Woman .
+
+data:Prince_Waldemar_of_Prussia a :Man,
+        :Person ;
+    :alsoKnownAs data:Joachim_Friedrich_Ernst_Waldemar ;
+    :hasAncestor data:Queen_Victoria_UK,
+        data:William_I_German_Emperor ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1879 ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_German_Empress ;
+    :isSiblingOf data:Heinrich_Prince_of_Prussia,
+        data:Prince_Sigismund_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia .
+
+data:Frederick_III a :Man,
+        :Person .
+
+data:Heinrich_Prince_of_Prussia a :Man,
+        :Person .
+
+data:Joachim_Friedrich_Ernst_Waldemar a :Person .
+
+data:Prince_Sigismund_of_Prussia a :Man,
+        :Person .
+
+data:Queen_Victoria_UK a :Person,
+        :Woman .
+
+data:Victoria_German_Empress a :Person,
+        :Woman .
+
+data:Wilhelm_Prince_of_Prussia a :Man,
+        :Person .
+
+data:William_I_German_Emperor a :Man,
+        :Person .
+

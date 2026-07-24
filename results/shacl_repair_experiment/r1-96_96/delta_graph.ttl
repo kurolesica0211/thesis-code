@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor .
+
+data:Claude_Lord_Glamis a :Ancestor .
+
+data:George_10th_Duke_of_Leeds a :Ancestor .
+
+data:Lady_Dorothy_Beatrix_Godolphin_Osborne :hasBirthYear "1888"^^xsd:long ;
+    :hasDeathYear "1946"^^xsd:long .
+
+data:Patrick_Bowes-Lyon :isUncleOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+

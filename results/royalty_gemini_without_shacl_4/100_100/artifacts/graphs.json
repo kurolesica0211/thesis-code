@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Dimitri_of_Yugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Dimitri Karageorgevich\"^^xsd:string,\n        \"Dimitrije Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1958 ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Prince_Dushan_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Barbara_of_Liechtenstein .\n\ndata:Prince_Michael_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Prince_Serge_of_Yugoslavia a :Man,\n        :Person ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Princess_Helene_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Princess_Barbara_of_Liechtenstein a :Person,\n        :Woman .\n\ndata:Umberto_II_of_Italy a :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Maria_Pia_of_Savoy a :Person,\n        :Woman ;\n    :hasFather data:Umberto_II_of_Italy .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Dimitri_of_Yugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Dimitri Karageorgevich\"^^xsd:string,\n        \"Dimitrije Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1958 ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Prince_Dushan_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Barbara_of_Liechtenstein .\n\ndata:Prince_Michael_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Prince_Serge_of_Yugoslavia a :Man,\n        :Person ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Princess_Helene_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_Pia_of_Savoy .\n\ndata:Princess_Barbara_of_Liechtenstein a :Person,\n        :Woman .\n\ndata:Umberto_II_of_Italy a :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Maria_Pia_of_Savoy a :Person,\n        :Woman ;\n    :hasFather data:Umberto_II_of_Italy .\n\n"
+    }
+]

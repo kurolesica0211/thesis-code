@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Queen_Victoria ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Mafalda_of_Savoy ;
+    :hasSon data:Moritz_of_Hesse .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
+
+data:Mafalda_of_Savoy a :Person,
+        :Woman .
+
+data:Moritz_of_Hesse a :Man,
+        :Person .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman .
+
+data:Sophie_of_Prussia a :Person,
+        :Woman ;
+    :hasRelation data:Constantine_I_of_Greece ;
+    :hasSister data:Margaret_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person ;
+    :hasSister data:Margaret_of_Prussia .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Woman ;
+    :isSisterOf data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor .
+

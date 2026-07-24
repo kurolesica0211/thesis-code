@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man ;
+    :isBrotherOf data:Mary_Princess_Royal .
+
+data:George_VI a :Man ;
+    :isBrotherOf data:Mary_Princess_Royal .
+
+data:King_George_V a :Man ;
+    :isFatherOf data:Mary_Princess_Royal .
+
+data:Queen_Mary a :Woman ;
+    :isMotherOf data:Mary_Princess_Royal .
+
+data:Henry_Lascelles_6th_Earl_of_Harewood a :Man ;
+    :isFatherOf data:George_Lascelles_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:George_Lascelles_7th_Earl_of_Harewood a :Man .
+
+data:Gerald_David_Lascelles a :Man .
+
+data:Mary_Princess_Royal a :Woman ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1965 ;
+    :hasMarriageYear 1922 ;
+    :hasRelation data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isMotherOf data:George_Lascelles_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles .
+

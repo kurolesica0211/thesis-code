@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Christina_daughter_of_Helena a :Person,\n        :Woman ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Helena_of_Austria .\n\ndata:Albrecht_of_Wurttemberg a :Man,\n        :Person .\n\ndata:Margarete_Sophie_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman ;\n    :isSisterOf data:Helena_of_Austria .\n\ndata:Helena_of_Austria a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1924 ;\n    :hasFather data:Peter_Ferdinand ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Maria_Cristina_of_Bourbon_Two_Sicilies ;\n    :hasRelation data:Philipp_Albrecht .\n\ndata:Philipp_Albrecht a :Man,\n        :Person ;\n    :hasFather data:Albrecht_of_Wurttemberg ;\n    :hasMarriageYear 1928 ;\n    :hasMother data:Margarete_Sophie_of_Austria ;\n    :hasRelation data:Rosa_of_Austria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Christina_daughter_of_Helena a :Person,\n        :Woman ;\n    :hasFather data:Philipp_Albrecht ;\n    :hasMother data:Helena_of_Austria .\n\ndata:Albrecht_of_Wurttemberg a :Man,\n        :Person .\n\ndata:Margarete_Sophie_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman ;\n    :isSisterOf data:Helena_of_Austria .\n\ndata:Helena_of_Austria a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1924 ;\n    :hasFather data:Peter_Ferdinand ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Maria_Cristina_of_Bourbon_Two_Sicilies ;\n    :hasRelation data:Philipp_Albrecht .\n\ndata:Philipp_Albrecht a :Man,\n        :Person ;\n    :hasFather data:Albrecht_of_Wurttemberg ;\n    :hasMarriageYear 1928 ;\n    :hasMother data:Margarete_Sophie_of_Austria ;\n    :hasRelation data:Rosa_of_Austria .\n\n"
+    }
+]

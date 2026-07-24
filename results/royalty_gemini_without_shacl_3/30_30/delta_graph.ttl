@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_II_of_Monaco a :Man,
+        :Person ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Queen_Victoria,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Ernst_August_Hereditary_Prince,
+        data:Prince_Christian_of_Hanover ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Princess_Caroline_of_Monaco .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ernst_August_Hereditary_Prince a :Man,
+        :Person .
+
+data:Ernst_August_Prince_of_Hanover a :Man,
+        :Person .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person .
+
+data:Princess_Caroline_of_Monaco a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+

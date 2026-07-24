@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :hasMother data:Princess_Anita .
+
+data:Jonkvrouw_Anouk_van_Door a :Woman .
+
+data:Prince_Maurits a :Man .
+
+data:Princess_Beatrix a :Woman .
+
+data:Sandra_Chollet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven a :Man ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+
+data:Princess_Anita a :Woman .
+
+data:Princess_Margriet a :Woman .
+

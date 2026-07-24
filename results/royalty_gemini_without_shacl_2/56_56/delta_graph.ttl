@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Prince_Philip ;
+    :hasMarriageYear 1986 ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasRelation data:Sarah_Ferguson ;
+    :isBrotherOf data:King_Charles_III ;
+    :isFatherOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Sarah_Ferguson a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Beatrice,
+        data:Princess_Eugenie .
+
+data:Princess_Beatrice a :Person,
+        :Woman .
+
+data:Princess_Eugenie a :Person,
+        :Woman .
+

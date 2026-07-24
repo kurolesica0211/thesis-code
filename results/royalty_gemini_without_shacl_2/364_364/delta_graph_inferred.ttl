@@ -1,0 +1,381 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasRelation data:Constantine_I ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isSiblingOf data:Constantine_I .
+
+data:Frederick_III a :Man,
+        :Person ;
+    :hasBrother data:Frederick_III ;
+    :hasRelation data:Frederick_III ;
+    :isBloodrelationOf data:Frederick_III ;
+    :isBrotherOf data:Frederick_III ;
+    :isSiblingOf data:Frederick_III .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_Prince_of_Hesse_and_by_Rhine .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Sophie_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :isAuntOf data:Philipp ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isUncleOf data:Philipp .
+
+data:Friedrich_Wilhelm a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Wilhelm,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSiblingOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isUncleOf data:Moritz .
+
+data:Wolfgang a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Wilhelm,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSiblingOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isUncleOf data:Moritz .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Philipp ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :hasSon data:Philipp ;
+    :isAncestorOf data:Moritz,
+        data:Philipp ;
+    :isAuntOf data:Philipp ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isMotherOf data:Philipp ;
+    :isParentOf data:Philipp ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasChild data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :hasDaughter data:Mafalda_of_Savoy ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSon data:Philipp ;
+    :isAncestorOf data:Mafalda_of_Savoy,
+        data:Moritz,
+        data:Philipp ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isFatherOf data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :isParentOf data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isUncleOf data:Mafalda_of_Savoy,
+        data:Philipp .
+
+data:Victor_Emmanuel_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasChild data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :hasDaughter data:Mafalda_of_Savoy ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSon data:Philipp ;
+    :isAncestorOf data:Mafalda_of_Savoy,
+        data:Moritz,
+        data:Philipp ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isFatherOf data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :isParentOf data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isUncleOf data:Mafalda_of_Savoy,
+        data:Philipp .
+
+data:Moritz a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Philipp,
+        data:Victor_Emmanuel_III ;
+    :hasBrother data:Moritz ;
+    :hasFather data:Philipp ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :hasParent data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Moritz ;
+    :isBrotherOf data:Moritz ;
+    :isChildOf data:Mafalda_of_Savoy,
+        data:Philipp ;
+    :isSiblingOf data:Moritz ;
+    :isSonOf data:Mafalda_of_Savoy,
+        data:Philipp .
+
+data:Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasBrother data:Friedrich_Wilhelm,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasChild data:Moritz ;
+    :hasFather data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Moritz ;
+    :isAuntOf data:Moritz ;
+    :isBloodrelationOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isDaughterOf data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :isMotherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSisterOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang .
+
+data:Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Victor_Emmanuel_III ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Friedrich_Wilhelm,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasChild data:Moritz ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Victor_Emmanuel_III ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz,
+        data:Philipp,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III,
+        data:Wilhelm_II,
+        data:Wolfgang ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Moritz ;
+    :isBloodrelationOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Victor_Emmanuel_III ;
+    :isFatherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:Friedrich_Wilhelm,
+        data:Mafalda_of_Savoy,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Victor_Emmanuel_III ;
+    :isUncleOf data:Moritz .
+

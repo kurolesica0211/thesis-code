@@ -1,0 +1,279 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasBrother data:Frederik_X ;
+    :hasRelation data:Frederik_X ;
+    :isBloodrelationOf data:Frederik_X ;
+    :isBrotherOf data:Frederik_X ;
+    :isSiblingOf data:Frederik_X .
+
+data:Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Athena_of_Monpezat ;
+    :hasDaughter data:Athena_of_Monpezat ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Marie_of_Denmark ;
+    :isAncestorOf data:Athena_of_Monpezat ;
+    :isAuntOf data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Marie_of_Denmark ;
+    :isMotherOf data:Athena_of_Monpezat ;
+    :isParentOf data:Athena_of_Monpezat ;
+    :isSiblingOf data:Marie_of_Denmark ;
+    :isSisterOf data:Marie_of_Denmark .
+
+data:Henrik_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henrik_of_Denmark ;
+    :hasChild data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSon data:Joachim_of_Denmark ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :isBloodrelationOf data:Henrik_of_Denmark ;
+    :isBrotherOf data:Henrik_of_Denmark ;
+    :isFatherOf data:Joachim_of_Denmark ;
+    :isParentOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Henrik_of_Denmark ;
+    :isUncleOf data:Joachim_of_Denmark .
+
+data:Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Margrethe_II ;
+    :hasSon data:Joachim_of_Denmark ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :isAuntOf data:Joachim_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isMotherOf data:Joachim_of_Denmark ;
+    :isParentOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Felix_of_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II ;
+    :hasBrother data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasParent data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isBrotherOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isChildOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isSonOf data:Joachim_of_Denmark .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II ;
+    :hasBrother data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasParent data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isBrotherOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isChildOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isSonOf data:Joachim_of_Denmark .
+
+data:Nikolai_of_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II ;
+    :hasBrother data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasParent data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isBrotherOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isChildOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isSonOf data:Joachim_of_Denmark .
+
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark ;
+    :hasBirthYear 2012 ;
+    :hasBrother data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :hasParent data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :isDaughterOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isSisterOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :knownAs "Athena Marguerite Françoise Marie"^^xsd:string .
+
+data:Joachim_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasBrother data:Joachim_of_Denmark ;
+    :hasChild data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :hasDaughter data:Athena_of_Monpezat ;
+    :hasFather data:Henrik_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_of_Denmark,
+        data:Nikolai_of_Denmark ;
+    :hasSon data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isBloodrelationOf data:Joachim_of_Denmark ;
+    :isBrotherOf data:Joachim_of_Denmark ;
+    :isChildOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isFatherOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isParentOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark ;
+    :isSiblingOf data:Joachim_of_Denmark ;
+    :isSonOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isUncleOf data:Athena_of_Monpezat,
+        data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark .
+

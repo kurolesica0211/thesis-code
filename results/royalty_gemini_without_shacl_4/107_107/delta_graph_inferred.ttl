@@ -1,0 +1,346 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Beatrix ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Margriet a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:BernhardVanVollenhoven ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:IsabellaLilyJuliana,
+        data:Margriet,
+        data:SamuelBernhardLouis ;
+    :hasSister data:Margriet ;
+    :hasSon data:BernhardVanVollenhoven ;
+    :isAncestorOf data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isAuntOf data:BernhardVanVollenhoven ;
+    :isBloodrelationOf data:Margriet ;
+    :isMotherOf data:BernhardVanVollenhoven ;
+    :isParentOf data:BernhardVanVollenhoven ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:PieterVanVollenhoven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PieterVanVollenhoven ;
+    :hasChild data:BernhardVanVollenhoven ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:IsabellaLilyJuliana,
+        data:PieterVanVollenhoven,
+        data:SamuelBernhardLouis ;
+    :hasSon data:BernhardVanVollenhoven ;
+    :isAncestorOf data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:PieterVanVollenhoven ;
+    :isBrotherOf data:PieterVanVollenhoven ;
+    :isFatherOf data:BernhardVanVollenhoven ;
+    :isParentOf data:BernhardVanVollenhoven ;
+    :isSiblingOf data:PieterVanVollenhoven ;
+    :isUncleOf data:BernhardVanVollenhoven .
+
+data:AnnetteSekreve a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasChild data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :hasDaughter data:IsabellaLilyJuliana ;
+    :hasRelation data:AnnetteSekreve,
+        data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :hasSister data:AnnetteSekreve ;
+    :hasSon data:BenjaminPieterFloris,
+        data:SamuelBernhardLouis ;
+    :isAncestorOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isAuntOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:AnnetteSekreve ;
+    :isMotherOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isParentOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isSiblingOf data:AnnetteSekreve ;
+    :isSisterOf data:AnnetteSekreve .
+
+data:Floris a :Man,
+        :Person ;
+    :hasBrother data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isBrotherOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isSiblingOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isUncleOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis .
+
+data:Maurits a :Man,
+        :Person ;
+    :hasBrother data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isBrotherOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isSiblingOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isUncleOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis .
+
+data:PieterChristiaan a :Man,
+        :Person ;
+    :hasBrother data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isBrotherOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isSiblingOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isUncleOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis .
+
+data:BenjaminPieterFloris a :Man,
+        :Person ;
+    :hasAncestor data:AnnetteSekreve,
+        data:BernhardVanVollenhoven,
+        data:Margriet,
+        data:PieterVanVollenhoven ;
+    :hasBirthYear 2008 ;
+    :hasBrother data:BenjaminPieterFloris,
+        data:SamuelBernhardLouis ;
+    :hasFather data:BernhardVanVollenhoven ;
+    :hasMother data:AnnetteSekreve ;
+    :hasParent data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :hasRelation data:AnnetteSekreve,
+        data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Margriet,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:PieterVanVollenhoven,
+        data:SamuelBernhardLouis ;
+    :hasSister data:IsabellaLilyJuliana ;
+    :isBloodrelationOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isBrotherOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :isSiblingOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isSonOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven .
+
+data:IsabellaLilyJuliana a :Person,
+        :Woman ;
+    :hasAncestor data:AnnetteSekreve,
+        data:BernhardVanVollenhoven,
+        data:Margriet,
+        data:PieterVanVollenhoven ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:BenjaminPieterFloris,
+        data:SamuelBernhardLouis ;
+    :hasFather data:BernhardVanVollenhoven ;
+    :hasMother data:AnnetteSekreve ;
+    :hasParent data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :hasRelation data:AnnetteSekreve,
+        data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Margriet,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:PieterVanVollenhoven,
+        data:SamuelBernhardLouis ;
+    :hasSister data:IsabellaLilyJuliana ;
+    :isBloodrelationOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :isDaughterOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :isSiblingOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isSisterOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis .
+
+data:SamuelBernhardLouis a :Man,
+        :Person ;
+    :hasAncestor data:AnnetteSekreve,
+        data:BernhardVanVollenhoven,
+        data:Margriet,
+        data:PieterVanVollenhoven ;
+    :hasBirthYear 2004 ;
+    :hasBrother data:BenjaminPieterFloris,
+        data:SamuelBernhardLouis ;
+    :hasFather data:BernhardVanVollenhoven ;
+    :hasMother data:AnnetteSekreve ;
+    :hasParent data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :hasRelation data:AnnetteSekreve,
+        data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Margriet,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:PieterVanVollenhoven,
+        data:SamuelBernhardLouis ;
+    :hasSister data:IsabellaLilyJuliana ;
+    :isBloodrelationOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isBrotherOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven ;
+    :isSiblingOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isSonOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven .
+
+data:BernhardVanVollenhoven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Margriet,
+        data:PieterVanVollenhoven ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :hasChild data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :hasDaughter data:IsabellaLilyJuliana ;
+    :hasFather data:PieterVanVollenhoven ;
+    :hasMother data:Margriet ;
+    :hasParent data:Margriet,
+        data:PieterVanVollenhoven ;
+    :hasRelation data:BenjaminPieterFloris,
+        data:BernhardVanVollenhoven,
+        data:Floris,
+        data:IsabellaLilyJuliana,
+        data:Margriet,
+        data:Maurits,
+        data:PieterChristiaan,
+        data:PieterVanVollenhoven,
+        data:SamuelBernhardLouis ;
+    :hasSon data:BenjaminPieterFloris,
+        data:SamuelBernhardLouis ;
+    :isAncestorOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isBloodrelationOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isBrotherOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isChildOf data:Margriet,
+        data:PieterVanVollenhoven ;
+    :isFatherOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isParentOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis ;
+    :isSiblingOf data:BernhardVanVollenhoven,
+        data:Floris,
+        data:Maurits,
+        data:PieterChristiaan ;
+    :isSonOf data:Margriet,
+        data:PieterVanVollenhoven ;
+    :isUncleOf data:BenjaminPieterFloris,
+        data:IsabellaLilyJuliana,
+        data:SamuelBernhardLouis .
+

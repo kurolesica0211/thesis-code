@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountessInaMarieVonBassewitz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasSister data:CountessInaMarieVonBassewitz ;
+    :hasSon data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isAncestorOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isAuntOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isBloodrelationOf data:CountessInaMarieVonBassewitz ;
+    :isMotherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isParentOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isSiblingOf data:CountessInaMarieVonBassewitz ;
+    :isSisterOf data:CountessInaMarieVonBassewitz .
+
+data:FriedrichVonVeltheim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1881 ;
+    :hasBrother data:FriedrichVonVeltheim ;
+    :hasChild data:ArmgardElseHeleneVonVeltheim ;
+    :hasDaughter data:ArmgardElseHeleneVonVeltheim ;
+    :hasDeathYear 1955 ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isAncestorOf data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:FriedrichVonVeltheim ;
+    :isBrotherOf data:FriedrichVonVeltheim ;
+    :isFatherOf data:ArmgardElseHeleneVonVeltheim ;
+    :isParentOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSiblingOf data:FriedrichVonVeltheim ;
+    :isUncleOf data:ArmgardElseHeleneVonVeltheim .
+
+data:OttonieVonAlvensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasChild data:ArmgardElseHeleneVonVeltheim ;
+    :hasDaughter data:ArmgardElseHeleneVonVeltheim ;
+    :hasDeathYear 1960 ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasSister data:OttonieVonAlvensleben ;
+    :isAncestorOf data:ArmgardElseHeleneVonVeltheim ;
+    :isAuntOf data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:OttonieVonAlvensleben ;
+    :isMotherOf data:ArmgardElseHeleneVonVeltheim ;
+    :isParentOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSiblingOf data:OttonieVonAlvensleben ;
+    :isSisterOf data:OttonieVonAlvensleben .
+
+data:PrinceOskarOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceOskarOfPrussia ;
+    :hasChild data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasSon data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isAncestorOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isBloodrelationOf data:PrinceOskarOfPrussia ;
+    :isBrotherOf data:PrinceOskarOfPrussia ;
+    :isFatherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isParentOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isSiblingOf data:PrinceOskarOfPrussia ;
+    :isUncleOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .
+
+data:ArmgardElseHeleneVonVeltheim a :Person,
+        :Woman ;
+    :hasAncestor data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:FriedrichVonVeltheim ;
+    :hasMother data:OttonieVonAlvensleben ;
+    :hasParent data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasSister data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:ArmgardElseHeleneVonVeltheim ;
+    :isChildOf data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :isDaughterOf data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :isSiblingOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSisterOf data:ArmgardElseHeleneVonVeltheim .
+
+data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen a :Man,
+        :Person ;
+    :hasAncestor data:CountessInaMarieVonBassewitz,
+        data:PrinceOskarOfPrussia ;
+    :hasBirthYear 1922 ;
+    :hasBrother data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :hasDeathYear 2007 ;
+    :hasFather data:PrinceOskarOfPrussia ;
+    :hasMarriageYear 1952 ;
+    :hasMother data:CountessInaMarieVonBassewitz ;
+    :hasParent data:CountessInaMarieVonBassewitz,
+        data:PrinceOskarOfPrussia ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:CountessInaMarieVonBassewitz,
+        data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben,
+        data:PrinceOskarOfPrussia,
+        data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isBloodrelationOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isBrotherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isChildOf data:CountessInaMarieVonBassewitz,
+        data:PrinceOskarOfPrussia ;
+    :isSiblingOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen ;
+    :isSonOf data:CountessInaMarieVonBassewitz,
+        data:PrinceOskarOfPrussia .
+

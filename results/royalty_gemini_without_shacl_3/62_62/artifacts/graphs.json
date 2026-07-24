@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene a :Woman .\n\ndata:Paul a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDaughter data:Irene_of_Greece,\n        data:Sofia_of_Spain ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Constantine_I ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Sophia_of_Prussia ;\n    :hasRelation data:Frederica_of_Hanover ;\n    :hasSon data:Constantine_II .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Irene_of_Greece a :Person ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene a :Woman .\n\ndata:Paul a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDaughter data:Irene_of_Greece,\n        data:Sofia_of_Spain ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Constantine_I ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Sophia_of_Prussia ;\n    :hasRelation data:Frederica_of_Hanover ;\n    :hasSon data:Constantine_II .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Irene_of_Greece a :Person ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,293 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Knud ;
+    :hasSister data:Alexandrine ;
+    :hasSon data:Knud ;
+    :isAncestorOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Knud ;
+    :isAuntOf data:Knud ;
+    :isBloodrelationOf data:Alexandrine ;
+    :isMotherOf data:Knud ;
+    :isParentOf data:Knud ;
+    :isSiblingOf data:Alexandrine ;
+    :isSisterOf data:Alexandrine .
+
+data:ChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianX ;
+    :hasChild data:Knud ;
+    :hasRelation data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Knud ;
+    :hasSon data:Knud ;
+    :isAncestorOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Knud ;
+    :isBloodrelationOf data:ChristianX ;
+    :isBrotherOf data:ChristianX ;
+    :isFatherOf data:Knud ;
+    :isParentOf data:Knud ;
+    :isSiblingOf data:ChristianX ;
+    :isUncleOf data:Knud .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasAncestor data:FrederikIX ;
+    :hasFather data:FrederikIX ;
+    :hasParent data:FrederikIX ;
+    :hasRelation data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSister data:MargretheII ;
+    :isBloodrelationOf data:MargretheII ;
+    :isChildOf data:FrederikIX ;
+    :isDaughterOf data:FrederikIX ;
+    :isSiblingOf data:MargretheII ;
+    :isSisterOf data:MargretheII .
+
+data:FrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederikIX,
+        data:Knud ;
+    :hasChild data:MargretheII ;
+    :hasDaughter data:MargretheII ;
+    :hasRelation data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :isAncestorOf data:MargretheII ;
+    :isBloodrelationOf data:FrederikIX,
+        data:Knud ;
+    :isBrotherOf data:FrederikIX,
+        data:Knud ;
+    :isFatherOf data:MargretheII ;
+    :isParentOf data:MargretheII ;
+    :isSiblingOf data:FrederikIX,
+        data:Knud ;
+    :isUncleOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:MargretheII .
+
+data:CarolineMathilde a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :hasDaughter data:Elisabeth ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSister data:CarolineMathilde ;
+    :hasSon data:ChristianSonOfKnud,
+        data:Ingolf ;
+    :isAncestorOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isAuntOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBloodrelationOf data:CarolineMathilde ;
+    :isMotherOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isParentOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSiblingOf data:CarolineMathilde ;
+    :isSisterOf data:CarolineMathilde .
+
+data:ChristianSonOfKnud a :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianX,
+        data:Knud ;
+    :hasBrother data:ChristianSonOfKnud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasMother data:CarolineMathilde ;
+    :hasParent data:CarolineMathilde,
+        data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBrotherOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:CarolineMathilde,
+        data:Knud ;
+    :isSiblingOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSonOf data:CarolineMathilde,
+        data:Knud .
+
+data:Elisabeth a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianX,
+        data:Knud ;
+    :hasBrother data:ChristianSonOfKnud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasMother data:CarolineMathilde ;
+    :hasParent data:CarolineMathilde,
+        data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:CarolineMathilde,
+        data:Knud ;
+    :isDaughterOf data:CarolineMathilde,
+        data:Knud ;
+    :isSiblingOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSisterOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf .
+
+data:Ingolf a :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianX,
+        data:Knud ;
+    :hasBrother data:ChristianSonOfKnud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasMother data:CarolineMathilde ;
+    :hasParent data:CarolineMathilde,
+        data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBrotherOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:CarolineMathilde,
+        data:Knud ;
+    :isSiblingOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSonOf data:CarolineMathilde,
+        data:Knud .
+
+data:Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:ChristianX ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:FrederikIX,
+        data:Knud ;
+    :hasChild data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :hasDaughter data:Elisabeth ;
+    :hasDeathYear 1976 ;
+    :hasFather data:ChristianX ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:Alexandrine ;
+    :hasParent data:Alexandrine,
+        data:ChristianX ;
+    :hasRelation data:Alexandrine,
+        data:CarolineMathilde,
+        data:ChristianSonOfKnud,
+        data:ChristianX,
+        data:Elisabeth,
+        data:FrederikIX,
+        data:Ingolf,
+        data:Knud,
+        data:MargretheII ;
+    :hasSon data:ChristianSonOfKnud,
+        data:Ingolf ;
+    :isAncestorOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBloodrelationOf data:FrederikIX,
+        data:Knud ;
+    :isBrotherOf data:FrederikIX,
+        data:Knud ;
+    :isChildOf data:Alexandrine,
+        data:ChristianX ;
+    :isFatherOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isParentOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSiblingOf data:FrederikIX,
+        data:Knud ;
+    :isSonOf data:Alexandrine,
+        data:ChristianX ;
+    :isUncleOf data:ChristianSonOfKnud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:MargretheII .
+

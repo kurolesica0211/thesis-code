@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Carlos a :Man ;
+    :isBrotherOf data:Princess_Margarita_of_Bourbon-Parma .
+
+data:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man .
+
+data:Princess_Carolina a :Woman ;
+    :isSisterOf data:Princess_Margarita_of_Bourbon-Parma .
+
+data:Queen_Beatrix a :Woman .
+
+data:Carlos_Hugo_Duke_of_Parma a :Man .
+
+data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man .
+
+data:Prince_Bernhard a :Man .
+
+data:Prince_Jaime a :Man .
+
+data:Princess_Irene_of_the_Netherlands a :Woman ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana .
+
+data:Queen_Juliana a :Woman .
+
+data:Princess_Margarita_of_Bourbon-Parma a :Woman ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn ;
+    :isSisterOf data:Prince_Jaime .
+

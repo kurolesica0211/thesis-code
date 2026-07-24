@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Wilhelmina a :Woman .
+
+data:Willem-Alexander a :Man ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Constantijn,
+        data:Friso ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:William_III a :Man .
+
+data:Bernhard a :Man .
+
+data:Constantijn a :Man ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Friso a :Man ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Juliana a :Woman .
+
+data:Alexia a :Woman .
+
+data:Ariane a :Woman .
+
+data:Catharina-Amalia a :Woman .
+
+data:Beatrix a :Woman ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Claus a :Man .
+

@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Wurttemberg a :Man ;
+    :isBrotherOf data:Marie_Therese_of_Wurttemberg .
+
+data:Chantal_of_Orleans a :Woman ;
+    :isSisterOf data:Henri_Count_of_Paris .
+
+data:Charles_X a :Man ;
+    :isBrotherOf data:Louis_XVI .
+
+data:Jean_d_Orleans a :Man ;
+    :hasBirthYear "1965"^^xsd:positiveInteger ;
+    :hasFather data:Henri_Count_of_Paris,
+        data:Henri_VI_Count_of_Paris ;
+    :hasMother data:Marie_Therese_of_Wurttemberg .
+
+data:Louis_Philippe_I a :Man .
+
+data:Philippe_I_Duke_of_Orleans a :Man ;
+    :isBrotherOf data:Louis_XIV .
+
+data:Philomena_de_Tornos_y_Steinhart a :Woman ;
+    :hasBirthYear "1977"^^xsd:positiveInteger .
+
+data:Louis_XIV a :Man .
+
+data:Louis_XVI a :Man .
+
+data:Henri_Count_of_Paris a :Man ;
+    :hasBirthYear "1933"^^xsd:positiveInteger ;
+    :hasDeathYear "2019"^^xsd:positiveInteger ;
+    :hasFather data:Henri_VI_Count_of_Paris .
+
+data:Henri_VI_Count_of_Paris a :Man .
+
+data:Marie_Therese_of_Wurttemberg a :Woman ;
+    :hasBirthYear "1934"^^xsd:positiveInteger .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasFather data:Peter_Karageorgevitch ;\n    :hasMother data:Lauren_Estelle_Jones .\n\ndata:Peter_II_Yugoslavia a :Man,\n        :Person ;\n    :isAncestorOf data:Peter_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_1982 a :Man,\n        :Person .\n\ndata:Alexander_Yugoslavia a :Man,\n        :Person .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Yugoslavia ;\n    :hasMother data:Maria_da_Gloria ;\n    :isSiblingOf data:Alexander_Karageorgevitch_1982,\n        data:Philip_Karageorgevitch ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasFather data:Peter_Karageorgevitch ;\n    :hasMother data:Lauren_Estelle_Jones .\n\ndata:Peter_II_Yugoslavia a :Man,\n        :Person ;\n    :isAncestorOf data:Peter_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_1982 a :Man,\n        :Person .\n\ndata:Alexander_Yugoslavia a :Man,\n        :Person .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person .\n\ndata:Prince_Peter_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Yugoslavia ;\n    :hasMother data:Maria_da_Gloria ;\n    :isSiblingOf data:Alexander_Karageorgevitch_1982,\n        data:Philip_Karageorgevitch ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasFather data:Peter_Karageorgevitch ;\n    :hasMother data:Lauren_Estelle_Jones .\n\ndata:Peter_II_Yugoslavia a :Man,\n        :Person ;\n    :isAncestorOf data:Peter_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_1982 a :Man,\n        :Person .\n\ndata:Alexander_Yugoslavia a :Man,\n        :Person .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person .\n\ndata:Prince_Peter_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Yugoslavia ;\n    :hasMother data:Maria_da_Gloria ;\n    :isSiblingOf data:Alexander_Karageorgevitch_1982,\n        data:Philip_Karageorgevitch ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    }
+]

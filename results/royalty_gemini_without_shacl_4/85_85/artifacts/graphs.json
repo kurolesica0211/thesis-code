@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Theodora_Margravine_of_Baden .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Victoria_Marie_Esme_Margarita a :Woman ;\n    :hasBirthYear \"1991-09-06\"^^xsd:date ;\n    :hasFather data:Sir_Desmond_de_Silva ;\n    :hasMother data:Princess_Katarina_of_Yugoslavia .\n\ndata:Alexander_Crown_Prince_of_Yugoslavia a :Man .\n\ndata:Prince_George a :Man .\n\ndata:Prince_Michael a :Man .\n\ndata:Prince_Nikola_of_Yugoslavia a :Man .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man .\n\ndata:Princess_Katarina_of_Yugoslavia a :Woman ;\n    :hasBirthYear \"1959-11-28\"^^xsd:date ;\n    :hasBrother data:Prince_George,\n        data:Prince_Michael,\n        data:Prince_Nikola_of_Yugoslavia ;\n    :hasFather data:Prince_Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Princess_Margarita_of_Baden ;\n    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia .\n\ndata:Princess_Margarita_of_Baden a :Woman .\n\ndata:Princess_Theodora_Margravine_of_Baden a :Woman .\n\ndata:Sir_Desmond_de_Silva a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Theodora_Margravine_of_Baden .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Victoria_Marie_Esme_Margarita a :Woman ;\n    :hasBirthYear \"1991-09-06\"^^xsd:date ;\n    :hasFather data:Sir_Desmond_de_Silva ;\n    :hasMother data:Princess_Katarina_of_Yugoslavia .\n\ndata:Alexander_Crown_Prince_of_Yugoslavia a :Man .\n\ndata:Prince_George a :Man .\n\ndata:Prince_Michael a :Man .\n\ndata:Prince_Nikola_of_Yugoslavia a :Man .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man .\n\ndata:Princess_Katarina_of_Yugoslavia a :Woman ;\n    :hasBirthYear \"1959-11-28\"^^xsd:date ;\n    :hasBrother data:Prince_George,\n        data:Prince_Michael,\n        data:Prince_Nikola_of_Yugoslavia ;\n    :hasFather data:Prince_Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Princess_Margarita_of_Baden ;\n    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia .\n\ndata:Princess_Margarita_of_Baden a :Woman .\n\ndata:Princess_Theodora_Margravine_of_Baden a :Woman .\n\ndata:Sir_Desmond_de_Silva a :Man .\n\n"
+    }
+]

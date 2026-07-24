@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:CountessJuliaHauke a :Person,
+        :Woman ;
+    :isMotherOf data:PrinceLouisOfBattenberg .
+
+data:GeorgeMarquessOfMilfordHaven a :Man ;
+    :isBrotherOf data:PrincessAliceOfBattenberg .
+
+data:KingGeorgeIOfGreece a :Man,
+        :Person ;
+    :isFatherOf data:PrinceAndrewOfGreeceAndDenmark .
+
+data:LouisEarlMountbattenOfBurma a :Man,
+        :Person ;
+    :isBrotherOf data:PrincessAliceOfBattenberg .
+
+data:LouisIVGrandDukeOfHesse a :Man,
+        :Person ;
+    :isFatherOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:LouiseQueenOfSweden a :Person,
+        :Woman ;
+    :isSisterOf data:PrincessAliceOfBattenberg .
+
+data:Margarita a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:OlgaConstantinovnaOfRussia a :Person,
+        :Woman ;
+    :isMotherOf data:PrinceAndrewOfGreeceAndDenmark .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Man,
+        :Person ;
+    :isFatherOf data:PrinceLouisOfBattenberg .
+
+data:PrincessAliceOfTheUnitedKingdom a :Person,
+        :Woman ;
+    :isMotherOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:Sophie a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:PrincePhilipDukeOfEdinburgh a :Man,
+        :Person ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSonOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:PrinceLouisOfBattenberg a :Man,
+        :Person ;
+    :isFatherOf data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Person,
+        :Woman ;
+    :isMotherOf data:PrincessAliceOfBattenberg .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincessAliceOfBattenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1885 ;
+    :hasDeathYear 1969 ;
+    :hasMarriageYear 1903 ;
+    :isMotherOf data:PrincePhilipDukeOfEdinburgh .
+

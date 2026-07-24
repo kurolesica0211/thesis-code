@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man ;\n    :hasFather data:August_Wilhelm_of_Prussia ;\n    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasParent data:Wilhelm_II ;\n    :hasRelation data:Margaret_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Margaret_of_Prussia a :Woman .\n\ndata:Wilhelm_II a :Man ;\n    :hasSister data:Margaret_of_Prussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Ferdinand_of_Prussia a :Man ;\n    :hasFather data:August_Wilhelm_of_Prussia ;\n    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\ndata:August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasParent data:Wilhelm_II ;\n    :hasRelation data:Margaret_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Margaret_of_Prussia a :Woman .\n\ndata:Wilhelm_II a :Man ;\n    :hasSister data:Margaret_of_Prussia .\n\n"
+    }
+]

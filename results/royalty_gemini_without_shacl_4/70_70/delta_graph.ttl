@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Queen_Beatrix .
+
+data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman .
+
+data:Claus_Felix_von_Amsberg a :Man,
+        :Person .
+
+data:Queen_Beatrix a :Person,
+        :Woman ;
+    :hasMother data:Queen_Juliana .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+

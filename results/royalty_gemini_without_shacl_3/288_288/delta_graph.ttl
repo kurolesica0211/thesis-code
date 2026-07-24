@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Gilman a :Man,
+        :Person ;
+    :hasChild data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Birgitte_Duchess_of_Gloucester a :Person,
+        :Woman ;
+    :hasChild data:Rose_Windsor ;
+    :isParentOf data:Rose_Windsor .
+
+data:Lyla_Gilman a :Person,
+        :Woman ;
+    :hasBirthYear 2010 .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person ;
+    :hasChild data:Rose_Windsor ;
+    :isParentOf data:Rose_Windsor .
+
+data:Rufus_Gilman a :Man,
+        :Person ;
+    :hasBirthYear 2012 .
+
+data:Rose_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear 1980 ;
+    :hasChild data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :isChildOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester .
+

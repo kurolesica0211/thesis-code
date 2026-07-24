@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man ;
+    :hasChild data:Felipe_VI .
+
+data:Letizia_Ortiz_Rocasolano a :Woman ;
+    :hasChild data:Infanta_Sof%C3%ADa,
+        data:Leonor .
+
+data:Sof%C3%ADa a :Woman ;
+    :hasChild data:Felipe_VI .
+
+data:Felipe_VI a :Man ;
+    :hasBirthYear 1968 ;
+    :hasChild data:Infanta_Sof%C3%ADa,
+        data:Leonor ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasRelation data:Letizia_Ortiz_Rocasolano .
+
+data:Infanta_Sof%C3%ADa a :Woman .
+
+data:Leonor a :Woman .
+

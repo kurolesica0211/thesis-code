@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Friedrich_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear \"1889\"^^xsd:string ;\n    :hasBrother data:Henry_of_Prussia ;\n    :hasDeathYear \"1945\"^^xsd:string ;\n    :hasFather data:Prince_Henry_of_Prussia ;\n    :hasMarriageYear \"1919\"^^xsd:string ;\n    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Princess_Calixta_of_Lippe .\n\ndata:Tsarevich_Alexei_Nikolaevich_of_Russia a :Man,\n        :Person .\n\ndata:Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Prince_Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Calixta_of_Lippe a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Friedrich_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear \"1889\"^^xsd:string ;\n    :hasBrother data:Henry_of_Prussia ;\n    :hasDeathYear \"1945\"^^xsd:string ;\n    :hasFather data:Prince_Henry_of_Prussia ;\n    :hasMarriageYear \"1919\"^^xsd:string ;\n    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Princess_Calixta_of_Lippe .\n\ndata:Tsarevich_Alexei_Nikolaevich_of_Russia a :Man,\n        :Person .\n\ndata:Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Prince_Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Calixta_of_Lippe a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    }
+]

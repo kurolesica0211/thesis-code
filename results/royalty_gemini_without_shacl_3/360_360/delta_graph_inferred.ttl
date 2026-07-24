@@ -1,0 +1,360 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MariaVladimirovnaOfRussia a :Person,
+        :Woman ;
+    :hasRelation data:MariaVladimirovnaOfRussia,
+        data:PrinceFranzWilhelm ;
+    :hasSister data:MariaVladimirovnaOfRussia ;
+    :isBloodrelationOf data:MariaVladimirovnaOfRussia ;
+    :isSiblingOf data:MariaVladimirovnaOfRussia ;
+    :isSisterOf data:MariaVladimirovnaOfRussia .
+
+data:PrinceFranzWilhelm a :Man,
+        :Person ;
+    :hasBrother data:PrinceFranzWilhelm ;
+    :hasRelation data:MariaVladimirovnaOfRussia,
+        data:PrinceFranzWilhelm ;
+    :isBloodrelationOf data:PrinceFranzWilhelm ;
+    :isBrotherOf data:PrinceFranzWilhelm ;
+    :isSiblingOf data:PrinceFranzWilhelm .
+
+data:EvaMariaHerreraYValdeavellano a :Person,
+        :Woman ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:EvaMariaHerreraYValdeavellano ;
+    :isBloodrelationOf data:EvaMariaHerreraYValdeavellano ;
+    :isSiblingOf data:EvaMariaHerreraYValdeavellano ;
+    :isSisterOf data:EvaMariaHerreraYValdeavellano .
+
+data:LuiseDoraHartmann a :Person,
+        :Woman ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:LuiseDoraHartmann ;
+    :isBloodrelationOf data:LuiseDoraHartmann ;
+    :isSiblingOf data:LuiseDoraHartmann ;
+    :isSisterOf data:LuiseDoraHartmann .
+
+data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath a :Person,
+        :Woman ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath ;
+    :isBloodrelationOf data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath ;
+    :isSiblingOf data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath ;
+    :isSisterOf data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath .
+
+data:PrinceEitelFriedrichOfPrussia a :Man,
+        :Person ;
+    :hasBrother data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :isBloodrelationOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isBrotherOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isSiblingOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isUncleOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceJoachimOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasSon data:PrinceJoachimOfPrussia ;
+    :isAncestorOf data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isAuntOf data:PrinceJoachimOfPrussia ;
+    :isBloodrelationOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isMotherOf data:PrinceJoachimOfPrussia ;
+    :isParentOf data:PrinceJoachimOfPrussia ;
+    :isSiblingOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isSisterOf data:AugustaVictoriaOfSchleswigHolstein .
+
+data:EduardDukeOfAnhalt a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:EduardDukeOfAnhalt ;
+    :hasChild data:PrincessMarieAugusteOfAnhalt ;
+    :hasDaughter data:PrincessMarieAugusteOfAnhalt ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :isAncestorOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrincessMarieAugusteOfAnhalt ;
+    :isBloodrelationOf data:EduardDukeOfAnhalt ;
+    :isBrotherOf data:EduardDukeOfAnhalt ;
+    :isFatherOf data:PrincessMarieAugusteOfAnhalt ;
+    :isParentOf data:PrincessMarieAugusteOfAnhalt ;
+    :isSiblingOf data:EduardDukeOfAnhalt ;
+    :isUncleOf data:PrincessMarieAugusteOfAnhalt .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:PrinceJoachimOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSon data:PrinceJoachimOfPrussia ;
+    :isAncestorOf data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:PrinceJoachimOfPrussia ;
+    :isParentOf data:PrinceJoachimOfPrussia ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:PrinceJoachimOfPrussia .
+
+data:PrinceMoritzOfSaxeAltenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceMoritzOfSaxeAltenburg ;
+    :hasChild data:PrincessLuiseOfSaxeAltenburg ;
+    :hasDaughter data:PrincessLuiseOfSaxeAltenburg ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :isAncestorOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt ;
+    :isBloodrelationOf data:PrinceMoritzOfSaxeAltenburg ;
+    :isBrotherOf data:PrinceMoritzOfSaxeAltenburg ;
+    :isFatherOf data:PrincessLuiseOfSaxeAltenburg ;
+    :isParentOf data:PrincessLuiseOfSaxeAltenburg ;
+    :isSiblingOf data:PrinceMoritzOfSaxeAltenburg ;
+    :isUncleOf data:PrincessLuiseOfSaxeAltenburg .
+
+data:PrincessLuiseOfSaxeAltenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:PrinceMoritzOfSaxeAltenburg ;
+    :hasChild data:PrincessMarieAugusteOfAnhalt ;
+    :hasDaughter data:PrincessMarieAugusteOfAnhalt ;
+    :hasFather data:PrinceMoritzOfSaxeAltenburg ;
+    :hasParent data:PrinceMoritzOfSaxeAltenburg ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:PrincessLuiseOfSaxeAltenburg ;
+    :isAncestorOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrincessMarieAugusteOfAnhalt ;
+    :isAuntOf data:PrincessMarieAugusteOfAnhalt ;
+    :isBloodrelationOf data:PrincessLuiseOfSaxeAltenburg ;
+    :isChildOf data:PrinceMoritzOfSaxeAltenburg ;
+    :isDaughterOf data:PrinceMoritzOfSaxeAltenburg ;
+    :isMotherOf data:PrincessMarieAugusteOfAnhalt ;
+    :isParentOf data:PrincessMarieAugusteOfAnhalt ;
+    :isSiblingOf data:PrincessLuiseOfSaxeAltenburg ;
+    :isSisterOf data:PrincessLuiseOfSaxeAltenburg .
+
+data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul a :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasBirthYear 1916 ;
+    :hasBrother data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :hasDeathYear 1975 ;
+    :hasFather data:PrinceJoachimOfPrussia ;
+    :hasMother data:PrincessMarieAugusteOfAnhalt ;
+    :hasParent data:PrinceJoachimOfPrussia,
+        data:PrincessMarieAugusteOfAnhalt ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :isBloodrelationOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isBrotherOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isChildOf data:PrinceJoachimOfPrussia,
+        data:PrincessMarieAugusteOfAnhalt ;
+    :isSiblingOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isSonOf data:PrinceJoachimOfPrussia,
+        data:PrincessMarieAugusteOfAnhalt .
+
+data:PrincessMarieAugusteOfAnhalt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:EduardDukeOfAnhalt,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessLuiseOfSaxeAltenburg ;
+    :hasChild data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :hasFather data:EduardDukeOfAnhalt ;
+    :hasMother data:PrincessLuiseOfSaxeAltenburg ;
+    :hasParent data:EduardDukeOfAnhalt,
+        data:PrincessLuiseOfSaxeAltenburg ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSister data:PrincessMarieAugusteOfAnhalt ;
+    :hasSon data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isAncestorOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isAuntOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isBloodrelationOf data:PrincessMarieAugusteOfAnhalt ;
+    :isChildOf data:EduardDukeOfAnhalt,
+        data:PrincessLuiseOfSaxeAltenburg ;
+    :isDaughterOf data:EduardDukeOfAnhalt,
+        data:PrincessLuiseOfSaxeAltenburg ;
+    :isMotherOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isParentOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isSiblingOf data:PrincessMarieAugusteOfAnhalt ;
+    :isSisterOf data:PrincessMarieAugusteOfAnhalt .
+
+data:PrinceJoachimOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :hasChild data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :hasDeathYear 1920 ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasParent data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:EduardDukeOfAnhalt,
+        data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia,
+        data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul,
+        data:PrinceMoritzOfSaxeAltenburg,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath,
+        data:PrincessLuiseOfSaxeAltenburg,
+        data:PrincessMarieAugusteOfAnhalt,
+        data:WilhelmII ;
+    :hasSon data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isAncestorOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isBloodrelationOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isBrotherOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isChildOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isFatherOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isParentOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul ;
+    :isSiblingOf data:PrinceEitelFriedrichOfPrussia,
+        data:PrinceJoachimOfPrussia ;
+    :isSonOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isUncleOf data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul .
+

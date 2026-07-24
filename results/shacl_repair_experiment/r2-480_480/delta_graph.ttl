@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_Langtry :hasSex data:Male .
+
+data:Emilie_Charlotte_Le_Breton a :Ancestor ;
+    :hasSex data:Female .
+
+data:Emilie_Davis_Martin a :Ancestor ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasSex data:Female .
+
+data:Hugo_Gerald_de_Bathe :hasSex data:Male .
+
+data:Jeanne_Marie_Langtry :hasSex data:Female .
+
+data:Prince_Louis_of_Battenberg a :Ancestor ;
+    :hasSex data:Male .
+
+data:William_Corbet_Le_Breton a :Ancestor ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

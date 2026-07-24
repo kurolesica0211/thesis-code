@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:BorisIII%E4%B8%8D%E9%94%99 a :Man,\n        :Person ;\n    :isFatherOf data:MarieLouiseBulgaria .\n\ndata:HermannLeiningen a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:KarlLeiningen ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:MarieLouiseBulgaria ;\n    :hasRelation data:DeborahCully ;\n    :knownAs \"Hermann Leiningen\"^^xsd:string .\n\ndata:NicholasMontenegro a :Man,\n        :Person .\n\ndata:VictorEmmanuelIII a :Man,\n        :Person .\n\ndata:DeborahCully a :Person,\n        :Woman ;\n    :hasBirthYear 1961 .\n\ndata:KarlLeiningen a :Man,\n        :Person .\n\ndata:MarieLouiseBulgaria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:BorisIII%E4%B8%8D%E9%94%99 a :Man,\n        :Person ;\n    :isFatherOf data:MarieLouiseBulgaria .\n\ndata:HermannLeiningen a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:KarlLeiningen ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:MarieLouiseBulgaria ;\n    :hasRelation data:DeborahCully ;\n    :knownAs \"Hermann Leiningen\"^^xsd:string .\n\ndata:NicholasMontenegro a :Man,\n        :Person .\n\ndata:VictorEmmanuelIII a :Man,\n        :Person .\n\ndata:DeborahCully a :Person,\n        :Woman ;\n    :hasBirthYear 1961 .\n\ndata:KarlLeiningen a :Man,\n        :Person .\n\ndata:MarieLouiseBulgaria a :Person,\n        :Woman .\n\n"
+    }
+]

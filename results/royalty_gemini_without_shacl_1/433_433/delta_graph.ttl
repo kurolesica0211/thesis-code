@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Konrad a :Man ;
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Vera_Sch%C3%A4ffer_von_Bernstein .
+
+data:Prince_Frederick_Konrad a :Man ;
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Margot_Gr%C3%B6ssler .
+
+data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Man .
+
+data:Count_Ernst_of_Lippe-Biesterfeld a :Man .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;
+    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+
+data:Emma_Carola_Passavant a :Woman .
+
+data:Erika_W%C3%A4gner a :Woman .
+
+data:Friedrich_Gr%C3%B6ssler a :Man .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Man .
+
+data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Prince_Georg a :Man .
+
+data:Bernhard_Prince_of_Saxe-Meiningen a :Man ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Margot_Gr%C3%B6ssler,
+        data:Vera_Sch%C3%A4ffer_von_Bernstein ;
+    :isSiblingOf data:Prince_Georg .
+
+data:Margot_Gr%C3%B6ssler a :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Friedrich_Gr%C3%B6ssler ;
+    :hasMother data:Erika_W%C3%A4gner .
+
+data:Vera_Sch%C3%A4ffer_von_Bernstein a :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Emma_Carola_Passavant .
+

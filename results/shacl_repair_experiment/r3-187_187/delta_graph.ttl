@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alice a :Ancestor ;
+    :hasSex data:Female .
+
+data:Andrew a :Ancestor ;
+    :hasSex data:Male .
+
+data:Berthold a :Ancestor ;
+    :hasSex data:Male .
+
+data:Cecilie :hasSex data:Female .
+
+data:Ludwig a :Ancestor ;
+    :hasSex data:Male .
+
+data:Margarita a :Ancestor ;
+    :hasSex data:Female .
+
+data:Maximilian_Baden a :Ancestor ;
+    :hasSex data:Male .
+
+data:Philip :hasSex data:Male .
+
+data:Sophie :hasSex data:Female .
+
+data:Theodora a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

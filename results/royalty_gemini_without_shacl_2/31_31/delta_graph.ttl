@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christoph_of_Schleswig-Holstein a :Man,
+        :Person ;
+    :hasBirthYear 1949 ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasMother data:Princess_Marie_Alix_of_Schaumburg-Lippe ;
+    :hasRelation data:Princess_Elisabeth_of_Lippe-Weissenfeld .
+
+data:Friedrich_Duke_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Man,
+        :Person ;
+    :isBrotherOf data:Christian_IX_of_Denmark .
+
+data:Friedrich_Ferdinand_Duke_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn a :Person,
+        :Woman ;
+    :hasBirthYear 1928 .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:Peter_Duke_of_Schleswig-Holstein a :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 1980 .
+
+data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 2024 .
+
+data:Princess_Elisabeth_of_Lippe-Weissenfeld a :Person,
+        :Woman ;
+    :hasBirthYear 1957 ;
+    :hasFather data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :hasMother data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn .
+
+data:Princess_Marie_Alix_of_Schaumburg-Lippe a :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2021 .
+

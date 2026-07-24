@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasBrother data:Alexander,\n        data:GeorgeII ;\n    :hasChild data:ConstantineII,\n        data:Irene,\n        data:SofiaOfSpain ;\n    :hasDeathYear 1964 ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:SophiaOfPrussia ;\n    :hasRelation data:FredericaOfHanover ;\n    :hasSister data:Helen,\n        data:Katherine .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:ConstantineI a :Man,\n        :Person ;\n    :hasFather data:GeorgeI .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:FredericaOfHanover a :Person,\n        :Woman .\n\ndata:GeorgeI a :Man,\n        :Person .\n\ndata:GeorgeII a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Katherine a :Person,\n        :Woman .\n\ndata:SofiaOfSpain a :Person,\n        :Woman .\n\ndata:SophiaOfPrussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasBrother data:Alexander,\n        data:GeorgeII ;\n    :hasChild data:ConstantineII,\n        data:Irene,\n        data:SofiaOfSpain ;\n    :hasDeathYear 1964 ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:SophiaOfPrussia ;\n    :hasRelation data:FredericaOfHanover ;\n    :hasSister data:Helen,\n        data:Katherine .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:ConstantineI a :Man,\n        :Person ;\n    :hasFather data:GeorgeI .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:FredericaOfHanover a :Person,\n        :Woman .\n\ndata:GeorgeI a :Man,\n        :Person .\n\ndata:GeorgeII a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Katherine a :Person,\n        :Woman .\n\ndata:SofiaOfSpain a :Person,\n        :Woman .\n\ndata:SophiaOfPrussia a :Person,\n        :Woman .\n\n"
+    }
+]

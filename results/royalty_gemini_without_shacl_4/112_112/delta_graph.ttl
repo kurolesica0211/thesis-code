@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Maurice a :Man,
+        :Person ;
+    :isBrotherOf data:Alexander_Prince_of_Orange .
+
+data:Prince_William a :Man,
+        :Person ;
+    :isBrotherOf data:Alexander_Prince_of_Orange .
+
+data:Queen_Wilhelmina a :Person,
+        :Woman ;
+    :isSisterOf data:Alexander_Prince_of_Orange .
+
+data:King_William_III a :Man,
+        :Person .
+
+data:Queen_Sophie a :Person,
+        :Woman .
+
+data:Alexander_Prince_of_Orange a :Man,
+        :Person ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1884 ;
+    :hasFather data:King_William_III ;
+    :hasMother data:Queen_Sophie .
+

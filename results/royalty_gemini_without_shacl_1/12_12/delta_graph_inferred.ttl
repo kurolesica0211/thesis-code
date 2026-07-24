@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexia_Juliana_Marcela_Laurentien a :Person ;
+    :hasRelation data:Alexia_Juliana_Marcela_Laurentien ;
+    :isBloodrelationOf data:Alexia_Juliana_Marcela_Laurentien ;
+    :isSiblingOf data:Alexia_Juliana_Marcela_Laurentien .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrix ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Princess_Beatrix ;
+    :isSiblingOf data:Princess_Beatrix ;
+    :isSisterOf data:Princess_Beatrix .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:M%C3%A1xima a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Alexia_of_the_Netherlands ;
+    :hasDaughter data:Princess_Alexia_of_the_Netherlands ;
+    :hasRelation data:M%C3%A1xima,
+        data:Princess_Alexia_of_the_Netherlands ;
+    :hasSister data:M%C3%A1xima ;
+    :isAncestorOf data:Princess_Alexia_of_the_Netherlands ;
+    :isAuntOf data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:M%C3%A1xima ;
+    :isMotherOf data:Princess_Alexia_of_the_Netherlands ;
+    :isParentOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSiblingOf data:M%C3%A1xima ;
+    :isSisterOf data:M%C3%A1xima .
+
+data:Willem-Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Willem-Alexander ;
+    :hasChild data:Princess_Alexia_of_the_Netherlands ;
+    :hasDaughter data:Princess_Alexia_of_the_Netherlands ;
+    :hasRelation data:Princess_Alexia_of_the_Netherlands,
+        data:Willem-Alexander ;
+    :isAncestorOf data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Willem-Alexander ;
+    :isBrotherOf data:Willem-Alexander ;
+    :isFatherOf data:Princess_Alexia_of_the_Netherlands ;
+    :isParentOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSiblingOf data:Willem-Alexander ;
+    :isUncleOf data:Princess_Alexia_of_the_Netherlands .
+
+data:Princess_Alexia_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :hasBirthYear 2005 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :hasParent data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :hasRelation data:M%C3%A1xima,
+        data:Princess_Alexia_of_the_Netherlands,
+        data:Willem-Alexander ;
+    :hasSister data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Princess_Alexia_of_the_Netherlands ;
+    :isChildOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSisterOf data:Princess_Alexia_of_the_Netherlands ;
+    :knownAs data:Alexia_Juliana_Marcela_Laurentien .
+

@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasBirthYear 1859 ;
+    :hasDaughter data:Victoria_Louise_of_Prussia ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1881,
+        1922 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Hermine_Reuss_of_Greiz ;
+    :hasSister data:Sophia_of_Prussia .
+
+data:Augusta_Victoria_of_Schleswig_Holstein a :Person,
+        :Woman .
+
+data:Constantine_Crown_Prince_of_Greece a :Man,
+        :Person .
+
+data:Frederick_William_IV a :Man,
+        :Person .
+
+data:Hermine_Reuss_of_Greiz a :Person,
+        :Woman .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasParent data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_Crown_Prince_of_Greece .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman .
+
+data:Wilhelm_I a :Man,
+        :Person ;
+    :isBrotherOf data:Frederick_William_IV .
+
+data:Frederick_III a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_I .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+

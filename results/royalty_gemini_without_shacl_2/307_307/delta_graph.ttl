@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Patricia_Knatchbull ;
+    :hasRelation data:Eugenie_Lady_Nuttall,
+        data:Penelope_Meredith_Eastwood .
+
+data:Doreen_Knatchbull a :Person,
+        :Woman .
+
+data:Edward_Austen_Knight a :Man,
+        :Person .
+
+data:Eugenie_Lady_Nuttall a :Person,
+        :Woman .
+
+data:John_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:Edward_Austen_Knight ;
+    :hasMother data:Doreen_Knatchbull .
+
+data:Louis_Mountbatten a :Man,
+        :Person .
+
+data:Marian_Elizabeth_Hood a :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2020 .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Louis_Mountbatten .
+
+data:Penelope_Meredith_Eastwood a :Person,
+        :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth_Hood .
+
+data:Reginald_Wray_Frank_Eastwood a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1980 .
+

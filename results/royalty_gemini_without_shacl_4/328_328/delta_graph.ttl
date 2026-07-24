@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Alfonso_XII a :Man,
+        :Person .
+
+data:King_Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Prince_Jorge_de_Bagration a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Princess_Fran%C3%A7oise a :Person,
+        :Woman .
+
+data:Princess_Mariam a :Person,
+        :Woman ;
+    :isSisterOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Princess_Monique a :Person,
+        :Woman .
+
+data:Princess_Nuria a :Person,
+        :Woman .
+
+data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Person,
+        :Woman ;
+    :hasBirthYear "1953"^^xsd:positiveInteger .
+
+data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Person,
+        :Woman ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasDeathYear "1953"^^xsd:positiveInteger .
+
+data:Prince_Irakli_Bagration-Mukhrani a :Man,
+        :Person ;
+    :hasBirthYear "1909"^^xsd:positiveInteger ;
+    :hasDeathYear "1977"^^xsd:positiveInteger .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Bagrat Bagration-Moukhransky"^^xsd:string,
+        "Prince Bagrat Bagrationi-Mukhraneli"^^xsd:string ;
+    :hasBirthYear "1949"^^xsd:positiveInteger ;
+    :hasDeathYear "2017"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasMarriageYear "1976"^^xsd:positiveInteger ;
+    :hasMother data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;
+    :hasRelation data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves ;
+    :knownAs "Bagrat Juan María de Fátima de Todos los Santos"^^xsd:string .
+

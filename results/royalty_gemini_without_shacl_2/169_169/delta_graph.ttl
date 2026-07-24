@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bruno_Alejandro_Gomez_Acebo_Borbon a :Man,
+        :Person ;
+    :isSonOf data:Pilar_de_Borbon .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Juan_de_Borbon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_Mercedes_de_Borbon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Pilar_de_Borbon a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Juan_de_Borbon ;
+    :hasMother data:Maria_Mercedes_de_Borbon ;
+    :hasRelation data:Felipe_VI ;
+    :knownAs "Pilar de Borbón"^^xsd:string .
+

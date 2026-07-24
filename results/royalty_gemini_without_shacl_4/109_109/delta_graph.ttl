@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man ;
+    :hasBirthYear "1968"^^xsd:positiveInteger ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear "2004"^^xsd:positiveInteger ;
+    :hasMother data:Sofia_of_Spain .
+
+data:Letizia_Ortiz_Rocasolano a :Woman ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Juan_Carlos_I a :Man .
+
+data:Sofia_of_Spain a :Woman .
+
+data:Infanta_Sofia a :Woman ;
+    :hasBirthYear "2007"^^xsd:positiveInteger .
+
+data:Leonor_Princess_of_Asturias a :Woman ;
+    :hasBirthYear "2005"^^xsd:positiveInteger .
+

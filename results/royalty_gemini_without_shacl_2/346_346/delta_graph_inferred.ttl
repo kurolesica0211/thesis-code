@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :hasSister data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :hasSister data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_III ;
+    :isBloodrelationOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_III .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isChildOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isSonOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
+    :hasAncestor data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II ;
+    :hasBirthYear 1851 ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasDeathYear 1897 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_IV .
+

@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Francoise a :Woman .
+
+data:Princess_Mariam a :Woman .
+
+data:Princess_Mariam_de_Bagration a :Woman ;
+    :hasBirthYear "1947-06-27"^^xsd:date ;
+    :hasBrother data:Bagrat_de_Bagration ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMarriageYear 1982 ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :hasRelation data:Dr_Tomas_Ortiz_y_Valero ;
+    :hasSon data:Unnamed_Son_of_Mariam ;
+    :isSiblingOf data:Jorge_de_Bagration .
+
+data:Princess_Monique a :Woman .
+
+data:Princess_Nuria a :Woman .
+
+data:Bagrat_de_Bagration a :Man .
+
+data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Woman .
+
+data:Jorge_de_Bagration a :Man .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Man .
+
+data:Unnamed_Son_of_Mariam a :Man ;
+    :hasFather data:Dr_Tomas_Ortiz_y_Valero .
+
+data:Dr_Tomas_Ortiz_y_Valero a :Man .
+

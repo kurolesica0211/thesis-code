@@ -1,0 +1,218 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Coyle a :Man,
+        :Person ;
+    :hasBrother data:James_Coyle ;
+    :hasRelation data:James_Coyle ;
+    :isBloodrelationOf data:James_Coyle ;
+    :isBrotherOf data:James_Coyle ;
+    :isSiblingOf data:James_Coyle .
+
+data:Prince_George_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_George_of_Battenberg ;
+    :hasRelation data:David_Mountbatten,
+        data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :isAncestorOf data:Ivar_Mountbatten ;
+    :isBloodrelationOf data:Prince_George_of_Battenberg ;
+    :isBrotherOf data:Prince_George_of_Battenberg ;
+    :isSiblingOf data:Prince_George_of_Battenberg .
+
+data:Colin_Graham_Thompson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Colin_Graham_Thompson ;
+    :hasChild data:Penelope_Anne_Vere_Thompson ;
+    :hasDaughter data:Penelope_Anne_Vere_Thompson ;
+    :hasRelation data:Colin_Graham_Thompson,
+        data:Penelope_Anne_Vere_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :isAncestorOf data:Penelope_Anne_Vere_Thompson ;
+    :isBloodrelationOf data:Colin_Graham_Thompson ;
+    :isBrotherOf data:Colin_Graham_Thompson ;
+    :isFatherOf data:Penelope_Anne_Vere_Thompson ;
+    :isParentOf data:Penelope_Anne_Vere_Thompson ;
+    :isSiblingOf data:Colin_Graham_Thompson ;
+    :isUncleOf data:Penelope_Anne_Vere_Thompson .
+
+data:Prince_Edward a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Edward ;
+    :hasChild data:Lady_Louise_Windsor ;
+    :hasDaughter data:Lady_Louise_Windsor ;
+    :hasRelation data:Lady_Louise_Windsor,
+        data:Prince_Edward,
+        data:Sophie ;
+    :isAncestorOf data:Lady_Louise_Windsor ;
+    :isBloodrelationOf data:Prince_Edward ;
+    :isBrotherOf data:Prince_Edward ;
+    :isFatherOf data:Lady_Louise_Windsor ;
+    :isParentOf data:Lady_Louise_Windsor ;
+    :isSiblingOf data:Prince_Edward ;
+    :isUncleOf data:Lady_Louise_Windsor .
+
+data:Rosemary_Vere_Edwardes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Penelope_Anne_Vere_Thompson ;
+    :hasDaughter data:Penelope_Anne_Vere_Thompson ;
+    :hasRelation data:Colin_Graham_Thompson,
+        data:Penelope_Anne_Vere_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :hasSister data:Rosemary_Vere_Edwardes ;
+    :isAncestorOf data:Penelope_Anne_Vere_Thompson ;
+    :isAuntOf data:Penelope_Anne_Vere_Thompson ;
+    :isBloodrelationOf data:Rosemary_Vere_Edwardes ;
+    :isMotherOf data:Penelope_Anne_Vere_Thompson ;
+    :isParentOf data:Penelope_Anne_Vere_Thompson ;
+    :isSiblingOf data:Rosemary_Vere_Edwardes ;
+    :isSisterOf data:Rosemary_Vere_Edwardes .
+
+data:Sophie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Louise_Windsor ;
+    :hasDaughter data:Lady_Louise_Windsor ;
+    :hasRelation data:Lady_Louise_Windsor,
+        data:Prince_Edward,
+        data:Sophie ;
+    :hasSister data:Sophie ;
+    :isAncestorOf data:Lady_Louise_Windsor ;
+    :isAuntOf data:Lady_Louise_Windsor ;
+    :isBloodrelationOf data:Sophie ;
+    :isMotherOf data:Lady_Louise_Windsor ;
+    :isParentOf data:Lady_Louise_Windsor ;
+    :isSiblingOf data:Sophie ;
+    :isSisterOf data:Sophie .
+
+data:George_Mountbatten_4th_Marquess a :Man,
+        :Person ;
+    :hasBrother data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :hasRelation data:David_Mountbatten,
+        data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :isSiblingOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten .
+
+data:David_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:David_Mountbatten ;
+    :hasChild data:Ivar_Mountbatten ;
+    :hasRelation data:David_Mountbatten,
+        data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :hasSon data:Ivar_Mountbatten ;
+    :isAncestorOf data:Ivar_Mountbatten ;
+    :isBloodrelationOf data:David_Mountbatten ;
+    :isBrotherOf data:David_Mountbatten ;
+    :isFatherOf data:Ivar_Mountbatten ;
+    :isParentOf data:Ivar_Mountbatten ;
+    :isSiblingOf data:David_Mountbatten ;
+    :isUncleOf data:Ivar_Mountbatten .
+
+data:Janet_Mercedes_Bryce a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ivar_Mountbatten ;
+    :hasRelation data:David_Mountbatten,
+        data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :hasSister data:Janet_Mercedes_Bryce ;
+    :hasSon data:Ivar_Mountbatten ;
+    :isAncestorOf data:Ivar_Mountbatten ;
+    :isAuntOf data:Ivar_Mountbatten ;
+    :isBloodrelationOf data:Janet_Mercedes_Bryce ;
+    :isMotherOf data:Ivar_Mountbatten ;
+    :isParentOf data:Ivar_Mountbatten ;
+    :isSiblingOf data:Janet_Mercedes_Bryce ;
+    :isSisterOf data:Janet_Mercedes_Bryce .
+
+data:Lady_Louise_Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Edward,
+        data:Sophie ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie ;
+    :hasParent data:Prince_Edward,
+        data:Sophie ;
+    :hasRelation data:Lady_Louise_Windsor,
+        data:Prince_Edward,
+        data:Sophie ;
+    :hasSister data:Lady_Louise_Windsor ;
+    :isBloodrelationOf data:Lady_Louise_Windsor ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie ;
+    :isDaughterOf data:Prince_Edward,
+        data:Sophie ;
+    :isSiblingOf data:Lady_Louise_Windsor ;
+    :isSisterOf data:Lady_Louise_Windsor .
+
+data:Penelope_Anne_Vere_Thompson a :Person,
+        :Woman ;
+    :hasAncestor data:Colin_Graham_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Colin_Graham_Thompson ;
+    :hasMother data:Rosemary_Vere_Edwardes ;
+    :hasParent data:Colin_Graham_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :hasRelation data:Colin_Graham_Thompson,
+        data:Penelope_Anne_Vere_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :hasSister data:Penelope_Anne_Vere_Thompson ;
+    :isBloodrelationOf data:Penelope_Anne_Vere_Thompson ;
+    :isChildOf data:Colin_Graham_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :isDaughterOf data:Colin_Graham_Thompson,
+        data:Rosemary_Vere_Edwardes ;
+    :isSiblingOf data:Penelope_Anne_Vere_Thompson ;
+    :isSisterOf data:Penelope_Anne_Vere_Thompson .
+
+data:Ivar_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:David_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :hasFather data:David_Mountbatten ;
+    :hasMother data:Janet_Mercedes_Bryce ;
+    :hasParent data:David_Mountbatten,
+        data:Janet_Mercedes_Bryce ;
+    :hasRelation data:David_Mountbatten,
+        data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Prince_George_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :isChildOf data:David_Mountbatten,
+        data:Janet_Mercedes_Bryce ;
+    :isSiblingOf data:George_Mountbatten_4th_Marquess,
+        data:Ivar_Mountbatten ;
+    :isSonOf data:David_Mountbatten,
+        data:Janet_Mercedes_Bryce .
+

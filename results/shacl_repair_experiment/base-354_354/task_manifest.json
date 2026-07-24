@@ -1,0 +1,7 @@
+{
+    "entry_id": "base-354_354",
+    "done_reason": "llm_finished",
+    "artifacts_dir": "results/shacl_repair_experiment/base-354_354/artifacts",
+    "results": "results/shacl_repair_experiment/base-354_354/final_data_graph.ttl",
+    "iterations": 7
+}

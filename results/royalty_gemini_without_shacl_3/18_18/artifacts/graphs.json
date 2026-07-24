@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2005 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Louise_of_Orleans ;\n    :hasRelation data:Pedro_Gastao_of_Orleans-Braganza ;\n    :isAuntOf data:Juan_Carlos_I_of_Spain ;\n    :isSisterOf data:Maria_de_las_Mercedes .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person ;\n    :isFatherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Louise_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Philippe_Count_of_Paris .\n\ndata:Maria_de_las_Mercedes a :Person,\n        :Woman ;\n    :hasRelation data:Juan_Count_of_Barcelona ;\n    :isMotherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Pedro_Gastao_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasFather data:Pedro_de_Alcantara_of_Orleans-Braganza .\n\ndata:Pedro_de_Alcantara_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2005 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Louise_of_Orleans ;\n    :hasRelation data:Pedro_Gastao_of_Orleans-Braganza ;\n    :isAuntOf data:Juan_Carlos_I_of_Spain ;\n    :isSisterOf data:Maria_de_las_Mercedes .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person ;\n    :isFatherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Louise_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Philippe_Count_of_Paris .\n\ndata:Maria_de_las_Mercedes a :Person,\n        :Woman ;\n    :hasRelation data:Juan_Count_of_Barcelona ;\n    :isMotherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Pedro_Gastao_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasFather data:Pedro_de_Alcantara_of_Orleans-Braganza .\n\ndata:Pedro_de_Alcantara_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\n"
+    }
+]

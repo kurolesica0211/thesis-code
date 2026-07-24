@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine-Alexios_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1998 ;
+    :hasFather data:Constantine_II_of_Greece,
+        data:Pavlos_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_of_Greece .
+
+data:Marina a :Woman .
+
+data:Queen_Sofia_of_Spain a :Woman .
+
+data:Anne-Marie_of_Denmark a :Woman .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:Marie-Chantal_of_Greece a :Woman .
+
+data:Pavlos_of_Greece a :Man .
+

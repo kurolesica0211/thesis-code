@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alex_Mapelli-Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Edoardo_Mapelli_Mozzi .
+
+data:Paolo_Mapelli_Mozzi a :Man,
+        :Person .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Beatrice .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasMarriageYear 2020 ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi ;
+    :isMotherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman .
+
+data:Edoardo_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman .
+

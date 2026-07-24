@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CamillaCrociani a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:MariaCarolina a :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isSisterOf data:MariaChiara .
+
+data:MariaChiara a :Person,
+        :Woman ;
+    :hasBirthYear 2005 ;
+    :hasFather data:PrinceCarlo ;
+    :hasMother data:CamillaCrociani ;
+    :hasSex data:Female ;
+    :isSisterOf data:MariaCarolina .
+
+data:PrinceCarlo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:August_Philip_Hawke_Brooksbank a :Man,
+        :Person ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Eugenie_Victoria_Helena .
+
+data:Ernest_George_Ronnie_Brooksbank a :Man,
+        :Person ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Eugenie_Victoria_Helena .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person .
+
+data:Sarah_Ferguson a :Person,
+        :Woman .
+
+data:Eugenie_Victoria_Helena a :Person,
+        :Woman ;
+    :hasBirthYear 1990 ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMarriageYear 2018 ;
+    :hasMother data:Sarah_Ferguson .
+
+data:Jack_Brooksbank a :Man,
+        :Person .
+

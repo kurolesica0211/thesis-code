@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/115_115",
+  "text_file": "Q1966130.txt",
+  "text_key": "Q1966130",
+  "article": "https://en.wikipedia.org/wiki/Prince_Philippos_of_Greece_and_Denmark",
+  "article_key": "Prince Philippos of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Philippos_of_Greece_and_Denmark",
+    "qid": "Q1966130",
+    "label": "Prince Philippos of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Philippos_of_Greece_and_Denmark",
+      "qid": "Q1966130",
+      "label": "Prince Philippos of Greece and Denmark",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Constantine_II_of_Greece",
+      "qid": "Q151773",
+      "label": "Constantine II of Greece",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Anne-Marie_of_Greece",
+      "qid": "Q564889",
+      "label": "Queen Anne-Marie of Greece",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Theodora_of_Greece_and_Denmark",
+      "qid": "Q292274",
+      "label": "Princess Theodora of Greece and Denmark",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Constantine_II",
+      "extracted_local_name": "Constantine_II",
+      "embedding_text": "Constantine II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Constantine_II_of_Greece",
+      "ground_truth_qid": "Q151773",
+      "ground_truth_label": "Constantine II of Greece",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine II",
+      "best_candidate_label": "Constantine II of Greece",
+      "best_candidate_qid": "Q151773",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Philippos_of_Greece_and_Denmark",
+      "extracted_local_name": "Prince_Philippos_of_Greece_and_Denmark",
+      "embedding_text": "Prince Philippos of Greece and Denmark",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Philippos_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q1966130",
+      "ground_truth_label": "Prince Philippos of Greece and Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Philippos of Greece and Denmark",
+      "best_candidate_label": "Prince Philippos of Greece and Denmark",
+      "best_candidate_qid": "Q1966130",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anne-Marie",
+      "extracted_local_name": "Anne-Marie",
+      "embedding_text": "Anne-Marie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne-Marie Dagmar Ingrid",
+      "best_candidate_label": "Queen Anne-Marie of Greece",
+      "best_candidate_qid": "Q564889",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5882352941176471
+    },
+    {
+      "extracted_uri": "http://example.org/data/Katharina_Flohr%2Ctarget",
+      "extracted_local_name": "Katharina_Flohr%2Ctarget",
+      "embedding_text": "Katharina Flohr,target",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne-Marie Dagmar Ingrid",
+      "best_candidate_label": "Queen Anne-Marie of Greece",
+      "best_candidate_qid": "Q564889",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34782608695652173
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nina_Nastassja_Flohr",
+      "extracted_local_name": "Nina_Nastassja_Flohr",
+      "embedding_text": "Nina Nastassja Flohr",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Anne-Marie of Denmark",
+      "best_candidate_label": "Queen Anne-Marie of Greece",
+      "best_candidate_qid": "Q564889",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32
+    },
+    {
+      "extracted_uri": "http://example.org/data/Thomas_Flohr%2Ctarget",
+      "extracted_local_name": "Thomas_Flohr%2Ctarget",
+      "embedding_text": "Thomas Flohr,target",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne-Marie Dagmar Ingrid",
+      "best_candidate_label": "Queen Anne-Marie of Greece",
+      "best_candidate_qid": "Q564889",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.27906976744186046
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

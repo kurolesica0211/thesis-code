@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia .
+
+data:Crown_Prince_Wilhelm_of_Germany a :Man,
+        :Person .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .
+
+data:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 .
+

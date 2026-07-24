@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Thomas_Patrick_John_Anson a :Man,
+        :Person ;
+    :hasBirthYear "1939"^^xsd:positiveInteger ;
+    :hasDeathYear "2005"^^xsd:positiveInteger ;
+    :hasFather data:Thomas_William_Arnold_Anson ;
+    :hasMarriageYear "1975"^^xsd:positiveInteger ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasRelation data:Lady_Annunziata_Asquith,
+        data:Lady_Leonora_Grosvenor ;
+    :hasSister data:Lady_Elizabeth_Georgiana_Anson ;
+    :knownAs "Patrick Lichfield"^^xsd:string .
+
+data:Julian_Asquith a :Man,
+        :Person .
+
+data:Lady_Annunziata_Asquith a :Person,
+        :Woman ;
+    :hasFather data:Julian_Asquith .
+
+data:Lady_Elizabeth_Georgiana_Anson a :Person,
+        :Woman ;
+    :hasBirthYear "1941"^^xsd:positiveInteger ;
+    :hasDeathYear "2020"^^xsd:positiveInteger ;
+    :hasFather data:Thomas_William_Arnold_Anson ;
+    :hasMother data:Anne_Bowes-Lyon .
+
+data:Lady_Leonora_Grosvenor a :Person,
+        :Woman ;
+    :hasFather data:Robert_Grosvenor .
+
+data:Robert_Grosvenor a :Man,
+        :Person .
+
+data:Thomas_Edward_Anson a :Man,
+        :Person ;
+    :hasBirthYear "1883"^^xsd:positiveInteger ;
+    :hasDeathYear "1960"^^xsd:positiveInteger .
+
+data:Anne_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBirthYear "1917"^^xsd:positiveInteger ;
+    :hasDeathYear "1980"^^xsd:positiveInteger .
+
+data:Thomas_William_Arnold_Anson a :Man,
+        :Person ;
+    :hasBirthYear "1913"^^xsd:positiveInteger ;
+    :hasDeathYear "1958"^^xsd:positiveInteger ;
+    :hasFather data:Thomas_Edward_Anson .
+

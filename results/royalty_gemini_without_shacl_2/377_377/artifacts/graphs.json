@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon ;\n    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,\n        data:Margaret_Elphinstone .\n\ndata:Alexander_Murray a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man .\n\ndata:Constance_Euphemia_Woronzow_Murray a :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Margaret_Elphinstone a :Woman .\n\ndata:Mary_Bowes-Lyon a :Woman .\n\ndata:Sidney_Elphinstone a :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon ;\n    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,\n        data:Margaret_Elphinstone .\n\ndata:Alexander_Murray a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man .\n\ndata:Constance_Euphemia_Woronzow_Murray a :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Margaret_Elphinstone a :Woman .\n\ndata:Mary_Bowes-Lyon a :Woman .\n\ndata:Sidney_Elphinstone a :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man .\n\n"
+    }
+]

@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isFatherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Frederick_III_German_Emperor ;
+    :isUncleOf data:Sophia_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isChildOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia ;
+    :knownAs "Sophia of Prussia"^^xsd:string .
+

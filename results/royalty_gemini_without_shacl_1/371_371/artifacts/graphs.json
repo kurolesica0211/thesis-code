@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickFrancisIV a :Man,\n        :Person .\n\ndata:JohnAlbertOfMecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1857 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:FrederickFrancisII ;\n    :hasMarriageYear 1886,\n        1909 ;\n    :hasMother data:AugustaReussOfKostritz ;\n    :hasRelation data:ElisabethOfStolbergRossla,\n        data:ElisabethSybilleOfSaxeWeimarEisenach ;\n    :isSiblingOf data:AdolfFriedrich,\n        data:FrederickFrancisIII,\n        data:PaulFrederick .\n\ndata:AdolfFriedrich a :Man,\n        :Person .\n\ndata:AugustaReussOfKostritz a :Person,\n        :Woman .\n\ndata:ElisabethOfStolbergRossla a :Person,\n        :Woman .\n\ndata:ElisabethSybilleOfSaxeWeimarEisenach a :Person,\n        :Woman .\n\ndata:FrederickFrancisII a :Man,\n        :Person .\n\ndata:FrederickFrancisIII a :Man,\n        :Person .\n\ndata:PaulFrederick a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickFrancisIV a :Man,\n        :Person .\n\ndata:JohnAlbertOfMecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1857 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:FrederickFrancisII ;\n    :hasMarriageYear 1886,\n        1909 ;\n    :hasMother data:AugustaReussOfKostritz ;\n    :hasRelation data:ElisabethOfStolbergRossla,\n        data:ElisabethSybilleOfSaxeWeimarEisenach ;\n    :isSiblingOf data:AdolfFriedrich,\n        data:FrederickFrancisIII,\n        data:PaulFrederick .\n\ndata:AdolfFriedrich a :Man,\n        :Person .\n\ndata:AugustaReussOfKostritz a :Person,\n        :Woman .\n\ndata:ElisabethOfStolbergRossla a :Person,\n        :Woman .\n\ndata:ElisabethSybilleOfSaxeWeimarEisenach a :Person,\n        :Woman .\n\ndata:FrederickFrancisII a :Man,\n        :Person .\n\ndata:FrederickFrancisIII a :Man,\n        :Person .\n\ndata:PaulFrederick a :Man,\n        :Person .\n\n"
+    }
+]

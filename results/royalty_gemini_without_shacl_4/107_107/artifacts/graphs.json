@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:BenjaminPieterFloris a :Man,\n        :Person ;\n    :hasBirthYear 2008 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:IsabellaLilyJuliana a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:SamuelBernhardLouis a :Man,\n        :Person ;\n    :hasBirthYear 2004 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:Floris a :Man,\n        :Person .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:Maurits a :Man,\n        :Person .\n\ndata:PieterChristiaan a :Man,\n        :Person .\n\ndata:PieterVanVollenhoven a :Man,\n        :Person .\n\ndata:AnnetteSekreve a :Person,\n        :Woman ;\n    :hasBirthYear 1972 .\n\ndata:BernhardVanVollenhoven a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:PieterVanVollenhoven ;\n    :hasMother data:Margriet ;\n    :isBrotherOf data:Floris,\n        data:Maurits,\n        data:PieterChristiaan .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:BenjaminPieterFloris a :Man,\n        :Person ;\n    :hasBirthYear 2008 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:IsabellaLilyJuliana a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:SamuelBernhardLouis a :Man,\n        :Person ;\n    :hasBirthYear 2004 ;\n    :isChildOf data:AnnetteSekreve,\n        data:BernhardVanVollenhoven .\n\ndata:Floris a :Man,\n        :Person .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:Maurits a :Man,\n        :Person .\n\ndata:PieterChristiaan a :Man,\n        :Person .\n\ndata:PieterVanVollenhoven a :Man,\n        :Person .\n\ndata:AnnetteSekreve a :Person,\n        :Woman ;\n    :hasBirthYear 1972 .\n\ndata:BernhardVanVollenhoven a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:PieterVanVollenhoven ;\n    :hasMother data:Margriet ;\n    :isBrotherOf data:Floris,\n        data:Maurits,\n        data:PieterChristiaan .\n\n"
+    }
+]

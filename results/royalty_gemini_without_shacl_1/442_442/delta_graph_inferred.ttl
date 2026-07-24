@@ -1,0 +1,561 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :hasChild data:Brigitte_Klynstra ;
+    :hasDaughter data:Brigitte_Klynstra ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Brigitte_Klynstra,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isBloodrelationOf data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :isBrotherOf data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :isFatherOf data:Brigitte_Klynstra ;
+    :isParentOf data:Brigitte_Klynstra ;
+    :isSiblingOf data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :isUncleOf data:Brigitte_Klynstra .
+
+data:Ingrid_Pieksma-Klynstra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Brigitte_Klynstra ;
+    :hasDaughter data:Brigitte_Klynstra ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Ingrid_Pieksma-Klynstra ;
+    :isAncestorOf data:Brigitte_Klynstra,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isAuntOf data:Brigitte_Klynstra ;
+    :isBloodrelationOf data:Ingrid_Pieksma-Klynstra ;
+    :isMotherOf data:Brigitte_Klynstra ;
+    :isParentOf data:Brigitte_Klynstra ;
+    :isSiblingOf data:Ingrid_Pieksma-Klynstra ;
+    :isSisterOf data:Ingrid_Pieksma-Klynstra .
+
+data:Madeleine_de_Bourbon-Busset a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlos_Hugo_Duke_of_Parma ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Madeleine_de_Bourbon-Busset ;
+    :hasSon data:Carlos_Hugo_Duke_of_Parma ;
+    :isAncestorOf data:Carlos_Hugo_Duke_of_Parma,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isAuntOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isBloodrelationOf data:Madeleine_de_Bourbon-Busset ;
+    :isMotherOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isParentOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isSiblingOf data:Madeleine_de_Bourbon-Busset ;
+    :isSisterOf data:Madeleine_de_Bourbon-Busset .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Princess_Irene_of_the_Netherlands .
+
+data:Prince_Xavier_of_Bourbon-Parma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Xavier_of_Bourbon-Parma ;
+    :hasChild data:Carlos_Hugo_Duke_of_Parma ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSon data:Carlos_Hugo_Duke_of_Parma ;
+    :isAncestorOf data:Carlos_Hugo_Duke_of_Parma,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Xavier_of_Bourbon-Parma ;
+    :isBrotherOf data:Prince_Xavier_of_Bourbon-Parma ;
+    :isFatherOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isParentOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isSiblingOf data:Prince_Xavier_of_Bourbon-Parma ;
+    :isUncleOf data:Carlos_Hugo_Duke_of_Parma .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma ;
+    :isAuntOf data:Princess_Irene_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Juliana_of_the_Netherlands ;
+    :isMotherOf data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Queen_Juliana_of_the_Netherlands .
+
+data:Brigitte_Klynstra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Ingrid_Pieksma-Klynstra ;
+    :hasChild data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :hasFather data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :hasMother data:Ingrid_Pieksma-Klynstra ;
+    :hasParent data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Ingrid_Pieksma-Klynstra ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Brigitte_Klynstra ;
+    :hasSon data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isAuntOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isBloodrelationOf data:Brigitte_Klynstra ;
+    :isChildOf data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Ingrid_Pieksma-Klynstra ;
+    :isDaughterOf data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Ingrid_Pieksma-Klynstra ;
+    :isMotherOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isParentOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Brigitte_Klynstra ;
+    :isSisterOf data:Brigitte_Klynstra .
+
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Xavier_of_Bourbon-Parma ;
+    :hasBrother data:Carlos_Hugo_Duke_of_Parma ;
+    :hasChild data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasFather data:Prince_Xavier_of_Bourbon-Parma ;
+    :hasMother data:Madeleine_de_Bourbon-Busset ;
+    :hasParent data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Xavier_of_Bourbon-Parma ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSon data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isBrotherOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isChildOf data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Xavier_of_Bourbon-Parma ;
+    :isFatherOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isParentOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Carlos_Hugo_Duke_of_Parma ;
+    :isSonOf data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Xavier_of_Bourbon-Parma ;
+    :isUncleOf data:Prince_Carlos_de_Bourbon_de_Parme .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasChild data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Princess_Irene_of_the_Netherlands ;
+    :hasSon data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isAuntOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isBloodrelationOf data:Princess_Irene_of_the_Netherlands ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isMotherOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isParentOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Princess_Irene_of_the_Netherlands ;
+    :isSisterOf data:Princess_Irene_of_the_Netherlands .
+
+data:Prince_Carlos_of_Parma a :Man,
+        :Person ;
+    :hasAncestor data:Carlos_Hugo_Duke_of_Parma,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBrother data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma ;
+    :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasParent data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBrotherOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isChildOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isSonOf data:Prince_Carlos_de_Bourbon_de_Parme .
+
+data:Princess_Cecilia_of_Parma a :Person,
+        :Woman ;
+    :hasAncestor data:Carlos_Hugo_Duke_of_Parma,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBrother data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma ;
+    :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasParent data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isChildOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isDaughterOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isSisterOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma .
+
+data:Princess_Luisa_of_Parma a :Person,
+        :Woman ;
+    :hasAncestor data:Carlos_Hugo_Duke_of_Parma,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBrother data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma ;
+    :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasParent data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isChildOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isDaughterOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isSisterOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma .
+
+data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man,
+        :Person ;
+    :formerlyKnownAs "Carlos Hugo Roderik Sybren Klynstra"^^xsd:string ;
+    :hasAncestor data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBirthYear 1997 ;
+    :hasBrother data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma ;
+    :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra ;
+    :hasParent data:Brigitte_Klynstra,
+        data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSister data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBrotherOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isChildOf data:Brigitte_Klynstra,
+        data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isSonOf data:Brigitte_Klynstra,
+        data:Prince_Carlos_de_Bourbon_de_Parme .
+
+data:Prince_Carlos_de_Bourbon_de_Parme a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carlos_Hugo_Duke_of_Parma,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBrother data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasChild data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :hasDaughter data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasParent data:Carlos_Hugo_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg,
+        data:Brigitte_Klynstra,
+        data:Carlos_Hugo_Duke_of_Parma,
+        data:Ingrid_Pieksma-Klynstra,
+        data:Madeleine_de_Bourbon-Busset,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Prince_Xavier_of_Bourbon-Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Luisa_of_Parma,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasSon data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma ;
+    :isAncestorOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isBrotherOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isChildOf data:Carlos_Hugo_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isFatherOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isParentOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma ;
+    :isSiblingOf data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :isSonOf data:Carlos_Hugo_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isUncleOf data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme,
+        data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma .
+

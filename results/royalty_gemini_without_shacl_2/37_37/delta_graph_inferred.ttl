@@ -1,0 +1,353 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarlosOfBourbonTwoSicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasChild data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasDaughter data:PrincessIsabellaAlfonsa ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSon data:PrinceAlfonso,
+        data:PrinceFernando ;
+    :isAncestorOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isFatherOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isParentOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isSiblingOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isUncleOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa .
+
+data:AlfonsoXII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXII ;
+    :hasChild data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :hasDaughter data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSon data:AlfonsoXIII ;
+    :isAncestorOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:AlfonsoXII ;
+    :isBrotherOf data:AlfonsoXII ;
+    :isFatherOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isParentOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isSiblingOf data:AlfonsoXII ;
+    :isUncleOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes .
+
+data:MariaChristinaOfAustria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :hasDaughter data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:MariaChristinaOfAustria ;
+    :hasSon data:AlfonsoXIII ;
+    :isAncestorOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isAuntOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isBloodrelationOf data:MariaChristinaOfAustria ;
+    :isMotherOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isParentOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isSiblingOf data:MariaChristinaOfAustria ;
+    :isSisterOf data:MariaChristinaOfAustria .
+
+data:AlfonsoXIII a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaOfAustria ;
+    :hasParent data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isBloodrelationOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isBrotherOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isChildOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isSiblingOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isSonOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isUncleOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa .
+
+data:InfantaMariaTeresa a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaOfAustria ;
+    :hasParent data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isAuntOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isChildOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isDaughterOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isSiblingOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isSisterOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes .
+
+data:PrinceAlfonso a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasBrother data:PrinceAlfonso,
+        data:PrinceFernando ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes ;
+    :hasParent data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBrotherOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isChildOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isSonOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies .
+
+data:PrinceFernando a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasBrother data:PrinceAlfonso,
+        data:PrinceFernando ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes ;
+    :hasParent data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBrotherOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isChildOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isSonOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies .
+
+data:PrincessIsabellaAlfonsa a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasBrother data:PrinceAlfonso,
+        data:PrinceFernando ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes ;
+    :hasParent data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isChildOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isDaughterOf data:MariaDeLasMercedes,
+        data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isSisterOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa .
+
+data:MariaDeLasMercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasChild data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasDaughter data:PrincessIsabellaAlfonsa ;
+    :hasDeathYear 1904 ;
+    :hasFather data:AlfonsoXII ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:MariaChristinaOfAustria ;
+    :hasParent data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :hasRelation data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLasMercedes,
+        data:PrinceAlfonso,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :hasSister data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :hasSon data:PrinceAlfonso,
+        data:PrinceFernando ;
+    :isAncestorOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isAuntOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isBloodrelationOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isChildOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isDaughterOf data:AlfonsoXII,
+        data:MariaChristinaOfAustria ;
+    :isMotherOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isParentOf data:PrinceAlfonso,
+        data:PrinceFernando,
+        data:PrincessIsabellaAlfonsa ;
+    :isSiblingOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes ;
+    :isSisterOf data:AlfonsoXIII,
+        data:InfantaMariaTeresa,
+        data:MariaDeLasMercedes .
+

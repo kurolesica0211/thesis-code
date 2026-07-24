@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarieAntoinetteOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:PaulFrederickOfMecklenburg ;\n    :hasMother data:MarieOfWindischGraetz ;\n    :isBloodrelationOf data:FrederickFrancisIVOfMecklenburgSchwerin ;\n    :isSiblingOf data:HeinrichBorwinOfMecklenburgSchwerin,\n        data:JosephOfMecklenburgSchwerin,\n        data:MariaLuiseOfMecklenburgSchwerin,\n        data:PaulFriedrichOfMecklenburg .\n\ndata:FrederickFrancisIVOfMecklenburgSchwerin a :Man,\n        :Person .\n\ndata:HeinrichBorwinOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:JosephOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:MariaLuiseOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:MarieOfWindischGraetz a :Person,\n        :Woman .\n\ndata:PaulFrederickOfMecklenburg a :Man,\n        :Person .\n\ndata:PaulFriedrichOfMecklenburg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarieAntoinetteOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:PaulFrederickOfMecklenburg ;\n    :hasMother data:MarieOfWindischGraetz ;\n    :isBloodrelationOf data:FrederickFrancisIVOfMecklenburgSchwerin ;\n    :isSiblingOf data:HeinrichBorwinOfMecklenburgSchwerin,\n        data:JosephOfMecklenburgSchwerin,\n        data:MariaLuiseOfMecklenburgSchwerin,\n        data:PaulFriedrichOfMecklenburg .\n\ndata:FrederickFrancisIVOfMecklenburgSchwerin a :Man,\n        :Person .\n\ndata:HeinrichBorwinOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:JosephOfMecklenburgSchwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:MariaLuiseOfMecklenburgSchwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:MarieOfWindischGraetz a :Person,\n        :Woman .\n\ndata:PaulFrederickOfMecklenburg a :Man,\n        :Person .\n\ndata:PaulFriedrichOfMecklenburg a :Man,\n        :Person .\n\n"
+    }
+]

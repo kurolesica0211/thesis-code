@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;\n    :hasMarriageYear data:1910 ;\n    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;\n    :knownAs \"Grand Duchess of Saxe-Weimar-Eisenach\"^^xsd:string .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Woman ;\n    :hasFather data:Ernst_of_Lippe-Biesterfeld .\n\ndata:Caroline_Reuss a :Woman ;\n    :hasDeathYear 1905 .\n\ndata:Ellen_Franz a :Woman .\n\ndata:Ernst_of_Lippe-Biesterfeld a :Man .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Man ;\n    :hasRelation data:Ellen_Franz .\n\ndata:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man ;\n    :hasRelation data:Caroline_Reuss .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;\n    :hasMarriageYear 1910 ;\n    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;\n    :knownAs \"Grand Duchess of Saxe-Weimar-Eisenach\"^^xsd:string .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Woman ;\n    :hasFather data:Ernst_of_Lippe-Biesterfeld .\n\ndata:Caroline_Reuss a :Woman ;\n    :hasDeathYear 1905 .\n\ndata:Ellen_Franz a :Woman .\n\ndata:Ernst_of_Lippe-Biesterfeld a :Man .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Man ;\n    :hasRelation data:Ellen_Franz .\n\ndata:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man ;\n    :hasRelation data:Caroline_Reuss .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;\n    :hasMarriageYear 1910 ;\n    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;\n    :knownAs \"Grand Duchess of Saxe-Weimar-Eisenach\"^^xsd:string .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Woman ;\n    :hasFather data:Ernst_of_Lippe-Biesterfeld .\n\ndata:Caroline_Reuss a :Woman ;\n    :hasDeathYear 1905 .\n\ndata:Ellen_Franz a :Woman .\n\ndata:Ernst_of_Lippe-Biesterfeld a :Man .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Man ;\n    :hasRelation data:Ellen_Franz .\n\ndata:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man ;\n    :hasRelation data:Caroline_Reuss .\n\n"
+    }
+]

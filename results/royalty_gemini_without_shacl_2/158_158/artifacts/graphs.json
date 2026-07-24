@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaPavlovna a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasBrother data:DmitriPavlovich ;\n    :hasDeathYear 1958 ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMarriageYear data:WilhelmSweden,\n        1908,\n        1917 ;\n    :hasMother data:AlexandraGeorgievna ;\n    :hasRelation data:SergeiPutyatin ;\n    :hasSon data:LennartBernadotte,\n        data:RomanSergeievichPutyatin ;\n    :knownAs \"Maria Pavlovna the Younger\"^^xsd:string .\n\ndata:AlexandraGeorgievna a :Woman .\n\ndata:DmitriPavlovich a :Man ;\n    :hasBirthYear 1891 .\n\ndata:ElizabethFeodorovna a :Woman ;\n    :hasFather data:SergeiAlexandrovich ;\n    :hasMother data:ElizabethFeodorovna .\n\ndata:LennartBernadotte a :Man ;\n    :hasFather data:WilhelmSweden .\n\ndata:PaulAlexandrovich a :Man ;\n    :hasBrother data:SergeiAlexandrovich .\n\ndata:RomanSergeievichPutyatin a :Man ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:SergeiPutyatin .\n\ndata:SergeiAlexandrovich a :Man .\n\ndata:SergeiPutyatin a :Man .\n\ndata:WilhelmSweden a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaPavlovna a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasBrother data:DmitriPavlovich ;\n    :hasDeathYear 1958 ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMarriageYear data:WilhelmSweden,\n        1908,\n        1917 ;\n    :hasMother data:AlexandraGeorgievna ;\n    :hasRelation data:SergeiPutyatin ;\n    :hasSon data:LennartBernadotte,\n        data:RomanSergeievichPutyatin ;\n    :knownAs \"Maria Pavlovna the Younger\"^^xsd:string .\n\ndata:AlexandraGeorgievna a :Woman .\n\ndata:DmitriPavlovich a :Man ;\n    :hasBirthYear 1891 .\n\ndata:ElizabethFeodorovna a :Woman ;\n    :hasFather data:SergeiAlexandrovich ;\n    :hasMother data:ElizabethFeodorovna .\n\ndata:LennartBernadotte a :Man ;\n    :hasFather data:WilhelmSweden .\n\ndata:PaulAlexandrovich a :Man ;\n    :hasBrother data:SergeiAlexandrovich .\n\ndata:RomanSergeievichPutyatin a :Man ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:SergeiPutyatin .\n\ndata:SergeiAlexandrovich a :Man .\n\ndata:SergeiPutyatin a :Man .\n\ndata:WilhelmSweden a :Man .\n\n"
+    }
+]

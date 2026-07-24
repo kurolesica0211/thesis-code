@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolphus_Frederick_VI a :Man,
+        :Person .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_IV .
+
+data:1904 a :DomainEntity .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person .
+
+data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :alsoKnownAs data:Friedrich_Franz_Michael ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasMarriageYear data:1904 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Johann_Albrecht ;
+    :isSiblingOf data:Alexandrine,
+        data:Cecilie .
+
+data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin .
+
+data:Friedrich_Franz_Michael a :Person .
+
+data:Johann_Albrecht a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX .
+

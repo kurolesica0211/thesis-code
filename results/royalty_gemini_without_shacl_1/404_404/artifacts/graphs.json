@@ -1,0 +1,121 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Ivar_Mountbatten a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Mountbatten a :Man .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Mountbatten a :Man .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Mountbatten .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:David_Mountbatten a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:David_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Mountbatten a :Man .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:David_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:David_Mountbatten a :Man .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Prince_George_of_Battenberg a :Man .\n\ndata:David_Mountbatten a :Man .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Colin_Graham_Thompson a :Man .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 14,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Colin_Graham_Thompson a :Man .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 .\n\ndata:Rosemary_Vere_Edwardes a :Woman .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 15,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Colin_Graham_Thompson .\n\ndata:Rosemary_Vere_Edwardes a :Woman .\n\ndata:Colin_Graham_Thompson a :Man .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 16,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Colin_Graham_Thompson ;\n    :hasMother data:Rosemary_Vere_Edwardes .\n\ndata:Colin_Graham_Thompson a :Man .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\ndata:Rosemary_Vere_Edwardes a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 17,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivar_Mountbatten a :Man ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:George_Mountbatten ;\n    :hasFather data:David_Mountbatten ;\n    :hasMother data:Janet_Mercedes_Bryce .\n\ndata:Penelope_Anne_Vere_Thompson a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Colin_Graham_Thompson ;\n    :hasMother data:Rosemary_Vere_Edwardes .\n\ndata:Colin_Graham_Thompson a :Man .\n\ndata:David_Mountbatten a :Man ;\n    :hasAncestor data:Prince_George_of_Battenberg .\n\ndata:George_Mountbatten a :Man .\n\ndata:Janet_Mercedes_Bryce a :Woman .\n\ndata:Prince_George_of_Battenberg a :Man .\n\ndata:Rosemary_Vere_Edwardes a :Woman .\n\n"
+    }
+]

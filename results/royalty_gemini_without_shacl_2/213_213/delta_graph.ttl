@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HenriCountOfParis a :Man .
+
+data:InfanteAlfonsoDukeOfCalabria a :Man ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies .
+
+data:MariaDeLasMercedesPrincessOfAsturias a :Woman .
+
+data:PrinceFerdinandPius a :Man ;
+    :hasAncestor data:FerdinandIIOfTheTwoSicilies ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:PrinceAlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:PrincessMariaAntonietta ;
+    :hasRelation data:PrincessMariaLudwigaTheresiaOfBavaria ;
+    :isBrotherOf data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceGabrielOfBourbonTwoSicilies,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrinceRanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony .
+
+data:ArchduchessPeterFerdinandOfAustria a :Woman .
+
+data:FerdinandIIOfTheTwoSicilies a :Man .
+
+data:KingLudwigIIIOfBavaria a :Man .
+
+data:MariaCristina a :Woman .
+
+data:MariaDiGrazia a :Woman .
+
+data:MariaImmaculata a :Woman .
+
+data:PrinceGabrielOfBourbonTwoSicilies a :Man .
+
+data:PrincePhilipOfBourbonTwoSicilies a :Man .
+
+data:PrinceRanieriDukeOfCastro a :Man ;
+    :hasFather data:PrinceAlfonsoCountOfCaserta ;
+    :hasMother data:PrincessMariaAntonietta .
+
+data:PrincessImperialOfBrazil a :Woman .
+
+data:PrincessJohannGeorgOfSaxony a :Woman .
+
+data:PrincessMariaLudwigaTheresiaOfBavaria a :Woman ;
+    :hasFather data:KingLudwigIIIOfBavaria .
+
+data:PrinceCarlosOfBourbonTwoSicilies a :Man ;
+    :hasFather data:PrinceAlfonsoCountOfCaserta ;
+    :hasMother data:PrincessMariaAntonietta .
+
+data:PrinceAlfonsoCountOfCaserta a :Man .
+
+data:PrincessMariaAntonietta a :Woman .
+

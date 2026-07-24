@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :hasBirthYear \"1968\"^^xsd:positiveInteger ;\n    :hasChild data:Infanta_Sofia,\n        data:Leonor_Princess_of_Asturias ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear \"2004\"^^xsd:positiveInteger ;\n    :hasMother data:Sofia_of_Spain .\n\ndata:Letizia_Ortiz_Rocasolano a :Woman ;\n    :hasChild data:Infanta_Sofia,\n        data:Leonor_Princess_of_Asturias .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Infanta_Sofia a :Woman ;\n    :hasBirthYear \"2007\"^^xsd:positiveInteger .\n\ndata:Leonor_Princess_of_Asturias a :Woman ;\n    :hasBirthYear \"2005\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :hasBirthYear \"1968\"^^xsd:positiveInteger ;\n    :hasChild data:Infanta_Sofia,\n        data:Leonor_Princess_of_Asturias ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear \"2004\"^^xsd:positiveInteger ;\n    :hasMother data:Sofia_of_Spain .\n\ndata:Letizia_Ortiz_Rocasolano a :Woman ;\n    :hasChild data:Infanta_Sofia,\n        data:Leonor_Princess_of_Asturias .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Infanta_Sofia a :Woman ;\n    :hasBirthYear \"2007\"^^xsd:positiveInteger .\n\ndata:Leonor_Princess_of_Asturias a :Woman ;\n    :hasBirthYear \"2005\"^^xsd:positiveInteger .\n\n"
+    }
+]

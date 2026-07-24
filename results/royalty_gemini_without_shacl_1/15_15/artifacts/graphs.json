@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Willem-Alexander a :Man,\n        :Person ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Male .\n\ndata:Queen_Maxima a :Person,\n        :Woman ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Female .\n\ndata:Princess_Ariane a :Person,\n        :Woman ;\n    :hasBirthYear 2007 ;\n    :hasFather data:King_Willem-Alexander ;\n    :hasMother data:Queen_Maxima ;\n    :hasSex data:Female ;\n    :knownAs \"Ariane Wilhelmina M\u00e1xima In\u00e9s\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Willem-Alexander a :Man,\n        :Person ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\ndata:Queen_Maxima a :Person,\n        :Woman ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Princess_Ariane a :Person,\n        :Woman ;\n    :hasBirthYear 2007 ;\n    :hasFather data:King_Willem-Alexander ;\n    :hasMother data:Queen_Maxima ;\n    :hasSex data:Female ;\n    :knownAs \"Ariane Wilhelmina M\u00e1xima In\u00e9s\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Willem-Alexander a :Man,\n        :Person ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\ndata:Queen_Maxima a :Person,\n        :Woman ;\n    :hasChild data:Princess_Ariane ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Princess_Ariane a :Person,\n        :Woman ;\n    :hasBirthYear 2007 ;\n    :hasFather data:King_Willem-Alexander ;\n    :hasMother data:Queen_Maxima ;\n    :hasSex data:Female ;\n    :knownAs \"Ariane Wilhelmina M\u00e1xima In\u00e9s\"^^xsd:string .\n\n"
+    }
+]

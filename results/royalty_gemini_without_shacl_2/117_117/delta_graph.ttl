@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Queen_Sofia .
+
+data:Infanta_Cristina a :Woman ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Queen_Sofia .
+
+data:King_Paul_of_Greece a :Man ;
+    :isFatherOf data:Queen_Sofia .
+
+data:Alfonso_XIII a :Man .
+
+data:Infanta_Margarita a :Woman .
+
+data:Infanta_Pilar a :Woman .
+
+data:Infante_Juan a :Man ;
+    :hasFather data:Alfonso_XIII .
+
+data:Prince_Alfonso a :Man ;
+    :hasBirthYear "1941"^^xsd:positiveInteger ;
+    :hasDeathYear "1956"^^xsd:positiveInteger .
+
+data:Princess_Maria_de_las_Mercedes a :Woman .
+
+data:Juan_Carlos_I a :Man ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasFather data:Infante_Juan ;
+    :hasMarriageYear "1962"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Maria_de_las_Mercedes ;
+    :hasRelation data:Queen_Sofia ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Prince_Alfonso .
+
+data:Queen_Sofia a :Woman .
+

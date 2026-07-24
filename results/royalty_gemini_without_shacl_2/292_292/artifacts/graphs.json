@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JorgeGuillermo a :Man,\n        :Person .\n\ndata:PrincessChristinaOfTheNetherlands a :Person,\n        :Woman ;\n    :alsoKnownAs \"Maria Christina\"^^xsd:string ;\n    :formerlyKnownAs \"Princess Marijke\"^^xsd:string ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;\n    :hasMarriageYear 1975 ;\n    :hasMother data:QueenJulianaOfTheNetherlands ;\n    :isSisterOf data:PrincessBeatrix,\n        data:PrincessIrene,\n        data:PrincessMargriet .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasMother data:PrincessArmgardOfLippeBiesterfeld .\n\ndata:PrincessArmgardOfLippeBiesterfeld a :Person,\n        :Woman .\n\ndata:PrincessBeatrix a :Person,\n        :Woman .\n\ndata:PrincessIrene a :Person,\n        :Woman .\n\ndata:PrincessMargriet a :Person,\n        :Woman .\n\ndata:QueenJulianaOfTheNetherlands a :Person,\n        :Woman ;\n    :hasMother data:QueenWilhelminaOfTheNetherlands .\n\ndata:QueenWilhelminaOfTheNetherlands a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JorgeGuillermo a :Man,\n        :Person .\n\ndata:PrincessChristinaOfTheNetherlands a :Person,\n        :Woman ;\n    :alsoKnownAs \"Maria Christina\"^^xsd:string ;\n    :formerlyKnownAs \"Princess Marijke\"^^xsd:string ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;\n    :hasMarriageYear 1975 ;\n    :hasMother data:QueenJulianaOfTheNetherlands ;\n    :isSisterOf data:PrincessBeatrix,\n        data:PrincessIrene,\n        data:PrincessMargriet .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasMother data:PrincessArmgardOfLippeBiesterfeld .\n\ndata:PrincessArmgardOfLippeBiesterfeld a :Person,\n        :Woman .\n\ndata:PrincessBeatrix a :Person,\n        :Woman .\n\ndata:PrincessIrene a :Person,\n        :Woman .\n\ndata:PrincessMargriet a :Person,\n        :Woman .\n\ndata:QueenJulianaOfTheNetherlands a :Person,\n        :Woman ;\n    :hasMother data:QueenWilhelminaOfTheNetherlands .\n\ndata:QueenWilhelminaOfTheNetherlands a :Person,\n        :Woman .\n\n"
+    }
+]

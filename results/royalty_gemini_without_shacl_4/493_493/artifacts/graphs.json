@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antoine_Duke_of_Montpensier a :Man .\n\ndata:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Louise_of_Orleans a :Woman ;\n    :hasBirthYear \"1882\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1958\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"1907\"^^xsd:positiveInteger ;\n    :hasMother data:Marie_Isabelle_dOrleans ;\n    :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Luisa_Fernanda_of_Spain a :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Woman .\n\ndata:Marie_Isabelle_dOrleans a :Woman ;\n    :isDaughterOf data:Antoine_Duke_of_Montpensier,\n        data:Luisa_Fernanda_of_Spain ;\n    :isMotherOf data:Louise_of_Orleans .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antoine_Duke_of_Montpensier a :Man .\n\ndata:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Louise_of_Orleans a :Woman ;\n    :hasBirthYear \"1882\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1958\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"1907\"^^xsd:positiveInteger ;\n    :hasMother data:Marie_Isabelle_dOrleans ;\n    :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Luisa_Fernanda_of_Spain a :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Woman .\n\ndata:Marie_Isabelle_dOrleans a :Woman ;\n    :isDaughterOf data:Antoine_Duke_of_Montpensier,\n        data:Luisa_Fernanda_of_Spain ;\n    :isMotherOf data:Louise_of_Orleans .\n\n"
+    }
+]

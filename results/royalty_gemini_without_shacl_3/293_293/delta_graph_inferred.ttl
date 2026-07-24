@@ -1,0 +1,98 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male .
+
+data:ElizabethII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SamuelChatto ;
+    :hasSister data:ElizabethII ;
+    :isAncestorOf data:SamuelChatto ;
+    :isBloodrelationOf data:ElizabethII ;
+    :isSiblingOf data:ElizabethII ;
+    :isSisterOf data:ElizabethII .
+
+data:PrincessMargaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SamuelChatto ;
+    :hasSister data:PrincessMargaret ;
+    :isAncestorOf data:SamuelChatto ;
+    :isBloodrelationOf data:PrincessMargaret ;
+    :isSiblingOf data:PrincessMargaret ;
+    :isSisterOf data:PrincessMargaret .
+
+data:DanielChatto a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:DanielChatto ;
+    :hasChild data:SamuelChatto ;
+    :hasRelation data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SamuelChatto ;
+    :hasSon data:SamuelChatto ;
+    :isAncestorOf data:SamuelChatto ;
+    :isBloodrelationOf data:DanielChatto ;
+    :isBrotherOf data:DanielChatto ;
+    :isFatherOf data:SamuelChatto ;
+    :isParentOf data:SamuelChatto ;
+    :isSiblingOf data:DanielChatto ;
+    :isUncleOf data:SamuelChatto .
+
+data:LadySarahChatto a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:SamuelChatto ;
+    :hasRelation data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SamuelChatto ;
+    :hasSister data:LadySarahChatto ;
+    :hasSon data:SamuelChatto ;
+    :isAncestorOf data:SamuelChatto ;
+    :isAuntOf data:SamuelChatto ;
+    :isBloodrelationOf data:LadySarahChatto ;
+    :isMotherOf data:SamuelChatto ;
+    :isParentOf data:SamuelChatto ;
+    :isSiblingOf data:LadySarahChatto ;
+    :isSisterOf data:LadySarahChatto .
+
+data:SamuelChatto a :Man,
+        :Person ;
+    :hasAncestor data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret ;
+    :hasBirthYear 1996 ;
+    :hasBrother data:SamuelChatto ;
+    :hasFather data:DanielChatto ;
+    :hasMother data:LadySarahChatto ;
+    :hasParent data:DanielChatto,
+        data:LadySarahChatto ;
+    :hasRelation data:DanielChatto,
+        data:ElizabethII,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SamuelChatto ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:SamuelChatto ;
+    :isBrotherOf data:SamuelChatto ;
+    :isChildOf data:DanielChatto,
+        data:LadySarahChatto ;
+    :isSiblingOf data:SamuelChatto ;
+    :isSonOf data:DanielChatto,
+        data:LadySarahChatto .
+

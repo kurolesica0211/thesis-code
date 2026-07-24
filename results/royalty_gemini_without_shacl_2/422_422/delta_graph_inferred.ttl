@@ -1,0 +1,293 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andreas8thPrinceOfLeiningen a :Man,
+        :Person ;
+    :hasBrother data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isBrotherOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isSiblingOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isUncleOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen .
+
+data:PrincessMargaritaOfHohenloheOhringen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :hasDaughter data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :hasDeathYear 1989 ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:PrincessMargaritaOfHohenloheOhringen ;
+    :isAncestorOf data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :isAuntOf data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :isBloodrelationOf data:PrincessMargaritaOfHohenloheOhringen ;
+    :isMotherOf data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :isParentOf data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen ;
+    :isSiblingOf data:PrincessMargaritaOfHohenloheOhringen ;
+    :isSisterOf data:PrincessMargaritaOfHohenloheOhringen .
+
+data:DuchessEilikaOfOldenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KarlEmichOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:DuchessEilikaOfOldenburg ;
+    :hasSon data:KarlEmichOfLeiningen ;
+    :isAncestorOf data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isAuntOf data:KarlEmichOfLeiningen ;
+    :isBloodrelationOf data:DuchessEilikaOfOldenburg ;
+    :isMotherOf data:KarlEmichOfLeiningen ;
+    :isParentOf data:KarlEmichOfLeiningen ;
+    :isSiblingOf data:DuchessEilikaOfOldenburg ;
+    :isSisterOf data:DuchessEilikaOfOldenburg .
+
+data:Emich7thPrinceOfLeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Emich7thPrinceOfLeiningen ;
+    :hasChild data:KarlEmichOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSon data:KarlEmichOfLeiningen ;
+    :isAncestorOf data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:Emich7thPrinceOfLeiningen ;
+    :isBrotherOf data:Emich7thPrinceOfLeiningen ;
+    :isFatherOf data:KarlEmichOfLeiningen ;
+    :isParentOf data:KarlEmichOfLeiningen ;
+    :isSiblingOf data:Emich7thPrinceOfLeiningen ;
+    :isUncleOf data:KarlEmichOfLeiningen .
+
+data:GabrieleRenateThyssen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasDaughter data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:GabrieleRenateThyssen ;
+    :hasSon data:PrinceEmichAlbrechtKarlOfLeiningen ;
+    :isAncestorOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isAuntOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:GabrieleRenateThyssen ;
+    :isMotherOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isParentOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isSiblingOf data:GabrieleRenateThyssen ;
+    :isSisterOf data:GabrieleRenateThyssen .
+
+data:PrinceEmichAlbrechtKarlOfLeiningen a :Man,
+        :Person ;
+    :hasAncestor data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :hasBrother data:PrinceEmichAlbrechtKarlOfLeiningen ;
+    :hasFather data:KarlEmichOfLeiningen ;
+    :hasMother data:GabrieleRenateThyssen ;
+    :hasParent data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBrotherOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isChildOf data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :isSiblingOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isSonOf data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen .
+
+data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen a :Person,
+        :Woman ;
+    :hasAncestor data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen ;
+    :hasBrother data:PrinceEmichAlbrechtKarlOfLeiningen ;
+    :hasFather data:KarlEmichOfLeiningen ;
+    :hasMother data:PrincessMargaritaOfHohenloheOhringen ;
+    :hasParent data:KarlEmichOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isChildOf data:KarlEmichOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen ;
+    :isDaughterOf data:KarlEmichOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen ;
+    :isSiblingOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isSisterOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen .
+
+data:PrincessTheresaAnnaElisabethOfLeiningen a :Person,
+        :Woman ;
+    :hasAncestor data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :hasBrother data:PrinceEmichAlbrechtKarlOfLeiningen ;
+    :hasFather data:KarlEmichOfLeiningen ;
+    :hasMother data:GabrieleRenateThyssen ;
+    :hasParent data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSister data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isChildOf data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :isDaughterOf data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen ;
+    :isSiblingOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isSisterOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen .
+
+data:KarlEmichOfLeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasAncestor data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :hasChild data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasDaughter data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasFather data:Emich7thPrinceOfLeiningen ;
+    :hasMarriageYear 1984,
+        1991 ;
+    :hasMother data:DuchessEilikaOfOldenburg ;
+    :hasParent data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen ;
+    :hasRelation data:Andreas8thPrinceOfLeiningen,
+        data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen,
+        data:GabrieleRenateThyssen,
+        data:KarlEmichOfLeiningen,
+        data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessMargaritaOfHohenloheOhringen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasSon data:PrinceEmichAlbrechtKarlOfLeiningen ;
+    :isAncestorOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isBloodrelationOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isBrotherOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isChildOf data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen ;
+    :isFatherOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isParentOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :isSiblingOf data:Andreas8thPrinceOfLeiningen,
+        data:KarlEmichOfLeiningen ;
+    :isSonOf data:DuchessEilikaOfOldenburg,
+        data:Emich7thPrinceOfLeiningen ;
+    :isUncleOf data:PrinceEmichAlbrechtKarlOfLeiningen,
+        data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen .
+

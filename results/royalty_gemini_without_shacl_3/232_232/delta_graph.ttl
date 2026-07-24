@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_William_I_of_Prussia a :Man,
+        :Person .
+
+data:Georg_Friedrich_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Prince_Louis_Ferdinand_Jr .
+
+data:Prince_Ferdinand_of_Hohenzollern a :Man,
+        :Person .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Female a :Female .
+
+data:German_Crown_Prince_William a :Man,
+        :Person .
+
+data:Grand_Duke_Kyril_Vladimirovich a :Man,
+        :Person .
+
+data:Male a :Male .
+
+data:Prince_Louis_Ferdinand_Jr a :Man,
+        :Person ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+        :Woman .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:Female .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasDeathYear 1994 ;
+    :hasFather data:German_Crown_Prince_William ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasSex data:Male .
+

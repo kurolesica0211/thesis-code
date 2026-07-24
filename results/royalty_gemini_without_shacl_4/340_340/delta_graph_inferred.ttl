@@ -1,0 +1,692 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasChild data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :hasDaughter data:Princess_Frederica_1917 ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :isAncestorOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isFatherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isParentOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover ;
+    :isUncleOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Crown_Prince_Wilhelm a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :hasDaughter data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :isAncestorOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia ;
+    :isAuntOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isParentOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :hasDaughter data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :isAncestorOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isParentOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia .
+
+data:Prince_Christian_Oscar_1919 a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBrotherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia .
+
+data:Prince_Ernest_Augustus_1914 a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBrotherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia .
+
+data:Prince_George_William_1915 a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBrotherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia .
+
+data:Prince_Welf_Henry_1923 a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBrotherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia .
+
+data:Princess_Frederica_1917 a :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSisterOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasChild data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :hasDaughter data:Princess_Frederica_1917 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Christian_Oscar_1919,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Joachim,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923 ;
+    :isAncestorOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isAuntOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isDaughterOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isMotherOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isParentOf data:Prince_Christian_Oscar_1919,
+        data:Prince_Ernest_Augustus_1914,
+        data:Prince_George_William_1915,
+        data:Prince_Welf_Henry_1923,
+        data:Princess_Frederica_1917 ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :knownAs "Sissy"^^xsd:string .
+

@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Ancestor,
+        :Man ;
+    :hasBrother data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasChild data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasDaughter data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isAncestorOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isBrotherOf data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isFatherOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isParentOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isUncleOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+
+data:Isabel_de_Ibarreta_y_Uhagon a :Ancestor,
+        :Woman ;
+    :hasChild data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasDaughter data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSister data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isAncestorOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isAuntOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isMotherOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isParentOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isSisterOf data:Isabel_de_Ibarreta_y_Uhagon .
+
+data:Marie_Isabelle_dOrleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSister data:Marie_Isabelle_dOrleans ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isAuntOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Marie_Isabelle_dOrleans ;
+    :isMotherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Marie_Isabelle_dOrleans ;
+    :isSisterOf data:Marie_Isabelle_dOrleans .
+
+data:Philippe_dOrleans_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Philippe_dOrleans_Count_of_Paris ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isBrotherOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isFatherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isUncleOf data:Ferdinand_dOrleans .
+
+data:Ferdinand_dOrleans a :Man ;
+    :hasAncestor data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Ferdinand_dOrleans ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasParent data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isBloodrelationOf data:Ferdinand_dOrleans ;
+    :isBrotherOf data:Ferdinand_dOrleans ;
+    :isChildOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isSiblingOf data:Ferdinand_dOrleans ;
+    :isSonOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris .
+
+data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Woman ;
+    :hasAncestor data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Isabel_de_Ibarreta_y_Uhagon ;
+    :hasFather data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasMother data:Isabel_de_Ibarreta_y_Uhagon ;
+    :hasParent data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Isabel_de_Ibarreta_y_Uhagon ;
+    :hasRelation data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Ferdinand_dOrleans,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSister data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isChildOf data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isDaughterOf data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo,
+        data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isSiblingOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSisterOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+

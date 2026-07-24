@@ -1,0 +1,96 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexia a :Person,
+        :Woman ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:CarlXVIGustafOfSweden a :Man,
+        :Person .
+
+data:FelipeVIOfSpain a :Man,
+        :Person .
+
+data:FrederikXOfDenmark a :Man,
+        :Person .
+
+data:Nikolaos a :Man,
+        :Person ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Pavlos a :Man,
+        :Person ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Philippos a :Man,
+        :Person ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:AlexandrineOfMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:Benedikte a :Person,
+        :Woman .
+
+data:ChristianX a :Man,
+        :Person .
+
+data:FredericaOfGreece a :Person,
+        :Woman .
+
+data:FrederikIX a :Man,
+        :Person ;
+    :hasFather data:ChristianX ;
+    :hasMother data:AlexandrineOfMecklenburgSchwerin .
+
+data:GustafVIAdolf a :Man,
+        :Person .
+
+data:IngridOfSweden a :Person,
+        :Woman ;
+    :hasFather data:GustafVIAdolf ;
+    :hasMother data:MargaretOfConnaught .
+
+data:JuanCarlosOfSpain a :Man,
+        :Person .
+
+data:MargaretOfConnaught a :Person,
+        :Woman .
+
+data:MargretheII a :Person,
+        :Woman .
+
+data:PaulOfGreece a :Man,
+        :Person .
+
+data:SophiaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasRelation data:JuanCarlosOfSpain .
+
+data:Anne-Marie a :Person,
+        :Woman ;
+    :hasBirthYear 1946 ;
+    :hasFather data:FrederikIX ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:IngridOfSweden ;
+    :hasRelation data:ConstantineII ;
+    :isSiblingOf data:Benedikte,
+        data:MargretheII .
+
+data:ConstantineII a :Man,
+        :Person ;
+    :hasDeathYear 2023 ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:FredericaOfGreece ;
+    :isSiblingOf data:SophiaOfGreeceAndDenmark .
+

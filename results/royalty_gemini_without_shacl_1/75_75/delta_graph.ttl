@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasFather data:Vladimir_Kirillovich .
+
+data:Alexander_II a :Man,
+        :Person ;
+    :isFatherOf data:Vladimir_Alexandrovich .
+
+data:Alexander_Romanov a :Man,
+        :Person .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,
+        :Person .
+
+data:Kirill_Vladimirovich_Romanov a :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_Romanov ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasRelation data:Victoria_Melita .
+
+data:Maria_Alexandrovna_of_Russia a :Person,
+        :Woman ;
+    :hasMother data:Alexander_II .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+
+data:Vladimir_Kirillovich a :Man,
+        :Person ;
+    :hasFather data:Kirill_Vladimirovich_Romanov ;
+    :hasMother data:Victoria_Melita .
+
+data:Victoria_Melita a :Person,
+        :Woman ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Maria_Alexandrovna_of_Russia .
+
+data:Vladimir_Alexandrovich a :Man,
+        :Person .
+

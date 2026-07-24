@@ -1,0 +1,205 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Herman_Jud a :Man,
+        :Person ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Herman_Jud ;
+    :hasDeathYear 1987 ;
+    :hasRelation data:Herman_Jud,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Herman_Jud ;
+    :isBrotherOf data:Herman_Jud ;
+    :isSiblingOf data:Herman_Jud .
+
+data:Grand_Duke_Nicholas_Mikhailovich a :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isBrotherOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isSiblingOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isUncleOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:William_Bateman_Leeds_Jr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:William_Bateman_Leeds_Jr ;
+    :hasChild data:Nancy_Helen_Marie_Leeds ;
+    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:William_Bateman_Leeds_Jr ;
+    :isBrotherOf data:William_Bateman_Leeds_Jr ;
+    :isFatherOf data:Nancy_Helen_Marie_Leeds ;
+    :isParentOf data:Nancy_Helen_Marie_Leeds ;
+    :isSiblingOf data:William_Bateman_Leeds_Jr ;
+    :isUncleOf data:Nancy_Helen_Marie_Leeds .
+
+data:Princess_Maria_Georgievna_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasDaughter data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isAuntOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isParentOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSiblingOf data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Maria_Georgievna_of_Greece_and_Denmark .
+
+data:Nancy_Helen_Marie_Leeds a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasFather data:William_Bateman_Leeds_Jr ;
+    :hasMother data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasParent data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Nancy_Helen_Marie_Leeds ;
+    :isChildOf data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :isDaughterOf data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :isSiblingOf data:Nancy_Helen_Marie_Leeds ;
+    :isSisterOf data:Nancy_Helen_Marie_Leeds .
+
+data:Grand_Duke_George_Mihailovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :hasChild data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasDaughter data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isBrotherOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isFatherOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isParentOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich ;
+    :isUncleOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Princess_Nina_Georgievna a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasFather data:Grand_Duke_George_Mihailovich_of_Russia ;
+    :hasMother data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasParent data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich,
+        data:Herman_Jud,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasSister data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isAuntOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isChildOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasBirthYear 1903 ;
+    :hasChild data:Nancy_Helen_Marie_Leeds ;
+    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Grand_Duke_George_Mihailovich_of_Russia ;
+    :hasMother data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasParent data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Grand_Duke_Nicholas_Mikhailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds ;
+    :isAuntOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isChildOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duke_George_Mihailovich_of_Russia,
+        data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;
+    :isMotherOf data:Nancy_Helen_Marie_Leeds ;
+    :isParentOf data:Nancy_Helen_Marie_Leeds ;
+    :isSiblingOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna_of_Russia .
+

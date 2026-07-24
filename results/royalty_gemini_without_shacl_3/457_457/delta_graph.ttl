@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie_Habsburg a :Person,
+        :Woman ;
+    :alsoKnownAs data:Archduchess_Sophie_of_Austria ;
+    :hasBirthYear 1959 ;
+    :hasChild data:Alexis_Ferdinand ;
+    :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+    :hasMother data:Helene_of_Torring-Jettenbach ;
+    :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .
+
+data:Alexis_Ferdinand a :Man,
+        :Person ;
+    :hasDeathYear 2010 .
+
+data:Archduchess_Sophie_of_Austria a :Person .
+
+data:Ferdinand_Karl_Max_of_Austria a :Man,
+        :Person .
+
+data:Helene_of_Torring-Jettenbach a :Person,
+        :Woman .
+
+data:Mariano_Hugo_of_Windisch-Graetz a :Man,
+        :Person .
+

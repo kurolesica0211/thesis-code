@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Woman ;
+    :hasSister data:Rose_Leveson-Gower_Countess_Granville .
+
+data:Rosie_Stancer a :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasSon data:Jock_Stancer .
+
+data:William_Wordie_Stancer a :Man ;
+    :hasFather data:James_Wordie .
+
+data:James_Wordie a :Man .
+
+data:Jock_Stancer a :Man .
+
+data:Lady_Mary_Cecilia_Leveson-Gower a :Woman ;
+    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower_Countess_Granville .
+
+data:Sir_Gilbert_Falkingham_Clayton a :Man .
+
+data:Sir_Samuel_Clayton a :Man ;
+    :hasFather data:Sir_Gilbert_Falkingham_Clayton .
+
+data:William_Leveson-Gower_4th_Earl_Granville a :Man .
+
+data:Rose_Leveson-Gower_Countess_Granville a :Woman .
+

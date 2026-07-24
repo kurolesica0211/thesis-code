@@ -1,0 +1,491 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Frederick_Charles_of_Hesse ;
+    :hasChild data:Prince_Christoph_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSon data:Prince_Christoph_of_Hesse ;
+    :isAncestorOf data:Prince_Christoph_of_Hesse ;
+    :isBloodrelationOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Prince_Christoph_of_Hesse ;
+    :isParentOf data:Prince_Christoph_of_Hesse ;
+    :isSiblingOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Prince_Christoph_of_Hesse .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Emperor_Frederick_III a :Ancestor,
+        :Man ;
+    :hasBrother data:Emperor_Frederick_III ;
+    :hasChild data:Princess_Margaret_of_Prussia ;
+    :hasDaughter data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isBloodrelationOf data:Emperor_Frederick_III ;
+    :isBrotherOf data:Emperor_Frederick_III ;
+    :isFatherOf data:Princess_Margaret_of_Prussia ;
+    :isParentOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Emperor_Frederick_III ;
+    :isUncleOf data:Princess_Margaret_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Margaret_of_Prussia ;
+    :hasDaughter data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isAuntOf data:Princess_Margaret_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Princess_Margaret_of_Prussia ;
+    :isParentOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Emperor_Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasChild data:Prince_Christoph_of_Hesse ;
+    :hasFather data:Emperor_Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Emperor_Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_Christoph_of_Hesse ;
+    :isAncestorOf data:Prince_Christoph_of_Hesse ;
+    :isAuntOf data:Prince_Christoph_of_Hesse ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia ;
+    :isChildOf data:Emperor_Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Emperor_Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Prince_Christoph_of_Hesse ;
+    :isParentOf data:Prince_Christoph_of_Hesse ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Maximilian_of_Hesse a :Man ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Philipp_of_Hesse a :Man ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Richard_of_Hesse a :Man ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Wolfgang_of_Hesse a :Man ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Christoph_of_Hesse a :Man ;
+    :hasAncestor data:Emperor_Frederick_III,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1930 ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Emperor_Frederick_III,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia .
+

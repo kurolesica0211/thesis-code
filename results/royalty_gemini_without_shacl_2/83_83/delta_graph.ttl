@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor .
+
+data:Sarah_Ferguson a :Person,
+        :Woman ;
+    :isMotherOf data:Beatrice,
+        data:Eugenie .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    :isFatherOf data:Beatrice,
+        data:Eugenie .
+
+data:Jack_Brooksbank a :Man,
+        :Person ;
+    :isFatherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank .
+
+data:August_Brooksbank a :Man,
+        :Person .
+
+data:Ernest_Brooksbank a :Man,
+        :Person .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :hasBirthYear 1990 ;
+    :hasMarriageYear 2018 ;
+    :hasRelation data:Jack_Brooksbank ;
+    :isMotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSiblingOf data:Beatrice ;
+    :knownAs "Eugenie Victoria Helena"^^xsd:string .
+
+data:Beatrice a :Person,
+        :Woman .
+

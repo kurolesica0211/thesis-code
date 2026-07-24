@@ -1,0 +1,177 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nadejda_Mikhailovna_de_Torby a :Person,
+        :Woman ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Nadejda_Mikhailovna_de_Torby ;
+    :isBloodrelationOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isSiblingOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isSisterOf data:Nadejda_Mikhailovna_de_Torby .
+
+data:Louis_Mountbatten_1st_Marquess a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten_1st_Marquess ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten ;
+    :isBloodrelationOf data:Louis_Mountbatten_1st_Marquess ;
+    :isBrotherOf data:Louis_Mountbatten_1st_Marquess ;
+    :isFatherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Louis_Mountbatten_1st_Marquess ;
+    :isUncleOf data:George_Mountbatten .
+
+data:Princess_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Princess_Victoria ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten ;
+    :isAuntOf data:George_Mountbatten ;
+    :isBloodrelationOf data:Princess_Victoria ;
+    :isMotherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Princess_Victoria ;
+    :isSisterOf data:Princess_Victoria .
+
+data:Louis_Mountbatten_Earl_Burma a :Man,
+        :Person ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden .
+
+data:Princess_Alice a :Person,
+        :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden .
+
+data:Queen_Louise_Sweden a :Person,
+        :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden .
+
+data:George_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten_1st_Marquess,
+        data:Princess_Victoria ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Louis_Mountbatten_1st_Marquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Princess_Victoria ;
+    :hasParent data:Louis_Mountbatten_1st_Marquess,
+        data:Princess_Victoria ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Princess_Victoria,
+        data:Queen_Louise_Sweden ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isChildOf data:Louis_Mountbatten_1st_Marquess,
+        data:Princess_Victoria ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_Earl_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_Sweden ;
+    :isSonOf data:Louis_Mountbatten_1st_Marquess,
+        data:Princess_Victoria .
+

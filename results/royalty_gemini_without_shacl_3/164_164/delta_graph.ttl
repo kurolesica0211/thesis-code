@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FriedrichWilhelm a :Man,
+        :Person ;
+    :isSonOf data:KiraKirillovna .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:KiraKirillovna a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Vladimir ;
+    :hasDeathYear 1967 ;
+    :hasFather data:KirillVladimirovich ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:VictoriaMelita ;
+    :hasRelation data:LouisFerdinand ;
+    :hasSister data:Maria .
+
+data:KirillVladimirovich a :Ancestor,
+        :Man .
+
+data:LouisFerdinand a :Man,
+        :Person ;
+    :hasMother data:Cecilie .
+
+data:Maria a :Person,
+        :Woman .
+
+data:VictoriaMelita a :Ancestor,
+        :Woman .
+
+data:Vladimir a :Man,
+        :Person .
+

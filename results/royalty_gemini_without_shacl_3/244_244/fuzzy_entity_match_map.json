@@ -1,0 +1,183 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/244_244",
+  "text_file": "Q3268153.txt",
+  "text_key": "Q3268153",
+  "article": "https://en.wikipedia.org/wiki/Prince_Alexander_of_Yugoslavia_(born_1982)",
+  "article_key": "Prince Alexander of Yugoslavia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Alexander_of_Serbia_1",
+    "qid": "Q3268153",
+    "label": "Prince Alexander of Serbia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Alexander_of_Serbia_1",
+      "qid": "Q3268153",
+      "label": "Prince Alexander of Serbia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alexander-_Crown_Prince_of_Serbia",
+      "qid": "Q815126",
+      "label": "Alexander, Crown Prince of Serbia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Maria_da_Glória-_Duchess_of_Segorbe",
+      "qid": "Q2312463",
+      "label": "Princess Maria da Glória, Duchess of Segorbe",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alexandra_of_Yugoslavia",
+      "qid": "Q167423",
+      "label": "Alexandra of Yugoslavia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alexander_of_Greece",
+      "qid": "Q151742",
+      "label": "Alexander of Greece",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alexander_Karageorgevitch",
+      "extracted_local_name": "Alexander_Karageorgevitch",
+      "embedding_text": "Alexander Karageorgevitch",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Alexander_of_Serbia_1",
+      "ground_truth_qid": "Q3268153",
+      "ground_truth_label": "Prince Alexander of Serbia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexander Karageorgevitch",
+      "best_candidate_label": "Prince Alexander of Serbia",
+      "best_candidate_qid": "Q3268153",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexander_Sr_of_Yugoslavia",
+      "extracted_local_name": "Alexander_Sr_of_Yugoslavia",
+      "embedding_text": "Alexander Sr of Yugoslavia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8809523809523809,
+      "ground_truth_uri": "http://example.com/data#Alexandra_of_Yugoslavia",
+      "ground_truth_qid": "Q167423",
+      "ground_truth_label": "Alexandra of Yugoslavia",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexandra of Yugoslavia",
+      "best_candidate_label": "Alexandra of Yugoslavia",
+      "best_candidate_qid": "Q167423",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8809523809523809
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Maria_da_Gloria",
+      "extracted_local_name": "Princess_Maria_da_Gloria",
+      "embedding_text": "Princess Maria da Gloria",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7692307692307693,
+      "ground_truth_uri": "http://example.com/data#Princess_Maria_da_Glória-_Duchess_of_Segorbe",
+      "ground_truth_qid": "Q2312463",
+      "ground_truth_label": "Princess Maria da Glória, Duchess of Segorbe",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria da Gloria",
+      "best_candidate_label": "Princess Maria da Glória, Duchess of Segorbe",
+      "best_candidate_qid": "Q2312463",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7692307692307693
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ana_Luna_Medina_y_Orleans_Braganza",
+      "extracted_local_name": "Ana_Luna_Medina_y_Orleans_Braganza",
+      "embedding_text": "Ana Luna Medina y Orleans Braganza",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Dona Maria da Glória de Orléans-Bragança e Borbon",
+      "best_candidate_label": "Princess Maria da Glória, Duchess of Segorbe",
+      "best_candidate_qid": "Q2312463",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5060240963855421
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Peter_II",
+      "extracted_local_name": "King_Peter_II",
+      "embedding_text": "King Peter II",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Crown Prince Alexander Karađorđević",
+      "best_candidate_label": "Alexander, Crown Prince of Serbia",
+      "best_candidate_qid": "Q815126",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Alexandra",
+      "extracted_local_name": "Queen_Alexandra",
+      "embedding_text": "Queen Alexandra",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexander of Greece",
+      "best_candidate_label": "Alexander of Greece",
+      "best_candidate_qid": "Q151742",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.47058823529411764
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza",
+      "extracted_local_name": "Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza",
+      "embedding_text": "Sol Maria de la Blanca Medina y Orleans Braganza",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexander I of Greece",
+      "best_candidate_label": "Alexander of Greece",
+      "best_candidate_qid": "Q151742",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2898550724637681
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 3,
+    "entities_unmatched": 4
+  }
+}

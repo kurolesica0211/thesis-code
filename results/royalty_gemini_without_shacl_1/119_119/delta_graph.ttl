@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GrandDuchessMariaTeresa a :Woman .
+
+data:GrandDukeHenri a :Man .
+
+data:PrinceFelix a :Man .
+
+data:PrinceGuillaumeOfLuxembourg a :Man ;
+    :hasBirthYear 1963 ;
+    :hasFather data:GrandDukeJean ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephineCharlotte ;
+    :hasRelation data:PrincessSibilla .
+
+data:PrinceJean a :Man .
+
+data:PrinceLouis a :Man .
+
+data:PrinceRemy a :Man .
+
+data:PrinceRene a :Man .
+
+data:PrincessChantal a :Woman .
+
+data:PrincessElisabeth a :Woman .
+
+data:PrincessJoan a :Woman .
+
+data:PrincessMariaPia a :Woman .
+
+data:PrincessMarina a :Woman .
+
+data:PrincessVirginia a :Woman .
+
+data:AlessandroTorlonia a :Man .
+
+data:AlikiLadyRussell a :Woman .
+
+data:DonnaOlimpiaTorlonia a :Woman ;
+    :hasFather data:AlessandroTorlonia ;
+    :hasMother data:InfantaBeatriz .
+
+data:GrandDuchessJosephineCharlotte a :Woman .
+
+data:GrandDukeJean a :Man .
+
+data:InfantaBeatriz a :Woman .
+
+data:PaulAnnikWeiller a :Man ;
+    :hasFather data:PaulLouisWeiller ;
+    :hasMother data:AlikiLadyRussell .
+
+data:PaulLouisWeiller a :Man .
+
+data:PrincessSibilla a :Woman ;
+    :hasBirthYear 1968 ;
+    :hasFather data:PaulAnnikWeiller ;
+    :hasMother data:DonnaOlimpiaTorlonia .
+

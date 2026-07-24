@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandIIOfTheTwoSicilies a :Ancestor .
+
+data:KingLudwigIIIOfBavaria a :Ancestor .
+
+data:PrinceAlfonsoCountOfCaserta a :Ancestor .
+
+data:PrinceCarlosOfBourbonTwoSicilies a :Ancestor ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 .
+
+data:PrinceRanieriDukeOfCastro :hasBirthYear 1883 ;
+    :hasDeathYear 1973 .
+
+data:PrincessMariaAntonietta a :Ancestor .
+

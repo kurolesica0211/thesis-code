@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Modeste_Christiane_von_Unruh a :Ancestor,
+        :Woman ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :hasSister data:Modeste_Christiane_von_Unruh ;
+    :isAncestorOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Modeste_Christiane_von_Unruh ;
+    :isSiblingOf data:Modeste_Christiane_von_Unruh ;
+    :isSisterOf data:Modeste_Christiane_von_Unruh .
+
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasChild data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasDaughter data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :isAncestorOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isParentOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Adelaide_of_Lippe-Biesterfeld .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasBrother data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :hasChild data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :hasSon data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isAncestorOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :isBrotherOf data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :isFatherOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isParentOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isSiblingOf data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :isUncleOf data:Friedrich_Johann_of_Saxe-Meiningen .
+
+data:Karoline_von_Wartensleben a :Ancestor,
+        :Woman ;
+    :hasChild data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasDaughter data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :hasSister data:Karoline_von_Wartensleben ;
+    :isAncestorOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isAuntOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Karoline_von_Wartensleben ;
+    :isMotherOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isParentOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Karoline_von_Wartensleben ;
+    :isSisterOf data:Karoline_von_Wartensleben .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasAncestor data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :hasBrother data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :hasParent data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :isBloodrelationOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isBrotherOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isChildOf data:Georg_II_Duke_of_Saxe-Meiningen ;
+    :isSiblingOf data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :isSonOf data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Karoline_von_Wartensleben ;
+    :hasParent data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben ;
+    :hasRelation data:Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Friedrich_Johann_of_Saxe-Meiningen,
+        data:Georg_II_Duke_of_Saxe-Meiningen,
+        data:Karoline_von_Wartensleben,
+        data:Modeste_Christiane_von_Unruh ;
+    :hasSister data:Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isChildOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben ;
+    :isDaughterOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben ;
+    :isSiblingOf data:Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Adelaide_of_Lippe-Biesterfeld .
+

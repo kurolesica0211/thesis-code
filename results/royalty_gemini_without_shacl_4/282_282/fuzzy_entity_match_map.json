@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/282_282",
+  "text_file": "Q3856119.txt",
+  "text_key": "Q3856119",
+  "article": "https://en.wikipedia.org/wiki/Fergus_Bowes-Lyon,_17th_Earl_of_Strathmore_and_Kinghorne",
+  "article_key": "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",
+  "main_entity": {
+    "uri": "http://example.com/data#Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne",
+    "qid": "Q3856119",
+    "label": "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne",
+      "qid": "Q3856119",
+      "label": "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_Cator",
+      "qid": "Q75240065",
+      "label": "Elizabeth Cator",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Michael_Bowes-Lyon",
+      "qid": "Q63806478",
+      "label": "Michael Bowes-Lyon",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Margaret_Cator",
+      "extracted_local_name": "Elizabeth_Margaret_Cator",
+      "embedding_text": "Elizabeth Margaret Cator",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Elizabeth_Cator",
+      "ground_truth_qid": "Q75240065",
+      "ground_truth_label": "Elizabeth Cator",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Margaret Cator",
+      "best_candidate_label": "Elizabeth Cator",
+      "best_candidate_qid": "Q75240065",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Bowes-Lyon",
+      "extracted_local_name": "Michael_Bowes-Lyon",
+      "embedding_text": "Michael Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Michael_Bowes-Lyon",
+      "ground_truth_qid": "Q63806478",
+      "ground_truth_label": "Michael Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Michael Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon",
+      "best_candidate_qid": "Q63806478",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Fergus_Bowes-Lyon",
+      "extracted_local_name": "Fergus_Bowes-Lyon",
+      "embedding_text": "Fergus Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Michael Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon",
+      "best_candidate_qid": "Q63806478",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6
+    },
+    {
+      "extracted_uri": "http://example.org/data/John_Cator",
+      "extracted_local_name": "John_Cator",
+      "embedding_text": "John Cator",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fergus Bowes-Lyon- 17th Earl of Strathmore and Kinghorne",
+      "best_candidate_label": "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",
+      "best_candidate_qid": "Q3856119",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.21212121212121213
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Pamela_McCorquodale",
+      "extracted_local_name": "Mary_Pamela_McCorquodale",
+      "embedding_text": "Mary Pamela Mc Corquodale",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Michael Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon",
+      "best_candidate_qid": "Q63806478",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32558139534883723
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Claude_Hamilton_Bowes-Lyon",
+      "extracted_local_name": "Michael_Claude_Hamilton_Bowes-Lyon",
+      "embedding_text": "Michael Claude Hamilton Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fergus Michael Claude Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",
+      "best_candidate_label": "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",
+      "best_candidate_qid": "Q3856119",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.47619047619047616
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

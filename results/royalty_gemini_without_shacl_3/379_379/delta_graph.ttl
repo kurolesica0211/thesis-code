@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Berthold_Prinz_und_Markgraf_von_Baden a :Man ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Prince_Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Marie_Louise_of_Hanover ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Max_Margrave_of_Baden .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Max_Margrave_of_Baden a :Man .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man .
+
+data:Prince_Maximilian_Margrave_of_Baden a :Man .
+
+data:Princess_Alice_of_Battenberg a :Woman .
+
+data:Princess_Marie_Louise_of_Hanover a :Woman .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
+

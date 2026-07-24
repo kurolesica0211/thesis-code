@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_VI a :Man,
+        :Person ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Prince_Albert_Victor a :Man,
+        :Person ;
+    :isUncleOf data:Edward_VIII .
+
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man,
+        :Person ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Prince_John a :Man,
+        :Person ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :isAncestorOf data:Edward_VIII .
+
+data:Edward_VII a :Man,
+        :Person .
+
+data:Francis_Duke_of_Teck a :Man,
+        :Person .
+
+data:George_V a :Man,
+        :Person ;
+    :hasFather data:Edward_VII ;
+    :hasMother data:Queen_Alexandra .
+
+data:Mary_Adelaide_of_Cambridge a :Person,
+        :Woman .
+
+data:Queen_Alexandra a :Person,
+        :Woman .
+
+data:Queen_Mary a :Person,
+        :Woman ;
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Mary_Adelaide_of_Cambridge .
+
+data:Wallis_Simpson a :Person,
+        :Woman .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :alsoKnownAs "Duke of Windsor"^^xsd:string ;
+    :hasBirthYear 1894 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Wallis_Simpson ;
+    :knownAs "Edward Albert Christian George Andrew Patrick David"^^xsd:string .
+

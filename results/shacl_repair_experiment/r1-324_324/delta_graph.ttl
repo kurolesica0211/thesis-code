@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor .
+
+data:Henri_Count_of_Paris a :Ancestor .
+
+data:Henri_Philippe_Pierre_Marie_d_Orleans a :Ancestor ;
+    :hasMarriageYear data:Duchess_Marie_Therese_of_Wurttemberg .
+
+data:Jacques_d_Orleans a :Ancestor .
+
+data:Luis_Cousino_y_Sebire a :Ancestor .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor .
+

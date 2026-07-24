@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_dOrleans a :Man ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasRelation data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+
+data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Man .
+
+data:Isabel_de_Ibarreta_y_Uhagon a :Woman .
+
+data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Woman ;
+    :hasFather data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasMother data:Isabel_de_Ibarreta_y_Uhagon .
+
+data:Marie_Isabelle_dOrleans a :Woman .
+
+data:Philippe_dOrleans_Count_of_Paris a :Man .
+

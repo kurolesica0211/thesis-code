@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessCarolineOfMonaco a :Person,
+        :Woman ;
+    :hasRelation data:PrincessCarolineOfMonaco ;
+    :hasSister data:PrincessCarolineOfMonaco ;
+    :isBloodrelationOf data:PrincessCarolineOfMonaco ;
+    :isSiblingOf data:PrincessCarolineOfMonaco ;
+    :isSisterOf data:PrincessCarolineOfMonaco .
+
+data:AlessandraDeOsma a :Person,
+        :Woman ;
+    :hasRelation data:AlessandraDeOsma,
+        data:ChantalHochuli,
+        data:ErnstAugustVonHannover,
+        data:PrinceChristianOfHanover ;
+    :hasSister data:AlessandraDeOsma ;
+    :isBloodrelationOf data:AlessandraDeOsma ;
+    :isSiblingOf data:AlessandraDeOsma ;
+    :isSisterOf data:AlessandraDeOsma .
+
+data:ChantalHochuli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceChristianOfHanover ;
+    :hasRelation data:AlessandraDeOsma,
+        data:ChantalHochuli,
+        data:ErnstAugustVonHannover,
+        data:PrinceChristianOfHanover ;
+    :hasSister data:ChantalHochuli ;
+    :hasSon data:PrinceChristianOfHanover ;
+    :isAncestorOf data:PrinceChristianOfHanover ;
+    :isAuntOf data:PrinceChristianOfHanover ;
+    :isBloodrelationOf data:ChantalHochuli ;
+    :isMotherOf data:PrinceChristianOfHanover ;
+    :isParentOf data:PrinceChristianOfHanover ;
+    :isSiblingOf data:ChantalHochuli ;
+    :isSisterOf data:ChantalHochuli .
+
+data:ErnstAugustVonHannover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnstAugustVonHannover ;
+    :hasChild data:PrinceChristianOfHanover ;
+    :hasRelation data:AlessandraDeOsma,
+        data:ChantalHochuli,
+        data:ErnstAugustVonHannover,
+        data:PrinceChristianOfHanover ;
+    :hasSon data:PrinceChristianOfHanover ;
+    :isAncestorOf data:PrinceChristianOfHanover ;
+    :isBloodrelationOf data:ErnstAugustVonHannover ;
+    :isBrotherOf data:ErnstAugustVonHannover ;
+    :isFatherOf data:PrinceChristianOfHanover ;
+    :isParentOf data:PrinceChristianOfHanover ;
+    :isSiblingOf data:ErnstAugustVonHannover ;
+    :isUncleOf data:PrinceChristianOfHanover .
+
+data:PrinceChristianOfHanover a :Man,
+        :Person ;
+    :hasAncestor data:ChantalHochuli,
+        data:ErnstAugustVonHannover ;
+    :hasBirthYear 1985 ;
+    :hasBrother data:PrinceChristianOfHanover ;
+    :hasFather data:ErnstAugustVonHannover ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:ChantalHochuli ;
+    :hasParent data:ChantalHochuli,
+        data:ErnstAugustVonHannover ;
+    :hasRelation data:AlessandraDeOsma,
+        data:ChantalHochuli,
+        data:ErnstAugustVonHannover,
+        data:PrinceChristianOfHanover ;
+    :hasSex "Male"^^xsd:string ;
+    :isBloodrelationOf data:PrinceChristianOfHanover ;
+    :isBrotherOf data:PrinceChristianOfHanover ;
+    :isChildOf data:ChantalHochuli,
+        data:ErnstAugustVonHannover ;
+    :isSiblingOf data:PrinceChristianOfHanover ;
+    :isSonOf data:ChantalHochuli,
+        data:ErnstAugustVonHannover .
+

@@ -1,0 +1,112 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Mary a :Ancestor,
+        :Woman ;
+    :hasChild data:Christian_Crown_Prince_of_Denmark ;
+    :hasRelation data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Christian_Crown_Prince_of_Denmark ;
+    :isAncestorOf data:Christian_Crown_Prince_of_Denmark ;
+    :isAuntOf data:Christian_Crown_Prince_of_Denmark ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Christian_Crown_Prince_of_Denmark ;
+    :isParentOf data:Christian_Crown_Prince_of_Denmark ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Prince_Henrik a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Henrik ;
+    :hasChild data:King_Frederik_X ;
+    :hasRelation data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :hasSon data:King_Frederik_X ;
+    :isAncestorOf data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X ;
+    :isBloodrelationOf data:Prince_Henrik ;
+    :isBrotherOf data:Prince_Henrik ;
+    :isFatherOf data:King_Frederik_X ;
+    :isParentOf data:King_Frederik_X ;
+    :isSiblingOf data:Prince_Henrik ;
+    :isUncleOf data:King_Frederik_X .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasChild data:King_Frederik_X ;
+    :hasRelation data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Margrethe_II ;
+    :hasSon data:King_Frederik_X ;
+    :isAncestorOf data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X ;
+    :isAuntOf data:King_Frederik_X ;
+    :isBloodrelationOf data:Queen_Margrethe_II ;
+    :isMotherOf data:King_Frederik_X ;
+    :isParentOf data:King_Frederik_X ;
+    :isSiblingOf data:Queen_Margrethe_II ;
+    :isSisterOf data:Queen_Margrethe_II .
+
+data:Christian_Crown_Prince_of_Denmark a :Man ;
+    :hasAncestor data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :hasBirthYear 2005 ;
+    :hasBrother data:Christian_Crown_Prince_of_Denmark ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_Frederik_X,
+        data:Queen_Mary ;
+    :hasRelation data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Christian_Crown_Prince_of_Denmark ;
+    :isBrotherOf data:Christian_Crown_Prince_of_Denmark ;
+    :isChildOf data:King_Frederik_X,
+        data:Queen_Mary ;
+    :isSiblingOf data:Christian_Crown_Prince_of_Denmark ;
+    :isSonOf data:King_Frederik_X,
+        data:Queen_Mary .
+
+data:King_Frederik_X a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:King_Frederik_X ;
+    :hasChild data:Christian_Crown_Prince_of_Denmark ;
+    :hasFather data:Prince_Henrik ;
+    :hasMother data:Queen_Margrethe_II ;
+    :hasParent data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :hasRelation data:Christian_Crown_Prince_of_Denmark,
+        data:King_Frederik_X,
+        data:Prince_Henrik,
+        data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :hasSon data:Christian_Crown_Prince_of_Denmark ;
+    :isAncestorOf data:Christian_Crown_Prince_of_Denmark ;
+    :isBloodrelationOf data:King_Frederik_X ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isChildOf data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :isFatherOf data:Christian_Crown_Prince_of_Denmark ;
+    :isParentOf data:Christian_Crown_Prince_of_Denmark ;
+    :isSiblingOf data:King_Frederik_X ;
+    :isSonOf data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :isUncleOf data:Christian_Crown_Prince_of_Denmark .
+

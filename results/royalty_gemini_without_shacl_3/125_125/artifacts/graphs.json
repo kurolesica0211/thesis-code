@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean-Christophe_Prince_Napol%C3%A9on a :Man,\n        :Person .\n\ndata:King_Albert_II a :Man,\n        :Person .\n\ndata:Prince_Nikolaus_of_Liechtenstein a :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_York a :Person,\n        :Woman .\n\ndata:Princess_Margaretha_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Queen_Fabiola a :Person,\n        :Woman ;\n    :isAncestorOf data:Amedeo_of_Austria-Este .\n\ndata:Queen_Paola a :Person,\n        :Woman .\n\ndata:Amedeo_of_Austria-Este a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Lorenz_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Astrid_of_Belgium ;\n    :isBloodrelationOf data:Princess_Elisabeth_Duchess_of_Brabant .\n\ndata:Lorenz_Archduke_of_Austria-Este a :Man,\n        :Person ;\n    :hasMother data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este .\n\ndata:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,\n        :Woman .\n\ndata:Princess_Astrid_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth_Duchess_of_Brabant a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean-Christophe_Prince_Napol%C3%A9on a :Man,\n        :Person .\n\ndata:King_Albert_II a :Man,\n        :Person .\n\ndata:Prince_Nikolaus_of_Liechtenstein a :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_York a :Person,\n        :Woman .\n\ndata:Princess_Margaretha_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Queen_Fabiola a :Person,\n        :Woman ;\n    :isAncestorOf data:Amedeo_of_Austria-Este .\n\ndata:Queen_Paola a :Person,\n        :Woman .\n\ndata:Amedeo_of_Austria-Este a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Lorenz_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Astrid_of_Belgium ;\n    :isBloodrelationOf data:Princess_Elisabeth_Duchess_of_Brabant .\n\ndata:Lorenz_Archduke_of_Austria-Este a :Man,\n        :Person ;\n    :hasMother data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este .\n\ndata:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,\n        :Woman .\n\ndata:Princess_Astrid_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth_Duchess_of_Brabant a :Person,\n        :Woman .\n\n"
+    }
+]

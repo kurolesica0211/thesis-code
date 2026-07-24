@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Woman ;
+    :hasBirthYear "1926"^^xsd:positiveInteger ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :hasDeathYear "2022"^^xsd:positiveInteger ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear "1947"^^xsd:positiveInteger ;
+    :hasMother data:Elizabeth_Queen_Mother ;
+    :hasRelation data:Philip_Mountbatten ;
+    :hasSister data:Margaret .
+
+data:Andrew a :Man .
+
+data:Anne a :Woman .
+
+data:Charles_III a :Man .
+
+data:Claude_Bowes-Lyon a :Man .
+
+data:Edward a :Man .
+
+data:Edward_VIII a :Man .
+
+data:Elizabeth_Queen_Mother a :Woman ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:George_V a :Man .
+
+data:George_VI a :Man ;
+    :hasBrother data:Edward_VIII ;
+    :hasFather data:George_V ;
+    :hasMother data:Mary .
+
+data:Margaret a :Woman .
+
+data:Mary a :Woman .
+
+data:Philip_Mountbatten a :Man .
+

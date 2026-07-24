@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Barry_Tuckwell a :Man,\n        :Person ;\n    :isBrotherOf data:Patricia_Tuckwell .\n\ndata:Mark_Lascelles a :Man,\n        :Person ;\n    :hasFather data:George_Henry_Hubert_Lascelles ;\n    :hasMother data:Patricia_Tuckwell .\n\ndata:Erwin_Stein a :Man,\n        :Person .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Henry_Viscount_Lascelles ;\n    :hasMarriageYear data:1949,\n        data:1967 ;\n    :hasMother data:Princess_Mary ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marion_Stein a :Person,\n        :Woman ;\n    :hasFather data:Erwin_Stein .\n\ndata:Princess_Mary a :Person,\n        :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Barry_Tuckwell a :Man,\n        :Person ;\n    :isBrotherOf data:Patricia_Tuckwell .\n\ndata:Mark_Lascelles a :Man,\n        :Person ;\n    :hasFather data:George_Henry_Hubert_Lascelles ;\n    :hasMother data:Patricia_Tuckwell .\n\ndata:1949 a :DomainEntity .\n\ndata:1967 a :DomainEntity .\n\ndata:Erwin_Stein a :Man,\n        :Person .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Henry_Viscount_Lascelles ;\n    :hasMarriageYear data:1949,\n        data:1967 ;\n    :hasMother data:Princess_Mary ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marion_Stein a :Person,\n        :Woman ;\n    :hasFather data:Erwin_Stein .\n\ndata:Princess_Mary a :Person,\n        :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Barry_Tuckwell a :Man,\n        :Person ;\n    :isBrotherOf data:Patricia_Tuckwell .\n\ndata:Mark_Lascelles a :Man,\n        :Person ;\n    :hasFather data:George_Henry_Hubert_Lascelles ;\n    :hasMother data:Patricia_Tuckwell .\n\ndata:1949 a :DomainEntity .\n\ndata:1967 a :DomainEntity .\n\ndata:Erwin_Stein a :Man,\n        :Person .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Henry_Viscount_Lascelles ;\n    :hasMarriageYear data:1949,\n        data:1967 ;\n    :hasMother data:Princess_Mary ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marion_Stein a :Person,\n        :Woman ;\n    :hasFather data:Erwin_Stein .\n\ndata:Princess_Mary a :Person,\n        :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman .\n\n"
+    }
+]

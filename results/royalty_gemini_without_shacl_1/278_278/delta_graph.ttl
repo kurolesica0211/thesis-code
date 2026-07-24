@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianIX a :Man,
+        :Person .
+
+data:ChristianSonOfKnud a :Man,
+        :Person ;
+    :isSonOf data:CarolineMathilde,
+        data:Knud .
+
+data:Elisabeth a :Person,
+        :Woman ;
+    :isDaughterOf data:CarolineMathilde,
+        data:Knud .
+
+data:FrederikVIII a :Man,
+        :Person .
+
+data:Gustav a :Man,
+        :Person .
+
+data:Ingolf a :Man,
+        :Person ;
+    :isSonOf data:CarolineMathilde,
+        data:Knud .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:ChristianX a :Man,
+        :Person .
+
+data:CrownPrinceFrederikOfDenmark a :Man,
+        :Person .
+
+data:FrederikIX a :Man,
+        :Person ;
+    :isFatherOf data:MargretheII .
+
+data:Harald a :Man,
+        :Person .
+
+data:Helena a :Person,
+        :Woman .
+
+data:MargretheII a :Person,
+        :Woman .
+
+data:PrinceChristianOfDenmark a :Man,
+        :Person ;
+    :hasFather data:CrownPrinceFrederikOfDenmark .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1976 ;
+    :hasFather data:ChristianX,
+        data:PrinceChristianOfDenmark ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:Alexandrine ;
+    :hasRelation data:CarolineMathilde ;
+    :isBrotherOf data:FrederikIX .
+
+data:CarolineMathilde a :Person,
+        :Woman ;
+    :hasFather data:Harald ;
+    :hasMother data:Helena .
+

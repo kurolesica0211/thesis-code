@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Mountstuart_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear "1980-04-15"^^xsd:date ;
+    :hasFather data:James_Elphinstone ;
+    :hasMother data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:Andrew_Elphinstone a :Man,
+        :Person ;
+    :hasMother data:Lady_Mary_Bowes-Lyon .
+
+data:James_Elphinstone a :Man,
+        :Person ;
+    :hasFather data:Andrew_Elphinstone .
+
+data:Lady_Mary_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Lady_Willa_Elliot-Murray-Kynynmound a :Person,
+        :Woman ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound .
+
+data:Major_George_Chetwode a :Man,
+        :Person .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman .
+
+data:Victor_Elliot-Murray-Kynynmound a :Man,
+        :Person .
+
+data:Willa_Mary_Gabrielle_Chetwode a :Person,
+        :Woman ;
+    :hasFather data:Major_George_Chetwode ;
+    :hasMother data:Lady_Willa_Elliot-Murray-Kynynmound .
+

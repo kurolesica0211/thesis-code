@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Mountbatten a :Man ;
+    :isFatherOf data:Iris_Mountbatten .
+
+data:Clarence_Arthur_Kemp a :Man ;
+    :isFatherOf data:William_Alexander_Kemp .
+
+data:Francis_William_Henry_Fane a :Man ;
+    :isFatherOf data:Grace_Adelaide_Fane .
+
+data:Helen_Janet_Ballantyne a :Woman ;
+    :isMotherOf data:William_Alexander_Kemp .
+
+data:Hugo_William_Cecil_Denison a :Man ;
+    :isBrotherOf data:Irene_Frances_Adza_Denison ;
+    :isFatherOf data:Zinnia_Rosemary_Denison .
+
+data:William_Francis_Henry_Denison a :Man ;
+    :isFatherOf data:Irene_Frances_Adza_Denison .
+
+data:Grace_Adelaide_Fane a :Woman ;
+    :hasBirthYear 1860 ;
+    :hasDeathYear 1933 ;
+    :isMotherOf data:Irene_Frances_Adza_Denison .
+
+data:Hamilton_Joseph_Keyes_OMalley a :Man .
+
+data:Robin_Alexander_Bryan a :Man ;
+    :hasBirthYear 1957 .
+
+data:Zinnia_Rosemary_Denison a :Woman ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 1997 .
+
+data:Iris_Mountbatten a :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1982 ;
+    :hasRelation data:Hamilton_Joseph_Keyes_OMalley,
+        data:William_Alexander_Kemp ;
+    :isMotherOf data:Robin_Alexander_Bryan .
+
+data:Irene_Frances_Adza_Denison a :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1956 ;
+    :isMotherOf data:Iris_Mountbatten .
+
+data:William_Alexander_Kemp a :Man ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 1991 .
+

@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_son_of_Carlos a :Man,
+        :Person ;
+    :isSonOf data:Don_Carlos .
+
+data:Francis_II a :Man,
+        :Person .
+
+data:Archduchess_Maria_Christina_of_Austria a :Person,
+        :Woman .
+
+data:Don_Carlos a :Man,
+        :Person ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Prince_Alfonso_of_the_Two_Sicilies ;
+    :hasMarriageYear 1901,
+        1907 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_of_Orleans ;
+    :isSiblingOf data:Ferdinand,
+        data:Ranieri .
+
+data:Ferdinand a :Man,
+        :Person .
+
+data:King_Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:King_Alfonso_XII_of_Spain a :Man,
+        :Person .
+
+data:Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasFather data:King_Alfonso_XII_of_Spain ;
+    :hasMother data:Archduchess_Maria_Christina_of_Austria ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain .
+
+data:Prince_Alfonso_of_the_Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Philippe_Count_of_Paris a :Man,
+        :Person .
+
+data:Princess_Louise_of_Orleans a :Person,
+        :Woman ;
+    :hasFather data:Prince_Philippe_Count_of_Paris .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Ranieri a :Man,
+        :Person .
+

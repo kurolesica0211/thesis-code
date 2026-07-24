@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Michael_Mountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1970 ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Nadejda_Mikhailovna_of_Torby .
+
+data:Prince_Philip_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasMarriageYear 1947 ;
+    :hasRelation data:Princess_Elizabeth .
+
+data:George_Mountbatten a :Man,
+        :Person ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:Nadejda_Mikhailovna_of_Torby a :Person,
+        :Woman .
+
+data:Prince_Louis_of_Battenberg a :Man,
+        :Person .
+
+data:Princess_Elizabeth a :Person,
+        :Woman .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+

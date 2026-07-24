@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:George_Windsor ;\n    :hasMother data:Sylvana_Tomaselli ;\n    :hasSex data:Female ;\n    :isSiblingOf data:Amelia_Windsor,\n        data:Edward_Windsor_Lord_Downpatrick .\n\ndata:Amelia_Windsor a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:George_Windsor a :Man,\n        :Person ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasSex data:Male .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:William_Worsley ;\n    :hasSex data:Female .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:William_Worsley a :Man,\n        :Person ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:George_Windsor ;\n    :hasMother data:Sylvana_Tomaselli ;\n    :hasSex data:Female ;\n    :isSiblingOf data:Amelia_Windsor,\n        data:Edward_Windsor_Lord_Downpatrick .\n\ndata:Amelia_Windsor a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:George_Windsor a :Man,\n        :Person ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasSex data:Male .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:William_Worsley ;\n    :hasSex data:Female .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:William_Worsley a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasFather data:George_Windsor ;\n    :hasMother data:Sylvana_Tomaselli ;\n    :hasSex data:Female ;\n    :isSiblingOf data:Amelia_Windsor,\n        data:Edward_Windsor_Lord_Downpatrick .\n\ndata:Amelia_Windsor a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:George_Windsor a :Man,\n        :Person ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasSex data:Male .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:William_Worsley ;\n    :hasSex data:Female .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:William_Worsley a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

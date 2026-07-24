@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman ;\n    :hasFather data:Edoardo_Mapelli_Mozzi ;\n    :hasMother data:Princess_Beatrice .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Paolo_Mapelli_Mozzi a :Man,\n        :Person .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman ;\n    :hasFather data:Edoardo_Mapelli_Mozzi ;\n    :hasMother data:Princess_Beatrice .\n\ndata:Alex_Mapelli-Mozzi a :Man,\n        :Person .\n\ndata:Princess_Eugenie a :Person,\n        :Woman ;\n    :hasFather data:Andrew_Mountbatten-Windsor ;\n    :hasMother data:Sarah_Ferguson .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:Andrew_Mountbatten-Windsor ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:Sarah_Ferguson ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :isSisterOf data:Princess_Eugenie ;\n    :knownAs \"Beatrice Elizabeth Mary\"^^xsd:string .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :hasFather data:Alex_Mapelli-Mozzi .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman ;\n    :hasFather data:Edoardo_Mapelli_Mozzi ;\n    :hasMother data:Princess_Beatrice .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Paolo_Mapelli_Mozzi a :Man,\n        :Person .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman ;\n    :hasFather data:Edoardo_Mapelli_Mozzi ;\n    :hasMother data:Princess_Beatrice .\n\ndata:Alex_Mapelli-Mozzi a :Man,\n        :Person .\n\ndata:Princess_Eugenie a :Person,\n        :Woman ;\n    :hasFather data:Andrew_Mountbatten-Windsor ;\n    :hasMother data:Sarah_Ferguson .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:Andrew_Mountbatten-Windsor ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:Sarah_Ferguson ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :isSisterOf data:Princess_Eugenie ;\n    :knownAs \"Beatrice Elizabeth Mary\"^^xsd:string .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :hasFather data:Alex_Mapelli-Mozzi .\n\n"
+    }
+]

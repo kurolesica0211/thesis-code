@@ -1,0 +1,303 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceMichaelOfKent a :Man,
+        :Person ;
+    :hasBrother data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :isBloodrelationOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isBrotherOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isSiblingOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isUncleOf data:Patrick .
+
+data:KatharineDuchessOfKent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Patrick ;
+    :hasDeathYear 2025 ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSister data:KatharineDuchessOfKent ;
+    :hasSon data:Patrick ;
+    :isAncestorOf data:Patrick ;
+    :isAuntOf data:Patrick ;
+    :isBloodrelationOf data:KatharineDuchessOfKent ;
+    :isMotherOf data:Patrick ;
+    :isParentOf data:Patrick ;
+    :isSiblingOf data:KatharineDuchessOfKent ;
+    :isSisterOf data:KatharineDuchessOfKent .
+
+data:GeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:PrinceGeorgeDukeOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSon data:PrinceGeorgeDukeOfKent ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isFatherOf data:PrinceGeorgeDukeOfKent ;
+    :isParentOf data:PrinceGeorgeDukeOfKent ;
+    :isSiblingOf data:GeorgeV ;
+    :isUncleOf data:PrinceGeorgeDukeOfKent .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessMarinaDuchessOfKent ;
+    :hasDaughter data:PrincessMarinaDuchessOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSister data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrincessMarinaDuchessOfKent ;
+    :isAuntOf data:PrincessMarinaDuchessOfKent ;
+    :isBloodrelationOf data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isMotherOf data:PrincessMarinaDuchessOfKent ;
+    :isParentOf data:PrincessMarinaDuchessOfKent ;
+    :isSiblingOf data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isSisterOf data:GrandDuchessElenaVladimirovnaOfRussia .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasChild data:PrincessMarinaDuchessOfKent ;
+    :hasDaughter data:PrincessMarinaDuchessOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrincessMarinaDuchessOfKent ;
+    :isBloodrelationOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isFatherOf data:PrincessMarinaDuchessOfKent ;
+    :isParentOf data:PrincessMarinaDuchessOfKent ;
+    :isSiblingOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessMarinaDuchessOfKent .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceGeorgeDukeOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSister data:QueenMary ;
+    :hasSon data:PrinceGeorgeDukeOfKent ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent ;
+    :isAuntOf data:PrinceGeorgeDukeOfKent ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:PrinceGeorgeDukeOfKent ;
+    :isParentOf data:PrinceGeorgeDukeOfKent ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:PrinceGeorgeDukeOfKent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:QueenMary ;
+    :hasBrother data:PrinceGeorgeDukeOfKent ;
+    :hasChild data:PrinceEdwardDukeOfKent ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSon data:PrinceEdwardDukeOfKent ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent ;
+    :isBloodrelationOf data:PrinceGeorgeDukeOfKent ;
+    :isBrotherOf data:PrinceGeorgeDukeOfKent ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:PrinceEdwardDukeOfKent ;
+    :isParentOf data:PrinceEdwardDukeOfKent ;
+    :isSiblingOf data:PrinceGeorgeDukeOfKent ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrinceEdwardDukeOfKent .
+
+data:PrincessMarinaDuchessOfKent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasChild data:PrinceEdwardDukeOfKent ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :hasParent data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSister data:PrincessMarinaDuchessOfKent ;
+    :hasSon data:PrinceEdwardDukeOfKent ;
+    :isAncestorOf data:Patrick,
+        data:PrinceEdwardDukeOfKent ;
+    :isAuntOf data:PrinceEdwardDukeOfKent ;
+    :isBloodrelationOf data:PrincessMarinaDuchessOfKent ;
+    :isChildOf data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :isDaughterOf data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :isMotherOf data:PrinceEdwardDukeOfKent ;
+    :isParentOf data:PrinceEdwardDukeOfKent ;
+    :isSiblingOf data:PrincessMarinaDuchessOfKent ;
+    :isSisterOf data:PrincessMarinaDuchessOfKent .
+
+data:Patrick a :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Patrick ;
+    :hasFather data:PrinceEdwardDukeOfKent ;
+    :hasMother data:KatharineDuchessOfKent ;
+    :hasParent data:KatharineDuchessOfKent,
+        data:PrinceEdwardDukeOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :isBloodrelationOf data:Patrick ;
+    :isBrotherOf data:Patrick ;
+    :isChildOf data:KatharineDuchessOfKent,
+        data:PrinceEdwardDukeOfKent ;
+    :isSiblingOf data:Patrick ;
+    :isSonOf data:KatharineDuchessOfKent,
+        data:PrinceEdwardDukeOfKent .
+
+data:PrinceEdwardDukeOfKent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :hasChild data:Patrick ;
+    :hasFather data:PrinceGeorgeDukeOfKent ;
+    :hasMarriageYear 1961 ;
+    :hasMother data:PrincessMarinaDuchessOfKent ;
+    :hasParent data:PrinceGeorgeDukeOfKent,
+        data:PrincessMarinaDuchessOfKent ;
+    :hasRelation data:GeorgeV,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:KatharineDuchessOfKent,
+        data:Patrick,
+        data:PrinceEdwardDukeOfKent,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceMichaelOfKent,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincessMarinaDuchessOfKent,
+        data:QueenMary ;
+    :hasSon data:Patrick ;
+    :isAncestorOf data:Patrick ;
+    :isBloodrelationOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isBrotherOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isChildOf data:PrinceGeorgeDukeOfKent,
+        data:PrincessMarinaDuchessOfKent ;
+    :isFatherOf data:Patrick ;
+    :isParentOf data:Patrick ;
+    :isSiblingOf data:PrinceEdwardDukeOfKent,
+        data:PrinceMichaelOfKent ;
+    :isSonOf data:PrinceGeorgeDukeOfKent,
+        data:PrincessMarinaDuchessOfKent ;
+    :isUncleOf data:Patrick .
+

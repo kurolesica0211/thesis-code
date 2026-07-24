@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EmichKyrillPrinceOfLeiningen a :Man ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:KarlPrinceOfLeiningen ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:GrandDuchessMariaKirillovnaOfRussia ;
+    :hasRelation data:DuchessEilikaOfOldenburg .
+
+data:DuchessEilikaOfOldenburg a :Woman ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont .
+
+data:Emich5thPrinceOfLeiningen a :Man .
+
+data:GrandDuchessMariaKirillovnaOfRussia a :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:GrandDukeKirillVladimirovichOfRussia ;
+    :hasMother data:PrincessVictoriaMelitaOfEdinburgh .
+
+data:GrandDukeKirillVladimirovichOfRussia a :Man .
+
+data:KarlPrinceOfLeiningen a :Man ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Emich5thPrinceOfLeiningen ;
+    :hasMother data:PrincessFeodoreOfHohenloheLangenburg .
+
+data:NikolausHereditaryGrandDukeOfOldenburg a :Man .
+
+data:PrincessFeodoreOfHohenloheLangenburg a :Woman .
+
+data:PrincessHelenaOfWaldeckAndPyrmont a :Woman .
+
+data:PrincessVictoriaMelitaOfEdinburgh a :Woman .
+

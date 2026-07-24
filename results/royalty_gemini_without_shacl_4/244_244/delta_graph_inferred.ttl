@@ -1,0 +1,153 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:IgnacioDukeOfSegorbe a :Man,
+        :Person ;
+    :hasBrother data:IgnacioDukeOfSegorbe ;
+    :hasRelation data:IgnacioDukeOfSegorbe ;
+    :isBloodrelationOf data:IgnacioDukeOfSegorbe ;
+    :isBrotherOf data:IgnacioDukeOfSegorbe ;
+    :isSiblingOf data:IgnacioDukeOfSegorbe .
+
+data:KatherineClairyBatis a :Person,
+        :Woman ;
+    :hasRelation data:KatherineClairyBatis ;
+    :hasSister data:KatherineClairyBatis ;
+    :isBloodrelationOf data:KatherineClairyBatis ;
+    :isSiblingOf data:KatherineClairyBatis ;
+    :isSisterOf data:KatherineClairyBatis .
+
+data:AlexanderSr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlexanderSr ;
+    :hasChild data:AlexanderKarageorgevitch ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:MariaDaGloria,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasSon data:AlexanderKarageorgevitch ;
+    :isAncestorOf data:AlexanderKarageorgevitch ;
+    :isBloodrelationOf data:AlexanderSr ;
+    :isBrotherOf data:AlexanderSr ;
+    :isFatherOf data:AlexanderKarageorgevitch ;
+    :isParentOf data:AlexanderKarageorgevitch ;
+    :isSiblingOf data:AlexanderSr ;
+    :isUncleOf data:AlexanderKarageorgevitch .
+
+data:AnaLunaMedinaYOrleansBraganza a :Person,
+        :Woman ;
+    :hasAncestor data:MariaDaGloria ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:MariaDaGloria,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasSister data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isChildOf data:MariaDaGloria ;
+    :isDaughterOf data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isSisterOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza .
+
+data:SolMariaDeLaBlancaMedinaYOrleansBraganza a :Person,
+        :Woman ;
+    :hasAncestor data:MariaDaGloria ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:MariaDaGloria,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasSister data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isChildOf data:MariaDaGloria ;
+    :isDaughterOf data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isSisterOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza .
+
+data:MariaDaGloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasDaughter data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:MariaDaGloria,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasSister data:MariaDaGloria ;
+    :hasSon data:AlexanderKarageorgevitch ;
+    :isAncestorOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isAuntOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isBloodrelationOf data:MariaDaGloria ;
+    :isMotherOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isParentOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isSiblingOf data:MariaDaGloria ;
+    :isSisterOf data:MariaDaGloria .
+
+data:AlexanderKarageorgevitch a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Aleksandar III Karađorđević"^^xsd:string,
+        "Prince Alexander of Serbia and Yugoslavia"^^xsd:string ;
+    :hasAncestor data:AlexanderSr,
+        data:MariaDaGloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasFather data:AlexanderSr ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:AlexanderSr,
+        data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:MariaDaGloria,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :hasSister data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isBrotherOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isChildOf data:AlexanderSr,
+        data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedinaYOrleansBraganza,
+        data:SolMariaDeLaBlancaMedinaYOrleansBraganza ;
+    :isSonOf data:AlexanderSr,
+        data:MariaDaGloria .
+

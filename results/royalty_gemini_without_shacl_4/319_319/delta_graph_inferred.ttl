@@ -1,0 +1,294 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrancisII a :Man,
+        :Person ;
+    :hasBrother data:FrancisII ;
+    :hasRelation data:FrancisII ;
+    :isBloodrelationOf data:FrancisII ;
+    :isBrotherOf data:FrancisII ;
+    :isSiblingOf data:FrancisII .
+
+data:PrinceAlfonsoTwoSicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlfonsoTwoSicilies ;
+    :hasChild data:DonCarlos ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:PrinceAlfonsoTwoSicilies ;
+    :hasSon data:DonCarlos ;
+    :isAncestorOf data:AlfonsoSonOfCarlos,
+        data:DonCarlos ;
+    :isBloodrelationOf data:PrinceAlfonsoTwoSicilies ;
+    :isBrotherOf data:PrinceAlfonsoTwoSicilies ;
+    :isFatherOf data:DonCarlos ;
+    :isParentOf data:DonCarlos ;
+    :isSiblingOf data:PrinceAlfonsoTwoSicilies ;
+    :isUncleOf data:DonCarlos .
+
+data:PrincePhilippeCountParis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrincePhilippeCountParis ;
+    :hasChild data:PrincessLouiseOrleans ;
+    :hasDaughter data:PrincessLouiseOrleans ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:PrincePhilippeCountParis,
+        data:PrincessLouiseOrleans ;
+    :isAncestorOf data:PrincessLouiseOrleans ;
+    :isBloodrelationOf data:PrincePhilippeCountParis ;
+    :isBrotherOf data:PrincePhilippeCountParis ;
+    :isFatherOf data:PrincessLouiseOrleans ;
+    :isParentOf data:PrincessLouiseOrleans ;
+    :isSiblingOf data:PrincePhilippeCountParis ;
+    :isUncleOf data:PrincessLouiseOrleans .
+
+data:PrincessMariaAntonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DonCarlos ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :hasSister data:PrincessMariaAntonietta ;
+    :hasSon data:DonCarlos ;
+    :isAncestorOf data:AlfonsoSonOfCarlos,
+        data:DonCarlos ;
+    :isAuntOf data:DonCarlos ;
+    :isBloodrelationOf data:PrincessMariaAntonietta ;
+    :isMotherOf data:DonCarlos ;
+    :isParentOf data:DonCarlos ;
+    :isSiblingOf data:PrincessMariaAntonietta ;
+    :isSisterOf data:PrincessMariaAntonietta .
+
+data:AlfonsoXIII a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias ;
+    :hasSister data:MercedesPrincessAsturias ;
+    :isBloodrelationOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias ;
+    :isBrotherOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias ;
+    :isSiblingOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias .
+
+data:PrincessLouiseOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:PrincePhilippeCountParis ;
+    :hasFather data:PrincePhilippeCountParis ;
+    :hasParent data:PrincePhilippeCountParis ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:PrincePhilippeCountParis,
+        data:PrincessLouiseOrleans ;
+    :hasSister data:PrincessLouiseOrleans ;
+    :isBloodrelationOf data:PrincessLouiseOrleans ;
+    :isChildOf data:PrincePhilippeCountParis ;
+    :isDaughterOf data:PrincePhilippeCountParis ;
+    :isSiblingOf data:PrincessLouiseOrleans ;
+    :isSisterOf data:PrincessLouiseOrleans .
+
+data:AlfonsoXII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXII ;
+    :hasChild data:MercedesPrincessAsturias ;
+    :hasDaughter data:MercedesPrincessAsturias ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias ;
+    :isAncestorOf data:MercedesPrincessAsturias ;
+    :isBloodrelationOf data:AlfonsoXII ;
+    :isBrotherOf data:AlfonsoXII ;
+    :isFatherOf data:MercedesPrincessAsturias ;
+    :isParentOf data:MercedesPrincessAsturias ;
+    :isSiblingOf data:AlfonsoXII ;
+    :isUncleOf data:MercedesPrincessAsturias .
+
+data:MariaChristinaAustria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MercedesPrincessAsturias ;
+    :hasDaughter data:MercedesPrincessAsturias ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias ;
+    :hasSister data:MariaChristinaAustria ;
+    :isAncestorOf data:MercedesPrincessAsturias ;
+    :isAuntOf data:MercedesPrincessAsturias ;
+    :isBloodrelationOf data:MariaChristinaAustria ;
+    :isMotherOf data:MercedesPrincessAsturias ;
+    :isParentOf data:MercedesPrincessAsturias ;
+    :isSiblingOf data:MariaChristinaAustria ;
+    :isSisterOf data:MariaChristinaAustria .
+
+data:RanieriTwoSicilies a :Man,
+        :Person ;
+    :hasBrother data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isBloodrelationOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isBrotherOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isSiblingOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isUncleOf data:AlfonsoSonOfCarlos .
+
+data:FerdinandTwoSicilies a :Man,
+        :Person ;
+    :hasBrother data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias,
+        data:PrinceAlfonsoTwoSicilies,
+        data:PrincePhilippeCountParis,
+        data:PrincessLouiseOrleans,
+        data:PrincessMariaAntonietta,
+        data:RanieriTwoSicilies ;
+    :isBloodrelationOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isBrotherOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isSiblingOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isUncleOf data:AlfonsoSonOfCarlos .
+
+data:AlfonsoSonOfCarlos a :Man,
+        :Person ;
+    :hasAncestor data:DonCarlos,
+        data:PrinceAlfonsoTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :hasBrother data:AlfonsoSonOfCarlos ;
+    :hasFather data:DonCarlos ;
+    :hasParent data:DonCarlos ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias,
+        data:PrinceAlfonsoTwoSicilies,
+        data:PrincePhilippeCountParis,
+        data:PrincessLouiseOrleans,
+        data:PrincessMariaAntonietta,
+        data:RanieriTwoSicilies ;
+    :isBloodrelationOf data:AlfonsoSonOfCarlos ;
+    :isBrotherOf data:AlfonsoSonOfCarlos ;
+    :isChildOf data:DonCarlos ;
+    :isSiblingOf data:AlfonsoSonOfCarlos ;
+    :isSonOf data:DonCarlos .
+
+data:MercedesPrincessAsturias a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXII,
+        data:MariaChristinaAustria ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaAustria ;
+    :hasParent data:AlfonsoXII,
+        data:MariaChristinaAustria ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias ;
+    :hasSister data:MercedesPrincessAsturias ;
+    :isBloodrelationOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias ;
+    :isChildOf data:AlfonsoXII,
+        data:MariaChristinaAustria ;
+    :isDaughterOf data:AlfonsoXII,
+        data:MariaChristinaAustria ;
+    :isSiblingOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias ;
+    :isSisterOf data:AlfonsoXIII,
+        data:MercedesPrincessAsturias .
+
+data:DonCarlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceAlfonsoTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :hasChild data:AlfonsoSonOfCarlos ;
+    :hasDeathYear 1949 ;
+    :hasFather data:PrinceAlfonsoTwoSicilies ;
+    :hasMother data:PrincessMariaAntonietta ;
+    :hasParent data:PrinceAlfonsoTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :hasRelation data:AlfonsoSonOfCarlos,
+        data:AlfonsoXII,
+        data:AlfonsoXIII,
+        data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:MariaChristinaAustria,
+        data:MercedesPrincessAsturias,
+        data:PrinceAlfonsoTwoSicilies,
+        data:PrincePhilippeCountParis,
+        data:PrincessLouiseOrleans,
+        data:PrincessMariaAntonietta,
+        data:RanieriTwoSicilies ;
+    :hasSon data:AlfonsoSonOfCarlos ;
+    :isAncestorOf data:AlfonsoSonOfCarlos ;
+    :isBloodrelationOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isBrotherOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isChildOf data:PrinceAlfonsoTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :isFatherOf data:AlfonsoSonOfCarlos ;
+    :isParentOf data:AlfonsoSonOfCarlos ;
+    :isSiblingOf data:DonCarlos,
+        data:FerdinandTwoSicilies,
+        data:RanieriTwoSicilies ;
+    :isSonOf data:PrinceAlfonsoTwoSicilies,
+        data:PrincessMariaAntonietta ;
+    :isUncleOf data:AlfonsoSonOfCarlos .
+

@@ -1,0 +1,108 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/272_272",
+  "text_file": "Q3741799.txt",
+  "text_key": "Q3741799",
+  "article": "https://en.wikipedia.org/wiki/Flora_Ogilvy",
+  "article_key": "Flora Ogilvy",
+  "main_entity": {
+    "uri": "http://example.com/data#Flora_Vesterberg",
+    "qid": "Q3741799",
+    "label": "Flora Vesterberg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Flora_Vesterberg",
+      "qid": "Q3741799",
+      "label": "Flora Vesterberg",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Julia_Ogilvy",
+      "qid": "Q15956270",
+      "label": "Julia Ogilvy",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Julia_Caroline_Rawlinson",
+      "extracted_local_name": "Julia_Caroline_Rawlinson",
+      "embedding_text": "Julia Caroline Rawlinson",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Julia_Ogilvy",
+      "ground_truth_qid": "Q15956270",
+      "ground_truth_label": "Julia Ogilvy",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Julia Caroline Rawlinson",
+      "best_candidate_label": "Julia Ogilvy",
+      "best_candidate_qid": "Q15956270",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_Frederick_Melville_Rawlinson",
+      "extracted_local_name": "Charles_Frederick_Melville_Rawlinson",
+      "embedding_text": "Charles Frederick Melville Rawlinson",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Julia Caroline Rawlinson",
+      "best_candidate_label": "Julia Ogilvy",
+      "best_candidate_qid": "Q15956270",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/James_Robert_Bruce_Ogilvy",
+      "extracted_local_name": "James_Robert_Bruce_Ogilvy",
+      "embedding_text": "James Robert Bruce Ogilvy",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Julia Ogilvy",
+      "best_candidate_label": "Julia Ogilvy",
+      "best_candidate_qid": "Q15956270",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4864864864864865
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marina_Ogilvy",
+      "extracted_local_name": "Marina_Ogilvy",
+      "embedding_text": "Marina Ogilvy",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Flora Vesterberg",
+      "best_candidate_label": "Flora Vesterberg",
+      "best_candidate_qid": "Q3741799",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 1,
+    "entities_unmatched": 3
+  }
+}

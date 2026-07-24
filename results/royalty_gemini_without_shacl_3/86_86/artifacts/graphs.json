@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amedeo_Prince_Duke_of_Aosta_son a :Man,\n        :Person ;\n    :hasFather data:Aimone_4th_Duke_of_Aosta ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Aimone_4th_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans ;\n    :hasRelation data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Amedeo_1st_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Amedeo_3rd_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Emanuele_Filiberto_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Amedeo_1st_Duke_of_Aosta ;\n    :hasMother data:Vittoria_dal_Pozzo .\n\ndata:Princess_Helene_of_Orleans a :Person,\n        :Woman .\n\ndata:Vittoria_dal_Pozzo a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amedeo_Prince_Duke_of_Aosta_son a :Man,\n        :Person ;\n    :hasFather data:Aimone_4th_Duke_of_Aosta ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Aimone_4th_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans ;\n    :hasRelation data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Amedeo_1st_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Amedeo_3rd_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Emanuele_Filiberto_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Amedeo_1st_Duke_of_Aosta ;\n    :hasMother data:Vittoria_dal_Pozzo .\n\ndata:Princess_Helene_of_Orleans a :Person,\n        :Woman .\n\ndata:Vittoria_dal_Pozzo a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

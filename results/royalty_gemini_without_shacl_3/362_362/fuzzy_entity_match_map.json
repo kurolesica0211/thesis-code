@@ -1,0 +1,183 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/362_362",
+  "text_file": "Q6049946.txt",
+  "text_key": "Q6049946",
+  "article": "https://en.wikipedia.org/wiki/Olimpia_Torlonia",
+  "article_key": "Olimpia Torlonia",
+  "main_entity": {
+    "uri": "http://example.com/data#Olimpia_Torlonia",
+    "qid": "Q6049946",
+    "label": "Olimpia Torlonia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Olimpia_Torlonia",
+      "qid": "Q6049946",
+      "label": "Olimpia Torlonia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi",
+      "qid": "Q4716439",
+      "label": "Alessandro Torlonia, 5th Prince of Civitella-Cesi",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Beatriz_of_Spain",
+      "qid": "Q269493",
+      "label": "Infanta Beatriz of Spain",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
+      "qid": "Q160001",
+      "label": "Victoria Eugenie of Battenberg",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/VictoriaEugenieOfBattenberg",
+      "extracted_local_name": "VictoriaEugenieOfBattenberg",
+      "embedding_text": "Victoria Eugenie Of Battenberg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
+      "ground_truth_qid": "Q160001",
+      "ground_truth_label": "Victoria Eugenie of Battenberg",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/BeatrizOfSpain",
+      "extracted_local_name": "BeatrizOfSpain",
+      "embedding_text": "Beatriz Of Spain",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8181818181818181,
+      "ground_truth_uri": "http://example.com/data#Infanta_Beatriz_of_Spain",
+      "ground_truth_qid": "Q269493",
+      "ground_truth_label": "Infanta Beatriz of Spain",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infanta Beatriz of Spain",
+      "best_candidate_label": "Infanta Beatriz of Spain",
+      "best_candidate_qid": "Q269493",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8181818181818181
+    },
+    {
+      "extracted_uri": "http://example.org/data/AlfonsoXIIIOfSpain",
+      "extracted_local_name": "AlfonsoXIIIOfSpain",
+      "embedding_text": "Alfonso XIIIOf Spain",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Alfonso_XIII",
+      "ground_truth_qid": "Q18363",
+      "ground_truth_label": "Alfonso XIII",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso XIII",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/AlessandroTorlonia",
+      "extracted_local_name": "AlessandroTorlonia",
+      "embedding_text": "Alessandro Torlonia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alessandro Torlonia- 5th Prince of Civitella-Cesi",
+      "best_candidate_label": "Alessandro Torlonia, 5th Prince of Civitella-Cesi",
+      "best_candidate_qid": "Q4716439",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5588235294117647
+    },
+    {
+      "extracted_uri": "http://example.org/data/MarinaTorlonia",
+      "extracted_local_name": "MarinaTorlonia",
+      "embedding_text": "Marina Torlonia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.37037037037037035
+    },
+    {
+      "extracted_uri": "http://example.org/data/MarinoTorlonia",
+      "extracted_local_name": "MarinoTorlonia",
+      "embedding_text": "Marino Torlonia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alessandro Torlonia- 5th Prince of Civitella-Cesi",
+      "best_candidate_label": "Alessandro Torlonia, 5th Prince of Civitella-Cesi",
+      "best_candidate_qid": "Q4716439",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.375
+    },
+    {
+      "extracted_uri": "http://example.org/data/MaryElsieMoore",
+      "extracted_local_name": "MaryElsieMoore",
+      "embedding_text": "Mary Elsie Moore",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34782608695652173
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 3,
+    "entities_unmatched": 4
+  }
+}

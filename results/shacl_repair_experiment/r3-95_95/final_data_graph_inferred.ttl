@@ -1,0 +1,230 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Nixon a :Man ;
+    :hasBrother data:Alexander_Nixon ;
+    :hasRelation data:Alexander_Nixon ;
+    :isBloodrelationOf data:Alexander_Nixon ;
+    :isBrotherOf data:Alexander_Nixon ;
+    :isSiblingOf data:Alexander_Nixon .
+
+data:Alina-Maria_Binder a :Woman ;
+    :hasBirthYear 1988 ;
+    :hasRelation data:Alina-Maria_Binder ;
+    :hasSister data:Alina-Maria_Binder ;
+    :isBloodrelationOf data:Alina-Maria_Binder ;
+    :isSiblingOf data:Alina-Maria_Binder ;
+    :isSisterOf data:Alina-Maria_Binder .
+
+data:Prince_Felix_of_Bourbon-Parma a :Man ;
+    :hasBrother data:Prince_Felix_of_Bourbon-Parma ;
+    :hasRelation data:Prince_Felix_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Prince_Felix_of_Bourbon-Parma ;
+    :isBrotherOf data:Prince_Felix_of_Bourbon-Parma ;
+    :isSiblingOf data:Prince_Felix_of_Bourbon-Parma .
+
+data:Nicoleta_C%C3%AErjan a :Ancestor,
+        :Woman ;
+    :hasChild data:Illegitimate_daughter_of_Nicholas ;
+    :hasRelation data:Illegitimate_daughter_of_Nicholas,
+        data:Nicoleta_C%C3%AErjan ;
+    :hasSister data:Nicoleta_C%C3%AErjan ;
+    :isAncestorOf data:Illegitimate_daughter_of_Nicholas ;
+    :isAuntOf data:Illegitimate_daughter_of_Nicholas ;
+    :isBloodrelationOf data:Nicoleta_C%C3%AErjan ;
+    :isMotherOf data:Illegitimate_daughter_of_Nicholas ;
+    :isParentOf data:Illegitimate_daughter_of_Nicholas ;
+    :isSiblingOf data:Nicoleta_C%C3%AErjan ;
+    :isSisterOf data:Nicoleta_C%C3%AErjan .
+
+data:Robin_Medforth-Mills a :Ancestor,
+        :Man ;
+    :hasBrother data:Robin_Medforth-Mills ;
+    :hasChild data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :hasRelation data:Illegitimate_daughter_of_Nicholas,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Robin_Medforth-Mills ;
+    :hasSon data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isAncestorOf data:Illegitimate_daughter_of_Nicholas,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isBloodrelationOf data:Robin_Medforth-Mills ;
+    :isBrotherOf data:Robin_Medforth-Mills ;
+    :isFatherOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isParentOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isSiblingOf data:Robin_Medforth-Mills ;
+    :isUncleOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills .
+
+data:King_Michael_I_of_Romania a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Michael_I_of_Romania ;
+    :hasChild data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isAncestorOf data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania ;
+    :isBloodrelationOf data:King_Michael_I_of_Romania ;
+    :isBrotherOf data:King_Michael_I_of_Romania ;
+    :isFatherOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isParentOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isSiblingOf data:King_Michael_I_of_Romania ;
+    :isUncleOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania .
+
+data:Queen_Anne_of_Romania a :Ancestor,
+        :Woman ;
+    :hasChild data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Queen_Anne_of_Romania ;
+    :isAncestorOf data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania ;
+    :isAuntOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isBloodrelationOf data:Queen_Anne_of_Romania ;
+    :isMotherOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isParentOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isSiblingOf data:Queen_Anne_of_Romania ;
+    :isSisterOf data:Queen_Anne_of_Romania .
+
+data:Illegitimate_daughter_of_Nicholas a :Person ;
+    :hasAncestor data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Nicoleta_C%C3%AErjan,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :hasFather data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :hasMother data:Nicoleta_C%C3%AErjan ;
+    :hasParent data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Nicoleta_C%C3%AErjan ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Nicoleta_C%C3%AErjan,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :isBloodrelationOf data:Illegitimate_daughter_of_Nicholas ;
+    :isChildOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Nicoleta_C%C3%AErjan ;
+    :isSiblingOf data:Illegitimate_daughter_of_Nicholas .
+
+data:Crown_Princess_Margareta_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:King_Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isAuntOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isBloodrelationOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isChildOf data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isSisterOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania .
+
+data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Ancestor,
+        :Man ;
+    :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
+    :hasAncestor data:King_Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :hasBirthYear 1985 ;
+    :hasBrother data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :hasChild data:Illegitimate_daughter_of_Nicholas ;
+    :hasFather data:Robin_Medforth-Mills ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Princess_Elena_of_Romania ;
+    :hasParent data:Princess_Elena_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :isAncestorOf data:Illegitimate_daughter_of_Nicholas ;
+    :isBloodrelationOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isBrotherOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isChildOf data:Princess_Elena_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :isFatherOf data:Illegitimate_daughter_of_Nicholas ;
+    :isParentOf data:Illegitimate_daughter_of_Nicholas ;
+    :isSiblingOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isSonOf data:Princess_Elena_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :isUncleOf data:Illegitimate_daughter_of_Nicholas .
+
+data:Princess_Elena_of_Romania a :Ancestor,
+        :Woman ;
+    :hasAncestor data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasChild data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :hasFather data:King_Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:Crown_Princess_Margareta_of_Romania,
+        data:Illegitimate_daughter_of_Nicholas,
+        data:King_Michael_I_of_Romania,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :hasSon data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isAncestorOf data:Illegitimate_daughter_of_Nicholas,
+        data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isAuntOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isBloodrelationOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isChildOf data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isMotherOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isParentOf data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
+    :isSiblingOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isSisterOf data:Crown_Princess_Margareta_of_Romania,
+        data:Princess_Elena_of_Romania .
+

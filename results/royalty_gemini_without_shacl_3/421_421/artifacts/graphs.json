@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Friedrich_Wilhelm_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1947 ;\n    :hasFather data:Prince_Ernst_August_of_Lippe ;\n    :hasMarriageYear 1991 ;\n    :hasMother data:Christa_von_Arnim ;\n    :hasRelation data:Andrea_Messner .\n\ndata:Andrea_Messner a :Person,\n        :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:G%C3%BCnther_Messner ;\n    :hasMother data:Lieselotte_Trzoska .\n\ndata:Christa_von_Arnim a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasFather data:Curt_David_von_Arnim ;\n    :hasMother data:Stephanie_von_Stechow .\n\ndata:Curt_David_von_Arnim a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:G%C3%BCnther_Messner a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lieselotte_Trzoska a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Ernst_August_of_Lippe a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Prince_Julius_Ernst_of_Lippe ;\n    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz .\n\ndata:Prince_Julius_Ernst_of_Lippe a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Stephanie_von_Stechow a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Friedrich_Wilhelm_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1947 ;\n    :hasFather data:Prince_Ernst_August_of_Lippe ;\n    :hasMarriageYear 1991 ;\n    :hasMother data:Christa_von_Arnim ;\n    :hasRelation data:Andrea_Messner .\n\ndata:Andrea_Messner a :Person,\n        :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:G%C3%BCnther_Messner ;\n    :hasMother data:Lieselotte_Trzoska .\n\ndata:Christa_von_Arnim a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasFather data:Curt_David_von_Arnim ;\n    :hasMother data:Stephanie_von_Stechow .\n\ndata:Curt_David_von_Arnim a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:G%C3%BCnther_Messner a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lieselotte_Trzoska a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Ernst_August_of_Lippe a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Prince_Julius_Ernst_of_Lippe ;\n    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz .\n\ndata:Prince_Julius_Ernst_of_Lippe a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Stephanie_von_Stechow a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

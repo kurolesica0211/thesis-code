@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_GreatGrandfather_Karl a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Emich_Kirill a :Man,\n        :Person ;\n    :hasFather data:Karl_Prince_of_Leiningen ;\n    :hasMother data:Maria_Kirillovna_of_Russia .\n\ndata:Ileana_of_Romania a :Person,\n        :Woman .\n\ndata:Maria_Alexandrovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Marie_of_Romania a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Karl_Prince_of_Leiningen a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1925 ;\n    :hasMother data:Victoria_Melita_of_Edinburgh .\n\ndata:Victoria_Melita_of_Edinburgh a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_GreatGrandfather_Karl a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Emich_Kirill a :Man,\n        :Person ;\n    :hasFather data:Karl_Prince_of_Leiningen ;\n    :hasMother data:Maria_Kirillovna_of_Russia .\n\ndata:Ileana_of_Romania a :Person,\n        :Woman .\n\ndata:Maria_Alexandrovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Marie_of_Romania a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Karl_Prince_of_Leiningen a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1925 ;\n    :hasMother data:Victoria_Melita_of_Edinburgh .\n\ndata:Victoria_Melita_of_Edinburgh a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

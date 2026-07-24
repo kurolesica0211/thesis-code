@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Son_of_Carlos a :Man ;
+    :isSonOf data:Don_Carlos .
+
+data:Alfonso_Two_Sicilies a :Man ;
+    :isSonOf data:Francis_II .
+
+data:Alfonso_XII a :Man .
+
+data:Alfonso_XIII a :Man .
+
+data:Don_Carlos a :Man ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasMarriageYear 1901,
+        1907 ;
+    :hasRelation data:Louise_Orleans,
+        data:Mercedes ;
+    :isBrotherOf data:Ferdinand_Two_Sicilies,
+        data:Ranieri_Two_Sicilies ;
+    :isSonOf data:Alfonso_Two_Sicilies,
+        data:Maria_Antonietta .
+
+data:Ferdinand_Two_Sicilies a :Man .
+
+data:Francis_II a :Man .
+
+data:Louise_Orleans a :Woman ;
+    :isDaughterOf data:Philippe_Orleans .
+
+data:Maria_Antonietta a :Woman .
+
+data:Maria_Christina a :Woman .
+
+data:Mercedes a :Woman ;
+    :isDaughterOf data:Alfonso_XII,
+        data:Maria_Christina ;
+    :isSisterOf data:Alfonso_XIII .
+
+data:Philippe_Orleans a :Man .
+
+data:Ranieri_Two_Sicilies a :Man .
+

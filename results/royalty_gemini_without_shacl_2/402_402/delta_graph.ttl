@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Irina_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Margareta_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Maria_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Nicholas_Medforth-Mills a :Man,
+        :Person ;
+    :hasMother data:Elena_of_Romania_daughter .
+
+data:Sophie_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Carol_II a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_I .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Elena_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece .
+
+data:Elena_of_Romania_daughter a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Ferdinand_I a :Man,
+        :Person .
+
+data:Michael_I a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasRelation data:Anne_of_Bourbon-Parma .
+
+data:Anne_of_Bourbon-Parma a :Person,
+        :Woman .
+

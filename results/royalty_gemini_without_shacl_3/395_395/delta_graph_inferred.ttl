@@ -1,0 +1,440 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:BechtoldBernstorff a :Man,
+        :Person ;
+    :hasBrother data:BechtoldBernstorff ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isBloodrelationOf data:BechtoldBernstorff ;
+    :isBrotherOf data:BechtoldBernstorff ;
+    :isSiblingOf data:BechtoldBernstorff .
+
+data:BathildisSchaumburgLippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:HelenaWaldeckPyrmont ;
+    :hasDaughter data:HelenaWaldeckPyrmont ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:BathildisSchaumburgLippe ;
+    :isAncestorOf data:HelenaWaldeckPyrmont ;
+    :isAuntOf data:HelenaWaldeckPyrmont ;
+    :isBloodrelationOf data:BathildisSchaumburgLippe ;
+    :isMotherOf data:HelenaWaldeckPyrmont ;
+    :isParentOf data:HelenaWaldeckPyrmont ;
+    :isSiblingOf data:BathildisSchaumburgLippe ;
+    :isSisterOf data:BathildisSchaumburgLippe .
+
+data:ElisabethSaxeAltenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FrederickAugustusII ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:ElisabethSaxeAltenburg ;
+    :hasSon data:FrederickAugustusII ;
+    :isAncestorOf data:FrederickAugustusII,
+        data:Nikolaus ;
+    :isAuntOf data:FrederickAugustusII ;
+    :isBloodrelationOf data:ElisabethSaxeAltenburg ;
+    :isMotherOf data:FrederickAugustusII ;
+    :isParentOf data:FrederickAugustusII ;
+    :isSiblingOf data:ElisabethSaxeAltenburg ;
+    :isSisterOf data:ElisabethSaxeAltenburg .
+
+data:FriedrichWaldeckPyrmont a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FriedrichWaldeckPyrmont ;
+    :hasChild data:HelenaWaldeckPyrmont ;
+    :hasDaughter data:HelenaWaldeckPyrmont ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isAncestorOf data:HelenaWaldeckPyrmont ;
+    :isBloodrelationOf data:FriedrichWaldeckPyrmont ;
+    :isBrotherOf data:FriedrichWaldeckPyrmont ;
+    :isFatherOf data:HelenaWaldeckPyrmont ;
+    :isParentOf data:HelenaWaldeckPyrmont ;
+    :isSiblingOf data:FriedrichWaldeckPyrmont ;
+    :isUncleOf data:HelenaWaldeckPyrmont .
+
+data:PeterII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PeterII ;
+    :hasChild data:FrederickAugustusII ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSon data:FrederickAugustusII ;
+    :isAncestorOf data:FrederickAugustusII,
+        data:Nikolaus ;
+    :isBloodrelationOf data:PeterII ;
+    :isBrotherOf data:PeterII ;
+    :isFatherOf data:FrederickAugustusII ;
+    :isParentOf data:FrederickAugustusII ;
+    :isSiblingOf data:PeterII ;
+    :isUncleOf data:FrederickAugustusII .
+
+data:RoseMarston a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasChild data:AnneMarieSchutzbarMilchling ;
+    :hasDaughter data:AnneMarieSchutzbarMilchling ;
+    :hasDeathYear 1957 ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:RoseMarston ;
+    :isAncestorOf data:AnneMarieSchutzbarMilchling ;
+    :isAuntOf data:AnneMarieSchutzbarMilchling ;
+    :isBloodrelationOf data:RoseMarston ;
+    :isMotherOf data:AnneMarieSchutzbarMilchling ;
+    :isParentOf data:AnneMarieSchutzbarMilchling ;
+    :isSiblingOf data:RoseMarston ;
+    :isSisterOf data:RoseMarston .
+
+data:RudolfSchutzbarMilchling a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1853 ;
+    :hasBrother data:RudolfSchutzbarMilchling ;
+    :hasChild data:AnneMarieSchutzbarMilchling ;
+    :hasDaughter data:AnneMarieSchutzbarMilchling ;
+    :hasDeathYear 1935 ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isAncestorOf data:AnneMarieSchutzbarMilchling ;
+    :isBloodrelationOf data:RudolfSchutzbarMilchling ;
+    :isBrotherOf data:RudolfSchutzbarMilchling ;
+    :isFatherOf data:AnneMarieSchutzbarMilchling ;
+    :isParentOf data:AnneMarieSchutzbarMilchling ;
+    :isSiblingOf data:RudolfSchutzbarMilchling ;
+    :isUncleOf data:AnneMarieSchutzbarMilchling .
+
+data:FrederickFrancisII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickFrancisII ;
+    :hasChild data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasDaughter data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isAncestorOf data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:Nikolaus ;
+    :isBloodrelationOf data:FrederickFrancisII ;
+    :isBrotherOf data:FrederickFrancisII ;
+    :isFatherOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isParentOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isSiblingOf data:FrederickFrancisII ;
+    :isUncleOf data:ElisabethAlexandrineMecklenburgSchwerin .
+
+data:MarieSchwarzburgRudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasDaughter data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:MarieSchwarzburgRudolstadt ;
+    :isAncestorOf data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:Nikolaus ;
+    :isAuntOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isBloodrelationOf data:MarieSchwarzburgRudolstadt ;
+    :isMotherOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isParentOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isSiblingOf data:MarieSchwarzburgRudolstadt ;
+    :isSisterOf data:MarieSchwarzburgRudolstadt .
+
+data:AnneMarieSchutzbarMilchling a :Person,
+        :Woman ;
+    :hasAncestor data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:RudolfSchutzbarMilchling ;
+    :hasMother data:RoseMarston ;
+    :hasParent data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:AnneMarieSchutzbarMilchling ;
+    :isBloodrelationOf data:AnneMarieSchutzbarMilchling ;
+    :isChildOf data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isDaughterOf data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isSiblingOf data:AnneMarieSchutzbarMilchling ;
+    :isSisterOf data:AnneMarieSchutzbarMilchling .
+
+data:HelenaWaldeckPyrmont a :Person,
+        :Woman ;
+    :hasAncestor data:BathildisSchaumburgLippe,
+        data:FriedrichWaldeckPyrmont ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:FriedrichWaldeckPyrmont ;
+    :hasMother data:BathildisSchaumburgLippe ;
+    :hasParent data:BathildisSchaumburgLippe,
+        data:FriedrichWaldeckPyrmont ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:HelenaWaldeckPyrmont ;
+    :isBloodrelationOf data:HelenaWaldeckPyrmont ;
+    :isChildOf data:BathildisSchaumburgLippe,
+        data:FriedrichWaldeckPyrmont ;
+    :isDaughterOf data:BathildisSchaumburgLippe,
+        data:FriedrichWaldeckPyrmont ;
+    :isSiblingOf data:HelenaWaldeckPyrmont ;
+    :isSisterOf data:HelenaWaldeckPyrmont .
+
+data:Nikolaus a :Man,
+        :Person ;
+    :hasAncestor data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:MarieSchwarzburgRudolstadt,
+        data:PeterII ;
+    :hasBirthYear 1897 ;
+    :hasBrother data:Nikolaus ;
+    :hasDeathYear 1970 ;
+    :hasFather data:FrederickAugustusII ;
+    :hasMarriageYear 1921,
+        1950 ;
+    :hasMother data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasParent data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:FrederickAugustusII ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :isBloodrelationOf data:Nikolaus ;
+    :isBrotherOf data:Nikolaus ;
+    :isChildOf data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:FrederickAugustusII ;
+    :isSiblingOf data:Nikolaus ;
+    :isSonOf data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:FrederickAugustusII .
+
+data:ElisabethAlexandrineMecklenburgSchwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FrederickFrancisII,
+        data:MarieSchwarzburgRudolstadt ;
+    :hasBirthYear 1869 ;
+    :hasChild data:Nikolaus ;
+    :hasDeathYear 1955 ;
+    :hasFather data:FrederickFrancisII ;
+    :hasMother data:MarieSchwarzburgRudolstadt ;
+    :hasParent data:FrederickFrancisII,
+        data:MarieSchwarzburgRudolstadt ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSister data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasSon data:Nikolaus ;
+    :isAncestorOf data:Nikolaus ;
+    :isAuntOf data:Nikolaus ;
+    :isBloodrelationOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isChildOf data:FrederickFrancisII,
+        data:MarieSchwarzburgRudolstadt ;
+    :isDaughterOf data:FrederickFrancisII,
+        data:MarieSchwarzburgRudolstadt ;
+    :isMotherOf data:Nikolaus ;
+    :isParentOf data:Nikolaus ;
+    :isSiblingOf data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :isSisterOf data:ElisabethAlexandrineMecklenburgSchwerin .
+
+data:FrederickAugustusII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:ElisabethSaxeAltenburg,
+        data:PeterII ;
+    :hasBirthYear 1852 ;
+    :hasBrother data:FrederickAugustusII ;
+    :hasChild data:Nikolaus ;
+    :hasDeathYear 1931 ;
+    :hasFather data:PeterII ;
+    :hasMother data:ElisabethSaxeAltenburg ;
+    :hasParent data:ElisabethSaxeAltenburg,
+        data:PeterII ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:BathildisSchaumburgLippe,
+        data:BechtoldBernstorff,
+        data:ElisabethAlexandrineMecklenburgSchwerin,
+        data:ElisabethSaxeAltenburg,
+        data:FrederickAugustusII,
+        data:FrederickFrancisII,
+        data:FriedrichWaldeckPyrmont,
+        data:HelenaWaldeckPyrmont,
+        data:MarieSchwarzburgRudolstadt,
+        data:Nikolaus,
+        data:PeterII,
+        data:RoseMarston,
+        data:RudolfSchutzbarMilchling ;
+    :hasSon data:Nikolaus ;
+    :isAncestorOf data:Nikolaus ;
+    :isBloodrelationOf data:FrederickAugustusII ;
+    :isBrotherOf data:FrederickAugustusII ;
+    :isChildOf data:ElisabethSaxeAltenburg,
+        data:PeterII ;
+    :isFatherOf data:Nikolaus ;
+    :isParentOf data:Nikolaus ;
+    :isSiblingOf data:FrederickAugustusII ;
+    :isSonOf data:ElisabethSaxeAltenburg,
+        data:PeterII ;
+    :isUncleOf data:Nikolaus .
+

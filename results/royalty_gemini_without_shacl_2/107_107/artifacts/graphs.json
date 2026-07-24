@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benjamin_Pieter_Floris a :Man ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Isabella_Lily_Juliana a :Woman ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Prince_Floris a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Prince_Maurits a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Prince_Pieter-Christiaan a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Samuel_Bernhard_Louis a :Man ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Annette_Sekreve a :Woman ;\n    :hasBirthYear 1972 .\n\ndata:Prince_Bernhard_van_Vollenhoven a :Man ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMother data:Princess_Margriet .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benjamin_Pieter_Floris a :Man ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Isabella_Lily_Juliana a :Woman ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Prince_Floris a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Prince_Maurits a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Prince_Pieter-Christiaan a :Man ;\n    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Samuel_Bernhard_Louis a :Man ;\n    :hasFather data:Prince_Bernhard_van_Vollenhoven ;\n    :hasMother data:Annette_Sekreve .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Annette_Sekreve a :Woman ;\n    :hasBirthYear 1972 .\n\ndata:Prince_Bernhard_van_Vollenhoven a :Man ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMother data:Princess_Margriet .\n\n"
+    }
+]

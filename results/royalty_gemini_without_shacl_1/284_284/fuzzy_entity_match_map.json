@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/284_284",
+  "text_file": "Q3991503.txt",
+  "text_key": "Q3991503",
+  "article": "https://en.wikipedia.org/wiki/Timothy_Bowes-Lyon,_16th_Earl_of_Strathmore_and_Kinghorne",
+  "article_key": "Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne",
+  "main_entity": {
+    "uri": "http://example.com/data#Timothy_Bowes-Lyon",
+    "qid": "Q3991503",
+    "label": "Timothy Bowes-Lyon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Timothy_Bowes-Lyon",
+      "qid": "Q3991503",
+      "label": "Timothy Bowes-Lyon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Dorothy_Osborne",
+      "qid": "Q75240055",
+      "label": "Dorothy Osborne",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Lady_Dorothy_Osborne",
+      "extracted_local_name": "Lady_Dorothy_Osborne",
+      "embedding_text": "Lady Dorothy Osborne",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8571428571428571,
+      "ground_truth_uri": "http://example.com/data#Dorothy_Osborne",
+      "ground_truth_qid": "Q75240055",
+      "ground_truth_label": "Dorothy Osborne",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Dorothy Osborne",
+      "best_candidate_label": "Dorothy Osborne",
+      "best_candidate_qid": "Q75240055",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8571428571428571
+    },
+    {
+      "extracted_uri": "http://example.org/data/Timothy_Patrick_Bowes-Lyon",
+      "extracted_local_name": "Timothy_Patrick_Bowes-Lyon",
+      "embedding_text": "Timothy Patrick Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8181818181818182,
+      "ground_truth_uri": "http://example.com/data#Timothy_Bowes-Lyon",
+      "ground_truth_qid": "Q3991503",
+      "ground_truth_label": "Timothy Bowes-Lyon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Timothy Bowes-Lyon",
+      "best_candidate_label": "Timothy Bowes-Lyon",
+      "best_candidate_qid": "Q3991503",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8181818181818182
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_George_VI",
+      "extracted_local_name": "King_George_VI",
+      "embedding_text": "King George VI",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Dorothy Osborne",
+      "best_candidate_label": "Dorothy Osborne",
+      "best_candidate_qid": "Q75240055",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.20689655172413793
+    },
+    {
+      "extracted_uri": "http://example.org/data/Patrick_Lord_Glamis",
+      "extracted_local_name": "Patrick_Lord_Glamis",
+      "embedding_text": "Patrick Lord Glamis",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Timothy Bowes-Lyon",
+      "best_candidate_label": "Timothy Bowes-Lyon",
+      "best_candidate_qid": "Q3991503",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2702702702702703
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_the_Queen_Mother",
+      "extracted_local_name": "Queen_Elizabeth_the_Queen_Mother",
+      "embedding_text": "Queen Elizabeth the Queen Mother",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Timothy Bowes-Lyon",
+      "best_candidate_label": "Timothy Bowes-Lyon",
+      "best_candidate_qid": "Q3991503",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.24
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

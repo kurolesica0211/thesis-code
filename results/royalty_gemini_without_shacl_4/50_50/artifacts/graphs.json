@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexandraOfGreece a :Woman ;\n    :hasFather data:Alexander ;\n    :hasMother data:AspasiaManos .\n\ndata:Alexander a :Man ;\n    :hasBirthYear \"1893\"^^xsd:positiveInteger ;\n    :hasBrother data:GeorgeCrownPrince,\n        data:PaulOfGreece ;\n    :hasDeathYear \"1920\"^^xsd:positiveInteger ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear \"1919\"^^xsd:positiveInteger ;\n    :hasMother data:SophiaOfPrussia ;\n    :hasRelation data:AspasiaManos ;\n    :hasSister data:HelenOfRomania .\n\ndata:ConstantineI a :Man ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMother data:OlgaConstantinovnaOfRussia .\n\ndata:FrederickIIIOfGermany a :Man .\n\ndata:GeorgeCrownPrince a :Man .\n\ndata:GeorgeIOfGreece a :Man .\n\ndata:HelenOfRomania a :Woman .\n\ndata:MariaArgyropoulos a :Woman .\n\ndata:OlgaConstantinovnaOfRussia a :Woman .\n\ndata:PaulOfGreece a :Man .\n\ndata:PetrosManos a :Man .\n\ndata:SophiaOfPrussia a :Woman ;\n    :hasFather data:FrederickIIIOfGermany ;\n    :hasMother data:VictoriaPrincessRoyal .\n\ndata:VictoriaPrincessRoyal a :Woman .\n\ndata:AspasiaManos a :Woman ;\n    :hasFather data:PetrosManos ;\n    :hasMother data:MariaArgyropoulos .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexandraOfGreece a :Woman ;\n    :hasFather data:Alexander ;\n    :hasMother data:AspasiaManos .\n\ndata:Alexander a :Man ;\n    :hasBirthYear \"1893\"^^xsd:positiveInteger ;\n    :hasBrother data:GeorgeCrownPrince,\n        data:PaulOfGreece ;\n    :hasDeathYear \"1920\"^^xsd:positiveInteger ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear \"1919\"^^xsd:positiveInteger ;\n    :hasMother data:SophiaOfPrussia ;\n    :hasRelation data:AspasiaManos ;\n    :hasSister data:HelenOfRomania .\n\ndata:ConstantineI a :Man ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMother data:OlgaConstantinovnaOfRussia .\n\ndata:FrederickIIIOfGermany a :Man .\n\ndata:GeorgeCrownPrince a :Man .\n\ndata:GeorgeIOfGreece a :Man .\n\ndata:HelenOfRomania a :Woman .\n\ndata:MariaArgyropoulos a :Woman .\n\ndata:OlgaConstantinovnaOfRussia a :Woman .\n\ndata:PaulOfGreece a :Man .\n\ndata:PetrosManos a :Man .\n\ndata:SophiaOfPrussia a :Woman ;\n    :hasFather data:FrederickIIIOfGermany ;\n    :hasMother data:VictoriaPrincessRoyal .\n\ndata:VictoriaPrincessRoyal a :Woman .\n\ndata:AspasiaManos a :Woman ;\n    :hasFather data:PetrosManos ;\n    :hasMother data:MariaArgyropoulos .\n\n"
+    }
+]

@@ -1,0 +1,216 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HelenaVictoriaHuttenCzapska a :Person,
+        :Woman ;
+    :hasRelation data:HelenaVictoriaHuttenCzapska ;
+    :hasSister data:HelenaVictoriaHuttenCzapska ;
+    :isBloodrelationOf data:HelenaVictoriaHuttenCzapska ;
+    :isSiblingOf data:HelenaVictoriaHuttenCzapska ;
+    :isSisterOf data:HelenaVictoriaHuttenCzapska .
+
+data:AnneRowell a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:RobertaCavanagh ;
+    :hasDaughter data:RobertaCavanagh ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :hasSister data:AnneRowell ;
+    :isAncestorOf data:RobertaCavanagh ;
+    :isAuntOf data:RobertaCavanagh ;
+    :isBloodrelationOf data:AnneRowell ;
+    :isMotherOf data:RobertaCavanagh ;
+    :isParentOf data:RobertaCavanagh ;
+    :isSiblingOf data:AnneRowell ;
+    :isSisterOf data:AnneRowell .
+
+data:RobertoCavanagh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:RobertoCavanagh ;
+    :hasChild data:RobertaCavanagh ;
+    :hasDaughter data:RobertaCavanagh ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :isAncestorOf data:RobertaCavanagh ;
+    :isBloodrelationOf data:RobertoCavanagh ;
+    :isBrotherOf data:RobertoCavanagh ;
+    :isFatherOf data:RobertaCavanagh ;
+    :isParentOf data:RobertaCavanagh ;
+    :isSiblingOf data:RobertoCavanagh ;
+    :isUncleOf data:RobertaCavanagh .
+
+data:Ulrich10thPrinceKinsky a :Ancestor,
+        :Man ;
+    :hasBrother data:Ulrich10thPrinceKinsky ;
+    :hasChild data:FranzUlrich ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :hasSon data:FranzUlrich ;
+    :isAncestorOf data:FranzUlrich,
+        data:KinskySon ;
+    :isBloodrelationOf data:Ulrich10thPrinceKinsky ;
+    :isBrotherOf data:Ulrich10thPrinceKinsky ;
+    :isFatherOf data:FranzUlrich ;
+    :isParentOf data:FranzUlrich ;
+    :isSiblingOf data:Ulrich10thPrinceKinsky ;
+    :isUncleOf data:FranzUlrich .
+
+data:HilmarVondemBusscheHaddenhausen a :Ancestor,
+        :Man ;
+    :hasBrother data:HilmarVondemBusscheHaddenhausen ;
+    :hasChild data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :hasDaughter data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :isAncestorOf data:FranzUlrich,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :isBloodrelationOf data:HilmarVondemBusscheHaddenhausen ;
+    :isBrotherOf data:HilmarVondemBusscheHaddenhausen ;
+    :isFatherOf data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :isParentOf data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :isSiblingOf data:HilmarVondemBusscheHaddenhausen ;
+    :isUncleOf data:MarieJuliaMathildeVondemBusscheHaddenhausen .
+
+data:KinskySon a :Man,
+        :Person ;
+    :hasAncestor data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:Ulrich10thPrinceKinsky ;
+    :hasBrother data:KinskySon ;
+    :hasFather data:FranzUlrich ;
+    :hasParent data:FranzUlrich ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :isBloodrelationOf data:KinskySon ;
+    :isBrotherOf data:KinskySon ;
+    :isChildOf data:FranzUlrich ;
+    :isSiblingOf data:KinskySon ;
+    :isSonOf data:FranzUlrich .
+
+data:MarieJuliaMathildeVondemBusscheHaddenhausen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:HilmarVondemBusscheHaddenhausen ;
+    :hasBirthYear 1900 ;
+    :hasChild data:FranzUlrich ;
+    :hasDeathYear 1974 ;
+    :hasFather data:HilmarVondemBusscheHaddenhausen ;
+    :hasParent data:HilmarVondemBusscheHaddenhausen ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :hasSister data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :hasSon data:FranzUlrich ;
+    :isAncestorOf data:FranzUlrich,
+        data:KinskySon ;
+    :isAuntOf data:FranzUlrich ;
+    :isBloodrelationOf data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :isChildOf data:HilmarVondemBusscheHaddenhausen ;
+    :isDaughterOf data:HilmarVondemBusscheHaddenhausen ;
+    :isMotherOf data:FranzUlrich ;
+    :isParentOf data:FranzUlrich ;
+    :isSiblingOf data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :isSisterOf data:MarieJuliaMathildeVondemBusscheHaddenhausen .
+
+data:RobertaCavanagh a :Person,
+        :Woman ;
+    :hasAncestor data:AnneRowell,
+        data:RobertoCavanagh ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:RobertoCavanagh ;
+    :hasMother data:AnneRowell ;
+    :hasParent data:AnneRowell,
+        data:RobertoCavanagh ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :hasSister data:RobertaCavanagh ;
+    :isBloodrelationOf data:RobertaCavanagh ;
+    :isChildOf data:AnneRowell,
+        data:RobertoCavanagh ;
+    :isDaughterOf data:AnneRowell,
+        data:RobertoCavanagh ;
+    :isSiblingOf data:RobertaCavanagh ;
+    :isSisterOf data:RobertaCavanagh .
+
+data:FranzUlrich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:HilmarVondemBusscheHaddenhausen,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:Ulrich10thPrinceKinsky ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:FranzUlrich ;
+    :hasChild data:KinskySon ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich10thPrinceKinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:MarieJuliaMathildeVondemBusscheHaddenhausen ;
+    :hasParent data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:Ulrich10thPrinceKinsky ;
+    :hasRelation data:AnneRowell,
+        data:FranzUlrich,
+        data:HilmarVondemBusscheHaddenhausen,
+        data:KinskySon,
+        data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:RobertaCavanagh,
+        data:RobertoCavanagh,
+        data:Ulrich10thPrinceKinsky ;
+    :hasSon data:KinskySon ;
+    :isAncestorOf data:KinskySon ;
+    :isBloodrelationOf data:FranzUlrich ;
+    :isBrotherOf data:FranzUlrich ;
+    :isChildOf data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:Ulrich10thPrinceKinsky ;
+    :isFatherOf data:KinskySon ;
+    :isParentOf data:KinskySon ;
+    :isSiblingOf data:FranzUlrich ;
+    :isSonOf data:MarieJuliaMathildeVondemBusscheHaddenhausen,
+        data:Ulrich10thPrinceKinsky ;
+    :isUncleOf data:KinskySon .
+

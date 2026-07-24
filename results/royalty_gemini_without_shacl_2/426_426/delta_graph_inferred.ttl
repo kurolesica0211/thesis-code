@@ -1,0 +1,336 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Jean_Duke_of_Guise ;
+    :hasChild data:Princess_Anne_of_Orleans ;
+    :hasDaughter data:Princess_Anne_of_Orleans ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isAncestorOf data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Prince_Jean_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isFatherOf data:Princess_Anne_of_Orleans ;
+    :isParentOf data:Princess_Anne_of_Orleans ;
+    :isSiblingOf data:Prince_Jean_Duke_of_Guise ;
+    :isUncleOf data:Princess_Anne_of_Orleans .
+
+data:Princess_Isabelle_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Anne_of_Orleans ;
+    :hasDaughter data:Princess_Anne_of_Orleans ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Isabelle_of_Orleans ;
+    :isAncestorOf data:Princess_Anne_of_Orleans ;
+    :isAuntOf data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orleans ;
+    :isMotherOf data:Princess_Anne_of_Orleans ;
+    :isParentOf data:Princess_Anne_of_Orleans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orleans ;
+    :isSisterOf data:Princess_Isabelle_of_Orleans .
+
+data:Amadeo_I_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Amadeo_I_of_Spain ;
+    :hasChild data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSon data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Amadeo_I_of_Spain ;
+    :isBrotherOf data:Amadeo_I_of_Spain ;
+    :isFatherOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isParentOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isSiblingOf data:Amadeo_I_of_Spain ;
+    :isUncleOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta .
+
+data:Prince_Philippe_of_Orleans a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Philippe_of_Orleans ;
+    :hasChild data:Princess_Helene ;
+    :hasDaughter data:Princess_Helene ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :isBloodrelationOf data:Prince_Philippe_of_Orleans ;
+    :isBrotherOf data:Prince_Philippe_of_Orleans ;
+    :isFatherOf data:Princess_Helene ;
+    :isParentOf data:Princess_Helene ;
+    :isSiblingOf data:Prince_Philippe_of_Orleans ;
+    :isUncleOf data:Princess_Helene .
+
+data:Princess_Maria_Vittoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Maria_Vittoria ;
+    :hasSon data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isAuntOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Princess_Maria_Vittoria ;
+    :isMotherOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isParentOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isSiblingOf data:Princess_Maria_Vittoria ;
+    :isSisterOf data:Princess_Maria_Vittoria .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Helene ;
+    :hasDaughter data:Princess_Helene ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Marie_Isabelle_of_Orleans ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :isAuntOf data:Princess_Helene ;
+    :isBloodrelationOf data:Princess_Marie_Isabelle_of_Orleans ;
+    :isMotherOf data:Princess_Helene ;
+    :isParentOf data:Princess_Helene ;
+    :isSiblingOf data:Princess_Marie_Isabelle_of_Orleans ;
+    :isSisterOf data:Princess_Marie_Isabelle_of_Orleans .
+
+data:Princess_Anne_of_Orleans a :Woman ;
+    :hasAncestor data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMother data:Princess_Isabelle_of_Orleans ;
+    :hasParent data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orleans ;
+    :isChildOf data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans ;
+    :isDaughterOf data:Prince_Jean_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orleans ;
+    :isSiblingOf data:Princess_Anne_of_Orleans ;
+    :isSisterOf data:Princess_Anne_of_Orleans .
+
+data:Aimone_4th_Duke_of_Aosta a :Man ;
+    :hasAncestor data:Amadeo_I_of_Spain,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasBrother data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasMother data:Princess_Helene ;
+    :hasParent data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isBloodrelationOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :isSiblingOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man ;
+    :hasAncestor data:Amadeo_I_of_Spain,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:Princess_Helene ;
+    :hasParent data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isBloodrelationOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene ;
+    :isSiblingOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Princess_Helene .
+
+data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasAncestor data:Amadeo_I_of_Spain,
+        data:Princess_Maria_Vittoria ;
+    :hasBrother data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasChild data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasFather data:Amadeo_I_of_Spain ;
+    :hasMother data:Princess_Maria_Vittoria ;
+    :hasParent data:Amadeo_I_of_Spain,
+        data:Princess_Maria_Vittoria ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSon data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isChildOf data:Amadeo_I_of_Spain,
+        data:Princess_Maria_Vittoria ;
+    :isFatherOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isParentOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :isSonOf data:Amadeo_I_of_Spain,
+        data:Princess_Maria_Vittoria ;
+    :isUncleOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta .
+
+data:Princess_Helene a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Philippe_of_Orleans,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasChild data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasFather data:Prince_Philippe_of_Orleans ;
+    :hasMother data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasParent data:Prince_Philippe_of_Orleans,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Amadeo_I_of_Spain,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Philippe_of_Orleans,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Helene,
+        data:Princess_Isabelle_of_Orleans,
+        data:Princess_Maria_Vittoria,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasSister data:Princess_Helene ;
+    :hasSon data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isAncestorOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isAuntOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Princess_Helene ;
+    :isChildOf data:Prince_Philippe_of_Orleans,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isDaughterOf data:Prince_Philippe_of_Orleans,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isMotherOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isParentOf data:Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Princess_Helene ;
+    :isSisterOf data:Princess_Helene .
+

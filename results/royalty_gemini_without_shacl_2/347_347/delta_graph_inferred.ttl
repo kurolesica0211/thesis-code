@@ -1,0 +1,481 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Ariprand a :Man ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasBrother data:Count_Ariprand ;
+    :hasDeathYear "1996"^^xsd:positiveInteger ;
+    :hasRelation data:Count_Ariprand ;
+    :isBloodrelationOf data:Count_Ariprand ;
+    :isBrotherOf data:Count_Ariprand ;
+    :isSiblingOf data:Count_Ariprand .
+
+data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Woman ;
+    :hasBirthYear "1929"^^xsd:positiveInteger ;
+    :hasRelation data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasSister data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isBloodrelationOf data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isSiblingOf data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isSisterOf data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+
+data:Prince_Rainier_III a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Rainier_III ;
+    :hasChild data:Princess_Caroline_of_Monaco ;
+    :hasDaughter data:Princess_Caroline_of_Monaco ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :isAncestorOf data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco ;
+    :isBloodrelationOf data:Prince_Rainier_III ;
+    :isBrotherOf data:Prince_Rainier_III ;
+    :isFatherOf data:Princess_Caroline_of_Monaco ;
+    :isParentOf data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Prince_Rainier_III ;
+    :isUncleOf data:Princess_Caroline_of_Monaco .
+
+data:Johann_Gustav_Hans_Hochuli a :Ancestor,
+        :Man ;
+    :hasBirthYear "1912"^^xsd:positiveInteger ;
+    :hasBrother data:Johann_Gustav_Hans_Hochuli ;
+    :hasChild data:Chantal_Hochuli ;
+    :hasDaughter data:Chantal_Hochuli ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :isAncestorOf data:Chantal_Hochuli,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isBloodrelationOf data:Johann_Gustav_Hans_Hochuli ;
+    :isBrotherOf data:Johann_Gustav_Hans_Hochuli ;
+    :isFatherOf data:Chantal_Hochuli ;
+    :isParentOf data:Chantal_Hochuli ;
+    :isSiblingOf data:Johann_Gustav_Hans_Hochuli ;
+    :isUncleOf data:Chantal_Hochuli .
+
+data:Otto_Heinrich a :Man ;
+    :hasAncestor data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasBrother data:Otto_Heinrich ;
+    :hasFather data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasParent data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :isBloodrelationOf data:Otto_Heinrich ;
+    :isBrotherOf data:Otto_Heinrich ;
+    :isChildOf data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isSiblingOf data:Otto_Heinrich ;
+    :isSonOf data:Prince_Ludwig_Rudolph_of_Hannover .
+
+data:Rosmarie_Lembeck a :Ancestor,
+        :Woman ;
+    :hasBirthYear "1921"^^xsd:positiveInteger ;
+    :hasChild data:Chantal_Hochuli ;
+    :hasDaughter data:Chantal_Hochuli ;
+    :hasDeathYear "2011"^^xsd:positiveInteger ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Rosmarie_Lembeck ;
+    :isAncestorOf data:Chantal_Hochuli,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isAuntOf data:Chantal_Hochuli ;
+    :isBloodrelationOf data:Rosmarie_Lembeck ;
+    :isMotherOf data:Chantal_Hochuli ;
+    :isParentOf data:Chantal_Hochuli ;
+    :isSiblingOf data:Rosmarie_Lembeck ;
+    :isSisterOf data:Rosmarie_Lembeck .
+
+data:Prince_Ernest_Augustus_of_Hannover a :Ancestor,
+        :Man ;
+    :hasBirthYear "1914"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Ernest_Augustus_of_Hannover ;
+    :hasChild data:Ernst_August_von_Hannover ;
+    :hasDeathYear "1987"^^xsd:positiveInteger ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSon data:Ernst_August_von_Hannover ;
+    :isAncestorOf data:Ernst_August_von_Hannover,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Ernest_Augustus_of_Hannover ;
+    :isBrotherOf data:Prince_Ernest_Augustus_of_Hannover ;
+    :isFatherOf data:Ernst_August_von_Hannover ;
+    :isParentOf data:Ernst_August_von_Hannover ;
+    :isSiblingOf data:Prince_Ernest_Augustus_of_Hannover ;
+    :isUncleOf data:Ernst_August_von_Hannover .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Woman ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasChild data:Ernst_August_von_Hannover ;
+    :hasDeathYear "1980"^^xsd:positiveInteger ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Ernst_August_von_Hannover ;
+    :isAncestorOf data:Ernst_August_von_Hannover,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isAuntOf data:Ernst_August_von_Hannover ;
+    :isBloodrelationOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Ernst_August_von_Hannover ;
+    :isParentOf data:Ernst_August_von_Hannover ;
+    :isSiblingOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Prince_Ludwig_Rudolph_of_Hannover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasChild data:Otto_Heinrich ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSon data:Otto_Heinrich ;
+    :isAncestorOf data:Otto_Heinrich ;
+    :isBloodrelationOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isBrotherOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isFatherOf data:Otto_Heinrich ;
+    :isParentOf data:Otto_Heinrich ;
+    :isSiblingOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isUncleOf data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Rainier_III ;
+    :hasChild data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasFather data:Prince_Rainier_III ;
+    :hasParent data:Prince_Rainier_III ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Princess_Alexandra ;
+    :isAuntOf data:Princess_Alexandra ;
+    :isBloodrelationOf data:Princess_Caroline_of_Monaco ;
+    :isChildOf data:Prince_Rainier_III ;
+    :isDaughterOf data:Prince_Rainier_III ;
+    :isMotherOf data:Princess_Alexandra ;
+    :isParentOf data:Princess_Alexandra ;
+    :isSiblingOf data:Princess_Caroline_of_Monaco ;
+    :isSisterOf data:Princess_Caroline_of_Monaco .
+
+data:Chantal_Hochuli a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Johann_Gustav_Hans_Hochuli,
+        data:Rosmarie_Lembeck ;
+    :hasBirthYear "1955"^^xsd:positiveInteger ;
+    :hasChild data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :hasFather data:Johann_Gustav_Hans_Hochuli ;
+    :hasMother data:Rosmarie_Lembeck ;
+    :hasParent data:Johann_Gustav_Hans_Hochuli,
+        data:Rosmarie_Lembeck ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Chantal_Hochuli ;
+    :hasSon data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isAncestorOf data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isAuntOf data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isBloodrelationOf data:Chantal_Hochuli ;
+    :isChildOf data:Johann_Gustav_Hans_Hochuli,
+        data:Rosmarie_Lembeck ;
+    :isDaughterOf data:Johann_Gustav_Hans_Hochuli,
+        data:Rosmarie_Lembeck ;
+    :isMotherOf data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isParentOf data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isSiblingOf data:Chantal_Hochuli ;
+    :isSisterOf data:Chantal_Hochuli .
+
+data:Princess_Alexandra a :Woman ;
+    :hasAncestor data:Ernst_August_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBirthYear "1999"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Princess_Caroline_of_Monaco ;
+    :hasParent data:Ernst_August_von_Hannover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isChildOf data:Ernst_August_von_Hannover,
+        data:Princess_Caroline_of_Monaco ;
+    :isDaughterOf data:Ernst_August_von_Hannover,
+        data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isSisterOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra .
+
+data:Prince_Christian a :Man ;
+    :hasAncestor data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasBirthYear "1985"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isBrotherOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isChildOf data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover ;
+    :isSiblingOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isSonOf data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover .
+
+data:Prince_Ernst_August_son a :Man ;
+    :hasAncestor data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasBirthYear "1983"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isBrotherOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isChildOf data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover ;
+    :isSiblingOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isSonOf data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover .
+
+data:Ernst_August_von_Hannover a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBirthYear "1954"^^xsd:positiveInteger ;
+    :hasBrother data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasChild data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasFather data:Prince_Ernest_Augustus_of_Hannover ;
+    :hasMarriageYear "1981"^^xsd:positiveInteger,
+        "1999"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August_von_Hannover,
+        data:Johann_Gustav_Hans_Hochuli,
+        data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernest_Augustus_of_Hannover,
+        data:Prince_Ernst_August_son,
+        data:Prince_Ludwig_Rudolph_of_Hannover,
+        data:Prince_Rainier_III,
+        data:Princess_Alexandra,
+        data:Princess_Caroline_of_Monaco,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Rosmarie_Lembeck ;
+    :hasSon data:Prince_Christian,
+        data:Prince_Ernst_August_son ;
+    :isAncestorOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isBloodrelationOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isBrotherOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isChildOf data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isFatherOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isParentOf data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra ;
+    :isSiblingOf data:Ernst_August_von_Hannover,
+        data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :isSonOf data:Prince_Ernest_Augustus_of_Hannover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isUncleOf data:Otto_Heinrich,
+        data:Prince_Christian,
+        data:Prince_Ernst_August_son,
+        data:Princess_Alexandra .
+

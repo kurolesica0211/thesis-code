@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark .
+
+data:Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Alexia_of_Greece_and_Denmark .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Alexia_of_Greece_and_Denmark .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person .
+
+data:Maria-Olympia_of_Greece a :Person,
+        :Woman .
+
+data:Pavlos_of_Greece a :Man,
+        :Person .
+
+data:Theodora_of_Greece a :Person,
+        :Woman .
+
+data:Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos_of_Greece ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie_of_Greece ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana,
+        data:Maria-Olympia_of_Greece ;
+    :hasSister data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain .
+

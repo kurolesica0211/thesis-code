@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isAncestorOf data:Alfonso_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasChild data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSon data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Juan_Count_of_Barcelona ;
+    :isFatherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSister data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSon data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isMotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isSisterOf data:Maria_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasBrother data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :knownAs "Alfonsito"^^xsd:string .
+

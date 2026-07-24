@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Gaston_Count_of_Eu a :Ancestor .
+
+data:Isabel_of_Brazil a :Ancestor .
+
+data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Ancestor .
+
+data:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Ancestor .
+
+data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Ancestor .
+

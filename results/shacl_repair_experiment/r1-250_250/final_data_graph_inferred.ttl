@@ -1,0 +1,227 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst_August_Brother a :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :isBloodrelationOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isUncleOf data:Otto_Heinrich .
+
+data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1925 ;
+    :hasBrother data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasChild data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasDaughter data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasDeathYear 1996 ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :isAncestorOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Otto_Heinrich ;
+    :isBloodrelationOf data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isBrotherOf data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isFatherOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isParentOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isSiblingOf data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isUncleOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Ernst_August_Prince_of_Hanover ;
+    :hasChild data:Ludwig_Rudolf_of_Hanover ;
+    :hasDeathYear 1987 ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :hasSon data:Ludwig_Rudolf_of_Hanover ;
+    :isAncestorOf data:Ludwig_Rudolf_of_Hanover,
+        data:Otto_Heinrich ;
+    :isBloodrelationOf data:Ernst_August_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Prince_of_Hanover ;
+    :isFatherOf data:Ludwig_Rudolf_of_Hanover ;
+    :isParentOf data:Ludwig_Rudolf_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Prince_of_Hanover ;
+    :isUncleOf data:Ludwig_Rudolf_of_Hanover .
+
+data:Maria_Perpetua_Euphemia_von_Auersperg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1929 ;
+    :hasChild data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasDaughter data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :hasSister data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :isAncestorOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Otto_Heinrich ;
+    :isAuntOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isBloodrelationOf data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :isMotherOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isParentOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isSiblingOf data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :isSisterOf data:Maria_Perpetua_Euphemia_von_Auersperg .
+
+data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasChild data:Ludwig_Rudolf_of_Hanover ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :hasSister data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Ludwig_Rudolf_of_Hanover ;
+    :isAncestorOf data:Ludwig_Rudolf_of_Hanover,
+        data:Otto_Heinrich ;
+    :isAuntOf data:Ludwig_Rudolf_of_Hanover ;
+    :isBloodrelationOf data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Ludwig_Rudolf_of_Hanover ;
+    :isParentOf data:Ludwig_Rudolf_of_Hanover ;
+    :isSiblingOf data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Otto_Heinrich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBrother data:Otto_Heinrich ;
+    :hasFather data:Ludwig_Rudolf_of_Hanover ;
+    :hasMother data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasParent data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :isBloodrelationOf data:Otto_Heinrich ;
+    :isBrotherOf data:Otto_Heinrich ;
+    :isChildOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isSiblingOf data:Otto_Heinrich ;
+    :isSonOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover .
+
+data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :hasBirthYear 1962 ;
+    :hasChild data:Otto_Heinrich ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasMother data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :hasParent data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :hasSister data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasSon data:Otto_Heinrich ;
+    :isAncestorOf data:Otto_Heinrich ;
+    :isAuntOf data:Otto_Heinrich ;
+    :isBloodrelationOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isChildOf data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :isDaughterOf data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Maria_Perpetua_Euphemia_von_Auersperg ;
+    :isMotherOf data:Otto_Heinrich ;
+    :isParentOf data:Otto_Heinrich ;
+    :isSiblingOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :isSisterOf data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+
+data:Ludwig_Rudolf_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ernst_August_Prince_of_Hanover,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :hasChild data:Otto_Heinrich ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMarriageYear data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        1987 ;
+    :hasMother data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Ernst_August_Prince_of_Hanover,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ernst_August_Brother,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        data:Ludwig_Rudolf_of_Hanover,
+        data:Maria_Perpetua_Euphemia_von_Auersperg,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Otto_Heinrich ;
+    :hasSon data:Otto_Heinrich ;
+    :isAncestorOf data:Otto_Heinrich ;
+    :isBloodrelationOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isChildOf data:Ernst_August_Prince_of_Hanover,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isFatherOf data:Otto_Heinrich ;
+    :isParentOf data:Otto_Heinrich ;
+    :isSiblingOf data:Ernst_August_Brother,
+        data:Ludwig_Rudolf_of_Hanover ;
+    :isSonOf data:Ernst_August_Prince_of_Hanover,
+        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isUncleOf data:Otto_Heinrich .
+

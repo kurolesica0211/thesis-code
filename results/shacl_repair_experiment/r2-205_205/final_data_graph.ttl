@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia ;
+    :hasSex data:Female ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :knownAs "Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg"^^xsd:string .
+
+data:Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Female .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

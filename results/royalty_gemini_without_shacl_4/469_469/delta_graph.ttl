@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MauritzOttoWenzelDouglas a :Man,
+        :Person ;
+    :hasBirthYear 1994 ;
+    :hasFather data:CarlAxelArchibaldDouglas ;
+    :hasMother data:WalburgaDouglas .
+
+data:ArchibaldDouglas a :Man,
+        :Person .
+
+data:CharlesI a :Ancestor,
+        :Man,
+        :Person .
+
+data:MargaretaLagerfelt a :Person,
+        :Woman .
+
+data:OttoVonHabsburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:ReginaOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman .
+
+data:WalburgaDouglas a :Person,
+        :Woman ;
+    :hasAncestor data:CharlesI ;
+    :hasBirthYear 1958 ;
+    :hasFather data:OttoVonHabsburg ;
+    :hasMarriageYear 1992 ;
+    :hasMother data:ReginaOfSaxeMeiningen ;
+    :hasRelation data:CarlAxelArchibaldDouglas .
+
+data:CarlAxelArchibaldDouglas a :Man,
+        :Person ;
+    :hasBirthYear 1949 ;
+    :hasFather data:ArchibaldDouglas ;
+    :hasMother data:MargaretaLagerfelt .
+

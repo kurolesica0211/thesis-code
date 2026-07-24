@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_III .
+
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1897 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman .
+

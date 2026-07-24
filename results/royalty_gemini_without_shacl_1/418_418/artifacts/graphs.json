@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nina%2Ctype a :Person .\n\ndata:Prince_Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Jean_Duke_of_Guise ;\n    :hasDeathYear 1926 ;\n    :hasFather data:Philippe_Count_of_Paris ;\n    :hasMarriageYear 1896 ;\n    :hasMother data:Princess_Isabelle_of_Orleans ;\n    :hasRelation data:Archduchess_Maria_Dorothea_of_Austria ;\n    :hasSister data:Amelie_of_Orleans ;\n    :hasSon data:Philippe_Debien ;\n    :knownAs \"Philippe VIII\"^^xsd:string .\n\ndata:Amelie_of_Orleans a :Person,\n        :Woman .\n\ndata:Archduchess_Maria_Dorothea_of_Austria a :Person,\n        :Woman ;\n    :hasFather data:Archduke_Joseph_Karl_of_Austria .\n\ndata:Archduke_Joseph_Karl_of_Austria a :Man,\n        :Person .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Nina a :Woman .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philippe_Debien a :Man,\n        :Person ;\n    :hasMother data:Nina .\n\ndata:Princess_Isabelle_of_Orleans a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nina%2Ctype a :Person .\n\ndata:Prince_Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Jean_Duke_of_Guise ;\n    :hasDeathYear 1926 ;\n    :hasFather data:Philippe_Count_of_Paris ;\n    :hasMarriageYear 1896 ;\n    :hasMother data:Princess_Isabelle_of_Orleans ;\n    :hasRelation data:Archduchess_Maria_Dorothea_of_Austria ;\n    :hasSister data:Amelie_of_Orleans ;\n    :hasSon data:Philippe_Debien ;\n    :knownAs \"Philippe VIII\"^^xsd:string .\n\ndata:Amelie_of_Orleans a :Person,\n        :Woman .\n\ndata:Archduchess_Maria_Dorothea_of_Austria a :Person,\n        :Woman ;\n    :hasFather data:Archduke_Joseph_Karl_of_Austria .\n\ndata:Archduke_Joseph_Karl_of_Austria a :Man,\n        :Person .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Nina a :Woman .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philippe_Debien a :Man,\n        :Person ;\n    :hasMother data:Nina .\n\ndata:Princess_Isabelle_of_Orleans a :Person,\n        :Woman .\n\n"
+    }
+]

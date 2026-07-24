@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Louise_of_Hanover_and_Cumberland a :Person,\n        :Woman ;\n    :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,\n        data:George_III_of_the_United_Kingdom ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Princess_Thyra_of_Denmark ;\n    :hasRelation data:Maximilian_of_Baden .\n\ndata:Napoleon_III_of_France a :Man,\n        :Person .\n\ndata:Charlotte_of_Mecklenburg-Strelitz a :Person,\n        :Woman .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:George_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:Louise_of_Hesse-Kassel a :Person,\n        :Woman .\n\ndata:Maria_Maximilianovna_of_Leuchtenberg a :Person,\n        :Woman .\n\ndata:Maximilian_of_Baden a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Wilhelm_of_Baden ;\n    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .\n\ndata:Princess_Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX_of_Denmark ;\n    :hasMother data:Louise_of_Hesse-Kassel .\n\ndata:Wilhelm_of_Baden a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Louise_of_Hanover_and_Cumberland a :Person,\n        :Woman ;\n    :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,\n        data:George_III_of_the_United_Kingdom ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Princess_Thyra_of_Denmark ;\n    :hasRelation data:Maximilian_of_Baden .\n\ndata:Napoleon_III_of_France a :Man,\n        :Person .\n\ndata:Charlotte_of_Mecklenburg-Strelitz a :Person,\n        :Woman .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:George_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:Louise_of_Hesse-Kassel a :Person,\n        :Woman .\n\ndata:Maria_Maximilianovna_of_Leuchtenberg a :Person,\n        :Woman .\n\ndata:Maximilian_of_Baden a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Wilhelm_of_Baden ;\n    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .\n\ndata:Princess_Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX_of_Denmark ;\n    :hasMother data:Louise_of_Hesse-Kassel .\n\ndata:Wilhelm_of_Baden a :Man,\n        :Person .\n\n"
+    }
+]

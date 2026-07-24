@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Timothy_Verner_Taylor a :Man,
+        :Person ;
+    :hasBirthYear "1963"^^xsd:positiveInteger ;
+    :hasBrother data:Timothy_Verner_Taylor ;
+    :hasRelation data:Timothy_Verner_Taylor ;
+    :isBloodrelationOf data:Timothy_Verner_Taylor ;
+    :isBrotherOf data:Timothy_Verner_Taylor ;
+    :isSiblingOf data:Timothy_Verner_Taylor .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_V ;
+    :hasRelation data:Helen_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isAncestorOf data:Helen_Windsor ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isSiblingOf data:King_George_V .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Helen_Windsor ;
+    :hasDaughter data:Helen_Windsor ;
+    :hasRelation data:Helen_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :isAncestorOf data:Helen_Windsor ;
+    :isAuntOf data:Helen_Windsor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isMotherOf data:Helen_Windsor ;
+    :isParentOf data:Helen_Windsor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:Helen_Windsor ;
+    :hasDaughter data:Helen_Windsor ;
+    :hasRelation data:Helen_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isAncestorOf data:Helen_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Helen_Windsor ;
+    :isParentOf data:Helen_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Helen_Windsor .
+
+data:Helen_Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasBirthYear "1964"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Helen_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Helen_Windsor ;
+    :isBloodrelationOf data:Helen_Windsor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isDaughterOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:Helen_Windsor ;
+    :isSisterOf data:Helen_Windsor .
+

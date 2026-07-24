@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarlos a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene ;
+    :isSiblingOf data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrinceJaime a :Man,
+        :Person ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:PrincessCarolina a :Person,
+        :Woman ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:PrincessMargarita a :Person,
+        :Woman ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:CarlosHugo a :Man,
+        :Person .
+
+data:PrincessIrene a :Person,
+        :Woman .
+

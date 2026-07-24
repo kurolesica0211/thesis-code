@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Catharina-Amalia a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:JorgeZorreguieta,
+        data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima,
+        data:Mar%C3%ADaDelCarmenCerruti ;
+    :hasSister data:Alexia,
+        data:Ariane .
+
+data:Constantijn a :Man,
+        :Person ;
+    :isBrotherOf data:Willem-Alexander .
+
+data:Mart%C3%ADnZorreguieta a :Man,
+        :Person ;
+    :isBrotherOf data:M%C3%A1xima .
+
+data:Alexia a :Person,
+        :Woman .
+
+data:Ariane a :Person,
+        :Woman .
+
+data:JorgeZorreguieta a :Man,
+        :Person .
+
+data:Mar%C3%ADaDelCarmenCerruti a :Person,
+        :Woman .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:M%C3%A1xima a :Person,
+        :Woman .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasFather data:Beatrix ;
+    :hasMother data:Beatrix .
+

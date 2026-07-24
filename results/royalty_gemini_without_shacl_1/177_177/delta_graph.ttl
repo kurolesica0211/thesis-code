@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2018 ;
+    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;
+    :hasMother data:Caroline_Mathilde_of_Denmark ;
+    :isSiblingOf data:Christian_of_Denmark,
+        data:Ingolf_of_Denmark .
+
+data:Frederik_IX a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Caroline_Mathilde_of_Denmark a :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Ingolf_of_Denmark a :Man,
+        :Person ;
+    :isSiblingOf data:Christian_of_Denmark .
+
+data:Knud_Hereditary_Prince_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Christian_X .
+
+data:Christian_of_Denmark a :Man,
+        :Person .
+

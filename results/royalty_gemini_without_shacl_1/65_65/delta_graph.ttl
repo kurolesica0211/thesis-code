@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina a :Woman ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Elena a :Woman ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Felipe_VI a :Man ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa_of_Spain .
+
+data:King_Constantine_I a :Man .
+
+data:King_Constantine_II a :Man .
+
+data:King_Paul_of_Greece a :Man ;
+    :hasFather data:King_Constantine_I ;
+    :hasMother data:Queen_Sophia_of_Greece .
+
+data:Princess_Irene a :Woman .
+
+data:Princess_Victoria_Louise_of_Prussia a :Woman .
+
+data:Queen_Frederica_of_Greece a :Woman ;
+    :hasMother data:Princess_Victoria_Louise_of_Prussia .
+
+data:Queen_Sophia_of_Greece a :Woman .
+
+data:King_Juan_Carlos_I a :Man .
+
+data:Queen_Sof%C3%ADa_of_Spain a :Woman ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:King_Constantine_II ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Queen_Frederica_of_Greece ;
+    :hasSister data:Princess_Irene .
+

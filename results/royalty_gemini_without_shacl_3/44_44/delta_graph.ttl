@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie_of_Greece a :Person,
+        :Woman .
+
+data:Benedikte_of_Denmark a :Person,
+        :Woman .
+
+data:Felix a :Man,
+        :Person .
+
+data:Isabella_of_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_X ;
+    :hasBirthYear 2007 ;
+    :isChildOf data:Henrik,
+        data:Margrethe_II ;
+    :isDaughterOf data:Frederik_X,
+        data:Mary ;
+    :isSiblingOf data:Christian,
+        data:Vincent .
+
+data:Joachim a :Man,
+        :Person .
+
+data:Nikolai a :Man,
+        :Person .
+
+data:Christian a :Man,
+        :Person .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Frederik_X a :Man,
+        :Person .
+
+data:Henrik a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Mary a :Person,
+        :Woman .
+
+data:Vincent a :Man,
+        :Person .
+

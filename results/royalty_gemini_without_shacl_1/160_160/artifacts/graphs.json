@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDaughter data:Princess_Johanna_of_Hesse ;\n    :hasDeathYear 1937 ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;\n    :hasSon data:Prince_Alexander_of_Hesse,\n        data:Prince_Ludwig_of_Hesse ;\n    :isSiblingOf data:Margarita_of_Greece_and_Denmark,\n        data:Prince_Philip_of_Greece_and_Denmark,\n        data:Sophie_of_Greece_and_Denmark,\n        data:Theodora_of_Greece_and_Denmark .\n\ndata:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Man,\n        :Person .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Prince_Alexander_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Prince_Ludwig_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Philip_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Johanna_of_Hesse a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDaughter data:Princess_Johanna_of_Hesse ;\n    :hasDeathYear 1937 ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;\n    :hasSon data:Prince_Alexander_of_Hesse,\n        data:Prince_Ludwig_of_Hesse ;\n    :isSiblingOf data:Margarita_of_Greece_and_Denmark,\n        data:Prince_Philip_of_Greece_and_Denmark,\n        data:Sophie_of_Greece_and_Denmark,\n        data:Theodora_of_Greece_and_Denmark .\n\ndata:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Man,\n        :Person .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Prince_Alexander_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Prince_Ludwig_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Philip_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Johanna_of_Hesse a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

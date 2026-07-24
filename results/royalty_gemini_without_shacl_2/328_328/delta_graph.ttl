@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Alfonso_XIII a :Man,
+        :Person .
+
+data:Prince_Jorge_de_Bagration a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Princess_Mariam a :Person,
+        :Woman ;
+    :isSisterOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
+        :Woman ;
+    :hasBirthYear 1953 .
+
+data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:King_Alfonso_XII .
+
+data:King_Alfonso_XII a :Man,
+        :Person .
+
+data:Prince_Bagrat_Bagration-Moukhransky a :Man .
+
+data:Prince_Bagrat_Bagrationi-Mukhraneli a :Man .
+
+data:Prince_Irakli_Bagration-Mukhrani a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1977 .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    :alsoKnownAs data:Prince_Bagrat_Bagration-Moukhransky,
+        data:Prince_Bagrat_Bagrationi-Mukhraneli ;
+    :hasBirthYear 1949 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves .
+

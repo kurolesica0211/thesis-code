@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean_Boris_Lacroix a :Man,
+        :Person ;
+    :hasFather data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :hasMother data:Jeanne_Aumont-Lacroix .
+
+data:Tsar_Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Tsar_Nicholas_II_of_Russia a :Man,
+        :Person .
+
+data:Zinaida_Sergeievna_Rachevskaya a :Person,
+        :Woman .
+
+data:Grand_Duchess_Maria_Pavlovna a :Person,
+        :Woman .
+
+data:Grand_Duke_Andrei_Vladimirovich a :Man,
+        :Person .
+
+data:Grand_Duke_Boris_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man,
+        :Person .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
+        :Person .
+
+data:Jeanne_Aumont-Lacroix a :Person,
+        :Woman .
+

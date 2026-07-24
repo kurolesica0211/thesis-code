@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Achileas-Andreas_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 2000 ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos_of_Greece ;
+    :knownAs "Achi Miller"^^xsd:string .
+
+data:Isabella_Massenet a :Woman ;
+    :isDaughterOf data:Natalie_Massenet .
+
+data:Marina a :Woman ;
+    :hasRelation data:Michael_of_Greece .
+
+data:Matthew_Kumar a :Man .
+
+data:Sofia_of_Spain a :Woman .
+
+data:Theodora_of_Greece_and_Denmark a :Woman .
+
+data:Anne-Marie_of_Denmark a :Woman .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:Marie-Chantal_Miller a :Woman .
+
+data:Michael_of_Greece a :Man .
+
+data:Natalie_Massenet a :Woman .
+
+data:Pavlos_of_Greece a :Man ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark .
+

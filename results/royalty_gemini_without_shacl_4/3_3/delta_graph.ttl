@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:11th_Earl_of_Scarbrough a :Man,
+        :Person ;
+    :isFatherOf data:Lady_Lily_Serena_Lumley .
+
+data:Oliver_Worsley a :Man,
+        :Person ;
+    :isUncleOf data:George_Philip_Nicholas_Windsor .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman ;
+    :isAuntOf data:George_Philip_Nicholas_Windsor .
+
+data:Sir_William_Worsley a :Man,
+        :Person ;
+    :isFatherOf data:Katharine_Duchess_of_Kent .
+
+data:Earl_of_St_Andrews a :Person .
+
+data:Lady_Lily_Serena_Lumley a :Person,
+        :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Sylvana_Tomaselli a :Person,
+        :Woman .
+
+data:George_Philip_Nicholas_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1962 ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Sylvana_Tomaselli ;
+    :knownAs data:Earl_of_St_Andrews .
+
+data:Katharine_Duchess_of_Kent a :Person,
+        :Woman .
+

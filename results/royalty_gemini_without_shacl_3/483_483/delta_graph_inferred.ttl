@@ -1,0 +1,178 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Deborah_Cully a :Person,
+        :Woman ;
+    :hasBirthYear 1961 ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSister data:Deborah_Cully ;
+    :isBloodrelationOf data:Deborah_Cully ;
+    :isSiblingOf data:Deborah_Cully ;
+    :isSisterOf data:Deborah_Cully .
+
+data:Prince_Karl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Karl_of_Leiningen ;
+    :hasChild data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSon data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isAncestorOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isBloodrelationOf data:Prince_Karl_of_Leiningen ;
+    :isBrotherOf data:Prince_Karl_of_Leiningen ;
+    :isFatherOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isParentOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isSiblingOf data:Prince_Karl_of_Leiningen ;
+    :isUncleOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen .
+
+data:King_Nicholas_of_Montenegro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Nicholas_of_Montenegro ;
+    :hasChild data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSon data:King_Victor_Emmanuel_III_of_Italy ;
+    :isAncestorOf data:King_Boris_III_of_Bulgaria,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:King_Nicholas_of_Montenegro ;
+    :isBrotherOf data:King_Nicholas_of_Montenegro ;
+    :isFatherOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isParentOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isSiblingOf data:King_Nicholas_of_Montenegro ;
+    :isUncleOf data:King_Victor_Emmanuel_III_of_Italy .
+
+data:King_Boris_III_of_Bulgaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasBrother data:King_Boris_III_of_Bulgaria ;
+    :hasChild data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasDaughter data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasFather data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasParent data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isAncestorOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:King_Boris_III_of_Bulgaria ;
+    :isBrotherOf data:King_Boris_III_of_Bulgaria ;
+    :isChildOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isFatherOf data:Princess_Marie_Louise_of_Bulgaria ;
+    :isParentOf data:Princess_Marie_Louise_of_Bulgaria ;
+    :isSiblingOf data:King_Boris_III_of_Bulgaria ;
+    :isSonOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isUncleOf data:Princess_Marie_Louise_of_Bulgaria .
+
+data:King_Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Nicholas_of_Montenegro ;
+    :hasBrother data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:King_Boris_III_of_Bulgaria ;
+    :hasFather data:King_Nicholas_of_Montenegro ;
+    :hasParent data:King_Nicholas_of_Montenegro ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSon data:King_Boris_III_of_Bulgaria ;
+    :isAncestorOf data:King_Boris_III_of_Bulgaria,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isBrotherOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isChildOf data:King_Nicholas_of_Montenegro ;
+    :isFatherOf data:King_Boris_III_of_Bulgaria ;
+    :isParentOf data:King_Boris_III_of_Bulgaria ;
+    :isSiblingOf data:King_Victor_Emmanuel_III_of_Italy ;
+    :isSonOf data:King_Nicholas_of_Montenegro ;
+    :isUncleOf data:King_Boris_III_of_Bulgaria .
+
+data:Princess_Marie_Louise_of_Bulgaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :hasFather data:King_Boris_III_of_Bulgaria ;
+    :hasParent data:King_Boris_III_of_Bulgaria ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSister data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSon data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isAncestorOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isAuntOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isBloodrelationOf data:Princess_Marie_Louise_of_Bulgaria ;
+    :isChildOf data:King_Boris_III_of_Bulgaria ;
+    :isDaughterOf data:King_Boris_III_of_Bulgaria ;
+    :isMotherOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isParentOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isSiblingOf data:Princess_Marie_Louise_of_Bulgaria ;
+    :isSisterOf data:Princess_Marie_Louise_of_Bulgaria .
+
+data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen a :Man,
+        :Person ;
+    :hasAncestor data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :hasFather data:Prince_Karl_of_Leiningen ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasParent data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasRelation data:Deborah_Cully,
+        data:King_Boris_III_of_Bulgaria,
+        data:King_Nicholas_of_Montenegro,
+        data:King_Victor_Emmanuel_III_of_Italy,
+        data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isBrotherOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isChildOf data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :isSiblingOf data:Prince_Hermann_Friedrich_Fernando_Roland_of_Leiningen ;
+    :isSonOf data:Prince_Karl_of_Leiningen,
+        data:Princess_Marie_Louise_of_Bulgaria ;
+    :knownAs "Hermann Leiningen"^^xsd:string .
+

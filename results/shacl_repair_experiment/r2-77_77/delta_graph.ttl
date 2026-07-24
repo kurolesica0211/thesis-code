@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Ancestor .
+
+data:Mathilde_Stegmann a :Ancestor .
+
+data:Mathilde_von_Salviati a :Ancestor .
+
+data:Narciso_Mart%C3%ADnez_de_Hoz a :Ancestor .
+

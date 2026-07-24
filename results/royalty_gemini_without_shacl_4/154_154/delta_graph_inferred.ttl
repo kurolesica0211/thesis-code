@@ -1,0 +1,223 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :hasBrother data:Maurice_of_Battenberg ;
+    :hasMarriageYear "1906"^^xsd:positiveInteger ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Albert_Prince_Consort a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Albert_Prince_Consort ;
+    :hasChild data:Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Beatrice_of_the_United_Kingdom,
+        data:Maurice_of_Battenberg ;
+    :isBloodrelationOf data:Albert_Prince_Consort ;
+    :isBrotherOf data:Albert_Prince_Consort ;
+    :isFatherOf data:Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Albert_Prince_Consort ;
+    :isUncleOf data:Beatrice_of_the_United_Kingdom .
+
+data:Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasChild data:Henry_of_Battenberg ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Henry_of_Battenberg ;
+    :isAncestorOf data:Henry_of_Battenberg,
+        data:Maurice_of_Battenberg ;
+    :isBloodrelationOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Henry_of_Battenberg ;
+    :isParentOf data:Henry_of_Battenberg ;
+    :isSiblingOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Henry_of_Battenberg .
+
+data:Julie_Therese_of_Hauke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henry_of_Battenberg ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Julie_Therese_of_Hauke ;
+    :hasSon data:Henry_of_Battenberg ;
+    :isAncestorOf data:Henry_of_Battenberg,
+        data:Maurice_of_Battenberg ;
+    :isAuntOf data:Henry_of_Battenberg ;
+    :isBloodrelationOf data:Julie_Therese_of_Hauke ;
+    :isMotherOf data:Henry_of_Battenberg ;
+    :isParentOf data:Henry_of_Battenberg ;
+    :isSiblingOf data:Julie_Therese_of_Hauke ;
+    :isSisterOf data:Julie_Therese_of_Hauke .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Beatrice_of_the_United_Kingdom,
+        data:Maurice_of_Battenberg ;
+    :isAuntOf data:Beatrice_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Albert_Prince_Consort,
+        data:Queen_Victoria ;
+    :hasChild data:Maurice_of_Battenberg ;
+    :hasFather data:Albert_Prince_Consort ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Albert_Prince_Consort,
+        data:Queen_Victoria ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Maurice_of_Battenberg ;
+    :isAncestorOf data:Maurice_of_Battenberg ;
+    :isAuntOf data:Maurice_of_Battenberg ;
+    :isBloodrelationOf data:Beatrice_of_the_United_Kingdom ;
+    :isChildOf data:Albert_Prince_Consort,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Albert_Prince_Consort,
+        data:Queen_Victoria ;
+    :isMotherOf data:Maurice_of_Battenberg ;
+    :isParentOf data:Maurice_of_Battenberg ;
+    :isSiblingOf data:Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Beatrice_of_the_United_Kingdom .
+
+data:Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julie_Therese_of_Hauke ;
+    :hasBrother data:Henry_of_Battenberg ;
+    :hasChild data:Maurice_of_Battenberg ;
+    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Therese_of_Hauke ;
+    :hasParent data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julie_Therese_of_Hauke ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Maurice_of_Battenberg ;
+    :isAncestorOf data:Maurice_of_Battenberg ;
+    :isBloodrelationOf data:Henry_of_Battenberg ;
+    :isBrotherOf data:Henry_of_Battenberg ;
+    :isChildOf data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julie_Therese_of_Hauke ;
+    :isFatherOf data:Maurice_of_Battenberg ;
+    :isParentOf data:Maurice_of_Battenberg ;
+    :isSiblingOf data:Henry_of_Battenberg ;
+    :isSonOf data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julie_Therese_of_Hauke ;
+    :isUncleOf data:Maurice_of_Battenberg .
+
+data:Maurice_of_Battenberg a :Man,
+        :Person ;
+    :hasAncestor data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Queen_Victoria ;
+    :hasBirthYear 1891 ;
+    :hasBrother data:Maurice_of_Battenberg ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Henry_of_Battenberg ;
+    :hasMother data:Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg ;
+    :hasRelation data:Albert_Prince_Consort,
+        data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julie_Therese_of_Hauke,
+        data:Maurice_of_Battenberg,
+        data:Queen_Victoria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBrotherOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg ;
+    :isSiblingOf data:Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg .
+

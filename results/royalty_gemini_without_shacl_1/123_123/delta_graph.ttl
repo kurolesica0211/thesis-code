@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JamesEdwardLascelles a :Man,
+        :Person ;
+    :hasBirthYear 1953 ;
+    :hasFather data:7thEarlOfHarewood ;
+    :hasMother data:Marion ;
+    :hasRelation data:KingCharlesIII .
+
+data:7thEarlOfHarewood a :Man,
+        :Person .
+
+data:KingCharlesIII a :Man,
+        :Person .
+
+data:Marion a :Person,
+        :Woman .
+

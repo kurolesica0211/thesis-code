@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ChristianIXOfDenmark a :Man,\n        :Person .\n\ndata:ConstantineIIOfGreece a :Man,\n        :Person .\n\ndata:CrownPrincePavlos a :Man,\n        :Person .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:OlgaConstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceChristopherOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasFather data:PrinceMichael ;\n    :isFatherOf data:PrinceMichael .\n\ndata:PrinceJeanDukeOfGuise a :Man,\n        :Person .\n\ndata:QueenAnneMarie a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:NicolasMirzayantz a :Man,\n        :Person .\n\ndata:MarinaKarella a :Person,\n        :Woman ;\n    :isMotherOf data:PrincessAlexandra,\n        data:PrincessOlga .\n\ndata:PrincessAlexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1968 ;\n    :hasFather data:PrinceMichael ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:MarinaKarella ;\n    :hasRelation data:NicolasMirzayantz ;\n    :hasSister data:PrincessOlga ;\n    :knownAs \"Alexandra Mirzayantz\"^^xsd:string .\n\ndata:PrincessOlga a :Person,\n        :Woman ;\n    :hasFather data:PrinceMichael ;\n    :hasMother data:MarinaKarella ;\n    :isSisterOf data:PrincessAlexandra .\n\ndata:PrinceMichael a :Man,\n        :Person ;\n    :isFatherOf data:PrincessAlexandra,\n        data:PrincessOlga .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ChristianIXOfDenmark a :Man,\n        :Person .\n\ndata:ConstantineIIOfGreece a :Man,\n        :Person .\n\ndata:CrownPrincePavlos a :Man,\n        :Person .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:OlgaConstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceChristopherOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasFather data:PrinceMichael ;\n    :isFatherOf data:PrinceMichael .\n\ndata:PrinceJeanDukeOfGuise a :Man,\n        :Person .\n\ndata:QueenAnneMarie a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:NicolasMirzayantz a :Man,\n        :Person .\n\ndata:MarinaKarella a :Person,\n        :Woman ;\n    :isMotherOf data:PrincessAlexandra,\n        data:PrincessOlga .\n\ndata:PrincessAlexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1968 ;\n    :hasFather data:PrinceMichael ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:MarinaKarella ;\n    :hasRelation data:NicolasMirzayantz ;\n    :hasSister data:PrincessOlga ;\n    :knownAs \"Alexandra Mirzayantz\"^^xsd:string .\n\ndata:PrincessOlga a :Person,\n        :Woman ;\n    :hasFather data:PrinceMichael ;\n    :hasMother data:MarinaKarella ;\n    :isSisterOf data:PrincessAlexandra .\n\ndata:PrinceMichael a :Man,\n        :Person ;\n    :isFatherOf data:PrincessAlexandra,\n        data:PrincessOlga .\n\n"
+    }
+]

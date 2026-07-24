@@ -1,0 +1,133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceAlfonsoOfBourbonTwoSicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :hasChild data:PrincePhilipOfBourbonTwoSicilies ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :hasSon data:PrincePhilipOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :isFatherOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isParentOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :isUncleOf data:PrincePhilipOfBourbonTwoSicilies .
+
+data:PrinceEmmanuelDukeOfVendome a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceEmmanuelDukeOfVendome ;
+    :hasChild data:PrincessMarieLouiseOfOrleans ;
+    :hasDaughter data:PrincessMarieLouiseOfOrleans ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :isAncestorOf data:PrincessMarieLouiseOfOrleans ;
+    :isBloodrelationOf data:PrinceEmmanuelDukeOfVendome ;
+    :isBrotherOf data:PrinceEmmanuelDukeOfVendome ;
+    :isFatherOf data:PrincessMarieLouiseOfOrleans ;
+    :isParentOf data:PrincessMarieLouiseOfOrleans ;
+    :isSiblingOf data:PrinceEmmanuelDukeOfVendome ;
+    :isUncleOf data:PrincessMarieLouiseOfOrleans .
+
+data:PrincessHenrietteOfBelgium a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessMarieLouiseOfOrleans ;
+    :hasDaughter data:PrincessMarieLouiseOfOrleans ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :hasSister data:PrincessHenrietteOfBelgium ;
+    :isAncestorOf data:PrincessMarieLouiseOfOrleans ;
+    :isAuntOf data:PrincessMarieLouiseOfOrleans ;
+    :isBloodrelationOf data:PrincessHenrietteOfBelgium ;
+    :isMotherOf data:PrincessMarieLouiseOfOrleans ;
+    :isParentOf data:PrincessMarieLouiseOfOrleans ;
+    :isSiblingOf data:PrincessHenrietteOfBelgium ;
+    :isSisterOf data:PrincessHenrietteOfBelgium .
+
+data:PrincessMariaAntoniettaOfBourbonTwoSicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincePhilipOfBourbonTwoSicilies ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :hasSister data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :hasSon data:PrincePhilipOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isAuntOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :isMotherOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isParentOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :isSisterOf data:PrincessMariaAntoniettaOfBourbonTwoSicilies .
+
+data:PrincePhilipOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :hasAncestor data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:PrincePhilipOfBourbonTwoSicilies ;
+    :hasDeathYear 1949 ;
+    :hasFather data:PrinceAlfonsoOfBourbonTwoSicilies ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :hasParent data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :isBloodrelationOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isChildOf data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincePhilipOfBourbonTwoSicilies ;
+    :isSonOf data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies .
+
+data:PrincessMarieLouiseOfOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceEmmanuelDukeOfVendome,
+        data:PrincessHenrietteOfBelgium ;
+    :hasFather data:PrinceEmmanuelDukeOfVendome ;
+    :hasMother data:PrincessHenrietteOfBelgium ;
+    :hasParent data:PrinceEmmanuelDukeOfVendome,
+        data:PrincessHenrietteOfBelgium ;
+    :hasRelation data:PrinceAlfonsoOfBourbonTwoSicilies,
+        data:PrinceEmmanuelDukeOfVendome,
+        data:PrincePhilipOfBourbonTwoSicilies,
+        data:PrincessHenrietteOfBelgium,
+        data:PrincessMariaAntoniettaOfBourbonTwoSicilies,
+        data:PrincessMarieLouiseOfOrleans ;
+    :hasSister data:PrincessMarieLouiseOfOrleans ;
+    :isBloodrelationOf data:PrincessMarieLouiseOfOrleans ;
+    :isChildOf data:PrinceEmmanuelDukeOfVendome,
+        data:PrincessHenrietteOfBelgium ;
+    :isDaughterOf data:PrinceEmmanuelDukeOfVendome,
+        data:PrincessHenrietteOfBelgium ;
+    :isSiblingOf data:PrincessMarieLouiseOfOrleans ;
+    :isSisterOf data:PrincessMarieLouiseOfOrleans .
+

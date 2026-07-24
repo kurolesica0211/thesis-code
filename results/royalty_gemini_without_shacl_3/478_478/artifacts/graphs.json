@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Nathalie a :Woman ;\n    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte .\n\ndata:Constantine_II_of_Greece a :Man .\n\ndata:Crown_Prince_Gustav_Adolf_of_Sweden a :Man .\n\ndata:King_Christian_X a :Man .\n\ndata:King_Frederik_X a :Man .\n\ndata:Princess_Benedikte a :Woman ;\n    :hasBirthYear 1944 ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Queen_Ingrid ;\n    :isSisterOf data:Queen_Anne-Marie,\n        data:Queen_Margrethe_II .\n\ndata:Princess_Margaret_of_Connaught a :Woman .\n\ndata:Queen_Alexandrine a :Woman .\n\ndata:Queen_Anne-Marie a :Woman ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMother data:Queen_Ingrid ;\n    :isMotherOf data:Constantine_II_of_Greece .\n\ndata:Queen_Margrethe_II a :Woman ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMother data:Queen_Ingrid ;\n    :isMotherOf data:King_Frederik_X .\n\ndata:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasDeathYear 2017 .\n\ndata:King_Frederik_IX a :Man ;\n    :hasFather data:King_Christian_X ;\n    :hasMother data:Queen_Alexandrine .\n\ndata:Queen_Ingrid a :Woman ;\n    :hasFather data:Crown_Prince_Gustav_Adolf_of_Sweden ;\n    :hasMother data:Princess_Margaret_of_Connaught .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Nathalie a :Woman ;\n    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte .\n\ndata:Constantine_II_of_Greece a :Man .\n\ndata:Crown_Prince_Gustav_Adolf_of_Sweden a :Man .\n\ndata:King_Christian_X a :Man .\n\ndata:King_Frederik_X a :Man .\n\ndata:Princess_Benedikte a :Woman ;\n    :hasBirthYear 1944 ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Queen_Ingrid ;\n    :isSisterOf data:Queen_Anne-Marie,\n        data:Queen_Margrethe_II .\n\ndata:Princess_Margaret_of_Connaught a :Woman .\n\ndata:Queen_Alexandrine a :Woman .\n\ndata:Queen_Anne-Marie a :Woman ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMother data:Queen_Ingrid ;\n    :isMotherOf data:Constantine_II_of_Greece .\n\ndata:Queen_Margrethe_II a :Woman ;\n    :hasFather data:King_Frederik_IX ;\n    :hasMother data:Queen_Ingrid ;\n    :isMotherOf data:King_Frederik_X .\n\ndata:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasDeathYear 2017 .\n\ndata:King_Frederik_IX a :Man ;\n    :hasFather data:King_Christian_X ;\n    :hasMother data:Queen_Alexandrine .\n\ndata:Queen_Ingrid a :Woman ;\n    :hasFather data:Crown_Prince_Gustav_Adolf_of_Sweden ;\n    :hasMother data:Princess_Margaret_of_Connaught .\n\n"
+    }
+]

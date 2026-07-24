@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina%2Ctype a :Person ;
+    :hasRelation data:Marina%2Ctype ;
+    :isBloodrelationOf data:Marina%2Ctype ;
+    :isSiblingOf data:Marina%2Ctype .
+
+data:Matthew_Kumar%2Ctype a :Person ;
+    :hasRelation data:Matthew_Kumar%2Ctype ;
+    :isBloodrelationOf data:Matthew_Kumar%2Ctype ;
+    :isSiblingOf data:Matthew_Kumar%2Ctype .
+
+data:Nina_Nastassja_Flohr%2Ctype a :Person ;
+    :hasRelation data:Nina_Nastassja_Flohr%2Ctype ;
+    :isBloodrelationOf data:Nina_Nastassja_Flohr%2Ctype ;
+    :isSiblingOf data:Nina_Nastassja_Flohr%2Ctype .
+
+data:Prince_Michael%2Ctype a :Person ;
+    :hasRelation data:Prince_Michael%2Ctype ;
+    :isBloodrelationOf data:Prince_Michael%2Ctype ;
+    :isSiblingOf data:Prince_Michael%2Ctype .
+
+data:Princess_Theodora_of_Greece_and_Denmark%2Ctype a :Person ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark%2Ctype ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark%2Ctype ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark%2Ctype .
+
+data:Thomas_Flohr%2Ctype a :Person ;
+    :hasRelation data:Thomas_Flohr%2Ctype ;
+    :isBloodrelationOf data:Thomas_Flohr%2Ctype ;
+    :isSiblingOf data:Thomas_Flohr%2Ctype .
+
+data:Katharina_Flohr%2Ctype a :Person,
+        :Woman ;
+    :hasRelation data:Katharina_Flohr%2Ctype ;
+    :hasSister data:Katharina_Flohr%2Ctype ;
+    :isBloodrelationOf data:Katharina_Flohr%2Ctype ;
+    :isSiblingOf data:Katharina_Flohr%2Ctype ;
+    :isSisterOf data:Katharina_Flohr%2Ctype .
+
+data:Marina a :Woman ;
+    :hasRelation data:Marina ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Matthew_Kumar a :Man ;
+    :hasBrother data:Matthew_Kumar ;
+    :hasRelation data:Matthew_Kumar ;
+    :isBloodrelationOf data:Matthew_Kumar ;
+    :isBrotherOf data:Matthew_Kumar ;
+    :isSiblingOf data:Matthew_Kumar .
+
+data:Prince_Michael a :Man ;
+    :hasBrother data:Prince_Michael ;
+    :hasRelation data:Prince_Michael ;
+    :isBloodrelationOf data:Prince_Michael ;
+    :isBrotherOf data:Prince_Michael ;
+    :isSiblingOf data:Prince_Michael .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Thomas_Flohr a :Man ;
+    :hasBrother data:Thomas_Flohr ;
+    :hasRelation data:Thomas_Flohr ;
+    :isBloodrelationOf data:Thomas_Flohr ;
+    :isBrotherOf data:Thomas_Flohr ;
+    :isSiblingOf data:Thomas_Flohr .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Prince_Philippos_of_Greece_and_Denmark .
+
+data:Katharina_Flohr%2Ctarget a :Ancestor,
+        :Woman ;
+    :hasChild data:Nina_Nastassja_Flohr ;
+    :hasDaughter data:Nina_Nastassja_Flohr ;
+    :hasRelation data:Katharina_Flohr%2Ctarget,
+        data:Nina_Nastassja_Flohr,
+        data:Thomas_Flohr%2Ctarget ;
+    :hasSister data:Katharina_Flohr%2Ctarget ;
+    :isAncestorOf data:Nina_Nastassja_Flohr ;
+    :isAuntOf data:Nina_Nastassja_Flohr ;
+    :isBloodrelationOf data:Katharina_Flohr%2Ctarget ;
+    :isMotherOf data:Nina_Nastassja_Flohr ;
+    :isParentOf data:Nina_Nastassja_Flohr ;
+    :isSiblingOf data:Katharina_Flohr%2Ctarget ;
+    :isSisterOf data:Katharina_Flohr%2Ctarget .
+
+data:Thomas_Flohr%2Ctarget a :Ancestor,
+        :Man ;
+    :hasBrother data:Thomas_Flohr%2Ctarget ;
+    :hasChild data:Nina_Nastassja_Flohr ;
+    :hasDaughter data:Nina_Nastassja_Flohr ;
+    :hasRelation data:Katharina_Flohr%2Ctarget,
+        data:Nina_Nastassja_Flohr,
+        data:Thomas_Flohr%2Ctarget ;
+    :isAncestorOf data:Nina_Nastassja_Flohr ;
+    :isBloodrelationOf data:Thomas_Flohr%2Ctarget ;
+    :isBrotherOf data:Thomas_Flohr%2Ctarget ;
+    :isFatherOf data:Nina_Nastassja_Flohr ;
+    :isParentOf data:Nina_Nastassja_Flohr ;
+    :isSiblingOf data:Thomas_Flohr%2Ctarget ;
+    :isUncleOf data:Nina_Nastassja_Flohr .
+
+data:Nina_Nastassja_Flohr a :Woman ;
+    :hasAncestor data:Katharina_Flohr%2Ctarget,
+        data:Thomas_Flohr%2Ctarget ;
+    :hasFather data:Thomas_Flohr%2Ctarget ;
+    :hasMother data:Katharina_Flohr%2Ctarget ;
+    :hasParent data:Katharina_Flohr%2Ctarget,
+        data:Thomas_Flohr%2Ctarget ;
+    :hasRelation data:Katharina_Flohr%2Ctarget,
+        data:Nina_Nastassja_Flohr,
+        data:Thomas_Flohr%2Ctarget ;
+    :hasSister data:Nina_Nastassja_Flohr ;
+    :isBloodrelationOf data:Nina_Nastassja_Flohr ;
+    :isChildOf data:Katharina_Flohr%2Ctarget,
+        data:Thomas_Flohr%2Ctarget ;
+    :isDaughterOf data:Katharina_Flohr%2Ctarget,
+        data:Thomas_Flohr%2Ctarget ;
+    :isSiblingOf data:Nina_Nastassja_Flohr ;
+    :isSisterOf data:Nina_Nastassja_Flohr .
+
+data:Prince_Philippos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isSiblingOf data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II .
+

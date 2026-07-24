@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JockStancer a :Man,
+        :Person ;
+    :hasFather data:WilliamWordieStancer ;
+    :hasMother data:RosieStancer .
+
+data:JamesWordie a :Ancestor,
+        :Man .
+
+data:LadyMaryCeciliaLevesonGower a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:WilliamLevesonGower4thEarlGranville ;
+    :hasMother data:RoseLevesonGowerCountessGranville .
+
+data:RoseLevesonGowerCountessGranville a :Ancestor,
+        :Woman .
+
+data:RosieStancer a :Person,
+        :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:SirSamuelClayton ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:LadyMaryCeciliaLevesonGower ;
+    :hasRelation data:WilliamWordieStancer .
+
+data:SirGilbertFalkinghamClayton a :Ancestor,
+        :Man .
+
+data:SirSamuelClayton a :Ancestor,
+        :Man ;
+    :hasFather data:SirGilbertFalkinghamClayton .
+
+data:WilliamLevesonGower4thEarlGranville a :Ancestor,
+        :Man .
+
+data:WilliamWordieStancer a :Man,
+        :Person ;
+    :hasFather data:JamesWordie .
+

@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MichaelOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2024 ;
+    :hasFather data:ChristopherOfGreeceAndDenmark ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:FrancoiseOrleans ;
+    :hasRelation data:MarinaKarella .
+
+data:ChristopherOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasFather data:GeorgeIGreece .
+
+data:ElliChalikiopoulos a :Person,
+        :Woman .
+
+data:FrancoiseOrleans a :Person,
+        :Woman ;
+    :hasFather data:JeanOrleansGuise .
+
+data:GeorgeIGreece a :Man,
+        :Person .
+
+data:JeanOrleansGuise a :Man,
+        :Person .
+
+data:MarinaKarella a :Person,
+        :Woman ;
+    :hasFather data:TheodorosKarellas ;
+    :hasMother data:ElliChalikiopoulos .
+
+data:TheodorosKarellas a :Man,
+        :Person .
+

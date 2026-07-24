@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claus-Casimir a :Man ;
+    :hasBirthYear 2004 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien .
+
+data:Eloise a :Woman ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien .
+
+data:Leonore a :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien .
+
+data:Beatrix a :Woman .
+
+data:Claus_von_Amsberg a :Man .
+
+data:Johan_Friso a :Man .
+
+data:Willem-Alexander a :Man .
+
+data:Constantijn a :Man ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Johan_Friso,
+        data:Willem-Alexander ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix .
+
+data:Laurentien a :Woman .
+

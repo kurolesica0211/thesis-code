@@ -1,0 +1,255 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Laleh_Yeganegy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Leo_Lascelles ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Laleh_Yeganegy ;
+    :hasSon data:Leo_Lascelles ;
+    :isAncestorOf data:Leo_Lascelles ;
+    :isAuntOf data:Leo_Lascelles ;
+    :isBloodrelationOf data:Laleh_Yeganegy ;
+    :isMotherOf data:Leo_Lascelles ;
+    :isParentOf data:Leo_Lascelles ;
+    :isSiblingOf data:Laleh_Yeganegy ;
+    :isSisterOf data:Laleh_Yeganegy .
+
+data:David_Lascelles a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:David_Lascelles ;
+    :hasChild data:Alexander_Edgar_Lascelles ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSon data:Alexander_Edgar_Lascelles ;
+    :isAncestorOf data:Alexander_Edgar_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isBloodrelationOf data:David_Lascelles ;
+    :isBrotherOf data:David_Lascelles ;
+    :isFatherOf data:Alexander_Edgar_Lascelles ;
+    :isParentOf data:Alexander_Edgar_Lascelles ;
+    :isSiblingOf data:David_Lascelles ;
+    :isUncleOf data:Alexander_Edgar_Lascelles .
+
+data:Margaret_Lascelles a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Edgar_Lascelles ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Margaret_Lascelles ;
+    :hasSon data:Alexander_Edgar_Lascelles ;
+    :isAncestorOf data:Alexander_Edgar_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isAuntOf data:Alexander_Edgar_Lascelles ;
+    :isBloodrelationOf data:Margaret_Lascelles ;
+    :isMotherOf data:Alexander_Edgar_Lascelles ;
+    :isParentOf data:Alexander_Edgar_Lascelles ;
+    :isSiblingOf data:Margaret_Lascelles ;
+    :isSisterOf data:Margaret_Lascelles .
+
+data:Annika_Reed a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ivy_Lascelles,
+        data:Kit_Lascelles ;
+    :hasDaughter data:Ivy_Lascelles ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Annika_Reed ;
+    :hasSon data:Kit_Lascelles ;
+    :isAncestorOf data:Ivy_Lascelles,
+        data:Kit_Lascelles ;
+    :isAuntOf data:Ivy_Lascelles,
+        data:Kit_Lascelles ;
+    :isBloodrelationOf data:Annika_Reed ;
+    :isMotherOf data:Ivy_Lascelles,
+        data:Kit_Lascelles ;
+    :isParentOf data:Ivy_Lascelles,
+        data:Kit_Lascelles ;
+    :isSiblingOf data:Annika_Reed ;
+    :isSisterOf data:Annika_Reed .
+
+data:Ivy_Lascelles a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasBrother data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :hasFather data:Alexander_Edgar_Lascelles ;
+    :hasMother data:Annika_Reed ;
+    :hasParent data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Ivy_Lascelles ;
+    :isBloodrelationOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isChildOf data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed ;
+    :isDaughterOf data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed ;
+    :isSiblingOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isSisterOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles .
+
+data:Kit_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasBrother data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :hasFather data:Alexander_Edgar_Lascelles ;
+    :hasMother data:Annika_Reed ;
+    :hasParent data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Ivy_Lascelles ;
+    :isBloodrelationOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isBrotherOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isChildOf data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed ;
+    :isSiblingOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isSonOf data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed .
+
+data:Leo_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Edgar_Lascelles,
+        data:David_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Margaret_Lascelles ;
+    :hasBrother data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :hasFather data:Alexander_Edgar_Lascelles ;
+    :hasMother data:Laleh_Yeganegy ;
+    :hasParent data:Alexander_Edgar_Lascelles,
+        data:Laleh_Yeganegy ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSister data:Ivy_Lascelles ;
+    :isBloodrelationOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isBrotherOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isChildOf data:Alexander_Edgar_Lascelles,
+        data:Laleh_Yeganegy ;
+    :isSiblingOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isSonOf data:Alexander_Edgar_Lascelles,
+        data:Laleh_Yeganegy .
+
+data:Alexander_Edgar_Lascelles a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Edgar_Lascelles ;
+    :hasChild data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :hasDaughter data:Ivy_Lascelles ;
+    :hasFather data:David_Lascelles ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Margaret_Lascelles ;
+    :hasParent data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasRelation data:Alexander_Edgar_Lascelles,
+        data:Annika_Reed,
+        data:David_Lascelles,
+        data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Laleh_Yeganegy,
+        data:Leo_Lascelles,
+        data:Margaret_Lascelles ;
+    :hasSon data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isAncestorOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isBloodrelationOf data:Alexander_Edgar_Lascelles ;
+    :isBrotherOf data:Alexander_Edgar_Lascelles ;
+    :isChildOf data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :isFatherOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isParentOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles ;
+    :isSiblingOf data:Alexander_Edgar_Lascelles ;
+    :isSonOf data:David_Lascelles,
+        data:Margaret_Lascelles ;
+    :isUncleOf data:Ivy_Lascelles,
+        data:Kit_Lascelles,
+        data:Leo_Lascelles .
+

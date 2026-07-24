@@ -1,0 +1,261 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CharlotteOfMecklenburgStrelitz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSister data:CharlotteOfMecklenburgStrelitz ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isBloodrelationOf data:CharlotteOfMecklenburgStrelitz ;
+    :isSiblingOf data:CharlotteOfMecklenburgStrelitz ;
+    :isSisterOf data:CharlotteOfMecklenburgStrelitz .
+
+data:GeorgeIIIOfTheUnitedKingdom a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIIIOfTheUnitedKingdom ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isBloodrelationOf data:GeorgeIIIOfTheUnitedKingdom ;
+    :isBrotherOf data:GeorgeIIIOfTheUnitedKingdom ;
+    :isSiblingOf data:GeorgeIIIOfTheUnitedKingdom .
+
+data:ErnestAugustusCrownPrinceOfHanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustusCrownPrinceOfHanover ;
+    :hasChild data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :hasDaughter data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isBloodrelationOf data:ErnestAugustusCrownPrinceOfHanover ;
+    :isBrotherOf data:ErnestAugustusCrownPrinceOfHanover ;
+    :isFatherOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isParentOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isSiblingOf data:ErnestAugustusCrownPrinceOfHanover ;
+    :isUncleOf data:PrincessMarieLouiseOfHanoverAndCumberland .
+
+data:PrinceWilhelmOfBaden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceWilhelmOfBaden ;
+    :hasChild data:PrinceMaximilianOfBaden ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSon data:PrinceMaximilianOfBaden ;
+    :isAncestorOf data:PrinceMaximilianOfBaden ;
+    :isBloodrelationOf data:PrinceWilhelmOfBaden ;
+    :isBrotherOf data:PrinceWilhelmOfBaden ;
+    :isFatherOf data:PrinceMaximilianOfBaden ;
+    :isParentOf data:PrinceMaximilianOfBaden ;
+    :isSiblingOf data:PrinceWilhelmOfBaden ;
+    :isUncleOf data:PrinceMaximilianOfBaden .
+
+data:PrincessMariaMaximilianovnaOfLeuchtenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceMaximilianOfBaden ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSister data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :hasSon data:PrinceMaximilianOfBaden ;
+    :isAncestorOf data:PrinceMaximilianOfBaden ;
+    :isAuntOf data:PrinceMaximilianOfBaden ;
+    :isBloodrelationOf data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :isMotherOf data:PrinceMaximilianOfBaden ;
+    :isParentOf data:PrinceMaximilianOfBaden ;
+    :isSiblingOf data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :isSisterOf data:PrincessMariaMaximilianovnaOfLeuchtenberg .
+
+data:ChristianIXOfDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianIXOfDenmark ;
+    :hasChild data:PrincessThyraOfDenmark ;
+    :hasDaughter data:PrincessThyraOfDenmark ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isBloodrelationOf data:ChristianIXOfDenmark ;
+    :isBrotherOf data:ChristianIXOfDenmark ;
+    :isFatherOf data:PrincessThyraOfDenmark ;
+    :isParentOf data:PrincessThyraOfDenmark ;
+    :isSiblingOf data:ChristianIXOfDenmark ;
+    :isUncleOf data:PrincessThyraOfDenmark .
+
+data:LouiseOfHesseKassel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessThyraOfDenmark ;
+    :hasDaughter data:PrincessThyraOfDenmark ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSister data:LouiseOfHesseKassel ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isAuntOf data:PrincessThyraOfDenmark ;
+    :isBloodrelationOf data:LouiseOfHesseKassel ;
+    :isMotherOf data:PrincessThyraOfDenmark ;
+    :isParentOf data:PrincessThyraOfDenmark ;
+    :isSiblingOf data:LouiseOfHesseKassel ;
+    :isSisterOf data:LouiseOfHesseKassel .
+
+data:PrinceMaximilianOfBaden a :Man,
+        :Person ;
+    :hasAncestor data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :hasBirthYear 1867 ;
+    :hasBrother data:PrinceMaximilianOfBaden ;
+    :hasDeathYear 1929 ;
+    :hasFather data:PrinceWilhelmOfBaden ;
+    :hasMother data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :hasParent data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :isBloodrelationOf data:PrinceMaximilianOfBaden ;
+    :isBrotherOf data:PrinceMaximilianOfBaden ;
+    :isChildOf data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg ;
+    :isSiblingOf data:PrinceMaximilianOfBaden ;
+    :isSonOf data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg .
+
+data:PrincessMarieLouiseOfHanoverAndCumberland a :Person,
+        :Woman ;
+    :hasAncestor data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrincessThyraOfDenmark ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:PrincessThyraOfDenmark ;
+    :hasParent data:ErnestAugustusCrownPrinceOfHanover,
+        data:PrincessThyraOfDenmark ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSister data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isBloodrelationOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isChildOf data:ErnestAugustusCrownPrinceOfHanover,
+        data:PrincessThyraOfDenmark ;
+    :isDaughterOf data:ErnestAugustusCrownPrinceOfHanover,
+        data:PrincessThyraOfDenmark ;
+    :isSiblingOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isSisterOf data:PrincessMarieLouiseOfHanoverAndCumberland .
+
+data:PrincessThyraOfDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:ChristianIXOfDenmark,
+        data:LouiseOfHesseKassel ;
+    :hasChild data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :hasDaughter data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :hasFather data:ChristianIXOfDenmark ;
+    :hasMother data:LouiseOfHesseKassel ;
+    :hasParent data:ChristianIXOfDenmark,
+        data:LouiseOfHesseKassel ;
+    :hasRelation data:CharlotteOfMecklenburgStrelitz,
+        data:ChristianIXOfDenmark,
+        data:ErnestAugustusCrownPrinceOfHanover,
+        data:GeorgeIIIOfTheUnitedKingdom,
+        data:LouiseOfHesseKassel,
+        data:PrinceMaximilianOfBaden,
+        data:PrinceWilhelmOfBaden,
+        data:PrincessMariaMaximilianovnaOfLeuchtenberg,
+        data:PrincessMarieLouiseOfHanoverAndCumberland,
+        data:PrincessThyraOfDenmark ;
+    :hasSister data:PrincessThyraOfDenmark ;
+    :isAncestorOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isAuntOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isBloodrelationOf data:PrincessThyraOfDenmark ;
+    :isChildOf data:ChristianIXOfDenmark,
+        data:LouiseOfHesseKassel ;
+    :isDaughterOf data:ChristianIXOfDenmark,
+        data:LouiseOfHesseKassel ;
+    :isMotherOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isParentOf data:PrincessMarieLouiseOfHanoverAndCumberland ;
+    :isSiblingOf data:PrincessThyraOfDenmark ;
+    :isSisterOf data:PrincessThyraOfDenmark .
+

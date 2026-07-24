@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasAncestor data:KingGeorgeIOfGreece ;
+    :hasBirthYear "1903"^^xsd:positiveInteger ;
+    :hasChild data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :hasDeathYear "1997"^^xsd:positiveInteger ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMarriageYear "1923"^^xsd:positiveInteger ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :hasRelation data:PrincePaulOfYugoslavia ;
+    :hasSister data:PrincessElizabeth,
+        data:PrincessMarina ;
+    :knownAs "Princess Paul of Yugoslavia"^^xsd:string .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
+        :Woman .
+
+data:KingGeorgeIOfGreece a :Man,
+        :Person .
+
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrinceNikolaOfYugoslavia a :Man,
+        :Person .
+
+data:PrincePaulOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessElizabeth a :Person,
+        :Woman .
+
+data:PrincessElizabethOfYugoslavia a :Person,
+        :Woman .
+
+data:PrincessMarina a :Person,
+        :Woman .
+

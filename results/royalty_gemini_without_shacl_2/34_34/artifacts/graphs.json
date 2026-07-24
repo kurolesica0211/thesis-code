@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Alexander_Mowatt a :Man ;\n    :hasBirthYear 1993 ;\n    :hasFather data:Paul_Julian_Mowatt ;\n    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .\n\ndata:Zenouska_May_Mowatt a :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:Paul_Julian_Mowatt ;\n    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .\n\ndata:James_Ogilvy a :Man ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Marina_Victoria_Alexandra_Ogilvy a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasBrother data:James_Ogilvy ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMarriageYear 1990 ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Paul_Julian_Mowatt a :Man ;\n    :hasBirthYear 1962 .\n\ndata:Princess_Alexandra_of_Kent a :Woman .\n\ndata:Sir_Angus_Ogilvy a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Alexander_Mowatt a :Man ;\n    :hasBirthYear 1993 ;\n    :hasFather data:Paul_Julian_Mowatt ;\n    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .\n\ndata:Zenouska_May_Mowatt a :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:Paul_Julian_Mowatt ;\n    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .\n\ndata:James_Ogilvy a :Man ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Marina_Victoria_Alexandra_Ogilvy a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasBrother data:James_Ogilvy ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMarriageYear 1990 ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Paul_Julian_Mowatt a :Man ;\n    :hasBirthYear 1962 .\n\ndata:Princess_Alexandra_of_Kent a :Woman .\n\ndata:Sir_Angus_Ogilvy a :Man .\n\n"
+    }
+]

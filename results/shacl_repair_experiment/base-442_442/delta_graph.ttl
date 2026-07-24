@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Adolph_Roderik_Ernst_Leopold a :Ancestor .
+
+data:Adolph_Roderik_Ernst_Leopold%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Beatrix a :Person .
+
+data:Beatrix%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor .
+
+data:Bernhard_of_Lippe-Biesterfeld%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Brigitte_Klynstra%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor .
+
+data:Carlos_Hugo_Duke_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme%2Ctarget a :Sex ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra ;
+    :hasSex data:Male .
+
+data:Carlos_de_Bourbon_de_Parme%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Carlos_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Cecilia_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Ingrid_Pieksma-Klynstra a :Ancestor .
+
+data:Ingrid_Pieksma-Klynstra%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Irene_of_the_Netherlands a :Ancestor .
+
+data:Irene_of_the_Netherlands%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Juliana_of_the_Netherlands a :Ancestor .
+
+data:Juliana_of_the_Netherlands%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Luisa_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Madeleine_de_Bourbon-Busset a :Ancestor .
+
+data:Madeleine_de_Bourbon-Busset%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Margriet a :Person .
+
+data:Margriet%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Pieter_van_Vollenhoven a :Person .
+
+data:Pieter_van_Vollenhoven%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Xavier_of_Bourbon-Parma a :Ancestor .
+
+data:Xavier_of_Bourbon-Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Brigitte_Klynstra a :Ancestor .
+
+data:Carlos_de_Bourbon_de_Parme a :Ancestor .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

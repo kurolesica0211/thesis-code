@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CecilieOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDaughter data:JohannaOfHesse ;
+    :hasDeathYear 1937 ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasRelation data:GeorgDonatusHereditaryGrandDukeOfHesse ;
+    :hasSon data:AlexanderOfHesse,
+        data:LudwigOfHesse ;
+    :isSiblingOf data:MargaritaOfGreeceAndDenmark,
+        data:PhilipOfGreeceAndDenmark,
+        data:SophieOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark .
+
+data:AlexanderOfHesse a :Man,
+        :Person .
+
+data:AliceOfBattenberg a :Person,
+        :Woman .
+
+data:AndrewOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:GeorgDonatusHereditaryGrandDukeOfHesse a :Man,
+        :Person .
+
+data:JohannaOfHesse a :Person,
+        :Woman .
+
+data:LudwigOfHesse a :Man,
+        :Person .
+
+data:MargaritaOfGreeceAndDenmark a :Person,
+        :Woman .
+
+data:PhilipOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:SophieOfGreeceAndDenmark a :Person,
+        :Woman .
+
+data:TheodoraOfGreeceAndDenmark a :Person,
+        :Woman .
+

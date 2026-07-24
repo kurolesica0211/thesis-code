@@ -1,0 +1,617 @@
+================================ System Message ================================
+
+### Role
+You are an expert Knowledge Graph Engineer. Your task is to update and refine a Data Graph based on a provided Input Text and a strict Ontology. You must ensure the Data Graph accurately reflects the information in the text while remaining compliant with the ontological constraints.
+
+### Inputs
+1. **Ontology**: Allowed classes and properties.
+2. **Input Text**: The ONLY source of truth.
+3. **Current Data Graph**: The starting state.
+
+### Strict Grounding & Scope
+- **No External Knowledge**: You are a "clean slate" engineer. Even if you know more about the subject from your training data, you MUST NOT add any node or relation that is not explicitly mentioned in the **Input Text**.
+- **No Hypothetical Nodes**: Do not create placeholder nodes or sequences (e.g., Marriage1, Marriage2) to represent "patterns" mentioned in the text. Only create nodes for specific instances described.
+- **Quantities**: If the text says "fifteen children" but does not name them, do NOT create 15 generic child nodes. Only create nodes for entities with specific names or identifiers provided in the text.
+
+### Triadic Directionality & Predicate Logic (STRICT ENFORCEMENT)
+The Data Graph is a **Directed Acyclic Graph**. Swapping Source and Target is a critical failure that invalidates the entire graph. You MUST follow the **Flow of Action**.
+
+#### 1. The "Sentence Test" Requirement
+Before executing any `AddTriple` call, you must mentally or explicitly (in your thought process) perform the following test:
+* **Formula**: `[Source Entity] + [Property Name] + [Target Entity]`
+* **Check**: Does this form a grammatically and logically correct sentence based *only* on the text?
+* **Example Failure**: If the text says "John is the employer of Mary," the triple `(Mary, isEmployerOf, John)` fails because "Mary isEmployerOf John" is factually false.
+
+#### 2. Identifying the Anchor (Domain vs. Range)
+* **The Source**: The "Origin" or "Owner." If the property is a verb, the Source is the one performing it. Source is always to the left of a relation.
+* **The Target**: The "Destination" or "Attribute." If the property is a verb, the Target is the one being acted upon. Target is always to the right of a relation.
+
+#### 3. Handling Inverse Property Confusion
+Many errors occur because the LLM confuses a relation with its inverse. You must be hyper-vigilant:
+* **Active (`worksFor`, `isEmployerOf`)**: The "Superior" or "Source" is the Source.
+* **Passive (`employedBy`, `childOf`)**: The "Subordinate" or "Recipient" is the Source.
+* **Partitive (`hasPart`, `contains`)**: The "Container/Whole" is the Source.
+* **Membership (`isPartOf`, `memberOf`)**: The "Component/Part" is the Source.
+
+#### 4. Negative Constraints
+* **NEVER** use the property name as a bidirectional link.
+* **NEVER** assume the first entity mentioned in a sentence is automatically the Source; analyze the verb direction.
+
+#### 5. Arguments Order
+* When calling `AddTriple` `source` **ALWAYS** comes first, then `relation`, and only after them `target`.
+
+> **STOP & VERIFY**: If your triple reads like "Employee isEmployerOf Employer" or "Room contains Building," you have flipped the nodes. **STOP and swap them before calling the tool.**
+
+
+### Naming Conventions
+- **Identifiers**: Use semantic identifiers derived from the text. 
+- **Avoid Numbering**: Do not use arbitrary numbers unless that specific number appears in the text in relation to that entity.
+- **Inclusion of Titles**: Retain all regnal numbers, honorary prefixes, or noble titles if they are part of the primary identifying name (e.g., "Crown Prince [Name]" or "[Name] II").
+- **Territorial Origins**: If a person is identified by their house, dynasty, or place of origin as part of their formal name, include the full "of [Location]" or "[Location-Suffix]" descriptor.
+- **Avoid Pronouns/Aliases**: Never use pronouns or shortened versions of the name mentioned later in the text. Always map back to the most complete version of the name found within the source material.
+
+### Instructions & Workflow
+1. **Analyze**: Identify specific entities and relations in the text.
+2. **Edit**: Use tools to modify the graph.
+   - Every node MUST have a class assignment (`AssignClass`).
+   - Ground every edit in text evidence.
+3. **Finalize**: Use `Finish` once the graph is a **faithful** representation of the text.
+
+### Tool Usage Constraints
+- **AssignClass / UnassignClass**: For `rdf:type` only.
+- **AddTriple / RemoveTriple**: For properties only.
+- **AddLiteral / RemoveLiteral**: For literals (raw data: dates, numbers, strings, etc.) only.
+- **Finish**: Once you are finished, use this tool.
+- **Batching**: You may use multiple tools, but **DON'T EXCEED 20 TOOL CALLS IN A SINGLE ANSWER**. Focus on quality and grounding over quantity.
+
+================================ Human Message =================================
+
+Please update the Knowledge Graph based on the provided data.
+
+### Input Text:
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
+
+
+Princess Joan
+
+
+Descendants of Prince René:
+
+
+Princess Maria Pia
+
+
+Princess Marina
+
+
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Princess Margarita of Bourbon-Parma, Countess of Colorno (Dutch: Margarita Maria Beatrix Prinses de Bourbon de Parme; born 13 October 1972), is the eldest daughter of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
+She is a member of the House of Bourbon-Parma as well an extended member of the Dutch royal family.
+Per a 1996 royal decree issued by Queen Beatrix, she is entitled to the style and title Her Royal Highness Princess Margarita de Bourbon de Parme in the Netherlands as a member of the extended royal family.
+Early life
+
+Born in Nijmegen, she is the twin sister of Prince Jaime.
+She also has an elder brother, Prince Carlos, and a younger sister, Princess Carolina.
+Her godparents are Queen Beatrix of the Netherlands (maternal aunt) and Prince Sixtus Henry of Bourbon-Parma (paternal uncle).
+She is the eldest granddaughter of Queen Juliana and Prince Bernhard.
+Together with her mother and her siblings she moved from Spain to The Netherlands, to live with her grandparents, Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld at Baarn.
+Margarita studied Cultural Anthropology at the Vrije Universiteit of Amsterdam and is an interior decorator.
+First marriage and controversy
+
+On 19 June 2001, Princess Margarita married the entrepreneur Edwin Karel Willem de Roy van Zuydewijn, member of a Dutch patrician family.
+In 2003, a series of incidents became known as the Margarita-affair.
+Margarita and her husband accused the Dutch Royal House and the Dutch secret service of obstructing the affairs of Fincentives, the company of de Roy van Zuydewijn.
+The couple's home was the Bartas Castle in Saint-Georges, Gers, France, but by 2004 the princess was increasingly seen more often in Amsterdam than there.
+Because of the quarrels between the princess and the Dutch Royal family during the Margarita-affair, she was not welcome at the marriage of her cousin Willem-Alexander, Prince of Orange to Máxima Zorreguieta, or at the funeral of her uncle, Prince Claus of the Netherlands.
+On 20 February 2023, Princess Margarita and Ten Cate announced their divorce.
+Together they have two daughters:
+
+
+Margarita currently lives in Wassenaar.
+Titles, styles and honours
+
+Already a ducal princess from birth, her father bestowed on 2 September 1996 the substantive title Contessa di Colorno (Countess of Colorno) upon her.
+The same year she was incorporated into the Dutch nobility by her aunt Queen Beatrix, with the highest noble title Prinses de Bourbon de Parme (Princess of Bourbon-Parma) and styled Hare Koninklijke Hoogheid (Her Royal Highness).
+She does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a granddaughter of Queen Juliana, she is officially a member of the more extended Dutch royal family.
+Ancestry
+
+References
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
+
+
+
+### Ontology Definition:
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dcterms:source <http://www.co-ode.org/roberts/family-tree.owl> .
+
+:alsoKnownAs a owl:AnnotationProperty .
+
+:formerlyKnownAs a owl:AnnotationProperty .
+
+:hasBirthYear a rdfs:Datatype,
+        owl:AnnotationProperty .
+
+:hasDeathYear a owl:AnnotationProperty .
+
+:hasMarriageYear a owl:AnnotationProperty .
+
+:isAuntOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isSisterOf :isParentOf ) .
+
+:isUncleOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isBrotherOf :isParentOf ) .
+
+:knownAs a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
+
+:hasFather a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Man ;
+    rdfs:subPropertyOf :hasParent ;
+    owl:inverseOf :isFatherOf .
+
+:hasMother a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Woman ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf ;
+    owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
+
+:isBloodrelationOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty .
+
+:isDaughterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:isFatherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isMotherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isSonOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:DomainEntity a owl:Class .
+
+:Female a owl:Class ;
+    rdfs:subClassOf :Sex ;
+    owl:disjointWith :Male .
+
+:hasAncestor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty ;
+    owl:inverseOf :isAncestorOf .
+
+:isBrotherOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:Male a owl:Class ;
+    rdfs:subClassOf :Sex .
+
+:hasRelation a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person .
+
+:hasSex a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Sex .
+
+:isAncestorOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation .
+
+:isSisterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
+
+:hasParent a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Person ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:equivalentProperty :isChildOf ;
+    owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
+
+:Sex a owl:Class ;
+    rdfs:subClassOf :DomainEntity ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Female :Male ) ] .
+
+:isChildOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:x a ns2:Variable .
+
+:Man a owl:Class ;
+    owl:disjointWith :Sex,
+        :Woman ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Male ] ) ] .
+
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:Woman a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Female ] ) ] .
+
+:y a ns2:Variable .
+
+:Ancestor a owl:Class ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :isAncestorOf ;
+                        owl:someValuesFrom :Person ] ) ] .
+
+:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFather ;
+            owl:someValuesFrom :Man ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasMother ;
+            owl:someValuesFrom :Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSex ;
+            owl:someValuesFrom :Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :Person ;
+            owl:onProperty :hasParent ],
+        :DomainEntity ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Man :Woman ) ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
+
+
+### Current Data Graph State:
+
+
+
+---
+**Requirement**: Process the text and use the available tools to make the Data Graph a **faithful and evidence-based** representation of the facts presented in the text. 
+
+**Strict Instruction**: Do not add any information or entities (like extra marriages or family members) that are not specifically named or described in the Input Text, even if you know they exist historically. Start by analyzing the text and then proceed with tool calls.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (b7e4fa6c-dc02-42e7-a7c7-f70e201fe1a4)
+ Call ID: b7e4fa6c-dc02-42e7-a7c7-f70e201fe1a4
+  Args:
+    type: :Woman
+    source: Princess_Margarita_of_Bourbon-Parma
+  AssignClass (3609d544-e885-446b-aa62-0292ef315916)
+ Call ID: 3609d544-e885-446b-aa62-0292ef315916
+  Args:
+    type: :Person
+    source: Princess_Margarita_of_Bourbon-Parma
+  AssignClass (ec94f83c-957b-4dc6-9cc8-de2980ef4d67)
+ Call ID: ec94f83c-957b-4dc6-9cc8-de2980ef4d67
+  Args:
+    type: :Woman
+    source: Princess_Irene_of_the_Netherlands
+  AssignClass (db114199-66c9-4bc0-9f4a-f287c22c6cb0)
+ Call ID: db114199-66c9-4bc0-9f4a-f287c22c6cb0
+  Args:
+    type: :Person
+    source: Princess_Irene_of_the_Netherlands
+  AssignClass (5bf6015d-aeb0-4f1b-83d2-3dc79e679639)
+ Call ID: 5bf6015d-aeb0-4f1b-83d2-3dc79e679639
+  Args:
+    type: :Man
+    source: Carlos_Hugo_Duke_of_Parma
+  AssignClass (43076d0c-a30e-4ffe-8d17-95d1e6211f11)
+ Call ID: 43076d0c-a30e-4ffe-8d17-95d1e6211f11
+  Args:
+    type: :Person
+    source: Carlos_Hugo_Duke_of_Parma
+  AssignClass (fb84bf7b-d9e9-42f1-99aa-ef297fafd167)
+ Call ID: fb84bf7b-d9e9-42f1-99aa-ef297fafd167
+  Args:
+    type: :Man
+    source: Prince_Jaime
+  AssignClass (b4667c10-1712-46ed-85ae-33c82a2cf598)
+ Call ID: b4667c10-1712-46ed-85ae-33c82a2cf598
+  Args:
+    type: :Person
+    source: Prince_Jaime
+  AssignClass (88d90194-e4c3-4283-90d1-7f42c923d5ae)
+ Call ID: 88d90194-e4c3-4283-90d1-7f42c923d5ae
+  Args:
+    type: :Man
+    source: Prince_Carlos
+  AssignClass (ad98e0e3-1154-47e6-9b04-3532ef32d05d)
+ Call ID: ad98e0e3-1154-47e6-9b04-3532ef32d05d
+  Args:
+    type: :Person
+    source: Prince_Carlos
+  AssignClass (4c59ad18-6bdb-47f8-929e-b8d79187e256)
+ Call ID: 4c59ad18-6bdb-47f8-929e-b8d79187e256
+  Args:
+    type: :Woman
+    source: Princess_Carolina
+  AssignClass (d1186af2-c698-49f2-89b8-f533dcdf7066)
+ Call ID: d1186af2-c698-49f2-89b8-f533dcdf7066
+  Args:
+    type: :Person
+    source: Princess_Carolina
+  AssignClass (b829bbb6-8668-4f6d-b940-faf44137a6b6)
+ Call ID: b829bbb6-8668-4f6d-b940-faf44137a6b6
+  Args:
+    type: :Woman
+    source: Queen_Juliana
+  AssignClass (50800602-8719-4cf3-9dd5-1bded7802934)
+ Call ID: 50800602-8719-4cf3-9dd5-1bded7802934
+  Args:
+    type: :Person
+    source: Queen_Juliana
+  AssignClass (d0eb5c99-040e-45b3-89ea-b37c561480db)
+ Call ID: d0eb5c99-040e-45b3-89ea-b37c561480db
+  Args:
+    type: :Man
+    source: Prince_Bernhard
+  AssignClass (a22f3e2f-e079-4b63-9e93-9b6a46fab96a)
+ Call ID: a22f3e2f-e079-4b63-9e93-9b6a46fab96a
+  Args:
+    type: :Person
+    source: Prince_Bernhard
+  AddTriple (1cee9813-7b8b-437b-b971-f5641258b89e)
+ Call ID: 1cee9813-7b8b-437b-b971-f5641258b89e
+  Args:
+    target: Princess_Irene_of_the_Netherlands
+    relation: :hasMother
+    source: Princess_Margarita_of_Bourbon-Parma
+  AddTriple (2d6df782-90ab-4226-85cb-470408880681)
+ Call ID: 2d6df782-90ab-4226-85cb-470408880681
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    relation: :hasFather
+    target: Carlos_Hugo_Duke_of_Parma
+  AddTriple (79a401c7-0aba-4b06-8c9b-b87719051924)
+ Call ID: 79a401c7-0aba-4b06-8c9b-b87719051924
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    relation: :isSiblingOf
+    target: Prince_Jaime
+  AddTriple (8ea40ae4-1155-42df-9a06-679203578416)
+ Call ID: 8ea40ae4-1155-42df-9a06-679203578416
+  Args:
+    target: Prince_Carlos
+    relation: :isSiblingOf
+    source: Princess_Margarita_of_Bourbon-Parma
+  AddTriple (0964c398-1c0b-4300-82f0-b95ad6249cb2)
+ Call ID: 0964c398-1c0b-4300-82f0-b95ad6249cb2
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    relation: :isSiblingOf
+    target: Princess_Carolina
+  AddLiteral (ae0ea588-a8fc-4c59-970d-d84f8764b170)
+ Call ID: ae0ea588-a8fc-4c59-970d-d84f8764b170
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    literal_value: 1972
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (9276387b-44b7-4375-ad53-da9aa1583a7e)
+ Call ID: 9276387b-44b7-4375-ad53-da9aa1583a7e
+  Args:
+    relation: :hasMother
+    target: Queen_Juliana
+    source: Princess_Irene_of_the_Netherlands
+  AddTriple (d12f8acc-8955-4928-8d8c-f77f3af66910)
+ Call ID: d12f8acc-8955-4928-8d8c-f77f3af66910
+  Args:
+    target: Prince_Bernhard
+    relation: :hasFather
+    source: Princess_Irene_of_the_Netherlands
+  Finish (1426e24a-4286-471f-865f-151ebd369751)
+ Call ID: 1426e24a-4286-471f-865f-151ebd369751
+  Args:

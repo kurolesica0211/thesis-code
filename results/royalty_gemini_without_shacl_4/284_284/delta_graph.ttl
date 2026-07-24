@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Captain_Fergus_Bowes-Lyon a :Man ;
+    :isBrotherOf data:Timothy_Patrick_Bowes-Lyon .
+
+data:Princess_Margaret a :Person ;
+    :hasFather data:King_George_VI ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Queen_Elizabeth_II a :Person ;
+    :hasFather data:King_George_VI ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Lady_Dorothy_Osborne a :Woman ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1946 .
+
+data:Timothy_Patrick_Bowes-Lyon a :Man ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Patrick_Lord_Glamis ;
+    :hasMother data:Lady_Dorothy_Osborne .
+
+data:King_George_VI a :Man .
+
+data:Patrick_Lord_Glamis a :Man .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Woman ;
+    :isSisterOf data:Patrick_Lord_Glamis .
+

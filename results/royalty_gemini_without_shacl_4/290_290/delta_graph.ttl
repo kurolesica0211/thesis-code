@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBirthYear 1948 ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1981,
+        2005 ;
+    :hasMother data:Elizabeth_II ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Lady_Diana_Spencer .
+
+data:Camilla_Parker_Bowles a :Person,
+        :Woman .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasFather data:George_VI .
+
+data:George_VI a :Man,
+        :Person .
+
+data:Lady_Diana_Spencer a :Person,
+        :Woman ;
+    :hasChild data:Harry,
+        data:William .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Harry a :Man,
+        :Person .
+
+data:William a :Man,
+        :Person .
+

@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :alsoKnownAs "Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon"^^xsd:string ;
+    :hasAncestor data:AlfonsoXIII ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:AlfonsoBrother ;
+    :hasDeathYear 2000 ;
+    :hasFather data:InfanteJaime ;
+    :hasMother data:EmmanuelleDeDampierre ;
+    :knownAs "Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre"^^xsd:string .
+
+data:AlfonsoBrother a :Man,
+        :Person .
+
+data:AlfonsoXIII a :Man,
+        :Person .
+
+data:EmmanuelleDeDampierre a :Person,
+        :Woman .
+
+data:InfanteJaime a :Man,
+        :Person ;
+    :hasParent data:QueenVictoriaEugenie .
+
+data:QueenVictoriaEugenie a :Person,
+        :Woman .
+

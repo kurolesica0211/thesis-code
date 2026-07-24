@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Konstantin_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Konstantin_Romanov ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:Konstantin_Romanov ;
+    :isAncestorOf data:Alexander,
+        data:Constantine_I,
+        data:George_II ;
+    :isBloodrelationOf data:Konstantin_Romanov ;
+    :isBrotherOf data:Konstantin_Romanov ;
+    :isSiblingOf data:Konstantin_Romanov .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:George_I_of_Greece ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Alexander,
+        data:Constantine_I,
+        data:George_II ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I .
+
+data:Olga a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:Olga ;
+    :hasSister data:Olga ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Alexander,
+        data:Constantine_I,
+        data:George_II ;
+    :isAuntOf data:Constantine_I ;
+    :isBloodrelationOf data:Olga ;
+    :isMotherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:Olga ;
+    :isSisterOf data:Olga .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga ;
+    :hasBrother data:Alexander,
+        data:George_II ;
+    :hasFather data:Constantine_I ;
+    :hasParent data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Alexander,
+        data:George_II ;
+    :isBrotherOf data:Alexander,
+        data:George_II ;
+    :isChildOf data:Constantine_I ;
+    :isSiblingOf data:Alexander,
+        data:George_II ;
+    :isSonOf data:Constantine_I .
+
+data:George_II a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga ;
+    :hasBrother data:Alexander,
+        data:George_II ;
+    :hasFather data:Constantine_I ;
+    :hasParent data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Alexander,
+        data:George_II ;
+    :isBrotherOf data:Alexander,
+        data:George_II ;
+    :isChildOf data:Constantine_I ;
+    :isSiblingOf data:Alexander,
+        data:George_II ;
+    :isSonOf data:Constantine_I .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga ;
+    :hasBirthYear 1868 ;
+    :hasBrother data:Constantine_I ;
+    :hasChild data:Alexander,
+        data:George_II ;
+    :hasDeathYear 1923 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga ;
+    :hasRelation data:Alexander,
+        data:Constantine_I,
+        data:George_II,
+        data:George_I_of_Greece,
+        data:Konstantin_Romanov,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Alexander,
+        data:George_II ;
+    :isAncestorOf data:Alexander,
+        data:George_II ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga ;
+    :isFatherOf data:Alexander,
+        data:George_II ;
+    :isParentOf data:Alexander,
+        data:George_II ;
+    :isSiblingOf data:Constantine_I ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga ;
+    :isUncleOf data:Alexander,
+        data:George_II .
+

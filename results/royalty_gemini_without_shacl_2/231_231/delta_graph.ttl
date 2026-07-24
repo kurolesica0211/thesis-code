@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_John a :Man,
+        :Person ;
+    :alsoKnownAs "Johnnie"^^xsd:string ;
+    :hasBirthYear 1905 ;
+    :hasDeathYear 1919 ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Princess_Mary .
+
+data:Edward_VII a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person ;
+    :hasFather data:Edward_VII .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Prince_Edward a :Man,
+        :Person .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Prince_Henry a :Man,
+        :Person .
+
+data:Princess_Mary a :Person,
+        :Woman .
+
+data:Queen_Mary a :Person,
+        :Woman .
+

@@ -1,0 +1,375 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Maria_Teresa a :Woman ;
+    :hasRelation data:Grand_Duchess_Maria_Teresa ;
+    :hasSister data:Grand_Duchess_Maria_Teresa ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Teresa ;
+    :isSiblingOf data:Grand_Duchess_Maria_Teresa ;
+    :isSisterOf data:Grand_Duchess_Maria_Teresa .
+
+data:Grand_Duke_Henri a :Man ;
+    :hasBrother data:Grand_Duke_Henri ;
+    :hasRelation data:Grand_Duke_Henri ;
+    :isBloodrelationOf data:Grand_Duke_Henri ;
+    :isBrotherOf data:Grand_Duke_Henri ;
+    :isSiblingOf data:Grand_Duke_Henri .
+
+data:King_Felipe_VI_of_Spain a :Man ;
+    :hasBrother data:King_Felipe_VI_of_Spain ;
+    :hasRelation data:King_Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:King_Felipe_VI_of_Spain ;
+    :isBrotherOf data:King_Felipe_VI_of_Spain ;
+    :isSiblingOf data:King_Felipe_VI_of_Spain .
+
+data:Prince_Felix a :Man ;
+    :hasBrother data:Prince_Felix ;
+    :hasRelation data:Prince_Felix ;
+    :isBloodrelationOf data:Prince_Felix ;
+    :isBrotherOf data:Prince_Felix ;
+    :isSiblingOf data:Prince_Felix .
+
+data:Prince_Louis a :Man ;
+    :hasBrother data:Prince_Louis ;
+    :hasRelation data:Prince_Louis ;
+    :isBloodrelationOf data:Prince_Louis ;
+    :isBrotherOf data:Prince_Louis ;
+    :isSiblingOf data:Prince_Louis .
+
+data:Prince_R%C3%A9my a :Man ;
+    :hasBrother data:Prince_R%C3%A9my ;
+    :hasRelation data:Prince_R%C3%A9my ;
+    :isBloodrelationOf data:Prince_R%C3%A9my ;
+    :isBrotherOf data:Prince_R%C3%A9my ;
+    :isSiblingOf data:Prince_R%C3%A9my .
+
+data:Prince_Ren%C3%A9 a :Man ;
+    :hasBrother data:Prince_Ren%C3%A9 ;
+    :hasRelation data:Prince_Ren%C3%A9 ;
+    :isBloodrelationOf data:Prince_Ren%C3%A9 ;
+    :isBrotherOf data:Prince_Ren%C3%A9 ;
+    :isSiblingOf data:Prince_Ren%C3%A9 .
+
+data:Princess_Chantal a :Woman ;
+    :hasRelation data:Princess_Chantal ;
+    :hasSister data:Princess_Chantal ;
+    :isBloodrelationOf data:Princess_Chantal ;
+    :isSiblingOf data:Princess_Chantal ;
+    :isSisterOf data:Princess_Chantal .
+
+data:Princess_Elisabeth a :Woman ;
+    :hasRelation data:Princess_Elisabeth ;
+    :hasSister data:Princess_Elisabeth ;
+    :isBloodrelationOf data:Princess_Elisabeth ;
+    :isSiblingOf data:Princess_Elisabeth ;
+    :isSisterOf data:Princess_Elisabeth .
+
+data:Princess_Joan a :Woman ;
+    :hasRelation data:Princess_Joan ;
+    :hasSister data:Princess_Joan ;
+    :isBloodrelationOf data:Princess_Joan ;
+    :isSiblingOf data:Princess_Joan ;
+    :isSisterOf data:Princess_Joan .
+
+data:Princess_Maria_Pia a :Woman ;
+    :hasRelation data:Princess_Maria_Pia ;
+    :hasSister data:Princess_Maria_Pia ;
+    :isBloodrelationOf data:Princess_Maria_Pia ;
+    :isSiblingOf data:Princess_Maria_Pia ;
+    :isSisterOf data:Princess_Maria_Pia .
+
+data:Princess_Marina a :Woman ;
+    :hasRelation data:Princess_Marina ;
+    :hasSister data:Princess_Marina ;
+    :isBloodrelationOf data:Princess_Marina ;
+    :isSiblingOf data:Princess_Marina ;
+    :isSisterOf data:Princess_Marina .
+
+data:Princess_Virginia a :Woman ;
+    :hasRelation data:Princess_Virginia ;
+    :hasSister data:Princess_Virginia ;
+    :isBloodrelationOf data:Princess_Virginia ;
+    :isSiblingOf data:Princess_Virginia ;
+    :isSisterOf data:Princess_Virginia .
+
+data:Pavlos%2C_Crown_Prince_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasChild data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasRelation data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isBrotherOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isFatherOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isUncleOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark .
+
+data:Prince_Jean a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Jean ;
+    :hasChild data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :hasRelation data:Guillaume_V%2C_Grand_Duke_of_Luxembourg,
+        data:Prince_Jean ;
+    :hasSon data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isAncestorOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isBloodrelationOf data:Prince_Jean ;
+    :isBrotherOf data:Prince_Jean ;
+    :isFatherOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isParentOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isSiblingOf data:Prince_Jean ;
+    :isUncleOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg .
+
+data:Grand_Duchess_Josephine-Charlotte a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Guillaume_of_Luxembourg ;
+    :hasRelation data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean,
+        data:Prince_Guillaume_of_Luxembourg ;
+    :hasSister data:Grand_Duchess_Josephine-Charlotte ;
+    :hasSon data:Prince_Guillaume_of_Luxembourg ;
+    :isAncestorOf data:Prince_Guillaume_of_Luxembourg ;
+    :isAuntOf data:Prince_Guillaume_of_Luxembourg ;
+    :isBloodrelationOf data:Grand_Duchess_Josephine-Charlotte ;
+    :isMotherOf data:Prince_Guillaume_of_Luxembourg ;
+    :isParentOf data:Prince_Guillaume_of_Luxembourg ;
+    :isSiblingOf data:Grand_Duchess_Josephine-Charlotte ;
+    :isSisterOf data:Grand_Duchess_Josephine-Charlotte .
+
+data:Grand_Duke_Jean a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_Jean ;
+    :hasChild data:Prince_Guillaume_of_Luxembourg ;
+    :hasRelation data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean,
+        data:Prince_Guillaume_of_Luxembourg ;
+    :hasSon data:Prince_Guillaume_of_Luxembourg ;
+    :isAncestorOf data:Prince_Guillaume_of_Luxembourg ;
+    :isBloodrelationOf data:Grand_Duke_Jean ;
+    :isBrotherOf data:Grand_Duke_Jean ;
+    :isFatherOf data:Prince_Guillaume_of_Luxembourg ;
+    :isParentOf data:Prince_Guillaume_of_Luxembourg ;
+    :isSiblingOf data:Grand_Duke_Jean ;
+    :isUncleOf data:Prince_Guillaume_of_Luxembourg .
+
+data:Guillaume_V%2C_Grand_Duke_of_Luxembourg a :Man ;
+    :hasAncestor data:Prince_Jean ;
+    :hasBrother data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :hasFather data:Prince_Jean ;
+    :hasParent data:Prince_Jean ;
+    :hasRelation data:Guillaume_V%2C_Grand_Duke_of_Luxembourg,
+        data:Prince_Jean ;
+    :isBloodrelationOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isBrotherOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isChildOf data:Prince_Jean ;
+    :isSiblingOf data:Guillaume_V%2C_Grand_Duke_of_Luxembourg ;
+    :isSonOf data:Prince_Jean .
+
+data:Prince_Achileas-Andreas_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasBrother data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasFather data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasParent data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasRelation data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isChildOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Prince_Achileas-Andreas_of_Greece_and_Denmark ;
+    :isSonOf data:Pavlos%2C_Crown_Prince_of_Greece .
+
+data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi a :Ancestor,
+        :Man ;
+    :hasBrother data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :hasChild data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :hasDaughter data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :isAncestorOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Princess_Sibilla ;
+    :isBloodrelationOf data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :isBrotherOf data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :isFatherOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isParentOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isSiblingOf data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :isUncleOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi .
+
+data:Aliki%2C_Lady_Russell a :Ancestor,
+        :Woman ;
+    :hasChild data:Paul-Annik_Weiller ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :hasSister data:Aliki%2C_Lady_Russell ;
+    :hasSon data:Paul-Annik_Weiller ;
+    :isAncestorOf data:Paul-Annik_Weiller,
+        data:Princess_Sibilla ;
+    :isAuntOf data:Paul-Annik_Weiller ;
+    :isBloodrelationOf data:Aliki%2C_Lady_Russell ;
+    :isMotherOf data:Paul-Annik_Weiller ;
+    :isParentOf data:Paul-Annik_Weiller ;
+    :isSiblingOf data:Aliki%2C_Lady_Russell ;
+    :isSisterOf data:Aliki%2C_Lady_Russell .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :hasDaughter data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :isAncestorOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Princess_Sibilla ;
+    :isAuntOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isParentOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+
+data:Paul-Louis_Weiller a :Ancestor,
+        :Man ;
+    :hasBrother data:Paul-Louis_Weiller ;
+    :hasChild data:Paul-Annik_Weiller ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :hasSon data:Paul-Annik_Weiller ;
+    :isAncestorOf data:Paul-Annik_Weiller,
+        data:Princess_Sibilla ;
+    :isBloodrelationOf data:Paul-Louis_Weiller ;
+    :isBrotherOf data:Paul-Louis_Weiller ;
+    :isFatherOf data:Paul-Annik_Weiller ;
+    :isParentOf data:Paul-Annik_Weiller ;
+    :isSiblingOf data:Paul-Louis_Weiller ;
+    :isUncleOf data:Paul-Annik_Weiller .
+
+data:Prince_Guillaume_of_Luxembourg a :Man ;
+    :hasAncestor data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:Prince_Guillaume_of_Luxembourg ;
+    :hasFather data:Grand_Duke_Jean ;
+    :hasMother data:Grand_Duchess_Josephine-Charlotte ;
+    :hasParent data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean ;
+    :hasRelation data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean,
+        data:Prince_Guillaume_of_Luxembourg ;
+    :isBloodrelationOf data:Prince_Guillaume_of_Luxembourg ;
+    :isBrotherOf data:Prince_Guillaume_of_Luxembourg ;
+    :isChildOf data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean ;
+    :isSiblingOf data:Prince_Guillaume_of_Luxembourg ;
+    :isSonOf data:Grand_Duchess_Josephine-Charlotte,
+        data:Grand_Duke_Jean .
+
+data:Princess_Sibilla a :Woman ;
+    :hasAncestor data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Paul-Annik_Weiller ;
+    :hasMother data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :hasParent data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Paul-Annik_Weiller ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :hasSister data:Princess_Sibilla ;
+    :isBloodrelationOf data:Princess_Sibilla ;
+    :isChildOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Paul-Annik_Weiller ;
+    :isDaughterOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Paul-Annik_Weiller ;
+    :isSiblingOf data:Princess_Sibilla ;
+    :isSisterOf data:Princess_Sibilla .
+
+data:Donna_Olimpia_Torlonia_di_Civitella-Cesi a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasChild data:Princess_Sibilla ;
+    :hasDaughter data:Princess_Sibilla ;
+    :hasFather data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :hasSister data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isAncestorOf data:Princess_Sibilla ;
+    :isAuntOf data:Princess_Sibilla ;
+    :isBloodrelationOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isChildOf data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Princess_Sibilla ;
+    :isParentOf data:Princess_Sibilla ;
+    :isSiblingOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi ;
+    :isSisterOf data:Donna_Olimpia_Torlonia_di_Civitella-Cesi .
+
+data:Paul-Annik_Weiller a :Ancestor,
+        :Man ;
+    :hasAncestor data:Aliki%2C_Lady_Russell,
+        data:Paul-Louis_Weiller ;
+    :hasBrother data:Paul-Annik_Weiller ;
+    :hasChild data:Princess_Sibilla ;
+    :hasDaughter data:Princess_Sibilla ;
+    :hasFather data:Paul-Louis_Weiller ;
+    :hasMother data:Aliki%2C_Lady_Russell ;
+    :hasParent data:Aliki%2C_Lady_Russell,
+        data:Paul-Louis_Weiller ;
+    :hasRelation data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi,
+        data:Aliki%2C_Lady_Russell,
+        data:Donna_Olimpia_Torlonia_di_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Paul-Annik_Weiller,
+        data:Paul-Louis_Weiller,
+        data:Princess_Sibilla ;
+    :isAncestorOf data:Princess_Sibilla ;
+    :isBloodrelationOf data:Paul-Annik_Weiller ;
+    :isBrotherOf data:Paul-Annik_Weiller ;
+    :isChildOf data:Aliki%2C_Lady_Russell,
+        data:Paul-Louis_Weiller ;
+    :isFatherOf data:Princess_Sibilla ;
+    :isParentOf data:Princess_Sibilla ;
+    :isSiblingOf data:Paul-Annik_Weiller ;
+    :isSonOf data:Aliki%2C_Lady_Russell,
+        data:Paul-Louis_Weiller ;
+    :isUncleOf data:Princess_Sibilla .
+

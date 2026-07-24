@@ -1,0 +1,65 @@
+{
+  "run_directory": "results/shacl_repair_experiment",
+  "task_directory": "results/shacl_repair_experiment/r4-412_412",
+  "text_file": "Q7028910.txt",
+  "text_key": "Q7028910",
+  "article": "https://en.wikipedia.org/wiki/Nicodemus,_Hereditary_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg",
+  "article_key": "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+  "main_entity": {
+    "uri": "http://example.com/data#Nicodemus-_Hereditary_Prince_of_Löwenstein-Wertheim-Rosenberg",
+    "qid": "Q7028910",
+    "label": "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Nicodemus-_Hereditary_Prince_of_Löwenstein-Wertheim-Rosenberg",
+      "qid": "Q7028910",
+      "label": "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alois-Konstantin_L%C3%B6wenstein",
+      "extracted_local_name": "Alois-Konstantin_L%C3%B6wenstein",
+      "embedding_text": "Alois-Konstantin Löwenstein",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nicodemus- Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_label": "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_qid": "Q7028910",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4090909090909091
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carl-Friedrich_L%C3%B6wenstein",
+      "extracted_local_name": "Carl-Friedrich_L%C3%B6wenstein",
+      "embedding_text": "Carl-Friedrich Löwenstein",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nicodemus- Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_label": "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_qid": "Q7028910",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3953488372093023
+    }
+  ],
+  "summary": {
+    "entities_total": 2,
+    "entities_matched": 0,
+    "entities_unmatched": 2
+  }
+}

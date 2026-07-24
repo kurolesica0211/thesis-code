@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1951 ;
+    :isFatherOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein .
+
+data:Prince_Adalbert_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Graf von Lingen"^^xsd:string ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 ;
+    :isFatherOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Princess_Adelheid_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :isMotherOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Princess_Viktoria_Marina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1981 ;
+    :isSisterOf data:Kirby_William_Patterson,
+        data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Sophie_Duchess_of_Hohenberg a :Person,
+        :Woman ;
+    :isSisterOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .
+
+data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasDeathYear 1983 ;
+    :isMotherOf data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein .
+
+data:Kirby_William_Patterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1984 .
+
+data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 .
+
+data:Prince_Wilhelm_Victor_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1989 ;
+    :hasMarriageYear 1944 ;
+    :hasRelation data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :hasBirthYear 1926 ;\n    :hasChild data:Andrew,\n        data:Anne,\n        data:Charles_III,\n        data:Edward ;\n    :hasDeathYear 2022 ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Elizabeth_the_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :isSisterOf data:Margaret .\n\ndata:Andrew a :Man,\n        :Person .\n\ndata:Anne a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Edward a :Man,\n        :Person .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :hasFather data:George_V .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :hasParent data:Elizabeth_the_Queen_Mother,\n        data:George_VI .\n\ndata:Mary_of_Teck a :Person,\n        :Woman .\n\ndata:Philip_Mountbatten a :Man,\n        :Person .\n\ndata:Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Mary_of_Teck ;\n    :isBrotherOf data:Edward_VIII .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :hasBirthYear 1926 ;\n    :hasChild data:Andrew,\n        data:Anne,\n        data:Charles_III,\n        data:Edward ;\n    :hasDeathYear 2022 ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Elizabeth_the_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :isSisterOf data:Margaret .\n\ndata:Andrew a :Man,\n        :Person .\n\ndata:Anne a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Edward a :Man,\n        :Person .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :hasFather data:George_V .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :hasParent data:Elizabeth_the_Queen_Mother,\n        data:George_VI .\n\ndata:Mary_of_Teck a :Person,\n        :Woman .\n\ndata:Philip_Mountbatten a :Man,\n        :Person .\n\ndata:Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Mary_of_Teck ;\n    :isBrotherOf data:Edward_VIII .\n\n"
+    }
+]

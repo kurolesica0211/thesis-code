@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Wordie a :Man,
+        :Person .
+
+data:Jock_Stancer a :Man,
+        :Person ;
+    :hasFather data:William_Wordie_Stancer ;
+    :hasMother data:Rosie_Stancer .
+
+data:Lady_Mary_Cecilia_Leveson-Gower a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower_Countess_Granville .
+
+data:Rose_Leveson-Gower_Countess_Granville a :Person,
+        :Woman .
+
+data:Rosie_Stancer a :Person,
+        :Woman ;
+    :alsoKnownAs "Rosie Stancer"^^xsd:string ;
+    :formerlyKnownAs "Rose Clayton"^^xsd:string ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :knownAs "Rose Cecilia Stancer"^^xsd:string .
+
+data:Sir_Gilbert_Falkingham_Clayton a :Man,
+        :Person .
+
+data:Sir_Samuel_Clayton a :Man,
+        :Person ;
+    :hasFather data:Sir_Gilbert_Falkingham_Clayton .
+
+data:William_Leveson-Gower_4th_Earl_Granville a :Man,
+        :Person .
+
+data:William_Wordie_Stancer a :Man,
+        :Person .
+

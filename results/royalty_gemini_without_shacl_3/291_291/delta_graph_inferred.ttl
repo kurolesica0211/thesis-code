@@ -1,0 +1,180 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Herman_Jud a :Man ;
+    :hasBrother data:Herman_Jud ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :isBloodrelationOf data:Herman_Jud ;
+    :isBrotherOf data:Herman_Jud ;
+    :isSiblingOf data:Herman_Jud .
+
+data:William_Bateman_Leeds_Jr a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Bateman_Leeds_Jr ;
+    :hasChild data:Nancy_Helen_Marie_Leeds ;
+    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:William_Bateman_Leeds_Jr ;
+    :isBrotherOf data:William_Bateman_Leeds_Jr ;
+    :isFatherOf data:Nancy_Helen_Marie_Leeds ;
+    :isParentOf data:Nancy_Helen_Marie_Leeds ;
+    :isSiblingOf data:William_Bateman_Leeds_Jr ;
+    :isUncleOf data:Nancy_Helen_Marie_Leeds .
+
+data:Grand_Duke_George_Mihailovich a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_George_Mihailovich ;
+    :hasChild data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :hasDaughter data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isBloodrelationOf data:Grand_Duke_George_Mihailovich ;
+    :isBrotherOf data:Grand_Duke_George_Mihailovich ;
+    :isFatherOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isParentOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isSiblingOf data:Grand_Duke_George_Mihailovich ;
+    :isUncleOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna .
+
+data:Princess_Maria_Georgievna a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :hasDaughter data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Maria_Georgievna ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isAuntOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isBloodrelationOf data:Princess_Maria_Georgievna ;
+    :isMotherOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isParentOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isSiblingOf data:Princess_Maria_Georgievna ;
+    :isSisterOf data:Princess_Maria_Georgievna .
+
+data:Nancy_Helen_Marie_Leeds a :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasFather data:William_Bateman_Leeds_Jr ;
+    :hasMother data:Princess_Xenia_Georgievna ;
+    :hasParent data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Nancy_Helen_Marie_Leeds ;
+    :isChildOf data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :isDaughterOf data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :isSiblingOf data:Nancy_Helen_Marie_Leeds ;
+    :isSisterOf data:Nancy_Helen_Marie_Leeds .
+
+data:Princess_Nina_Georgievna a :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :hasFather data:Grand_Duke_George_Mihailovich ;
+    :hasMother data:Princess_Maria_Georgievna ;
+    :hasParent data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isAuntOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isChildOf data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :isDaughterOf data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :isSiblingOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isSisterOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna .
+
+data:Princess_Xenia_Georgievna a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :hasBirthYear 1903 ;
+    :hasChild data:Nancy_Helen_Marie_Leeds ;
+    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Grand_Duke_George_Mihailovich ;
+    :hasMother data:Princess_Maria_Georgievna ;
+    :hasParent data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :hasRelation data:Grand_Duke_George_Mihailovich,
+        data:Herman_Jud,
+        data:Nancy_Helen_Marie_Leeds,
+        data:Princess_Maria_Georgievna,
+        data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isAncestorOf data:Nancy_Helen_Marie_Leeds ;
+    :isAuntOf data:Nancy_Helen_Marie_Leeds ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isChildOf data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :isDaughterOf data:Grand_Duke_George_Mihailovich,
+        data:Princess_Maria_Georgievna ;
+    :isMotherOf data:Nancy_Helen_Marie_Leeds ;
+    :isParentOf data:Nancy_Helen_Marie_Leeds ;
+    :isSiblingOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :isSisterOf data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna .
+

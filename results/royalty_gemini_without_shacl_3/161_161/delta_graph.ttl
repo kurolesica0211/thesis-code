@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1904 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Sophie_of_Prussia ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta ;
+    :hasSister data:Helen_of_Greece ;
+    :hasSon data:Amedeo_5th_Duke_of_Aosta .
+
+data:Aimone_4th_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Alexander_of_Greece a :Man,
+        :Person .
+
+data:Amedeo_5th_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:George_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Greece a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Sophie_of_Prussia a :Person,
+        :Woman .
+

@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duchess_Marie-Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :hasDaughter data:Princess_Blanche ;
+    :hasRelation data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :hasSister data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :hasSon data:Prince_Francois_of_Orleans ;
+    :isAncestorOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isAuntOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isBloodrelationOf data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :isMotherOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isParentOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isSiblingOf data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :isSisterOf data:Duchess_Marie-Therese_of_Wurttemberg .
+
+data:Prince_Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henri_Count_of_Paris ;
+    :hasChild data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :hasDaughter data:Princess_Blanche ;
+    :hasRelation data:Prince_Francois_of_Orleans,
+        data:Prince_Henri_Count_of_Paris,
+        data:Princess_Blanche ;
+    :hasSon data:Prince_Francois_of_Orleans ;
+    :isAncestorOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isBloodrelationOf data:Prince_Henri_Count_of_Paris ;
+    :isBrotherOf data:Prince_Henri_Count_of_Paris ;
+    :isFatherOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isParentOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isSiblingOf data:Prince_Henri_Count_of_Paris ;
+    :isUncleOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche .
+
+data:Prince_Francois_of_Orleans a :Man,
+        :Person ;
+    :hasAncestor data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Prince_Francois_of_Orleans ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :hasParent data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasRelation data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Francois_of_Orleans,
+        data:Prince_Henri_Count_of_Paris,
+        data:Princess_Blanche ;
+    :hasSister data:Princess_Blanche ;
+    :isBloodrelationOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isBrotherOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isChildOf data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :isSiblingOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isSonOf data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :knownAs "François Henri Louis Marie"^^xsd:string .
+
+data:Princess_Blanche a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasBrother data:Prince_Francois_of_Orleans ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :hasParent data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasRelation data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Francois_of_Orleans,
+        data:Prince_Henri_Count_of_Paris,
+        data:Princess_Blanche ;
+    :hasSister data:Princess_Blanche ;
+    :isBloodrelationOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isChildOf data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :isDaughterOf data:Duchess_Marie-Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :isSiblingOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche ;
+    :isSisterOf data:Prince_Francois_of_Orleans,
+        data:Princess_Blanche .
+

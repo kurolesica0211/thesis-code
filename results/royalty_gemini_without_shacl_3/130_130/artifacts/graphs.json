@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_VIII_of_Denmark a :Man,\n        :Person .\n\ndata:George_William a :Man,\n        :Person ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man,\n        :Person ;\n    :hasFather data:George_III_of_the_United_Kingdom .\n\ndata:Prince_Ernest_Augustus_the_Younger a :Man,\n        :Person ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMarriageYear 1913 ;\n    :hasRelation data:Princess_Victoria_Louise_of_Prussia .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:George_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:George_V_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,\n        :Person ;\n    :hasFather data:George_V_of_Hanover .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_VIII_of_Denmark a :Man,\n        :Person .\n\ndata:George_William a :Man,\n        :Person ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man,\n        :Person ;\n    :hasFather data:George_III_of_the_United_Kingdom .\n\ndata:Prince_Ernest_Augustus_the_Younger a :Man,\n        :Person ;\n    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;\n    :hasMarriageYear 1913 ;\n    :hasRelation data:Princess_Victoria_Louise_of_Prussia .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:George_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:George_V_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,\n        :Person ;\n    :hasFather data:George_V_of_Hanover .\n\n"
+    }
+]

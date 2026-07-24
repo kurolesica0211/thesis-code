@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duarte_Pio_Duke_of_Braganza a :Man,
+        :Person .
+
+data:Louis-Philippe_I_of_France a :Man,
+        :Person ;
+    :isFatherOf data:Antoine_Duke_of_Montpensier,
+        data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Lu%C3%ADs_Filipe_Prince_Royal a :Man,
+        :Person ;
+    :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person ;
+    :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    :isMotherOf data:Antoine_Duke_of_Montpensier,
+        data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Helena_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Lu%C3%ADs_I_of_Portugal a :Man,
+        :Person .
+
+data:Luisa_Fernanda_of_Spain a :Person,
+        :Woman .
+
+data:Maria_Pia_of_Savoy a :Person,
+        :Woman .
+
+data:Marie_Isabelle_dOrl%C3%A9ans a :Person,
+        :Woman ;
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Luisa_Fernanda_of_Spain .
+
+data:Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Helena_of_Mecklenburg-Schwerin .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :alsoKnownAs "Marie Amélie Louise Hélène"^^xsd:string ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasMarriageYear 1886 ;
+    :hasRelation data:Carlos_I_of_Portugal ;
+    :isDaughterOf data:Marie_Isabelle_dOrl%C3%A9ans,
+        data:Philippe_Count_of_Paris .
+
+data:Antoine_Duke_of_Montpensier a :Man,
+        :Person .
+
+data:Carlos_I_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy .
+
+data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Man,
+        :Person .
+

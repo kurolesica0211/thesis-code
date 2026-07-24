@@ -1,0 +1,65 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/219_219",
+  "text_file": "Q2825469.txt",
+  "text_key": "Q2825469",
+  "article": "https://en.wikipedia.org/wiki/Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre",
+  "article_key": "Adélaïde de Clermont-Tonnerre",
+  "main_entity": {
+    "uri": "http://example.com/data#Adélaïde_de_Clermont-Tonnerre",
+    "qid": "Q2825469",
+    "label": "Adélaïde de Clermont-Tonnerre"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Adélaïde_de_Clermont-Tonnerre",
+      "qid": "Q2825469",
+      "label": "Adélaïde de Clermont-Tonnerre",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre",
+      "extracted_local_name": "Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre",
+      "embedding_text": "Adélaïde de Clermont-Tonnerre",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Adélaïde_de_Clermont-Tonnerre",
+      "ground_truth_qid": "Q2825469",
+      "ground_truth_label": "Adélaïde de Clermont-Tonnerre",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Adélaïde de Clermont-Tonnerre",
+      "best_candidate_label": "Adélaïde de Clermont-Tonnerre",
+      "best_candidate_qid": "Q2825469",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Isabelle_d%27Orl%C3%A9ans",
+      "extracted_local_name": "Isabelle_d%27Orl%C3%A9ans",
+      "embedding_text": "Isabelle d'Orléans",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 2,
+    "entities_matched": 1,
+    "entities_unmatched": 1
+  }
+}

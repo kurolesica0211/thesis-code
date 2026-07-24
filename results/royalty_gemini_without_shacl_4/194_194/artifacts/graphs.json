@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Prince_Paul_Chavchavadze ;\n    :hasMother data:Princess_Nina_Georgievna_of_Russia .\n\ndata:Paul_George_Olkhovsky a :Man ;\n    :hasBirthYear 1960 .\n\ndata:Prince_Paul_Chavchavadze a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Nina_Georgievna_of_Russia a :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Prince_Paul_Chavchavadze ;\n    :hasMother data:Princess_Nina_Georgievna_of_Russia .\n\ndata:Paul_George_Olkhovsky a :Man ;\n    :hasBirthYear 1960 .\n\ndata:Prince_Paul_Chavchavadze a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Nina_Georgievna_of_Russia a :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 .\n\n"
+    }
+]

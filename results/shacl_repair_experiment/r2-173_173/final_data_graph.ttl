@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessIreneOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2026 ;
+    :hasFather data:KingPaulOfGreece ;
+    :hasMother data:QueenFrederica ;
+    :isSiblingOf data:KingConstantineIIOfGreece ;
+    :isSisterOf data:QueenSofiaOfSpain .
+
+data:KingConstantineIIOfGreece a :Man,
+        :Person .
+
+data:KingJuanCarlosOfSpain a :Man,
+        :Person .
+
+data:KingPaulOfGreece a :Ancestor,
+        :Man,
+        :Person .
+
+data:QueenFrederica a :Ancestor,
+        :Person,
+        :Woman .
+
+data:QueenSofiaOfSpain a :Person,
+        :Woman ;
+    :hasRelation data:KingJuanCarlosOfSpain .
+

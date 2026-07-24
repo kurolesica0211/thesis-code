@@ -1,0 +1,107 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:BasilBartlett a :Man,
+        :Person ;
+    :hasBrother data:BasilBartlett ;
+    :hasRelation data:BasilBartlett,
+        data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry,
+        data:MaryMalcolm ;
+    :isBloodrelationOf data:BasilBartlett ;
+    :isBrotherOf data:BasilBartlett ;
+    :isSiblingOf data:BasilBartlett .
+
+data:IanMalcolm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:IanMalcolm ;
+    :hasChild data:MaryMalcolm ;
+    :hasDaughter data:MaryMalcolm ;
+    :hasRelation data:BasilBartlett,
+        data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry,
+        data:MaryMalcolm ;
+    :isAncestorOf data:MaryMalcolm ;
+    :isBloodrelationOf data:IanMalcolm ;
+    :isBrotherOf data:IanMalcolm ;
+    :isFatherOf data:MaryMalcolm ;
+    :isParentOf data:MaryMalcolm ;
+    :isSiblingOf data:IanMalcolm ;
+    :isUncleOf data:MaryMalcolm .
+
+data:LillieLangtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:JeanneLangtry ;
+    :hasDaughter data:JeanneLangtry ;
+    :hasRelation data:BasilBartlett,
+        data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry,
+        data:MaryMalcolm ;
+    :hasSister data:LillieLangtry ;
+    :isAncestorOf data:JeanneLangtry,
+        data:MaryMalcolm ;
+    :isAuntOf data:JeanneLangtry ;
+    :isBloodrelationOf data:LillieLangtry ;
+    :isMotherOf data:JeanneLangtry ;
+    :isParentOf data:JeanneLangtry ;
+    :isSiblingOf data:LillieLangtry ;
+    :isSisterOf data:LillieLangtry .
+
+data:JeanneLangtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:LillieLangtry ;
+    :hasBirthYear 1881 ;
+    :hasChild data:MaryMalcolm ;
+    :hasDaughter data:MaryMalcolm ;
+    :hasDeathYear 1964 ;
+    :hasMother data:LillieLangtry ;
+    :hasParent data:LillieLangtry ;
+    :hasRelation data:BasilBartlett,
+        data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry,
+        data:MaryMalcolm ;
+    :hasSister data:JeanneLangtry ;
+    :isAncestorOf data:MaryMalcolm ;
+    :isAuntOf data:MaryMalcolm ;
+    :isBloodrelationOf data:JeanneLangtry ;
+    :isChildOf data:LillieLangtry ;
+    :isDaughterOf data:LillieLangtry ;
+    :isMotherOf data:MaryMalcolm ;
+    :isParentOf data:MaryMalcolm ;
+    :isSiblingOf data:JeanneLangtry ;
+    :isSisterOf data:JeanneLangtry .
+
+data:MaryMalcolm a :Person,
+        :Woman ;
+    :hasAncestor data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:IanMalcolm ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:JeanneLangtry ;
+    :hasParent data:IanMalcolm,
+        data:JeanneLangtry ;
+    :hasRelation data:BasilBartlett,
+        data:IanMalcolm,
+        data:JeanneLangtry,
+        data:LillieLangtry,
+        data:MaryMalcolm ;
+    :hasSister data:MaryMalcolm ;
+    :isBloodrelationOf data:MaryMalcolm ;
+    :isChildOf data:IanMalcolm,
+        data:JeanneLangtry ;
+    :isDaughterOf data:IanMalcolm,
+        data:JeanneLangtry ;
+    :isSiblingOf data:MaryMalcolm ;
+    :isSisterOf data:MaryMalcolm .
+

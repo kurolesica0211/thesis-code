@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmEitelFriedrich a :Man,
+        :Person ;
+    :hasBirthYear "1883"^^xsd:positiveInteger ;
+    :hasDeathYear "1942"^^xsd:positiveInteger ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear "1906"^^xsd:positiveInteger ;
+    :hasMother data:AugustaViktoria ;
+    :hasRelation data:SophiaCharlotte .
+
+data:AugustaViktoria a :Person,
+        :Woman .
+
+data:SophiaCharlotte a :Person,
+        :Woman .
+
+data:WilhelmII a :Man,
+        :Person .
+

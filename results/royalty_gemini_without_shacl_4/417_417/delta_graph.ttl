@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilia_von_Go%C3%ABss-Saurau a :Woman ;
+    :hasBirthYear 1956 ;
+    :hasChild data:Carl-Anton .
+
+data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man ;
+    :hasBirthYear 1936 ;
+    :hasChild data:Carl-Anton ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Josias_Georg_Wilhelm_Adolf ;
+    :hasMarriageYear 1988 ;
+    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg .
+
+data:Altburg_Marie_Mathilde_von_Oldenburg a :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Man .
+
+data:Josias_Georg_Wilhelm_Adolf a :Man ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1967 .
+
+data:Carl-Anton a :Man .
+

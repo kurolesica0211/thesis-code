@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francisco_Franco a :Man,
+        :Person .
+
+data:Infanta_Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Infante_Juan_Count_of_Barcelona .
+
+data:Infante_Alfonso_de_Orleans_y_Borbon a :Man,
+        :Person .
+
+data:Infante_Alfonso_of_Spain a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBrotherOf data:King_Juan_Carlos_I_of_Spain ;
+    :knownAs "Alfonso"^^xsd:string .
+
+data:King_Alfonso_XIII a :Man,
+        :Person ;
+    :isFatherOf data:Infante_Juan_Count_of_Barcelona .
+
+data:Pilar a :Person,
+        :Woman ;
+    :isSisterOf data:King_Juan_Carlos_I_of_Spain .
+
+data:King_Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,
+        :Woman .
+
+data:Infante_Juan_Count_of_Barcelona a :Man,
+        :Person .
+

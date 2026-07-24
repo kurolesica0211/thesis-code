@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Patrick a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceEdwardDukeOfKent a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMarriageYear 1961 ;\n    :hasMother data:PrincessMarinaDuchessOfKent ;\n    :hasRelation data:KatharineDuchessOfKent ;\n    :isSiblingOf data:PrinceMichaelOfKent .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincessMarinaDuchessOfKent a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:KatharineDuchessOfKent a :Person,\n        :Woman ;\n    :hasDeathYear 2025 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Patrick a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:PrinceEdwardDukeOfKent a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMarriageYear 1961 ;\n    :hasMother data:PrincessMarinaDuchessOfKent ;\n    :hasRelation data:KatharineDuchessOfKent ;\n    :isSiblingOf data:PrinceMichaelOfKent .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincessMarinaDuchessOfKent a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:KatharineDuchessOfKent a :Person,\n        :Woman ;\n    :hasDeathYear 2025 .\n\n"
+    }
+]

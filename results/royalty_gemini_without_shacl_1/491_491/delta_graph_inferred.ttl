@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Victoria_Eugenie a :Person,
+        :Woman ;
+    :hasRelation data:Victoria_Eugenie ;
+    :hasSister data:Victoria_Eugenie ;
+    :isBloodrelationOf data:Victoria_Eugenie ;
+    :isSiblingOf data:Victoria_Eugenie ;
+    :isSisterOf data:Victoria_Eugenie .
+
+data:Alfonso a :Man,
+        :Person ;
+    :hasBrother data:Alfonso,
+        data:Gonzalo ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime ;
+    :isBloodrelationOf data:Alfonso,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso,
+        data:Gonzalo ;
+    :isSiblingOf data:Alfonso,
+        data:Gonzalo .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Gonzalo ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :hasSon data:Gonzalo ;
+    :isAncestorOf data:Gonzalo ;
+    :isAuntOf data:Gonzalo ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isMotherOf data:Gonzalo ;
+    :isParentOf data:Gonzalo ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Jaime ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime ;
+    :hasSon data:Jaime ;
+    :isAncestorOf data:Gonzalo,
+        data:Jaime ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Jaime ;
+    :isParentOf data:Jaime ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Jaime .
+
+data:Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Jaime ;
+    :hasChild data:Gonzalo ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime ;
+    :hasSon data:Gonzalo ;
+    :isAncestorOf data:Gonzalo ;
+    :isBloodrelationOf data:Jaime ;
+    :isBrotherOf data:Jaime ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Gonzalo ;
+    :isParentOf data:Gonzalo ;
+    :isSiblingOf data:Jaime ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Gonzalo .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Alfonso,
+        data:Gonzalo ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Jaime ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime ;
+    :isBloodrelationOf data:Alfonso,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso,
+        data:Gonzalo ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Jaime ;
+    :isSiblingOf data:Alfonso,
+        data:Gonzalo ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Jaime .
+

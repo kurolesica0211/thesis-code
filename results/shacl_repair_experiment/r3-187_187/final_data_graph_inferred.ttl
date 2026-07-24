@@ -1,0 +1,503 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Alice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Philip,
+        data:Theodora ;
+    :hasDaughter data:Theodora ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Female ;
+    :hasSister data:Alice ;
+    :hasSon data:Philip ;
+    :isAncestorOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Theodora ;
+    :isAuntOf data:Philip,
+        data:Theodora ;
+    :isBloodrelationOf data:Alice ;
+    :isMotherOf data:Philip,
+        data:Theodora ;
+    :isParentOf data:Philip,
+        data:Theodora ;
+    :isSiblingOf data:Alice ;
+    :isSisterOf data:Alice .
+
+data:Andrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew ;
+    :hasChild data:Philip,
+        data:Theodora ;
+    :hasDaughter data:Theodora ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Male ;
+    :hasSon data:Philip ;
+    :isAncestorOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Theodora ;
+    :isBloodrelationOf data:Andrew ;
+    :isBrotherOf data:Andrew ;
+    :isFatherOf data:Philip,
+        data:Theodora ;
+    :isParentOf data:Philip,
+        data:Theodora ;
+    :isSiblingOf data:Andrew ;
+    :isUncleOf data:Philip,
+        data:Theodora .
+
+data:Berthold a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold ;
+    :hasChild data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :hasDaughter data:Margarita ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Male ;
+    :hasSon data:Ludwig,
+        data:Maximilian_Baden ;
+    :isAncestorOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isBloodrelationOf data:Berthold ;
+    :isBrotherOf data:Berthold ;
+    :isFatherOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isParentOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isSiblingOf data:Berthold ;
+    :isUncleOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Philip a :Man,
+        :Person ;
+    :hasAncestor data:Alice,
+        data:Andrew ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasFather data:Andrew ;
+    :hasMother data:Alice ;
+    :hasParent data:Alice,
+        data:Andrew ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Male ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Alice,
+        data:Andrew ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:Alice,
+        data:Andrew ;
+    :isUncleOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden .
+
+data:Margarita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Theodora ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasParent data:Berthold,
+        data:Theodora ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Ludwig,
+        data:Maximilian_Baden ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Berthold,
+        data:Theodora ;
+    :isDaughterOf data:Berthold,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Ludwig a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Theodora ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasParent data:Berthold,
+        data:Theodora ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Male ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Berthold,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:Berthold,
+        data:Theodora ;
+    :isUncleOf data:Maximilian_Baden .
+
+data:Maximilian_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Theodora ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasParent data:Berthold,
+        data:Theodora ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Male ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Berthold,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:Berthold,
+        data:Theodora ;
+    :isUncleOf data:Ludwig .
+
+data:Theodora a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alice,
+        data:Andrew ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Ludwig,
+        data:Maximilian_Baden,
+        data:Philip ;
+    :hasChild data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :hasDaughter data:Margarita ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice ;
+    :hasParent data:Alice,
+        data:Andrew ;
+    :hasRelation data:Alice,
+        data:Andrew,
+        data:Berthold,
+        data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Ludwig,
+        data:Maximilian_Baden ;
+    :isAncestorOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isAuntOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isBloodrelationOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Alice,
+        data:Andrew ;
+    :isDaughterOf data:Alice,
+        data:Andrew ;
+    :isMotherOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isParentOf data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden ;
+    :isSiblingOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Ludwig,
+        data:Margarita,
+        data:Maximilian_Baden,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+

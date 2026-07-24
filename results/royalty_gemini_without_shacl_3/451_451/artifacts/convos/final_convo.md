@@ -1,0 +1,575 @@
+================================ System Message ================================
+
+### Role
+You are an expert Knowledge Graph Engineer. Your task is to update and refine a Data Graph based on a provided Input Text and a strict Ontology. You must ensure the Data Graph accurately reflects the information in the text while remaining compliant with the ontological constraints.
+
+### Inputs
+1. **Ontology**: Allowed classes and properties.
+2. **Input Text**: The ONLY source of truth.
+3. **Current Data Graph**: The starting state.
+
+### Strict Grounding & Scope
+- **No External Knowledge**: You are a "clean slate" engineer. Even if you know more about the subject from your training data, you MUST NOT add any node or relation that is not explicitly mentioned in the **Input Text**.
+- **No Hypothetical Nodes**: Do not create placeholder nodes or sequences (e.g., Marriage1, Marriage2) to represent "patterns" mentioned in the text. Only create nodes for specific instances described.
+- **Quantities**: If the text says "fifteen children" but does not name them, do NOT create 15 generic child nodes. Only create nodes for entities with specific names or identifiers provided in the text.
+
+### Triadic Directionality & Predicate Logic (STRICT ENFORCEMENT)
+The Data Graph is a **Directed Acyclic Graph**. Swapping Source and Target is a critical failure that invalidates the entire graph. You MUST follow the **Flow of Action**.
+
+#### 1. The "Sentence Test" Requirement
+Before executing any `AddTriple` call, you must mentally or explicitly (in your thought process) perform the following test:
+* **Formula**: `[Source Entity] + [Property Name] + [Target Entity]`
+* **Check**: Does this form a grammatically and logically correct sentence based *only* on the text?
+* **Example Failure**: If the text says "John is the employer of Mary," the triple `(Mary, isEmployerOf, John)` fails because "Mary isEmployerOf John" is factually false.
+
+#### 2. Identifying the Anchor (Domain vs. Range)
+* **The Source**: The "Origin" or "Owner." If the property is a verb, the Source is the one performing it. Source is always to the left of a relation.
+* **The Target**: The "Destination" or "Attribute." If the property is a verb, the Target is the one being acted upon. Target is always to the right of a relation.
+
+#### 3. Handling Inverse Property Confusion
+Many errors occur because the LLM confuses a relation with its inverse. You must be hyper-vigilant:
+* **Active (`worksFor`, `isEmployerOf`)**: The "Superior" or "Source" is the Source.
+* **Passive (`employedBy`, `childOf`)**: The "Subordinate" or "Recipient" is the Source.
+* **Partitive (`hasPart`, `contains`)**: The "Container/Whole" is the Source.
+* **Membership (`isPartOf`, `memberOf`)**: The "Component/Part" is the Source.
+
+#### 4. Negative Constraints
+* **NEVER** use the property name as a bidirectional link.
+* **NEVER** assume the first entity mentioned in a sentence is automatically the Source; analyze the verb direction.
+
+#### 5. Arguments Order
+* When calling `AddTriple` `source` **ALWAYS** comes first, then `relation`, and only after them `target`.
+
+> **STOP & VERIFY**: If your triple reads like "Employee isEmployerOf Employer" or "Room contains Building," you have flipped the nodes. **STOP and swap them before calling the tool.**
+
+
+### Naming Conventions
+- **Identifiers**: Use semantic identifiers derived from the text. 
+- **Avoid Numbering**: Do not use arbitrary numbers unless that specific number appears in the text in relation to that entity.
+- **Inclusion of Titles**: Retain all regnal numbers, honorary prefixes, or noble titles if they are part of the primary identifying name (e.g., "Crown Prince [Name]" or "[Name] II").
+- **Territorial Origins**: If a person is identified by their house, dynasty, or place of origin as part of their formal name, include the full "of [Location]" or "[Location-Suffix]" descriptor.
+- **Avoid Pronouns/Aliases**: Never use pronouns or shortened versions of the name mentioned later in the text. Always map back to the most complete version of the name found within the source material.
+
+### Instructions & Workflow
+1. **Analyze**: Identify specific entities and relations in the text.
+2. **Edit**: Use tools to modify the graph.
+   - Every node MUST have a class assignment (`AssignClass`).
+   - Ground every edit in text evidence.
+3. **Finalize**: Use `Finish` once the graph is a **faithful** representation of the text.
+
+### Tool Usage Constraints
+- **AssignClass / UnassignClass**: For `rdf:type` only.
+- **AddTriple / RemoveTriple**: For properties only.
+- **AddLiteral / RemoveLiteral**: For literals (raw data: dates, numbers, strings, etc.) only.
+- **Finish**: Once you are finished, use this tool.
+- **Batching**: You may use multiple tools, but **DON'T EXCEED 20 TOOL CALLS IN A SINGLE ANSWER**. Focus on quality and grounding over quantity.
+
+================================ Human Message =================================
+
+Please update the Knowledge Graph based on the provided data.
+
+### Input Text:
+Heinrich XIII Prinz Reuss (German: Heinrich XIII.
+Prinz Reuß, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}pronounced ; born 4 December 1951) is a German businessman, far-right and monarchist activist, and member of the aristocratic – formerly sovereign – House of Reuss.
+A proponent of the Reichsbürger movement and antisemitic conspiracy theories, Reuss was arrested by German Federal Police in December 2022 due to his alleged leadership in the 2022 German coup d'état plot.
+Biography
+
+Personal life and ancestry
+
+Reuss was born in Büdingen on 4 December 1951, the fifth of six children and the fourth son born to Prince Heinrich I Reuss and Duchess Woizlawa Feodora of Mecklenburg, who was in turn the only child of the German colonial governor Duke Adolf Friedrich of Mecklenburg.
+Reuss's parents, like all German nobility, had become private citizens in 1919 upon the adoption of the Weimar Constitution, which abolished any privileges and titles that had previously existed for nobility.
+The House of Reuss, from which Reuss is descended, dates to the 12th century and historically administered the regions of Gera and Greiz, a non-contiguous mini-state in what is today Eastern Thuringia.
+Reuss left the family association at his own request around 2009.
+Reuss married Iranian-born Susan Doukht Jalali in 1989, and they have two children, including a son named Heinrich XXVIII (born circa 1991) and a daughter Elena, who has Down syndrome and was born in 1989.
+His wife uses the name Princess Susan Reuss and works as a naturopath.
+Reuss is also reported to have as a girlfriend a Russian national identified by prosecutors as "Vitalia B.", aged 39 in 2022, at their arrest who allegedly had some role in the coup plot.
+Business and family activities
+
+Reuss worked as a real estate developer, operating a company named Büro Prinz Reuss in Frankfurt, and also produced sparkling wine.
+In 1945, the Communist land reform in the Soviet occupation zone (East Germany) expropriated all movable and immovable assets of the House of Reuss.
+Following the reunification of Germany in 1990, Reuss tried to have properties restituted.
+The clan, which consisted of five large families, wanted Gera townhouses, four castles, extensive forestry and agricultural property and the Jugendstil Reuss Theater in Gera, then held by the city of Gera in Thuringia.
+Concerning the theater, Reuss and the mayor of Gera were unable to negotiate a settlement, each blaming the other.
+Reuss spent much of his fortune on lawsuits seeking restitution, but with little success.
+In 2017, he supported the reinterment of the remains of a number of his ancestors, most prominent among them Henry II, Count of Reuss-Gera, in their original location.
+Views and conspiracy theories
+
+Many of Reuss's views are consistent with monarchism.
+He has spoken in favour of low flat tax for all citizens and against debt-based business models hailing the 10 percent rate in the former Principality of Reuss, saying it let Reuss's citizens lead "happy lives" because it was "straightforward and transparent".
+Reuss contended that the modern German government and European Union were more distant and inaccessible than feudal princes.
+Reuss also gave speeches claiming that Germany had been a vassal state since the Second World War.
+At World Web Forum in Zürich in 2019, Reuss gave a speech accusing the Rothschilds and Freemasons of responsibility for the wars of the 20th century, expressing antisemitic conspiracy theories.
+On 22 December 2018, Reuss and his mother attended the unveiling of a "Flame of Peace" sculpture in Gera in honor of her 100th birthday by the heads of the Vienna-based Association for the Promotion of Peace.
+In 2020, Reuss participated in the celebration of the first International Day of Conscience event in Vienna.
+Assault on journalist Peter Hagen
+
+In August 2022, Reuss attended an official reception held by Thomas Weigelt, the mayor of Bad Lobenstein, where Reuss's hunting lodge Jagdschloss Waidmannsheil  is located.
+Weigelt was known to be sympathetic to the Reichsbürger movement and journalist Peter Hagen asked him why someone associated with the Reichsbürger scene like Reuss would be invited to an official event.
+The next day Hagen approached the mayor at the market festival and tried to film him in familiar conversation with Reuss and AfD-politician Uwe Thrum.
+Afterwards, the current head of the Reuss family, Heinrich XIV Fürst Reuss , objected to his involvement in local politics "in the strongest possible way".
+He called Heinrich XIII, his third cousin, a "distant relative" and "a confused old man peddling in conspiracy theories".
+Involvement in 2022 German coup plot
+
+On 7 December 2022, Reuss was arrested at his home in the Westend district of Frankfurt during an extensive raid of alleged far-right conspirators planning a coup d'état.
+According to police, the coup's conspirators—which included former Bundestag member Birgit Malsack-Winkemann—were proponents of the Reichsbürger movement who hoped to install the 71-year-old Reuss as head of state Reuss's hunting lodge Jagdschloss Waidmannsheil  in Saaldorf , Thuringia was allegedly the site of weapons stockpiles and meetings regarding the conspiracy.
+Reuss and "Vitalia B." are reported to have reached out to the Russian government via its Consulate General in Leipzig, presumably for assistance in the coup.
+Heinrich XIV Fürst Reuss distanced himself and his family again after Reuss was arrested in 2022, calling Reuss a "confused old man" and "a marginal figure" and noting that their last common ancestor lived in the early 19th century.
+He said Reuss's behaviour was a "catastrophe" for the family, whose heritage as tolerant and cosmopolitan rulers was now associated with "terrorists and reactionaries".
+He believes Reuss's anti-government views derive from his resentment at the German judicial system for its failure to recognize his claims to family properties expropriated at the end of World War II.
+The trial of Reuss and eight other plotters began on 21 May 2024 in Frankfurt.
+
+
+
+### Ontology Definition:
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dcterms:source <http://www.co-ode.org/roberts/family-tree.owl> .
+
+:alsoKnownAs a owl:AnnotationProperty .
+
+:formerlyKnownAs a owl:AnnotationProperty .
+
+:hasBirthYear a rdfs:Datatype,
+        owl:AnnotationProperty .
+
+:hasDeathYear a owl:AnnotationProperty .
+
+:hasMarriageYear a owl:AnnotationProperty .
+
+:isAuntOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isSisterOf :isParentOf ) .
+
+:isUncleOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isBrotherOf :isParentOf ) .
+
+:knownAs a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
+
+:hasFather a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Man ;
+    rdfs:subPropertyOf :hasParent ;
+    owl:inverseOf :isFatherOf .
+
+:hasMother a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Woman ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf ;
+    owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
+
+:isBloodrelationOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty .
+
+:isDaughterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:isFatherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isMotherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isSonOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:DomainEntity a owl:Class .
+
+:Female a owl:Class ;
+    rdfs:subClassOf :Sex ;
+    owl:disjointWith :Male .
+
+:hasAncestor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty ;
+    owl:inverseOf :isAncestorOf .
+
+:isBrotherOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:Male a owl:Class ;
+    rdfs:subClassOf :Sex .
+
+:hasRelation a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person .
+
+:hasSex a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Sex .
+
+:isAncestorOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation .
+
+:isSisterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
+
+:hasParent a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Person ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:equivalentProperty :isChildOf ;
+    owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
+
+:Sex a owl:Class ;
+    rdfs:subClassOf :DomainEntity ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Female :Male ) ] .
+
+:isChildOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:x a ns1:Variable .
+
+:Man a owl:Class ;
+    owl:disjointWith :Sex,
+        :Woman ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Male ] ) ] .
+
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:Woman a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Female ] ) ] .
+
+:y a ns1:Variable .
+
+:Ancestor a owl:Class ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :isAncestorOf ;
+                        owl:someValuesFrom :Person ] ) ] .
+
+:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFather ;
+            owl:someValuesFrom :Man ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasMother ;
+            owl:someValuesFrom :Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSex ;
+            owl:someValuesFrom :Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :Person ;
+            owl:onProperty :hasParent ],
+        :DomainEntity ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Man :Woman ) ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
+
+
+### Current Data Graph State:
+
+
+
+---
+**Requirement**: Process the text and use the available tools to make the Data Graph a **faithful and evidence-based** representation of the facts presented in the text. 
+
+**Strict Instruction**: Do not add any information or entities (like extra marriages or family members) that are not specifically named or described in the Input Text, even if you know they exist historically. Start by analyzing the text and then proceed with tool calls.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5bb34d66-229c-4d57-9351-05255a5fcaa6)
+ Call ID: 5bb34d66-229c-4d57-9351-05255a5fcaa6
+  Args:
+    type: :Man
+    source: Heinrich_XIII_Prinz_Reuss
+  AssignClass (cd13855a-dcff-4158-b195-52e01800f343)
+ Call ID: cd13855a-dcff-4158-b195-52e01800f343
+  Args:
+    type: :Man
+    source: Prince_Heinrich_I_Reuss
+  AssignClass (a1c3999c-602a-4737-abd1-314634c0c11e)
+ Call ID: a1c3999c-602a-4737-abd1-314634c0c11e
+  Args:
+    type: :Woman
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+  AssignClass (77b30af7-a68e-488d-a07d-f419e4cbcd98)
+ Call ID: 77b30af7-a68e-488d-a07d-f419e4cbcd98
+  Args:
+    source: Duke_Adolf_Friedrich_of_Mecklenburg
+    type: :Man
+  AssignClass (e37f758a-c1d8-4b98-b276-f0a4557a277b)
+ Call ID: e37f758a-c1d8-4b98-b276-f0a4557a277b
+  Args:
+    type: :Woman
+    source: Susan_Doukht_Jalali
+  AssignClass (599a443e-fd05-43cd-bdec-7dc65fa9b3ab)
+ Call ID: 599a443e-fd05-43cd-bdec-7dc65fa9b3ab
+  Args:
+    type: :Man
+    source: Heinrich_XXVIII
+  AssignClass (5ece89f7-60e7-4b08-96e7-1594f89b433a)
+ Call ID: 5ece89f7-60e7-4b08-96e7-1594f89b433a
+  Args:
+    source: Elena_Reuss
+    type: :Woman
+  AddLiteral (dd75579c-a109-445b-bd79-994da2bce8db)
+ Call ID: dd75579c-a109-445b-bd79-994da2bce8db
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1951
+    source: Heinrich_XIII_Prinz_Reuss
+  AddTriple (7b5fed45-59f9-485f-852e-449b6ed3eab4)
+ Call ID: 7b5fed45-59f9-485f-852e-449b6ed3eab4
+  Args:
+    target: Prince_Heinrich_I_Reuss
+    source: Heinrich_XIII_Prinz_Reuss
+    relation: :hasFather
+  AddTriple (1b813ea9-a6da-4890-97c6-cd979c8c517d)
+ Call ID: 1b813ea9-a6da-4890-97c6-cd979c8c517d
+  Args:
+    source: Heinrich_XIII_Prinz_Reuss
+    target: Duchess_Woizlawa_Feodora_of_Mecklenburg
+    relation: :hasMother
+  AddTriple (4a7b1adb-0b81-4dc8-84c9-6188193683da)
+ Call ID: 4a7b1adb-0b81-4dc8-84c9-6188193683da
+  Args:
+    relation: :hasFather
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+    target: Duke_Adolf_Friedrich_of_Mecklenburg
+  AddTriple (808ac1a1-79be-4f89-b01c-95e4d1567f05)
+ Call ID: 808ac1a1-79be-4f89-b01c-95e4d1567f05
+  Args:
+    target: Heinrich_XXVIII
+    source: Heinrich_XIII_Prinz_Reuss
+    relation: :hasChild
+  AddTriple (3d8f2560-817c-4388-8b03-858e2b01c1ec)
+ Call ID: 3d8f2560-817c-4388-8b03-858e2b01c1ec
+  Args:
+    target: Elena_Reuss
+    source: Heinrich_XIII_Prinz_Reuss
+    relation: :hasChild
+  AddTriple (14cd8389-0c07-4265-87f1-170ba13edf33)
+ Call ID: 14cd8389-0c07-4265-87f1-170ba13edf33
+  Args:
+    relation: :hasChild
+    target: Heinrich_XXVIII
+    source: Susan_Doukht_Jalali
+  AddTriple (322f52ad-3214-4548-aa0b-b573e96d60fb)
+ Call ID: 322f52ad-3214-4548-aa0b-b573e96d60fb
+  Args:
+    relation: :hasChild
+    source: Susan_Doukht_Jalali
+    target: Elena_Reuss
+  AddLiteral (9c65d906-2f1f-43c7-82ac-59c248bf35f3)
+ Call ID: 9c65d906-2f1f-43c7-82ac-59c248bf35f3
+  Args:
+    literal_value: 1989
+    source: Heinrich_XIII_Prinz_Reuss
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddLiteral (4dd534c8-325e-45ce-9132-06d7a9b82ceb)
+ Call ID: 4dd534c8-325e-45ce-9132-06d7a9b82ceb
+  Args:
+    source: Heinrich_XXVIII
+    literal_value: 1991
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (c6641cb6-944f-432f-ae72-7707917f7c06)
+ Call ID: c6641cb6-944f-432f-ae72-7707917f7c06
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1989
+    source: Elena_Reuss
+  Finish (2fb037c9-9417-4c16-8999-0ffdd6e262fb)
+ Call ID: 2fb037c9-9417-4c16-8999-0ffdd6e262fb
+  Args:

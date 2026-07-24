@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kirby_William_Patterson a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1984 .\n\ndata:Prince_Wilhelm_Victor_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Prince_Adalbert_of_Prussia ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Princess_Adelheid_of_Saxe-Meiningen ;\n    :hasRelation data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;\n    :isSiblingOf data:Princess_Viktoria_Marina .\n\ndata:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Person,\n        :Woman ;\n    :hasBirthYear 1895 ;\n    :hasDeathYear 1983 .\n\ndata:Friedrich_Count_of_Hoyos-Stichsenstein a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1951 .\n\ndata:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;\n    :hasMother data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .\n\ndata:Prince_Adalbert_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1948 .\n\ndata:Princess_Adelheid_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Viktoria_Marina a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1981 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kirby_William_Patterson a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1984 .\n\ndata:Prince_Wilhelm_Victor_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Prince_Adalbert_of_Prussia ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Princess_Adelheid_of_Saxe-Meiningen ;\n    :hasRelation data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;\n    :isSiblingOf data:Princess_Viktoria_Marina .\n\ndata:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Person,\n        :Woman ;\n    :hasBirthYear 1895 ;\n    :hasDeathYear 1983 .\n\ndata:Friedrich_Count_of_Hoyos-Stichsenstein a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1951 .\n\ndata:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;\n    :hasMother data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .\n\ndata:Prince_Adalbert_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1948 .\n\ndata:Princess_Adelheid_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Viktoria_Marina a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1981 .\n\n"
+    }
+]

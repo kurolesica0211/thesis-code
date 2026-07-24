@@ -1,0 +1,272 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Alix_of_Luxembourg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christine_of_Ligne ;
+    :hasDaughter data:Christine_of_Ligne ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Female ;
+    :hasSister data:Alix_of_Luxembourg ;
+    :isAncestorOf data:Christine_of_Ligne,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isAuntOf data:Christine_of_Ligne ;
+    :isBloodrelationOf data:Alix_of_Luxembourg ;
+    :isMotherOf data:Christine_of_Ligne ;
+    :isParentOf data:Christine_of_Ligne ;
+    :isSiblingOf data:Alix_of_Luxembourg ;
+    :isSisterOf data:Alix_of_Luxembourg .
+
+data:Antoine_Prince_of_Ligne a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Antoine_Prince_of_Ligne ;
+    :hasChild data:Christine_of_Ligne ;
+    :hasDaughter data:Christine_of_Ligne ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Christine_of_Ligne,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Antoine_Prince_of_Ligne ;
+    :isBrotherOf data:Antoine_Prince_of_Ligne ;
+    :isFatherOf data:Christine_of_Ligne ;
+    :isParentOf data:Christine_of_Ligne ;
+    :isSiblingOf data:Antoine_Prince_of_Ligne ;
+    :isUncleOf data:Christine_of_Ligne .
+
+data:Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonio_of_Orleans-Braganza ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Female ;
+    :hasSister data:Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Antonio_of_Orleans-Braganza ;
+    :isAncestorOf data:Antonio_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isAuntOf data:Antonio_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Antonio_of_Orleans-Braganza ;
+    :isParentOf data:Antonio_of_Orleans-Braganza ;
+    :isSiblingOf data:Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Maria_Elisabeth_of_Bavaria .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasChild data:Antonio_of_Orleans-Braganza ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :hasSon data:Antonio_of_Orleans-Braganza ;
+    :isAncestorOf data:Antonio_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isBrotherOf data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Antonio_of_Orleans-Braganza ;
+    :isParentOf data:Antonio_of_Orleans-Braganza ;
+    :isSiblingOf data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Antonio_of_Orleans-Braganza .
+
+data:Bertrand_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isBrotherOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isUncleOf data:Pedro_Luiz_of_Orleans-Braganza .
+
+data:Luiz_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isBrotherOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isUncleOf data:Pedro_Luiz_of_Orleans-Braganza .
+
+data:Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne ;
+    :hasChild data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasFather data:Antoine_Prince_of_Ligne ;
+    :hasMother data:Alix_of_Luxembourg ;
+    :hasParent data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Female ;
+    :hasSister data:Christine_of_Ligne ;
+    :hasSon data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isAncestorOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isAuntOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Christine_of_Ligne ;
+    :isChildOf data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne ;
+    :isDaughterOf data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne ;
+    :isMotherOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isParentOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Christine_of_Ligne ;
+    :isSisterOf data:Christine_of_Ligne .
+
+data:Pedro_Luiz_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasBirthYear 1983 ;
+    :hasBrother data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Antonio_of_Orleans-Braganza ;
+    :hasMother data:Christine_of_Ligne ;
+    :hasParent data:Antonio_of_Orleans-Braganza,
+        data:Christine_of_Ligne ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isBrotherOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isChildOf data:Antonio_of_Orleans-Braganza,
+        data:Christine_of_Ligne ;
+    :isSiblingOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isSonOf data:Antonio_of_Orleans-Braganza,
+        data:Christine_of_Ligne ;
+    :knownAs "Pedro Luiz Maria José Miguel Gabriel Rafael Gonzaga de Orleans e Bragança"^^xsd:string .
+
+data:Antonio_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasBrother data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :hasChild data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasRelation data:Alix_of_Luxembourg,
+        data:Antoine_Prince_of_Ligne,
+        data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Christine_of_Ligne,
+        data:Luiz_of_Orleans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_Luiz_of_Orleans-Braganza ;
+    :hasSex data:Male ;
+    :hasSon data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isAncestorOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isBrotherOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isChildOf data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isParentOf data:Pedro_Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Antonio_of_Orleans-Braganza,
+        data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza ;
+    :isSonOf data:Maria_Elisabeth_of_Bavaria,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Pedro_Luiz_of_Orleans-Braganza .
+

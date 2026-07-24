@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasMother data:Lauren_Estelle_Jones ;\n    :isDaughterOf data:Peter_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :isFatherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 .\n\ndata:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Maria_da_Gloria ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasMother data:Lauren_Estelle_Jones ;\n    :isDaughterOf data:Peter_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :isFatherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 .\n\ndata:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Prince_Peter_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Maria_da_Gloria ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasMother data:Lauren_Estelle_Jones ;\n    :isDaughterOf data:Peter_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :isFatherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 .\n\ndata:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :isBrotherOf data:Peter_Karageorgevitch .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman .\n\ndata:Prince_Peter_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:Maria_da_Gloria ;\n    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .\n\n"
+    }
+]

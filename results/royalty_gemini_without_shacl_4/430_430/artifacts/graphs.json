@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :alsoKnownAs data:Countess_Granville ;\n    :formerlyKnownAs data:Rose_Bowes-Lyon ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :alsoKnownAs data:Countess_Granville ;\n    :formerlyKnownAs data:Rose_Bowes-Lyon ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Countess_Granville a :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Rose_Bowes-Lyon a :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :alsoKnownAs data:Countess_Granville ;\n    :formerlyKnownAs data:Rose_Bowes-Lyon ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Countess_Granville a :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Rose_Bowes-Lyon a :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    }
+]

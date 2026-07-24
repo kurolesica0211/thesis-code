@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:ChristopherOfGreeceAndDenmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:FrancoiseOrleans ;\n    :hasRelation data:MarinaKarella .\n\ndata:ChristopherOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasFather data:GeorgeIGreece .\n\ndata:ElliChalikiopoulos a :Person,\n        :Woman .\n\ndata:FrancoiseOrleans a :Person,\n        :Woman ;\n    :hasFather data:JeanOrleansGuise .\n\ndata:GeorgeIGreece a :Man,\n        :Person .\n\ndata:JeanOrleansGuise a :Man,\n        :Person .\n\ndata:MarinaKarella a :Person,\n        :Woman ;\n    :hasFather data:TheodorosKarellas ;\n    :hasMother data:ElliChalikiopoulos .\n\ndata:TheodorosKarellas a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:ChristopherOfGreeceAndDenmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:FrancoiseOrleans ;\n    :hasRelation data:MarinaKarella .\n\ndata:ChristopherOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasFather data:GeorgeIGreece .\n\ndata:ElliChalikiopoulos a :Person,\n        :Woman .\n\ndata:FrancoiseOrleans a :Person,\n        :Woman ;\n    :hasFather data:JeanOrleansGuise .\n\ndata:GeorgeIGreece a :Man,\n        :Person .\n\ndata:JeanOrleansGuise a :Man,\n        :Person .\n\ndata:MarinaKarella a :Person,\n        :Woman ;\n    :hasFather data:TheodorosKarellas ;\n    :hasMother data:ElliChalikiopoulos .\n\ndata:TheodorosKarellas a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Nightingale_Hicks a :Man ;
+    :hasBirthYear "1929"^^xsd:positiveInteger ;
+    :hasDeathYear "1998"^^xsd:positiveInteger ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten .
+
+data:India_Hicks a :Woman ;
+    :hasMother data:Lady_Pamela_Hicks .
+
+data:Baron_Mount_Temple a :Man .
+
+data:Edwina_Ashley a :Woman ;
+    :hasFather data:Baron_Mount_Temple .
+
+data:Herbert_Hicks a :Man .
+
+data:Iris_Elsie_Platten a :Woman .
+
+data:Lady_Pamela_Hicks a :Woman ;
+    :hasBirthYear "1929"^^xsd:positiveInteger ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley ;
+    :hasSister data:Patricia_Mountbatten .
+
+data:Louis_Mountbatten a :Man ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse .
+
+data:Patricia_Mountbatten a :Woman .
+
+data:Prince_Louis_of_Battenberg a :Man .
+
+data:Princess_Victoria_of_Hesse a :Woman .
+

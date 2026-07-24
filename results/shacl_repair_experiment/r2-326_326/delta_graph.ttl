@@ -1,0 +1,12 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Henri_dOrleans a :Ancestor .
+
+data:Henri_the_son a :Ancestor ;
+    :hasMother data:Isabelle_of_Orleans_Braganza .
+
+data:Jean_Duke_of_Guise a :Ancestor .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor .
+

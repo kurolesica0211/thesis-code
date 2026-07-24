@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Frederick_Melville_Rawlinson a :Man,\n        :Person ;\n    :isFatherOf data:Julia_Caroline_Rawlinson .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1988 ;\n    :hasRelation data:Julia_Caroline_Rawlinson ;\n    :isSiblingOf data:Marina_Ogilvy .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman .\n\ndata:Julia_Caroline_Rawlinson a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Frederick_Melville_Rawlinson a :Man,\n        :Person ;\n    :isFatherOf data:Julia_Caroline_Rawlinson .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1988 ;\n    :hasRelation data:Julia_Caroline_Rawlinson ;\n    :isSiblingOf data:Marina_Ogilvy .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman .\n\ndata:Julia_Caroline_Rawlinson a :Person,\n        :Woman .\n\n"
+    }
+]

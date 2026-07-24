@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 2007 ;
+    :hasBrother data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary .
+
+data:Christian_of_Denmark a :Man,
+        :Person .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasParent data:Henrik,
+        data:Margrethe_II .
+
+data:Henrik a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Mary a :Person,
+        :Woman .
+
+data:Vincent_of_Denmark a :Man,
+        :Person .
+

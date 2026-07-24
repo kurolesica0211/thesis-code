@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Elena a :Person,
+        :Woman .
+
+data:Vladimir_Sergeievich a :Man,
+        :Person ;
+    :isSonOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia,
+        data:Mathilde_Kschessinska .
+
+data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :hasRelation data:Mathilde_Kschessinska ;
+    :isBrotherOf data:Grand_Duke_Boris,
+        data:Grand_Duke_Kirill_Vladimirovich .
+
+data:Grand_Duke_Boris a :Man,
+        :Person .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man,
+        :Person .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Mathilde_Kschessinska a :Ancestor,
+        :Person,
+        :Woman .
+

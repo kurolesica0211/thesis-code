@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasRelation data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSister data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAuntOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Princess_Margaret_of_Prussia a :Woman ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
+    :hasRelation data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_August_Wilhelm_of_Prussia .
+
+data:Prince_Alexander_Ferdinand_of_Prussia a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
+    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isChildOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSiblingOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSonOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isFatherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Alexander_Ferdinand_of_Prussia .
+

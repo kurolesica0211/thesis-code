@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Tsar_Alexander_II_of_Russia a :Man,
+        :Person ;
+    :hasBrother data:Tsar_Alexander_II_of_Russia ;
+    :hasRelation data:Tsar_Alexander_II_of_Russia ;
+    :isBloodrelationOf data:Tsar_Alexander_II_of_Russia ;
+    :isBrotherOf data:Tsar_Alexander_II_of_Russia ;
+    :isSiblingOf data:Tsar_Alexander_II_of_Russia .
+
+data:Tsar_Nicholas_II_of_Russia a :Man,
+        :Person ;
+    :hasBrother data:Tsar_Nicholas_II_of_Russia ;
+    :hasRelation data:Tsar_Nicholas_II_of_Russia ;
+    :isBloodrelationOf data:Tsar_Nicholas_II_of_Russia ;
+    :isBrotherOf data:Tsar_Nicholas_II_of_Russia ;
+    :isSiblingOf data:Tsar_Nicholas_II_of_Russia .
+
+data:Zinaida_Sergeievna_Rachevskaya a :Person,
+        :Woman ;
+    :hasRelation data:Zinaida_Sergeievna_Rachevskaya ;
+    :hasSister data:Zinaida_Sergeievna_Rachevskaya ;
+    :isBloodrelationOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isSiblingOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isSisterOf data:Zinaida_Sergeievna_Rachevskaya .
+
+data:Jeanne_Aumont-Lacroix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Jean_Boris_Lacroix ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasSister data:Jeanne_Aumont-Lacroix ;
+    :hasSon data:Jean_Boris_Lacroix ;
+    :isAncestorOf data:Jean_Boris_Lacroix ;
+    :isAuntOf data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Jeanne_Aumont-Lacroix ;
+    :isMotherOf data:Jean_Boris_Lacroix ;
+    :isParentOf data:Jean_Boris_Lacroix ;
+    :isSiblingOf data:Jeanne_Aumont-Lacroix ;
+    :isSisterOf data:Jeanne_Aumont-Lacroix .
+
+data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasSister data:Grand_Duchess_Maria_Pavlovna ;
+    :hasSon data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Jean_Boris_Lacroix ;
+    :isAuntOf data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Pavlovna ;
+    :isMotherOf data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Pavlovna ;
+    :isSisterOf data:Grand_Duchess_Maria_Pavlovna .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasChild data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasSon data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duke_Boris_Vladimirovich_of_Russia .
+
+data:Grand_Duke_Andrei_Vladimirovich a :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+
+data:Jean_Boris_Lacroix a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasBrother data:Jean_Boris_Lacroix ;
+    :hasFather data:Grand_Duke_Boris_Vladimirovich_of_Russia ;
+    :hasMother data:Jeanne_Aumont-Lacroix ;
+    :hasParent data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :isBloodrelationOf data:Jean_Boris_Lacroix ;
+    :isBrotherOf data:Jean_Boris_Lacroix ;
+    :isChildOf data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Jeanne_Aumont-Lacroix ;
+    :isSiblingOf data:Jean_Boris_Lacroix ;
+    :isSonOf data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Jeanne_Aumont-Lacroix .
+
+data:Grand_Duke_Boris_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasChild data:Jean_Boris_Lacroix ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasSon data:Jean_Boris_Lacroix ;
+    :isAncestorOf data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Jean_Boris_Lacroix ;
+    :isParentOf data:Jean_Boris_Lacroix ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSonOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+

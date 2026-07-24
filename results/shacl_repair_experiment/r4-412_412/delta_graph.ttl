@@ -1,0 +1,8 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alois-Konstantin_L%C3%B6wenstein a :Ancestor .
+
+data:Carl-Friedrich_L%C3%B6wenstein :alsoKnownAs "Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg"^^xsd:string .
+

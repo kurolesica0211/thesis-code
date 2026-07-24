@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MariaImmaculata a :Person,
+        :Woman ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Alfonso ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:FrederickAugustusIII,
+        data:JohannGeorg .
+
+data:Alfonso a :Man,
+        :Person .
+
+data:FerdinandIIOfPortugal a :Man,
+        :Person .
+
+data:FrederickAugustusIII a :Man,
+        :Person .
+
+data:GeorgeOfSaxony a :Man,
+        :Person .
+
+data:JohannGeorg a :Man,
+        :Person ;
+    :hasFather data:GeorgeOfSaxony ;
+    :hasMother data:MariaAnnaOfPortugal .
+
+data:MariaAnnaOfPortugal a :Person,
+        :Woman ;
+    :hasFather data:FerdinandIIOfPortugal ;
+    :hasMother data:MariaIIOfPortugal .
+
+data:MariaAntonietta a :Person,
+        :Woman .
+
+data:MariaIIOfPortugal a :Person,
+        :Woman .
+

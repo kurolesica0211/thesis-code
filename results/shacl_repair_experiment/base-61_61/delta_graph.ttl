@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard a :Ancestor ;
+    :hasChild data:Beatrix .
+
+data:Claus a :Ancestor ;
+    :hasChild data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander .
+
+data:Juliana a :Ancestor ;
+    :hasChild data:Beatrix .
+
+data:Beatrix a :Ancestor ;
+    :hasChild data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander .
+
+data:Constantijn :hasBirthYear 1969 .
+
+data:Friso :hasBirthYear 1968 ;
+    :hasDeathYear 2013 .
+

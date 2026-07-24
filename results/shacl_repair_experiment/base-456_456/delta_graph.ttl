@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Katharine%2C_Duchess_of_Kent a :Ancestor ;
+    :isMotherOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Nicholas_Windsor .
+
+data:Prince_Edward%2C_Duke_of_Kent a :Ancestor ;
+    :isFatherOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Nicholas_Windsor .
+
+data:Lady_Helen_Taylor :isSisterOf data:Nicholas_Windsor .
+
+data:Earl_of_St_Andrews :isBrotherOf data:Nicholas_Windsor .
+
+data:Nicholas_Windsor :isBrotherOf data:Earl_of_St_Andrews .
+

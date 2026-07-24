@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_of_Bourbon_Parma a :Person,
+        :Woman .
+
+data:Michael_I a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II,
+        data:Ferdinand_I ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Constantine_I_of_Greece,
+        data:Elena_of_Romania .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :isFatherOf data:Elena_of_Romania .
+
+data:Ferdinand_I a :Man,
+        :Person ;
+    :isFatherOf data:Carol_II .
+
+data:Carol_II a :Man,
+        :Person ;
+    :hasMarriageYear 1921 .
+
+data:Elena_of_Romania a :Person,
+        :Woman .
+

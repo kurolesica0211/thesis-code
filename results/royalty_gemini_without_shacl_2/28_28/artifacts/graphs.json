@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman ;\n    :hasSister data:Sir_David_Bowes-Lyon ;\n    :isAuntOf data:Sir_Simon_Alexander_Bowes-Lyon .\n\ndata:Herbert_Spender-Clay a :Man,\n        :Person .\n\ndata:Pauline_Astor a :Person,\n        :Woman .\n\ndata:Rachel_Pauline_Spender-Clay a :Person,\n        :Woman ;\n    :hasBirthYear \"1907\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1996\"^^xsd:positiveInteger ;\n    :hasFather data:Herbert_Spender-Clay ;\n    :hasMother data:Pauline_Astor .\n\ndata:Sir_Simon_Alexander_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear \"1932\"^^xsd:positiveInteger ;\n    :hasFather data:Sir_David_Bowes-Lyon ;\n    :hasMother data:Rachel_Pauline_Spender-Clay .\n\ndata:Sir_David_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear \"1902\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1961\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman ;\n    :hasSister data:Sir_David_Bowes-Lyon ;\n    :isAuntOf data:Sir_Simon_Alexander_Bowes-Lyon .\n\ndata:Herbert_Spender-Clay a :Man,\n        :Person .\n\ndata:Pauline_Astor a :Person,\n        :Woman .\n\ndata:Rachel_Pauline_Spender-Clay a :Person,\n        :Woman ;\n    :hasBirthYear \"1907\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1996\"^^xsd:positiveInteger ;\n    :hasFather data:Herbert_Spender-Clay ;\n    :hasMother data:Pauline_Astor .\n\ndata:Sir_Simon_Alexander_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear \"1932\"^^xsd:positiveInteger ;\n    :hasFather data:Sir_David_Bowes-Lyon ;\n    :hasMother data:Rachel_Pauline_Spender-Clay .\n\ndata:Sir_David_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear \"1902\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1961\"^^xsd:positiveInteger .\n\n"
+    }
+]

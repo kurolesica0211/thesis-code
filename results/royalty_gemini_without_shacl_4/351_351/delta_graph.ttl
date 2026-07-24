@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Yugoslavia a :Man .
+
+data:Irene a :Woman ;
+    :isAuntOf data:Nikolaos .
+
+data:Margareta_of_Romania a :Woman .
+
+data:Marina a :Woman .
+
+data:Michael a :Man .
+
+data:Sof%C3%ADa a :Woman ;
+    :isAuntOf data:Nikolaos .
+
+data:Agapi_Politi a :Woman .
+
+data:Alexia a :Woman .
+
+data:Anne-Marie a :Woman .
+
+data:Chrys%C3%AD_Vardinogi%C3%A1nni a :Woman ;
+    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasMother data:Agapi_Politi .
+
+data:Constantine_II a :Man .
+
+data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Man .
+
+data:Pavlos a :Man .
+
+data:Philippos a :Man .
+
+data:Tatiana_Ellinka_Blatnik a :Woman .
+
+data:Theodora a :Woman .
+
+data:Nikolaos a :Man ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Pavlos,
+        data:Philippos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Alexia,
+        data:Theodora .
+

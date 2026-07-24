@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis%2C_Prince_of_Hesse_and_by_Rhine a :Man .\n\ndata:Margaret_Campbell_Geddes a :Woman .\n\ndata:Moritz a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Prince_Philip ;\n    :hasMother data:Princess_Mafalda_of_Savoy ;\n    :isSiblingOf data:Elisabeth,\n        data:Heinrich,\n        data:Otto .\n\ndata:Prince_Gustav_Albrecht a :Man ;\n    :isFatherOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Heinrich a :Man ;\n    :isSiblingOf data:Elisabeth,\n        data:Otto .\n\ndata:Prince_Philip a :Man .\n\ndata:Princess_Mafalda_of_Savoy a :Woman .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\ndata:Otto a :Man ;\n    :isSiblingOf data:Elisabeth .\n\ndata:Elisabeth a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis%2C_Prince_of_Hesse_and_by_Rhine a :Man .\n\ndata:Margaret_Campbell_Geddes a :Woman .\n\ndata:Moritz a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Prince_Philip ;\n    :hasMother data:Princess_Mafalda_of_Savoy ;\n    :isSiblingOf data:Elisabeth,\n        data:Heinrich,\n        data:Otto .\n\ndata:Prince_Gustav_Albrecht a :Man ;\n    :isFatherOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Heinrich a :Man ;\n    :isSiblingOf data:Elisabeth,\n        data:Otto .\n\ndata:Prince_Philip a :Man .\n\ndata:Princess_Mafalda_of_Savoy a :Woman .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\ndata:Otto a :Man ;\n    :isSiblingOf data:Elisabeth .\n\ndata:Elisabeth a :Woman .\n\n"
+    }
+]

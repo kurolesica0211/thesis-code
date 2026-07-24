@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Prince_Frederick_Charles_of_Hesse ;\n    :hasMother data:Princess_Margaret_of_Prussia ;\n    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,\n        data:Prince_Philippe_of_Hesse,\n        data:Prince_Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Prince_Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :hasMarriageYear 1930 ;\n    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Frederick_Charles_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Philippe_of_Hesse a :Man,\n        :Person ;\n    :hasRelation data:Mafalda_of_Italy .\n\ndata:Prince_Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Princess_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Prince_Frederick_Charles_of_Hesse ;\n    :hasMother data:Princess_Margaret_of_Prussia ;\n    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,\n        data:Prince_Philippe_of_Hesse,\n        data:Prince_Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Prince_Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :hasMarriageYear 1930 ;\n    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Frederick_Charles_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_Philippe_of_Hesse a :Man,\n        :Person ;\n    :hasRelation data:Mafalda_of_Italy .\n\ndata:Prince_Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Princess_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

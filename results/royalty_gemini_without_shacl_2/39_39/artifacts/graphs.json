@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alex_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Dara_Huang a :Person,\n        :Woman ;\n    :isMotherOf data:Christopher_Woolf .\n\ndata:Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear \"1988\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2020\"^^xsd:positiveInteger ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :isMotherOf data:Athena_Elizabeth_Rose,\n        data:Sienna_Elizabeth_Mapelli_Mozzi ;\n    :isSisterOf data:Eugenie .\n\ndata:Christopher_Woolf a :Man,\n        :Person ;\n    :isChildOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :isSisterOf data:Beatrice .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Athena_Elizabeth_Rose,\n        data:Sienna_Elizabeth_Mapelli_Mozzi .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alex_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Dara_Huang a :Person,\n        :Woman ;\n    :isMotherOf data:Christopher_Woolf .\n\ndata:Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear \"1988\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2020\"^^xsd:positiveInteger ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :isMotherOf data:Athena_Elizabeth_Rose,\n        data:Sienna_Elizabeth_Mapelli_Mozzi ;\n    :isSisterOf data:Eugenie .\n\ndata:Christopher_Woolf a :Man,\n        :Person ;\n    :isChildOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :isSisterOf data:Beatrice .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Athena_Elizabeth_Rose,\n        data:Sienna_Elizabeth_Mapelli_Mozzi .\n\n"
+    }
+]

@@ -1,0 +1,190 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/8_8",
+  "text_file": "Q1040807.txt",
+  "text_key": "Q1040807",
+  "article": "https://en.wikipedia.org/wiki/Lady_Sarah_Chatto",
+  "article_key": "Lady Sarah Chatto",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Sarah_Chatto",
+    "qid": "Q1040807",
+    "label": "Lady Sarah Chatto"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "qid": "Q1040807",
+      "label": "Lady Sarah Chatto",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "qid": "Q335260",
+      "label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret-_Countess_of_Snowdon",
+      "qid": "Q153815",
+      "label": "Princess Margaret, Countess of Snowdon",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#David_Armstrong-Jones-_2nd_Earl_of_Snowdon",
+      "qid": "Q1091237",
+      "label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Antony_Armstrong-Jones",
+      "extracted_local_name": "Antony_Armstrong-Jones",
+      "embedding_text": "Antony Armstrong-Jones",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9,
+      "ground_truth_uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "ground_truth_qid": "Q335260",
+      "ground_truth_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Tony Armstrong-Jones",
+      "best_candidate_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "best_candidate_qid": "Q335260",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sarah_Chatto",
+      "extracted_local_name": "Sarah_Chatto",
+      "embedding_text": "Sarah Chatto",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8275862068965517,
+      "ground_truth_uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "ground_truth_qid": "Q1040807",
+      "ground_truth_label": "Lady Sarah Chatto",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8275862068965517
+    },
+    {
+      "extracted_uri": "http://example.org/data/Daniel_Chatto",
+      "extracted_local_name": "Daniel_Chatto",
+      "embedding_text": "Daniel Chatto",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6
+    },
+    {
+      "extracted_uri": "http://example.org/data/David_Armstrong-Jones",
+      "extracted_local_name": "David_Armstrong-Jones",
+      "embedding_text": "David Armstrong-Jones",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "David Armstrong-Jones, Viscount Linley",
+      "best_candidate_label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "best_candidate_qid": "Q1091237",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.711864406779661
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Margaret",
+      "extracted_local_name": "Princess_Margaret",
+      "embedding_text": "Princess Margaret",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sarah Frances Elizabeth Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3829787234042553
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ros_Chatto",
+      "extracted_local_name": "Ros_Chatto",
+      "embedding_text": "Ros Chatto",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5925925925925926
+    },
+    {
+      "extracted_uri": "http://example.org/data/Tom_Chatto",
+      "extracted_local_name": "Tom_Chatto",
+      "embedding_text": "Tom Chatto",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth, Duchess of York",
+      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
+      "best_candidate_qid": "Q10633",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2777777777777778
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 2,
+    "entities_unmatched": 5
+  }
+}

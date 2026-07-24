@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man,\n        :Person .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Unnamed_Daughter_of_Oxenberg a :Person,\n        :Woman ;\n    :hasFather data:Patrick_DIgnazio ;\n    :hasMother data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Person,\n        :Woman ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;\n    :isSisterOf data:Christina_Oxenberg .\n\ndata:Christina_Oxenberg a :Person,\n        :Woman .\n\ndata:Howard_Oxenberg a :Man,\n        :Person .\n\ndata:India_Riven_Oxenberg a :Person,\n        :Woman ;\n    :hasBirthYear 1991 ;\n    :hasFather data:William_Weitz_Shaffer ;\n    :hasMother data:Catherine_Oxenberg .\n\ndata:Patrick_DIgnazio a :Man,\n        :Person .\n\ndata:Prince_Regent_Paul_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasFather data:Prince_Regent_Paul_of_Yugoslavia .\n\ndata:William_Weitz_Shaffer a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man,\n        :Person .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Unnamed_Daughter_of_Oxenberg a :Person,\n        :Woman ;\n    :hasFather data:Patrick_DIgnazio ;\n    :hasMother data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Person,\n        :Woman ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;\n    :isSisterOf data:Christina_Oxenberg .\n\ndata:Christina_Oxenberg a :Person,\n        :Woman .\n\ndata:Howard_Oxenberg a :Man,\n        :Person .\n\ndata:India_Riven_Oxenberg a :Person,\n        :Woman ;\n    :hasBirthYear 1991 ;\n    :hasFather data:William_Weitz_Shaffer ;\n    :hasMother data:Catherine_Oxenberg .\n\ndata:Patrick_DIgnazio a :Man,\n        :Person .\n\ndata:Prince_Regent_Paul_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasFather data:Prince_Regent_Paul_of_Yugoslavia .\n\ndata:William_Weitz_Shaffer a :Man,\n        :Person .\n\n"
+    }
+]

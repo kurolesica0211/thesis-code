@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margaret_of_Prussia a :Woman ;
+    :isSisterOf data:Viktoria_of_Prussia .
+
+data:Sigismund_of_Prussia a :Man ;
+    :isBrotherOf data:Viktoria_of_Prussia .
+
+data:Sophie_of_Prussia a :Woman ;
+    :isSisterOf data:Viktoria_of_Prussia .
+
+data:Waldemar_of_Prussia a :Man ;
+    :isBrotherOf data:Viktoria_of_Prussia .
+
+data:Adolf_of_Schaumburg_Lippe a :Man .
+
+data:Alexander_Zoubkoff a :Man .
+
+data:Augusta_of_Saxe_Weimar a :Woman .
+
+data:Frederick_III_German_Emperor a :Man ;
+    :hasFather data:Wilhelm_I_German_Emperor ;
+    :hasMother data:Augusta_of_Saxe_Weimar .
+
+data:Prince_Albert a :Man .
+
+data:Queen_Victoria a :Woman .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Wilhelm_I_German_Emperor a :Man .
+
+data:Viktoria_of_Prussia a :Woman ;
+    :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria"^^xsd:string ;
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1890,
+        1927 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff .
+

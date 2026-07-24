@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan%2C_Count_of_Barcelona .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person ;
+    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear "1910"^^xsd:positiveInteger ;
+    :hasDeathYear "2000"^^xsd:positiveInteger ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Juan%2C_Count_of_Barcelona ;
+    :isMotherOf data:Juan_Carlos_I .
+
+data:Philippe%2C_Count_of_Paris a :Man,
+        :Person ;
+    :isFatherOf data:Louise_of_Orl%C3%A9ans .
+
+data:Victoria_Eugenie a :Person,
+        :Woman ;
+    :isMotherOf data:Juan%2C_Count_of_Barcelona .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman .
+
+data:Elena_of_Spain a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :isMotherOf data:Elena_of_Spain .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Louise_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:Juan%2C_Count_of_Barcelona a :Man,
+        :Person .
+

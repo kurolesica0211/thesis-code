@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Maximilian_Margrave_of_Baden .
+
+data:Christian_Kaul a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Stephanie_Anne_Kaul .
+
+data:Hannelore_Scheel a :Ancestor,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Stephanie_Anne_Kaul .
+
+data:Hubert_Salvator_of_Austria a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Valerie_of_Austria .
+
+data:Rosemary_of_Salm-Salm a :Ancestor,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Valerie_of_Austria .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Maximilian_Margrave_of_Baden .
+
+data:Bernhard_Prinz_von_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasRelation data:Stephanie_Anne_Kaul ;
+    :hasSex data:Male .
+
+data:Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasSex data:Male ;
+    :isFatherOf data:Bernhard_Prinz_von_Baden .
+
+data:Stephanie_Anne_Kaul a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel ;
+    :hasSex data:Female .
+
+data:Valerie_of_Austria a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Hubert_Salvator_of_Austria ;
+    :hasMother data:Rosemary_of_Salm-Salm ;
+    :hasSex data:Female ;
+    :isMotherOf data:Bernhard_Prinz_von_Baden .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

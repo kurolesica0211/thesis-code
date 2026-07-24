@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Regina_von_Habsburg a :Person,
+        :Woman ;
+    :formerlyKnownAs "Princess Regina Helene Elisabeth Margarete of Saxe-Meiningen"^^xsd:string ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2010 ;
+    :hasMarriageYear 1950 ;
+    :hasRelation data:Otto_von_Habsburg ;
+    :knownAs "Archduchess Regina of Austria"^^xsd:string .
+
+data:Otto_von_Habsburg a :Man,
+        :Person ;
+    :hasMarriageYear 1950 .
+

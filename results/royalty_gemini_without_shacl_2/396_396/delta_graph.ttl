@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christina_Margarethe_of_Hesse a :Person,
+        :Woman ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMother data:Sophie_of_Greece_and_Denmark .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 .
+

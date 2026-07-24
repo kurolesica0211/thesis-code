@@ -1,0 +1,222 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/161_161",
+  "text_file": "Q236770.txt",
+  "text_key": "Q236770",
+  "article": "https://en.wikipedia.org/wiki/Princess_Irene,_Duchess_of_Aosta",
+  "article_key": "Princess Irene, Duchess of Aosta",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Irene-_Duchess_of_Aosta",
+    "qid": "Q236770",
+    "label": "Princess Irene, Duchess of Aosta"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Irene-_Duchess_of_Aosta",
+      "qid": "Q236770",
+      "label": "Princess Irene, Duchess of Aosta",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Constantine_I_of_Greece",
+      "qid": "Q152099",
+      "label": "Constantine I of Greece",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sophia_of_Prussia",
+      "qid": "Q155822",
+      "label": "Sophia of Prussia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "qid": "Q155178",
+      "label": "Olga Constantinovna of Russia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria-_Princess_Royal",
+      "qid": "Q116728",
+      "label": "Victoria, Princess Royal",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
+      "qid": "Q232732",
+      "label": "Princess Maria of Greece and Denmark",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/King_Constantine_I_of_Greece",
+      "extracted_local_name": "King_Constantine_I_of_Greece",
+      "embedding_text": "King Constantine I of Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Constantine_I_of_Greece",
+      "ground_truth_qid": "Q152099",
+      "ground_truth_label": "Constantine I of Greece",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Constantine I of Greece",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Irene_of_Greece_and_Denmark",
+      "extracted_local_name": "Princess_Irene_of_Greece_and_Denmark",
+      "embedding_text": "Princess Irene of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Irene-_Duchess_of_Aosta",
+      "ground_truth_qid": "Q236770",
+      "ground_truth_label": "Princess Irene, Duchess of Aosta",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Irene of Greece and Denmark",
+      "best_candidate_label": "Princess Irene, Duchess of Aosta",
+      "best_candidate_qid": "Q236770",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_of_Greece",
+      "extracted_local_name": "George_of_Greece",
+      "embedding_text": "George of Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9285714285714286,
+      "ground_truth_uri": "http://example.com/data#George_I_of_Greece",
+      "ground_truth_qid": "Q17142",
+      "ground_truth_label": "George I of Greece",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George I of Greece",
+      "best_candidate_label": "George I of Greece",
+      "best_candidate_qid": "Q17142",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9285714285714286
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexander_of_Greece",
+      "extracted_local_name": "Alexander_of_Greece",
+      "embedding_text": "Alexander of Greece",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II, German Emperor",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35555555555555557
+    },
+    {
+      "extracted_uri": "http://example.org/data/Helen_of_Greece",
+      "extracted_local_name": "Helen_of_Greece",
+      "embedding_text": "Helen of Greece",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II, German Emperor",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3902439024390244
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_of_Greece",
+      "extracted_local_name": "Paul_of_Greece",
+      "embedding_text": "Paul of Greece",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II, German Emperor",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Aimone_4th_Duke_of_Aosta",
+      "extracted_local_name": "Prince_Aimone_4th_Duke_of_Aosta",
+      "embedding_text": "Prince Aimone 4th Duke of Aosta",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Wilhelm Emperor William II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.29850746268656714
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Sophie_of_Prussia",
+      "extracted_local_name": "Princess_Sophie_of_Prussia",
+      "embedding_text": "Princess Sophie of Prussia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria- Princess Royal",
+      "best_candidate_label": "Victoria, Princess Royal",
+      "best_candidate_qid": "Q116728",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.44
+    }
+  ],
+  "summary": {
+    "entities_total": 8,
+    "entities_matched": 3,
+    "entities_unmatched": 5
+  }
+}

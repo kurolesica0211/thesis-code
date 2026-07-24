@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountHenrikOfMonpezat a :Man ;\n    :hasBirthYear 2009 ;\n    :isChildOf data:PrinceHenrik,\n        data:QueenMargretheII ;\n    :isSonOf data:PrinceJoachim,\n        data:PrincessMarie ;\n    :knownAs \"His Excellency Count Henrik of Monpezat\"^^xsd:string .\n\ndata:KingFrederikX a :Man .\n\ndata:PrinceHenrik a :Man .\n\ndata:PrinceJoachim a :Man .\n\ndata:PrincessMarie a :Woman .\n\ndata:QueenMargretheII a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountHenrikOfMonpezat a :Man ;\n    :hasBirthYear 2009 ;\n    :isChildOf data:PrinceHenrik,\n        data:QueenMargretheII ;\n    :isSonOf data:PrinceJoachim,\n        data:PrincessMarie ;\n    :knownAs \"His Excellency Count Henrik of Monpezat\"^^xsd:string .\n\ndata:KingFrederikX a :Man .\n\ndata:PrinceHenrik a :Man .\n\ndata:PrinceJoachim a :Man .\n\ndata:PrincessMarie a :Woman .\n\ndata:QueenMargretheII a :Woman .\n\n"
+    }
+]

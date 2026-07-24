@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Maria Georgievna\"^^xsd:string ;\n    :hasBirthYear 1876 ;\n    :hasBrother data:ConstantineIOfGreece ;\n    :hasDaughter data:NinaGeorgievna,\n        data:XeniaGeorgievna ;\n    :hasDeathYear 1940 ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:OlgaConstantinovnaOfRussia ;\n    :hasRelation data:GeorgeMikhailovichOfRussia ;\n    :knownAs \"Mar\u00eda\"^^xsd:string .\n\ndata:PericlesIoannides a :Man,\n        :Person .\n\ndata:ConstantineIOfGreece a :Man,\n        :Person .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:GeorgeMikhailovichOfRussia a :Man,\n        :Person .\n\ndata:NinaGeorgievna a :Person,\n        :Woman .\n\ndata:OlgaConstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:XeniaGeorgievna a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Maria Georgievna\"^^xsd:string ;\n    :hasBirthYear 1876 ;\n    :hasBrother data:ConstantineIOfGreece ;\n    :hasDaughter data:NinaGeorgievna,\n        data:XeniaGeorgievna ;\n    :hasDeathYear 1940 ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:OlgaConstantinovnaOfRussia ;\n    :hasRelation data:GeorgeMikhailovichOfRussia ;\n    :knownAs \"Mar\u00eda\"^^xsd:string .\n\ndata:PericlesIoannides a :Man,\n        :Person .\n\ndata:ConstantineIOfGreece a :Man,\n        :Person .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:GeorgeMikhailovichOfRussia a :Man,\n        :Person .\n\ndata:NinaGeorgievna a :Person,\n        :Woman .\n\ndata:OlgaConstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:XeniaGeorgievna a :Person,\n        :Woman .\n\n"
+    }
+]

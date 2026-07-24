@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Frederik_IX .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person ;
+    :hasFather data:Frederik_VIII ;
+    :hasMother data:Louise_of_Sweden .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasBirthYear "1899"^^xsd:positiveInteger ;
+    :hasDeathYear "1972"^^xsd:positiveInteger ;
+    :hasFather data:Christian_X ;
+    :hasMarriageYear "1935"^^xsd:positiveInteger ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Knud ;
+    :knownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string .
+
+data:Frederik_VIII a :Man,
+        :Person .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasMother data:Margaret_of_Connaught .
+
+data:Knud a :Man,
+        :Person .
+
+data:Louise_of_Sweden a :Person,
+        :Woman .
+
+data:Margaret_of_Connaught a :Person,
+        :Woman .
+

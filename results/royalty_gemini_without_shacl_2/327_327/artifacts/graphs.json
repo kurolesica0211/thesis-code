@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna .\n\ndata:Franz_Wilhelm_Prussia a :Man .\n\ndata:George_Mikhailovich a :Man ;\n    :hasFather data:Franz_Wilhelm_Prussia ;\n    :hasMother data:Maria_Vladimirovna .\n\ndata:Leonida_Bagration_Mukhrani a :Woman .\n\ndata:Maria_Vladimirovna a :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Vladimir_Kirillovich ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Leonida_Bagration_Mukhrani .\n\ndata:Victoria_Romanovna a :Woman .\n\ndata:Vladimir_Kirillovich a :Man ;\n    :hasDeathYear 1992 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna .\n\ndata:Franz_Wilhelm_Prussia a :Man .\n\ndata:George_Mikhailovich a :Man ;\n    :hasFather data:Franz_Wilhelm_Prussia ;\n    :hasMother data:Maria_Vladimirovna .\n\ndata:Leonida_Bagration_Mukhrani a :Woman .\n\ndata:Maria_Vladimirovna a :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Vladimir_Kirillovich ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Leonida_Bagration_Mukhrani .\n\ndata:Victoria_Romanovna a :Woman .\n\ndata:Vladimir_Kirillovich a :Man ;\n    :hasDeathYear 1992 .\n\n"
+    }
+]

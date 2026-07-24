@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amelia_Windsor a :Woman ;
+    :hasBirthYear "1995"^^xsd:positiveInteger ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Marina_Windsor .
+
+data:George_V a :Man .
+
+data:Lord_Nicholas_Windsor a :Man ;
+    :hasFather data:Prince_Edward_Duke_of_Kent .
+
+data:Queen_Mary a :Woman .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man .
+
+data:George_Windsor_Earl_of_St_Andrews a :Man ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Katharine_Duchess_of_Kent a :Woman ;
+    :hasFather data:Sir_William_Worsley_4th_Baronet .
+
+data:Lady_Marina_Windsor a :Woman .
+
+data:Prince_George_Duke_of_Kent a :Man .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman .
+
+data:Sir_William_Worsley_4th_Baronet a :Man .
+
+data:Sylvana_Tomaselli a :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Man ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+

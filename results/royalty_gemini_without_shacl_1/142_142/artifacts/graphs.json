@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear data:Inaki_Urdangarin,\n        1997 ;\n    :hasMother data:Sofia ;\n    :knownAs \"Cristina Federica Victoria Antonia de la Sant\u00edsima Trinidad de Borb\u00f3n y de Grecia\"^^xsd:string .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Inaki_Urdangarin a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear data:Inaki_Urdangarin,\n        1997 ;\n    :hasMother data:Sofia ;\n    :knownAs \"Cristina Federica Victoria Antonia de la Sant\u00edsima Trinidad de Borb\u00f3n y de Grecia\"^^xsd:string .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Inaki_Urdangarin a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\n"
+    }
+]

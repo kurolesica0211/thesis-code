@@ -1,0 +1,218 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JuanCarlosI a :Man,
+        :Person ;
+    :hasBrother data:JuanCarlosI ;
+    :hasRelation data:JuanCarlosI ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isSiblingOf data:JuanCarlosI .
+
+data:EnricoEugenio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:EnricoEugenio ;
+    :hasChild data:StepSonOfMariaCristina ;
+    :hasRelation data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla,
+        data:StepSonOfMariaCristina ;
+    :hasSon data:StepSonOfMariaCristina ;
+    :isAncestorOf data:StepSonOfMariaCristina ;
+    :isBloodrelationOf data:EnricoEugenio ;
+    :isBrotherOf data:EnricoEugenio ;
+    :isFatherOf data:StepSonOfMariaCristina ;
+    :isParentOf data:StepSonOfMariaCristina ;
+    :isSiblingOf data:EnricoEugenio ;
+    :isUncleOf data:StepSonOfMariaCristina .
+
+data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:StepSonOfMariaCristina ;
+    :hasRelation data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla,
+        data:StepSonOfMariaCristina ;
+    :hasSister data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :hasSon data:StepSonOfMariaCristina ;
+    :isAncestorOf data:StepSonOfMariaCristina ;
+    :isAuntOf data:StepSonOfMariaCristina ;
+    :isBloodrelationOf data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :isMotherOf data:StepSonOfMariaCristina ;
+    :isParentOf data:StepSonOfMariaCristina ;
+    :isSiblingOf data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :isSisterOf data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla .
+
+data:AlfonsoXIIIOfSpain a :Ancestor,
+        :Man ;
+    :hasBrother data:AlfonsoXIIIOfSpain ;
+    :hasChild data:MariaCristinaOfSpain ;
+    :hasDaughter data:MariaCristinaOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isAncestorOf data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoXIIIOfSpain ;
+    :isBrotherOf data:AlfonsoXIIIOfSpain ;
+    :isFatherOf data:MariaCristinaOfSpain ;
+    :isParentOf data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoXIIIOfSpain ;
+    :isUncleOf data:MariaCristinaOfSpain .
+
+data:VictoriaEugenieOfBattenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:MariaCristinaOfSpain ;
+    :hasDaughter data:MariaCristinaOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:VictoriaEugenieOfBattenberg ;
+    :isAncestorOf data:MariaCristinaOfSpain ;
+    :isAuntOf data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:VictoriaEugenieOfBattenberg ;
+    :isMotherOf data:MariaCristinaOfSpain ;
+    :isParentOf data:MariaCristinaOfSpain ;
+    :isSiblingOf data:VictoriaEugenieOfBattenberg ;
+    :isSisterOf data:VictoriaEugenieOfBattenberg .
+
+data:StepSonOfMariaCristina a :Man,
+        :Person ;
+    :hasAncestor data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :hasBrother data:StepSonOfMariaCristina ;
+    :hasFather data:EnricoEugenio ;
+    :hasMother data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :hasParent data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :hasRelation data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla,
+        data:StepSonOfMariaCristina ;
+    :isBloodrelationOf data:StepSonOfMariaCristina ;
+    :isBrotherOf data:StepSonOfMariaCristina ;
+    :isChildOf data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla ;
+    :isSiblingOf data:StepSonOfMariaCristina ;
+    :isSonOf data:EnricoEugenio,
+        data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla .
+
+data:AlfonsoOfSpain a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:BeatrizOfSpain a :Person,
+        :Woman ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSisterOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:GonzaloOfSpain a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isBrotherOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain .
+
+data:MariaCristinaOfSpain a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:AlfonsoOfSpain,
+        data:GonzaloOfSpain ;
+    :hasDeathYear 1996 ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg ;
+    :hasParent data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasRelation data:AlfonsoOfSpain,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isAuntOf data:JuanCarlosI ;
+    :isBloodrelationOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isChildOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isDaughterOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isSiblingOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :isSisterOf data:AlfonsoOfSpain,
+        data:BeatrizOfSpain,
+        data:GonzaloOfSpain,
+        data:MariaCristinaOfSpain ;
+    :knownAs "Infanta Maria Cristina of Spain, Countess Marone-Cinzano"^^xsd:string .
+

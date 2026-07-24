@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi a :Man,
+        :Person ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasRelation data:Beatriz_of_Spain ;
+    :hasSister data:Marina_Torlonia_di_Civitella-Cesi .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Marina_Torlonia_di_Civitella-Cesi a :Person,
+        :Woman .
+
+data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi a :Man,
+        :Person .
+
+data:Mary_Elsie_Moore a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_of_Greece a :Woman .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Francoise_of_Orleans ;
+    :hasSex data:Male .
+
+data:Andrew_of_Greece a :Man .
+
+data:Constantine_I_of_Greece a :Man .
+
+data:George_of_Greece a :Man .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Nicholas_of_Greece a :Man .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :alsoKnownAs "Christo"^^xsd:string ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear 1920 ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasRelation data:Princess_Anastasia_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Andrew_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Nicholas_of_Greece .
+
+data:Princess_Anastasia_of_Greece a :Woman ;
+    :alsoKnownAs "Anastasia"^^xsd:string ;
+    :hasDeathYear "1923"^^xsd:int ;
+    :hasSex data:Female ;
+    :knownAs "Nonnie May \"Nancy\" Stewart Worthington Leeds"^^xsd:string .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:William_Bateman_Leeds_Jr a :Man ;
+    :hasBirthYear "1902"^^xsd:int ;
+    :hasDeathYear "1971"^^xsd:int ;
+    :hasSex data:Male .
+
+data:Princess_Francoise_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasBirthYear "1902"^^xsd:int ;
+    :hasDeathYear "1953"^^xsd:int ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

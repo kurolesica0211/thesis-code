@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granddaughter1OfKiraMarina a :Person,\n        :Woman ;\n    :hasFather data:AndreasFelixPaulVonBismarck ;\n    :hasMother data:KiraMarinaLiepsner .\n\ndata:Granddaughter2OfKiraMarina a :Person,\n        :Woman ;\n    :hasFather data:AndreasFelixPaulVonBismarck ;\n    :hasMother data:KiraMarinaLiepsner .\n\ndata:GrandDuchessKiraKirillovnaOfRussia a :Person,\n        :Woman .\n\ndata:LouisFerdinandPrinceOfPrussia a :Man,\n        :Person .\n\ndata:PrincessKiraOfPrussia a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:LouisFerdinandPrinceOfPrussia ;\n    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .\n\ndata:KiraMarinaLiepsner a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :hasMother data:PrincessKiraOfPrussia ;\n    :hasRelation data:AndreasFelixPaulVonBismarck .\n\ndata:AndreasFelixPaulVonBismarck a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasDeathYear 2019 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granddaughter1OfKiraMarina a :Person,\n        :Woman ;\n    :hasFather data:AndreasFelixPaulVonBismarck ;\n    :hasMother data:KiraMarinaLiepsner .\n\ndata:Granddaughter2OfKiraMarina a :Person,\n        :Woman ;\n    :hasFather data:AndreasFelixPaulVonBismarck ;\n    :hasMother data:KiraMarinaLiepsner .\n\ndata:GrandDuchessKiraKirillovnaOfRussia a :Person,\n        :Woman .\n\ndata:LouisFerdinandPrinceOfPrussia a :Man,\n        :Person .\n\ndata:PrincessKiraOfPrussia a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:LouisFerdinandPrinceOfPrussia ;\n    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .\n\ndata:KiraMarinaLiepsner a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :hasMother data:PrincessKiraOfPrussia ;\n    :hasRelation data:AndreasFelixPaulVonBismarck .\n\ndata:AndreasFelixPaulVonBismarck a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasDeathYear 2019 .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Bernhard .\n\ndata:Irene_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1939 ;\n    :hasMarriageYear 1964 ;\n    :hasRelation data:Carlos_Hugo_of_Bourbon-Parma ;\n    :isChildOf data:Juliana_of_the_Netherlands,\n        data:Prince_Bernhard ;\n    :isSiblingOf data:Beatrix_of_the_Netherlands,\n        data:Christina_of_the_Netherlands,\n        data:Margriet_of_the_Netherlands .\n\ndata:Xavier_Duke_of_Parma a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_Hugo_of_Bourbon-Parma .\n\ndata:Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Christina_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Juliana_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Margriet_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Carlos_Hugo_of_Bourbon-Parma a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Bernhard .\n\ndata:Irene_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1939 ;\n    :hasMarriageYear 1964 ;\n    :hasRelation data:Carlos_Hugo_of_Bourbon-Parma ;\n    :isChildOf data:Juliana_of_the_Netherlands,\n        data:Prince_Bernhard ;\n    :isSiblingOf data:Beatrix_of_the_Netherlands,\n        data:Christina_of_the_Netherlands,\n        data:Margriet_of_the_Netherlands .\n\ndata:Xavier_Duke_of_Parma a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_Hugo_of_Bourbon-Parma .\n\ndata:Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Christina_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Juliana_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Margriet_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Carlos_Hugo_of_Bourbon-Parma a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra a :Person,\n        :Woman ;\n    :hasFather data:Alexander ;\n    :hasMother data:AspasiaManos .\n\ndata:Katherine a :Person,\n        :Woman ;\n    :hasMother data:Sophia .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Sophia ;\n    :hasRelation data:AspasiaManos ;\n    :isSiblingOf data:George,\n        data:Helen,\n        data:Paul .\n\ndata:ConstantineI a :Man,\n        :Person ;\n    :hasFather data:GeorgeI ;\n    :hasMother data:OlgaConstantinovna .\n\ndata:FrederickIII a :Man,\n        :Person .\n\ndata:George a :Man,\n        :Person .\n\ndata:GeorgeI a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:MariaArgyropoulos a :Person,\n        :Woman .\n\ndata:OlgaConstantinovna a :Person,\n        :Woman .\n\ndata:Paul a :Man,\n        :Person .\n\ndata:PetrosManos a :Man,\n        :Person .\n\ndata:VictoriaPrincessRoyal a :Person,\n        :Woman .\n\ndata:AspasiaManos a :Person,\n        :Woman ;\n    :hasFather data:PetrosManos ;\n    :hasMother data:MariaArgyropoulos .\n\ndata:Sophia a :Person,\n        :Woman ;\n    :hasFather data:FrederickIII ;\n    :hasMother data:VictoriaPrincessRoyal .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra a :Person,\n        :Woman ;\n    :hasFather data:Alexander ;\n    :hasMother data:AspasiaManos .\n\ndata:Katherine a :Person,\n        :Woman ;\n    :hasMother data:Sophia .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1920 ;\n    :hasFather data:ConstantineI ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Sophia ;\n    :hasRelation data:AspasiaManos ;\n    :isSiblingOf data:George,\n        data:Helen,\n        data:Paul .\n\ndata:ConstantineI a :Man,\n        :Person ;\n    :hasFather data:GeorgeI ;\n    :hasMother data:OlgaConstantinovna .\n\ndata:FrederickIII a :Man,\n        :Person .\n\ndata:George a :Man,\n        :Person .\n\ndata:GeorgeI a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:MariaArgyropoulos a :Person,\n        :Woman .\n\ndata:OlgaConstantinovna a :Person,\n        :Woman .\n\ndata:Paul a :Man,\n        :Person .\n\ndata:PetrosManos a :Man,\n        :Person .\n\ndata:VictoriaPrincessRoyal a :Person,\n        :Woman .\n\ndata:AspasiaManos a :Person,\n        :Woman ;\n    :hasFather data:PetrosManos ;\n    :hasMother data:MariaArgyropoulos .\n\ndata:Sophia a :Person,\n        :Woman ;\n    :hasFather data:FrederickIII ;\n    :hasMother data:VictoriaPrincessRoyal .\n\n"
+    }
+]

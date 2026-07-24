@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Thyra_of_Denmark .
+
+data:Edwina_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1960 ;
+    :isSisterOf data:Donata_of_Mecklenburg .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person ;
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland .
+
+data:Ernst_II_of_Saxe_Altenburg a :Man,
+        :Person ;
+    :isFatherOf data:Charlotte_of_Saxe_Altenburg .
+
+data:Frederick_Francis_IV_of_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :isFatherOf data:Christian_Louis_of_Mecklenburg_Schwerin .
+
+data:Louis_IV_of_Hesse a :Man,
+        :Person ;
+    :isFatherOf data:Sigismund_of_Prussia .
+
+data:Louise_of_Hesse_Kassel a :Person,
+        :Woman ;
+    :isMotherOf data:Thyra_of_Denmark .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :isMotherOf data:Alice_of_Hesse .
+
+data:Alice_of_Hesse a :Person,
+        :Woman ;
+    :isMotherOf data:Sigismund_of_Prussia .
+
+data:Charlotte_of_Saxe_Altenburg a :Person,
+        :Woman ;
+    :isMotherOf data:Barbara_of_Prussia .
+
+data:Donata_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg_Schwerin ;
+    :hasMother data:Barbara_of_Prussia .
+
+data:Friedrich_Franz_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Alexandra_of_Hanover_and_Cumberland a :Person,
+        :Woman ;
+    :isMotherOf data:Christian_Louis_of_Mecklenburg_Schwerin .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person ;
+    :isFatherOf data:Barbara_of_Prussia .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Alexandra_of_Hanover_and_Cumberland .
+
+data:Barbara_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 .
+
+data:Christian_Louis_of_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :isBrotherOf data:Friedrich_Franz_of_Mecklenburg_Schwerin .
+

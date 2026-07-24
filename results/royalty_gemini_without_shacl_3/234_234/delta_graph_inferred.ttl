@@ -1,0 +1,230 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_de_las_Mercedes a :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia ;
+    :hasSister data:Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Maria_de_las_Mercedes ;
+    :isSisterOf data:Maria_de_las_Mercedes .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Pilar,
+        data:Sofia ;
+    :hasSon data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Pilar ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Juan_Count_of_Barcelona ;
+    :isParentOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Juan_Count_of_Barcelona .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Pilar ;
+    :isAuntOf data:Juan_Count_of_Barcelona ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Juan_Count_of_Barcelona ;
+    :isParentOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Pilar,
+        data:Sofia ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Juan_Carlos_I,
+        data:Pilar .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Juan_Carlos_I,
+        data:Pilar .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Juan_Count_of_Barcelona,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasParent data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isBrotherOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isChildOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSonOf data:Juan_Count_of_Barcelona .
+
+data:Pilar a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Juan_Count_of_Barcelona,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasParent data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isChildOf data:Juan_Count_of_Barcelona ;
+    :isDaughterOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSisterOf data:Juan_Carlos_I,
+        data:Pilar .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :hasChild data:Juan_Carlos_I,
+        data:Pilar ;
+    :hasDaughter data:Pilar ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes,
+        data:Pilar,
+        data:Sofia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isFatherOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isParentOf data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Juan_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Juan_Carlos_I,
+        data:Pilar .
+

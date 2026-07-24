@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasRelation data:Sophia_of_Prussia ;\n    :hasSon data:Alexander_of_Greece,\n        data:George_II_of_Greece .\n\ndata:Wilhelm_II a :Man ;\n    :hasSister data:Sophia_of_Prussia .\n\ndata:Alexander_of_Greece a :Man .\n\ndata:George_II_of_Greece a :Man .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Olga a :Woman .\n\ndata:Sophia_of_Prussia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasRelation data:Sophia_of_Prussia ;\n    :hasSon data:Alexander_of_Greece,\n        data:George_II_of_Greece .\n\ndata:Wilhelm_II a :Man ;\n    :hasSister data:Sophia_of_Prussia .\n\ndata:Alexander_of_Greece a :Man .\n\ndata:George_II_of_Greece a :Man .\n\ndata:George_I_of_Greece a :Man .\n\ndata:Olga a :Woman .\n\ndata:Sophia_of_Prussia a :Woman .\n\n"
+    }
+]

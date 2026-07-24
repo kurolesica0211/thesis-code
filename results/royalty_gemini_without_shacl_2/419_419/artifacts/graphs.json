@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Charles_Riprand_Victor_Jerome_Marie a :Man,\n        :Person ;\n    :hasBirthYear 2022 ;\n    :isSonOf data:Jean-Christophe_Prince_Napoleon,\n        data:Olympia_Bonaparte .\n\ndata:Archduchess_Maria_Beatrice_of_Austria-Este a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Count_Riprand_von_und_zu_Arco-Zinneberg a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1955 ;\n    :hasDeathYear 2021 .\n\ndata:Olympia_Bonaparte a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:Count_Riprand_von_und_zu_Arco-Zinneberg ;\n    :hasMother data:Archduchess_Maria_Beatrice_of_Austria-Este ;\n    :hasRelation data:Jean-Christophe_Prince_Napoleon .\n\ndata:Jean-Christophe_Prince_Napoleon a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Charles_Riprand_Victor_Jerome_Marie a :Man,\n        :Person ;\n    :hasBirthYear 2022 ;\n    :isSonOf data:Jean-Christophe_Prince_Napoleon,\n        data:Olympia_Bonaparte .\n\ndata:Archduchess_Maria_Beatrice_of_Austria-Este a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Count_Riprand_von_und_zu_Arco-Zinneberg a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1955 ;\n    :hasDeathYear 2021 .\n\ndata:Olympia_Bonaparte a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:Count_Riprand_von_und_zu_Arco-Zinneberg ;\n    :hasMother data:Archduchess_Maria_Beatrice_of_Austria-Este ;\n    :hasRelation data:Jean-Christophe_Prince_Napoleon .\n\ndata:Jean-Christophe_Prince_Napoleon a :Man,\n        :Person .\n\n"
+    }
+]

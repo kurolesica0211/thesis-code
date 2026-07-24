@@ -1,0 +1,261 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Alexander_II_of_Russia a :Man ;
+    :hasBrother data:Emperor_Alexander_II_of_Russia ;
+    :hasRelation data:Emperor_Alexander_II_of_Russia ;
+    :isBloodrelationOf data:Emperor_Alexander_II_of_Russia ;
+    :isBrotherOf data:Emperor_Alexander_II_of_Russia ;
+    :isSiblingOf data:Emperor_Alexander_II_of_Russia .
+
+data:Gabriele_Renate_Thyssen a :Woman ;
+    :hasRelation data:Gabriele_Renate_Thyssen ;
+    :hasSister data:Gabriele_Renate_Thyssen ;
+    :isBloodrelationOf data:Gabriele_Renate_Thyssen ;
+    :isSiblingOf data:Gabriele_Renate_Thyssen ;
+    :isSisterOf data:Gabriele_Renate_Thyssen .
+
+data:Grand_Duke_Vladimir_Kirillovich_of_Russia a :Man ;
+    :hasBrother data:Grand_Duke_Vladimir_Kirillovich_of_Russia ;
+    :hasRelation data:Grand_Duke_Vladimir_Kirillovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Kirillovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Kirillovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Kirillovich_of_Russia .
+
+data:Princess_Margarita_of_Hohenlohe-%C3%96hringen a :Woman ;
+    :hasRelation data:Princess_Margarita_of_Hohenlohe-%C3%96hringen ;
+    :hasSister data:Princess_Margarita_of_Hohenlohe-%C3%96hringen ;
+    :isBloodrelationOf data:Princess_Margarita_of_Hohenlohe-%C3%96hringen ;
+    :isSiblingOf data:Princess_Margarita_of_Hohenlohe-%C3%96hringen ;
+    :isSisterOf data:Princess_Margarita_of_Hohenlohe-%C3%96hringen .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasChild data:Grand_Duchess_Maria_Kirillovna ;
+    :hasDaughter data:Grand_Duchess_Maria_Kirillovna ;
+    :hasRelation data:Grand_Duchess_Maria_Kirillovna,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isAncestorOf data:Grand_Duchess_Maria_Kirillovna ;
+    :isBloodrelationOf data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Kirill_Vladimirovich ;
+    :isFatherOf data:Grand_Duchess_Maria_Kirillovna ;
+    :isParentOf data:Grand_Duchess_Maria_Kirillovna ;
+    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich ;
+    :isUncleOf data:Grand_Duchess_Maria_Kirillovna .
+
+data:Grand_Duchess_Maria_Kirillovna a :Woman ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasRelation data:Grand_Duchess_Maria_Kirillovna,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasSister data:Grand_Duchess_Maria_Kirillovna ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Kirillovna ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich ;
+    :isDaughterOf data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSiblingOf data:Grand_Duchess_Maria_Kirillovna ;
+    :isSisterOf data:Grand_Duchess_Maria_Kirillovna .
+
+data:Andreas%2C_8th_Prince_of_Leiningen a :Man ;
+    :hasBrother data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isBrotherOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isUncleOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen .
+
+data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSister data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg ;
+    :hasSon data:Prince_Karl_Emich_of_Leiningen ;
+    :isAncestorOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isAuntOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isBloodrelationOf data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg ;
+    :isMotherOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isParentOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg ;
+    :isSisterOf data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg .
+
+data:Emich%2C_7th_Prince_of_Leiningen a :Ancestor,
+        :Man ;
+    :hasBrother data:Emich%2C_7th_Prince_of_Leiningen ;
+    :hasChild data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSon data:Prince_Karl_Emich_of_Leiningen ;
+    :isAncestorOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Emich%2C_7th_Prince_of_Leiningen ;
+    :isBrotherOf data:Emich%2C_7th_Prince_of_Leiningen ;
+    :isFatherOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isParentOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Emich%2C_7th_Prince_of_Leiningen ;
+    :isUncleOf data:Prince_Karl_Emich_of_Leiningen .
+
+data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man ;
+    :hasAncestor data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :hasBirthYear 2010 ;
+    :hasBrother data:Prince_Emich_Albrecht_Karl_of_Leiningen ;
+    :hasFather data:Prince_Karl_Emich_of_Leiningen ;
+    :hasParent data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSister data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBrotherOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isChildOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isSonOf data:Prince_Karl_Emich_of_Leiningen .
+
+data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
+    :hasAncestor data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :hasBirthYear 1988 ;
+    :hasBrother data:Prince_Emich_Albrecht_Karl_of_Leiningen ;
+    :hasFather data:Prince_Karl_Emich_of_Leiningen ;
+    :hasParent data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSister data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isChildOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isDaughterOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isSisterOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen .
+
+data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
+    :hasAncestor data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Prince_Emich_Albrecht_Karl_of_Leiningen ;
+    :hasFather data:Prince_Karl_Emich_of_Leiningen ;
+    :hasParent data:Prince_Karl_Emich_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSister data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isChildOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isDaughterOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isSisterOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen .
+
+data:Prince_Karl_Emich_of_Leiningen a :Ancestor,
+        :Man ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasAncestor data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :hasChild data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasDaughter data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasFather data:Emich%2C_7th_Prince_of_Leiningen ;
+    :hasMother data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg ;
+    :hasParent data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen ;
+    :hasRelation data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasSon data:Prince_Emich_Albrecht_Karl_of_Leiningen ;
+    :isAncestorOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isBloodrelationOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isBrotherOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isChildOf data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen ;
+    :isFatherOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isParentOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :isSiblingOf data:Andreas%2C_8th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isSonOf data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Emich%2C_7th_Prince_of_Leiningen ;
+    :isUncleOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen .
+

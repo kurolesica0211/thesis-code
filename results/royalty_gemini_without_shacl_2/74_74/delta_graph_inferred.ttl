@@ -1,0 +1,291 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingEdwardVIII a :Man,
+        :Person ;
+    :hasBrother data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isBloodrelationOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isBrotherOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isSiblingOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isUncleOf data:Alexandra,
+        data:Edward,
+        data:Michael .
+
+data:KingGeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingGeorgeV ;
+    :hasChild data:PrinceGeorge ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:Michael,
+        data:PrinceGeorge ;
+    :hasSon data:PrinceGeorge ;
+    :isAncestorOf data:Alexandra,
+        data:Edward,
+        data:Michael,
+        data:PrinceGeorge ;
+    :isBloodrelationOf data:KingGeorgeV ;
+    :isBrotherOf data:KingGeorgeV ;
+    :isFatherOf data:PrinceGeorge ;
+    :isParentOf data:PrinceGeorge ;
+    :isSiblingOf data:KingGeorgeV ;
+    :isUncleOf data:PrinceGeorge .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceGeorge ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingGeorgeVI,
+        data:Michael,
+        data:PrinceGeorge,
+        data:QueenMary ;
+    :hasSister data:QueenMary ;
+    :hasSon data:PrinceGeorge ;
+    :isAncestorOf data:Alexandra,
+        data:Edward,
+        data:Michael,
+        data:PrinceGeorge ;
+    :isAuntOf data:PrinceGeorge ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:PrinceGeorge ;
+    :isParentOf data:PrinceGeorge ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:KingGeorgeVI a :Man,
+        :Person ;
+    :hasBrother data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingEdwardVIII,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrinceGeorge,
+        data:QueenMary ;
+    :isBloodrelationOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isBrotherOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isSiblingOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isUncleOf data:Alexandra,
+        data:Edward,
+        data:Michael .
+
+data:PrincessMarina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDaughter data:Alexandra ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:Michael,
+        data:PrinceGeorge,
+        data:PrincessMarina ;
+    :hasSister data:PrincessMarina ;
+    :hasSon data:Edward,
+        data:Michael ;
+    :isAncestorOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isAuntOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isBloodrelationOf data:PrincessMarina ;
+    :isMotherOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isParentOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isSiblingOf data:PrincessMarina ;
+    :isSisterOf data:PrincessMarina .
+
+data:Michael a :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeV,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasBrother data:Edward,
+        data:Michael ;
+    :hasFather data:PrinceGeorge ;
+    :hasMother data:PrincessMarina ;
+    :hasParent data:PrinceGeorge,
+        data:PrincessMarina ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingGeorgeV,
+        data:Michael,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isBrotherOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isChildOf data:PrinceGeorge,
+        data:PrincessMarina ;
+    :isSiblingOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isSonOf data:PrinceGeorge,
+        data:PrincessMarina .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasAncestor data:KingGeorgeV,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasBrother data:Edward,
+        data:Michael ;
+    :hasFather data:PrinceGeorge ;
+    :hasMother data:PrincessMarina ;
+    :hasParent data:PrinceGeorge,
+        data:PrincessMarina ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingEdwardVIII,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:Michael,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isChildOf data:PrinceGeorge,
+        data:PrincessMarina ;
+    :isDaughterOf data:PrinceGeorge,
+        data:PrincessMarina ;
+    :isSiblingOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isSisterOf data:Alexandra,
+        data:Edward,
+        data:Michael .
+
+data:Edward a :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeV,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasBrother data:Edward,
+        data:Michael ;
+    :hasFather data:PrinceGeorge ;
+    :hasMother data:PrincessMarina ;
+    :hasParent data:PrinceGeorge,
+        data:PrincessMarina ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingEdwardVIII,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:Michael,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isBrotherOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isChildOf data:PrinceGeorge,
+        data:PrincessMarina ;
+    :isSiblingOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isSonOf data:PrinceGeorge,
+        data:PrincessMarina .
+
+data:PrinceGeorge a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeV,
+        data:QueenMary ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDaughter data:Alexandra ;
+    :hasDeathYear 1942 ;
+    :hasFather data:KingGeorgeV ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:QueenMary ;
+    :hasParent data:KingGeorgeV,
+        data:QueenMary ;
+    :hasRelation data:Alexandra,
+        data:Edward,
+        data:KingEdwardVIII,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:Michael,
+        data:PrinceGeorge,
+        data:PrincessMarina,
+        data:QueenMary ;
+    :hasSon data:Edward,
+        data:Michael ;
+    :isAncestorOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isBloodrelationOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isBrotherOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isChildOf data:KingGeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isParentOf data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :isSiblingOf data:KingEdwardVIII,
+        data:KingGeorgeVI,
+        data:PrinceGeorge ;
+    :isSonOf data:KingGeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:Alexandra,
+        data:Edward,
+        data:Michael .
+

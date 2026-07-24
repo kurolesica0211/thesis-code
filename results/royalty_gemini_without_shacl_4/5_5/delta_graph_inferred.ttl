@@ -1,0 +1,425 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hamilton_Joseph_Keyes_OMalley a :Man ;
+    :hasBrother data:Hamilton_Joseph_Keyes_OMalley ;
+    :hasRelation data:Hamilton_Joseph_Keyes_OMalley ;
+    :isBloodrelationOf data:Hamilton_Joseph_Keyes_OMalley ;
+    :isBrotherOf data:Hamilton_Joseph_Keyes_OMalley ;
+    :isSiblingOf data:Hamilton_Joseph_Keyes_OMalley .
+
+data:Clarence_Arthur_Kemp a :Ancestor,
+        :Man ;
+    :hasBrother data:Clarence_Arthur_Kemp ;
+    :hasChild data:William_Alexander_Kemp ;
+    :hasRelation data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne,
+        data:William_Alexander_Kemp ;
+    :hasSon data:William_Alexander_Kemp ;
+    :isAncestorOf data:William_Alexander_Kemp ;
+    :isBloodrelationOf data:Clarence_Arthur_Kemp ;
+    :isBrotherOf data:Clarence_Arthur_Kemp ;
+    :isFatherOf data:William_Alexander_Kemp ;
+    :isParentOf data:William_Alexander_Kemp ;
+    :isSiblingOf data:Clarence_Arthur_Kemp ;
+    :isUncleOf data:William_Alexander_Kemp .
+
+data:Helen_Janet_Ballantyne a :Ancestor,
+        :Woman ;
+    :hasChild data:William_Alexander_Kemp ;
+    :hasRelation data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne,
+        data:William_Alexander_Kemp ;
+    :hasSister data:Helen_Janet_Ballantyne ;
+    :hasSon data:William_Alexander_Kemp ;
+    :isAncestorOf data:William_Alexander_Kemp ;
+    :isAuntOf data:William_Alexander_Kemp ;
+    :isBloodrelationOf data:Helen_Janet_Ballantyne ;
+    :isMotherOf data:William_Alexander_Kemp ;
+    :isParentOf data:William_Alexander_Kemp ;
+    :isSiblingOf data:Helen_Janet_Ballantyne ;
+    :isSisterOf data:Helen_Janet_Ballantyne .
+
+data:William_Alexander_Kemp a :Man ;
+    :hasAncestor data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne ;
+    :hasBrother data:William_Alexander_Kemp ;
+    :hasFather data:Clarence_Arthur_Kemp ;
+    :hasMother data:Helen_Janet_Ballantyne ;
+    :hasParent data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne ;
+    :hasRelation data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne,
+        data:William_Alexander_Kemp ;
+    :isBloodrelationOf data:William_Alexander_Kemp ;
+    :isBrotherOf data:William_Alexander_Kemp ;
+    :isChildOf data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne ;
+    :isSiblingOf data:William_Alexander_Kemp ;
+    :isSonOf data:Clarence_Arthur_Kemp,
+        data:Helen_Janet_Ballantyne .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Henry_of_Battenberg ;
+    :hasChild data:Alexander_Mountbatten ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSon data:Alexander_Mountbatten ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Lady_Iris_Mountbatten,
+        data:Robin_Alexander_Bryan ;
+    :isBloodrelationOf data:Prince_Henry_of_Battenberg ;
+    :isBrotherOf data:Prince_Henry_of_Battenberg ;
+    :isFatherOf data:Alexander_Mountbatten ;
+    :isParentOf data:Alexander_Mountbatten ;
+    :isSiblingOf data:Prince_Henry_of_Battenberg ;
+    :isUncleOf data:Alexander_Mountbatten .
+
+data:Princess_Beatrice a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexander_Mountbatten ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Princess_Beatrice ;
+    :hasSon data:Alexander_Mountbatten ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Lady_Iris_Mountbatten,
+        data:Robin_Alexander_Bryan ;
+    :isAuntOf data:Alexander_Mountbatten ;
+    :isBloodrelationOf data:Princess_Beatrice ;
+    :isMotherOf data:Alexander_Mountbatten ;
+    :isParentOf data:Alexander_Mountbatten ;
+    :isSiblingOf data:Princess_Beatrice ;
+    :isSisterOf data:Princess_Beatrice .
+
+data:Francis_William_Henry_Fane a :Ancestor,
+        :Man ;
+    :hasBrother data:Francis_William_Henry_Fane ;
+    :hasChild data:Lady_Grace_Adelaide_Fane ;
+    :hasDaughter data:Lady_Grace_Adelaide_Fane ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :isAncestorOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Robin_Alexander_Bryan ;
+    :isBloodrelationOf data:Francis_William_Henry_Fane ;
+    :isBrotherOf data:Francis_William_Henry_Fane ;
+    :isFatherOf data:Lady_Grace_Adelaide_Fane ;
+    :isParentOf data:Lady_Grace_Adelaide_Fane ;
+    :isSiblingOf data:Francis_William_Henry_Fane ;
+    :isUncleOf data:Lady_Grace_Adelaide_Fane .
+
+data:Lady_Zinnia_Rosemary_Denison a :Woman ;
+    :hasAncestor data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :hasFather data:Hugo_William_Cecil_Denison ;
+    :hasParent data:Hugo_William_Cecil_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Lady_Zinnia_Rosemary_Denison ;
+    :isBloodrelationOf data:Lady_Zinnia_Rosemary_Denison ;
+    :isChildOf data:Hugo_William_Cecil_Denison ;
+    :isDaughterOf data:Hugo_William_Cecil_Denison ;
+    :isSiblingOf data:Lady_Zinnia_Rosemary_Denison ;
+    :isSisterOf data:Lady_Zinnia_Rosemary_Denison .
+
+data:Robin_Alexander_Bryan a :Man ;
+    :hasAncestor data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:William_Francis_Henry_Denison ;
+    :hasBrother data:Robin_Alexander_Bryan ;
+    :hasMother data:Lady_Iris_Mountbatten ;
+    :hasParent data:Lady_Iris_Mountbatten ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :isBloodrelationOf data:Robin_Alexander_Bryan ;
+    :isBrotherOf data:Robin_Alexander_Bryan ;
+    :isChildOf data:Lady_Iris_Mountbatten ;
+    :isSiblingOf data:Robin_Alexander_Bryan ;
+    :isSonOf data:Lady_Iris_Mountbatten .
+
+data:William_Francis_Henry_Denison a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Francis_Henry_Denison ;
+    :hasChild data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :hasDaughter data:Irene_Frances_Adza_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSon data:Hugo_William_Cecil_Denison ;
+    :isAncestorOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Robin_Alexander_Bryan ;
+    :isBloodrelationOf data:William_Francis_Henry_Denison ;
+    :isBrotherOf data:William_Francis_Henry_Denison ;
+    :isFatherOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isParentOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isSiblingOf data:William_Francis_Henry_Denison ;
+    :isUncleOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison .
+
+data:Alexander_Mountbatten a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice ;
+    :hasBrother data:Alexander_Mountbatten ;
+    :hasChild data:Lady_Iris_Mountbatten ;
+    :hasDaughter data:Lady_Iris_Mountbatten ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :isAncestorOf data:Lady_Iris_Mountbatten,
+        data:Robin_Alexander_Bryan ;
+    :isBloodrelationOf data:Alexander_Mountbatten ;
+    :isBrotherOf data:Alexander_Mountbatten ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice ;
+    :isFatherOf data:Lady_Iris_Mountbatten ;
+    :isParentOf data:Lady_Iris_Mountbatten ;
+    :isSiblingOf data:Alexander_Mountbatten ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice ;
+    :isUncleOf data:Lady_Iris_Mountbatten .
+
+data:Lady_Grace_Adelaide_Fane a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Francis_William_Henry_Fane ;
+    :hasChild data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :hasDaughter data:Irene_Frances_Adza_Denison ;
+    :hasFather data:Francis_William_Henry_Fane ;
+    :hasParent data:Francis_William_Henry_Fane ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Lady_Grace_Adelaide_Fane ;
+    :hasSon data:Hugo_William_Cecil_Denison ;
+    :isAncestorOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Robin_Alexander_Bryan ;
+    :isAuntOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isBloodrelationOf data:Lady_Grace_Adelaide_Fane ;
+    :isChildOf data:Francis_William_Henry_Fane ;
+    :isDaughterOf data:Francis_William_Henry_Fane ;
+    :isMotherOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isParentOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isSiblingOf data:Lady_Grace_Adelaide_Fane ;
+    :isSisterOf data:Lady_Grace_Adelaide_Fane .
+
+data:Hugo_William_Cecil_Denison a :Ancestor,
+        :Man ;
+    :hasAncestor data:Francis_William_Henry_Fane,
+        data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :hasBrother data:Hugo_William_Cecil_Denison ;
+    :hasChild data:Lady_Zinnia_Rosemary_Denison ;
+    :hasDaughter data:Lady_Zinnia_Rosemary_Denison ;
+    :hasFather data:William_Francis_Henry_Denison ;
+    :hasMother data:Lady_Grace_Adelaide_Fane ;
+    :hasParent data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Irene_Frances_Adza_Denison ;
+    :isAncestorOf data:Lady_Zinnia_Rosemary_Denison ;
+    :isBloodrelationOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isBrotherOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isChildOf data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :isFatherOf data:Lady_Zinnia_Rosemary_Denison ;
+    :isParentOf data:Lady_Zinnia_Rosemary_Denison ;
+    :isSiblingOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isSonOf data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :isUncleOf data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison .
+
+data:Irene_Frances_Adza_Denison a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Francis_William_Henry_Fane,
+        data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :hasBrother data:Hugo_William_Cecil_Denison ;
+    :hasChild data:Lady_Iris_Mountbatten ;
+    :hasDaughter data:Lady_Iris_Mountbatten ;
+    :hasFather data:William_Francis_Henry_Denison ;
+    :hasMother data:Lady_Grace_Adelaide_Fane ;
+    :hasParent data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Irene_Frances_Adza_Denison ;
+    :isAncestorOf data:Lady_Iris_Mountbatten,
+        data:Robin_Alexander_Bryan ;
+    :isAuntOf data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison ;
+    :isBloodrelationOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isChildOf data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :isDaughterOf data:Lady_Grace_Adelaide_Fane,
+        data:William_Francis_Henry_Denison ;
+    :isMotherOf data:Lady_Iris_Mountbatten ;
+    :isParentOf data:Lady_Iris_Mountbatten ;
+    :isSiblingOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison ;
+    :isSisterOf data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison .
+
+data:Lady_Iris_Mountbatten a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:William_Francis_Henry_Denison ;
+    :hasBirthYear 1920 ;
+    :hasChild data:Robin_Alexander_Bryan ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Alexander_Mountbatten ;
+    :hasMother data:Irene_Frances_Adza_Denison ;
+    :hasParent data:Alexander_Mountbatten,
+        data:Irene_Frances_Adza_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Francis_William_Henry_Fane,
+        data:Hugo_William_Cecil_Denison,
+        data:Irene_Frances_Adza_Denison,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Iris_Mountbatten,
+        data:Lady_Zinnia_Rosemary_Denison,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice,
+        data:Robin_Alexander_Bryan,
+        data:William_Francis_Henry_Denison ;
+    :hasSister data:Lady_Iris_Mountbatten ;
+    :hasSon data:Robin_Alexander_Bryan ;
+    :isAncestorOf data:Robin_Alexander_Bryan ;
+    :isAuntOf data:Robin_Alexander_Bryan ;
+    :isBloodrelationOf data:Lady_Iris_Mountbatten ;
+    :isChildOf data:Alexander_Mountbatten,
+        data:Irene_Frances_Adza_Denison ;
+    :isDaughterOf data:Alexander_Mountbatten,
+        data:Irene_Frances_Adza_Denison ;
+    :isMotherOf data:Robin_Alexander_Bryan ;
+    :isParentOf data:Robin_Alexander_Bryan ;
+    :isSiblingOf data:Lady_Iris_Mountbatten ;
+    :isSisterOf data:Lady_Iris_Mountbatten .
+

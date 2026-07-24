@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Friedrich_Franz_Alexander a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Friedrich_Wilhelm a :Man,
+        :Person ;
+    :hasParent data:Prince_Louis_Ferdinand_of_Prussia .
+
+data:Heinrich_Albert_Johann_Georg a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Michael a :Man,
+        :Person ;
+    :hasParent data:Prince_Louis_Ferdinand_of_Prussia .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Donata_of_Castell-R%C3%BCdenhausen a :Person,
+        :Woman ;
+    :hasBirthYear 1950 ;
+    :hasDeathYear 2015 .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear 1944 ;
+    :hasDeathYear 1977 ;
+    :hasFather data:Prince_Louis_Ferdinand_of_Prussia ;
+    :hasParent data:Prince_Louis_Ferdinand_of_Prussia .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear 1976 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMother data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :hasRelation data:Princess_Sophie_of_Isenburg .
+
+data:Prince_Louis_Ferdinand_of_Prussia a :Man,
+        :Person .
+
+data:Princess_Sophie_of_Isenburg a :Person,
+        :Woman .
+

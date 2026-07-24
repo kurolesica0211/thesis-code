@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Sofia_of_Spain a :Person,
+        :Woman ;
+    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Anne-Marie_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman .
+
+data:Matthew_Jeremiah_Kumar a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear 2024 ;
+    :hasMother data:Anne-Marie_of_Greece ;
+    :hasRelation data:Matthew_Jeremiah_Kumar ;
+    :knownAs "Theodora Greece"^^xsd:string .
+

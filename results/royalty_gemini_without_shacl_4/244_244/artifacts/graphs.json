@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexanderKarageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Aleksandar III Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Alexander of Serbia and Yugoslavia\"^^xsd:string ;\n    :hasBirthYear 1982 ;\n    :hasFather data:AlexanderSr ;\n    :hasMother data:MariaDaGloria .\n\ndata:AnaLunaMedinaYOrleansBraganza a :Person,\n        :Woman ;\n    :hasMother data:MariaDaGloria .\n\ndata:IgnacioDukeOfSegorbe a :Man,\n        :Person .\n\ndata:KatherineClairyBatis a :Person,\n        :Woman .\n\ndata:SolMariaDeLaBlancaMedinaYOrleansBraganza a :Person,\n        :Woman ;\n    :hasMother data:MariaDaGloria .\n\ndata:AlexanderSr a :Man,\n        :Person .\n\ndata:MariaDaGloria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexanderKarageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Aleksandar III Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Alexander of Serbia and Yugoslavia\"^^xsd:string ;\n    :hasBirthYear 1982 ;\n    :hasFather data:AlexanderSr ;\n    :hasMother data:MariaDaGloria .\n\ndata:AnaLunaMedinaYOrleansBraganza a :Person,\n        :Woman ;\n    :hasMother data:MariaDaGloria .\n\ndata:IgnacioDukeOfSegorbe a :Man,\n        :Person .\n\ndata:KatherineClairyBatis a :Person,\n        :Woman .\n\ndata:SolMariaDeLaBlancaMedinaYOrleansBraganza a :Person,\n        :Woman ;\n    :hasMother data:MariaDaGloria .\n\ndata:AlexanderSr a :Man,\n        :Person .\n\ndata:MariaDaGloria a :Person,\n        :Woman .\n\n"
+    }
+]

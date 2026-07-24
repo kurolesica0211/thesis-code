@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_I_of_Greece :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor ;
+    :hasMarriageYear 1921 .
+
+data:King_Carol_II_of_Romania a :Ancestor ;
+    :hasFather data:King_Ferdinand_I_of_Romania ;
+    :hasMarriageYear 1921 .
+
+data:King_George_II_of_Greece :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia .
+
+data:King_George_I_of_Greece a :Ancestor .
+
+data:King_Michael_I_of_Romania :hasBirthYear 1921 ;
+    :hasDeathYear 1947 .
+
+data:Prince_Paul_of_Greece_and_Denmark :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia .
+
+data:Princess_Irene_of_Greece_and_Denmark :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia .
+
+data:Princess_Katherine_of_Greece_and_Denmark :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia .
+
+data:Queen_Marie_of_Romania a :Ancestor .
+
+data:King_Ferdinand_I_of_Romania a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Constantine_I_of_Greece a :Ancestor .
+
+data:Princess_Sophia_of_Prussia a :Ancestor .
+

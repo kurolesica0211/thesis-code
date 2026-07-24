@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1985 ;
+    :hasFather data:August_Wilhelm_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Armgard_Weygand .
+
+data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
+
+data:Armgard_Weygand a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Friedrich_Weygand ;
+    :hasMother data:Karla_Franziska_Oheim ;
+    :hasRelation data:Werner_Rosendorff .
+
+data:August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II .
+
+data:Friedrich_Weygand a :Man,
+        :Person .
+
+data:Karla_Franziska_Oheim a :Person,
+        :Woman .
+
+data:Werner_Rosendorff a :Man,
+        :Person .
+
+data:Wilhelm_II a :Man,
+        :Person .
+

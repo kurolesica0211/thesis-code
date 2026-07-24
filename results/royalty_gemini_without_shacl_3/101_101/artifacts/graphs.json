@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Gustav_Albrecht a :Man,\n        :Person ;\n    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Carina_Axelsson .\n\ndata:Princess_Mafalda a :Person,\n        :Woman ;\n    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Carina_Axelsson .\n\ndata:King_Frederik_X_of_Denmark a :Man,\n        :Person .\n\ndata:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Princess_Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person ;\n    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .\n\ndata:Carina_Axelsson a :Person,\n        :Woman .\n\ndata:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark ;\n    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;\n    :isBloodrelationOf data:King_Frederik_X_of_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Gustav_Albrecht a :Man,\n        :Person ;\n    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Carina_Axelsson .\n\ndata:Princess_Mafalda a :Person,\n        :Woman ;\n    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Carina_Axelsson .\n\ndata:King_Frederik_X_of_Denmark a :Man,\n        :Person .\n\ndata:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Princess_Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person ;\n    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .\n\ndata:Carina_Axelsson a :Person,\n        :Woman .\n\ndata:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark ;\n    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;\n    :isBloodrelationOf data:King_Frederik_X_of_Denmark .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AdolfII a :Man,\n        :Person .\n\ndata:MarieAlixOfSchaumburgLippe a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasBrother data:PrinceGeorgMoritzOfSchaumburgLippe ;\n    :hasDeathYear 2021 ;\n    :hasFather data:PrinceStefanOfSchaumburgLippe ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;\n    :hasRelation data:PeterDukeOfSchleswigHolstein .\n\ndata:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe a :Person,\n        :Woman .\n\ndata:PeterDukeOfSchleswigHolstein a :Man,\n        :Person ;\n    :hasFather data:WilhelmFriedrichDukeOfSchleswigHolstein ;\n    :hasMother data:PrincessMarieMelitaOfHohenloheLangenburg .\n\ndata:PrinceGeorgMoritzOfSchaumburgLippe a :Man,\n        :Person .\n\ndata:PrinceStefanOfSchaumburgLippe a :Man,\n        :Person .\n\ndata:PrincessMarieMelitaOfHohenloheLangenburg a :Person,\n        :Woman .\n\ndata:WilhelmFriedrichDukeOfSchleswigHolstein a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AdolfII a :Man,\n        :Person .\n\ndata:MarieAlixOfSchaumburgLippe a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasBrother data:PrinceGeorgMoritzOfSchaumburgLippe ;\n    :hasDeathYear 2021 ;\n    :hasFather data:PrinceStefanOfSchaumburgLippe ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;\n    :hasRelation data:PeterDukeOfSchleswigHolstein .\n\ndata:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe a :Person,\n        :Woman .\n\ndata:PeterDukeOfSchleswigHolstein a :Man,\n        :Person ;\n    :hasFather data:WilhelmFriedrichDukeOfSchleswigHolstein ;\n    :hasMother data:PrincessMarieMelitaOfHohenloheLangenburg .\n\ndata:PrinceGeorgMoritzOfSchaumburgLippe a :Man,\n        :Person .\n\ndata:PrinceStefanOfSchaumburgLippe a :Man,\n        :Person .\n\ndata:PrincessMarieMelitaOfHohenloheLangenburg a :Person,\n        :Woman .\n\ndata:WilhelmFriedrichDukeOfSchleswigHolstein a :Man,\n        :Person .\n\n"
+    }
+]

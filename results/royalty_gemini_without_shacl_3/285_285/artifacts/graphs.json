@@ -1,0 +1,79 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Antonietta a :Woman .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Antonietta a :Woman ;\n    :isSisterOf data:Princess_Urraca_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Antonietta a :Woman ;\n    :isSisterOf data:Princess_Urraca_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .\n\n"
+    }
+]

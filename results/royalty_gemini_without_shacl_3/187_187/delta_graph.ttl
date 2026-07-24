@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig a :Man,
+        :Person ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora .
+
+data:Maximilian_Baden a :Man,
+        :Person ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora .
+
+data:Philip a :Man,
+        :Person ;
+    :hasFather data:Andrew ;
+    :hasMother data:Alice .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Alice a :Person,
+        :Woman .
+
+data:Andrew a :Man,
+        :Person .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Philip ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice ;
+    :hasRelation data:Berthold ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie .
+
+data:Berthold a :Man,
+        :Person .
+

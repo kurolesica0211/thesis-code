@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Princess_Victoria a :Person,
+        :Woman .
+
+data:Frederick_III a :Man,
+        :Person .
+
+data:Prince_Adalbert a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince .
+
+data:Prince_Oskar a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince .
+
+data:Prince_Wilhelm_of_Prussia_Son a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Princess_Viktoria_Luise a :Person,
+        :Woman ;
+    :isSisterOf data:Wilhelm_German_Crown_Prince .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Wilhelm_I a :Man,
+        :Person .
+
+data:Anastasia_Mikhailovna a :Person,
+        :Woman .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin .
+

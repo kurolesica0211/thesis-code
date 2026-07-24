@@ -1,0 +1,222 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Desmond_de_Silva a :Ancestor,
+        :Man ;
+    :hasBrother data:Desmond_de_Silva ;
+    :hasChild data:Victoria_Marie_Esme_Margarita ;
+    :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :isAncestorOf data:Victoria_Marie_Esme_Margarita ;
+    :isBloodrelationOf data:Desmond_de_Silva ;
+    :isBrotherOf data:Desmond_de_Silva ;
+    :isFatherOf data:Victoria_Marie_Esme_Margarita ;
+    :isParentOf data:Victoria_Marie_Esme_Margarita ;
+    :isSiblingOf data:Desmond_de_Silva ;
+    :isUncleOf data:Victoria_Marie_Esme_Margarita .
+
+data:Margarita_of_Baden a :Ancestor,
+        :Woman ;
+    :hasChild data:Katarina_of_Yugoslavia ;
+    :hasDaughter data:Katarina_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Margarita_of_Baden ;
+    :isAncestorOf data:Katarina_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :isAuntOf data:Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:Margarita_of_Baden ;
+    :isMotherOf data:Katarina_of_Yugoslavia ;
+    :isParentOf data:Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Margarita_of_Baden ;
+    :isSisterOf data:Margarita_of_Baden .
+
+data:Tomislav_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasBrother data:Tomislav_of_Yugoslavia ;
+    :hasChild data:Katarina_of_Yugoslavia ;
+    :hasDaughter data:Katarina_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :isAncestorOf data:Katarina_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :isBloodrelationOf data:Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:Tomislav_of_Yugoslavia ;
+    :isFatherOf data:Katarina_of_Yugoslavia ;
+    :isParentOf data:Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Tomislav_of_Yugoslavia ;
+    :isUncleOf data:Katarina_of_Yugoslavia .
+
+data:George_of_Yugoslavia a :Man ;
+    :hasBrother data:George_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isBrotherOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isSiblingOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esme_Margarita .
+
+data:Michael_of_Yugoslavia a :Man ;
+    :hasBrother data:George_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isBrotherOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isSiblingOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esme_Margarita .
+
+data:Nikola_of_Yugoslavia a :Man ;
+    :hasBrother data:George_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isBrotherOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isSiblingOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esme_Margarita .
+
+data:Victoria_Marie_Esme_Margarita a :Woman ;
+    :hasAncestor data:Desmond_de_Silva,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Tomislav_of_Yugoslavia ;
+    :hasBirthYear 1991 ;
+    :hasFather data:Desmond_de_Silva ;
+    :hasMother data:Katarina_of_Yugoslavia ;
+    :hasParent data:Desmond_de_Silva,
+        data:Katarina_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Victoria_Marie_Esme_Margarita ;
+    :isBloodrelationOf data:Victoria_Marie_Esme_Margarita ;
+    :isChildOf data:Desmond_de_Silva,
+        data:Katarina_of_Yugoslavia ;
+    :isDaughterOf data:Desmond_de_Silva,
+        data:Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Victoria_Marie_Esme_Margarita ;
+    :isSisterOf data:Victoria_Marie_Esme_Margarita .
+
+data:Katarina_of_Yugoslavia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Margarita_of_Baden,
+        data:Tomislav_of_Yugoslavia ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:George_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :hasChild data:Victoria_Marie_Esme_Margarita ;
+    :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+    :hasFather data:Tomislav_of_Yugoslavia ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Margarita_of_Baden ;
+    :hasParent data:Margarita_of_Baden,
+        data:Tomislav_of_Yugoslavia ;
+    :hasRelation data:Desmond_de_Silva,
+        data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Margarita_of_Baden,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia,
+        data:Tomislav_of_Yugoslavia,
+        data:Victoria_Marie_Esme_Margarita ;
+    :hasSister data:Katarina_of_Yugoslavia ;
+    :isAncestorOf data:Victoria_Marie_Esme_Margarita ;
+    :isAuntOf data:Victoria_Marie_Esme_Margarita ;
+    :isBloodrelationOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isChildOf data:Margarita_of_Baden,
+        data:Tomislav_of_Yugoslavia ;
+    :isDaughterOf data:Margarita_of_Baden,
+        data:Tomislav_of_Yugoslavia ;
+    :isMotherOf data:Victoria_Marie_Esme_Margarita ;
+    :isParentOf data:Victoria_Marie_Esme_Margarita ;
+    :isSiblingOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :isSisterOf data:George_of_Yugoslavia,
+        data:Katarina_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia .
+

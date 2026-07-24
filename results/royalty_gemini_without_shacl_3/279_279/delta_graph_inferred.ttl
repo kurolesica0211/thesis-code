@@ -1,0 +1,935 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeVI a :Man ;
+    :hasBrother data:FelipeVI ;
+    :hasRelation data:FelipeVI ;
+    :isBloodrelationOf data:FelipeVI ;
+    :isBrotherOf data:FelipeVI ;
+    :isSiblingOf data:FelipeVI .
+
+data:FrederikX a :Man ;
+    :hasBrother data:FrederikX ;
+    :hasRelation data:FrederikX ;
+    :isBloodrelationOf data:FrederikX ;
+    :isBrotherOf data:FrederikX ;
+    :isSiblingOf data:FrederikX .
+
+data:MarinaConsortOfMichael a :Woman ;
+    :hasRelation data:MarinaConsortOfMichael ;
+    :hasSister data:MarinaConsortOfMichael ;
+    :isBloodrelationOf data:MarinaConsortOfMichael ;
+    :isSiblingOf data:MarinaConsortOfMichael ;
+    :isSisterOf data:MarinaConsortOfMichael .
+
+data:MatthewKumar a :Man ;
+    :hasBrother data:MatthewKumar ;
+    :hasRelation data:MatthewKumar ;
+    :isBloodrelationOf data:MatthewKumar ;
+    :isBrotherOf data:MatthewKumar ;
+    :isSiblingOf data:MatthewKumar .
+
+data:MichaelOfGreeceAndDenmark a :Man ;
+    :hasBrother data:MichaelOfGreeceAndDenmark ;
+    :hasRelation data:MichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:MichaelOfGreeceAndDenmark ;
+    :isBrotherOf data:MichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:MichaelOfGreeceAndDenmark .
+
+data:RobertWMiller a :Man ;
+    :hasBrother data:RobertWMiller ;
+    :hasRelation data:RobertWMiller ;
+    :isBloodrelationOf data:RobertWMiller ;
+    :isBrotherOf data:RobertWMiller ;
+    :isSiblingOf data:RobertWMiller .
+
+data:MargretheII a :Woman ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Anne-Marie,
+        data:MargretheII ;
+    :isAuntOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:MargretheII ;
+    :isSiblingOf data:Anne-Marie,
+        data:MargretheII ;
+    :isSisterOf data:Anne-Marie,
+        data:MargretheII .
+
+data:SofiaOfSpain a :Woman ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:SofiaOfSpain ;
+    :isAuntOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:ConstantineII,
+        data:SofiaOfSpain ;
+    :isSiblingOf data:ConstantineII,
+        data:SofiaOfSpain ;
+    :isSisterOf data:ConstantineII,
+        data:SofiaOfSpain .
+
+data:FrederikIX a :Ancestor,
+        :Man ;
+    :hasBrother data:FrederikIX ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isAncestorOf data:AchileasAndreas,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon,
+        data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:FrederikIX ;
+    :isBrotherOf data:FrederikIX ;
+    :isFatherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:FrederikIX ;
+    :isUncleOf data:Anne-Marie .
+
+data:IngridOfDenmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:IngridOfDenmark ;
+    :isAncestorOf data:AchileasAndreas,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon,
+        data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isAuntOf data:Anne-Marie ;
+    :isBloodrelationOf data:IngridOfDenmark ;
+    :isMotherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:IngridOfDenmark ;
+    :isSisterOf data:IngridOfDenmark .
+
+data:PaulKingOfGreece a :Ancestor,
+        :Man ;
+    :hasBrother data:PaulKingOfGreece ;
+    :hasChild data:ConstantineII ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:MariaOlympia,
+        data:OdysseasKimon,
+        data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:PaulKingOfGreece ;
+    :isBrotherOf data:PaulKingOfGreece ;
+    :isFatherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:PaulKingOfGreece ;
+    :isUncleOf data:ConstantineII .
+
+data:Alexia a :Woman ;
+    :hasBrother data:PavlosCrownPrinceOfGreece,
+        data:Philippos ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Alexia,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isAuntOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBloodrelationOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSiblingOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSisterOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess .
+
+data:Philippos a :Man ;
+    :hasBrother data:PavlosCrownPrinceOfGreece,
+        data:Philippos ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Alexia,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isBrotherOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSiblingOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isUncleOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon .
+
+data:Theodora a :Woman ;
+    :hasBrother data:PavlosCrownPrinceOfGreece,
+        data:Philippos ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Alexia,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isAuntOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBloodrelationOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSiblingOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSisterOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess .
+
+data:ConstantineII a :Ancestor,
+        :Man ;
+    :hasAncestor data:PaulKingOfGreece ;
+    :hasBrother data:ConstantineII ;
+    :hasChild data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :hasDaughter data:TheodoraPrincess ;
+    :hasFather data:PaulKingOfGreece ;
+    :hasParent data:PaulKingOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:SofiaOfSpain ;
+    :hasSon data:PavlosCrownPrinceOfGreece ;
+    :isAncestorOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon,
+        data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:ConstantineII,
+        data:SofiaOfSpain ;
+    :isBrotherOf data:ConstantineII,
+        data:SofiaOfSpain ;
+    :isChildOf data:PaulKingOfGreece ;
+    :isFatherOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isParentOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isSiblingOf data:ConstantineII,
+        data:SofiaOfSpain ;
+    :isSonOf data:PaulKingOfGreece ;
+    :isUncleOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess .
+
+data:MarieChantalMiller a :Ancestor,
+        :Woman ;
+    :hasChild data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :hasDaughter data:MariaOlympia ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MarieChantalMiller ;
+    :hasSon data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :isAncestorOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isAuntOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBloodrelationOf data:MarieChantalMiller ;
+    :isMotherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isParentOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSiblingOf data:MarieChantalMiller ;
+    :isSisterOf data:MarieChantalMiller .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasAncestor data:FrederikIX,
+        data:IngridOfDenmark ;
+    :hasChild data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :hasDaughter data:TheodoraPrincess ;
+    :hasFather data:FrederikIX ;
+    :hasMother data:IngridOfDenmark ;
+    :hasParent data:FrederikIX,
+        data:IngridOfDenmark ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Anne-Marie,
+        data:MargretheII ;
+    :hasSon data:PavlosCrownPrinceOfGreece ;
+    :isAncestorOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon,
+        data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isAuntOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:MargretheII ;
+    :isChildOf data:FrederikIX,
+        data:IngridOfDenmark ;
+    :isDaughterOf data:FrederikIX,
+        data:IngridOfDenmark ;
+    :isMotherOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isParentOf data:PavlosCrownPrinceOfGreece,
+        data:TheodoraPrincess ;
+    :isSiblingOf data:Anne-Marie,
+        data:MargretheII ;
+    :isSisterOf data:Anne-Marie,
+        data:MargretheII .
+
+data:TheodoraPrincess a :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:PaulKingOfGreece ;
+    :hasBrother data:PavlosCrownPrinceOfGreece,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Alexia,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isAuntOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBloodrelationOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isDaughterOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSisterOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess .
+
+data:AchileasAndreas a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MarieChantalMiller,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasBrother data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller ;
+    :hasParent data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MariaOlympia ;
+    :isBloodrelationOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBrotherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isChildOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isSiblingOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSonOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece .
+
+data:AristidesStavros a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MarieChantalMiller,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasBrother data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller ;
+    :hasParent data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MariaOlympia ;
+    :isBloodrelationOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBrotherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isChildOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isSiblingOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSonOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece .
+
+data:ConstantineAlexios a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MarieChantalMiller,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasBrother data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller ;
+    :hasParent data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MariaOlympia ;
+    :isBloodrelationOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBrotherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isChildOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isSiblingOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSonOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece .
+
+data:MariaOlympia a :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MarieChantalMiller,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasBrother data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller ;
+    :hasParent data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MariaOlympia ;
+    :isBloodrelationOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isChildOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isDaughterOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isSiblingOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSisterOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon .
+
+data:OdysseasKimon a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MarieChantalMiller,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasBrother data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller ;
+    :hasParent data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:MariaOlympia ;
+    :isBloodrelationOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBrotherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isChildOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece ;
+    :isSiblingOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSonOf data:MarieChantalMiller,
+        data:PavlosCrownPrinceOfGreece .
+
+data:PavlosCrownPrinceOfGreece a :Ancestor,
+        :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:PaulKingOfGreece ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:PavlosCrownPrinceOfGreece,
+        data:Philippos ;
+    :hasChild data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :hasDaughter data:MariaOlympia ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AchileasAndreas,
+        data:Alexia,
+        data:Anne-Marie,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:IngridOfDenmark,
+        data:MargretheII,
+        data:MariaOlympia,
+        data:MarieChantalMiller,
+        data:OdysseasKimon,
+        data:PaulKingOfGreece,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:SofiaOfSpain,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSister data:Alexia,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :hasSon data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:OdysseasKimon ;
+    :isAncestorOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isBloodrelationOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isBrotherOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isFatherOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isParentOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon ;
+    :isSiblingOf data:Alexia,
+        data:PavlosCrownPrinceOfGreece,
+        data:Philippos,
+        data:Theodora,
+        data:TheodoraPrincess ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isUncleOf data:AchileasAndreas,
+        data:AristidesStavros,
+        data:ConstantineAlexios,
+        data:MariaOlympia,
+        data:OdysseasKimon .
+

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDaughter data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Wilhelmina ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Christina a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Henry_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Wilhelmina a :Person,
+        :Woman .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+

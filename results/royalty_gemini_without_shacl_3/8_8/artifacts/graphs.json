@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jasper_Cable-Alexander a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Frances_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:David_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasRelation data:Daniel_Chatto .\n\ndata:Polly_Fry a :Person,\n        :Woman ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Daniel_Chatto a :Man,\n        :Person ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Ros_Chatto a :Person,\n        :Woman ;\n    :hasDeathYear 2012 .\n\ndata:Tom_Chatto a :Man,\n        :Person ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jasper_Cable-Alexander a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Frances_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:David_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasRelation data:Daniel_Chatto .\n\ndata:Polly_Fry a :Person,\n        :Woman ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Daniel_Chatto a :Man,\n        :Person ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Ros_Chatto a :Person,\n        :Woman ;\n    :hasDeathYear 2012 .\n\ndata:Tom_Chatto a :Man,\n        :Person ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Man,\n        :Person .\n\n"
+    }
+]

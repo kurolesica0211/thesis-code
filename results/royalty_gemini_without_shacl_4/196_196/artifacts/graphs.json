@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Francis_II a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Alfonso .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Princess_Antonietta ;\n    :hasRelation data:Prince_Luiz_Maria ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_Ferdinand_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Gaston_of_Orleans a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Luiz_Maria a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Prince_Gaston_of_Orleans ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Princess_Antonietta a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Alfonso a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:King_Ferdinand_II .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Francis_II a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Alfonso .\n\ndata:Maria_di_Grazia a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Princess_Antonietta ;\n    :hasRelation data:Prince_Luiz_Maria ;\n    :knownAs \"Maria Pia\"^^xsd:string .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_Ferdinand_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Gaston_of_Orleans a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Luiz_Maria a :Man,\n        :Person ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Prince_Gaston_of_Orleans ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil .\n\ndata:Princess_Antonietta a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Alfonso a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:King_Ferdinand_II .\n\n"
+    }
+]

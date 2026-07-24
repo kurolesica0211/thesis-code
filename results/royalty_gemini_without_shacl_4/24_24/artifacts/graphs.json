@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg ;\n    :hasMother data:Princess_Marie_of_Windisch-Graetz ;\n    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,\n        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,\n        data:Duke_Joseph_of_Mecklenburg-Schwerin,\n        data:Duke_Paul_Friedrich_of_Mecklenburg .\n\ndata:Duchess_Maria_Luise_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:Duke_Joseph_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Duke_Paul_Friedrich_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Princess_Marie_of_Windisch-Graetz a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :alsoKnownAs \"Manette\"^^xsd:string ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg ;\n    :hasMother data:Princess_Marie_of_Windisch-Graetz ;\n    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,\n        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,\n        data:Duke_Joseph_of_Mecklenburg-Schwerin,\n        data:Duke_Paul_Friedrich_of_Mecklenburg .\n\ndata:Duchess_Maria_Luise_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1883 .\n\ndata:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1942 .\n\ndata:Duke_Joseph_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1889 .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Duke_Paul_Friedrich_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Princess_Marie_of_Windisch-Graetz a :Person,\n        :Woman .\n\n"
+    }
+]

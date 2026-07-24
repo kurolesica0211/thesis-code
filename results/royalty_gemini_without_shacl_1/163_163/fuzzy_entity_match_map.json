@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/163_163",
+  "text_file": "Q237165.txt",
+  "text_key": "Q237165",
+  "article": "https://en.wikipedia.org/wiki/Infanta_Margarita,_Duchess_of_Soria",
+  "article_key": "Infanta Margarita, Duchess of Soria",
+  "main_entity": {
+    "uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
+    "qid": "Q237165",
+    "label": "Infanta Margarita, Duchess of Soria"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
+      "qid": "Q237165",
+      "label": "Infanta Margarita, Duchess of Soria",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
+      "qid": "Q313857",
+      "label": "Infante Juan, Count of Barcelona",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "qid": "Q19943",
+      "label": "Juan Carlos I of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "qid": "Q191045",
+      "label": "Felipe VI of Spain",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Felipe_VI",
+      "extracted_local_name": "Felipe_VI",
+      "embedding_text": "Felipe VI",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "ground_truth_qid": "Q191045",
+      "ground_truth_label": "Felipe VI of Spain",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Felipe VI",
+      "best_candidate_label": "Felipe VI of Spain",
+      "best_candidate_qid": "Q191045",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
+      "extracted_local_name": "Juan_Carlos_I",
+      "embedding_text": "Juan Carlos I",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "ground_truth_qid": "Q19943",
+      "ground_truth_label": "Juan Carlos I of Spain",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Count_of_Barcelona",
+      "extracted_local_name": "Juan_Count_of_Barcelona",
+      "embedding_text": "Juan Count of Barcelona",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8448275862068966,
+      "ground_truth_uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
+      "ground_truth_qid": "Q313857",
+      "ground_truth_label": "Infante Juan, Count of Barcelona",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Juan- Count of Barcelona",
+      "best_candidate_label": "Infante Juan, Count of Barcelona",
+      "best_candidate_qid": "Q313857",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8448275862068966
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carlos_Zurita_y_Delgado",
+      "extracted_local_name": "Carlos_Zurita_y_Delgado",
+      "embedding_text": "Carlos Zurita y Delgado",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4444444444444444
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margarita_de_Borbon",
+      "extracted_local_name": "Margarita_de_Borbon",
+      "embedding_text": "Margarita de Borbon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margarita Maria",
+      "best_candidate_label": "Infanta Margarita, Duchess of Soria",
+      "best_candidate_qid": "Q237165",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6470588235294118
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mercedes_of_the_Two_Sicilies",
+      "extracted_local_name": "Mercedes_of_the_Two_Sicilies",
+      "embedding_text": "Mercedes of the Two Sicilies",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margarita Maria de Borbón y de Borbón, Infanta de España",
+      "best_candidate_label": "Infanta Margarita, Duchess of Soria",
+      "best_candidate_qid": "Q237165",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.30952380952380953
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

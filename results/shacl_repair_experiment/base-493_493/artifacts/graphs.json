@@ -1,0 +1,58 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Man,\n        :Person .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Man,\n        :Person .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "d4bd20e8-f0ce-4b7e-a004-1b24003d95b1",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Louise_Francoise_Marie_Laure_of_Orleans> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie_Isabelle_dOrleans> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Louise_Francoise_Marie_Laure_of_Orleans> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie_Isabelle_dOrleans> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Louise_Francoise_Marie_Laure_of_Orleans> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie_Isabelle_dOrleans> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 7,
+        "source": "validate_shacl",
+        "tool_call_id": "35061fd8-c52a-47a4-a231-ca9a53887be6",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1958 ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Princess_Marie_Isabelle_dOrleans ;\n    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .\n\ndata:Antoine_Duke_of_Montpensier a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_Isabelle_dOrleans .\n\ndata:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,\n        :Person ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_dOrleans a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Antoine_Duke_of_Montpensier ;\n    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .\n\n"
+    }
+]

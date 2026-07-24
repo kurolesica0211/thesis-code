@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasMother data:Armgard_von_Cramm .
+
+data:Count_Bodo_von_Oeynhausen a :Man,
+        :Person ;
+    :hasFather data:Count_Erich_von_Oeynhausen ;
+    :hasMother data:Therese_von_Lenthe .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld_Senior .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasMother data:Armgard_von_Cramm .
+
+data:Baron_Aschwin_of_Sierstorpff-Cramm a :Man,
+        :Person .
+
+data:Baroness_Hedwig_of_Sierstorpff-Driburg a :Person,
+        :Woman .
+
+data:Count_Erich_von_Oeynhausen a :Man,
+        :Person .
+
+data:Countess_Karoline_von_Wartensleben a :Person,
+        :Woman .
+
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld_Senior a :Man,
+        :Person ;
+    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasMother data:Countess_Karoline_von_Wartensleben .
+
+data:Therese_von_Lenthe a :Person,
+        :Woman .
+
+data:Armgard_von_Cramm a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Baron_Aschwin_of_Sierstorpff-Cramm ;
+    :hasMarriageYear 1905,
+        1909 ;
+    :hasMother data:Baroness_Hedwig_of_Sierstorpff-Driburg ;
+    :knownAs "Armgard von Cramm"^^xsd:string .
+

@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MarijaKara%C4%91or%C4%91evi%C4%87 a :Person,
+        :Woman ;
+    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:DanicaMarinkovi%C4%87 .
+
+data:StefanKara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:DanicaMarinkovi%C4%87 .
+
+data:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person .
+
+data:MariaDaGloria a :Person,
+        :Woman .
+
+data:PeterKara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person .
+
+data:PhilipKara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:MariaDaGloria ;
+    :hasRelation data:DanicaMarinkovi%C4%87 ;
+    :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87 .
+
+data:DanicaMarinkovi%C4%87 a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Antoinette_of_Schwarzburg a :Person,\n        :Woman ;\n    :isSisterOf data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .\n\ndata:Princess_Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .\n\ndata:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Antoinette_of_Schwarzburg a :Person,\n        :Woman ;\n    :isSisterOf data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .\n\ndata:Princess_Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .\n\ndata:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg a :Man,\n        :Person .\n\n"
+    }
+]

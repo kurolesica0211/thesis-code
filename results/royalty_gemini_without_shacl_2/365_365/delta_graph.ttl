@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst_August_Hereditary_Prince_of_Brunswick a :Man ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Prince_George_William ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMarriageYear 1951,
+        1981 ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Countess_Monika_zu_Solms-Laubach,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSister data:Princess_Frederica ;
+    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden .
+
+data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden a :Man .
+
+data:Countess_Monika_zu_Solms-Laubach a :Woman ;
+    :hasFather data:Georg_9th_Count_of_Solms-Laubach ;
+    :hasMother data:Princess_Johanna_of_Solms-Hohensolms-Lich .
+
+data:Ernest_Augustus_Duke_of_Brunswick a :Man .
+
+data:Georg_9th_Count_of_Solms-Laubach a :Man .
+
+data:Prince_George_William a :Man .
+
+data:Princess_Frederica a :Woman .
+
+data:Princess_Johanna_of_Solms-Hohensolms-Lich a :Woman .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Woman .
+

@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alphonse_de_Borbon_y_Vargas a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Eugenie_de_Borbon_y_Vargas a :Person,
+        :Woman ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Francisco_Bordon a :Man,
+        :Person ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBrotherOf data:Louis_Alphonse_de_Bourbon .
+
+data:Henri_de_Borbon_y_Vargas a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Luis_de_Borbon_y_Vargas a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Carmen_Franco_1st_Duchess_of_Franco a :Person,
+        :Woman ;
+    :hasFather data:Francisco_Franco .
+
+data:Emmanuelle_de_Dampierre a :Person,
+        :Woman .
+
+data:Francisco_Franco a :Man,
+        :Person .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man,
+        :Person .
+
+data:Victor_Vargas a :Man,
+        :Person .
+
+data:Alfonso_de_Borbon a :Man,
+        :Person ;
+    :hasFather data:Infante_Jaime_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+        :Woman ;
+    :hasMother data:Carmen_Franco_1st_Duchess_of_Franco .
+
+data:Maria_Margarita_Vargas_Santaella a :Person,
+        :Woman ;
+    :hasFather data:Victor_Vargas .
+
+data:Louis_Alphonse_de_Bourbon a :Man,
+        :Person ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+

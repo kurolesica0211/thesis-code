@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Alexander_Elphinstone a :Man ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Sidney_Elphinstone ;
+    :hasMother data:Lady_Mary_Bowes-Lyon ;
+    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+        data:Margaret_Elphinstone .
+
+data:Princess_Margaret a :Woman .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Woman .
+
+data:Alexander_Murray a :Man .
+
+data:Andrew_Charles_Victor_Elphinstone a :Man .
+
+data:Lady_Constance_Euphemia_Woronzow_Murray a :Woman ;
+    :hasFather data:Alexander_Murray .
+
+data:Lady_Mary_Bowes-Lyon a :Woman .
+
+data:Margaret_Elphinstone a :Woman .
+
+data:Sidney_Elphinstone a :Man ;
+    :hasFather data:William_Elphinstone ;
+    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .
+
+data:William_Elphinstone a :Man .
+

@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria a :Person,
+        :Woman ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasBrother data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear "1953"^^xsd:positiveInteger ;
+    :hasFather data:Ferdinand_of_Bavaria ;
+    :hasMarriageYear "1946"^^xsd:positiveInteger ;
+    :hasMother data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasRelation data:Irakli_Bagration_of_Mukhrani ;
+    :hasSister data:Mar%C3%ADa_del_Pilar .
+
+data:Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Irakli_Bagration_of_Mukhrani a :Man,
+        :Person ;
+    :hasSister data:Leonida .
+
+data:Jos%C3%A9_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear "1909"^^xsd:positiveInteger ;
+    :hasDeathYear "1966"^^xsd:positiveInteger .
+
+data:Leonida a :Person,
+        :Woman ;
+    :hasRelation data:Vladimir .
+
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear "1906"^^xsd:positiveInteger ;
+    :hasDeathYear "1983"^^xsd:positiveInteger .
+
+data:Mar%C3%ADa_Teresa_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Mar%C3%ADa_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear "1912"^^xsd:positiveInteger ;
+    :hasDeathYear "1918"^^xsd:positiveInteger .
+
+data:Vladimir a :Man,
+        :Person .
+

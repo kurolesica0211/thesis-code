@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Crown_Prince_of_Yugoslavia :hasFather data:Peter_II ;
+    :hasMother data:Alexandra .
+
+data:Alexander_of_Greece a :Person .
+
+data:Aspasia_Manos a :Person ;
+    :hasDeathYear "1972-08-07"^^xsd:date .
+
+data:Maria_of_Yugoslavia a :Person .
+
+data:Alexandra a :Ancestor .
+
+data:Peter_II a :Ancestor ;
+    :hasDeathYear "1970-11-03"^^xsd:date .
+

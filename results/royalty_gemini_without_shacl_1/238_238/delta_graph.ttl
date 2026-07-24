@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Franz_Ulrich_Kinsky a :Man ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich_Kinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Helena_Victoria_Hutten-Czapska,
+        data:Roberta_Cavanagh .
+
+data:Anne_Rowell a :Woman .
+
+data:Helena_Victoria_Hutten-Czapska a :Woman .
+
+data:Hilmar_von_dem_Bussche-Haddenhausen a :Man .
+
+data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .
+
+data:Roberta_Cavanagh a :Woman ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Roberto_Cavanagh ;
+    :hasMother data:Anne_Rowell .
+
+data:Roberto_Cavanagh a :Man .
+
+data:Ulrich_Kinsky a :Man .
+

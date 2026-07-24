@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_II_of_Monaco a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexandra_of_Hanover .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Hereditary_Prince_Ernst_August a :Man,\n        :Person .\n\ndata:Prince_Christian_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Hereditary_Prince_Ernst_August,\n        data:Prince_Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Princess_Caroline_of_Monaco .\n\ndata:Princess_Caroline_of_Monaco a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_II_of_Monaco a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexandra_of_Hanover .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Hereditary_Prince_Ernst_August a :Man,\n        :Person .\n\ndata:Prince_Christian_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Hereditary_Prince_Ernst_August,\n        data:Prince_Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Princess_Caroline_of_Monaco .\n\ndata:Princess_Caroline_of_Monaco a :Person,\n        :Woman .\n\n"
+    }
+]

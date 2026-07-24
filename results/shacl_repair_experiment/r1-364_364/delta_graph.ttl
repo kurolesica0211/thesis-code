@@ -1,0 +1,8 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Margaret_of_Prussia :isSisterOf data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor .
+
+data:Sophie_of_Prussia :isSisterOf data:Margaret_of_Prussia .
+

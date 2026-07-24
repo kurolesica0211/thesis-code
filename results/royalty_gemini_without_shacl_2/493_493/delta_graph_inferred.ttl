@@ -1,0 +1,147 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man ;
+    :hasBrother data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :isBrotherOf data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Woman ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasSister data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+data:King_Felipe_VI_of_Spain a :Man ;
+    :hasAncestor data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasBrother data:King_Felipe_VI_of_Spain ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:King_Felipe_VI_of_Spain ;
+    :isBrotherOf data:King_Felipe_VI_of_Spain ;
+    :isSiblingOf data:King_Felipe_VI_of_Spain .
+
+data:Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man ;
+    :hasBrother data:Antoine_Duke_of_Montpensier ;
+    :hasChild data:Princess_Marie_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Marie_Isabelle_dOrleans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :isAncestorOf data:King_Felipe_VI_of_Spain,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Antoine_Duke_of_Montpensier ;
+    :isBrotherOf data:Antoine_Duke_of_Montpensier ;
+    :isFatherOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isParentOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isSiblingOf data:Antoine_Duke_of_Montpensier ;
+    :isUncleOf data:Princess_Marie_Isabelle_dOrleans .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Marie_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Marie_Isabelle_dOrleans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasSister data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isAncestorOf data:King_Felipe_VI_of_Spain,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :isAuntOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isParentOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isSiblingOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isSisterOf data:Infanta_Luisa_Fernanda_of_Spain .
+
+data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1958 ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Princess_Marie_Isabelle_dOrleans ;
+    :hasParent data:Princess_Marie_Isabelle_dOrleans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasSister data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isAncestorOf data:King_Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isChildOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isDaughterOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isSiblingOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isSisterOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans .
+
+data:Princess_Marie_Isabelle_dOrleans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain ;
+    :hasChild data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :hasDaughter data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain ;
+    :hasParent data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:King_Felipe_VI_of_Spain,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans,
+        data:Princess_Marie_Isabelle_dOrleans ;
+    :hasSister data:Princess_Marie_Isabelle_dOrleans ;
+    :isAncestorOf data:King_Felipe_VI_of_Spain,
+        data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isAuntOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isBloodrelationOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isChildOf data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isDaughterOf data:Antoine_Duke_of_Montpensier,
+        data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isParentOf data:Princess_Louise_Francoise_Marie_Laure_of_Orleans ;
+    :isSiblingOf data:Princess_Marie_Isabelle_dOrleans ;
+    :isSisterOf data:Princess_Marie_Isabelle_dOrleans .
+

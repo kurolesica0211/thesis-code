@@ -1,0 +1,457 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Ignacio_Duke_of_Segorbe a :Man,
+        :Person ;
+    :hasBrother data:Ignacio_Duke_of_Segorbe ;
+    :hasRelation data:Ignacio_Duke_of_Segorbe ;
+    :isBloodrelationOf data:Ignacio_Duke_of_Segorbe ;
+    :isBrotherOf data:Ignacio_Duke_of_Segorbe ;
+    :isSiblingOf data:Ignacio_Duke_of_Segorbe .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman ;
+    :hasRelation data:Katherine_Clairy_Batis ;
+    :hasSister data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Katherine_Clairy_Batis ;
+    :isSiblingOf data:Katherine_Clairy_Batis ;
+    :isSisterOf data:Katherine_Clairy_Batis .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Danica_Marinkovic ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Danica_Marinkovic ;
+    :isMotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Danica_Marinkovic ;
+    :isSisterOf data:Danica_Marinkovic .
+
+data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_da_Gloria ;
+    :hasDaughter data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Maria_da_Gloria ;
+    :isBloodrelationOf data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies ;
+    :isMotherOf data:Maria_da_Gloria ;
+    :isParentOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies ;
+    :isSisterOf data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies .
+
+data:Pedro_Gastao_Orleans_Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pedro_Gastao_Orleans_Braganza ;
+    :hasChild data:Maria_da_Gloria ;
+    :hasDaughter data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Pedro_Gastao_Orleans_Braganza ;
+    :isBrotherOf data:Pedro_Gastao_Orleans_Braganza ;
+    :isFatherOf data:Maria_da_Gloria ;
+    :isParentOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Pedro_Gastao_Orleans_Braganza ;
+    :isUncleOf data:Maria_da_Gloria .
+
+data:Alexander_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Karadjordjevic ;
+    :hasChild data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSon data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isAncestorOf data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Alexander_Karadjordjevic ;
+    :isBrotherOf data:Alexander_Karadjordjevic ;
+    :isFatherOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isParentOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isSiblingOf data:Alexander_Karadjordjevic ;
+    :isUncleOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Maria_da_Gloria ;
+    :isDaughterOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Maria_da_Gloria ;
+    :isDaughterOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBirthYear 2023 ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isDaughterOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSisterOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBirthYear 2018 ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBrotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSonOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSonOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasChild data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasDaughter data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasFather data:Pedro_Gastao_Orleans_Braganza ;
+    :hasMother data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies ;
+    :hasParent data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Maria_da_Gloria ;
+    :hasSon data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Maria_da_Gloria ;
+    :isChildOf data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :isDaughterOf data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :isMotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isParentOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Maria_da_Gloria ;
+    :isSisterOf data:Maria_da_Gloria .
+
+data:Filip_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Pedro_Gastao_Orleans_Braganza ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies,
+        data:Marija_Karadjordjevic,
+        data:Pedro_Gastao_Orleans_Braganza,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSex data:Male ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isFatherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSonOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+

@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:Sophie_Duchess_of_Hohenberg .
+
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1951 .
+
+data:Kirby_William_Patterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1984 .
+
+data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasMother data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .
+
+data:Prince_Adalbert_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 .
+
+data:Prince_Wilhelm_Victor_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Prince_Adalbert_of_Prussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
+    :hasSister data:Princess_Viktoria_Marina .
+
+data:Princess_Adelheid_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 .
+
+data:Princess_Viktoria_Marina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1981 ;
+    :hasRelation data:Kirby_William_Patterson .
+
+data:Sophie_Duchess_of_Hohenberg a :Person,
+        :Woman .
+

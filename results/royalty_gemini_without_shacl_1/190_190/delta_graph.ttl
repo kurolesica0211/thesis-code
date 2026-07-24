@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Granville_James_Leveson-Gower a :Man,
+        :Person ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:William_Leveson-Gower ;
+    :hasMarriageYear 1958 ;
+    :hasMother data:Lady_Rose_Bowes-Lyon ;
+    :hasRelation data:Doon_Aileen_Plunket ;
+    :hasSex data:Male .
+
+data:Aileen_Sibell_Mary_Guinness a :Person,
+        :Woman ;
+    :hasFather data:Edward_Guinness .
+
+data:Brindsley_Sheridan_Bushe_Plunket a :Man,
+        :Person ;
+    :hasFather data:William_Plunket .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Doon_Aileen_Plunket a :Person,
+        :Woman ;
+    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasMother data:Aileen_Sibell_Mary_Guinness .
+
+data:Edward_Guinness a :Man,
+        :Person .
+
+data:Lady_Rose_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:Male a :Sex .
+
+data:William_Leveson-Gower a :Man,
+        :Person .
+
+data:William_Plunket a :Man,
+        :Person .
+

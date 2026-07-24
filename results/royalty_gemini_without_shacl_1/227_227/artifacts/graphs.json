@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear \"2005\"^^xsd:string ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :isSisterOf data:Princess_Maria_Carolina .\n\ndata:Camilla_Crociani a :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man .\n\ndata:Princess_Maria_Carolina a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear \"2005\"^^xsd:string ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :isSisterOf data:Princess_Maria_Carolina .\n\ndata:Camilla_Crociani a :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man .\n\ndata:Princess_Maria_Carolina a :Woman .\n\n"
+    }
+]

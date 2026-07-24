@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Maurits_van_Vollenhoven a :Man ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Princess_Margriet ;\n    :hasRelation data:Marilene_van_den_Broek ;\n    :isSiblingOf data:Bernhard_van_Vollenhoven,\n        data:Floris_van_Vollenhoven,\n        data:Pieter_Christiaan_van_Vollenhoven .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Bernhard_van_Vollenhoven a :Man .\n\ndata:Floris_van_Vollenhoven a :Man .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Marilene_van_den_Broek a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Hans_van_den_Broek ;\n    :hasMother data:Josee_van_Schendel .\n\ndata:Pieter_Christiaan_van_Vollenhoven a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard_of_the_Netherlands a :Man .\n\ndata:Princess_Margriet a :Woman ;\n    :hasFather data:Prince_Bernhard_of_the_Netherlands ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Maurits_van_Vollenhoven a :Man ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Princess_Margriet ;\n    :hasRelation data:Marilene_van_den_Broek ;\n    :isSiblingOf data:Bernhard_van_Vollenhoven,\n        data:Floris_van_Vollenhoven,\n        data:Pieter_Christiaan_van_Vollenhoven .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Bernhard_van_Vollenhoven a :Man .\n\ndata:Floris_van_Vollenhoven a :Man .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Marilene_van_den_Broek a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Hans_van_den_Broek ;\n    :hasMother data:Josee_van_Schendel .\n\ndata:Pieter_Christiaan_van_Vollenhoven a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard_of_the_Netherlands a :Man .\n\ndata:Princess_Margriet a :Woman ;\n    :hasFather data:Prince_Bernhard_of_the_Netherlands ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\n"
+    }
+]

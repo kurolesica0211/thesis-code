@@ -1,0 +1,320 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anna_Dosti a :Ancestor,
+        :Woman ;
+    :hasChild data:Katherine_Clairy_Batis ;
+    :hasDaughter data:Katherine_Clairy_Batis ;
+    :hasRelation data:Anna_Dosti,
+        data:Katherine_Clairy_Batis,
+        data:Robert_Batis ;
+    :hasSister data:Anna_Dosti ;
+    :isAncestorOf data:Katherine_Clairy_Batis ;
+    :isAuntOf data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Anna_Dosti ;
+    :isMotherOf data:Katherine_Clairy_Batis ;
+    :isParentOf data:Katherine_Clairy_Batis ;
+    :isSiblingOf data:Anna_Dosti ;
+    :isSisterOf data:Anna_Dosti .
+
+data:Robert_Batis a :Ancestor,
+        :Man ;
+    :hasBrother data:Robert_Batis ;
+    :hasChild data:Katherine_Clairy_Batis ;
+    :hasDaughter data:Katherine_Clairy_Batis ;
+    :hasRelation data:Anna_Dosti,
+        data:Katherine_Clairy_Batis,
+        data:Robert_Batis ;
+    :isAncestorOf data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Robert_Batis ;
+    :isBrotherOf data:Robert_Batis ;
+    :isFatherOf data:Katherine_Clairy_Batis ;
+    :isParentOf data:Katherine_Clairy_Batis ;
+    :isSiblingOf data:Robert_Batis ;
+    :isUncleOf data:Katherine_Clairy_Batis .
+
+data:Katherine_Clairy_Batis a :Woman ;
+    :hasAncestor data:Anna_Dosti,
+        data:Robert_Batis ;
+    :hasFather data:Robert_Batis ;
+    :hasMother data:Anna_Dosti ;
+    :hasParent data:Anna_Dosti,
+        data:Robert_Batis ;
+    :hasRelation data:Anna_Dosti,
+        data:Katherine_Clairy_Batis,
+        data:Robert_Batis ;
+    :hasSister data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Katherine_Clairy_Batis ;
+    :isChildOf data:Anna_Dosti,
+        data:Robert_Batis ;
+    :isDaughterOf data:Anna_Dosti,
+        data:Robert_Batis ;
+    :isSiblingOf data:Katherine_Clairy_Batis ;
+    :isSisterOf data:Katherine_Clairy_Batis .
+
+data:King_Peter_II a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Peter_II ;
+    :hasChild data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSon data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBloodrelationOf data:King_Peter_II ;
+    :isBrotherOf data:King_Peter_II ;
+    :isFatherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isParentOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSiblingOf data:King_Peter_II ;
+    :isUncleOf data:Alexander_Crown_Prince_of_Yugoslavia .
+
+data:Princess_Aspasia_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Queen_Alexandra_of_Yugoslavia ;
+    :hasDaughter data:Queen_Alexandra_of_Yugoslavia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSister data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isAuntOf data:Queen_Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :isMotherOf data:Queen_Alexandra_of_Yugoslavia ;
+    :isParentOf data:Queen_Alexandra_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Aspasia_of_Greece_and_Denmark .
+
+data:Queen_Alexandra_of_Yugoslavia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :hasChild data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasMother data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSister data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSon data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isAuntOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBloodrelationOf data:Queen_Alexandra_of_Yugoslavia ;
+    :isChildOf data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :isDaughterOf data:Princess_Aspasia_of_Greece_and_Denmark ;
+    :isMotherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isParentOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSiblingOf data:Queen_Alexandra_of_Yugoslavia ;
+    :isSisterOf data:Queen_Alexandra_of_Yugoslavia .
+
+data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1946 ;
+    :hasChild data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSister data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasSon data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isAncestorOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isAuntOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBloodrelationOf data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isParentOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isSiblingOf data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Alexander_son_of_Alexander a :Man ;
+    :hasAncestor data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:King_Peter_II,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBrotherOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isChildOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isSonOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Peter_son_of_Alexander a :Man ;
+    :hasAncestor data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:King_Peter_II,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBrotherOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isChildOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isSonOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Philip_son_of_Alexander a :Man ;
+    :hasAncestor data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:King_Peter_II,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBrotherOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isChildOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isSonOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_Peter_II,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasBirthYear 1945 ;
+    :hasBrother data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasChild data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :hasFather data:King_Peter_II ;
+    :hasMother data:Queen_Alexandra_of_Yugoslavia ;
+    :hasParent data:King_Peter_II,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_son_of_Alexander,
+        data:King_Peter_II,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander,
+        data:Princess_Aspasia_of_Greece_and_Denmark,
+        data:Princess_Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSon data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isAncestorOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isBloodrelationOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBrotherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isChildOf data:King_Peter_II,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isFatherOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isParentOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander ;
+    :isSiblingOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSonOf data:King_Peter_II,
+        data:Queen_Alexandra_of_Yugoslavia ;
+    :isUncleOf data:Alexander_son_of_Alexander,
+        data:Peter_son_of_Alexander,
+        data:Philip_son_of_Alexander .
+

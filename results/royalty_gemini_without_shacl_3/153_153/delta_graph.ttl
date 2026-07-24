@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Louise_of_Orl%C3%A9ans .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Juan_Count_of_Barcelona .
+
+data:Alessandro_Torlonia a :Man,
+        :Person .
+
+data:Carlos_de_Borb%C3%B3n-Dos_Sicilias a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Mar%C3%ADa_de_las_Mercedes_de_Borb%C3%B3n-Dos_Sicilias .
+
+data:Elena_of_Spain a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Louise_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Mar%C3%ADa_de_las_Mercedes_de_Borb%C3%B3n-Dos_Sicilias .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Alessandro_Torlonia .
+
+data:Mar%C3%ADa_de_las_Mercedes_de_Borb%C3%B3n-Dos_Sicilias a :Person,
+        :Woman ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 ;
+    :hasRelation data:Juan_Count_of_Barcelona ;
+    :isMotherOf data:Elena_of_Spain,
+        data:Juan_Carlos_I .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :isBrotherOf data:Beatriz_of_Spain .
+

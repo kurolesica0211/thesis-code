@@ -1,0 +1,155 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Helena_Victoria_Hutten-Czapska a :Person,
+        :Woman ;
+    :hasRelation data:Helena_Victoria_Hutten-Czapska ;
+    :hasSister data:Helena_Victoria_Hutten-Czapska ;
+    :isBloodrelationOf data:Helena_Victoria_Hutten-Czapska ;
+    :isSiblingOf data:Helena_Victoria_Hutten-Czapska ;
+    :isSisterOf data:Helena_Victoria_Hutten-Czapska .
+
+data:Anne_Rowell a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Roberta_Cavanagh ;
+    :hasDaughter data:Roberta_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh ;
+    :hasSister data:Anne_Rowell ;
+    :isAncestorOf data:Roberta_Cavanagh ;
+    :isAuntOf data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Anne_Rowell ;
+    :isMotherOf data:Roberta_Cavanagh ;
+    :isParentOf data:Roberta_Cavanagh ;
+    :isSiblingOf data:Anne_Rowell ;
+    :isSisterOf data:Anne_Rowell .
+
+data:Roberto_Cavanagh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Roberto_Cavanagh ;
+    :hasChild data:Roberta_Cavanagh ;
+    :hasDaughter data:Roberta_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh ;
+    :isAncestorOf data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Roberto_Cavanagh ;
+    :isBrotherOf data:Roberto_Cavanagh ;
+    :isFatherOf data:Roberta_Cavanagh ;
+    :isParentOf data:Roberta_Cavanagh ;
+    :isSiblingOf data:Roberto_Cavanagh ;
+    :isUncleOf data:Roberta_Cavanagh .
+
+data:Ulrich_Kinsky a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ulrich_Kinsky ;
+    :hasChild data:Franz_Ulrich_Kinsky ;
+    :hasRelation data:Franz_Ulrich_Kinsky,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :hasSon data:Franz_Ulrich_Kinsky ;
+    :isAncestorOf data:Franz_Ulrich_Kinsky ;
+    :isBloodrelationOf data:Ulrich_Kinsky ;
+    :isBrotherOf data:Ulrich_Kinsky ;
+    :isFatherOf data:Franz_Ulrich_Kinsky ;
+    :isParentOf data:Franz_Ulrich_Kinsky ;
+    :isSiblingOf data:Ulrich_Kinsky ;
+    :isUncleOf data:Franz_Ulrich_Kinsky .
+
+data:Hilmar_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Franz_Ulrich_Kinsky,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :isAncestorOf data:Franz_Ulrich_Kinsky,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen .
+
+data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1900 ;
+    :hasChild data:Franz_Ulrich_Kinsky ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Franz_Ulrich_Kinsky,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :hasSister data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Franz_Ulrich_Kinsky ;
+    :isAncestorOf data:Franz_Ulrich_Kinsky ;
+    :isAuntOf data:Franz_Ulrich_Kinsky ;
+    :isBloodrelationOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Franz_Ulrich_Kinsky ;
+    :isParentOf data:Franz_Ulrich_Kinsky ;
+    :isSiblingOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen .
+
+data:Roberta_Cavanagh a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Roberto_Cavanagh ;
+    :hasMother data:Anne_Rowell ;
+    :hasParent data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh ;
+    :hasSister data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Roberta_Cavanagh ;
+    :isChildOf data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :isDaughterOf data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :isSiblingOf data:Roberta_Cavanagh ;
+    :isSisterOf data:Roberta_Cavanagh .
+
+data:Franz_Ulrich_Kinsky a :Man,
+        :Person ;
+    :hasAncestor data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Franz_Ulrich_Kinsky ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich_Kinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :hasRelation data:Franz_Ulrich_Kinsky,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :isBloodrelationOf data:Franz_Ulrich_Kinsky ;
+    :isBrotherOf data:Franz_Ulrich_Kinsky ;
+    :isChildOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky ;
+    :isSiblingOf data:Franz_Ulrich_Kinsky ;
+    :isSonOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_Kinsky .
+

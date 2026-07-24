@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ElenaVladimirovna a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasChild data:ElizabethGreece,\n        data:MarinaGreece,\n        data:OlgaGreece ;\n    :hasDeathYear 1957 ;\n    :hasFather data:VladimirAlexandrovich ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:MarieMecklenburgSchwerin ;\n    :hasRelation data:NicholasGreeceDenmark ;\n    :isSiblingOf data:Andrei,\n        data:Boris,\n        data:Kirill .\n\ndata:Andrei a :Man,\n        :Person .\n\ndata:Boris a :Man,\n        :Person .\n\ndata:GeorgeIGreece a :Man,\n        :Person .\n\ndata:Kirill a :Man,\n        :Person .\n\ndata:MarieMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:NicholasGreeceDenmark a :Man,\n        :Person ;\n    :hasChild data:ElizabethGreece,\n        data:MarinaGreece,\n        data:OlgaGreece ;\n    :hasDeathYear 1938 ;\n    :hasFather data:GeorgeIGreece ;\n    :hasMother data:OlgaConstantinovna .\n\ndata:OlgaConstantinovna a :Person,\n        :Woman .\n\ndata:VladimirAlexandrovich a :Man,\n        :Person .\n\ndata:ElizabethGreece a :Person,\n        :Woman .\n\ndata:MarinaGreece a :Person,\n        :Woman .\n\ndata:OlgaGreece a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ElenaVladimirovna a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasChild data:ElizabethGreece,\n        data:MarinaGreece,\n        data:OlgaGreece ;\n    :hasDeathYear 1957 ;\n    :hasFather data:VladimirAlexandrovich ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:MarieMecklenburgSchwerin ;\n    :hasRelation data:NicholasGreeceDenmark ;\n    :isSiblingOf data:Andrei,\n        data:Boris,\n        data:Kirill .\n\ndata:Andrei a :Man,\n        :Person .\n\ndata:Boris a :Man,\n        :Person .\n\ndata:GeorgeIGreece a :Man,\n        :Person .\n\ndata:Kirill a :Man,\n        :Person .\n\ndata:MarieMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:NicholasGreeceDenmark a :Man,\n        :Person ;\n    :hasChild data:ElizabethGreece,\n        data:MarinaGreece,\n        data:OlgaGreece ;\n    :hasDeathYear 1938 ;\n    :hasFather data:GeorgeIGreece ;\n    :hasMother data:OlgaConstantinovna .\n\ndata:OlgaConstantinovna a :Person,\n        :Woman .\n\ndata:VladimirAlexandrovich a :Man,\n        :Person .\n\ndata:ElizabethGreece a :Person,\n        :Woman .\n\ndata:MarinaGreece a :Person,\n        :Woman .\n\ndata:OlgaGreece a :Person,\n        :Woman .\n\n"
+    }
+]

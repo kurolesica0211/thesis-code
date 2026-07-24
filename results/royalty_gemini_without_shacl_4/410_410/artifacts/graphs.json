@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Lady_Louise_Mountbatten-Windsor a :Person,\n        :Woman ;\n    :hasBirthYear \"2003\"^^xsd:positiveInteger ;\n    :isDaughterOf data:Prince_Edward,\n        data:Sophie_Duchess_of_Edinburgh ;\n    :isSiblingOf data:James .\n\ndata:James a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person ;\n    :isFatherOf data:Prince_Edward .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman ;\n    :isFatherOf data:Prince_Edward ;\n    :isMotherOf data:Prince_Edward .\n\ndata:Sophie_Duchess_of_Edinburgh a :Person,\n        :Woman .\n\ndata:Prince_Edward a :Man,\n        :Person ;\n    :hasFather data:Prince_Philip ;\n    :hasMother data:Queen_Elizabeth_II .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Lady_Louise_Mountbatten-Windsor a :Person,\n        :Woman ;\n    :hasBirthYear \"2003\"^^xsd:positiveInteger ;\n    :isDaughterOf data:Prince_Edward,\n        data:Sophie_Duchess_of_Edinburgh ;\n    :isSiblingOf data:James .\n\ndata:James a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person ;\n    :isFatherOf data:Prince_Edward .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman ;\n    :isFatherOf data:Prince_Edward ;\n    :isMotherOf data:Prince_Edward .\n\ndata:Sophie_Duchess_of_Edinburgh a :Person,\n        :Woman .\n\ndata:Prince_Edward a :Man,\n        :Person ;\n    :hasFather data:Prince_Philip ;\n    :hasMother data:Queen_Elizabeth_II .\n\n"
+    }
+]

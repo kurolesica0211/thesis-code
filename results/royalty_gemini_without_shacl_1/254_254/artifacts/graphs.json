@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person ;\n    :isFatherOf data:George_Henry_Hubert_Lascelles .\n\ndata:King_George_V a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :isMotherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary_Person a :Person .\n\ndata:Marion_Stein a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman ;\n    :isMotherOf data:Mark_Lascelles .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasMarriageYear 1949,\n        1967 ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell ;\n    :hasSex data:Male ;\n    :isFatherOf data:Mark_Lascelles .\n\ndata:Mark_Lascelles a :Man,\n        :Person .\n\ndata:Princess_Mary_Princess_Royal a :Person,\n        :Woman ;\n    :isMotherOf data:George_Henry_Hubert_Lascelles .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person ;\n    :isFatherOf data:George_Henry_Hubert_Lascelles .\n\ndata:King_George_V a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :isMotherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary_Person a :Person .\n\ndata:Male a :Male .\n\ndata:Marion_Stein a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman ;\n    :isMotherOf data:Mark_Lascelles .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasMarriageYear 1949,\n        1967 ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell ;\n    :hasSex data:Male ;\n    :isFatherOf data:Mark_Lascelles .\n\ndata:Mark_Lascelles a :Man,\n        :Person .\n\ndata:Princess_Mary_Princess_Royal a :Person,\n        :Woman ;\n    :isMotherOf data:George_Henry_Hubert_Lascelles .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_Viscount_Lascelles a :Man,\n        :Person ;\n    :isFatherOf data:George_Henry_Hubert_Lascelles .\n\ndata:King_George_V a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :isMotherOf data:Princess_Mary_Princess_Royal .\n\ndata:Queen_Mary_Person a :Person .\n\ndata:Male a :Male .\n\ndata:Marion_Stein a :Person,\n        :Woman .\n\ndata:Patricia_Tuckwell a :Person,\n        :Woman ;\n    :isMotherOf data:Mark_Lascelles .\n\ndata:George_Henry_Hubert_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2011 ;\n    :hasMarriageYear 1949,\n        1967 ;\n    :hasRelation data:Marion_Stein,\n        data:Patricia_Tuckwell ;\n    :hasSex data:Male ;\n    :isFatherOf data:Mark_Lascelles .\n\ndata:Mark_Lascelles a :Man,\n        :Person .\n\ndata:Princess_Mary_Princess_Royal a :Person,\n        :Woman ;\n    :isMotherOf data:George_Henry_Hubert_Lascelles .\n\n"
+    }
+]

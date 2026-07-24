@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_cousin a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Spain .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1936 ;
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alice_of_Bourbon-Parma .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Alice_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasFather data:Elias_of_Parma ;
+    :hasMother data:Maria_Anna_of_Austria .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Elias_of_Parma a :Man,
+        :Person .
+
+data:Maria_Anna_of_Austria a :Person,
+        :Woman .
+
+data:Maria_de_las_Mercedes a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Spain a :Person,
+        :Woman .
+

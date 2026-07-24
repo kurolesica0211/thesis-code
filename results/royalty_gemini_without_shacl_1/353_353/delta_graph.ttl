@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_August_Wilhelm_of_Prussia a :Man ;
+    :hasBirthYear 1887 ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .
+
+data:Princess_Margaret_of_Prussia a :Woman ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+
+data:Prince_Alexander_Ferdinand_of_Prussia a :Man .
+
+data:Wilhelm_II a :Man .
+

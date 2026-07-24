@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeta-Karina a :Person,\n        :Woman ;\n    :isDaughterOf data:Alexander_Nixon,\n        data:Princess_Elena .\n\ndata:Prince_Nicholas a :Man,\n        :Person ;\n    :isSonOf data:Princess_Elena,\n        data:Robin_Medforth-Mills .\n\ndata:Crown_Princess_Margareta a :Person,\n        :Woman .\n\ndata:King_Michael_I a :Man,\n        :Person .\n\ndata:Prince_Radu a :Man,\n        :Person .\n\ndata:Princess_Irina a :Person,\n        :Woman .\n\ndata:Princess_Maria a :Person,\n        :Woman .\n\ndata:Princess_Sophie a :Person,\n        :Woman .\n\ndata:Queen_Anne a :Person,\n        :Woman .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Princess_Elena a :Person,\n        :Woman ;\n    :hasBirthYear 1950 ;\n    :hasMarriageYear 1983,\n        1998 ;\n    :hasRelation data:Alexander_Nixon,\n        data:Robin_Medforth-Mills ;\n    :isDaughterOf data:King_Michael_I,\n        data:Queen_Anne ;\n    :isSisterOf data:Crown_Princess_Margareta,\n        data:Prince_Radu,\n        data:Princess_Irina,\n        data:Princess_Maria,\n        data:Princess_Sophie .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeta-Karina a :Person,\n        :Woman ;\n    :isDaughterOf data:Alexander_Nixon,\n        data:Princess_Elena .\n\ndata:Prince_Nicholas a :Man,\n        :Person ;\n    :isSonOf data:Princess_Elena,\n        data:Robin_Medforth-Mills .\n\ndata:Crown_Princess_Margareta a :Person,\n        :Woman .\n\ndata:King_Michael_I a :Man,\n        :Person .\n\ndata:Prince_Radu a :Man,\n        :Person .\n\ndata:Princess_Irina a :Person,\n        :Woman .\n\ndata:Princess_Maria a :Person,\n        :Woman .\n\ndata:Princess_Sophie a :Person,\n        :Woman .\n\ndata:Queen_Anne a :Person,\n        :Woman .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Princess_Elena a :Person,\n        :Woman ;\n    :hasBirthYear 1950 ;\n    :hasMarriageYear 1983,\n        1998 ;\n    :hasRelation data:Alexander_Nixon,\n        data:Robin_Medforth-Mills ;\n    :isDaughterOf data:King_Michael_I,\n        data:Queen_Anne ;\n    :isSisterOf data:Crown_Princess_Margareta,\n        data:Prince_Radu,\n        data:Princess_Irina,\n        data:Princess_Maria,\n        data:Princess_Sophie .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\n"
+    }
+]

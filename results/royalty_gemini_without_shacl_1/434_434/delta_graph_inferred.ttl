@@ -1,0 +1,81 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Ernest_Augustus_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :hasRelation data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isBloodrelationOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :isSiblingOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover .
+
+data:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :hasChild data:Heinrich_Prinz_von_Hannover ;
+    :hasRelation data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Heinrich_Prinz_von_Hannover ;
+    :isAncestorOf data:Heinrich_Prinz_von_Hannover ;
+    :isBloodrelationOf data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :isBrotherOf data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :isFatherOf data:Heinrich_Prinz_von_Hannover ;
+    :isParentOf data:Heinrich_Prinz_von_Hannover ;
+    :isSiblingOf data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :isUncleOf data:Heinrich_Prinz_von_Hannover .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Heinrich_Prinz_von_Hannover ;
+    :hasRelation data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSister data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Heinrich_Prinz_von_Hannover ;
+    :isAncestorOf data:Heinrich_Prinz_von_Hannover ;
+    :isAuntOf data:Heinrich_Prinz_von_Hannover ;
+    :isBloodrelationOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Heinrich_Prinz_von_Hannover ;
+    :isParentOf data:Heinrich_Prinz_von_Hannover ;
+    :isSiblingOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Heinrich_Prinz_von_Hannover a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isBloodrelationOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSiblingOf data:Heinrich_Prinz_von_Hannover,
+        data:Prince_Ernest_Augustus_of_Hanover ;
+    :isSonOf data:Ernest_Augustus_Hereditary_Prince_of_Brunswick,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+

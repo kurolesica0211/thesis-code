@@ -1,0 +1,140 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasBrother data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :hasChild data:Elisabeth_of_Lippe-Weissenfeld ;
+    :hasDaughter data:Elisabeth_of_Lippe-Weissenfeld ;
+    :hasDeathYear 2024 ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :isAncestorOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isBloodrelationOf data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :isBrotherOf data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :isFatherOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isParentOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isSiblingOf data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :isUncleOf data:Elisabeth_of_Lippe-Weissenfeld .
+
+data:Irmgard_Julinka_Wagner_von_Wehrborn a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1928 ;
+    :hasChild data:Elisabeth_of_Lippe-Weissenfeld ;
+    :hasDaughter data:Elisabeth_of_Lippe-Weissenfeld ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :isAncestorOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isAuntOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isBloodrelationOf data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :isMotherOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isParentOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isSiblingOf data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :isSisterOf data:Irmgard_Julinka_Wagner_von_Wehrborn .
+
+data:Marie_Alix_of_Schaumburg-Lippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasChild data:Christoph_of_Schleswig-Holstein ;
+    :hasDeathYear 2021 ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasSon data:Christoph_of_Schleswig-Holstein ;
+    :isAncestorOf data:Christoph_of_Schleswig-Holstein ;
+    :isAuntOf data:Christoph_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isMotherOf data:Christoph_of_Schleswig-Holstein ;
+    :isParentOf data:Christoph_of_Schleswig-Holstein ;
+    :isSiblingOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isSisterOf data:Marie_Alix_of_Schaumburg-Lippe .
+
+data:Peter_Duke_of_Schleswig-Holstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasBrother data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasChild data:Christoph_of_Schleswig-Holstein ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasSon data:Christoph_of_Schleswig-Holstein ;
+    :isAncestorOf data:Christoph_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isBrotherOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isFatherOf data:Christoph_of_Schleswig-Holstein ;
+    :isParentOf data:Christoph_of_Schleswig-Holstein ;
+    :isSiblingOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isUncleOf data:Christoph_of_Schleswig-Holstein .
+
+data:Christoph_of_Schleswig-Holstein a :Man,
+        :Person ;
+    :hasAncestor data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasBirthYear 1949 ;
+    :hasBrother data:Christoph_of_Schleswig-Holstein ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasMother data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasParent data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Christoph_of_Schleswig-Holstein ;
+    :isBrotherOf data:Christoph_of_Schleswig-Holstein ;
+    :isChildOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Christoph_of_Schleswig-Holstein ;
+    :isSonOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein .
+
+data:Elisabeth_of_Lippe-Weissenfeld a :Person,
+        :Woman ;
+    :hasAncestor data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :hasBirthYear 1957 ;
+    :hasFather data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+    :hasMother data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :hasParent data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :hasRelation data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Christoph_of_Schleswig-Holstein,
+        data:Elisabeth_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isBloodrelationOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isChildOf data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :isDaughterOf data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld,
+        data:Irmgard_Julinka_Wagner_von_Wehrborn ;
+    :isSiblingOf data:Elisabeth_of_Lippe-Weissenfeld ;
+    :isSisterOf data:Elisabeth_of_Lippe-Weissenfeld .
+

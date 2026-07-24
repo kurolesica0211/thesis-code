@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person .\n\n"
+    }
+]

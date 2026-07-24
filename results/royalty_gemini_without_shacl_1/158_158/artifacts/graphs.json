@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ElizabethFeodorovna a :Person,\n        :Woman .\n\ndata:LennartBernadotte a :Man,\n        :Person ;\n    :hasFather data:WilhelmOfSweden ;\n    :hasMother data:MariaPavlovna .\n\ndata:RomanPutyatin a :Man,\n        :Person ;\n    :hasFather data:SergeiPutyatin ;\n    :hasMother data:MariaPavlovna .\n\ndata:SergeiAlexandrovich a :Man,\n        :Person ;\n    :isBrotherOf data:PaulAlexandrovich .\n\ndata:DmitriPavlovich a :Man,\n        :Person ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMother data:AlexandraGeorgievna .\n\ndata:SergeiPutyatin a :Man,\n        :Person .\n\ndata:WilhelmOfSweden a :Man,\n        :Person .\n\ndata:AlexandraGeorgievna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:MariaPavlovna a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasBrother data:DmitriPavlovich ;\n    :hasDeathYear 1958 ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMarriageYear 1908,\n        1917 ;\n    :hasMother data:AlexandraGeorgievna ;\n    :knownAs \"Maria Pavlovna the Younger\"^^xsd:string .\n\ndata:PaulAlexandrovich a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ElizabethFeodorovna a :Person,\n        :Woman .\n\ndata:LennartBernadotte a :Man,\n        :Person ;\n    :hasFather data:WilhelmOfSweden ;\n    :hasMother data:MariaPavlovna .\n\ndata:RomanPutyatin a :Man,\n        :Person ;\n    :hasFather data:SergeiPutyatin ;\n    :hasMother data:MariaPavlovna .\n\ndata:SergeiAlexandrovich a :Man,\n        :Person ;\n    :isBrotherOf data:PaulAlexandrovich .\n\ndata:DmitriPavlovich a :Man,\n        :Person ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMother data:AlexandraGeorgievna .\n\ndata:SergeiPutyatin a :Man,\n        :Person .\n\ndata:WilhelmOfSweden a :Man,\n        :Person .\n\ndata:AlexandraGeorgievna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:MariaPavlovna a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasBrother data:DmitriPavlovich ;\n    :hasDeathYear 1958 ;\n    :hasFather data:PaulAlexandrovich ;\n    :hasMarriageYear 1908,\n        1917 ;\n    :hasMother data:AlexandraGeorgievna ;\n    :knownAs \"Maria Pavlovna the Younger\"^^xsd:string .\n\ndata:PaulAlexandrovich a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

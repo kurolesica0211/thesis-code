@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:SophiaCharlotteOfOldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1964 ;
+    :hasRelation data:AugustaViktoriaOfSchleswigHolstein,
+        data:SophiaCharlotteOfOldenburg,
+        data:WilhelmEitelFriedrichOfPrussia,
+        data:WilhelmIIOfGermany ;
+    :hasSister data:SophiaCharlotteOfOldenburg ;
+    :isBloodrelationOf data:SophiaCharlotteOfOldenburg ;
+    :isSiblingOf data:SophiaCharlotteOfOldenburg ;
+    :isSisterOf data:SophiaCharlotteOfOldenburg .
+
+data:AugustaViktoriaOfSchleswigHolstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WilhelmEitelFriedrichOfPrussia ;
+    :hasRelation data:AugustaViktoriaOfSchleswigHolstein,
+        data:SophiaCharlotteOfOldenburg,
+        data:WilhelmEitelFriedrichOfPrussia,
+        data:WilhelmIIOfGermany ;
+    :hasSister data:AugustaViktoriaOfSchleswigHolstein ;
+    :hasSon data:WilhelmEitelFriedrichOfPrussia ;
+    :isAncestorOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isAuntOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isBloodrelationOf data:AugustaViktoriaOfSchleswigHolstein ;
+    :isMotherOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isParentOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isSiblingOf data:AugustaViktoriaOfSchleswigHolstein ;
+    :isSisterOf data:AugustaViktoriaOfSchleswigHolstein .
+
+data:WilhelmIIOfGermany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmIIOfGermany ;
+    :hasChild data:WilhelmEitelFriedrichOfPrussia ;
+    :hasRelation data:AugustaViktoriaOfSchleswigHolstein,
+        data:SophiaCharlotteOfOldenburg,
+        data:WilhelmEitelFriedrichOfPrussia,
+        data:WilhelmIIOfGermany ;
+    :hasSon data:WilhelmEitelFriedrichOfPrussia ;
+    :isAncestorOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isBloodrelationOf data:WilhelmIIOfGermany ;
+    :isBrotherOf data:WilhelmIIOfGermany ;
+    :isFatherOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isParentOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isSiblingOf data:WilhelmIIOfGermany ;
+    :isUncleOf data:WilhelmEitelFriedrichOfPrussia .
+
+data:WilhelmEitelFriedrichOfPrussia a :Man,
+        :Person ;
+    :hasAncestor data:AugustaViktoriaOfSchleswigHolstein,
+        data:WilhelmIIOfGermany ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:WilhelmEitelFriedrichOfPrussia ;
+    :hasDeathYear 1942 ;
+    :hasFather data:WilhelmIIOfGermany ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:AugustaViktoriaOfSchleswigHolstein ;
+    :hasParent data:AugustaViktoriaOfSchleswigHolstein,
+        data:WilhelmIIOfGermany ;
+    :hasRelation data:AugustaViktoriaOfSchleswigHolstein,
+        data:SophiaCharlotteOfOldenburg,
+        data:WilhelmEitelFriedrichOfPrussia,
+        data:WilhelmIIOfGermany ;
+    :isBloodrelationOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isBrotherOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isChildOf data:AugustaViktoriaOfSchleswigHolstein,
+        data:WilhelmIIOfGermany ;
+    :isSiblingOf data:WilhelmEitelFriedrichOfPrussia ;
+    :isSonOf data:AugustaViktoriaOfSchleswigHolstein,
+        data:WilhelmIIOfGermany .
+

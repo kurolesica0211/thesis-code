@@ -1,0 +1,239 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Joachim_of_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Joachim_of_Denmark ;
+    :hasRelation data:Joachim_of_Denmark ;
+    :isBloodrelationOf data:Joachim_of_Denmark ;
+    :isBrotherOf data:Joachim_of_Denmark ;
+    :isSiblingOf data:Joachim_of_Denmark .
+
+data:Henrik_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henrik_of_Denmark ;
+    :hasChild data:Frederik_X ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSon data:Frederik_X ;
+    :isAncestorOf data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isBloodrelationOf data:Henrik_of_Denmark ;
+    :isBrotherOf data:Henrik_of_Denmark ;
+    :isFatherOf data:Frederik_X ;
+    :isParentOf data:Frederik_X ;
+    :isSiblingOf data:Henrik_of_Denmark ;
+    :isUncleOf data:Frederik_X .
+
+data:Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederik_X ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSister data:Margrethe_II ;
+    :hasSon data:Frederik_X ;
+    :isAncestorOf data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isAuntOf data:Frederik_X ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isMotherOf data:Frederik_X ;
+    :isParentOf data:Frederik_X ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Mary_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasDaughter data:Isabella_of_Denmark ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSister data:Mary_of_Denmark ;
+    :hasSon data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isAncestorOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isAuntOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isBloodrelationOf data:Mary_of_Denmark ;
+    :isMotherOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isParentOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isSiblingOf data:Mary_of_Denmark ;
+    :isSisterOf data:Mary_of_Denmark .
+
+data:Christian_of_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark ;
+    :hasBrother data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasParent data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSister data:Isabella_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isBrotherOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isChildOf data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :isSiblingOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isSonOf data:Frederik_X,
+        data:Mary_of_Denmark .
+
+data:Isabella_of_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark ;
+    :hasBirthYear "2007"^^xsd:positiveInteger ;
+    :hasBrother data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasParent data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSister data:Isabella_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isChildOf data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :isDaughterOf data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :isSiblingOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isSisterOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark .
+
+data:Vincent_of_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark ;
+    :hasBrother data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasParent data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSister data:Isabella_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isBrotherOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isChildOf data:Frederik_X,
+        data:Mary_of_Denmark ;
+    :isSiblingOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isSonOf data:Frederik_X,
+        data:Mary_of_Denmark .
+
+data:Frederik_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasBrother data:Frederik_X ;
+    :hasChild data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasDaughter data:Isabella_of_Denmark ;
+    :hasFather data:Henrik_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasRelation data:Christian_of_Denmark,
+        data:Frederik_X,
+        data:Henrik_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Margrethe_II,
+        data:Mary_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :hasSon data:Christian_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isAncestorOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isBloodrelationOf data:Frederik_X ;
+    :isBrotherOf data:Frederik_X ;
+    :isChildOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isFatherOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isParentOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark ;
+    :isSiblingOf data:Frederik_X ;
+    :isSonOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isUncleOf data:Christian_of_Denmark,
+        data:Isabella_of_Denmark,
+        data:Vincent_of_Denmark .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_of_the_Netherlands a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Marijke\"^^xsd:string ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;\n    :hasMother data:Juliana_of_the_Netherlands ;\n    :isSisterOf data:Beatrix_of_the_Netherlands,\n        data:Irene_of_the_Netherlands,\n        data:Margriet_of_the_Netherlands .\n\ndata:Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Irene_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Juliana_of_the_Netherlands a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Wilhelmina_of_the_Netherlands .\n\ndata:Margriet_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Wilhelmina_of_the_Netherlands a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_of_the_Netherlands a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Marijke\"^^xsd:string ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;\n    :hasMother data:Juliana_of_the_Netherlands ;\n    :isSisterOf data:Beatrix_of_the_Netherlands,\n        data:Irene_of_the_Netherlands,\n        data:Margriet_of_the_Netherlands .\n\ndata:Beatrix_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Irene_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Juliana_of_the_Netherlands a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Wilhelmina_of_the_Netherlands .\n\ndata:Margriet_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Wilhelmina_of_the_Netherlands a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

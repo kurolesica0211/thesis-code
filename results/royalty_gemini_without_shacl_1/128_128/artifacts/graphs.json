@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna-Elisabeth_von_Pfuel a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2005 .\n\ndata:Claus_von_Amsberg a :Man ;\n    :hasBirthYear 1926 ;\n    :hasFather data:Claus_Felix_von_Amsberg ;\n    :hasMother data:Gosta_von_dem_Bussche-Haddenhausen .\n\ndata:Claus_Felix_von_Amsberg a :Man ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Wilhelm_von_Amsberg ;\n    :hasMother data:Elise_von_Vieregge .\n\ndata:Elise_von_Vieregge a :Woman .\n\ndata:Gosta_von_dem_Bussche-Haddenhausen a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;\n    :hasDeathYear 1996 ;\n    :hasFather data:George_von_dem_Bussche-Haddenhausen ;\n    :hasMarriageYear 1924 ;\n    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .\n\ndata:Julius_von_dem_Bussche-Haddenhausen a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1977 ;\n    :hasFather data:George_von_dem_Bussche-Haddenhausen ;\n    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .\n\ndata:Wilhelm_von_Amsberg a :Man .\n\ndata:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1973 .\n\ndata:George_von_dem_Bussche-Haddenhausen a :Man ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1923 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna-Elisabeth_von_Pfuel a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2005 .\n\ndata:Claus_von_Amsberg a :Man ;\n    :hasBirthYear 1926 ;\n    :hasFather data:Claus_Felix_von_Amsberg ;\n    :hasMother data:Gosta_von_dem_Bussche-Haddenhausen .\n\ndata:Claus_Felix_von_Amsberg a :Man ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Wilhelm_von_Amsberg ;\n    :hasMother data:Elise_von_Vieregge .\n\ndata:Elise_von_Vieregge a :Woman .\n\ndata:Gosta_von_dem_Bussche-Haddenhausen a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;\n    :hasDeathYear 1996 ;\n    :hasFather data:George_von_dem_Bussche-Haddenhausen ;\n    :hasMarriageYear 1924 ;\n    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .\n\ndata:Julius_von_dem_Bussche-Haddenhausen a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1977 ;\n    :hasFather data:George_von_dem_Bussche-Haddenhausen ;\n    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .\n\ndata:Wilhelm_von_Amsberg a :Man .\n\ndata:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1973 .\n\ndata:George_von_dem_Bussche-Haddenhausen a :Man ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1923 .\n\n"
+    }
+]

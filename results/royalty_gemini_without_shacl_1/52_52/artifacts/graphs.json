@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene a :Person,\n        :Woman ;\n    :isSisterOf data:ConstantineII .\n\ndata:Sofia a :Person,\n        :Woman ;\n    :isSisterOf data:ConstantineII .\n\ndata:Anne-Marie a :Person,\n        :Woman ;\n    :hasFather data:FrederikIX .\n\ndata:ErnestAugustus a :Man,\n        :Person .\n\ndata:Frederica a :Person,\n        :Woman ;\n    :hasFather data:ErnestAugustus ;\n    :hasMother data:VictoriaLouise .\n\ndata:FrederikIX a :Man,\n        :Person .\n\ndata:GeorgeII a :Man,\n        :Person .\n\ndata:Paul a :Man,\n        :Person ;\n    :isBrotherOf data:GeorgeII .\n\ndata:VictoriaLouise a :Person,\n        :Woman .\n\ndata:ConstantineII a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Frederica ;\n    :hasRelation data:Anne-Marie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene a :Person,\n        :Woman ;\n    :isSisterOf data:ConstantineII .\n\ndata:Sofia a :Person,\n        :Woman ;\n    :isSisterOf data:ConstantineII .\n\ndata:Anne-Marie a :Person,\n        :Woman ;\n    :hasFather data:FrederikIX .\n\ndata:ErnestAugustus a :Man,\n        :Person .\n\ndata:Frederica a :Person,\n        :Woman ;\n    :hasFather data:ErnestAugustus ;\n    :hasMother data:VictoriaLouise .\n\ndata:FrederikIX a :Man,\n        :Person .\n\ndata:GeorgeII a :Man,\n        :Person .\n\ndata:Paul a :Man,\n        :Person ;\n    :isBrotherOf data:GeorgeII .\n\ndata:VictoriaLouise a :Person,\n        :Woman .\n\ndata:ConstantineII a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Frederica ;\n    :hasRelation data:Anne-Marie .\n\n"
+    }
+]

@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Ruggiero_Maria a :Man .
+
+data:Princess_Urraca_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasBirthYear "1913"^^xsd:positiveInteger ;
+    :hasDeathYear "1999"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSisterOf data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina .
+
+data:Archduchess_Maria_Theresa_of_Austria-Este a :Ancestor,
+        :Woman .
+
+data:King_Ludwig_III_of_Bavaria a :Ancestor,
+        :Man .
+
+data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man ;
+    :hasBirthYear "1869"^^xsd:positiveInteger ;
+    :hasDeathYear "1960"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Barbara_Maria a :Woman .
+
+data:Princess_Lucia a :Woman .
+
+data:Princess_Maria_Antonietta a :Woman .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman .
+
+data:Princess_Maria_Cristina a :Woman .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
+        :Woman ;
+    :hasBirthYear "1872"^^xsd:positiveInteger ;
+    :hasDeathYear "1954"^^xsd:positiveInteger ;
+    :hasFather data:King_Ludwig_III_of_Bavaria ;
+    :hasMother data:Archduchess_Maria_Theresa_of_Austria-Este .
+

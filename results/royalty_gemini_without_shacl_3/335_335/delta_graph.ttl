@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_X_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Knud_of_Denmark .
+
+data:Frederick_Walter_Pedersen a :Man,
+        :Person ;
+    :isFatherOf data:Sussie_Hjorhoy-Pedersen .
+
+data:Georg_Terney a :Man,
+        :Person ;
+    :isFatherOf data:Inge_Terney .
+
+data:Jenny_Kamilla_Hansen a :Person,
+        :Woman ;
+    :isMotherOf data:Inge_Terney .
+
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person ;
+    :isSonOf data:Christian_of_Rosenborg .
+
+data:Ruth_Hjorhoy a :Person,
+        :Woman ;
+    :isMotherOf data:Sussie_Hjorhoy-Pedersen .
+
+data:Elisabeth_of_Denmark a :Person,
+        :Woman .
+
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasMarriageYear 1968,
+        1998 ;
+    :hasRelation data:Inge_Terney,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSex data:Male .
+
+data:Knud_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg .
+
+data:Male a :Male,
+        :Sex .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person .
+
+data:Inge_Terney a :Person,
+        :Woman .
+
+data:Sussie_Hjorhoy-Pedersen a :Person,
+        :Woman .
+

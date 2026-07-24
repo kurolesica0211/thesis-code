@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_II_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Marie_Alix_of_Schaumburg-Lippe a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasBrother data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;\n    :hasDeathYear 2021 ;\n    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;\n    :hasRelation data:Peter_Duke_of_Schleswig-Holstein .\n\ndata:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe a :Person,\n        :Woman .\n\ndata:Peter_Duke_of_Schleswig-Holstein a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;\n    :hasMother data:Princess_Marie_Melita_of_Hohenlohe-Langenburg .\n\ndata:Prince_Georg_Moritz_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Prince_Stefan_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Princess_Marie_Melita_of_Hohenlohe-Langenburg a :Person,\n        :Woman .\n\ndata:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_II_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Marie_Alix_of_Schaumburg-Lippe a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasBrother data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;\n    :hasDeathYear 2021 ;\n    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;\n    :hasRelation data:Peter_Duke_of_Schleswig-Holstein .\n\ndata:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe a :Person,\n        :Woman .\n\ndata:Peter_Duke_of_Schleswig-Holstein a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;\n    :hasMother data:Princess_Marie_Melita_of_Hohenlohe-Langenburg .\n\ndata:Prince_Georg_Moritz_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Prince_Stefan_of_Schaumburg-Lippe a :Man,\n        :Person .\n\ndata:Princess_Marie_Melita_of_Hohenlohe-Langenburg a :Person,\n        :Woman .\n\ndata:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Carlo_Duke_of_Castro ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Chiara a :Person,
+        :Woman ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSister data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isBloodrelationOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isSiblingOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isSisterOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara .
+
+data:Camilla_Crociani a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSister data:Camilla_Crociani ;
+    :isAncestorOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Camilla_Crociani ;
+    :isMotherOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Camilla_Crociani ;
+    :isSisterOf data:Camilla_Crociani .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasChild data:Prince_Carlo_Duke_of_Castro ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSon data:Prince_Carlo_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isFatherOf data:Prince_Carlo_Duke_of_Castro ;
+    :isParentOf data:Prince_Carlo_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isUncleOf data:Prince_Carlo_Duke_of_Castro .
+
+data:Prince_Carlo_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasBrother data:Prince_Carlo_Duke_of_Castro ;
+    :hasChild data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasParent data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isFatherOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isUncleOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasBirthYear "2003-06-23"^^xsd:string ;
+    :hasFather data:Prince_Carlo_Duke_of_Castro ;
+    :hasMother data:Camilla_Crociani ;
+    :hasParent data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro ;
+    :hasRelation data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :hasSister data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isBloodrelationOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isChildOf data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro ;
+    :isDaughterOf data:Camilla_Crociani,
+        data:Prince_Carlo_Duke_of_Castro ;
+    :isSiblingOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara ;
+    :isSisterOf data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Chiara .
+

@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Feodora_of_Saxe-Meiningen a :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1910 ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Woman ;
+    :hasFather data:Ernst_of_Lippe-Biesterfeld .
+
+data:Caroline_Reuss a :Woman ;
+    :hasDeathYear 1905 .
+
+data:Ellen_Franz a :Woman .
+
+data:Ernst_of_Lippe-Biesterfeld a :Man .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man ;
+    :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+data:Georg_II_of_Saxe-Meiningen a :Man ;
+    :hasRelation data:Ellen_Franz .
+
+data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man ;
+    :hasRelation data:Caroline_Reuss .
+

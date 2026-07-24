@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_II%2C_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman ;
+    :hasBirthYear 1850 ;
+    :hasDeathYear 1922 .
+
+data:Heinrich_XXVII%2C_Prince_of_Reuss_zu_Schleiz a :Man,
+        :Person ;
+    :isFatherOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1956 ;
+    :isFatherOf data:Heinrich_I_Prinz_Reuss .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1968 ;
+    :isMotherOf data:Heinrich_I_Prinz_Reuss .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasMother data:Princess_Feodora_of_Leiningen .
+
+data:Woizlawa_Feodora_Princess_Reuss a :Person,
+        :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 ;
+    :hasMarriageYear data:Heinrich_I_Prinz_Reuss,
+        1939 ;
+    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :hasMother data:Princess_Feodora_of_Leiningen ;
+    :isMotherOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Princess_Feodora_of_Leiningen a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Queen_Victoria .
+
+data:Heinrich_I_Prinz_Reuss a :Man,
+        :Person ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Person,
+        :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII%2C_Prince_of_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Woizlawa_Feodora_Princess_Reuss .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,\n        :Person ;\n    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:John_Herbert_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1930 ;\n    :hasMarriageYear 1914 ;\n    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,\n        :Person ;\n    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:John_Herbert_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1930 ;\n    :hasMarriageYear 1914 ;\n    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Lascelles a :Man,
+        :Person ;
+    :isSonOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    :isSonOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:George_V a :Man,
+        :Person .
+
+data:George_VI a :Man,
+        :Person .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:Mary_Princess_Royal a :Person,
+        :Woman ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1965 ;
+    :hasMarriageYear 1922 ;
+    :isBloodrelationOf data:Henry_Lascelles ;
+    :isDaughterOf data:George_V,
+        data:Queen_Mary ;
+    :isSisterOf data:Edward_VIII,
+        data:George_VI .
+
+data:Henry_Lascelles a :Man,
+        :Person .
+

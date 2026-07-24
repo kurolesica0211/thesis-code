@@ -1,0 +1,410 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edwina_Ashley a :Woman ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Edwina_Ashley ;
+    :isBloodrelationOf data:Edwina_Ashley ;
+    :isSiblingOf data:Edwina_Ashley ;
+    :isSisterOf data:Edwina_Ashley .
+
+data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis_IV_Grand_Duke_of_Hesse ;
+    :hasChild data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Lady_Pamela_Hicks,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_IV_Grand_Duke_of_Hesse ;
+    :isBrotherOf data:Louis_IV_Grand_Duke_of_Hesse ;
+    :isFatherOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_IV_Grand_Duke_of_Hesse ;
+    :isUncleOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:Julia_Princess_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Julia_Princess_of_Battenberg ;
+    :hasSon data:Prince_Louis_of_Battenberg ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Louis_of_Battenberg ;
+    :isAuntOf data:Prince_Louis_of_Battenberg ;
+    :isBloodrelationOf data:Julia_Princess_of_Battenberg ;
+    :isMotherOf data:Prince_Louis_of_Battenberg ;
+    :isParentOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Julia_Princess_of_Battenberg ;
+    :isSisterOf data:Julia_Princess_of_Battenberg .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasChild data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:George_Mountbatten,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Louis_of_Battenberg ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Louis_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Prince_Louis_of_Battenberg ;
+    :isParentOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Louis_of_Battenberg .
+
+data:Princess_Alice_of_the_United_Kingdom a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_the_United_Kingdom ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Alice_of_the_United_Kingdom ;
+    :isMotherOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Princess_Alice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Alice_of_the_United_Kingdom .
+
+data:George_Mountbatten a :Man ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isUncleOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+
+data:Princess_Alice_of_Battenberg a :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isAuntOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg .
+
+data:Princess_Louise_of_Battenberg a :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isAuntOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Julia_Princess_of_Battenberg,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Louis_Mountbatten ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg ;
+    :hasParent data:Julia_Princess_of_Battenberg,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg ;
+    :hasSon data:Louis_Mountbatten ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isChildOf data:Julia_Princess_of_Battenberg,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Louis_Mountbatten ;
+    :isParentOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isSonOf data:Julia_Princess_of_Battenberg,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Louis_Mountbatten .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Princess_Alice_of_the_United_Kingdom ;
+    :hasChild data:Louis_Mountbatten ;
+    :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Alice_of_the_United_Kingdom ;
+    :hasParent data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Princess_Alice_of_the_United_Kingdom ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:Louis_Mountbatten ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :isAuntOf data:Louis_Mountbatten ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Princess_Alice_of_the_United_Kingdom ;
+    :isDaughterOf data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Princess_Alice_of_the_United_Kingdom ;
+    :isMotherOf data:Louis_Mountbatten ;
+    :isParentOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:Lady_Pamela_Hicks a :Woman ;
+    :hasAncestor data:Julia_Princess_of_Battenberg,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasParent data:Louis_Mountbatten ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isChildOf data:Louis_Mountbatten ;
+    :isDaughterOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+
+data:Patricia_Knatchbull a :Woman ;
+    :hasAncestor data:Julia_Princess_of_Battenberg,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasParent data:Louis_Mountbatten ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isChildOf data:Louis_Mountbatten ;
+    :isDaughterOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Julia_Princess_of_Battenberg,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten ;
+    :hasChild data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :hasDaughter data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :hasDeathYear 1979 ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Edwina_Ashley,
+        data:George_Mountbatten,
+        data:Julia_Princess_of_Battenberg,
+        data:Lady_Pamela_Hicks,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Alice_of_the_United_Kingdom,
+        data:Princess_Louise_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isAncestorOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isParentOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull .
+

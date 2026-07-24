@@ -1,0 +1,119 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/409_409",
+  "text_file": "Q6779476.txt",
+  "text_key": "Q6779476",
+  "article": "https://en.wikipedia.org/wiki/Mary_Elphinstone,_Lady_Elphinstone",
+  "article_key": "Mary Elphinstone, Lady Elphinstone",
+  "main_entity": {
+    "uri": "http://example.com/data#Mary_Elphinstone-_Lady_Elphinstone",
+    "qid": "Q6779476",
+    "label": "Mary Elphinstone, Lady Elphinstone"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Mary_Elphinstone-_Lady_Elphinstone",
+      "qid": "Q6779476",
+      "label": "Mary Elphinstone, Lady Elphinstone",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Claude_Bowes-Lyon",
+      "extracted_local_name": "Claude_Bowes-Lyon",
+      "embedding_text": "Claude Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7567567567567568,
+      "ground_truth_uri": "http://example.com/data#Mary_Elphinstone-_Lady_Elphinstone",
+      "ground_truth_qid": "Q6779476",
+      "ground_truth_label": "Mary Elphinstone, Lady Elphinstone",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Mary Bowes-Lyon",
+      "best_candidate_label": "Mary Elphinstone, Lady Elphinstone",
+      "best_candidate_qid": "Q6779476",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7567567567567568
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Bowes-Lyon",
+      "extracted_local_name": "Elizabeth_Bowes-Lyon",
+      "embedding_text": "Elizabeth Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Frances_Elphinstone",
+      "extracted_local_name": "Mary_Frances_Elphinstone",
+      "embedding_text": "Mary Frances Elphinstone",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_II",
+      "extracted_local_name": "Queen_Elizabeth_II",
+      "embedding_text": "Queen Elizabeth II",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sidney_Elphinstone",
+      "extracted_local_name": "Sidney_Elphinstone",
+      "embedding_text": "Sidney Elphinstone",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

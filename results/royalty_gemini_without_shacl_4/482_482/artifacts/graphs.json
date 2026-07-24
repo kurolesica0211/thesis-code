@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia a :Person,\n        :Woman ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Ariane a :Person,\n        :Woman ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Catharina-Amalia a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:Jorge_Zorreguieta a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_del_Carmen_Cerruti a :Person,\n        :Woman .\n\ndata:M%C3%A1xima a :Person,\n        :Woman ;\n    :hasFather data:Jorge_Zorreguieta ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti .\n\ndata:Willem-Alexander a :Man,\n        :Person ;\n    :hasMother data:Beatrix .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia a :Person,\n        :Woman ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Ariane a :Person,\n        :Woman ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Catharina-Amalia a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:M%C3%A1xima .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:Jorge_Zorreguieta a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_del_Carmen_Cerruti a :Person,\n        :Woman .\n\ndata:M%C3%A1xima a :Person,\n        :Woman ;\n    :hasFather data:Jorge_Zorreguieta ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti .\n\ndata:Willem-Alexander a :Man,\n        :Person ;\n    :hasMother data:Beatrix .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasAncestor data:KingGeorgeV,\n        data:QueenMary ;\n    :hasBirthYear 1979 ;\n    :hasDaughter data:IsabellaAlexandraMayWindsor ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMarriageYear 2009 ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasRelation data:SophieWinkleman ;\n    :hasSister data:GabriellaWindsor .\n\ndata:GabriellaWindsor a :Person,\n        :Woman .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SophieWinkleman a :Person,\n        :Woman ;\n    :hasDaughter data:IsabellaAlexandraMayWindsor .\n\ndata:IsabellaAlexandraMayWindsor a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasAncestor data:KingGeorgeV,\n        data:QueenMary ;\n    :hasBirthYear 1979 ;\n    :hasDaughter data:IsabellaAlexandraMayWindsor ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMarriageYear 2009 ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasRelation data:SophieWinkleman ;\n    :hasSister data:GabriellaWindsor .\n\ndata:GabriellaWindsor a :Person,\n        :Woman .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SophieWinkleman a :Person,\n        :Woman ;\n    :hasDaughter data:IsabellaAlexandraMayWindsor .\n\ndata:IsabellaAlexandraMayWindsor a :Person,\n        :Woman .\n\n"
+    }
+]

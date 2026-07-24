@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman ;
+    :alsoKnownAs "Sissy"^^xsd:string ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasChild data:Prince_Christian_Oscar,
+        data:Prince_Ernest_Augustus,
+        data:Prince_George_William,
+        data:Prince_Welf_Henry,
+        data:Princess_Frederica ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Ernest_Augustus_of_Hanover .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
+
+data:Crown_Prince_Wilhelm a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person .
+
+data:Prince_Christian_Oscar a :Man,
+        :Person .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person .
+
+data:Prince_Ernest_Augustus a :Man,
+        :Person .
+
+data:Prince_George_William a :Man,
+        :Person .
+
+data:Prince_Joachim a :Man,
+        :Person .
+
+data:Prince_Welf_Henry a :Man,
+        :Person .
+
+data:Princess_Frederica a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+

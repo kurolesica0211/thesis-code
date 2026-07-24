@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adalbert a :Man ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:August_Wilhelm a :Man ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Eitel_Friedrich a :Man ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Joachim a :Man ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Oskar a :Man ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Prince_Wilhelm_of_Prussia_son a :Man ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_Crown_Prince .
+
+data:Viktoria_Luise a :Woman ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Anastasia_Mikhailovna a :Woman .
+
+data:Frederick_Francis_III a :Man .
+
+data:Wilhelm_Crown_Prince a :Man ;
+    :hasBirthYear "1882"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1951"^^xsd:nonNegativeInteger ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear "1905"^^xsd:nonNegativeInteger ;
+    :hasMother data:Augusta_Victoria ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear "1886"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1954"^^xsd:nonNegativeInteger ;
+    :hasParent data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III .
+
+data:Augusta_Victoria a :Woman .
+
+data:Wilhelm_II a :Man .
+

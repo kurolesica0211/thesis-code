@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PaulRomanovskyIlyinsky a :Man ;
+    :hasFather data:DmitriPavlovich ;
+    :hasMother data:AudreyEmery .
+
+data:AlexanderII a :Man .
+
+data:DmitriPavlovich a :Man ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMarriageYear 1926 ;
+    :hasMother data:AlexandraGeorgievna ;
+    :hasRelation data:AudreyEmery ;
+    :isSiblingOf data:MariaPavlovna .
+
+data:GeorgeIGreece a :Man .
+
+data:MariaAlexandrovna a :Woman .
+
+data:MariaPavlovna a :Woman ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMother data:AlexandraGeorgievna .
+
+data:OlgaKonstantinovna a :Woman .
+
+data:AlexandraGeorgievna a :Woman ;
+    :hasFather data:GeorgeIGreece ;
+    :hasMother data:OlgaKonstantinovna .
+
+data:AudreyEmery a :Woman .
+
+data:PaulAlexandrovich a :Man ;
+    :hasFather data:AlexanderII ;
+    :hasMother data:MariaAlexandrovna .
+

@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Maria_Teresa_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasRelation data:Prince_Ferdinand_of_Bavaria .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person .
+
+data:Infanta_Maria_de_la_Paz_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Ferdinand_of_Bavaria a :Man,
+        :Person ;
+    :hasFather data:Prince_Ludwig_Ferdinand_of_Bavaria ;
+    :hasMother data:Infanta_Maria_de_la_Paz_of_Spain .
+
+data:Prince_Ludwig_Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person .
+

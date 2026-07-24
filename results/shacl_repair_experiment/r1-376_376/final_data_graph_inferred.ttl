@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+
+data:Alex_Ulster a :Person ;
+    :hasRelation data:Alex_Ulster ;
+    :isBloodrelationOf data:Alex_Ulster ;
+    :isSiblingOf data:Alex_Ulster .
+
+data:Claire_Booth a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Patrick_Gregers_Richard_Windsor,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Claire_Booth,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasSister data:Claire_Booth ;
+    :isBloodrelationOf data:Claire_Booth ;
+    :isSiblingOf data:Claire_Booth ;
+    :isSisterOf data:Claire_Booth .
+
+data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :hasRelation data:Alexander_Patrick_Gregers_Richard_Windsor,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Claire_Booth,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasSister data:Birgitte_Duchess_of_Gloucester ;
+    :hasSon data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isAncestorOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isAuntOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isBloodrelationOf data:Birgitte_Duchess_of_Gloucester ;
+    :isMotherOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isParentOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isSiblingOf data:Birgitte_Duchess_of_Gloucester ;
+    :isSisterOf data:Birgitte_Duchess_of_Gloucester .
+
+data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard_Duke_of_Gloucester ;
+    :hasChild data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :hasRelation data:Alexander_Patrick_Gregers_Richard_Windsor,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Claire_Booth,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasSon data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isAncestorOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isBloodrelationOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isFatherOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isParentOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isSiblingOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isUncleOf data:Alexander_Patrick_Gregers_Richard_Windsor .
+
+data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
+        :Person ;
+    :alsoKnownAs data:Alex_Ulster ;
+    :hasAncestor data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasRelation data:Alexander_Patrick_Gregers_Richard_Windsor,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Claire_Booth,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isBloodrelationOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isBrotherOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isChildOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isSiblingOf data:Alexander_Patrick_Gregers_Richard_Windsor ;
+    :isSonOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester .
+

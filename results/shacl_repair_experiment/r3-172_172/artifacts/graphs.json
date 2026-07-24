@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:DavidArmstrong-Jones ;\n    :hasMother data:SerenaStanhope ;\n    :hasRelation data:LadySarahChatto ;\n    :isBrotherOf data:ViscountLinley ;\n    :knownAs \"Margarita Elizabeth Rose Alleyne Armstrong-Jones\"^^xsd:string .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrong-Jones ;\n    :hasMother data:PrincessMargaret .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:SerenaStanhope a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:CharlesStanhope .\n\ndata:ViscountLinley a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:DavidArmstrong-Jones ;\n    :hasMother data:SerenaStanhope ;\n    :hasRelation data:LadySarahChatto ;\n    :knownAs \"Margarita Elizabeth Rose Alleyne Armstrong-Jones\"^^xsd:string .\n\ndata:ViscountLinley a :Man,\n        :Person .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrong-Jones ;\n    :hasMother data:PrincessMargaret .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:SerenaStanhope a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:CharlesStanhope .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:DavidArmstrong-Jones ;\n    :hasMother data:SerenaStanhope ;\n    :hasRelation data:LadySarahChatto ;\n    :isSiblingOf data:ViscountLinley ;\n    :knownAs \"Margarita Elizabeth Rose Alleyne Armstrong-Jones\"^^xsd:string .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrong-Jones ;\n    :hasMother data:PrincessMargaret .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:SerenaStanhope a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:CharlesStanhope .\n\ndata:ViscountLinley a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "67587a2f-93bb-4962-bcb4-b6aa9207f077",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:DavidArmstrong-Jones ;\n    :hasMother data:SerenaStanhope ;\n    :hasRelation data:LadySarahChatto ;\n    :isSiblingOf data:ViscountLinley ;\n    :knownAs \"Margarita Elizabeth Rose Alleyne Armstrong-Jones\"^^xsd:string .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrong-Jones ;\n    :hasMother data:PrincessMargaret .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:SerenaStanhope a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:CharlesStanhope .\n\ndata:ViscountLinley a :Man,\n        :Person .\n\n"
+    }
+]

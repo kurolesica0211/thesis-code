@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AthenaElizabethRose a :Person,\n        :Woman ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:PrincessBeatrice .\n\ndata:ChristopherWoolf a :Man,\n        :Person ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:DaraHuang .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PaoloMapelliMozzi a :Man,\n        :Person .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:SiennaElizabethMapelliMozzi a :Person,\n        :Woman ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:PrincessBeatrice .\n\ndata:AlexMapelliMozzi a :Man,\n        :Person .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:DaraHuang a :Person,\n        :Woman .\n\ndata:PrincessEugenie a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:EdoardoMapelliMozzi ;\n    :hasSister data:PrincessEugenie .\n\ndata:EdoardoMapelliMozzi a :Man,\n        :Person ;\n    :hasFather data:AlexMapelliMozzi .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AthenaElizabethRose a :Person,\n        :Woman ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:PrincessBeatrice .\n\ndata:ChristopherWoolf a :Man,\n        :Person ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:DaraHuang .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PaoloMapelliMozzi a :Man,\n        :Person .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:SiennaElizabethMapelliMozzi a :Person,\n        :Woman ;\n    :hasFather data:EdoardoMapelliMozzi ;\n    :hasMother data:PrincessBeatrice .\n\ndata:AlexMapelliMozzi a :Man,\n        :Person .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:DaraHuang a :Person,\n        :Woman .\n\ndata:PrincessEugenie a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:EdoardoMapelliMozzi ;\n    :hasSister data:PrincessEugenie .\n\ndata:EdoardoMapelliMozzi a :Man,\n        :Person ;\n    :hasFather data:AlexMapelliMozzi .\n\n"
+    }
+]

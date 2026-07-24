@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Roger_de_Vilmorin a :Man,
+        :Person ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:Olivier ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :hasMother data:Melanie_de_Gaufridy_de_Dortan .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Melanie_de_Gaufridy_de_Dortan a :Person,
+        :Woman .
+
+data:Olivier a :Man,
+        :Person .
+
+data:Philippe_de_Vilmorin a :Man,
+        :Person .
+

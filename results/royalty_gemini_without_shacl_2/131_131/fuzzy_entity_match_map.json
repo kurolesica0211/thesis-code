@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/131_131",
+  "text_file": "Q214369.txt",
+  "text_key": "Q214369",
+  "article": "https://en.wikipedia.org/wiki/Leonor,_Princess_of_Asturias",
+  "article_key": "Leonor, Princess of Asturias",
+  "main_entity": {
+    "uri": "http://example.com/data#Leonor-_Princess_of_Asturias",
+    "qid": "Q214369",
+    "label": "Leonor, Princess of Asturias"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Leonor-_Princess_of_Asturias",
+      "qid": "Q214369",
+      "label": "Leonor, Princess of Asturias",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "qid": "Q191045",
+      "label": "Felipe VI of Spain",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "qid": "Q19943",
+      "label": "Juan Carlos I of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Sofía_of_Spain",
+      "qid": "Q156548",
+      "label": "Queen Sofía of Spain",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Felipe_VI",
+      "extracted_local_name": "Felipe_VI",
+      "embedding_text": "Felipe VI",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "ground_truth_qid": "Q191045",
+      "ground_truth_label": "Felipe VI of Spain",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Felipe VI",
+      "best_candidate_label": "Felipe VI of Spain",
+      "best_candidate_qid": "Q191045",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
+      "extracted_local_name": "Juan_Carlos_I",
+      "embedding_text": "Juan Carlos I",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "ground_truth_qid": "Q19943",
+      "ground_truth_label": "Juan Carlos I of Spain",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Leonor",
+      "extracted_local_name": "Leonor",
+      "embedding_text": "Leonor",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Leonor",
+      "best_candidate_label": "Leonor, Princess of Asturias",
+      "best_candidate_qid": "Q214369",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/Letizia",
+      "extracted_local_name": "Letizia",
+      "embedding_text": "Letizia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Leonor- Princess of Asturias",
+      "best_candidate_label": "Leonor, Princess of Asturias",
+      "best_candidate_qid": "Q214369",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sofia",
+      "extracted_local_name": "Sofia",
+      "embedding_text": "Sofia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Sofía",
+      "best_candidate_label": "Queen Sofía of Spain",
+      "best_candidate_qid": "Q156548",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sofia_Infanta",
+      "extracted_local_name": "Sofia_Infanta",
+      "embedding_text": "Sofia Infanta",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Sofia of Spain",
+      "best_candidate_label": "Queen Sofía of Spain",
+      "best_candidate_qid": "Q156548",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.48484848484848486
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

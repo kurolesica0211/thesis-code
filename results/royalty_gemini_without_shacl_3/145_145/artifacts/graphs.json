@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_X_of_Denmark a :Man,\n        :Person .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs \"His Highness Prince Henrik of Denmark, Count of Monpezat\"^^xsd:string ;\n    :hasAncestor data:Henrik_of_Denmark,\n        data:Margrethe_II_of_Denmark ;\n    :hasBirthYear 2009 ;\n    :hasFather data:Joachim_of_Denmark ;\n    :hasMother data:Marie_of_Denmark ;\n    :knownAs \"His Excellency Count Henrik of Monpezat\"^^xsd:string .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II_of_Denmark a :Person,\n        :Woman .\n\ndata:Marie_of_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_X_of_Denmark a :Man,\n        :Person .\n\ndata:Henrik_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs \"His Highness Prince Henrik of Denmark, Count of Monpezat\"^^xsd:string ;\n    :hasAncestor data:Henrik_of_Denmark,\n        data:Margrethe_II_of_Denmark ;\n    :hasBirthYear 2009 ;\n    :hasFather data:Joachim_of_Denmark ;\n    :hasMother data:Marie_of_Denmark ;\n    :knownAs \"His Excellency Count Henrik of Monpezat\"^^xsd:string .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Joachim_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II_of_Denmark a :Person,\n        :Woman .\n\ndata:Marie_of_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

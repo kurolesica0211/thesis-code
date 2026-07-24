@@ -1,0 +1,248 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:Beatrice,
+        data:Eugenie ;
+    :isAuntOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:Beatrice,
+        data:Eugenie ;
+    :isSiblingOf data:Beatrice,
+        data:Eugenie ;
+    :isSisterOf data:Beatrice,
+        data:Eugenie .
+
+data:DaraHuang a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ChristopherWoolf ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:DaraHuang ;
+    :hasSon data:ChristopherWoolf ;
+    :isAncestorOf data:ChristopherWoolf ;
+    :isAuntOf data:ChristopherWoolf ;
+    :isBloodrelationOf data:DaraHuang ;
+    :isMotherOf data:ChristopherWoolf ;
+    :isParentOf data:ChristopherWoolf ;
+    :isSiblingOf data:DaraHuang ;
+    :isSisterOf data:DaraHuang .
+
+data:AlexMapelliMozzi a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlexMapelliMozzi ;
+    :hasChild data:EdoardoMapelliMozzi ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSon data:EdoardoMapelliMozzi ;
+    :isAncestorOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:EdoardoMapelliMozzi,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:AlexMapelliMozzi ;
+    :isBrotherOf data:AlexMapelliMozzi ;
+    :isFatherOf data:EdoardoMapelliMozzi ;
+    :isParentOf data:EdoardoMapelliMozzi ;
+    :isSiblingOf data:AlexMapelliMozzi ;
+    :isUncleOf data:EdoardoMapelliMozzi .
+
+data:Beatrice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasChild data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasDaughter data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasMarriageYear data:EdoardoMapelliMozzi,
+        2020 ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:Beatrice,
+        data:Eugenie ;
+    :isAncestorOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isAuntOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:Beatrice,
+        data:Eugenie ;
+    :isMotherOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isParentOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSiblingOf data:Beatrice,
+        data:Eugenie ;
+    :isSisterOf data:Beatrice,
+        data:Eugenie .
+
+data:ChristopherWoolf a :Man,
+        :Person ;
+    :hasAncestor data:AlexMapelliMozzi,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi ;
+    :hasBrother data:ChristopherWoolf ;
+    :hasFather data:EdoardoMapelliMozzi ;
+    :hasMother data:DaraHuang ;
+    :hasParent data:DaraHuang,
+        data:EdoardoMapelliMozzi ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBrotherOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isChildOf data:DaraHuang,
+        data:EdoardoMapelliMozzi ;
+    :isSiblingOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSonOf data:DaraHuang,
+        data:EdoardoMapelliMozzi .
+
+data:AthenaElizabethRose a :Person,
+        :Woman ;
+    :hasAncestor data:AlexMapelliMozzi,
+        data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :hasBrother data:ChristopherWoolf ;
+    :hasFather data:EdoardoMapelliMozzi ;
+    :hasMother data:Beatrice ;
+    :hasParent data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isChildOf data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :isDaughterOf data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :isSiblingOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSisterOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi .
+
+data:EdoardoMapelliMozzi a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlexMapelliMozzi ;
+    :hasBrother data:EdoardoMapelliMozzi ;
+    :hasChild data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasDaughter data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasFather data:AlexMapelliMozzi ;
+    :hasParent data:AlexMapelliMozzi ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSon data:ChristopherWoolf ;
+    :isAncestorOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:EdoardoMapelliMozzi ;
+    :isBrotherOf data:EdoardoMapelliMozzi ;
+    :isChildOf data:AlexMapelliMozzi ;
+    :isFatherOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isParentOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSiblingOf data:EdoardoMapelliMozzi ;
+    :isSonOf data:AlexMapelliMozzi ;
+    :isUncleOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi .
+
+data:SiennaElizabethMapelliMozzi a :Person,
+        :Woman ;
+    :hasAncestor data:AlexMapelliMozzi,
+        data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :hasBrother data:ChristopherWoolf ;
+    :hasFather data:EdoardoMapelliMozzi ;
+    :hasMother data:Beatrice ;
+    :hasParent data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :hasRelation data:AlexMapelliMozzi,
+        data:AthenaElizabethRose,
+        data:Beatrice,
+        data:ChristopherWoolf,
+        data:DaraHuang,
+        data:EdoardoMapelliMozzi,
+        data:Eugenie,
+        data:SiennaElizabethMapelliMozzi ;
+    :hasSister data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isBloodrelationOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isChildOf data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :isDaughterOf data:Beatrice,
+        data:EdoardoMapelliMozzi ;
+    :isSiblingOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSisterOf data:AthenaElizabethRose,
+        data:ChristopherWoolf,
+        data:SiennaElizabethMapelliMozzi .
+

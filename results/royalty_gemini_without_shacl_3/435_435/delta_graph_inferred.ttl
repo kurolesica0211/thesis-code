@@ -1,0 +1,302 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman ;
+    :hasRelation data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Wilhelm_II_German_Emperor ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandrine_of_Prussia ;
+    :hasDaughter data:Alexandrine_of_Prussia ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Alexandrine_of_Prussia ;
+    :isAuntOf data:Alexandrine_of_Prussia ;
+    :isBloodrelationOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Alexandrine_of_Prussia ;
+    :isParentOf data:Alexandrine_of_Prussia ;
+    :isSiblingOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_German_Crown_Prince ;
+    :hasChild data:Alexandrine_of_Prussia ;
+    :hasDaughter data:Alexandrine_of_Prussia ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :isAncestorOf data:Alexandrine_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince ;
+    :isFatherOf data:Alexandrine_of_Prussia ;
+    :isParentOf data:Alexandrine_of_Prussia ;
+    :isSiblingOf data:Wilhelm_German_Crown_Prince ;
+    :isUncleOf data:Alexandrine_of_Prussia .
+
+data:Cecilie_sister a :Person,
+        :Woman ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSisterOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+
+data:Frederick_brother a :Man,
+        :Person ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+
+data:Hubertus_brother a :Man,
+        :Person ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+
+data:Louis_Ferdinand_brother a :Man,
+        :Person ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+
+data:Wilhelm_brother a :Man,
+        :Person ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+
+data:Alexandrine_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasBirthYear 1915 ;
+    :hasBrother data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isDaughterOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother ;
+    :isSisterOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
+

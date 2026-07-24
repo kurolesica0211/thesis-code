@@ -1,0 +1,93 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eilika a :Person,
+        :Woman ;
+    :hasRelation data:Eilika ;
+    :hasSister data:Eilika ;
+    :isBloodrelationOf data:Eilika ;
+    :isSiblingOf data:Eilika ;
+    :isSisterOf data:Eilika .
+
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Georg_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasSon data:Georg_von_Habsburg ;
+    :isAncestorOf data:Georg_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Georg_von_Habsburg ;
+    :isParentOf data:Georg_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Georg_von_Habsburg .
+
+data:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Georg_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasSister data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasSon data:Georg_von_Habsburg ;
+    :isAncestorOf data:Georg_von_Habsburg ;
+    :isAuntOf data:Georg_von_Habsburg ;
+    :isBloodrelationOf data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :isMotherOf data:Georg_von_Habsburg ;
+    :isParentOf data:Georg_von_Habsburg ;
+    :isSiblingOf data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :isSisterOf data:Regina_Prinzessin_von_Sachsen-Meiningen .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    :alsoKnownAs "Georg Habsburg-Lothringen"^^xsd:string,
+        "Habsburg György"^^xsd:string ;
+    :formerlyKnownAs "Paul Georg Maria Joseph Dominikus"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg,
+        data:Regina_Prinzessin_von_Sachsen-Meiningen .
+

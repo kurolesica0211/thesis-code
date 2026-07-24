@@ -1,0 +1,10 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Berthold_Margrave_of_Baden a :Ancestor .
+
+data:Margarita_of_Baden :alsoKnownAs "Margarete Alice Thyra Viktoria Marie Louise Scholastica"^^xsd:string .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor .
+

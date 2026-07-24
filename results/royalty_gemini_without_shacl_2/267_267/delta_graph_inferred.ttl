@@ -1,0 +1,422 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:AlexandraFeodorovna a :Person,
+        :Woman ;
+    :hasRelation data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :hasSister data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isBloodrelationOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isSiblingOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isSisterOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna .
+
+data:ElizabethFeodorovna a :Person,
+        :Woman ;
+    :hasRelation data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :hasSister data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isBloodrelationOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isSiblingOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna ;
+    :isSisterOf data:AlexandraFeodorovna,
+        data:ElizabethFeodorovna .
+
+data:AudreyEmery a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PaulRomanovskyIlyinsky ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSister data:AudreyEmery ;
+    :hasSon data:PaulRomanovskyIlyinsky ;
+    :isAncestorOf data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:AudreyEmery ;
+    :isMotherOf data:PaulRomanovskyIlyinsky ;
+    :isParentOf data:PaulRomanovskyIlyinsky ;
+    :isSiblingOf data:AudreyEmery ;
+    :isSisterOf data:AudreyEmery .
+
+data:GeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasChild data:AlexandraGeorgievna ;
+    :hasDaughter data:AlexandraGeorgievna ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :isAncestorOf data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isFatherOf data:AlexandraGeorgievna ;
+    :isParentOf data:AlexandraGeorgievna ;
+    :isSiblingOf data:GeorgeIOfGreece ;
+    :isUncleOf data:AlexandraGeorgievna .
+
+data:OlgaKonstantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlexandraGeorgievna ;
+    :hasDaughter data:AlexandraGeorgievna ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSister data:OlgaKonstantinovna ;
+    :isAncestorOf data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:AlexandraGeorgievna ;
+    :isBloodrelationOf data:OlgaKonstantinovna ;
+    :isMotherOf data:AlexandraGeorgievna ;
+    :isParentOf data:AlexandraGeorgievna ;
+    :isSiblingOf data:OlgaKonstantinovna ;
+    :isSisterOf data:OlgaKonstantinovna .
+
+data:AlexanderII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlexanderII ;
+    :hasChild data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSon data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :isBloodrelationOf data:AlexanderII ;
+    :isBrotherOf data:AlexanderII ;
+    :isFatherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isParentOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isSiblingOf data:AlexanderII ;
+    :isUncleOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich .
+
+data:MariaAlexandrovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSister data:MariaAlexandrovna ;
+    :hasSon data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :isAuntOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isBloodrelationOf data:MariaAlexandrovna ;
+    :isMotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isParentOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isSiblingOf data:MariaAlexandrovna ;
+    :isSisterOf data:MariaAlexandrovna .
+
+data:SergeiAlexandrovich a :Man,
+        :Person ;
+    :hasAncestor data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :hasBrother data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasFather data:AlexanderII ;
+    :hasMother data:MariaAlexandrovna ;
+    :hasParent data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :isBloodrelationOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isBrotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isChildOf data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :isSiblingOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isSonOf data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :isUncleOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+
+data:PaulRomanovskyIlyinsky a :Man,
+        :Person ;
+    :hasAncestor data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich ;
+    :hasBrother data:PaulRomanovskyIlyinsky ;
+    :hasFather data:DmitriPavlovich ;
+    :hasMother data:AudreyEmery ;
+    :hasParent data:AudreyEmery,
+        data:DmitriPavlovich ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :isBloodrelationOf data:PaulRomanovskyIlyinsky ;
+    :isBrotherOf data:PaulRomanovskyIlyinsky ;
+    :isChildOf data:AudreyEmery,
+        data:DmitriPavlovich ;
+    :isSiblingOf data:PaulRomanovskyIlyinsky ;
+    :isSonOf data:AudreyEmery,
+        data:DmitriPavlovich .
+
+data:MariaPavlovna a :Person,
+        :Woman ;
+    :hasAncestor data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich ;
+    :hasBrother data:DmitriPavlovich ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMother data:AlexandraGeorgievna ;
+    :hasParent data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSister data:MariaPavlovna ;
+    :isAuntOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isChildOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isDaughterOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isSiblingOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSisterOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+
+data:AlexandraGeorgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaKonstantinovna ;
+    :hasChild data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :hasDaughter data:MariaPavlovna ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaKonstantinovna ;
+    :hasParent data:GeorgeIOfGreece,
+        data:OlgaKonstantinovna ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSister data:AlexandraGeorgievna ;
+    :hasSon data:DmitriPavlovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isBloodrelationOf data:AlexandraGeorgievna ;
+    :isChildOf data:GeorgeIOfGreece,
+        data:OlgaKonstantinovna ;
+    :isDaughterOf data:GeorgeIOfGreece,
+        data:OlgaKonstantinovna ;
+    :isMotherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isParentOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSiblingOf data:AlexandraGeorgievna ;
+    :isSisterOf data:AlexandraGeorgievna .
+
+data:DmitriPavlovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich ;
+    :hasBirthYear 1891 ;
+    :hasBrother data:DmitriPavlovich ;
+    :hasChild data:PaulRomanovskyIlyinsky ;
+    :hasDeathYear 1942 ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMarriageYear 1926 ;
+    :hasMother data:AlexandraGeorgievna ;
+    :hasParent data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSex data:Male ;
+    :hasSister data:MariaPavlovna ;
+    :hasSon data:PaulRomanovskyIlyinsky ;
+    :isAncestorOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isBrotherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isChildOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isFatherOf data:PaulRomanovskyIlyinsky ;
+    :isParentOf data:PaulRomanovskyIlyinsky ;
+    :isSiblingOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSonOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isUncleOf data:PaulRomanovskyIlyinsky .
+
+data:PaulAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :hasBrother data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasChild data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :hasDaughter data:MariaPavlovna ;
+    :hasFather data:AlexanderII ;
+    :hasMother data:MariaAlexandrovna ;
+    :hasParent data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :hasRelation data:AlexanderII,
+        data:AlexandraGeorgievna,
+        data:AudreyEmery,
+        data:DmitriPavlovich,
+        data:GeorgeIOfGreece,
+        data:MariaAlexandrovna,
+        data:MariaPavlovna,
+        data:OlgaKonstantinovna,
+        data:PaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky,
+        data:SergeiAlexandrovich ;
+    :hasSon data:DmitriPavlovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:MariaPavlovna,
+        data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isBrotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isChildOf data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :isFatherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isParentOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSiblingOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isSonOf data:AlexanderII,
+        data:MariaAlexandrovna ;
+    :isUncleOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+

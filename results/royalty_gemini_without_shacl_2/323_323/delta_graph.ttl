@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian a :Man ;
+    :hasAncestor data:FrederickAugustusII ;
+    :isChildOf data:Nikolaus .
+
+data:FrederickAugustusII a :Man .
+
+data:Nikolaus a :Man ;
+    :hasDeathYear "1970-04-03T00:00:00"^^xsd:dateTime .
+

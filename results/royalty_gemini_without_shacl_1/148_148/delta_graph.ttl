@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Prince_Karl_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia .
+
+data:Princess_Marie_Louise_of_Bulgaria a :Person,
+        :Woman ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Princess_Giovanna_of_Italy .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Person,
+        :Woman .
+
+data:Boris_III_of_Bulgaria a :Man,
+        :Person .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Karl_6th_Prince_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 .
+
+data:Princess_Giovanna_of_Italy a :Person,
+        :Woman .
+
+data:Princess_Victoria_Melita_of_Edinburgh a :Person,
+        :Woman .
+

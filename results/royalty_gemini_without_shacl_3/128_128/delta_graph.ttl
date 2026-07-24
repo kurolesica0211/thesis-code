@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasRelation data:Claus_Felix_von_Amsberg ;
+    :hasSon data:Claus_von_Amsberg ;
+    :isSiblingOf data:Julius_von_dem_Bussche-Haddenhausen .
+
+data:Anna-Elisabeth_von_Pfuel a :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2005 .
+
+data:Claus_von_Amsberg a :Man ;
+    :hasBirthYear 1926 ;
+    :isSonOf data:Claus_Felix_von_Amsberg .
+
+data:Elise_von_Vieregge a :Woman .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
+
+data:George_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1977 ;
+    :hasRelation data:Anna-Elisabeth_von_Pfuel .
+
+data:Wilhelm_von_Amsberg a :Man .
+
+data:Claus_Felix_von_Amsberg a :Man ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge .
+

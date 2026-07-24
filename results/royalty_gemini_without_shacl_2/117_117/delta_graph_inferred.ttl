@@ -1,0 +1,327 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Paul_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasChild data:Queen_Sofia ;
+    :hasDaughter data:Queen_Sofia ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:King_Paul_of_Greece,
+        data:Queen_Sofia ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Queen_Sofia ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isFatherOf data:Queen_Sofia ;
+    :isParentOf data:Queen_Sofia ;
+    :isSiblingOf data:King_Paul_of_Greece ;
+    :isUncleOf data:Queen_Sofia .
+
+data:Princess_Maria_de_las_Mercedes a :Ancestor,
+        :Woman ;
+    :hasChild data:Juan_Carlos_I ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Juan_Carlos_I,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSister data:Princess_Maria_de_las_Mercedes ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Juan_Carlos_I ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Princess_Maria_de_las_Mercedes ;
+    :isMotherOf data:Juan_Carlos_I ;
+    :isParentOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Princess_Maria_de_las_Mercedes ;
+    :isSisterOf data:Princess_Maria_de_las_Mercedes .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasSon data:Infante_Juan ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infante_Juan,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan ;
+    :isParentOf data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan .
+
+data:Infante_Juan a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan ;
+    :hasChild data:Juan_Carlos_I ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infante_Juan,
+        data:Juan_Carlos_I ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Infante_Juan ;
+    :isBrotherOf data:Infante_Juan ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Juan_Carlos_I ;
+    :isParentOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Infante_Juan ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Juan_Carlos_I .
+
+data:Infanta_Margarita a :Woman ;
+    :hasBrother data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasSister data:Infanta_Margarita,
+        data:Infanta_Pilar ;
+    :isAuntOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSisterOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso .
+
+data:Infanta_Pilar a :Woman ;
+    :hasBrother data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasSister data:Infanta_Margarita,
+        data:Infanta_Pilar ;
+    :isAuntOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSisterOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso .
+
+data:Prince_Alfonso a :Man ;
+    :hasBirthYear "1941"^^xsd:positiveInteger ;
+    :hasBrother data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasDeathYear "1956"^^xsd:positiveInteger ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasSister data:Infanta_Margarita,
+        data:Infanta_Pilar ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isBrotherOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isUncleOf data:Felipe_VI,
+        data:Infanta_Cristina .
+
+data:Queen_Sofia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:King_Paul_of_Greece ;
+    :hasChild data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :hasDaughter data:Infanta_Cristina ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasParent data:King_Paul_of_Greece ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Queen_Sofia ;
+    :hasSister data:Queen_Sofia ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isAuntOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isBloodrelationOf data:Queen_Sofia ;
+    :isChildOf data:King_Paul_of_Greece ;
+    :isDaughterOf data:King_Paul_of_Greece ;
+    :isMotherOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isParentOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isSiblingOf data:Queen_Sofia ;
+    :isSisterOf data:Queen_Sofia .
+
+data:Felipe_VI a :Man ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes,
+        data:Queen_Sofia ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia ;
+    :hasParent data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Prince_Alfonso,
+        data:Princess_Maria_de_las_Mercedes,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Cristina ;
+    :isBloodrelationOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isBrotherOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :isSiblingOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Queen_Sofia .
+
+data:Infanta_Cristina a :Woman ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes,
+        data:Queen_Sofia ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia ;
+    :hasParent data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Prince_Alfonso,
+        data:Princess_Maria_de_las_Mercedes,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Cristina ;
+    :isBloodrelationOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :isSiblingOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isSisterOf data:Felipe_VI,
+        data:Infanta_Cristina .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasBrother data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :hasChild data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :hasDaughter data:Infanta_Cristina ;
+    :hasFather data:Infante_Juan ;
+    :hasMarriageYear "1962"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Maria_de_las_Mercedes ;
+    :hasParent data:Infante_Juan,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Cristina,
+        data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso,
+        data:Princess_Maria_de_las_Mercedes,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita,
+        data:Infanta_Pilar ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isBrotherOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isChildOf data:Infante_Juan,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isFatherOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isParentOf data:Felipe_VI,
+        data:Infanta_Cristina ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Prince_Alfonso ;
+    :isSonOf data:Infante_Juan,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isUncleOf data:Felipe_VI,
+        data:Infanta_Cristina .
+

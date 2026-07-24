@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda a :Man,\n        :Person ;\n    :isFatherOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :isSisterOf data:Elena .\n\ndata:Felipe_VI a :Man ;\n    :isBrotherOf data:Elena .\n\ndata:Felipe_VI%2Ctype a :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isFatherOf data:Elena .\n\ndata:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona a :Person,\n        :Woman ;\n    :isAncestorOf data:Elena .\n\ndata:Sof%C3%ADa a :Person,\n        :Woman ;\n    :isMotherOf data:Elena .\n\ndata:Felipe_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person .\n\ndata:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada a :Man,\n        :Person ;\n    :isFatherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,\n        data:Victoria_de_Marichalar_y_Borb%C3%B3n .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasRelation data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;\n    :isMotherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,\n        data:Victoria_de_Marichalar_y_Borb%C3%B3n .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda a :Man,\n        :Person ;\n    :isFatherOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :isSisterOf data:Elena .\n\ndata:Felipe_VI a :Man ;\n    :isBrotherOf data:Elena .\n\ndata:Felipe_VI%2Ctype a :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isFatherOf data:Elena .\n\ndata:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona a :Person,\n        :Woman ;\n    :isAncestorOf data:Elena .\n\ndata:Sof%C3%ADa a :Person,\n        :Woman ;\n    :isMotherOf data:Elena .\n\ndata:Felipe_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person .\n\ndata:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada a :Man,\n        :Person ;\n    :isFatherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,\n        data:Victoria_de_Marichalar_y_Borb%C3%B3n .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasRelation data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;\n    :isMotherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,\n        data:Victoria_de_Marichalar_y_Borb%C3%B3n .\n\n"
+    }
+]

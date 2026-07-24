@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasDeathYear 1942 ;
+    :hasFather data:King_George_V ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:George_VI a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:Alexandra a :Person,
+        :Woman .
+
+data:Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Michael a :Man,
+        :Person .
+

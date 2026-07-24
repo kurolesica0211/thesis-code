@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\n"
+    }
+]

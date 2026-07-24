@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Ignacio_Duke_of_Segorbe a :Man,
+        :Person .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman .
+
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasBirthYear 2023 ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :isBrotherOf data:Filip_Karadjordjevic .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :hasBirthYear 2018 ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Male a :Sex .
+
+data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies a :Person,
+        :Woman .
+
+data:Pedro_Gastao_Orleans_Braganza a :Man,
+        :Person .
+
+data:Alexander_Karadjordjevic a :Man,
+        :Person .
+
+data:Danica_Marinkovic a :Person,
+        :Woman .
+
+data:Filip_Karadjordjevic a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasSex data:Male .
+
+data:Maria_da_Gloria a :Person,
+        :Woman ;
+    :hasFather data:Pedro_Gastao_Orleans_Braganza ;
+    :hasMother data:Maria_de_la_Esperanza_Bourbon_Two_Sicilies .
+

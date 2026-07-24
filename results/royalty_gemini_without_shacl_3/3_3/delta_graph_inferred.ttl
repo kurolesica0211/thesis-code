@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sylvana_Tomaselli a :Woman ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Sylvana_Tomaselli ;
+    :isBloodrelationOf data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Sylvana_Tomaselli ;
+    :isSisterOf data:Sylvana_Tomaselli .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Woman ;
+    :hasChild data:George_Philip_Nicholas_Windsor ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :hasSon data:George_Philip_Nicholas_Windsor ;
+    :isAncestorOf data:George_Philip_Nicholas_Windsor ;
+    :isAuntOf data:George_Philip_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isMotherOf data:George_Philip_Nicholas_Windsor ;
+    :isParentOf data:George_Philip_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:George_Philip_Nicholas_Windsor ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Tomaselli ;
+    :hasSon data:George_Philip_Nicholas_Windsor ;
+    :isAncestorOf data:George_Philip_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:George_Philip_Nicholas_Windsor ;
+    :isParentOf data:George_Philip_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:George_Philip_Nicholas_Windsor .
+
+data:George_Philip_Nicholas_Windsor a :Man ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:George_Philip_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:George_Philip_Nicholas_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Tomaselli ;
+    :isBloodrelationOf data:George_Philip_Nicholas_Windsor ;
+    :isBrotherOf data:George_Philip_Nicholas_Windsor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:George_Philip_Nicholas_Windsor ;
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent .
+

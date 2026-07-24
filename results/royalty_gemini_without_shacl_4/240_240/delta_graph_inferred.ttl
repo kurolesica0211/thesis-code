@@ -1,0 +1,198 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeDeMarichalar a :Man,
+        :Person ;
+    :hasBrother data:FelipeDeMarichalar ;
+    :hasRelation data:FelipeDeMarichalar,
+        data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:QueenSofiaOfSpain,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasSister data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBloodrelationOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBrotherOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isSiblingOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon .
+
+data:KingJuanCarlosI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingJuanCarlosI ;
+    :hasChild data:InfantaElenaDuchessOfLugo ;
+    :hasDaughter data:InfantaElenaDuchessOfLugo ;
+    :hasRelation data:InfantaElenaDuchessOfLugo,
+        data:KingJuanCarlosI,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isAncestorOf data:InfantaElenaDuchessOfLugo,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBloodrelationOf data:KingJuanCarlosI ;
+    :isBrotherOf data:KingJuanCarlosI ;
+    :isFatherOf data:InfantaElenaDuchessOfLugo ;
+    :isParentOf data:InfantaElenaDuchessOfLugo ;
+    :isSiblingOf data:KingJuanCarlosI ;
+    :isUncleOf data:InfantaElenaDuchessOfLugo .
+
+data:JaimeDeMarichalar a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JaimeDeMarichalar ;
+    :hasChild data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasDaughter data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasRelation data:FelipeDeMarichalar,
+        data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:QueenSofiaOfSpain,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isAncestorOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBloodrelationOf data:JaimeDeMarichalar ;
+    :isBrotherOf data:JaimeDeMarichalar ;
+    :isFatherOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isParentOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isSiblingOf data:JaimeDeMarichalar ;
+    :isUncleOf data:VictoriaFedericaDeMarichalarYBordon .
+
+data:QueenSofiaOfSpain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:InfantaElenaDuchessOfLugo ;
+    :hasDaughter data:InfantaElenaDuchessOfLugo ;
+    :hasRelation data:FelipeDeMarichalar,
+        data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:QueenSofiaOfSpain,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasSister data:QueenSofiaOfSpain ;
+    :isAncestorOf data:InfantaElenaDuchessOfLugo,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isAuntOf data:InfantaElenaDuchessOfLugo ;
+    :isBloodrelationOf data:QueenSofiaOfSpain ;
+    :isMotherOf data:InfantaElenaDuchessOfLugo ;
+    :isParentOf data:InfantaElenaDuchessOfLugo ;
+    :isSiblingOf data:QueenSofiaOfSpain ;
+    :isSisterOf data:QueenSofiaOfSpain .
+
+data:InfantaSofia a :Person,
+        :Woman ;
+    :hasAncestor data:KingFelipeVI ;
+    :hasFather data:KingFelipeVI ;
+    :hasParent data:KingFelipeVI ;
+    :hasRelation data:InfantaSofia,
+        data:KingFelipeVI,
+        data:LeonorPrincessOfAsturias ;
+    :hasSister data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isBloodrelationOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isChildOf data:KingFelipeVI ;
+    :isDaughterOf data:KingFelipeVI ;
+    :isSiblingOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isSisterOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias .
+
+data:KingFelipeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingFelipeVI ;
+    :hasChild data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :hasDaughter data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :hasRelation data:InfantaSofia,
+        data:KingFelipeVI,
+        data:LeonorPrincessOfAsturias ;
+    :isAncestorOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isBloodrelationOf data:KingFelipeVI ;
+    :isBrotherOf data:KingFelipeVI ;
+    :isFatherOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isParentOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isSiblingOf data:KingFelipeVI ;
+    :isUncleOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias .
+
+data:LeonorPrincessOfAsturias a :Person,
+        :Woman ;
+    :hasAncestor data:KingFelipeVI ;
+    :hasFather data:KingFelipeVI ;
+    :hasParent data:KingFelipeVI ;
+    :hasRelation data:InfantaSofia,
+        data:KingFelipeVI,
+        data:LeonorPrincessOfAsturias ;
+    :hasSister data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isBloodrelationOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isChildOf data:KingFelipeVI ;
+    :isDaughterOf data:KingFelipeVI ;
+    :isSiblingOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias ;
+    :isSisterOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias .
+
+data:InfantaElenaDuchessOfLugo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain ;
+    :hasChild data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasDaughter data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasFather data:KingJuanCarlosI ;
+    :hasMother data:QueenSofiaOfSpain ;
+    :hasParent data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain ;
+    :hasRelation data:FelipeDeMarichalar,
+        data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasSister data:InfantaElenaDuchessOfLugo ;
+    :isAncestorOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isAuntOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBloodrelationOf data:InfantaElenaDuchessOfLugo ;
+    :isChildOf data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain ;
+    :isDaughterOf data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain ;
+    :isMotherOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isParentOf data:VictoriaFedericaDeMarichalarYBordon ;
+    :isSiblingOf data:InfantaElenaDuchessOfLugo ;
+    :isSisterOf data:InfantaElenaDuchessOfLugo .
+
+data:VictoriaFedericaDeMarichalarYBordon a :Person,
+        :Woman ;
+    :hasAncestor data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain ;
+    :hasBirthYear 2000 ;
+    :hasBrother data:FelipeDeMarichalar ;
+    :hasFather data:JaimeDeMarichalar ;
+    :hasMother data:InfantaElenaDuchessOfLugo ;
+    :hasParent data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar ;
+    :hasRelation data:FelipeDeMarichalar,
+        data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar,
+        data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :hasSister data:VictoriaFedericaDeMarichalarYBordon ;
+    :isBloodrelationOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isChildOf data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar ;
+    :isDaughterOf data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar ;
+    :isSiblingOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon ;
+    :isSisterOf data:FelipeDeMarichalar,
+        data:VictoriaFedericaDeMarichalarYBordon .
+

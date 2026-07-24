@@ -1,0 +1,222 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :hasSister data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :isUncleOf data:George_Lascelles,
+        data:Gerald_David_Lascelles .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:Mary_Princess_Royal ;
+    :hasDaughter data:Mary_Princess_Royal ;
+    :hasRelation data:Edward_VIII,
+        data:George_Lascelles,
+        data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isAncestorOf data:George_Lascelles,
+        data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Mary_Princess_Royal ;
+    :isParentOf data:Mary_Princess_Royal ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Mary_Princess_Royal .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Mary_Princess_Royal ;
+    :hasDaughter data:Mary_Princess_Royal ;
+    :hasRelation data:Edward_VIII,
+        data:George_Lascelles,
+        data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :isAncestorOf data:George_Lascelles,
+        data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isAuntOf data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Mary_Princess_Royal ;
+    :isParentOf data:Mary_Princess_Royal ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :isUncleOf data:George_Lascelles,
+        data:Gerald_David_Lascelles .
+
+data:Henry_Lascelles a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_Lascelles ;
+    :hasChild data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :hasRelation data:George_Lascelles,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :hasSon data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isAncestorOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Henry_Lascelles ;
+    :isBrotherOf data:Henry_Lascelles ;
+    :isFatherOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isParentOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Henry_Lascelles ;
+    :isUncleOf data:George_Lascelles,
+        data:Gerald_David_Lascelles .
+
+data:George_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasBrother data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :hasFather data:Henry_Lascelles ;
+    :hasMother data:Mary_Princess_Royal ;
+    :hasParent data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :hasRelation data:George_Lascelles,
+        data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isBrotherOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isChildOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isSiblingOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isSonOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasBrother data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :hasFather data:Henry_Lascelles ;
+    :hasMother data:Mary_Princess_Royal ;
+    :hasParent data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :hasRelation data:George_Lascelles,
+        data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isBrotherOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isChildOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isSiblingOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isSonOf data:Henry_Lascelles,
+        data:Mary_Princess_Royal .
+
+data:Mary_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBirthYear 1897 ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :hasDeathYear 1965 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Edward_VIII,
+        data:George_Lascelles,
+        data:George_V,
+        data:George_VI,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Mary_Princess_Royal ;
+    :hasSon data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isAncestorOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isAuntOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Henry_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isDaughterOf data:George_V,
+        data:Queen_Mary ;
+    :isMotherOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isParentOf data:George_Lascelles,
+        data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal ;
+    :isSisterOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary_Princess_Royal .
+

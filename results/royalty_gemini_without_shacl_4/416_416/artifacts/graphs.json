@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hubertus_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Wilhelm_of_Prussia ;\n    :hasDeathYear 1950 ;\n    :hasFather data:Wilhelm_of_Germany ;\n    :hasMarriageYear 1943 ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Magdalena_Reuss_of_K%C3%B6stritz .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Magdalena_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2009 .\n\ndata:Wilhelm_of_Germany a :Man,\n        :Person .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hubertus_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Wilhelm_of_Prussia ;\n    :hasDeathYear 1950 ;\n    :hasFather data:Wilhelm_of_Germany ;\n    :hasMarriageYear 1943 ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Magdalena_Reuss_of_K%C3%B6stritz .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Magdalena_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2009 .\n\ndata:Wilhelm_of_Germany a :Man,\n        :Person .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person .\n\n"
+    }
+]

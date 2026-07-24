@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1939 ;\n    :hasFather data:Julius_von_dem_Bussche-Haddenhausen ;\n    :hasMarriageYear 1899 ;\n    :hasMother data:Mathilde_von_Salviati ;\n    :hasRelation data:Maria_Eleonore_Martinez_de_Hoz ;\n    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen .\n\ndata:Prince_Claus_of_the_Netherlands a :Man,\n        :Person ;\n    :hasMother data:Baroness_Gosta_von_dem_Bussche-Haddenhausen .\n\ndata:Baroness_Gosta_von_dem_Bussche-Haddenhausen a :Person,\n        :Woman ;\n    :hasMother data:George_von_dem_Bussche-Haddenhausen .\n\ndata:Julius_von_dem_Bussche-Haddenhausen a :Man,\n        :Person ;\n    :hasBirthYear 1827 ;\n    :hasDeathYear 1882 .\n\ndata:Maria_Eleonore_Martinez_de_Hoz a :Person,\n        :Woman ;\n    :hasBirthYear 1875 ;\n    :hasDeathYear 1957 ;\n    :hasFather data:Narciso_Martinez_de_Hoz ;\n    :hasMother data:Mathilde_Stegmann .\n\ndata:Mathilde_Stegmann a :Person,\n        :Woman .\n\ndata:Mathilde_von_Salviati a :Person,\n        :Woman ;\n    :hasBirthYear 1833 ;\n    :hasDeathYear 1892 .\n\ndata:Narciso_Martinez_de_Hoz a :Man,\n        :Person .\n\ndata:George_von_dem_Bussche-Haddenhausen a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1939 ;\n    :hasFather data:Julius_von_dem_Bussche-Haddenhausen ;\n    :hasMarriageYear 1899 ;\n    :hasMother data:Mathilde_von_Salviati ;\n    :hasRelation data:Maria_Eleonore_Martinez_de_Hoz ;\n    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen .\n\ndata:Prince_Claus_of_the_Netherlands a :Man,\n        :Person ;\n    :hasMother data:Baroness_Gosta_von_dem_Bussche-Haddenhausen .\n\ndata:Baroness_Gosta_von_dem_Bussche-Haddenhausen a :Person,\n        :Woman ;\n    :hasMother data:George_von_dem_Bussche-Haddenhausen .\n\ndata:Julius_von_dem_Bussche-Haddenhausen a :Man,\n        :Person ;\n    :hasBirthYear 1827 ;\n    :hasDeathYear 1882 .\n\ndata:Maria_Eleonore_Martinez_de_Hoz a :Person,\n        :Woman ;\n    :hasBirthYear 1875 ;\n    :hasDeathYear 1957 ;\n    :hasFather data:Narciso_Martinez_de_Hoz ;\n    :hasMother data:Mathilde_Stegmann .\n\ndata:Mathilde_Stegmann a :Person,\n        :Woman .\n\ndata:Mathilde_von_Salviati a :Person,\n        :Woman ;\n    :hasBirthYear 1833 ;\n    :hasDeathYear 1892 .\n\ndata:Narciso_Martinez_de_Hoz a :Man,\n        :Person .\n\ndata:George_von_dem_Bussche-Haddenhausen a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,117 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian ;
+    :hasRelation data:Christian,
+        data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :hasSister data:Mary ;
+    :hasSon data:Christian ;
+    :isAncestorOf data:Christian ;
+    :isAuntOf data:Christian ;
+    :isBloodrelationOf data:Mary ;
+    :isMotherOf data:Christian ;
+    :isParentOf data:Christian ;
+    :isSiblingOf data:Mary ;
+    :isSisterOf data:Mary .
+
+data:Henrik a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henrik ;
+    :hasChild data:Frederik_X ;
+    :hasRelation data:Christian,
+        data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :hasSon data:Frederik_X ;
+    :isAncestorOf data:Christian,
+        data:Frederik_X ;
+    :isBloodrelationOf data:Henrik ;
+    :isBrotherOf data:Henrik ;
+    :isFatherOf data:Frederik_X ;
+    :isParentOf data:Frederik_X ;
+    :isSiblingOf data:Henrik ;
+    :isUncleOf data:Frederik_X .
+
+data:Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederik_X ;
+    :hasRelation data:Christian,
+        data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :hasSister data:Margrethe_II ;
+    :hasSon data:Frederik_X ;
+    :isAncestorOf data:Christian,
+        data:Frederik_X ;
+    :isAuntOf data:Frederik_X ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isMotherOf data:Frederik_X ;
+    :isParentOf data:Frederik_X ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Christian a :Man,
+        :Person ;
+    :hasAncestor data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :hasBirthYear 2005 ;
+    :hasBrother data:Christian ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary ;
+    :hasParent data:Frederik_X,
+        data:Mary ;
+    :hasRelation data:Christian,
+        data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :isBloodrelationOf data:Christian ;
+    :isBrotherOf data:Christian ;
+    :isChildOf data:Frederik_X,
+        data:Mary ;
+    :isSiblingOf data:Christian ;
+    :isSonOf data:Frederik_X,
+        data:Mary .
+
+data:Frederik_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henrik,
+        data:Margrethe_II ;
+    :hasBrother data:Frederik_X ;
+    :hasChild data:Christian ;
+    :hasFather data:Henrik ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik,
+        data:Margrethe_II ;
+    :hasRelation data:Christian,
+        data:Frederik_X,
+        data:Henrik,
+        data:Margrethe_II,
+        data:Mary ;
+    :hasSon data:Christian ;
+    :isAncestorOf data:Christian ;
+    :isBloodrelationOf data:Frederik_X ;
+    :isBrotherOf data:Frederik_X ;
+    :isChildOf data:Henrik,
+        data:Margrethe_II ;
+    :isFatherOf data:Christian ;
+    :isParentOf data:Christian ;
+    :isSiblingOf data:Frederik_X ;
+    :isSonOf data:Henrik,
+        data:Margrethe_II ;
+    :isUncleOf data:Christian .
+

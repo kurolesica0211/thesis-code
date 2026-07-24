@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jaime_de_Marichalar a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Cristina a :Woman ;\n    :hasSex data:Female .\n\ndata:Elena a :Woman ;\n    :hasBirthYear 1963 ;\n    :hasSex data:Female ;\n    :isMotherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Felipe_VI a :Man ;\n    :hasSex data:Male .\n\ndata:Felipe_de_Marichalar a :Man ;\n    :hasBirthYear 1998 ;\n    :hasSex data:Male .\n\ndata:Victoria_de_Marichalar a :Woman ;\n    :hasBirthYear 2000 ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jaime_de_Marichalar a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Cristina a :Woman ;\n    :hasSex data:Female .\n\ndata:Elena a :Woman ;\n    :hasBirthYear 1963 ;\n    :hasSex data:Female ;\n    :isMotherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Felipe_VI a :Man ;\n    :hasSex data:Male .\n\ndata:Felipe_de_Marichalar a :Man ;\n    :hasBirthYear 1998 ;\n    :hasSex data:Male .\n\ndata:Victoria_de_Marichalar a :Woman ;\n    :hasBirthYear 2000 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jaime_de_Marichalar a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Cristina,\n        data:Elena,\n        data:Felipe_VI .\n\ndata:Cristina a :Woman ;\n    :hasSex data:Female .\n\ndata:Elena a :Woman ;\n    :hasBirthYear 1963 ;\n    :hasSex data:Female ;\n    :isMotherOf data:Felipe_de_Marichalar,\n        data:Victoria_de_Marichalar .\n\ndata:Felipe_VI a :Man ;\n    :hasSex data:Male .\n\ndata:Felipe_de_Marichalar a :Man ;\n    :hasBirthYear 1998 ;\n    :hasSex data:Male .\n\ndata:Victoria_de_Marichalar a :Woman ;\n    :hasBirthYear 2000 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

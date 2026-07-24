@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sir_Geoffrey_Shakerley a :Man,
+        :Person ;
+    :hasBrother data:Sir_Geoffrey_Shakerley ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :isBloodrelationOf data:Sir_Geoffrey_Shakerley ;
+    :isBrotherOf data:Sir_Geoffrey_Shakerley ;
+    :isSiblingOf data:Sir_Geoffrey_Shakerley .
+
+data:Patrick_Anson a :Man,
+        :Person ;
+    :hasBrother data:Patrick_Anson ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :hasSister data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isBloodrelationOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson ;
+    :isBrotherOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson ;
+    :isSiblingOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson .
+
+data:Thomas_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Thomas_Anson ;
+    :hasChild data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :hasDaughter data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :hasDeathYear 1958 ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :isAncestorOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isBloodrelationOf data:Thomas_Anson ;
+    :isBrotherOf data:Thomas_Anson ;
+    :isFatherOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isParentOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isSiblingOf data:Thomas_Anson ;
+    :isUncleOf data:Lady_Elizabeth_Georgiana_Shakerley .
+
+data:Prince_Georg_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Georg_of_Denmark ;
+    :hasChild data:Anne_Bowes-Lyon ;
+    :hasDaughter data:Anne_Bowes-Lyon ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :isAncestorOf data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isBloodrelationOf data:Prince_Georg_of_Denmark ;
+    :isBrotherOf data:Prince_Georg_of_Denmark ;
+    :isFatherOf data:Anne_Bowes-Lyon ;
+    :isParentOf data:Anne_Bowes-Lyon ;
+    :isSiblingOf data:Prince_Georg_of_Denmark ;
+    :isUncleOf data:Anne_Bowes-Lyon .
+
+data:Anne_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Georg_of_Denmark ;
+    :hasChild data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :hasDaughter data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :hasFather data:Prince_Georg_of_Denmark ;
+    :hasParent data:Prince_Georg_of_Denmark ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon ;
+    :isAncestorOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isAuntOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon ;
+    :isChildOf data:Prince_Georg_of_Denmark ;
+    :isDaughterOf data:Prince_Georg_of_Denmark ;
+    :isMotherOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isParentOf data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isSiblingOf data:Anne_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon .
+
+data:Lady_Elizabeth_Georgiana_Shakerley a :Person,
+        :Woman ;
+    :formerlyKnownAs "Elizabeth Georgiana Anson"^^xsd:string ;
+    :hasAncestor data:Anne_Bowes-Lyon,
+        data:Prince_Georg_of_Denmark,
+        data:Thomas_Anson ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Patrick_Anson ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_Anson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasParent data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson,
+        data:Prince_Georg_of_Denmark,
+        data:Sir_Geoffrey_Shakerley,
+        data:Thomas_Anson ;
+    :hasSister data:Lady_Elizabeth_Georgiana_Shakerley ;
+    :isBloodrelationOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson ;
+    :isChildOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :isDaughterOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :isSiblingOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson ;
+    :isSisterOf data:Lady_Elizabeth_Georgiana_Shakerley,
+        data:Patrick_Anson ;
+    :knownAs "Elizabeth Anson"^^xsd:string .
+

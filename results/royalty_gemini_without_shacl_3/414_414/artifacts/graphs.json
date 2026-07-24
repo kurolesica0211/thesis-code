@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Orleans_y_Borbon a :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasAncestor data:Alfonso_XIII ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Fernando_Cento a :Man,\n        :Person .\n\ndata:Francisco_Franco a :Man,\n        :Person .\n\ndata:Maria_Cristina_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Juan_Count_of_Barcelona .\n\ndata:Pilar a :Person,\n        :Woman ;\n    :isSisterOf data:Juan_Carlos_I_of_Spain .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Orleans_y_Borbon a :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasAncestor data:Alfonso_XIII ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:Juan_Carlos_I_of_Spain .\n\ndata:Fernando_Cento a :Man,\n        :Person .\n\ndata:Francisco_Franco a :Man,\n        :Person .\n\ndata:Maria_Cristina_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Juan_Count_of_Barcelona .\n\ndata:Pilar a :Person,\n        :Woman ;\n    :isSisterOf data:Juan_Carlos_I_of_Spain .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lennart_Bernadotte a :Man ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Gustaf_V_of_Sweden ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
+    :hasMarriageYear 1932,
+        1972 ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Karin_Emma_Louise_Nissvandt,
+        data:Sonja_Anita_Maria_Haunz .
+
+data:George_I_of_Greece a :Man .
+
+data:Gustaf_V_of_Sweden a :Man .
+
+data:Karin_Emma_Louise_Nissvandt a :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1991 .
+
+data:Maria_Pavlovna_of_Russia a :Woman .
+
+data:Sonja_Anita_Maria_Haunz a :Woman ;
+    :hasBirthYear 1944 ;
+    :hasDeathYear 2008 .
+
+data:Wilhelm_Duke_of_S%C3%B6dermanland a :Man .
+

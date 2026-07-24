@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Ivar_Louis_Mountbatten a :Man ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Ivar_Mountbatten ;
+    :hasMarriageYear 1989,
+        1997 ;
+    :hasMother data:Janet_Mercedes_Bryce ;
+    :hasRelation data:Clare_Husted_Steel,
+        data:Sarah_Georgina_Walker .
+
+data:Clare_Husted_Steel a :Woman .
+
+data:George_Alfred_Walker a :Man .
+
+data:Ivar_Mountbatten a :Man .
+
+data:Janet_Mercedes_Bryce a :Woman .
+
+data:Jean_Maureen_Hatton a :Woman .
+
+data:Michael_Spencer a :Man .
+
+data:Sarah_Georgina_Walker a :Woman ;
+    :hasFather data:George_Alfred_Walker ;
+    :hasMother data:Jean_Maureen_Hatton ;
+    :hasRelation data:Michael_Spencer .
+

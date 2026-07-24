@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_cousin a :Man,\n        :Person ;\n    :hasFather data:Alfonso_XIII ;\n    :hasMother data:Victoria_Eugenie .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1936 ;\n    :hasMother data:Maria_de_las_Mercedes ;\n    :hasRelation data:Alice_of_Bourbon-Parma .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Alice_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasFather data:Elias_of_Parma ;\n    :hasMother data:Maria_Anna_of_Austria .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Elias_of_Parma a :Man,\n        :Person .\n\ndata:Maria_Anna_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_cousin a :Man,\n        :Person ;\n    :hasFather data:Alfonso_XIII ;\n    :hasMother data:Victoria_Eugenie .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 ;\n    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1936 ;\n    :hasMother data:Maria_de_las_Mercedes ;\n    :hasRelation data:Alice_of_Bourbon-Parma .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Alice_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasFather data:Elias_of_Parma ;\n    :hasMother data:Maria_Anna_of_Austria .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Elias_of_Parma a :Man,\n        :Person .\n\ndata:Maria_Anna_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman .\n\n"
+    }
+]

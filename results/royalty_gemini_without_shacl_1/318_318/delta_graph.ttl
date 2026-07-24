@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Bourbon a :Man,
+        :Person ;
+    :isSonOf data:Alfonso_Prince_of_Asturias .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1933,
+        1937 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Edelmira_Sampedro_y_Robato,
+        data:Marta_Esther_Rocafort-Altuzarra ;
+    :isSiblingOf data:Gonzalo .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Edelmira_Sampedro_y_Robato a :Person,
+        :Woman .
+
+data:Gonzalo a :Man,
+        :Person .
+
+data:Marta_Esther_Rocafort-Altuzarra a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

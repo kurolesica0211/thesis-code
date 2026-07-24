@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man ;
+    :isFatherOf data:Princess_Alice_Duchess_of_Gloucester .
+
+data:King_George_V a :Man ;
+    :isFatherOf data:Prince_Henry_Duke_of_Gloucester .
+
+data:Lady_Margaret_Bridgeman a :Woman ;
+    :isMotherOf data:Princess_Alice_Duchess_of_Gloucester .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man ;
+    :hasBirthYear 1944 ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasRelation data:Birgitte_van_Deurs_Henriksen ;
+    :isSiblingOf data:Prince_William_of_Gloucester .
+
+data:Queen_Mary a :Woman ;
+    :isMotherOf data:Prince_Henry_Duke_of_Gloucester .
+
+data:Birgitte_van_Deurs_Henriksen a :Woman .
+
+data:Prince_William_of_Gloucester a :Man ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man .
+
+data:Princess_Alice_Duchess_of_Gloucester a :Woman .
+

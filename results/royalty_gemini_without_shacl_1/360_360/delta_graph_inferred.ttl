@@ -1,0 +1,324 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Franz_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Franz_Wilhelm_of_Prussia .
+
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:Maria_Vladimirovna_of_Russia ;
+    :hasSister data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Maria_Vladimirovna_of_Russia .
+
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
+        :Woman ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isBloodrelationOf data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isSiblingOf data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isSisterOf data:Eva_Maria_Herrera_y_Valdeavellano .
+
+data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath a :Person,
+        :Woman ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath ;
+    :isBloodrelationOf data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath ;
+    :isSiblingOf data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath ;
+    :isSisterOf data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath .
+
+data:Luise_Dora_Hartmann a :Person,
+        :Woman ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Luise_Dora_Hartmann ;
+    :isBloodrelationOf data:Luise_Dora_Hartmann ;
+    :isSiblingOf data:Luise_Dora_Hartmann ;
+    :isSisterOf data:Luise_Dora_Hartmann .
+
+data:Augusta_Victoria_of_Schleswig_Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :hasSon data:Prince_Joachim_of_Prussia ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isAuntOf data:Prince_Joachim_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :isMotherOf data:Prince_Joachim_of_Prussia ;
+    :isParentOf data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig_Holstein .
+
+data:Eduard_Duke_of_Anhalt a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Eduard_Duke_of_Anhalt ;
+    :hasChild data:Marie_Auguste_of_Anhalt ;
+    :hasDaughter data:Marie_Auguste_of_Anhalt ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Marie_Auguste_of_Anhalt ;
+    :isBloodrelationOf data:Eduard_Duke_of_Anhalt ;
+    :isBrotherOf data:Eduard_Duke_of_Anhalt ;
+    :isFatherOf data:Marie_Auguste_of_Anhalt ;
+    :isParentOf data:Marie_Auguste_of_Anhalt ;
+    :isSiblingOf data:Eduard_Duke_of_Anhalt ;
+    :isUncleOf data:Marie_Auguste_of_Anhalt .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasChild data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSon data:Prince_Joachim_of_Prussia ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isFatherOf data:Prince_Joachim_of_Prussia ;
+    :isParentOf data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Prince_Joachim_of_Prussia .
+
+data:Moritz_of_Saxe_Altenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Moritz_of_Saxe_Altenburg ;
+    :hasChild data:Luise_of_Saxe_Altenburg ;
+    :hasDaughter data:Luise_of_Saxe_Altenburg ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt ;
+    :isBloodrelationOf data:Moritz_of_Saxe_Altenburg ;
+    :isBrotherOf data:Moritz_of_Saxe_Altenburg ;
+    :isFatherOf data:Luise_of_Saxe_Altenburg ;
+    :isParentOf data:Luise_of_Saxe_Altenburg ;
+    :isSiblingOf data:Moritz_of_Saxe_Altenburg ;
+    :isUncleOf data:Luise_of_Saxe_Altenburg .
+
+data:Luise_of_Saxe_Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Moritz_of_Saxe_Altenburg ;
+    :hasChild data:Marie_Auguste_of_Anhalt ;
+    :hasDaughter data:Marie_Auguste_of_Anhalt ;
+    :hasFather data:Moritz_of_Saxe_Altenburg ;
+    :hasParent data:Moritz_of_Saxe_Altenburg ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Luise_of_Saxe_Altenburg ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Marie_Auguste_of_Anhalt ;
+    :isAuntOf data:Marie_Auguste_of_Anhalt ;
+    :isBloodrelationOf data:Luise_of_Saxe_Altenburg ;
+    :isChildOf data:Moritz_of_Saxe_Altenburg ;
+    :isDaughterOf data:Moritz_of_Saxe_Altenburg ;
+    :isMotherOf data:Marie_Auguste_of_Anhalt ;
+    :isParentOf data:Marie_Auguste_of_Anhalt ;
+    :isSiblingOf data:Luise_of_Saxe_Altenburg ;
+    :isSisterOf data:Luise_of_Saxe_Altenburg .
+
+data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1916 ;
+    :hasBrother data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasMarriageYear 1940,
+        1946,
+        1959 ;
+    :hasMother data:Marie_Auguste_of_Anhalt ;
+    :hasParent data:Marie_Auguste_of_Anhalt,
+        data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isBloodrelationOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isBrotherOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isChildOf data:Marie_Auguste_of_Anhalt,
+        data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isSonOf data:Marie_Auguste_of_Anhalt,
+        data:Prince_Joachim_of_Prussia .
+
+data:Prince_Joachim_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Prince_Joachim_of_Prussia ;
+    :hasChild data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSon data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isBloodrelationOf data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :isFatherOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isParentOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isSiblingOf data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia .
+
+data:Marie_Auguste_of_Anhalt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Eduard_Duke_of_Anhalt,
+        data:Luise_of_Saxe_Altenburg,
+        data:Moritz_of_Saxe_Altenburg ;
+    :hasChild data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :hasFather data:Eduard_Duke_of_Anhalt ;
+    :hasMother data:Luise_of_Saxe_Altenburg ;
+    :hasParent data:Eduard_Duke_of_Anhalt,
+        data:Luise_of_Saxe_Altenburg ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig_Holstein,
+        data:Eduard_Duke_of_Anhalt,
+        data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia,
+        data:Luise_Dora_Hartmann,
+        data:Luise_of_Saxe_Altenburg,
+        data:Marie_Auguste_of_Anhalt,
+        data:Moritz_of_Saxe_Altenburg,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Marie_Auguste_of_Anhalt ;
+    :hasSon data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isAncestorOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isAuntOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isBloodrelationOf data:Marie_Auguste_of_Anhalt ;
+    :isChildOf data:Eduard_Duke_of_Anhalt,
+        data:Luise_of_Saxe_Altenburg ;
+    :isDaughterOf data:Eduard_Duke_of_Anhalt,
+        data:Luise_of_Saxe_Altenburg ;
+    :isMotherOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isParentOf data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia ;
+    :isSiblingOf data:Marie_Auguste_of_Anhalt ;
+    :isSisterOf data:Marie_Auguste_of_Anhalt .
+

@@ -1,0 +1,319 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrice_of_Orleans_Borbon a :Person,
+        :Woman ;
+    :hasRelation data:Beatrice_of_Orleans_Borbon ;
+    :hasSister data:Beatrice_of_Orleans_Borbon ;
+    :isAuntOf data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Beatrice_of_Orleans_Borbon ;
+    :isSiblingOf data:Beatrice_of_Orleans_Borbon ;
+    :isSisterOf data:Beatrice_of_Orleans_Borbon .
+
+data:Nicholas_Romanov a :Man,
+        :Person ;
+    :hasBrother data:Nicholas_Romanov ;
+    :hasRelation data:Nicholas_Romanov ;
+    :isBloodrelationOf data:Nicholas_Romanov ;
+    :isBrotherOf data:Nicholas_Romanov ;
+    :isSiblingOf data:Nicholas_Romanov .
+
+data:Maria_Kirillovna a :Person,
+        :Woman ;
+    :hasBrother data:Vladimir_Kirillovich ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Kirillovna ;
+    :isAuntOf data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich ;
+    :isSisterOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich .
+
+data:Leonida_Georgievna_Bagration_Moukhransky a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Vladimirovna ;
+    :hasDaughter data:Maria_Vladimirovna ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Leonida_Georgievna_Bagration_Moukhransky ;
+    :isAncestorOf data:Maria_Vladimirovna ;
+    :isAuntOf data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Leonida_Georgievna_Bagration_Moukhransky ;
+    :isMotherOf data:Maria_Vladimirovna ;
+    :isParentOf data:Maria_Vladimirovna ;
+    :isSiblingOf data:Leonida_Georgievna_Bagration_Moukhransky ;
+    :isSisterOf data:Leonida_Georgievna_Bagration_Moukhransky .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasChild data:Viktoria_Feodorovna ;
+    :hasDaughter data:Viktoria_Feodorovna ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isBrotherOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isFatherOf data:Viktoria_Feodorovna ;
+    :isParentOf data:Viktoria_Feodorovna ;
+    :isSiblingOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isUncleOf data:Viktoria_Feodorovna .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cyril_Vladimirovich ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Cyril_Vladimirovich ;
+    :isAncestorOf data:Cyril_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Cyril_Vladimirovich ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Cyril_Vladimirovich ;
+    :isParentOf data:Cyril_Vladimirovich ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Marie_Alexandrovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Viktoria_Feodorovna ;
+    :hasDaughter data:Viktoria_Feodorovna ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Marie_Alexandrovna ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Viktoria_Feodorovna ;
+    :isBloodrelationOf data:Marie_Alexandrovna ;
+    :isMotherOf data:Viktoria_Feodorovna ;
+    :isParentOf data:Viktoria_Feodorovna ;
+    :isSiblingOf data:Marie_Alexandrovna ;
+    :isSisterOf data:Marie_Alexandrovna .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Vladimir_Alexandrovich ;
+    :hasChild data:Cyril_Vladimirovich ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Cyril_Vladimirovich ;
+    :isAncestorOf data:Cyril_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Cyril_Vladimirovich ;
+    :isParentOf data:Cyril_Vladimirovich ;
+    :isSiblingOf data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Cyril_Vladimirovich .
+
+data:Cyril_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Cyril_Vladimirovich ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Cyril_Vladimirovich ;
+    :isBrotherOf data:Cyril_Vladimirovich ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Cyril_Vladimirovich ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+
+data:Viktoria_Feodorovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Marie_Alexandrovna ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Marie_Alexandrovna ;
+    :hasParent data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Marie_Alexandrovna ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Viktoria_Feodorovna ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Viktoria_Feodorovna ;
+    :isChildOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Marie_Alexandrovna ;
+    :isDaughterOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Marie_Alexandrovna ;
+    :isMotherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Viktoria_Feodorovna ;
+    :isSisterOf data:Viktoria_Feodorovna .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasAncestor data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Pavlovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasFather data:Vladimir_Kirillovich ;
+    :hasMother data:Leonida_Georgievna_Bagration_Moukhransky ;
+    :hasParent data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Vladimir_Kirillovich ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Vladimirovna ;
+    :isChildOf data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Vladimir_Kirillovich ;
+    :isDaughterOf data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Maria_Vladimirovna ;
+    :isSisterOf data:Maria_Vladimirovna .
+
+data:Vladimir_Kirillovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:Vladimir_Kirillovich ;
+    :hasChild data:Maria_Vladimirovna ;
+    :hasDaughter data:Maria_Vladimirovna ;
+    :hasDeathYear 1992 ;
+    :hasFather data:Cyril_Vladimirovich ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Viktoria_Feodorovna ;
+    :hasParent data:Cyril_Vladimirovich,
+        data:Viktoria_Feodorovna ;
+    :hasRelation data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Cyril_Vladimirovich,
+        data:Leonida_Georgievna_Bagration_Moukhransky,
+        data:Maria_Kirillovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Marie_Alexandrovna,
+        data:Viktoria_Feodorovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Kirillovna ;
+    :isAncestorOf data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich ;
+    :isBrotherOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich ;
+    :isChildOf data:Cyril_Vladimirovich,
+        data:Viktoria_Feodorovna ;
+    :isFatherOf data:Maria_Vladimirovna ;
+    :isParentOf data:Maria_Vladimirovna ;
+    :isSiblingOf data:Maria_Kirillovna,
+        data:Vladimir_Kirillovich ;
+    :isSonOf data:Cyril_Vladimirovich,
+        data:Viktoria_Feodorovna ;
+    :isUncleOf data:Maria_Vladimirovna .
+

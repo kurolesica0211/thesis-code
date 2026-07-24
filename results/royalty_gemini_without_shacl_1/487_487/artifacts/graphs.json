@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_I_of_Austria a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Otto_von_Habsburg .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Regina_von_Saxe-Meiningen a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Karl_von_Habsburg .\n\ndata:Zita_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Otto_von_Habsburg .\n\ndata:Ferdinand_Habsburg a :Man,\n        :Person .\n\ndata:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,\n        :Person ;\n    :isFatherOf data:Otto_d%27Ambrosio .\n\ndata:Eleonore_von_Habsburg-Lothringen a :Person,\n        :Woman ;\n    :hasBirthYear 1994 ;\n    :hasMarriageYear 2020 ;\n    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;\n    :isMotherOf data:Otto_d%27Ambrosio ;\n    :isSiblingOf data:Ferdinand_Habsburg .\n\ndata:Karl_von_Habsburg a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Otto_d%27Ambrosio a :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Karl_von_Habsburg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_I_of_Austria a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Otto_von_Habsburg .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Regina_von_Saxe-Meiningen a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Karl_von_Habsburg .\n\ndata:Zita_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Otto_von_Habsburg .\n\ndata:Ferdinand_Habsburg a :Man,\n        :Person .\n\ndata:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,\n        :Person ;\n    :isFatherOf data:Otto_d%27Ambrosio .\n\ndata:Eleonore_von_Habsburg-Lothringen a :Person,\n        :Woman ;\n    :hasBirthYear 1994 ;\n    :hasMarriageYear 2020 ;\n    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;\n    :isMotherOf data:Otto_d%27Ambrosio ;\n    :isSiblingOf data:Ferdinand_Habsburg .\n\ndata:Karl_von_Habsburg a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Otto_d%27Ambrosio a :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Karl_von_Habsburg .\n\n"
+    }
+]

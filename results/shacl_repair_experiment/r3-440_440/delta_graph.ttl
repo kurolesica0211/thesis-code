@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor .
+
+data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor .
+
+data:Harriet_Williamina_Hepburn-Forbes a :Ancestor .
+
+data:John_Herbert_Bowes-Lyon a :Ancestor ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Lady_Jane_McDonnell a :Ancestor .
+

@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Mary_Chamberlayne-Macdonald a :Person,
+        :Woman ;
+    :isMotherOf data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Francesca_Sofia a :Person,
+        :Woman ;
+    :isDaughterOf data:Jaime_of_Bourbon-Two_Sicilies,
+        data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Ines a :Person,
+        :Woman ;
+    :isDaughterOf data:Jaime_of_Bourbon-Two_Sicilies,
+        data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Infante_Carlos a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 ;
+    :isFatherOf data:Prince_Pedro .
+
+data:James_Lindesay-Bethune a :Man,
+        :Person ;
+    :isFatherOf data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Pedro .
+
+data:Sofia_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 .
+
+data:Jaime_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1993 ;
+    :hasMarriageYear 2021 ;
+    :hasRelation data:Lady_Charlotte_Lindesay-Bethune ;
+    :isSonOf data:Prince_Pedro,
+        data:Sofia_Landaluce_y_Melgarejo .
+
+data:Prince_Pedro a :Man,
+        :Person ;
+    :hasBirthYear 1968 .
+
+data:Lady_Charlotte_Lindesay-Bethune a :Person,
+        :Woman .
+

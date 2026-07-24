@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Alfonso_XIII a :Man,
+        :Person ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona .
+
+data:King_Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies .
+
+data:Prince_Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Louise_of_Orl%C3%A9ans .
+
+data:Queen_Victoria_Eugenie a :Person,
+        :Woman ;
+    :isMotherOf data:Infante_Juan_Count_of_Barcelona .
+
+data:Alessandro_Torlonia a :Man,
+        :Person .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Alessandro_Torlonia .
+
+data:Infanta_Elena a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :isMotherOf data:Infanta_Elena .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :isFatherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Princess_Louise_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :isMotherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona ;
+    :isMotherOf data:Juan_Carlos_I .
+
+data:Infante_Juan_Count_of_Barcelona a :Man,
+        :Person .
+

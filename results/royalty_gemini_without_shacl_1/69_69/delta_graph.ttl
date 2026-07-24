@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Christina_Manley a :Woman .
+
+data:Athena_of_Monpezat a :Woman ;
+    :hasMother data:Marie_Cavallier .
+
+data:Henrik_of_Monpezat a :Man ;
+    :hasMother data:Marie_Cavallier .
+
+data:Joachim_of_Denmark a :Man ;
+    :hasBirthYear 1969 ;
+    :hasChild data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasMother data:Margrethe_II ;
+    :isBrotherOf data:Frederik_X .
+
+data:Frederik_X a :Man ;
+    :hasMother data:Margrethe_II .
+
+data:Margrethe_II a :Woman ;
+    :hasChild data:Frederik_X,
+        data:Joachim_of_Denmark .
+
+data:Marie_Cavallier a :Woman .
+

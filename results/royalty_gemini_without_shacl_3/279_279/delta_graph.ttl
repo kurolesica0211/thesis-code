@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AchileasAndreas a :Man ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller .
+
+data:Alexia a :Woman ;
+    :isSisterOf data:PavlosCrownPrinceOfGreece .
+
+data:AristidesStavros a :Man ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller .
+
+data:ConstantineAlexios a :Man ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller .
+
+data:FelipeVI a :Man .
+
+data:FrederikX a :Man .
+
+data:MariaOlympia a :Woman ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller .
+
+data:MarinaConsortOfMichael a :Woman .
+
+data:MatthewKumar a :Man .
+
+data:MichaelOfGreeceAndDenmark a :Man .
+
+data:OdysseasKimon a :Man ;
+    :hasFather data:PavlosCrownPrinceOfGreece ;
+    :hasMother data:MarieChantalMiller .
+
+data:Philippos a :Man ;
+    :isBrotherOf data:PavlosCrownPrinceOfGreece .
+
+data:RobertWMiller a :Man .
+
+data:SofiaOfSpain a :Woman ;
+    :isSisterOf data:ConstantineII .
+
+data:Theodora a :Woman ;
+    :isSisterOf data:PavlosCrownPrinceOfGreece .
+
+data:TheodoraPrincess a :Woman ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie .
+
+data:FrederikIX a :Man .
+
+data:IngridOfDenmark a :Woman .
+
+data:MargretheII a :Woman .
+
+data:PaulKingOfGreece a :Man .
+
+data:Anne-Marie a :Woman ;
+    :hasFather data:FrederikIX ;
+    :hasMother data:IngridOfDenmark ;
+    :isSisterOf data:MargretheII .
+
+data:ConstantineII a :Man ;
+    :hasFather data:PaulKingOfGreece .
+
+data:MarieChantalMiller a :Woman .
+
+data:PavlosCrownPrinceOfGreece a :Man ;
+    :hasBirthYear 1967 ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie .
+

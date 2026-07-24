@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Claus-Casimir_of_Orange-Nassau a :Man ;\n    :hasBirthYear 2004 ;\n    :isChildOf data:Prince_Constantijn,\n        data:Princess_Laurentien ;\n    :isSonOf data:Prince_Constantijn,\n        data:Princess_Laurentien ;\n    :knownAs \"Claus-Casimir Bernhard Marius Max\"^^xsd:string .\n\ndata:Countess_Tatiana_Razumovsky_von_Wigstein a :Woman .\n\ndata:Ed_P_Spanjaard a :Man .\n\ndata:King_Willem-Alexander a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Maurits_of_Orange-Nassau a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Prince_Constantijn a :Man .\n\ndata:Princess_Laurentien a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Claus-Casimir_of_Orange-Nassau a :Man ;\n    :hasBirthYear 2004 ;\n    :isChildOf data:Prince_Constantijn,\n        data:Princess_Laurentien ;\n    :isSonOf data:Prince_Constantijn,\n        data:Princess_Laurentien ;\n    :knownAs \"Claus-Casimir Bernhard Marius Max\"^^xsd:string .\n\ndata:Countess_Tatiana_Razumovsky_von_Wigstein a :Woman .\n\ndata:Ed_P_Spanjaard a :Man .\n\ndata:King_Willem-Alexander a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Maurits_of_Orange-Nassau a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Prince_Constantijn a :Man .\n\ndata:Princess_Laurentien a :Woman .\n\n"
+    }
+]

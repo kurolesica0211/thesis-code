@@ -1,0 +1,158 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilia_von_Go%C3%ABss-Saurau a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :hasChild data:Carl-Anton ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasSister data:Cecilia_von_Go%C3%ABss-Saurau ;
+    :hasSon data:Carl-Anton ;
+    :isAncestorOf data:Carl-Anton ;
+    :isAuntOf data:Carl-Anton ;
+    :isBloodrelationOf data:Cecilia_von_Go%C3%ABss-Saurau ;
+    :isMotherOf data:Carl-Anton ;
+    :isParentOf data:Carl-Anton ;
+    :isSiblingOf data:Cecilia_von_Go%C3%ABss-Saurau ;
+    :isSisterOf data:Cecilia_von_Go%C3%ABss-Saurau .
+
+data:Josias_Georg_Wilhelm_Adolf a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Josias_Georg_Wilhelm_Adolf ;
+    :hasChild data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasDeathYear 1967 ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasSon data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isAncestorOf data:Carl-Anton,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isBloodrelationOf data:Josias_Georg_Wilhelm_Adolf ;
+    :isBrotherOf data:Josias_Georg_Wilhelm_Adolf ;
+    :isFatherOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isParentOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isSiblingOf data:Josias_Georg_Wilhelm_Adolf ;
+    :isUncleOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasChild data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :hasDaughter data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isAncestorOf data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isBloodrelationOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isFatherOf data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :isParentOf data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isUncleOf data:Altburg_Marie_Mathilde_von_Oldenburg .
+
+data:Altburg_Marie_Mathilde_von_Oldenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasBirthYear 1903 ;
+    :hasChild data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasParent data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasSister data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :hasSon data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isAncestorOf data:Carl-Anton,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isAuntOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isBloodrelationOf data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :isChildOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isDaughterOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isMotherOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isParentOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isSiblingOf data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :isSisterOf data:Altburg_Marie_Mathilde_von_Oldenburg .
+
+data:Carl-Anton a :Man,
+        :Person ;
+    :hasAncestor data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasBrother data:Carl-Anton ;
+    :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasMother data:Cecilia_von_Go%C3%ABss-Saurau ;
+    :hasParent data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isBloodrelationOf data:Carl-Anton ;
+    :isBrotherOf data:Carl-Anton ;
+    :isChildOf data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isSiblingOf data:Carl-Anton ;
+    :isSonOf data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm .
+
+data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasChild data:Carl-Anton ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Josias_Georg_Wilhelm_Adolf ;
+    :hasMarriageYear 1988 ;
+    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :hasParent data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf ;
+    :hasRelation data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Carl-Anton,
+        data:Cecilia_von_Go%C3%ABss-Saurau,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf,
+        data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasSon data:Carl-Anton ;
+    :isAncestorOf data:Carl-Anton ;
+    :isBloodrelationOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isBrotherOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isChildOf data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf ;
+    :isFatherOf data:Carl-Anton ;
+    :isParentOf data:Carl-Anton ;
+    :isSiblingOf data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :isSonOf data:Altburg_Marie_Mathilde_von_Oldenburg,
+        data:Josias_Georg_Wilhelm_Adolf ;
+    :isUncleOf data:Carl-Anton .
+

@@ -1,0 +1,51 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Berthold_Margrave_of_Baden a :Man,\n        :Person .\n\ndata:King_Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBrother data:King_Peter_II_of_Yugoslavia .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :alsoKnownAs \"Margarete Alice Thyra Viktoria Marie Louise Scholastica\"^^xsd:string ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Berthold_Margrave_of_Baden a :Man,\n        :Person .\n\ndata:King_Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBrother data:King_Peter_II_of_Yugoslavia .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "60febd87-6db9-4edf-bcd7-7a2b64731017",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Theodora_of_Greece_and_Denmark> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Theodora_of_Greece_and_Denmark> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berthold_Margrave_of_Baden> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Theodora_of_Greece_and_Denmark> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berthold_Margrave_of_Baden> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Margarita_of_Baden> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berthold_Margrave_of_Baden> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :alsoKnownAs \"Margarete Alice Thyra Viktoria Marie Louise Scholastica\"^^xsd:string ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Berthold_Margrave_of_Baden a :Ancestor,\n        :Man,\n        :Person .\n\ndata:King_Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBrother data:King_Peter_II_of_Yugoslavia .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :alsoKnownAs \"Margarete Alice Thyra Viktoria Marie Louise Scholastica\"^^xsd:string ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Berthold_Margrave_of_Baden a :Ancestor,\n        :Man,\n        :Person .\n\ndata:King_Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBrother data:King_Peter_II_of_Yugoslavia .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 6,
+        "source": "validate_shacl",
+        "tool_call_id": "f1ebc7c7-d4da-442f-a28d-8567cf19ff11",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :alsoKnownAs \"Margarete Alice Thyra Viktoria Marie Louise Scholastica\"^^xsd:string ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Berthold_Margrave_of_Baden a :Ancestor,\n        :Man,\n        :Person .\n\ndata:King_Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBrother data:King_Peter_II_of_Yugoslavia .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

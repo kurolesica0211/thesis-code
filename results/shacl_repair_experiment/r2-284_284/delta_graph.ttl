@@ -1,0 +1,15 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Lady_Dorothy_Osborne a :Ancestor .
+
+data:Patrick_Lord_Glamis a :Ancestor .
+
+data:Princess_Margaret :hasFather data:King_George_VI .
+
+data:Queen_Elizabeth_II :hasFather data:King_George_VI .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Ancestor .
+
+data:King_George_VI a :Ancestor .
+

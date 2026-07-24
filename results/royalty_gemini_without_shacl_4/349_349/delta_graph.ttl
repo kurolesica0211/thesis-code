@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Tatiana_Mountbatten a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Nadejda_Mikhailovna_de_Torby,
+        data:Prince_George_of_Battenberg ;
+    :hasBirthYear "1990-04-16"^^xsd:date ;
+    :hasBrother data:Henry_Mountbatten ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Sarah_Georgina_Walker .
+
+data:Countess_Nadejda_Mikhailovna_de_Torby a :Person,
+        :Woman .
+
+data:George_Mountbatten a :Man,
+        :Person .
+
+data:Henry_Mountbatten a :Man,
+        :Person .
+
+data:Prince_George_of_Battenberg a :Man,
+        :Person .
+
+data:Sarah_Georgina_Walker a :Person,
+        :Woman .
+

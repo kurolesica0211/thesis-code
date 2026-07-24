@@ -1,0 +1,178 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard a :Man,
+        :Person ;
+    :hasBrother data:Bernhard ;
+    :hasRelation data:Bernhard ;
+    :isBloodrelationOf data:Bernhard ;
+    :isBrotherOf data:Bernhard ;
+    :isSiblingOf data:Bernhard .
+
+data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock a :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasRelation data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock ;
+    :hasSister data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock ;
+    :isBloodrelationOf data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock ;
+    :isSiblingOf data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock ;
+    :isSisterOf data:Countess_Klara_Marie_von_Korff_genannt_Schmising_Kerssenbrock .
+
+data:Count_Ernst_of_Lippe_Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :hasChild data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :hasDaughter data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isAncestorOf data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred ;
+    :isBloodrelationOf data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :isBrotherOf data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :isFatherOf data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :isParentOf data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :isSiblingOf data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :isUncleOf data:Countess_Adelaide_of_Lippe_Biesterfeld .
+
+data:Georg_II_Duke_of_Saxe_Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :hasChild data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasSon data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isAncestorOf data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isBloodrelationOf data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :isBrotherOf data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :isFatherOf data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isParentOf data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isSiblingOf data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :isUncleOf data:Prince_Frederick_Johann_of_Saxe_Meiningen .
+
+data:Prince_Frederick_Alfred a :Man,
+        :Person ;
+    :hasAncestor data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasBrother data:Prince_Frederick_Alfred ;
+    :hasFather data:Georg_Prince_of_Saxe_Meiningen ;
+    :hasParent data:Georg_Prince_of_Saxe_Meiningen ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isBloodrelationOf data:Prince_Frederick_Alfred ;
+    :isBrotherOf data:Prince_Frederick_Alfred ;
+    :isChildOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isSiblingOf data:Prince_Frederick_Alfred ;
+    :isSonOf data:Georg_Prince_of_Saxe_Meiningen .
+
+data:Countess_Adelaide_of_Lippe_Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :hasBirthYear 1870 ;
+    :hasChild data:Georg_Prince_of_Saxe_Meiningen ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :hasParent data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasSister data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :hasSon data:Georg_Prince_of_Saxe_Meiningen ;
+    :isAncestorOf data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred ;
+    :isAuntOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :isChildOf data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :isDaughterOf data:Count_Ernst_of_Lippe_Biesterfeld ;
+    :isMotherOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isParentOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe_Biesterfeld .
+
+data:Prince_Frederick_Johann_of_Saxe_Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :hasBirthYear 1861 ;
+    :hasBrother data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasChild data:Georg_Prince_of_Saxe_Meiningen ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :hasParent data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasSon data:Georg_Prince_of_Saxe_Meiningen ;
+    :isAncestorOf data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred ;
+    :isBloodrelationOf data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isBrotherOf data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isChildOf data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :isFatherOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isParentOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isSiblingOf data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isSonOf data:Georg_II_Duke_of_Saxe_Meiningen ;
+    :isUncleOf data:Georg_Prince_of_Saxe_Meiningen .
+
+data:Georg_Prince_of_Saxe_Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Georg_Prince_of_Saxe_Meiningen ;
+    :hasChild data:Prince_Frederick_Alfred ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Countess_Adelaide_of_Lippe_Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasRelation data:Count_Ernst_of_Lippe_Biesterfeld,
+        data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Georg_II_Duke_of_Saxe_Meiningen,
+        data:Georg_Prince_of_Saxe_Meiningen,
+        data:Prince_Frederick_Alfred,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :hasSon data:Prince_Frederick_Alfred ;
+    :isAncestorOf data:Prince_Frederick_Alfred ;
+    :isBloodrelationOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isBrotherOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isChildOf data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isFatherOf data:Prince_Frederick_Alfred ;
+    :isParentOf data:Prince_Frederick_Alfred ;
+    :isSiblingOf data:Georg_Prince_of_Saxe_Meiningen ;
+    :isSonOf data:Countess_Adelaide_of_Lippe_Biesterfeld,
+        data:Prince_Frederick_Johann_of_Saxe_Meiningen ;
+    :isUncleOf data:Prince_Frederick_Alfred .
+

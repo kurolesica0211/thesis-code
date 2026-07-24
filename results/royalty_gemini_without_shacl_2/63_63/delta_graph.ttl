@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_I_of_Greece ;
+    :knownAs "Sophia of Prussia"^^xsd:string .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman .
+

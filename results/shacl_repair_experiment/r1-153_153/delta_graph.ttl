@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Infante_Juan_Count_of_Barcelona :hasFather data:King_Alfonso_XIII ;
+    :hasMother data:Queen_Victoria_Eugenie .
+
+data:Juan_Carlos_I a :Ancestor .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Louise_of_Orl%C3%A9ans .
+
+data:King_Alfonso_XIII a :Ancestor .
+
+data:King_Ferdinand_II_of_the_Two_Sicilies a :Ancestor .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasFather data:King_Ferdinand_II_of_the_Two_Sicilies .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor .
+
+data:Princess_Louise_of_Orl%C3%A9ans a :Ancestor ;
+    :hasFather data:Prince_Philippe_Count_of_Paris .
+
+data:Queen_Victoria_Eugenie a :Ancestor .
+

@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Sex .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :isParentOf data:Michael_Prinz_von_Preussen .
+
+data:Kira_Kirillovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :isParentOf data:Michael_Prinz_von_Preussen .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :isParentOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Michael_Prinz_von_Preussen .
+
+data:Michael_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1940 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMother data:Kira_Kirillovna ;
+    :isChildOf data:Kira_Kirillovna,
+        data:Louis_Ferdinand_Prinz_von_Preussen .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Dolores_Luna_Noor .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_of_Yugoslavia .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_younger a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasSex data:Female .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasSex data:Male ;\n    :isFatherOf data:Dolores_Luna_Noor .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Dolores_Luna_Noor .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_of_Yugoslavia .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_younger a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasSex data:Female .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasSex data:Male ;\n    :isFatherOf data:Dolores_Luna_Noor .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lauren_Estelle_Jones a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Dolores_Luna_Noor .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_of_Yugoslavia .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Alexander_Karageorgevitch_younger,\n        data:Peter_Karageorgevitch,\n        data:Philip_Karageorgevitch .\n\ndata:Alexander_Karageorgevitch_younger a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Dolores_Luna_Noor a :Person,\n        :Woman ;\n    :hasBirthYear 2017 ;\n    :hasSex data:Female .\n\ndata:Peter_Karageorgevitch a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasSex data:Male ;\n    :isFatherOf data:Dolores_Luna_Noor .\n\ndata:Philip_Karageorgevitch a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

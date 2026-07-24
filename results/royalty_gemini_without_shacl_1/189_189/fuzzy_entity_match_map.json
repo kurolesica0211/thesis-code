@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/189_189",
+  "text_file": "Q257926.txt",
+  "text_key": "Q257926",
+  "article": "https://en.wikipedia.org/wiki/Princess_Elizabeth_of_Yugoslavia",
+  "article_key": "Princess Elizabeth of Yugoslavia",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Elizabeth_of_Serbia",
+    "qid": "Q257926",
+    "label": "Princess Elizabeth of Serbia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Elizabeth_of_Serbia",
+      "qid": "Q257926",
+      "label": "Princess Elizabeth of Serbia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Paul_of_Yugoslavia",
+      "qid": "Q313128",
+      "label": "Prince Paul of Yugoslavia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Olga_of_Greece_and_Denmark",
+      "qid": "Q235432",
+      "label": "Princess Olga of Greece and Denmark",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Alexander_of_Serbia",
+      "qid": "Q2242035",
+      "label": "Prince Alexander of Serbia",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/PrinceAlexanderOfYugoslavia",
+      "extracted_local_name": "PrinceAlexanderOfYugoslavia",
+      "embedding_text": "Prince Alexander Of Yugoslavia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Alexander_of_Serbia",
+      "ground_truth_qid": "Q2242035",
+      "ground_truth_label": "Prince Alexander of Serbia",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Alexander of Yugoslavia",
+      "best_candidate_label": "Prince Alexander of Serbia",
+      "best_candidate_qid": "Q2242035",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessElizabethOfYugoslavia",
+      "extracted_local_name": "PrincessElizabethOfYugoslavia",
+      "embedding_text": "Princess Elizabeth Of Yugoslavia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Elizabeth_of_Serbia",
+      "ground_truth_qid": "Q257926",
+      "ground_truth_label": "Princess Elizabeth of Serbia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Elizabeth of Yugoslavia",
+      "best_candidate_label": "Princess Elizabeth of Serbia",
+      "best_candidate_qid": "Q257926",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincePaulOfYugoslavia",
+      "extracted_local_name": "PrincePaulOfYugoslavia",
+      "embedding_text": "Prince Paul Of Yugoslavia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9523809523809524,
+      "ground_truth_uri": "http://example.com/data#Princess_Olga_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q235432",
+      "ground_truth_label": "Princess Olga of Greece and Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Paul of Yugoslavia",
+      "best_candidate_label": "Princess Olga of Greece and Denmark",
+      "best_candidate_qid": "Q235432",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9523809523809524
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceNicholasOfYugoslavia",
+      "extracted_local_name": "PrinceNicholasOfYugoslavia",
+      "embedding_text": "Prince Nicholas Of Yugoslavia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.825,
+      "ground_truth_uri": "http://example.com/data#Prince_Paul_of_Yugoslavia",
+      "ground_truth_qid": "Q313128",
+      "ground_truth_label": "Prince Paul of Yugoslavia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince of Yugoslavia Paul",
+      "best_candidate_label": "Prince Paul of Yugoslavia",
+      "best_candidate_qid": "Q313128",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.825
+    },
+    {
+      "extracted_uri": "http://example.org/data/ManuelUlloaElias",
+      "extracted_local_name": "ManuelUlloaElias",
+      "embedding_text": "Manuel Ulloa Elias",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul of Yugoslavia",
+      "best_candidate_label": "Prince Paul of Yugoslavia",
+      "best_candidate_qid": "Q313128",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessOlgaOfGreeceAndDenmark",
+      "extracted_local_name": "PrincessOlgaOfGreeceAndDenmark",
+      "embedding_text": "Princess Olga Of Greece And Denmark",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 4,
+    "entities_unmatched": 2
+  }
+}

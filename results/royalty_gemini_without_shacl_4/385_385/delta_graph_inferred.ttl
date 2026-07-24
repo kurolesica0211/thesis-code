@@ -1,0 +1,137 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Juliana_of_the_Netherlands ;
+    :isAuntOf data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Wilhelmina_of_the_Netherlands ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isChildOf data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Friedrich_Gunther_of_Schwarzburg a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Gunther_of_Schwarzburg ;
+    :hasRelation data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg,
+        data:Sophie_Louise_of_Saxe-Weimar-Eisenach,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Marie_Antoinette_of_Schwarzburg ;
+    :isBloodrelationOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg ;
+    :isBrotherOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg ;
+    :isSiblingOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg .
+
+data:Marie_Antoinette_of_Schwarzburg a :Person,
+        :Woman ;
+    :hasBrother data:Friedrich_Gunther_of_Schwarzburg ;
+    :hasRelation data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg,
+        data:Sophie_Louise_of_Saxe-Weimar-Eisenach,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Marie_Antoinette_of_Schwarzburg ;
+    :isBloodrelationOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg ;
+    :isSiblingOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg ;
+    :isSisterOf data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg .
+
+data:Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :hasDaughter data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg,
+        data:Sophie_Louise_of_Saxe-Weimar-Eisenach,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Feodora_of_Saxe-Meiningen ;
+    :isAncestorOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isAuntOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Feodora_of_Saxe-Meiningen ;
+    :isMotherOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isParentOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Feodora_of_Saxe-Meiningen .
+
+data:William_Ernest_of_Saxe-Weimar-Eisenach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasChild data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :hasDaughter data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg,
+        data:Sophie_Louise_of_Saxe-Weimar-Eisenach,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isAncestorOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isBrotherOf data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isFatherOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isParentOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isUncleOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach .
+
+data:Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasAncestor data:Feodora_of_Saxe-Meiningen,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasDeathYear "1988"^^xsd:positiveInteger ;
+    :hasFather data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasMarriageYear "1938"^^xsd:positiveInteger ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasParent data:Feodora_of_Saxe-Meiningen,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_Gunther_of_Schwarzburg,
+        data:Marie_Antoinette_of_Schwarzburg,
+        data:Sophie_Louise_of_Saxe-Weimar-Eisenach,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isChildOf data:Feodora_of_Saxe-Meiningen,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isDaughterOf data:Feodora_of_Saxe-Meiningen,
+        data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach ;
+    :isSisterOf data:Sophie_Louise_of_Saxe-Weimar-Eisenach .
+

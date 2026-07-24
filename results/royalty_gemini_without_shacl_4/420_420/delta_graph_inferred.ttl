@@ -1,0 +1,137 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Hubertus_von_Faber-Castell a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Count_Hubertus_von_Faber-Castell ;
+    :hasChild data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :hasDaughter data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isBloodrelationOf data:Count_Hubertus_von_Faber-Castell ;
+    :isBrotherOf data:Count_Hubertus_von_Faber-Castell ;
+    :isFatherOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isParentOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isSiblingOf data:Count_Hubertus_von_Faber-Castell ;
+    :isUncleOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1940"^^xsd:positiveInteger ;
+    :hasChild data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isAncestorOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isAuntOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isParentOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isSiblingOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell a :Person,
+        :Woman ;
+    :hasAncestor data:Count_Hubertus_von_Faber-Castell ;
+    :hasBirthYear "1974"^^xsd:positiveInteger ;
+    :hasFather data:Count_Hubertus_von_Faber-Castell ;
+    :hasParent data:Count_Hubertus_von_Faber-Castell ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isBloodrelationOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isChildOf data:Count_Hubertus_von_Faber-Castell ;
+    :isDaughterOf data:Count_Hubertus_von_Faber-Castell ;
+    :isSiblingOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell ;
+    :isSisterOf data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell .
+
+data:Landgrave_Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Landgrave_Philipp ;
+    :hasChild data:Moritz_Landgrave_of_Hesse ;
+    :hasDeathYear "1980"^^xsd:positiveInteger ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Moritz_Landgrave_of_Hesse ;
+    :isAncestorOf data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Moritz_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Landgrave_Philipp ;
+    :isBrotherOf data:Landgrave_Philipp ;
+    :isFatherOf data:Moritz_Landgrave_of_Hesse ;
+    :isParentOf data:Moritz_Landgrave_of_Hesse ;
+    :isSiblingOf data:Landgrave_Philipp ;
+    :isUncleOf data:Moritz_Landgrave_of_Hesse .
+
+data:Moritz_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Landgrave_Philipp ;
+    :hasBrother data:Moritz_Landgrave_of_Hesse ;
+    :hasChild data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :hasFather data:Landgrave_Philipp ;
+    :hasParent data:Landgrave_Philipp ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isAncestorOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Moritz_Landgrave_of_Hesse ;
+    :isBrotherOf data:Moritz_Landgrave_of_Hesse ;
+    :isChildOf data:Landgrave_Philipp ;
+    :isFatherOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isParentOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isSiblingOf data:Moritz_Landgrave_of_Hesse ;
+    :isSonOf data:Landgrave_Philipp ;
+    :isUncleOf data:Donatus_Prince_and_Landgrave_of_Hesse .
+
+data:Donatus_Prince_and_Landgrave_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear "1966"^^xsd:positiveInteger ;
+    :hasBrother data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :hasFather data:Moritz_Landgrave_of_Hesse ;
+    :hasMarriageYear "2003"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Count_Hubertus_von_Faber-Castell,
+        data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell,
+        data:Donatus_Prince_and_Landgrave_of_Hesse,
+        data:Landgrave_Philipp,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isBrotherOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isChildOf data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Donatus_Prince_and_Landgrave_of_Hesse ;
+    :isSonOf data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+

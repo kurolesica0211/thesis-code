@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Doreen_Knatchbull a :Ancestor .
+
+data:Marian_Elizabeth a :Ancestor .
+
+data:Nicholas_Knatchbull :hasFather data:John_Knatchbull ;
+    :hasMother data:Patricia_Knatchbull .
+
+data:Norton_Louis_Philip_Knatchbull :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string .
+
+data:Reginald_Wray_Frank_Eastwood a :Ancestor .
+
+data:John_Knatchbull a :Ancestor .
+
+data:Louis_Mountbatten a :Ancestor .
+
+data:Patricia_Knatchbull a :Ancestor ;
+    :hasFather data:Louis_Mountbatten .
+

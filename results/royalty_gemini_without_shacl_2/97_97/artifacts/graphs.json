@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man,\n        :Person .\n\ndata:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man,\n        :Person ;\n    :isBrotherOf data:Carlos_Hugo_Duke_of_Parma .\n\ndata:Princess_Margarita_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1972 ;\n    :hasMarriageYear 2001 ;\n    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands ;\n    :isSiblingOf data:Prince_Carlos,\n        data:Prince_Jaime,\n        data:Princess_Carolina .\n\ndata:Queen_Beatrix a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Irene_of_the_Netherlands .\n\ndata:Prince_Bernhard a :Ancestor,\n        :Man .\n\ndata:Prince_Carlos a :Man,\n        :Person .\n\ndata:Prince_Jaime a :Man,\n        :Person .\n\ndata:Princess_Carolina a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Ancestor,\n        :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Ancestor,\n        :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Ancestor,\n        :Woman ;\n    :isDaughterOf data:Prince_Bernhard,\n        data:Queen_Juliana .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man,\n        :Person .\n\ndata:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man,\n        :Person ;\n    :isBrotherOf data:Carlos_Hugo_Duke_of_Parma .\n\ndata:Princess_Margarita_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1972 ;\n    :hasMarriageYear 2001 ;\n    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands ;\n    :isSiblingOf data:Prince_Carlos,\n        data:Prince_Jaime,\n        data:Princess_Carolina .\n\ndata:Queen_Beatrix a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Irene_of_the_Netherlands .\n\ndata:Prince_Bernhard a :Ancestor,\n        :Man .\n\ndata:Prince_Carlos a :Man,\n        :Person .\n\ndata:Prince_Jaime a :Man,\n        :Person .\n\ndata:Princess_Carolina a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Ancestor,\n        :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Ancestor,\n        :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Ancestor,\n        :Woman ;\n    :isDaughterOf data:Prince_Bernhard,\n        data:Queen_Juliana .\n\n"
+    }
+]

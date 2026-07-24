@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Maurice_of_Battenberg a :Man,
+        :Person ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Henry_of_Battenberg ;
+    :hasMother data:Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Albert_Prince_Consort a :Man,
+        :Person .
+
+data:Alexander_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasFather data:Albert_Prince_Consort ;
+    :hasMother data:Queen_Victoria .
+
+data:Henry_of_Battenberg a :Man,
+        :Person ;
+    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Therese_of_Hauke .
+
+data:Julie_Therese_of_Hauke a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :hasMarriageYear "1906"^^xsd:positiveInteger .
+

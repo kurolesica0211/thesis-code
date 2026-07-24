@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mike_Tindall a :Man,
+        :Person ;
+    :hasBrother data:Mike_Tindall ;
+    :hasRelation data:Mike_Tindall ;
+    :isBloodrelationOf data:Mike_Tindall ;
+    :isBrotherOf data:Mike_Tindall ;
+    :isSiblingOf data:Mike_Tindall .
+
+data:Anne_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Anne_Princess_Royal ;
+    :isAncestorOf data:Zara_Tindall ;
+    :isAuntOf data:Zara_Tindall ;
+    :isBloodrelationOf data:Anne_Princess_Royal ;
+    :isMotherOf data:Zara_Tindall ;
+    :isParentOf data:Zara_Tindall ;
+    :isSiblingOf data:Anne_Princess_Royal ;
+    :isSisterOf data:Anne_Princess_Royal .
+
+data:Mark_Phillips a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Zara_Tindall ;
+    :isAncestorOf data:Zara_Tindall ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Zara_Tindall ;
+    :isParentOf data:Zara_Tindall ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Zara_Tindall .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasParent data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Zara_Tindall ;
+    :hasSex "Female"^^xsd:string ;
+    :hasSister data:Zara_Tindall ;
+    :isBloodrelationOf data:Zara_Tindall ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isDaughterOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isSiblingOf data:Zara_Tindall ;
+    :isSisterOf data:Zara_Tindall .
+

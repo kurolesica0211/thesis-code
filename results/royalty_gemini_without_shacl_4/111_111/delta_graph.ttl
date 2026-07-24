@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Catherine_Middleton a :Person,
+        :Woman .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:HauteLook a :DomainEntity .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasBirthYear 1967 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Mountbatten ;
+    :hasRelation data:David_Flint_Wood ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Lady_Helen_Windsor .
+
+data:Lady_Diana_Spencer a :Person,
+        :Woman .
+
+data:Linda_Griffin a :Person,
+        :Woman .
+
+data:Nicholas_Keuper a :Man,
+        :Person .
+
+data:Prince_William a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Susannah_Constantine a :Person,
+        :Woman .
+
+data:David_Armstrong-Jones a :Man,
+        :Person .
+
+data:David_Flint_Wood a :Man,
+        :Person .
+
+data:David_Nightingale_Hicks a :Man,
+        :Person .
+
+data:Lady_Helen_Windsor a :Person,
+        :Woman .
+
+data:Lady_Pamela_Mountbatten a :Person,
+        :Woman .
+

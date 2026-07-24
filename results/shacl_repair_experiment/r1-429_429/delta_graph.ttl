@@ -1,0 +1,9 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor .
+
+data:Prince_Philip_Duke_of_Edinburgh :hasSister data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor .
+

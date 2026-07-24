@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ashley_Louis_David_Hicks a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasBirthYear 1963 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMarriageYear 1990,
+        2015 ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasSex data:Male ;
+    :hasSister data:Edwina_Brudenell,
+        data:India_Hicks .
+
+data:Kathryn_Sharkey a :Person,
+        :Woman ;
+    :hasFather data:William_T_Sharkey ;
+    :hasMother data:Rosalie_Solis .
+
+data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
+        :Woman ;
+    :hasFather data:Dr_Carlo_Tondato ;
+    :hasMother data:Rosy_Maza .
+
+data:David_Nightingale_Hicks a :Man,
+        :Person .
+
+data:Dr_Carlo_Tondato a :Man,
+        :Person .
+
+data:Edwina_Brudenell a :Person,
+        :Woman .
+
+data:India_Hicks a :Person,
+        :Woman .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Rosalie_Solis a :Person,
+        :Woman .
+
+data:Rosy_Maza a :Person,
+        :Woman .
+
+data:William_T_Sharkey a :Man,
+        :Person .
+

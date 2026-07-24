@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bavaria a :Person,\n        :Woman ;\n    :hasBirthYear \"1911\"^^xsd:positiveInteger ;\n    :hasBrother data:Jos%C3%A9_Eugenio,\n        data:Luis_Alfonso ;\n    :hasDeathYear \"1953\"^^xsd:positiveInteger ;\n    :hasFather data:Ferdinand_of_Bavaria ;\n    :hasMarriageYear \"1946\"^^xsd:positiveInteger ;\n    :hasMother data:Mar%C3%ADa_Teresa_of_Spain ;\n    :hasRelation data:Irakli_Bagration_of_Mukhrani ;\n    :hasSister data:Mar%C3%ADa_del_Pilar .\n\ndata:Ferdinand_of_Bavaria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Irakli_Bagration_of_Mukhrani a :Man,\n        :Person ;\n    :hasSister data:Leonida .\n\ndata:Jos%C3%A9_Eugenio a :Man,\n        :Person ;\n    :hasBirthYear \"1909\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1966\"^^xsd:positiveInteger .\n\ndata:Leonida a :Person,\n        :Woman ;\n    :hasRelation data:Vladimir .\n\ndata:Luis_Alfonso a :Man,\n        :Person ;\n    :hasBirthYear \"1906\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1983\"^^xsd:positiveInteger .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Mar%C3%ADa_del_Pilar a :Person,\n        :Woman ;\n    :hasBirthYear \"1912\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1918\"^^xsd:positiveInteger .\n\ndata:Vladimir a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bavaria a :Person,\n        :Woman ;\n    :hasBirthYear \"1911\"^^xsd:positiveInteger ;\n    :hasBrother data:Jos%C3%A9_Eugenio,\n        data:Luis_Alfonso ;\n    :hasDeathYear \"1953\"^^xsd:positiveInteger ;\n    :hasFather data:Ferdinand_of_Bavaria ;\n    :hasMarriageYear \"1946\"^^xsd:positiveInteger ;\n    :hasMother data:Mar%C3%ADa_Teresa_of_Spain ;\n    :hasRelation data:Irakli_Bagration_of_Mukhrani ;\n    :hasSister data:Mar%C3%ADa_del_Pilar .\n\ndata:Ferdinand_of_Bavaria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Irakli_Bagration_of_Mukhrani a :Man,\n        :Person ;\n    :hasSister data:Leonida .\n\ndata:Jos%C3%A9_Eugenio a :Man,\n        :Person ;\n    :hasBirthYear \"1909\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1966\"^^xsd:positiveInteger .\n\ndata:Leonida a :Person,\n        :Woman ;\n    :hasRelation data:Vladimir .\n\ndata:Luis_Alfonso a :Man,\n        :Person ;\n    :hasBirthYear \"1906\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1983\"^^xsd:positiveInteger .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Mar%C3%ADa_del_Pilar a :Person,\n        :Woman ;\n    :hasBirthYear \"1912\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1918\"^^xsd:positiveInteger .\n\ndata:Vladimir a :Man,\n        :Person .\n\n"
+    }
+]

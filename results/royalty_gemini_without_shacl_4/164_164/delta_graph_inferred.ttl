@@ -1,0 +1,177 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSister data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Kira_Kirillovna_of_Russia .
+
+data:Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Ferdinand_of_Prussia ;
+    :hasChild data:Friedrich_Wilhelm_of_Prussia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:Vladimir_of_Russia ;
+    :hasSon data:Friedrich_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Louis_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_of_Prussia ;
+    :isFatherOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isParentOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand_of_Prussia ;
+    :isUncleOf data:Friedrich_Wilhelm_of_Prussia .
+
+data:Maria_of_Russia a :Person,
+        :Woman ;
+    :hasBrother data:Vladimir_of_Russia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :hasSister data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia ;
+    :isAuntOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia .
+
+data:Vladimir_of_Russia a :Man,
+        :Person ;
+    :hasBrother data:Vladimir_of_Russia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :hasSister data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isBrotherOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isUncleOf data:Friedrich_Wilhelm_of_Prussia .
+
+data:Friedrich_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Friedrich_Wilhelm_of_Prussia ;
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia ;
+    :hasParent data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:Vladimir_of_Russia ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isChildOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isSonOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia .
+
+data:Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Vladimir_of_Russia ;
+    :hasChild data:Friedrich_Wilhelm_of_Prussia ;
+    :hasDeathYear 1967 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Friedrich_Wilhelm_of_Prussia,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Maria_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:Vladimir_of_Russia ;
+    :hasSister data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia ;
+    :hasSon data:Friedrich_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isAuntOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isChildOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isParentOf data:Friedrich_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia,
+        data:Maria_of_Russia,
+        data:Vladimir_of_Russia .
+

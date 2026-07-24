@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Helen_Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:King_George_V ;
+    :hasBirthYear 1964 ;
+    :hasRelation data:Timothy_Verner_Taylor ;
+    :isDaughterOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent .
+
+data:Katharine_Duchess_of_Kent a :Person,
+        :Woman .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Timothy_Verner_Taylor a :Man,
+        :Person ;
+    :hasBirthYear 1963 .
+

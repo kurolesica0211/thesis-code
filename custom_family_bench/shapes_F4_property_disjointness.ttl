@@ -1,0 +1,155 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix esh: <http://example.org/esh#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+:Ancestor a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Ancestor-isParentOf,
+        :Man-isBrotherOf,
+        :Person-hasBrother,
+        :Person-hasSister,
+        :Person-isChildOf,
+        :Woman-isSisterOf ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:DomainEntity a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Ancestor-isParentOf,
+        :Man-isBrotherOf,
+        :Person-hasBrother,
+        :Person-hasSister,
+        :Person-isChildOf,
+        :Woman-isSisterOf .
+
+:Female a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Male a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Man a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Ancestor-isParentOf,
+        :Man-isBrotherOf,
+        :Person-hasBrother,
+        :Person-hasSister,
+        :Person-isChildOf ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:Person a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Ancestor-isParentOf,
+        :Man-isBrotherOf,
+        :Person-hasBrother,
+        :Person-hasSister,
+        :Person-isChildOf,
+        :Woman-isSisterOf ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Sex a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Woman a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Ancestor-isParentOf,
+        :Person-hasBrother,
+        :Person-hasSister,
+        :Person-isChildOf,
+        :Woman-isSisterOf ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+esh:InferTypeRule_Sex a sh:TripleRule ;
+    sh:object :Sex ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+esh:InferTypeRule_Person a sh:TripleRule ;
+    sh:object :Person ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+:Man-isBrotherOf a sh:PropertyShape ;
+    sh:disjoint :hasDaughter,
+        :hasFather,
+        :hasMother,
+        :hasParent,
+        :hasSon,
+        :isChildOf,
+        :isDaughterOf,
+        :isFatherOf,
+        :isMotherOf,
+        :isParentOf,
+        :isSonOf ;
+    sh:path :isBrotherOf .
+
+:Woman-isSisterOf a sh:PropertyShape ;
+    sh:disjoint :hasDaughter,
+        :hasFather,
+        :hasMother,
+        :hasParent,
+        :hasSon,
+        :isChildOf,
+        :isDaughterOf,
+        :isFatherOf,
+        :isMotherOf,
+        :isParentOf,
+        :isSonOf ;
+    sh:path :isSisterOf .
+
+:Ancestor-isParentOf a sh:PropertyShape ;
+    sh:disjoint :hasBrother,
+        :hasSister,
+        :isBrotherOf,
+        :isSisterOf ;
+    sh:path :isParentOf .
+
+:Person-hasBrother a sh:PropertyShape ;
+    sh:disjoint :hasDaughter,
+        :hasFather,
+        :hasMother,
+        :hasParent,
+        :hasSon,
+        :isChildOf,
+        :isDaughterOf,
+        :isFatherOf,
+        :isMotherOf,
+        :isParentOf,
+        :isSonOf ;
+    sh:path :hasBrother .
+
+:Person-hasSister a sh:PropertyShape ;
+    sh:disjoint :hasDaughter,
+        :hasFather,
+        :hasMother,
+        :hasParent,
+        :hasSon,
+        :isChildOf,
+        :isDaughterOf,
+        :isFatherOf,
+        :isMotherOf,
+        :isParentOf,
+        :isSonOf ;
+    sh:path :hasSister .
+
+:Person-isChildOf a sh:PropertyShape ;
+    sh:disjoint :hasBrother,
+        :hasSister,
+        :isBrotherOf,
+        :isSisterOf ;
+    sh:path :isChildOf .
+
+esh:InferTypeRule_DomainEntity a sh:TripleRule ;
+    sh:object :DomainEntity ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+

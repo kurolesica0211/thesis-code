@@ -1,0 +1,119 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/408_408",
+  "text_file": "Q6759834.txt",
+  "text_key": "Q6759834",
+  "article": "https://en.wikipedia.org/wiki/Margaret_Rhodes",
+  "article_key": "Margaret Rhodes",
+  "main_entity": {
+    "uri": "http://example.com/data#Margaret_Rhodes",
+    "qid": "Q6759834",
+    "label": "Margaret Rhodes"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Margaret_Rhodes",
+      "qid": "Q6759834",
+      "label": "Margaret Rhodes",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Margaret_Rhodes",
+      "extracted_local_name": "Margaret_Rhodes",
+      "embedding_text": "Margaret Rhodes",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Margaret_Rhodes",
+      "ground_truth_qid": "Q6759834",
+      "ground_truth_label": "Margaret Rhodes",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Denys_Gravenor_Rhodes",
+      "extracted_local_name": "Denys_Gravenor_Rhodes",
+      "embedding_text": "Denys Gravenor Rhodes",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4444444444444444
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lady_Mary_Bowes-Lyon",
+      "extracted_local_name": "Lady_Mary_Bowes-Lyon",
+      "embedding_text": "Lady Mary Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lord_Elphinstone_16th",
+      "extracted_local_name": "Lord_Elphinstone_16th",
+      "embedding_text": "Lord Elphinstone 16th",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Elphinstone",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6341463414634146
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_The_Queen_Mother",
+      "extracted_local_name": "Queen_Elizabeth_The_Queen_Mother",
+      "embedding_text": "Queen Elizabeth The Queen Mother",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

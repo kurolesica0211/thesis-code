@@ -1,0 +1,707 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gundakar_of_Liechtenstein a :Man ;
+    :hasBrother data:Gundakar_of_Liechtenstein ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Gundakar_of_Liechtenstein ;
+    :isBrotherOf data:Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Gundakar_of_Liechtenstein .
+
+data:Jean-Robert_Boeuf a :Man ;
+    :hasBrother data:Jean-Robert_Boeuf ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Jean-Robert_Boeuf ;
+    :isBrotherOf data:Jean-Robert_Boeuf ;
+    :isSiblingOf data:Jean-Robert_Boeuf .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+        :Woman ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isAuntOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isMotherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isSisterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Luis_Cousino_y_Sebire a :Ancestor,
+        :Man ;
+    :hasBrother data:Luis_Cousino_y_Sebire ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Luis_Cousino_y_Sebire ;
+    :isBrotherOf data:Luis_Cousino_y_Sebire ;
+    :isFatherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Luis_Cousino_y_Sebire ;
+    :isUncleOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:Marie_of_Liechtenstein ;
+    :hasDaughter data:Marie_of_Liechtenstein ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :isAncestorOf data:Marie_of_Liechtenstein ;
+    :isAuntOf data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Marie_of_Liechtenstein ;
+    :isParentOf data:Marie_of_Liechtenstein ;
+    :isSiblingOf data:Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Marie_Therese_of_Wurttemberg .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasDeathYear 1999 ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Isabelle_of_Orleans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Isabelle_of_Orleans-Braganza ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isAuntOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isBloodrelationOf data:Isabelle_of_Orleans-Braganza ;
+    :isMotherOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Isabelle_of_Orleans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans-Braganza .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Woman ;
+    :hasAncestor data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :hasParent data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isChildOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isDaughterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isSiblingOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSisterOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Charles-Louis_dOrleans a :Man ;
+    :hasAncestor data:Jacques_dOrleans ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasFather data:Jacques_dOrleans ;
+    :hasParent data:Jacques_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBrotherOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isChildOf data:Jacques_dOrleans ;
+    :isSiblingOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Foulques_dOrleans a :Man ;
+    :hasAncestor data:Jacques_dOrleans ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasFather data:Jacques_dOrleans ;
+    :hasParent data:Jacques_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBrotherOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isChildOf data:Jacques_dOrleans ;
+    :isSiblingOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Diane_dOrleans a :Woman ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isAuntOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSisterOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans .
+
+data:Michel_dOrleans a :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein .
+
+data:Thibaut_dOrleans a :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein .
+
+data:Francois_dOrleans a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasBrother data:Francois_dOrleans,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isBrotherOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Jean_dOrleans a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasBrother data:Francois_dOrleans,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isBrotherOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Jacques_dOrleans a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasChild data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :hasSon data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isAncestorOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isFatherOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isParentOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein .
+
+data:Marie_of_Liechtenstein a :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasBrother data:Francois_dOrleans,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isDaughterOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isSisterOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Ancestor,
+        :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasChild data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :hasDaughter data:Marie_of_Liechtenstein ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Charles-Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Gundakar_of_Liechtenstein,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Isabelle_of_Orleans-Braganza,
+        data:Jacques_dOrleans,
+        data:Jean-Robert_Boeuf,
+        data:Jean_dOrleans,
+        data:Luis_Cousino_y_Sebire,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_of_Liechtenstein,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :hasSon data:Francois_dOrleans,
+        data:Jean_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isFatherOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isParentOf data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSonOf data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isUncleOf data:Charles-Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_of_Liechtenstein .
+

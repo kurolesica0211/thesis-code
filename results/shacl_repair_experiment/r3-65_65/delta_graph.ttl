@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Constantine_I a :Ancestor .
+
+data:Frederica_of_Hanover a :Ancestor .
+
+data:Juan_Carlos_I a :Ancestor .
+
+data:Paul_of_Greece a :Ancestor .
+
+data:Sophia_of_Greece a :Ancestor ;
+    :isAncestorOf data:Sof%C3%ADa .
+

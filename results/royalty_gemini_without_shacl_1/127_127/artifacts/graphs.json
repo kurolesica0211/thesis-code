@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasAncestor data:Modeste_Christiane_von_Unruh ;\n    :hasBirthYear \"1870\"^^xsd:string ;\n    :hasDeathYear \"1948\"^^xsd:string ;\n    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben ;\n    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .\n\ndata:Adelaide_of_Lippe-Lippe-Biesterfeld_Friedrich_Johann_marriage :hasMarriageYear \"1889\"^^xsd:string .\n\ndata:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Modeste_Christiane_von_Unruh a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasAncestor data:Modeste_Christiane_von_Unruh ;\n    :hasBirthYear \"1870\"^^xsd:string ;\n    :hasDeathYear \"1948\"^^xsd:string ;\n    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben ;\n    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .\n\ndata:Adelaide_of_Lippe-Lippe-Biesterfeld_Friedrich_Johann_marriage a :DomainEntity ;\n    :hasMarriageYear \"1889\"^^xsd:string .\n\ndata:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Modeste_Christiane_von_Unruh a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasAncestor data:Modeste_Christiane_von_Unruh ;\n    :hasBirthYear \"1870\"^^xsd:string ;\n    :hasDeathYear \"1948\"^^xsd:string ;\n    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben ;\n    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .\n\ndata:Adelaide_of_Lippe-Lippe-Biesterfeld_Friedrich_Johann_marriage a :DomainEntity ;\n    :hasMarriageYear \"1889\"^^xsd:string .\n\ndata:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasFather data:Georg_II_of_Saxe-Meiningen .\n\ndata:Georg_II_of_Saxe-Meiningen a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Modeste_Christiane_von_Unruh a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

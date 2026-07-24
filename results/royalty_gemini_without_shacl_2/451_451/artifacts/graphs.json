@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elena_Reuss a :Woman ;\n    :hasFather data:Heinrich_XIII_Prinz_Reuss ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Heinrich_XXVIII_Reuss a :Man ;\n    :hasFather data:Heinrich_XIII_Prinz_Reuss ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Adolf_Friedrich_of_Mecklenburg a :Man .\n\ndata:Heinrich_I_Reuss a :Man .\n\ndata:Woizlawa_Feodora_of_Mecklenburg a :Woman ;\n    :hasFather data:Adolf_Friedrich_of_Mecklenburg .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man ;\n    :hasBirthYear 1951 ;\n    :hasFather data:Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Woizlawa_Feodora_of_Mecklenburg .\n\ndata:Susan_Doukht_Jalali a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elena_Reuss a :Woman ;\n    :hasFather data:Heinrich_XIII_Prinz_Reuss ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Heinrich_XXVIII_Reuss a :Man ;\n    :hasFather data:Heinrich_XIII_Prinz_Reuss ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Adolf_Friedrich_of_Mecklenburg a :Man .\n\ndata:Heinrich_I_Reuss a :Man .\n\ndata:Woizlawa_Feodora_of_Mecklenburg a :Woman ;\n    :hasFather data:Adolf_Friedrich_of_Mecklenburg .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man ;\n    :hasBirthYear 1951 ;\n    :hasFather data:Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Woizlawa_Feodora_of_Mecklenburg .\n\ndata:Susan_Doukht_Jalali a :Woman .\n\n"
+    }
+]

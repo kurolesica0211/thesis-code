@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Duke_Frederick_Francis ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasRelation data:Christian_X_of_Denmark ;\n    :hasSister data:Duchess_Cecilie .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Christian_X_of_Denmark a :Man,\n        :Person .\n\ndata:Duchess_Cecilie a :Person,\n        :Woman .\n\ndata:Duke_Frederick_Francis a :Man,\n        :Person .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Duke_Frederick_Francis ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasRelation data:Christian_X_of_Denmark ;\n    :hasSister data:Duchess_Cecilie .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Christian_X_of_Denmark a :Man,\n        :Person .\n\ndata:Duchess_Cecilie a :Person,\n        :Woman .\n\ndata:Duke_Frederick_Francis a :Man,\n        :Person .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :isBrotherOf data:Isabelle_dOrleans ;
+    :isFatherOf data:Prince_Michel_dOrleans .
+
+data:Prince_Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1940 ;
+    :isFatherOf data:Isabelle_dOrleans .
+
+data:Princess_Francoise_of_Greece a :Person,
+        :Woman ;
+    :isSisterOf data:Isabelle_dOrleans .
+
+data:Princess_Isabelle_of_Orleans_Mother a :Person,
+        :Woman ;
+    :isMotherOf data:Isabelle_dOrleans .
+
+data:Count_Bruno_dHarcourt a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1930 .
+
+data:Prince_Michel_dOrleans a :Man,
+        :Person .
+
+data:Prince_Pierre_Murat a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 .
+
+data:Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1983 ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasRelation data:Count_Bruno_dHarcourt,
+        data:Prince_Pierre_Murat .
+

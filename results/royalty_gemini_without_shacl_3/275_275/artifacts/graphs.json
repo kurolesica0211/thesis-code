@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Princess_Marie_Louise_of_Orl%C3%A9ans .\n\ndata:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Prince_Emmanuel_Duke_of_Vend%C3%B4me a :Man,\n        :Person .\n\ndata:Princess_Henriette_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Princess_Marie_Louise_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasFather data:Prince_Emmanuel_Duke_of_Vend%C3%B4me ;\n    :hasMother data:Princess_Henriette_of_Belgium .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Princess_Marie_Louise_of_Orl%C3%A9ans .\n\ndata:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Prince_Emmanuel_Duke_of_Vend%C3%B4me a :Man,\n        :Person .\n\ndata:Princess_Henriette_of_Belgium a :Person,\n        :Woman .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Princess_Marie_Louise_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasFather data:Prince_Emmanuel_Duke_of_Vend%C3%B4me ;\n    :hasMother data:Princess_Henriette_of_Belgium .\n\n"
+    }
+]

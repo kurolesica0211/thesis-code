@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarloOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasFather data:PrinceFerdinandDukeOfCastro ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:ChantalDeChevronVillette ;
+    :hasRelation data:CamillaCrociani ;
+    :hasSex data:Male .
+
+data:CamillaCrociani a :Person,
+        :Woman ;
+    :hasFather data:CamilloCrociani ;
+    :hasMother data:EdyVessel .
+
+data:CamilloCrociani a :Man,
+        :Person .
+
+data:ChantalDeChevronVillette a :Person,
+        :Woman .
+
+data:EdyVessel a :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:PrinceFerdinandDukeOfCastro a :Man,
+        :Person .
+

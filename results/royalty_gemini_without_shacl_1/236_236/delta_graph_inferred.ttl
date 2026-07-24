@@ -1,0 +1,97 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henrik a :Man,
+        :Person ;
+    :hasBrother data:Henrik ;
+    :hasRelation data:Henrik ;
+    :isBloodrelationOf data:Henrik ;
+    :isBrotherOf data:Henrik ;
+    :isSiblingOf data:Henrik .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasRelation data:Margrethe_II ;
+    :hasSister data:Margrethe_II ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Vincent a :Man,
+        :Person ;
+    :hasBrother data:Vincent ;
+    :hasRelation data:Frederik_X,
+        data:Josephine,
+        data:Mary,
+        data:Vincent ;
+    :hasSister data:Josephine ;
+    :isBloodrelationOf data:Josephine,
+        data:Vincent ;
+    :isBrotherOf data:Josephine,
+        data:Vincent ;
+    :isSiblingOf data:Josephine,
+        data:Vincent .
+
+data:Frederik_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_X ;
+    :hasChild data:Josephine ;
+    :hasDaughter data:Josephine ;
+    :hasRelation data:Frederik_X,
+        data:Josephine,
+        data:Mary,
+        data:Vincent ;
+    :isAncestorOf data:Josephine ;
+    :isBloodrelationOf data:Frederik_X ;
+    :isBrotherOf data:Frederik_X ;
+    :isFatherOf data:Josephine ;
+    :isParentOf data:Josephine ;
+    :isSiblingOf data:Frederik_X ;
+    :isUncleOf data:Josephine .
+
+data:Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Josephine ;
+    :hasDaughter data:Josephine ;
+    :hasRelation data:Frederik_X,
+        data:Josephine,
+        data:Mary,
+        data:Vincent ;
+    :hasSister data:Mary ;
+    :isAncestorOf data:Josephine ;
+    :isAuntOf data:Josephine ;
+    :isBloodrelationOf data:Mary ;
+    :isMotherOf data:Josephine ;
+    :isParentOf data:Josephine ;
+    :isSiblingOf data:Mary ;
+    :isSisterOf data:Mary .
+
+data:Josephine a :Person,
+        :Woman ;
+    :hasAncestor data:Frederik_X,
+        data:Mary ;
+    :hasBirthYear 2011 ;
+    :hasBrother data:Vincent ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary ;
+    :hasParent data:Frederik_X,
+        data:Mary ;
+    :hasRelation data:Frederik_X,
+        data:Josephine,
+        data:Mary,
+        data:Vincent ;
+    :hasSister data:Josephine ;
+    :isBloodrelationOf data:Josephine,
+        data:Vincent ;
+    :isChildOf data:Frederik_X,
+        data:Mary ;
+    :isDaughterOf data:Frederik_X,
+        data:Mary ;
+    :isSiblingOf data:Josephine,
+        data:Vincent ;
+    :isSisterOf data:Josephine,
+        data:Vincent .
+

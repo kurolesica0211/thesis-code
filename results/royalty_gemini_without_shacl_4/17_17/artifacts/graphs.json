@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Armstrong_Jones a :Man,\n        :Person ;\n    :formerlyKnownAs \"Viscount Linley\"^^xsd:string ;\n    :hasBirthYear 1961 ;\n    :hasDaughter data:Lady_Margarita_Armstrong_Jones ;\n    :hasFather data:Antony_Armstrong_Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasRelation data:Serena_Alleyne_Stanhope ;\n    :hasSister data:Lady_Frances_von_Hofmannsthal,\n        data:Lady_Sarah_Chatto,\n        data:Polly_Fry ;\n    :hasSon data:Viscount_Linley_son ;\n    :knownAs \"David Linley\"^^xsd:string .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong_Jones a :Man,\n        :Person .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Lady_Frances_von_Hofmannsthal a :Person,\n        :Woman .\n\ndata:Lady_Margarita_Armstrong_Jones a :Person,\n        :Woman .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Polly_Fry a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman ;\n    :hasFather data:King_George_VI .\n\ndata:Serena_Alleyne_Stanhope a :Person,\n        :Woman .\n\ndata:Viscount_Linley_son a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Armstrong_Jones a :Man,\n        :Person ;\n    :formerlyKnownAs \"Viscount Linley\"^^xsd:string ;\n    :hasBirthYear 1961 ;\n    :hasDaughter data:Lady_Margarita_Armstrong_Jones ;\n    :hasFather data:Antony_Armstrong_Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasRelation data:Serena_Alleyne_Stanhope ;\n    :hasSister data:Lady_Frances_von_Hofmannsthal,\n        data:Lady_Sarah_Chatto,\n        data:Polly_Fry ;\n    :hasSon data:Viscount_Linley_son ;\n    :knownAs \"David Linley\"^^xsd:string .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong_Jones a :Man,\n        :Person .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Lady_Frances_von_Hofmannsthal a :Person,\n        :Woman .\n\ndata:Lady_Margarita_Armstrong_Jones a :Person,\n        :Woman .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Polly_Fry a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman ;\n    :hasFather data:King_George_VI .\n\ndata:Serena_Alleyne_Stanhope a :Person,\n        :Woman .\n\ndata:Viscount_Linley_son a :Man,\n        :Person .\n\n"
+    }
+]

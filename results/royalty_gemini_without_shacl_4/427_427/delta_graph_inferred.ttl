@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Diemut_of_Liechtenstein a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSister data:Princess_Diemut_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein ;
+    :isSisterOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Marie_of_Liechtenstein ;
+    :hasDaughter data:Princess_Marie_of_Liechtenstein ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSister data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isAncestorOf data:Princess_Marie_of_Liechtenstein ;
+    :isAuntOf data:Princess_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Princess_Marie_of_Liechtenstein ;
+    :isParentOf data:Princess_Marie_of_Liechtenstein ;
+    :isSiblingOf data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Duchess_Marie_Therese_of_Wurttemberg .
+
+data:Prince_Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henri_Count_of_Paris ;
+    :hasChild data:Princess_Marie_of_Liechtenstein ;
+    :hasDaughter data:Princess_Marie_of_Liechtenstein ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :isAncestorOf data:Princess_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Henri_Count_of_Paris ;
+    :isBrotherOf data:Prince_Henri_Count_of_Paris ;
+    :isFatherOf data:Princess_Marie_of_Liechtenstein ;
+    :isParentOf data:Princess_Marie_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Henri_Count_of_Paris ;
+    :isUncleOf data:Princess_Marie_of_Liechtenstein .
+
+data:Prince_Johann_of_Liechtenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Johann_of_Liechtenstein ;
+    :hasChild data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSon data:Prince_Gundakar_of_Liechtenstein ;
+    :isAncestorOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Johann_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Johann_of_Liechtenstein ;
+    :isFatherOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isParentOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Johann_of_Liechtenstein ;
+    :isUncleOf data:Prince_Gundakar_of_Liechtenstein .
+
+data:Princess_Clothilde_of_Thurn_und_Taxis a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSister data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :hasSon data:Prince_Gundakar_of_Liechtenstein ;
+    :isAncestorOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isAuntOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :isMotherOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isParentOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :isSisterOf data:Princess_Clothilde_of_Thurn_und_Taxis .
+
+data:Princess_Marie_of_Liechtenstein a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasBirthYear 1959 ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSister data:Princess_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Princess_Marie_of_Liechtenstein ;
+    :isChildOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :isDaughterOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Henri_Count_of_Paris ;
+    :isSiblingOf data:Princess_Marie_of_Liechtenstein ;
+    :isSisterOf data:Princess_Marie_of_Liechtenstein .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :hasBrother data:Prince_Gundakar_of_Liechtenstein ;
+    :hasFather data:Prince_Johann_of_Liechtenstein ;
+    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :hasParent data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Prince_Gundakar_of_Liechtenstein,
+        data:Prince_Henri_Count_of_Paris,
+        data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis,
+        data:Princess_Diemut_of_Liechtenstein,
+        data:Princess_Marie_of_Liechtenstein ;
+    :hasSister data:Princess_Diemut_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein ;
+    :isChildOf data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :isSiblingOf data:Prince_Gundakar_of_Liechtenstein,
+        data:Princess_Diemut_of_Liechtenstein ;
+    :isSonOf data:Prince_Johann_of_Liechtenstein,
+        data:Princess_Clothilde_of_Thurn_und_Taxis .
+

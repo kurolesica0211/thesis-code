@@ -1,0 +1,188 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessIrene a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceCarlos ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSister data:PrincessIrene ;
+    :hasSon data:PrinceCarlos ;
+    :isAncestorOf data:PrinceCarlos ;
+    :isAuntOf data:PrinceCarlos ;
+    :isBloodrelationOf data:PrincessIrene ;
+    :isMotherOf data:PrinceCarlos ;
+    :isParentOf data:PrinceCarlos ;
+    :isSiblingOf data:PrincessIrene ;
+    :isSisterOf data:PrincessIrene .
+
+data:CarlosHugo a :Ancestor,
+        :Man ;
+    :hasBrother data:CarlosHugo,
+        data:PrinceXavier ;
+    :hasChild data:PrinceCarlos ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSon data:PrinceCarlos ;
+    :isAncestorOf data:PrinceCarlos ;
+    :isBloodrelationOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isBrotherOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isFatherOf data:PrinceCarlos ;
+    :isParentOf data:PrinceCarlos ;
+    :isSiblingOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isUncleOf data:PrinceCarlos .
+
+data:PrinceXavier a :Ancestor,
+        :Man ;
+    :hasBrother data:CarlosHugo,
+        data:PrinceXavier ;
+    :hasChild data:PrinceCarlos ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSon data:PrinceCarlos ;
+    :isAncestorOf data:PrinceCarlos ;
+    :isBloodrelationOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isBrotherOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isFatherOf data:PrinceCarlos ;
+    :isParentOf data:PrinceCarlos ;
+    :isSiblingOf data:CarlosHugo,
+        data:PrinceXavier ;
+    :isUncleOf data:PrinceCarlos .
+
+data:PrinceJaime a :Man ;
+    :hasBrother data:PrinceCarlos,
+        data:PrinceJaime ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBloodrelationOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBrotherOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrincessCarolina a :Woman ;
+    :hasBrother data:PrinceCarlos,
+        data:PrinceJaime ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBloodrelationOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSisterOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrincessMargarita a :Woman ;
+    :hasBrother data:PrinceCarlos,
+        data:PrinceJaime ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBloodrelationOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSisterOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrinceCarlos a :Man ;
+    :hasAncestor data:CarlosHugo,
+        data:PrinceXavier,
+        data:PrincessIrene ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:PrinceCarlos,
+        data:PrinceJaime ;
+    :hasFather data:CarlosHugo,
+        data:PrinceXavier ;
+    :hasMother data:PrincessIrene ;
+    :hasParent data:CarlosHugo,
+        data:PrinceXavier,
+        data:PrincessIrene ;
+    :hasRelation data:CarlosHugo,
+        data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrinceXavier,
+        data:PrincessCarolina,
+        data:PrincessIrene,
+        data:PrincessMargarita ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBloodrelationOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isBrotherOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isChildOf data:CarlosHugo,
+        data:PrinceXavier,
+        data:PrincessIrene ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita ;
+    :isSonOf data:CarlosHugo,
+        data:PrinceXavier,
+        data:PrincessIrene .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_King_of_Greece a :Man,\n        :Person ;\n    :hasFather data:Constantine_King_of_Greece .\n\ndata:Cecilie a :Person,\n        :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\ndata:King_Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Queen_Olga_of_Greece a :Person,\n        :Woman .\n\ndata:Constantine_King_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasAncestor data:King_Christian_IX_of_Denmark ;\n    :hasBirthYear 1882 ;\n    :hasBrother data:Constantine_King_of_Greece ;\n    :hasDeathYear 1944 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1903 ;\n    :hasMother data:Queen_Olga_of_Greece .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_King_of_Greece a :Man,\n        :Person ;\n    :hasFather data:Constantine_King_of_Greece .\n\ndata:Cecilie a :Person,\n        :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg .\n\ndata:King_Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Queen_Olga_of_Greece a :Person,\n        :Woman .\n\ndata:Constantine_King_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasAncestor data:King_Christian_IX_of_Denmark ;\n    :hasBirthYear 1882 ;\n    :hasBrother data:Constantine_King_of_Greece ;\n    :hasDeathYear 1944 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1903 ;\n    :hasMother data:Queen_Olga_of_Greece .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .\n\n"
+    }
+]

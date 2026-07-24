@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasChild data:Lady_Pamela_Hicks,\n        data:Patricia_Knatchbull ;\n    :hasDeathYear 1979 ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Edwina_Ashley ;\n    :isSiblingOf data:George_Mountbatten,\n        data:Princess_Alice_of_Battenberg,\n        data:Princess_Louise_of_Battenberg .\n\ndata:Edwina_Ashley a :Person,\n        :Woman ;\n    :hasChild data:Lady_Pamela_Hicks,\n        data:Patricia_Knatchbull .\n\ndata:George_Mountbatten a :Man,\n        :Person .\n\ndata:Prince_Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Louise_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Patricia_Knatchbull a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasChild data:Lady_Pamela_Hicks,\n        data:Patricia_Knatchbull ;\n    :hasDeathYear 1979 ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Edwina_Ashley ;\n    :isSiblingOf data:George_Mountbatten,\n        data:Princess_Alice_of_Battenberg,\n        data:Princess_Louise_of_Battenberg .\n\ndata:Edwina_Ashley a :Person,\n        :Woman ;\n    :hasChild data:Lady_Pamela_Hicks,\n        data:Patricia_Knatchbull .\n\ndata:George_Mountbatten a :Man,\n        :Person .\n\ndata:Prince_Louis_of_Battenberg a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Louise_of_Battenberg a :Person,\n        :Woman .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Patricia_Knatchbull a :Person,\n        :Woman .\n\n"
+    }
+]

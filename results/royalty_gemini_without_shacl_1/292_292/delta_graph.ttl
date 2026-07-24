@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jorge_Guillermo a :Man,
+        :Person .
+
+data:Prince_Bernhard_Jr a :Man,
+        :Person .
+
+data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person .
+
+data:Prince_Felix_of_Luxembourg a :Man,
+        :Person .
+
+data:Princess_Anne_of_Bourbon-Parma a :Person,
+        :Woman .
+
+data:William_II_of_the_Netherlands a :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasMother data:Princess_Armgard_of_Lippe-Biesterfeld .
+
+data:Princess_Armgard_of_Lippe-Biesterfeld a :Person,
+        :Woman .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Christina_of_the_Netherlands .
+
+data:Princess_Irene a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Christina_of_the_Netherlands .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Christina_of_the_Netherlands .
+
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+

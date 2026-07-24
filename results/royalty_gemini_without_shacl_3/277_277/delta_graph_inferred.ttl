@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Margaret a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Lorenz_of_Belgium ;
+    :hasRelation data:Archduchess_Margaret,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasSister data:Archduchess_Margaret ;
+    :hasSon data:Prince_Lorenz_of_Belgium ;
+    :isAncestorOf data:Prince_Lorenz_of_Belgium ;
+    :isAuntOf data:Prince_Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Archduchess_Margaret ;
+    :isMotherOf data:Prince_Lorenz_of_Belgium ;
+    :isParentOf data:Prince_Lorenz_of_Belgium ;
+    :isSiblingOf data:Archduchess_Margaret ;
+    :isSisterOf data:Archduchess_Margaret .
+
+data:King_Albert_II a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Albert_II ;
+    :hasChild data:Princess_Astrid_of_Belgium ;
+    :hasDaughter data:Princess_Astrid_of_Belgium ;
+    :hasRelation data:Archduchess_Margaret,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isAncestorOf data:Princess_Astrid_of_Belgium ;
+    :isBloodrelationOf data:King_Albert_II ;
+    :isBrotherOf data:King_Albert_II ;
+    :isFatherOf data:Princess_Astrid_of_Belgium ;
+    :isParentOf data:Princess_Astrid_of_Belgium ;
+    :isSiblingOf data:King_Albert_II ;
+    :isUncleOf data:Princess_Astrid_of_Belgium .
+
+data:Queen_Paola a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Astrid_of_Belgium ;
+    :hasDaughter data:Princess_Astrid_of_Belgium ;
+    :hasRelation data:Archduchess_Margaret,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasSister data:Queen_Paola ;
+    :isAncestorOf data:Princess_Astrid_of_Belgium ;
+    :isAuntOf data:Princess_Astrid_of_Belgium ;
+    :isBloodrelationOf data:Queen_Paola ;
+    :isMotherOf data:Princess_Astrid_of_Belgium ;
+    :isParentOf data:Princess_Astrid_of_Belgium ;
+    :isSiblingOf data:Queen_Paola ;
+    :isSisterOf data:Queen_Paola .
+
+data:Charles_I_of_Austria a :Ancestor,
+        :Man ;
+    :hasBrother data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasChild data:Prince_Lorenz_of_Belgium ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Prince_Lorenz_of_Belgium,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasSon data:Prince_Lorenz_of_Belgium ;
+    :isAncestorOf data:Prince_Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isBrotherOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isFatherOf data:Prince_Lorenz_of_Belgium ;
+    :isParentOf data:Prince_Lorenz_of_Belgium ;
+    :isSiblingOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isUncleOf data:Prince_Lorenz_of_Belgium .
+
+data:Robert_Archduke_of_Austria-Este a :Ancestor,
+        :Man ;
+    :hasBrother data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasChild data:Prince_Lorenz_of_Belgium ;
+    :hasRelation data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasSon data:Prince_Lorenz_of_Belgium ;
+    :isAncestorOf data:Prince_Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isBrotherOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isFatherOf data:Prince_Lorenz_of_Belgium ;
+    :isParentOf data:Prince_Lorenz_of_Belgium ;
+    :isSiblingOf data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isUncleOf data:Prince_Lorenz_of_Belgium .
+
+data:Princess_Astrid_of_Belgium a :Woman ;
+    :hasAncestor data:King_Albert_II,
+        data:Queen_Paola ;
+    :hasFather data:King_Albert_II ;
+    :hasMother data:Queen_Paola ;
+    :hasParent data:King_Albert_II,
+        data:Queen_Paola ;
+    :hasRelation data:Archduchess_Margaret,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasSister data:Princess_Astrid_of_Belgium ;
+    :isBloodrelationOf data:Princess_Astrid_of_Belgium ;
+    :isChildOf data:King_Albert_II,
+        data:Queen_Paola ;
+    :isDaughterOf data:King_Albert_II,
+        data:Queen_Paola ;
+    :isSiblingOf data:Princess_Astrid_of_Belgium ;
+    :isSisterOf data:Princess_Astrid_of_Belgium .
+
+data:Prince_Lorenz_of_Belgium a :Man ;
+    :hasAncestor data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:Prince_Lorenz_of_Belgium ;
+    :hasFather data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Archduchess_Margaret ;
+    :hasParent data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :hasRelation data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:King_Albert_II,
+        data:Prince_Lorenz_of_Belgium,
+        data:Princess_Astrid_of_Belgium,
+        data:Queen_Paola,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isBloodrelationOf data:Prince_Lorenz_of_Belgium ;
+    :isBrotherOf data:Prince_Lorenz_of_Belgium ;
+    :isChildOf data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este ;
+    :isSiblingOf data:Prince_Lorenz_of_Belgium ;
+    :isSonOf data:Archduchess_Margaret,
+        data:Charles_I_of_Austria,
+        data:Robert_Archduke_of_Austria-Este .
+

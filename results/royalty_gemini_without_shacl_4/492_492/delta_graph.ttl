@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Princess_Royal a :Woman .
+
+data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Princess_Charlotte_of_Croy .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+
+data:Saskia_Binder a :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Hans_Peter_Binder .
+
+data:Anna_Elspeth_Campbell a :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Archibald_Campbell_6th_of_Glendaruel .
+
+data:Archibald_Campbell_6th_of_Glendaruel a :Man .
+
+data:Hans_Peter_Binder a :Man .
+
+data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 .
+
+data:Prince_Alexander_of_Croy a :Man ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2002 .
+
+data:Princess_Charlotte_of_Croy a :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Prince_Alexander_of_Croy ;
+    :hasMother data:Anna_Elspeth_Campbell .
+

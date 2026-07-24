@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceGeorge a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDeathYear 1942 ;
+    :hasFather data:KingGeorgeV ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:QueenMary ;
+    :hasRelation data:PrincessMarina ;
+    :isSiblingOf data:KingEdwardVIII,
+        data:KingGeorgeVI .
+
+data:KingEdwardVIII a :Man,
+        :Person .
+
+data:KingGeorgeV a :Man,
+        :Person .
+
+data:KingGeorgeVI a :Man,
+        :Person .
+
+data:PrincessMarina a :Person,
+        :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael .
+
+data:QueenMary a :Person,
+        :Woman .
+
+data:Alexandra a :Person,
+        :Woman .
+
+data:Edward a :Man,
+        :Person .
+
+data:Michael a :Man,
+        :Person .
+

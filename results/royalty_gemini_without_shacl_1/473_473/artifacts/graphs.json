@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_von_Hohenzollern a :Person,\n        :Woman .\n\ndata:Karl_Friedrich_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Albrecht_von_Hohenzollern ;\n    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;\n    :hasMother data:Margarita_von_Leiningen .\n\ndata:Albrecht_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1954 .\n\ndata:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Margarita_von_Leiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_von_Hohenzollern a :Person,\n        :Woman .\n\ndata:Karl_Friedrich_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Albrecht_von_Hohenzollern ;\n    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;\n    :hasMother data:Margarita_von_Leiningen .\n\ndata:Albrecht_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1954 .\n\ndata:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Margarita_von_Leiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

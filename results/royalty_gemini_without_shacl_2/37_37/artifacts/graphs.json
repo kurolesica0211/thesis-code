@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoXIII a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaOfAustria .\n\ndata:InfantaMariaTeresa a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaOfAustria .\n\ndata:PrinceAlfonso a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:PrinceFernando a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:PrincessIsabellaAlfonsa a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:AlfonsoXII a :Man,\n        :Person .\n\ndata:MariaChristinaOfAustria a :Person,\n        :Woman .\n\ndata:MariaDeLasMercedes a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:AlfonsoXII ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:MariaChristinaOfAustria ;\n    :hasRelation data:PrinceCarlosOfBourbonTwoSicilies .\n\ndata:PrinceCarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoXIII a :Man,\n        :Person ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaOfAustria .\n\ndata:InfantaMariaTeresa a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaOfAustria .\n\ndata:PrinceAlfonso a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:PrinceFernando a :Man,\n        :Person ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:PrincessIsabellaAlfonsa a :Person,\n        :Woman ;\n    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;\n    :hasMother data:MariaDeLasMercedes .\n\ndata:AlfonsoXII a :Man,\n        :Person .\n\ndata:MariaChristinaOfAustria a :Person,\n        :Woman .\n\ndata:MariaDeLasMercedes a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:AlfonsoXII ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:MariaChristinaOfAustria ;\n    :hasRelation data:PrinceCarlosOfBourbonTwoSicilies .\n\ndata:PrinceCarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\n"
+    }
+]

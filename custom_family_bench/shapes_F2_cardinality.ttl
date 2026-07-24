@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix esh: <http://example.org/esh#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Ancestor a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Person-hasFather,
+        :Person-hasMother,
+        :Person-hasParent ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:DomainEntity a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Person-hasFather,
+        :Person-hasMother,
+        :Person-hasParent .
+
+:Female a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Male a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Man a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Person-hasFather,
+        :Person-hasMother,
+        :Person-hasParent ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:Person a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Person-hasFather,
+        :Person-hasMother,
+        :Person-hasParent ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Sex a rdfs:Class,
+        sh:NodeShape ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Woman a rdfs:Class,
+        sh:NodeShape ;
+    sh:property :Person-hasFather,
+        :Person-hasMother,
+        :Person-hasParent ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+esh:InferTypeRule_Sex a sh:TripleRule ;
+    sh:object :Sex ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+esh:InferTypeRule_Person a sh:TripleRule ;
+    sh:object :Person ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+:Person-hasFather a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:path :hasFather .
+
+:Person-hasMother a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:path :hasMother .
+
+:Person-hasParent a sh:PropertyShape ;
+    sh:maxCount 2 ;
+    sh:path :hasParent .
+
+esh:InferTypeRule_DomainEntity a sh:TripleRule ;
+    sh:object :DomainEntity ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+

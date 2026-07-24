@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Duke_Frederick_Francis ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Christian_X ;
+    :hasSister data:Duchess_Cecilie .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasRelation data:Christian_X .
+
+data:Nicholas_I_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :isAncestorOf data:Anastasia_Mikhailovna .
+
+data:Christian_IX a :Ancestor,
+        :Man,
+        :Person .
+
+data:Duchess_Cecilie a :Person,
+        :Woman ;
+    :hasRelation data:Wilhelm_of_Prussia .
+
+data:Duke_Frederick_Francis a :Man,
+        :Person .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_II .
+
+data:Frederik_VIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Christian_IX .
+
+data:Louise_of_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:William_II_of_Germany .
+
+data:William_II_of_Germany a :Ancestor,
+        :Man,
+        :Person .
+
+data:Anastasia_Mikhailovna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person ;
+    :hasFather data:Frederik_VIII ;
+    :hasMother data:Louise_of_Denmark .
+

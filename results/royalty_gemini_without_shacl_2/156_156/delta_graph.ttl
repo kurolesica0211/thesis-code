@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AliceOfBattenberg a :Person,
+        :Woman ;
+    :isMotherOf data:Cecilie .
+
+data:AndrewOfGreeceAndDenmark a :Man,
+        :Person ;
+    :isFatherOf data:Cecilie .
+
+data:Eleonore a :Person,
+        :Woman ;
+    :isMotherOf data:GeorgDonatus .
+
+data:ErnestLouis a :Man,
+        :Person ;
+    :isFatherOf data:GeorgDonatus .
+
+data:Louis a :Man,
+        :Person ;
+    :hasDeathYear 1968 ;
+    :isBrotherOf data:GeorgDonatus .
+
+data:AlexanderGeorgKarlHeinrich a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 1937 .
+
+data:JohannaMarinaEleonore a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 1939 .
+
+data:LudwigErnstAndreas a :Man,
+        :Person ;
+    :hasBirthYear 1931 ;
+    :hasDeathYear 1937 .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :isMotherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas .
+
+data:GeorgDonatus a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1937 ;
+    :hasMarriageYear 1931 ;
+    :hasRelation data:Cecilie ;
+    :isFatherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas .
+

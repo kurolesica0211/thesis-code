@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren_Limpurg a :Man .
+
+data:Beatrix a :Woman .
+
+data:Bernhard_of_Lippe_Biesterfeld a :Man .
+
+data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;
+    :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+    :hasBirthYear "1997-01-20"^^xsd:date ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra .
+
+data:Carlos_of_Parma a :Man ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme .
+
+data:Cecilia_of_Parma a :Woman ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme .
+
+data:Juliana a :Woman .
+
+data:Luisa_of_Parma a :Woman ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme .
+
+data:Madeleine_de_Bourbon_Busset a :Woman .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Xavier_of_Bourbon_Parma a :Man .
+
+data:Brigitte_Klynstra a :Woman ;
+    :hasMother data:Ingrid_Pieksma_Klynstra .
+
+data:Carlos_Hugo_Duke_of_Parma a :Man .
+
+data:Ingrid_Pieksma_Klynstra a :Woman .
+
+data:Irene_of_the_Netherlands a :Woman .
+
+data:Carlos_de_Bourbon_de_Parme a :Man ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Irene_of_the_Netherlands .
+

@@ -1,0 +1,355 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie_Rhys-Jones a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :hasDaughter data:Lady_Louise_Mountbatten-Windsor ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Sophie_Rhys-Jones ;
+    :hasSon data:James_Mountbatten-Windsor ;
+    :isAncestorOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isAuntOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Sophie_Rhys-Jones ;
+    :isMotherOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isParentOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:Sophie_Rhys-Jones ;
+    :isSisterOf data:Sophie_Rhys-Jones .
+
+data:James_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasBrother data:James_Mountbatten-Windsor ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie_Rhys-Jones ;
+    :hasParent data:Prince_Edward,
+        data:Sophie_Rhys-Jones ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isBrotherOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones ;
+    :isSiblingOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSonOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones .
+
+data:Lady_Louise_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasBrother data:James_Mountbatten-Windsor ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie_Rhys-Jones ;
+    :hasParent data:Prince_Edward,
+        data:Sophie_Rhys-Jones ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones ;
+    :isDaughterOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones ;
+    :isSiblingOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSisterOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasDaughter data:Anne ;
+    :hasDeathYear 2021 ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Sophie_Rhys-Jones ;
+    :hasSon data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isFatherOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isParentOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSiblingOf data:Prince_Philip ;
+    :isUncleOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasDaughter data:Anne ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :hasSon data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isMotherOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isParentOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Andrew a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Anne a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Anne ;
+    :isAuntOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isDaughterOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSisterOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Edward a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:Andrew,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :hasChild data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :hasDaughter data:Lady_Louise_Mountbatten-Windsor ;
+    :hasFather data:Prince_Philip ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:James_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Rhys-Jones ;
+    :hasSister data:Anne ;
+    :hasSon data:James_Mountbatten-Windsor ;
+    :isAncestorOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isParentOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:King_Charles_III,
+        data:Prince_Edward ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+

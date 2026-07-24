@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessSibilla a :Person,
+        :Woman ;
+    :hasBirthYear 1968 ;
+    :hasRelation data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:PrincessSibilla ;
+    :isBloodrelationOf data:PrincessSibilla ;
+    :isSiblingOf data:PrincessSibilla ;
+    :isSisterOf data:PrincessSibilla .
+
+data:GrandDuchessJosephineCharlotte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceGuillaumeOfLuxembourg ;
+    :hasRelation data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:GrandDuchessJosephineCharlotte ;
+    :hasSon data:PrinceGuillaumeOfLuxembourg ;
+    :isAncestorOf data:PrinceGuillaumeOfLuxembourg ;
+    :isAuntOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBloodrelationOf data:GrandDuchessJosephineCharlotte ;
+    :isMotherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isParentOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSiblingOf data:GrandDuchessJosephineCharlotte ;
+    :isSisterOf data:GrandDuchessJosephineCharlotte .
+
+data:GrandDukeJean a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GrandDukeJean ;
+    :hasChild data:PrinceGuillaumeOfLuxembourg ;
+    :hasRelation data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSon data:PrinceGuillaumeOfLuxembourg ;
+    :isAncestorOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBloodrelationOf data:GrandDukeJean ;
+    :isBrotherOf data:GrandDukeJean ;
+    :isFatherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isParentOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSiblingOf data:GrandDukeJean ;
+    :isUncleOf data:PrinceGuillaumeOfLuxembourg .
+
+data:PrinceGuillaumeOfLuxembourg a :Man,
+        :Person ;
+    :hasAncestor data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:PrinceGuillaumeOfLuxembourg ;
+    :hasFather data:GrandDukeJean ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephineCharlotte ;
+    :hasParent data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :hasRelation data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :isBloodrelationOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBrotherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isChildOf data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :isSiblingOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSonOf data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean .
+

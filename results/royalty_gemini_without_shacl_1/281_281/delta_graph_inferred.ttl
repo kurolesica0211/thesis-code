@@ -1,0 +1,285 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XII a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XII ;
+    :hasRelation data:Alfonso_XII ;
+    :isBloodrelationOf data:Alfonso_XII ;
+    :isBrotherOf data:Alfonso_XII ;
+    :isSiblingOf data:Alfonso_XII .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII .
+
+data:Infanta_Maria_de_la_Paz_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Infanta_Maria_de_la_Paz_of_Spain ;
+    :hasSister data:Infanta_Maria_de_la_Paz_of_Spain ;
+    :isBloodrelationOf data:Infanta_Maria_de_la_Paz_of_Spain ;
+    :isSiblingOf data:Infanta_Maria_de_la_Paz_of_Spain ;
+    :isSisterOf data:Infanta_Maria_de_la_Paz_of_Spain .
+
+data:Isabella_II_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Isabella_II_of_Spain ;
+    :hasSister data:Isabella_II_of_Spain ;
+    :isBloodrelationOf data:Isabella_II_of_Spain ;
+    :isSiblingOf data:Isabella_II_of_Spain ;
+    :isSisterOf data:Isabella_II_of_Spain .
+
+data:Prince_Adalbert_of_Bavaria a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert_of_Bavaria ;
+    :hasRelation data:Prince_Adalbert_of_Bavaria ;
+    :isBloodrelationOf data:Prince_Adalbert_of_Bavaria ;
+    :isBrotherOf data:Prince_Adalbert_of_Bavaria ;
+    :isSiblingOf data:Prince_Adalbert_of_Bavaria .
+
+data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon_Two_Sicilies .
+
+data:Grand_Duke_Vladimir a :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Vladimir ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir ;
+    :isBrotherOf data:Grand_Duke_Vladimir ;
+    :isSiblingOf data:Grand_Duke_Vladimir .
+
+data:Leonida a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Leonida ;
+    :isBloodrelationOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isSisterOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
+        :Person ;
+    :hasBrother data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Leonida ;
+    :isBloodrelationOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isBrotherOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Leonida,
+        data:Prince_Irakli_Bagration_of_Mukhrani .
+
+data:Infanta_Maria_Teresa_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasDaughter data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Infanta_Maria_Teresa_of_Spain ;
+    :isAncestorOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isAuntOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Infanta_Maria_Teresa_of_Spain ;
+    :isMotherOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isParentOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Infanta_Maria_Teresa_of_Spain ;
+    :isSisterOf data:Infanta_Maria_Teresa_of_Spain .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_of_Bavaria ;
+    :hasChild data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasDaughter data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isAncestorOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Prince_Ferdinand_of_Bavaria ;
+    :isBrotherOf data:Prince_Ferdinand_of_Bavaria ;
+    :isFatherOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isParentOf data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Prince_Ferdinand_of_Bavaria ;
+    :isUncleOf data:Princess_Maria_de_las_Mercedes_of_Bavaria .
+
+data:Jose_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Jose_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1966 ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBrotherOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria .
+
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Jose_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBrotherOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria .
+
+data:Maria_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Jose_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1918 ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSisterOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria .
+
+data:Princess_Maria_de_las_Mercedes_of_Bavaria a :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Maria_Teresa_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Jose_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Infanta_Maria_Teresa_of_Spain ;
+    :hasParent data:Infanta_Maria_Teresa_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :hasRelation data:Grand_Duke_Vladimir,
+        data:Infanta_Maria_Teresa_of_Spain,
+        data:Jose_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :hasSister data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isChildOf data:Infanta_Maria_Teresa_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :isDaughterOf data:Infanta_Maria_Teresa_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :isSiblingOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria ;
+    :isSisterOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar,
+        data:Princess_Maria_de_las_Mercedes_of_Bavaria .
+

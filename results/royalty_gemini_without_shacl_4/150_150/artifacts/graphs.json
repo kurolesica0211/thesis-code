@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Admiral_Pericles_Ioannides a :Man .\n\ndata:King_Constantine_I_of_Greece a :Man ;\n    :hasSister data:Princess_Maria_of_Greece_and_Denmark .\n\ndata:Grand_Duchess_Olga_Constantinovna_of_Russia a :Woman .\n\ndata:Grand_Duke_George_Mikhailovich_of_Russia a :Man .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:Princess_Maria_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDaughter data:Princess_Nina_Georgievna,\n        data:Princess_Xenia_Georgievna ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia ;\n    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia .\n\ndata:Princess_Nina_Georgievna a :Woman .\n\ndata:Princess_Xenia_Georgievna a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Admiral_Pericles_Ioannides a :Man .\n\ndata:King_Constantine_I_of_Greece a :Man ;\n    :hasSister data:Princess_Maria_of_Greece_and_Denmark .\n\ndata:Grand_Duchess_Olga_Constantinovna_of_Russia a :Woman .\n\ndata:Grand_Duke_George_Mikhailovich_of_Russia a :Man .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:Princess_Maria_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDaughter data:Princess_Nina_Georgievna,\n        data:Princess_Xenia_Georgievna ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia ;\n    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia .\n\ndata:Princess_Nina_Georgievna a :Woman .\n\ndata:Princess_Xenia_Georgievna a :Woman .\n\n"
+    }
+]

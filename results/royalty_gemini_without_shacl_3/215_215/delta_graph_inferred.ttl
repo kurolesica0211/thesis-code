@@ -1,0 +1,243 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingGeorgeIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingGeorgeIII ;
+    :hasChild data:DukeOfKent ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSon data:DukeOfKent ;
+    :isAncestorOf data:DukeOfKent,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:KingGeorgeIII ;
+    :isBrotherOf data:KingGeorgeIII ;
+    :isFatherOf data:DukeOfKent ;
+    :isParentOf data:DukeOfKent ;
+    :isSiblingOf data:KingGeorgeIII ;
+    :isUncleOf data:DukeOfKent .
+
+data:PrinceAlbert a :Man,
+        :Person ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis ;
+    :hasBirthYear 1819 ;
+    :hasBrother data:PrinceAlbert ;
+    :hasDeathYear 1861 ;
+    :hasFather data:DukeErnestI ;
+    :hasParent data:DukeErnestI ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:PrinceAlbert ;
+    :isBrotherOf data:PrinceAlbert ;
+    :isChildOf data:DukeErnestI ;
+    :isSiblingOf data:PrinceAlbert ;
+    :isSonOf data:DukeErnestI .
+
+data:DukeOfKent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeIII ;
+    :hasBrother data:DukeOfKent ;
+    :hasChild data:QueenVictoria ;
+    :hasDaughter data:QueenVictoria ;
+    :hasFather data:KingGeorgeIII ;
+    :hasParent data:KingGeorgeIII ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :isAncestorOf data:QueenVictoria ;
+    :isBloodrelationOf data:DukeOfKent ;
+    :isBrotherOf data:DukeOfKent ;
+    :isChildOf data:KingGeorgeIII ;
+    :isFatherOf data:QueenVictoria ;
+    :isParentOf data:QueenVictoria ;
+    :isSiblingOf data:DukeOfKent ;
+    :isSonOf data:KingGeorgeIII ;
+    :isUncleOf data:QueenVictoria .
+
+data:CountessAugusta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :hasDaughter data:PrincessVictoriaSCS ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSister data:CountessAugusta ;
+    :hasSon data:DukeErnestI ;
+    :isAncestorOf data:DukeErnestI,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :isAuntOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isBloodrelationOf data:CountessAugusta ;
+    :isMotherOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isParentOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isSiblingOf data:CountessAugusta ;
+    :isSisterOf data:CountessAugusta .
+
+data:DukeFrancis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:DukeFrancis ;
+    :hasChild data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :hasDaughter data:PrincessVictoriaSCS ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSon data:DukeErnestI ;
+    :isAncestorOf data:DukeErnestI,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:DukeFrancis ;
+    :isBrotherOf data:DukeFrancis ;
+    :isFatherOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isParentOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isSiblingOf data:DukeFrancis ;
+    :isUncleOf data:DukeErnestI,
+        data:PrincessVictoriaSCS .
+
+data:QueenVictoria a :Person,
+        :Woman ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrincessVictoriaSCS ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasFather data:DukeOfKent ;
+    :hasMarriageYear 1840 ;
+    :hasMother data:PrincessVictoriaSCS ;
+    :hasParent data:DukeOfKent,
+        data:PrincessVictoriaSCS ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSister data:QueenVictoria ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isChildOf data:DukeOfKent,
+        data:PrincessVictoriaSCS ;
+    :isDaughterOf data:DukeOfKent,
+        data:PrincessVictoriaSCS ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:DukeErnestI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasBrother data:DukeErnestI ;
+    :hasChild data:PrinceAlbert ;
+    :hasFather data:DukeFrancis ;
+    :hasMother data:CountessAugusta ;
+    :hasParent data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSister data:PrincessVictoriaSCS ;
+    :hasSon data:PrinceAlbert ;
+    :isAncestorOf data:PrinceAlbert ;
+    :isBloodrelationOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isBrotherOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isChildOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isFatherOf data:PrinceAlbert ;
+    :isParentOf data:PrinceAlbert ;
+    :isSiblingOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isSonOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isUncleOf data:PrinceAlbert,
+        data:QueenVictoria .
+
+data:PrincessVictoriaSCS a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasBrother data:DukeErnestI ;
+    :hasChild data:QueenVictoria ;
+    :hasDaughter data:QueenVictoria ;
+    :hasFather data:DukeFrancis ;
+    :hasMother data:CountessAugusta ;
+    :hasParent data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:DukeOfKent,
+        data:KingGeorgeIII,
+        data:PrinceAlbert,
+        data:PrincessVictoriaSCS,
+        data:QueenVictoria ;
+    :hasSister data:PrincessVictoriaSCS ;
+    :isAncestorOf data:QueenVictoria ;
+    :isAuntOf data:PrinceAlbert,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isChildOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isDaughterOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isMotherOf data:QueenVictoria ;
+    :isParentOf data:QueenVictoria ;
+    :isSiblingOf data:DukeErnestI,
+        data:PrincessVictoriaSCS ;
+    :isSisterOf data:DukeErnestI,
+        data:PrincessVictoriaSCS .
+

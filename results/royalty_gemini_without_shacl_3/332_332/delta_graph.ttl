@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KarinEmmaLouiseNissvandt a :Person,
+        :Woman .
+
+data:LennartBernadotte a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:PrinceWilhelm ;
+    :hasMarriageYear 1932,
+        1972 ;
+    :hasMother data:MariaPavlovna .
+
+data:SonjaAnitaMariaHaunz a :Person,
+        :Woman .
+
+data:MariaPavlovna a :Person,
+        :Woman .
+
+data:PrinceWilhelm a :Man,
+        :Person .
+

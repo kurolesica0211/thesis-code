@@ -1,0 +1,141 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina a :Person,
+        :Woman ;
+    :hasRelation data:Marina ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Michael a :Man,
+        :Person ;
+    :hasBrother data:Michael ;
+    :hasRelation data:Michael ;
+    :isBloodrelationOf data:Michael ;
+    :isBrotherOf data:Michael ;
+    :isSiblingOf data:Michael .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasRelation data:Sofia ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Marie-Chantal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine-Alexios ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-Alexios,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :hasSister data:Marie-Chantal ;
+    :hasSon data:Constantine-Alexios ;
+    :isAncestorOf data:Constantine-Alexios ;
+    :isAuntOf data:Constantine-Alexios ;
+    :isBloodrelationOf data:Marie-Chantal ;
+    :isMotherOf data:Constantine-Alexios ;
+    :isParentOf data:Constantine-Alexios ;
+    :isSiblingOf data:Marie-Chantal ;
+    :isSisterOf data:Marie-Chantal .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-Alexios,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Constantine-Alexios,
+        data:Pavlos ;
+    :isAuntOf data:Pavlos ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:ConstantineII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ConstantineII ;
+    :hasChild data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-Alexios,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Constantine-Alexios,
+        data:Pavlos ;
+    :isBloodrelationOf data:ConstantineII ;
+    :isBrotherOf data:ConstantineII ;
+    :isFatherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:ConstantineII ;
+    :isUncleOf data:Pavlos .
+
+data:Constantine-Alexios a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:Constantine-Alexios ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal ;
+    :hasParent data:Marie-Chantal,
+        data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-Alexios,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :isBloodrelationOf data:Constantine-Alexios ;
+    :isBrotherOf data:Constantine-Alexios ;
+    :isChildOf data:Marie-Chantal,
+        data:Pavlos ;
+    :isSiblingOf data:Constantine-Alexios ;
+    :isSonOf data:Marie-Chantal,
+        data:Pavlos .
+
+data:Pavlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:ConstantineII ;
+    :hasBrother data:Pavlos ;
+    :hasChild data:Constantine-Alexios ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-Alexios,
+        data:ConstantineII,
+        data:Marie-Chantal,
+        data:Pavlos ;
+    :hasSon data:Constantine-Alexios ;
+    :isAncestorOf data:Constantine-Alexios ;
+    :isBloodrelationOf data:Pavlos ;
+    :isBrotherOf data:Pavlos ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isFatherOf data:Constantine-Alexios ;
+    :isParentOf data:Constantine-Alexios ;
+    :isSiblingOf data:Pavlos ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isUncleOf data:Constantine-Alexios .
+

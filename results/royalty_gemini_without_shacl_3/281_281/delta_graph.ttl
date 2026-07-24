@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XII a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Infanta_Maria_de_la_Paz_of_Spain a :Person,
+        :Woman .
+
+data:Isabella_II_of_Spain a :Person,
+        :Woman .
+
+data:Maria_de_las_Mercedes_of_Bavaria a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Infanta_Maria_Teresa_of_Spain ;
+    :hasRelation data:Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Jose_Eugenio,
+        data:Luis_Alfonso,
+        data:Maria_del_Pilar .
+
+data:Prince_Adalbert_of_Bavaria a :Man,
+        :Person .
+
+data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man,
+        :Person .
+
+data:Grand_Duke_Vladimir a :Man,
+        :Person .
+
+data:Infanta_Maria_Teresa_of_Spain a :Person,
+        :Woman .
+
+data:Irakli_Bagration_of_Mukhrani a :Man,
+        :Person ;
+    :isSiblingOf data:Leonida .
+
+data:Jose_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1966 .
+
+data:Leonida a :Person,
+        :Woman ;
+    :hasRelation data:Grand_Duke_Vladimir .
+
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 .
+
+data:Maria_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1918 .
+
+data:Prince_Ferdinand_of_Bavaria a :Man,
+        :Person .
+

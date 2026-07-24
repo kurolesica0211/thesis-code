@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1905"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasDaughter data:Beatrix ;
+    :hasDeathYear "1981"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear "1931"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :hasSister data:Cecilie,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht .
+
+data:Albrecht a :Man,
+        :Person .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Georg_Andreas a :Man,
+        :Person .
+
+data:Kraft a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Rupprecht a :Man,
+        :Person .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman .
+

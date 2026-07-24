@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeWilliam a :Man,
+        :Person ;
+    :hasBirthYear 1915 ;
+    :hasChild data:Friederike,
+        data:Georg,
+        data:Welf ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustus ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouise ;
+    :hasRelation data:Sophie ;
+    :hasSister data:Frederica .
+
+data:AliceOfBattenberg a :Person,
+        :Woman .
+
+data:AndrewOfGreece a :Man,
+        :Person .
+
+data:AugustaVictoria a :Person,
+        :Woman .
+
+data:ErnestAugustus a :Man,
+        :Person .
+
+data:Frederica a :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasChild data:Friederike,
+        data:Georg,
+        data:Welf ;
+    :hasFather data:AndrewOfGreece ;
+    :hasMother data:AliceOfBattenberg .
+
+data:VictoriaLouise a :Person,
+        :Woman ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoria .
+
+data:WilhelmII a :Man,
+        :Person .
+
+data:Friederike a :Person,
+        :Woman .
+
+data:Georg a :Man,
+        :Person .
+
+data:Welf a :Man,
+        :Person .
+

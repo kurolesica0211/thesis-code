@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_II a :Woman .\n\ndata:George_VI a :Man .\n\ndata:Prince_William_of_Gloucester a :Man ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :isBrotherOf data:Prince_Richard .\n\ndata:7th_Duke_of_Buccleuch a :Man .\n\ndata:George_V a :Man .\n\ndata:Lady_Margaret_Bridgeman a :Woman .\n\ndata:Prince_Henry%2C_Duke_of_Gloucester a :Man ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Richard a :Man .\n\ndata:Princess_Alice%2C_Duchess_of_Gloucester a :Woman ;\n    :hasFather data:7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\ndata:Queen_Mary a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_II a :Woman .\n\ndata:George_VI a :Man .\n\ndata:Prince_William_of_Gloucester a :Man ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :isBrotherOf data:Prince_Richard .\n\ndata:7th_Duke_of_Buccleuch a :Man .\n\ndata:George_V a :Man .\n\ndata:Lady_Margaret_Bridgeman a :Woman .\n\ndata:Prince_Henry%2C_Duke_of_Gloucester a :Man ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Richard a :Man .\n\ndata:Princess_Alice%2C_Duchess_of_Gloucester a :Woman ;\n    :hasFather data:7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\ndata:Queen_Mary a :Woman .\n\n"
+    }
+]

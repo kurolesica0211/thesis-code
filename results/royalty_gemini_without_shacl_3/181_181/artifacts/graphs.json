@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:King_Paul_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Prince_Christoph_of_Hesse ;\n    :hasMother data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Queen_Frederica_of_Greece a :Person,\n        :Woman .\n\ndata:Prince_Christoph_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_George_William_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear 1946 ;\n    :hasRelation data:Prince_George_William_of_Hanover .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III_of_the_United_Kingdom a :Man,\n        :Person .\n\ndata:King_Paul_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Prince_Christoph_of_Hesse ;\n    :hasMother data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Sophie_of_Greece_and_Denmark .\n\ndata:Prince_Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Queen_Frederica_of_Greece a :Person,\n        :Woman .\n\ndata:Prince_Christoph_of_Hesse a :Man,\n        :Person .\n\ndata:Prince_George_William_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear 1946 ;\n    :hasRelation data:Prince_George_William_of_Hanover .\n\n"
+    }
+]

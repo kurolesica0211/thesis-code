@@ -1,0 +1,362 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GrandDuchessMariaTeresa a :Woman ;
+    :hasRelation data:GrandDuchessMariaTeresa ;
+    :hasSister data:GrandDuchessMariaTeresa ;
+    :isBloodrelationOf data:GrandDuchessMariaTeresa ;
+    :isSiblingOf data:GrandDuchessMariaTeresa ;
+    :isSisterOf data:GrandDuchessMariaTeresa .
+
+data:GrandDukeHenri a :Man ;
+    :hasBrother data:GrandDukeHenri ;
+    :hasRelation data:GrandDukeHenri ;
+    :isBloodrelationOf data:GrandDukeHenri ;
+    :isBrotherOf data:GrandDukeHenri ;
+    :isSiblingOf data:GrandDukeHenri .
+
+data:PrinceFelix a :Man ;
+    :hasBrother data:PrinceFelix ;
+    :hasRelation data:PrinceFelix ;
+    :isBloodrelationOf data:PrinceFelix ;
+    :isBrotherOf data:PrinceFelix ;
+    :isSiblingOf data:PrinceFelix .
+
+data:PrinceJean a :Man ;
+    :hasBrother data:PrinceJean ;
+    :hasRelation data:PrinceJean ;
+    :isBloodrelationOf data:PrinceJean ;
+    :isBrotherOf data:PrinceJean ;
+    :isSiblingOf data:PrinceJean .
+
+data:PrinceLouis a :Man ;
+    :hasBrother data:PrinceLouis ;
+    :hasRelation data:PrinceLouis ;
+    :isBloodrelationOf data:PrinceLouis ;
+    :isBrotherOf data:PrinceLouis ;
+    :isSiblingOf data:PrinceLouis .
+
+data:PrinceRemy a :Man ;
+    :hasBrother data:PrinceRemy ;
+    :hasRelation data:PrinceRemy ;
+    :isBloodrelationOf data:PrinceRemy ;
+    :isBrotherOf data:PrinceRemy ;
+    :isSiblingOf data:PrinceRemy .
+
+data:PrinceRene a :Man ;
+    :hasBrother data:PrinceRene ;
+    :hasRelation data:PrinceRene ;
+    :isBloodrelationOf data:PrinceRene ;
+    :isBrotherOf data:PrinceRene ;
+    :isSiblingOf data:PrinceRene .
+
+data:PrincessChantal a :Woman ;
+    :hasRelation data:PrincessChantal ;
+    :hasSister data:PrincessChantal ;
+    :isBloodrelationOf data:PrincessChantal ;
+    :isSiblingOf data:PrincessChantal ;
+    :isSisterOf data:PrincessChantal .
+
+data:PrincessElisabeth a :Woman ;
+    :hasRelation data:PrincessElisabeth ;
+    :hasSister data:PrincessElisabeth ;
+    :isBloodrelationOf data:PrincessElisabeth ;
+    :isSiblingOf data:PrincessElisabeth ;
+    :isSisterOf data:PrincessElisabeth .
+
+data:PrincessJoan a :Woman ;
+    :hasRelation data:PrincessJoan ;
+    :hasSister data:PrincessJoan ;
+    :isBloodrelationOf data:PrincessJoan ;
+    :isSiblingOf data:PrincessJoan ;
+    :isSisterOf data:PrincessJoan .
+
+data:PrincessMariaPia a :Woman ;
+    :hasRelation data:PrincessMariaPia ;
+    :hasSister data:PrincessMariaPia ;
+    :isBloodrelationOf data:PrincessMariaPia ;
+    :isSiblingOf data:PrincessMariaPia ;
+    :isSisterOf data:PrincessMariaPia .
+
+data:PrincessMarina a :Woman ;
+    :hasRelation data:PrincessMarina ;
+    :hasSister data:PrincessMarina ;
+    :isBloodrelationOf data:PrincessMarina ;
+    :isSiblingOf data:PrincessMarina ;
+    :isSisterOf data:PrincessMarina .
+
+data:PrincessVirginia a :Woman ;
+    :hasRelation data:PrincessVirginia ;
+    :hasSister data:PrincessVirginia ;
+    :isBloodrelationOf data:PrincessVirginia ;
+    :isSiblingOf data:PrincessVirginia ;
+    :isSisterOf data:PrincessVirginia .
+
+data:GrandDuchessJosephineCharlotte a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceGuillaumeOfLuxembourg ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:GrandDuchessJosephineCharlotte ;
+    :hasSon data:PrinceGuillaumeOfLuxembourg ;
+    :isAncestorOf data:PrinceGuillaumeOfLuxembourg ;
+    :isAuntOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBloodrelationOf data:GrandDuchessJosephineCharlotte ;
+    :isMotherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isParentOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSiblingOf data:GrandDuchessJosephineCharlotte ;
+    :isSisterOf data:GrandDuchessJosephineCharlotte .
+
+data:GrandDukeJean a :Ancestor,
+        :Man ;
+    :hasBrother data:GrandDukeJean ;
+    :hasChild data:PrinceGuillaumeOfLuxembourg ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSon data:PrinceGuillaumeOfLuxembourg ;
+    :isAncestorOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBloodrelationOf data:GrandDukeJean ;
+    :isBrotherOf data:GrandDukeJean ;
+    :isFatherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isParentOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSiblingOf data:GrandDukeJean ;
+    :isUncleOf data:PrinceGuillaumeOfLuxembourg .
+
+data:AlessandroTorlonia a :Ancestor,
+        :Man ;
+    :hasBrother data:AlessandroTorlonia ;
+    :hasChild data:DonnaOlimpiaTorlonia ;
+    :hasDaughter data:DonnaOlimpiaTorlonia ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :isAncestorOf data:DonnaOlimpiaTorlonia,
+        data:PrincessSibilla ;
+    :isBloodrelationOf data:AlessandroTorlonia ;
+    :isBrotherOf data:AlessandroTorlonia ;
+    :isFatherOf data:DonnaOlimpiaTorlonia ;
+    :isParentOf data:DonnaOlimpiaTorlonia ;
+    :isSiblingOf data:AlessandroTorlonia ;
+    :isUncleOf data:DonnaOlimpiaTorlonia .
+
+data:AlikiLadyRussell a :Ancestor,
+        :Woman ;
+    :hasChild data:PaulAnnikWeiller ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:AlikiLadyRussell ;
+    :hasSon data:PaulAnnikWeiller ;
+    :isAncestorOf data:PaulAnnikWeiller,
+        data:PrincessSibilla ;
+    :isAuntOf data:PaulAnnikWeiller ;
+    :isBloodrelationOf data:AlikiLadyRussell ;
+    :isMotherOf data:PaulAnnikWeiller ;
+    :isParentOf data:PaulAnnikWeiller ;
+    :isSiblingOf data:AlikiLadyRussell ;
+    :isSisterOf data:AlikiLadyRussell .
+
+data:InfantaBeatriz a :Ancestor,
+        :Woman ;
+    :hasChild data:DonnaOlimpiaTorlonia ;
+    :hasDaughter data:DonnaOlimpiaTorlonia ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:InfantaBeatriz ;
+    :isAncestorOf data:DonnaOlimpiaTorlonia,
+        data:PrincessSibilla ;
+    :isAuntOf data:DonnaOlimpiaTorlonia ;
+    :isBloodrelationOf data:InfantaBeatriz ;
+    :isMotherOf data:DonnaOlimpiaTorlonia ;
+    :isParentOf data:DonnaOlimpiaTorlonia ;
+    :isSiblingOf data:InfantaBeatriz ;
+    :isSisterOf data:InfantaBeatriz .
+
+data:PaulLouisWeiller a :Ancestor,
+        :Man ;
+    :hasBrother data:PaulLouisWeiller ;
+    :hasChild data:PaulAnnikWeiller ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSon data:PaulAnnikWeiller ;
+    :isAncestorOf data:PaulAnnikWeiller,
+        data:PrincessSibilla ;
+    :isBloodrelationOf data:PaulLouisWeiller ;
+    :isBrotherOf data:PaulLouisWeiller ;
+    :isFatherOf data:PaulAnnikWeiller ;
+    :isParentOf data:PaulAnnikWeiller ;
+    :isSiblingOf data:PaulLouisWeiller ;
+    :isUncleOf data:PaulAnnikWeiller .
+
+data:PrinceGuillaumeOfLuxembourg a :Man ;
+    :hasAncestor data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:PrinceGuillaumeOfLuxembourg ;
+    :hasFather data:GrandDukeJean ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephineCharlotte ;
+    :hasParent data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :isBloodrelationOf data:PrinceGuillaumeOfLuxembourg ;
+    :isBrotherOf data:PrinceGuillaumeOfLuxembourg ;
+    :isChildOf data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean ;
+    :isSiblingOf data:PrinceGuillaumeOfLuxembourg ;
+    :isSonOf data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean .
+
+data:PrincessSibilla a :Woman ;
+    :hasAncestor data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller ;
+    :hasBirthYear 1968 ;
+    :hasFather data:PaulAnnikWeiller ;
+    :hasMother data:DonnaOlimpiaTorlonia ;
+    :hasParent data:DonnaOlimpiaTorlonia,
+        data:PaulAnnikWeiller ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:PrincessSibilla ;
+    :isBloodrelationOf data:PrincessSibilla ;
+    :isChildOf data:DonnaOlimpiaTorlonia,
+        data:PaulAnnikWeiller ;
+    :isDaughterOf data:DonnaOlimpiaTorlonia,
+        data:PaulAnnikWeiller ;
+    :isSiblingOf data:PrincessSibilla ;
+    :isSisterOf data:PrincessSibilla .
+
+data:DonnaOlimpiaTorlonia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AlessandroTorlonia,
+        data:InfantaBeatriz ;
+    :hasChild data:PrincessSibilla ;
+    :hasDaughter data:PrincessSibilla ;
+    :hasFather data:AlessandroTorlonia ;
+    :hasMother data:InfantaBeatriz ;
+    :hasParent data:AlessandroTorlonia,
+        data:InfantaBeatriz ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :hasSister data:DonnaOlimpiaTorlonia ;
+    :isAncestorOf data:PrincessSibilla ;
+    :isAuntOf data:PrincessSibilla ;
+    :isBloodrelationOf data:DonnaOlimpiaTorlonia ;
+    :isChildOf data:AlessandroTorlonia,
+        data:InfantaBeatriz ;
+    :isDaughterOf data:AlessandroTorlonia,
+        data:InfantaBeatriz ;
+    :isMotherOf data:PrincessSibilla ;
+    :isParentOf data:PrincessSibilla ;
+    :isSiblingOf data:DonnaOlimpiaTorlonia ;
+    :isSisterOf data:DonnaOlimpiaTorlonia .
+
+data:PaulAnnikWeiller a :Ancestor,
+        :Man ;
+    :hasAncestor data:AlikiLadyRussell,
+        data:PaulLouisWeiller ;
+    :hasBrother data:PaulAnnikWeiller ;
+    :hasChild data:PrincessSibilla ;
+    :hasDaughter data:PrincessSibilla ;
+    :hasFather data:PaulLouisWeiller ;
+    :hasMother data:AlikiLadyRussell ;
+    :hasParent data:AlikiLadyRussell,
+        data:PaulLouisWeiller ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlikiLadyRussell,
+        data:DonnaOlimpiaTorlonia,
+        data:GrandDuchessJosephineCharlotte,
+        data:GrandDukeJean,
+        data:InfantaBeatriz,
+        data:PaulAnnikWeiller,
+        data:PaulLouisWeiller,
+        data:PrinceGuillaumeOfLuxembourg,
+        data:PrincessSibilla ;
+    :isAncestorOf data:PrincessSibilla ;
+    :isBloodrelationOf data:PaulAnnikWeiller ;
+    :isBrotherOf data:PaulAnnikWeiller ;
+    :isChildOf data:AlikiLadyRussell,
+        data:PaulLouisWeiller ;
+    :isFatherOf data:PrincessSibilla ;
+    :isParentOf data:PrincessSibilla ;
+    :isSiblingOf data:PaulAnnikWeiller ;
+    :isSonOf data:AlikiLadyRussell,
+        data:PaulLouisWeiller ;
+    :isUncleOf data:PrincessSibilla .
+

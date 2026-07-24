@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :isUncleOf data:Jean_dOrleans .\n\ndata:Chantal_of_Orleans a :Person,\n        :Woman ;\n    :isAuntOf data:Jean_dOrleans .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Henri_Count_of_Paris_1933 .\n\ndata:Louis_XIV a :Man,\n        :Person ;\n    :hasBrother data:Philippe_I_Duke_of_Orleans .\n\ndata:Charles_X a :Man,\n        :Person .\n\ndata:Louis_Philippe_I a :Man,\n        :Person ;\n    :hasAncestor data:Philippe_I_Duke_of_Orleans .\n\ndata:Marie_Therese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 .\n\ndata:Henri_Count_of_Paris_1933 a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 .\n\ndata:Jean_dOrleans a :Man,\n        :Person ;\n    :hasAncestor data:Charles_X,\n        data:Louis_Philippe_I ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Philippe_I_Duke_of_Orleans a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :isUncleOf data:Jean_dOrleans .\n\ndata:Chantal_of_Orleans a :Person,\n        :Woman ;\n    :isAuntOf data:Jean_dOrleans .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Henri_Count_of_Paris_1933 .\n\ndata:Louis_XIV a :Man,\n        :Person ;\n    :hasBrother data:Philippe_I_Duke_of_Orleans .\n\ndata:Charles_X a :Man,\n        :Person .\n\ndata:Louis_Philippe_I a :Man,\n        :Person ;\n    :hasAncestor data:Philippe_I_Duke_of_Orleans .\n\ndata:Marie_Therese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 .\n\ndata:Henri_Count_of_Paris_1933 a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 .\n\ndata:Jean_dOrleans a :Man,\n        :Person ;\n    :hasAncestor data:Charles_X,\n        data:Louis_Philippe_I ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Philippe_I_Duke_of_Orleans a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,142 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Nicolau_de_Almeida_Reid a :Person,
+        :Woman ;
+    :hasRelation data:Christian_Nicolau_de_Almeida_Reid ;
+    :hasSister data:Christian_Nicolau_de_Almeida_Reid ;
+    :isBloodrelationOf data:Christian_Nicolau_de_Almeida_Reid ;
+    :isSiblingOf data:Christian_Nicolau_de_Almeida_Reid ;
+    :isSisterOf data:Christian_Nicolau_de_Almeida_Reid .
+
+data:Charles_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_I ;
+    :hasRelation data:Charles_I,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isAncestorOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Charles_I ;
+    :isBrotherOf data:Charles_I ;
+    :isSiblingOf data:Charles_I .
+
+data:Fiona_Frances_Elaine_Campbell_Walter a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Francesca_Thyssen_Bornemisza ;
+    :hasDaughter data:Francesca_Thyssen_Bornemisza ;
+    :hasRelation data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Francesca_Thyssen_Bornemisza,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasSister data:Fiona_Frances_Elaine_Campbell_Walter ;
+    :isAncestorOf data:Francesca_Thyssen_Bornemisza ;
+    :isAuntOf data:Francesca_Thyssen_Bornemisza ;
+    :isBloodrelationOf data:Fiona_Frances_Elaine_Campbell_Walter ;
+    :isMotherOf data:Francesca_Thyssen_Bornemisza ;
+    :isParentOf data:Francesca_Thyssen_Bornemisza ;
+    :isSiblingOf data:Fiona_Frances_Elaine_Campbell_Walter ;
+    :isSisterOf data:Fiona_Frances_Elaine_Campbell_Walter .
+
+data:Hans_Heinrich_Thyssen_Bornemisza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasChild data:Francesca_Thyssen_Bornemisza ;
+    :hasDaughter data:Francesca_Thyssen_Bornemisza ;
+    :hasRelation data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Francesca_Thyssen_Bornemisza,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isAncestorOf data:Francesca_Thyssen_Bornemisza ;
+    :isBloodrelationOf data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isBrotherOf data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isFatherOf data:Francesca_Thyssen_Bornemisza ;
+    :isParentOf data:Francesca_Thyssen_Bornemisza ;
+    :isSiblingOf data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isUncleOf data:Francesca_Thyssen_Bornemisza .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Charles_I,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Karl_von_Habsburg .
+
+data:Regina_von_Sachsen_Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Charles_I,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasSister data:Regina_von_Sachsen_Meiningen ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Karl_von_Habsburg ;
+    :isAuntOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Regina_von_Sachsen_Meiningen ;
+    :isMotherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Regina_von_Sachsen_Meiningen ;
+    :isSisterOf data:Regina_von_Sachsen_Meiningen .
+
+data:Francesca_Thyssen_Bornemisza a :Person,
+        :Woman ;
+    :hasAncestor data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasFather data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasMother data:Fiona_Frances_Elaine_Campbell_Walter ;
+    :hasParent data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasRelation data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Francesca_Thyssen_Bornemisza,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :hasSister data:Francesca_Thyssen_Bornemisza ;
+    :isBloodrelationOf data:Francesca_Thyssen_Bornemisza ;
+    :isChildOf data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isDaughterOf data:Fiona_Frances_Elaine_Campbell_Walter,
+        data:Hans_Heinrich_Thyssen_Bornemisza ;
+    :isSiblingOf data:Francesca_Thyssen_Bornemisza ;
+    :isSisterOf data:Francesca_Thyssen_Bornemisza ;
+    :knownAs "Francesca Thyssen-Bornemisza"^^xsd:string .
+
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    :alsoKnownAs "Karl Habsburg-Lothringen"^^xsd:string,
+        "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string ;
+    :hasAncestor data:Charles_I,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Karl_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Regina_von_Sachsen_Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasRelation data:Charles_I,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isBloodrelationOf data:Karl_von_Habsburg ;
+    :isBrotherOf data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isSiblingOf data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen .
+

@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBirthYear "1928"^^xsd:positiveInteger ;
+    :hasDeathYear "2000"^^xsd:positiveInteger ;
+    :hasFather data:Alexander_I_of_Yugoslavia ;
+    :hasMarriageYear "1957"^^xsd:positiveInteger ;
+    :hasMother data:Maria_of_Yugoslavia ;
+    :hasRelation data:Margarita_of_Baden ;
+    :isBrotherOf data:Peter_II_of_Yugoslavia .
+
+data:Alexander_I_of_Yugoslavia a :Man,
+        :Person .
+
+data:Ferdinand_of_Romania a :Man,
+        :Person .
+
+data:Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Maria_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_of_Romania ;
+    :hasMother data:Marie_of_Romania .
+
+data:Marie_of_Romania a :Person,
+        :Woman .
+
+data:Peter_II_of_Yugoslavia a :Man,
+        :Person .
+

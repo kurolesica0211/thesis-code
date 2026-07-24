@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Constantine_I_of_Greece .
+
+data:Carol_II_of_Romania a :Man,
+        :Person ;
+    :isFatherOf data:Michael_I_of_Romania .
+
+data:George_II_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_I_of_Greece ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasSister data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isMotherOf data:Michael_I_of_Romania ;
+    :isSisterOf data:Alexander_I_of_Greece .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Katherine_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Paul_I_of_Greece a :Man,
+        :Person .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Alexander_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece .
+
+data:Michael_I_of_Romania a :Man,
+        :Person ;
+    :hasFather data:Carol_II_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+

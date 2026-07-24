@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/318_318",
+  "text_file": "Q518846.txt",
+  "text_key": "Q518846",
+  "article": "https://en.wikipedia.org/wiki/Alfonso,_Prince_of_Asturias_(1907%E2%80%931938)",
+  "article_key": "Alfonso, Prince of Asturias",
+  "main_entity": {
+    "uri": "http://example.com/data#Alfonso-_Prince_of_Asturias",
+    "qid": "Q518846",
+    "label": "Alfonso, Prince of Asturias"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Alfonso-_Prince_of_Asturias",
+      "qid": "Q518846",
+      "label": "Alfonso, Prince of Asturias",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
+      "qid": "Q160001",
+      "label": "Victoria Eugenie of Battenberg",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_XIII_of_Spain",
+      "extracted_local_name": "Alfonso_XIII_of_Spain",
+      "embedding_text": "Alfonso XIII of Spain",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alfonso_XIII",
+      "ground_truth_qid": "Q18363",
+      "ground_truth_label": "Alfonso XIII",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso XIII of Spain",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Victoria_Eugenie_of_Battenberg",
+      "extracted_local_name": "Victoria_Eugenie_of_Battenberg",
+      "embedding_text": "Victoria Eugenie of Battenberg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
+      "ground_truth_qid": "Q160001",
+      "ground_truth_label": "Victoria Eugenie of Battenberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_Prince_of_Asturias",
+      "extracted_local_name": "Alfonso_Prince_of_Asturias",
+      "embedding_text": "Alfonso Prince of Asturias",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9827586206896552,
+      "ground_truth_uri": "http://example.com/data#Alfonso-_Prince_of_Asturias",
+      "ground_truth_qid": "Q518846",
+      "ground_truth_label": "Alfonso, Prince of Asturias",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso- Prince of Asturias",
+      "best_candidate_label": "Alfonso, Prince of Asturias",
+      "best_candidate_qid": "Q518846",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9827586206896552
+    },
+    {
+      "extracted_uri": "http://example.org/data/Edelmira_Sampedro",
+      "extracted_local_name": "Edelmira_Sampedro",
+      "embedding_text": "Edelmira Sampedro",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Victoria Eugenie of Spain",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Gonzalo",
+      "extracted_local_name": "Gonzalo",
+      "embedding_text": "Gonzalo",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ena",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marta_Esther_Rocafort-Altuzarra",
+      "extracted_local_name": "Marta_Esther_Rocafort-Altuzarra",
+      "embedding_text": "Marta Esther Rocafort-Altuzarra",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.22950819672131148
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

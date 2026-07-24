@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_von_Habsburg a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1997 ;\n    :hasRelation data:Eilika_of_Oldenburg .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Person,\n        :Woman ;\n    :isMotherOf data:Johann_of_Oldenburg .\n\ndata:Ilka_of_Ortenburg a :Person,\n        :Woman ;\n    :isMotherOf data:Eilika_of_Oldenburg .\n\ndata:Nikolaus_of_Oldenburg a :Man,\n        :Person ;\n    :isFatherOf data:Johann_of_Oldenburg .\n\ndata:Johann_of_Oldenburg a :Man,\n        :Person ;\n    :isFatherOf data:Eilika_of_Oldenburg .\n\ndata:Eilika_of_Oldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1972 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_von_Habsburg a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1997 ;\n    :hasRelation data:Eilika_of_Oldenburg .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Person,\n        :Woman ;\n    :isMotherOf data:Johann_of_Oldenburg .\n\ndata:Ilka_of_Ortenburg a :Person,\n        :Woman ;\n    :isMotherOf data:Eilika_of_Oldenburg .\n\ndata:Nikolaus_of_Oldenburg a :Man,\n        :Person ;\n    :isFatherOf data:Johann_of_Oldenburg .\n\ndata:Johann_of_Oldenburg a :Man,\n        :Person ;\n    :isFatherOf data:Eilika_of_Oldenburg .\n\ndata:Eilika_of_Oldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1972 .\n\n"
+    }
+]

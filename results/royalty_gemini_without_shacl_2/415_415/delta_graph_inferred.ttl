@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSister data:Lady_Brigid_Guinness ;
+    :isBloodrelationOf data:Lady_Brigid_Guinness ;
+    :isSiblingOf data:Lady_Brigid_Guinness ;
+    :isSisterOf data:Lady_Brigid_Guinness .
+
+data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasChild data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSon data:Prince_Frederick_of_Prussia ;
+    :isAncestorOf data:Prince_Frederick_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isBrotherOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isFatherOf data:Prince_Frederick_of_Prussia ;
+    :isParentOf data:Prince_Frederick_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isUncleOf data:Prince_Frederick_of_Prussia .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Prince_Frederick_of_Prussia ;
+    :isAncestorOf data:Prince_Frederick_of_Prussia ;
+    :isAuntOf data:Prince_Frederick_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Prince_Frederick_of_Prussia ;
+    :isParentOf data:Prince_Frederick_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person ;
+    :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
+        "George Mansfield"^^xsd:string ;
+    :hasAncestor data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasDeathYear 1966 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1945 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isChildOf data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isSonOf data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+

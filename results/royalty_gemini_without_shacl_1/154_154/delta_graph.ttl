@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceMauriceOfBattenberg a :Man,
+        :Person ;
+    :alsoKnownAs "Maurice Victor Donald"^^xsd:string ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:PrinceHenryOfBattenberg ;
+    :hasMother data:PrincessBeatrice .
+
+data:VictoriaEugenieOfBattenberg a :Person,
+        :Woman ;
+    :hasFather data:PrinceHenryOfBattenberg ;
+    :hasMother data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoXIIIOfSpain .
+
+data:AlbertPrinceConsort a :Man,
+        :Person .
+
+data:AlfonsoXIIIOfSpain a :Man,
+        :Person .
+
+data:JulieThereseHauke a :Person,
+        :Woman .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Man,
+        :Person .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:PrinceHenryOfBattenberg a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:JulieThereseHauke .
+
+data:PrincessBeatrice a :Person,
+        :Woman ;
+    :hasFather data:AlbertPrinceConsort ;
+    :hasMother data:QueenVictoria .
+

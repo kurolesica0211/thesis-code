@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:SamuelChatto a :Man,
+        :Person ;
+    :hasAncestor data:ElizabethII,
+        data:PrincessMargaret ;
+    :hasBirthYear 1996 ;
+    :hasFather data:DanielChatto ;
+    :hasMother data:LadySarahChatto ;
+    :hasSex data:Male ;
+    :isChildOf data:DanielChatto,
+        data:LadySarahChatto .
+
+data:ElizabethII a :Person,
+        :Woman .
+
+data:Male a :Male .
+
+data:PrincessMargaret a :Person,
+        :Woman .
+
+data:DanielChatto a :Man,
+        :Person .
+
+data:LadySarahChatto a :Person,
+        :Woman .
+

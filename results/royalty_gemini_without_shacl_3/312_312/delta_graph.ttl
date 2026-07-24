@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marija_Kara%C4%91or%C4%91evi%C4%87 a :Woman ;
+    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 .
+
+data:Stefan_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 .
+
+data:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasFather data:Alexander_%28Crown_Prince%29 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Alexander_%28Crown_Prince%29 a :Man .
+
+data:Danica_Marinkovi%C4%87 a :Woman .
+
+data:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_%28Crown_Prince%29 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Peter_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Woman .
+

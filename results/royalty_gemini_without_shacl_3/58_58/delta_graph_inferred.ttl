@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:William_Prince_of_Hohenzollern a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Prince_of_Hohenzollern ;
+    :hasChild data:Augusta_Victoria_of_Hohenzollern ;
+    :hasDaughter data:Augusta_Victoria_of_Hohenzollern ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :isAncestorOf data:Augusta_Victoria_of_Hohenzollern ;
+    :isBloodrelationOf data:William_Prince_of_Hohenzollern ;
+    :isBrotherOf data:William_Prince_of_Hohenzollern ;
+    :isFatherOf data:Augusta_Victoria_of_Hohenzollern ;
+    :isParentOf data:Augusta_Victoria_of_Hohenzollern ;
+    :isSiblingOf data:William_Prince_of_Hohenzollern ;
+    :isUncleOf data:Augusta_Victoria_of_Hohenzollern .
+
+data:Augusta_Victoria_of_Hohenzollern a :Person,
+        :Woman ;
+    :hasAncestor data:William_Prince_of_Hohenzollern ;
+    :hasFather data:William_Prince_of_Hohenzollern ;
+    :hasParent data:William_Prince_of_Hohenzollern ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :hasSister data:Augusta_Victoria_of_Hohenzollern ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Hohenzollern ;
+    :isChildOf data:William_Prince_of_Hohenzollern ;
+    :isDaughterOf data:William_Prince_of_Hohenzollern ;
+    :isSiblingOf data:Augusta_Victoria_of_Hohenzollern ;
+    :isSisterOf data:Augusta_Victoria_of_Hohenzollern .
+
+data:Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlos_I ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :hasSister data:Maria_Pia_of_Savoy ;
+    :hasSon data:Carlos_I ;
+    :isAncestorOf data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Carlos_I ;
+    :isBloodrelationOf data:Maria_Pia_of_Savoy ;
+    :isMotherOf data:Carlos_I ;
+    :isParentOf data:Carlos_I ;
+    :isSiblingOf data:Maria_Pia_of_Savoy ;
+    :isSisterOf data:Maria_Pia_of_Savoy .
+
+data:Amelie_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :hasSister data:Amelie_of_Orleans ;
+    :hasSon data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Amelie_of_Orleans ;
+    :isMotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Amelie_of_Orleans ;
+    :isSisterOf data:Amelie_of_Orleans .
+
+data:Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Maria_Pia_of_Savoy ;
+    :hasBrother data:Carlos_I ;
+    :hasChild data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasMother data:Maria_Pia_of_Savoy ;
+    :hasParent data:Maria_Pia_of_Savoy ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :hasSon data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Carlos_I ;
+    :isBrotherOf data:Carlos_I ;
+    :isChildOf data:Maria_Pia_of_Savoy ;
+    :isFatherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Carlos_I ;
+    :isSonOf data:Maria_Pia_of_Savoy ;
+    :isUncleOf data:Luis_Filipe,
+        data:Manuel_II .
+
+data:Luis_Filipe a :Man,
+        :Person ;
+    :hasAncestor data:Amelie_of_Orleans,
+        data:Carlos_I,
+        data:Maria_Pia_of_Savoy ;
+    :hasBrother data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Amelie_of_Orleans ;
+    :hasParent data:Amelie_of_Orleans,
+        data:Carlos_I ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :isBloodrelationOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Amelie_of_Orleans,
+        data:Carlos_I ;
+    :isSiblingOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Amelie_of_Orleans,
+        data:Carlos_I .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :hasAncestor data:Amelie_of_Orleans,
+        data:Carlos_I,
+        data:Maria_Pia_of_Savoy ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Carlos_I ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Amelie_of_Orleans ;
+    :hasParent data:Amelie_of_Orleans,
+        data:Carlos_I ;
+    :hasRelation data:Amelie_of_Orleans,
+        data:Augusta_Victoria_of_Hohenzollern,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy,
+        data:William_Prince_of_Hohenzollern ;
+    :isBloodrelationOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Amelie_of_Orleans,
+        data:Carlos_I ;
+    :isSiblingOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Amelie_of_Orleans,
+        data:Carlos_I .
+

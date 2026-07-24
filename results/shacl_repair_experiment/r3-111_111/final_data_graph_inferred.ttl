@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:David_Flint_Wood a :Man ;
+    :hasBrother data:David_Flint_Wood ;
+    :hasRelation data:David_Flint_Wood ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:David_Flint_Wood ;
+    :isBrotherOf data:David_Flint_Wood ;
+    :isSiblingOf data:David_Flint_Wood .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:Male ;
+    :isAncestorOf data:India_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isUncleOf data:India_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Woman ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:Female ;
+    :hasSister data:Lady_Pamela_Hicks ;
+    :isAncestorOf data:India_Hicks ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Hicks ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:India_Hicks a :Woman ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasBirthYear 1967 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:Female ;
+    :hasSister data:India_Hicks ;
+    :isBloodrelationOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:India_Hicks ;
+    :isSisterOf data:India_Hicks .
+

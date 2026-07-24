@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Karadordevic a :Man,
+        :Person ;
+    :isFatherOf data:Peter_Karadordevic,
+        data:Philip_Karadordevic .
+
+data:Maria_da_Gloria a :Person,
+        :Woman ;
+    :isMotherOf data:Peter_Karadordevic,
+        data:Philip_Karadordevic .
+
+data:Danica_Marinkovic a :Person,
+        :Woman ;
+    :isMotherOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic .
+
+data:Marija_Karadordevic a :Person,
+        :Woman .
+
+data:Peter_Karadordevic a :Man,
+        :Person ;
+    :isBrotherOf data:Philip_Karadordevic .
+
+data:Stefan_Karadordevic a :Man,
+        :Person .
+
+data:Philip_Karadordevic a :Man,
+        :Person ;
+    :hasBirthYear "1982"^^xsd:positiveInteger ;
+    :hasMarriageYear "2017"^^xsd:positiveInteger ;
+    :hasRelation data:Danica_Marinkovic ;
+    :isFatherOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic .
+

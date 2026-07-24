@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LouisMountbatten a :Man ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:PrinceGeorgeOfBattenberg ;
+    :hasDaughter data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
+    :hasDeathYear 1979 ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasSister data:PrincessAliceOfBattenberg,
+        data:PrincessLouiseOfBattenberg .
+
+data:JuliaPrincessOfBattenberg a :Woman .
+
+data:LadyPamelaHicks a :Woman ;
+    :hasMother data:EdwinaAshley .
+
+data:LouisIVGrandDukeOfHesse a :Man .
+
+data:PatriciaKnatchbull a :Woman ;
+    :hasMother data:EdwinaAshley .
+
+data:PrinceAlbertOfSaxeCoburgAndGotha a :Man .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Man .
+
+data:PrinceGeorgeOfBattenberg a :Man .
+
+data:PrinceLouisOfBattenberg a :Man ;
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:JuliaPrincessOfBattenberg .
+
+data:PrincessAliceOfBattenberg a :Woman .
+
+data:PrincessAliceOfTheUnitedKingdom a :Woman ;
+    :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasMother data:QueenVictoria .
+
+data:PrincessLouiseOfBattenberg a :Woman .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Woman ;
+    :hasFather data:LouisIVGrandDukeOfHesse ;
+    :hasMother data:PrincessAliceOfTheUnitedKingdom .
+
+data:QueenVictoria a :Woman .
+
+data:WilfredWilliamAshley a :Man .
+
+data:EdwinaAshley a :Woman ;
+    :hasFather data:WilfredWilliamAshley .
+

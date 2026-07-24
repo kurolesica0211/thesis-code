@@ -1,0 +1,223 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Meghan_Markle a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :hasDaughter data:Lilibet_Sussex ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSister data:Meghan_Markle ;
+    :hasSon data:Archie_Sussex ;
+    :isAncestorOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isAuntOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isBloodrelationOf data:Meghan_Markle ;
+    :isMotherOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isParentOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isSiblingOf data:Meghan_Markle ;
+    :isSisterOf data:Meghan_Markle .
+
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Harry,
+        data:Prince_William ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :hasSon data:Prince_Harry,
+        data:Prince_William ;
+    :isAncestorOf data:Archie_Sussex,
+        data:Lilibet_Sussex,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :isAuntOf data:Prince_Harry,
+        data:Prince_William ;
+    :isBloodrelationOf data:Diana_Princess_of_Wales ;
+    :isMotherOf data:Prince_Harry,
+        data:Prince_William ;
+    :isParentOf data:Prince_Harry,
+        data:Prince_William ;
+    :isSiblingOf data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Diana_Princess_of_Wales .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Prince_Harry,
+        data:Prince_William ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSon data:Prince_Harry,
+        data:Prince_William ;
+    :isAncestorOf data:Archie_Sussex,
+        data:Lilibet_Sussex,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isFatherOf data:Prince_Harry,
+        data:Prince_William ;
+    :isParentOf data:Prince_Harry,
+        data:Prince_William ;
+    :isSiblingOf data:King_Charles_III ;
+    :isUncleOf data:Prince_Harry,
+        data:Prince_William .
+
+data:Prince_William a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasBrother data:Prince_Harry,
+        data:Prince_William ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:Prince_William ;
+    :isBrotherOf data:Prince_Harry,
+        data:Prince_William ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isSiblingOf data:Prince_Harry,
+        data:Prince_William ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie_Sussex,
+        data:Lilibet_Sussex .
+
+data:Archie_Sussex a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasBrother data:Archie_Sussex ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle ;
+    :hasParent data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSister data:Lilibet_Sussex ;
+    :isBloodrelationOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isBrotherOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isChildOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isSonOf data:Meghan_Markle,
+        data:Prince_Harry .
+
+data:Lilibet_Sussex a :Person,
+        :Woman ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasBrother data:Archie_Sussex ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle ;
+    :hasParent data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSister data:Lilibet_Sussex ;
+    :isBloodrelationOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isChildOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isDaughterOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isSisterOf data:Archie_Sussex,
+        data:Lilibet_Sussex .
+
+data:Prince_Harry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasBirthYear "1984"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Harry,
+        data:Prince_William ;
+    :hasChild data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :hasDaughter data:Lilibet_Sussex ;
+    :hasFather data:King_Charles_III ;
+    :hasMarriageYear "2018"^^xsd:positiveInteger ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie_Sussex,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Sussex,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_William ;
+    :hasSon data:Archie_Sussex ;
+    :isAncestorOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:Prince_William ;
+    :isBrotherOf data:Prince_Harry,
+        data:Prince_William ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isFatherOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isParentOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :isSiblingOf data:Prince_Harry,
+        data:Prince_William ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie_Sussex,
+        data:Lilibet_Sussex ;
+    :knownAs "Harry"^^xsd:string .
+

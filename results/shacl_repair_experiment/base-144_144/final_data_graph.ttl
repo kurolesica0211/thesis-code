@@ -1,0 +1,90 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Prince_Albert_of_Saxe_Coburg_and_Gotha a :Man,
+        :Person .
+
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMarriageYear data:Princess_Sophie_of_Greece_and_Denmark,
+        1930 ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Kaiser_Wilhelm_II ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Prince_Philipp_of_Hesse,
+        data:Prince_Richard_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_George_William_of_Hanover a :Man,
+        :Person ;
+    :isSiblingOf data:Queen_Fredrica_of_Greece .
+
+data:Prince_Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Emperor_Frederick_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
+
+data:Kaiser_Wilhelm_II a :Man,
+        :Person .
+
+data:Maximilian_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Philipp_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Richard_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Emperor_Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
+
+data:Queen_Fredrica_of_Greece a :Person,
+        :Woman .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman .
+

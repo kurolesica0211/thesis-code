@@ -1,0 +1,179 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PericlesIoannides a :Man,
+        :Person ;
+    :hasBrother data:PericlesIoannides ;
+    :hasRelation data:PericlesIoannides ;
+    :isBloodrelationOf data:PericlesIoannides ;
+    :isBrotherOf data:PericlesIoannides ;
+    :isSiblingOf data:PericlesIoannides .
+
+data:GeorgeMikhailovichOfRussia a :Man,
+        :Person ;
+    :hasBrother data:GeorgeMikhailovichOfRussia ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:GeorgeMikhailovichOfRussia,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna ;
+    :isBloodrelationOf data:GeorgeMikhailovichOfRussia ;
+    :isBrotherOf data:GeorgeMikhailovichOfRussia ;
+    :isSiblingOf data:GeorgeMikhailovichOfRussia .
+
+data:ConstantineIOfGreece a :Man,
+        :Person ;
+    :hasBrother data:ConstantineIOfGreece ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:GeorgeIOfGreece,
+        data:GeorgeMikhailovichOfRussia,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasSister data:MariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :isBrotherOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :isSiblingOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :isUncleOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:GeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasChild data:MariaOfGreeceAndDenmark ;
+    :hasDaughter data:MariaOfGreeceAndDenmark ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:GeorgeIOfGreece,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAncestorOf data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isFatherOf data:MariaOfGreeceAndDenmark ;
+    :isParentOf data:MariaOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeIOfGreece ;
+    :isUncleOf data:MariaOfGreeceAndDenmark .
+
+data:OlgaConstantinovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaOfGreeceAndDenmark ;
+    :hasDaughter data:MariaOfGreeceAndDenmark ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:OlgaConstantinovnaOfRussia,
+        data:XeniaGeorgievna ;
+    :hasSister data:OlgaConstantinovnaOfRussia ;
+    :isAncestorOf data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAuntOf data:MariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:OlgaConstantinovnaOfRussia ;
+    :isMotherOf data:MariaOfGreeceAndDenmark ;
+    :isParentOf data:MariaOfGreeceAndDenmark ;
+    :isSiblingOf data:OlgaConstantinovnaOfRussia ;
+    :isSisterOf data:OlgaConstantinovnaOfRussia .
+
+data:XeniaGeorgievna a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:MariaOfGreeceAndDenmark,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasMother data:MariaOfGreeceAndDenmark ;
+    :hasParent data:MariaOfGreeceAndDenmark ;
+    :hasRelation data:GeorgeIOfGreece,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:OlgaConstantinovnaOfRussia,
+        data:XeniaGeorgievna ;
+    :hasSister data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isChildOf data:MariaOfGreeceAndDenmark ;
+    :isDaughterOf data:MariaOfGreeceAndDenmark ;
+    :isSiblingOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSisterOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:NinaGeorgievna a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:MariaOfGreeceAndDenmark,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasMother data:MariaOfGreeceAndDenmark ;
+    :hasParent data:MariaOfGreeceAndDenmark ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:GeorgeIOfGreece,
+        data:GeorgeMikhailovichOfRussia,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:OlgaConstantinovnaOfRussia,
+        data:XeniaGeorgievna ;
+    :hasSister data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isChildOf data:MariaOfGreeceAndDenmark ;
+    :isDaughterOf data:MariaOfGreeceAndDenmark ;
+    :isSiblingOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSisterOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:MariaOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Georgievna"^^xsd:string ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:ConstantineIOfGreece ;
+    :hasChild data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasDaughter data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:OlgaConstantinovnaOfRussia ;
+    :hasParent data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasRelation data:ConstantineIOfGreece,
+        data:GeorgeIOfGreece,
+        data:GeorgeMikhailovichOfRussia,
+        data:MariaOfGreeceAndDenmark,
+        data:NinaGeorgievna,
+        data:OlgaConstantinovnaOfRussia,
+        data:XeniaGeorgievna ;
+    :hasSister data:MariaOfGreeceAndDenmark ;
+    :isAncestorOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAuntOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isDaughterOf data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isMotherOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isParentOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSiblingOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :isSisterOf data:ConstantineIOfGreece,
+        data:MariaOfGreeceAndDenmark ;
+    :knownAs "María"^^xsd:string .
+

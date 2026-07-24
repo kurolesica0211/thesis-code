@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Josephine_of_Denmark a :Person,\n        :Woman ;\n    :hasAncestor data:Ingrid_of_Denmark ;\n    :hasBirthYear \"2011\"^^xsd:positiveInteger ;\n    :hasBrother data:Christian_of_Denmark,\n        data:Vincent_of_Denmark ;\n    :hasFather data:Frederik_X ;\n    :hasMother data:Mary_of_Denmark ;\n    :hasSister data:Isabella_of_Denmark .\n\ndata:Christian_of_Denmark a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :hasFather data:Henrik_of_Denmark ;\n    :hasMother data:Margrethe_II ;\n    :isChildOf data:Margrethe_II .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Ingrid_of_Denmark a :Person,\n        :Woman .\n\ndata:Isabella_of_Denmark a :Person,\n        :Woman .\n\ndata:Mary_of_Denmark a :Person,\n        :Woman .\n\ndata:Vincent_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Josephine_of_Denmark a :Person,\n        :Woman ;\n    :hasAncestor data:Ingrid_of_Denmark ;\n    :hasBirthYear \"2011\"^^xsd:positiveInteger ;\n    :hasBrother data:Christian_of_Denmark,\n        data:Vincent_of_Denmark ;\n    :hasFather data:Frederik_X ;\n    :hasMother data:Mary_of_Denmark ;\n    :hasSister data:Isabella_of_Denmark .\n\ndata:Christian_of_Denmark a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :hasFather data:Henrik_of_Denmark ;\n    :hasMother data:Margrethe_II ;\n    :isChildOf data:Margrethe_II .\n\ndata:Henrik_of_Denmark a :Man,\n        :Person .\n\ndata:Ingrid_of_Denmark a :Person,\n        :Woman .\n\ndata:Isabella_of_Denmark a :Person,\n        :Woman .\n\ndata:Mary_of_Denmark a :Person,\n        :Woman .\n\ndata:Vincent_of_Denmark a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\n"
+    }
+]

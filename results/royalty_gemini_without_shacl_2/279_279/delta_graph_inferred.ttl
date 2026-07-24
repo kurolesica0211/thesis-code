@@ -1,0 +1,891 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI_of_Spain a :Man ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain .
+
+data:Frederik_X_of_Denmark a :Man ;
+    :hasBrother data:Frederik_X_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark ;
+    :isBloodrelationOf data:Frederik_X_of_Denmark ;
+    :isBrotherOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Frederik_X_of_Denmark .
+
+data:Marina_of_Greece a :Woman ;
+    :hasRelation data:Marina_of_Greece ;
+    :hasSister data:Marina_of_Greece ;
+    :isBloodrelationOf data:Marina_of_Greece ;
+    :isSiblingOf data:Marina_of_Greece ;
+    :isSisterOf data:Marina_of_Greece .
+
+data:Michael_of_Greece a :Man ;
+    :hasBrother data:Michael_of_Greece ;
+    :hasRelation data:Michael_of_Greece ;
+    :isBloodrelationOf data:Michael_of_Greece ;
+    :isBrotherOf data:Michael_of_Greece ;
+    :isSiblingOf data:Michael_of_Greece .
+
+data:Margrethe_II_of_Denmark a :Woman ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :isAuntOf data:Pavlos ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark .
+
+data:Sof%C3%ADa_of_Spain a :Woman ;
+    :hasBrother data:Constantine_II ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Sof%C3%ADa_of_Spain ;
+    :isAuntOf data:Pavlos ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain ;
+    :isSiblingOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon,
+        data:Pavlos ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Anne-Marie .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Woman ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon,
+        data:Pavlos ;
+    :isAuntOf data:Anne-Marie ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isMotherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Constantine_II ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSon data:Constantine_II ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon,
+        data:Pavlos ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isFatherOf data:Constantine_II ;
+    :isParentOf data:Constantine_II ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II .
+
+data:Alexia_of_Greece a :Woman ;
+    :hasBrother data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece,
+        data:Theodora_of_Greece ;
+    :isAuntOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBloodrelationOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSisterOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece .
+
+data:Nikolaos_of_Greece a :Man ;
+    :hasBrother data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBrotherOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isUncleOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
+
+data:Philippos_of_Greece a :Man ;
+    :hasBrother data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBrotherOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isUncleOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
+
+data:Theodora_of_Greece a :Woman ;
+    :hasBrother data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece,
+        data:Theodora_of_Greece ;
+    :isAuntOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBloodrelationOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSisterOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasAncestor data:Paul_of_Greece ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Pavlos ;
+    :hasFather data:Paul_of_Greece ;
+    :hasParent data:Paul_of_Greece ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Sof%C3%ADa_of_Spain ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon,
+        data:Pavlos ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain ;
+    :isBrotherOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain ;
+    :isChildOf data:Paul_of_Greece ;
+    :isFatherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:Constantine_II,
+        data:Sof%C3%ADa_of_Spain ;
+    :isSonOf data:Paul_of_Greece ;
+    :isUncleOf data:Pavlos .
+
+data:Marie-Chantal_Miller a :Ancestor,
+        :Woman ;
+    :hasChild data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Marie-Chantal_Miller ;
+    :hasSon data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isAuntOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBloodrelationOf data:Marie-Chantal_Miller ;
+    :isMotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isParentOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSiblingOf data:Marie-Chantal_Miller ;
+    :isSisterOf data:Marie-Chantal_Miller .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasChild data:Pavlos ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon,
+        data:Pavlos ;
+    :isAuntOf data:Pavlos ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Anne-Marie,
+        data:Margrethe_II_of_Denmark .
+
+data:Achileas-Andreas a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Marie-Chantal_Miller,
+        data:Paul_of_Greece,
+        data:Pavlos ;
+    :hasBrother data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBrotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos .
+
+data:Aristides-Stavros a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Marie-Chantal_Miller,
+        data:Paul_of_Greece,
+        data:Pavlos ;
+    :hasBrother data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBrotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos .
+
+data:Constantine-Alexios a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Marie-Chantal_Miller,
+        data:Paul_of_Greece,
+        data:Pavlos ;
+    :hasBrother data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBrotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos .
+
+data:Maria-Olympia a :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Marie-Chantal_Miller,
+        data:Paul_of_Greece,
+        data:Pavlos ;
+    :hasBrother data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isDaughterOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSisterOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
+
+data:Odysseas-Kimon a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Marie-Chantal_Miller,
+        data:Paul_of_Greece,
+        data:Pavlos ;
+    :hasBrother data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBrotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos .
+
+data:Pavlos a :Ancestor,
+        :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Paul_of_Greece ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece ;
+    :hasChild data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Achileas-Andreas,
+        data:Alexia_of_Greece,
+        data:Anne-Marie,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Constantine_II,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Maria-Olympia,
+        data:Marie-Chantal_Miller,
+        data:Nikolaos_of_Greece,
+        data:Odysseas-Kimon,
+        data:Paul_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Sof%C3%ADa_of_Spain,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSon data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
+    :isAncestorOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isBloodrelationOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBrotherOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isFatherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isParentOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon ;
+    :isSiblingOf data:Alexia_of_Greece,
+        data:Nikolaos_of_Greece,
+        data:Pavlos,
+        data:Philippos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isUncleOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
+

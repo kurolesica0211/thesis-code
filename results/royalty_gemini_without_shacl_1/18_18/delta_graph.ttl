@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Louise_of_Orleans ;
+    :hasSister data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Juan_Carlos_I_of_Spain .
+
+data:Pedro_Gastao_of_Orleans-Braganza a :Man ;
+    :hasFather data:Pedro_de_Alcantara_of_Orleans-Braganza .
+
+data:Sofia_of_Spain a :Woman .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man .
+
+data:Juan_Carlos_I_of_Spain a :Man ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Juan_Count_of_Barcelona a :Man .
+
+data:Louise_of_Orleans a :Woman ;
+    :hasFather data:Philippe_Count_of_Paris .
+
+data:Pedro_de_Alcantara_of_Orleans-Braganza a :Man .
+
+data:Philippe_Count_of_Paris a :Man .
+
+data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman .
+

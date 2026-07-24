@@ -1,0 +1,566 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX a :Man,
+        :Person ;
+    :hasBrother data:Christian_IX ;
+    :hasRelation data:Christian_IX ;
+    :isBloodrelationOf data:Christian_IX ;
+    :isBrotherOf data:Christian_IX ;
+    :isSiblingOf data:Christian_IX .
+
+data:Gustav a :Man,
+        :Person ;
+    :hasBrother data:Gustav ;
+    :hasRelation data:Gustav ;
+    :isBloodrelationOf data:Gustav ;
+    :isBrotherOf data:Gustav ;
+    :isSiblingOf data:Gustav .
+
+data:Harald a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Harald ;
+    :hasChild data:Caroline_Mathilde ;
+    :hasDaughter data:Caroline_Mathilde ;
+    :hasRelation data:Caroline_Mathilde,
+        data:Harald,
+        data:Helena ;
+    :isAncestorOf data:Caroline_Mathilde ;
+    :isBloodrelationOf data:Harald ;
+    :isBrotherOf data:Harald ;
+    :isFatherOf data:Caroline_Mathilde ;
+    :isParentOf data:Caroline_Mathilde ;
+    :isSiblingOf data:Harald ;
+    :isUncleOf data:Caroline_Mathilde .
+
+data:Helena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Caroline_Mathilde ;
+    :hasDaughter data:Caroline_Mathilde ;
+    :hasRelation data:Caroline_Mathilde,
+        data:Harald,
+        data:Helena ;
+    :hasSister data:Helena ;
+    :isAncestorOf data:Caroline_Mathilde ;
+    :isAuntOf data:Caroline_Mathilde ;
+    :isBloodrelationOf data:Helena ;
+    :isMotherOf data:Caroline_Mathilde ;
+    :isParentOf data:Caroline_Mathilde ;
+    :isSiblingOf data:Helena ;
+    :isSisterOf data:Helena .
+
+data:Caroline_Mathilde a :Person,
+        :Woman ;
+    :hasAncestor data:Harald,
+        data:Helena ;
+    :hasFather data:Harald ;
+    :hasMother data:Helena ;
+    :hasParent data:Harald,
+        data:Helena ;
+    :hasRelation data:Caroline_Mathilde,
+        data:Harald,
+        data:Helena ;
+    :hasSister data:Caroline_Mathilde ;
+    :isBloodrelationOf data:Caroline_Mathilde ;
+    :isChildOf data:Harald,
+        data:Helena ;
+    :isDaughterOf data:Harald,
+        data:Helena ;
+    :isSiblingOf data:Caroline_Mathilde ;
+    :isSisterOf data:Caroline_Mathilde .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasFather data:Frederik_IX ;
+    :hasParent data:Frederik_IX ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSister data:Margrethe_II ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isChildOf data:Frederik_IX ;
+    :isDaughterOf data:Frederik_IX ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Alexandrine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederik_IX,
+        data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSister data:Alexandrine ;
+    :hasSon data:Frederik_IX,
+        data:Knud ;
+    :isAncestorOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II ;
+    :isAuntOf data:Frederik_IX,
+        data:Knud ;
+    :isBloodrelationOf data:Alexandrine ;
+    :isMotherOf data:Frederik_IX,
+        data:Knud ;
+    :isParentOf data:Frederik_IX,
+        data:Knud ;
+    :isSiblingOf data:Alexandrine ;
+    :isSisterOf data:Alexandrine .
+
+data:Christian_son_of_Knud a :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Knud,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasBrother data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasParent data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBrotherOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:Knud ;
+    :isSiblingOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSonOf data:Knud .
+
+data:Elisabeth a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Knud,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasBrother data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasParent data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:Knud ;
+    :isDaughterOf data:Knud ;
+    :isSiblingOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSisterOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf .
+
+data:Ingolf a :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Knud,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasBrother data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :hasFather data:Knud ;
+    :hasParent data:Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBrotherOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isChildOf data:Knud ;
+    :isSiblingOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSonOf data:Knud .
+
+data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasChild data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSon data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isAncestorOf data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isBloodrelationOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isBrotherOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isFatherOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isParentOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isSiblingOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isUncleOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud .
+
+data:Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasBrother data:Frederik_IX,
+        data:Knud ;
+    :hasChild data:Margrethe_II ;
+    :hasDaughter data:Margrethe_II ;
+    :hasFather data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasMother data:Alexandrine ;
+    :hasParent data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isAncestorOf data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Knud ;
+    :isChildOf data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isFatherOf data:Margrethe_II ;
+    :isParentOf data:Margrethe_II ;
+    :isSiblingOf data:Frederik_IX,
+        data:Knud ;
+    :isSonOf data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isUncleOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Margrethe_II .
+
+data:Frederik_VIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud ;
+    :hasBrother data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasChild data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud ;
+    :hasParent data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSon data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isAncestorOf data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isBloodrelationOf data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isBrotherOf data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isChildOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud ;
+    :isFatherOf data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isParentOf data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isSiblingOf data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isSonOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud ;
+    :isUncleOf data:Christian_X,
+        data:Frederik_IX,
+        data:Knud,
+        data:Prince_Christian_of_Denmark_father_of_Knud .
+
+data:Prince_Christian_of_Denmark_father_of_Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasBrother data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasChild data:Frederik_IX,
+        data:Knud ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasParent data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSon data:Frederik_IX,
+        data:Knud ;
+    :isAncestorOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isBrotherOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isChildOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isFatherOf data:Frederik_IX,
+        data:Knud ;
+    :isParentOf data:Frederik_IX,
+        data:Knud ;
+    :isSiblingOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isSonOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isUncleOf data:Christian_X,
+        data:Frederik_IX,
+        data:Knud .
+
+data:Christian_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasBrother data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasChild data:Frederik_IX,
+        data:Knud ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasParent data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSon data:Frederik_IX,
+        data:Knud ;
+    :isAncestorOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isBrotherOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isChildOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isFatherOf data:Frederik_IX,
+        data:Knud ;
+    :isParentOf data:Frederik_IX,
+        data:Knud ;
+    :isSiblingOf data:Christian_X,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isSonOf data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII ;
+    :isUncleOf data:Frederik_IX,
+        data:Knud .
+
+data:Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine,
+        data:Christian_X,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Frederik_VIII,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasBirthYear "1900"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Frederik_IX,
+        data:Knud ;
+    :hasChild data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :hasDaughter data:Elisabeth ;
+    :hasDeathYear "1976"^^xsd:nonNegativeInteger ;
+    :hasFather data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasMarriageYear "1933"^^xsd:nonNegativeInteger ;
+    :hasMother data:Alexandrine ;
+    :hasParent data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasRelation data:Alexandrine,
+        data:Christian_X,
+        data:Christian_son_of_Knud,
+        data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud,
+        data:Elisabeth,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Ingolf,
+        data:Knud,
+        data:Margrethe_II,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasSon data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :isAncestorOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Knud ;
+    :isChildOf data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isFatherOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isParentOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf ;
+    :isSiblingOf data:Frederik_IX,
+        data:Knud ;
+    :isSonOf data:Alexandrine,
+        data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :isUncleOf data:Christian_son_of_Knud,
+        data:Elisabeth,
+        data:Ingolf,
+        data:Margrethe_II .
+

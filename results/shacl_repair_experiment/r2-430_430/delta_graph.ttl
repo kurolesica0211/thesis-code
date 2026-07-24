@@ -1,0 +1,9 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor .
+
+data:Rose_Constance_Leveson-Gower :hasRelation data:Princess_Margaret_Rose_of_York .
+

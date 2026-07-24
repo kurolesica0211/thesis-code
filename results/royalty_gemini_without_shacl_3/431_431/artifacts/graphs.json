@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JockStancer a :Man,\n        :Person ;\n    :hasFather data:WilliamWordieStancer ;\n    :hasMother data:RosieStancer .\n\ndata:JamesWordie a :Ancestor,\n        :Man .\n\ndata:LadyMaryCeciliaLevesonGower a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:WilliamLevesonGower4thEarlGranville ;\n    :hasMother data:RoseLevesonGowerCountessGranville .\n\ndata:RoseLevesonGowerCountessGranville a :Ancestor,\n        :Woman .\n\ndata:RosieStancer a :Person,\n        :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:SirSamuelClayton ;\n    :hasMarriageYear 1993 ;\n    :hasMother data:LadyMaryCeciliaLevesonGower ;\n    :hasRelation data:WilliamWordieStancer .\n\ndata:SirGilbertFalkinghamClayton a :Ancestor,\n        :Man .\n\ndata:SirSamuelClayton a :Ancestor,\n        :Man ;\n    :hasFather data:SirGilbertFalkinghamClayton .\n\ndata:WilliamLevesonGower4thEarlGranville a :Ancestor,\n        :Man .\n\ndata:WilliamWordieStancer a :Man,\n        :Person ;\n    :hasFather data:JamesWordie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JockStancer a :Man,\n        :Person ;\n    :hasFather data:WilliamWordieStancer ;\n    :hasMother data:RosieStancer .\n\ndata:JamesWordie a :Ancestor,\n        :Man .\n\ndata:LadyMaryCeciliaLevesonGower a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:WilliamLevesonGower4thEarlGranville ;\n    :hasMother data:RoseLevesonGowerCountessGranville .\n\ndata:RoseLevesonGowerCountessGranville a :Ancestor,\n        :Woman .\n\ndata:RosieStancer a :Person,\n        :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:SirSamuelClayton ;\n    :hasMarriageYear 1993 ;\n    :hasMother data:LadyMaryCeciliaLevesonGower ;\n    :hasRelation data:WilliamWordieStancer .\n\ndata:SirGilbertFalkinghamClayton a :Ancestor,\n        :Man .\n\ndata:SirSamuelClayton a :Ancestor,\n        :Man ;\n    :hasFather data:SirGilbertFalkinghamClayton .\n\ndata:WilliamLevesonGower4thEarlGranville a :Ancestor,\n        :Man .\n\ndata:WilliamWordieStancer a :Man,\n        :Person ;\n    :hasFather data:JamesWordie .\n\n"
+    }
+]

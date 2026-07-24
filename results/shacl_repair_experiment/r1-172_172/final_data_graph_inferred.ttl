@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LadySarahChatto a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:DavidArmstrong-Jones ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:LadySarahChatto ;
+    :isAuntOf data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto ;
+    :isSiblingOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto ;
+    :isSisterOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto .
+
+data:ViscountLinley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ViscountLinley ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley ;
+    :isBrotherOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley ;
+    :isSiblingOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley .
+
+data:AntonyArmstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AntonyArmstrong-Jones ;
+    :hasChild data:DavidArmstrong-Jones ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSon data:DavidArmstrong-Jones ;
+    :isAncestorOf data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:AntonyArmstrong-Jones ;
+    :isBrotherOf data:AntonyArmstrong-Jones ;
+    :isFatherOf data:DavidArmstrong-Jones ;
+    :isParentOf data:DavidArmstrong-Jones ;
+    :isSiblingOf data:AntonyArmstrong-Jones ;
+    :isUncleOf data:DavidArmstrong-Jones .
+
+data:CharlesStanhope a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CharlesStanhope ;
+    :hasChild data:SerenaStanhope ;
+    :hasDaughter data:SerenaStanhope ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :isAncestorOf data:LadyMargaritaArmstrong-Jones,
+        data:SerenaStanhope ;
+    :isBloodrelationOf data:CharlesStanhope ;
+    :isBrotherOf data:CharlesStanhope ;
+    :isFatherOf data:SerenaStanhope ;
+    :isParentOf data:SerenaStanhope ;
+    :isSiblingOf data:CharlesStanhope ;
+    :isUncleOf data:SerenaStanhope .
+
+data:PrincessMargaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DavidArmstrong-Jones ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:PrincessMargaret ;
+    :hasSon data:DavidArmstrong-Jones ;
+    :isAncestorOf data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones ;
+    :isAuntOf data:DavidArmstrong-Jones ;
+    :isBloodrelationOf data:PrincessMargaret ;
+    :isMotherOf data:DavidArmstrong-Jones ;
+    :isParentOf data:DavidArmstrong-Jones ;
+    :isSiblingOf data:PrincessMargaret ;
+    :isSisterOf data:PrincessMargaret .
+
+data:SerenaStanhope a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CharlesStanhope ;
+    :hasChild data:LadyMargaritaArmstrong-Jones ;
+    :hasDaughter data:LadyMargaritaArmstrong-Jones ;
+    :hasFather data:CharlesStanhope ;
+    :hasParent data:CharlesStanhope ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:SerenaStanhope ;
+    :isAncestorOf data:LadyMargaritaArmstrong-Jones ;
+    :isAuntOf data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:SerenaStanhope ;
+    :isChildOf data:CharlesStanhope ;
+    :isDaughterOf data:CharlesStanhope ;
+    :isMotherOf data:LadyMargaritaArmstrong-Jones ;
+    :isParentOf data:LadyMargaritaArmstrong-Jones ;
+    :isSiblingOf data:SerenaStanhope ;
+    :isSisterOf data:SerenaStanhope .
+
+data:LadyMargaritaArmstrong-Jones a :Person,
+        :Woman ;
+    :hasAncestor data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:PrincessMargaret,
+        data:SerenaStanhope ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:ViscountLinley ;
+    :hasFather data:DavidArmstrong-Jones ;
+    :hasMother data:SerenaStanhope ;
+    :hasParent data:DavidArmstrong-Jones,
+        data:SerenaStanhope ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley ;
+    :isChildOf data:DavidArmstrong-Jones,
+        data:SerenaStanhope ;
+    :isDaughterOf data:DavidArmstrong-Jones,
+        data:SerenaStanhope ;
+    :isSiblingOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley ;
+    :isSisterOf data:LadyMargaritaArmstrong-Jones,
+        data:ViscountLinley ;
+    :knownAs "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string .
+
+data:DavidArmstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AntonyArmstrong-Jones,
+        data:PrincessMargaret ;
+    :hasBrother data:DavidArmstrong-Jones ;
+    :hasChild data:LadyMargaritaArmstrong-Jones ;
+    :hasDaughter data:LadyMargaritaArmstrong-Jones ;
+    :hasFather data:AntonyArmstrong-Jones ;
+    :hasMother data:PrincessMargaret ;
+    :hasParent data:AntonyArmstrong-Jones,
+        data:PrincessMargaret ;
+    :hasRelation data:AntonyArmstrong-Jones,
+        data:CharlesStanhope,
+        data:DavidArmstrong-Jones,
+        data:LadyMargaritaArmstrong-Jones,
+        data:LadySarahChatto,
+        data:PrincessMargaret,
+        data:SerenaStanhope,
+        data:ViscountLinley ;
+    :hasSister data:LadySarahChatto ;
+    :isAncestorOf data:LadyMargaritaArmstrong-Jones ;
+    :isBloodrelationOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto ;
+    :isBrotherOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto ;
+    :isChildOf data:AntonyArmstrong-Jones,
+        data:PrincessMargaret ;
+    :isFatherOf data:LadyMargaritaArmstrong-Jones ;
+    :isParentOf data:LadyMargaritaArmstrong-Jones ;
+    :isSiblingOf data:DavidArmstrong-Jones,
+        data:LadySarahChatto ;
+    :isSonOf data:AntonyArmstrong-Jones,
+        data:PrincessMargaret ;
+    :isUncleOf data:LadyMargaritaArmstrong-Jones .
+

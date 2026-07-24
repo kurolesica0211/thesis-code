@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1942 ;\n    :hasBrother data:Constantine_II_of_Greece ;\n    :hasDeathYear 2026 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasSex data:Female ;\n    :hasSister data:Sofia_of_Spain .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1942 ;\n    :hasBrother data:Constantine_II_of_Greece ;\n    :hasDeathYear 2026 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasSex data:Female ;\n    :hasSister data:Sofia_of_Spain .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\ndata:Female a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1942 ;\n    :hasBrother data:Constantine_II_of_Greece ;\n    :hasDeathYear 2026 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasSex data:Female ;\n    :hasSister data:Sofia_of_Spain .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\ndata:Female a :Sex .\n\n"
+    }
+]

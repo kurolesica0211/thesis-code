@@ -1,0 +1,208 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Max .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Max,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Prince_Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Maximilian_Margrave_of_Baden ;
+    :hasChild data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isAncestorOf data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max ;
+    :isBloodrelationOf data:Prince_Maximilian_Margrave_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_Margrave_of_Baden ;
+    :isFatherOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isParentOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isSiblingOf data:Prince_Maximilian_Margrave_of_Baden ;
+    :isUncleOf data:Berthold_Prinz_und_Markgraf_von_Baden .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Max,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Marie_Louise_of_Hanover a :Ancestor,
+        :Woman ;
+    :hasChild data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Marie_Louise_of_Hanover ;
+    :hasSon data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isAncestorOf data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max ;
+    :isAuntOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isBloodrelationOf data:Princess_Marie_Louise_of_Hanover ;
+    :isMotherOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isParentOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isSiblingOf data:Princess_Marie_Louise_of_Hanover ;
+    :isSisterOf data:Princess_Marie_Louise_of_Hanover .
+
+data:Berthold_Prinz_und_Markgraf_von_Baden a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Maximilian_Margrave_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :hasChild data:Max ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Prince_Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Marie_Louise_of_Hanover ;
+    :hasParent data:Prince_Maximilian_Margrave_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Max ;
+    :isAncestorOf data:Max ;
+    :isBloodrelationOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isBrotherOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isChildOf data:Prince_Maximilian_Margrave_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isFatherOf data:Max ;
+    :isParentOf data:Max ;
+    :isSiblingOf data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :isSonOf data:Prince_Maximilian_Margrave_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isUncleOf data:Max .
+
+data:Max a :Man ;
+    :hasAncestor data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Max ;
+    :hasFather data:Berthold_Prinz_und_Markgraf_von_Baden ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Max ;
+    :isBrotherOf data:Max ;
+    :isChildOf data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Max ;
+    :isSonOf data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:Max ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Berthold_Prinz_und_Markgraf_von_Baden,
+        data:Max,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Max ;
+    :isAncestorOf data:Max ;
+    :isAuntOf data:Max ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Max ;
+    :isParentOf data:Max ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+

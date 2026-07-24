@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:PrinceSixtusHenryOfBourbonParma a :Man ;
+    :isBrotherOf data:CarlosHugoDukeOfParma .
+
+data:PrincessMargaritaOfBourbonParma a :Woman ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands ;
+    :hasRelation data:EdwinKarelWillemDeRoyVanZuydewijn ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina .
+
+data:QueenBeatrix a :Woman ;
+    :isSisterOf data:PrincessIreneOfTheNetherlands .
+
+data:EdwinKarelWillemDeRoyVanZuydewijn a :Man .
+
+data:PrinceBernhard a :Man .
+
+data:PrinceCarlos a :Man .
+
+data:PrinceJaime a :Man .
+
+data:PrincessCarolina a :Woman .
+
+data:QueenJuliana a :Woman .
+
+data:CarlosHugoDukeOfParma a :Man .
+
+data:PrincessIreneOfTheNetherlands a :Woman ;
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana .
+

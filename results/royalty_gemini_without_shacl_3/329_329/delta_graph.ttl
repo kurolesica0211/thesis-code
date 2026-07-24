@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jaime_de_Marichalar a :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Felipe_de_Marichalar,
+        data:Victoria_de_Marichalar .
+
+data:Juan_Carlos_I a :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Sofia a :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Cristina a :Woman ;
+    :hasSex data:Female .
+
+data:Elena a :Woman ;
+    :hasBirthYear 1963 ;
+    :hasSex data:Female ;
+    :isMotherOf data:Felipe_de_Marichalar,
+        data:Victoria_de_Marichalar .
+
+data:Felipe_VI a :Man ;
+    :hasSex data:Male .
+
+data:Felipe_de_Marichalar a :Man ;
+    :hasBirthYear 1998 ;
+    :hasSex data:Male .
+
+data:Victoria_de_Marichalar a :Woman ;
+    :hasBirthYear 2000 ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

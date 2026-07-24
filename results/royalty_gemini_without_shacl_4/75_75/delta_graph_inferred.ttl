@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_brother a :Man,
+        :Person ;
+    :hasBrother data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isBrotherOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isSiblingOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isUncleOf data:Vladimir_Kirillovich .
+
+data:Victoria_Melita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Victoria_Melita ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Victoria_Melita ;
+    :isMotherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Victoria_Melita ;
+    :isSisterOf data:Victoria_Melita .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kirill_Vladimirovich_Romanov ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Kirill_Vladimirovich_Romanov ;
+    :isAncestorOf data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Kirill_Vladimirovich_Romanov ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Kirill_Vladimirovich_Romanov ;
+    :isParentOf data:Kirill_Vladimirovich_Romanov ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Alexander_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_II ;
+    :hasChild data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Alexandrovich ;
+    :isAncestorOf data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_II ;
+    :isBrotherOf data:Alexander_II ;
+    :isFatherOf data:Vladimir_Alexandrovich ;
+    :isParentOf data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_II ;
+    :isUncleOf data:Vladimir_Alexandrovich .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_II,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasFather data:Vladimir_Kirillovich ;
+    :hasParent data:Vladimir_Kirillovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Vladimirovna ;
+    :isChildOf data:Vladimir_Kirillovich ;
+    :isDaughterOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Maria_Vladimirovna ;
+    :isSisterOf data:Maria_Vladimirovna .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II ;
+    :hasBrother data:Vladimir_Alexandrovich ;
+    :hasChild data:Kirill_Vladimirovich_Romanov ;
+    :hasFather data:Alexander_II ;
+    :hasParent data:Alexander_II ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Kirill_Vladimirovich_Romanov ;
+    :isAncestorOf data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Vladimir_Alexandrovich ;
+    :isChildOf data:Alexander_II ;
+    :isFatherOf data:Kirill_Vladimirovich_Romanov ;
+    :isParentOf data:Kirill_Vladimirovich_Romanov ;
+    :isSiblingOf data:Vladimir_Alexandrovich ;
+    :isSonOf data:Alexander_II ;
+    :isUncleOf data:Kirill_Vladimirovich_Romanov .
+
+data:Vladimir_Kirillovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Vladimir_Kirillovich ;
+    :hasChild data:Maria_Vladimirovna ;
+    :hasDaughter data:Maria_Vladimirovna ;
+    :hasFather data:Kirill_Vladimirovich_Romanov ;
+    :hasMother data:Victoria_Melita ;
+    :hasParent data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Vladimir_Kirillovich ;
+    :isBrotherOf data:Vladimir_Kirillovich ;
+    :isChildOf data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :isFatherOf data:Maria_Vladimirovna ;
+    :isParentOf data:Maria_Vladimirovna ;
+    :isSiblingOf data:Vladimir_Kirillovich ;
+    :isSonOf data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :isUncleOf data:Maria_Vladimirovna .
+
+data:Kirill_Vladimirovich_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isBrotherOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Alexander_brother,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+

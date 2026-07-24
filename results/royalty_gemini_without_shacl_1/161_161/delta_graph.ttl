@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amedeo_5th_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasFather data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Alexander_of_Greece a :Man,
+        :Person .
+
+data:George_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Greece a :Person,
+        :Woman .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1904 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1974 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Sophie_of_Prussia ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasSister data:Helen_of_Greece .
+
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman .
+
+data:Prince_Aimone_4th_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 .
+

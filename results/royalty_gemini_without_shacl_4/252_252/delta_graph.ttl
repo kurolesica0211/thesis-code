@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henry_Keswick a :Man,
+        :Person .
+
+data:Michael_Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
+    :hasBirthYear 1957 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMarriageYear 1984,
+        2005,
+        2012 ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter .
+
+data:Percy_Weatherall a :Man,
+        :Person ;
+    :isBrotherOf data:Isobel_Charlotte_Weatherall .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :isSisterOf data:Michael_Bowes-Lyon_Grandfather .
+
+data:Damaris_Stuart-William a :Person,
+        :Woman .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasFather data:Michael_Bowes-Lyon_Grandfather .
+
+data:Karen_Baxter a :Person,
+        :Woman .
+
+data:Mary_Pamela_McCorquodale a :Person,
+        :Woman .
+
+data:Isobel_Charlotte_Weatherall a :Person,
+        :Woman .
+
+data:Michael_Bowes-Lyon_Grandfather a :Man,
+        :Person .
+

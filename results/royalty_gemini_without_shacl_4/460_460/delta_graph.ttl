@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Donatus a :Man ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Frederick_II,
+        data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Mary_of_Great_Britain,
+        data:Tatiana .
+
+data:Floria_Franziska a :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Frederick_II,
+        data:Hubertus_von_Faber-Castell ;
+    :hasMother data:Mary_of_Great_Britain .
+
+data:Louis a :Man ;
+    :hasDeathYear 1968 .
+
+data:Hubertus_von_Faber-Castell a :Man .
+
+data:Moritz a :Man ;
+    :hasFather data:Philipp .
+
+data:Philipp a :Man ;
+    :hasDeathYear 1980 .
+
+data:Tatiana a :Woman ;
+    :hasBirthYear 1940 .
+
+data:Frederick_II a :Man .
+
+data:Mary_of_Great_Britain a :Woman .
+

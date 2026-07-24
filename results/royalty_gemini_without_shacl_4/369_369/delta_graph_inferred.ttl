@@ -1,0 +1,677 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Henry a :Man ;
+    :hasBrother data:Margaret_of_Prussia,
+        data:Prince_Henry ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Prince_Henry ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Prince_Henry ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Prince_Henry .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasChild data:Margaret_of_Prussia ;
+    :hasDaughter data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSon data:Margaret_of_Prussia ;
+    :isAncestorOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isFatherOf data:Margaret_of_Prussia ;
+    :isParentOf data:Margaret_of_Prussia ;
+    :isSiblingOf data:Frederick_III_German_Emperor ;
+    :isUncleOf data:Margaret_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasChild data:Margaret_of_Prussia ;
+    :hasDaughter data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :hasSon data:Margaret_of_Prussia ;
+    :isAncestorOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isAuntOf data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Margaret_of_Prussia ;
+    :isParentOf data:Margaret_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Princess_Charlotte a :Woman ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria ;
+    :isAuntOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor .
+
+data:Princess_Sophie a :Woman ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria ;
+    :isAuntOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor .
+
+data:Princess_Viktoria a :Woman ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria ;
+    :isAuntOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor .
+
+data:Wilhelm_II_German_Emperor a :Man ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Frederick_Charles_of_Hesse ;
+    :hasChild data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSon data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isAncestorOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isParentOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSiblingOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret .
+
+data:Christoph_son_of_Margaret a :Man ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBrotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isChildOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSonOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse .
+
+data:Friedrich_Wilhelm_son_of_Margaret a :Man ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBrotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isChildOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSonOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse .
+
+data:Maximilian_son_of_Margaret a :Man ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBrotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isChildOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSonOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse .
+
+data:Philipp_son_of_Margaret a :Man ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBrotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isChildOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSonOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse .
+
+data:Wolfgang_son_of_Margaret a :Man ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBrother data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBrotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isChildOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSonOf data:Margaret_of_Prussia,
+        data:Prince_Frederick_Charles_of_Hesse .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Margaret_of_Prussia,
+        data:Prince_Henry,
+        data:Wilhelm_II_German_Emperor ;
+    :hasChild data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Christoph_son_of_Margaret,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Margaret_of_Prussia,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_son_of_Margaret ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria ;
+    :hasSon data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isAncestorOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isAuntOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Prince_Henry ;
+    :isChildOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isParentOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Prince_Henry,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor ;
+    :isSonOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal .
+

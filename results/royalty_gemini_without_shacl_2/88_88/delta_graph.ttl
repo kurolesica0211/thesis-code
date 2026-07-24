@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alphonse a :Man ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella .
+
+data:Eugenie a :Woman ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella .
+
+data:Henri a :Man ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella .
+
+data:Louis a :Man ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella .
+
+data:AlfonsoDeBorbon a :Man ;
+    :hasFather data:InfanteJaime ;
+    :hasMother data:EmmanuelleDeDampierre .
+
+data:EmmanuelleDeDampierre a :Woman .
+
+data:Francisco a :Man .
+
+data:InfanteJaime a :Man .
+
+data:MariaDelCarmenMartinezBordiuYFranco a :Woman .
+
+data:VictorVargas a :Man .
+
+data:LouisAlphonseDeBourbon a :Man ;
+    :hasBirthYear "1974"^^xsd:positiveInteger ;
+    :hasBrother data:Francisco ;
+    :hasFather data:AlfonsoDeBorbon ;
+    :hasMother data:MariaDelCarmenMartinezBordiuYFranco .
+
+data:MariaMargaritaVargasSantaella a :Woman ;
+    :hasFather data:VictorVargas .
+

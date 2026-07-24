@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrice_of_Orleans_Borbon a :Person,\n        :Woman ;\n    :isAuntOf data:Vladimir_Kirillovich .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasFather data:Vladimir_Kirillovich ;\n    :hasMother data:Leonida_Georgievna_Bagration_Moukhransky .\n\ndata:Nicholas_Romanov a :Man,\n        :Person .\n\ndata:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Cyril_Vladimirovich a :Man,\n        :Person ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna .\n\ndata:Maria_Kirillovna a :Person,\n        :Woman .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Marie_Alexandrovna a :Person,\n        :Woman .\n\ndata:Viktoria_Feodorovna a :Person,\n        :Woman ;\n    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;\n    :hasMother data:Marie_Alexandrovna .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person .\n\ndata:Leonida_Georgievna_Bagration_Moukhransky a :Person,\n        :Woman .\n\ndata:Vladimir_Kirillovich a :Man,\n        :Person ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1992 ;\n    :hasFather data:Cyril_Vladimirovich ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Viktoria_Feodorovna ;\n    :hasRelation data:Leonida_Georgievna_Bagration_Moukhransky ;\n    :isSiblingOf data:Maria_Kirillovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrice_of_Orleans_Borbon a :Person,\n        :Woman ;\n    :isAuntOf data:Vladimir_Kirillovich .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasFather data:Vladimir_Kirillovich ;\n    :hasMother data:Leonida_Georgievna_Bagration_Moukhransky .\n\ndata:Nicholas_Romanov a :Man,\n        :Person .\n\ndata:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Cyril_Vladimirovich a :Man,\n        :Person ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna .\n\ndata:Maria_Kirillovna a :Person,\n        :Woman .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Marie_Alexandrovna a :Person,\n        :Woman .\n\ndata:Viktoria_Feodorovna a :Person,\n        :Woman ;\n    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;\n    :hasMother data:Marie_Alexandrovna .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person .\n\ndata:Leonida_Georgievna_Bagration_Moukhransky a :Person,\n        :Woman .\n\ndata:Vladimir_Kirillovich a :Man,\n        :Person ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1992 ;\n    :hasFather data:Cyril_Vladimirovich ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Viktoria_Feodorovna ;\n    :hasRelation data:Leonida_Georgievna_Bagration_Moukhransky ;\n    :isSiblingOf data:Maria_Kirillovna .\n\n"
+    }
+]

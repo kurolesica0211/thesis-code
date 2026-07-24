@@ -1,0 +1,151 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1901 ;
+    :hasRelation data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasRelation data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasSister data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+data:Camillo_Crociani a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Camillo_Crociani ;
+    :hasChild data:Camilla_Crociani ;
+    :hasDaughter data:Camilla_Crociani ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isAncestorOf data:Camilla_Crociani ;
+    :isBloodrelationOf data:Camillo_Crociani ;
+    :isBrotherOf data:Camillo_Crociani ;
+    :isFatherOf data:Camilla_Crociani ;
+    :isParentOf data:Camilla_Crociani ;
+    :isSiblingOf data:Camillo_Crociani ;
+    :isUncleOf data:Camilla_Crociani .
+
+data:Chantal_de_Chevron-Villette a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasSister data:Chantal_de_Chevron-Villette ;
+    :hasSon data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Chantal_de_Chevron-Villette ;
+    :isMotherOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Chantal_de_Chevron-Villette ;
+    :isSisterOf data:Chantal_de_Chevron-Villette .
+
+data:Edy_Vessel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Camilla_Crociani ;
+    :hasDaughter data:Camilla_Crociani ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasSister data:Edy_Vessel ;
+    :isAncestorOf data:Camilla_Crociani ;
+    :isAuntOf data:Camilla_Crociani ;
+    :isBloodrelationOf data:Edy_Vessel ;
+    :isMotherOf data:Camilla_Crociani ;
+    :isParentOf data:Camilla_Crociani ;
+    :isSiblingOf data:Edy_Vessel ;
+    :isSisterOf data:Edy_Vessel .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasChild data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasSon data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isFatherOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isUncleOf data:Prince_Carlo_of_Bourbon-Two_Sicilies .
+
+data:Camilla_Crociani a :Person,
+        :Woman ;
+    :hasAncestor data:Camillo_Crociani,
+        data:Edy_Vessel ;
+    :hasFather data:Camillo_Crociani ;
+    :hasMother data:Edy_Vessel ;
+    :hasParent data:Camillo_Crociani,
+        data:Edy_Vessel ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasSister data:Camilla_Crociani ;
+    :isBloodrelationOf data:Camilla_Crociani ;
+    :isChildOf data:Camillo_Crociani,
+        data:Edy_Vessel ;
+    :isDaughterOf data:Camillo_Crociani,
+        data:Edy_Vessel ;
+    :isSiblingOf data:Camilla_Crociani ;
+    :isSisterOf data:Camilla_Crociani .
+
+data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:Chantal_de_Chevron-Villette ;
+    :hasParent data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasRelation data:Camilla_Crociani,
+        data:Camillo_Crociani,
+        data:Chantal_de_Chevron-Villette,
+        data:Edy_Vessel,
+        data:Prince_Carlo_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isBloodrelationOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro .
+

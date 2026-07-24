@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeV a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:GeorgeVI .\n\ndata:LadyElizabethBowesLyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:ElizabethII,\n        data:Margaret .\n\ndata:PrinceAlbertPrinceConsort a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:GeorgeVI .\n\ndata:QueenMary a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:GeorgeVI .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:GeorgeVI .\n\ndata:EdwardVIII a :Man,\n        :Person .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person .\n\ndata:PrinceHenryDukeOfGloucester a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Margaret a :Person,\n        :Woman .\n\ndata:GeorgeVI a :Ancestor,\n        :Man,\n        :Person ;\n    :alsoKnownAs \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasDeathYear 1952 ;\n    :hasMarriageYear 1923 ;\n    :isFatherOf data:ElizabethII,\n        data:Margaret ;\n    :isSiblingOf data:EdwardVIII,\n        data:PrinceGeorgeDukeOfKent,\n        data:PrinceHenryDukeOfGloucester ;\n    :knownAs \"Albert Frederick Arthur George\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeV a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:GeorgeVI .\n\ndata:LadyElizabethBowesLyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:ElizabethII,\n        data:Margaret .\n\ndata:PrinceAlbertPrinceConsort a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:GeorgeVI .\n\ndata:QueenMary a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:GeorgeVI .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:GeorgeVI .\n\ndata:EdwardVIII a :Man,\n        :Person .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person .\n\ndata:PrinceHenryDukeOfGloucester a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Margaret a :Person,\n        :Woman .\n\ndata:GeorgeVI a :Ancestor,\n        :Man,\n        :Person ;\n    :alsoKnownAs \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasDeathYear 1952 ;\n    :hasMarriageYear 1923 ;\n    :isFatherOf data:ElizabethII,\n        data:Margaret ;\n    :isSiblingOf data:EdwardVIII,\n        data:PrinceGeorgeDukeOfKent,\n        data:PrinceHenryDukeOfGloucester ;\n    :knownAs \"Albert Frederick Arthur George\"^^xsd:string .\n\n"
+    }
+]

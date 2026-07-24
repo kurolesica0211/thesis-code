@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Albert_Mountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMarriageYear 1917 ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Lady_Irene_Denison ;
+    :hasSister data:Princess_Victoria_Eugenia ;
+    :knownAs "Drino"^^xsd:string .
+
+data:2nd_Earl_of_Londesborough a :Man,
+        :Person .
+
+data:Julia_von_Hauke a :Person,
+        :Woman .
+
+data:Lady_Grace_Adelaide_Fane a :Person,
+        :Woman .
+
+data:Lady_Irene_Denison a :Person,
+        :Woman ;
+    :hasFather data:2nd_Earl_of_Londesborough ;
+    :hasMother data:Lady_Grace_Adelaide_Fane .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Prince_Henry_of_Battenberg a :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_von_Hauke .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Princess_Victoria_Eugenia a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+

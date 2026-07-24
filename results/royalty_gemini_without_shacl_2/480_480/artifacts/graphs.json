@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jeanne_Marie_Langtry a :Woman ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Emilie_Charlotte_Le_Breton .\n\ndata:Edward_Langtry a :Man ;\n    :hasBirthYear 1847 ;\n    :hasDeathYear 1897 .\n\ndata:Emilie_Charlotte_Le_Breton a :Woman ;\n    :alsoKnownAs \"Lily Langtry\"^^xsd:string ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:William_Corbet_Le_Breton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:Emilie_Davis_Martin ;\n    :hasRelation data:Edward_Langtry,\n        data:Hugo_Gerald_de_Bathe ;\n    :knownAs \"Lillie Langtry\"^^xsd:string,\n        \"The Jersey Lily\"^^xsd:string .\n\ndata:Emilie_Davis_Martin a :Woman .\n\ndata:Hugo_Gerald_de_Bathe a :Man .\n\ndata:Prince_Louis_of_Battenberg a :Man .\n\ndata:William_Corbet_Le_Breton a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jeanne_Marie_Langtry a :Woman ;\n    :hasFather data:Prince_Louis_of_Battenberg ;\n    :hasMother data:Emilie_Charlotte_Le_Breton .\n\ndata:Edward_Langtry a :Man ;\n    :hasBirthYear 1847 ;\n    :hasDeathYear 1897 .\n\ndata:Emilie_Charlotte_Le_Breton a :Woman ;\n    :alsoKnownAs \"Lily Langtry\"^^xsd:string ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:William_Corbet_Le_Breton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:Emilie_Davis_Martin ;\n    :hasRelation data:Edward_Langtry,\n        data:Hugo_Gerald_de_Bathe ;\n    :knownAs \"Lillie Langtry\"^^xsd:string,\n        \"The Jersey Lily\"^^xsd:string .\n\ndata:Emilie_Davis_Martin a :Woman .\n\ndata:Hugo_Gerald_de_Bathe a :Man .\n\ndata:Prince_Louis_of_Battenberg a :Man .\n\ndata:William_Corbet_Le_Breton a :Man .\n\n"
+    }
+]

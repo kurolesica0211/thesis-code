@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana .
+
+data:Prince_Bernhard a :Man,
+        :Person .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+

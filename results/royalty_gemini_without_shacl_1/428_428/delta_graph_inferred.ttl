@@ -1,0 +1,198 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elli_Chalikiopoulos a :Ancestor,
+        :Woman ;
+    :hasChild data:Marina_Karella ;
+    :hasDaughter data:Marina_Karella ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :hasSister data:Elli_Chalikiopoulos ;
+    :isAncestorOf data:Marina_Karella ;
+    :isAuntOf data:Marina_Karella ;
+    :isBloodrelationOf data:Elli_Chalikiopoulos ;
+    :isMotherOf data:Marina_Karella ;
+    :isParentOf data:Marina_Karella ;
+    :isSiblingOf data:Elli_Chalikiopoulos ;
+    :isSisterOf data:Elli_Chalikiopoulos .
+
+data:Theodoros_Karellas a :Ancestor,
+        :Man ;
+    :hasBrother data:Theodoros_Karellas ;
+    :hasChild data:Marina_Karella ;
+    :hasDaughter data:Marina_Karella ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :isAncestorOf data:Marina_Karella ;
+    :isBloodrelationOf data:Theodoros_Karellas ;
+    :isBrotherOf data:Theodoros_Karellas ;
+    :isFatherOf data:Marina_Karella ;
+    :isParentOf data:Marina_Karella ;
+    :isSiblingOf data:Theodoros_Karellas ;
+    :isUncleOf data:Marina_Karella .
+
+data:Jean_dOrleans_Duke_of_Guise a :Ancestor,
+        :Man ;
+    :hasBrother data:Jean_dOrleans_Duke_of_Guise ;
+    :hasChild data:Princess_Francoise_dOrleans ;
+    :hasDaughter data:Princess_Francoise_dOrleans ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans ;
+    :isBloodrelationOf data:Jean_dOrleans_Duke_of_Guise ;
+    :isBrotherOf data:Jean_dOrleans_Duke_of_Guise ;
+    :isFatherOf data:Princess_Francoise_dOrleans ;
+    :isParentOf data:Princess_Francoise_dOrleans ;
+    :isSiblingOf data:Jean_dOrleans_Duke_of_Guise ;
+    :isUncleOf data:Princess_Francoise_dOrleans .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasChild data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :hasSon data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_George_I_of_Greece ;
+    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasParent data:King_George_I_of_Greece ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Francoise_dOrleans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Jean_dOrleans_Duke_of_Guise ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Jean_dOrleans_Duke_of_Guise ;
+    :hasParent data:Jean_dOrleans_Duke_of_Guise ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :hasSister data:Princess_Francoise_dOrleans ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Francoise_dOrleans ;
+    :isChildOf data:Jean_dOrleans_Duke_of_Guise ;
+    :isDaughterOf data:Jean_dOrleans_Duke_of_Guise ;
+    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Francoise_dOrleans ;
+    :isSisterOf data:Princess_Francoise_dOrleans .
+
+data:Marina_Karella a :Woman ;
+    :hasAncestor data:Elli_Chalikiopoulos,
+        data:Theodoros_Karellas ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Theodoros_Karellas ;
+    :hasMother data:Elli_Chalikiopoulos ;
+    :hasParent data:Elli_Chalikiopoulos,
+        data:Theodoros_Karellas ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :hasSister data:Marina_Karella ;
+    :isBloodrelationOf data:Marina_Karella ;
+    :isChildOf data:Elli_Chalikiopoulos,
+        data:Theodoros_Karellas ;
+    :isDaughterOf data:Elli_Chalikiopoulos,
+        data:Theodoros_Karellas ;
+    :isSiblingOf data:Marina_Karella ;
+    :isSisterOf data:Marina_Karella .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Princess_Francoise_dOrleans ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans ;
+    :hasRelation data:Elli_Chalikiopoulos,
+        data:Jean_dOrleans_Duke_of_Guise,
+        data:King_George_I_of_Greece,
+        data:Marina_Karella,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans,
+        data:Theodoros_Karellas ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_dOrleans .
+

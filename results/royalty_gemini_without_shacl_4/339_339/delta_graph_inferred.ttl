@@ -1,0 +1,526 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Karl_Friedrich_Prince_of_Hohenzollern a :Man,
+        :Person ;
+    :hasBrother data:Karl_Friedrich_Prince_of_Hohenzollern ;
+    :hasRelation data:Karl_Friedrich_Prince_of_Hohenzollern ;
+    :isBloodrelationOf data:Karl_Friedrich_Prince_of_Hohenzollern ;
+    :isBrotherOf data:Karl_Friedrich_Prince_of_Hohenzollern ;
+    :isSiblingOf data:Karl_Friedrich_Prince_of_Hohenzollern .
+
+data:Friedrich_August_of_Oldenburg a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_August_of_Oldenburg ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Friedrich_August_of_Oldenburg ;
+    :isBrotherOf data:Friedrich_August_of_Oldenburg ;
+    :isSiblingOf data:Friedrich_August_of_Oldenburg .
+
+data:Marie_C%C3%A9cile_of_Prussia a :Person,
+        :Woman ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSister data:Marie_C%C3%A9cile_of_Prussia ;
+    :isBloodrelationOf data:Marie_C%C3%A9cile_of_Prussia ;
+    :isSiblingOf data:Marie_C%C3%A9cile_of_Prussia ;
+    :isSisterOf data:Marie_C%C3%A9cile_of_Prussia .
+
+data:Kira_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSister data:Kira_of_Russia ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBloodrelationOf data:Kira_of_Russia ;
+    :isSiblingOf data:Kira_of_Russia ;
+    :isSisterOf data:Kira_of_Russia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Donata_of_Castell-R%C3%BCdenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1950 ;
+    :hasChild data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSister data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :hasSon data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isAuntOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :isMotherOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isParentOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isSiblingOf data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :isSisterOf data:Donata_of_Castell-R%C3%BCdenhausen .
+
+data:Friedrich_Wilhelm_Uncle a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasBrother data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :hasFather data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasParent data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isBrotherOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isChildOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isSiblingOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isSonOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
+
+data:Michael_Uncle a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasBrother data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :hasFather data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasParent data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isBrotherOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isChildOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isSiblingOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isSonOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
+
+data:Sophie_of_Isenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSister data:Sophie_of_Isenburg ;
+    :hasSon data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isAuntOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBloodrelationOf data:Sophie_of_Isenburg ;
+    :isMotherOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isParentOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isSiblingOf data:Sophie_of_Isenburg ;
+    :isSisterOf data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_of_Prussia_Grandfather a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasChild data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSon data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isBloodrelationOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isBrotherOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isFatherOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isParentOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isSiblingOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isUncleOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasBirthYear 1944 ;
+    :hasBrother data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :hasChild data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasDeathYear 1977 ;
+    :hasFather data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasParent data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSon data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isBrotherOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isChildOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isFatherOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isParentOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isSiblingOf data:Friedrich_Wilhelm_Uncle,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Michael_Uncle ;
+    :isSonOf data:Louis_Ferdinand_of_Prussia_Grandfather ;
+    :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
+
+data:Carl_Friedrich_Franz_Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasBrother data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg ;
+    :hasParent data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBrotherOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isChildOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :isSiblingOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isSonOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg .
+
+data:Heinrich_Albert_Johann_Georg a :Man,
+        :Person ;
+    :hasAncestor data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasBrother data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg ;
+    :hasParent data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBrotherOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isChildOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :isSiblingOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isSonOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht a :Man,
+        :Person ;
+    :hasAncestor data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasBrother data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg ;
+    :hasParent data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBrotherOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isChildOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg ;
+    :isSiblingOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isSonOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Sophie_of_Isenburg .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Wilhelm_II ;
+    :hasBirthYear 1976 ;
+    :hasBrother data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasChild data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :hasParent data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasRelation data:Carl_Friedrich_Franz_Alexander,
+        data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_Wilhelm_Uncle,
+        data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Kira_of_Russia,
+        data:Louis_Ferdinand_Christian_Albrecht,
+        data:Louis_Ferdinand_Prinz_von_Preussen,
+        data:Louis_Ferdinand_of_Prussia_Grandfather,
+        data:Marie_C%C3%A9cile_of_Prussia,
+        data:Michael_Uncle,
+        data:Sophie_of_Isenburg,
+        data:Wilhelm_II ;
+    :hasSon data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isAncestorOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isBloodrelationOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isBrotherOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isChildOf data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :isFatherOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isParentOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht ;
+    :isSiblingOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isSonOf data:Donata_of_Castell-R%C3%BCdenhausen,
+        data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :isUncleOf data:Carl_Friedrich_Franz_Alexander,
+        data:Heinrich_Albert_Johann_Georg,
+        data:Louis_Ferdinand_Christian_Albrecht .
+

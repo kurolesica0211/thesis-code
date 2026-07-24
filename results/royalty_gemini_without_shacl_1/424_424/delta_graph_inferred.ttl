@@ -1,0 +1,227 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Queen_Victoria_of_the_United_Kingdom ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSisterOf data:Queen_Victoria_of_the_United_Kingdom .
+
+data:Rupert_Guinness_2nd_Earl_of_Iveagh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isBrotherOf data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isSiblingOf data:Rupert_Guinness_2nd_Earl_of_Iveagh .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor .
+
+data:Lady_Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasDaughter data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSister data:Lady_Brigid_Guinness ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isBloodrelationOf data:Lady_Brigid_Guinness ;
+    :isMotherOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isParentOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSiblingOf data:Lady_Brigid_Guinness ;
+    :isSisterOf data:Lady_Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasDaughter data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isParentOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isBrotherOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isFatherOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isUncleOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasMother data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasParent data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :isDaughterOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :isSiblingOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasMother data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasParent data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :isDaughterOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :isSiblingOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1955 ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasParent data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isChildOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isDaughterOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isMotherOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSisterOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld .
+

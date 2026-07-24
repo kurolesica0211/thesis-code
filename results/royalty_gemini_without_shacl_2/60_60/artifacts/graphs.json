@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma a :Person,\n        :Woman ;\n    :hasChild data:Wilhelmina .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasChild data:Beatrix,\n        data:Christina,\n        data:Irene,\n        data:Margriet ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Wilhelmina ;\n    :hasRelation data:Bernhard_of_Lippe-Biesterfeld .\n\ndata:William_III a :Man,\n        :Person ;\n    :hasChild data:Wilhelmina .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasChild data:Beatrix,\n        data:Christina,\n        data:Irene,\n        data:Margriet .\n\ndata:Carlos_Hugo_of_Bourbon a :Man,\n        :Person .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Beatrix a :Person,\n        :Woman ;\n    :hasRelation data:Claus_von_Amsberg .\n\ndata:Christina a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman ;\n    :hasRelation data:Carlos_Hugo_of_Bourbon .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma a :Person,\n        :Woman ;\n    :hasChild data:Wilhelmina .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasChild data:Beatrix,\n        data:Christina,\n        data:Irene,\n        data:Margriet ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Wilhelmina ;\n    :hasRelation data:Bernhard_of_Lippe-Biesterfeld .\n\ndata:William_III a :Man,\n        :Person ;\n    :hasChild data:Wilhelmina .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasChild data:Beatrix,\n        data:Christina,\n        data:Irene,\n        data:Margriet .\n\ndata:Carlos_Hugo_of_Bourbon a :Man,\n        :Person .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Beatrix a :Person,\n        :Woman ;\n    :hasRelation data:Claus_von_Amsberg .\n\ndata:Christina a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman ;\n    :hasRelation data:Carlos_Hugo_of_Bourbon .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\n"
+    }
+]

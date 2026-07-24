@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Patricia_Victoria_Knatchbull a :Woman ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Dowager_Baroness_Brabourne a :Woman .\n\ndata:Nicholas_Timothy_Charles_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Norton_Louis_Philip_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Timothy_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Doreen_Browne a :Woman .\n\ndata:Louis_Mountbatten a :Man .\n\ndata:Michael_Knatchbull a :Man .\n\ndata:John_Ulick_Knatchbull a :Man ;\n    :hasBirthYear \"1924\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2005\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Michael_Knatchbull ;\n    :hasMarriageYear \"1946\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Doreen_Browne ;\n    :hasRelation data:Patricia_Mountbatten ;\n    :knownAs \"John Brabourne\"^^xsd:string .\n\ndata:Patricia_Mountbatten a :Woman ;\n    :hasFather data:Louis_Mountbatten .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Patricia_Victoria_Knatchbull a :Woman ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Dowager_Baroness_Brabourne a :Woman .\n\ndata:Nicholas_Timothy_Charles_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Norton_Louis_Philip_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Timothy_Knatchbull a :Man ;\n    :hasFather data:John_Ulick_Knatchbull ;\n    :hasMother data:Patricia_Mountbatten .\n\ndata:Doreen_Browne a :Woman .\n\ndata:Louis_Mountbatten a :Man .\n\ndata:Michael_Knatchbull a :Man .\n\ndata:John_Ulick_Knatchbull a :Man ;\n    :hasBirthYear \"1924\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2005\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Michael_Knatchbull ;\n    :hasMarriageYear \"1946\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Doreen_Browne ;\n    :hasRelation data:Patricia_Mountbatten ;\n    :knownAs \"John Brabourne\"^^xsd:string .\n\ndata:Patricia_Mountbatten a :Woman ;\n    :hasFather data:Louis_Mountbatten .\n\n"
+    }
+]

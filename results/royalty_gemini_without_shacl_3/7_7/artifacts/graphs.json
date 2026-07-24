@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Henrietta_Conyngham a :Person,\n        :Woman .\n\ndata:Lady_Leonora_Mary_Grosvenor a :Person,\n        :Woman ;\n    :isMotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .\n\ndata:Thomas_Anson_1st_Viscount_Anson a :Man,\n        :Person ;\n    :isFatherOf data:Thomas_Anson_2nd_Viscount_Anson .\n\ndata:Thomas_William_Arnold_Anson_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 ;\n    :isFatherOf data:Patrick_Anson_5th_Earl_of_Lichfield .\n\ndata:Finnian_Anson a :Man,\n        :Person ;\n    :hasBirthYear 2014 .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person ;\n    :hasDeathYear 2005 ;\n    :isFatherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:Thomas_Anson_2nd_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1795 ;\n    :hasDeathYear 1854 .\n\ndata:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 2011 .\n\ndata:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasMarriageYear 2009 ;\n    :isFatherOf data:Finnian_Anson,\n        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Henrietta_Conyngham a :Person,\n        :Woman .\n\ndata:Lady_Leonora_Mary_Grosvenor a :Person,\n        :Woman ;\n    :isMotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .\n\ndata:Thomas_Anson_1st_Viscount_Anson a :Man,\n        :Person ;\n    :isFatherOf data:Thomas_Anson_2nd_Viscount_Anson .\n\ndata:Thomas_William_Arnold_Anson_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 ;\n    :isFatherOf data:Patrick_Anson_5th_Earl_of_Lichfield .\n\ndata:Finnian_Anson a :Man,\n        :Person ;\n    :hasBirthYear 2014 .\n\ndata:Patrick_Anson_5th_Earl_of_Lichfield a :Man,\n        :Person ;\n    :hasDeathYear 2005 ;\n    :isFatherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:Thomas_Anson_2nd_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1795 ;\n    :hasDeathYear 1854 .\n\ndata:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man,\n        :Person ;\n    :hasBirthYear 2011 .\n\ndata:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasMarriageYear 2009 ;\n    :isFatherOf data:Finnian_Anson,\n        data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson .\n\n"
+    }
+]

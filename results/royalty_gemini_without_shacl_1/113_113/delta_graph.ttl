@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Ranieri_Maria_Gaetano .
+
+data:Countess_Maria_Carolina_Zamoyska a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1968 .
+
+data:Prince_Alfonso_Count_of_Caserta a :Man,
+        :Person .
+
+data:Prince_Ranieri_Maria_Gaetano a :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasDeathYear 1938 .
+

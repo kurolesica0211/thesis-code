@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eudes_Duke_of_Angouleme a :Man,\n        :Person ;\n    :isSonOf data:Henri_the_son .\n\ndata:Michel a :Man,\n        :Person ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Thibaut a :Man,\n        :Person ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Henri_the_son a :Man,\n        :Person ;\n    :hasFather data:Henri_dOrleans ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Isabelle_of_Orleans_Braganza a :Person,\n        :Woman .\n\ndata:Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Jean_Duke_of_Guise .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasBrother data:Philippe_Duke_of_Orleans .\n\ndata:Henri_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Jean_Duke_of_Guise ;\n    :hasMarriageYear 1931 ;\n    :hasRelation data:Isabelle_of_Orleans_Braganza ;\n    :isSonOf data:Jean_Duke_of_Guise .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eudes_Duke_of_Angouleme a :Man,\n        :Person ;\n    :isSonOf data:Henri_the_son .\n\ndata:Michel a :Man,\n        :Person ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Thibaut a :Man,\n        :Person ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Henri_the_son a :Man,\n        :Person ;\n    :hasFather data:Henri_dOrleans ;\n    :isSonOf data:Henri_dOrleans .\n\ndata:Isabelle_of_Orleans_Braganza a :Person,\n        :Woman .\n\ndata:Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Jean_Duke_of_Guise .\n\ndata:Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasBrother data:Philippe_Duke_of_Orleans .\n\ndata:Henri_dOrleans a :Man,\n        :Person ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Jean_Duke_of_Guise ;\n    :hasMarriageYear 1931 ;\n    :hasRelation data:Isabelle_of_Orleans_Braganza ;\n    :isSonOf data:Jean_Duke_of_Guise .\n\n"
+    }
+]

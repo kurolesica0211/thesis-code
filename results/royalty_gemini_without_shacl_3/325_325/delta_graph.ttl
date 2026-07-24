@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emich_Kyrill_Prince_of_Leiningen a :Man ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:Karl_Prince_of_Leiningen ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Duchess_Eilika_of_Oldenburg .
+
+data:Duchess_Eilika_of_Oldenburg a :Woman ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasMother data:Princess_Helena_of_Waldeck_and_Pyrmont .
+
+data:Emich_5th_Prince_of_Leiningen a :Man .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man .
+
+data:Karl_Prince_of_Leiningen a :Man ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Emich_5th_Prince_of_Leiningen ;
+    :hasMother data:Princess_Feodore_of_Hohenlohe_Langenburg .
+
+data:Maria_Kirillovna_of_Russia a :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .
+
+data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg a :Man .
+
+data:Princess_Feodore_of_Hohenlohe_Langenburg a :Woman .
+
+data:Princess_Helena_of_Waldeck_and_Pyrmont a :Woman .
+
+data:Princess_Victoria_Melita_of_Edinburgh a :Woman .
+

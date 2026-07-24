@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:Henry_brother_of_Waldemar ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Henry_of_Prussia ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Calixta_of_Lippe .\n\ndata:Calixta_of_Lippe a :Person,\n        :Woman .\n\ndata:Henry_brother_of_Waldemar a :Man,\n        :Person .\n\ndata:Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:Henry_brother_of_Waldemar ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Henry_of_Prussia ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Calixta_of_Lippe .\n\ndata:Calixta_of_Lippe a :Person,\n        :Woman .\n\ndata:Henry_brother_of_Waldemar a :Man,\n        :Person .\n\ndata:Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    }
+]

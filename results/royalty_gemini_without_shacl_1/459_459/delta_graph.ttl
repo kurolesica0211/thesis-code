@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Daisy_Isadora_Louise_Knatchbull a :Person,
+        :Woman ;
+    :hasBirthYear 1992 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Atalanta_Cowan .
+
+data:Frederick_Knatchbull a :Man,
+        :Person ;
+    :alsoKnownAs data:Freddy ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Wendy_Leach ;
+    :knownAs data:Freddy .
+
+data:Atalanta_Cowan a :Person,
+        :Woman ;
+    :hasBirthYear 1962 .
+
+data:Wendy_Leach a :Person,
+        :Woman ;
+    :hasBirthYear 1966 .
+
+data:Freddy a :Person .
+
+data:Philip_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 1961 .
+

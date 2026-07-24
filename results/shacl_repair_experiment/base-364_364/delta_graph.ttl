@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Frederick_III_German_Emperor :hasSex data:Male .
+
+data:King_Constantine_I_of_Greece :hasSex data:Male .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine :hasSex data:Male .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Princess_Margaret_of_Prussia a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Princess_Sophie_of_Prussia :hasSex data:Female .
+
+data:Queen_Victoria :hasSex data:Female .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Princess_Mafalda_of_Savoy .
+
+data:Wilhelm_II_German_Emperor :hasSex data:Male .
+
+data:Princess_Mafalda_of_Savoy a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Moritz_of_Hesse .
+
+data:Friedrich_Wilhelm_of_Hesse :hasSex data:Male ;
+    :isBrotherOf data:Philipp_Prince_and_Landgrave_of_Hesse .
+
+data:Moritz_of_Hesse :hasSex data:Male .
+
+data:Wolfgang_of_Hesse :hasSex data:Male ;
+    :isBrotherOf data:Philipp_Prince_and_Landgrave_of_Hesse .
+
+data:Female a :Sex .
+
+data:Philipp_Prince_and_Landgrave_of_Hesse a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Moritz_of_Hesse .
+
+data:Male a :Sex .
+

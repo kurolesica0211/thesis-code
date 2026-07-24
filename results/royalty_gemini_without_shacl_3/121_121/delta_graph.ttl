@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_of_Savoy-Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Amedeo_of_Savoy ;
+    :hasMother data:Claude_of_Orl%C3%A9ans .
+
+data:Emanuele_Filiberto_of_Savoy a :Man,
+        :Person ;
+    :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person .
+
+data:Olga_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Michael_of_Greece_and_Denmark .
+
+data:Amedeo_of_Savoy a :Man,
+        :Person .
+
+data:Claude_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:Michael_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Man,
+        :Person ;
+    :hasDeathYear 2024 .
+

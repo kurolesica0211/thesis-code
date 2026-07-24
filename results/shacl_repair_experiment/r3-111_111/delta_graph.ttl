@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:David_Flint_Wood :hasSex data:Male .
+
+data:David_Nightingale_Hicks a :Ancestor ;
+    :hasSex data:Male .
+
+data:India_Hicks :hasSex data:Female .
+
+data:Lady_Pamela_Hicks a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

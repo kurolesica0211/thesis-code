@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :isBrotherOf data:Juan_Count_of_Barcelona .
+
+data:Jaime_Duke_of_Segovia a :Man,
+        :Person ;
+    :isBrotherOf data:Juan_Count_of_Barcelona .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Sofia .
+
+data:Pilar a :Person,
+        :Woman ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasRelation data:Frederica_of_Greece .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+
+data:Frederica_of_Greece a :Person,
+        :Woman .
+
+data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies a :Person,
+        :Woman .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies .
+

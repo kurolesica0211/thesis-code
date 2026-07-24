@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenSofiaOfSpain a :Woman ;
+    :hasRelation data:QueenSofiaOfSpain ;
+    :hasSister data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:QueenSofiaOfSpain ;
+    :isSiblingOf data:QueenSofiaOfSpain ;
+    :isSisterOf data:QueenSofiaOfSpain .
+
+data:PrinceMichael a :Man ;
+    :hasBrother data:PrinceMichael ;
+    :hasRelation data:PrinceMichael,
+        data:PrincessMarina ;
+    :isBloodrelationOf data:PrinceMichael ;
+    :isBrotherOf data:PrinceMichael ;
+    :isSiblingOf data:PrinceMichael .
+
+data:PrincessMarina a :Woman ;
+    :hasRelation data:PrinceMichael,
+        data:PrincessMarina ;
+    :hasSister data:PrincessMarina ;
+    :isBloodrelationOf data:PrincessMarina ;
+    :isSiblingOf data:PrincessMarina ;
+    :isSisterOf data:PrincessMarina .
+
+data:KingConstantineII a :Ancestor,
+        :Man ;
+    :hasBrother data:KingConstantineII ;
+    :hasChild data:PrincePhilipposOfGreeceAndDenmark ;
+    :hasRelation data:KingConstantineII,
+        data:PrincePhilipposOfGreeceAndDenmark,
+        data:QueenAnneMarie ;
+    :hasSon data:PrincePhilipposOfGreeceAndDenmark ;
+    :isAncestorOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isBloodrelationOf data:KingConstantineII ;
+    :isBrotherOf data:KingConstantineII ;
+    :isFatherOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isParentOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isSiblingOf data:KingConstantineII ;
+    :isUncleOf data:PrincePhilipposOfGreeceAndDenmark .
+
+data:QueenAnneMarie a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincePhilipposOfGreeceAndDenmark ;
+    :hasRelation data:KingConstantineII,
+        data:PrincePhilipposOfGreeceAndDenmark,
+        data:QueenAnneMarie ;
+    :hasSister data:QueenAnneMarie ;
+    :hasSon data:PrincePhilipposOfGreeceAndDenmark ;
+    :isAncestorOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isAuntOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isBloodrelationOf data:QueenAnneMarie ;
+    :isMotherOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isParentOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isSiblingOf data:QueenAnneMarie ;
+    :isSisterOf data:QueenAnneMarie .
+
+data:PrincePhilipposOfGreeceAndDenmark a :Man ;
+    :hasAncestor data:KingConstantineII,
+        data:QueenAnneMarie ;
+    :hasBirthYear "1986"^^xsd:nonNegativeInteger ;
+    :hasBrother data:PrincePhilipposOfGreeceAndDenmark ;
+    :hasFather data:KingConstantineII ;
+    :hasMother data:QueenAnneMarie ;
+    :hasParent data:KingConstantineII,
+        data:QueenAnneMarie ;
+    :hasRelation data:KingConstantineII,
+        data:PrincePhilipposOfGreeceAndDenmark,
+        data:QueenAnneMarie ;
+    :isBloodrelationOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isBrotherOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isChildOf data:KingConstantineII,
+        data:QueenAnneMarie ;
+    :isSiblingOf data:PrincePhilipposOfGreeceAndDenmark ;
+    :isSonOf data:KingConstantineII,
+        data:QueenAnneMarie .
+

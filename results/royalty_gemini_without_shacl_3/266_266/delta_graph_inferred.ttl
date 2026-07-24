@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_of_Saxe-Coburg_and_Gotha a :Man,
+        :Person ;
+    :hasBrother data:Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Albert_of_Saxe-Coburg_and_Gotha ;
+    :isBloodrelationOf data:Albert_of_Saxe-Coburg_and_Gotha ;
+    :isBrotherOf data:Albert_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Albert_of_Saxe-Coburg_and_Gotha .
+
+data:Victoria_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasRelation data:Victoria_of_the_United_Kingdom ;
+    :hasSister data:Victoria_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Victoria_of_the_United_Kingdom ;
+    :isSiblingOf data:Victoria_of_the_United_Kingdom ;
+    :isSisterOf data:Victoria_of_the_United_Kingdom .
+
+data:Arthur_Duke_of_Connaught_and_Strathearn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Arthur_Duke_of_Connaught_and_Strathearn ;
+    :hasChild data:Patricia_of_Connaught ;
+    :hasDaughter data:Patricia_of_Connaught ;
+    :hasRelation data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :isAncestorOf data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Arthur_Duke_of_Connaught_and_Strathearn ;
+    :isBrotherOf data:Arthur_Duke_of_Connaught_and_Strathearn ;
+    :isFatherOf data:Patricia_of_Connaught ;
+    :isParentOf data:Patricia_of_Connaught ;
+    :isSiblingOf data:Arthur_Duke_of_Connaught_and_Strathearn ;
+    :isUncleOf data:Patricia_of_Connaught .
+
+data:Louise_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Patricia_of_Connaught ;
+    :hasDaughter data:Patricia_of_Connaught ;
+    :hasRelation data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :hasSister data:Louise_Margaret_of_Prussia ;
+    :isAncestorOf data:Patricia_of_Connaught ;
+    :isAuntOf data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Louise_Margaret_of_Prussia ;
+    :isMotherOf data:Patricia_of_Connaught ;
+    :isParentOf data:Patricia_of_Connaught ;
+    :isSiblingOf data:Louise_Margaret_of_Prussia ;
+    :isSisterOf data:Louise_Margaret_of_Prussia .
+
+data:Lu%C3%ADs_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Lu%C3%ADs_I ;
+    :hasChild data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Lu%C3%ADs_I,
+        data:Manuel_II ;
+    :hasSon data:Carlos_I ;
+    :isAncestorOf data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Lu%C3%ADs_I ;
+    :isBrotherOf data:Lu%C3%ADs_I ;
+    :isFatherOf data:Carlos_I ;
+    :isParentOf data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_I ;
+    :isUncleOf data:Carlos_I .
+
+data:Am%C3%A9lie_dOrl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasRelation data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Lu%C3%ADs_I,
+        data:Manuel_II ;
+    :hasSister data:Am%C3%A9lie_dOrl%C3%A9ans ;
+    :hasSon data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Am%C3%A9lie_dOrl%C3%A9ans ;
+    :isMotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Am%C3%A9lie_dOrl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_dOrl%C3%A9ans .
+
+data:Patricia_of_Connaught a :Person,
+        :Woman ;
+    :hasAncestor data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia ;
+    :hasFather data:Arthur_Duke_of_Connaught_and_Strathearn ;
+    :hasMother data:Louise_Margaret_of_Prussia ;
+    :hasParent data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia ;
+    :hasRelation data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :hasSister data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Patricia_of_Connaught ;
+    :isChildOf data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia ;
+    :isDaughterOf data:Arthur_Duke_of_Connaught_and_Strathearn,
+        data:Louise_Margaret_of_Prussia ;
+    :isSiblingOf data:Patricia_of_Connaught ;
+    :isSisterOf data:Patricia_of_Connaught .
+
+data:Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Lu%C3%ADs_I ;
+    :hasBrother data:Carlos_I ;
+    :hasChild data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Lu%C3%ADs_I ;
+    :hasParent data:Lu%C3%ADs_I ;
+    :hasRelation data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Lu%C3%ADs_I,
+        data:Manuel_II ;
+    :hasSon data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Carlos_I ;
+    :isBrotherOf data:Carlos_I ;
+    :isChildOf data:Lu%C3%ADs_I ;
+    :isFatherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Carlos_I ;
+    :isSonOf data:Lu%C3%ADs_I ;
+    :isUncleOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II .
+
+data:Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasAncestor data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_I ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasDeathYear 1908 ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;
+    :hasParent data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Lu%C3%ADs_I,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :hasAncestor data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_I ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;
+    :hasParent data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Lu%C3%ADs_I,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Am%C3%A9lie_dOrl%C3%A9ans,
+        data:Carlos_I .
+

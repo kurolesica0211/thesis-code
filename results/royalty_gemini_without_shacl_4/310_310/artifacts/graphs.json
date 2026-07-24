@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Floris_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Pieter-Christiaan_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Maril%C3%A8ne_van_den_Broek a :Woman ;\n    :hasBirthYear \"1970\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Hans_van_den_Broek ;\n    :hasMother data:Josee_van_Schendel .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Prince_Maurits a :Man ;\n    :hasBirthYear \"1968\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMarriageYear \"1989\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Princess_Margriet ;\n    :hasRelation data:Maril%C3%A8ne_van_den_Broek .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Floris_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Pieter-Christiaan_van_Vollenhoven a :Man ;\n    :isBrotherOf data:Prince_Maurits .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Hans_van_den_Broek a :Man .\n\ndata:Josee_van_Schendel a :Woman .\n\ndata:Maril%C3%A8ne_van_den_Broek a :Woman ;\n    :hasBirthYear \"1970\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Hans_van_den_Broek ;\n    :hasMother data:Josee_van_Schendel .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Prince_Maurits a :Man ;\n    :hasBirthYear \"1968\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMarriageYear \"1989\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Princess_Margriet ;\n    :hasRelation data:Maril%C3%A8ne_van_den_Broek .\n\n"
+    }
+]

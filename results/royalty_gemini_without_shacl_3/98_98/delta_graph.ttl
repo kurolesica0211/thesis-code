@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Eloise_of_Orange-Nassau a :Person,
+        :Woman ;
+    :hasBirthYear 2002 ;
+    :isChildOf data:Prince_Constantijn,
+        data:Princess_Laurentien .
+
+data:Prince_Claus a :Man,
+        :Person .
+
+data:Prince_Constantijn a :Man,
+        :Person ;
+    :isChildOf data:Prince_Claus,
+        data:Queen_Beatrix .
+
+data:Princess_Laurentien a :Person,
+        :Woman .
+
+data:Queen_Beatrix a :Person,
+        :Woman .
+

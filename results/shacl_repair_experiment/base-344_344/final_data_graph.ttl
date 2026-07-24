@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Person,
+        :Woman ;
+    :isMotherOf data:PrinceChristopherOfGreeceAndDenmark .
+
+data:IsabelleDOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:FrancoiseDOrleans .
+
+data:JeanDOrleansDucDeGuise a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis .
+
+data:KingChristianIXOfDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:KingGeorgeIOfGreece .
+
+data:PrinceMichaelOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2024 ;
+    :hasRelation data:MarinaKarella ;
+    :isChildOf data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :isMotherOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece .
+
+data:PrincessIsabella a :Person,
+        :Woman ;
+    :hasRelation data:PrincePierreMurat .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:PrinceChristopherOfGreeceAndDenmark .
+
+data:MarinaKarella a :Person,
+        :Woman .
+
+data:PrinceAimoneOfSavoyAosta a :Man,
+        :Person .
+
+data:PrincePierreMurat a :Man,
+        :Person .
+
+data:PrincessAlexandraOfGreece a :Person,
+        :Woman .
+
+data:PrincessOlgaOfGreece a :Person,
+        :Woman ;
+    :hasRelation data:PrinceAimoneOfSavoyAosta .
+
+data:PrinceHenriCountOfParis a :Man,
+        :Person .
+
+data:FrancoiseDOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1953 ;
+    :hasMarriageYear 1929 ;
+    :hasRelation data:PrinceChristopherOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceHenriCountOfParis .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1940 .
+

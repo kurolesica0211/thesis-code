@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_IX a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1935"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Prince_Christian,
+        data:Prince_Ingolf ;
+    :hasDeathYear "2018"^^xsd:nonNegativeInteger ;
+    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Knud_Hereditary_Prince_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Christian_X .
+
+data:Prince_Christian a :Man,
+        :Person .
+
+data:Prince_Ingolf a :Man,
+        :Person .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Person,
+        :Woman .
+

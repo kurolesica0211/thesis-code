@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Boris_Vladimirovich a :Man,
+        :Person ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:Andrei_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna ;
+    :isFatherOf data:Jean_Boris_Lacroix .
+
+data:Jeanne_Aumont-Lacroix a :Person,
+        :Woman ;
+    :isMotherOf data:Jean_Boris_Lacroix .
+
+data:Nicholas_II a :Man,
+        :Person .
+
+data:Zinaida_Sergeievna_Rachevskaya a :Person,
+        :Woman ;
+    :hasFather data:Sergei_Alexandrovich_Rachevsky .
+
+data:Alexander_II a :Man,
+        :Person .
+
+data:Alexander_III a :Man,
+        :Person .
+
+data:Andrei_Vladimirovich a :Man,
+        :Person .
+
+data:Kirill_Vladimirovich a :Man,
+        :Person .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+
+data:Sergei_Alexandrovich_Rachevsky a :Man,
+        :Person .
+
+data:Vladimir_Alexandrovich a :Man,
+        :Person ;
+    :hasBrother data:Alexander_III ;
+    :hasFather data:Alexander_II .
+
+data:Jean_Boris_Lacroix a :Man,
+        :Person .
+

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingChristianIX a :Man,
+        :Person .
+
+data:PrinceConstantine a :Man,
+        :Person ;
+    :isBrotherOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:PrinceValdemarOfDenmark a :Man,
+        :Person ;
+    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:PrincessMarieBonaparte a :Person,
+        :Woman .
+
+data:Evgenia a :Person,
+        :Woman .
+
+data:GeorgeIOfGreece a :Man,
+        :Person .
+
+data:OlgaKonstantinovnaOfRussia a :Person,
+        :Woman .
+
+data:Petros a :Man,
+        :Person .
+
+data:PrinceGeorgeOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasChild data:Evgenia,
+        data:Petros ;
+    :hasDeathYear 1957 ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:OlgaKonstantinovnaOfRussia .
+

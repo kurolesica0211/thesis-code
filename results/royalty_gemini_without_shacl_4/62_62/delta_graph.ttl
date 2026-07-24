@@ -1,0 +1,89 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margaret a :Person,
+        :Woman ;
+    :isSisterOf data:Sophia .
+
+data:Paul a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alexander,
+        data:GeorgeII ;
+    :hasChild data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Constantine ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Sophia ;
+    :hasRelation data:Frederica,
+        data:NinaGeorgievna ;
+    :hasSister data:Helen,
+        data:Katherine .
+
+data:Alexander a :Man,
+        :Person .
+
+data:Constantine a :Man,
+        :Person ;
+    :hasFather data:GeorgeI .
+
+data:Elisabeth a :Person,
+        :Woman .
+
+data:ErnestAugustus a :Man,
+        :Person .
+
+data:Frederica a :Person,
+        :Woman ;
+    :hasChild data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :hasFather data:ErnestAugustus ;
+    :hasMother data:VictoriaLouise .
+
+data:GeorgeI a :Man,
+        :Person .
+
+data:GeorgeII a :Man,
+        :Person ;
+    :hasRelation data:Elisabeth .
+
+data:GeorgeMikhailovich a :Man,
+        :Person .
+
+data:Helen a :Person,
+        :Woman .
+
+data:JuanCarlos a :Man,
+        :Person .
+
+data:Katherine a :Person,
+        :Woman .
+
+data:Maria a :Person,
+        :Woman .
+
+data:NinaGeorgievna a :Person,
+        :Woman ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:Maria .
+
+data:VictoriaLouise a :Person,
+        :Woman .
+
+data:ConstantineII a :Man,
+        :Person .
+
+data:Irene a :Person,
+        :Woman .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasRelation data:JuanCarlos .
+
+data:Sophia a :Person,
+        :Woman .
+

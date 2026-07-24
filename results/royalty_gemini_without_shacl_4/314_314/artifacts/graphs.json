@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pim_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMother data:Willemina_Martina_Wenneker .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :alsoKnownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string ;\n    :hasBirthYear 1876 ;\n    :hasChild data:Juliana ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMarriageYear data:1901 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasMother data:Wilhelmina .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pim_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMother data:Willemina_Martina_Wenneker .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :alsoKnownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string ;\n    :hasBirthYear 1876 ;\n    :hasChild data:Juliana ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasMother data:Wilhelmina .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pim_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMother data:Willemina_Martina_Wenneker .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :alsoKnownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string ;\n    :hasBirthYear 1876 ;\n    :hasChild data:Juliana ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasMother data:Wilhelmina .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman .\n\n"
+    }
+]

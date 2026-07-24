@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gabriela_von_Habsburg a :Person,
+        :Woman ;
+    :hasAncestor data:Charles_I ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Regina_von_Sachsen_Meiningen ;
+    :hasRelation data:Christian_Meister ;
+    :hasSex data:Female .
+
+data:Charles_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Christian_Meister a :Man,
+        :Person ;
+    :hasBirthYear 1954 .
+
+data:Female a :Sex .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Regina_von_Sachsen_Meiningen a :Ancestor,
+        :Person,
+        :Woman .
+

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Mary_Frances_Elphinstone a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1961 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1910 ;
+    :hasRelation data:Sidney_Elphinstone ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Sidney_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasMarriageYear data:Mary_Frances_Elphinstone .
+

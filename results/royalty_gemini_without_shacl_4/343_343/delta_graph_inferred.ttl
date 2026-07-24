@@ -1,0 +1,236 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paul_of_Greece a :Man ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasRelation data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isSiblingOf data:Paul_of_Greece .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederica ;
+    :hasDaughter data:Frederica ;
+    :hasRelation data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Frederica ;
+    :isAuntOf data:Frederica ;
+    :isBloodrelationOf data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Frederica ;
+    :isParentOf data:Frederica ;
+    :isSiblingOf data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Victoria_Louise_of_Prussia .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasChild data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isAncestorOf data:Christian,
+        data:Ernest_Augustus,
+        data:Frederica,
+        data:George ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isFatherOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isParentOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover ;
+    :isUncleOf data:Christian,
+        data:Ernest_Augustus,
+        data:George .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Thyra_of_Denmark ;
+    :hasSon data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isAncestorOf data:Christian,
+        data:Ernest_Augustus,
+        data:Frederica,
+        data:George ;
+    :isAuntOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isMotherOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isParentOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+
+data:Frederica a :Woman ;
+    :hasAncestor data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasFather data:Ernest_Augustus ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica ;
+    :isBloodrelationOf data:Frederica ;
+    :isChildOf data:Ernest_Augustus,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Frederica ;
+    :isSisterOf data:Frederica .
+
+data:Christian a :Man ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasBrother data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isBrotherOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isUncleOf data:Frederica .
+
+data:George a :Man ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasBrother data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isBrotherOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isUncleOf data:Frederica .
+
+data:Ernest_Augustus a :Ancestor,
+        :Man ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :hasChild data:Frederica ;
+    :hasDaughter data:Frederica ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Christian,
+        data:Ernest_Augustus,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:George,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Frederica ;
+    :isBloodrelationOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isBrotherOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isFatherOf data:Frederica ;
+    :isParentOf data:Frederica ;
+    :isSiblingOf data:Christian,
+        data:Ernest_Augustus,
+        data:George ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isUncleOf data:Frederica .
+

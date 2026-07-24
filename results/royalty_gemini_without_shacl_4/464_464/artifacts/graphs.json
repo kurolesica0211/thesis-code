@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:NicholasWindsor a :Man,\n        :Person ;\n    :hasBirthYear \"1970\"^^xsd:positiveInteger ;\n    :hasBrother data:EarlOfStAndrews ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent ;\n    :hasRelation data:PaolaDoimiDeLupisFrankopanSubicZrinski ;\n    :hasSister data:LadyHelenTaylor .\n\ndata:EarlOfStAndrews a :Man,\n        :Person .\n\ndata:KatharineDuchessOfKent a :Person,\n        :Woman .\n\ndata:LadyHelenTaylor a :Person,\n        :Woman .\n\ndata:PaolaDoimiDeLupisFrankopanSubicZrinski a :Person,\n        :Woman .\n\ndata:PrinceEdwardDukeOfKent a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:NicholasWindsor a :Man,\n        :Person ;\n    :hasBirthYear \"1970\"^^xsd:positiveInteger ;\n    :hasBrother data:EarlOfStAndrews ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent ;\n    :hasRelation data:PaolaDoimiDeLupisFrankopanSubicZrinski ;\n    :hasSister data:LadyHelenTaylor .\n\ndata:EarlOfStAndrews a :Man,\n        :Person .\n\ndata:KatharineDuchessOfKent a :Person,\n        :Woman .\n\ndata:LadyHelenTaylor a :Person,\n        :Woman .\n\ndata:PaolaDoimiDeLupisFrankopanSubicZrinski a :Person,\n        :Woman .\n\ndata:PrinceEdwardDukeOfKent a :Man,\n        :Person .\n\n"
+    }
+]

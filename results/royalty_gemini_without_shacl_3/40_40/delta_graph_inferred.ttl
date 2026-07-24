@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Maurice_of_Battenberg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Maurice_of_Battenberg ;
+    :hasRelation data:Prince_Maurice_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Maurice_of_Battenberg ;
+    :isBrotherOf data:Prince_Maurice_of_Battenberg ;
+    :isSiblingOf data:Prince_Maurice_of_Battenberg .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isAncestorOf data:Infante_Gonzalo_of_Spain ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Infante_Gonzalo_of_Spain ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Infante_Gonzalo_of_Spain ;
+    :isAncestorOf data:Infante_Gonzalo_of_Spain ;
+    :isBloodrelationOf data:King_Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infante_Gonzalo_of_Spain ;
+    :isParentOf data:Infante_Gonzalo_of_Spain ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infante_Gonzalo_of_Spain .
+
+data:Princess_Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infante_Gonzalo_of_Spain ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Infante_Gonzalo_of_Spain ;
+    :isAncestorOf data:Infante_Gonzalo_of_Spain ;
+    :isAuntOf data:Infante_Gonzalo_of_Spain ;
+    :isBloodrelationOf data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Infante_Gonzalo_of_Spain ;
+    :isParentOf data:Infante_Gonzalo_of_Spain ;
+    :isSiblingOf data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Princess_Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_eldest_brother a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_eldest_brother,
+        data:Infante_Gonzalo_of_Spain ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz ;
+    :isBloodrelationOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isBrotherOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isSiblingOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain .
+
+data:Infanta_Beatriz a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_eldest_brother,
+        data:Infante_Gonzalo_of_Spain ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz ;
+    :isBloodrelationOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isSiblingOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isSisterOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain .
+
+data:Infante_Gonzalo_of_Spain a :Man,
+        :Person ;
+    :hasAncestor data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Alfonso_eldest_brother,
+        data:Infante_Gonzalo_of_Spain ;
+    :hasDeathYear 1934 ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz ;
+    :isBloodrelationOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isBrotherOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isChildOf data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_eldest_brother,
+        data:Infanta_Beatriz,
+        data:Infante_Gonzalo_of_Spain ;
+    :isSonOf data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :knownAs "Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borbón y Battenberg"^^xsd:string .
+

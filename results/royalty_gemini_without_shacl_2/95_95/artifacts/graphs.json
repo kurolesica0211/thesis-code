@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Crown_Princess_Margareta_of_Romania a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Elena_of_Romania .\n\ndata:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Robin_Medforth-Mills ;\n    :hasMarriageYear data:2017 ;\n    :hasMother data:Princess_Elena_of_Romania ;\n    :hasRelation data:Alina-Maria_Binder .\n\ndata:Nicoleta_C%C3%AErjan a :Person,\n        :Woman .\n\ndata:Alina-Maria_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1988 .\n\ndata:King_Michael_I_of_Romania a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Elena_of_Romania .\n\ndata:Queen_Anne_of_Romania a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Elena_of_Romania .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\ndata:Princess_Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:King_Michael_I_of_Romania ;\n    :hasMother data:Queen_Anne_of_Romania .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Crown_Princess_Margareta_of_Romania a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Elena_of_Romania .\n\ndata:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Robin_Medforth-Mills ;\n    :hasMarriageYear data:2017,\n        \"2017\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Elena_of_Romania ;\n    :hasRelation data:Alina-Maria_Binder .\n\ndata:Nicoleta_C%C3%AErjan a :Person,\n        :Woman .\n\ndata:Alina-Maria_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1988 .\n\ndata:King_Michael_I_of_Romania a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Elena_of_Romania .\n\ndata:Queen_Anne_of_Romania a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Elena_of_Romania .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\ndata:Princess_Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:King_Michael_I_of_Romania ;\n    :hasMother data:Queen_Anne_of_Romania .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Crown_Princess_Margareta_of_Romania a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Elena_of_Romania .\n\ndata:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Robin_Medforth-Mills ;\n    :hasMarriageYear \"2017\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Elena_of_Romania ;\n    :hasRelation data:Alina-Maria_Binder .\n\ndata:Nicoleta_C%C3%AErjan a :Person,\n        :Woman .\n\ndata:Alina-Maria_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1988 .\n\ndata:King_Michael_I_of_Romania a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Elena_of_Romania .\n\ndata:Queen_Anne_of_Romania a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Elena_of_Romania .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\ndata:Princess_Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:King_Michael_I_of_Romania ;\n    :hasMother data:Queen_Anne_of_Romania .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Nixon a :Man,\n        :Person .\n\ndata:Crown_Princess_Margareta_of_Romania a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Elena_of_Romania .\n\ndata:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man,\n        :Person ;\n    :hasBirthYear 1985 ;\n    :hasFather data:Robin_Medforth-Mills ;\n    :hasMarriageYear \"2017\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Elena_of_Romania ;\n    :hasRelation data:Alina-Maria_Binder .\n\ndata:Nicoleta_C%C3%AErjan a :Person,\n        :Woman .\n\ndata:Alina-Maria_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1988 .\n\ndata:King_Michael_I_of_Romania a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Elena_of_Romania .\n\ndata:Queen_Anne_of_Romania a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Elena_of_Romania .\n\ndata:Robin_Medforth-Mills a :Man,\n        :Person .\n\ndata:Princess_Elena_of_Romania a :Person,\n        :Woman ;\n    :hasFather data:King_Michael_I_of_Romania ;\n    :hasMother data:Queen_Anne_of_Romania .\n\n"
+    }
+]

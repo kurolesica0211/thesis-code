@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mafalda a :Person,
+        :Woman ;
+    :hasFather data:Kyril ;
+    :hasSex data:Female .
+
+data:MariaOlympia a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isAuntOf data:Alexia .
+
+data:CarlosJavierMoralesQuintana a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:FelipeVI a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Ingrid a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Kyril a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Simeon ;
+    :hasSex data:Male .
+
+data:Simeon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:AnneMarie ;
+    :hasSex data:Female ;
+    :isSisterOf data:Alexia .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:AnneMarie ;
+    :hasRelation data:CarlosJavierMoralesQuintana ;
+    :hasSex data:Female ;
+    :hasSister data:Theodora ;
+    :isBloodrelationOf data:FelipeVI ;
+    :isSiblingOf data:Pavlos .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:AnneMarie ;
+    :hasSex data:Male .
+
+data:AnneMarie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Ingrid ;
+    :hasSex data:Female .
+
+data:ConstantineII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

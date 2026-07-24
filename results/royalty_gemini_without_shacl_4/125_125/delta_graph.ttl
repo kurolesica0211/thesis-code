@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amedeo_of_Austria-Este a :Man,
+        :Person ;
+    :hasBirthYear "1986"^^xsd:positiveInteger ;
+    :hasFather data:Lorenz%2C_Archduke_of_Austria-Este ;
+    :hasMother data:Princess_Astrid_of_Belgium ;
+    :isBloodrelationOf data:Princess_Elisabeth%2C_Duchess_of_Brabant .
+
+data:Lorenz%2C_Archduke_of_Austria-Este a :Man,
+        :Person .
+
+data:Princess_Astrid_of_Belgium a :Person,
+        :Woman .
+
+data:Princess_Elisabeth%2C_Duchess_of_Brabant a :Person,
+        :Woman .
+

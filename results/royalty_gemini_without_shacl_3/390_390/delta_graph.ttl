@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Franz_Wilhelm_von_Preussen a :Man ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMarriageYear 1976,
+        2019 ;
+    :hasMother data:Henriette_von_Schoenaich-Carolath ;
+    :isSiblingOf data:Friedrich_Christian_of_Prussia .
+
+data:Nadia_Nour_El_Etreby a :Woman ;
+    :hasBirthYear 1949 .
+
+data:Vladimir_of_Russia a :Man ;
+    :isFatherOf data:Maria_Vladimirovna_of_Russia .
+
+data:Wilhelm_II_of_Germany a :Man ;
+    :isFatherOf data:Joachim_of_Prussia .
+
+data:Friedrich_Christian_of_Prussia a :Man .
+
+data:Henriette_von_Schoenaich-Carolath a :Woman .
+
+data:Joachim_of_Prussia a :Man ;
+    :isFatherOf data:Karl_Franz_of_Prussia .
+
+data:Maria_Vladimirovna_of_Russia a :Woman .
+
+data:Karl_Franz_of_Prussia a :Man .
+

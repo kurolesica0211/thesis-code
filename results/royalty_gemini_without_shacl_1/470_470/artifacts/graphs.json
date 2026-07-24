@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceWilhelmOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:WilhelmCrownPrince ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;\n    :hasRelation data:DorotheaVonSalviati ;\n    :isSiblingOf data:LouisFerdinand .\n\ndata:DorotheaVonSalviati a :Person,\n        :Woman .\n\ndata:DuchessCecilieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:EmperorWilhelmII a :Man,\n        :Person .\n\ndata:LouisFerdinand a :Man,\n        :Person .\n\ndata:WilhelmCrownPrince a :Man,\n        :Person ;\n    :hasFather data:EmperorWilhelmII .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceWilhelmOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:WilhelmCrownPrince ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;\n    :hasRelation data:DorotheaVonSalviati ;\n    :isSiblingOf data:LouisFerdinand .\n\ndata:DorotheaVonSalviati a :Person,\n        :Woman .\n\ndata:DuchessCecilieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:EmperorWilhelmII a :Man,\n        :Person .\n\ndata:LouisFerdinand a :Man,\n        :Person .\n\ndata:WilhelmCrownPrince a :Man,\n        :Person ;\n    :hasFather data:EmperorWilhelmII .\n\n"
+    }
+]

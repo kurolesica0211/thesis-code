@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Angelica_Margherita_Edwina_Hicks a :Person .
+
+data:Ashley_Louis_David_Hicks a :Ancestor,
+        :Person .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Person .
+
+data:Lady_Pamela_Mountbatten a :Ancestor,
+        :Person .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Person .
+
+data:Marina_Allegra_Federica_Silvia_Tondato a :Ancestor,
+        :Person .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Person .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person .
+
+data:Queen_Victoria a :Ancestor,
+        :Person .
+
+data:The_Honourable_Edwina_Ashley a :Ancestor,
+        :Person .
+

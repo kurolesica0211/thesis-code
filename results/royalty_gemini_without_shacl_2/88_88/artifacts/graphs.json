@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alphonse a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Eugenie a :Woman ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Henri a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Louis a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:AlfonsoDeBorbon a :Man ;\n    :hasFather data:InfanteJaime ;\n    :hasMother data:EmmanuelleDeDampierre .\n\ndata:EmmanuelleDeDampierre a :Woman .\n\ndata:Francisco a :Man .\n\ndata:InfanteJaime a :Man .\n\ndata:MariaDelCarmenMartinezBordiuYFranco a :Woman .\n\ndata:VictorVargas a :Man .\n\ndata:LouisAlphonseDeBourbon a :Man ;\n    :hasBirthYear \"1974\"^^xsd:positiveInteger ;\n    :hasBrother data:Francisco ;\n    :hasFather data:AlfonsoDeBorbon ;\n    :hasMother data:MariaDelCarmenMartinezBordiuYFranco .\n\ndata:MariaMargaritaVargasSantaella a :Woman ;\n    :hasFather data:VictorVargas .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alphonse a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Eugenie a :Woman ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Henri a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:Louis a :Man ;\n    :hasFather data:LouisAlphonseDeBourbon ;\n    :hasMother data:MariaMargaritaVargasSantaella .\n\ndata:AlfonsoDeBorbon a :Man ;\n    :hasFather data:InfanteJaime ;\n    :hasMother data:EmmanuelleDeDampierre .\n\ndata:EmmanuelleDeDampierre a :Woman .\n\ndata:Francisco a :Man .\n\ndata:InfanteJaime a :Man .\n\ndata:MariaDelCarmenMartinezBordiuYFranco a :Woman .\n\ndata:VictorVargas a :Man .\n\ndata:LouisAlphonseDeBourbon a :Man ;\n    :hasBirthYear \"1974\"^^xsd:positiveInteger ;\n    :hasBrother data:Francisco ;\n    :hasFather data:AlfonsoDeBorbon ;\n    :hasMother data:MariaDelCarmenMartinezBordiuYFranco .\n\ndata:MariaMargaritaVargasSantaella a :Woman ;\n    :hasFather data:VictorVargas .\n\n"
+    }
+]

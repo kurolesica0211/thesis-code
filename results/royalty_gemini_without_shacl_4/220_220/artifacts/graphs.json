@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mike_Tindall a :Man ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Felicity_Wade,\n        data:Stephanie_Phillips ;\n    :knownAs data:Zara_Phillips .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Felicity_Wade a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Peter_Phillips a :Man .\n\ndata:Stephanie_Phillips a :Woman .\n\ndata:Lena_Tindall a :Woman .\n\ndata:Mia_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mike_Tindall a :Man ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Felicity_Wade,\n        data:Stephanie_Phillips ;\n    :knownAs data:Zara_Phillips .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Felicity_Wade a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Peter_Phillips a :Man .\n\ndata:Stephanie_Phillips a :Woman .\n\ndata:Zara_Phillips a :Woman .\n\ndata:Lena_Tindall a :Woman .\n\ndata:Mia_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mike_Tindall a :Man ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasChild data:Lena_Tindall,\n        data:Mia_Tindall ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Felicity_Wade,\n        data:Stephanie_Phillips ;\n    :knownAs data:Zara_Phillips .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Felicity_Wade a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Peter_Phillips a :Man .\n\ndata:Stephanie_Phillips a :Woman .\n\ndata:Zara_Phillips a :Woman .\n\ndata:Lena_Tindall a :Woman .\n\ndata:Mia_Tindall a :Woman .\n\n"
+    }
+]

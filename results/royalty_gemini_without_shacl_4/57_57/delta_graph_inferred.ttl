@@ -1,0 +1,364 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :isAuntOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :isSiblingOf data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :isSisterOf data:PrincessMargaret,
+        data:QueenElizabethII .
+
+data:ClaudeBowesLyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ClaudeBowesLyon ;
+    :hasChild data:QueenElizabethQueenMother ;
+    :hasDaughter data:QueenElizabethQueenMother ;
+    :hasRelation data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:QueenElizabethQueenMother,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:ClaudeBowesLyon ;
+    :isBrotherOf data:ClaudeBowesLyon ;
+    :isFatherOf data:QueenElizabethQueenMother ;
+    :isParentOf data:QueenElizabethQueenMother ;
+    :isSiblingOf data:ClaudeBowesLyon ;
+    :isUncleOf data:QueenElizabethQueenMother .
+
+data:KingGeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingGeorgeV ;
+    :hasChild data:KingGeorgeVI ;
+    :hasRelation data:CeciliaBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSon data:KingGeorgeVI ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:KingGeorgeV ;
+    :isBrotherOf data:KingGeorgeV ;
+    :isFatherOf data:KingGeorgeVI ;
+    :isParentOf data:KingGeorgeVI ;
+    :isSiblingOf data:KingGeorgeV ;
+    :isUncleOf data:KingGeorgeVI .
+
+data:AntonyArmstrongJones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AntonyArmstrongJones ;
+    :hasChild data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :hasDaughter data:SarahArmstrongJones ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:SarahArmstrongJones ;
+    :hasSon data:DavidArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:AntonyArmstrongJones ;
+    :isBrotherOf data:AntonyArmstrongJones ;
+    :isFatherOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isParentOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isSiblingOf data:AntonyArmstrongJones ;
+    :isUncleOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingGeorgeVI ;
+    :hasRelation data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:QueenMary ;
+    :hasSon data:KingGeorgeVI ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:SarahArmstrongJones ;
+    :isAuntOf data:KingGeorgeVI ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:KingGeorgeVI ;
+    :isParentOf data:KingGeorgeVI ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:CeciliaBowesLyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:QueenElizabethQueenMother ;
+    :hasDaughter data:QueenElizabethQueenMother ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:CeciliaBowesLyon ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:QueenElizabethQueenMother,
+        data:SarahArmstrongJones ;
+    :isAuntOf data:QueenElizabethQueenMother ;
+    :isBloodrelationOf data:CeciliaBowesLyon ;
+    :isMotherOf data:QueenElizabethQueenMother ;
+    :isParentOf data:QueenElizabethQueenMother ;
+    :isSiblingOf data:CeciliaBowesLyon ;
+    :isSisterOf data:CeciliaBowesLyon .
+
+data:KingGeorgeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeV,
+        data:QueenMary ;
+    :hasBrother data:KingGeorgeVI ;
+    :hasChild data:PrincessMargaret ;
+    :hasDaughter data:PrincessMargaret ;
+    :hasFather data:KingGeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:KingGeorgeV,
+        data:QueenMary ;
+    :hasRelation data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:KingGeorgeVI ;
+    :isBrotherOf data:KingGeorgeVI ;
+    :isChildOf data:KingGeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:PrincessMargaret ;
+    :isParentOf data:PrincessMargaret ;
+    :isSiblingOf data:KingGeorgeVI ;
+    :isSonOf data:KingGeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrincessMargaret .
+
+data:QueenElizabethQueenMother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :hasChild data:PrincessMargaret ;
+    :hasDaughter data:PrincessMargaret ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMother data:CeciliaBowesLyon ;
+    :hasParent data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:QueenElizabethQueenMother ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahArmstrongJones ;
+    :isAuntOf data:PrincessMargaret ;
+    :isBloodrelationOf data:QueenElizabethQueenMother ;
+    :isChildOf data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :isDaughterOf data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :isMotherOf data:PrincessMargaret ;
+    :isParentOf data:PrincessMargaret ;
+    :isSiblingOf data:QueenElizabethQueenMother ;
+    :isSisterOf data:QueenElizabethQueenMother .
+
+data:DavidArmstrongJones a :Man,
+        :Person ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethQueenMother,
+        data:QueenMary ;
+    :hasBrother data:DavidArmstrongJones ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:SarahArmstrongJones ;
+    :isBloodrelationOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isBrotherOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isSiblingOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isSonOf data:AntonyArmstrongJones,
+        data:PrincessMargaret .
+
+data:SarahArmstrongJones a :Person,
+        :Woman ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethQueenMother,
+        data:QueenMary ;
+    :hasBrother data:DavidArmstrongJones ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:SarahArmstrongJones ;
+    :isBloodrelationOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isDaughterOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isSiblingOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isSisterOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones .
+
+data:PrincessMargaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:QueenElizabethQueenMother,
+        data:QueenMary ;
+    :hasBirthYear 1930 ;
+    :hasChild data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :hasDaughter data:SarahArmstrongJones ;
+    :hasDeathYear 2002 ;
+    :hasFather data:KingGeorgeVI ;
+    :hasMarriageYear data:AntonyArmstrongJones,
+        1960 ;
+    :hasMother data:QueenElizabethQueenMother ;
+    :hasParent data:KingGeorgeVI,
+        data:QueenElizabethQueenMother ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:DavidArmstrongJones,
+        data:KingGeorgeV,
+        data:KingGeorgeVI,
+        data:PrincessMargaret,
+        data:QueenElizabethII,
+        data:QueenElizabethQueenMother,
+        data:QueenMary,
+        data:SarahArmstrongJones ;
+    :hasSister data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :hasSon data:DavidArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isAuntOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isBloodrelationOf data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :isChildOf data:KingGeorgeVI,
+        data:QueenElizabethQueenMother ;
+    :isDaughterOf data:KingGeorgeVI,
+        data:QueenElizabethQueenMother ;
+    :isMotherOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isParentOf data:DavidArmstrongJones,
+        data:SarahArmstrongJones ;
+    :isSiblingOf data:PrincessMargaret,
+        data:QueenElizabethII ;
+    :isSisterOf data:PrincessMargaret,
+        data:QueenElizabethII .
+

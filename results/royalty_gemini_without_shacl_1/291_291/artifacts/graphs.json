@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Nicholas_Mikhailovich a :Man,\n        :Person ;\n    :isBrotherOf data:Grand_Duke_George_Mihailovich_of_Russia .\n\ndata:Nancy_Helen_Marie_Leeds a :Person,\n        :Woman ;\n    :isDaughterOf data:Princess_Xenia_Georgievna_of_Russia,\n        data:William_Bateman_Leeds_Jr .\n\ndata:Princess_Nina_Georgievna a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich_of_Russia ;\n    :hasMother data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;\n    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:Herman_Jud a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1987 .\n\ndata:Princess_Maria_Georgievna_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:Grand_Duke_George_Mihailovich_of_Russia a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:William_Bateman_Leeds_Jr a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Xenia_Georgievna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Nicholas_Mikhailovich a :Man,\n        :Person ;\n    :isBrotherOf data:Grand_Duke_George_Mihailovich_of_Russia .\n\ndata:Nancy_Helen_Marie_Leeds a :Person,\n        :Woman ;\n    :isDaughterOf data:Princess_Xenia_Georgievna_of_Russia,\n        data:William_Bateman_Leeds_Jr .\n\ndata:Princess_Nina_Georgievna a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich_of_Russia ;\n    :hasMother data:Princess_Maria_Georgievna_of_Greece_and_Denmark ;\n    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:Herman_Jud a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1987 .\n\ndata:Princess_Maria_Georgievna_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:Grand_Duke_George_Mihailovich_of_Russia a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Xenia_Georgievna_of_Russia .\n\ndata:William_Bateman_Leeds_Jr a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1971 .\n\ndata:Princess_Xenia_Georgievna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr .\n\n"
+    }
+]

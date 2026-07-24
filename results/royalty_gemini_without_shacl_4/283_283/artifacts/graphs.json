@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLouisOfWales a :Man,\n        :Person ;\n    :hasBirthYear 2018 ;\n    :hasFather data:PrinceWilliamOfWales ;\n    :hasMother data:CatherinePrincessOfWales ;\n    :isSiblingOf data:PrinceGeorge,\n        data:PrincessCharlotte ;\n    :knownAs \"Louis Arthur Charles\"^^xsd:string .\n\ndata:CatherinePrincessOfWales a :Person,\n        :Woman .\n\ndata:DianaPrincessOfWales a :Person,\n        :Woman .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PrinceGeorge a :Man,\n        :Person .\n\ndata:PrinceWilliamOfWales a :Man,\n        :Person ;\n    :hasFather data:KingCharlesIII ;\n    :hasMother data:DianaPrincessOfWales .\n\ndata:PrincessCharlotte a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLouisOfWales a :Man,\n        :Person ;\n    :hasBirthYear 2018 ;\n    :hasFather data:PrinceWilliamOfWales ;\n    :hasMother data:CatherinePrincessOfWales ;\n    :isSiblingOf data:PrinceGeorge,\n        data:PrincessCharlotte ;\n    :knownAs \"Louis Arthur Charles\"^^xsd:string .\n\ndata:CatherinePrincessOfWales a :Person,\n        :Woman .\n\ndata:DianaPrincessOfWales a :Person,\n        :Woman .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PrinceGeorge a :Man,\n        :Person .\n\ndata:PrinceWilliamOfWales a :Man,\n        :Person ;\n    :hasFather data:KingCharlesIII ;\n    :hasMother data:DianaPrincessOfWales .\n\ndata:PrincessCharlotte a :Person,\n        :Woman .\n\n"
+    }
+]

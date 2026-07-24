@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasMother data:Juliana .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasMother data:Juliana .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasFather data:William_III ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Emma a :Person,
+        :Woman .
+
+data:Sophie_of_W%C3%BCrttemberg a :Person,
+        :Woman .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasBirthYear "1880"^^xsd:positiveInteger ;
+    :hasBrother data:Alexander ;
+    :hasDeathYear "1962"^^xsd:positiveInteger ;
+    :hasFather data:William_III ;
+    :hasMarriageYear "1901"^^xsd:positiveInteger ;
+    :hasMother data:Emma ;
+    :hasRelation data:Henry_of_Mecklenburg-Schwerin .
+
+data:Henry_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld,
+        data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina .
+
+data:William_III a :Man,
+        :Person .
+

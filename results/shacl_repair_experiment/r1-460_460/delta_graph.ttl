@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Donatus :hasRelation data:Floria_Franziska .
+
+data:Hubertus_von_Faber-Castell a :Ancestor .
+
+data:Moritz a :Ancestor .
+
+data:Philipp a :Ancestor .
+
+data:Tatiana a :Ancestor .
+

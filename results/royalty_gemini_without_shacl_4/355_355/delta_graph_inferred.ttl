@@ -1,0 +1,429 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WallisSimpson a :Person,
+        :Woman ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:WallisSimpson ;
+    :isBloodrelationOf data:WallisSimpson ;
+    :isSiblingOf data:WallisSimpson ;
+    :isSisterOf data:WallisSimpson .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:EdwardVIII ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:EdwardVII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:EdwardVII ;
+    :hasChild data:GeorgeV ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSon data:GeorgeV ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth ;
+    :isBloodrelationOf data:EdwardVII ;
+    :isBrotherOf data:EdwardVII ;
+    :isFatherOf data:GeorgeV ;
+    :isParentOf data:GeorgeV ;
+    :isSiblingOf data:EdwardVII ;
+    :isUncleOf data:GeorgeV .
+
+data:FrancisDukeOfTeck a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrancisDukeOfTeck ;
+    :hasChild data:QueenMary ;
+    :hasDaughter data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:QueenMary ;
+    :isBloodrelationOf data:FrancisDukeOfTeck ;
+    :isBrotherOf data:FrancisDukeOfTeck ;
+    :isFatherOf data:QueenMary ;
+    :isParentOf data:QueenMary ;
+    :isSiblingOf data:FrancisDukeOfTeck ;
+    :isUncleOf data:QueenMary .
+
+data:PrincessMaryAdelaideOfCambridge a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:QueenMary ;
+    :hasDaughter data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:PrincessMaryAdelaideOfCambridge ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:QueenMary ;
+    :isAuntOf data:QueenMary ;
+    :isBloodrelationOf data:PrincessMaryAdelaideOfCambridge ;
+    :isMotherOf data:QueenMary ;
+    :isParentOf data:QueenMary ;
+    :isSiblingOf data:PrincessMaryAdelaideOfCambridge ;
+    :isSisterOf data:PrincessMaryAdelaideOfCambridge .
+
+data:QueenAlexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgeV ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:QueenAlexandra ;
+    :hasSon data:GeorgeV ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth ;
+    :isAuntOf data:GeorgeV ;
+    :isBloodrelationOf data:QueenAlexandra ;
+    :isMotherOf data:GeorgeV ;
+    :isParentOf data:GeorgeV ;
+    :isSiblingOf data:QueenAlexandra ;
+    :isSisterOf data:QueenAlexandra .
+
+data:PrincessElizabeth a :Person,
+        :Woman ;
+    :hasAncestor data:EdwardVII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary ;
+    :hasFather data:GeorgeVI ;
+    :hasParent data:GeorgeVI ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:PrincessElizabeth ;
+    :isBloodrelationOf data:PrincessElizabeth ;
+    :isChildOf data:GeorgeVI ;
+    :isDaughterOf data:GeorgeVI ;
+    :isSiblingOf data:PrincessElizabeth ;
+    :isSisterOf data:PrincessElizabeth .
+
+data:PrinceJohn a :Man,
+        :Person ;
+    :hasAncestor data:EdwardVII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrincessElizabeth .
+
+data:EdwardVIII a :Man,
+        :Person ;
+    :alsoKnownAs "Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:EdwardVII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasBirthYear 1894 ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :hasDeathYear 1972 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrincessElizabeth .
+
+data:GeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EdwardVII,
+        data:QueenAlexandra ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :hasFather data:EdwardVII ;
+    :hasMother data:QueenAlexandra ;
+    :hasParent data:EdwardVII,
+        data:QueenAlexandra ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSon data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isChildOf data:EdwardVII,
+        data:QueenAlexandra ;
+    :isFatherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isParentOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isSiblingOf data:GeorgeV ;
+    :isSonOf data:EdwardVII,
+        data:QueenAlexandra ;
+    :isUncleOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FrancisDukeOfTeck,
+        data:PrincessMaryAdelaideOfCambridge ;
+    :hasChild data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :hasFather data:FrancisDukeOfTeck ;
+    :hasMother data:PrincessMaryAdelaideOfCambridge ;
+    :hasParent data:FrancisDukeOfTeck,
+        data:PrincessMaryAdelaideOfCambridge ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :hasSister data:QueenMary ;
+    :hasSon data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isAncestorOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth ;
+    :isAuntOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isBloodrelationOf data:QueenMary ;
+    :isChildOf data:FrancisDukeOfTeck,
+        data:PrincessMaryAdelaideOfCambridge ;
+    :isDaughterOf data:FrancisDukeOfTeck,
+        data:PrincessMaryAdelaideOfCambridge ;
+    :isMotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isParentOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:GeorgeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EdwardVII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :hasChild data:PrincessElizabeth ;
+    :hasDaughter data:PrincessElizabeth ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:EdwardVIII,
+        data:FrancisDukeOfTeck,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:PrinceJohn,
+        data:PrincessElizabeth,
+        data:PrincessMaryAdelaideOfCambridge,
+        data:QueenAlexandra,
+        data:QueenMary,
+        data:QueenVictoria,
+        data:WallisSimpson ;
+    :isAncestorOf data:PrincessElizabeth ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:PrincessElizabeth ;
+    :isParentOf data:PrincessElizabeth ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceJohn ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrincessElizabeth .
+

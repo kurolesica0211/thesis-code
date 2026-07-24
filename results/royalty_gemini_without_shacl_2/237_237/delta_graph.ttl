@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DonataCountessOfCastellRudenhausen a :Person,
+        :Woman .
+
+data:FriedrichAugustOfOldenburg a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isUncleOf data:ChristianDukeOfOldenburg .
+
+data:PrincessMarieCecileOfPrussia a :Person,
+        :Woman ;
+    :hasFather data:LouisFerdinandPrinceOfPrussia ;
+    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .
+
+data:ChristianDukeOfOldenburg a :Man,
+        :Person .
+
+data:DuchessElisabethAlexandrineOfMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:FrederickAugustusII_GrandDukeOfOldenburg a :Man,
+        :Person .
+
+data:FriedrichPrinceOfWaldeckAndPyrmont a :Man,
+        :Person .
+
+data:GrandDuchessKiraKirillovnaOfRussia a :Person,
+        :Woman .
+
+data:LouisFerdinandPrinceOfPrussia a :Man,
+        :Person .
+
+data:NikolausHereditaryGrandDukeOfOldenburg a :Man,
+        :Person ;
+    :hasFather data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :hasMother data:DuchessElisabethAlexandrineOfMecklenburgSchwerin .
+
+data:PrincessBathildisOfSchaumburgLippe a :Person,
+        :Woman .
+
+data:PrincessHelenaOfWaldeckAndPyrmont a :Person,
+        :Woman ;
+    :hasFather data:FriedrichPrinceOfWaldeckAndPyrmont ;
+    :hasMother data:PrincessBathildisOfSchaumburgLippe .
+

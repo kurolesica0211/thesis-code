@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountessInaMarieVonBassewitz a :Person,
+        :Woman ;
+    :isMotherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .
+
+data:FriedrichVonVeltheim a :Man,
+        :Person ;
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1955 ;
+    :isFatherOf data:ArmgardElseHeleneVonVeltheim .
+
+data:OttonieVonAlvensleben a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1960 ;
+    :isMotherOf data:ArmgardElseHeleneVonVeltheim .
+
+data:PrinceOskarOfPrussia a :Man,
+        :Person ;
+    :isFatherOf data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen .
+
+data:WilhelmKarlAdalbertErichDetloffPrinzVonPreussen a :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 2007 ;
+    :hasMarriageYear 1952 ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim .
+
+data:ArmgardElseHeleneVonVeltheim a :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2019 .
+

@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/293_293",
+  "text_file": "Q4381222.txt",
+  "text_key": "Q4381222",
+  "article": "https://en.wikipedia.org/wiki/Samuel_Chatto",
+  "article_key": "Samuel Chatto",
+  "main_entity": {
+    "uri": "http://example.com/data#Samuel_Chatto",
+    "qid": "Q4381222",
+    "label": "Samuel Chatto"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Samuel_Chatto",
+      "qid": "Q4381222",
+      "label": "Samuel Chatto",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Daniel_Chatto",
+      "qid": "Q331657",
+      "label": "Daniel Chatto",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "qid": "Q1040807",
+      "label": "Lady Sarah Chatto",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret-_Countess_of_Snowdon",
+      "qid": "Q153815",
+      "label": "Princess Margaret, Countess of Snowdon",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Daniel_Chatto",
+      "extracted_local_name": "Daniel_Chatto",
+      "embedding_text": "Daniel Chatto",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Daniel_Chatto",
+      "ground_truth_qid": "Q331657",
+      "ground_truth_label": "Daniel Chatto",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Daniel Chatto",
+      "best_candidate_label": "Daniel Chatto",
+      "best_candidate_qid": "Q331657",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lady_Sarah_Chatto",
+      "extracted_local_name": "Lady_Sarah_Chatto",
+      "embedding_text": "Lady Sarah Chatto",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "ground_truth_qid": "Q1040807",
+      "ground_truth_label": "Lady Sarah Chatto",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Samuel_Chatto",
+      "extracted_local_name": "Samuel_Chatto",
+      "embedding_text": "Samuel Chatto",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Samuel_Chatto",
+      "ground_truth_qid": "Q4381222",
+      "ground_truth_label": "Samuel Chatto",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Samuel Chatto",
+      "best_candidate_label": "Samuel Chatto",
+      "best_candidate_qid": "Q4381222",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Margaret",
+      "extracted_local_name": "Princess_Margaret",
+      "embedding_text": "Princess Margaret",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Samuel Chatto",
+      "best_candidate_label": "Samuel Chatto",
+      "best_candidate_qid": "Q4381222",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

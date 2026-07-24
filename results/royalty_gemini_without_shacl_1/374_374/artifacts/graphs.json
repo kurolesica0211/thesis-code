@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasBirthYear 2022 ;\n    :hasFather data:Jean-Christophe_Prince_Napol%C3%A9on ;\n    :hasMother data:Olympia .\n\ndata:Charles_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasFather data:Louis_Prince_Napol%C3%A9on .\n\ndata:Jean-Christophe_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Charles_Prince_Napol%C3%A9on ;\n    :hasMother data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .\n\ndata:Louis_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasDeathYear 1997 .\n\ndata:Olympia a :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasBirthYear 2022 ;\n    :hasFather data:Jean-Christophe_Prince_Napol%C3%A9on ;\n    :hasMother data:Olympia .\n\ndata:Charles_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasFather data:Louis_Prince_Napol%C3%A9on .\n\ndata:Jean-Christophe_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Charles_Prince_Napol%C3%A9on ;\n    :hasMother data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .\n\ndata:Louis_Prince_Napol%C3%A9on a :Man,\n        :Person ;\n    :hasDeathYear 1997 .\n\ndata:Olympia a :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro .\n\n"
+    }
+]

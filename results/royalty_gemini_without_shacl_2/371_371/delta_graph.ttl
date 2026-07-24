@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_Friedrich a :Man,
+        :Person ;
+    :isBrotherOf data:John_Albert_of_Mecklenburg .
+
+data:Charles_Alexander_of_Saxe-Weimar-Eisenach a :Man,
+        :Person ;
+    :isFatherOf data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach .
+
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :isBrotherOf data:John_Albert_of_Mecklenburg ;
+    :isParentOf data:Frederick_Francis_IV .
+
+data:Paul_Frederick a :Man,
+        :Person ;
+    :isBrotherOf data:John_Albert_of_Mecklenburg .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman .
+
+data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman .
+
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Frederick_Francis_IV a :Man,
+        :Person .
+
+data:John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1857 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_Charles_III a :Man .\n\ndata:Lady_Sarah_Frances_Elizabeth_Chatto a :Woman ;\n    :alsoKnownAs data:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Ros_Chatto a :Woman ;\n    :alsoKnownAs data:Rosalind_Joan_Thompson ;\n    :hasDeathYear 2012 .\n\ndata:Tom_Chatto a :Man ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:Antony_Armstrong-Jones a :Man .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_Charles_III a :Man .\n\ndata:Lady_Sarah_Frances_Elizabeth_Chatto a :Woman ;\n    :alsoKnownAs data:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones a :Woman .\n\ndata:Ros_Chatto a :Woman ;\n    :alsoKnownAs data:Rosalind_Joan_Thompson ;\n    :hasDeathYear 2012 .\n\ndata:Rosalind_Joan_Thompson a :Woman .\n\ndata:Tom_Chatto a :Man ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:Antony_Armstrong-Jones a :Man .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_Charles_III a :Man .\n\ndata:Lady_Sarah_Frances_Elizabeth_Chatto a :Woman ;\n    :alsoKnownAs data:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Lady_Sarah_Frances_Elizabeth_Armstrong-Jones a :Woman .\n\ndata:Ros_Chatto a :Woman ;\n    :alsoKnownAs data:Rosalind_Joan_Thompson ;\n    :hasDeathYear 2012 .\n\ndata:Rosalind_Joan_Thompson a :Woman .\n\ndata:Tom_Chatto a :Man ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:Antony_Armstrong-Jones a :Man .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Baroness_Armgard_of_Sierstorpff-Cramm ;
+    :hasRelation data:Simone_Arnoux ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Prince_Constantijn_of_the_Netherlands a :Man,
+        :Person .
+
+data:Stephan_von_Watzdorf a :Man,
+        :Person ;
+    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :hasMother data:Simone_Arnoux .
+
+data:Thilo_von_Watzdorf a :Man,
+        :Person ;
+    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :hasMother data:Simone_Arnoux .
+
+data:Baroness_Armgard_of_Sierstorpff-Cramm a :Person,
+        :Woman .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe a :Man,
+        :Person .
+
+data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
+        :Person .
+
+data:Simone_Arnoux a :Person,
+        :Woman ;
+    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
+

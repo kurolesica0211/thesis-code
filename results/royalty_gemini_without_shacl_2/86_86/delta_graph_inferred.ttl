@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man ;
+    :hasBrother data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Amedeo_Duke_of_Aosta_1943 .
+
+data:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
+    :hasChild data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Aimone_4th_Duke_of_Aosta .
+
+data:Princess_Helene_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Helene_of_Orleans ;
+    :hasSon data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isAuntOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Princess_Helene_of_Orleans ;
+    :isMotherOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isSiblingOf data:Princess_Helene_of_Orleans ;
+    :isSisterOf data:Princess_Helene_of_Orleans .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isAuntOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isBloodrelationOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isParentOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Amedeo_Duke_of_Aosta_1943 a :Man ;
+    :hasAncestor data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :hasFather data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isBrotherOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isChildOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isSonOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Aimone_4th_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasChild data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Helene_of_Orleans ;
+    :hasParent data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans ;
+    :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_1943,
+        data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isBloodrelationOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans ;
+    :isFatherOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isParentOf data:Prince_Amedeo_Duke_of_Aosta_1943 ;
+    :isSiblingOf data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto_Duke_of_Aosta,
+        data:Princess_Helene_of_Orleans ;
+    :isUncleOf data:Prince_Amedeo_Duke_of_Aosta_1943 .
+

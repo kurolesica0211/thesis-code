@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessMarieLouiseOfHanoverAndCumberland a :Person,\n        :Woman ;\n    :hasAncestor data:CharlotteOfMecklenburgStrelitz,\n        data:GeorgeIIIOfTheUnitedKingdom ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:PrincessThyraOfDenmark ;\n    :hasRelation data:PrinceMaximilianOfBaden .\n\ndata:CharlotteOfMecklenburgStrelitz a :Person,\n        :Woman .\n\ndata:ChristianIXOfDenmark a :Man,\n        :Person .\n\ndata:ErnestAugustusCrownPrinceOfHanover a :Man,\n        :Person .\n\ndata:GeorgeIIIOfTheUnitedKingdom a :Man,\n        :Person .\n\ndata:LouiseOfHesseKassel a :Person,\n        :Woman .\n\ndata:PrinceMaximilianOfBaden a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:PrinceWilhelmOfBaden ;\n    :hasMother data:PrincessMariaMaximilianovnaOfLeuchtenberg .\n\ndata:PrinceWilhelmOfBaden a :Man,\n        :Person .\n\ndata:PrincessMariaMaximilianovnaOfLeuchtenberg a :Person,\n        :Woman .\n\ndata:PrincessThyraOfDenmark a :Person,\n        :Woman ;\n    :hasFather data:ChristianIXOfDenmark ;\n    :hasMother data:LouiseOfHesseKassel .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessMarieLouiseOfHanoverAndCumberland a :Person,\n        :Woman ;\n    :hasAncestor data:CharlotteOfMecklenburgStrelitz,\n        data:GeorgeIIIOfTheUnitedKingdom ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:PrincessThyraOfDenmark ;\n    :hasRelation data:PrinceMaximilianOfBaden .\n\ndata:CharlotteOfMecklenburgStrelitz a :Person,\n        :Woman .\n\ndata:ChristianIXOfDenmark a :Man,\n        :Person .\n\ndata:ErnestAugustusCrownPrinceOfHanover a :Man,\n        :Person .\n\ndata:GeorgeIIIOfTheUnitedKingdom a :Man,\n        :Person .\n\ndata:LouiseOfHesseKassel a :Person,\n        :Woman .\n\ndata:PrinceMaximilianOfBaden a :Man,\n        :Person ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:PrinceWilhelmOfBaden ;\n    :hasMother data:PrincessMariaMaximilianovnaOfLeuchtenberg .\n\ndata:PrinceWilhelmOfBaden a :Man,\n        :Person .\n\ndata:PrincessMariaMaximilianovnaOfLeuchtenberg a :Person,\n        :Woman .\n\ndata:PrincessThyraOfDenmark a :Person,\n        :Woman ;\n    :hasFather data:ChristianIXOfDenmark ;\n    :hasMother data:LouiseOfHesseKassel .\n\n"
+    }
+]

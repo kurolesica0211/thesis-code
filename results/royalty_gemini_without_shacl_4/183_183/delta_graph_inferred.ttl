@@ -1,0 +1,350 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Peter_of_Serbia_and_Yugoslavia a :Person ;
+    :hasRelation data:Prince_Peter_of_Serbia_and_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Peter_of_Serbia_and_Yugoslavia ;
+    :isSiblingOf data:Prince_Peter_of_Serbia_and_Yugoslavia .
+
+data:Lauren_Estelle_Jones a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dolores_Luna_Noor ;
+    :hasDaughter data:Dolores_Luna_Noor ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Lauren_Estelle_Jones ;
+    :isAncestorOf data:Dolores_Luna_Noor ;
+    :isAuntOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Lauren_Estelle_Jones ;
+    :isMotherOf data:Dolores_Luna_Noor ;
+    :isParentOf data:Dolores_Luna_Noor ;
+    :isSiblingOf data:Lauren_Estelle_Jones ;
+    :isSisterOf data:Lauren_Estelle_Jones .
+
+data:Peter_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Peter_II ;
+    :hasChild data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSon data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch ;
+    :isBloodrelationOf data:Peter_II ;
+    :isBrotherOf data:Peter_II ;
+    :isFatherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Peter_II ;
+    :isUncleOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Peter_II ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasChild data:Peter_Karageorgevitch ;
+    :hasFather data:Peter_II ;
+    :hasParent data:Peter_II ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSon data:Peter_Karageorgevitch ;
+    :isAncestorOf data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:Peter_II ;
+    :isFatherOf data:Peter_Karageorgevitch ;
+    :isParentOf data:Peter_Karageorgevitch ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:Peter_II ;
+    :isUncleOf data:Peter_Karageorgevitch .
+
+data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982 a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isUncleOf data:Dolores_Luna_Noor .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasDaughter data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Maria_da_Gloria ;
+    :hasSon data:Peter_Karageorgevitch ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Maria_da_Gloria ;
+    :isMotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isParentOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Maria_da_Gloria ;
+    :isSisterOf data:Maria_da_Gloria .
+
+data:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isUncleOf data:Dolores_Luna_Noor .
+
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch ;
+    :hasBirthYear 2017 ;
+    :hasFather data:Peter_Karageorgevitch ;
+    :hasMother data:Lauren_Estelle_Jones ;
+    :hasParent data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Dolores_Luna_Noor ;
+    :isChildOf data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :isDaughterOf data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :isSiblingOf data:Dolores_Luna_Noor ;
+    :isSisterOf data:Dolores_Luna_Noor .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_da_Gloria ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Maria_da_Gloria ;
+    :isDaughterOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_da_Gloria ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Maria_da_Gloria ;
+    :isDaughterOf data:Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Peter_Karageorgevitch a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria,
+        data:Peter_II ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasChild data:Dolores_Luna_Noor ;
+    :hasDaughter data:Dolores_Luna_Noor ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAncestorOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria ;
+    :isFatherOf data:Dolores_Luna_Noor ;
+    :isParentOf data:Dolores_Luna_Noor ;
+    :isSiblingOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87_1982,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Peter_Karageorgevitch,
+        data:Philip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSonOf data:Alexander_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Dolores_Luna_Noor ;
+    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .
+

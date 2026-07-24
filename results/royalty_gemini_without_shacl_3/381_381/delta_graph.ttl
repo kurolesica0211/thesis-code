@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie_of_Greece_and_Denmark a :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1930,
+        1946 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_George_William_of_Hanover ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Cecilie_of_Greece_and_Denmark a :Woman .
+
+data:Margarita_of_Greece_and_Denmark a :Woman .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man .
+
+data:Prince_Christoph_of_Hesse a :Man .
+
+data:Prince_George_William_of_Hanover a :Man .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man .
+
+data:Princess_Alice_of_Battenberg a :Woman .
+
+data:Theodora_of_Greece_and_Denmark a :Woman .
+

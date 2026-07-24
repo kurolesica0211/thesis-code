@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Birgitte_Duchess_of_Gloucester a :Ancestor .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+
+data:Prince_Richard_Duke_of_Gloucester a :Ancestor .
+

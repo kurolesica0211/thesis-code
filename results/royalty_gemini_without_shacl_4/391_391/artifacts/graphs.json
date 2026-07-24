@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Patricia_Victoria_Ellingworth a :Person,\n        :Woman ;\n    :formerlyKnownAs \"The Honourable Amanda Knatchbull\"^^xsd:string ;\n    :hasAncestor data:Louis_Mountbatten,\n        data:Queen_Victoria ;\n    :hasBirthYear \"1957\"^^xsd:positiveInteger ;\n    :hasFather data:7th_Baron_Brabourne ;\n    :hasMarriageYear \"1987\"^^xsd:positiveInteger ;\n    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;\n    :hasRelation data:Charles_Vincent_Ellingworth .\n\ndata:Prince_Charles a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:2nd_Countess_Mountbatten_of_Burma a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:7th_Baron_Brabourne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Louis_Mountbatten a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear \"1979\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Alice ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Princess_Alice a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Patricia_Victoria_Ellingworth a :Person,\n        :Woman ;\n    :formerlyKnownAs \"The Honourable Amanda Knatchbull\"^^xsd:string ;\n    :hasAncestor data:Louis_Mountbatten,\n        data:Queen_Victoria ;\n    :hasBirthYear \"1957\"^^xsd:positiveInteger ;\n    :hasFather data:7th_Baron_Brabourne ;\n    :hasMarriageYear \"1987\"^^xsd:positiveInteger ;\n    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;\n    :hasRelation data:Charles_Vincent_Ellingworth .\n\ndata:Prince_Charles a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:2nd_Countess_Mountbatten_of_Burma a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:7th_Baron_Brabourne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Louis_Mountbatten a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear \"1979\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Alice ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Princess_Alice a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

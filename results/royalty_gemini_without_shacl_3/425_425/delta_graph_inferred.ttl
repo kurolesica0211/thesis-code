@@ -1,0 +1,196 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasRelation data:Beatrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Beatrice_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Beatrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Beatrice_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Beatrice_of_Bourbon-Two_Sicilies .
+
+data:Laurent_of_Belgium a :Man,
+        :Person ;
+    :hasBrother data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :hasRelation data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBloodrelationOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBrotherOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSiblingOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium .
+
+data:Philippe_of_Belgium a :Man,
+        :Person ;
+    :hasBrother data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :hasRelation data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBloodrelationOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBrotherOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSiblingOf data:Laurent_of_Belgium,
+        data:Philippe_of_Belgium .
+
+data:Guillaume_of_Luxembourg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Guillaume_of_Luxembourg ;
+    :hasChild data:Leopold_of_Nassau ;
+    :hasRelation data:Guillaume_of_Luxembourg,
+        data:Leopold_of_Nassau ;
+    :hasSon data:Leopold_of_Nassau ;
+    :isAncestorOf data:Leopold_of_Nassau ;
+    :isBloodrelationOf data:Guillaume_of_Luxembourg ;
+    :isBrotherOf data:Guillaume_of_Luxembourg ;
+    :isFatherOf data:Leopold_of_Nassau ;
+    :isParentOf data:Leopold_of_Nassau ;
+    :isSiblingOf data:Guillaume_of_Luxembourg ;
+    :isUncleOf data:Leopold_of_Nassau .
+
+data:Jean-Christophe_Prince_Napoleon a :Man,
+        :Person ;
+    :hasBrother data:Jean-Christophe_Prince_Napoleon ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon ;
+    :isBrotherOf data:Jean-Christophe_Prince_Napoleon ;
+    :isSiblingOf data:Jean-Christophe_Prince_Napoleon .
+
+data:Leopold_of_Nassau a :Man,
+        :Person ;
+    :hasAncestor data:Guillaume_of_Luxembourg ;
+    :hasBrother data:Leopold_of_Nassau ;
+    :hasFather data:Guillaume_of_Luxembourg ;
+    :hasParent data:Guillaume_of_Luxembourg ;
+    :hasRelation data:Guillaume_of_Luxembourg,
+        data:Leopold_of_Nassau ;
+    :isBloodrelationOf data:Leopold_of_Nassau ;
+    :isBrotherOf data:Leopold_of_Nassau ;
+    :isChildOf data:Guillaume_of_Luxembourg ;
+    :isSiblingOf data:Leopold_of_Nassau ;
+    :isSonOf data:Guillaume_of_Luxembourg .
+
+data:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies .
+
+data:Camilla_Crociani a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Camilla_Crociani ;
+    :isAncestorOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Camilla_Crociani ;
+    :isMotherOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Camilla_Crociani ;
+    :isSisterOf data:Camilla_Crociani .
+
+data:Ferdinand_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Carlo_of_Bourbon-Two_Sicilies .
+
+data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+
+data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Camilla_Crociani ;
+    :hasParent data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Camilla_Crociani,
+        data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Chiara_of_Bourbon-Two_Sicilies .
+

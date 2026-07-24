@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eleonoor_Stammeijer a :Woman ;\n    :isMotherOf data:Aim%C3%A9e_S%C3%B6hngen .\n\ndata:Hans_S%C3%B6hngen a :Man ;\n    :isFatherOf data:Aim%C3%A9e_S%C3%B6hngen .\n\ndata:Prince_Floris_van_Vollenhoven a :Man ;\n    :hasBirthYear 1975 ;\n    :isBrotherOf data:Prince_Bernhard,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan ;\n    :isFatherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,\n        data:Magali_Margriet_Eleonoor_van_Vollenhoven,\n        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;\n    :isSonOf data:Pieter_van_Vollenhoven,\n        data:Princess_Margriet .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Aim%C3%A9e_S%C3%B6hngen a :Woman ;\n    :isMotherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,\n        data:Magali_Margriet_Eleonoor_van_Vollenhoven,\n        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .\n\ndata:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman .\n\ndata:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman .\n\ndata:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eleonoor_Stammeijer a :Woman ;\n    :isMotherOf data:Aim%C3%A9e_S%C3%B6hngen .\n\ndata:Hans_S%C3%B6hngen a :Man ;\n    :isFatherOf data:Aim%C3%A9e_S%C3%B6hngen .\n\ndata:Prince_Floris_van_Vollenhoven a :Man ;\n    :hasBirthYear 1975 ;\n    :isBrotherOf data:Prince_Bernhard,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan ;\n    :isFatherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,\n        data:Magali_Margriet_Eleonoor_van_Vollenhoven,\n        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;\n    :isSonOf data:Pieter_van_Vollenhoven,\n        data:Princess_Margriet .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Aim%C3%A9e_S%C3%B6hngen a :Woman ;\n    :isMotherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,\n        data:Magali_Margriet_Eleonoor_van_Vollenhoven,\n        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .\n\ndata:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman .\n\ndata:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman .\n\ndata:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man .\n\n"
+    }
+]

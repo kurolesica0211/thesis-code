@@ -1,0 +1,105 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix esh: <http://example.org/esh#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+:Ancestor a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Female,
+        :Male,
+        :Sex ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:DomainEntity a rdfs:Class,
+        sh:NodeShape .
+
+:Female a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Ancestor,
+        :Male,
+        :Man,
+        :Person,
+        :Woman ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Male a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Ancestor,
+        :Female,
+        :Man,
+        :Person,
+        :Woman ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Sex .
+
+:Man a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Female,
+        :Male,
+        :Sex,
+        :Woman ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+:Person a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Female,
+        :Male,
+        :Sex ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Sex a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Ancestor,
+        :Man,
+        :Person,
+        :Woman ;
+    sh:rule esh:InferTypeRule_DomainEntity .
+
+:Woman a rdfs:Class,
+        sh:NodeShape ;
+    esh:disjointWith :Female,
+        :Male,
+        :Man,
+        :Sex ;
+    sh:rule esh:InferTypeRule_DomainEntity,
+        esh:InferTypeRule_Person .
+
+esh:DisjointWithConstraintComponent a sh:ConstraintComponent ;
+    sh:nodeValidator esh:DisjointWithNodeValidator ;
+    sh:parameter esh:DisjointWithParameter .
+
+esh:DisjointWithNodeValidator a sh:SPARQLSelectValidator ;
+    sh:message "Class disjointness violation." ;
+    sh:select """
+SELECT $this ?disjointClass
+WHERE {
+    $currentShape <http://example.org/esh#disjointWith> ?disjointClass .
+    $this a ?disjointClass .
+}
+""" .
+
+esh:DisjointWithParameter a sh:Parameter ;
+    sh:description "Ensures the focus node is not an instance of the specified class." ;
+    sh:name "disjoint with class" ;
+    sh:nodeKind sh:IRI ;
+    sh:path esh:disjointWith .
+
+esh:InferTypeRule_Sex a sh:TripleRule ;
+    sh:object :Sex ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+esh:InferTypeRule_Person a sh:TripleRule ;
+    sh:object :Person ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+
+esh:InferTypeRule_DomainEntity a sh:TripleRule ;
+    sh:object :DomainEntity ;
+    sh:predicate rdf:type ;
+    sh:subject sh:this .
+

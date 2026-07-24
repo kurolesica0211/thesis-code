@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Franz_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasBrother data:Franz_of_Bavaria ;
+    :hasChild data:Dorothea_of_Bavaria ;
+    :hasDaughter data:Dorothea_of_Bavaria ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isAncestorOf data:Dorothea_of_Bavaria ;
+    :isBloodrelationOf data:Franz_of_Bavaria ;
+    :isBrotherOf data:Franz_of_Bavaria ;
+    :isFatherOf data:Dorothea_of_Bavaria ;
+    :isParentOf data:Dorothea_of_Bavaria ;
+    :isSiblingOf data:Franz_of_Bavaria ;
+    :isUncleOf data:Dorothea_of_Bavaria .
+
+data:Isabella_Antonie_of_Croy a :Ancestor,
+        :Woman ;
+    :hasChild data:Dorothea_of_Bavaria ;
+    :hasDaughter data:Dorothea_of_Bavaria ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Isabella_Antonie_of_Croy ;
+    :isAncestorOf data:Dorothea_of_Bavaria ;
+    :isAuntOf data:Dorothea_of_Bavaria ;
+    :isBloodrelationOf data:Isabella_Antonie_of_Croy ;
+    :isMotherOf data:Dorothea_of_Bavaria ;
+    :isParentOf data:Dorothea_of_Bavaria ;
+    :isSiblingOf data:Isabella_Antonie_of_Croy ;
+    :isSisterOf data:Isabella_Antonie_of_Croy .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:Gottfried_of_Austria ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Gottfried_of_Austria ;
+    :isAncestorOf data:Gottfried_of_Austria ;
+    :isAuntOf data:Gottfried_of_Austria ;
+    :isBloodrelationOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Gottfried_of_Austria ;
+    :isParentOf data:Gottfried_of_Austria ;
+    :isSiblingOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies .
+
+data:Ferdinando_IV_of_Tuscany a :Ancestor,
+        :Man ;
+    :hasBrother data:Ferdinando_IV_of_Tuscany ;
+    :hasChild data:Peter_Ferdinand_of_Austria ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSon data:Peter_Ferdinand_of_Austria ;
+    :isAncestorOf data:Gottfried_of_Austria,
+        data:Peter_Ferdinand_of_Austria ;
+    :isBloodrelationOf data:Ferdinando_IV_of_Tuscany ;
+    :isBrotherOf data:Ferdinando_IV_of_Tuscany ;
+    :isFatherOf data:Peter_Ferdinand_of_Austria ;
+    :isParentOf data:Peter_Ferdinand_of_Austria ;
+    :isSiblingOf data:Ferdinando_IV_of_Tuscany ;
+    :isUncleOf data:Peter_Ferdinand_of_Austria .
+
+data:Peter_Ferdinand_of_Austria a :Ancestor,
+        :Man ;
+    :hasAncestor data:Ferdinando_IV_of_Tuscany ;
+    :hasBrother data:Peter_Ferdinand_of_Austria ;
+    :hasChild data:Gottfried_of_Austria ;
+    :hasFather data:Ferdinando_IV_of_Tuscany ;
+    :hasParent data:Ferdinando_IV_of_Tuscany ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSon data:Gottfried_of_Austria ;
+    :isAncestorOf data:Gottfried_of_Austria ;
+    :isBloodrelationOf data:Peter_Ferdinand_of_Austria ;
+    :isBrotherOf data:Peter_Ferdinand_of_Austria ;
+    :isChildOf data:Ferdinando_IV_of_Tuscany ;
+    :isFatherOf data:Gottfried_of_Austria ;
+    :isParentOf data:Gottfried_of_Austria ;
+    :isSiblingOf data:Peter_Ferdinand_of_Austria ;
+    :isSonOf data:Ferdinando_IV_of_Tuscany ;
+    :isUncleOf data:Gottfried_of_Austria .
+
+data:Dorothea_of_Bavaria a :Woman ;
+    :hasAncestor data:Franz_of_Bavaria,
+        data:Isabella_Antonie_of_Croy ;
+    :hasFather data:Franz_of_Bavaria ;
+    :hasMother data:Isabella_Antonie_of_Croy ;
+    :hasParent data:Franz_of_Bavaria,
+        data:Isabella_Antonie_of_Croy ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasSister data:Dorothea_of_Bavaria ;
+    :isBloodrelationOf data:Dorothea_of_Bavaria ;
+    :isChildOf data:Franz_of_Bavaria,
+        data:Isabella_Antonie_of_Croy ;
+    :isDaughterOf data:Franz_of_Bavaria,
+        data:Isabella_Antonie_of_Croy ;
+    :isSiblingOf data:Dorothea_of_Bavaria ;
+    :isSisterOf data:Dorothea_of_Bavaria .
+
+data:Gottfried_of_Austria a :Man ;
+    :hasAncestor data:Ferdinando_IV_of_Tuscany,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Gottfried_of_Austria ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Peter_Ferdinand_of_Austria ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasRelation data:Dorothea_of_Bavaria,
+        data:Ferdinando_IV_of_Tuscany,
+        data:Franz_of_Bavaria,
+        data:Gottfried_of_Austria,
+        data:Isabella_Antonie_of_Croy,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isBloodrelationOf data:Gottfried_of_Austria ;
+    :isBrotherOf data:Gottfried_of_Austria ;
+    :isChildOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isSiblingOf data:Gottfried_of_Austria ;
+    :isSonOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria .
+

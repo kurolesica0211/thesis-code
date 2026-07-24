@@ -1,0 +1,428 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hans_S%C3%B6hngen a :Ancestor,
+        :Man ;
+    :hasBrother data:Hans_S%C3%B6hngen ;
+    :hasChild data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasDaughter data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAncestorOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Hans_S%C3%B6hngen ;
+    :isBrotherOf data:Hans_S%C3%B6hngen ;
+    :isFatherOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isParentOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isSiblingOf data:Hans_S%C3%B6hngen ;
+    :isUncleOf data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Prince_Floris_van_Vollenhoven ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSon data:Prince_Floris_van_Vollenhoven ;
+    :isAncestorOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Prince_Floris_van_Vollenhoven ;
+    :isParentOf data:Prince_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Prince_Floris_van_Vollenhoven .
+
+data:Princess_Margriet a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Floris_van_Vollenhoven ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Princess_Margriet ;
+    :hasSon data:Prince_Floris_van_Vollenhoven ;
+    :isAncestorOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAuntOf data:Prince_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isMotherOf data:Prince_Floris_van_Vollenhoven ;
+    :isParentOf data:Prince_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Eleonoor_Stammeijer a :Ancestor,
+        :Woman ;
+    :hasChild data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasDaughter data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Eleonoor_Stammeijer ;
+    :isAncestorOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAuntOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isBloodrelationOf data:Eleonoor_Stammeijer ;
+    :isMotherOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isParentOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isSiblingOf data:Eleonoor_Stammeijer ;
+    :isSisterOf data:Eleonoor_Stammeijer .
+
+data:Prince_Bernhard a :Man ;
+    :hasBrother data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSiblingOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isUncleOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+
+data:Prince_Maurits a :Man ;
+    :hasBrother data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSiblingOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isUncleOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+
+data:Prince_Pieter-Christiaan a :Man ;
+    :hasBrother data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSiblingOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isUncleOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+
+data:Aim%C3%A9e_S%C3%B6hngen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen ;
+    :hasChild data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasDaughter data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven ;
+    :hasFather data:Hans_S%C3%B6hngen ;
+    :hasMother data:Eleonoor_Stammeijer ;
+    :hasParent data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasSon data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAncestorOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAuntOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isChildOf data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen ;
+    :isDaughterOf data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen ;
+    :isMotherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isParentOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Aim%C3%A9e_S%C3%B6hngen ;
+    :isSisterOf data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
+    :hasAncestor data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasParent data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven ;
+    :isBloodrelationOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isChildOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :isDaughterOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isSisterOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+
+data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
+    :hasAncestor data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasParent data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven ;
+    :isBloodrelationOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isChildOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :isDaughterOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isSisterOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+
+data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
+    :hasAncestor data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Hans_S%C3%B6hngen,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen ;
+    :hasParent data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSister data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven ;
+    :isBloodrelationOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBrotherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isChildOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isSonOf data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Prince_Floris_van_Vollenhoven .
+
+data:Prince_Floris_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 1975 ;
+    :hasBrother data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasChild data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasDaughter data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Aim%C3%A9e_S%C3%B6hngen,
+        data:Eleonoor_Stammeijer,
+        data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Hans_S%C3%B6hngen,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :hasSon data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isAncestorOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isFatherOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isParentOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven ;
+    :isSiblingOf data:Prince_Bernhard,
+        data:Prince_Floris_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Eliane_Sophia_Carolina_van_Vollenhoven,
+        data:Magali_Margriet_Eleonoor_van_Vollenhoven,
+        data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven .
+

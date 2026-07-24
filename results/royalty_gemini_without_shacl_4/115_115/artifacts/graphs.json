@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincePhilipposOfGreeceAndDenmark a :Man ;\n    :hasBirthYear \"1986\"^^xsd:nonNegativeInteger ;\n    :hasFather data:KingConstantineII ;\n    :hasMother data:QueenAnneMarie .\n\ndata:PrincessMarina a :Woman ;\n    :hasRelation data:PrinceMichael .\n\ndata:QueenSofiaOfSpain a :Woman .\n\ndata:KingConstantineII a :Man .\n\ndata:PrinceMichael a :Man .\n\ndata:QueenAnneMarie a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincePhilipposOfGreeceAndDenmark a :Man ;\n    :hasBirthYear \"1986\"^^xsd:nonNegativeInteger ;\n    :hasFather data:KingConstantineII ;\n    :hasMother data:QueenAnneMarie .\n\ndata:PrincessMarina a :Woman ;\n    :hasRelation data:PrinceMichael .\n\ndata:QueenSofiaOfSpain a :Woman .\n\ndata:KingConstantineII a :Man .\n\ndata:PrinceMichael a :Man .\n\ndata:QueenAnneMarie a :Woman .\n\n"
+    }
+]

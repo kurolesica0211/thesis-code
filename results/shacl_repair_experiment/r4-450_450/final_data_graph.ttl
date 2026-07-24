@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Valerie_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasSex data:Female .
+
+data:Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasSex data:Female .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :knownAs "King Charles III"^^xsd:string .
+
+data:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Maximilian_Hereditary_Prince_of_Baden a :Man,
+        :Person ;
+    :hasMarriageYear 1966 ;
+    :hasSex data:Male .
+
+data:Prince_Andrew_of_Yugoslavia a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :knownAs "Prince Andrew of Yugoslavia"^^xsd:string .
+
+data:Princess_Cecilie a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Christina_of_Hesse a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Gottfried_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :knownAs "Prince Philip, Duke of Edinburgh"^^xsd:string .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

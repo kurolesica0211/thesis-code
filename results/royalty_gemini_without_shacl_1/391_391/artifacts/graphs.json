@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :isAncestorOf data:Amanda_Ellingworth,\n        data:Charles_Prince_of_Wales ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Amanda_Ellingworth a :Person,\n        :Woman ;\n    :formerlyKnownAs \"The Honourable Amanda Knatchbull\"^^xsd:string ;\n    :hasBirthYear 1957 ;\n    :hasFather data:Baron_Brabourne_7th ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Countess_Mountbatten_2nd ;\n    :hasRelation data:Charles_Vincent_Ellingworth ;\n    :knownAs \"Lady Amanda Patricia Victoria Ellingworth\"^^xsd:string .\n\ndata:Baron_Brabourne_7th a :Man,\n        :Person .\n\ndata:Charles_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Countess_Mountbatten_2nd a :Person,\n        :Woman .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :isAncestorOf data:Amanda_Ellingworth,\n        data:Charles_Prince_of_Wales ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Amanda_Ellingworth a :Person,\n        :Woman ;\n    :formerlyKnownAs \"The Honourable Amanda Knatchbull\"^^xsd:string ;\n    :hasBirthYear 1957 ;\n    :hasFather data:Baron_Brabourne_7th ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Countess_Mountbatten_2nd ;\n    :hasRelation data:Charles_Vincent_Ellingworth ;\n    :knownAs \"Lady Amanda Patricia Victoria Ellingworth\"^^xsd:string .\n\ndata:Baron_Brabourne_7th a :Man,\n        :Person .\n\ndata:Charles_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Countess_Mountbatten_2nd a :Person,\n        :Woman .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\n"
+    }
+]

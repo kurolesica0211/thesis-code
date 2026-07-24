@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Constantine-Alexios_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :alsoKnownAs \"Konstant\u00ednos-Al\u00e9xios de Gr\u00e8ce\"^^xsd:string ;\n    :hasBirthYear \"1998\"^^xsd:positiveInteger ;\n    :hasFather data:Crown_Prince_Pavlos ;\n    :hasMother data:Crown_Princess_Marie-Chantal_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Crown_Prince_Pavlos a :Man,\n        :Person ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie_of_Denmark .\n\ndata:Crown_Princess_Marie-Chantal_of_Greece a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Constantine-Alexios_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :alsoKnownAs \"Konstant\u00ednos-Al\u00e9xios de Gr\u00e8ce\"^^xsd:string ;\n    :hasBirthYear \"1998\"^^xsd:positiveInteger ;\n    :hasFather data:Crown_Prince_Pavlos ;\n    :hasMother data:Crown_Princess_Marie-Chantal_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Crown_Prince_Pavlos a :Man,\n        :Person ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie_of_Denmark .\n\ndata:Crown_Princess_Marie-Chantal_of_Greece a :Person,\n        :Woman .\n\n"
+    }
+]

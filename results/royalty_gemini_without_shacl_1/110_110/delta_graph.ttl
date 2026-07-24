@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_Margrave_of_Baden a :Man ;
+    :hasFather data:Maximilian_Margrave_of_Baden ;
+    :hasMother data:Archduchess_Valerie_of_Austria .
+
+data:Archduchess_Valerie_of_Austria a :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
+    :hasMother data:Princess_Rosemary_of_Salm-Salm .
+
+data:Archduke_Hubert_Salvator_of_Austria a :Man .
+
+data:Berthold_Margrave_of_Baden a :Man .
+
+data:Maximilian_Margrave_of_Baden a :Man ;
+    :alsoKnownAs "Max von Baden"^^xsd:string ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Prince_Ludwig_of_Baden ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margarita_of_Baden .
+
+data:Prince_Ludwig_of_Baden a :Man ;
+    :hasBirthYear 1937 .
+
+data:Princess_Margarita_of_Baden a :Woman .
+
+data:Princess_Rosemary_of_Salm-Salm a :Woman .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman .
+

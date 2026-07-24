@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Max a :Man ;\n    :hasFather data:Berthold ;\n    :hasMother data:TheodoraOfGreeceAndDenmark ;\n    :hasSex data:Male .\n\ndata:AliceOfBattenberg a :Woman ;\n    :hasSex data:Female .\n\ndata:AndrewOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:Berthold a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:MarieLouiseOfHanover ;\n    :hasSex data:Male .\n\ndata:MarieLouiseOfHanover a :Woman ;\n    :hasSex data:Female .\n\ndata:Maximilian a :Man ;\n    :hasSex data:Male .\n\ndata:PhilipOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:TheodoraOfGreeceAndDenmark a :Woman ;\n    :hasFather data:AndrewOfGreeceAndDenmark ;\n    :hasMother data:AliceOfBattenberg ;\n    :hasSex data:Female ;\n    :isSisterOf data:PhilipOfGreeceAndDenmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Max a :Man ;\n    :hasFather data:Berthold ;\n    :hasMother data:TheodoraOfGreeceAndDenmark ;\n    :hasSex data:Male .\n\ndata:AliceOfBattenberg a :Woman ;\n    :hasSex data:Female .\n\ndata:AndrewOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:Berthold a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:MarieLouiseOfHanover ;\n    :hasSex data:Male .\n\ndata:MarieLouiseOfHanover a :Woman ;\n    :hasSex data:Female .\n\ndata:Maximilian a :Man ;\n    :hasSex data:Male .\n\ndata:PhilipOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:TheodoraOfGreeceAndDenmark a :Woman ;\n    :hasFather data:AndrewOfGreeceAndDenmark ;\n    :hasMother data:AliceOfBattenberg ;\n    :hasSex data:Female ;\n    :isSisterOf data:PhilipOfGreeceAndDenmark .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Max a :Man ;\n    :hasFather data:Berthold ;\n    :hasMother data:TheodoraOfGreeceAndDenmark ;\n    :hasSex data:Male .\n\ndata:AliceOfBattenberg a :Woman ;\n    :hasSex data:Female .\n\ndata:AndrewOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:Berthold a :Man ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:MarieLouiseOfHanover ;\n    :hasSex data:Male .\n\ndata:MarieLouiseOfHanover a :Woman ;\n    :hasSex data:Female .\n\ndata:Maximilian a :Man ;\n    :hasSex data:Male .\n\ndata:PhilipOfGreeceAndDenmark a :Man ;\n    :hasSex data:Male .\n\ndata:TheodoraOfGreeceAndDenmark a :Woman ;\n    :hasFather data:AndrewOfGreeceAndDenmark ;\n    :hasMother data:AliceOfBattenberg ;\n    :hasSex data:Female ;\n    :isSisterOf data:PhilipOfGreeceAndDenmark .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

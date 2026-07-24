@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amanda_Patricia_Victoria_Ellingworth a :Person,
+        :Woman ;
+    :formerlyKnownAs "The Honourable Amanda Knatchbull"^^xsd:string ;
+    :hasAncestor data:Louis_Mountbatten,
+        data:Queen_Victoria ;
+    :hasBirthYear "1957"^^xsd:positiveInteger ;
+    :hasFather data:7th_Baron_Brabourne ;
+    :hasMarriageYear "1987"^^xsd:positiveInteger ;
+    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:Charles_Vincent_Ellingworth .
+
+data:Prince_Charles a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman .
+
+data:7th_Baron_Brabourne a :Ancestor,
+        :Man,
+        :Person .
+
+data:Charles_Vincent_Ellingworth a :Man,
+        :Person .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear "1979"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Alice ;
+    :isUncleOf data:Prince_Philip .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Princess_Alice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+

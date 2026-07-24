@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_William_IV a :Man,
+        :Person ;
+    :isBrotherOf data:Wilhelm_I .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasBirthYear 1859 ;
+    :hasDaughter data:Victoria_Louise ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1881,
+        1922 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Augusta_Victoria,
+        data:Hermine_Reuss_of_Greiz ;
+    :hasSister data:Sophia ;
+    :hasSon data:Joachim .
+
+data:Augusta_Victoria a :Person,
+        :Woman .
+
+data:Constantine a :Man,
+        :Person .
+
+data:Frederick_III a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_I .
+
+data:Hermine_Reuss_of_Greiz a :Person,
+        :Woman .
+
+data:Joachim a :Man,
+        :Person .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Sophia a :Person,
+        :Woman ;
+    :hasRelation data:Constantine .
+
+data:Victoria_Louise a :Person,
+        :Woman .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Wilhelm_I a :Man,
+        :Person .
+

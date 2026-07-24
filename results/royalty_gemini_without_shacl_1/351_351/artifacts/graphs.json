@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrys%C3%AD_Vardinogi%C3%A1nni a :Woman ;\n    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;\n    :hasMother data:Agapi_Politi .\n\ndata:Irene a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Marina a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sof%C3%ADa a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Agapi_Politi a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\ndata:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Man .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:2010 ;\n    :hasMother data:Anne-Marie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrys%C3%AD_Vardinogi%C3%A1nni a :Woman ;\n    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;\n    :hasMother data:Agapi_Politi .\n\ndata:Irene a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Marina a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sof%C3%ADa a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:2010 a :DomainEntity .\n\ndata:Agapi_Politi a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\ndata:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Man .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:2010 ;\n    :hasMother data:Anne-Marie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrys%C3%AD_Vardinogi%C3%A1nni a :Woman ;\n    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;\n    :hasMother data:Agapi_Politi .\n\ndata:Irene a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Marina a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sof%C3%ADa a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:2010 a :DomainEntity .\n\ndata:Agapi_Politi a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\ndata:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Man .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:2010 ;\n    :hasMother data:Anne-Marie .\n\n"
+    }
+]

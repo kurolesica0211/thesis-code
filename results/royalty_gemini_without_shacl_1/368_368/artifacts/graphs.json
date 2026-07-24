@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armin_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bernhard_of_Biesterfeld_nephew a :Man,\n        :Person ;\n    :hasFather data:Bernhard_of_Biesterfeld_brother_of_Leopold .\n\ndata:Chlodwig_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Ernst_Hereditary_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Julius_Prince_of_Lippe a :Man,\n        :Person ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bernhard_of_Biesterfeld_brother_of_Leopold a :Man,\n        :Person ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1919 .\n\ndata:Ernest_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_of_Wartensleben a :Person,\n        :Woman .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline_of_Wartensleben ;\n    :hasRelation data:Bertha_of_Hesse-Philippsthal-Barchfeld .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Armin_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bernhard_of_Biesterfeld_nephew a :Man,\n        :Person ;\n    :hasFather data:Bernhard_of_Biesterfeld_brother_of_Leopold .\n\ndata:Chlodwig_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Ernst_Hereditary_Prince_of_Lippe a :Man,\n        :Person ;\n    :isSonOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Julius_Prince_of_Lippe a :Man,\n        :Person ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bernhard_of_Biesterfeld_brother_of_Leopold a :Man,\n        :Person ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe .\n\ndata:Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1919 .\n\ndata:Ernest_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_of_Wartensleben a :Person,\n        :Woman .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline_of_Wartensleben ;\n    :hasRelation data:Bertha_of_Hesse-Philippsthal-Barchfeld .\n\n"
+    }
+]

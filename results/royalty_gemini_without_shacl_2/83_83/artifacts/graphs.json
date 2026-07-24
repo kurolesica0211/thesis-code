@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :isSiblingOf data:Andrew_Mountbatten-Windsor .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :isMotherOf data:Beatrice,\n        data:Eugenie .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person ;\n    :isFatherOf data:Beatrice,\n        data:Eugenie .\n\ndata:Jack_Brooksbank a :Man,\n        :Person ;\n    :isFatherOf data:August_Brooksbank,\n        data:Ernest_Brooksbank .\n\ndata:August_Brooksbank a :Man,\n        :Person .\n\ndata:Ernest_Brooksbank a :Man,\n        :Person .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasMarriageYear 2018 ;\n    :hasRelation data:Jack_Brooksbank ;\n    :isMotherOf data:August_Brooksbank,\n        data:Ernest_Brooksbank ;\n    :isSiblingOf data:Beatrice ;\n    :knownAs \"Eugenie Victoria Helena\"^^xsd:string .\n\ndata:Beatrice a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :isSiblingOf data:Andrew_Mountbatten-Windsor .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :isMotherOf data:Beatrice,\n        data:Eugenie .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person ;\n    :isFatherOf data:Beatrice,\n        data:Eugenie .\n\ndata:Jack_Brooksbank a :Man,\n        :Person ;\n    :isFatherOf data:August_Brooksbank,\n        data:Ernest_Brooksbank .\n\ndata:August_Brooksbank a :Man,\n        :Person .\n\ndata:Ernest_Brooksbank a :Man,\n        :Person .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasMarriageYear 2018 ;\n    :hasRelation data:Jack_Brooksbank ;\n    :isMotherOf data:August_Brooksbank,\n        data:Ernest_Brooksbank ;\n    :isSiblingOf data:Beatrice ;\n    :knownAs \"Eugenie Victoria Helena\"^^xsd:string .\n\ndata:Beatrice a :Person,\n        :Woman .\n\n"
+    }
+]

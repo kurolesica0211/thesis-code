@@ -1,0 +1,51 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear data:1998,\n        data:2019 ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear data:1998,\n        data:2019,\n        1998,\n        2019 ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear data:1998,\n        data:2019,\n        1998,\n        2019 ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear data:1998,\n        data:2019 ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear data:1998,\n        data:2019,\n        \"1998\"^^xsd:string,\n        \"2019\"^^xsd:string ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear \"1998\"^^xsd:string,\n        \"2019\"^^xsd:string ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte_of_Denmark a :Woman ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;\n    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,\n        data:Gustav_of_Sayn-Wittgenstein-Berleburg,\n        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear \"1998\"^^xsd:string,\n        \"2019\"^^xsd:string ;\n    :hasMother data:Benedikte_of_Denmark .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .\n\n"
+    }
+]

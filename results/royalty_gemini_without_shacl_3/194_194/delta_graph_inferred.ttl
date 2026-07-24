@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paul_George_Olkhovsky a :Man,
+        :Person ;
+    :hasBirthYear 1960 ;
+    :hasBrother data:Paul_George_Olkhovsky ;
+    :hasRelation data:Paul_George_Olkhovsky ;
+    :isBloodrelationOf data:Paul_George_Olkhovsky ;
+    :isBrotherOf data:Paul_George_Olkhovsky ;
+    :isSiblingOf data:Paul_George_Olkhovsky .
+
+data:Nina_Georgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1901 ;
+    :hasChild data:David_Chavchavadze ;
+    :hasDeathYear 1974 ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :hasSister data:Nina_Georgievna ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze ;
+    :isAuntOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Nina_Georgievna ;
+    :isMotherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Nina_Georgievna ;
+    :isSisterOf data:Nina_Georgievna .
+
+data:Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasBrother data:Paul_Chavchavadze ;
+    :hasChild data:David_Chavchavadze ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Paul_Chavchavadze ;
+    :isBrotherOf data:Paul_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Paul_Chavchavadze ;
+    :isUncleOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Man,
+        :Person ;
+    :hasAncestor data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:David_Chavchavadze ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasMother data:Nina_Georgievna ;
+    :hasParent data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :isBloodrelationOf data:David_Chavchavadze ;
+    :isBrotherOf data:David_Chavchavadze ;
+    :isChildOf data:Nina_Georgievna,
+        data:Paul_Chavchavadze ;
+    :isSiblingOf data:David_Chavchavadze ;
+    :isSonOf data:Nina_Georgievna,
+        data:Paul_Chavchavadze .
+

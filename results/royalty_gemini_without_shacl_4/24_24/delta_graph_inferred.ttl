@@ -1,0 +1,242 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasChild data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isAncestorOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isFatherOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Princess_Marie_of_Windisch-Graetz ;
+    :isAncestorOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isMotherOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isSisterOf data:Princess_Marie_of_Windisch-Graetz .
+
+data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg ;
+    :hasDeathYear 1883 ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg ;
+    :hasDeathYear 1942 ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Duke_Joseph_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg ;
+    :hasDeathYear 1889 ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :alsoKnownAs "Manette"^^xsd:string ;
+    :hasAncestor data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+    :hasParent data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasRelation data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isDaughterOf data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isSiblingOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Maria_Luise_of_Mecklenburg-Schwerin,
+        data:Duke_Heinrich_Borwin_of_Mecklenburg-Schwerin,
+        data:Duke_Joseph_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+

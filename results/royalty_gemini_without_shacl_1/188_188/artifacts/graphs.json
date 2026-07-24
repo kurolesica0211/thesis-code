@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMarriageYear data:1906 ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Ferdinand_of_Bavaria .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Ferdinand_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;\n    :hasMother data:Mar%C3%ADa_de_la_Paz_of_Spain .\n\ndata:Ludwig_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_la_Paz_of_Spain a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMarriageYear data:1906,\n        \"1906\"^^xsd:string ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Ferdinand_of_Bavaria .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Ferdinand_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;\n    :hasMother data:Mar%C3%ADa_de_la_Paz_of_Spain .\n\ndata:Ludwig_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_la_Paz_of_Spain a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMarriageYear \"1906\"^^xsd:string ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Ferdinand_of_Bavaria .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Ferdinand_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;\n    :hasMother data:Mar%C3%ADa_de_la_Paz_of_Spain .\n\ndata:Ludwig_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_la_Paz_of_Spain a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mar%C3%ADa_Teresa_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1912 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMarriageYear \"1906\"^^xsd:string ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Ferdinand_of_Bavaria .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Ferdinand_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;\n    :hasMother data:Mar%C3%ADa_de_la_Paz_of_Spain .\n\ndata:Ludwig_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_la_Paz_of_Spain a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\n"
+    }
+]

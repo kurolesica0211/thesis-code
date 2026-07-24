@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Louis_of_Wales a :Man,
+        :Person ;
+    :hasBirthYear "2018"^^xsd:positiveInteger ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :isSiblingOf data:Prince_George,
+        data:Princess_Charlotte .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasDeathYear "2022"^^xsd:positiveInteger .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Princess_Charlotte a :Person,
+        :Woman .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AugustBrooksbank a :Man,\n        :Person ;\n    :isChildOf data:Eugenie,\n        data:JackBrooksbank .\n\ndata:CharlesIII a :Man,\n        :Person .\n\ndata:ErnestBrooksbank a :Man,\n        :Person ;\n    :isChildOf data:Eugenie,\n        data:JackBrooksbank .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:Beatrice a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear 2018 ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:JackBrooksbank ;\n    :isSiblingOf data:Beatrice .\n\ndata:JackBrooksbank a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AugustBrooksbank a :Man,\n        :Person ;\n    :isChildOf data:Eugenie,\n        data:JackBrooksbank .\n\ndata:CharlesIII a :Man,\n        :Person .\n\ndata:ErnestBrooksbank a :Man,\n        :Person ;\n    :isChildOf data:Eugenie,\n        data:JackBrooksbank .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:Beatrice a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\ndata:Eugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear 2018 ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:JackBrooksbank ;\n    :isSiblingOf data:Beatrice .\n\ndata:JackBrooksbank a :Man,\n        :Person .\n\n"
+    }
+]

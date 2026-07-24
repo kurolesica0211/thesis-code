@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/497_497",
+  "text_file": "Q969754.txt",
+  "text_key": "Q969754",
+  "article": "https://en.wikipedia.org/wiki/Prince_Ferdinand,_Duke_of_Montpensier",
+  "article_key": "Prince Ferdinand, Duke of Montpensier",
+  "main_entity": {
+    "uri": "http://example.com/data#Ferdinand_dOrléans-_Duke_of_Montpensier",
+    "qid": "Q969754",
+    "label": "Ferdinand d'Orléans, Duke of Montpensier"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Ferdinand_dOrléans-_Duke_of_Montpensier",
+      "qid": "Q969754",
+      "label": "Ferdinand d'Orléans, Duke of Montpensier",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_María_Isabel_of_Orléans",
+      "qid": "Q242879",
+      "label": "Princess María Isabel of Orléans",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Amélie_of_Orléans",
+      "qid": "Q236965",
+      "label": "Amélie of Orléans",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Marie_Isabelle_dOrleans",
+      "extracted_local_name": "Marie_Isabelle_dOrleans",
+      "embedding_text": "Marie Isabelle d Orleans",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.6842105263157895,
+      "ground_truth_uri": "http://example.com/data#Princess_María_Isabel_of_Orléans",
+      "ground_truth_qid": "Q242879",
+      "ground_truth_label": "Princess María Isabel of Orléans",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria Isabella",
+      "best_candidate_label": "Princess María Isabel of Orléans",
+      "best_candidate_qid": "Q242879",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6842105263157895
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ferdinand_dOrleans",
+      "extracted_local_name": "Ferdinand_dOrleans",
+      "embedding_text": "Ferdinand d Orleans",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinand d Orléans- Duke of Montpensier",
+      "best_candidate_label": "Ferdinand d'Orléans, Duke of Montpensier",
+      "best_candidate_qid": "Q969754",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6101694915254238
+    },
+    {
+      "extracted_uri": "http://example.org/data/Isabel_de_Ibarreta_y_Uhagon",
+      "extracted_local_name": "Isabel_de_Ibarreta_y_Uhagon",
+      "embedding_text": "Isabel de Ibarreta y Uhagon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria Isabel of Orléans, Infanta of Spain",
+      "best_candidate_label": "Princess María Isabel of Orléans",
+      "best_candidate_qid": "Q242879",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4155844155844156
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta",
+      "extracted_local_name": "Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta",
+      "embedding_text": "Maria Isabel Gonzalez de Olaneta e Ibarreta",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria Isabel of Orléans, Infanta of Spain",
+      "best_candidate_label": "Princess María Isabel of Orléans",
+      "best_candidate_qid": "Q242879",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5161290322580645
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philippe_dOrleans_Count_of_Paris",
+      "extracted_local_name": "Philippe_dOrleans_Count_of_Paris",
+      "embedding_text": "Philippe d Orleans Count of Paris",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marie Amelie d'Orleans",
+      "best_candidate_label": "Amélie of Orléans",
+      "best_candidate_qid": "Q236965",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4727272727272727
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo",
+      "extracted_local_name": "Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo",
+      "embedding_text": "Ulpiano Gonzalez de Olaneta y Gonzalez de Ocampo",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinand d Orléans- Duke of Montpensier",
+      "best_candidate_label": "Ferdinand d'Orléans, Duke of Montpensier",
+      "best_candidate_qid": "Q969754",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.29545454545454547
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 1,
+    "entities_unmatched": 5
+  }
+}

@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Gabriella_Kingston a :Person,
+        :Woman ;
+    :hasBirthYear 1981 ;
+    :hasMarriageYear 2019 ;
+    :isDaughterOf data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :knownAs data:Lady_Gabriella_Windsor .
+
+data:Thomas_Henry_Robin_Kingston a :Man,
+        :Person ;
+    :hasBirthYear 1978 ;
+    :hasDeathYear 2024 .
+
+data:Lady_Gabriella_Windsor a :Person,
+        :Woman .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person .
+
+data:Princess_Michael_of_Kent a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gottfried_of_Austria a :Man ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasMarriageYear 1938 ;\n    :hasRelation data:Dorothea_of_Bavaria ;\n    :isSonOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,\n        data:Peter_Ferdinand_of_Austria .\n\ndata:Dorothea_of_Bavaria a :Woman ;\n    :isDaughterOf data:Franz_of_Bavaria,\n        data:Isabella_Antonie_of_Croy .\n\ndata:Ferdinando_IV_of_Tuscany a :Man .\n\ndata:Franz_of_Bavaria a :Man .\n\ndata:Isabella_Antonie_of_Croy a :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Man ;\n    :isSonOf data:Ferdinando_IV_of_Tuscany .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gottfried_of_Austria a :Man ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasMarriageYear 1938 ;\n    :hasRelation data:Dorothea_of_Bavaria ;\n    :isSonOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,\n        data:Peter_Ferdinand_of_Austria .\n\ndata:Dorothea_of_Bavaria a :Woman ;\n    :isDaughterOf data:Franz_of_Bavaria,\n        data:Isabella_Antonie_of_Croy .\n\ndata:Ferdinando_IV_of_Tuscany a :Man .\n\ndata:Franz_of_Bavaria a :Man .\n\ndata:Isabella_Antonie_of_Croy a :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Man ;\n    :isSonOf data:Ferdinando_IV_of_Tuscany .\n\n"
+    }
+]

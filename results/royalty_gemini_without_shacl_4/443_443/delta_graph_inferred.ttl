@@ -1,0 +1,334 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Mary_Chamberlayne-Macdonald a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charlotte_Lindesay-Bethune ;
+    :hasDaughter data:Charlotte_Lindesay-Bethune ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Diana_Mary_Chamberlayne-Macdonald ;
+    :isAncestorOf data:Charlotte_Lindesay-Bethune,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Charlotte_Lindesay-Bethune ;
+    :isBloodrelationOf data:Diana_Mary_Chamberlayne-Macdonald ;
+    :isMotherOf data:Charlotte_Lindesay-Bethune ;
+    :isParentOf data:Charlotte_Lindesay-Bethune ;
+    :isSiblingOf data:Diana_Mary_Chamberlayne-Macdonald ;
+    :isSisterOf data:Diana_Mary_Chamberlayne-Macdonald .
+
+data:James_Lindesay-Bethune a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:James_Lindesay-Bethune ;
+    :hasChild data:Charlotte_Lindesay-Bethune ;
+    :hasDaughter data:Charlotte_Lindesay-Bethune ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :isAncestorOf data:Charlotte_Lindesay-Bethune,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:James_Lindesay-Bethune ;
+    :isBrotherOf data:James_Lindesay-Bethune ;
+    :isFatherOf data:Charlotte_Lindesay-Bethune ;
+    :isParentOf data:Charlotte_Lindesay-Bethune ;
+    :isSiblingOf data:James_Lindesay-Bethune ;
+    :isUncleOf data:Charlotte_Lindesay-Bethune .
+
+data:Sofia_Landaluce_y_Melgarejo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasChild data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSon data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isMotherOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isSisterOf data:Sofia_Landaluce_y_Melgarejo .
+
+data:Anne_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pedro_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Anne_of_Orleans ;
+    :hasSon data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Anne_of_Orleans ;
+    :isMotherOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Anne_of_Orleans ;
+    :isSisterOf data:Anne_of_Orleans .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Pedro_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSon data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Pedro_of_Bourbon-Two_Sicilies .
+
+data:Pedro_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Pedro_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Anne_of_Orleans ;
+    :hasParent data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSon data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Pedro_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Jaime_of_Bourbon-Two_Sicilies .
+
+data:Charlotte_Lindesay-Bethune a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Diana_Mary_Chamberlayne-Macdonald,
+        data:James_Lindesay-Bethune ;
+    :hasChild data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :hasFather data:James_Lindesay-Bethune ;
+    :hasMother data:Diana_Mary_Chamberlayne-Macdonald ;
+    :hasParent data:Diana_Mary_Chamberlayne-Macdonald,
+        data:James_Lindesay-Bethune ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Charlotte_Lindesay-Bethune ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Charlotte_Lindesay-Bethune ;
+    :isChildOf data:Diana_Mary_Chamberlayne-Macdonald,
+        data:James_Lindesay-Bethune ;
+    :isDaughterOf data:Diana_Mary_Chamberlayne-Macdonald,
+        data:James_Lindesay-Bethune ;
+    :isMotherOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Charlotte_Lindesay-Bethune ;
+    :isSisterOf data:Charlotte_Lindesay-Bethune .
+
+data:Francesca_Sofia_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Charlotte_Lindesay-Bethune ;
+    :hasParent data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies .
+
+data:Ines_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasFather data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Charlotte_Lindesay-Bethune ;
+    :hasParent data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Charlotte_Lindesay-Bethune,
+        data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies .
+
+data:Jaime_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasBirthYear 1993 ;
+    :hasBrother data:Jaime_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Pedro_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 2021 ;
+    :hasMother data:Sofia_Landaluce_y_Melgarejo ;
+    :hasParent data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasRelation data:Anne_of_Orleans,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Charlotte_Lindesay-Bethune,
+        data:Diana_Mary_Chamberlayne-Macdonald,
+        data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies,
+        data:Jaime_of_Bourbon-Two_Sicilies,
+        data:James_Lindesay-Bethune,
+        data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :isAncestorOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :isFatherOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Jaime_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Pedro_of_Bourbon-Two_Sicilies,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :isUncleOf data:Francesca_Sofia_of_Bourbon-Two_Sicilies,
+        data:Ines_of_Bourbon-Two_Sicilies .
+

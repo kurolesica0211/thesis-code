@@ -1,0 +1,10 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:KingCharlesIII a :Ancestor ;
+    :isAncestorOf data:LilibetDianaMountbattenWindsor .
+
+data:MeghanDuchessOfSussex a :Ancestor .
+
+data:PrinceHarry a :Ancestor .
+

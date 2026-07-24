@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ElliChalikiopoulos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MarinaKarella ;
+    :hasDaughter data:MarinaKarella ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :hasSister data:ElliChalikiopoulos ;
+    :isAncestorOf data:MarinaKarella ;
+    :isAuntOf data:MarinaKarella ;
+    :isBloodrelationOf data:ElliChalikiopoulos ;
+    :isMotherOf data:MarinaKarella ;
+    :isParentOf data:MarinaKarella ;
+    :isSiblingOf data:ElliChalikiopoulos ;
+    :isSisterOf data:ElliChalikiopoulos .
+
+data:TheodorosKarellas a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:TheodorosKarellas ;
+    :hasChild data:MarinaKarella ;
+    :hasDaughter data:MarinaKarella ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :isAncestorOf data:MarinaKarella ;
+    :isBloodrelationOf data:TheodorosKarellas ;
+    :isBrotherOf data:TheodorosKarellas ;
+    :isFatherOf data:MarinaKarella ;
+    :isParentOf data:MarinaKarella ;
+    :isSiblingOf data:TheodorosKarellas ;
+    :isUncleOf data:MarinaKarella .
+
+data:GeorgeIGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIGreece ;
+    :hasChild data:ChristopherOfGreeceAndDenmark ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :hasSon data:ChristopherOfGreeceAndDenmark ;
+    :isAncestorOf data:ChristopherOfGreeceAndDenmark,
+        data:MichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GeorgeIGreece ;
+    :isBrotherOf data:GeorgeIGreece ;
+    :isFatherOf data:ChristopherOfGreeceAndDenmark ;
+    :isParentOf data:ChristopherOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeIGreece ;
+    :isUncleOf data:ChristopherOfGreeceAndDenmark .
+
+data:JeanOrleansGuise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JeanOrleansGuise ;
+    :hasChild data:FrancoiseOrleans ;
+    :hasDaughter data:FrancoiseOrleans ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :isAncestorOf data:FrancoiseOrleans,
+        data:MichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:JeanOrleansGuise ;
+    :isBrotherOf data:JeanOrleansGuise ;
+    :isFatherOf data:FrancoiseOrleans ;
+    :isParentOf data:FrancoiseOrleans ;
+    :isSiblingOf data:JeanOrleansGuise ;
+    :isUncleOf data:FrancoiseOrleans .
+
+data:ChristopherOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeIGreece ;
+    :hasBrother data:ChristopherOfGreeceAndDenmark ;
+    :hasChild data:MichaelOfGreeceAndDenmark ;
+    :hasFather data:GeorgeIGreece ;
+    :hasParent data:GeorgeIGreece ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :hasSon data:MichaelOfGreeceAndDenmark ;
+    :isAncestorOf data:MichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:ChristopherOfGreeceAndDenmark ;
+    :isBrotherOf data:ChristopherOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeIGreece ;
+    :isFatherOf data:MichaelOfGreeceAndDenmark ;
+    :isParentOf data:MichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:ChristopherOfGreeceAndDenmark ;
+    :isSonOf data:GeorgeIGreece ;
+    :isUncleOf data:MichaelOfGreeceAndDenmark .
+
+data:FrancoiseOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:JeanOrleansGuise ;
+    :hasChild data:MichaelOfGreeceAndDenmark ;
+    :hasFather data:JeanOrleansGuise ;
+    :hasParent data:JeanOrleansGuise ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :hasSister data:FrancoiseOrleans ;
+    :hasSon data:MichaelOfGreeceAndDenmark ;
+    :isAncestorOf data:MichaelOfGreeceAndDenmark ;
+    :isAuntOf data:MichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:FrancoiseOrleans ;
+    :isChildOf data:JeanOrleansGuise ;
+    :isDaughterOf data:JeanOrleansGuise ;
+    :isMotherOf data:MichaelOfGreeceAndDenmark ;
+    :isParentOf data:MichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:FrancoiseOrleans ;
+    :isSisterOf data:FrancoiseOrleans .
+
+data:MarinaKarella a :Person,
+        :Woman ;
+    :hasAncestor data:ElliChalikiopoulos,
+        data:TheodorosKarellas ;
+    :hasFather data:TheodorosKarellas ;
+    :hasMother data:ElliChalikiopoulos ;
+    :hasParent data:ElliChalikiopoulos,
+        data:TheodorosKarellas ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :hasSister data:MarinaKarella ;
+    :isBloodrelationOf data:MarinaKarella ;
+    :isChildOf data:ElliChalikiopoulos,
+        data:TheodorosKarellas ;
+    :isDaughterOf data:ElliChalikiopoulos,
+        data:TheodorosKarellas ;
+    :isSiblingOf data:MarinaKarella ;
+    :isSisterOf data:MarinaKarella .
+
+data:MichaelOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasAncestor data:ChristopherOfGreeceAndDenmark,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:MichaelOfGreeceAndDenmark ;
+    :hasDeathYear 2024 ;
+    :hasFather data:ChristopherOfGreeceAndDenmark ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:FrancoiseOrleans ;
+    :hasParent data:ChristopherOfGreeceAndDenmark,
+        data:FrancoiseOrleans ;
+    :hasRelation data:ChristopherOfGreeceAndDenmark,
+        data:ElliChalikiopoulos,
+        data:FrancoiseOrleans,
+        data:GeorgeIGreece,
+        data:JeanOrleansGuise,
+        data:MarinaKarella,
+        data:MichaelOfGreeceAndDenmark,
+        data:TheodorosKarellas ;
+    :isBloodrelationOf data:MichaelOfGreeceAndDenmark ;
+    :isBrotherOf data:MichaelOfGreeceAndDenmark ;
+    :isChildOf data:ChristopherOfGreeceAndDenmark,
+        data:FrancoiseOrleans ;
+    :isSiblingOf data:MichaelOfGreeceAndDenmark ;
+    :isSonOf data:ChristopherOfGreeceAndDenmark,
+        data:FrancoiseOrleans .
+

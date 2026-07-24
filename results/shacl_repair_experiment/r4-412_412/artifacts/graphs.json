@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein a :Man,\n        :Person ;\n    :alsoKnownAs \"Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of L\u00f6wenstein-Wertheim-Rosenberg\"^^xsd:string ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasSex data:Male_Sex ;\n    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein a :Man,\n        :Person ;\n    :hasSex data:Male_Sex .\n\ndata:Male_Sex a :Male .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "a6154d1e-c37a-4ed3-9f17-ad60460d5654",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Carl-Friedrich_L%C3%B6wenstein> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Alois-Konstantin_L%C3%B6wenstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Carl-Friedrich_L%C3%B6wenstein> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Alois-Konstantin_L%C3%B6wenstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Carl-Friedrich_L%C3%B6wenstein> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Alois-Konstantin_L%C3%B6wenstein> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein a :Man,\n        :Person ;\n    :alsoKnownAs \"Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of L\u00f6wenstein-Wertheim-Rosenberg\"^^xsd:string ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasSex data:Male_Sex ;\n    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male_Sex .\n\ndata:Male_Sex a :Male .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "a1a320d6-d592-4a28-9426-4a4e93af2bd5",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein a :Man,\n        :Person ;\n    :alsoKnownAs \"Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of L\u00f6wenstein-Wertheim-Rosenberg\"^^xsd:string ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasSex data:Male_Sex ;\n    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male_Sex .\n\ndata:Male_Sex a :Male .\n\n"
+    }
+]

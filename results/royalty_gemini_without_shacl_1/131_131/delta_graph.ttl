@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Sof%C3%ADa a :Woman ;
+    :hasFather data:King_Felipe_VI ;
+    :hasMother data:Queen_Letizia .
+
+data:Leonor%2C_Princess_of_Asturias a :Woman ;
+    :hasBirthYear 2005 ;
+    :hasFather data:King_Felipe_VI ;
+    :hasMother data:Queen_Letizia .
+
+data:King_Juan_Carlos_I a :Man .
+
+data:Queen_Sof%C3%ADa a :Woman .
+
+data:King_Felipe_VI a :Man ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa .
+
+data:Queen_Letizia a :Woman .
+

@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_Feodorovna_of_Russia a :Person,
+        :Woman .
+
+data:Maria_Pavlovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:Alexandra_Georgievna_of_Russia ;
+    :hasRelation data:Sergei_Putyatin,
+        data:Wilhelm_of_Sweden ;
+    :hasSon data:Lennart_Bernadotte,
+        data:Roman_Sergeievich_Putyatin ;
+    :knownAs data:Maria_Pavlovna_the_Younger .
+
+data:Sergei_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Alexander_II_of_Russia .
+
+data:Dmitri_Pavlovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_Georgievna_of_Russia .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_of_Sweden .
+
+data:Maria_Pavlovna_the_Younger a :Person .
+
+data:Roman_Sergeievich_Putyatin a :Man,
+        :Person ;
+    :hasFather data:Sergei_Putyatin .
+
+data:Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Alexandra_Georgievna_of_Russia a :Person,
+        :Woman .
+
+data:Paul_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Alexander_II_of_Russia .
+
+data:Sergei_Putyatin a :Man,
+        :Person .
+
+data:Wilhelm_of_Sweden a :Man,
+        :Person .
+

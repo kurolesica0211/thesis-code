@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_son_of_Amedeo a :Man,\n        :Person ;\n    :isSonOf data:Prince_Amedeo_of_Savoy-Aosta .\n\ndata:Emanuele_Filiberto_Prince_of_Venice a :Man,\n        :Person ;\n    :isSonOf data:Vittorio_Emanuele_Prince_of_Naples .\n\ndata:Princess_Maria_Gabriella_of_Savoy a :Person,\n        :Woman ;\n    :isSisterOf data:Vittorio_Emanuele_Prince_of_Naples .\n\ndata:Henri_comte_de_Paris a :Man,\n        :Person .\n\ndata:Prince_Aimone_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Prince_Amedeo_of_Savoy-Aosta a :Man,\n        :Person ;\n    :hasDeathYear 2021 ;\n    :hasFather data:Prince_Aimone_Duke_of_Aosta ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Claude_of_Orl%C3%A9ans .\n\ndata:Princess_Claude_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasFather data:Henri_comte_de_Paris ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman .\n\ndata:Vittorio_Emanuele_Prince_of_Naples a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_son_of_Amedeo a :Man,\n        :Person ;\n    :isSonOf data:Prince_Amedeo_of_Savoy-Aosta .\n\ndata:Emanuele_Filiberto_Prince_of_Venice a :Man,\n        :Person ;\n    :isSonOf data:Vittorio_Emanuele_Prince_of_Naples .\n\ndata:Princess_Maria_Gabriella_of_Savoy a :Person,\n        :Woman ;\n    :isSisterOf data:Vittorio_Emanuele_Prince_of_Naples .\n\ndata:Henri_comte_de_Paris a :Man,\n        :Person .\n\ndata:Prince_Aimone_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Prince_Amedeo_of_Savoy-Aosta a :Man,\n        :Person ;\n    :hasDeathYear 2021 ;\n    :hasFather data:Prince_Aimone_Duke_of_Aosta ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Claude_of_Orl%C3%A9ans .\n\ndata:Princess_Claude_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasFather data:Henri_comte_de_Paris ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman .\n\ndata:Vittorio_Emanuele_Prince_of_Naples a :Man,\n        :Person .\n\n"
+    }
+]

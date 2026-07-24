@@ -1,0 +1,584 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Wilhelm_German_Crown_Prince ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :isAuntOf data:Wilhelm_German_Crown_Prince ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Wilhelm_German_Crown_Prince ;
+    :isParentOf data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBloodrelationOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isAuntOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSon data:Wilhelm_German_Crown_Prince ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_brother ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Wilhelm_German_Crown_Prince ;
+    :isParentOf data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Wilhelm_German_Crown_Prince .
+
+data:Alexandrine_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBirthYear "1915"^^xsd:positiveInteger ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasDeathYear "1980"^^xsd:positiveInteger ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isDaughterOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSisterOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother .
+
+data:Cecilie_sister a :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isDaughterOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSisterOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother .
+
+data:Frederick a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Hubertus a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Louis_Ferdinand a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Wilhelm_brother a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBrotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasChild data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasDaughter data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isAuntOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBloodrelationOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isDaughterOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isParentOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Wilhelm_German_Crown_Prince ;
+    :hasChild data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :hasDaughter data:Alexandrine_of_Prussia,
+        data:Cecilie_sister ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Alexandrine_of_Prussia,
+        data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II,
+        data:Wilhelm_brother ;
+    :hasSon data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isAncestorOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isBloodrelationOf data:Wilhelm_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isFatherOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isParentOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother ;
+    :isSiblingOf data:Wilhelm_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Alexandrine_of_Prussia,
+        data:Cecilie_sister,
+        data:Frederick,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother .
+

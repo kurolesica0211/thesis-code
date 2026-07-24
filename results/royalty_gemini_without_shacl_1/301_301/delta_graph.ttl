@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
+        :Woman ;
+    :hasBirthYear "2020"^^xsd:string ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
+
+data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear "2015"^^xsd:string ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
+
+data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
+        :Woman ;
+    :hasBirthYear "2020"^^xsd:string ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
+
+data:Alexandra_Blahova a :Person,
+        :Woman .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Prince_Andreas_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMother data:Lady_Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
+
+data:Tatiana_von_Preussen a :Person,
+        :Woman ;
+    :hasBirthYear "1980"^^xsd:string ;
+    :hasFather data:Prince_Andreas_of_Prussia ;
+    :hasMarriageYear "2014"^^xsd:string ;
+    :hasMother data:Alexandra_Blahova ;
+    :hasRelation data:Philip_Womack .
+
+data:Philip_Womack a :Man,
+        :Person .
+

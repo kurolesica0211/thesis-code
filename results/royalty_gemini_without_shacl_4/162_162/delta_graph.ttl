@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infante_Dom_Manuel_II a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Prince_Dom_Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Duchess_Helena_of_Mecklenburg_Schwerin a :Person,
+        :Woman .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Person,
+        :Woman .
+
+data:King_Lu%C3%ADs_I_of_Portugal a :Man,
+        :Person .
+
+data:Maria_Pia_of_Savoy a :Person,
+        :Woman .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Man,
+        :Person ;
+    :hasFather data:King_Louis_Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
+
+data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Man,
+        :Person ;
+    :hasFather data:King_Louis_Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
+
+data:Prince_Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Duchess_Helena_of_Mecklenburg_Schwerin .
+
+data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Person,
+        :Woman ;
+    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1886 ;
+    :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Carlos_I_of_Portugal .
+
+data:King_Louis_Philippe_I_of_France a :Man,
+        :Person .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Person,
+        :Woman .
+
+data:Carlos_I_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy .
+

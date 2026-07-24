@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:George_V a :Ancestor .
+
+data:George_Windsor_Earl_of_St_Andrews a :Ancestor .
+
+data:Katharine_Duchess_of_Kent a :Ancestor .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor .
+
+data:Prince_George_Duke_of_Kent a :Ancestor .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor .
+
+data:Queen_Mary a :Ancestor .
+
+data:Sylvana_Tomaselli a :Ancestor .
+
+data:William_Worsley_4th_Baronet a :Ancestor .
+

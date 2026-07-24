@@ -1,0 +1,291 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:King_George_V,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isFatherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:King_George_V ;
+    :isUncleOf data:Prince_George_Duke_of_Kent .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent ;
+    :isAuntOf data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isUncleOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isUncleOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasDaughter data:Alexandra ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isAncestorOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isAuntOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isMotherOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isParentOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasAncestor data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:King_George_V,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isSisterOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
+
+data:Edward_Duke_of_Kent a :Man,
+        :Person ;
+    :hasAncestor data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:King_George_V,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isBrotherOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isSonOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Michael a :Man,
+        :Person ;
+    :hasAncestor data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:King_George_V,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isBrotherOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isSonOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_V,
+        data:Queen_Mary ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasDaughter data:Alexandra ;
+    :hasDeathYear 1942 ;
+    :hasFather data:King_George_V ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:King_George_V,
+        data:Michael,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasSon data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isAncestorOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isChildOf data:King_George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isParentOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George_Duke_of_Kent ;
+    :isSonOf data:King_George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
+

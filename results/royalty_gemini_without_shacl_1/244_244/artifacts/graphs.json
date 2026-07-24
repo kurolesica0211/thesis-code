@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs data:Prince_Aleksandar_III_Karadjordjevic,\n        data:Prince_Alexander_of_Serbia_and_Yugoslavia ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_Father ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ignacio_19th_Duke_of_Segorbe a :Man,\n        :Person .\n\ndata:Katherine_Clairy_Batis a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Andrew a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Alexandra a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Queen_Maria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Alexander_Father a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Maria_da_Gloria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs data:Prince_Aleksandar_III_Karadjordjevic,\n        data:Prince_Alexander_of_Serbia_and_Yugoslavia ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_Father ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ignacio_19th_Duke_of_Segorbe a :Man,\n        :Person .\n\ndata:Katherine_Clairy_Batis a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Andrew a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Alexandra a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Queen_Maria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Alexander_Father a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Aleksandar_III_Karadjordjevic a :Person .\n\ndata:Prince_Alexander_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Princess_Maria_da_Gloria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs data:Prince_Aleksandar_III_Karadjordjevic,\n        data:Prince_Alexander_of_Serbia_and_Yugoslavia ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_Father ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Ignacio_19th_Duke_of_Segorbe a :Man,\n        :Person .\n\ndata:Katherine_Clairy_Batis a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Andrew a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Alexandra a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Queen_Maria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Alexander_Father a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Aleksandar_III_Karadjordjevic a :Person .\n\ndata:Prince_Alexander_of_Serbia_and_Yugoslavia a :Person .\n\ndata:Princess_Maria_da_Gloria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

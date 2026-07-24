@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Woman ;
+    :hasBirthYear 1985 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Heather_Tonkin .
+
+data:Harriet_Sperling a :Woman ;
+    :hasBirthYear 1980 ;
+    :hasFather data:Rupert_Sanders .
+
+data:Isla_Phillips a :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:King_Charles_III a :Man .
+
+data:Lindsay_Wallace a :Woman .
+
+data:Savannah_Phillips a :Woman ;
+    :hasBirthYear 2010 ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Woman ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Sandy_Pflueger .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Heather_Tonkin a :Woman .
+
+data:Prince_Philip a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Rupert_Sanders a :Man ;
+    :hasDeathYear 2023 .
+
+data:Sandy_Pflueger a :Woman .
+
+data:Anne_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II .
+
+data:Autumn_Kelly a :Woman .
+
+data:Peter_Phillips a :Man ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Mark_Phillips a :Man .
+

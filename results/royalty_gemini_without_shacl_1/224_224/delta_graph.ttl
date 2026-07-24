@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Willem-Alexander a :Man ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix .
+
+data:1966 a :DomainEntity .
+
+data:Beatrix a :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Bernhard ;
+    :hasMarriageYear data:1966 ;
+    :hasMother data:Juliana ;
+    :isSisterOf data:Irene,
+        data:Margriet .
+
+data:Bernhard a :Man .
+
+data:Claus_von_Amsberg a :Man .
+
+data:Irene a :Woman .
+
+data:Juliana a :Woman .
+
+data:Margriet a :Woman .
+

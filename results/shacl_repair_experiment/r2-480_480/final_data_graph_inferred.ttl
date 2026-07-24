@@ -1,0 +1,171 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Edward_Langtry a :Man ;
+    :hasBirthYear 1847 ;
+    :hasBrother data:Edward_Langtry ;
+    :hasDeathYear 1897 ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Edward_Langtry ;
+    :isBrotherOf data:Edward_Langtry ;
+    :isSiblingOf data:Edward_Langtry .
+
+data:Hugo_Gerald_de_Bathe a :Man ;
+    :hasBrother data:Hugo_Gerald_de_Bathe ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Hugo_Gerald_de_Bathe ;
+    :isBrotherOf data:Hugo_Gerald_de_Bathe ;
+    :isSiblingOf data:Hugo_Gerald_de_Bathe .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Jeanne_Marie_Langtry .
+
+data:Emilie_Davis_Martin a :Ancestor,
+        :Woman ;
+    :hasChild data:Emilie_Charlotte_Le_Breton ;
+    :hasDaughter data:Emilie_Charlotte_Le_Breton ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Female ;
+    :hasSister data:Emilie_Davis_Martin ;
+    :isAncestorOf data:Emilie_Charlotte_Le_Breton,
+        data:Jeanne_Marie_Langtry ;
+    :isAuntOf data:Emilie_Charlotte_Le_Breton ;
+    :isBloodrelationOf data:Emilie_Davis_Martin ;
+    :isMotherOf data:Emilie_Charlotte_Le_Breton ;
+    :isParentOf data:Emilie_Charlotte_Le_Breton ;
+    :isSiblingOf data:Emilie_Davis_Martin ;
+    :isSisterOf data:Emilie_Davis_Martin .
+
+data:William_Corbet_Le_Breton a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Corbet_Le_Breton ;
+    :hasChild data:Emilie_Charlotte_Le_Breton ;
+    :hasDaughter data:Emilie_Charlotte_Le_Breton ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Emilie_Charlotte_Le_Breton,
+        data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:William_Corbet_Le_Breton ;
+    :isBrotherOf data:William_Corbet_Le_Breton ;
+    :isFatherOf data:Emilie_Charlotte_Le_Breton ;
+    :isParentOf data:Emilie_Charlotte_Le_Breton ;
+    :isSiblingOf data:William_Corbet_Le_Breton ;
+    :isUncleOf data:Emilie_Charlotte_Le_Breton .
+
+data:Jeanne_Marie_Langtry a :Woman ;
+    :hasAncestor data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Emilie_Charlotte_Le_Breton ;
+    :hasParent data:Emilie_Charlotte_Le_Breton,
+        data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Female ;
+    :hasSister data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry ;
+    :isChildOf data:Emilie_Charlotte_Le_Breton,
+        data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Emilie_Charlotte_Le_Breton,
+        data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Jeanne_Marie_Langtry ;
+    :isSisterOf data:Jeanne_Marie_Langtry .
+
+data:Emilie_Charlotte_Le_Breton a :Ancestor,
+        :Woman ;
+    :alsoKnownAs "Lily Langtry"^^xsd:string ;
+    :hasAncestor data:Emilie_Davis_Martin,
+        data:William_Corbet_Le_Breton ;
+    :hasBirthYear 1853 ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasDeathYear 1929 ;
+    :hasFather data:William_Corbet_Le_Breton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:Emilie_Davis_Martin ;
+    :hasParent data:Emilie_Davis_Martin,
+        data:William_Corbet_Le_Breton ;
+    :hasRelation data:Edward_Langtry,
+        data:Emilie_Charlotte_Le_Breton,
+        data:Emilie_Davis_Martin,
+        data:Hugo_Gerald_de_Bathe,
+        data:Jeanne_Marie_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:William_Corbet_Le_Breton ;
+    :hasSex data:Female ;
+    :hasSister data:Emilie_Charlotte_Le_Breton ;
+    :isAncestorOf data:Jeanne_Marie_Langtry ;
+    :isAuntOf data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:Emilie_Charlotte_Le_Breton ;
+    :isChildOf data:Emilie_Davis_Martin,
+        data:William_Corbet_Le_Breton ;
+    :isDaughterOf data:Emilie_Davis_Martin,
+        data:William_Corbet_Le_Breton ;
+    :isMotherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Emilie_Charlotte_Le_Breton ;
+    :isSisterOf data:Emilie_Charlotte_Le_Breton ;
+    :knownAs "Lillie Langtry"^^xsd:string,
+        "The Jersey Lily"^^xsd:string .
+

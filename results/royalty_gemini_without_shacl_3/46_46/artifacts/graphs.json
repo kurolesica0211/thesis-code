@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lena_Tindall a :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Lucas_Tindall a :Man ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Mia_Tindall a :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Felicity_Wade a :Woman ;\n    :hasFather data:Mark_Phillips .\n\ndata:Peter_Phillips a :Man .\n\ndata:Stephanie_Phillips a :Woman ;\n    :hasFather data:Mark_Phillips .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasRelation data:Mike_Tindall ;\n    :hasSister data:Felicity_Wade,\n        data:Stephanie_Phillips .\n\ndata:Mike_Tindall a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lena_Tindall a :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Lucas_Tindall a :Man ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Mia_Tindall a :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Felicity_Wade a :Woman ;\n    :hasFather data:Mark_Phillips .\n\ndata:Peter_Phillips a :Man .\n\ndata:Stephanie_Phillips a :Woman ;\n    :hasFather data:Mark_Phillips .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasRelation data:Mike_Tindall ;\n    :hasSister data:Felicity_Wade,\n        data:Stephanie_Phillips .\n\ndata:Mike_Tindall a :Man .\n\n"
+    }
+]

@@ -1,0 +1,96 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Elizabeth_II ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Daniel_Chatto a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Daniel_Chatto ;
+    :hasChild data:Samuel_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSon data:Samuel_Chatto ;
+    :isAncestorOf data:Samuel_Chatto ;
+    :isBloodrelationOf data:Daniel_Chatto ;
+    :isBrotherOf data:Daniel_Chatto ;
+    :isFatherOf data:Samuel_Chatto ;
+    :isParentOf data:Samuel_Chatto ;
+    :isSiblingOf data:Daniel_Chatto ;
+    :isUncleOf data:Samuel_Chatto .
+
+data:Princess_Margaret_Countess_of_Snowdon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Sarah_Chatto ;
+    :hasDaughter data:Lady_Sarah_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSister data:Princess_Margaret_Countess_of_Snowdon ;
+    :isAncestorOf data:Lady_Sarah_Chatto,
+        data:Samuel_Chatto ;
+    :isAuntOf data:Lady_Sarah_Chatto ;
+    :isBloodrelationOf data:Princess_Margaret_Countess_of_Snowdon ;
+    :isMotherOf data:Lady_Sarah_Chatto ;
+    :isParentOf data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Princess_Margaret_Countess_of_Snowdon ;
+    :isSisterOf data:Princess_Margaret_Countess_of_Snowdon .
+
+data:Lady_Sarah_Chatto a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Margaret_Countess_of_Snowdon ;
+    :hasChild data:Samuel_Chatto ;
+    :hasMother data:Princess_Margaret_Countess_of_Snowdon ;
+    :hasParent data:Princess_Margaret_Countess_of_Snowdon ;
+    :hasRelation data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSister data:Lady_Sarah_Chatto ;
+    :hasSon data:Samuel_Chatto ;
+    :isAncestorOf data:Samuel_Chatto ;
+    :isAuntOf data:Samuel_Chatto ;
+    :isBloodrelationOf data:Lady_Sarah_Chatto ;
+    :isChildOf data:Princess_Margaret_Countess_of_Snowdon ;
+    :isDaughterOf data:Princess_Margaret_Countess_of_Snowdon ;
+    :isMotherOf data:Samuel_Chatto ;
+    :isParentOf data:Samuel_Chatto ;
+    :isSiblingOf data:Lady_Sarah_Chatto ;
+    :isSisterOf data:Lady_Sarah_Chatto .
+
+data:Samuel_Chatto a :Man,
+        :Person ;
+    :hasAncestor data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret_Countess_of_Snowdon ;
+    :hasBirthYear 1996 ;
+    :hasBrother data:Samuel_Chatto ;
+    :hasFather data:Daniel_Chatto ;
+    :hasMother data:Lady_Sarah_Chatto ;
+    :hasParent data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSex "Male"^^xsd:string ;
+    :isBloodrelationOf data:Samuel_Chatto ;
+    :isBrotherOf data:Samuel_Chatto ;
+    :isChildOf data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Samuel_Chatto ;
+    :isSonOf data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto .
+

@@ -1,0 +1,172 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :hasBrother data:David_Bowes-Lyon ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBloodrelationOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSiblingOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Herbert_Henry_Spender-Clay a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Herbert_Henry_Spender-Clay ;
+    :hasChild data:Rachel_Pauline_Spender-Clay ;
+    :hasDaughter data:Rachel_Pauline_Spender-Clay ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :isAncestorOf data:Rachel_Pauline_Spender-Clay ;
+    :isBloodrelationOf data:Herbert_Henry_Spender-Clay ;
+    :isBrotherOf data:Herbert_Henry_Spender-Clay ;
+    :isFatherOf data:Rachel_Pauline_Spender-Clay ;
+    :isParentOf data:Rachel_Pauline_Spender-Clay ;
+    :isSiblingOf data:Herbert_Henry_Spender-Clay ;
+    :isUncleOf data:Rachel_Pauline_Spender-Clay .
+
+data:Pauline_Spender-Clay a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rachel_Pauline_Spender-Clay ;
+    :hasDaughter data:Rachel_Pauline_Spender-Clay ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSister data:Pauline_Spender-Clay ;
+    :isAncestorOf data:Rachel_Pauline_Spender-Clay ;
+    :isAuntOf data:Rachel_Pauline_Spender-Clay ;
+    :isBloodrelationOf data:Pauline_Spender-Clay ;
+    :isMotherOf data:Rachel_Pauline_Spender-Clay ;
+    :isParentOf data:Rachel_Pauline_Spender-Clay ;
+    :isSiblingOf data:Pauline_Spender-Clay ;
+    :isSisterOf data:Pauline_Spender-Clay .
+
+data:Claude_Bowes-Lyon_13th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon_13th ;
+    :hasChild data:Claude_Bowes-Lyon_14th ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSon data:Claude_Bowes-Lyon_14th ;
+    :isAncestorOf data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon_13th ;
+    :isBrotherOf data:Claude_Bowes-Lyon_13th ;
+    :isFatherOf data:Claude_Bowes-Lyon_14th ;
+    :isParentOf data:Claude_Bowes-Lyon_14th ;
+    :isSiblingOf data:Claude_Bowes-Lyon_13th ;
+    :isUncleOf data:Claude_Bowes-Lyon_14th .
+
+data:Claude_Bowes-Lyon_14th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Claude_Bowes-Lyon_13th ;
+    :hasBrother data:Claude_Bowes-Lyon_14th ;
+    :hasChild data:David_Bowes-Lyon ;
+    :hasFather data:Claude_Bowes-Lyon_13th ;
+    :hasParent data:Claude_Bowes-Lyon_13th ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSon data:David_Bowes-Lyon ;
+    :isAncestorOf data:David_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon_14th ;
+    :isBrotherOf data:Claude_Bowes-Lyon_14th ;
+    :isChildOf data:Claude_Bowes-Lyon_13th ;
+    :isFatherOf data:David_Bowes-Lyon ;
+    :isParentOf data:David_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon_14th ;
+    :isSonOf data:Claude_Bowes-Lyon_13th ;
+    :isUncleOf data:David_Bowes-Lyon .
+
+data:David_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:David_Bowes-Lyon ;
+    :hasDeathYear 1961 ;
+    :hasFather data:Claude_Bowes-Lyon_14th ;
+    :hasMarriageYear 1929 ;
+    :hasParent data:Claude_Bowes-Lyon_14th ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBloodrelationOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBrotherOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isChildOf data:Claude_Bowes-Lyon_14th ;
+    :isSiblingOf data:David_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSonOf data:Claude_Bowes-Lyon_14th ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Rachel_Pauline_Spender-Clay a :Person,
+        :Woman ;
+    :hasAncestor data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay ;
+    :hasFather data:Herbert_Henry_Spender-Clay ;
+    :hasMother data:Pauline_Spender-Clay ;
+    :hasParent data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay ;
+    :hasRelation data:Claude_Bowes-Lyon_13th,
+        data:Claude_Bowes-Lyon_14th,
+        data:David_Bowes-Lyon,
+        data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Rachel_Pauline_Spender-Clay ;
+    :hasSister data:Rachel_Pauline_Spender-Clay ;
+    :isBloodrelationOf data:Rachel_Pauline_Spender-Clay ;
+    :isChildOf data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay ;
+    :isDaughterOf data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay ;
+    :isSiblingOf data:Rachel_Pauline_Spender-Clay ;
+    :isSisterOf data:Rachel_Pauline_Spender-Clay .
+

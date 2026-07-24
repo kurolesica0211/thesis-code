@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Fergus_Bowes-Lyon a :Man ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Lady_Christian_Norah_Dawson-Damer a :Woman .
+
+data:Cecilia_Bowes-Lyon a :Woman .
+
+data:Claude_Bowes-Lyon a :Man .
+
+data:Elizabeth_Bowes-Lyon a :Woman .
+
+data:John_Bowes-Lyon a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+

@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CarlosHugoRoderikSybrenDeBourbonDeParme a :Man,
+        :Person ;
+    :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+    :hasBirthYear 1997 ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme ;
+    :hasMother data:BrigitteKlynstra .
+
+data:MadeleineDeBourbonBusset a :Person,
+        :Woman .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man,
+        :Person .
+
+data:PrinceCarlosOfParma a :Man,
+        :Person ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme .
+
+data:PrinceXavierOfBourbonParma a :Man,
+        :Person .
+
+data:PrincessCeciliaOfParma a :Person,
+        :Woman ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme .
+
+data:PrincessLuisaOfParma a :Person,
+        :Woman ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme .
+
+data:QueenJulianaOfTheNetherlands a :Person,
+        :Woman .
+
+data:AdolphRoderikErnstLeopold a :Man,
+        :Person .
+
+data:BrigitteKlynstra a :Person,
+        :Woman ;
+    :hasFather data:AdolphRoderikErnstLeopold ;
+    :hasMother data:IngridPieksmaKlynstra .
+
+data:CarlosHugoDukeOfParma a :Man,
+        :Person .
+
+data:IngridPieksmaKlynstra a :Person,
+        :Woman .
+
+data:PrincessIreneOfTheNetherlands a :Person,
+        :Woman .
+
+data:PrinceCarlosDeBourbonDeParme a :Man,
+        :Person ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands .
+

@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasBrother data:Alessandro_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alessandro_Torlonia ;
+    :isBrotherOf data:Alessandro_Torlonia ;
+    :isSiblingOf data:Alessandro_Torlonia .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain ;
+    :isAuntOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+

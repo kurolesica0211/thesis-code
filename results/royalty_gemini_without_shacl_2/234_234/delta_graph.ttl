@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Prince_of_Asturias a :Man ;
+    :isBrotherOf data:Juan_Count_of_Barcelona .
+
+data:Jaime_Duke_of_Segovia a :Man ;
+    :isBrotherOf data:Juan_Count_of_Barcelona .
+
+data:Juan_Carlos_I a :Man ;
+    :hasRelation data:Sofia ;
+    :isChildOf data:Juan_Count_of_Barcelona ;
+    :isSonOf data:Juan_Count_of_Barcelona .
+
+data:Pilar a :Woman ;
+    :isChildOf data:Juan_Count_of_Barcelona .
+
+data:Alfonso_XIII a :Man .
+
+data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies a :Woman ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 .
+
+data:Sofia a :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Woman .
+
+data:Juan_Count_of_Barcelona a :Man ;
+    :alsoKnownAs "Juan Carlos Teresa Silverio Alfonso de Borbón y Battenberg"^^xsd:string ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies .
+

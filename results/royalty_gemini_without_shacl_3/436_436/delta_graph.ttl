@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Simon_Patrick_Bowes-Lyon a :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Isobel_Weatherall .
+
+data:Anthony_Edward_Weatherall a :Man .
+
+data:Isobel_Weatherall a :Woman ;
+    :hasFather data:Anthony_Edward_Weatherall .
+
+data:Michael_Bowes-Lyon a :Man .
+

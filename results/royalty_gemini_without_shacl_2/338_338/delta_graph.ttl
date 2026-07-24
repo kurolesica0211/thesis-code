@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Frederik_IX a :Man,
+        :Person ;
+    :isBrotherOf data:Hereditary_Prince_Knud .
+
+data:Prince_Ingolf a :Man,
+        :Person ;
+    :isBrotherOf data:Christian_of_Rosenborg .
+
+data:Princess_Caroline-Mathilde a :Person,
+        :Woman ;
+    :isMotherOf data:Christian_of_Rosenborg .
+
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 .
+
+data:Hereditary_Prince_Knud a :Man,
+        :Person ;
+    :isFatherOf data:Christian_of_Rosenborg .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2013 ;
+    :hasMarriageYear 1971 ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg .
+

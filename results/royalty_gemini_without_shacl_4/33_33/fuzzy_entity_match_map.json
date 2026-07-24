@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/33_33",
+  "text_file": "Q1217757.txt",
+  "text_key": "Q1217757",
+  "article": "https://en.wikipedia.org/wiki/Lord_Nicholas_Windsor",
+  "article_key": "Lord Nicholas Windsor",
+  "main_entity": {
+    "uri": "http://example.com/data#Lord_Nicholas_Windsor",
+    "qid": "Q1217757",
+    "label": "Lord Nicholas Windsor"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lord_Nicholas_Windsor",
+      "qid": "Q1217757",
+      "label": "Lord Nicholas Windsor",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Katharine-_Duchess_of_Kent",
+      "qid": "Q236678",
+      "label": "Katharine, Duchess of Kent",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lady_Helen_Taylor",
+      "qid": "Q674343",
+      "label": "Lady Helen Taylor",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Lady_Helen_Taylor",
+      "extracted_local_name": "Lady_Helen_Taylor",
+      "embedding_text": "Lady Helen Taylor",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Helen_Taylor",
+      "ground_truth_qid": "Q674343",
+      "ground_truth_label": "Lady Helen Taylor",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Helen Taylor",
+      "best_candidate_label": "Lady Helen Taylor",
+      "best_candidate_qid": "Q674343",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nicholas_Windsor",
+      "extracted_local_name": "Nicholas_Windsor",
+      "embedding_text": "Nicholas Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lord_Nicholas_Windsor",
+      "ground_truth_qid": "Q1217757",
+      "ground_truth_label": "Lord Nicholas Windsor",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nicholas Windsor",
+      "best_candidate_label": "Lord Nicholas Windsor",
+      "best_candidate_qid": "Q1217757",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Katharine_Duchess_of_Kent",
+      "extracted_local_name": "Katharine_Duchess_of_Kent",
+      "embedding_text": "Katharine Duchess of Kent",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9857142857142858,
+      "ground_truth_uri": "http://example.com/data#Katharine-_Duchess_of_Kent",
+      "ground_truth_qid": "Q236678",
+      "ground_truth_label": "Katharine, Duchess of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Katharine- Duchess of Kent",
+      "best_candidate_label": "Katharine, Duchess of Kent",
+      "best_candidate_qid": "Q236678",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9857142857142858
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Edward_Duke_of_Kent",
+      "extracted_local_name": "Prince_Edward_Duke_of_Kent",
+      "embedding_text": "Prince Edward Duke of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9855072463768115,
+      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "ground_truth_qid": "Q158258",
+      "ground_truth_label": "Prince Edward, Duke of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Edward- Duke of Kent",
+      "best_candidate_label": "Prince Edward, Duke of Kent",
+      "best_candidate_qid": "Q158258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9855072463768115
+    },
+    {
+      "extracted_uri": "http://example.org/data/Earl_of_St_Andrews",
+      "extracted_local_name": "Earl_of_St_Andrews",
+      "embedding_text": "Earl of St Andrews",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helen Windsor",
+      "best_candidate_label": "Lady Helen Taylor",
+      "best_candidate_qid": "Q674343",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3870967741935484
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski",
+      "extracted_local_name": "Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski",
+      "embedding_text": "Paola Doimi de Lupis Frankopan Subic Zrinski",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Duke of Kent",
+      "best_candidate_label": "Prince Edward, Duke of Kent",
+      "best_candidate_qid": "Q158258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 4,
+    "entities_unmatched": 2
+  }
+}

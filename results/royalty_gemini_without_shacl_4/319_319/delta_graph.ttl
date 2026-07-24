@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoSonOfCarlos a :Man,
+        :Person ;
+    :isSonOf data:DonCarlos .
+
+data:FerdinandTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:DonCarlos .
+
+data:FrancisII a :Man,
+        :Person .
+
+data:RanieriTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:DonCarlos .
+
+data:AlfonsoXII a :Man,
+        :Person .
+
+data:AlfonsoXIII a :Man,
+        :Person .
+
+data:MariaChristinaAustria a :Person,
+        :Woman .
+
+data:MercedesPrincessAsturias a :Person,
+        :Woman ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaAustria ;
+    :isSisterOf data:AlfonsoXIII .
+
+data:PrinceAlfonsoTwoSicilies a :Man,
+        :Person .
+
+data:PrincePhilippeCountParis a :Man,
+        :Person .
+
+data:PrincessLouiseOrleans a :Person,
+        :Woman ;
+    :hasFather data:PrincePhilippeCountParis .
+
+data:PrincessMariaAntonietta a :Person,
+        :Woman .
+
+data:DonCarlos a :Man,
+        :Person ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:PrinceAlfonsoTwoSicilies ;
+    :hasMother data:PrincessMariaAntonietta ;
+    :hasRelation data:MercedesPrincessAsturias,
+        data:PrincessLouiseOrleans .
+

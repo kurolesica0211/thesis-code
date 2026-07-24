@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Monika_zu_Solms-Laubach a :Person,
+        :Woman ;
+    :hasFather data:Georg_9th_Count_of_Solms-Laubach ;
+    :hasMother data:Princess_Johanna_of_Solms-Hohensolms-Lich .
+
+data:Ernst_August_Hereditary_Prince_of_Brunswick a :Man,
+        :Person ;
+    :hasBirthYear "1914"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_George_William ;
+    :hasDeathYear "1987"^^xsd:positiveInteger ;
+    :hasFather data:Ernest_August_Duke_of_Brunswick ;
+    :hasMarriageYear "1951"^^xsd:positiveInteger,
+        "1981"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Princess_Frederica ;
+    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
+
+data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden a :Man,
+        :Person .
+
+data:Ernest_August_Duke_of_Brunswick a :Man,
+        :Person .
+
+data:Georg_9th_Count_of_Solms-Laubach a :Man,
+        :Person .
+
+data:Prince_George_William a :Man,
+        :Person .
+
+data:Princess_Frederica a :Person,
+        :Woman .
+
+data:Princess_Johanna_of_Solms-Hohensolms-Lich a :Person,
+        :Woman .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Person,
+        :Woman .
+

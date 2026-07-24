@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claude_of_Orl%C3%A9ans a :Woman ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Henri_eldest_brother ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Amedeo_Duke_of_Aosta,
+        data:Enrico_Gandolfi,
+        data:Luigi_Arnaldo_La_Cagnina ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg .
+
+data:Aimone_Duke_of_Aosta a :Man .
+
+data:Amedeo_Duke_of_Aosta a :Man ;
+    :hasFather data:Aimone_Duke_of_Aosta .
+
+data:Anne_Duchess_of_Calabria a :Woman .
+
+data:Diane_Duchess_of_W%C3%BCrttemberg a :Woman .
+
+data:Enrico_Gandolfi a :Man .
+
+data:Henri_Count_of_Paris a :Man .
+
+data:Henri_eldest_brother a :Man .
+
+data:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .
+
+data:Luigi_Arnaldo_La_Cagnina a :Man .
+

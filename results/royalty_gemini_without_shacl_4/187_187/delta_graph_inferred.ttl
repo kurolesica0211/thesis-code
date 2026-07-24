@@ -1,0 +1,415 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Princess_Alice_of_Battenberg,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Prince_Maximilian_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Maximilian_of_Baden ;
+    :hasChild data:Berthold%2C_Margrave_of_Baden ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Berthold%2C_Margrave_of_Baden ;
+    :isAncestorOf data:Berthold%2C_Margrave_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_of_Baden ;
+    :isFatherOf data:Berthold%2C_Margrave_of_Baden ;
+    :isParentOf data:Berthold%2C_Margrave_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden ;
+    :isUncleOf data:Berthold%2C_Margrave_of_Baden .
+
+data:Berthold%2C_Margrave_of_Baden a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Maximilian_of_Baden ;
+    :hasBrother data:Berthold%2C_Margrave_of_Baden ;
+    :hasFather data:Prince_Maximilian_of_Baden ;
+    :hasParent data:Prince_Maximilian_of_Baden ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Berthold%2C_Margrave_of_Baden ;
+    :isBrotherOf data:Berthold%2C_Margrave_of_Baden ;
+    :isChildOf data:Prince_Maximilian_of_Baden ;
+    :isSiblingOf data:Berthold%2C_Margrave_of_Baden ;
+    :isSonOf data:Prince_Maximilian_of_Baden .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Theodora_of_Greece_and_Denmark .
+
+data:Cecilie%2C_sister_of_Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBloodrelationOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Margarita%2C_sister_of_Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBloodrelationOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Prince_Philip_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora .
+
+data:Sophie%2C_sister_of_Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBloodrelationOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Ludwig%2C_son_of_Theodora a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Ludwig%2C_son_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Margarita%2C_daughter_of_Theodora ;
+    :isBloodrelationOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBrotherOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isChildOf data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isSonOf data:Theodora_of_Greece_and_Denmark .
+
+data:Margarita%2C_daughter_of_Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Ludwig%2C_son_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Margarita%2C_daughter_of_Theodora ;
+    :isBloodrelationOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isChildOf data:Theodora_of_Greece_and_Denmark ;
+    :isDaughterOf data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isSisterOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora .
+
+data:Maximilian%2C_son_of_Theodora a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Ludwig%2C_son_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Margarita%2C_daughter_of_Theodora ;
+    :isBloodrelationOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBrotherOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isChildOf data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isSonOf data:Theodora_of_Greece_and_Denmark .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Prince_Philip_of_Greece_and_Denmark ;
+    :hasChild data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :hasDaughter data:Margarita%2C_daughter_of_Theodora ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Berthold%2C_Margrave_of_Baden,
+        data:Cecilie%2C_sister_of_Theodora,
+        data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Ludwig%2C_son_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isAncestorOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isAuntOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isBloodrelationOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isParentOf data:Ludwig%2C_son_of_Theodora,
+        data:Margarita%2C_daughter_of_Theodora,
+        data:Maximilian%2C_son_of_Theodora ;
+    :isSiblingOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie%2C_sister_of_Theodora,
+        data:Margarita%2C_sister_of_Theodora,
+        data:Prince_Philip_of_Greece_and_Denmark,
+        data:Sophie%2C_sister_of_Theodora,
+        data:Theodora_of_Greece_and_Denmark .
+

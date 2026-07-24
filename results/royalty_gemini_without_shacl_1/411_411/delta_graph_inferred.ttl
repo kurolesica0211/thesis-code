@@ -1,0 +1,237 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Thyra_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBrother data:Christian_Louis_of_Mecklenburg ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Thyra_of_Mecklenburg ;
+    :isBloodrelationOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg ;
+    :isSiblingOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg ;
+    :isSisterOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg .
+
+data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Barbara_of_Prussia ;
+    :hasDaughter data:Barbara_of_Prussia ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Charlotte_of_Saxe-Altenburg ;
+    :isAncestorOf data:Barbara_of_Prussia ;
+    :isAuntOf data:Barbara_of_Prussia ;
+    :isBloodrelationOf data:Charlotte_of_Saxe-Altenburg ;
+    :isMotherOf data:Barbara_of_Prussia ;
+    :isParentOf data:Barbara_of_Prussia ;
+    :isSiblingOf data:Charlotte_of_Saxe-Altenburg ;
+    :isSisterOf data:Charlotte_of_Saxe-Altenburg .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasChild data:Christian_Louis_of_Mecklenburg ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSon data:Christian_Louis_of_Mecklenburg ;
+    :isAncestorOf data:Christian_Louis_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isFatherOf data:Christian_Louis_of_Mecklenburg ;
+    :isParentOf data:Christian_Louis_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isUncleOf data:Christian_Louis_of_Mecklenburg .
+
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sigismund_of_Prussia ;
+    :hasChild data:Barbara_of_Prussia ;
+    :hasDaughter data:Barbara_of_Prussia ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :isAncestorOf data:Barbara_of_Prussia ;
+    :isBloodrelationOf data:Sigismund_of_Prussia ;
+    :isBrotherOf data:Sigismund_of_Prussia ;
+    :isFatherOf data:Barbara_of_Prussia ;
+    :isParentOf data:Barbara_of_Prussia ;
+    :isSiblingOf data:Sigismund_of_Prussia ;
+    :isUncleOf data:Barbara_of_Prussia .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :isAncestorOf data:Alexandra_of_Hanover,
+        data:Christian_Louis_of_Mecklenburg ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover,
+        data:Christian_Louis_of_Mecklenburg ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isMotherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+
+data:Barbara_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Sigismund_of_Prussia ;
+    :hasMother data:Charlotte_of_Saxe-Altenburg ;
+    :hasParent data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Barbara_of_Prussia ;
+    :isBloodrelationOf data:Barbara_of_Prussia ;
+    :isChildOf data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :isDaughterOf data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :isSiblingOf data:Barbara_of_Prussia ;
+    :isSisterOf data:Barbara_of_Prussia .
+
+data:Alexandra_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasChild data:Christian_Louis_of_Mecklenburg ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :hasSon data:Christian_Louis_of_Mecklenburg ;
+    :isAncestorOf data:Christian_Louis_of_Mecklenburg ;
+    :isAuntOf data:Christian_Louis_of_Mecklenburg ;
+    :isBloodrelationOf data:Alexandra_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isDaughterOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isMotherOf data:Christian_Louis_of_Mecklenburg ;
+    :isParentOf data:Christian_Louis_of_Mecklenburg ;
+    :isSiblingOf data:Alexandra_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover .
+
+data:Christian_Louis_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_of_Hanover,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Christian_Louis_of_Mecklenburg ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMarriageYear 1954 ;
+    :hasMother data:Alexandra_of_Hanover ;
+    :hasParent data:Alexandra_of_Hanover,
+        data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_Louis_of_Mecklenburg,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederick_Francis_IV,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark,
+        data:Thyra_of_Mecklenburg ;
+    :hasSister data:Thyra_of_Mecklenburg ;
+    :isBloodrelationOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg ;
+    :isBrotherOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg ;
+    :isChildOf data:Alexandra_of_Hanover,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Christian_Louis_of_Mecklenburg,
+        data:Thyra_of_Mecklenburg ;
+    :isSonOf data:Alexandra_of_Hanover,
+        data:Frederick_Francis_IV .
+

@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Patrick_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Claude_Lord_Glamis ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasRelation data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Cecilia_Cavendish-Bentinck a :Person,
+        :Woman .
+
+data:Claude_Lord_Glamis a :Man,
+        :Person .
+
+data:George_10th_Duke_of_Leeds a :Man,
+        :Person .
+
+data:Lady_Dorothy_Beatrix_Godolphin_Osborne a :Person,
+        :Woman ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:George_10th_Duke_of_Leeds .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman .
+

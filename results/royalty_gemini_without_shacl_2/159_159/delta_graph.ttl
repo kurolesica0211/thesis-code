@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear data:Marriage_1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasSister data:Alexandrine_of_Denmark .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II_German_Emperor .
+
+data:Alexandrine_of_Denmark a :Person,
+        :Woman .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Marriage_1905 a :DomainEntity .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+

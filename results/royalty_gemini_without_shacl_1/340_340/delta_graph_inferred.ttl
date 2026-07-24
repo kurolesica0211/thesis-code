@@ -1,0 +1,468 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceJoachim a :Man,
+        :Person ;
+    :hasBrother data:PrinceJoachim ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:VictoriaLouiseOfPrussia ;
+    :isBloodrelationOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :isBrotherOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :isUncleOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:VictoriaLouiseOfPrussia ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:VictoriaLouiseOfPrussia ;
+    :hasDaughter data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:AugustaVictoriaOfSchleswigHolstein ;
+    :isAncestorOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:VictoriaLouiseOfPrussia ;
+    :isAuntOf data:VictoriaLouiseOfPrussia ;
+    :isBloodrelationOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isMotherOf data:VictoriaLouiseOfPrussia ;
+    :isParentOf data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isSisterOf data:AugustaVictoriaOfSchleswigHolstein .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:VictoriaLouiseOfPrussia ;
+    :hasDaughter data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :isAncestorOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:VictoriaLouiseOfPrussia ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:VictoriaLouiseOfPrussia ;
+    :isParentOf data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:VictoriaLouiseOfPrussia .
+
+data:ErnestAugustusOfHanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustusOfHanover ;
+    :hasChild data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSon data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :isAncestorOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBloodrelationOf data:ErnestAugustusOfHanover ;
+    :isBrotherOf data:ErnestAugustusOfHanover ;
+    :isFatherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isParentOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSiblingOf data:ErnestAugustusOfHanover ;
+    :isUncleOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica .
+
+data:PrinceChristianOscar a :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBrotherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia .
+
+data:PrinceErnestAugustus a :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBrotherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia .
+
+data:PrinceGeorgeWilliam a :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBrotherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia .
+
+data:PrinceWelfHenry a :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBrotherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia .
+
+data:PrincessFrederica a :Person,
+        :Woman ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isDaughterOf data:ErnestAugustusOfHanover,
+        data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSisterOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica .
+
+data:VictoriaLouiseOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:QueenVictoria,
+        data:WilhelmII ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:PrinceJoachim ;
+    :hasChild data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasDeathYear 1980 ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasParent data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusOfHanover,
+        data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceJoachim,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica,
+        data:QueenVictoria,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:VictoriaLouiseOfPrussia ;
+    :hasSon data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry ;
+    :isAncestorOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isAuntOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :isChildOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isDaughterOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isMotherOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isParentOf data:PrinceChristianOscar,
+        data:PrinceErnestAugustus,
+        data:PrinceGeorgeWilliam,
+        data:PrinceWelfHenry,
+        data:PrincessFrederica ;
+    :isSiblingOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :isSisterOf data:PrinceJoachim,
+        data:VictoriaLouiseOfPrussia ;
+    :knownAs "Sissy"^^xsd:string .
+

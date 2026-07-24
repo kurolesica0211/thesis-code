@@ -1,0 +1,237 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmII a :Man,
+        :Person ;
+    :hasBrother data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :hasRelation data:EmpressVictoria,
+        data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :isBloodrelationOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isBrotherOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isSiblingOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isUncleOf data:Heinrich_son,
+        data:Waldemar .
+
+data:FrederickIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickIII ;
+    :hasChild data:PrinceHeinrichOfPrussia ;
+    :hasRelation data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:Waldemar,
+        data:WilhelmII ;
+    :hasSon data:PrinceHeinrichOfPrussia ;
+    :isAncestorOf data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:Waldemar ;
+    :isBloodrelationOf data:FrederickIII ;
+    :isBrotherOf data:FrederickIII ;
+    :isFatherOf data:PrinceHeinrichOfPrussia ;
+    :isParentOf data:PrinceHeinrichOfPrussia ;
+    :isSiblingOf data:FrederickIII ;
+    :isUncleOf data:PrinceHeinrichOfPrussia .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:EmpressVictoria ;
+    :hasDaughter data:EmpressVictoria ;
+    :hasRelation data:EmpressVictoria,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:EmpressVictoria,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:Waldemar ;
+    :isAuntOf data:EmpressVictoria ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isMotherOf data:EmpressVictoria ;
+    :isParentOf data:EmpressVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:PrincessIreneOfHesseAndByRhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Heinrich_son,
+        data:Waldemar ;
+    :hasRelation data:EmpressVictoria,
+        data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :hasSister data:PrincessIreneOfHesseAndByRhine ;
+    :hasSon data:Heinrich_son,
+        data:Waldemar ;
+    :isAncestorOf data:Heinrich_son,
+        data:Waldemar ;
+    :isAuntOf data:Heinrich_son,
+        data:Waldemar ;
+    :isBloodrelationOf data:PrincessIreneOfHesseAndByRhine ;
+    :isMotherOf data:Heinrich_son,
+        data:Waldemar ;
+    :isParentOf data:Heinrich_son,
+        data:Waldemar ;
+    :isSiblingOf data:PrincessIreneOfHesseAndByRhine ;
+    :isSisterOf data:PrincessIreneOfHesseAndByRhine .
+
+data:EmpressVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:QueenVictoria ;
+    :hasChild data:PrinceHeinrichOfPrussia ;
+    :hasMother data:QueenVictoria ;
+    :hasParent data:QueenVictoria ;
+    :hasRelation data:EmpressVictoria,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :hasSister data:EmpressVictoria ;
+    :hasSon data:PrinceHeinrichOfPrussia ;
+    :isAncestorOf data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:Waldemar ;
+    :isAuntOf data:PrinceHeinrichOfPrussia ;
+    :isBloodrelationOf data:EmpressVictoria ;
+    :isChildOf data:QueenVictoria ;
+    :isDaughterOf data:QueenVictoria ;
+    :isMotherOf data:PrinceHeinrichOfPrussia ;
+    :isParentOf data:PrinceHeinrichOfPrussia ;
+    :isSiblingOf data:EmpressVictoria ;
+    :isSisterOf data:EmpressVictoria .
+
+data:Heinrich_son a :Man,
+        :Person ;
+    :hasAncestor data:EmpressVictoria,
+        data:FrederickIII,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria ;
+    :hasBrother data:Heinrich_son,
+        data:Waldemar ;
+    :hasFather data:PrinceHeinrichOfPrussia ;
+    :hasMother data:PrincessIreneOfHesseAndByRhine ;
+    :hasParent data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine ;
+    :hasRelation data:EmpressVictoria,
+        data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :isBloodrelationOf data:Heinrich_son,
+        data:Waldemar ;
+    :isBrotherOf data:Heinrich_son,
+        data:Waldemar ;
+    :isChildOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine ;
+    :isSiblingOf data:Heinrich_son,
+        data:Waldemar ;
+    :isSonOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine .
+
+data:Waldemar a :Man,
+        :Person ;
+    :hasAncestor data:EmpressVictoria,
+        data:FrederickIII,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria ;
+    :hasBrother data:Heinrich_son,
+        data:Waldemar ;
+    :hasFather data:PrinceHeinrichOfPrussia ;
+    :hasMother data:PrincessIreneOfHesseAndByRhine ;
+    :hasParent data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine ;
+    :hasRelation data:EmpressVictoria,
+        data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :isBloodrelationOf data:Heinrich_son,
+        data:Waldemar ;
+    :isBrotherOf data:Heinrich_son,
+        data:Waldemar ;
+    :isChildOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine ;
+    :isSiblingOf data:Heinrich_son,
+        data:Waldemar ;
+    :isSonOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine .
+
+data:PrinceHeinrichOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EmpressVictoria,
+        data:FrederickIII,
+        data:QueenVictoria ;
+    :hasBirthYear 1862 ;
+    :hasBrother data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :hasChild data:Heinrich_son,
+        data:Waldemar ;
+    :hasDeathYear 1929 ;
+    :hasFather data:FrederickIII ;
+    :hasMarriageYear 1888 ;
+    :hasMother data:EmpressVictoria ;
+    :hasParent data:EmpressVictoria,
+        data:FrederickIII ;
+    :hasRelation data:EmpressVictoria,
+        data:FrederickIII,
+        data:Heinrich_son,
+        data:PrinceHeinrichOfPrussia,
+        data:PrincessIreneOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:Waldemar,
+        data:WilhelmII ;
+    :hasSon data:Heinrich_son,
+        data:Waldemar ;
+    :isAncestorOf data:Heinrich_son,
+        data:Waldemar ;
+    :isBloodrelationOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isBrotherOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isChildOf data:EmpressVictoria,
+        data:FrederickIII ;
+    :isFatherOf data:Heinrich_son,
+        data:Waldemar ;
+    :isParentOf data:Heinrich_son,
+        data:Waldemar ;
+    :isSiblingOf data:PrinceHeinrichOfPrussia,
+        data:WilhelmII ;
+    :isSonOf data:EmpressVictoria,
+        data:FrederickIII ;
+    :isUncleOf data:Heinrich_son,
+        data:Waldemar .
+

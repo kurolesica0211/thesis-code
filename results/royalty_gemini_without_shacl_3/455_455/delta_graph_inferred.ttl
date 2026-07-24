@@ -1,0 +1,186 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Sofia_of_Spain ;
+    :hasSister data:Sofia_of_Spain ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Javier_Morales_Quintana ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Carlos_Javier_Morales_Quintana ;
+    :isBrotherOf data:Carlos_Javier_Morales_Quintana ;
+    :isSiblingOf data:Carlos_Javier_Morales_Quintana .
+
+data:Maria-Olympia_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSister data:Maria-Olympia_of_Greece ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece ;
+    :isSiblingOf data:Maria-Olympia_of_Greece ;
+    :isSisterOf data:Maria-Olympia_of_Greece .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain .
+
+data:Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexia_of_Greece_and_Denmark ;
+    :hasDaughter data:Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSister data:Anne-Marie_of_Greece ;
+    :isAncestorOf data:Alexia_of_Greece_and_Denmark ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Greece ;
+    :isMotherOf data:Alexia_of_Greece_and_Denmark ;
+    :isParentOf data:Alexia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Greece ;
+    :isSisterOf data:Anne-Marie_of_Greece .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Alexia_of_Greece_and_Denmark ;
+    :hasDaughter data:Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isAncestorOf data:Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Alexia_of_Greece_and_Denmark ;
+    :isParentOf data:Alexia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isUncleOf data:Alexia_of_Greece_and_Denmark .
+
+data:Pavlos_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Pavlos_of_Greece ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Felipe_VI_of_Spain,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isBrotherOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece .
+
+data:Theodora_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Pavlos_of_Greece ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Felipe_VI_of_Spain,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSisterOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece .
+
+data:Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos_of_Greece ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie_of_Greece ;
+    :hasParent data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie_of_Greece,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II_of_Greece,
+        data:Felipe_VI_of_Spain,
+        data:Maria-Olympia_of_Greece,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora_of_Greece ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Felipe_VI_of_Spain,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isChildOf data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece ;
+    :isSisterOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos_of_Greece,
+        data:Theodora_of_Greece .
+

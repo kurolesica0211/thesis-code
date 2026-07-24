@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Elena_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasSex data:Female .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasSex data:Female .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1910"^^xsd:positiveInteger ;
+    :hasDeathYear "2000"^^xsd:positiveInteger ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Juan%2C_Count_of_Barcelona ;
+    :hasSex data:Female ;
+    :isMotherOf data:Juan_Carlos_I .
+
+data:Philippe%2C_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Louise_of_Orl%C3%A9ans .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan%2C_Count_of_Barcelona .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasSex data:Male .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Juan%2C_Count_of_Barcelona ;
+    :hasMother data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSex data:Male .
+
+data:Louise_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Philippe%2C_Count_of_Paris ;
+    :hasSex data:Female .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Juan%2C_Count_of_Barcelona .
+
+data:Juan%2C_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

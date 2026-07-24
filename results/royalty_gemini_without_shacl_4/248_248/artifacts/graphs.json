@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Woman ;\n    :hasBirthYear \"1934\"^^xsd:positiveInteger ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMarriageYear \"1957\"^^xsd:positiveInteger ;\n    :hasMother data:Rosa_of_Austria ;\n    :hasRelation data:Henri_Count_of_Clermont ;\n    :isSiblingOf data:Carl_Duke_of_W%C3%BCrttemberg .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man ;\n    :hasRelation data:Diane_dOrl%C3%A9ans .\n\ndata:Henri_Count_of_Clermont a :Man ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans_Braganza ;\n    :isSiblingOf data:Diane_dOrl%C3%A9ans .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans_Braganza a :Woman .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .\n\ndata:Rosa_of_Austria a :Woman .\n\ndata:Diane_dOrl%C3%A9ans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Woman ;\n    :hasBirthYear \"1934\"^^xsd:positiveInteger ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMarriageYear \"1957\"^^xsd:positiveInteger ;\n    :hasMother data:Rosa_of_Austria ;\n    :hasRelation data:Henri_Count_of_Clermont ;\n    :isSiblingOf data:Carl_Duke_of_W%C3%BCrttemberg .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man ;\n    :hasRelation data:Diane_dOrl%C3%A9ans .\n\ndata:Henri_Count_of_Clermont a :Man ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans_Braganza ;\n    :isSiblingOf data:Diane_dOrl%C3%A9ans .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans_Braganza a :Woman .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .\n\ndata:Rosa_of_Austria a :Woman .\n\ndata:Diane_dOrl%C3%A9ans a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark .\n\ndata:Konstantin_Gustav_Heinrich_Richard a :Man ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Louisa_Margareta_Benedikte_Hanna a :Woman ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexander_Johannsmann a :Man ;\n    :hasBirthYear 1977 .\n\ndata:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Princess_Benedikte_of_Denmark a :Woman .\n\ndata:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1975 ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark .\n\ndata:Konstantin_Gustav_Heinrich_Richard a :Man ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Louisa_Margareta_Benedikte_Hanna a :Woman ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexander_Johannsmann a :Man ;\n    :hasBirthYear 1977 .\n\ndata:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man .\n\ndata:Princess_Benedikte_of_Denmark a :Woman .\n\ndata:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1975 ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMother data:Princess_Benedikte_of_Denmark .\n\n"
+    }
+]

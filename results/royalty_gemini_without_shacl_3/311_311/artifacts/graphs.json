@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Son_of_Carlos a :Man ;\n    :isSonOf data:Don_Carlos .\n\ndata:Alfonso_Two_Sicilies a :Man ;\n    :isSonOf data:Francis_II .\n\ndata:Alfonso_XII a :Man .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Don_Carlos a :Man ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasMarriageYear 1901,\n        1907 ;\n    :hasRelation data:Louise_Orleans,\n        data:Mercedes ;\n    :isBrotherOf data:Ferdinand_Two_Sicilies,\n        data:Ranieri_Two_Sicilies ;\n    :isSonOf data:Alfonso_Two_Sicilies,\n        data:Maria_Antonietta .\n\ndata:Ferdinand_Two_Sicilies a :Man .\n\ndata:Francis_II a :Man .\n\ndata:Louise_Orleans a :Woman ;\n    :isDaughterOf data:Philippe_Orleans .\n\ndata:Maria_Antonietta a :Woman .\n\ndata:Maria_Christina a :Woman .\n\ndata:Mercedes a :Woman ;\n    :isDaughterOf data:Alfonso_XII,\n        data:Maria_Christina ;\n    :isSisterOf data:Alfonso_XIII .\n\ndata:Philippe_Orleans a :Man .\n\ndata:Ranieri_Two_Sicilies a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Son_of_Carlos a :Man ;\n    :isSonOf data:Don_Carlos .\n\ndata:Alfonso_Two_Sicilies a :Man ;\n    :isSonOf data:Francis_II .\n\ndata:Alfonso_XII a :Man .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Don_Carlos a :Man ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasMarriageYear 1901,\n        1907 ;\n    :hasRelation data:Louise_Orleans,\n        data:Mercedes ;\n    :isBrotherOf data:Ferdinand_Two_Sicilies,\n        data:Ranieri_Two_Sicilies ;\n    :isSonOf data:Alfonso_Two_Sicilies,\n        data:Maria_Antonietta .\n\ndata:Ferdinand_Two_Sicilies a :Man .\n\ndata:Francis_II a :Man .\n\ndata:Louise_Orleans a :Woman ;\n    :isDaughterOf data:Philippe_Orleans .\n\ndata:Maria_Antonietta a :Woman .\n\ndata:Maria_Christina a :Woman .\n\ndata:Mercedes a :Woman ;\n    :isDaughterOf data:Alfonso_XII,\n        data:Maria_Christina ;\n    :isSisterOf data:Alfonso_XIII .\n\ndata:Philippe_Orleans a :Man .\n\ndata:Ranieri_Two_Sicilies a :Man .\n\n"
+    }
+]

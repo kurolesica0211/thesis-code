@@ -1,0 +1,140 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/72_72",
+  "text_file": "Q16018831.txt",
+  "text_key": "Q16018831",
+  "article": "https://en.wikipedia.org/wiki/Mary_Malcolm",
+  "article_key": "Mary Malcolm",
+  "main_entity": {
+    "uri": "http://example.com/data#Mary_Malcolm",
+    "qid": "Q16018831",
+    "label": "Mary Malcolm"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Mary_Malcolm",
+      "qid": "Q16018831",
+      "label": "Mary Malcolm",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ian_Malcolm",
+      "qid": "Q3147302",
+      "label": "Ian Malcolm",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Jeanne_Marie_Langtry",
+      "qid": "Q84795732",
+      "label": "Jeanne Marie Langtry",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lillie_Langtry",
+      "qid": "Q297743",
+      "label": "Lillie Langtry",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/IanMalcolm",
+      "extracted_local_name": "IanMalcolm",
+      "embedding_text": "Ian Malcolm",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Ian_Malcolm",
+      "ground_truth_qid": "Q3147302",
+      "ground_truth_label": "Ian Malcolm",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ian Malcolm",
+      "best_candidate_label": "Ian Malcolm",
+      "best_candidate_qid": "Q3147302",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/JeanneLangtry",
+      "extracted_local_name": "JeanneLangtry",
+      "embedding_text": "Jeanne Langtry",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Jeanne_Marie_Langtry",
+      "ground_truth_qid": "Q84795732",
+      "ground_truth_label": "Jeanne Marie Langtry",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Jeanne Langtry",
+      "best_candidate_label": "Jeanne Marie Langtry",
+      "best_candidate_qid": "Q84795732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/LillieLangtry",
+      "extracted_local_name": "LillieLangtry",
+      "embedding_text": "Lillie Langtry",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lillie_Langtry",
+      "ground_truth_qid": "Q297743",
+      "ground_truth_label": "Lillie Langtry",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lillie Langtry",
+      "best_candidate_label": "Lillie Langtry",
+      "best_candidate_qid": "Q297743",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/MaryMalcolm",
+      "extracted_local_name": "MaryMalcolm",
+      "embedding_text": "Mary Malcolm",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Mary_Malcolm",
+      "ground_truth_qid": "Q16018831",
+      "ground_truth_label": "Mary Malcolm",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Mary Malcolm",
+      "best_candidate_label": "Mary Malcolm",
+      "best_candidate_qid": "Q16018831",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/BasilBartlett",
+      "extracted_local_name": "BasilBartlett",
+      "embedding_text": "Basil Bartlett",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Emilie Charlotte Langtry",
+      "best_candidate_label": "Lillie Langtry",
+      "best_candidate_qid": "Q297743",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.42105263157894735
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 4,
+    "entities_unmatched": 1
+  }
+}

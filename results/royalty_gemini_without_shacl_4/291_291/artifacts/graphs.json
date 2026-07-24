@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMihailovich a :Man,\n        :Person ;\n    :hasBrother data:NicholasMikhailovich .\n\ndata:HermanJud a :Man,\n        :Person .\n\ndata:MariaGeorgievna a :Person,\n        :Woman .\n\ndata:NicholasMikhailovich a :Man,\n        :Person .\n\ndata:NinaGeorgievna a :Person,\n        :Woman ;\n    :hasSister data:XeniaGeorgievna .\n\ndata:WilliamBatemanLeedsJr a :Man,\n        :Person ;\n    :hasDaughter data:NancyHelenMarieLeeds .\n\ndata:XeniaGeorgievna a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDaughter data:NancyHelenMarieLeeds ;\n    :hasDeathYear 1965 ;\n    :hasFather data:GeorgeMihailovich ;\n    :hasMother data:MariaGeorgievna ;\n    :hasRelation data:HermanJud,\n        data:WilliamBatemanLeedsJr ;\n    :hasSister data:NinaGeorgievna .\n\ndata:NancyHelenMarieLeeds a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMihailovich a :Man,\n        :Person ;\n    :hasBrother data:NicholasMikhailovich .\n\ndata:HermanJud a :Man,\n        :Person .\n\ndata:MariaGeorgievna a :Person,\n        :Woman .\n\ndata:NicholasMikhailovich a :Man,\n        :Person .\n\ndata:NinaGeorgievna a :Person,\n        :Woman ;\n    :hasSister data:XeniaGeorgievna .\n\ndata:WilliamBatemanLeedsJr a :Man,\n        :Person ;\n    :hasDaughter data:NancyHelenMarieLeeds .\n\ndata:XeniaGeorgievna a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDaughter data:NancyHelenMarieLeeds ;\n    :hasDeathYear 1965 ;\n    :hasFather data:GeorgeMihailovich ;\n    :hasMother data:MariaGeorgievna ;\n    :hasRelation data:HermanJud,\n        data:WilliamBatemanLeedsJr ;\n    :hasSister data:NinaGeorgievna .\n\ndata:NancyHelenMarieLeeds a :Person,\n        :Woman .\n\n"
+    }
+]

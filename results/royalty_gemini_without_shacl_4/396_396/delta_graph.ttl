@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christina_Margarethe_of_Hesse a :Person,
+        :Woman ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Robert_van_Eyck ;
+    :isSiblingOf data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Andrew_of_Yugoslavia a :Man,
+        :Person .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 .
+
+data:Clarissa_of_Hesse a :Person,
+        :Woman .
+
+data:Dorothea_of_Hesse a :Person,
+        :Woman .
+
+data:Friederike_of_Hanover a :Person,
+        :Woman .
+
+data:Georg_of_Hanover a :Man,
+        :Person .
+
+data:Karl_of_Hesse a :Man,
+        :Person .
+
+data:Rainer_of_Hesse a :Man,
+        :Person .
+
+data:Robert_van_Eyck a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 .
+
+data:Welf_of_Hanover a :Man,
+        :Person .
+

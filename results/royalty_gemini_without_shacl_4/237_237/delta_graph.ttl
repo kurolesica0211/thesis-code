@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FriedrichAugustOfOldenburg a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:NikolausOfOldenburg ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:HelenaOfWaldeckAndPyrmont ;
+    :hasRelation data:DonataOfCastellRudenhausen,
+        data:MarieCecileOfPrussia ;
+    :isUncleOf data:ChristianOfOldenburg .
+
+data:BathildisOfSchaumburgLippe a :Person,
+        :Woman .
+
+data:ChristianOfOldenburg a :Man,
+        :Person .
+
+data:DonataOfCastellRudenhausen a :Person,
+        :Woman .
+
+data:ElisabethAlexandrineOfMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:FrederickAugustusIIOfOldenburg a :Man,
+        :Person .
+
+data:FriedrichOfWaldeckAndPyrmont a :Man,
+        :Person .
+
+data:HelenaOfWaldeckAndPyrmont a :Person,
+        :Woman ;
+    :hasFather data:FriedrichOfWaldeckAndPyrmont ;
+    :hasMother data:BathildisOfSchaumburgLippe .
+
+data:KiraKirillovnaOfRussia a :Person,
+        :Woman .
+
+data:LouisFerdinandOfPrussia a :Man,
+        :Person ;
+    :hasFather data:WilliamGermanCrownPrince .
+
+data:MarieCecileOfPrussia a :Person,
+        :Woman ;
+    :hasFather data:LouisFerdinandOfPrussia ;
+    :hasMother data:KiraKirillovnaOfRussia .
+
+data:NikolausOfOldenburg a :Man,
+        :Person ;
+    :hasFather data:FrederickAugustusIIOfOldenburg ;
+    :hasMother data:ElisabethAlexandrineOfMecklenburgSchwerin .
+
+data:WilliamGermanCrownPrince a :Man,
+        :Person .
+

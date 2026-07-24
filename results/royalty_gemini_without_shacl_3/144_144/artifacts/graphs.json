@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Christoph_of_Hesse a :Man ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Prince_Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1930 ;\n    :hasMother data:Princess_Margaret_of_Prussia ;\n    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;\n    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,\n        data:Maximilian_of_Hesse,\n        data:Prince_Philipp_of_Hesse,\n        data:Prince_Richard_of_Hesse,\n        data:Prince_Wolfgang_of_Hesse .\n\ndata:Emperor_Frederick_III a :Man .\n\ndata:Friedrich_Wilhelm_of_Hesse a :Man .\n\ndata:Maximilian_of_Hesse a :Man .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Frederick_Charles_of_Hesse a :Man .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man .\n\ndata:Prince_Philipp_of_Hesse a :Man .\n\ndata:Prince_Richard_of_Hesse a :Man .\n\ndata:Prince_Wolfgang_of_Hesse a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :hasFather data:Emperor_Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .\n\ndata:Victoria_Princess_Royal a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Christoph_of_Hesse a :Man ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Prince_Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1930 ;\n    :hasMother data:Princess_Margaret_of_Prussia ;\n    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;\n    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,\n        data:Maximilian_of_Hesse,\n        data:Prince_Philipp_of_Hesse,\n        data:Prince_Richard_of_Hesse,\n        data:Prince_Wolfgang_of_Hesse .\n\ndata:Emperor_Frederick_III a :Man .\n\ndata:Friedrich_Wilhelm_of_Hesse a :Man .\n\ndata:Maximilian_of_Hesse a :Man .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Frederick_Charles_of_Hesse a :Man .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man .\n\ndata:Prince_Philipp_of_Hesse a :Man .\n\ndata:Prince_Richard_of_Hesse a :Man .\n\ndata:Prince_Wolfgang_of_Hesse a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :hasFather data:Emperor_Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .\n\ndata:Victoria_Princess_Royal a :Woman .\n\n"
+    }
+]

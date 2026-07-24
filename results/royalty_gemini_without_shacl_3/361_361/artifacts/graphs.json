@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_of_Schaumburg-Lippe a :Man .\n\ndata:Alexander_Zoubkoff a :Man .\n\ndata:Alexander_of_Battenberg a :Man .\n\ndata:Viktoria_of_Prussia a :Woman ;\n    :hasBirthYear 1866 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear data:1890,\n        data:1927 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :isSiblingOf data:Charlotte_of_Prussia,\n        data:Henry_of_Prussia,\n        data:Margaret_of_Prussia,\n        data:Sigismund_of_Prussia,\n        data:Sophie_of_Prussia,\n        data:Waldemar_of_Prussia,\n        data:Wilhelm_II .\n\ndata:Augusta_of_Saxe-Weimar a :Woman .\n\ndata:Charlotte_of_Prussia a :Woman .\n\ndata:Frederick_III a :Man ;\n    :hasFather data:Wilhelm_I ;\n    :hasMother data:Augusta_of_Saxe-Weimar .\n\ndata:Henry_of_Prussia a :Man .\n\ndata:Margaret_of_Prussia a :Woman .\n\ndata:Prince_Albert a :Man .\n\ndata:Queen_Victoria a :Woman .\n\ndata:Sigismund_of_Prussia a :Man .\n\ndata:Sophie_of_Prussia a :Woman .\n\ndata:Victoria_Princess_Royal a :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Waldemar_of_Prussia a :Man .\n\ndata:Wilhelm_I a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_of_Schaumburg-Lippe a :Man .\n\ndata:Alexander_Zoubkoff a :Man .\n\ndata:Alexander_of_Battenberg a :Man .\n\ndata:Viktoria_of_Prussia a :Woman ;\n    :hasBirthYear 1866 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear data:1890,\n        data:1927 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :isSiblingOf data:Charlotte_of_Prussia,\n        data:Henry_of_Prussia,\n        data:Margaret_of_Prussia,\n        data:Sigismund_of_Prussia,\n        data:Sophie_of_Prussia,\n        data:Waldemar_of_Prussia,\n        data:Wilhelm_II .\n\ndata:1890 a :DomainEntity .\n\ndata:1927 a :DomainEntity .\n\ndata:Augusta_of_Saxe-Weimar a :Woman .\n\ndata:Charlotte_of_Prussia a :Woman .\n\ndata:Frederick_III a :Man ;\n    :hasFather data:Wilhelm_I ;\n    :hasMother data:Augusta_of_Saxe-Weimar .\n\ndata:Henry_of_Prussia a :Man .\n\ndata:Margaret_of_Prussia a :Woman .\n\ndata:Prince_Albert a :Man .\n\ndata:Queen_Victoria a :Woman .\n\ndata:Sigismund_of_Prussia a :Man .\n\ndata:Sophie_of_Prussia a :Woman .\n\ndata:Victoria_Princess_Royal a :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Waldemar_of_Prussia a :Man .\n\ndata:Wilhelm_I a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_of_Schaumburg-Lippe a :Man .\n\ndata:Alexander_Zoubkoff a :Man .\n\ndata:Alexander_of_Battenberg a :Man .\n\ndata:Viktoria_of_Prussia a :Woman ;\n    :hasBirthYear 1866 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear data:1890,\n        data:1927 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :isSiblingOf data:Charlotte_of_Prussia,\n        data:Henry_of_Prussia,\n        data:Margaret_of_Prussia,\n        data:Sigismund_of_Prussia,\n        data:Sophie_of_Prussia,\n        data:Waldemar_of_Prussia,\n        data:Wilhelm_II .\n\ndata:1890 a :DomainEntity .\n\ndata:1927 a :DomainEntity .\n\ndata:Augusta_of_Saxe-Weimar a :Woman .\n\ndata:Charlotte_of_Prussia a :Woman .\n\ndata:Frederick_III a :Man ;\n    :hasFather data:Wilhelm_I ;\n    :hasMother data:Augusta_of_Saxe-Weimar .\n\ndata:Henry_of_Prussia a :Man .\n\ndata:Margaret_of_Prussia a :Woman .\n\ndata:Prince_Albert a :Man .\n\ndata:Queen_Victoria a :Woman .\n\ndata:Sigismund_of_Prussia a :Man .\n\ndata:Sophie_of_Prussia a :Woman .\n\ndata:Victoria_Princess_Royal a :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Waldemar_of_Prussia a :Man .\n\ndata:Wilhelm_I a :Man .\n\ndata:Wilhelm_II a :Man .\n\n"
+    }
+]

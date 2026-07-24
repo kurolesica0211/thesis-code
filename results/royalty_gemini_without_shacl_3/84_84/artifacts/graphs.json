@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Peter_II ;\n    :hasMother data:Alexandra .\n\ndata:King_George_II a :Man,\n        :Person ;\n    :isSiblingOf data:Alexander_Greece .\n\ndata:Alexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 1993 ;\n    :hasFather data:Alexander_Greece ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Aspasia_Manos ;\n    :hasRelation data:Peter_II .\n\ndata:Aspasia_Manos a :Person,\n        :Woman .\n\ndata:Maria_Yugoslavia a :Person,\n        :Woman .\n\ndata:Queen_Sophia a :Person,\n        :Woman .\n\ndata:Alexander_Greece a :Man,\n        :Person ;\n    :hasMother data:Queen_Sophia .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :hasMother data:Maria_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Peter_II ;\n    :hasMother data:Alexandra .\n\ndata:King_George_II a :Man,\n        :Person ;\n    :isSiblingOf data:Alexander_Greece .\n\ndata:Alexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 1993 ;\n    :hasFather data:Alexander_Greece ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Aspasia_Manos ;\n    :hasRelation data:Peter_II .\n\ndata:Aspasia_Manos a :Person,\n        :Woman .\n\ndata:Maria_Yugoslavia a :Person,\n        :Woman .\n\ndata:Queen_Sophia a :Person,\n        :Woman .\n\ndata:Alexander_Greece a :Man,\n        :Person ;\n    :hasMother data:Queen_Sophia .\n\ndata:Peter_II a :Man,\n        :Person ;\n    :hasMother data:Maria_Yugoslavia .\n\n"
+    }
+]

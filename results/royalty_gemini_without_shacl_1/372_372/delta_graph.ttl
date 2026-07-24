@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeWilliamOfHanover a :Man ;
+    :hasBirthYear 1915 ;
+    :hasChild data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustusDukeOfBrunswick ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasSister data:FredericaOfHanover .
+
+data:PaulOfGreece a :Man .
+
+data:SophieOfGreeceAndDenmark a :Woman ;
+    :hasChild data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMother data:AliceOfBattenberg .
+
+data:AliceOfBattenberg a :Woman .
+
+data:AndrewOfGreeceAndDenmark a :Man .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Woman .
+
+data:ErnestAugustusDukeOfBrunswick a :Man .
+
+data:FredericaOfHanover a :Woman .
+
+data:VictoriaLouiseOfPrussia a :Woman ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein .
+
+data:WilhelmII a :Man .
+
+data:FriederikeOfHanover a :Woman ;
+    :hasBirthYear 1954 .
+
+data:GeorgOfHanover a :Man ;
+    :hasBirthYear 1949 .
+
+data:WelfOfHanover a :Man ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 1981 .
+

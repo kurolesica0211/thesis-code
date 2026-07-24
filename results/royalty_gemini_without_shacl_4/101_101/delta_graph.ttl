@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gustav_Albrecht a :Man ;
+    :hasFather data:Gustav_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:Princess_Mafalda a :Woman ;
+    :hasFather data:Gustav_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:King_Frederik_X_of_Denmark a :Man .
+
+data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark .
+
+data:Carina_Axelsson a :Woman .
+
+data:Gustav_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :hasBirthYear "1969"^^xsd:positiveInteger ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:King_Frederik_X_of_Denmark .
+
+data:Princess_Benedikte_of_Denmark a :Woman .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
+

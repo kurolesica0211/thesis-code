@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:King_Willem-Alexander a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Alexia_of_the_Netherlands .\n\ndata:Queen_Maxima a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Alexia_of_the_Netherlands .\n\ndata:Princess_Alexia_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :isDaughterOf data:King_Willem-Alexander,\n        data:Queen_Maxima .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:King_Willem-Alexander a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Alexia_of_the_Netherlands .\n\ndata:Queen_Maxima a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Alexia_of_the_Netherlands .\n\ndata:Princess_Alexia_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :isDaughterOf data:King_Willem-Alexander,\n        data:Queen_Maxima .\n\n"
+    }
+]

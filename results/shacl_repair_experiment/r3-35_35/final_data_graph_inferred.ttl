@@ -1,0 +1,542 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Alphonse_de_Borbon a :Person ;
+    :hasRelation data:Louis_Alphonse_de_Borbon ;
+    :isBloodrelationOf data:Louis_Alphonse_de_Borbon ;
+    :isSiblingOf data:Louis_Alphonse_de_Borbon .
+
+data:Francisco_Franco a :Man ;
+    :hasBrother data:Francisco_Franco ;
+    :hasRelation data:Francisco_Franco ;
+    :isBloodrelationOf data:Francisco_Franco ;
+    :isBrotherOf data:Francisco_Franco ;
+    :isSiblingOf data:Francisco_Franco .
+
+data:Francisco_de_Borbon a :Man ;
+    :hasBrother data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :isBloodrelationOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBrotherOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isUncleOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor,
+        :Woman ;
+    :hasChild data:Louis_Alphonse_de_Bourbon ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSon data:Louis_Alphonse_de_Bourbon ;
+    :isAncestorOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isAuntOf data:Louis_Alphonse_de_Bourbon ;
+    :isBloodrelationOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isMotherOf data:Louis_Alphonse_de_Bourbon ;
+    :isParentOf data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSisterOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Victor_Vargas a :Ancestor,
+        :Man ;
+    :hasBrother data:Victor_Vargas ;
+    :hasChild data:Maria_Margarita_Vargas_Santaella ;
+    :hasDaughter data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :isAncestorOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isBloodrelationOf data:Victor_Vargas ;
+    :isBrotherOf data:Victor_Vargas ;
+    :isFatherOf data:Maria_Margarita_Vargas_Santaella ;
+    :isParentOf data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Victor_Vargas ;
+    :isUncleOf data:Maria_Margarita_Vargas_Santaella .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Woman ;
+    :hasChild data:Alfonso_de_Borbon ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :hasSon data:Alfonso_de_Borbon ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isAuntOf data:Alfonso_de_Borbon ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isMotherOf data:Alfonso_de_Borbon ;
+    :isParentOf data:Alfonso_de_Borbon ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSon data:Jaime_Duke_of_Segovia ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Jaime_Duke_of_Segovia ;
+    :isParentOf data:Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Jaime_Duke_of_Segovia .
+
+data:Jaime_Duke_of_Segovia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain ;
+    :hasBrother data:Jaime_Duke_of_Segovia ;
+    :hasChild data:Alfonso_de_Borbon ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasParent data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSon data:Alfonso_de_Borbon ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Jaime_Duke_of_Segovia ;
+    :isBrotherOf data:Jaime_Duke_of_Segovia ;
+    :isChildOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Alfonso_de_Borbon ;
+    :isParentOf data:Alfonso_de_Borbon ;
+    :isSiblingOf data:Jaime_Duke_of_Segovia ;
+    :isSonOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Alfonso_de_Borbon .
+
+data:Alfonso_de_Borbon a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :hasBrother data:Alfonso_de_Borbon ;
+    :hasChild data:Louis_Alphonse_de_Bourbon ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSon data:Louis_Alphonse_de_Bourbon ;
+    :isAncestorOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alfonso_de_Borbon ;
+    :isBrotherOf data:Alfonso_de_Borbon ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :isFatherOf data:Louis_Alphonse_de_Bourbon ;
+    :isParentOf data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Alfonso_de_Borbon ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :isUncleOf data:Louis_Alphonse_de_Bourbon .
+
+data:Maria_Margarita_Vargas_Santaella a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Victor_Vargas ;
+    :hasChild data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasDaughter data:Eugenie_de_Borbon_y_Vargas ;
+    :hasFather data:Victor_Vargas ;
+    :hasParent data:Victor_Vargas ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Maria_Margarita_Vargas_Santaella ;
+    :hasSon data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isAncestorOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isAuntOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Maria_Margarita_Vargas_Santaella ;
+    :isChildOf data:Victor_Vargas ;
+    :isDaughterOf data:Victor_Vargas ;
+    :isMotherOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isParentOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSiblingOf data:Maria_Margarita_Vargas_Santaella ;
+    :isSisterOf data:Maria_Margarita_Vargas_Santaella .
+
+data:Alphonse_de_Borbon_y_Vargas a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasBrother data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Eugenie_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBrotherOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Eugenie_de_Borbon_y_Vargas a :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasBrother data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Eugenie_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isDaughterOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSisterOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas .
+
+data:Henri_de_Borbon_y_Vargas a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasBrother data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Eugenie_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBrotherOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis_de_Borbon_y_Vargas a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasBrother data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSister data:Eugenie_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBrotherOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis_Alphonse_de_Bourbon a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasChild data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasDaughter data:Eugenie_de_Borbon_y_Vargas ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasParent data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borbon,
+        data:Alphonse_de_Borbon_y_Vargas,
+        data:Emmanuelle_de_Dampierre,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Francisco_de_Borbon,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Jaime_Duke_of_Segovia,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Louis_de_Borbon_y_Vargas,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Victor_Vargas ;
+    :hasSon data:Alphonse_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isAncestorOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isBloodrelationOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBrotherOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isChildOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isFatherOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isParentOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :isSiblingOf data:Francisco_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSonOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isUncleOf data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas .
+

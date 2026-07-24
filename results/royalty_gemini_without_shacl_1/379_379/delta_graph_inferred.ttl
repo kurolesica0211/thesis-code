@@ -1,0 +1,222 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:PhilipOfGreeceAndDenmark a :Man ;
+    :hasBrother data:PhilipOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male ;
+    :hasSister data:TheodoraOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isBrotherOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isSiblingOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isUncleOf data:Max .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:TheodoraOfGreeceAndDenmark ;
+    :hasDaughter data:TheodoraOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Female ;
+    :hasSister data:AliceOfBattenberg ;
+    :isAncestorOf data:Max,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isAuntOf data:TheodoraOfGreeceAndDenmark ;
+    :isBloodrelationOf data:AliceOfBattenberg ;
+    :isMotherOf data:TheodoraOfGreeceAndDenmark ;
+    :isParentOf data:TheodoraOfGreeceAndDenmark ;
+    :isSiblingOf data:AliceOfBattenberg ;
+    :isSisterOf data:AliceOfBattenberg .
+
+data:AndrewOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :hasBrother data:AndrewOfGreeceAndDenmark ;
+    :hasChild data:TheodoraOfGreeceAndDenmark ;
+    :hasDaughter data:TheodoraOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Max,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isBloodrelationOf data:AndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:AndrewOfGreeceAndDenmark ;
+    :isFatherOf data:TheodoraOfGreeceAndDenmark ;
+    :isParentOf data:TheodoraOfGreeceAndDenmark ;
+    :isSiblingOf data:AndrewOfGreeceAndDenmark ;
+    :isUncleOf data:TheodoraOfGreeceAndDenmark .
+
+data:MarieLouiseOfHanover a :Ancestor,
+        :Woman ;
+    :hasChild data:Berthold ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Female ;
+    :hasSister data:MarieLouiseOfHanover ;
+    :hasSon data:Berthold ;
+    :isAncestorOf data:Berthold,
+        data:Max ;
+    :isAuntOf data:Berthold ;
+    :isBloodrelationOf data:MarieLouiseOfHanover ;
+    :isMotherOf data:Berthold ;
+    :isParentOf data:Berthold ;
+    :isSiblingOf data:MarieLouiseOfHanover ;
+    :isSisterOf data:MarieLouiseOfHanover .
+
+data:Maximilian a :Ancestor,
+        :Man ;
+    :hasBrother data:Maximilian ;
+    :hasChild data:Berthold ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male ;
+    :hasSon data:Berthold ;
+    :isAncestorOf data:Berthold,
+        data:Max ;
+    :isBloodrelationOf data:Maximilian ;
+    :isBrotherOf data:Maximilian ;
+    :isFatherOf data:Berthold ;
+    :isParentOf data:Berthold ;
+    :isSiblingOf data:Maximilian ;
+    :isUncleOf data:Berthold .
+
+data:Berthold a :Ancestor,
+        :Man ;
+    :hasAncestor data:MarieLouiseOfHanover,
+        data:Maximilian ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Berthold ;
+    :hasChild data:Max ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:MarieLouiseOfHanover ;
+    :hasParent data:MarieLouiseOfHanover,
+        data:Maximilian ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male ;
+    :hasSon data:Max ;
+    :isAncestorOf data:Max ;
+    :isBloodrelationOf data:Berthold ;
+    :isBrotherOf data:Berthold ;
+    :isChildOf data:MarieLouiseOfHanover,
+        data:Maximilian ;
+    :isFatherOf data:Max ;
+    :isParentOf data:Max ;
+    :isSiblingOf data:Berthold ;
+    :isSonOf data:MarieLouiseOfHanover,
+        data:Maximilian ;
+    :isUncleOf data:Max .
+
+data:Max a :Man ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Maximilian,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasBrother data:Max ;
+    :hasFather data:Berthold ;
+    :hasMother data:TheodoraOfGreeceAndDenmark ;
+    :hasParent data:Berthold,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Max ;
+    :isBrotherOf data:Max ;
+    :isChildOf data:Berthold,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isSiblingOf data:Max ;
+    :isSonOf data:Berthold,
+        data:TheodoraOfGreeceAndDenmark .
+
+data:TheodoraOfGreeceAndDenmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasBrother data:PhilipOfGreeceAndDenmark ;
+    :hasChild data:Max ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasParent data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Berthold,
+        data:MarieLouiseOfHanover,
+        data:Max,
+        data:Maximilian,
+        data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Female ;
+    :hasSister data:TheodoraOfGreeceAndDenmark ;
+    :hasSon data:Max ;
+    :isAncestorOf data:Max ;
+    :isAuntOf data:Max ;
+    :isBloodrelationOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isChildOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isDaughterOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isMotherOf data:Max ;
+    :isParentOf data:Max ;
+    :isSiblingOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark ;
+    :isSisterOf data:PhilipOfGreeceAndDenmark,
+        data:TheodoraOfGreeceAndDenmark .
+

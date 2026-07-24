@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Patrick a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:PrinceEdwardDukeOfKent ;
+    :hasMother data:KatharineDuchessOfKent .
+
+data:GeorgeV a :Man,
+        :Person .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
+        :Woman .
+
+data:PrinceEdwardDukeOfKent a :Man,
+        :Person ;
+    :hasBirthYear 1935 ;
+    :hasFather data:PrinceGeorgeDukeOfKent ;
+    :hasMarriageYear 1961 ;
+    :hasMother data:PrincessMarinaDuchessOfKent ;
+    :hasRelation data:KatharineDuchessOfKent ;
+    :isSiblingOf data:PrinceMichaelOfKent .
+
+data:PrinceGeorgeDukeOfKent a :Man,
+        :Person ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary .
+
+data:PrinceMichaelOfKent a :Man,
+        :Person .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincessMarinaDuchessOfKent a :Person,
+        :Woman ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .
+
+data:QueenMary a :Person,
+        :Woman .
+
+data:KatharineDuchessOfKent a :Person,
+        :Woman ;
+    :hasDeathYear 2025 .
+

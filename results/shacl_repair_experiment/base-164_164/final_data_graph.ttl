@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Feodorovna_Tsarina a :Person,
+        :Woman .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Vladimir_of_Russia ;
+    :hasDeathYear 1967 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Andrei_Vladimirovich_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasSister data:Maria_of_Russia ;
+    :hasSon data:Friedrich_Wilhelm_of_Prussia .
+
+data:Andrei_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Ernest_Louis_of_Hesse a :Man,
+        :Person .
+
+data:Friedrich_Wilhelm_of_Prussia a :Man,
+        :Person .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person .
+
+data:Maria_of_Russia a :Person,
+        :Woman .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Ernest_Louis_of_Hesse .
+
+data:Vladimir_of_Russia a :Man,
+        :Person .
+

@@ -1,0 +1,519 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :hasSister data:Augusta_Victoria ;
+    :hasSon data:Wilhelm_Crown_Prince ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm_Crown_Prince ;
+    :isAuntOf data:Wilhelm_Crown_Prince ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isMotherOf data:Wilhelm_Crown_Prince ;
+    :isParentOf data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSon data:Wilhelm_Crown_Prince ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm_Crown_Prince ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Wilhelm_Crown_Prince ;
+    :isParentOf data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Wilhelm_Crown_Prince .
+
+data:Anastasia_Mikhailovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Anastasia_Mikhailovna ;
+    :isAncestorOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isAuntOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna ;
+    :isMotherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna ;
+    :isSisterOf data:Anastasia_Mikhailovna .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isFatherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isUncleOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasParent data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia ;
+    :isAuntOf data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isDaughterOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isMotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:Wilhelm_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_Crown_Prince .
+
+data:Prince_Adalbert a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Oskar a :Man,
+        :Person ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Princess_Viktoria_Luise a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isAuntOf data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSisterOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince .
+
+data:Wilhelm_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Wilhelm_Crown_Prince ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Augusta_Victoria ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasRelation data:Anastasia_Mikhailovna,
+        data:Augusta_Victoria,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isBrotherOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+

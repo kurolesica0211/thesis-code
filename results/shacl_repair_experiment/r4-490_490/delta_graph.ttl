@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Anne_of_Bourbon_Parma a :Ancestor ;
+    :hasSex data:Female .
+
+data:Constantine_I_of_Greece a :Ancestor ;
+    :hasSex data:Male .
+
+data:Elena_of_Romania a :Ancestor ;
+    :hasSex data:Female .
+
+data:Ferdinand_I a :Ancestor ;
+    :hasFather data:Carol_II ;
+    :hasSex data:Male .
+
+data:Carol_II a :Ancestor ;
+    :hasFather data:Michael_I ;
+    :hasSex data:Male .
+
+data:Michael_I a :Ancestor ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

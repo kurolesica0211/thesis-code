@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:King_George_VI a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Margaret .
+
+data:Lady_Frances_von_Hofmannsthal a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasFather data:David_Armstrong-Jones ;
+    :hasMother data:Serena_Alleyne_Stanhope .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :isSisterOf data:David_Armstrong-Jones .
+
+data:Polly_Fry a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+
+data:Viscount_Linley_Son a :Man,
+        :Person ;
+    :hasFather data:David_Armstrong-Jones ;
+    :hasMother data:Serena_Alleyne_Stanhope .
+
+data:David_Linley a :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Antony_Armstrong-Jones a :Man,
+        :Person .
+
+data:David_Armstrong-Jones a :Man,
+        :Person ;
+    :alsoKnownAs data:David_Linley ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasRelation data:Serena_Alleyne_Stanhope .
+
+data:Serena_Alleyne_Stanhope a :Person,
+        :Woman ;
+    :hasBirthYear 1970 .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+

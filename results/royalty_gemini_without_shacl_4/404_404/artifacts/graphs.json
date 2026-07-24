@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IvarMountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:GeorgeMountbatten ;\n    :hasFather data:DavidMountbatten ;\n    :hasMother data:JanetMercedesBryce .\n\ndata:PenelopeAnneVereThompson a :Person,\n        :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ColinGrahamThompson ;\n    :hasMother data:RosemaryVereEdwardes .\n\ndata:ColinGrahamThompson a :Man,\n        :Person .\n\ndata:DavidMountbatten a :Man,\n        :Person ;\n    :hasFather data:PrinceGeorgeOfBattenberg .\n\ndata:GeorgeMountbatten a :Man,\n        :Person .\n\ndata:JanetMercedesBryce a :Person,\n        :Woman .\n\ndata:PrinceGeorgeOfBattenberg a :Man,\n        :Person .\n\ndata:RosemaryVereEdwardes a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IvarMountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:GeorgeMountbatten ;\n    :hasFather data:DavidMountbatten ;\n    :hasMother data:JanetMercedesBryce .\n\ndata:PenelopeAnneVereThompson a :Person,\n        :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ColinGrahamThompson ;\n    :hasMother data:RosemaryVereEdwardes .\n\ndata:ColinGrahamThompson a :Man,\n        :Person .\n\ndata:DavidMountbatten a :Man,\n        :Person ;\n    :hasFather data:PrinceGeorgeOfBattenberg .\n\ndata:GeorgeMountbatten a :Man,\n        :Person .\n\ndata:JanetMercedesBryce a :Person,\n        :Woman .\n\ndata:PrinceGeorgeOfBattenberg a :Man,\n        :Person .\n\ndata:RosemaryVereEdwardes a :Person,\n        :Woman .\n\n"
+    }
+]

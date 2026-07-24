@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Sophie,
+        data:Viktoria,
+        data:Wilhelm_II .
+
+data:Charlotte a :Person,
+        :Woman .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henry a :Man,
+        :Person .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Viktoria a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+

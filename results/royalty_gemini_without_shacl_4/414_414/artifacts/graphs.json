@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person ;\n    :hasBrother data:Alfonso_of_Spain ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Alfonso_XIII_of_Spain ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :knownAs \"Alfonsito\"^^xsd:string .\n\ndata:Juan_Count_of_Barcelona a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I_of_Spain a :Man,\n        :Person ;\n    :hasBrother data:Alfonso_of_Spain ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Alfonso_XIII_of_Spain ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :knownAs \"Alfonsito\"^^xsd:string .\n\ndata:Juan_Count_of_Barcelona a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

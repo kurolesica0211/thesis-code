@@ -1,0 +1,118 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/387_387",
+  "text_file": "Q63676181.txt",
+  "text_key": "Q63676181",
+  "article": "https://en.wikipedia.org/wiki/Lena_Tindall",
+  "article_key": "Lena Tindall",
+  "main_entity": {
+    "uri": "http://example.com/data#Lena_Tindall",
+    "qid": "Q63676181",
+    "label": "Lena Tindall"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lena_Tindall",
+      "qid": "Q63676181",
+      "label": "Lena Tindall",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Mike_Tindall",
+      "qid": "Q1386944",
+      "label": "Mike Tindall",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Zara_Tindall",
+      "qid": "Q147663",
+      "label": "Zara Tindall",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Mark_Phillips",
+      "qid": "Q547893",
+      "label": "Mark Phillips",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Mark_Phillips",
+      "extracted_local_name": "Mark_Phillips",
+      "embedding_text": "Mark Phillips",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Mark_Phillips",
+      "ground_truth_qid": "Q547893",
+      "ground_truth_label": "Mark Phillips",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Mark Phillips",
+      "best_candidate_label": "Mark Phillips",
+      "best_candidate_qid": "Q547893",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Zara_Tindall",
+      "extracted_local_name": "Zara_Tindall",
+      "embedding_text": "Zara Tindall",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Zara_Tindall",
+      "ground_truth_qid": "Q147663",
+      "ground_truth_label": "Zara Tindall",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Zara Tindall",
+      "best_candidate_label": "Zara Tindall",
+      "best_candidate_qid": "Q147663",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anne_Princess_Royal",
+      "extracted_local_name": "Anne_Princess_Royal",
+      "embedding_text": "Anne Princess Royal",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9743589743589743,
+      "ground_truth_uri": "http://example.com/data#Anne-_Princess_Royal",
+      "ground_truth_qid": "Q151754",
+      "ground_truth_label": "Anne, Princess Royal",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne- Princess Royal",
+      "best_candidate_label": "Anne, Princess Royal",
+      "best_candidate_qid": "Q151754",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9743589743589743
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 3,
+    "entities_unmatched": 0
+  }
+}

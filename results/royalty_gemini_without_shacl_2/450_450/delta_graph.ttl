@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Valerie_of_Austria a :Woman .
+
+data:Beatrix_of_Hohenlohe-Langenburg a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:King_Charles_III a :Man .
+
+data:Margaret_Princess_of_Hesse_and_by_Rhine a :Woman .
+
+data:Maximilian_Hereditary_Prince_of_Baden a :Man ;
+    :hasMarriageYear 1966 .
+
+data:Prince_Andrew a :Man .
+
+data:Prince_Andrew_of_Yugoslavia a :Man .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :isBrotherOf data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Princess_Cecilie a :Woman .
+
+data:Princess_Christina_of_Hesse a :Woman .
+
+data:Princess_Elizabeth_of_the_United_Kingdom a :Woman .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+

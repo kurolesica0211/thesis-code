@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Mitchell_Johnson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:John_Mitchell_Johnson ;
+    :hasChild data:Philip_Louis_Johnson ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasSon data:Philip_Louis_Johnson ;
+    :isAncestorOf data:Philip_Louis_Johnson ;
+    :isBloodrelationOf data:John_Mitchell_Johnson ;
+    :isBrotherOf data:John_Mitchell_Johnson ;
+    :isFatherOf data:Philip_Louis_Johnson ;
+    :isParentOf data:Philip_Louis_Johnson ;
+    :isSiblingOf data:John_Mitchell_Johnson ;
+    :isUncleOf data:Philip_Louis_Johnson .
+
+data:Clyde_Kenneth_Harris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Clyde_Kenneth_Harris ;
+    :hasChild data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasDaughter data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :isAncestorOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson ;
+    :isBloodrelationOf data:Clyde_Kenneth_Harris ;
+    :isBrotherOf data:Clyde_Kenneth_Harris ;
+    :isFatherOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isParentOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isSiblingOf data:Clyde_Kenneth_Harris ;
+    :isUncleOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie_of_Prussia ;
+    :hasDaughter data:Cecilie_of_Prussia ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Cecilie_of_Prussia,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson ;
+    :isAuntOf data:Cecilie_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Cecilie_of_Prussia ;
+    :isParentOf data:Cecilie_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_German_Crown_Prince ;
+    :hasChild data:Cecilie_of_Prussia ;
+    :hasDaughter data:Cecilie_of_Prussia ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :isAncestorOf data:Cecilie_of_Prussia,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson ;
+    :isBloodrelationOf data:Wilhelm_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince ;
+    :isFatherOf data:Cecilie_of_Prussia ;
+    :isParentOf data:Cecilie_of_Prussia ;
+    :isSiblingOf data:Wilhelm_German_Crown_Prince ;
+    :isUncleOf data:Cecilie_of_Prussia .
+
+data:Philip_Louis_Johnson a :Man,
+        :Person ;
+    :hasAncestor data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasBrother data:Philip_Louis_Johnson ;
+    :hasFather data:John_Mitchell_Johnson ;
+    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasParent data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :isBloodrelationOf data:Philip_Louis_Johnson ;
+    :isBrotherOf data:Philip_Louis_Johnson ;
+    :isChildOf data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isSiblingOf data:Philip_Louis_Johnson ;
+    :isSonOf data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+
+data:Cecilie_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasDaughter data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Cecilie_of_Prussia ;
+    :isAncestorOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson ;
+    :isAuntOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isBloodrelationOf data:Cecilie_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isDaughterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isMotherOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isParentOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isSiblingOf data:Cecilie_of_Prussia ;
+    :isSisterOf data:Cecilie_of_Prussia .
+
+data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasChild data:Philip_Louis_Johnson ;
+    :hasFather data:Clyde_Kenneth_Harris ;
+    :hasMother data:Cecilie_of_Prussia ;
+    :hasParent data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris ;
+    :hasRelation data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:John_Mitchell_Johnson,
+        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris,
+        data:Philip_Louis_Johnson,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasSon data:Philip_Louis_Johnson ;
+    :isAncestorOf data:Philip_Louis_Johnson ;
+    :isAuntOf data:Philip_Louis_Johnson ;
+    :isBloodrelationOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isChildOf data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris ;
+    :isDaughterOf data:Cecilie_of_Prussia,
+        data:Clyde_Kenneth_Harris ;
+    :isMotherOf data:Philip_Louis_Johnson ;
+    :isParentOf data:Philip_Louis_Johnson ;
+    :isSiblingOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :isSisterOf data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+

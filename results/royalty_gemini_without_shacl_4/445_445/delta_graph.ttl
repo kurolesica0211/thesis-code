@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Elizabeth_Georgiana_Shakerley a :Person,
+        :Woman ;
+    :formerlyKnownAs "Elizabeth Georgiana Anson"^^xsd:string ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Patrick_Anson ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_Anson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasRelation data:Sir_Geoffrey_Shakerley ;
+    :knownAs "Elizabeth Anson"^^xsd:string .
+
+data:Anne_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasParent data:Prince_Georg_of_Denmark .
+
+data:Patrick_Anson a :Man,
+        :Person .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Sir_Geoffrey_Shakerley a :Man,
+        :Person .
+
+data:Thomas_Anson a :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958 .
+

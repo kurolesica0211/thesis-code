@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl-Anton a :Man,
+        :Person ;
+    :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
+    :hasMother data:Cecilia_von_Goess-Saurau .
+
+data:Emma_of_Waldeck_and_Pyrmont a :Person,
+        :Woman .
+
+data:Altburg_Marie_Mathilde_von_Oldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Augustus_II_Grand_Duke_of_Oldenburg .
+
+data:Frederick_Augustus_II_Grand_Duke_of_Oldenburg a :Man,
+        :Person .
+
+data:Josias_Georg_Wilhelm_Adolf a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1967 .
+
+data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Josias_Georg_Wilhelm_Adolf ;
+    :hasMarriageYear 1988 ;
+    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
+    :hasRelation data:Cecilia_von_Goess-Saurau .
+
+data:Cecilia_von_Goess-Saurau a :Person,
+        :Woman ;
+    :hasBirthYear 1956 .
+

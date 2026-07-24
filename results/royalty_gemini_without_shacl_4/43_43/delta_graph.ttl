@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person .
+
+data:MariaPiaOfBourbonTwoSicilies a :Person,
+        :Woman .
+
+data:PedroGastaoOfOrleansBraganza a :Man,
+        :Person ;
+    :hasFather data:PedroDeAlcantaraPrinceOfGraoPara .
+
+data:PedroHenriqueOfOrleansBraganza a :Man,
+        :Person ;
+    :alsoKnownAs "O Príncipe Esperado"^^xsd:string ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1981 ;
+    :hasFather data:LuisOfOrleansBraganza ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :hasRelation data:MariaElisabethOfBavaria ;
+    :isSiblingOf data:LuizGastao,
+        data:PiaMaria ;
+    :knownAs "The Expected Prince"^^xsd:string .
+
+data:GastonCountOfEu a :Man,
+        :Person .
+
+data:IsabelOfBrazil a :Person,
+        :Woman .
+
+data:LuisOfOrleansBraganza a :Man,
+        :Person ;
+    :hasFather data:GastonCountOfEu ;
+    :hasMother data:IsabelOfBrazil .
+
+data:LuizGastao a :Man,
+        :Person .
+
+data:MariaDiGraziaOfBourbonTwoSicilies a :Person,
+        :Woman .
+
+data:MariaElisabethOfBavaria a :Person,
+        :Woman .
+
+data:PedroDeAlcantaraPrinceOfGraoPara a :Man,
+        :Person .
+
+data:PiaMaria a :Person,
+        :Woman .
+

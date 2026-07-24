@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IsabellaMassenet a :Person,\n        :Woman ;\n    :hasMother data:DameNatalieMassenet .\n\ndata:MarinaConsortOfPrinceMichael a :Person,\n        :Woman .\n\ndata:MatthewKumar a :Man,\n        :Person .\n\ndata:PrinceAchileas-AndreasOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 2000 ;\n    :hasFather data:CrownPrincePavlosOfGreece ;\n    :hasMother data:Marie-ChantalMiller ;\n    :knownAs \"Achi Miller\"^^xsd:string .\n\ndata:PrincessTheodoraOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:ConstantineIIOfGreece a :Man,\n        :Person .\n\ndata:CrownPrincePavlosOfGreece a :Man,\n        :Person ;\n    :hasFather data:ConstantineIIOfGreece ;\n    :hasMother data:QueenAnne-MarieOfDenmark .\n\ndata:DameNatalieMassenet a :Person,\n        :Woman .\n\ndata:Marie-ChantalMiller a :Person,\n        :Woman .\n\ndata:QueenAnne-MarieOfDenmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IsabellaMassenet a :Person,\n        :Woman ;\n    :hasMother data:DameNatalieMassenet .\n\ndata:MarinaConsortOfPrinceMichael a :Person,\n        :Woman .\n\ndata:MatthewKumar a :Man,\n        :Person .\n\ndata:PrinceAchileas-AndreasOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 2000 ;\n    :hasFather data:CrownPrincePavlosOfGreece ;\n    :hasMother data:Marie-ChantalMiller ;\n    :knownAs \"Achi Miller\"^^xsd:string .\n\ndata:PrincessTheodoraOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:ConstantineIIOfGreece a :Man,\n        :Person .\n\ndata:CrownPrincePavlosOfGreece a :Man,\n        :Person ;\n    :hasFather data:ConstantineIIOfGreece ;\n    :hasMother data:QueenAnne-MarieOfDenmark .\n\ndata:DameNatalieMassenet a :Person,\n        :Woman .\n\ndata:Marie-ChantalMiller a :Person,\n        :Woman .\n\ndata:QueenAnne-MarieOfDenmark a :Person,\n        :Woman .\n\n"
+    }
+]

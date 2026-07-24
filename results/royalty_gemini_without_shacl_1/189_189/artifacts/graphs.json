@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HowardOxenberg a :Man .\n\ndata:ManuelUlloaElias a :Man ;\n    :hasDeathYear 1992 .\n\ndata:NeilBalfourOfDawyck a :Man .\n\ndata:PrincessElizabethOfYugoslavia a :Woman ;\n    :alsoKnownAs \"Jelisaveta Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:PrinceAlexanderOfYugoslavia,\n        data:PrinceNicholasOfYugoslavia ;\n    :hasFather data:PrincePaulOfYugoslavia ;\n    :hasMarriageYear 1960,\n        1969,\n        1987 ;\n    :hasMother data:PrincessOlgaOfGreeceAndDenmark .\n\ndata:PrinceAlexanderOfYugoslavia a :Man .\n\ndata:PrinceNicholasOfYugoslavia a :Man .\n\ndata:PrincePaulOfYugoslavia a :Man .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HowardOxenberg a :Man .\n\ndata:ManuelUlloaElias a :Man ;\n    :hasDeathYear 1992 .\n\ndata:NeilBalfourOfDawyck a :Man .\n\ndata:PrincessElizabethOfYugoslavia a :Woman ;\n    :alsoKnownAs \"Jelisaveta Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:PrinceAlexanderOfYugoslavia,\n        data:PrinceNicholasOfYugoslavia ;\n    :hasFather data:PrincePaulOfYugoslavia ;\n    :hasMarriageYear 1960,\n        1969,\n        1987 ;\n    :hasMother data:PrincessOlgaOfGreeceAndDenmark .\n\ndata:PrinceAlexanderOfYugoslavia a :Man .\n\ndata:PrinceNicholasOfYugoslavia a :Man .\n\ndata:PrincePaulOfYugoslavia a :Man .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Woman .\n\n"
+    }
+]

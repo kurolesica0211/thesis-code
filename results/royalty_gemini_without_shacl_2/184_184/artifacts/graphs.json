@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Georgievich_Romanov a :Man ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna_Bettarini .\n\ndata:Kira_Leonida_Georgievna_Romanova a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna_Bettarini .\n\ndata:Franz_Wilhelm_of_Prussia a :Man ;\n    :hasFather data:Karl_Franz_of_Prussia ;\n    :hasMother data:Henriette_of_Schonaich-Carolath .\n\ndata:Henriette_of_Schonaich-Carolath a :Woman .\n\ndata:Karl_Franz_of_Prussia a :Man .\n\ndata:Leonida a :Woman .\n\ndata:Maria_Vladimirovna a :Woman ;\n    :hasFather data:Vladimir_Cyrillovich ;\n    :hasMother data:Leonida .\n\ndata:Vladimir_Cyrillovich a :Man .\n\ndata:George_Mikhailovich a :Man ;\n    :hasBirthYear \"1981\"^^xsd:positiveInteger ;\n    :hasFather data:Franz_Wilhelm_of_Prussia ;\n    :hasMother data:Maria_Vladimirovna .\n\ndata:Victoria_Romanovna_Bettarini a :Woman ;\n    :hasBirthYear \"1982\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Georgievich_Romanov a :Man ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna_Bettarini .\n\ndata:Kira_Leonida_Georgievna_Romanova a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Victoria_Romanovna_Bettarini .\n\ndata:Franz_Wilhelm_of_Prussia a :Man ;\n    :hasFather data:Karl_Franz_of_Prussia ;\n    :hasMother data:Henriette_of_Schonaich-Carolath .\n\ndata:Henriette_of_Schonaich-Carolath a :Woman .\n\ndata:Karl_Franz_of_Prussia a :Man .\n\ndata:Leonida a :Woman .\n\ndata:Maria_Vladimirovna a :Woman ;\n    :hasFather data:Vladimir_Cyrillovich ;\n    :hasMother data:Leonida .\n\ndata:Vladimir_Cyrillovich a :Man .\n\ndata:George_Mikhailovich a :Man ;\n    :hasBirthYear \"1981\"^^xsd:positiveInteger ;\n    :hasFather data:Franz_Wilhelm_of_Prussia ;\n    :hasMother data:Maria_Vladimirovna .\n\ndata:Victoria_Romanovna_Bettarini a :Woman ;\n    :hasBirthYear \"1982\"^^xsd:positiveInteger .\n\n"
+    }
+]

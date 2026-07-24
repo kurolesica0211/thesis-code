@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_Habsburg-Lothringen a :Man ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :isSiblingOf data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg .
+
+data:Eleonore_von_Habsburg a :Woman .
+
+data:Fiona_Campbell-Walter a :Woman .
+
+data:Francesca_von_Thyssen-Bornemisza a :Woman ;
+    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasMother data:Fiona_Campbell-Walter .
+
+data:Gloria_von_Habsburg a :Woman .
+
+data:Hans_Heinrich_Thyssen-Bornemisza a :Man .
+
+data:Karl_von_Habsburg a :Man ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_of_Saxe-Meiningen .
+
+data:Otto_von_Habsburg a :Man .
+
+data:Regina_of_Saxe-Meiningen a :Woman .
+

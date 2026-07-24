@@ -1,0 +1,94 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte_of_Croy a :Woman ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Charlotte_of_Croy,
+        data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Charlotte_of_Croy ;
+    :isBloodrelationOf data:Charlotte_of_Croy ;
+    :isSiblingOf data:Charlotte_of_Croy ;
+    :isSisterOf data:Charlotte_of_Croy .
+
+data:Beatrix_of_Hohenlohe-Langenburg a :Woman ;
+    :hasBrother data:Kraft_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Charlotte_of_Croy,
+        data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg .
+
+data:Gottfried_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Gottfried_of_Hohenlohe-Langenburg ;
+    :hasChild data:Kraft_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Charlotte_of_Croy,
+        data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Gottfried_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Gottfried_of_Hohenlohe-Langenburg ;
+    :isFatherOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Gottfried_of_Hohenlohe-Langenburg ;
+    :isUncleOf data:Kraft_of_Hohenlohe-Langenburg .
+
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Kraft_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Charlotte_of_Croy,
+        data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Margarita_of_Greece_and_Denmark ;
+    :isMotherOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Margarita_of_Greece_and_Denmark .
+
+data:Kraft_of_Hohenlohe-Langenburg a :Man ;
+    :hasAncestor data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:Kraft_of_Hohenlohe-Langenburg ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Charlotte_of_Croy,
+        data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Kraft_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Gottfried_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark .
+

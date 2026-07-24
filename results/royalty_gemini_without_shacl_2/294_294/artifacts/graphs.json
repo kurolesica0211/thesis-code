@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;\n    :hasBirthYear 1983 ;\n    :hasBrother data:Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Chantal_Hochuli ;\n    :hasRelation data:Ekaterina_Igorievna_Malysheva ;\n    :hasSister data:Alexandra_of_Hanover .\n\ndata:Alexandra_of_Hanover a :Woman .\n\ndata:Christian_of_Hanover a :Man ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Chantal_Hochuli .\n\ndata:Ekaterina_Igorievna_Malysheva a :Woman ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Igor_Malyshev ;\n    :hasMother data:Svetlana_Malysheva .\n\ndata:Igor_Malyshev a :Man .\n\ndata:Svetlana_Malysheva a :Woman .\n\ndata:Chantal_Hochuli a :Woman .\n\ndata:Ernst_August_Prince_of_Hanover a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;\n    :hasBirthYear 1983 ;\n    :hasBrother data:Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Chantal_Hochuli ;\n    :hasRelation data:Ekaterina_Igorievna_Malysheva ;\n    :hasSister data:Alexandra_of_Hanover .\n\ndata:Alexandra_of_Hanover a :Woman .\n\ndata:Christian_of_Hanover a :Man ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Chantal_Hochuli .\n\ndata:Ekaterina_Igorievna_Malysheva a :Woman ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Igor_Malyshev ;\n    :hasMother data:Svetlana_Malysheva .\n\ndata:Igor_Malyshev a :Man .\n\ndata:Svetlana_Malysheva a :Woman .\n\ndata:Chantal_Hochuli a :Woman .\n\ndata:Ernst_August_Prince_of_Hanover a :Man .\n\n"
+    }
+]

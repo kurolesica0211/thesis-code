@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrice_of_Orleans_Borbon a :Person,
+        :Woman ;
+    :isAuntOf data:Vladimir_Kirillovich .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasFather data:Vladimir_Kirillovich ;
+    :hasMother data:Leonida_Georgievna_Bagration_Moukhransky .
+
+data:Nicholas_Romanov a :Man,
+        :Person .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,
+        :Person .
+
+data:Cyril_Vladimirovich a :Man,
+        :Person ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna .
+
+data:Maria_Kirillovna a :Person,
+        :Woman .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+
+data:Marie_Alexandrovna a :Person,
+        :Woman .
+
+data:Viktoria_Feodorovna a :Person,
+        :Woman ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Marie_Alexandrovna .
+
+data:Vladimir_Alexandrovich a :Man,
+        :Person .
+
+data:Leonida_Georgievna_Bagration_Moukhransky a :Person,
+        :Woman .
+
+data:Vladimir_Kirillovich a :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1992 ;
+    :hasFather data:Cyril_Vladimirovich ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Viktoria_Feodorovna ;
+    :hasRelation data:Leonida_Georgievna_Bagration_Moukhransky ;
+    :isSiblingOf data:Maria_Kirillovna .
+

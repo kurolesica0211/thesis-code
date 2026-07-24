@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Pavlovna_of_Russia a :Person,
+        :Woman ;
+    :formerlyKnownAs "Marie of Mecklenberg-Schwerin"^^xsd:string ;
+    :hasBirthYear "1854"^^xsd:positiveInteger ;
+    :hasDeathYear "1920"^^xsd:positiveInteger ;
+    :hasFather data:Friedrich_Franz_II_of_Mecklenburg_Schwerin ;
+    :hasMarriageYear "1874"^^xsd:positiveInteger ;
+    :hasMother data:Augusta_Reuss_of_Kostritz ;
+    :hasRelation data:Vladimir_Alexandrovich_of_Russia ;
+    :knownAs "Maria Pavlovna Romanova"^^xsd:string .
+
+data:Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Augusta_Reuss_of_Kostritz a :Person,
+        :Woman .
+
+data:Friedrich_Franz_II_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Vladimir_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Alexander_II_of_Russia .
+

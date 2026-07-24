@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Werner_Rosendorff a :Man,
+        :Person ;
+    :hasBrother data:Werner_Rosendorff ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Werner_Rosendorff ;
+    :isBrotherOf data:Werner_Rosendorff ;
+    :isSiblingOf data:Werner_Rosendorff .
+
+data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Ferdinand_of_Prussia ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :hasSister data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasSon data:Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Alexander_Ferdinand_of_Prussia ;
+    :isAuntOf data:Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isMotherOf data:Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :isSisterOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Friedrich_Weygand a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Weygand ;
+    :hasChild data:Armgard_Weygand ;
+    :hasDaughter data:Armgard_Weygand ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Armgard_Weygand ;
+    :isBloodrelationOf data:Friedrich_Weygand ;
+    :isBrotherOf data:Friedrich_Weygand ;
+    :isFatherOf data:Armgard_Weygand ;
+    :isParentOf data:Armgard_Weygand ;
+    :isSiblingOf data:Friedrich_Weygand ;
+    :isUncleOf data:Armgard_Weygand .
+
+data:Karla_Franziska_Oheim a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Armgard_Weygand ;
+    :hasDaughter data:Armgard_Weygand ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :hasSister data:Karla_Franziska_Oheim ;
+    :isAncestorOf data:Armgard_Weygand ;
+    :isAuntOf data:Armgard_Weygand ;
+    :isBloodrelationOf data:Karla_Franziska_Oheim ;
+    :isMotherOf data:Armgard_Weygand ;
+    :isParentOf data:Armgard_Weygand ;
+    :isSiblingOf data:Karla_Franziska_Oheim ;
+    :isSisterOf data:Karla_Franziska_Oheim .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:August_Wilhelm_of_Prussia ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :hasSon data:August_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Alexander_Ferdinand_of_Prussia,
+        data:August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:August_Wilhelm_of_Prussia ;
+    :isParentOf data:August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:August_Wilhelm_of_Prussia .
+
+data:August_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:August_Wilhelm_of_Prussia ;
+    :hasChild data:Alexander_Ferdinand_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :hasSon data:Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:August_Wilhelm_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:August_Wilhelm_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Alexander_Ferdinand_of_Prussia .
+
+data:Armgard_Weygand a :Person,
+        :Woman ;
+    :hasAncestor data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Friedrich_Weygand ;
+    :hasMother data:Karla_Franziska_Oheim ;
+    :hasParent data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :hasSister data:Armgard_Weygand ;
+    :isBloodrelationOf data:Armgard_Weygand ;
+    :isChildOf data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim ;
+    :isDaughterOf data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim ;
+    :isSiblingOf data:Armgard_Weygand ;
+    :isSisterOf data:Armgard_Weygand .
+
+data:Alexander_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:August_Wilhelm_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Alexander_Ferdinand_of_Prussia ;
+    :hasDeathYear 1985 ;
+    :hasFather data:August_Wilhelm_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasParent data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:August_Wilhelm_of_Prussia ;
+    :hasRelation data:Alexander_Ferdinand_of_Prussia,
+        data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:Armgard_Weygand,
+        data:August_Wilhelm_of_Prussia,
+        data:Friedrich_Weygand,
+        data:Karla_Franziska_Oheim,
+        data:Werner_Rosendorff,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Alexander_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Alexander_Ferdinand_of_Prussia ;
+    :isChildOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Alexander_Ferdinand_of_Prussia ;
+    :isSonOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:August_Wilhelm_of_Prussia .
+

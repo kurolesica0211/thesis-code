@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Patricia_Mountbatten a :Person,\n        :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDaughter data:Amanda_Knatchbull ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Earl_Mountbatten_of_Burma ;\n    :hasMarriageYear 1946 ;\n    :hasMother data:Edwina_Ashley ;\n    :hasRelation data:John_Knatchbull ;\n    :hasSister data:Lady_Pamela_Hicks ;\n    :hasSon data:Nicholas_Knatchbull .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman ;\n    :hasFather data:John_Knatchbull .\n\ndata:Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Edwina_Ashley a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person ;\n    :hasFather data:John_Knatchbull .\n\ndata:John_Knatchbull a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Patricia_Mountbatten a :Person,\n        :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDaughter data:Amanda_Knatchbull ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Earl_Mountbatten_of_Burma ;\n    :hasMarriageYear 1946 ;\n    :hasMother data:Edwina_Ashley ;\n    :hasRelation data:John_Knatchbull ;\n    :hasSister data:Lady_Pamela_Hicks ;\n    :hasSon data:Nicholas_Knatchbull .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman ;\n    :hasFather data:John_Knatchbull .\n\ndata:Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Edwina_Ashley a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person ;\n    :hasFather data:John_Knatchbull .\n\ndata:John_Knatchbull a :Man,\n        :Person .\n\n"
+    }
+]

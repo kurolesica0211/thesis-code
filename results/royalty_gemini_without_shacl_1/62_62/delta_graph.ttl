@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:NinaGeorgievna a :Person,
+        :Woman ;
+    :hasMother data:Maria .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasFather data:Constantine .
+
+data:Elisabeth a :Person,
+        :Woman .
+
+data:Frederica a :Person,
+        :Woman ;
+    :hasChild data:ConstantineII,
+        data:Irene,
+        data:Sofia .
+
+data:GeorgeI a :Man,
+        :Person .
+
+data:GeorgeII a :Man,
+        :Person ;
+    :hasFather data:Constantine ;
+    :hasRelation data:Elisabeth .
+
+data:Helen a :Person,
+        :Woman ;
+    :hasFather data:Constantine .
+
+data:Katherine a :Person,
+        :Woman ;
+    :hasFather data:Constantine .
+
+data:Margaret a :Person,
+        :Woman ;
+    :isAuntOf data:Paul .
+
+data:Maria a :Person,
+        :Woman .
+
+data:Paul a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alexander,
+        data:GeorgeII ;
+    :hasChild data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Constantine ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Sophia ;
+    :hasRelation data:Frederica ;
+    :hasSister data:Helen,
+        data:Katherine .
+
+data:Sophia a :Person,
+        :Woman ;
+    :hasSister data:Margaret .
+
+data:ConstantineII a :Man,
+        :Person .
+
+data:Irene a :Person,
+        :Woman .
+
+data:Sofia a :Person,
+        :Woman .
+
+data:Constantine a :Man,
+        :Person ;
+    :hasFather data:GeorgeI .
+

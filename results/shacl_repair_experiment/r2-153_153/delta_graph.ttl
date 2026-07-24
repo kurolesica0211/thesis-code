@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alessandro_Torlonia :hasSex data:Male .
+
+data:Beatriz_of_Spain :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasSex data:Female .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasSex data:Male .
+
+data:Elena_of_Spain :hasFather data:Juan_Carlos_I ;
+    :hasSex data:Female .
+
+data:Louise_of_Orl%C3%A9ans a :Ancestor ;
+    :hasFather data:Philippe%2C_Count_of_Paris ;
+    :hasSex data:Female .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor ;
+    :hasSex data:Male .
+
+data:Juan%2C_Count_of_Barcelona a :Ancestor ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasSex data:Male .
+
+data:Juan_Carlos_I a :Ancestor ;
+    :hasFather data:Juan%2C_Count_of_Barcelona ;
+    :hasMother data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSex data:Male .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasSex data:Female .
+
+data:Philippe%2C_Count_of_Paris a :Ancestor ;
+    :hasSex data:Male .
+
+data:Alfonso_XIII a :Ancestor ;
+    :hasSex data:Male .
+
+data:Victoria_Eugenie a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_Duke_of_Aosta a :Ancestor .
+
+data:Amedeo_of_Savoy-Aosta a :Ancestor ;
+    :alsoKnownAs "Amedeo Umberto Costantino Giorgio"^^xsd:string .
+
+data:Henri_comte_de_Paris a :Ancestor .
+
+data:Irene_of_Greece_and_Denmark a :Ancestor .
+
+data:Isabelle_of_Orleans-Braganza a :Ancestor .
+
+data:Princess_Claude_of_Orleans :hasBirthYear 1943 .
+
+data:Umberto_II a :Ancestor .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Ancestor .
+

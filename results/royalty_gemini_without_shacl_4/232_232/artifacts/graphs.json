@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_William_I_of_Prussia a :Man,\n        :Person .\n\ndata:Georg_Friedrich_Prince_of_Prussia a :Man,\n        :Person ;\n    :isSonOf data:Prince_Louis_Ferdinand_Jr .\n\ndata:Grand_Duke_Kyril_Vladimirovich a :Man,\n        :Person ;\n    :isFatherOf data:Kira_Kirillovna .\n\ndata:Prince_Ferdinand_of_Hohenzollern a :Man,\n        :Person .\n\ndata:Prince_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Princess_Victoria_Melita a :Person,\n        :Woman ;\n    :isMotherOf data:Kira_Kirillovna .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:William_German_Crown_Prince a :Man,\n        :Person ;\n    :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Prince_Louis_Ferdinand_Jr a :Man,\n        :Person ;\n    :isSonOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Kira_Kirillovna a :Person,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1994 ;\n    :hasMarriageYear 1938 ;\n    :hasRelation data:Kira_Kirillovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_William_I_of_Prussia a :Man,\n        :Person .\n\ndata:Georg_Friedrich_Prince_of_Prussia a :Man,\n        :Person ;\n    :isSonOf data:Prince_Louis_Ferdinand_Jr .\n\ndata:Grand_Duke_Kyril_Vladimirovich a :Man,\n        :Person ;\n    :isFatherOf data:Kira_Kirillovna .\n\ndata:Prince_Ferdinand_of_Hohenzollern a :Man,\n        :Person .\n\ndata:Prince_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Princess_Victoria_Melita a :Person,\n        :Woman ;\n    :isMotherOf data:Kira_Kirillovna .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:William_German_Crown_Prince a :Man,\n        :Person ;\n    :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Prince_Louis_Ferdinand_Jr a :Man,\n        :Person ;\n    :isSonOf data:Louis_Ferdinand_Prince_of_Prussia .\n\ndata:Kira_Kirillovna a :Person,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1994 ;\n    :hasMarriageYear 1938 ;\n    :hasRelation data:Kira_Kirillovna .\n\n"
+    }
+]

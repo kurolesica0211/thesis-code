@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatriz_de_Borb%C3%B3n_y_Battenberg a :Woman ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasChild data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isSisterOf data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg .
+
+data:Alessandro_Torlonia a :Man ;
+    :hasFather data:Marino_Torlonia ;
+    :hasMother data:Mary_Elsie_Moore .
+
+data:Alfonso_XIII_of_Spain a :Man .
+
+data:Alfonso_de_Borb%C3%B3n_y_Battenberg a :Man .
+
+data:Gonzalo_de_Borb%C3%B3n_y_Battenberg a :Man .
+
+data:Juan_Carlos_I a :Man .
+
+data:Juan_de_Borb%C3%B3n_y_Battenberg a :Man .
+
+data:Marco_Torlonia a :Man .
+
+data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg a :Woman .
+
+data:Marino_Torlonia a :Man .
+
+data:Marino_Torlonia_jr a :Man .
+
+data:Mary_Elsie_Moore a :Woman .
+
+data:Olimpia_Torlonia a :Woman .
+
+data:Sandra_Torlonia a :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Woman .
+

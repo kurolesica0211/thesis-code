@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasBirthYear 2017 ;
+    :hasFather data:Peter_Karageorgevitch ;
+    :hasMother data:Lauren_Estelle_Jones .
+
+data:Peter_II_Yugoslavia a :Man,
+        :Person ;
+    :isAncestorOf data:Peter_Karageorgevitch .
+
+data:Alexander_Karageorgevitch_1982 a :Man,
+        :Person .
+
+data:Alexander_Yugoslavia a :Man,
+        :Person .
+
+data:Lauren_Estelle_Jones a :Person,
+        :Woman .
+
+data:Maria_da_Gloria a :Person,
+        :Woman .
+
+data:Philip_Karageorgevitch a :Man,
+        :Person .
+
+data:Prince_Peter_of_Serbia_and_Yugoslavia a :Person .
+
+data:Peter_Karageorgevitch a :Man,
+        :Person ;
+    :hasBirthYear 1980 ;
+    :hasFather data:Alexander_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch_1982,
+        data:Philip_Karageorgevitch ;
+    :knownAs data:Prince_Peter_of_Serbia_and_Yugoslavia .
+

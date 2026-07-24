@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karadjordjevic a :Man,\n        :Person ;\n    :isFatherOf data:Filip_Karadjordjevic .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :isMotherOf data:Filip_Karadjordjevic .\n\ndata:Peter_Karadjordjevic a :Man,\n        :Person ;\n    :isBrotherOf data:Filip_Karadjordjevic .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman ;\n    :isMotherOf data:Marija_Karadjordjevic,\n        data:Stefan_Karadjordjevic .\n\ndata:Marija_Karadjordjevic a :Person,\n        :Woman .\n\ndata:Stefan_Karadjordjevic a :Man,\n        :Person .\n\ndata:Filip_Karadjordjevic a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isFatherOf data:Marija_Karadjordjevic,\n        data:Stefan_Karadjordjevic .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karadjordjevic a :Man,\n        :Person ;\n    :isFatherOf data:Filip_Karadjordjevic .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman ;\n    :isMotherOf data:Filip_Karadjordjevic .\n\ndata:Peter_Karadjordjevic a :Man,\n        :Person ;\n    :isBrotherOf data:Filip_Karadjordjevic .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman ;\n    :isMotherOf data:Marija_Karadjordjevic,\n        data:Stefan_Karadjordjevic .\n\ndata:Marija_Karadjordjevic a :Person,\n        :Woman .\n\ndata:Stefan_Karadjordjevic a :Man,\n        :Person .\n\ndata:Filip_Karadjordjevic a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isFatherOf data:Marija_Karadjordjevic,\n        data:Stefan_Karadjordjevic .\n\n"
+    }
+]

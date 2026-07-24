@@ -58,7 +58,7 @@ class OutputConfig(BaseModel):
 
 class DatasetConfig(BaseModel):
     """Which dataset loader to use for the run."""
-    source: Literal["custom_family_bench", "example_run"] = "example_run"
+    source: Literal["custom_family_bench", "example_run", "shacl_repair"] = "example_run"
 
 
 class RunConfig(BaseModel):

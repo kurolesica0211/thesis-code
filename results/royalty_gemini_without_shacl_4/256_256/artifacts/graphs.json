@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Ivar_Louis_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Lord_Ivar_Mountbatten ;\n    :hasFather data:3rd_Marquess_of_Milford_Haven ;\n    :hasMarriageYear 1989,\n        1997 ;\n    :hasMother data:Janet_Mercedes_Bryce ;\n    :hasRelation data:Clare_Husted_Steel,\n        data:Sarah_Georgina_Walker .\n\ndata:3rd_Marquess_of_Milford_Haven a :Man,\n        :Person ;\n    :hasDeathYear 1970 .\n\ndata:Clare_Husted_Steel a :Person,\n        :Woman .\n\ndata:George_Alfred_Walker a :Man,\n        :Person .\n\ndata:Janet_Mercedes_Bryce a :Person,\n        :Woman .\n\ndata:Jean_Maureen_Hatton a :Person,\n        :Woman .\n\ndata:Lord_Ivar_Mountbatten a :Man,\n        :Person .\n\ndata:Sarah_Georgina_Walker a :Person,\n        :Woman ;\n    :hasFather data:George_Alfred_Walker ;\n    :hasMother data:Jean_Maureen_Hatton .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Ivar_Louis_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Lord_Ivar_Mountbatten ;\n    :hasFather data:3rd_Marquess_of_Milford_Haven ;\n    :hasMarriageYear 1989,\n        1997 ;\n    :hasMother data:Janet_Mercedes_Bryce ;\n    :hasRelation data:Clare_Husted_Steel,\n        data:Sarah_Georgina_Walker .\n\ndata:3rd_Marquess_of_Milford_Haven a :Man,\n        :Person ;\n    :hasDeathYear 1970 .\n\ndata:Clare_Husted_Steel a :Person,\n        :Woman .\n\ndata:George_Alfred_Walker a :Man,\n        :Person .\n\ndata:Janet_Mercedes_Bryce a :Person,\n        :Woman .\n\ndata:Jean_Maureen_Hatton a :Person,\n        :Woman .\n\ndata:Lord_Ivar_Mountbatten a :Man,\n        :Person .\n\ndata:Sarah_Georgina_Walker a :Person,\n        :Woman ;\n    :hasFather data:George_Alfred_Walker ;\n    :hasMother data:Jean_Maureen_Hatton .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael a :Man,\n        :Person ;\n    :hasFather data:Charles_Augustus .\n\ndata:Charles_Augustus a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Wilhelm_Ernst ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .\n\ndata:Elisabeth_of_Wangenheim-Winterstein a :Person,\n        :Woman ;\n    :hasFather data:Othmar_von_Wangenheim-Winterstein ;\n    :hasMother data:Maud_von_Tr%C3%BCtzschler .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman .\n\ndata:Maud_von_Tr%C3%BCtzschler a :Person,\n        :Woman .\n\ndata:Othmar_von_Wangenheim-Winterstein a :Man,\n        :Person .\n\ndata:Wilhelm_Ernst a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael a :Man,\n        :Person ;\n    :hasFather data:Charles_Augustus .\n\ndata:Charles_Augustus a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Wilhelm_Ernst ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .\n\ndata:Elisabeth_of_Wangenheim-Winterstein a :Person,\n        :Woman ;\n    :hasFather data:Othmar_von_Wangenheim-Winterstein ;\n    :hasMother data:Maud_von_Tr%C3%BCtzschler .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman .\n\ndata:Maud_von_Tr%C3%BCtzschler a :Person,\n        :Woman .\n\ndata:Othmar_von_Wangenheim-Winterstein a :Man,\n        :Person .\n\ndata:Wilhelm_Ernst a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Chantal_Hochuli a :Ancestor,
+        :Woman ;
+    :hasChild data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Chantal_Hochuli ;
+    :hasSon data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isAncestorOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isAuntOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isBloodrelationOf data:Chantal_Hochuli ;
+    :isMotherOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isParentOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSiblingOf data:Chantal_Hochuli ;
+    :isSisterOf data:Chantal_Hochuli .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernst_August_Prince_of_Hanover ;
+    :hasChild data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSon data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isAncestorOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Prince_of_Hanover ;
+    :isFatherOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isParentOf data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Prince_of_Hanover ;
+    :isUncleOf data:Ernst_August_Hereditary_Prince_of_Hanover .
+
+data:Igor_Malyshev a :Ancestor,
+        :Man ;
+    :hasBrother data:Igor_Malyshev ;
+    :hasChild data:Ekaterina_Igorievna_Malysheva ;
+    :hasDaughter data:Ekaterina_Igorievna_Malysheva ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :isAncestorOf data:Ekaterina_Igorievna_Malysheva ;
+    :isBloodrelationOf data:Igor_Malyshev ;
+    :isBrotherOf data:Igor_Malyshev ;
+    :isFatherOf data:Ekaterina_Igorievna_Malysheva ;
+    :isParentOf data:Ekaterina_Igorievna_Malysheva ;
+    :isSiblingOf data:Igor_Malyshev ;
+    :isUncleOf data:Ekaterina_Igorievna_Malysheva .
+
+data:Svetlana_Malysheva a :Ancestor,
+        :Woman ;
+    :hasChild data:Ekaterina_Igorievna_Malysheva ;
+    :hasDaughter data:Ekaterina_Igorievna_Malysheva ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Svetlana_Malysheva ;
+    :isAncestorOf data:Ekaterina_Igorievna_Malysheva ;
+    :isAuntOf data:Ekaterina_Igorievna_Malysheva ;
+    :isBloodrelationOf data:Svetlana_Malysheva ;
+    :isMotherOf data:Ekaterina_Igorievna_Malysheva ;
+    :isParentOf data:Ekaterina_Igorievna_Malysheva ;
+    :isSiblingOf data:Svetlana_Malysheva ;
+    :isSisterOf data:Svetlana_Malysheva .
+
+data:Alexandra_of_Hanover a :Woman ;
+    :hasBrother data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover .
+
+data:Christian_of_Hanover a :Man ;
+    :hasBrother data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover .
+
+data:Ekaterina_Igorievna_Malysheva a :Woman ;
+    :hasAncestor data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Igor_Malyshev ;
+    :hasMother data:Svetlana_Malysheva ;
+    :hasParent data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Ekaterina_Igorievna_Malysheva ;
+    :isBloodrelationOf data:Ekaterina_Igorievna_Malysheva ;
+    :isChildOf data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :isDaughterOf data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :isSiblingOf data:Ekaterina_Igorievna_Malysheva ;
+    :isSisterOf data:Ekaterina_Igorievna_Malysheva .
+
+data:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;
+    :hasAncestor data:Chantal_Hochuli,
+        data:Ernst_August_Prince_of_Hanover ;
+    :hasBirthYear 1983 ;
+    :hasBrother data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August_Prince_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Chantal_Hochuli,
+        data:Christian_of_Hanover,
+        data:Ekaterina_Igorievna_Malysheva,
+        data:Ernst_August_Hereditary_Prince_of_Hanover,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Igor_Malyshev,
+        data:Svetlana_Malysheva ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isChildOf data:Chantal_Hochuli,
+        data:Ernst_August_Prince_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Christian_of_Hanover,
+        data:Ernst_August_Hereditary_Prince_of_Hanover ;
+    :isSonOf data:Chantal_Hochuli,
+        data:Ernst_August_Prince_of_Hanover .
+

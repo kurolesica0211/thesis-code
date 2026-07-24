@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Thyra_sister_of_Christian_Louis a :Person,\n        :Woman ;\n    :isSisterOf data:Christian_Louis_of_Mecklenburg .\n\ndata:Barbara_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1994 ;\n    :isDaughterOf data:Charlotte_of_Saxe_Altenburg,\n        data:Sigismund_of_Prussia .\n\ndata:Charlotte_of_Saxe_Altenburg a :Person,\n        :Woman .\n\ndata:Christian_Louis_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1996 ;\n    :hasMarriageYear 1954 ;\n    :hasRelation data:Barbara_of_Prussia ;\n    :isChildOf data:Alexandra_of_Hanover,\n        data:Frederick_Francis_IV ;\n    :isSonOf data:Alexandra_of_Hanover,\n        data:Frederick_Francis_IV .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :isDaughterOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Thyra_sister_of_Christian_Louis a :Person,\n        :Woman ;\n    :isSisterOf data:Christian_Louis_of_Mecklenburg .\n\ndata:Barbara_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1994 ;\n    :isDaughterOf data:Charlotte_of_Saxe_Altenburg,\n        data:Sigismund_of_Prussia .\n\ndata:Charlotte_of_Saxe_Altenburg a :Person,\n        :Woman .\n\ndata:Christian_Louis_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1996 ;\n    :hasMarriageYear 1954 ;\n    :hasRelation data:Barbara_of_Prussia ;\n    :isChildOf data:Alexandra_of_Hanover,\n        data:Frederick_Francis_IV ;\n    :isSonOf data:Alexandra_of_Hanover,\n        data:Frederick_Francis_IV .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :isDaughterOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\n"
+    }
+]

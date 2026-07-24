@@ -1,0 +1,195 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrzej_Zamoyski a :Ancestor,
+        :Man ;
+    :hasBrother data:Andrzej_Zamoyski ;
+    :hasChild data:Jan_Kanty_Zamoyski ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Jan_Kanty_Zamoyski ;
+    :isAncestorOf data:Jan_Kanty_Zamoyski ;
+    :isBloodrelationOf data:Andrzej_Zamoyski ;
+    :isBrotherOf data:Andrzej_Zamoyski ;
+    :isFatherOf data:Jan_Kanty_Zamoyski ;
+    :isParentOf data:Jan_Kanty_Zamoyski ;
+    :isSiblingOf data:Andrzej_Zamoyski ;
+    :isUncleOf data:Jan_Kanty_Zamoyski .
+
+data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:Jan_Kanty_Zamoyski ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Jan_Kanty_Zamoyski ;
+    :isAncestorOf data:Jan_Kanty_Zamoyski ;
+    :isAuntOf data:Jan_Kanty_Zamoyski ;
+    :isBloodrelationOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Jan_Kanty_Zamoyski ;
+    :isParentOf data:Jan_Kanty_Zamoyski ;
+    :isSiblingOf data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasDaughter data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isParentOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Woman ;
+    :hasChild data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasDaughter data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :isAncestorOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isAuntOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isParentOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Jan_Kanty_Zamoyski a :Man ;
+    :hasAncestor data:Andrzej_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Jan_Kanty_Zamoyski ;
+    :hasFather data:Andrzej_Zamoyski ;
+    :hasMother data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Andrzej_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jan_Kanty_Zamoyski ;
+    :isBrotherOf data:Jan_Kanty_Zamoyski ;
+    :isChildOf data:Andrzej_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Jan_Kanty_Zamoyski ;
+    :isSonOf data:Andrzej_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+
+data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1904 ;
+    :hasDeathYear 1985 ;
+    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasParent data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasChild data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Andrzej_Zamoyski,
+        data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies,
+        data:Jan_Kanty_Zamoyski,
+        data:Maria_Carolina_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes_Princess_of_Asturias,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isAncestorOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Maria_de_las_Mercedes_Princess_of_Asturias .
+

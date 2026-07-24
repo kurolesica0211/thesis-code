@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfred_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Sigismund_of_Prussia .
+
+data:Charlotte_of_Saxe-Altenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .
+
+data:Ernst_II_Duke_of_Saxe-Altenburg a :Man,
+        :Person .
+
+data:Henry_of_Prussia a :Man,
+        :Person .
+
+data:Irene_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person ;
+    :alsoKnownAs "Wilhelm Viktor Karl August Heinrich Sigismund"^^xsd:string ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1978 ;
+    :hasFather data:Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Charlotte_of_Saxe-Altenburg ;
+    :knownAs "Prince William Victor Charles Augustus Henry Sigismund of Prussia"^^xsd:string .
+

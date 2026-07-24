@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Irina_Aleksandrovna_Ovtchinnikova a :Person,
+        :Woman .
+
+data:Jehan_de_Monl%C3%A9on a :Man,
+        :Person .
+
+data:King_Constantine_II_of_Greece a :Man,
+        :Person .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:King_George_II_of_Greece a :Man,
+        :Person .
+
+data:King_Paul_of_Greece a :Man,
+        :Person .
+
+data:Lewis_Sloden a :Man,
+        :Person .
+
+data:Prince_Axel_of_Denmark a :Man,
+        :Person .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte ;
+    :isSiblingOf data:Eug%C3%A9nie_of_Greece_and_Denmark .
+
+data:Prince_Valdemar_of_Denmark a :Man,
+        :Person .
+
+data:Princess_Alexia_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Anne-Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Princess_Frederica_of_Hanover a :Person,
+        :Woman .
+
+data:Princess_Irene_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Sophia_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Tatiana_Radziwill a :Person,
+        :Woman .
+
+data:Queen_Olga_of_Greece a :Person,
+        :Woman .
+
+data:Queen_Sophia_of_Greece a :Person,
+        :Woman .
+
+data:Eug%C3%A9nie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Marie-F%C3%A9lix_Blanc a :Person,
+        :Woman .
+
+data:Prince_Roland_Bonaparte a :Man,
+        :Person .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:King_George_I_of_Greece .
+
+data:Princess_Marie_Bonaparte a :Person,
+        :Woman ;
+    :hasFather data:Prince_Roland_Bonaparte ;
+    :hasMother data:Marie-F%C3%A9lix_Blanc .
+

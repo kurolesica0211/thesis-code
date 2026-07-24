@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archie a :Man,
+        :Person ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle .
+
+data:Charles_Spencer a :Man,
+        :Person .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Harry .
+
+data:Meghan_Markle a :Person,
+        :Woman .
+
+data:Prince_Harry a :Man,
+        :Person ;
+    :hasBirthYear 1984 ;
+    :hasFather data:King_Charles_III ;
+    :hasMarriageYear 2018 ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasRelation data:Meghan_Markle ;
+    :isBrotherOf data:William_Prince_of_Wales ;
+    :knownAs "Harry"^^xsd:string .
+

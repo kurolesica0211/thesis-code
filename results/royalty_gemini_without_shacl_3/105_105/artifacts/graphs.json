@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasMarriageYear 1901 ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:Chantal_de_Chevron-Villette ;\n    :hasRelation data:Camilla_Crociani .\n\ndata:Camilla_Crociani a :Person,\n        :Woman ;\n    :hasFather data:Camillo_Crociani ;\n    :hasMother data:Edy_Vessel .\n\ndata:Camillo_Crociani a :Man,\n        :Person .\n\ndata:Chantal_de_Chevron-Villette a :Person,\n        :Woman .\n\ndata:Edy_Vessel a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasMarriageYear 1901 ;\n    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;\n    :hasMarriageYear 1998 ;\n    :hasMother data:Chantal_de_Chevron-Villette ;\n    :hasRelation data:Camilla_Crociani .\n\ndata:Camilla_Crociani a :Person,\n        :Woman ;\n    :hasFather data:Camillo_Crociani ;\n    :hasMother data:Edy_Vessel .\n\ndata:Camillo_Crociani a :Man,\n        :Person .\n\ndata:Chantal_de_Chevron-Villette a :Person,\n        :Woman .\n\ndata:Edy_Vessel a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    }
+]

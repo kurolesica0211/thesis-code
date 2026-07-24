@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/491_491",
+  "text_file": "Q946985.txt",
+  "text_key": "Q946985",
+  "article": "https://en.wikipedia.org/wiki/Gonzalo,_Duke_of_Aquitaine",
+  "article_key": "Gonzalo, Duke of Aquitaine",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Gonzalo_de_Bourbon",
+    "qid": "Q946985",
+    "label": "Prince Gonzalo de Bourbon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Gonzalo_de_Bourbon",
+      "qid": "Q946985",
+      "label": "Prince Gonzalo de Bourbon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Emmanuelle_de_Dampierre",
+      "qid": "Q3052995",
+      "label": "Emmanuelle de Dampierre",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infante_Jaime-_Duke_of_Segovia",
+      "qid": "Q703780",
+      "label": "Infante Jaime, Duke of Segovia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/AlfonsoXIII",
+      "extracted_local_name": "AlfonsoXIII",
+      "embedding_text": "Alfonso XIII",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alfonso_XIII",
+      "ground_truth_qid": "Q18363",
+      "ground_truth_label": "Alfonso XIII",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso XIII",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/EmmanuelleDeDampierre",
+      "extracted_local_name": "EmmanuelleDeDampierre",
+      "embedding_text": "Emmanuelle De Dampierre",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Emmanuelle_de_Dampierre",
+      "ground_truth_qid": "Q3052995",
+      "ground_truth_label": "Emmanuelle de Dampierre",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Emmanuelle de Dampierre",
+      "best_candidate_label": "Emmanuelle de Dampierre",
+      "best_candidate_qid": "Q3052995",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/AlfonsoBrother",
+      "extracted_local_name": "AlfonsoBrother",
+      "embedding_text": "Alfonso Brother",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Don Alfonso de Borbon y Habsburgo",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5416666666666666
+    },
+    {
+      "extracted_uri": "http://example.org/data/Gonzalo",
+      "extracted_local_name": "Gonzalo",
+      "embedding_text": "Gonzalo",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Gonzalo de Bourbon",
+      "best_candidate_label": "Prince Gonzalo de Bourbon",
+      "best_candidate_qid": "Q946985",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4375
+    },
+    {
+      "extracted_uri": "http://example.org/data/InfanteJaime",
+      "extracted_local_name": "InfanteJaime",
+      "embedding_text": "Infante Jaime",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Gonzalo de Borbón y de Dampierre",
+      "best_candidate_label": "Prince Gonzalo de Bourbon",
+      "best_candidate_qid": "Q946985",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3111111111111111
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenVictoriaEugenie",
+      "extracted_local_name": "QueenVictoriaEugenie",
+      "embedding_text": "Queen Victoria Eugenie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Gonzalo de Borbón y de Dampierre",
+      "best_candidate_label": "Prince Gonzalo de Bourbon",
+      "best_candidate_qid": "Q946985",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2222222222222222
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

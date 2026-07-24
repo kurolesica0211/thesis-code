@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Magdalena_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_of_Prussia,
+        data:Magdalena_Reuss_of_K%C3%B6stritz,
+        data:Wilhelm_of_Germany,
+        data:Wilhelm_of_Prussia ;
+    :hasSister data:Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Magdalena_Reuss_of_K%C3%B6stritz .
+
+data:Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_of_Prussia,
+        data:Magdalena_Reuss_of_K%C3%B6stritz,
+        data:Wilhelm_of_Germany,
+        data:Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :isBrotherOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :isSiblingOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Hubertus_of_Prussia ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_of_Prussia,
+        data:Magdalena_Reuss_of_K%C3%B6stritz,
+        data:Wilhelm_of_Germany,
+        data:Wilhelm_of_Prussia ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Hubertus_of_Prussia ;
+    :isAncestorOf data:Hubertus_of_Prussia ;
+    :isAuntOf data:Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Hubertus_of_Prussia ;
+    :isParentOf data:Hubertus_of_Prussia ;
+    :isSiblingOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_of_Germany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_of_Germany ;
+    :hasChild data:Hubertus_of_Prussia ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_of_Prussia,
+        data:Magdalena_Reuss_of_K%C3%B6stritz,
+        data:Wilhelm_of_Germany,
+        data:Wilhelm_of_Prussia ;
+    :hasSon data:Hubertus_of_Prussia ;
+    :isAncestorOf data:Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_of_Germany ;
+    :isBrotherOf data:Wilhelm_of_Germany ;
+    :isFatherOf data:Hubertus_of_Prussia ;
+    :isParentOf data:Hubertus_of_Prussia ;
+    :isSiblingOf data:Wilhelm_of_Germany ;
+    :isUncleOf data:Hubertus_of_Prussia .
+
+data:Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_of_Germany ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_of_Germany ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_of_Prussia,
+        data:Magdalena_Reuss_of_K%C3%B6stritz,
+        data:Wilhelm_of_Germany,
+        data:Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :isBrotherOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_of_Germany ;
+    :isSiblingOf data:Hubertus_of_Prussia,
+        data:Wilhelm_of_Prussia ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_of_Germany .
+

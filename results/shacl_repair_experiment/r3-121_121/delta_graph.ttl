@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_of_Savoy-Aosta :knownAs "Duke of Apulia"^^xsd:string .
+
+data:Amedeo_of_Savoy a :Ancestor .
+
+data:Claude_of_Orl%C3%A9ans a :Ancestor .
+
+data:Michael_of_Greece_and_Denmark a :Ancestor .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Ancestor .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PaulFrederickOfMecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1852 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:FrederickFrancisII ;\n    :hasMarriageYear 1881 ;\n    :hasMother data:AugustaReussOfKostritz ;\n    :hasRelation data:FrederickFrancisIV,\n        data:MarieOfWindischGraetz .\n\ndata:AugustaReussOfKostritz a :Person,\n        :Woman ;\n    :hasFather data:HenryLXIIIReussOfKostritz .\n\ndata:FrederickFrancisII a :Man,\n        :Person .\n\ndata:FrederickFrancisIV a :Man,\n        :Person .\n\ndata:HenryLXIIIReussOfKostritz a :Man,\n        :Person .\n\ndata:HugoOfWindischGraetz a :Man,\n        :Person .\n\ndata:LouiseOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:MarieOfWindischGraetz a :Person,\n        :Woman ;\n    :hasFather data:HugoOfWindischGraetz ;\n    :hasMother data:LouiseOfMecklenburgSchwerin .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PaulFrederickOfMecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1852 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:FrederickFrancisII ;\n    :hasMarriageYear 1881 ;\n    :hasMother data:AugustaReussOfKostritz ;\n    :hasRelation data:FrederickFrancisIV,\n        data:MarieOfWindischGraetz .\n\ndata:AugustaReussOfKostritz a :Person,\n        :Woman ;\n    :hasFather data:HenryLXIIIReussOfKostritz .\n\ndata:FrederickFrancisII a :Man,\n        :Person .\n\ndata:FrederickFrancisIV a :Man,\n        :Person .\n\ndata:HenryLXIIIReussOfKostritz a :Man,\n        :Person .\n\ndata:HugoOfWindischGraetz a :Man,\n        :Person .\n\ndata:LouiseOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:MarieOfWindischGraetz a :Person,\n        :Woman ;\n    :hasFather data:HugoOfWindischGraetz ;\n    :hasMother data:LouiseOfMecklenburgSchwerin .\n\n"
+    }
+]

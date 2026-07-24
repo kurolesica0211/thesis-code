@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_Grand_Duchess_of_Hesse a :Person,\n        :Woman .\n\ndata:Marie_cousin a :Person,\n        :Woman .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs data:Joachim_Friedrich_Ernst_Waldemar ;\n    :hasAncestor data:Queen_Victoria_UK,\n        data:William_I_German_Emperor ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_German_Empress ;\n    :isSiblingOf data:Heinrich_Prince_of_Prussia,\n        data:Prince_Sigismund_of_Prussia,\n        data:Wilhelm_Prince_of_Prussia .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Queen_Victoria_UK a :Person,\n        :Woman .\n\ndata:Victoria_German_Empress a :Person,\n        :Woman .\n\ndata:Wilhelm_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:William_I_German_Emperor a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_Grand_Duchess_of_Hesse a :Person,\n        :Woman .\n\ndata:Marie_cousin a :Person,\n        :Woman .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs data:Joachim_Friedrich_Ernst_Waldemar ;\n    :hasAncestor data:Queen_Victoria_UK,\n        data:William_I_German_Emperor ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_German_Empress ;\n    :isSiblingOf data:Heinrich_Prince_of_Prussia,\n        data:Prince_Sigismund_of_Prussia,\n        data:Wilhelm_Prince_of_Prussia .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:Joachim_Friedrich_Ernst_Waldemar a :Person .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Queen_Victoria_UK a :Person,\n        :Woman .\n\ndata:Victoria_German_Empress a :Person,\n        :Woman .\n\ndata:Wilhelm_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:William_I_German_Emperor a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_Grand_Duchess_of_Hesse a :Person,\n        :Woman .\n\ndata:Marie_cousin a :Person,\n        :Woman .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs data:Joachim_Friedrich_Ernst_Waldemar ;\n    :hasAncestor data:Queen_Victoria_UK,\n        data:William_I_German_Emperor ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_German_Empress ;\n    :isSiblingOf data:Heinrich_Prince_of_Prussia,\n        data:Prince_Sigismund_of_Prussia,\n        data:Wilhelm_Prince_of_Prussia .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:Joachim_Friedrich_Ernst_Waldemar a :Person .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Queen_Victoria_UK a :Person,\n        :Woman .\n\ndata:Victoria_German_Empress a :Person,\n        :Woman .\n\ndata:Wilhelm_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:William_I_German_Emperor a :Man,\n        :Person .\n\n"
+    }
+]

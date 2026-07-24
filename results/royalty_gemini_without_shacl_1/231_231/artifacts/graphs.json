@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_John_of_the_United_Kingdom a :Man,\n        :Person ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary ;\n    :isSiblingOf data:Prince_Albert,\n        data:Prince_Edward,\n        data:Prince_George,\n        data:Prince_Henry,\n        data:Princess_Mary ;\n    :knownAs \"Johnnie\"^^xsd:string .\n\ndata:Edward_VII a :Ancestor,\n        :Man,\n        :Person .\n\ndata:King_George_V a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Edward_VII .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Prince_Edward a :Man,\n        :Person .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Henry a :Man,\n        :Person .\n\ndata:Princess_Mary a :Person,\n        :Woman .\n\ndata:Queen_Mary a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_John_of_the_United_Kingdom a :Man,\n        :Person ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary ;\n    :isSiblingOf data:Prince_Albert,\n        data:Prince_Edward,\n        data:Prince_George,\n        data:Prince_Henry,\n        data:Princess_Mary ;\n    :knownAs \"Johnnie\"^^xsd:string .\n\ndata:Edward_VII a :Ancestor,\n        :Man,\n        :Person .\n\ndata:King_George_V a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Edward_VII .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Prince_Edward a :Man,\n        :Person .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Henry a :Man,\n        :Person .\n\ndata:Princess_Mary a :Person,\n        :Woman .\n\ndata:Queen_Mary a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

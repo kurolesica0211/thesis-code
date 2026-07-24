@@ -1,0 +1,152 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Benedikte_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Benedikte_of_Denmark ;
+    :hasSon data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Benedikte_of_Denmark ;
+    :isMotherOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Benedikte_of_Denmark ;
+    :isSisterOf data:Benedikte_of_Denmark .
+
+data:Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasAncestor data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMarriageYear "1998"^^xsd:string,
+        "2019"^^xsd:string ;
+    :hasMother data:Benedikte_of_Denmark ;
+    :hasParent data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :hasAncestor data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Benedikte_of_Denmark ;
+    :hasParent data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSonOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg .
+
+data:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasAncestor data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Gustav_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Benedikte_of_Denmark ;
+    :hasParent data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Benedikte_of_Denmark,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Benedikte_of_Denmark,
+        data:Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Gustav_of_Sayn-Wittgenstein-Berleburg,
+        data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+

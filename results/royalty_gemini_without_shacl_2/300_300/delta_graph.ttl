@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone a :Man ;
+    :hasFather data:Prince_Amedeo_of_Savoy-Aosta .
+
+data:Emanuele_Filiberto_Prince_of_Venice a :Man ;
+    :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
+
+data:Princess_Claude_of_Orleans a :Woman ;
+    :hasFather data:Henri_comte_de_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans-Braganza .
+
+data:Princess_Maria_Gabriella_of_Savoy a :Woman .
+
+data:Umberto_II a :Man .
+
+data:Henri_comte_de_Paris a :Man .
+
+data:Prince_Aimone_Duke_of_Aosta a :Man .
+
+data:Prince_Amedeo_of_Savoy-Aosta a :Man ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Isabelle_of_Orleans-Braganza a :Woman .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Man .
+

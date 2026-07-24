@@ -1,0 +1,282 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Lauren_Estelle_Jones a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dolores_Luna_Noor ;
+    :hasDaughter data:Dolores_Luna_Noor ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Female ;
+    :hasSister data:Lauren_Estelle_Jones ;
+    :isAncestorOf data:Dolores_Luna_Noor ;
+    :isAuntOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Lauren_Estelle_Jones ;
+    :isMotherOf data:Dolores_Luna_Noor ;
+    :isParentOf data:Dolores_Luna_Noor ;
+    :isSiblingOf data:Lauren_Estelle_Jones ;
+    :isSisterOf data:Lauren_Estelle_Jones .
+
+data:Peter_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Peter_II ;
+    :hasChild data:Alexander_of_Yugoslavia ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Male ;
+    :hasSon data:Alexander_of_Yugoslavia ;
+    :isAncestorOf data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBloodrelationOf data:Peter_II ;
+    :isBrotherOf data:Peter_II ;
+    :isFatherOf data:Alexander_of_Yugoslavia ;
+    :isParentOf data:Alexander_of_Yugoslavia ;
+    :isSiblingOf data:Peter_II ;
+    :isUncleOf data:Alexander_of_Yugoslavia .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Female ;
+    :hasSister data:Maria_da_Gloria ;
+    :hasSon data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isAncestorOf data:Alexander_Karageorgevitch_younger,
+        data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isAuntOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBloodrelationOf data:Maria_da_Gloria ;
+    :isMotherOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isParentOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isSiblingOf data:Maria_da_Gloria ;
+    :isSisterOf data:Maria_da_Gloria .
+
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_of_Yugoslavia,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch ;
+    :hasBirthYear 2017 ;
+    :hasFather data:Peter_Karageorgevitch ;
+    :hasMother data:Lauren_Estelle_Jones ;
+    :hasParent data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Female ;
+    :hasSister data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Dolores_Luna_Noor ;
+    :isChildOf data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :isDaughterOf data:Lauren_Estelle_Jones,
+        data:Peter_Karageorgevitch ;
+    :isSiblingOf data:Dolores_Luna_Noor ;
+    :isSisterOf data:Dolores_Luna_Noor .
+
+data:Alexander_Karageorgevitch_younger a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria,
+        data:Peter_II ;
+    :hasBrother data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasFather data:Alexander_of_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBrotherOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isChildOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isSonOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Dolores_Luna_Noor .
+
+data:Philip_Karageorgevitch a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria,
+        data:Peter_II ;
+    :hasBrother data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasFather data:Alexander_of_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBrotherOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isChildOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isSonOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Dolores_Luna_Noor .
+
+data:Alexander_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Peter_II ;
+    :hasBrother data:Alexander_of_Yugoslavia ;
+    :hasChild data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasFather data:Peter_II ;
+    :hasParent data:Peter_II ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Male ;
+    :hasSon data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isAncestorOf data:Alexander_Karageorgevitch_younger,
+        data:Dolores_Luna_Noor,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBloodrelationOf data:Alexander_of_Yugoslavia ;
+    :isBrotherOf data:Alexander_of_Yugoslavia ;
+    :isChildOf data:Peter_II ;
+    :isFatherOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isParentOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isSiblingOf data:Alexander_of_Yugoslavia ;
+    :isSonOf data:Peter_II ;
+    :isUncleOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch .
+
+data:Peter_Karageorgevitch a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria,
+        data:Peter_II ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasChild data:Dolores_Luna_Noor ;
+    :hasDaughter data:Dolores_Luna_Noor ;
+    :hasFather data:Alexander_of_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karageorgevitch_younger,
+        data:Alexander_of_Yugoslavia,
+        data:Dolores_Luna_Noor,
+        data:Lauren_Estelle_Jones,
+        data:Maria_da_Gloria,
+        data:Peter_II,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Dolores_Luna_Noor ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isBrotherOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isChildOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isFatherOf data:Dolores_Luna_Noor ;
+    :isParentOf data:Dolores_Luna_Noor ;
+    :isSiblingOf data:Alexander_Karageorgevitch_younger,
+        data:Peter_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :isSonOf data:Alexander_of_Yugoslavia,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Dolores_Luna_Noor .
+

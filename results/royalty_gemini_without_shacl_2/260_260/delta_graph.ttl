@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:Prince_Maximilian ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Tomislav_of_Yugoslavia .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Berthold_Margrave_of_Baden a :Man,
+        :Person .
+
+data:King_Peter_II_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Maximilian a :Man,
+        :Person .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :isBrotherOf data:King_Peter_II_of_Yugoslavia .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
+

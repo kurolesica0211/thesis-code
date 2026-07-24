@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessNathalie a :Person,
+        :Woman ;
+    :isDaughterOf data:PrincessBenedikteOfDenmark,
+        data:Richard6thPrinceOfSaynWittgensteinBerleburg .
+
+data:ConstantineIIOfGreece a :Man,
+        :Person .
+
+data:CrownPrinceGustavAdolfOfSweden a :Man,
+        :Person .
+
+data:KingChristianX a :Man,
+        :Person .
+
+data:KingFrederikIX a :Man,
+        :Person ;
+    :hasBrother data:PrinceKnud ;
+    :hasFather data:KingChristianX ;
+    :hasMother data:QueenAlexandrineOfDenmark .
+
+data:KingFrederikX a :Man,
+        :Person ;
+    :hasMother data:QueenMargretheII .
+
+data:PrinceKnud a :Man,
+        :Person .
+
+data:PrincessBenedikteOfDenmark a :Person,
+        :Woman ;
+    :hasBirthYear "1944"^^xsd:positiveInteger ;
+    :hasFather data:KingFrederikIX ;
+    :hasMarriageYear "1968"^^xsd:positiveInteger ;
+    :hasMother data:QueenIngridOfDenmark ;
+    :hasRelation data:Richard6thPrinceOfSaynWittgensteinBerleburg ;
+    :isAuntOf data:KingFrederikX ;
+    :isSisterOf data:QueenAnneMarieOfGreece,
+        data:QueenMargretheII .
+
+data:PrincessMargaretOfConnaught a :Person,
+        :Woman .
+
+data:QueenAlexandrineOfDenmark a :Person,
+        :Woman .
+
+data:QueenAnneMarieOfGreece a :Person,
+        :Woman ;
+    :hasRelation data:ConstantineIIOfGreece .
+
+data:QueenIngridOfDenmark a :Person,
+        :Woman ;
+    :hasFather data:CrownPrinceGustavAdolfOfSweden ;
+    :hasMother data:PrincessMargaretOfConnaught .
+
+data:QueenMargretheII a :Person,
+        :Woman .
+
+data:Richard6thPrinceOfSaynWittgensteinBerleburg a :Man,
+        :Person ;
+    :hasDeathYear "2017"^^xsd:positiveInteger .
+

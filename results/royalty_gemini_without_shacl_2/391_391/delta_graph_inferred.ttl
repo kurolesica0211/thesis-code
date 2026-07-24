@@ -1,0 +1,174 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LadyAmandaEllingworth a :Person ;
+    :hasRelation data:LadyAmandaEllingworth ;
+    :isBloodrelationOf data:LadyAmandaEllingworth ;
+    :isSiblingOf data:LadyAmandaEllingworth .
+
+data:TheHonourableAmandaKnatchbull a :Person ;
+    :hasRelation data:TheHonourableAmandaKnatchbull ;
+    :isBloodrelationOf data:TheHonourableAmandaKnatchbull ;
+    :isSiblingOf data:TheHonourableAmandaKnatchbull .
+
+data:PrinceCharles a :Man,
+        :Person ;
+    :hasBrother data:PrinceCharles ;
+    :hasRelation data:PrinceCharles ;
+    :isBloodrelationOf data:PrinceCharles ;
+    :isBrotherOf data:PrinceCharles ;
+    :isSiblingOf data:PrinceCharles .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :hasRelation data:QueenElizabethII ;
+    :hasSister data:QueenElizabethII ;
+    :isBloodrelationOf data:QueenElizabethII ;
+    :isSiblingOf data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethII .
+
+data:PrincePhilip a :Man,
+        :Person ;
+    :hasBrother data:PrincePhilip ;
+    :hasRelation data:PrincePhilip ;
+    :isBloodrelationOf data:PrincePhilip ;
+    :isBrotherOf data:PrincePhilip ;
+    :isSiblingOf data:PrincePhilip .
+
+data:CharlesVincentEllingworth a :Man,
+        :Person ;
+    :hasBrother data:CharlesVincentEllingworth ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:CharlesVincentEllingworth ;
+    :isBrotherOf data:CharlesVincentEllingworth ;
+    :isSiblingOf data:CharlesVincentEllingworth .
+
+data:LouisMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LouisMountbatten ;
+    :hasDeathYear 1979 ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :isAncestorOf data:AmandaKnatchbull ;
+    :isBloodrelationOf data:LouisMountbatten ;
+    :isBrotherOf data:LouisMountbatten ;
+    :isSiblingOf data:LouisMountbatten ;
+    :isUncleOf data:PrincePhilip .
+
+data:PrincessAlice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:QueenVictoria ;
+    :hasMother data:QueenVictoria ;
+    :hasParent data:QueenVictoria ;
+    :hasRelation data:PrincessAlice,
+        data:QueenVictoria ;
+    :hasSister data:PrincessAlice ;
+    :isBloodrelationOf data:PrincessAlice ;
+    :isChildOf data:QueenVictoria ;
+    :isDaughterOf data:QueenVictoria ;
+    :isSiblingOf data:PrincessAlice ;
+    :isSisterOf data:PrincessAlice .
+
+data:BaronBrabourne7th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:BaronBrabourne7th ;
+    :hasChild data:AmandaKnatchbull ;
+    :hasDaughter data:AmandaKnatchbull ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :isAncestorOf data:AmandaKnatchbull ;
+    :isBloodrelationOf data:BaronBrabourne7th ;
+    :isBrotherOf data:BaronBrabourne7th ;
+    :isFatherOf data:AmandaKnatchbull ;
+    :isParentOf data:AmandaKnatchbull ;
+    :isSiblingOf data:BaronBrabourne7th ;
+    :isUncleOf data:AmandaKnatchbull .
+
+data:CountessMountbatten2nd a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AmandaKnatchbull ;
+    :hasDaughter data:AmandaKnatchbull ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :hasSister data:CountessMountbatten2nd ;
+    :isAncestorOf data:AmandaKnatchbull ;
+    :isAuntOf data:AmandaKnatchbull ;
+    :isBloodrelationOf data:CountessMountbatten2nd ;
+    :isMotherOf data:AmandaKnatchbull ;
+    :isParentOf data:AmandaKnatchbull ;
+    :isSiblingOf data:CountessMountbatten2nd ;
+    :isSisterOf data:CountessMountbatten2nd .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessAlice ;
+    :hasDaughter data:PrincessAlice ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:PrincessAlice,
+        data:QueenVictoria ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:AmandaKnatchbull,
+        data:PrincessAlice ;
+    :isAuntOf data:PrincessAlice ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isMotherOf data:PrincessAlice ;
+    :isParentOf data:PrincessAlice ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:AmandaKnatchbull a :Person,
+        :Woman ;
+    :alsoKnownAs data:LadyAmandaEllingworth ;
+    :formerlyKnownAs data:TheHonourableAmandaKnatchbull ;
+    :hasAncestor data:BaronBrabourne7th,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :hasBirthYear 1957 ;
+    :hasFather data:BaronBrabourne7th ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:CountessMountbatten2nd ;
+    :hasParent data:BaronBrabourne7th,
+        data:CountessMountbatten2nd ;
+    :hasRelation data:AmandaKnatchbull,
+        data:BaronBrabourne7th,
+        data:CharlesVincentEllingworth,
+        data:CountessMountbatten2nd,
+        data:LouisMountbatten,
+        data:QueenVictoria ;
+    :hasSister data:AmandaKnatchbull ;
+    :isBloodrelationOf data:AmandaKnatchbull ;
+    :isChildOf data:BaronBrabourne7th,
+        data:CountessMountbatten2nd ;
+    :isDaughterOf data:BaronBrabourne7th,
+        data:CountessMountbatten2nd ;
+    :isSiblingOf data:AmandaKnatchbull ;
+    :isSisterOf data:AmandaKnatchbull .
+

@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archduchess_Maria_Theresa_of_Austria-Este a :Ancestor .
+
+data:King_Ludwig_III_of_Bavaria a :Ancestor .
+
+data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasBirthYear "1869"^^xsd:positiveInteger ;
+    :hasDeathYear "1960"^^xsd:positiveInteger .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor ;
+    :hasBirthYear "1872"^^xsd:positiveInteger ;
+    :hasDeathYear "1954"^^xsd:positiveInteger .
+

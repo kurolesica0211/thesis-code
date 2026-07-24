@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;\n    :hasBirthYear 2022 ;\n    :hasFather data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;\n    :hasMother data:Olympia .\n\ndata:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasFather data:Ferdinand_of_Bourbon .\n\ndata:Charles_Napol%C3%A9on a :Man ;\n    :hasFather data:Louis_Napol%C3%A9on .\n\ndata:Cl%C3%A9mentine_of_Belgium a :Woman .\n\ndata:Ferdinand_of_Bourbon a :Man .\n\ndata:Jean-Christophe_Napol%C3%A9on_Bonaparte a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Charles_Napol%C3%A9on ;\n    :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,\n        data:Cl%C3%A9mentine_of_Belgium .\n\ndata:Louis_Napol%C3%A9on a :Man .\n\ndata:Olympia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;\n    :hasBirthYear 2022 ;\n    :hasFather data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;\n    :hasMother data:Olympia .\n\ndata:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasFather data:Ferdinand_of_Bourbon .\n\ndata:Charles_Napol%C3%A9on a :Man ;\n    :hasFather data:Louis_Napol%C3%A9on .\n\ndata:Cl%C3%A9mentine_of_Belgium a :Woman .\n\ndata:Ferdinand_of_Bourbon a :Man .\n\ndata:Jean-Christophe_Napol%C3%A9on_Bonaparte a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Charles_Napol%C3%A9on ;\n    :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies,\n        data:Cl%C3%A9mentine_of_Belgium .\n\ndata:Louis_Napol%C3%A9on a :Man .\n\ndata:Olympia a :Woman .\n\n"
+    }
+]

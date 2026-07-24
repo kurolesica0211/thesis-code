@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Camilla_Parker_Bowles a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:George_VI ;
+    :hasSex data:Female .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1948 ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1981,
+        2005 ;
+    :hasMother data:Elizabeth_II ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Lady_Diana_Spencer ;
+    :hasSex data:Male .
+
+data:Harry a :Man,
+        :Person ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasSex data:Male .
+
+data:William a :Man,
+        :Person ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Lady_Diana_Spencer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

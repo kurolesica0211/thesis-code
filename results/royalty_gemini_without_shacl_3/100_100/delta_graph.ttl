@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceDimitriOfYugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Dimitri Karageorgevich"^^xsd:string,
+        "Dimitrije Karađorđević"^^xsd:string ;
+    :hasAncestor data:PrinceAlexanderOfSerbia,
+        data:PrinceRegentPaulOfYugoslavia ;
+    :hasBirthYear 1958 ;
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy ;
+    :hasSex "male"^^xsd:string ;
+    :isBloodrelationOf data:AlexanderCrownPrinceOfYugoslavia ;
+    :isBrotherOf data:PrinceMichaelOfYugoslavia .
+
+data:PrinceDushanOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessBarbaraOfLiechtenstein .
+
+data:PrinceSergeOfYugoslavia a :Man,
+        :Person ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:PrincessHeleneOfYugoslavia a :Person,
+        :Woman ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:AlexanderCrownPrinceOfYugoslavia a :Man,
+        :Person .
+
+data:PrinceAlexanderOfSerbia a :Man,
+        :Person .
+
+data:PrinceMichaelOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:PrinceRegentPaulOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessBarbaraOfLiechtenstein a :Person,
+        :Woman .
+
+data:UmbertoIIOfItaly a :Man,
+        :Person .
+
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessMariaPiaOfSavoy a :Person,
+        :Woman ;
+    :isDaughterOf data:UmbertoIIOfItaly .
+

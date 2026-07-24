@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :isUncleOf data:Gerald_David_Lascelles .
+
+data:Queen_Mary_1924 a :Person .
+
+data:Elizabeth_Colvin a :Person,
+        :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2006 .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Mary_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin .
+
+data:Henry_Lascelles_6th_Earl_of_Harewood a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Mary_Princess_Royal a :Person,
+        :Woman ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Queen_Mary a :Woman .
+

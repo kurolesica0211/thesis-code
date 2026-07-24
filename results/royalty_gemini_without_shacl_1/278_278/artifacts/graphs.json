@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ChristianIX a :Man,\n        :Person .\n\ndata:ChristianSonOfKnud a :Man,\n        :Person ;\n    :isSonOf data:CarolineMathilde,\n        data:Knud .\n\ndata:Elisabeth a :Person,\n        :Woman ;\n    :isDaughterOf data:CarolineMathilde,\n        data:Knud .\n\ndata:FrederikVIII a :Man,\n        :Person .\n\ndata:Gustav a :Man,\n        :Person .\n\ndata:Ingolf a :Man,\n        :Person ;\n    :isSonOf data:CarolineMathilde,\n        data:Knud .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:ChristianX a :Man,\n        :Person .\n\ndata:CrownPrinceFrederikOfDenmark a :Man,\n        :Person .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :isFatherOf data:MargretheII .\n\ndata:Harald a :Man,\n        :Person .\n\ndata:Helena a :Person,\n        :Woman .\n\ndata:MargretheII a :Person,\n        :Woman .\n\ndata:PrinceChristianOfDenmark a :Man,\n        :Person ;\n    :hasFather data:CrownPrinceFrederikOfDenmark .\n\ndata:Knud a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1976 ;\n    :hasFather data:ChristianX,\n        data:PrinceChristianOfDenmark ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasRelation data:CarolineMathilde ;\n    :isBrotherOf data:FrederikIX .\n\ndata:CarolineMathilde a :Person,\n        :Woman ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:ChristianIX a :Man,\n        :Person .\n\ndata:ChristianSonOfKnud a :Man,\n        :Person ;\n    :isSonOf data:CarolineMathilde,\n        data:Knud .\n\ndata:Elisabeth a :Person,\n        :Woman ;\n    :isDaughterOf data:CarolineMathilde,\n        data:Knud .\n\ndata:FrederikVIII a :Man,\n        :Person .\n\ndata:Gustav a :Man,\n        :Person .\n\ndata:Ingolf a :Man,\n        :Person ;\n    :isSonOf data:CarolineMathilde,\n        data:Knud .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:ChristianX a :Man,\n        :Person .\n\ndata:CrownPrinceFrederikOfDenmark a :Man,\n        :Person .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :isFatherOf data:MargretheII .\n\ndata:Harald a :Man,\n        :Person .\n\ndata:Helena a :Person,\n        :Woman .\n\ndata:MargretheII a :Person,\n        :Woman .\n\ndata:PrinceChristianOfDenmark a :Man,\n        :Person ;\n    :hasFather data:CrownPrinceFrederikOfDenmark .\n\ndata:Knud a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1976 ;\n    :hasFather data:ChristianX,\n        data:PrinceChristianOfDenmark ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasRelation data:CarolineMathilde ;\n    :isBrotherOf data:FrederikIX .\n\ndata:CarolineMathilde a :Person,\n        :Woman ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\n"
+    }
+]

@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kira_Georgievna a :Woman ;
+    :hasFather data:George_Mikhailovich ;
+    :hasMother data:Victoria_Romanovna .
+
+data:Franz_Wilhelm_Prussia a :Man .
+
+data:George_Mikhailovich a :Man ;
+    :hasFather data:Franz_Wilhelm_Prussia ;
+    :hasMother data:Maria_Vladimirovna .
+
+data:Leonida_Bagration_Mukhrani a :Woman .
+
+data:Maria_Vladimirovna a :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Vladimir_Kirillovich ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Leonida_Bagration_Mukhrani .
+
+data:Victoria_Romanovna a :Woman .
+
+data:Vladimir_Kirillovich a :Man ;
+    :hasDeathYear 1992 .
+

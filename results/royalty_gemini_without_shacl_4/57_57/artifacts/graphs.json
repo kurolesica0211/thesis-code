@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessMargaret a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDaughter data:SarahArmstrongJones ;\n    :hasDeathYear 2002 ;\n    :hasFather data:KingGeorgeVI ;\n    :hasMarriageYear data:AntonyArmstrongJones,\n        1960 ;\n    :hasMother data:QueenElizabethQueenMother ;\n    :hasSon data:DavidArmstrongJones ;\n    :isSisterOf data:QueenElizabethII .\n\ndata:CeciliaBowesLyon a :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Man,\n        :Person .\n\ndata:DavidArmstrongJones a :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Man,\n        :Person ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:QueenElizabethQueenMother a :Person,\n        :Woman ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SarahArmstrongJones a :Person,\n        :Woman ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:AntonyArmstrongJones a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessMargaret a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDaughter data:SarahArmstrongJones ;\n    :hasDeathYear 2002 ;\n    :hasFather data:KingGeorgeVI ;\n    :hasMarriageYear data:AntonyArmstrongJones,\n        1960 ;\n    :hasMother data:QueenElizabethQueenMother ;\n    :hasSon data:DavidArmstrongJones ;\n    :isSisterOf data:QueenElizabethII .\n\ndata:CeciliaBowesLyon a :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Man,\n        :Person .\n\ndata:DavidArmstrongJones a :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Man,\n        :Person ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:QueenElizabethQueenMother a :Person,\n        :Woman ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SarahArmstrongJones a :Person,\n        :Woman ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:AntonyArmstrongJones a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Infanta_Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear "2007"^^xsd:positiveInteger ;
+    :hasFather data:King_Felipe_VI ;
+    :hasMother data:Queen_Letizia ;
+    :isSisterOf data:Leonor_Princess_of_Asturias .
+
+data:King_Felipe_VI a :Man,
+        :Person ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia .
+
+data:King_Juan_Carlos_I a :Man,
+        :Person .
+
+data:Leonor_Princess_of_Asturias a :Person,
+        :Woman ;
+    :isSisterOf data:Infanta_Sofia_of_Spain .
+
+data:Queen_Letizia a :Person,
+        :Woman .
+
+data:Queen_Sofia a :Person,
+        :Woman .
+

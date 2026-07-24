@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duchess_Marie_Alexandrine_of_Mecklenburg-Schwerin a :Woman .
+
+data:Grand_Duchess_Maria_Alexandrovna a :Woman .
+
+data:Grand_Duke_Boris_Vladimirovich_of_Russia a :Man ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :isFatherOf data:Jean_Boris_Lacroix .
+
+data:Grand_Duke_Michael_Alexandrovich_of_Russia a :Man .
+
+data:King_Alfonso_XIII_of_Spain a :Man .
+
+data:Mathilde_Kschessinskaya a :Woman .
+
+data:Peter_Eliseev a :Man .
+
+data:Princess_Victoria_Eugenia_of_Battenberg a :Woman .
+
+data:Tsar_Nicholas_II a :Man .
+
+data:Victoria_Melita a :Woman .
+
+data:Zinaida_Sergeievna_Rachevskaya a :Woman ;
+    :hasFather data:Colonel_Sergei_Alexandrovich_Rachevsky .
+
+data:Colonel_Sergei_Alexandrovich_Rachevsky a :Man .
+
+data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man ;
+    :hasFather data:Tsar_Alexander_II_of_Russia ;
+    :isBrotherOf data:Tsar_Alexander_III_of_Russia .
+
+data:Jean_Boris_Lacroix a :Man ;
+    :hasMother data:Jeanne_Aumont-Lacroix .
+
+data:Jeanne_Aumont-Lacroix a :Woman .
+
+data:Tsar_Alexander_III_of_Russia a :Man .
+
+data:Tsar_Alexander_II_of_Russia a :Man .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;\n    :isSiblingOf data:Prince_Ruggiero_Maria,\n        data:Princess_Barbara_Maria,\n        data:Princess_Lucia,\n        data:Princess_Maria_Antonietta,\n        data:Princess_Maria_Cristina .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 .\n\ndata:Prince_Ruggiero_Maria a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1914 .\n\ndata:Princess_Barbara_Maria a :Person,\n        :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1927 .\n\ndata:Princess_Lucia a :Person,\n        :Woman ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 2001 .\n\ndata:Princess_Maria_Antonietta a :Person,\n        :Woman ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1957 .\n\ndata:Princess_Maria_Cristina a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1985 .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;\n    :isSiblingOf data:Prince_Ruggiero_Maria,\n        data:Princess_Barbara_Maria,\n        data:Princess_Lucia,\n        data:Princess_Maria_Antonietta,\n        data:Princess_Maria_Cristina .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 .\n\ndata:Prince_Ruggiero_Maria a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1914 .\n\ndata:Princess_Barbara_Maria a :Person,\n        :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1927 .\n\ndata:Princess_Lucia a :Person,\n        :Woman ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 2001 .\n\ndata:Princess_Maria_Antonietta a :Person,\n        :Woman ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1957 .\n\ndata:Princess_Maria_Cristina a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1985 .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\n"
+    }
+]

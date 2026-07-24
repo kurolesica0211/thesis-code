@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderNixon a :Man ;
+    :hasBirthYear 1964 .
+
+data:PrinceRadu a :Man .
+
+data:PrincessElena a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasDaughter data:ElisabetaKarina ;
+    :hasFather data:KingMichaelI ;
+    :hasMarriageYear 1983,
+        1998 ;
+    :hasMother data:QueenAnne ;
+    :hasSister data:Margareta,
+        data:PrincessIrina,
+        data:PrincessMaria,
+        data:PrincessSophie ;
+    :hasSon data:PrinceNicholas .
+
+data:RobinMedforthMills a :Man ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 .
+
+data:ElisabetaKarina a :Woman .
+
+data:KingMichaelI a :Man .
+
+data:Margareta a :Woman .
+
+data:PrinceNicholas a :Man .
+
+data:PrincessIrina a :Woman .
+
+data:PrincessMaria a :Woman .
+
+data:PrincessSophie a :Woman .
+
+data:QueenAnne a :Woman .
+

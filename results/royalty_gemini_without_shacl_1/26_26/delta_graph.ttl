@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George a :Man,
+        :Person ;
+    :isBrotherOf data:Alice_of_Battenberg .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Louis a :Man,
+        :Person ;
+    :isBrotherOf data:Alice_of_Battenberg .
+
+data:Louise a :Person,
+        :Woman ;
+    :isSisterOf data:Alice_of_Battenberg .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Margarita a :Person,
+        :Woman .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Alice_of_Battenberg .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Alice_of_Battenberg .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :isSonOf data:Alice_of_Battenberg .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1885 ;
+    :hasDaughter data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Philip ;
+    :isMotherOf data:Prince_Philip .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman ;\n    :hasSex data:Female .\n\ndata:Michael a :Man ;\n    :hasSex data:Male .\n\ndata:Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman ;\n    :hasSex data:Female .\n\ndata:Michael a :Man ;\n    :hasSex data:Male .\n\ndata:Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman ;\n    :hasSex data:Female .\n\ndata:Michael a :Man ;\n    :hasSex data:Male .\n\ndata:Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

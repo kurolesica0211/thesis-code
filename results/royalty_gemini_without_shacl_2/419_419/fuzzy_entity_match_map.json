@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/419_419",
+  "text_file": "Q71582125.txt",
+  "text_key": "Q71582125",
+  "article": "https://en.wikipedia.org/wiki/Olympia,_Princess_Napol%C3%A9on",
+  "article_key": "Olympia, Princess Napoléon",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Olympia-_Princess_Napoléon",
+    "qid": "Q71582125",
+    "label": "Princess Olympia, Princess Napoléon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Olympia-_Princess_Napoléon",
+      "qid": "Q71582125",
+      "label": "Princess Olympia, Princess Napoléon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Archduchess_Maria_Béatrice_of_Austria-Este",
+      "qid": "Q21198012",
+      "label": "Archduchess Maria Béatrice of Austria-Este",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Archduchess_Maria_Beatrice_of_Austria-Este",
+      "extracted_local_name": "Archduchess_Maria_Beatrice_of_Austria-Este",
+      "embedding_text": "Archduchess Maria Beatrice of Austria-Este",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9761904761904763,
+      "ground_truth_uri": "http://example.com/data#Archduchess_Maria_Béatrice_of_Austria-Este",
+      "ground_truth_qid": "Q21198012",
+      "ground_truth_label": "Archduchess Maria Béatrice of Austria-Este",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Archduchess Maria Béatrice of Austria-Este",
+      "best_candidate_label": "Archduchess Maria Béatrice of Austria-Este",
+      "best_candidate_qid": "Q21198012",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9761904761904763
+    },
+    {
+      "extracted_uri": "http://example.org/data/Olympia_Bonaparte",
+      "extracted_local_name": "Olympia_Bonaparte",
+      "embedding_text": "Olympia Bonaparte",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.5833333333333334,
+      "ground_truth_uri": "http://example.com/data#Princess_Olympia-_Princess_Napoléon",
+      "ground_truth_qid": "Q71582125",
+      "ground_truth_label": "Princess Olympia, Princess Napoléon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olympia",
+      "best_candidate_label": "Princess Olympia, Princess Napoléon",
+      "best_candidate_qid": "Q71582125",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5833333333333334
+    },
+    {
+      "extracted_uri": "http://example.org/data/Count_Riprand_von_und_zu_Arco-Zinneberg",
+      "extracted_local_name": "Count_Riprand_von_und_zu_Arco-Zinneberg",
+      "embedding_text": "Count Riprand von und zu Arco-Zinneberg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olympia",
+      "best_candidate_label": "Princess Olympia, Princess Napoléon",
+      "best_candidate_qid": "Q71582125",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.13043478260869565
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jean-Christophe_Prince_Napoleon",
+      "extracted_local_name": "Jean-Christophe_Prince_Napoleon",
+      "embedding_text": "Jean-Christophe Prince Napoleon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Olympia- Princess Napoléon",
+      "best_candidate_label": "Princess Olympia, Princess Napoléon",
+      "best_candidate_qid": "Q71582125",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6060606060606061
+    },
+    {
+      "extracted_uri": "http://example.org/data/Louis_Charles_Riprand_Victor_Jerome_Marie",
+      "extracted_local_name": "Louis_Charles_Riprand_Victor_Jerome_Marie",
+      "embedding_text": "Louis Charles Riprand Victor Jerome Marie",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olympia von und zu Arco-Zinneberg",
+      "best_candidate_label": "Princess Olympia, Princess Napoléon",
+      "best_candidate_qid": "Q71582125",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.24324324324324326
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

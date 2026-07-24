@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man .\n\ndata:Kyril a :Man ;\n    :hasDaughter data:Mafalda ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Maria-Olympia a :Woman ;\n    :isDaughterOf data:Theodora .\n\ndata:Sofia a :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Mafalda a :Woman .\n\ndata:Pavlos a :Man .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man .\n\ndata:Kyril a :Man ;\n    :hasDaughter data:Mafalda ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Maria-Olympia a :Woman ;\n    :isDaughterOf data:Theodora .\n\ndata:Sofia a :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:1999 a :DomainEntity .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Mafalda a :Woman .\n\ndata:Pavlos a :Man .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man .\n\ndata:Kyril a :Man ;\n    :hasDaughter data:Mafalda ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Maria-Olympia a :Woman ;\n    :isDaughterOf data:Theodora .\n\ndata:Sofia a :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:1999 a :DomainEntity .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear data:1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Mafalda a :Woman .\n\ndata:Pavlos a :Man .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :isBrotherOf data:Gonzalo_of_Spain .
+
+data:Beatrice_of_the_United_Kingdom a :Person,
+        :Woman .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Gonzalo_of_Spain .
+
+data:Maurice_of_Battenberg a :Man,
+        :Person .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+

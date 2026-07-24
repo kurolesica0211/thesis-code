@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_William_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBrother data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :hasRelation data:King_William_III_of_the_Netherlands,
+        data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands .
+
+data:King_William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_William_III_of_the_Netherlands ;
+    :hasChild data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :hasRelation data:King_William_III_of_the_Netherlands,
+        data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasSon data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isBloodrelationOf data:King_William_III_of_the_Netherlands ;
+    :isBrotherOf data:King_William_III_of_the_Netherlands ;
+    :isFatherOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isSiblingOf data:King_William_III_of_the_Netherlands ;
+    :isUncleOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands .
+
+data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :hasRelation data:King_William_III_of_the_Netherlands,
+        data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasSister data:Sophie_of_W%C3%BCrttemberg ;
+    :hasSon data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isAuntOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isBloodrelationOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isMotherOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands ;
+    :isSiblingOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isSisterOf data:Sophie_of_W%C3%BCrttemberg .
+
+data:Prince_Alexander_of_the_Netherlands a :Man,
+        :Person ;
+    :hasAncestor data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasBrother data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :hasFather data:King_William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :hasParent data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasRelation data:King_William_III_of_the_Netherlands,
+        data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isChildOf data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isSonOf data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg .
+
+data:Prince_Maurice_of_the_Netherlands a :Man,
+        :Person ;
+    :hasAncestor data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasBirthYear 1843 ;
+    :hasBrother data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :hasDeathYear 1850 ;
+    :hasFather data:King_William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :hasParent data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :hasRelation data:King_William_III_of_the_Netherlands,
+        data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isChildOf data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Prince_Alexander_of_the_Netherlands,
+        data:Prince_Maurice_of_the_Netherlands,
+        data:Prince_William_of_the_Netherlands ;
+    :isSonOf data:King_William_III_of_the_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg .
+

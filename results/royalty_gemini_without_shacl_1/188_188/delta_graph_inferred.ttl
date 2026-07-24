@@ -1,0 +1,133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasDaughter data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isAncestorOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isParentOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Mar%C3%ADa_Teresa_of_Spain .
+
+data:Ludwig_Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ludwig_Ferdinand_of_Bavaria ;
+    :hasChild data:Ferdinand_of_Bavaria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSon data:Ferdinand_of_Bavaria ;
+    :isAncestorOf data:Ferdinand_of_Bavaria ;
+    :isBloodrelationOf data:Ludwig_Ferdinand_of_Bavaria ;
+    :isBrotherOf data:Ludwig_Ferdinand_of_Bavaria ;
+    :isFatherOf data:Ferdinand_of_Bavaria ;
+    :isParentOf data:Ferdinand_of_Bavaria ;
+    :isSiblingOf data:Ludwig_Ferdinand_of_Bavaria ;
+    :isUncleOf data:Ferdinand_of_Bavaria .
+
+data:Mar%C3%ADa_de_la_Paz_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ferdinand_of_Bavaria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSister data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :hasSon data:Ferdinand_of_Bavaria ;
+    :isAncestorOf data:Ferdinand_of_Bavaria ;
+    :isAuntOf data:Ferdinand_of_Bavaria ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isMotherOf data:Ferdinand_of_Bavaria ;
+    :isParentOf data:Ferdinand_of_Bavaria ;
+    :isSiblingOf data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isSisterOf data:Mar%C3%ADa_de_la_Paz_of_Spain .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasDaughter data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :isAncestorOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isAuntOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isParentOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Ferdinand_of_Bavaria a :Man,
+        :Person ;
+    :hasAncestor data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :hasBrother data:Ferdinand_of_Bavaria ;
+    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;
+    :hasMother data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :hasParent data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isBloodrelationOf data:Ferdinand_of_Bavaria ;
+    :isBrotherOf data:Ferdinand_of_Bavaria ;
+    :isChildOf data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isSiblingOf data:Ferdinand_of_Bavaria ;
+    :isSonOf data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain .
+
+data:Mar%C3%ADa_Teresa_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMarriageYear "1906"^^xsd:string ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Ferdinand_of_Bavaria,
+        data:Ludwig_Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_la_Paz_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSister data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isBloodrelationOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isSisterOf data:Mar%C3%ADa_Teresa_of_Spain .
+

@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Ancestor .
+
+data:Fran%C3%A7oise_Cazaudehore :hasRelation data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro a :Ancestor .
+
+data:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain a :Ancestor .
+
+data:Kristine_Dzidziguri :hasRelation data:Prince_Juan_Jorge_de_Bagration-Mukhrani .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear \"1924\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2016\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Paul ;\n    :hasMarriageYear \"1955\"^^xsd:positiveInteger,\n        \"1973\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Olga ;\n    :hasRelation data:Princess_Barbara_Eleonore_Marie,\n        data:Princess_Maria_Pia .\n\ndata:Countess_Karoline_of_Ledebur_Wicheln a :Person,\n        :Woman .\n\ndata:King_Umberto_II a :Man,\n        :Person .\n\ndata:Prince_Johannes_of_Liechtenstein a :Man,\n        :Person .\n\ndata:Prince_Michel_of_Bourbon_Parma a :Man,\n        :Person ;\n    :hasRelation data:Princess_Yolande_de_Broglie_Revel .\n\ndata:Prince_Paul a :Man,\n        :Person .\n\ndata:Princess_Barbara_Eleonore_Marie a :Person,\n        :Woman ;\n    :hasFather data:Prince_Johannes_of_Liechtenstein ;\n    :hasMother data:Countess_Karoline_of_Ledebur_Wicheln .\n\ndata:Princess_Maria_Pia a :Person,\n        :Woman ;\n    :hasFather data:King_Umberto_II ;\n    :hasMother data:Princess_Marie_Jose ;\n    :hasRelation data:Prince_Michel_of_Bourbon_Parma .\n\ndata:Princess_Marie_Jose a :Person,\n        :Woman .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\ndata:Princess_Yolande_de_Broglie_Revel a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear \"1924\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2016\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Paul ;\n    :hasMarriageYear \"1955\"^^xsd:positiveInteger,\n        \"1973\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Olga ;\n    :hasRelation data:Princess_Barbara_Eleonore_Marie,\n        data:Princess_Maria_Pia .\n\ndata:Countess_Karoline_of_Ledebur_Wicheln a :Person,\n        :Woman .\n\ndata:King_Umberto_II a :Man,\n        :Person .\n\ndata:Prince_Johannes_of_Liechtenstein a :Man,\n        :Person .\n\ndata:Prince_Michel_of_Bourbon_Parma a :Man,\n        :Person ;\n    :hasRelation data:Princess_Yolande_de_Broglie_Revel .\n\ndata:Prince_Paul a :Man,\n        :Person .\n\ndata:Princess_Barbara_Eleonore_Marie a :Person,\n        :Woman ;\n    :hasFather data:Prince_Johannes_of_Liechtenstein ;\n    :hasMother data:Countess_Karoline_of_Ledebur_Wicheln .\n\ndata:Princess_Maria_Pia a :Person,\n        :Woman ;\n    :hasFather data:King_Umberto_II ;\n    :hasMother data:Princess_Marie_Jose ;\n    :hasRelation data:Prince_Michel_of_Bourbon_Parma .\n\ndata:Princess_Marie_Jose a :Person,\n        :Woman .\n\ndata:Princess_Olga a :Person,\n        :Woman .\n\ndata:Princess_Yolande_de_Broglie_Revel a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Katarina_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasDaughter data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Princess_Margarita_of_Baden .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Prince_Michael a :Man,
+        :Person .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Sir_Desmond_de_Silva a :Man,
+        :Person .
+
+data:Victoria_Marie_Esm%C3%A9_Margarita a :Person,
+        :Woman ;
+    :hasFather data:Sir_Desmond_de_Silva .
+

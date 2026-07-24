@@ -1,0 +1,350 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isUncleOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg .
+
+data:Fiona_Campbell-Walter a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Francesca_von_Thyssen-Bornemisza ;
+    :hasDaughter data:Francesca_von_Thyssen-Bornemisza ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Fiona_Campbell-Walter ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Gloria_von_Habsburg ;
+    :isAuntOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isBloodrelationOf data:Fiona_Campbell-Walter ;
+    :isMotherOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isParentOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isSiblingOf data:Fiona_Campbell-Walter ;
+    :isSisterOf data:Fiona_Campbell-Walter .
+
+data:Hans_Heinrich_Thyssen-Bornemisza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasChild data:Francesca_von_Thyssen-Bornemisza ;
+    :hasDaughter data:Francesca_von_Thyssen-Bornemisza ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :isBrotherOf data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :isFatherOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isParentOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isSiblingOf data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :isUncleOf data:Francesca_von_Thyssen-Bornemisza .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Karl_von_Habsburg .
+
+data:Princess_Regina_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isAuntOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Princess_Regina_of_Saxe-Meiningen ;
+    :isMotherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Princess_Regina_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Regina_of_Saxe-Meiningen .
+
+data:Eleonore_von_Habsburg a :Person,
+        :Woman ;
+    :hasAncestor data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasBrother data:Ferdinand_Habsburg-Lothringen ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasParent data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isChildOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isDaughterOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isSisterOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg .
+
+data:Ferdinand_Habsburg-Lothringen a :Man,
+        :Person ;
+    :hasAncestor data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasBirthYear "1997"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Ferdinand_Habsburg-Lothringen ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasParent data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isBrotherOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isChildOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isSonOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg .
+
+data:Gloria_von_Habsburg a :Person,
+        :Woman ;
+    :hasAncestor data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasBrother data:Ferdinand_Habsburg-Lothringen ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasParent data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isChildOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isDaughterOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isSisterOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg .
+
+data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Fiona_Campbell-Walter,
+        data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasChild data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :hasDaughter data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg ;
+    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasMother data:Fiona_Campbell-Walter ;
+    :hasParent data:Fiona_Campbell-Walter,
+        data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSister data:Francesca_von_Thyssen-Bornemisza ;
+    :hasSon data:Ferdinand_Habsburg-Lothringen ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isAuntOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isChildOf data:Fiona_Campbell-Walter,
+        data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :isDaughterOf data:Fiona_Campbell-Walter,
+        data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :isMotherOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isParentOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isSiblingOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isSisterOf data:Francesca_von_Thyssen-Bornemisza .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasChild data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :hasDaughter data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasRelation data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Fiona_Campbell-Walter,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Georg_von_Habsburg,
+        data:Gloria_von_Habsburg,
+        data:Hans_Heinrich_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :hasSon data:Ferdinand_Habsburg-Lothringen ;
+    :isAncestorOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :isFatherOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isParentOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg,
+        data:Princess_Regina_of_Saxe-Meiningen ;
+    :isUncleOf data:Eleonore_von_Habsburg,
+        data:Ferdinand_Habsburg-Lothringen,
+        data:Gloria_von_Habsburg .
+

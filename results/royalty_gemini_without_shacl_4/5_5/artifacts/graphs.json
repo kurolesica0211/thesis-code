@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hamilton_Joseph_Keyes_OMalley a :Man .\n\ndata:Lady_Zinnia_Rosemary_Denison a :Woman ;\n    :hasFather data:Hugo_William_Cecil_Denison .\n\ndata:Robin_Alexander_Bryan a :Man ;\n    :hasMother data:Lady_Iris_Mountbatten .\n\ndata:William_Alexander_Kemp a :Man ;\n    :hasFather data:Clarence_Arthur_Kemp ;\n    :hasMother data:Helen_Janet_Ballantyne .\n\ndata:Alexander_Mountbatten a :Man ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMother data:Princess_Beatrice .\n\ndata:Clarence_Arthur_Kemp a :Man .\n\ndata:Francis_William_Henry_Fane a :Man .\n\ndata:Helen_Janet_Ballantyne a :Woman .\n\ndata:Hugo_William_Cecil_Denison a :Man ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Lady_Grace_Adelaide_Fane .\n\ndata:Irene_Frances_Adza_Denison a :Woman ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Lady_Grace_Adelaide_Fane .\n\ndata:Lady_Iris_Mountbatten a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Alexander_Mountbatten ;\n    :hasMother data:Irene_Frances_Adza_Denison .\n\ndata:Prince_Henry_of_Battenberg a :Man .\n\ndata:Princess_Beatrice a :Woman .\n\ndata:Lady_Grace_Adelaide_Fane a :Woman ;\n    :hasFather data:Francis_William_Henry_Fane .\n\ndata:William_Francis_Henry_Denison a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hamilton_Joseph_Keyes_OMalley a :Man .\n\ndata:Lady_Zinnia_Rosemary_Denison a :Woman ;\n    :hasFather data:Hugo_William_Cecil_Denison .\n\ndata:Robin_Alexander_Bryan a :Man ;\n    :hasMother data:Lady_Iris_Mountbatten .\n\ndata:William_Alexander_Kemp a :Man ;\n    :hasFather data:Clarence_Arthur_Kemp ;\n    :hasMother data:Helen_Janet_Ballantyne .\n\ndata:Alexander_Mountbatten a :Man ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMother data:Princess_Beatrice .\n\ndata:Clarence_Arthur_Kemp a :Man .\n\ndata:Francis_William_Henry_Fane a :Man .\n\ndata:Helen_Janet_Ballantyne a :Woman .\n\ndata:Hugo_William_Cecil_Denison a :Man ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Lady_Grace_Adelaide_Fane .\n\ndata:Irene_Frances_Adza_Denison a :Woman ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Lady_Grace_Adelaide_Fane .\n\ndata:Lady_Iris_Mountbatten a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Alexander_Mountbatten ;\n    :hasMother data:Irene_Frances_Adza_Denison .\n\ndata:Prince_Henry_of_Battenberg a :Man .\n\ndata:Princess_Beatrice a :Woman .\n\ndata:Lady_Grace_Adelaide_Fane a :Woman ;\n    :hasFather data:Francis_William_Henry_Fane .\n\ndata:William_Francis_Henry_Denison a :Man .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AugustBrooksbank a :Man ;\n    :hasFather data:JackBrooksbank ;\n    :hasMother data:Eugenie .\n\ndata:CharlesIII a :Man .\n\ndata:ErnestBrooksbank a :Man ;\n    :hasFather data:JackBrooksbank ;\n    :hasMother data:Eugenie .\n\ndata:Beatrice a :Woman ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMother data:SarahFerguson ;\n    :isSisterOf data:Eugenie .\n\ndata:PrincePhilip a :Man .\n\ndata:QueenElizabethII a :Woman .\n\ndata:AndrewMountbattenWindsor a :Man ;\n    :hasFather data:PrincePhilip ;\n    :hasMother data:QueenElizabethII .\n\ndata:SarahFerguson a :Woman .\n\ndata:Eugenie a :Woman ;\n    :hasBirthYear \"1990\"^^xsd:positiveInteger ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear \"2018\"^^xsd:positiveInteger ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:JackBrooksbank ;\n    :isSisterOf data:Beatrice .\n\ndata:JackBrooksbank a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AugustBrooksbank a :Man ;\n    :hasFather data:JackBrooksbank ;\n    :hasMother data:Eugenie .\n\ndata:CharlesIII a :Man .\n\ndata:ErnestBrooksbank a :Man ;\n    :hasFather data:JackBrooksbank ;\n    :hasMother data:Eugenie .\n\ndata:Beatrice a :Woman ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMother data:SarahFerguson ;\n    :isSisterOf data:Eugenie .\n\ndata:PrincePhilip a :Man .\n\ndata:QueenElizabethII a :Woman .\n\ndata:AndrewMountbattenWindsor a :Man ;\n    :hasFather data:PrincePhilip ;\n    :hasMother data:QueenElizabethII .\n\ndata:SarahFerguson a :Woman .\n\ndata:Eugenie a :Woman ;\n    :hasBirthYear \"1990\"^^xsd:positiveInteger ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear \"2018\"^^xsd:positiveInteger ;\n    :hasMother data:SarahFerguson ;\n    :hasRelation data:JackBrooksbank ;\n    :isSisterOf data:Beatrice .\n\ndata:JackBrooksbank a :Man .\n\n"
+    }
+]

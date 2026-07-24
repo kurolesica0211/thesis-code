@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Georg_Donatus_of_Hesse .
+
+data:Donatus_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Moritz_of_Hesse ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Floria_Franziska_von_Faber-Castell .
+
+data:Empress_Frederick a :Person,
+        :Woman .
+
+data:Frederick_II_of_Hesse-Kassel a :Man,
+        :Person .
+
+data:Mary_of_Great_Britain a :Person,
+        :Woman .
+
+data:Floria_Franziska_von_Faber-Castell a :Person,
+        :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Hubertus_von_Faber-Castell .
+
+data:Georg_Donatus_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Louis_of_Hesse_and_by_Rhine .
+
+data:Hubertus_von_Faber-Castell a :Man,
+        :Person .
+
+data:Louis_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasDeathYear 1968 .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasFather data:Philipp_of_Hesse .
+
+data:Philipp_of_Hesse a :Man,
+        :Person ;
+    :hasDeathYear 1980 .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasBirthYear 1940 .
+

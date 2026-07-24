@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Alexander_of_Yugoslavia a :Man ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMarriageYear 1955,
+        1973 ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_George_Duke_of_Kent .
+
+data:Prince_Michel_of_Bourbon-Parma a :Man .
+
+data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein a :Woman ;
+    :hasFather data:Prince_Johannes_of_Liechtenstein ;
+    :hasMother data:Countess_Karoline_of_Ledebur-Wicheln .
+
+data:Princess_Maria_Pia_of_Savoy a :Woman ;
+    :hasFather data:King_Umberto_II_of_Italy ;
+    :hasMother data:Princess_Marie_Jose_of_Belgium .
+
+data:Princess_Yolande_de_Broglie-Revel a :Woman .
+
+data:Countess_Karoline_of_Ledebur-Wicheln a :Woman .
+
+data:King_Umberto_II_of_Italy a :Man .
+
+data:Prince_George_Duke_of_Kent a :Man .
+
+data:Prince_Johannes_of_Liechtenstein a :Man .
+
+data:Prince_Paul_of_Yugoslavia a :Man .
+
+data:Princess_Marie_Jose_of_Belgium a :Woman .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+

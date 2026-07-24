@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Prince_of_Asturias a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Alfonso_XII a :Man,\n        :Person ;\n    :isFatherOf data:Alfonso_XIII .\n\ndata:Gonzalo_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Jaime_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Juan_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Leopold_of_Battenberg a :Man,\n        :Person ;\n    :isBrotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman ;\n    :isMotherOf data:Alfonso_XIII .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :isMotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1941 ;\n    :hasMarriageYear 1906 ;\n    :hasRelation data:Victoria_Eugenie_of_Battenberg ;\n    :hasSex data:Male .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Prince_of_Asturias a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Alfonso_XII a :Man,\n        :Person ;\n    :isFatherOf data:Alfonso_XIII .\n\ndata:Gonzalo_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Jaime_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Juan_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Leopold_of_Battenberg a :Man,\n        :Person ;\n    :isBrotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman ;\n    :isMotherOf data:Alfonso_XIII .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :isMotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Male a :Sex .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1941 ;\n    :hasMarriageYear 1906 ;\n    :hasRelation data:Victoria_Eugenie_of_Battenberg ;\n    :hasSex data:Male .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Prince_of_Asturias a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Alfonso_XII a :Man,\n        :Person ;\n    :isFatherOf data:Alfonso_XIII .\n\ndata:Gonzalo_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Jaime_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Juan_de_Borbon a :Man,\n        :Person ;\n    :isSonOf data:Alfonso_XIII,\n        data:Victoria_Eugenie_of_Battenberg .\n\ndata:Leopold_of_Battenberg a :Man,\n        :Person ;\n    :isBrotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman ;\n    :isMotherOf data:Alfonso_XIII .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :isMotherOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Male a :Sex .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1941 ;\n    :hasMarriageYear 1906 ;\n    :hasRelation data:Victoria_Eugenie_of_Battenberg ;\n    :hasSex data:Male .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    }
+]

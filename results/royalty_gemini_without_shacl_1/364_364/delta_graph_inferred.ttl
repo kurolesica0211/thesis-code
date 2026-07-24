@@ -1,0 +1,329 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_Prince_of_Hesse_and_by_Rhine .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasRelation data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isSiblingOf data:Frederick_III_German_Emperor .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Charles_of_Hesse ;
+    :hasChild data:Philipp_of_Hesse ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSon data:Philipp_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Philipp_of_Hesse ;
+    :isParentOf data:Philipp_of_Hesse ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Philipp_of_Hesse .
+
+data:Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasAncestor data:Victor_Emmanuel_III_of_Italy ;
+    :hasMother data:Victor_Emmanuel_III_of_Italy ;
+    :hasParent data:Victor_Emmanuel_III_of_Italy ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Mafalda_of_Savoy ;
+    :isChildOf data:Victor_Emmanuel_III_of_Italy ;
+    :isDaughterOf data:Victor_Emmanuel_III_of_Italy ;
+    :isSiblingOf data:Mafalda_of_Savoy ;
+    :isSisterOf data:Mafalda_of_Savoy .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasBrother data:Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Mafalda_of_Savoy ;
+    :hasDaughter data:Mafalda_of_Savoy ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Victor_Emmanuel_III_of_Italy ;
+    :isAncestorOf data:Mafalda_of_Savoy ;
+    :isAuntOf data:Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Victor_Emmanuel_III_of_Italy ;
+    :isBrotherOf data:Victor_Emmanuel_III_of_Italy ;
+    :isMotherOf data:Mafalda_of_Savoy ;
+    :isParentOf data:Mafalda_of_Savoy ;
+    :isSiblingOf data:Victor_Emmanuel_III_of_Italy ;
+    :isSisterOf data:Victor_Emmanuel_III_of_Italy .
+
+data:Sophie_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :isAuntOf data:Philipp_of_Hesse ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Philipp_of_Hesse .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isUncleOf data:Moritz_of_Hesse .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isUncleOf data:Moritz_of_Hesse .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasChild data:Philipp_of_Hesse ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia ;
+    :hasSon data:Philipp_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse ;
+    :isAuntOf data:Philipp_of_Hesse ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isMotherOf data:Philipp_of_Hesse ;
+    :isParentOf data:Philipp_of_Hesse ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Wilhelm_II_German_Emperor .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria ;
+    :hasBrother data:Moritz_of_Hesse ;
+    :hasFather data:Philipp_of_Hesse ;
+    :hasParent data:Philipp_of_Hesse ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Moritz_of_Hesse ;
+    :isBrotherOf data:Moritz_of_Hesse ;
+    :isChildOf data:Philipp_of_Hesse ;
+    :isSiblingOf data:Moritz_of_Hesse ;
+    :isSonOf data:Philipp_of_Hesse .
+
+data:Philipp_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasChild data:Moritz_of_Hesse ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Margaret_of_Prussia,
+        data:Moritz_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Queen_Victoria,
+        data:Sophie_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wilhelm_II_German_Emperor,
+        data:Wolfgang_of_Hesse ;
+    :hasSon data:Moritz_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isFatherOf data:Moritz_of_Hesse ;
+    :isParentOf data:Moritz_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isUncleOf data:Moritz_of_Hesse .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman ;\n    :isMotherOf data:Cecilie .\n\ndata:AndrewOfGreeceAndDenmark a :Man,\n        :Person ;\n    :isFatherOf data:Cecilie .\n\ndata:Eleonore a :Person,\n        :Woman ;\n    :isMotherOf data:GeorgDonatus .\n\ndata:ErnestLouis a :Man,\n        :Person ;\n    :isFatherOf data:GeorgDonatus .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasDeathYear 1968 ;\n    :isBrotherOf data:GeorgDonatus .\n\ndata:AlexanderGeorgKarlHeinrich a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 1937 .\n\ndata:JohannaMarinaEleonore a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 1939 .\n\ndata:LudwigErnstAndreas a :Man,\n        :Person ;\n    :hasBirthYear 1931 ;\n    :hasDeathYear 1937 .\n\ndata:Cecilie a :Person,\n        :Woman ;\n    :isMotherOf data:AlexanderGeorgKarlHeinrich,\n        data:JohannaMarinaEleonore,\n        data:LudwigErnstAndreas .\n\ndata:GeorgDonatus a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1937 ;\n    :hasMarriageYear 1931 ;\n    :hasRelation data:Cecilie ;\n    :isFatherOf data:AlexanderGeorgKarlHeinrich,\n        data:JohannaMarinaEleonore,\n        data:LudwigErnstAndreas .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman ;\n    :isMotherOf data:Cecilie .\n\ndata:AndrewOfGreeceAndDenmark a :Man,\n        :Person ;\n    :isFatherOf data:Cecilie .\n\ndata:Eleonore a :Person,\n        :Woman ;\n    :isMotherOf data:GeorgDonatus .\n\ndata:ErnestLouis a :Man,\n        :Person ;\n    :isFatherOf data:GeorgDonatus .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasDeathYear 1968 ;\n    :isBrotherOf data:GeorgDonatus .\n\ndata:AlexanderGeorgKarlHeinrich a :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 1937 .\n\ndata:JohannaMarinaEleonore a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 1939 .\n\ndata:LudwigErnstAndreas a :Man,\n        :Person ;\n    :hasBirthYear 1931 ;\n    :hasDeathYear 1937 .\n\ndata:Cecilie a :Person,\n        :Woman ;\n    :isMotherOf data:AlexanderGeorgKarlHeinrich,\n        data:JohannaMarinaEleonore,\n        data:LudwigErnstAndreas .\n\ndata:GeorgDonatus a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1937 ;\n    :hasMarriageYear 1931 ;\n    :hasRelation data:Cecilie ;\n    :isFatherOf data:AlexanderGeorgKarlHeinrich,\n        data:JohannaMarinaEleonore,\n        data:LudwigErnstAndreas .\n\n"
+    }
+]

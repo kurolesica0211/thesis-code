@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Constantine-Alexios_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :alsoKnownAs "Konstantínos-Aléxios de Grèce"^^xsd:string ;
+    :hasBirthYear "1998"^^xsd:positiveInteger ;
+    :hasFather data:Crown_Prince_Pavlos ;
+    :hasMother data:Crown_Princess_Marie-Chantal_of_Greece .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Crown_Prince_Pavlos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie_of_Denmark .
+
+data:Crown_Princess_Marie-Chantal_of_Greece a :Person,
+        :Woman .
+

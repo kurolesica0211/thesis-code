@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrancescaSofia a :Person,\n        :Woman ;\n    :isDaughterOf data:LadyCharlotteLindesayBethune,\n        data:PrinceJaimeOfBourbonTwoSicilies .\n\ndata:Ines a :Person,\n        :Woman ;\n    :isDaughterOf data:LadyCharlotteLindesayBethune,\n        data:PrinceJaimeOfBourbonTwoSicilies .\n\ndata:InfanteCarlosDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 ;\n    :isFatherOf data:PrincePedroDukeOfCalabria .\n\ndata:PrincessAnneOfOrleans a :Person,\n        :Woman ;\n    :isMotherOf data:PrincePedroDukeOfCalabria .\n\ndata:DianaMaryChamberlayneMacdonald a :Person,\n        :Woman .\n\ndata:JamesLindesayBethune16thEarlOfLindsay a :Man,\n        :Person .\n\ndata:SofiaLandaluceYMelgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\ndata:PrinceJaimeOfBourbonTwoSicilies a :Man,\n        :Person ;\n    :hasBirthYear 1993 ;\n    :hasRelation data:LadyCharlotteLindesayBethune ;\n    :isSonOf data:PrincePedroDukeOfCalabria,\n        data:SofiaLandaluceYMelgarejo .\n\ndata:LadyCharlotteLindesayBethune a :Person,\n        :Woman ;\n    :isDaughterOf data:DianaMaryChamberlayneMacdonald,\n        data:JamesLindesayBethune16thEarlOfLindsay .\n\ndata:PrincePedroDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1968 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrancescaSofia a :Person,\n        :Woman ;\n    :isDaughterOf data:LadyCharlotteLindesayBethune,\n        data:PrinceJaimeOfBourbonTwoSicilies .\n\ndata:Ines a :Person,\n        :Woman ;\n    :isDaughterOf data:LadyCharlotteLindesayBethune,\n        data:PrinceJaimeOfBourbonTwoSicilies .\n\ndata:InfanteCarlosDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 ;\n    :isFatherOf data:PrincePedroDukeOfCalabria .\n\ndata:PrincessAnneOfOrleans a :Person,\n        :Woman ;\n    :isMotherOf data:PrincePedroDukeOfCalabria .\n\ndata:DianaMaryChamberlayneMacdonald a :Person,\n        :Woman .\n\ndata:JamesLindesayBethune16thEarlOfLindsay a :Man,\n        :Person .\n\ndata:SofiaLandaluceYMelgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\ndata:PrinceJaimeOfBourbonTwoSicilies a :Man,\n        :Person ;\n    :hasBirthYear 1993 ;\n    :hasRelation data:LadyCharlotteLindesayBethune ;\n    :isSonOf data:PrincePedroDukeOfCalabria,\n        data:SofiaLandaluceYMelgarejo .\n\ndata:LadyCharlotteLindesayBethune a :Person,\n        :Woman ;\n    :isDaughterOf data:DianaMaryChamberlayneMacdonald,\n        data:JamesLindesayBethune16thEarlOfLindsay .\n\ndata:PrincePedroDukeOfCalabria a :Man,\n        :Person ;\n    :hasBirthYear 1968 .\n\n"
+    }
+]

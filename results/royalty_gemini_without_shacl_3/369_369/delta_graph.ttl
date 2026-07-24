@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Charles_of_Hesse a :Man ;
+    :isFatherOf data:Christoph,
+        data:Friedrich_Wilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Princess_Sophia,
+        data:Wolfgang .
+
+data:Margaret_of_Prussia a :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :isBrotherOf data:Prince_Henry ;
+    :isMotherOf data:Christoph,
+        data:Friedrich_Wilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSisterOf data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II .
+
+data:Margaret_of_Prussia%2Ctarget a :Woman ;
+    :isMotherOf data:Princess_Marie_Alexandra,
+        data:Princess_Sophia .
+
+data:Princess_Sophie_of_Greece a :Woman ;
+    :isMotherOf data:Christoph ;
+    :isSisterOf data:Philip_Prince_of_Greece_and_Denmark .
+
+data:Victor_Emmanuel_III a :Man ;
+    :isFatherOf data:Princess_Mafalda .
+
+data:Philip_Prince_of_Greece_and_Denmark a :Man .
+
+data:Prince_Henry a :Man .
+
+data:Princess_Charlotte a :Woman .
+
+data:Princess_Mafalda a :Woman .
+
+data:Princess_Marie_Alexandra a :Woman .
+
+data:Princess_Sophie a :Woman .
+
+data:Princess_Viktoria a :Woman .
+
+data:Wilhelm_II a :Man ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Frederick_III a :Man .
+
+data:Friedrich_Wilhelm a :Man .
+
+data:Maximilian a :Man .
+
+data:Philipp a :Man .
+
+data:Princess_Sophia a :Woman .
+
+data:Queen_Victoria a :Woman ;
+    :isMotherOf data:Victoria_Princess_Royal .
+
+data:Wolfgang a :Man .
+
+data:Christoph a :Man .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasMother data:Queen_Victoria .
+

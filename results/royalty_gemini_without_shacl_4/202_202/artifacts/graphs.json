@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gottfried a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasFather data:Peter_Ferdinand ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Maria_Cristina ;\n    :hasRelation data:Dorothea .\n\ndata:Dorothea a :Person,\n        :Woman ;\n    :hasFather data:Franz_of_Bavaria ;\n    :hasMother data:Isabella_Antonie .\n\ndata:Ferdinand_IV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Franz_of_Bavaria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isabella_Antonie a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Maria_Cristina a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gottfried a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasFather data:Peter_Ferdinand ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Maria_Cristina ;\n    :hasRelation data:Dorothea .\n\ndata:Dorothea a :Person,\n        :Woman ;\n    :hasFather data:Franz_of_Bavaria ;\n    :hasMother data:Isabella_Antonie .\n\ndata:Ferdinand_IV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Franz_of_Bavaria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isabella_Antonie a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Maria_Cristina a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV .\n\n"
+    }
+]

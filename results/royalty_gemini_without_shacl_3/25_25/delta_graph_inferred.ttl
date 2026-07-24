@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gustaf_VI_Adolf a :Man ;
+    :hasBrother data:Gustaf_VI_Adolf ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Gustaf_VI_Adolf ;
+    :isBrotherOf data:Gustaf_VI_Adolf ;
+    :isSiblingOf data:Gustaf_VI_Adolf .
+
+data:Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis_of_Battenberg ;
+    :hasChild data:Louise_Mountbatten ;
+    :hasDaughter data:Louise_Mountbatten ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Louis_of_Battenberg ;
+    :isBrotherOf data:Louis_of_Battenberg ;
+    :isFatherOf data:Louise_Mountbatten ;
+    :isParentOf data:Louise_Mountbatten ;
+    :isSiblingOf data:Louis_of_Battenberg ;
+    :isUncleOf data:Louise_Mountbatten .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Woman ;
+    :hasChild data:Louise_Mountbatten ;
+    :hasDaughter data:Louise_Mountbatten ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Louise_Mountbatten ;
+    :isAuntOf data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Louise_Mountbatten ;
+    :isParentOf data:Louise_Mountbatten ;
+    :isSiblingOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Victoria_of_Hesse_and_by_Rhine .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isBrotherOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isUncleOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasAncestor data:Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isChildOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSonOf data:Alice_of_Battenberg .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :hasSon data:Prince_Philip_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isAuntOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isMotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:Louise_Mountbatten a :Woman ;
+    :alsoKnownAs "Lady Louise Mountbatten"^^xsd:string ;
+    :formerlyKnownAs "Princess Louise of Battenberg"^^xsd:string ;
+    :hasAncestor data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Louis_of_Battenberg ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_of_Battenberg,
+        data:Louise_Mountbatten,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_Mountbatten ;
+    :isAuntOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isChildOf data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Alice_of_Battenberg,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :knownAs "Louise Alexandra Marie Irene Mountbatten"^^xsd:string .
+

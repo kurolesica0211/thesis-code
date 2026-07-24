@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_of_the_Netherlands a :Woman .\n\ndata:Emma_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man ;\n    :hasBirthYear 1936 ;\n    :hasChild data:Carl-Anton ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Josias_Georg_Wilhelm_Adolf ;\n    :hasMarriageYear 1988 ;\n    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;\n    :hasRelation data:Cecilia_von_Go%C3%ABss-Saurau .\n\ndata:Altburg_Marie_Mathilde_von_Oldenburg a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Frederick_Augustus_II .\n\ndata:Carl-Anton a :Man .\n\ndata:Cecilia_von_Go%C3%ABss-Saurau a :Woman ;\n    :hasBirthYear 1956 .\n\ndata:Frederick_Augustus_II a :Man .\n\ndata:Josias_Georg_Wilhelm_Adolf a :Man ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1967 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_of_the_Netherlands a :Woman .\n\ndata:Emma_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man ;\n    :hasBirthYear 1936 ;\n    :hasChild data:Carl-Anton ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Josias_Georg_Wilhelm_Adolf ;\n    :hasMarriageYear 1988 ;\n    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;\n    :hasRelation data:Cecilia_von_Go%C3%ABss-Saurau .\n\ndata:Altburg_Marie_Mathilde_von_Oldenburg a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Frederick_Augustus_II .\n\ndata:Carl-Anton a :Man .\n\ndata:Cecilia_von_Go%C3%ABss-Saurau a :Woman ;\n    :hasBirthYear 1956 .\n\ndata:Frederick_Augustus_II a :Man .\n\ndata:Josias_Georg_Wilhelm_Adolf a :Man ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1967 .\n\n"
+    }
+]

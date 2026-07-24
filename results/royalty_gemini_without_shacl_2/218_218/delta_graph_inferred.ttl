@@ -1,0 +1,180 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:August_Aleksander_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1697 ;
+    :hasBrother data:August_Aleksander_Czartoryski ;
+    :hasDeathYear 1782 ;
+    :hasRelation data:August_Aleksander_Czartoryski ;
+    :isBloodrelationOf data:August_Aleksander_Czartoryski ;
+    :isBrotherOf data:August_Aleksander_Czartoryski ;
+    :isSiblingOf data:August_Aleksander_Czartoryski .
+
+data:Gediminas a :Man,
+        :Person ;
+    :hasBrother data:Gediminas ;
+    :hasDeathYear 1341 ;
+    :hasRelation data:Gediminas ;
+    :isBloodrelationOf data:Gediminas ;
+    :isBrotherOf data:Gediminas ;
+    :isSiblingOf data:Gediminas .
+
+data:Zofia_von_Donhoff a :Person,
+        :Woman ;
+    :hasRelation data:Zofia_von_Donhoff ;
+    :hasSister data:Zofia_von_Donhoff ;
+    :isBloodrelationOf data:Zofia_von_Donhoff ;
+    :isSiblingOf data:Zofia_von_Donhoff ;
+    :isSisterOf data:Zofia_von_Donhoff .
+
+data:Izabela_Czartoryska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Adam_Jerzy_Czartoryski ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Izabela_Czartoryska ;
+    :hasSister data:Izabela_Czartoryska ;
+    :hasSon data:Adam_Jerzy_Czartoryski ;
+    :isAncestorOf data:Adam_Jerzy_Czartoryski ;
+    :isAuntOf data:Adam_Jerzy_Czartoryski ;
+    :isBloodrelationOf data:Izabela_Czartoryska ;
+    :isMotherOf data:Adam_Jerzy_Czartoryski ;
+    :isParentOf data:Adam_Jerzy_Czartoryski ;
+    :isSiblingOf data:Izabela_Czartoryska ;
+    :isSisterOf data:Izabela_Czartoryska .
+
+data:Adam_Jerzy_Czartoryski a :Man,
+        :Person ;
+    :hasAncestor data:Izabela_Czartoryska ;
+    :hasBrother data:Adam_Jerzy_Czartoryski ;
+    :hasMother data:Izabela_Czartoryska ;
+    :hasParent data:Izabela_Czartoryska ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Izabela_Czartoryska ;
+    :isBloodrelationOf data:Adam_Jerzy_Czartoryski ;
+    :isBrotherOf data:Adam_Jerzy_Czartoryski ;
+    :isChildOf data:Izabela_Czartoryska ;
+    :isSiblingOf data:Adam_Jerzy_Czartoryski ;
+    :isSonOf data:Izabela_Czartoryska .
+
+data:Ludwik_Piotr_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1945 ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies,
+        data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isUncleOf data:Tamara_Czartoryska .
+
+data:Augustyn_Jozef_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Augustyn_Jozef_Czartoryski ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies,
+        data:Tamara_Czartoryska ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Augustyn_Jozef_Czartoryski ;
+    :isBrotherOf data:Augustyn_Jozef_Czartoryski ;
+    :isFatherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Augustyn_Jozef_Czartoryski ;
+    :isUncleOf data:Adam_Karol_Czartoryski .
+
+data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasDeathYear 1996 ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies,
+        data:Tamara_Czartoryska ;
+    :hasSister data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Tamara_Czartoryska ;
+    :isAuntOf data:Adam_Karol_Czartoryski ;
+    :isBloodrelationOf data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :isMotherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :isSisterOf data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies .
+
+data:Tamara_Czartoryska a :Person,
+        :Woman ;
+    :hasAncestor data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasFather data:Adam_Karol_Czartoryski ;
+    :hasParent data:Adam_Karol_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies,
+        data:Tamara_Czartoryska ;
+    :hasSister data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Tamara_Czartoryska ;
+    :isChildOf data:Adam_Karol_Czartoryski ;
+    :isDaughterOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Tamara_Czartoryska ;
+    :isSisterOf data:Tamara_Czartoryska .
+
+data:Adam_Karol_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Augustyn_Jozef_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasChild data:Tamara_Czartoryska ;
+    :hasDaughter data:Tamara_Czartoryska ;
+    :hasFather data:Augustyn_Jozef_Czartoryski ;
+    :hasMother data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasParent data:Augustyn_Jozef_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Jozef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies,
+        data:Tamara_Czartoryska ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isChildOf data:Augustyn_Jozef_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :isFatherOf data:Tamara_Czartoryska ;
+    :isParentOf data:Tamara_Czartoryska ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSonOf data:Augustyn_Jozef_Czartoryski,
+        data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :isUncleOf data:Tamara_Czartoryska .
+

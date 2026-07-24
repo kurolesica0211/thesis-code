@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg .\n\ndata:Countess_Mathilde_van_Limburg-Stirum a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :hasFather data:King_William_III .\n\ndata:William_Prince_of_Orange a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Lemon\"^^xsd:string ;\n    :hasBirthYear 1840 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg .\n\ndata:King_William_I a :Man,\n        :Person .\n\ndata:King_William_II a :Man,\n        :Person ;\n    :hasFather data:King_William_I .\n\ndata:Princess_Augusta_of_Great_Britain a :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasMother data:Princess_Augusta_of_Great_Britain .\n\ndata:King_William_III a :Man,\n        :Person ;\n    :hasFather data:King_William_II .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg .\n\ndata:Countess_Mathilde_van_Limburg-Stirum a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :hasFather data:King_William_III .\n\ndata:William_Prince_of_Orange a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Lemon\"^^xsd:string ;\n    :hasBirthYear 1840 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg .\n\ndata:King_William_I a :Man,\n        :Person .\n\ndata:King_William_II a :Man,\n        :Person ;\n    :hasFather data:King_William_I .\n\ndata:Princess_Augusta_of_Great_Britain a :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasMother data:Princess_Augusta_of_Great_Britain .\n\ndata:King_William_III a :Man,\n        :Person ;\n    :hasFather data:King_William_II .\n\n"
+    }
+]

@@ -1,0 +1,274 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeII a :Man,
+        :Person ;
+    :hasBrother data:GeorgeII,
+        data:Paul ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :isBloodrelationOf data:GeorgeII,
+        data:Paul ;
+    :isBrotherOf data:GeorgeII,
+        data:Paul ;
+    :isSiblingOf data:GeorgeII,
+        data:Paul ;
+    :isUncleOf data:ConstantineII .
+
+data:FrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederikIX ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :isAncestorOf data:Anne-Marie ;
+    :isBloodrelationOf data:FrederikIX ;
+    :isBrotherOf data:FrederikIX ;
+    :isFatherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:FrederikIX ;
+    :isUncleOf data:Anne-Marie .
+
+data:Anne-Marie a :Person,
+        :Woman ;
+    :hasAncestor data:FrederikIX ;
+    :hasFather data:FrederikIX ;
+    :hasParent data:FrederikIX ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:Anne-Marie ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isChildOf data:FrederikIX ;
+    :isDaughterOf data:FrederikIX ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:ErnestAugustus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustus ;
+    :hasChild data:Frederica ;
+    :hasDaughter data:Frederica ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :isAncestorOf data:ConstantineII,
+        data:Frederica ;
+    :isBloodrelationOf data:ErnestAugustus ;
+    :isBrotherOf data:ErnestAugustus ;
+    :isFatherOf data:Frederica ;
+    :isParentOf data:Frederica ;
+    :isSiblingOf data:ErnestAugustus ;
+    :isUncleOf data:Frederica .
+
+data:VictoriaLouise a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederica ;
+    :hasDaughter data:Frederica ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:VictoriaLouise ;
+    :isAncestorOf data:ConstantineII,
+        data:Frederica ;
+    :isAuntOf data:Frederica ;
+    :isBloodrelationOf data:VictoriaLouise ;
+    :isMotherOf data:Frederica ;
+    :isParentOf data:Frederica ;
+    :isSiblingOf data:VictoriaLouise ;
+    :isSisterOf data:VictoriaLouise .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSisterOf data:ConstantineII,
+        data:Irene,
+        data:Sofia .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSisterOf data:ConstantineII,
+        data:Irene,
+        data:Sofia .
+
+data:Paul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeII,
+        data:Paul ;
+    :hasChild data:ConstantineII ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII ;
+    :isBloodrelationOf data:GeorgeII,
+        data:Paul ;
+    :isBrotherOf data:GeorgeII,
+        data:Paul ;
+    :isFatherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:GeorgeII,
+        data:Paul ;
+    :isUncleOf data:ConstantineII .
+
+data:Frederica a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :hasChild data:ConstantineII ;
+    :hasFather data:ErnestAugustus ;
+    :hasMother data:VictoriaLouise ;
+    :hasParent data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:Frederica ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:Frederica ;
+    :isChildOf data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :isDaughterOf data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :isMotherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:Frederica ;
+    :isSisterOf data:Frederica .
+
+data:ConstantineII a :Man,
+        :Person ;
+    :hasAncestor data:ErnestAugustus,
+        data:Frederica,
+        data:Paul,
+        data:VictoriaLouise ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:ConstantineII ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Paul ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Frederica ;
+    :hasParent data:Frederica,
+        data:Paul ;
+    :hasRelation data:Anne-Marie,
+        data:ConstantineII,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:FrederikIX,
+        data:GeorgeII,
+        data:Irene,
+        data:Paul,
+        data:Sofia,
+        data:VictoriaLouise ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isBrotherOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isChildOf data:Frederica,
+        data:Paul ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSonOf data:Frederica,
+        data:Paul .
+

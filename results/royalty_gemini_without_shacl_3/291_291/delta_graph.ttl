@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nancy_Helen_Marie_Leeds a :Woman ;
+    :hasFather data:William_Bateman_Leeds_Jr ;
+    :hasMother data:Princess_Xenia_Georgievna .
+
+data:Herman_Jud a :Man .
+
+data:Princess_Nina_Georgievna a :Woman ;
+    :hasFather data:Grand_Duke_George_Mihailovich ;
+    :hasMother data:Princess_Maria_Georgievna .
+
+data:Princess_Xenia_Georgievna a :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Grand_Duke_George_Mihailovich ;
+    :hasMother data:Princess_Maria_Georgievna ;
+    :hasRelation data:Herman_Jud,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Princess_Nina_Georgievna .
+
+data:Grand_Duke_George_Mihailovich a :Man .
+
+data:Princess_Maria_Georgievna a :Woman .
+
+data:William_Bateman_Leeds_Jr a :Man .
+

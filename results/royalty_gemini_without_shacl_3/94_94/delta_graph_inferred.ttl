@@ -1,0 +1,90 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBrother data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasDeathYear 2022 ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Carl_Duke_of_W%C3%BCrttemberg .
+
+data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg ;
+    :hasMarriageYear 2023 ;
+    :hasRelation data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Gaby_Maier ;
+    :isBloodrelationOf data:Duke_Eberhard_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Duke_Eberhard_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Duke_Eberhard_of_W%C3%BCrttemberg .
+
+data:Gaby_Maier a :Person,
+        :Woman ;
+    :hasRelation data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Gaby_Maier ;
+    :hasSister data:Gaby_Maier ;
+    :isBloodrelationOf data:Gaby_Maier ;
+    :isSiblingOf data:Gaby_Maier ;
+    :isSisterOf data:Gaby_Maier .
+
+data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasChild data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasDeathYear 2018 ;
+    :hasRelation data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasSon data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg .
+
+data:Princess_Marie_Wilhelmine_of_Wied a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasChild data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasRelation data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasSister data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasSon data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAuntOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isMotherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isSisterOf data:Princess_Marie_Wilhelmine_of_Wied .
+
+data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasAncestor data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasBirthYear 1994 ;
+    :hasBrother data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasParent data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasRelation data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBrotherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isChildOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isSiblingOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSonOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied .
+

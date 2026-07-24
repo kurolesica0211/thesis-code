@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Woman ;
+    :isAuntOf data:Margarita_of_Baden .
+
+data:Berthold_Margrave_of_Baden a :Man .
+
+data:Margarita_of_Baden a :Woman ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:Maximilian_of_Baden ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear "1957"^^xsd:nonNegativeInteger ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Tomislav_of_Yugoslavia .
+
+data:Maximilian_of_Baden a :Man .
+
+data:Peter_II_of_Yugoslavia a :Man .
+
+data:Philip_Duke_of_Edinburgh a :Man .
+
+data:Theodora_of_Greece_and_Denmark a :Woman ;
+    :hasSister data:Philip_Duke_of_Edinburgh .
+
+data:Tomislav_of_Yugoslavia a :Man ;
+    :hasBrother data:Peter_II_of_Yugoslavia .
+

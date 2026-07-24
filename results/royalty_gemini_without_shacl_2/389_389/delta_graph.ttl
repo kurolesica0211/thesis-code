@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person ;
+    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .
+
+data:John_Cator a :Man,
+        :Person ;
+    :isFatherOf data:Elizabeth_Margaret_Cator .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Elizabeth_Margaret_Cator a :Person,
+        :Woman .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 ;
+    :hasMarriageYear 1928 ;
+    :hasRelation data:Elizabeth_Margaret_Cator ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+    :isUncleOf data:Queen_Elizabeth_II ;
+    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
+

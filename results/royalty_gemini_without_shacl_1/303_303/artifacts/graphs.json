@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasMarriageYear data:1957 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2000 ;\n    :hasFather data:Alexander_I_of_Yugoslavia ;\n    :hasMarriageYear data:1957 ;\n    :hasMother data:Maria_of_Yugoslavia ;\n    :isBrotherOf data:Peter_II_of_Yugoslavia .\n\ndata:Alexander_I_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Ferdinand_of_Romania a :Man,\n        :Person .\n\ndata:Maria_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasFather data:Ferdinand_of_Romania ;\n    :hasMother data:Marie_of_Romania .\n\ndata:Marie_of_Romania a :Person,\n        :Woman .\n\ndata:Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasMarriageYear data:1957 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2000 ;\n    :hasFather data:Alexander_I_of_Yugoslavia ;\n    :hasMarriageYear data:1957 ;\n    :hasMother data:Maria_of_Yugoslavia ;\n    :isBrotherOf data:Peter_II_of_Yugoslavia .\n\ndata:Alexander_I_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Ferdinand_of_Romania a :Man,\n        :Person .\n\ndata:Maria_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasFather data:Ferdinand_of_Romania ;\n    :hasMother data:Marie_of_Romania .\n\ndata:Marie_of_Romania a :Person,\n        :Woman .\n\ndata:Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:1957 a :DomainEntity .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasMarriageYear data:1957 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Tomislav_of_Yugoslavia a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2000 ;\n    :hasFather data:Alexander_I_of_Yugoslavia ;\n    :hasMarriageYear data:1957 ;\n    :hasMother data:Maria_of_Yugoslavia ;\n    :isBrotherOf data:Peter_II_of_Yugoslavia .\n\ndata:Alexander_I_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Ferdinand_of_Romania a :Man,\n        :Person .\n\ndata:Maria_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasFather data:Ferdinand_of_Romania ;\n    :hasMother data:Marie_of_Romania .\n\ndata:Marie_of_Romania a :Person,\n        :Woman .\n\ndata:Peter_II_of_Yugoslavia a :Man,\n        :Person .\n\ndata:1957 a :DomainEntity .\n\n"
+    }
+]

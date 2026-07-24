@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasAncestor data:Queen_Victoria,\n        data:William_I ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Empress ;\n    :hasRelation data:Alice_of_Hesse,\n        data:Marie_of_Hesse ;\n    :isSiblingOf data:Heinrich_of_Prussia,\n        data:Sigismund_of_Prussia,\n        data:Wilhelm_of_Prussia .\n\ndata:Alice_of_Hesse a :Person,\n        :Woman .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_of_Prussia a :Man,\n        :Person .\n\ndata:Marie_of_Hesse a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Victoria_Empress a :Person,\n        :Woman .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:William_I a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Waldemar_of_Prussia a :Man,\n        :Person ;\n    :hasAncestor data:Queen_Victoria,\n        data:William_I ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Empress ;\n    :hasRelation data:Alice_of_Hesse,\n        data:Marie_of_Hesse ;\n    :isSiblingOf data:Heinrich_of_Prussia,\n        data:Sigismund_of_Prussia,\n        data:Wilhelm_of_Prussia .\n\ndata:Alice_of_Hesse a :Person,\n        :Woman .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_of_Prussia a :Man,\n        :Person .\n\ndata:Marie_of_Hesse a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Victoria_Empress a :Person,\n        :Woman .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:William_I a :Man,\n        :Person .\n\n"
+    }
+]

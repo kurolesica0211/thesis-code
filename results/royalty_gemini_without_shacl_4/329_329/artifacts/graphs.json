@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina_de_Borbon a :Woman ;\n    :isSisterOf data:Elena_de_Borbon .\n\ndata:Felipe_VI a :Man ;\n    :isBrotherOf data:Elena_de_Borbon .\n\ndata:Felipe_de_Marichalar a :Man ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Maria_de_las_Mercedes a :Woman .\n\ndata:Victoria_de_Marichalar a :Woman ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia a :Woman .\n\ndata:Jaime_de_Marichalar a :Man .\n\ndata:Elena_de_Borbon a :Woman ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear 1995 ;\n    :hasMother data:Sofia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina_de_Borbon a :Woman ;\n    :isSisterOf data:Elena_de_Borbon .\n\ndata:Felipe_VI a :Man ;\n    :isBrotherOf data:Elena_de_Borbon .\n\ndata:Felipe_de_Marichalar a :Man ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Maria_de_las_Mercedes a :Woman .\n\ndata:Victoria_de_Marichalar a :Woman ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia a :Woman .\n\ndata:Jaime_de_Marichalar a :Man .\n\ndata:Elena_de_Borbon a :Woman ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear 1995 ;\n    :hasMother data:Sofia .\n\n"
+    }
+]

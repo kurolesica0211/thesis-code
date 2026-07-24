@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margarethe_of_Hesse a :Person,\n        :Woman ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Christoph_of_Hesse ;\n    :hasMother data:Sophie_of_Greece_and_Denmark .\n\ndata:Christoph_of_Hesse a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 .\n\ndata:Sophie_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2001 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margarethe_of_Hesse a :Person,\n        :Woman ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Christoph_of_Hesse ;\n    :hasMother data:Sophie_of_Greece_and_Denmark .\n\ndata:Christoph_of_Hesse a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 .\n\ndata:Sophie_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2001 .\n\n"
+    }
+]

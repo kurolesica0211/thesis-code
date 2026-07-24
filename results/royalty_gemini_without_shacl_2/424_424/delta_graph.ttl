@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,
+        :Woman ;
+    :hasBirthYear 1955 ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness .
+
+data:Charles_Wellesley a :Man,
+        :Person .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
+

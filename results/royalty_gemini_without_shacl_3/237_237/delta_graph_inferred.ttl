@@ -1,0 +1,306 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_DukeOfOldenburg a :Man ;
+    :hasBrother data:Christian_DukeOfOldenburg ;
+    :hasRelation data:Christian_DukeOfOldenburg ;
+    :isBloodrelationOf data:Christian_DukeOfOldenburg ;
+    :isBrotherOf data:Christian_DukeOfOldenburg ;
+    :isSiblingOf data:Christian_DukeOfOldenburg .
+
+data:DonataCountessOfCastellRudenhausen a :Woman ;
+    :hasMarriageYear 1991 ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:DonataCountessOfCastellRudenhausen ;
+    :isBloodrelationOf data:DonataCountessOfCastellRudenhausen ;
+    :isSiblingOf data:DonataCountessOfCastellRudenhausen ;
+    :isSisterOf data:DonataCountessOfCastellRudenhausen .
+
+data:GrandDuchessKiraKirillovnaOfRussia a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessMarieCecileOfPrussia ;
+    :hasDaughter data:PrincessMarieCecileOfPrussia ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:GrandDuchessKiraKirillovnaOfRussia ;
+    :isAncestorOf data:PrincessMarieCecileOfPrussia ;
+    :isAuntOf data:PrincessMarieCecileOfPrussia ;
+    :isBloodrelationOf data:GrandDuchessKiraKirillovnaOfRussia ;
+    :isMotherOf data:PrincessMarieCecileOfPrussia ;
+    :isParentOf data:PrincessMarieCecileOfPrussia ;
+    :isSiblingOf data:GrandDuchessKiraKirillovnaOfRussia ;
+    :isSisterOf data:GrandDuchessKiraKirillovnaOfRussia .
+
+data:LouisFerdinand_PrinceOfPrussia a :Ancestor,
+        :Man ;
+    :hasBrother data:LouisFerdinand_PrinceOfPrussia ;
+    :hasChild data:PrincessMarieCecileOfPrussia ;
+    :hasDaughter data:PrincessMarieCecileOfPrussia ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :isAncestorOf data:PrincessMarieCecileOfPrussia ;
+    :isBloodrelationOf data:LouisFerdinand_PrinceOfPrussia ;
+    :isBrotherOf data:LouisFerdinand_PrinceOfPrussia ;
+    :isFatherOf data:PrincessMarieCecileOfPrussia ;
+    :isParentOf data:PrincessMarieCecileOfPrussia ;
+    :isSiblingOf data:LouisFerdinand_PrinceOfPrussia ;
+    :isUncleOf data:PrincessMarieCecileOfPrussia .
+
+data:DuchessElisabethAlexandrineOfMecklenburgSchwerin a :Ancestor,
+        :Woman ;
+    :hasChild data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:DuchessElisabethAlexandrineOfMecklenburgSchwerin ;
+    :hasSon data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg,
+        data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isAuntOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isBloodrelationOf data:DuchessElisabethAlexandrineOfMecklenburgSchwerin ;
+    :isMotherOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isParentOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isSiblingOf data:DuchessElisabethAlexandrineOfMecklenburgSchwerin ;
+    :isSisterOf data:DuchessElisabethAlexandrineOfMecklenburgSchwerin .
+
+data:FrederickAugustusII_GrandDukeOfOldenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :hasChild data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSon data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg,
+        data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isBloodrelationOf data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :isBrotherOf data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :isFatherOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isParentOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isSiblingOf data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :isUncleOf data:NikolausHereditaryGrandDukeOfOldenburg .
+
+data:Friedrich_PrinceOfWaldeckAndPyrmont a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_PrinceOfWaldeckAndPyrmont ;
+    :hasChild data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasDaughter data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isBloodrelationOf data:Friedrich_PrinceOfWaldeckAndPyrmont ;
+    :isBrotherOf data:Friedrich_PrinceOfWaldeckAndPyrmont ;
+    :isFatherOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isParentOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSiblingOf data:Friedrich_PrinceOfWaldeckAndPyrmont ;
+    :isUncleOf data:PrincessHelenaOfWaldeckAndPyrmont .
+
+data:PrincessBathildisOfSchaumburgLippe a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasDaughter data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:PrincessBathildisOfSchaumburgLippe ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isAuntOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isBloodrelationOf data:PrincessBathildisOfSchaumburgLippe ;
+    :isMotherOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isParentOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSiblingOf data:PrincessBathildisOfSchaumburgLippe ;
+    :isSisterOf data:PrincessBathildisOfSchaumburgLippe .
+
+data:PrincessMarieCecileOfPrussia a :Woman ;
+    :hasAncestor data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia ;
+    :hasFather data:LouisFerdinand_PrinceOfPrussia ;
+    :hasMother data:GrandDuchessKiraKirillovnaOfRussia ;
+    :hasParent data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:PrincessMarieCecileOfPrussia ;
+    :isBloodrelationOf data:PrincessMarieCecileOfPrussia ;
+    :isChildOf data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia ;
+    :isDaughterOf data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia ;
+    :isSiblingOf data:PrincessMarieCecileOfPrussia ;
+    :isSisterOf data:PrincessMarieCecileOfPrussia .
+
+data:FriedrichAugustOfOldenburg a :Man ;
+    :hasAncestor data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:FriedrichAugustOfOldenburg ;
+    :hasDeathYear 2017 ;
+    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasParent data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :isBloodrelationOf data:FriedrichAugustOfOldenburg ;
+    :isBrotherOf data:FriedrichAugustOfOldenburg ;
+    :isChildOf data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSiblingOf data:FriedrichAugustOfOldenburg ;
+    :isSonOf data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isUncleOf data:Christian_DukeOfOldenburg .
+
+data:NikolausHereditaryGrandDukeOfOldenburg a :Ancestor,
+        :Man ;
+    :hasAncestor data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :hasBrother data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :hasChild data:FriedrichAugustOfOldenburg ;
+    :hasFather data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :hasMother data:DuchessElisabethAlexandrineOfMecklenburgSchwerin ;
+    :hasParent data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSon data:FriedrichAugustOfOldenburg ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg ;
+    :isBloodrelationOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isBrotherOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isChildOf data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :isFatherOf data:FriedrichAugustOfOldenburg ;
+    :isParentOf data:FriedrichAugustOfOldenburg ;
+    :isSiblingOf data:NikolausHereditaryGrandDukeOfOldenburg ;
+    :isSonOf data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg ;
+    :isUncleOf data:FriedrichAugustOfOldenburg .
+
+data:PrincessHelenaOfWaldeckAndPyrmont a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:PrincessBathildisOfSchaumburgLippe ;
+    :hasChild data:FriedrichAugustOfOldenburg ;
+    :hasFather data:Friedrich_PrinceOfWaldeckAndPyrmont ;
+    :hasMother data:PrincessBathildisOfSchaumburgLippe ;
+    :hasParent data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:PrincessBathildisOfSchaumburgLippe ;
+    :hasRelation data:DonataCountessOfCastellRudenhausen,
+        data:DuchessElisabethAlexandrineOfMecklenburgSchwerin,
+        data:FrederickAugustusII_GrandDukeOfOldenburg,
+        data:FriedrichAugustOfOldenburg,
+        data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:GrandDuchessKiraKirillovnaOfRussia,
+        data:LouisFerdinand_PrinceOfPrussia,
+        data:NikolausHereditaryGrandDukeOfOldenburg,
+        data:PrincessBathildisOfSchaumburgLippe,
+        data:PrincessHelenaOfWaldeckAndPyrmont,
+        data:PrincessMarieCecileOfPrussia ;
+    :hasSister data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :hasSon data:FriedrichAugustOfOldenburg ;
+    :isAncestorOf data:FriedrichAugustOfOldenburg ;
+    :isAuntOf data:FriedrichAugustOfOldenburg ;
+    :isBloodrelationOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isChildOf data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:PrincessBathildisOfSchaumburgLippe ;
+    :isDaughterOf data:Friedrich_PrinceOfWaldeckAndPyrmont,
+        data:PrincessBathildisOfSchaumburgLippe ;
+    :isMotherOf data:FriedrichAugustOfOldenburg ;
+    :isParentOf data:FriedrichAugustOfOldenburg ;
+    :isSiblingOf data:PrincessHelenaOfWaldeckAndPyrmont ;
+    :isSisterOf data:PrincessHelenaOfWaldeckAndPyrmont .
+

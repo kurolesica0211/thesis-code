@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Adalbert_of_Prussia a :Man ;
+    :hasFather data:Kaiser_William_II_of_Germany .
+
+data:Prince_Henry_of_Bavaria a :Man ;
+    :hasFather data:Ludwig_III_of_Bavaria .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Prince_Bernard,
+        data:Prince_George .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;
+    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
+
+data:Ernst_Count_of_Lippe-Biesterfeld a :Man .
+
+data:Feodora_of_Hohenlohe-Langenburg a :Woman .
+
+data:George_II_of_Saxe-Meiningen a :Man .
+
+data:Kaiser_William_II_of_Germany a :Man .
+
+data:Ludwig_III_of_Bavaria a :Man .
+
+data:Prince_Bernard a :Man .
+
+data:Prince_Frederick_John_of_Saxe-Meiningen a :Man ;
+    :hasFather data:George_II_of_Saxe-Meiningen ;
+    :hasMother data:Feodora_of_Hohenlohe-Langenburg .
+
+data:Prince_George a :Man .
+

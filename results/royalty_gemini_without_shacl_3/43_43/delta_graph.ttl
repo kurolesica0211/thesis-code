@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Count_of_Caserta a :Man .
+
+data:Maria_Pia_of_Bourbon-Two_Sicilies a :Woman .
+
+data:Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;
+    :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .
+
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Elisabeth_of_Bavaria ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :knownAs "The Expected Prince"^^xsd:string .
+
+data:Gaston_Count_of_Eu a :Man .
+
+data:Isabel_of_Brazil a :Woman .
+
+data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMother data:Isabel_of_Brazil .
+
+data:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man .
+
+data:Maria_Elisabeth_of_Bavaria a :Woman .
+
+data:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .
+
+data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .
+
+data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Woman .
+

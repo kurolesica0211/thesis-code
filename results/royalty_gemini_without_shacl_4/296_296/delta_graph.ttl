@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Francoise_of_Orleans .
+
+data:Andrew_of_Greece a :Man .
+
+data:Constantine_I_of_Greece a :Man .
+
+data:George_of_Greece a :Man .
+
+data:Infanta_Isabel_de_Orleans_y_Borbon a :Woman .
+
+data:Isabelle_dOrleans a :Woman ;
+    :hasFather data:Philippe_Comte_de_Paris ;
+    :hasMother data:Infanta_Isabel_de_Orleans_y_Borbon .
+
+data:Jean_dOrleans a :Man .
+
+data:King_George_I_of_Greece a :Man .
+
+data:Marie_of_Greece a :Woman ;
+    :isMotherOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Nicholas_of_Greece a :Man .
+
+data:Nonnie_May_Stewart_Worthington_Leeds a :Woman .
+
+data:Philippe_Comte_de_Paris a :Man .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear "1888"^^xsd:positiveInteger ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasDeathYear "1940"^^xsd:positiveInteger ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear "1920"^^xsd:positiveInteger ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasRelation data:Nonnie_May_Stewart_Worthington_Leeds,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Marie_of_Greece .
+
+data:Princess_Francoise_of_Orleans a :Woman ;
+    :hasFather data:Jean_dOrleans ;
+    :hasMother data:Isabelle_dOrleans .
+
+data:Queen_Olga_of_Greece a :Woman .
+
+data:William_Bateman_Leeds_Jr a :Man .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Woman .
+

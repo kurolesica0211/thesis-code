@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard a :Man,
+        :Person .
+
+data:Prince_Frederick_Alfred a :Man,
+        :Person ;
+    :hasFather data:Georg_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock .
+
+data:Count_Ernst_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+
+data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Person,
+        :Woman .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
+        :Person .
+
+data:Georg_Prince_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasBirthYear 1861 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+

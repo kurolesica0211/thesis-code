@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Franz_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasRelation data:Maria_Vladimirovna_of_Russia .
+
+data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1916 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasMarriageYear 1940,
+        1946,
+        1959 ;
+    :hasMother data:Marie_Auguste_of_Anhalt ;
+    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath,
+        data:Luise_Dora_Hartmann .
+
+data:Augusta_Victoria_of_Schleswig_Holstein a :Person,
+        :Woman .
+
+data:Eduard_Duke_of_Anhalt a :Man,
+        :Person .
+
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
+        :Woman .
+
+data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich_Carolath a :Person,
+        :Woman .
+
+data:Luise_Dora_Hartmann a :Person,
+        :Woman .
+
+data:Luise_of_Saxe_Altenburg a :Person,
+        :Woman ;
+    :hasFather data:Moritz_of_Saxe_Altenburg .
+
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman .
+
+data:Moritz_of_Saxe_Altenburg a :Man,
+        :Person .
+
+data:Prince_Joachim_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :hasRelation data:Marie_Auguste_of_Anhalt .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Marie_Auguste_of_Anhalt a :Person,
+        :Woman ;
+    :hasFather data:Eduard_Duke_of_Anhalt ;
+    :hasMother data:Luise_of_Saxe_Altenburg .
+

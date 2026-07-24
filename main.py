@@ -19,8 +19,8 @@ def parse_args() -> argparse.Namespace:
     By default points to an example run config.
     """
     parser = argparse.ArgumentParser(description="LLM KG extraction with SHACL verification")
-    #parser.add_argument("--config", default="configs/run_config.yaml", help="Path to YAML run config")
-    parser.add_argument("--config", default="configs/example_run_config.yaml", help="Path to YAML run config")
+    parser.add_argument("--config", default="configs/run_config.yaml", help="Path to YAML run config")
+    #parser.add_argument("--config", default="configs/example_run_config.yaml", help="Path to YAML run config")
     return parser.parse_args()
 
 

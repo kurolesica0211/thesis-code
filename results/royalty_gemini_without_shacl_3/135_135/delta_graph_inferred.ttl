@@ -1,0 +1,290 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francoise_Levisse_de_Montigny a :Ancestor,
+        :Woman ;
+    :hasChild data:Karl_Biron_von_Courland ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Francoise_Levisse_de_Montigny ;
+    :hasSon data:Karl_Biron_von_Courland ;
+    :isAncestorOf data:Karl_Biron_von_Courland ;
+    :isAuntOf data:Karl_Biron_von_Courland ;
+    :isBloodrelationOf data:Francoise_Levisse_de_Montigny ;
+    :isMotherOf data:Karl_Biron_von_Courland ;
+    :isParentOf data:Karl_Biron_von_Courland ;
+    :isSiblingOf data:Francoise_Levisse_de_Montigny ;
+    :isSisterOf data:Francoise_Levisse_de_Montigny .
+
+data:Gustav_Biron_of_Courland a :Ancestor,
+        :Man ;
+    :hasBrother data:Gustav_Biron_of_Courland ;
+    :hasChild data:Karl_Biron_von_Courland ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSon data:Karl_Biron_von_Courland ;
+    :isAncestorOf data:Karl_Biron_von_Courland ;
+    :isBloodrelationOf data:Gustav_Biron_of_Courland ;
+    :isBrotherOf data:Gustav_Biron_of_Courland ;
+    :isFatherOf data:Karl_Biron_von_Courland ;
+    :isParentOf data:Karl_Biron_von_Courland ;
+    :isSiblingOf data:Gustav_Biron_of_Courland ;
+    :isUncleOf data:Karl_Biron_von_Courland .
+
+data:Ina_Marie_von_Bassewitz a :Ancestor,
+        :Woman ;
+    :hasChild data:Herzeleide_of_Prussia ;
+    :hasDaughter data:Herzeleide_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Ina_Marie_von_Bassewitz ;
+    :isAncestorOf data:Ernst-Johann_Biron,
+        data:Herzeleide_of_Prussia ;
+    :isAuntOf data:Herzeleide_of_Prussia ;
+    :isBloodrelationOf data:Ina_Marie_von_Bassewitz ;
+    :isMotherOf data:Herzeleide_of_Prussia ;
+    :isParentOf data:Herzeleide_of_Prussia ;
+    :isSiblingOf data:Ina_Marie_von_Bassewitz ;
+    :isSisterOf data:Ina_Marie_von_Bassewitz .
+
+data:Oskar_of_Prussia a :Ancestor,
+        :Man ;
+    :hasBrother data:Oskar_of_Prussia ;
+    :hasChild data:Herzeleide_of_Prussia ;
+    :hasDaughter data:Herzeleide_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isAncestorOf data:Ernst-Johann_Biron,
+        data:Herzeleide_of_Prussia ;
+    :isBloodrelationOf data:Oskar_of_Prussia ;
+    :isBrotherOf data:Oskar_of_Prussia ;
+    :isFatherOf data:Herzeleide_of_Prussia ;
+    :isParentOf data:Herzeleide_of_Prussia ;
+    :isSiblingOf data:Oskar_of_Prussia ;
+    :isUncleOf data:Herzeleide_of_Prussia .
+
+data:Ernst-Johann_Biron a :Man,
+        :Person ;
+    :hasAncestor data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia ;
+    :hasBrother data:Ernst-Johann_Biron ;
+    :hasMother data:Herzeleide_of_Prussia ;
+    :hasParent data:Herzeleide_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Ernst-Johann_Biron ;
+    :isBrotherOf data:Ernst-Johann_Biron ;
+    :isChildOf data:Herzeleide_of_Prussia ;
+    :isSiblingOf data:Ernst-Johann_Biron ;
+    :isSonOf data:Herzeleide_of_Prussia .
+
+data:Burchard_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Burchard_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Herzeleide_of_Prussia ;
+    :isBloodrelationOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isBrotherOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isUncleOf data:Ernst-Johann_Biron .
+
+data:Karl_Biron_von_Courland a :Man,
+        :Person ;
+    :hasAncestor data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Karl_Biron_von_Courland ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Gustav_Biron_of_Courland ;
+    :hasMother data:Francoise_Levisse_de_Montigny ;
+    :hasParent data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Karl_Biron_von_Courland ;
+    :isBrotherOf data:Karl_Biron_von_Courland ;
+    :isChildOf data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland ;
+    :isSiblingOf data:Karl_Biron_von_Courland ;
+    :isSonOf data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland .
+
+data:Oscar_of_Prussia_brother a :Man,
+        :Person ;
+    :hasBrother data:Burchard_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Herzeleide_of_Prussia ;
+    :isBloodrelationOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isBrotherOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isUncleOf data:Ernst-Johann_Biron .
+
+data:Wilhelm-Karl_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Burchard_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Herzeleide_of_Prussia ;
+    :isBloodrelationOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isBrotherOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isUncleOf data:Ernst-Johann_Biron .
+
+data:Herzeleide_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:Burchard_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasChild data:Ernst-Johann_Biron ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Oskar_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Ina_Marie_von_Bassewitz ;
+    :hasParent data:Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia ;
+    :hasRelation data:Burchard_of_Prussia,
+        data:Ernst-Johann_Biron,
+        data:Francoise_Levisse_de_Montigny,
+        data:Gustav_Biron_of_Courland,
+        data:Herzeleide_of_Prussia,
+        data:Ina_Marie_von_Bassewitz,
+        data:Karl_Biron_von_Courland,
+        data:Oscar_of_Prussia_brother,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasSister data:Herzeleide_of_Prussia ;
+    :hasSon data:Ernst-Johann_Biron ;
+    :isAncestorOf data:Ernst-Johann_Biron ;
+    :isAuntOf data:Ernst-Johann_Biron ;
+    :isBloodrelationOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isChildOf data:Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia ;
+    :isDaughterOf data:Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia ;
+    :isMotherOf data:Ernst-Johann_Biron ;
+    :isParentOf data:Ernst-Johann_Biron ;
+    :isSiblingOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :isSisterOf data:Burchard_of_Prussia,
+        data:Herzeleide_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia .
+

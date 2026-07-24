@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LadyCharlotteWellesley a :Woman ;
+    :hasAncestor data:QueenVictoria,
+        data:WilhelmII ;
+    :hasBirthYear 1990 ;
+    :hasBrother data:ArthurWellesley ;
+    :hasFather data:CharlesWellesley ;
+    :hasMarriageYear 2016 ;
+    :hasMother data:PrincessAntonia ;
+    :hasRelation data:AlejandroSantoDomingo ;
+    :hasSister data:LadyMaryWellesley .
+
+data:AlejandroSantoDomingo a :Man .
+
+data:ArthurWellesley a :Man .
+
+data:CharlesWellesley a :Man ;
+    :hasFather data:ValerianWellesley .
+
+data:LadyBrigidGuinness a :Woman .
+
+data:LadyMaryWellesley a :Woman .
+
+data:PrinceFrederickOfPrussia a :Man .
+
+data:PrincessAntonia a :Woman ;
+    :hasFather data:PrinceFrederickOfPrussia ;
+    :hasMother data:LadyBrigidGuinness .
+
+data:QueenVictoria a :Woman .
+
+data:ValerianWellesley a :Man .
+
+data:WilhelmII a :Man .
+

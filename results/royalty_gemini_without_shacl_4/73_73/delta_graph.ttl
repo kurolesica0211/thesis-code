@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christian_of_Denmark a :Man,
+        :Person ;
+    :hasBirthYear "2005"^^xsd:positiveInteger ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Margrethe_II,
+        data:Queen_Mary ;
+    :isChildOf data:King_Frederik_X,
+        data:Queen_Mary .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:King_Frederik_X a :Man,
+        :Person .
+
+data:Queen_Mary a :Person,
+        :Woman .
+

@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Willem-Alexander_of_the_Netherlands a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Friso_of_Orange-Nassau .
+
+data:Mabel_Wisse_Smit a :Person,
+        :Woman ;
+    :isMotherOf data:Countess_Emma_Luana_Ninette_Sophie_of_Orange-Nassau,
+        data:Countess_Joanna_Zaria_Nicoline_Milou_of_Orange-Nassau .
+
+data:Prince_Bernhard a :Man,
+        :Person ;
+    :isFatherOf data:Queen_Beatrix_of_the_Netherlands .
+
+data:Prince_Constantijn a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Friso_of_Orange-Nassau .
+
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :isMotherOf data:Queen_Beatrix_of_the_Netherlands .
+
+data:Claus_von_Amsberg a :Man,
+        :Person .
+
+data:Countess_Emma_Luana_Ninette_Sophie_of_Orange-Nassau a :Person,
+        :Woman .
+
+data:Countess_Joanna_Zaria_Nicoline_Milou_of_Orange-Nassau a :Person,
+        :Woman .
+
+data:Prince_Friso_of_Orange-Nassau a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Queen_Beatrix_of_the_Netherlands ;
+    :isFatherOf data:Countess_Emma_Luana_Ninette_Sophie_of_Orange-Nassau,
+        data:Countess_Joanna_Zaria_Nicoline_Milou_of_Orange-Nassau .
+
+data:Queen_Beatrix_of_the_Netherlands a :Person,
+        :Woman .
+

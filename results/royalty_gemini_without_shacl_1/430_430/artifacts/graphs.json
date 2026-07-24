@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:RoseConstanceLevesonGower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasFather data:14thEarlOfStrathmoreAndKinghorne ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:CeciliaCavendishBentinck ;\n    :hasRelation data:WilliamLevesonGower ;\n    :isAuntOf data:PrincessMargaretRoseOfYork,\n        data:QueenElizabethII ;\n    :isSisterOf data:QueenElizabethTheQueenMother .\n\ndata:14thEarlOfStrathmoreAndKinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CeciliaCavendishBentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:PrincessMargaretRoseOfYork a :Person,\n        :Woman .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:QueenElizabethTheQueenMother a :Person,\n        :Woman .\n\ndata:WilliamLevesonGower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:RoseConstanceLevesonGower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasFather data:14thEarlOfStrathmoreAndKinghorne ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:CeciliaCavendishBentinck ;\n    :hasRelation data:WilliamLevesonGower ;\n    :isAuntOf data:PrincessMargaretRoseOfYork,\n        data:QueenElizabethII ;\n    :isSisterOf data:QueenElizabethTheQueenMother .\n\ndata:14thEarlOfStrathmoreAndKinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CeciliaCavendishBentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:PrincessMargaretRoseOfYork a :Person,\n        :Woman .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:QueenElizabethTheQueenMother a :Person,\n        :Woman .\n\ndata:WilliamLevesonGower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    }
+]

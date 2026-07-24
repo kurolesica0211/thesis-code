@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1873 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :isBrotherOf data:John_Albert_of_Mecklenburg-Schwerin .\n\ndata:Elisabeth_of_Stolberg-Rossla a :Person,\n        :Woman .\n\ndata:Viktoria_Feodora_of_Reuss-Schleiz a :Person,\n        :Woman .\n\ndata:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:John_Albert_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1873 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :isBrotherOf data:John_Albert_of_Mecklenburg-Schwerin .\n\ndata:Elisabeth_of_Stolberg-Rossla a :Person,\n        :Woman .\n\ndata:Viktoria_Feodora_of_Reuss-Schleiz a :Person,\n        :Woman .\n\ndata:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:John_Albert_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

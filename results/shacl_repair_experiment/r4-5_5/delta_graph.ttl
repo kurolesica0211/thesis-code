@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Mountbatten a :Ancestor .
+
+data:Clarence_Arthur_Kemp a :Ancestor,
+        :Person .
+
+data:Francis_William_Henry_Fane a :Ancestor,
+        :Person .
+
+data:Hamilton_Joseph_Keyes_OMalley a :Person .
+
+data:Helen_Janet_Ballantyne a :Ancestor,
+        :Person .
+
+data:Hugo_William_Cecil_Denison a :Ancestor .
+
+data:Irene_Frances_Adza_Denison a :Ancestor ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1956 .
+
+data:Lady_Grace_Adelaide_Fane a :Ancestor ;
+    :hasBirthYear 1860 ;
+    :hasDeathYear 1933 .
+
+data:Lady_Iris_Mountbatten a :Ancestor .
+
+data:Lady_Zinnia_Rosemary_Denison :hasBirthYear 1937 ;
+    :hasDeathYear 1997 .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Person .
+
+data:Princess_Beatrice a :Ancestor,
+        :Person .
+
+data:Robin_Alexander_Bryan :hasBirthYear 1957 .
+
+data:William_Alexander_Kemp :hasBirthYear 1921 ;
+    :hasDeathYear 1991 .
+
+data:William_Francis_Henry_Denison a :Ancestor,
+        :Person .
+

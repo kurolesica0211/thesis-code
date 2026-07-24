@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Borbon_son a :Man ;\n    :hasFather data:Infante_Jaime ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\ndata:Charlotte_Luise_Auguste_Tiedemann a :Woman ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1979 ;\n    :hasFather data:Otto_Eugen_Tiedemann ;\n    :hasMother data:Luise_Amalia_Klein .\n\ndata:Gonzalo_de_Borbon_son a :Man ;\n    :hasFather data:Infante_Jaime ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\ndata:Alfonso_Prince_of_Asturias a :Man .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Beatriz a :Woman .\n\ndata:Infanta_Maria_Cristina a :Woman .\n\ndata:Infante_Gonzalo a :Man .\n\ndata:Infante_Juan a :Man .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Luise_Amalia_Klein a :Woman .\n\ndata:Otto_Eugen_Tiedemann a :Man .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\ndata:Emmanuelle_de_Dampierre a :Woman .\n\ndata:Infante_Jaime a :Man ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Alfonso_XIII ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Juan_Carlos_I ;\n    :isSiblingOf data:Alfonso_Prince_of_Asturias,\n        data:Infanta_Beatriz,\n        data:Infanta_Maria_Cristina,\n        data:Infante_Gonzalo,\n        data:Infante_Juan .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Borbon_son a :Man ;\n    :hasFather data:Infante_Jaime ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\ndata:Charlotte_Luise_Auguste_Tiedemann a :Woman ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1979 ;\n    :hasFather data:Otto_Eugen_Tiedemann ;\n    :hasMother data:Luise_Amalia_Klein .\n\ndata:Gonzalo_de_Borbon_son a :Man ;\n    :hasFather data:Infante_Jaime ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\ndata:Alfonso_Prince_of_Asturias a :Man .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Beatriz a :Woman .\n\ndata:Infanta_Maria_Cristina a :Woman .\n\ndata:Infante_Gonzalo a :Man .\n\ndata:Infante_Juan a :Man .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Luise_Amalia_Klein a :Woman .\n\ndata:Otto_Eugen_Tiedemann a :Man .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\ndata:Emmanuelle_de_Dampierre a :Woman .\n\ndata:Infante_Jaime a :Man ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Alfonso_XIII ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Juan_Carlos_I ;\n    :isSiblingOf data:Alfonso_Prince_of_Asturias,\n        data:Infanta_Beatriz,\n        data:Infanta_Maria_Cristina,\n        data:Infante_Gonzalo,\n        data:Infante_Juan .\n\n"
+    }
+]

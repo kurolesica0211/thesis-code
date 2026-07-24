@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Christian_IX a :Man,
+        :Person ;
+    :isFatherOf data:Frederik_VIII .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Gustaf_VI_Adolf_of_Sweden a :Man,
+        :Person ;
+    :isFatherOf data:Ingrid_of_Sweden .
+
+data:Knud a :Man,
+        :Person ;
+    :isBrotherOf data:Frederik_IX .
+
+data:Louise_of_Sweden a :Person,
+        :Woman ;
+    :isMotherOf data:Christian_X .
+
+data:Margaret_of_Connaught a :Person,
+        :Woman ;
+    :isMotherOf data:Ingrid_of_Sweden .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Frederik_IX .
+
+data:Frederik_VIII a :Man,
+        :Person ;
+    :isFatherOf data:Christian_X .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Christian_X ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Ingrid_of_Sweden .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman .
+

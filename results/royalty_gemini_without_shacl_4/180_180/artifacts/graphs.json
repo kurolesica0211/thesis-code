@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Thomas_Patrick_John_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2005 ;\n    :hasFather data:Thomas_William_Arnold_Anson ;\n    :hasMarriageYear 1975 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Leonora_Grosvenor ;\n    :hasSister data:Elizabeth_Georgiana_Anson ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_William_Arnold_Anson ;\n    :hasMother data:Anne_Bowes-Lyon .\n\ndata:Leonora_Grosvenor a :Person,\n        :Woman .\n\ndata:Thomas_Edward_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1960 .\n\ndata:Anne_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1980 .\n\ndata:Thomas_William_Arnold_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Thomas_Edward_Anson .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Thomas_Patrick_John_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2005 ;\n    :hasFather data:Thomas_William_Arnold_Anson ;\n    :hasMarriageYear 1975 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Leonora_Grosvenor ;\n    :hasSister data:Elizabeth_Georgiana_Anson ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:Elizabeth_Georgiana_Anson a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_William_Arnold_Anson ;\n    :hasMother data:Anne_Bowes-Lyon .\n\ndata:Leonora_Grosvenor a :Person,\n        :Woman .\n\ndata:Thomas_Edward_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1960 .\n\ndata:Anne_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1980 .\n\ndata:Thomas_William_Arnold_Anson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Thomas_Edward_Anson .\n\n"
+    }
+]

@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasBrother data:Frederik_X ;
+    :hasRelation data:Frederik_X ;
+    :isBloodrelationOf data:Frederik_X ;
+    :isBrotherOf data:Frederik_X ;
+    :isSiblingOf data:Frederik_X .
+
+data:Henrik a :Man,
+        :Person ;
+    :hasBrother data:Henrik ;
+    :hasRelation data:Henrik ;
+    :isBloodrelationOf data:Henrik ;
+    :isBrotherOf data:Henrik ;
+    :isSiblingOf data:Henrik .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasRelation data:Margrethe_II ;
+    :hasSister data:Margrethe_II ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :hasRelation data:Alexandra,
+        data:Felix_of_Monpezat,
+        data:Joachim,
+        data:Nikolai ;
+    :hasSister data:Alexandra ;
+    :hasSon data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isAncestorOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isAuntOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isBloodrelationOf data:Alexandra ;
+    :isMotherOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isParentOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+
+data:Joachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Joachim ;
+    :hasChild data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :hasRelation data:Alexandra,
+        data:Felix_of_Monpezat,
+        data:Joachim,
+        data:Nikolai ;
+    :hasSon data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isAncestorOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isBloodrelationOf data:Joachim ;
+    :isBrotherOf data:Joachim ;
+    :isFatherOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isParentOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isSiblingOf data:Joachim ;
+    :isUncleOf data:Felix_of_Monpezat,
+        data:Nikolai .
+
+data:Felix_of_Monpezat a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra,
+        data:Joachim ;
+    :hasBirthYear "2002-07-22"^^xsd:date ;
+    :hasBrother data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra ;
+    :hasParent data:Alexandra,
+        data:Joachim ;
+    :hasRelation data:Alexandra,
+        data:Felix_of_Monpezat,
+        data:Joachim,
+        data:Nikolai ;
+    :isBloodrelationOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isBrotherOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isChildOf data:Alexandra,
+        data:Joachim ;
+    :isSiblingOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isSonOf data:Alexandra,
+        data:Joachim .
+
+data:Nikolai a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra,
+        data:Joachim ;
+    :hasBrother data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra ;
+    :hasParent data:Alexandra,
+        data:Joachim ;
+    :hasRelation data:Alexandra,
+        data:Felix_of_Monpezat,
+        data:Joachim,
+        data:Nikolai ;
+    :isBloodrelationOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isBrotherOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isChildOf data:Alexandra,
+        data:Joachim ;
+    :isSiblingOf data:Felix_of_Monpezat,
+        data:Nikolai ;
+    :isSonOf data:Alexandra,
+        data:Joachim .
+

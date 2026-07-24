@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear "2003-06-23"^^xsd:string ;
+    :hasFather data:Prince_Carlo_Duke_of_Castro ;
+    :hasMother data:Camilla_Crociani ;
+    :hasSister data:Princess_Maria_Chiara .
+
+data:Camilla_Crociani a :Person,
+        :Woman .
+
+data:Prince_Carlo_Duke_of_Castro a :Man,
+        :Person ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Man,
+        :Person .
+
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Princess_Maria_Chiara a :Person,
+        :Woman .
+

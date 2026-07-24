@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlo_Alessandro_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasMother data:Princess_Eug%C3%A9nie_of_Greece_and_Denmark .
+
+data:Charles_III_King_of_the_United_Kingdom a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Queen_Olga_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Eug%C3%A9nie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Raimundo_2nd_Duke_of_Castel_Duino a :Man,
+        :Person .
+

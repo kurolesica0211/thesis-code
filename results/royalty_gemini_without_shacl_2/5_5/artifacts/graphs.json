@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hamilton_Joseph_Keyes_OMalley a :Man .\n\ndata:Robin_Alexander_Bryan a :Man ;\n    :isChildOf data:Iris_Mountbatten .\n\ndata:William_Alexander_Kemp a :Man ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 1991 ;\n    :hasFather data:Clarence_Arthur_Kemp ;\n    :hasMother data:Helen_Janet_Ballantyne .\n\ndata:Zinnia_Rosemary_Denison a :Woman ;\n    :isChildOf data:Hugo_William_Cecil_Denison .\n\ndata:Alexander_Mountbatten a :Man .\n\ndata:Clarence_Arthur_Kemp a :Man .\n\ndata:Francis_William_Henry_Fane a :Man .\n\ndata:Grace_Adelaide_Fane a :Woman ;\n    :hasBirthYear 1860 ;\n    :hasDeathYear 1933 ;\n    :hasFather data:Francis_William_Henry_Fane .\n\ndata:Helen_Janet_Ballantyne a :Woman .\n\ndata:Hugo_William_Cecil_Denison a :Man ;\n    :isBrotherOf data:Irene_Frances_Adza_Denison .\n\ndata:Iris_Mountbatten a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Alexander_Mountbatten ;\n    :hasMarriageYear 1941,\n        1965 ;\n    :hasMother data:Irene_Frances_Adza_Denison .\n\ndata:William_Francis_Henry_Denison a :Man .\n\ndata:Irene_Frances_Adza_Denison a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Grace_Adelaide_Fane .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hamilton_Joseph_Keyes_OMalley a :Man .\n\ndata:Robin_Alexander_Bryan a :Man ;\n    :isChildOf data:Iris_Mountbatten .\n\ndata:William_Alexander_Kemp a :Man ;\n    :hasBirthYear 1921 ;\n    :hasDeathYear 1991 ;\n    :hasFather data:Clarence_Arthur_Kemp ;\n    :hasMother data:Helen_Janet_Ballantyne .\n\ndata:Zinnia_Rosemary_Denison a :Woman ;\n    :isChildOf data:Hugo_William_Cecil_Denison .\n\ndata:Alexander_Mountbatten a :Man .\n\ndata:Clarence_Arthur_Kemp a :Man .\n\ndata:Francis_William_Henry_Fane a :Man .\n\ndata:Grace_Adelaide_Fane a :Woman ;\n    :hasBirthYear 1860 ;\n    :hasDeathYear 1933 ;\n    :hasFather data:Francis_William_Henry_Fane .\n\ndata:Helen_Janet_Ballantyne a :Woman .\n\ndata:Hugo_William_Cecil_Denison a :Man ;\n    :isBrotherOf data:Irene_Frances_Adza_Denison .\n\ndata:Iris_Mountbatten a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Alexander_Mountbatten ;\n    :hasMarriageYear 1941,\n        1965 ;\n    :hasMother data:Irene_Frances_Adza_Denison .\n\ndata:William_Francis_Henry_Denison a :Man .\n\ndata:Irene_Frances_Adza_Denison a :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:William_Francis_Henry_Denison ;\n    :hasMother data:Grace_Adelaide_Fane .\n\n"
+    }
+]

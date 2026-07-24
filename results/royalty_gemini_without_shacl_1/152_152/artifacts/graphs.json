@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Lascelles a :Man,\n        :Person ;\n    :isSonOf data:Henry_Lascelles,\n        data:Mary_Princess_Royal .\n\ndata:Gerald_David_Lascelles a :Man,\n        :Person ;\n    :isSonOf data:Henry_Lascelles,\n        data:Mary_Princess_Royal .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Mary_Princess_Royal a :Person,\n        :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasMarriageYear 1922 ;\n    :isBloodrelationOf data:Henry_Lascelles ;\n    :isDaughterOf data:George_V,\n        data:Queen_Mary ;\n    :isSisterOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Henry_Lascelles a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Lascelles a :Man,\n        :Person ;\n    :isSonOf data:Henry_Lascelles,\n        data:Mary_Princess_Royal .\n\ndata:Gerald_David_Lascelles a :Man,\n        :Person ;\n    :isSonOf data:Henry_Lascelles,\n        data:Mary_Princess_Royal .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Mary_Princess_Royal a :Person,\n        :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasMarriageYear 1922 ;\n    :isBloodrelationOf data:Henry_Lascelles ;\n    :isDaughterOf data:George_V,\n        data:Queen_Mary ;\n    :isSisterOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Henry_Lascelles a :Man,\n        :Person .\n\n"
+    }
+]

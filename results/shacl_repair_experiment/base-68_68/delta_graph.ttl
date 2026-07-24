@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Michael :hasMother data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasSex data:Male ;
+    :isChildOf data:Charles_Augustus .
+
+data:Charles_Augustus a :Ancestor ;
+    :hasFather data:Wilhelm_Ernst ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasSex data:Male .
+
+data:Elisabeth_of_Wangenheim-Winterstein a :Ancestor ;
+    :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasMother data:Maud_von_Tr%C3%BCtzschler ;
+    :hasSex data:Female .
+
+data:Feodora_of_Saxe-Meiningen a :Ancestor ;
+    :hasSex data:Female .
+
+data:Maud_von_Tr%C3%BCtzschler a :Ancestor ;
+    :hasSex data:Female .
+
+data:Othmar_Baron_von_Wangenheim-Winterstein a :Ancestor ;
+    :hasSex data:Male .
+
+data:Wilhelm_Ernst a :Ancestor ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

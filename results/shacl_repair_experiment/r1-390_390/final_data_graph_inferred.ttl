@@ -1,0 +1,158 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nadia_Nour_El_Etreby a :Person,
+        :Woman ;
+    :hasBirthYear 1949 ;
+    :hasRelation data:Nadia_Nour_El_Etreby ;
+    :hasSister data:Nadia_Nour_El_Etreby ;
+    :isBloodrelationOf data:Nadia_Nour_El_Etreby ;
+    :isSiblingOf data:Nadia_Nour_El_Etreby ;
+    :isSisterOf data:Nadia_Nour_El_Etreby .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Vladimir_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Vladimir_of_Russia ;
+    :hasChild data:Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Maria_Vladimirovna_of_Russia,
+        data:Vladimir_of_Russia ;
+    :isAncestorOf data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Vladimir_of_Russia ;
+    :isBrotherOf data:Vladimir_of_Russia ;
+    :isFatherOf data:Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Vladimir_of_Russia ;
+    :isUncleOf data:Maria_Vladimirovna_of_Russia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Joachim_of_Prussia ;
+    :hasRelation data:Joachim_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Joachim_of_Prussia ;
+    :isAncestorOf data:Joachim_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Joachim_of_Prussia ;
+    :isParentOf data:Joachim_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Joachim_of_Prussia .
+
+data:Friedrich_Christian_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :hasRelation data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia,
+        data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :isBrotherOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :isSiblingOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia .
+
+data:Joachim_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Joachim_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Joachim_of_Prussia ;
+    :isBrotherOf data:Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasAncestor data:Vladimir_of_Russia ;
+    :hasFather data:Vladimir_of_Russia ;
+    :hasParent data:Vladimir_of_Russia ;
+    :hasRelation data:Maria_Vladimirovna_of_Russia,
+        data:Vladimir_of_Russia ;
+    :hasSister data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Maria_Vladimirovna_of_Russia ;
+    :isChildOf data:Vladimir_of_Russia ;
+    :isDaughterOf data:Vladimir_of_Russia ;
+    :isSiblingOf data:Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Maria_Vladimirovna_of_Russia .
+
+data:Henriette_von_Sch%C3%B6naich-Carolath a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Franz_Wilhelm_von_Preussen ;
+    :hasRelation data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia,
+        data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :hasSister data:Henriette_von_Sch%C3%B6naich-Carolath ;
+    :hasSon data:Franz_Wilhelm_von_Preussen ;
+    :isAncestorOf data:Franz_Wilhelm_von_Preussen ;
+    :isAuntOf data:Franz_Wilhelm_von_Preussen ;
+    :isBloodrelationOf data:Henriette_von_Sch%C3%B6naich-Carolath ;
+    :isMotherOf data:Franz_Wilhelm_von_Preussen ;
+    :isParentOf data:Franz_Wilhelm_von_Preussen ;
+    :isSiblingOf data:Henriette_von_Sch%C3%B6naich-Carolath ;
+    :isSisterOf data:Henriette_von_Sch%C3%B6naich-Carolath .
+
+data:Karl_Franz_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Karl_Franz_of_Prussia ;
+    :hasChild data:Franz_Wilhelm_von_Preussen ;
+    :hasRelation data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia,
+        data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :hasSon data:Franz_Wilhelm_von_Preussen ;
+    :isAncestorOf data:Franz_Wilhelm_von_Preussen ;
+    :isBloodrelationOf data:Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Karl_Franz_of_Prussia ;
+    :isFatherOf data:Franz_Wilhelm_von_Preussen ;
+    :isParentOf data:Franz_Wilhelm_von_Preussen ;
+    :isSiblingOf data:Karl_Franz_of_Prussia ;
+    :isUncleOf data:Franz_Wilhelm_von_Preussen .
+
+data:Franz_Wilhelm_von_Preussen a :Man,
+        :Person ;
+    :hasAncestor data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMother data:Henriette_von_Sch%C3%B6naich-Carolath ;
+    :hasParent data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :hasRelation data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia,
+        data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :isBrotherOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :isChildOf data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Franz_Wilhelm_von_Preussen,
+        data:Friedrich_Christian_of_Prussia ;
+    :isSonOf data:Henriette_von_Sch%C3%B6naich-Carolath,
+        data:Karl_Franz_of_Prussia .
+

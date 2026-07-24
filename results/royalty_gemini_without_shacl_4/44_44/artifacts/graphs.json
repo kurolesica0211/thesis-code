@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Christian_X a :Man .\n\ndata:Princess_Isabella_of_Denmark a :Woman ;\n    :hasBirthYear 2007 ;\n    :isChildOf data:Prince_Henrik,\n        data:Queen_Margrethe_II ;\n    :isDaughterOf data:King_Frederik_X,\n        data:Queen_Mary ;\n    :isSiblingOf data:Crown_Prince_Christian,\n        data:Prince_Vincent .\n\ndata:Crown_Prince_Christian a :Man .\n\ndata:King_Frederik_X a :Man .\n\ndata:Prince_Henrik a :Man .\n\ndata:Prince_Vincent a :Man .\n\ndata:Queen_Margrethe_II a :Woman .\n\ndata:Queen_Mary a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Christian_X a :Man .\n\ndata:Princess_Isabella_of_Denmark a :Woman ;\n    :hasBirthYear 2007 ;\n    :isChildOf data:Prince_Henrik,\n        data:Queen_Margrethe_II ;\n    :isDaughterOf data:King_Frederik_X,\n        data:Queen_Mary ;\n    :isSiblingOf data:Crown_Prince_Christian,\n        data:Prince_Vincent .\n\ndata:Crown_Prince_Christian a :Man .\n\ndata:King_Frederik_X a :Man .\n\ndata:Prince_Henrik a :Man .\n\ndata:Prince_Vincent a :Man .\n\ndata:Queen_Margrethe_II a :Woman .\n\ndata:Queen_Mary a :Woman .\n\n"
+    }
+]

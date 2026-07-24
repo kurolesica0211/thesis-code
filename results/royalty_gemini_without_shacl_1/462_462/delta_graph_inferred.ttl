@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Gilman a :Man ;
+    :hasBrother data:George_Gilman ;
+    :hasRelation data:George_Gilman ;
+    :isBloodrelationOf data:George_Gilman ;
+    :isBrotherOf data:George_Gilman ;
+    :isSiblingOf data:George_Gilman .
+
+data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+        :Woman ;
+    :hasChild data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasDaughter data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasRelation data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Rufus_Gilman ;
+    :hasSister data:Birgitte_Duchess_of_Gloucester ;
+    :isAncestorOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isAuntOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isBloodrelationOf data:Birgitte_Duchess_of_Gloucester ;
+    :isMotherOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isParentOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isSiblingOf data:Birgitte_Duchess_of_Gloucester ;
+    :isSisterOf data:Birgitte_Duchess_of_Gloucester .
+
+data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Richard_Duke_of_Gloucester ;
+    :hasChild data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasDaughter data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasRelation data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Rufus_Gilman ;
+    :isAncestorOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBloodrelationOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isFatherOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isParentOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isSiblingOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isUncleOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman .
+
+data:Lyla_Gilman a :Woman ;
+    :hasAncestor data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBirthYear "2010"^^xsd:string ;
+    :hasBrother data:Rufus_Gilman ;
+    :hasMother data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasParent data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasRelation data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Rufus_Gilman ;
+    :hasSister data:Lyla_Gilman ;
+    :isBloodrelationOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isChildOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isDaughterOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isSiblingOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSisterOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Rufus_Gilman a :Man ;
+    :hasAncestor data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBirthYear "2012"^^xsd:string ;
+    :hasBrother data:Rufus_Gilman ;
+    :hasMother data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasParent data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasRelation data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Rufus_Gilman ;
+    :hasSister data:Lyla_Gilman ;
+    :isBloodrelationOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBrotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isChildOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isSiblingOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSonOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman .
+
+data:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBirthYear "1980"^^xsd:string ;
+    :hasChild data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :hasDaughter data:Lyla_Gilman ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasRelation data:Birgitte_Duchess_of_Gloucester,
+        data:Lady_Rose_Victoria_Birgitte_Louise_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Rufus_Gilman ;
+    :hasSister data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :hasSon data:Rufus_Gilman ;
+    :isAncestorOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isAuntOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBloodrelationOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isChildOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isDaughterOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isMotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isParentOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSiblingOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman ;
+    :isSisterOf data:Lady_Rose_Victoria_Birgitte_Louise_Gilman .
+

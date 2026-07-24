@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/328_328",
+  "text_file": "Q5408136.txt",
+  "text_key": "Q5408136",
+  "article": "https://en.wikipedia.org/wiki/Bagrat_de_Bagration_y_de_Baviera",
+  "article_key": "Bagrat de Bagration y de Baviera",
+  "main_entity": {
+    "uri": "http://example.com/data#Bagrat_de_Bagration_y_de_Baviera",
+    "qid": "Q5408136",
+    "label": "Bagrat de Bagration y de Baviera"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Bagrat_de_Bagration_y_de_Baviera",
+      "qid": "Q5408136",
+      "label": "Bagrat de Bagration y de Baviera",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Irakli_Bagration_of_Mukhrani",
+      "qid": "Q2576581",
+      "label": "Irakli Bagration of Mukhrani",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Irakli_Bagration_Mukhrani",
+      "extracted_local_name": "Prince_Irakli_Bagration_Mukhrani",
+      "embedding_text": "Prince Irakli Bagration Mukhrani",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8484848484848485,
+      "ground_truth_uri": "http://example.com/data#Irakli_Bagration_of_Mukhrani",
+      "ground_truth_qid": "Q2576581",
+      "ground_truth_label": "Irakli Bagration of Mukhrani",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Irakli Georgeievich Bagration-Moukhransky",
+      "best_candidate_label": "Irakli Bagration of Mukhrani",
+      "best_candidate_qid": "Q2576581",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8484848484848485
+    },
+    {
+      "extracted_uri": "http://example.org/data/Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n",
+      "extracted_local_name": "Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n",
+      "embedding_text": "Infanta Doña María de las Mercedes de Baviera y Borbón",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Irakli Bagration of Mukhrani",
+      "best_candidate_label": "Irakli Bagration of Mukhrani",
+      "best_candidate_qid": "Q2576581",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2926829268292683
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Bagrat_Bagration_y_de_Baviera",
+      "extracted_local_name": "Prince_Bagrat_Bagration_y_de_Baviera",
+      "embedding_text": "Prince Bagrat Bagration y de Baviera",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Irakli Bagration of Mukhrani",
+      "best_candidate_label": "Irakli Bagration of Mukhrani",
+      "best_candidate_qid": "Q2576581",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.53125
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Jorge_de_Bagration",
+      "extracted_local_name": "Prince_Jorge_de_Bagration",
+      "embedding_text": "Prince Jorge de Bagration",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bagrat de Bagration y de Baviera",
+      "best_candidate_label": "Bagrat de Bagration y de Baviera",
+      "best_candidate_qid": "Q5408136",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Mariam",
+      "extracted_local_name": "Princess_Mariam",
+      "embedding_text": "Princess Mariam",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bagrat de Bagration y de Baviera",
+      "best_candidate_label": "Bagrat de Bagration y de Baviera",
+      "best_candidate_qid": "Q5408136",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3404255319148936
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

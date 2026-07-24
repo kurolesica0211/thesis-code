@@ -1,0 +1,98 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Christian_Meister a :Man,
+        :Person ;
+    :hasBirthYear 1954 ;
+    :hasBrother data:Christian_Meister ;
+    :hasRelation data:Charles_I,
+        data:Christian_Meister,
+        data:Gabriela_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isBloodrelationOf data:Christian_Meister ;
+    :isBrotherOf data:Christian_Meister ;
+    :isSiblingOf data:Christian_Meister .
+
+data:Charles_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_I ;
+    :hasRelation data:Charles_I,
+        data:Christian_Meister,
+        data:Gabriela_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isAncestorOf data:Gabriela_von_Habsburg ;
+    :isBloodrelationOf data:Charles_I ;
+    :isBrotherOf data:Charles_I ;
+    :isSiblingOf data:Charles_I .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Gabriela_von_Habsburg ;
+    :hasDaughter data:Gabriela_von_Habsburg ;
+    :hasRelation data:Charles_I,
+        data:Christian_Meister,
+        data:Gabriela_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isAncestorOf data:Gabriela_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Gabriela_von_Habsburg ;
+    :isParentOf data:Gabriela_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Gabriela_von_Habsburg .
+
+data:Regina_von_Sachsen_Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Gabriela_von_Habsburg ;
+    :hasDaughter data:Gabriela_von_Habsburg ;
+    :hasRelation data:Charles_I,
+        data:Christian_Meister,
+        data:Gabriela_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasSister data:Regina_von_Sachsen_Meiningen ;
+    :isAncestorOf data:Gabriela_von_Habsburg ;
+    :isAuntOf data:Gabriela_von_Habsburg ;
+    :isBloodrelationOf data:Regina_von_Sachsen_Meiningen ;
+    :isMotherOf data:Gabriela_von_Habsburg ;
+    :isParentOf data:Gabriela_von_Habsburg ;
+    :isSiblingOf data:Regina_von_Sachsen_Meiningen ;
+    :isSisterOf data:Regina_von_Sachsen_Meiningen .
+
+data:Gabriela_von_Habsburg a :Person,
+        :Woman ;
+    :hasAncestor data:Charles_I,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Regina_von_Sachsen_Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasRelation data:Charles_I,
+        data:Christian_Meister,
+        data:Gabriela_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :hasSex data:Female ;
+    :hasSister data:Gabriela_von_Habsburg ;
+    :isBloodrelationOf data:Gabriela_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isDaughterOf data:Otto_von_Habsburg,
+        data:Regina_von_Sachsen_Meiningen ;
+    :isSiblingOf data:Gabriela_von_Habsburg ;
+    :isSisterOf data:Gabriela_von_Habsburg .
+

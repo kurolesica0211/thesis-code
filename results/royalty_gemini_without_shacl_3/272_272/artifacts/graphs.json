@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Frederick_Melville_Rawlinson a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Julia_Caroline_Rawlinson .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isSisterOf data:James_Robert_Bruce_Ogilvy .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1988 ;\n    :hasRelation data:Julia_Caroline_Rawlinson ;\n    :hasSex data:Male .\n\ndata:Julia_Caroline_Rawlinson a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Frederick_Melville_Rawlinson a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Julia_Caroline_Rawlinson .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isSisterOf data:James_Robert_Bruce_Ogilvy .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1988 ;\n    :hasRelation data:Julia_Caroline_Rawlinson ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Julia_Caroline_Rawlinson a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Frederick_Melville_Rawlinson a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Julia_Caroline_Rawlinson .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isSisterOf data:James_Robert_Bruce_Ogilvy .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasMarriageYear 1988 ;\n    :hasRelation data:Julia_Caroline_Rawlinson ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Julia_Caroline_Rawlinson a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\n"
+    }
+]

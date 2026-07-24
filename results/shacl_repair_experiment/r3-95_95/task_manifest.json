@@ -1,0 +1,7 @@
+{
+    "entry_id": "r3-95_95",
+    "done_reason": "max_iter_reached",
+    "artifacts_dir": "results/shacl_repair_experiment/r3-95_95/artifacts",
+    "results": "results/shacl_repair_experiment/r3-95_95/final_data_graph.ttl",
+    "iterations": 20
+}

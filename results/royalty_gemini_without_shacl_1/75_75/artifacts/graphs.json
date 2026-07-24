@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasFather data:Vladimir_Kirillovich .\n\ndata:Alexander_II a :Man,\n        :Person ;\n    :isFatherOf data:Vladimir_Alexandrovich .\n\ndata:Alexander_Romanov a :Man,\n        :Person .\n\ndata:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich_Romanov a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasBrother data:Alexander_Romanov ;\n    :hasDeathYear 1938 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMarriageYear 1905 ;\n    :hasMother data:Maria_Pavlovna ;\n    :hasRelation data:Victoria_Melita .\n\ndata:Maria_Alexandrovna_of_Russia a :Person,\n        :Woman ;\n    :hasMother data:Alexander_II .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Vladimir_Kirillovich a :Man,\n        :Person ;\n    :hasFather data:Kirill_Vladimirovich_Romanov ;\n    :hasMother data:Victoria_Melita .\n\ndata:Victoria_Melita a :Person,\n        :Woman ;\n    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;\n    :hasMother data:Maria_Alexandrovna_of_Russia .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasFather data:Vladimir_Kirillovich .\n\ndata:Alexander_II a :Man,\n        :Person ;\n    :isFatherOf data:Vladimir_Alexandrovich .\n\ndata:Alexander_Romanov a :Man,\n        :Person .\n\ndata:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich_Romanov a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasBrother data:Alexander_Romanov ;\n    :hasDeathYear 1938 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMarriageYear 1905 ;\n    :hasMother data:Maria_Pavlovna ;\n    :hasRelation data:Victoria_Melita .\n\ndata:Maria_Alexandrovna_of_Russia a :Person,\n        :Woman ;\n    :hasMother data:Alexander_II .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Vladimir_Kirillovich a :Man,\n        :Person ;\n    :hasFather data:Kirill_Vladimirovich_Romanov ;\n    :hasMother data:Victoria_Melita .\n\ndata:Victoria_Melita a :Person,\n        :Woman ;\n    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;\n    :hasMother data:Maria_Alexandrovna_of_Russia .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person .\n\n"
+    }
+]

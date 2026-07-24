@@ -200,6 +200,12 @@ def parse_args() -> argparse.Namespace:
         help="Maximum number of explanations to request when checking consistency.",
     )
     parser.add_argument("--debug", action="store_true", help="Enable debug timing logs")
+    parser.add_argument(
+        "--data-graph-filename",
+        type=str,
+        default="delta_graph.ttl",
+        help="Which per-run ABox file to check (e.g. delta_graph_inferred.ttl).",
+    )
     return parser.parse_args()
 
 
@@ -232,7 +238,7 @@ def main() -> None:
     inconsistent_runs: list[str] = []
 
     for run_dir in tqdm(run_dirs, desc="Checking ABox consistency", unit="run"):
-        delta_graph = run_dir / "delta_graph.ttl"
+        delta_graph = run_dir / args.data_graph_filename
         if not delta_graph.exists():
             continue
 

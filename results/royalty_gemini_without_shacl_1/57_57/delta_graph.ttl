@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilia_Bowes-Lyon a :Woman .
+
+data:Claude_Bowes-Lyon a :Man .
+
+data:David_Armstrong-Jones a :Man ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Margaret_Rose .
+
+data:Elizabeth_II a :Woman ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_the_Queen_Mother ;
+    :isDaughterOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI .
+
+data:George_V a :Man .
+
+data:Queen_Mary a :Woman .
+
+data:Sarah_Armstrong-Jones a :Woman ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Margaret_Rose .
+
+data:Antony_Armstrong-Jones a :Man .
+
+data:Margaret_Rose a :Woman ;
+    :hasBirthYear 1930 ;
+    :hasChild data:David_Armstrong-Jones,
+        data:Sarah_Armstrong-Jones ;
+    :hasDeathYear 2002 ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:Elizabeth_the_Queen_Mother ;
+    :isDaughterOf data:Elizabeth_the_Queen_Mother,
+        data:George_VI ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Elizabeth_the_Queen_Mother a :Woman ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon .
+
+data:George_VI a :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+

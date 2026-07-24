@@ -1,0 +1,361 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Woman ;
+    :hasRelation data:Beatrix ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Margriet a :Ancestor,
+        :Woman ;
+    :hasChild data:Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSister data:Margriet ;
+    :hasSon data:Bernhard_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAuntOf data:Bernhard_van_Vollenhoven ;
+    :isBloodrelationOf data:Margriet ;
+    :isMotherOf data:Bernhard_van_Vollenhoven ;
+    :isParentOf data:Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSon data:Bernhard_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Bernhard_van_Vollenhoven ;
+    :isParentOf data:Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Bernhard_van_Vollenhoven .
+
+data:Floris_van_Vollenhoven a :Man ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isBrotherOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isSiblingOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Maurits_van_Vollenhoven a :Man ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isBrotherOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isSiblingOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Pieter-Christiaan_van_Vollenhoven a :Man ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isBrotherOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isSiblingOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Annette_Sekreve a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasDaughter data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSister data:Annette_Sekreve ;
+    :hasSon data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAuntOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Annette_Sekreve ;
+    :isMotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isParentOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSiblingOf data:Annette_Sekreve ;
+    :isSisterOf data:Annette_Sekreve .
+
+data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven,
+        data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :hasBirthYear 2008 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBrotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSonOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven .
+
+data:Isabella_Lily_Juliana_van_Vollenhoven a :Woman ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven,
+        data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :isDaughterOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSisterOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven,
+        data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :hasBirthYear 2004 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBrotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSonOf data:Annette_Sekreve,
+        data:Bernhard_van_Vollenhoven .
+
+data:Bernhard_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasAncestor data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasDaughter data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Margriet ;
+    :hasParent data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Margriet,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSon data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isBrotherOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isChildOf data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isParentOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSiblingOf data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Maurits_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :isSonOf data:Margriet,
+        data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+

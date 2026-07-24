@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear 2010 ;\n    :hasRelation data:Sven_von_Storch .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear 2010 ;\n    :hasRelation data:Sven_von_Storch .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\n"
+    }
+]

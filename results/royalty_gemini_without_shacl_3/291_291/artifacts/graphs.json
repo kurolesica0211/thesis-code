@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nancy_Helen_Marie_Leeds a :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr ;\n    :hasMother data:Princess_Xenia_Georgievna .\n\ndata:Herman_Jud a :Man .\n\ndata:Princess_Nina_Georgievna a :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna .\n\ndata:Princess_Xenia_Georgievna a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMarriageYear data:1921,\n        data:1946 ;\n    :hasMother data:Princess_Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_George_Mihailovich a :Man .\n\ndata:Princess_Maria_Georgievna a :Woman .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nancy_Helen_Marie_Leeds a :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr ;\n    :hasMother data:Princess_Xenia_Georgievna .\n\ndata:Herman_Jud a :Man .\n\ndata:Princess_Nina_Georgievna a :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna .\n\ndata:Princess_Xenia_Georgievna a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMarriageYear data:1921,\n        data:1946,\n        1921,\n        1946 ;\n    :hasMother data:Princess_Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_George_Mihailovich a :Man .\n\ndata:Princess_Maria_Georgievna a :Woman .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nancy_Helen_Marie_Leeds a :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr ;\n    :hasMother data:Princess_Xenia_Georgievna .\n\ndata:Herman_Jud a :Man .\n\ndata:Princess_Nina_Georgievna a :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna .\n\ndata:Princess_Xenia_Georgievna a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMarriageYear data:1921,\n        data:1946 ;\n    :hasMother data:Princess_Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_George_Mihailovich a :Man .\n\ndata:Princess_Maria_Georgievna a :Woman .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nancy_Helen_Marie_Leeds a :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr ;\n    :hasMother data:Princess_Xenia_Georgievna .\n\ndata:Herman_Jud a :Man .\n\ndata:Princess_Nina_Georgievna a :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna .\n\ndata:Princess_Xenia_Georgievna a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_George_Mihailovich a :Man .\n\ndata:Princess_Maria_Georgievna a :Woman .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nancy_Helen_Marie_Leeds a :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr ;\n    :hasMother data:Princess_Xenia_Georgievna .\n\ndata:Herman_Jud a :Man .\n\ndata:Princess_Nina_Georgievna a :Woman ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna .\n\ndata:Princess_Xenia_Georgievna a :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:Grand_Duke_George_Mihailovich ;\n    :hasMother data:Princess_Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Princess_Nina_Georgievna .\n\ndata:Grand_Duke_George_Mihailovich a :Man .\n\ndata:Princess_Maria_Georgievna a :Woman .\n\ndata:William_Bateman_Leeds_Jr a :Man .\n\n"
+    }
+]

@@ -1,0 +1,380 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX a :Man,
+        :Person ;
+    :hasBrother data:Christian_IX ;
+    :hasRelation data:Christian_IX ;
+    :isBloodrelationOf data:Christian_IX ;
+    :isBrotherOf data:Christian_IX ;
+    :isSiblingOf data:Christian_IX .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX,
+        data:Knud ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Knud ;
+    :isSiblingOf data:Frederik_IX,
+        data:Knud ;
+    :isUncleOf data:Margrethe_II .
+
+data:Gustaf_VI_Adolf a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gustaf_VI_Adolf ;
+    :hasChild data:Ingrid_of_Sweden ;
+    :hasDaughter data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :isAncestorOf data:Ingrid_of_Sweden ;
+    :isBloodrelationOf data:Gustaf_VI_Adolf ;
+    :isBrotherOf data:Gustaf_VI_Adolf ;
+    :isFatherOf data:Ingrid_of_Sweden ;
+    :isParentOf data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Gustaf_VI_Adolf ;
+    :isUncleOf data:Ingrid_of_Sweden .
+
+data:Margaret_of_Connaught a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ingrid_of_Sweden ;
+    :hasDaughter data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Margaret_of_Connaught ;
+    :isAncestorOf data:Ingrid_of_Sweden ;
+    :isAuntOf data:Ingrid_of_Sweden ;
+    :isBloodrelationOf data:Margaret_of_Connaught ;
+    :isMotherOf data:Ingrid_of_Sweden ;
+    :isParentOf data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Margaret_of_Connaught ;
+    :isSisterOf data:Margaret_of_Connaught .
+
+data:Anastasia_Mikhailovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Anastasia_Mikhailovna ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Margrethe_II ;
+    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna ;
+    :isSisterOf data:Anastasia_Mikhailovna .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isUncleOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederik_VIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_VIII ;
+    :hasChild data:Christian_X ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSon data:Christian_X ;
+    :isAncestorOf data:Christian_X,
+        data:Frederik_IX,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_VIII ;
+    :isBrotherOf data:Frederik_VIII ;
+    :isFatherOf data:Christian_X ;
+    :isParentOf data:Christian_X ;
+    :isSiblingOf data:Frederik_VIII ;
+    :isUncleOf data:Christian_X .
+
+data:Louise_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_X ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Louise_of_Sweden ;
+    :hasSon data:Christian_X ;
+    :isAncestorOf data:Christian_X,
+        data:Frederik_IX,
+        data:Margrethe_II ;
+    :isAuntOf data:Christian_X ;
+    :isBloodrelationOf data:Louise_of_Sweden ;
+    :isMotherOf data:Christian_X ;
+    :isParentOf data:Christian_X ;
+    :isSiblingOf data:Louise_of_Sweden ;
+    :isSisterOf data:Louise_of_Sweden .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasAncestor data:Gustaf_VI_Adolf,
+        data:Margaret_of_Connaught ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasMother data:Margaret_of_Connaught ;
+    :hasParent data:Gustaf_VI_Adolf,
+        data:Margaret_of_Connaught ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isChildOf data:Gustaf_VI_Adolf,
+        data:Margaret_of_Connaught ;
+    :isDaughterOf data:Gustaf_VI_Adolf,
+        data:Margaret_of_Connaught ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :hasFather data:Frederik_IX ;
+    :hasParent data:Frederik_IX ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Margrethe_II ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isChildOf data:Frederik_IX ;
+    :isDaughterOf data:Frederik_IX ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :hasChild data:Frederik_IX ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasParent data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederik_IX ;
+    :isAncestorOf data:Frederik_IX,
+        data:Margrethe_II ;
+    :isAuntOf data:Frederik_IX ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isDaughterOf data:Anastasia_Mikhailovna,
+        data:Frederick_Francis_III ;
+    :isMotherOf data:Frederik_IX ;
+    :isParentOf data:Frederik_IX ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Christian_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :hasBrother data:Christian_X ;
+    :hasChild data:Frederik_IX ;
+    :hasFather data:Frederik_VIII ;
+    :hasMother data:Louise_of_Sweden ;
+    :hasParent data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :hasSon data:Frederik_IX ;
+    :isAncestorOf data:Frederik_IX,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Christian_X ;
+    :isBrotherOf data:Christian_X ;
+    :isChildOf data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :isFatherOf data:Frederik_IX ;
+    :isParentOf data:Frederik_IX ;
+    :isSiblingOf data:Christian_X ;
+    :isSonOf data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :isUncleOf data:Frederik_IX .
+
+data:Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_VIII,
+        data:Louise_of_Sweden ;
+    :hasBirthYear 1899 ;
+    :hasBrother data:Frederik_IX,
+        data:Knud ;
+    :hasChild data:Margrethe_II ;
+    :hasDaughter data:Margrethe_II ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Christian_X ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna,
+        data:Christian_X,
+        data:Frederick_Francis_III,
+        data:Frederik_IX,
+        data:Frederik_VIII,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden,
+        data:Knud,
+        data:Louise_of_Sweden,
+        data:Margaret_of_Connaught,
+        data:Margrethe_II ;
+    :isAncestorOf data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Knud ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X ;
+    :isFatherOf data:Margrethe_II ;
+    :isParentOf data:Margrethe_II ;
+    :isSiblingOf data:Frederik_IX,
+        data:Knud ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X ;
+    :isUncleOf data:Margrethe_II .
+

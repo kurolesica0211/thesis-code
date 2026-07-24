@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CharlesI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CharlesI ;
+    :hasRelation data:CarlAxelArchibaldDouglas,
+        data:CharlesI,
+        data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :isAncestorOf data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :isBloodrelationOf data:CharlesI ;
+    :isBrotherOf data:CharlesI ;
+    :isSiblingOf data:CharlesI .
+
+data:ReginaOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WalburgaDouglas ;
+    :hasDaughter data:WalburgaDouglas ;
+    :hasRelation data:MauritzOttoWenzelDouglas,
+        data:ReginaOfSaxeMeiningen,
+        data:WalburgaDouglas ;
+    :hasSister data:ReginaOfSaxeMeiningen ;
+    :isAncestorOf data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :isAuntOf data:WalburgaDouglas ;
+    :isBloodrelationOf data:ReginaOfSaxeMeiningen ;
+    :isMotherOf data:WalburgaDouglas ;
+    :isParentOf data:WalburgaDouglas ;
+    :isSiblingOf data:ReginaOfSaxeMeiningen ;
+    :isSisterOf data:ReginaOfSaxeMeiningen .
+
+data:ArchibaldDouglas a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ArchibaldDouglas ;
+    :hasChild data:CarlAxelArchibaldDouglas ;
+    :hasRelation data:ArchibaldDouglas,
+        data:CarlAxelArchibaldDouglas,
+        data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :hasSon data:CarlAxelArchibaldDouglas ;
+    :isAncestorOf data:CarlAxelArchibaldDouglas,
+        data:MauritzOttoWenzelDouglas ;
+    :isBloodrelationOf data:ArchibaldDouglas ;
+    :isBrotherOf data:ArchibaldDouglas ;
+    :isFatherOf data:CarlAxelArchibaldDouglas ;
+    :isParentOf data:CarlAxelArchibaldDouglas ;
+    :isSiblingOf data:ArchibaldDouglas ;
+    :isUncleOf data:CarlAxelArchibaldDouglas .
+
+data:MargaretaLagerfelt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:CarlAxelArchibaldDouglas ;
+    :hasRelation data:CarlAxelArchibaldDouglas,
+        data:MargaretaLagerfelt,
+        data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :hasSister data:MargaretaLagerfelt ;
+    :hasSon data:CarlAxelArchibaldDouglas ;
+    :isAncestorOf data:CarlAxelArchibaldDouglas,
+        data:MauritzOttoWenzelDouglas ;
+    :isAuntOf data:CarlAxelArchibaldDouglas ;
+    :isBloodrelationOf data:MargaretaLagerfelt ;
+    :isMotherOf data:CarlAxelArchibaldDouglas ;
+    :isParentOf data:CarlAxelArchibaldDouglas ;
+    :isSiblingOf data:MargaretaLagerfelt ;
+    :isSisterOf data:MargaretaLagerfelt .
+
+data:OttoVonHabsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:OttoVonHabsburg ;
+    :hasChild data:WalburgaDouglas ;
+    :hasDaughter data:WalburgaDouglas ;
+    :hasRelation data:CarlAxelArchibaldDouglas,
+        data:MauritzOttoWenzelDouglas,
+        data:OttoVonHabsburg,
+        data:WalburgaDouglas ;
+    :isAncestorOf data:MauritzOttoWenzelDouglas,
+        data:WalburgaDouglas ;
+    :isBloodrelationOf data:OttoVonHabsburg ;
+    :isBrotherOf data:OttoVonHabsburg ;
+    :isFatherOf data:WalburgaDouglas ;
+    :isParentOf data:WalburgaDouglas ;
+    :isSiblingOf data:OttoVonHabsburg ;
+    :isUncleOf data:WalburgaDouglas .
+
+data:CarlAxelArchibaldDouglas a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:ArchibaldDouglas,
+        data:MargaretaLagerfelt ;
+    :hasBirthYear 1949 ;
+    :hasBrother data:CarlAxelArchibaldDouglas ;
+    :hasChild data:MauritzOttoWenzelDouglas ;
+    :hasFather data:ArchibaldDouglas ;
+    :hasMother data:MargaretaLagerfelt ;
+    :hasParent data:ArchibaldDouglas,
+        data:MargaretaLagerfelt ;
+    :hasRelation data:ArchibaldDouglas,
+        data:CarlAxelArchibaldDouglas,
+        data:CharlesI,
+        data:MargaretaLagerfelt,
+        data:MauritzOttoWenzelDouglas,
+        data:OttoVonHabsburg,
+        data:WalburgaDouglas ;
+    :hasSon data:MauritzOttoWenzelDouglas ;
+    :isAncestorOf data:MauritzOttoWenzelDouglas ;
+    :isBloodrelationOf data:CarlAxelArchibaldDouglas ;
+    :isBrotherOf data:CarlAxelArchibaldDouglas ;
+    :isChildOf data:ArchibaldDouglas,
+        data:MargaretaLagerfelt ;
+    :isFatherOf data:MauritzOttoWenzelDouglas ;
+    :isParentOf data:MauritzOttoWenzelDouglas ;
+    :isSiblingOf data:CarlAxelArchibaldDouglas ;
+    :isSonOf data:ArchibaldDouglas,
+        data:MargaretaLagerfelt ;
+    :isUncleOf data:MauritzOttoWenzelDouglas .
+
+data:MauritzOttoWenzelDouglas a :Man,
+        :Person ;
+    :hasAncestor data:ArchibaldDouglas,
+        data:CarlAxelArchibaldDouglas,
+        data:CharlesI,
+        data:MargaretaLagerfelt,
+        data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen,
+        data:WalburgaDouglas ;
+    :hasBirthYear 1994 ;
+    :hasBrother data:MauritzOttoWenzelDouglas ;
+    :hasFather data:CarlAxelArchibaldDouglas ;
+    :hasMother data:WalburgaDouglas ;
+    :hasParent data:CarlAxelArchibaldDouglas,
+        data:WalburgaDouglas ;
+    :hasRelation data:ArchibaldDouglas,
+        data:CarlAxelArchibaldDouglas,
+        data:CharlesI,
+        data:MargaretaLagerfelt,
+        data:MauritzOttoWenzelDouglas,
+        data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen,
+        data:WalburgaDouglas ;
+    :isBloodrelationOf data:MauritzOttoWenzelDouglas ;
+    :isBrotherOf data:MauritzOttoWenzelDouglas ;
+    :isChildOf data:CarlAxelArchibaldDouglas,
+        data:WalburgaDouglas ;
+    :isSiblingOf data:MauritzOttoWenzelDouglas ;
+    :isSonOf data:CarlAxelArchibaldDouglas,
+        data:WalburgaDouglas .
+
+data:WalburgaDouglas a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CharlesI,
+        data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen ;
+    :hasBirthYear 1958 ;
+    :hasChild data:MauritzOttoWenzelDouglas ;
+    :hasFather data:OttoVonHabsburg ;
+    :hasMarriageYear 1992 ;
+    :hasMother data:ReginaOfSaxeMeiningen ;
+    :hasParent data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen ;
+    :hasRelation data:ArchibaldDouglas,
+        data:CarlAxelArchibaldDouglas,
+        data:CharlesI,
+        data:MargaretaLagerfelt,
+        data:MauritzOttoWenzelDouglas,
+        data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen,
+        data:WalburgaDouglas ;
+    :hasSister data:WalburgaDouglas ;
+    :hasSon data:MauritzOttoWenzelDouglas ;
+    :isAncestorOf data:MauritzOttoWenzelDouglas ;
+    :isAuntOf data:MauritzOttoWenzelDouglas ;
+    :isBloodrelationOf data:WalburgaDouglas ;
+    :isChildOf data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen ;
+    :isDaughterOf data:OttoVonHabsburg,
+        data:ReginaOfSaxeMeiningen ;
+    :isMotherOf data:MauritzOttoWenzelDouglas ;
+    :isParentOf data:MauritzOttoWenzelDouglas ;
+    :isSiblingOf data:WalburgaDouglas ;
+    :isSisterOf data:WalburgaDouglas .
+

@@ -1,0 +1,235 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickAugustusIII a :Man,
+        :Person ;
+    :hasBrother data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :isBloodrelationOf data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :isBrotherOf data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :isSiblingOf data:FrederickAugustusIII,
+        data:JohannGeorg .
+
+data:Alfonso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso ;
+    :hasChild data:MariaImmaculata ;
+    :hasDaughter data:MariaImmaculata ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :isAncestorOf data:MariaImmaculata ;
+    :isBloodrelationOf data:Alfonso ;
+    :isBrotherOf data:Alfonso ;
+    :isFatherOf data:MariaImmaculata ;
+    :isParentOf data:MariaImmaculata ;
+    :isSiblingOf data:Alfonso ;
+    :isUncleOf data:MariaImmaculata .
+
+data:GeorgeOfSaxony a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeOfSaxony ;
+    :hasChild data:JohannGeorg ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :hasSon data:JohannGeorg ;
+    :isAncestorOf data:JohannGeorg ;
+    :isBloodrelationOf data:GeorgeOfSaxony ;
+    :isBrotherOf data:GeorgeOfSaxony ;
+    :isFatherOf data:JohannGeorg ;
+    :isParentOf data:JohannGeorg ;
+    :isSiblingOf data:GeorgeOfSaxony ;
+    :isUncleOf data:JohannGeorg .
+
+data:MariaAntonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaImmaculata ;
+    :hasDaughter data:MariaImmaculata ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :hasSister data:MariaAntonietta ;
+    :isAncestorOf data:MariaImmaculata ;
+    :isAuntOf data:MariaImmaculata ;
+    :isBloodrelationOf data:MariaAntonietta ;
+    :isMotherOf data:MariaImmaculata ;
+    :isParentOf data:MariaImmaculata ;
+    :isSiblingOf data:MariaAntonietta ;
+    :isSisterOf data:MariaAntonietta .
+
+data:FerdinandIIOfPortugal a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FerdinandIIOfPortugal ;
+    :hasChild data:MariaAnnaOfPortugal ;
+    :hasDaughter data:MariaAnnaOfPortugal ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :isAncestorOf data:JohannGeorg,
+        data:MariaAnnaOfPortugal ;
+    :isBloodrelationOf data:FerdinandIIOfPortugal ;
+    :isBrotherOf data:FerdinandIIOfPortugal ;
+    :isFatherOf data:MariaAnnaOfPortugal ;
+    :isParentOf data:MariaAnnaOfPortugal ;
+    :isSiblingOf data:FerdinandIIOfPortugal ;
+    :isUncleOf data:MariaAnnaOfPortugal .
+
+data:MariaIIOfPortugal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaAnnaOfPortugal ;
+    :hasDaughter data:MariaAnnaOfPortugal ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :hasSister data:MariaIIOfPortugal ;
+    :isAncestorOf data:JohannGeorg,
+        data:MariaAnnaOfPortugal ;
+    :isAuntOf data:MariaAnnaOfPortugal ;
+    :isBloodrelationOf data:MariaIIOfPortugal ;
+    :isMotherOf data:MariaAnnaOfPortugal ;
+    :isParentOf data:MariaAnnaOfPortugal ;
+    :isSiblingOf data:MariaIIOfPortugal ;
+    :isSisterOf data:MariaIIOfPortugal .
+
+data:MariaImmaculata a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso,
+        data:MariaAntonietta ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Alfonso ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:MariaAntonietta ;
+    :hasParent data:Alfonso,
+        data:MariaAntonietta ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :hasSister data:MariaImmaculata ;
+    :isBloodrelationOf data:MariaImmaculata ;
+    :isChildOf data:Alfonso,
+        data:MariaAntonietta ;
+    :isDaughterOf data:Alfonso,
+        data:MariaAntonietta ;
+    :isSiblingOf data:MariaImmaculata ;
+    :isSisterOf data:MariaImmaculata .
+
+data:MariaAnnaOfPortugal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FerdinandIIOfPortugal,
+        data:MariaIIOfPortugal ;
+    :hasChild data:JohannGeorg ;
+    :hasFather data:FerdinandIIOfPortugal ;
+    :hasMother data:MariaIIOfPortugal ;
+    :hasParent data:FerdinandIIOfPortugal,
+        data:MariaIIOfPortugal ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :hasSister data:MariaAnnaOfPortugal ;
+    :hasSon data:JohannGeorg ;
+    :isAncestorOf data:JohannGeorg ;
+    :isAuntOf data:JohannGeorg ;
+    :isBloodrelationOf data:MariaAnnaOfPortugal ;
+    :isChildOf data:FerdinandIIOfPortugal,
+        data:MariaIIOfPortugal ;
+    :isDaughterOf data:FerdinandIIOfPortugal,
+        data:MariaIIOfPortugal ;
+    :isMotherOf data:JohannGeorg ;
+    :isParentOf data:JohannGeorg ;
+    :isSiblingOf data:MariaAnnaOfPortugal ;
+    :isSisterOf data:MariaAnnaOfPortugal .
+
+data:JohannGeorg a :Man,
+        :Person ;
+    :hasAncestor data:FerdinandIIOfPortugal,
+        data:GeorgeOfSaxony,
+        data:MariaAnnaOfPortugal,
+        data:MariaIIOfPortugal ;
+    :hasBrother data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :hasFather data:GeorgeOfSaxony ;
+    :hasMother data:MariaAnnaOfPortugal ;
+    :hasParent data:GeorgeOfSaxony,
+        data:MariaAnnaOfPortugal ;
+    :hasRelation data:Alfonso,
+        data:FerdinandIIOfPortugal,
+        data:FrederickAugustusIII,
+        data:GeorgeOfSaxony,
+        data:JohannGeorg,
+        data:MariaAnnaOfPortugal,
+        data:MariaAntonietta,
+        data:MariaIIOfPortugal,
+        data:MariaImmaculata ;
+    :isBloodrelationOf data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :isBrotherOf data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :isChildOf data:GeorgeOfSaxony,
+        data:MariaAnnaOfPortugal ;
+    :isSiblingOf data:FrederickAugustusIII,
+        data:JohannGeorg ;
+    :isSonOf data:GeorgeOfSaxony,
+        data:MariaAnnaOfPortugal .
+

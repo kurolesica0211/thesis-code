@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,
+        :Woman ;
+    :alsoKnownAs "Princess Diane of Orléans"^^xsd:string ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,
+        :Woman .
+

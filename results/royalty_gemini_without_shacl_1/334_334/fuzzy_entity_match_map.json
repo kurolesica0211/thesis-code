@@ -1,0 +1,119 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/334_334",
+  "text_file": "Q56641.txt",
+  "text_key": "Q56641",
+  "article": "https://en.wikipedia.org/wiki/Pim_Lier",
+  "article_key": "Pim Lier",
+  "main_entity": {
+    "uri": "http://example.com/data#Pim_Lier",
+    "qid": "Q56641",
+    "label": "Pim Lier"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Pim_Lier",
+      "qid": "Q56641",
+      "label": "Pim Lier",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/AlbrechtWillemLier",
+      "extracted_local_name": "AlbrechtWillemLier",
+      "embedding_text": "Albrecht Willem Lier",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.95,
+      "ground_truth_uri": "http://example.com/data#Pim_Lier",
+      "ground_truth_qid": "Q56641",
+      "ground_truth_label": "Pim Lier",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Albrecht-Willem Lier",
+      "best_candidate_label": "Pim Lier",
+      "best_candidate_qid": "Q56641",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.95
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceHenry",
+      "extracted_local_name": "PrinceHenry",
+      "embedding_text": "Prince Henry",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenBeatrix",
+      "extracted_local_name": "QueenBeatrix",
+      "embedding_text": "Queen Beatrix",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenJuliana",
+      "extracted_local_name": "QueenJuliana",
+      "embedding_text": "Queen Juliana",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/WilleminaMartinaWenneker",
+      "extracted_local_name": "WilleminaMartinaWenneker",
+      "embedding_text": "Willemina Martina Wenneker",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

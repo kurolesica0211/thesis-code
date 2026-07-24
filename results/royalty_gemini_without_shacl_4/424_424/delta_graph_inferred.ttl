@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley_Marquess_of_Douro ;
+    :isBloodrelationOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isBrotherOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isSiblingOf data:Charles_Wellesley_Marquess_of_Douro .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Rupert_Guinness_2nd_Earl_of_Iveagh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isBrotherOf data:Rupert_Guinness_2nd_Earl_of_Iveagh ;
+    :isSiblingOf data:Rupert_Guinness_2nd_Earl_of_Iveagh .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Lady_Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSister data:Lady_Brigid_Guinness ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Antonia_of_Prussia ;
+    :isBloodrelationOf data:Lady_Brigid_Guinness ;
+    :isMotherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Lady_Brigid_Guinness ;
+    :isSisterOf data:Lady_Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Antonia_of_Prussia .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia ;
+    :isDaughterOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia ;
+    :isDaughterOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasBirthYear 1955 ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasParent data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Queen_Victoria,
+        data:Rupert_Guinness_2nd_Earl_of_Iveagh,
+        data:Wilhelm_II ;
+    :hasSister data:Antonia_of_Prussia ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Antonia_of_Prussia ;
+    :isChildOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isDaughterOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isMotherOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Antonia_of_Prussia ;
+    :isSisterOf data:Antonia_of_Prussia .
+

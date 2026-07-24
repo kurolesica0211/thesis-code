@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Female a :Sex .
+
+data:Kira_Kirillovna a :Ancestor ;
+    :isParentOf data:Michael_Prinz_von_Preussen .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor ;
+    :isParentOf data:Georg_Friedrich_Prinz_von_Preussen,
+        data:Michael_Prinz_von_Preussen .
+
+data:Wilhelm_II :isParentOf data:Michael_Prinz_von_Preussen .
+
+data:Georg_Friedrich_Prinz_von_Preussen :hasSex data:Male .
+
+data:Male a :Sex .
+

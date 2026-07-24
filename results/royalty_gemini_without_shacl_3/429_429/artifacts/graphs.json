@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,\n        :Woman ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Princess_Charlotte_of_Croy a :Person,\n        :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,\n        :Woman ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Princess_Charlotte_of_Croy a :Person,\n        :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

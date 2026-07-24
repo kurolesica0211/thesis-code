@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diane_sister_of_Henri a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Francois_brother_of_Henri a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Marie_eldest_child_of_Henri a :Person,
+        :Woman ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein ;
+    :isDaughterOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Michel_Count_of_Evreux a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Prince_Jacques_Duke_of_Orleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Prince_Jean_Duke_of_Vendome a :Man,
+        :Person ;
+    :isBrotherOf data:Francois_eldest_son_of_Henri .
+
+data:Thibaut_Count_of_La_Marche a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Francois_eldest_son_of_Henri a :Man,
+        :Person ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Henri_Count_of_Paris_1908_1999 a :Ancestor,
+        :Man,
+        :Person .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasMarriageYear 1984 .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris_1908_1999 ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+

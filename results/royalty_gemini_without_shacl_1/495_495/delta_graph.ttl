@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Princess_Juliana a :Woman ;
+    :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Duchess_Thyra_of_Mecklenburg-Schwerin a :Woman .
+
+data:Frederick_Francis_II%2C_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Woman .
+
+data:Heinrich_I_Prinz_Reuss a :Man ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man .
+
+data:Princess_Elisabeth_of_Lippe a :Woman .
+
+data:Princess_Feodora_of_Leiningen a :Woman .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Woman ;
+    :hasBirthYear 1850 ;
+    :hasDeathYear 1922 .
+
+data:Princess_Sieglinde_of_Lippe a :Woman .
+
+data:Princess_Sophie_of_Saxe-Weimar-Eisenach a :Woman .
+
+data:Queen_Victoria a :Woman .
+
+data:Woizlawa_Feodora_Princess_Reuss a :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 ;
+    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Heinrich_XXVII%2C_Prince_of_Reuss_zu_Schleiz a :Man .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Man ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1956 .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Woman .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Woman ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1968 .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Woman .
+
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII%2C_Prince_of_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .
+

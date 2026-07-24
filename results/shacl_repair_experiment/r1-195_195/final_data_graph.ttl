@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Alexander_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1953 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Jean_Frances_Hambro ;
+    :hasSex data:Male ;
+    :hasSon data:Alexander ;
+    :isFatherOf data:Alexander .
+
+data:Willa_Mary_Gabrielle_Chetwode a :Person,
+        :Woman ;
+    :hasFather data:George_David_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound .
+
+data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasMother data:Mary_Bowes-Lyon .
+
+data:George_David_Chetwode a :Ancestor,
+        :Man,
+        :Person .
+
+data:Jean_Frances_Hambro a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:Marion_Cook a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Mary_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sidney_Buller-Fullerton-Elphinstone a :Ancestor,
+        :Man,
+        :Person .
+
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man,
+        :Person .
+
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+    :hasMother data:Marion_Cook .
+
+data:Alexander a :Man,
+        :Person .
+

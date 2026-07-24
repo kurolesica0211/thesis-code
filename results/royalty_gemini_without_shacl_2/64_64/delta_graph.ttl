@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_of_Greece .
+
+data:Berthold_Margrave_of_Baden a :Man,
+        :Person .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
+
+data:Victoria_Mountbatten_Marchioness_of_Milford_Haven a :Person,
+        :Woman ;
+    :hasFather data:Princess_Alice_of_Battenberg .
+
+data:King_Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Constantine_of_Greece ;
+    :hasDeathYear 1944 ;
+    :hasFather data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:Queen_Olga_of_Greece .
+
+data:Prince_Louis_of_Battenberg a :Man,
+        :Person .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Queen_Olga_of_Greece a :Person,
+        :Woman .
+
+data:Constantine_of_Greece a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
+

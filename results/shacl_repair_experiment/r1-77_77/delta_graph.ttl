@@ -1,0 +1,8 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:George_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+

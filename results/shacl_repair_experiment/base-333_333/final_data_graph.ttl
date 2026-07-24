@@ -1,0 +1,80 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Sofia_of_Spain a :Person,
+        :Woman .
+
+data:Crown_Prince_Pavlos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Nikolaos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie .
+
+data:Prince_Philippos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie .
+
+data:Princess_Theodora a :Person,
+        :Woman ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie .
+
+data:Queen_Frederica_of_Greece a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Benedikte a :Person,
+        :Woman .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1946 ;
+    :hasChild data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasRelation data:Constantine_II_of_Greece ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :knownAs "Queen of Greece"^^xsd:string .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear "2023"^^xsd:int ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasMother data:Queen_Frederica_of_Greece .
+

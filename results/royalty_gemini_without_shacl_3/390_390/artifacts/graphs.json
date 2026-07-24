@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Wilhelm_von_Preussen a :Man ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Karl_Franz_of_Prussia ;\n    :hasMarriageYear data:1976,\n        data:2019 ;\n    :hasMother data:Henriette_von_Schoenaich-Carolath ;\n    :isSiblingOf data:Friedrich_Christian_of_Prussia .\n\ndata:Nadia_Nour_El_Etreby a :Woman ;\n    :hasBirthYear 1949 .\n\ndata:Vladimir_of_Russia a :Man ;\n    :isFatherOf data:Maria_Vladimirovna_of_Russia .\n\ndata:Wilhelm_II_of_Germany a :Man ;\n    :isFatherOf data:Joachim_of_Prussia .\n\ndata:Friedrich_Christian_of_Prussia a :Man .\n\ndata:Henriette_von_Schoenaich-Carolath a :Woman .\n\ndata:Joachim_of_Prussia a :Man ;\n    :isFatherOf data:Karl_Franz_of_Prussia .\n\ndata:Maria_Vladimirovna_of_Russia a :Woman .\n\ndata:Karl_Franz_of_Prussia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Wilhelm_von_Preussen a :Man ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Karl_Franz_of_Prussia ;\n    :hasMarriageYear 1976,\n        2019 ;\n    :hasMother data:Henriette_von_Schoenaich-Carolath ;\n    :isSiblingOf data:Friedrich_Christian_of_Prussia .\n\ndata:Nadia_Nour_El_Etreby a :Woman ;\n    :hasBirthYear 1949 .\n\ndata:Vladimir_of_Russia a :Man ;\n    :isFatherOf data:Maria_Vladimirovna_of_Russia .\n\ndata:Wilhelm_II_of_Germany a :Man ;\n    :isFatherOf data:Joachim_of_Prussia .\n\ndata:Friedrich_Christian_of_Prussia a :Man .\n\ndata:Henriette_von_Schoenaich-Carolath a :Woman .\n\ndata:Joachim_of_Prussia a :Man ;\n    :isFatherOf data:Karl_Franz_of_Prussia .\n\ndata:Maria_Vladimirovna_of_Russia a :Woman .\n\ndata:Karl_Franz_of_Prussia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Wilhelm_von_Preussen a :Man ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Karl_Franz_of_Prussia ;\n    :hasMarriageYear 1976,\n        2019 ;\n    :hasMother data:Henriette_von_Schoenaich-Carolath ;\n    :isSiblingOf data:Friedrich_Christian_of_Prussia .\n\ndata:Nadia_Nour_El_Etreby a :Woman ;\n    :hasBirthYear 1949 .\n\ndata:Vladimir_of_Russia a :Man ;\n    :isFatherOf data:Maria_Vladimirovna_of_Russia .\n\ndata:Wilhelm_II_of_Germany a :Man ;\n    :isFatherOf data:Joachim_of_Prussia .\n\ndata:Friedrich_Christian_of_Prussia a :Man .\n\ndata:Henriette_von_Schoenaich-Carolath a :Woman .\n\ndata:Joachim_of_Prussia a :Man ;\n    :isFatherOf data:Karl_Franz_of_Prussia .\n\ndata:Maria_Vladimirovna_of_Russia a :Woman .\n\ndata:Karl_Franz_of_Prussia a :Man .\n\n"
+    }
+]

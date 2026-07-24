@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amanda_Knatchbull a :Person,
+        :Woman ;
+    :isDaughterOf data:John_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Patricia_Mountbatten .
+
+data:Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Patricia_Mountbatten .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :isSonOf data:John_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman .
+
+data:John_Knatchbull a :Man,
+        :Person .
+
+data:Patricia_Mountbatten a :Person,
+        :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2017 ;
+    :hasMarriageYear 1946 ;
+    :hasRelation data:John_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Mountbatten-Windsor a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1960 ;\n    :hasChild data:Princess_Beatrice,\n        data:Princess_Eugenie ;\n    :hasFather data:Philip_Duke_of_Edinburgh ;\n    :hasMarriageYear 1986 ;\n    :hasMother data:Elizabeth_II ;\n    :hasRelation data:Sarah_Ferguson ;\n    :isSiblingOf data:Charles_III .\n\ndata:Charles_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elizabeth_II a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Philip_Duke_of_Edinburgh a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :hasChild data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:Princess_Beatrice a :Person,\n        :Woman .\n\ndata:Princess_Eugenie a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Mountbatten-Windsor a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1960 ;\n    :hasChild data:Princess_Beatrice,\n        data:Princess_Eugenie ;\n    :hasFather data:Philip_Duke_of_Edinburgh ;\n    :hasMarriageYear 1986 ;\n    :hasMother data:Elizabeth_II ;\n    :hasRelation data:Sarah_Ferguson ;\n    :isSiblingOf data:Charles_III .\n\ndata:Charles_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elizabeth_II a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Philip_Duke_of_Edinburgh a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :hasChild data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:Princess_Beatrice a :Person,\n        :Woman .\n\ndata:Princess_Eugenie a :Person,\n        :Woman .\n\n"
+    }
+]

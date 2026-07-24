@@ -1,0 +1,536 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isBloodrelationOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isBrotherOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh .
+
+data:Wallis_Simpson a :Person,
+        :Woman ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry,
+        data:Wallis_Simpson ;
+    :hasSister data:Wallis_Simpson ;
+    :isBloodrelationOf data:Wallis_Simpson ;
+    :isSiblingOf data:Wallis_Simpson ;
+    :isSisterOf data:Wallis_Simpson .
+
+data:Countess_of_Strathmore a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_Bowes-Lyon ;
+    :hasDaughter data:Elizabeth_Bowes-Lyon ;
+    :hasRelation data:Countess_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :hasSister data:Countess_of_Strathmore ;
+    :isAncestorOf data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :isAuntOf data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Countess_of_Strathmore ;
+    :isMotherOf data:Elizabeth_Bowes-Lyon ;
+    :isParentOf data:Elizabeth_Bowes-Lyon ;
+    :isSiblingOf data:Countess_of_Strathmore ;
+    :isSisterOf data:Countess_of_Strathmore .
+
+data:Earl_of_Strathmore a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Earl_of_Strathmore ;
+    :hasChild data:Elizabeth_Bowes-Lyon ;
+    :hasDaughter data:Elizabeth_Bowes-Lyon ;
+    :hasRelation data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :isAncestorOf data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Earl_of_Strathmore ;
+    :isBrotherOf data:Earl_of_Strathmore ;
+    :isFatherOf data:Elizabeth_Bowes-Lyon ;
+    :isParentOf data:Elizabeth_Bowes-Lyon ;
+    :isSiblingOf data:Earl_of_Strathmore ;
+    :isUncleOf data:Elizabeth_Bowes-Lyon .
+
+data:Francis_Duke_of_Teck a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Francis_Duke_of_Teck ;
+    :hasChild data:Queen_Mary ;
+    :hasDaughter data:Queen_Mary ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:Francis_Duke_of_Teck,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Francis_Duke_of_Teck ;
+    :isBrotherOf data:Francis_Duke_of_Teck ;
+    :isFatherOf data:Queen_Mary ;
+    :isParentOf data:Queen_Mary ;
+    :isSiblingOf data:Francis_Duke_of_Teck ;
+    :isUncleOf data:Queen_Mary .
+
+data:King_Edward_VII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Edward_VII ;
+    :hasChild data:George_V ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Margaret,
+        data:Prince_Henry ;
+    :hasSon data:George_V ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret ;
+    :isBloodrelationOf data:King_Edward_VII ;
+    :isBrotherOf data:King_Edward_VII ;
+    :isFatherOf data:George_V ;
+    :isParentOf data:George_V ;
+    :isSiblingOf data:King_Edward_VII ;
+    :isUncleOf data:George_V .
+
+data:Princess_Mary_Adelaide_Duchess_of_Teck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Mary ;
+    :hasDaughter data:Queen_Mary ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Queen_Mary ;
+    :isAuntOf data:Queen_Mary ;
+    :isBloodrelationOf data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :isMotherOf data:Queen_Mary ;
+    :isParentOf data:Queen_Mary ;
+    :isSiblingOf data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :isSisterOf data:Princess_Mary_Adelaide_Duchess_of_Teck .
+
+data:Queen_Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_V ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Alexandra ;
+    :hasSister data:Queen_Alexandra ;
+    :hasSon data:George_V ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret ;
+    :isAuntOf data:George_V ;
+    :isBloodrelationOf data:Queen_Alexandra ;
+    :isMotherOf data:George_V ;
+    :isParentOf data:George_V ;
+    :isSiblingOf data:Queen_Alexandra ;
+    :isSisterOf data:Queen_Alexandra .
+
+data:Duke_of_Kent a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary,
+        data:Wallis_Simpson ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary,
+        data:Wallis_Simpson ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Prince_Henry a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary,
+        data:Wallis_Simpson ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Edward_VII,
+        data:Queen_Alexandra ;
+    :hasBrother data:George_V ;
+    :hasChild data:George_VI ;
+    :hasFather data:King_Edward_VII ;
+    :hasMother data:Queen_Alexandra ;
+    :hasParent data:King_Edward_VII,
+        data:Queen_Alexandra ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Alexandra ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isChildOf data:King_Edward_VII,
+        data:Queen_Alexandra ;
+    :isFatherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isSonOf data:King_Edward_VII,
+        data:Queen_Alexandra ;
+    :isUncleOf data:George_VI .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Francis_Duke_of_Teck,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :hasChild data:George_VI ;
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :hasParent data:Francis_Duke_of_Teck,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:Francis_Duke_of_Teck,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isAuntOf data:George_VI ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isChildOf data:Francis_Duke_of_Teck,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :isDaughterOf data:Francis_Duke_of_Teck,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck ;
+    :isMotherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Elizabeth_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasFather data:Earl_of_Strathmore ;
+    :hasMother data:Countess_of_Strathmore ;
+    :hasParent data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore ;
+    :hasRelation data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Margaret ;
+    :isAuntOf data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon ;
+    :isChildOf data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore ;
+    :isDaughterOf data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore ;
+    :isMotherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Margaret,
+        data:Philip_Duke_of_Edinburgh,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Countess_of_Strathmore,
+        data:Earl_of_Strathmore,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Margaret,
+        data:Philip_Duke_of_Edinburgh,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:King_Edward_VII,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:Francis_Duke_of_Teck,
+        data:George_V,
+        data:George_VI,
+        data:King_Edward_VII,
+        data:Margaret,
+        data:Philip_Duke_of_Edinburgh,
+        data:Prince_Henry,
+        data:Princess_Mary_Adelaide_Duchess_of_Teck,
+        data:Queen_Alexandra,
+        data:Queen_Mary,
+        data:Wallis_Simpson ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret ;
+    :knownAs "Bertie"^^xsd:string .
+

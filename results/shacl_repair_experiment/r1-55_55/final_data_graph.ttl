@@ -1,0 +1,88 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carol_of_Romania a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_I_of_Romania ;
+    :hasMother data:Marie_of_Romania .
+
+data:Christopher_of_Greece a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_I_of_Romania ;
+    :hasMother data:Marie_of_Romania .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:Paul_of_Greece .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Constantine_I_of_Greece .
+
+data:Male a :Sex .
+
+data:Ferdinand_I_of_Romania a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marie_of_Romania a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Female a :Sex .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece .
+

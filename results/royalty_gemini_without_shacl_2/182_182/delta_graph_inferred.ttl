@@ -1,0 +1,228 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Augustus_III_of_Saxony a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Augustus_III_of_Saxony ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Frederick_Augustus_III_of_Saxony ;
+    :isBrotherOf data:Frederick_Augustus_III_of_Saxony ;
+    :isSiblingOf data:Frederick_Augustus_III_of_Saxony .
+
+data:George_of_Saxony a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_of_Saxony ;
+    :hasChild data:Prince_Johann_Georg_of_Saxony ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Johann_Georg_of_Saxony ;
+    :isAncestorOf data:Prince_Johann_Georg_of_Saxony ;
+    :isBloodrelationOf data:George_of_Saxony ;
+    :isBrotherOf data:George_of_Saxony ;
+    :isFatherOf data:Prince_Johann_Georg_of_Saxony ;
+    :isParentOf data:Prince_Johann_Georg_of_Saxony ;
+    :isSiblingOf data:George_of_Saxony ;
+    :isUncleOf data:Prince_Johann_Georg_of_Saxony .
+
+data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Ferdinand_II_of_Portugal a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_II_of_Portugal ;
+    :hasChild data:Maria_Anna_of_Portugal ;
+    :hasDaughter data:Maria_Anna_of_Portugal ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Anna_of_Portugal,
+        data:Prince_Johann_Georg_of_Saxony ;
+    :isBloodrelationOf data:Ferdinand_II_of_Portugal ;
+    :isBrotherOf data:Ferdinand_II_of_Portugal ;
+    :isFatherOf data:Maria_Anna_of_Portugal ;
+    :isParentOf data:Maria_Anna_of_Portugal ;
+    :isSiblingOf data:Ferdinand_II_of_Portugal ;
+    :isUncleOf data:Maria_Anna_of_Portugal .
+
+data:Maria_II_of_Portugal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Anna_of_Portugal ;
+    :hasDaughter data:Maria_Anna_of_Portugal ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_II_of_Portugal ;
+    :isAncestorOf data:Maria_Anna_of_Portugal,
+        data:Prince_Johann_Georg_of_Saxony ;
+    :isAuntOf data:Maria_Anna_of_Portugal ;
+    :isBloodrelationOf data:Maria_II_of_Portugal ;
+    :isMotherOf data:Maria_Anna_of_Portugal ;
+    :isParentOf data:Maria_Anna_of_Portugal ;
+    :isSiblingOf data:Maria_II_of_Portugal ;
+    :isSisterOf data:Maria_II_of_Portugal .
+
+data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Immaculata_of_Bourbon-Two_Sicilies ;
+    :knownAs "Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies"^^xsd:string .
+
+data:Prince_Johann_Georg_of_Saxony a :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_II_of_Portugal,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal ;
+    :hasBrother data:Prince_Johann_Georg_of_Saxony ;
+    :hasFather data:George_of_Saxony ;
+    :hasMother data:Maria_Anna_of_Portugal ;
+    :hasParent data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Johann_Georg_of_Saxony ;
+    :isBrotherOf data:Prince_Johann_Georg_of_Saxony ;
+    :isChildOf data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal ;
+    :isSiblingOf data:Prince_Johann_Georg_of_Saxony ;
+    :isSonOf data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal .
+
+data:Maria_Anna_of_Portugal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ferdinand_II_of_Portugal,
+        data:Maria_II_of_Portugal ;
+    :hasChild data:Prince_Johann_Georg_of_Saxony ;
+    :hasFather data:Ferdinand_II_of_Portugal ;
+    :hasMother data:Maria_II_of_Portugal ;
+    :hasParent data:Ferdinand_II_of_Portugal,
+        data:Maria_II_of_Portugal ;
+    :hasRelation data:Ferdinand_II_of_Portugal,
+        data:Frederick_Augustus_III_of_Saxony,
+        data:George_of_Saxony,
+        data:Maria_Anna_of_Portugal,
+        data:Maria_II_of_Portugal,
+        data:Maria_Immaculata_of_Bourbon-Two_Sicilies,
+        data:Prince_Alfonso_of_Bourbon-Two_Sicilies,
+        data:Prince_Johann_Georg_of_Saxony,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Anna_of_Portugal ;
+    :hasSon data:Prince_Johann_Georg_of_Saxony ;
+    :isAncestorOf data:Prince_Johann_Georg_of_Saxony ;
+    :isAuntOf data:Prince_Johann_Georg_of_Saxony ;
+    :isBloodrelationOf data:Maria_Anna_of_Portugal ;
+    :isChildOf data:Ferdinand_II_of_Portugal,
+        data:Maria_II_of_Portugal ;
+    :isDaughterOf data:Ferdinand_II_of_Portugal,
+        data:Maria_II_of_Portugal ;
+    :isMotherOf data:Prince_Johann_Georg_of_Saxony ;
+    :isParentOf data:Prince_Johann_Georg_of_Saxony ;
+    :isSiblingOf data:Maria_Anna_of_Portugal ;
+    :isSisterOf data:Maria_Anna_of_Portugal .
+

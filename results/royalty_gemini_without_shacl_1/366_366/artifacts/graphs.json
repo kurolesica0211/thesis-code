@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Wilhelm a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Oskar_son_of_Oskar a :Man ;\n    :isSonOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Adalbert a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_August_Wilhelm a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Eitel_Friedrich a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Joachim a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Princess_Viktoria_Luise a :Woman ;\n    :isSisterOf data:Oskar_Prince_of_Prussia .\n\ndata:Wilhelm_Karl_Prince_of_Prussia a :Man ;\n    :isSonOf data:Oskar_Prince_of_Prussia .\n\ndata:Augusta_Victoria a :Woman .\n\ndata:Ina_Marie_von_Bassewitz a :Woman .\n\ndata:Wilhelm_II a :Man .\n\ndata:Oskar_Prince_of_Prussia a :Man ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Augusta_Victoria ;\n    :hasRelation data:Ina_Marie_von_Bassewitz .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Wilhelm a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Oskar_son_of_Oskar a :Man ;\n    :isSonOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Adalbert a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_August_Wilhelm a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Eitel_Friedrich a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Prince_Joachim a :Man ;\n    :isBrotherOf data:Oskar_Prince_of_Prussia .\n\ndata:Princess_Viktoria_Luise a :Woman ;\n    :isSisterOf data:Oskar_Prince_of_Prussia .\n\ndata:Wilhelm_Karl_Prince_of_Prussia a :Man ;\n    :isSonOf data:Oskar_Prince_of_Prussia .\n\ndata:Augusta_Victoria a :Woman .\n\ndata:Ina_Marie_von_Bassewitz a :Woman .\n\ndata:Wilhelm_II a :Man .\n\ndata:Oskar_Prince_of_Prussia a :Man ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Augusta_Victoria ;\n    :hasRelation data:Ina_Marie_von_Bassewitz .\n\n"
+    }
+]

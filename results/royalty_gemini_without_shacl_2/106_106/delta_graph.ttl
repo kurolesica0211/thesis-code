@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alphonse_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Eugenie_de_Borbon_y_Vargas a :Woman ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Henri_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Carmen_Franco_1st_Duchess_of_Franco a :Woman ;
+    :hasFather data:Francisco_Franco .
+
+data:Emmanuelle_de_Dampierre a :Woman .
+
+data:Francisco_Franco a :Man .
+
+data:Francisco_de_Borbon a :Man ;
+    :hasFather data:Alfonso_de_Borbon_Duke_of_Anjou_and_Cadiz ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man .
+
+data:Victor_Vargas a :Man .
+
+data:Alfonso_de_Borbon_Duke_of_Anjou_and_Cadiz a :Man ;
+    :hasFather data:Infante_Jaime_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman ;
+    :hasMother data:Carmen_Franco_1st_Duchess_of_Franco .
+
+data:Louis_Alphonse_de_Bourbon a :Man ;
+    :hasBirthYear "1974"^^xsd:positiveInteger ;
+    :hasBrother data:Francisco_de_Borbon ;
+    :hasFather data:Alfonso_de_Borbon_Duke_of_Anjou_and_Cadiz ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Maria_Margarita_Vargas_Santaella a :Woman ;
+    :hasFather data:Victor_Vargas .
+

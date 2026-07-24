@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
+        :Woman ;
+    :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+        data:George_III_of_the_United_Kingdom ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Maximilian_of_Baden .
+
+data:Napoleon_III_of_France a :Man,
+        :Person .
+
+data:Charlotte_of_Mecklenburg-Strelitz a :Person,
+        :Woman .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person .
+
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person .
+
+data:Louise_of_Hesse-Kassel a :Person,
+        :Woman .
+
+data:Maria_Maximilianovna_of_Leuchtenberg a :Person,
+        :Woman .
+
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Wilhelm_of_Baden ;
+    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .
+
+data:Princess_Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse-Kassel .
+
+data:Wilhelm_of_Baden a :Man,
+        :Person .
+

@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Chantal_de_Chevron-Villette a :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2005 ;
+    :hasRelation data:Chantal_de_Chevron-Villette,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Chantal_de_Chevron-Villette ;
+    :isBloodrelationOf data:Chantal_de_Chevron-Villette ;
+    :isSiblingOf data:Chantal_de_Chevron-Villette ;
+    :isSisterOf data:Chantal_de_Chevron-Villette .
+
+data:Maria_Carolina_Zamoyska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Chantal_de_Chevron-Villette,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Carolina_Zamoyska ;
+    :hasSon data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Carolina_Zamoyska ;
+    :isMotherOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Carolina_Zamoyska ;
+    :isSisterOf data:Maria_Carolina_Zamoyska .
+
+data:Ranieri_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Chantal_de_Chevron-Villette,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Ferdinand_of_Bourbon-Two_Sicilies .
+
+data:Ferdinand_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 2008 ;
+    :hasFather data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Maria_Carolina_Zamoyska ;
+    :hasParent data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Chantal_de_Chevron-Villette,
+        data:Ferdinand_of_Bourbon-Two_Sicilies,
+        data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Maria_Carolina_Zamoyska,
+        data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :knownAs "Ferdinando Maria Andrea Alfonso Marcus"^^xsd:string .
+

@@ -1,0 +1,303 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria-Olympia a :Woman ;
+    :hasRelation data:Maria-Olympia ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia ;
+    :isSiblingOf data:Maria-Olympia ;
+    :isSisterOf data:Maria-Olympia .
+
+data:Sofia a :Woman ;
+    :hasRelation data:Sofia ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Carlos_Javier_Morales_Quintana a :Man ;
+    :hasBrother data:Carlos_Javier_Morales_Quintana ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Carlos_Javier_Morales_Quintana ;
+    :isBrotherOf data:Carlos_Javier_Morales_Quintana ;
+    :isSiblingOf data:Carlos_Javier_Morales_Quintana .
+
+data:Mafalda a :Woman ;
+    :hasAncestor data:Kyril,
+        data:Simeon_of_Bulgaria ;
+    :hasMother data:Kyril ;
+    :hasParent data:Kyril ;
+    :hasRelation data:Kyril,
+        data:Mafalda,
+        data:Simeon_of_Bulgaria ;
+    :hasSister data:Mafalda ;
+    :isBloodrelationOf data:Mafalda ;
+    :isChildOf data:Kyril ;
+    :isDaughterOf data:Kyril ;
+    :isSiblingOf data:Mafalda ;
+    :isSisterOf data:Mafalda .
+
+data:Simeon_of_Bulgaria a :Ancestor,
+        :Man ;
+    :hasBrother data:Simeon_of_Bulgaria ;
+    :hasChild data:Kyril ;
+    :hasDaughter data:Kyril ;
+    :hasRelation data:Kyril,
+        data:Mafalda,
+        data:Simeon_of_Bulgaria ;
+    :hasSon data:Kyril ;
+    :isAncestorOf data:Kyril,
+        data:Mafalda ;
+    :isBloodrelationOf data:Simeon_of_Bulgaria ;
+    :isBrotherOf data:Simeon_of_Bulgaria ;
+    :isFatherOf data:Kyril ;
+    :isParentOf data:Kyril ;
+    :isSiblingOf data:Simeon_of_Bulgaria ;
+    :isUncleOf data:Kyril .
+
+data:Kyril a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasAncestor data:Simeon_of_Bulgaria ;
+    :hasBrother data:Kyril ;
+    :hasChild data:Mafalda ;
+    :hasDaughter data:Mafalda ;
+    :hasFather data:Simeon_of_Bulgaria ;
+    :hasParent data:Simeon_of_Bulgaria ;
+    :hasRelation data:Kyril,
+        data:Mafalda,
+        data:Simeon_of_Bulgaria ;
+    :hasSister data:Kyril ;
+    :isAncestorOf data:Mafalda ;
+    :isAuntOf data:Mafalda ;
+    :isBloodrelationOf data:Kyril ;
+    :isBrotherOf data:Kyril ;
+    :isChildOf data:Simeon_of_Bulgaria ;
+    :isDaughterOf data:Simeon_of_Bulgaria ;
+    :isMotherOf data:Mafalda ;
+    :isParentOf data:Mafalda ;
+    :isSiblingOf data:Kyril ;
+    :isSisterOf data:Kyril ;
+    :isSonOf data:Simeon_of_Bulgaria .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasDaughter data:Alexia,
+        data:Theodora ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isParentOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Alexia,
+        data:Pavlos,
+        data:Theodora .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasDaughter data:Alexia,
+        data:Theodora ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie,
+        data:Ingrid ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isAuntOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Ingrid ;
+    :isMotherOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isParentOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSiblingOf data:Anne-Marie,
+        data:Ingrid ;
+    :isSisterOf data:Anne-Marie,
+        data:Ingrid .
+
+data:Ingrid a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasDaughter data:Alexia,
+        data:Theodora ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie,
+        data:Ingrid ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isAuntOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Ingrid ;
+    :isMotherOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isParentOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSiblingOf data:Anne-Marie,
+        data:Ingrid ;
+    :isSisterOf data:Anne-Marie,
+        data:Ingrid .
+
+data:Alexia a :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie,
+        data:Ingrid ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Pavlos,
+        data:Theodora .
+
+data:Pavlos a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie,
+        data:Ingrid ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid .
+
+data:Theodora a :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie,
+        data:Ingrid ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Ingrid,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II,
+        data:Ingrid ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Pavlos,
+        data:Theodora .
+

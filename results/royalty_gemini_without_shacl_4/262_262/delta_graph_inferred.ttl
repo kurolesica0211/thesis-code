@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Georg_von_Habsburg a :Man ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:Georg_von_Habsburg ;
+    :hasMarriageYear 1997 ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Georg_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg .
+
+data:Ilka_of_Ortenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Eilika_of_Oldenburg ;
+    :hasDaughter data:Eilika_of_Oldenburg ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Ilka_of_Ortenburg ;
+    :isAncestorOf data:Eilika_of_Oldenburg ;
+    :isAuntOf data:Eilika_of_Oldenburg ;
+    :isBloodrelationOf data:Ilka_of_Ortenburg ;
+    :isMotherOf data:Eilika_of_Oldenburg ;
+    :isParentOf data:Eilika_of_Oldenburg ;
+    :isSiblingOf data:Ilka_of_Ortenburg ;
+    :isSisterOf data:Ilka_of_Ortenburg .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Woman ;
+    :hasChild data:Johann_of_Oldenburg ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasSon data:Johann_of_Oldenburg ;
+    :isAncestorOf data:Eilika_of_Oldenburg,
+        data:Johann_of_Oldenburg ;
+    :isAuntOf data:Johann_of_Oldenburg ;
+    :isBloodrelationOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isMotherOf data:Johann_of_Oldenburg ;
+    :isParentOf data:Johann_of_Oldenburg ;
+    :isSiblingOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Nikolaus_of_Oldenburg ;
+    :hasChild data:Johann_of_Oldenburg ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSon data:Johann_of_Oldenburg ;
+    :isAncestorOf data:Eilika_of_Oldenburg,
+        data:Johann_of_Oldenburg ;
+    :isBloodrelationOf data:Nikolaus_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus_of_Oldenburg ;
+    :isFatherOf data:Johann_of_Oldenburg ;
+    :isParentOf data:Johann_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus_of_Oldenburg ;
+    :isUncleOf data:Johann_of_Oldenburg .
+
+data:Eilika_of_Oldenburg a :Woman ;
+    :hasAncestor data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Johann_of_Oldenburg ;
+    :hasMother data:Ilka_of_Ortenburg ;
+    :hasParent data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Eilika_of_Oldenburg ;
+    :isBloodrelationOf data:Eilika_of_Oldenburg ;
+    :isChildOf data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg ;
+    :isDaughterOf data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg ;
+    :isSiblingOf data:Eilika_of_Oldenburg ;
+    :isSisterOf data:Eilika_of_Oldenburg .
+
+data:Johann_of_Oldenburg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasBrother data:Johann_of_Oldenburg ;
+    :hasChild data:Eilika_of_Oldenburg ;
+    :hasDaughter data:Eilika_of_Oldenburg ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasRelation data:Eilika_of_Oldenburg,
+        data:Georg_von_Habsburg,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Eilika_of_Oldenburg ;
+    :isBloodrelationOf data:Johann_of_Oldenburg ;
+    :isBrotherOf data:Johann_of_Oldenburg ;
+    :isChildOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isFatherOf data:Eilika_of_Oldenburg ;
+    :isParentOf data:Eilika_of_Oldenburg ;
+    :isSiblingOf data:Johann_of_Oldenburg ;
+    :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isUncleOf data:Eilika_of_Oldenburg .
+

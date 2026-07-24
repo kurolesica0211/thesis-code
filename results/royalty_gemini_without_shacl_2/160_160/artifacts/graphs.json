@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CecilieOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDaughter data:JohannaOfHesse ;\n    :hasDeathYear 1937 ;\n    :hasFather data:AndrewOfGreeceAndDenmark ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:AliceOfBattenberg ;\n    :hasRelation data:GeorgDonatusHereditaryGrandDukeOfHesse ;\n    :hasSon data:AlexanderOfHesse,\n        data:LudwigOfHesse ;\n    :isSiblingOf data:MargaritaOfGreeceAndDenmark,\n        data:PhilipOfGreeceAndDenmark,\n        data:SophieOfGreeceAndDenmark,\n        data:TheodoraOfGreeceAndDenmark .\n\ndata:AlexanderOfHesse a :Man,\n        :Person .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman .\n\ndata:AndrewOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:GeorgDonatusHereditaryGrandDukeOfHesse a :Man,\n        :Person .\n\ndata:JohannaOfHesse a :Person,\n        :Woman .\n\ndata:LudwigOfHesse a :Man,\n        :Person .\n\ndata:MargaritaOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:PhilipOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:SophieOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:TheodoraOfGreeceAndDenmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CecilieOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDaughter data:JohannaOfHesse ;\n    :hasDeathYear 1937 ;\n    :hasFather data:AndrewOfGreeceAndDenmark ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:AliceOfBattenberg ;\n    :hasRelation data:GeorgDonatusHereditaryGrandDukeOfHesse ;\n    :hasSon data:AlexanderOfHesse,\n        data:LudwigOfHesse ;\n    :isSiblingOf data:MargaritaOfGreeceAndDenmark,\n        data:PhilipOfGreeceAndDenmark,\n        data:SophieOfGreeceAndDenmark,\n        data:TheodoraOfGreeceAndDenmark .\n\ndata:AlexanderOfHesse a :Man,\n        :Person .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman .\n\ndata:AndrewOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:GeorgDonatusHereditaryGrandDukeOfHesse a :Man,\n        :Person .\n\ndata:JohannaOfHesse a :Person,\n        :Woman .\n\ndata:LudwigOfHesse a :Man,\n        :Person .\n\ndata:MargaritaOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:PhilipOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:SophieOfGreeceAndDenmark a :Person,\n        :Woman .\n\ndata:TheodoraOfGreeceAndDenmark a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Constantine_I a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Philippe_Comte_de_Paris a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Helene_of_Orleans .
+
+data:Prince_Amedeo_1st_Duke_of_Aosta a :Man,
+        :Person ;
+    :isFatherOf data:Emanuele_Filiberto_Duke_of_Aosta .
+
+data:Prince_Amedeo_Duke_of_Aosta_1943 a :Man,
+        :Person ;
+    :isSonOf data:Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi a :Man,
+        :Person .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Helene_of_Orleans .
+
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Vittoria_dal_Pozzo_Principessa_della_Cisterna a :Person,
+        :Woman ;
+    :isMotherOf data:Emanuele_Filiberto_Duke_of_Aosta .
+
+data:Aimone_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Helene_of_Orleans ;
+    :hasRelation data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Emanuele_Filiberto_Duke_of_Aosta .
+
+data:Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Emanuele_Filiberto_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Princess_Helene_of_Orleans a :Person,
+        :Woman .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+

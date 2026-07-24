@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gabriela_von_Habsburg a :Person,\n        :Woman ;\n    :hasAncestor data:Charles_I ;\n    :hasBirthYear 1956 ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Regina_von_Sachsen_Meiningen ;\n    :hasRelation data:Christian_Meister ;\n    :hasSex data:Female .\n\ndata:Charles_I a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Christian_Meister a :Man,\n        :Person ;\n    :hasBirthYear 1954 .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_von_Sachsen_Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gabriela_von_Habsburg a :Person,\n        :Woman ;\n    :hasAncestor data:Charles_I ;\n    :hasBirthYear 1956 ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Regina_von_Sachsen_Meiningen ;\n    :hasRelation data:Christian_Meister ;\n    :hasSex data:Female .\n\ndata:Charles_I a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Christian_Meister a :Man,\n        :Person ;\n    :hasBirthYear 1954 .\n\ndata:Female a :Sex .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_von_Sachsen_Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gabriela_von_Habsburg a :Person,\n        :Woman ;\n    :hasAncestor data:Charles_I ;\n    :hasBirthYear 1956 ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Regina_von_Sachsen_Meiningen ;\n    :hasRelation data:Christian_Meister ;\n    :hasSex data:Female .\n\ndata:Charles_I a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Christian_Meister a :Man,\n        :Person ;\n    :hasBirthYear 1954 .\n\ndata:Female a :Sex .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_von_Sachsen_Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Norton_Louis_Philip_Knatchbull a :Man ;
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasRelation data:Penelope_Meredith_Eastwood .
+
+data:Louis_Mountbatten a :Man ;
+    :hasDeathYear 1979 .
+
+data:Marian_Elizabeth a :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2020 .
+
+data:Nicholas_Knatchbull a :Man ;
+    :hasDeathYear 1979 ;
+    :hasFather data:John_Knatchbull ;
+    :hasMother data:Patricia_Knatchbull .
+
+data:Penelope_Meredith_Eastwood a :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth .
+
+data:Reginald_Wray_Frank_Eastwood a :Man ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1980 .
+
+data:Doreen_Knatchbull a :Woman ;
+    :hasDeathYear 1979 .
+
+data:John_Knatchbull a :Man ;
+    :hasFather data:Doreen_Knatchbull .
+
+data:Patricia_Knatchbull a :Woman ;
+    :hasMother data:Louis_Mountbatten .
+

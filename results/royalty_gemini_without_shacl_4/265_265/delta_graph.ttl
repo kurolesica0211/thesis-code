@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte a :Person,
+        :Woman ;
+    :hasFather data:William ;
+    :hasMother data:CatherineMiddleton .
+
+data:George a :Man,
+        :Person ;
+    :hasFather data:William ;
+    :hasMother data:CatherineMiddleton .
+
+data:Louis a :Man,
+        :Person ;
+    :hasFather data:William ;
+    :hasMother data:CatherineMiddleton .
+
+data:CharlesSpencer a :Man,
+        :Person .
+
+data:ElizabethII a :Person,
+        :Woman .
+
+data:Harry a :Man,
+        :Person ;
+    :hasFather data:CharlesIII ;
+    :hasMother data:Diana .
+
+data:Philip a :Man,
+        :Person .
+
+data:CharlesIII a :Man,
+        :Person ;
+    :hasFather data:Philip ;
+    :hasMother data:ElizabethII .
+
+data:Diana a :Person,
+        :Woman ;
+    :isSiblingOf data:CharlesSpencer .
+
+data:CatherineMiddleton a :Person,
+        :Woman .
+
+data:William a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:CharlesIII ;
+    :hasMother data:Diana ;
+    :isSiblingOf data:Harry .
+

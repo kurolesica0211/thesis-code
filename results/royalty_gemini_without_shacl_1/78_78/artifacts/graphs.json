@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ashley_Louis_David_Hicks a :Man,\n        :Person ;\n    :hasAncestor data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMarriageYear 1990,\n        2015 ;\n    :hasMother data:Lady_Pamela_Hicks ;\n    :hasSex data:Male ;\n    :hasSister data:Edwina_Brudenell,\n        data:India_Hicks .\n\ndata:Kathryn_Sharkey a :Person,\n        :Woman ;\n    :hasFather data:William_T_Sharkey ;\n    :hasMother data:Rosalie_Solis .\n\ndata:Marina_Allegra_Federica_Silvia_Tondato a :Person,\n        :Woman ;\n    :hasFather data:Dr_Carlo_Tondato ;\n    :hasMother data:Rosy_Maza .\n\ndata:David_Nightingale_Hicks a :Man,\n        :Person .\n\ndata:Dr_Carlo_Tondato a :Man,\n        :Person .\n\ndata:Edwina_Brudenell a :Person,\n        :Woman .\n\ndata:India_Hicks a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Rosalie_Solis a :Person,\n        :Woman .\n\ndata:Rosy_Maza a :Person,\n        :Woman .\n\ndata:William_T_Sharkey a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ashley_Louis_David_Hicks a :Man,\n        :Person ;\n    :hasAncestor data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMarriageYear 1990,\n        2015 ;\n    :hasMother data:Lady_Pamela_Hicks ;\n    :hasSex data:Male ;\n    :hasSister data:Edwina_Brudenell,\n        data:India_Hicks .\n\ndata:Kathryn_Sharkey a :Person,\n        :Woman ;\n    :hasFather data:William_T_Sharkey ;\n    :hasMother data:Rosalie_Solis .\n\ndata:Marina_Allegra_Federica_Silvia_Tondato a :Person,\n        :Woman ;\n    :hasFather data:Dr_Carlo_Tondato ;\n    :hasMother data:Rosy_Maza .\n\ndata:David_Nightingale_Hicks a :Man,\n        :Person .\n\ndata:Dr_Carlo_Tondato a :Man,\n        :Person .\n\ndata:Edwina_Brudenell a :Person,\n        :Woman .\n\ndata:India_Hicks a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Rosalie_Solis a :Person,\n        :Woman .\n\ndata:Rosy_Maza a :Person,\n        :Woman .\n\ndata:William_T_Sharkey a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ashley_Louis_David_Hicks a :Man,\n        :Person ;\n    :hasAncestor data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;\n    :hasBirthYear 1963 ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMarriageYear 1990,\n        2015 ;\n    :hasMother data:Lady_Pamela_Hicks ;\n    :hasSex data:Male ;\n    :hasSister data:Edwina_Brudenell,\n        data:India_Hicks .\n\ndata:Kathryn_Sharkey a :Person,\n        :Woman ;\n    :hasFather data:William_T_Sharkey ;\n    :hasMother data:Rosalie_Solis .\n\ndata:Marina_Allegra_Federica_Silvia_Tondato a :Person,\n        :Woman ;\n    :hasFather data:Dr_Carlo_Tondato ;\n    :hasMother data:Rosy_Maza .\n\ndata:David_Nightingale_Hicks a :Man,\n        :Person .\n\ndata:Dr_Carlo_Tondato a :Man,\n        :Person .\n\ndata:Edwina_Brudenell a :Person,\n        :Woman .\n\ndata:India_Hicks a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Rosalie_Solis a :Person,\n        :Woman .\n\ndata:Rosy_Maza a :Person,\n        :Woman .\n\ndata:William_T_Sharkey a :Man,\n        :Person .\n\n"
+    }
+]

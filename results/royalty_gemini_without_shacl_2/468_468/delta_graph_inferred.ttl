@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alois-Konstantin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alois-Konstantin ;
+    :hasChild data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :hasRelation data:Alois-Konstantin,
+        data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :hasSon data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isAncestorOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isBloodrelationOf data:Alois-Konstantin ;
+    :isBrotherOf data:Alois-Konstantin ;
+    :isFatherOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isParentOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isSiblingOf data:Alois-Konstantin ;
+    :isUncleOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria .
+
+data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria a :Man,
+        :Person ;
+    :hasAncestor data:Alois-Konstantin ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Alois-Konstantin ;
+    :hasParent data:Alois-Konstantin ;
+    :hasRelation data:Alois-Konstantin,
+        data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isBloodrelationOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isBrotherOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isChildOf data:Alois-Konstantin ;
+    :isSiblingOf data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria ;
+    :isSonOf data:Alois-Konstantin ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
+

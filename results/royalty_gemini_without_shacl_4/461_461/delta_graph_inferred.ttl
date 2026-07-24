@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria a :Woman ;
+    :hasRelation data:Armin_Prince_of_Lippe,
+        data:Princess_Maria,
+        data:Stephan_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSister data:Princess_Maria ;
+    :isBloodrelationOf data:Princess_Maria ;
+    :isSiblingOf data:Princess_Maria ;
+    :isSisterOf data:Princess_Maria .
+
+data:Armin_Prince_of_Lippe a :Ancestor,
+        :Man ;
+    :hasBrother data:Armin_Prince_of_Lippe ;
+    :hasChild data:Stephan_Prince_of_Lippe ;
+    :hasRelation data:Armin_Prince_of_Lippe,
+        data:Princess_Maria,
+        data:Stephan_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSon data:Stephan_Prince_of_Lippe ;
+    :isAncestorOf data:Stephan_Prince_of_Lippe ;
+    :isBloodrelationOf data:Armin_Prince_of_Lippe ;
+    :isBrotherOf data:Armin_Prince_of_Lippe ;
+    :isFatherOf data:Stephan_Prince_of_Lippe ;
+    :isParentOf data:Stephan_Prince_of_Lippe ;
+    :isSiblingOf data:Armin_Prince_of_Lippe ;
+    :isUncleOf data:Stephan_Prince_of_Lippe .
+
+data:Traute_Becker a :Ancestor,
+        :Woman ;
+    :hasChild data:Stephan_Prince_of_Lippe ;
+    :hasRelation data:Armin_Prince_of_Lippe,
+        data:Princess_Maria,
+        data:Stephan_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSister data:Traute_Becker ;
+    :hasSon data:Stephan_Prince_of_Lippe ;
+    :isAncestorOf data:Stephan_Prince_of_Lippe ;
+    :isAuntOf data:Stephan_Prince_of_Lippe ;
+    :isBloodrelationOf data:Traute_Becker ;
+    :isMotherOf data:Stephan_Prince_of_Lippe ;
+    :isParentOf data:Stephan_Prince_of_Lippe ;
+    :isSiblingOf data:Traute_Becker ;
+    :isSisterOf data:Traute_Becker .
+
+data:Stephan_Prince_of_Lippe a :Man ;
+    :hasAncestor data:Armin_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:Stephan_Prince_of_Lippe ;
+    :hasFather data:Armin_Prince_of_Lippe ;
+    :hasMother data:Traute_Becker ;
+    :hasParent data:Armin_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasRelation data:Armin_Prince_of_Lippe,
+        data:Princess_Maria,
+        data:Stephan_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :isBloodrelationOf data:Stephan_Prince_of_Lippe ;
+    :isBrotherOf data:Stephan_Prince_of_Lippe ;
+    :isChildOf data:Armin_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :isSiblingOf data:Stephan_Prince_of_Lippe ;
+    :isSonOf data:Armin_Prince_of_Lippe,
+        data:Traute_Becker .
+

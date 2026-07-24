@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarijaKara%C4%91or%C4%91evi%C4%87 a :Person,\n        :Woman ;\n    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:DanicaMarinkovi%C4%87 .\n\ndata:StefanKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:DanicaMarinkovi%C4%87 .\n\ndata:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:MariaDaGloria a :Person,\n        :Woman .\n\ndata:PeterKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:PhilipKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:MariaDaGloria ;\n    :hasRelation data:DanicaMarinkovi%C4%87 ;\n    :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87 .\n\ndata:DanicaMarinkovi%C4%87 a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MarijaKara%C4%91or%C4%91evi%C4%87 a :Person,\n        :Woman ;\n    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:DanicaMarinkovi%C4%87 .\n\ndata:StefanKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMother data:DanicaMarinkovi%C4%87 .\n\ndata:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:MariaDaGloria a :Person,\n        :Woman .\n\ndata:PeterKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person .\n\ndata:PhilipKara%C4%91or%C4%91evi%C4%87 a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:MariaDaGloria ;\n    :hasRelation data:DanicaMarinkovi%C4%87 ;\n    :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87 .\n\ndata:DanicaMarinkovi%C4%87 a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman ;
+    :hasRelation data:Diana_Princess_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :isBloodrelationOf data:Diana_Princess_of_Wales ;
+    :isSiblingOf data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Diana_Princess_of_Wales .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Meghan_Duchess_of_Sussex a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :hasDaughter data:Lilibet_Diana_Mountbatten-Windsor ;
+    :hasRelation data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Archie,
+        data:Prince_Harry ;
+    :hasSister data:Meghan_Duchess_of_Sussex ;
+    :hasSon data:Prince_Archie ;
+    :isAncestorOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isAuntOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isBloodrelationOf data:Meghan_Duchess_of_Sussex ;
+    :isMotherOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isParentOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isSiblingOf data:Meghan_Duchess_of_Sussex ;
+    :isSisterOf data:Meghan_Duchess_of_Sussex .
+
+data:Prince_Harry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Harry ;
+    :hasChild data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :hasDaughter data:Lilibet_Diana_Mountbatten-Windsor ;
+    :hasRelation data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Archie,
+        data:Prince_Harry ;
+    :hasSon data:Prince_Archie ;
+    :isAncestorOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isBloodrelationOf data:Prince_Harry ;
+    :isBrotherOf data:Prince_Harry ;
+    :isFatherOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isParentOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isSiblingOf data:Prince_Harry ;
+    :isUncleOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie .
+
+data:Lilibet_Diana_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :alsoKnownAs "Lilibet"^^xsd:string ;
+    :hasAncestor data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :hasBirthYear 2021 ;
+    :hasBrother data:Prince_Archie ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :hasParent data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :hasRelation data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Archie,
+        data:Prince_Harry ;
+    :hasSister data:Lilibet_Diana_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isChildOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :isDaughterOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :isSiblingOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isSisterOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :knownAs "Princess Lilibet of Sussex"^^xsd:string .
+
+data:Prince_Archie a :Man,
+        :Person ;
+    :hasAncestor data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :hasBrother data:Prince_Archie ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :hasParent data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :hasRelation data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Archie,
+        data:Prince_Harry ;
+    :hasSister data:Lilibet_Diana_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isBrotherOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isChildOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry ;
+    :isSiblingOf data:Lilibet_Diana_Mountbatten-Windsor,
+        data:Prince_Archie ;
+    :isSonOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry .
+

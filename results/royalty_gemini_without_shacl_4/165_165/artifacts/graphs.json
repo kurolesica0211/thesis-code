@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jean-Charles_Ullens_de_Schooten_Whettnall a :Man .\n\ndata:Countess_Leonore_of_Orange-Nassau a :Woman ;\n    :hasBirthYear \"2006-06-03\"^^xsd:date ;\n    :hasFather data:Prince_Constantijn_of_the_Netherlands ;\n    :hasMother data:Princess_Laurentien_of_the_Netherlands .\n\ndata:Juliana_Guillermo a :Woman .\n\ndata:Marius_Brinkhorst a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Alexia a :Woman .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Queen_Maxima a :Woman .\n\ndata:Prince_Constantijn_of_the_Netherlands a :Man .\n\ndata:Princess_Laurentien_of_the_Netherlands a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jean-Charles_Ullens_de_Schooten_Whettnall a :Man .\n\ndata:Countess_Leonore_of_Orange-Nassau a :Woman ;\n    :hasBirthYear \"2006-06-03\"^^xsd:date ;\n    :hasFather data:Prince_Constantijn_of_the_Netherlands ;\n    :hasMother data:Princess_Laurentien_of_the_Netherlands .\n\ndata:Juliana_Guillermo a :Woman .\n\ndata:Marius_Brinkhorst a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Princess_Alexia a :Woman .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Queen_Maxima a :Woman .\n\ndata:Prince_Constantijn_of_the_Netherlands a :Man .\n\ndata:Princess_Laurentien_of_the_Netherlands a :Woman .\n\n"
+    }
+]

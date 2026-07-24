@@ -1,0 +1,266 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederikX a :Man,
+        :Person ;
+    :hasBrother data:FrederikX ;
+    :hasRelation data:FrederikX ;
+    :isBloodrelationOf data:FrederikX ;
+    :isBrotherOf data:FrederikX ;
+    :isSiblingOf data:FrederikX .
+
+data:HenrikSr a :Man,
+        :Person ;
+    :hasBrother data:HenrikSr ;
+    :hasRelation data:HenrikSr ;
+    :isBloodrelationOf data:HenrikSr ;
+    :isBrotherOf data:HenrikSr ;
+    :isSiblingOf data:HenrikSr .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasRelation data:MargretheII ;
+    :hasSister data:MargretheII ;
+    :isBloodrelationOf data:MargretheII ;
+    :isSiblingOf data:MargretheII ;
+    :isSisterOf data:MargretheII .
+
+data:Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Felix,
+        data:Nikolai ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:Alexandra ;
+    :hasSon data:Felix,
+        data:Nikolai ;
+    :isAncestorOf data:Felix,
+        data:Nikolai ;
+    :isAuntOf data:Felix,
+        data:Nikolai ;
+    :isBloodrelationOf data:Alexandra ;
+    :isMotherOf data:Felix,
+        data:Nikolai ;
+    :isParentOf data:Felix,
+        data:Nikolai ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+
+data:MarieCavallier a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Athena,
+        data:HenrikJr ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:MarieCavallier ;
+    :hasSon data:HenrikJr ;
+    :isAncestorOf data:Athena,
+        data:HenrikJr ;
+    :isAuntOf data:Athena,
+        data:HenrikJr ;
+    :isBloodrelationOf data:MarieCavallier ;
+    :isMotherOf data:Athena,
+        data:HenrikJr ;
+    :isParentOf data:Athena,
+        data:HenrikJr ;
+    :isSiblingOf data:MarieCavallier ;
+    :isSisterOf data:MarieCavallier .
+
+data:Joachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Joachim ;
+    :hasChild data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSon data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isAncestorOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isBloodrelationOf data:Joachim ;
+    :isBrotherOf data:Joachim ;
+    :isFatherOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isParentOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isSiblingOf data:Joachim ;
+    :isUncleOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai .
+
+data:Athena a :Person,
+        :Woman ;
+    :hasAncestor data:Joachim,
+        data:MarieCavallier ;
+    :hasBrother data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:MarieCavallier ;
+    :hasParent data:Joachim,
+        data:MarieCavallier ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isChildOf data:Joachim,
+        data:MarieCavallier ;
+    :isDaughterOf data:Joachim,
+        data:MarieCavallier ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isSisterOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai .
+
+data:Felix a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra,
+        data:Joachim ;
+    :hasBrother data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra ;
+    :hasParent data:Alexandra,
+        data:Joachim ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isChildOf data:Alexandra,
+        data:Joachim ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isSonOf data:Alexandra,
+        data:Joachim .
+
+data:HenrikJr a :Man,
+        :Person ;
+    :hasAncestor data:Joachim,
+        data:MarieCavallier ;
+    :hasBrother data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:MarieCavallier ;
+    :hasParent data:Joachim,
+        data:MarieCavallier ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isChildOf data:Joachim,
+        data:MarieCavallier ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isSonOf data:Joachim,
+        data:MarieCavallier .
+
+data:Nikolai a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra,
+        data:Joachim ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra ;
+    :hasParent data:Alexandra,
+        data:Joachim ;
+    :hasRelation data:Alexandra,
+        data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Joachim,
+        data:MarieCavallier,
+        data:Nikolai ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isChildOf data:Alexandra,
+        data:Joachim ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:HenrikJr,
+        data:Nikolai ;
+    :isSonOf data:Alexandra,
+        data:Joachim .
+

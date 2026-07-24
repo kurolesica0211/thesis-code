@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_Mecklenburg-Schwerin a :Man ;\n    :hasBirthYear 1873 ;\n    :hasBrother data:John_Albert_Mecklenburg-Schwerin ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_Schwarzburg-Rudolstadt .\n\ndata:Elisabeth_Stolberg-Rossla a :Woman .\n\ndata:Viktoria_Feodora_Reuss-Schleiz a :Woman ;\n    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;\n    :hasMother data:Elise_Hohenlohe-Langenburg .\n\ndata:Elise_Hohenlohe-Langenburg a :Woman .\n\ndata:Frederick_Francis_II_Mecklenburg-Schwerin a :Man .\n\ndata:Heinrich_XXVII_Reuss_Younger_Line a :Man .\n\ndata:John_Albert_Mecklenburg-Schwerin a :Man .\n\ndata:Marie_Schwarzburg-Rudolstadt a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_Mecklenburg-Schwerin a :Man ;\n    :hasBirthYear 1873 ;\n    :hasBrother data:John_Albert_Mecklenburg-Schwerin ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_Mecklenburg-Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_Schwarzburg-Rudolstadt .\n\ndata:Elisabeth_Stolberg-Rossla a :Woman .\n\ndata:Viktoria_Feodora_Reuss-Schleiz a :Woman ;\n    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;\n    :hasMother data:Elise_Hohenlohe-Langenburg .\n\ndata:Elise_Hohenlohe-Langenburg a :Woman .\n\ndata:Frederick_Francis_II_Mecklenburg-Schwerin a :Man .\n\ndata:Heinrich_XXVII_Reuss_Younger_Line a :Man .\n\ndata:John_Albert_Mecklenburg-Schwerin a :Man .\n\ndata:Marie_Schwarzburg-Rudolstadt a :Woman .\n\n"
+    }
+]

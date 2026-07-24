@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/457_457",
+  "text_file": "Q7562997.txt",
+  "text_key": "Q7562997",
+  "article": "https://en.wikipedia.org/wiki/Sophie_Habsburg",
+  "article_key": "Sophie Habsburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Archduchess_Sophie-_Princess_of_Windisch-Graetz",
+    "qid": "Q7562997",
+    "label": "Archduchess Sophie, Princess of Windisch-Graetz"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Archduchess_Sophie-_Princess_of_Windisch-Graetz",
+      "qid": "Q7562997",
+      "label": "Archduchess Sophie, Princess of Windisch-Graetz",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Archduchess_Helene-_Archduchess_Ferdinand_of_Austria",
+      "qid": "Q23659419",
+      "label": "Archduchess Helene, Archduchess Ferdinand of Austria",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Helene_of_Torring-Jettenbach",
+      "extracted_local_name": "Helene_of_Torring-Jettenbach",
+      "embedding_text": "Helene of Torring-Jettenbach",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8928571428571429,
+      "ground_truth_uri": "http://example.com/data#Archduchess_Helene-_Archduchess_Ferdinand_of_Austria",
+      "ground_truth_qid": "Q23659419",
+      "ground_truth_label": "Archduchess Helene, Archduchess Ferdinand of Austria",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helene zu Törring-Jettenbach",
+      "best_candidate_label": "Archduchess Helene, Archduchess Ferdinand of Austria",
+      "best_candidate_qid": "Q23659419",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8928571428571429
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sophie_Habsburg",
+      "extracted_local_name": "Sophie_Habsburg",
+      "embedding_text": "Sophie Habsburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8125,
+      "ground_truth_uri": "http://example.com/data#Archduchess_Sophie-_Princess_of_Windisch-Graetz",
+      "ground_truth_qid": "Q7562997",
+      "ground_truth_label": "Archduchess Sophie, Princess of Windisch-Graetz",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofia de Habsburg",
+      "best_candidate_label": "Archduchess Sophie, Princess of Windisch-Graetz",
+      "best_candidate_qid": "Q7562997",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8125
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexis_Ferdinand",
+      "extracted_local_name": "Alexis_Ferdinand",
+      "embedding_text": "Alexis Ferdinand",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Archduchess Helene- Archduchess Ferdinand of Austria",
+      "best_candidate_label": "Archduchess Helene, Archduchess Ferdinand of Austria",
+      "best_candidate_qid": "Q23659419",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4117647058823529
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ferdinand_Karl_Max_of_Austria",
+      "extracted_local_name": "Ferdinand_Karl_Max_of_Austria",
+      "embedding_text": "Ferdinand Karl Max of Austria",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sophie Franziska Maria Germaine Habsburg",
+      "best_candidate_label": "Archduchess Sophie, Princess of Windisch-Graetz",
+      "best_candidate_qid": "Q7562997",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34782608695652173
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mariano_Hugo_of_Windisch-Graetz",
+      "extracted_local_name": "Mariano_Hugo_of_Windisch-Graetz",
+      "embedding_text": "Mariano Hugo of Windisch-Graetz",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sophie Franziska Maria Germaine Erzherzogin von Österreich",
+      "best_candidate_label": "Archduchess Sophie, Princess of Windisch-Graetz",
+      "best_candidate_qid": "Q7562997",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.29213483146067415
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

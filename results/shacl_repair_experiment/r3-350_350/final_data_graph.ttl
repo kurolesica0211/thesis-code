@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Man .
+
+data:Alfonso_XII_of_Spain a :Man .
+
+data:Princess_Fran%C3%A7oise a :Woman .
+
+data:Princess_Mariam a :Woman .
+
+data:Princess_Monique a :Woman .
+
+data:Princess_Nuria a :Woman .
+
+data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
+        :Woman ;
+    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro .
+
+data:Fran%C3%A7oise_Cazaudehore a :Woman ;
+    :hasRelation data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro a :Ancestor,
+        :Man .
+
+data:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain a :Ancestor,
+        :Woman ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria .
+
+data:Kristine_Dzidziguri a :Woman ;
+    :hasRelation data:Prince_Juan_Jorge_de_Bagration-Mukhrani .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man .
+
+data:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasMarriageYear 2014 ;
+    :hasMother data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves ;
+    :hasRelation data:Kristine_Dzidziguri .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain ;
+    :hasRelation data:Fran%C3%A7oise_Cazaudehore .
+

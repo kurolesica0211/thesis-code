@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmEitelFriedrichOfPrussia a :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:WilhelmIIOfGermany ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:AugustaViktoriaOfSchleswigHolstein ;
+    :hasRelation data:SophiaCharlotteOfOldenburg .
+
+data:AugustaViktoriaOfSchleswigHolstein a :Person,
+        :Woman .
+
+data:SophiaCharlotteOfOldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1964 .
+
+data:WilhelmIIOfGermany a :Man,
+        :Person .
+

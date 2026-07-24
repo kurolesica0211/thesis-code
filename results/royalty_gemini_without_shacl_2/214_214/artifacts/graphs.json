@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine-Alexios a :Man ;\n    :hasBirthYear 1998 ;\n    :isSonOf data:Anne-Marie,\n        data:Constantine-II,\n        data:Marie-Chantal,\n        data:Pavlos .\n\ndata:Marina a :Woman .\n\ndata:Sofia a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine-II a :Man .\n\ndata:Marie-Chantal a :Woman .\n\ndata:Pavlos a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine-Alexios a :Man ;\n    :hasBirthYear 1998 ;\n    :isSonOf data:Anne-Marie,\n        data:Constantine-II,\n        data:Marie-Chantal,\n        data:Pavlos .\n\ndata:Marina a :Woman .\n\ndata:Sofia a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine-II a :Man .\n\ndata:Marie-Chantal a :Woman .\n\ndata:Pavlos a :Man .\n\n"
+    }
+]

@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isAncestorOf data:Infante_Alfonso_of_Spain ;
+    :isBloodrelationOf data:King_Alfonso_XIII ;
+    :isBrotherOf data:King_Alfonso_XIII ;
+    :isSiblingOf data:King_Alfonso_XIII .
+
+data:Infanta_Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasBrother data:Infante_Juan_Count_of_Barcelona ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSister data:Infanta_Maria_Cristina_of_Spain ;
+    :isAuntOf data:Infante_Alfonso_of_Spain ;
+    :isBloodrelationOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona ;
+    :isSisterOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona .
+
+data:King_Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBloodrelationOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain .
+
+data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infante_Alfonso_of_Spain ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSister data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSon data:Infante_Alfonso_of_Spain ;
+    :isAncestorOf data:Infante_Alfonso_of_Spain ;
+    :isAuntOf data:Infante_Alfonso_of_Spain ;
+    :isBloodrelationOf data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isMotherOf data:Infante_Alfonso_of_Spain ;
+    :isParentOf data:Infante_Alfonso_of_Spain ;
+    :isSiblingOf data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Infante_Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Infante_Juan_Count_of_Barcelona ;
+    :hasChild data:Infante_Alfonso_of_Spain ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasSister data:Infanta_Maria_Cristina_of_Spain ;
+    :hasSon data:Infante_Alfonso_of_Spain ;
+    :isAncestorOf data:Infante_Alfonso_of_Spain ;
+    :isBloodrelationOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona ;
+    :isFatherOf data:Infante_Alfonso_of_Spain ;
+    :isParentOf data:Infante_Alfonso_of_Spain ;
+    :isSiblingOf data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona ;
+    :isUncleOf data:Infante_Alfonso_of_Spain .
+
+data:Infante_Alfonso_of_Spain a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasAncestor data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasParent data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Infanta_Maria_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:King_Alfonso_XIII,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isBloodrelationOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Infante_Alfonso_of_Spain,
+        data:King_Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon_Two_Sicilies .
+

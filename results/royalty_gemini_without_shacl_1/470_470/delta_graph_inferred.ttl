@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DorotheaVonSalviati a :Person,
+        :Woman ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :hasSister data:DorotheaVonSalviati ;
+    :isBloodrelationOf data:DorotheaVonSalviati ;
+    :isSiblingOf data:DorotheaVonSalviati ;
+    :isSisterOf data:DorotheaVonSalviati .
+
+data:LouisFerdinand a :Man,
+        :Person ;
+    :hasBrother data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :isBloodrelationOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :isBrotherOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :isSiblingOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia .
+
+data:DuchessCecilieOfMecklenburgSchwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceWilhelmOfPrussia ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :hasSister data:DuchessCecilieOfMecklenburgSchwerin ;
+    :hasSon data:PrinceWilhelmOfPrussia ;
+    :isAncestorOf data:PrinceWilhelmOfPrussia ;
+    :isAuntOf data:PrinceWilhelmOfPrussia ;
+    :isBloodrelationOf data:DuchessCecilieOfMecklenburgSchwerin ;
+    :isMotherOf data:PrinceWilhelmOfPrussia ;
+    :isParentOf data:PrinceWilhelmOfPrussia ;
+    :isSiblingOf data:DuchessCecilieOfMecklenburgSchwerin ;
+    :isSisterOf data:DuchessCecilieOfMecklenburgSchwerin .
+
+data:EmperorWilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:EmperorWilhelmII ;
+    :hasChild data:WilhelmCrownPrince ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :hasSon data:WilhelmCrownPrince ;
+    :isAncestorOf data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :isBloodrelationOf data:EmperorWilhelmII ;
+    :isBrotherOf data:EmperorWilhelmII ;
+    :isFatherOf data:WilhelmCrownPrince ;
+    :isParentOf data:WilhelmCrownPrince ;
+    :isSiblingOf data:EmperorWilhelmII ;
+    :isUncleOf data:WilhelmCrownPrince .
+
+data:WilhelmCrownPrince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EmperorWilhelmII ;
+    :hasBrother data:WilhelmCrownPrince ;
+    :hasChild data:PrinceWilhelmOfPrussia ;
+    :hasFather data:EmperorWilhelmII ;
+    :hasParent data:EmperorWilhelmII ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :hasSon data:PrinceWilhelmOfPrussia ;
+    :isAncestorOf data:PrinceWilhelmOfPrussia ;
+    :isBloodrelationOf data:WilhelmCrownPrince ;
+    :isBrotherOf data:WilhelmCrownPrince ;
+    :isChildOf data:EmperorWilhelmII ;
+    :isFatherOf data:PrinceWilhelmOfPrussia ;
+    :isParentOf data:PrinceWilhelmOfPrussia ;
+    :isSiblingOf data:WilhelmCrownPrince ;
+    :isSonOf data:EmperorWilhelmII ;
+    :isUncleOf data:PrinceWilhelmOfPrussia .
+
+data:PrinceWilhelmOfPrussia a :Man,
+        :Person ;
+    :hasAncestor data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:WilhelmCrownPrince ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :hasDeathYear 1940 ;
+    :hasFather data:WilhelmCrownPrince ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;
+    :hasParent data:DuchessCecilieOfMecklenburgSchwerin,
+        data:WilhelmCrownPrince ;
+    :hasRelation data:DorotheaVonSalviati,
+        data:DuchessCecilieOfMecklenburgSchwerin,
+        data:EmperorWilhelmII,
+        data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia,
+        data:WilhelmCrownPrince ;
+    :isBloodrelationOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :isBrotherOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :isChildOf data:DuchessCecilieOfMecklenburgSchwerin,
+        data:WilhelmCrownPrince ;
+    :isSiblingOf data:LouisFerdinand,
+        data:PrinceWilhelmOfPrussia ;
+    :isSonOf data:DuchessCecilieOfMecklenburgSchwerin,
+        data:WilhelmCrownPrince .
+

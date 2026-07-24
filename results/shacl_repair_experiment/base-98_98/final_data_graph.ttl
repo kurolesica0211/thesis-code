@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Prince_Haakon a :Man .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Johan_Friso a :Man .
+
+data:Princess_Beatrix a :Woman ;
+    :hasChild data:Prince_Claus,
+        data:Prince_Constantijn .
+
+data:Princess_Carolina_de_Bourbon_de_Parme a :Woman .
+
+data:Princess_Margriet a :Woman .
+
+data:Sophie_van_de_Wouw a :Woman .
+
+data:Prince_Claus a :Man ;
+    :hasChild data:Prince_Constantijn .
+
+data:Princess_Laurentien a :Ancestor,
+        :Woman ;
+    :hasChild data:Countess_Eloise_of_Orange-Nassau .
+
+data:Countess_Eloise_of_Orange-Nassau a :Woman ;
+    :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien .
+
+data:Prince_Constantijn a :Ancestor,
+        :Man ;
+    :hasChild data:Countess_Eloise_of_Orange-Nassau .
+

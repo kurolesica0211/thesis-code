@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Wilhelm_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1943 ;\n    :hasBrother data:Friedrich_Christian_of_Prussia ;\n    :hasFather data:Joachim_of_Prussia,\n        data:Karl_Franz_of_Prussia ;\n    :hasMother data:Henriette_von_Sch%C3%B6naich-Carolath .\n\ndata:Nadia_Nour_El_Etreby a :Person,\n        :Woman ;\n    :hasBirthYear 1949 .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Vladimir_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Maria_Vladimirovna_of_Russia .\n\ndata:Friedrich_Christian_of_Prussia a :Man,\n        :Person .\n\ndata:Henriette_von_Sch%C3%B6naich-Carolath a :Person,\n        :Woman .\n\ndata:Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Karl_Franz_of_Prussia a :Man,\n        :Person .\n\ndata:Maria_Vladimirovna_of_Russia a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Franz_Wilhelm_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1943 ;\n    :hasBrother data:Friedrich_Christian_of_Prussia ;\n    :hasFather data:Joachim_of_Prussia,\n        data:Karl_Franz_of_Prussia ;\n    :hasMother data:Henriette_von_Sch%C3%B6naich-Carolath .\n\ndata:Nadia_Nour_El_Etreby a :Person,\n        :Woman ;\n    :hasBirthYear 1949 .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Vladimir_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Maria_Vladimirovna_of_Russia .\n\ndata:Friedrich_Christian_of_Prussia a :Man,\n        :Person .\n\ndata:Henriette_von_Sch%C3%B6naich-Carolath a :Person,\n        :Woman .\n\ndata:Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Karl_Franz_of_Prussia a :Man,\n        :Person .\n\ndata:Maria_Vladimirovna_of_Russia a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    }
+]

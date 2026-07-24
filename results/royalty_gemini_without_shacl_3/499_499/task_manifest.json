@@ -1,0 +1,7 @@
+{
+    "entry_id": "499_499",
+    "done_reason": "llm_finished",
+    "artifacts_dir": "results/royalty_gemini_without_shacl_3/499_499/artifacts",
+    "results": "results/royalty_gemini_without_shacl_3/499_499/final_data_graph.ttl",
+    "iterations": 1
+}

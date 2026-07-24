@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoSonOfCarlos a :Man,\n        :Person ;\n    :isSonOf data:DonCarlos .\n\ndata:FerdinandTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:DonCarlos .\n\ndata:FrancisII a :Man,\n        :Person .\n\ndata:RanieriTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:DonCarlos .\n\ndata:AlfonsoXII a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person .\n\ndata:MariaChristinaAustria a :Person,\n        :Woman .\n\ndata:MercedesPrincessAsturias a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaAustria ;\n    :isSisterOf data:AlfonsoXIII .\n\ndata:PrinceAlfonsoTwoSicilies a :Man,\n        :Person .\n\ndata:PrincePhilippeCountParis a :Man,\n        :Person .\n\ndata:PrincessLouiseOrleans a :Person,\n        :Woman ;\n    :hasFather data:PrincePhilippeCountParis .\n\ndata:PrincessMariaAntonietta a :Person,\n        :Woman .\n\ndata:DonCarlos a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:PrinceAlfonsoTwoSicilies ;\n    :hasMother data:PrincessMariaAntonietta ;\n    :hasRelation data:MercedesPrincessAsturias,\n        data:PrincessLouiseOrleans .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoSonOfCarlos a :Man,\n        :Person ;\n    :isSonOf data:DonCarlos .\n\ndata:FerdinandTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:DonCarlos .\n\ndata:FrancisII a :Man,\n        :Person .\n\ndata:RanieriTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:DonCarlos .\n\ndata:AlfonsoXII a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person .\n\ndata:MariaChristinaAustria a :Person,\n        :Woman .\n\ndata:MercedesPrincessAsturias a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXII ;\n    :hasMother data:MariaChristinaAustria ;\n    :isSisterOf data:AlfonsoXIII .\n\ndata:PrinceAlfonsoTwoSicilies a :Man,\n        :Person .\n\ndata:PrincePhilippeCountParis a :Man,\n        :Person .\n\ndata:PrincessLouiseOrleans a :Person,\n        :Woman ;\n    :hasFather data:PrincePhilippeCountParis .\n\ndata:PrincessMariaAntonietta a :Person,\n        :Woman .\n\ndata:DonCarlos a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:PrinceAlfonsoTwoSicilies ;\n    :hasMother data:PrincessMariaAntonietta ;\n    :hasRelation data:MercedesPrincessAsturias,\n        data:PrincessLouiseOrleans .\n\n"
+    }
+]

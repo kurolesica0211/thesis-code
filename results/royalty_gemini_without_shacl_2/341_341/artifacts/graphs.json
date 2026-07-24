@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Heinrich_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Albert Wilhelm Heinrich\"^^xsd:string ;\n    :hasBirthYear 1862 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:Empress_Victoria ;\n    :hasRelation data:Princess_Irene ;\n    :hasSon data:Heinrich_son,\n        data:Waldemar ;\n    :isBrotherOf data:Wilhelm_II .\n\ndata:Empress_Victoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Frederick_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Heinrich_son a :Man,\n        :Person ;\n    :hasMother data:Princess_Irene .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Waldemar a :Man,\n        :Person ;\n    :hasMother data:Princess_Irene .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Princess_Irene a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Heinrich_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Albert Wilhelm Heinrich\"^^xsd:string ;\n    :hasBirthYear 1862 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:Empress_Victoria ;\n    :hasRelation data:Princess_Irene ;\n    :hasSon data:Heinrich_son,\n        data:Waldemar ;\n    :isBrotherOf data:Wilhelm_II .\n\ndata:Empress_Victoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Frederick_III a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Heinrich_son a :Man,\n        :Person ;\n    :hasMother data:Princess_Irene .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Waldemar a :Man,\n        :Person ;\n    :hasMother data:Princess_Irene .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Princess_Irene a :Person,\n        :Woman .\n\n"
+    }
+]

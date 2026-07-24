@@ -1,0 +1,436 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ina_Marie_von_Bassewitz a :Woman ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Ina_Marie_von_Bassewitz ;
+    :isBloodrelationOf data:Ina_Marie_von_Bassewitz ;
+    :isSiblingOf data:Ina_Marie_von_Bassewitz ;
+    :isSisterOf data:Ina_Marie_von_Bassewitz .
+
+data:Augusta_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Oskar_Prince_of_Prussia ;
+    :hasRelation data:Augusta_Victoria,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Augusta_Victoria ;
+    :hasSon data:Oskar_Prince_of_Prussia ;
+    :isAncestorOf data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isAuntOf data:Oskar_Prince_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isMotherOf data:Oskar_Prince_of_Prussia ;
+    :isParentOf data:Oskar_Prince_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Wilhelm_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Oskar_Prince_of_Prussia ;
+    :hasRelation data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Wilhelm_II,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSon data:Oskar_Prince_of_Prussia ;
+    :isAncestorOf data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Oskar_Prince_of_Prussia ;
+    :isParentOf data:Oskar_Prince_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Oskar_Prince_of_Prussia .
+
+data:Oskar_son_of_Oskar a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Oskar_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasFather data:Oskar_Prince_of_Prussia ;
+    :hasParent data:Oskar_Prince_of_Prussia ;
+    :hasRelation data:Augusta_Victoria,
+        data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_II,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBrotherOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isChildOf data:Oskar_Prince_of_Prussia ;
+    :isSiblingOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isSonOf data:Oskar_Prince_of_Prussia .
+
+data:Wilhelm_Karl_Prince_of_Prussia a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Oskar_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasFather data:Oskar_Prince_of_Prussia ;
+    :hasParent data:Oskar_Prince_of_Prussia ;
+    :hasRelation data:Augusta_Victoria,
+        data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_II,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBrotherOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isChildOf data:Oskar_Prince_of_Prussia ;
+    :isSiblingOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isSonOf data:Oskar_Prince_of_Prussia .
+
+data:Crown_Prince_Wilhelm a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+
+data:Prince_Adalbert a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+
+data:Prince_August_Wilhelm a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+
+data:Prince_Eitel_Friedrich a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+
+data:Prince_Joachim a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+
+data:Princess_Viktoria_Luise a :Woman ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :isAuntOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSisterOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise .
+
+data:Oskar_Prince_of_Prussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasChild data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria,
+        data:Crown_Prince_Wilhelm,
+        data:Ina_Marie_von_Bassewitz,
+        data:Oskar_Prince_of_Prussia,
+        data:Oskar_son_of_Oskar,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise,
+        data:Wilhelm_II,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :hasSon data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isAncestorOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isChildOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isFatherOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isParentOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Oskar_Prince_of_Prussia,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Princess_Viktoria_Luise ;
+    :isSonOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isUncleOf data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl_Prince_of_Prussia .
+

@@ -1,0 +1,170 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:Eugenie_Victoria_Helena ;
+    :hasDaughter data:Eugenie_Victoria_Helena ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :isAncestorOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isFatherOf data:Eugenie_Victoria_Helena ;
+    :isParentOf data:Eugenie_Victoria_Helena ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isUncleOf data:Eugenie_Victoria_Helena .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Eugenie_Victoria_Helena ;
+    :hasDaughter data:Eugenie_Victoria_Helena ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :hasSister data:Sarah_Ferguson ;
+    :isAncestorOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena ;
+    :isAuntOf data:Eugenie_Victoria_Helena ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isMotherOf data:Eugenie_Victoria_Helena ;
+    :isParentOf data:Eugenie_Victoria_Helena ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Jack_Brooksbank a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jack_Brooksbank ;
+    :hasChild data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :hasSon data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isAncestorOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isBloodrelationOf data:Jack_Brooksbank ;
+    :isBrotherOf data:Jack_Brooksbank ;
+    :isFatherOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isParentOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isSiblingOf data:Jack_Brooksbank ;
+    :isUncleOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank .
+
+data:August_Philip_Hawke_Brooksbank a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Eugenie_Victoria_Helena ;
+    :hasParent data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isBrotherOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isChildOf data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank ;
+    :isSiblingOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isSonOf data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank .
+
+data:Ernest_George_Ronnie_Brooksbank a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Eugenie_Victoria_Helena ;
+    :hasParent data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isBrotherOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isChildOf data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank ;
+    :isSiblingOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isSonOf data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank .
+
+data:Eugenie_Victoria_Helena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasBirthYear 1990 ;
+    :hasChild data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMarriageYear 2018 ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank,
+        data:Eugenie_Victoria_Helena,
+        data:Jack_Brooksbank,
+        data:Sarah_Ferguson ;
+    :hasSister data:Eugenie_Victoria_Helena ;
+    :hasSon data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isAncestorOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isAuntOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isBloodrelationOf data:Eugenie_Victoria_Helena ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isParentOf data:August_Philip_Hawke_Brooksbank,
+        data:Ernest_George_Ronnie_Brooksbank ;
+    :isSiblingOf data:Eugenie_Victoria_Helena ;
+    :isSisterOf data:Eugenie_Victoria_Helena .
+

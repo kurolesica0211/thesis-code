@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles-Louis_dOrleans a :Man ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Jacques_dOrleans .
+
+data:Foulques_dOrleans a :Man ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Jacques_dOrleans .
+
+data:Francois_dOrleans a :Man ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Jean_dOrleans a :Man ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Marie_of_Liechtenstein a :Woman ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Gundakar_of_Liechtenstein .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Woman .
+
+data:Diane_dOrleans a :Woman .
+
+data:Gundakar_of_Liechtenstein a :Man .
+
+data:Henri_Count_of_Paris a :Man ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 .
+
+data:Isabelle_of_Orleans-Braganza a :Woman .
+
+data:Jean-Robert_Boeuf a :Man .
+
+data:Luis_Cousino_y_Sebire a :Man .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :hasRelation data:Jean-Robert_Boeuf .
+
+data:Michel_dOrleans a :Man .
+
+data:Thibaut_dOrleans a :Man .
+
+data:Marie_Therese_of_Wurttemberg a :Woman ;
+    :hasBirthYear 1934 .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Man ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza ;
+    :hasRelation data:Marie_Therese_of_Wurttemberg,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Diane_dOrleans .
+
+data:Jacques_dOrleans a :Man .
+

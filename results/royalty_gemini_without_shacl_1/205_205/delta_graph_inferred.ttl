@@ -1,0 +1,740 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasBrother data:Alessandro_Torlonia ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alessandro_Torlonia ;
+    :isBrotherOf data:Alessandro_Torlonia ;
+    :isSiblingOf data:Alessandro_Torlonia .
+
+data:Clemente_Lequio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Clemente_Lequio ;
+    :hasChild data:Alesandro_Lequio ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alesandro_Lequio ;
+    :isAncestorOf data:Alesandro_Lequio ;
+    :isBloodrelationOf data:Clemente_Lequio ;
+    :isBrotherOf data:Clemente_Lequio ;
+    :isFatherOf data:Alesandro_Lequio ;
+    :isParentOf data:Alesandro_Lequio ;
+    :isSiblingOf data:Clemente_Lequio ;
+    :isUncleOf data:Alesandro_Lequio .
+
+data:Paul_Annick_Weiller a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Paul_Annick_Weiller ;
+    :hasChild data:Princess_Sibilla_of_Luxembourg ;
+    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Paul_Annick_Weiller ;
+    :isBrotherOf data:Paul_Annick_Weiller ;
+    :isFatherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isParentOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSiblingOf data:Paul_Annick_Weiller ;
+    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Giovanni_Torlonia a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Giovanni_Torlonia ;
+    :hasFather data:Marco_Torlonia ;
+    :hasParent data:Marco_Torlonia ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Giovanni_Torlonia ;
+    :isBrotherOf data:Giovanni_Torlonia ;
+    :isChildOf data:Marco_Torlonia ;
+    :isSiblingOf data:Giovanni_Torlonia ;
+    :isSonOf data:Marco_Torlonia .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia ;
+    :isAuntOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_Count_of_Covadonga a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Don_Juan_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isAuntOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSisterOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain .
+
+data:Alesandro_Lequio a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Infanta_Beatriz_of_Spain,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alesandro_Lequio ;
+    :hasFather data:Clemente_Lequio ;
+    :hasMother data:Sandra_Torlonia ;
+    :hasParent data:Clemente_Lequio,
+        data:Sandra_Torlonia ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alesandro_Lequio ;
+    :isBrotherOf data:Alesandro_Lequio ;
+    :isChildOf data:Clemente_Lequio,
+        data:Sandra_Torlonia ;
+    :isSiblingOf data:Alesandro_Lequio ;
+    :isSonOf data:Clemente_Lequio,
+        data:Sandra_Torlonia .
+
+data:Princess_Sibilla_of_Luxembourg a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasFather data:Paul_Annick_Weiller ;
+    :hasMother data:Olimpia_Torlonia ;
+    :hasParent data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Princess_Sibilla_of_Luxembourg ;
+    :isChildOf data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller ;
+    :isDaughterOf data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller ;
+    :isSiblingOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSisterOf data:Princess_Sibilla_of_Luxembourg .
+
+data:Marino_Torlonia_son a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_son ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBrotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSonOf data:Infanta_Beatriz_of_Spain ;
+    :isUncleOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg .
+
+data:Marco_Torlonia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_son ;
+    :hasChild data:Giovanni_Torlonia ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasSon data:Giovanni_Torlonia ;
+    :isAncestorOf data:Giovanni_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBrotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isFatherOf data:Giovanni_Torlonia ;
+    :isParentOf data:Giovanni_Torlonia ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSonOf data:Infanta_Beatriz_of_Spain ;
+    :isUncleOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg .
+
+data:Olimpia_Torlonia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_son ;
+    :hasChild data:Princess_Sibilla_of_Luxembourg ;
+    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isAncestorOf data:Princess_Sibilla_of_Luxembourg ;
+    :isAuntOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isParentOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSisterOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Sandra_Torlonia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_son ;
+    :hasChild data:Alesandro_Lequio ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasSon data:Alesandro_Lequio ;
+    :isAncestorOf data:Alesandro_Lequio ;
+    :isAuntOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Alesandro_Lequio ;
+    :isParentOf data:Alesandro_Lequio ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSisterOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear "1909-06-22"^^xsd:date ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasChild data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasDaughter data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasDeathYear "2002-11-22"^^xsd:date ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alesandro_Lequio,
+        data:Alessandro_Torlonia,
+        data:Alfonso_Count_of_Covadonga,
+        data:Alfonso_XIII_of_Spain,
+        data:Clemente_Lequio,
+        data:Don_Juan_of_Spain,
+        data:Giovanni_Torlonia,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_of_Spain,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Paul_Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :hasSon data:Marco_Torlonia,
+        data:Marino_Torlonia_son ;
+    :isAncestorOf data:Alesandro_Lequio,
+        data:Giovanni_Torlonia,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg,
+        data:Sandra_Torlonia ;
+    :isAuntOf data:Juan_Carlos_I,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isParentOf data:Marco_Torlonia,
+        data:Marino_Torlonia_son,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isSisterOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain .
+

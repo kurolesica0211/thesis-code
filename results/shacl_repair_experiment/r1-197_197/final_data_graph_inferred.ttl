@@ -1,0 +1,430 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Ch%C3%ADas_Osorio a :Man ;
+    :hasBrother data:Carlos_Ch%C3%ADas_Osorio ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isBloodrelationOf data:Carlos_Ch%C3%ADas_Osorio ;
+    :isBrotherOf data:Carlos_Ch%C3%ADas_Osorio ;
+    :isSiblingOf data:Carlos_Ch%C3%ADas_Osorio .
+
+data:Adam_Ludwik_Czartoryski a :Ancestor,
+        :Man ;
+    :hasBrother data:Adam_Ludwik_Czartoryski ;
+    :hasChild data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSon data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBloodrelationOf data:Adam_Ludwik_Czartoryski ;
+    :isBrotherOf data:Adam_Ludwik_Czartoryski ;
+    :isFatherOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isParentOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isSiblingOf data:Adam_Ludwik_Czartoryski ;
+    :isUncleOf data:Augustyn_J%C3%B3zef_Czartoryski .
+
+data:Maria_Ludwika_Krasi%C5%84ska a :Ancestor,
+        :Woman ;
+    :hasChild data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSister data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSon data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isAuntOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isBloodrelationOf data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isMotherOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isParentOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isSiblingOf data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isSisterOf data:Maria_Ludwika_Krasi%C5%84ska .
+
+data:Juan_Carlos_I_of_Spain a :Man ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isBloodrelationOf data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Louise_of_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSister data:Louise_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Louise_of_Orl%C3%A9ans ;
+    :isMotherOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Louise_of_Orl%C3%A9ans ;
+    :isSisterOf data:Louise_of_Orl%C3%A9ans .
+
+data:Esperanza_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSister data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Adam_Karol_Czartoryski,
+        data:Juan_Carlos_I_of_Spain,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBloodrelationOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isDaughterOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Adam_Karol_Czartoryski a :Man ;
+    :hasAncestor data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Dolores_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isChildOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSonOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies .
+
+data:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor,
+        :Man ;
+    :hasAncestor data:Adam_Ludwik_Czartoryski,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasBrother data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasChild data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasFather data:Adam_Ludwik_Czartoryski ;
+    :hasMother data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasParent data:Adam_Ludwik_Czartoryski,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSon data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBloodrelationOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isBrotherOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isChildOf data:Adam_Ludwik_Czartoryski,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isFatherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSiblingOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isSonOf data:Adam_Ludwik_Czartoryski,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isUncleOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski .
+
+data:Ludwik_Piotr_Czartoryski a :Man ;
+    :hasAncestor data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Dolores_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isChildOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSonOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Dolores_of_Bourbon-Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasChild data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSister data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:Adam_Karol_Czartoryski,
+        data:Juan_Carlos_I_of_Spain,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBloodrelationOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isDaughterOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isMotherOf data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasBirthYear 1909 ;
+    :hasChild data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Adam_Ludwik_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Carlos_Ch%C3%ADas_Osorio,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Juan_Carlos_I_of_Spain,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Ludwik_Piotr_Czartoryski,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwika_Krasi%C5%84ska ;
+    :hasSister data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isAuntOf data:Adam_Karol_Czartoryski,
+        data:Juan_Carlos_I_of_Spain,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isBloodrelationOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isDaughterOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orl%C3%A9ans ;
+    :isMotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr_Czartoryski ;
+    :isSiblingOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Dolores_of_Bourbon-Two_Sicilies,
+        data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+

@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paul a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alexander,
+        data:GeorgeII ;
+    :hasChild data:ConstantineII,
+        data:Irene,
+        data:SofiaOfSpain ;
+    :hasDeathYear 1964 ;
+    :hasFather data:ConstantineI ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:SophiaOfPrussia ;
+    :hasRelation data:FredericaOfHanover ;
+    :hasSister data:Helen,
+        data:Katherine .
+
+data:Alexander a :Man,
+        :Person .
+
+data:ConstantineI a :Man,
+        :Person ;
+    :hasFather data:GeorgeI .
+
+data:ConstantineII a :Man,
+        :Person .
+
+data:FredericaOfHanover a :Person,
+        :Woman .
+
+data:GeorgeI a :Man,
+        :Person .
+
+data:GeorgeII a :Man,
+        :Person .
+
+data:Helen a :Person,
+        :Woman .
+
+data:Irene a :Person,
+        :Woman .
+
+data:Katherine a :Person,
+        :Woman .
+
+data:SofiaOfSpain a :Person,
+        :Woman .
+
+data:SophiaOfPrussia a :Person,
+        :Woman .
+

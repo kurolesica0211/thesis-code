@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina_de_Borbon a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_de_Marichalar a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Victoria_de_Marichalar a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Elena_de_Borbon a :Person,\n        :Woman ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina_de_Borbon a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Felipe_de_Marichalar a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Victoria_de_Marichalar a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Elena_de_Borbon .\n\ndata:Elena_de_Borbon a :Person,\n        :Woman ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\n"
+    }
+]

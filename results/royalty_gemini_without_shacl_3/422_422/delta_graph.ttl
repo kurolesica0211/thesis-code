@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Alexander_II_of_Russia a :Man .
+
+data:Grand_Duke_Vladimir_Kirillovich_of_Russia a :Man .
+
+data:Prince_Karl_Emich_of_Leiningen a :Man ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Andreas%2C_8th_Prince_of_Leiningen ;
+    :hasDaughter data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasFather data:Emich%2C_7th_Prince_of_Leiningen,
+        data:Gabriele_Renate_Thyssen,
+        data:Princess_Margarita_of_Hohenlohe-%C3%96hringen ;
+    :hasMother data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg,
+        data:Grand_Duchess_Maria_Kirillovna ;
+    :hasSon data:Prince_Emich_Albrecht_Karl_of_Leiningen .
+
+data:Andreas%2C_8th_Prince_of_Leiningen a :Man .
+
+data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg a :Woman .
+
+data:Emich%2C_7th_Prince_of_Leiningen a :Man .
+
+data:Gabriele_Renate_Thyssen a :Woman .
+
+data:Grand_Duchess_Maria_Kirillovna a :Woman ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man .
+
+data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man ;
+    :hasBirthYear 2010 .
+
+data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
+    :hasBirthYear 1988 .
+
+data:Princess_Margarita_of_Hohenlohe-%C3%96hringen a :Woman .
+
+data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
+    :hasBirthYear 1992 .
+

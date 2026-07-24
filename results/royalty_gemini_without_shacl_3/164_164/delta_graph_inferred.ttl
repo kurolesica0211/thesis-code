@@ -1,0 +1,185 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LouisFerdinand ;
+    :hasRelation data:Cecilie,
+        data:KiraKirillovna,
+        data:LouisFerdinand,
+        data:Maria,
+        data:Vladimir ;
+    :hasSister data:Cecilie ;
+    :hasSon data:LouisFerdinand ;
+    :isAncestorOf data:LouisFerdinand ;
+    :isAuntOf data:LouisFerdinand ;
+    :isBloodrelationOf data:Cecilie ;
+    :isMotherOf data:LouisFerdinand ;
+    :isParentOf data:LouisFerdinand ;
+    :isSiblingOf data:Cecilie ;
+    :isSisterOf data:Cecilie .
+
+data:KirillVladimirovich a :Ancestor,
+        :Man ;
+    :hasBrother data:KirillVladimirovich ;
+    :hasChild data:KiraKirillovna ;
+    :hasDaughter data:KiraKirillovna ;
+    :hasRelation data:FriedrichWilhelm,
+        data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:Maria,
+        data:Vladimir ;
+    :isAncestorOf data:FriedrichWilhelm,
+        data:KiraKirillovna ;
+    :isBloodrelationOf data:KirillVladimirovich ;
+    :isBrotherOf data:KirillVladimirovich ;
+    :isFatherOf data:KiraKirillovna ;
+    :isParentOf data:KiraKirillovna ;
+    :isSiblingOf data:KirillVladimirovich ;
+    :isUncleOf data:KiraKirillovna .
+
+data:LouisFerdinand a :Man,
+        :Person ;
+    :hasAncestor data:Cecilie ;
+    :hasBrother data:LouisFerdinand ;
+    :hasMother data:Cecilie ;
+    :hasParent data:Cecilie ;
+    :hasRelation data:Cecilie,
+        data:KiraKirillovna,
+        data:LouisFerdinand,
+        data:Maria,
+        data:Vladimir ;
+    :isBloodrelationOf data:LouisFerdinand ;
+    :isBrotherOf data:LouisFerdinand ;
+    :isChildOf data:Cecilie ;
+    :isSiblingOf data:LouisFerdinand ;
+    :isSonOf data:Cecilie .
+
+data:VictoriaMelita a :Ancestor,
+        :Woman ;
+    :hasChild data:KiraKirillovna ;
+    :hasDaughter data:KiraKirillovna ;
+    :hasRelation data:FriedrichWilhelm,
+        data:KiraKirillovna,
+        data:Maria,
+        data:VictoriaMelita,
+        data:Vladimir ;
+    :hasSister data:VictoriaMelita ;
+    :isAncestorOf data:FriedrichWilhelm,
+        data:KiraKirillovna ;
+    :isAuntOf data:KiraKirillovna ;
+    :isBloodrelationOf data:VictoriaMelita ;
+    :isMotherOf data:KiraKirillovna ;
+    :isParentOf data:KiraKirillovna ;
+    :isSiblingOf data:VictoriaMelita ;
+    :isSisterOf data:VictoriaMelita .
+
+data:FriedrichWilhelm a :Man,
+        :Person ;
+    :hasAncestor data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :hasBrother data:FriedrichWilhelm ;
+    :hasMother data:KiraKirillovna ;
+    :hasParent data:KiraKirillovna ;
+    :hasRelation data:FriedrichWilhelm,
+        data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :isBloodrelationOf data:FriedrichWilhelm ;
+    :isBrotherOf data:FriedrichWilhelm ;
+    :isChildOf data:KiraKirillovna ;
+    :isSiblingOf data:FriedrichWilhelm ;
+    :isSonOf data:KiraKirillovna .
+
+data:Maria a :Person,
+        :Woman ;
+    :hasBrother data:Vladimir ;
+    :hasRelation data:Cecilie,
+        data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:LouisFerdinand,
+        data:Maria,
+        data:VictoriaMelita,
+        data:Vladimir ;
+    :hasSister data:KiraKirillovna,
+        data:Maria ;
+    :isAuntOf data:FriedrichWilhelm ;
+    :isBloodrelationOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isSiblingOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isSisterOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir .
+
+data:Vladimir a :Man,
+        :Person ;
+    :hasBrother data:Vladimir ;
+    :hasRelation data:Cecilie,
+        data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:LouisFerdinand,
+        data:Maria,
+        data:VictoriaMelita,
+        data:Vladimir ;
+    :hasSister data:KiraKirillovna,
+        data:Maria ;
+    :isBloodrelationOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isBrotherOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isSiblingOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isUncleOf data:FriedrichWilhelm .
+
+data:KiraKirillovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Vladimir ;
+    :hasChild data:FriedrichWilhelm ;
+    :hasDeathYear 1967 ;
+    :hasFather data:KirillVladimirovich ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:VictoriaMelita ;
+    :hasParent data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :hasRelation data:Cecilie,
+        data:FriedrichWilhelm,
+        data:KiraKirillovna,
+        data:KirillVladimirovich,
+        data:LouisFerdinand,
+        data:Maria,
+        data:VictoriaMelita,
+        data:Vladimir ;
+    :hasSister data:KiraKirillovna,
+        data:Maria ;
+    :hasSon data:FriedrichWilhelm ;
+    :isAncestorOf data:FriedrichWilhelm ;
+    :isAuntOf data:FriedrichWilhelm ;
+    :isBloodrelationOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isChildOf data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :isDaughterOf data:KirillVladimirovich,
+        data:VictoriaMelita ;
+    :isMotherOf data:FriedrichWilhelm ;
+    :isParentOf data:FriedrichWilhelm ;
+    :isSiblingOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir ;
+    :isSisterOf data:KiraKirillovna,
+        data:Maria,
+        data:Vladimir .
+

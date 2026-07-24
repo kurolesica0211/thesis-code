@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Beatriz_of_Spain,\n        data:Infante_Juan .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasAncestor data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Louise_of_Orl%C3%A9ans .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman ;\n    :isMotherOf data:Infante_Juan .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasRelation data:Alessandro_Torlonia .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Louise_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :isMotherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Infante_Juan a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 2000 ;\n    :hasRelation data:Infante_Juan ;\n    :isMotherOf data:Juan_Carlos_I .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isFatherOf data:Beatriz_of_Spain,\n        data:Infante_Juan .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasAncestor data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Carlos_of_Bourbon-Two_Sicilies .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person ;\n    :isFatherOf data:Louise_of_Orl%C3%A9ans .\n\ndata:Victoria_Eugenie a :Person,\n        :Woman ;\n    :isMotherOf data:Infante_Juan .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasRelation data:Alessandro_Torlonia .\n\ndata:Carlos_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :isFatherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Louise_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :isMotherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .\n\ndata:Infante_Juan a :Man,\n        :Person .\n\ndata:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 2000 ;\n    :hasRelation data:Infante_Juan ;\n    :isMotherOf data:Juan_Carlos_I .\n\n"
+    }
+]

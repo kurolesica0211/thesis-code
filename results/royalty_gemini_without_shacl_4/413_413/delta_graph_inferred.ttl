@@ -1,0 +1,577 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Luise_Amalia_Klein a :Ancestor,
+        :Woman ;
+    :hasChild data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasDaughter data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasSister data:Luise_Amalia_Klein ;
+    :isAncestorOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isAuntOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Luise_Amalia_Klein ;
+    :isMotherOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isParentOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSiblingOf data:Luise_Amalia_Klein ;
+    :isSisterOf data:Luise_Amalia_Klein .
+
+data:Otto_Eugen_Tiedemann a :Ancestor,
+        :Man ;
+    :hasBrother data:Otto_Eugen_Tiedemann ;
+    :hasChild data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasDaughter data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isAncestorOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Otto_Eugen_Tiedemann ;
+    :isBrotherOf data:Otto_Eugen_Tiedemann ;
+    :isFatherOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isParentOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSiblingOf data:Otto_Eugen_Tiedemann ;
+    :isUncleOf data:Charlotte_Luise_Auguste_Tiedemann .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
+    :hasAncestor data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein ;
+    :hasParent data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasSister data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isChildOf data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isDaughterOf data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isSiblingOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSisterOf data:Charlotte_Luise_Auguste_Tiedemann .
+
+data:Emanuela_de_Dampierre a :Ancestor,
+        :Woman ;
+    :hasChild data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Emanuela_de_Dampierre ;
+    :hasSon data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isAncestorOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isAuntOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBloodrelationOf data:Emanuela_de_Dampierre ;
+    :isMotherOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isParentOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isSiblingOf data:Emanuela_de_Dampierre ;
+    :isSisterOf data:Emanuela_de_Dampierre .
+
+data:Alfonso_de_Borb%C3%B3n_son_of_Jaime a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :hasFather data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg .
+
+data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :hasFather data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg .
+
+data:Alfonso_Prince_of_Asturias a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :hasDaughter data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isParentOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n .
+
+data:Beatriz_de_Borb%C3%B3n a :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isAuntOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSisterOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n .
+
+data:Gonzalo_de_Borb%C3%B3n a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime .
+
+data:Juan_Count_of_Barcelona a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime .
+
+data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n a :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isAuntOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSisterOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :hasDaughter data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isAuntOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isParentOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Jaime_de_Borb%C3%B3n_y_Battenberg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona ;
+    :hasChild data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :hasSon data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isAncestorOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isFatherOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isParentOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Beatriz_de_Borb%C3%B3n,
+        data:Gonzalo_de_Borb%C3%B3n,
+        data:Jaime_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_Count_of_Barcelona,
+        data:Mar%C3%ADa_Cristina_de_Borb%C3%B3n ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isUncleOf data:Alfonso_de_Borb%C3%B3n_son_of_Jaime,
+        data:Gonzalo_de_Borb%C3%B3n_son_of_Jaime .
+

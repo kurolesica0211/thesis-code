@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Frederick_Augustus_III_of_Saxony,
+        data:Prince_Johann_Georg_of_Saxony ;
+    :knownAs "Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies"^^xsd:string .
+
+data:Ferdinand_II_of_Portugal a :Man,
+        :Person .
+
+data:Frederick_Augustus_III_of_Saxony a :Man,
+        :Person .
+
+data:George_of_Saxony a :Man,
+        :Person .
+
+data:Maria_Anna_of_Portugal a :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_II_of_Portugal ;
+    :hasMother data:Maria_II_of_Portugal .
+
+data:Maria_II_of_Portugal a :Person,
+        :Woman .
+
+data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Johann_Georg_of_Saxony a :Man,
+        :Person ;
+    :hasFather data:George_of_Saxony ;
+    :hasMother data:Maria_Anna_of_Portugal .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+

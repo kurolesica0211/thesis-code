@@ -25,7 +25,7 @@ runtime:
 output:
   base_dir: results
   custom_tag: royalty
-  run_dir: results/royalty_gemini_without_shacl
+  run_dir: results/royalty_gemini_without_shacl_1
 
 dataset:
   source: custom_family_bench

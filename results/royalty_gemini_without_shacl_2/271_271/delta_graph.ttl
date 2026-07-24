@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:Duchess_of_Kent a :Person,
+        :Woman .
+
+data:Edward_Edmund_Maximilian_George_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1988 ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Countess_of_St_Andrews ;
+    :knownAs "Eddy Downpatrick"^^xsd:string .
+
+data:Lord_Nicholas_Windsor a :Man,
+        :Person .
+
+data:George_Windsor_Earl_of_St_Andrews a :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Sylvana_Countess_of_St_Andrews a :Person,
+        :Woman .
+

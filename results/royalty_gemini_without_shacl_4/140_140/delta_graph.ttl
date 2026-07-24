@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandPius a :Man,
+        :Person ;
+    :hasBirthYear "1869"^^xsd:positiveInteger ;
+    :hasDeathYear "1960"^^xsd:positiveInteger ;
+    :hasFather data:AlfonsoCountOfCaserta,
+        data:FerdinandII ;
+    :hasMarriageYear "1897"^^xsd:positiveInteger ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:MariaLudwigaTheresia ;
+    :isSiblingOf data:CarlosOfBourbonTwoSicilies,
+        data:GabrielOfBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipOfBourbonTwoSicilies,
+        data:RanieriDukeOfCastro .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person .
+
+data:CarlosOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:FerdinandII a :Man,
+        :Person .
+
+data:GabrielOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:LudwigIIIOfBavaria a :Man,
+        :Person .
+
+data:MariaAntonietta a :Person,
+        :Woman .
+
+data:MariaCristina a :Person,
+        :Woman .
+
+data:MariaDiGrazia a :Person,
+        :Woman .
+
+data:MariaImmaculata a :Person,
+        :Woman .
+
+data:MariaLudwigaTheresia a :Person,
+        :Woman ;
+    :hasFather data:LudwigIIIOfBavaria .
+
+data:PhilipOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:RanieriDukeOfCastro a :Man,
+        :Person .
+

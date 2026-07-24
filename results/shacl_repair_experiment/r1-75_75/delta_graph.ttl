@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alexander_Romanov :hasSex data:Male .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Ancestor ;
+    :hasSex data:Male .
+
+data:Kirill_Vladimirovich_Romanov a :Ancestor ;
+    :hasSex data:Male .
+
+data:Maria_Alexandrovna_of_Russia a :Ancestor ;
+    :hasFather data:Alexander_II ;
+    :hasSex data:Female .
+
+data:Maria_Pavlovna a :Ancestor ;
+    :hasSex data:Female .
+
+data:Maria_Vladimirovna :hasSex data:Female .
+
+data:Victoria_Melita a :Ancestor ;
+    :hasSex data:Female .
+
+data:Vladimir_Alexandrovich a :Ancestor ;
+    :hasSex data:Male .
+
+data:Vladimir_Kirillovich a :Ancestor ;
+    :hasSex data:Male .
+
+data:Alexander_II a :Ancestor ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

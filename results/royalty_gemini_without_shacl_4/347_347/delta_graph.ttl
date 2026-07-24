@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountAriprand a :Man,
+        :Person ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "1996"^^xsd:positiveInteger .
+
+data:CountessMariaVonThurnUndValsassinaComoVercelli a :Person,
+        :Woman ;
+    :hasBirthYear "1929"^^xsd:positiveInteger .
+
+data:OttoHeinrich a :Man,
+        :Person ;
+    :hasFather data:PrinceLudwigRudolphOfHannover .
+
+data:PrinceChristian a :Man,
+        :Person ;
+    :hasBirthYear "1985"^^xsd:positiveInteger ;
+    :hasFather data:ErnstAugustVonHannover ;
+    :hasMother data:ChantalHochuli .
+
+data:PrinceErnstAugustJunior a :Man,
+        :Person ;
+    :hasBirthYear "1983"^^xsd:positiveInteger ;
+    :hasFather data:ErnstAugustVonHannover ;
+    :hasMother data:ChantalHochuli .
+
+data:PrincessAlexandra a :Person,
+        :Woman ;
+    :hasBirthYear "1999"^^xsd:positiveInteger ;
+    :hasFather data:ErnstAugustVonHannover ;
+    :hasMother data:PrincessCarolineOfMonaco .
+
+data:JohannGustavHansHochuli a :Man,
+        :Person ;
+    :hasBirthYear "1912"^^xsd:positiveInteger .
+
+data:PrinceErnestAugustOfHannover a :Man,
+        :Person ;
+    :hasBirthYear "1914"^^xsd:positiveInteger ;
+    :hasDeathYear "1987"^^xsd:positiveInteger .
+
+data:PrinceLudwigRudolphOfHannover a :Man,
+        :Person ;
+    :isBrotherOf data:ErnstAugustVonHannover .
+
+data:PrinceRainierIII a :Man,
+        :Person .
+
+data:PrincessCarolineOfMonaco a :Person,
+        :Woman ;
+    :hasFather data:PrinceRainierIII .
+
+data:PrincessOrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Person,
+        :Woman ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "1980"^^xsd:positiveInteger .
+
+data:RosmarieLembeck a :Person,
+        :Woman ;
+    :hasBirthYear "1921"^^xsd:positiveInteger ;
+    :hasDeathYear "2011"^^xsd:positiveInteger .
+
+data:ChantalHochuli a :Person,
+        :Woman ;
+    :hasBirthYear "1955"^^xsd:positiveInteger ;
+    :hasFather data:JohannGustavHansHochuli ;
+    :hasMother data:RosmarieLembeck .
+
+data:ErnstAugustVonHannover a :Man,
+        :Person ;
+    :hasBirthYear "1954"^^xsd:positiveInteger ;
+    :hasFather data:PrinceErnestAugustOfHannover ;
+    :hasMother data:PrincessOrtrudOfSchleswigHolsteinSonderburgGlucksburg .
+

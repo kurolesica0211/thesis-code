@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Francois_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Prince_Henri_Count_of_Paris ;\n    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;\n    :hasSister data:Princess_Blanche ;\n    :knownAs \"Fran\u00e7ois Henri Louis Marie\"^^xsd:string .\n\ndata:Princess_Blanche a :Person,\n        :Woman ;\n    :hasParent data:Duchess_Marie-Therese_of_Wurttemberg,\n        data:Prince_Henri_Count_of_Paris .\n\ndata:Duchess_Marie-Therese_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Prince_Henri_Count_of_Paris a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Francois_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Prince_Henri_Count_of_Paris ;\n    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;\n    :hasSister data:Princess_Blanche ;\n    :knownAs \"Fran\u00e7ois Henri Louis Marie\"^^xsd:string .\n\ndata:Princess_Blanche a :Person,\n        :Woman ;\n    :hasParent data:Duchess_Marie-Therese_of_Wurttemberg,\n        data:Prince_Henri_Count_of_Paris .\n\ndata:Duchess_Marie-Therese_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Prince_Henri_Count_of_Paris a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Alphonse_de_Bourbon a :Man ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Francisco_de_Borbon ;
+    :hasChild data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas ;
+    :hasFather data:Alfonso_de_Borbon,
+        data:Infante_Jaime_Duke_of_Segovia,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Victor_Vargas ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Francisco_de_Borbon a :Man ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man .
+
+data:Maria_Margarita_Vargas_Santaella a :Woman ;
+    :hasChild data:Alphonse_de_Borbon_y_Vargas,
+        data:Eugenie_de_Borbon_y_Vargas,
+        data:Henri_de_Borbon_y_Vargas,
+        data:Louis_de_Borbon_y_Vargas .
+
+data:Victor_Vargas a :Man .
+
+data:Alfonso_de_Borbon a :Man .
+
+data:Alphonse_de_Borbon_y_Vargas a :Man .
+
+data:Eugenie_de_Borbon_y_Vargas a :Woman .
+
+data:Henri_de_Borbon_y_Vargas a :Man .
+
+data:Louis_de_Borbon_y_Vargas a :Man .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman .
+

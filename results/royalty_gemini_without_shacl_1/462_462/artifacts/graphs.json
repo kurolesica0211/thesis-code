@@ -1,0 +1,100 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Rufus_Gilman a :Man .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Rufus_Gilman a :Man .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester .\n\ndata:Rufus_Gilman a :Man .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasSon data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasBirthYear \"1980\"^^xsd:string ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasSon data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasBirthYear \"1980\"^^xsd:string ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasSon data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear \"2010\"^^xsd:string .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasBirthYear \"1980\"^^xsd:string ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasSon data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear \"2010\"^^xsd:string .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man ;\n    :hasBirthYear \"2012\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 14,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man .\n\ndata:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Woman ;\n    :hasBirthYear \"1980\"^^xsd:string ;\n    :hasDaughter data:Lyla_Gilman ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasSon data:Rufus_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Woman .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear \"2010\"^^xsd:string .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man .\n\ndata:Rufus_Gilman a :Man ;\n    :hasBirthYear \"2012\"^^xsd:string .\n\n"
+    }
+]

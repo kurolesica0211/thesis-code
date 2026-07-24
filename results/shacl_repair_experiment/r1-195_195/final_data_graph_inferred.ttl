@@ -1,0 +1,273 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:George_David_Chetwode a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_David_Chetwode ;
+    :hasChild data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasDaughter data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasRelation data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAncestorOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:George_David_Chetwode ;
+    :isBrotherOf data:George_David_Chetwode ;
+    :isFatherOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isParentOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSiblingOf data:George_David_Chetwode ;
+    :isUncleOf data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Marion_Cook a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Willa_Elliot-Murray-Kynynmound ;
+    :hasDaughter data:Willa_Elliot-Murray-Kynynmound ;
+    :hasRelation data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Marion_Cook ;
+    :isAncestorOf data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAuntOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isBloodrelationOf data:Marion_Cook ;
+    :isMotherOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isParentOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isSiblingOf data:Marion_Cook ;
+    :isSisterOf data:Marion_Cook .
+
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Victor_Elliot-Murray-Kynynmound ;
+    :hasChild data:Willa_Elliot-Murray-Kynynmound ;
+    :hasDaughter data:Willa_Elliot-Murray-Kynynmound ;
+    :hasRelation data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAncestorOf data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isBrotherOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isFatherOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isParentOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isSiblingOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isUncleOf data:Willa_Elliot-Murray-Kynynmound .
+
+data:Jean_Frances_Hambro a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:James_Alexander_Elphinstone ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasSister data:Jean_Frances_Hambro ;
+    :hasSon data:James_Alexander_Elphinstone ;
+    :isAncestorOf data:Alexander,
+        data:James_Alexander_Elphinstone ;
+    :isAuntOf data:James_Alexander_Elphinstone ;
+    :isBloodrelationOf data:Jean_Frances_Hambro ;
+    :isMotherOf data:James_Alexander_Elphinstone ;
+    :isParentOf data:James_Alexander_Elphinstone ;
+    :isSiblingOf data:Jean_Frances_Hambro ;
+    :isSisterOf data:Jean_Frances_Hambro .
+
+data:Mary_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrew_Charles_Victor_Elphinstone ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasSister data:Mary_Bowes-Lyon ;
+    :hasSon data:Andrew_Charles_Victor_Elphinstone ;
+    :isAncestorOf data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone ;
+    :isAuntOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isBloodrelationOf data:Mary_Bowes-Lyon ;
+    :isMotherOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isParentOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isSiblingOf data:Mary_Bowes-Lyon ;
+    :isSisterOf data:Mary_Bowes-Lyon .
+
+data:Sidney_Buller-Fullerton-Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasChild data:Andrew_Charles_Victor_Elphinstone ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasSon data:Andrew_Charles_Victor_Elphinstone ;
+    :isAncestorOf data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone ;
+    :isBloodrelationOf data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isBrotherOf data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isFatherOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isParentOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isSiblingOf data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isUncleOf data:Andrew_Charles_Victor_Elphinstone .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasBrother data:Alexander ;
+    :hasFather data:James_Alexander_Elphinstone ;
+    :hasParent data:James_Alexander_Elphinstone ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isBloodrelationOf data:Alexander ;
+    :isBrotherOf data:Alexander ;
+    :isChildOf data:James_Alexander_Elphinstone ;
+    :isSiblingOf data:Alexander ;
+    :isSonOf data:James_Alexander_Elphinstone .
+
+data:Willa_Mary_Gabrielle_Chetwode a :Person,
+        :Woman ;
+    :hasAncestor data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :hasFather data:George_David_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound ;
+    :hasParent data:George_David_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :hasRelation data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isChildOf data:George_David_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :isDaughterOf data:George_David_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :isSiblingOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSisterOf data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound ;
+    :hasChild data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasDaughter data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+    :hasMother data:Marion_Cook ;
+    :hasParent data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound ;
+    :hasRelation data:George_David_Chetwode,
+        data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Willa_Elliot-Murray-Kynynmound ;
+    :isAncestorOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAuntOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isChildOf data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound ;
+    :isDaughterOf data:Marion_Cook,
+        data:Victor_Elliot-Murray-Kynynmound ;
+    :isMotherOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isParentOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSiblingOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isSisterOf data:Willa_Elliot-Murray-Kynynmound .
+
+data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasBrother data:Andrew_Charles_Victor_Elphinstone ;
+    :hasChild data:James_Alexander_Elphinstone ;
+    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasMother data:Mary_Bowes-Lyon ;
+    :hasParent data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasSon data:James_Alexander_Elphinstone ;
+    :isAncestorOf data:Alexander,
+        data:James_Alexander_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isBrotherOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isChildOf data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isFatherOf data:James_Alexander_Elphinstone ;
+    :isParentOf data:James_Alexander_Elphinstone ;
+    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone ;
+    :isSonOf data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :isUncleOf data:James_Alexander_Elphinstone .
+
+data:James_Alexander_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Charles_Victor_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasBirthYear 1953 ;
+    :hasBrother data:James_Alexander_Elphinstone ;
+    :hasChild data:Alexander ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Jean_Frances_Hambro ;
+    :hasParent data:Andrew_Charles_Victor_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasRelation data:Alexander,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:James_Alexander_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Mary_Bowes-Lyon,
+        data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasSex data:Male ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander ;
+    :isBloodrelationOf data:James_Alexander_Elphinstone ;
+    :isBrotherOf data:James_Alexander_Elphinstone ;
+    :isChildOf data:Andrew_Charles_Victor_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :isFatherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:James_Alexander_Elphinstone ;
+    :isSonOf data:Andrew_Charles_Victor_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :isUncleOf data:Alexander .
+

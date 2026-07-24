@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eloise_van_Oranje-Nassau a :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Constantijn ;\n    :hasMother data:Laurentien .\n\ndata:Johan_Friso a :Man .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Beatrix a :Woman .\n\ndata:Claus a :Man .\n\ndata:Constantijn a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Laurentien a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eloise_van_Oranje-Nassau a :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Constantijn ;\n    :hasMother data:Laurentien .\n\ndata:Johan_Friso a :Man .\n\ndata:Margriet a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Beatrix a :Woman .\n\ndata:Claus a :Man .\n\ndata:Constantijn a :Man ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix .\n\ndata:Laurentien a :Woman .\n\n"
+    }
+]

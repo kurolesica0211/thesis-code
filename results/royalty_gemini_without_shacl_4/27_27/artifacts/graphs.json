@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary ;\n    :hasRelation data:AliceMontaguDouglasScott ;\n    :hasSon data:Richard,\n        data:William ;\n    :isBrotherOf data:DukeOfKent,\n        data:EdwardVIII,\n        data:GeorgeVI .\n\ndata:AliceMontaguDouglasScott a :Person,\n        :Woman .\n\ndata:DukeOfKent a :Man,\n        :Person .\n\ndata:EdwardVIII a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :isFatherOf data:ElizabethII .\n\ndata:Mary a :Person,\n        :Woman .\n\ndata:Richard a :Man,\n        :Person .\n\ndata:William a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary ;\n    :hasRelation data:AliceMontaguDouglasScott ;\n    :hasSon data:Richard,\n        data:William ;\n    :isBrotherOf data:DukeOfKent,\n        data:EdwardVIII,\n        data:GeorgeVI .\n\ndata:AliceMontaguDouglasScott a :Person,\n        :Woman .\n\ndata:DukeOfKent a :Man,\n        :Person .\n\ndata:EdwardVIII a :Man,\n        :Person .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :isFatherOf data:ElizabethII .\n\ndata:Mary a :Person,\n        :Woman .\n\ndata:Richard a :Man,\n        :Person .\n\ndata:William a :Man,\n        :Person .\n\n"
+    }
+]

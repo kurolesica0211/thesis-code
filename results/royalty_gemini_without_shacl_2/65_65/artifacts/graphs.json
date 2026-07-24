@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Elena a :Person,\n        :Woman ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :isChildOf data:Constantine_I,\n        data:Sophia_of_Greece .\n\ndata:Sophia_of_Greece a :Person,\n        :Woman .\n\ndata:Sof%C3%ADa a :Person,\n        :Woman ;\n    :hasBirthYear \"1938\"^^xsd:positiveInteger ;\n    :hasRelation data:Juan_Carlos_I ;\n    :isChildOf data:Frederica_of_Greece,\n        data:Paul_of_Greece ;\n    :isSiblingOf data:Constantine_II,\n        data:Irene .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Person,\n        :Woman ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Elena a :Person,\n        :Woman ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :isChildOf data:Juan_Carlos_I,\n        data:Sof%C3%ADa .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :isChildOf data:Constantine_I,\n        data:Sophia_of_Greece .\n\ndata:Sophia_of_Greece a :Person,\n        :Woman .\n\ndata:Sof%C3%ADa a :Person,\n        :Woman ;\n    :hasBirthYear \"1938\"^^xsd:positiveInteger ;\n    :hasRelation data:Juan_Carlos_I ;\n    :isChildOf data:Frederica_of_Greece,\n        data:Paul_of_Greece ;\n    :isSiblingOf data:Constantine_II,\n        data:Irene .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\n"
+    }
+]

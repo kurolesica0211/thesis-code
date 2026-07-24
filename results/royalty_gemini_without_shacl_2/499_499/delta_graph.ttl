@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .
+
+data:Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Man,
+        :Person .
+
+data:Isabel_of_Brazil a :Person,
+        :Woman .
+
+data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .
+
+data:Pedro_II_of_Brazil a :Man,
+        :Person .
+
+data:Pedro_Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1983 ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Christine_of_Ligne .
+
+data:Teresa_Cristina_of_Brazil a :Person,
+        :Woman .
+
+data:Alix_of_Luxembourg a :Person,
+        :Woman .
+
+data:Antoine_13th_Prince_of_Ligne a :Man,
+        :Person .
+
+data:Christine_of_Ligne a :Person,
+        :Woman ;
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Alix_of_Luxembourg .
+
+data:Maria_Elisabeth_of_Bavaria a :Person,
+        :Woman .
+
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
+
+data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Elisabeth_of_Bavaria .
+

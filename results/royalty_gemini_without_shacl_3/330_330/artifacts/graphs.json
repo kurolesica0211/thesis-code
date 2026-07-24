@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fergus_Bowes-Lyon a :Man ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:John_Bowes-Lyon ;\n    :hasDeathYear 1915 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Cecilia_Bowes-Lyon ;\n    :hasSister data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Lady_Christian_Norah_Dawson-Damer a :Woman .\n\ndata:Cecilia_Bowes-Lyon a :Woman .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Elizabeth_Bowes-Lyon a :Woman .\n\ndata:John_Bowes-Lyon a :Man .\n\ndata:Queen_Elizabeth_II a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fergus_Bowes-Lyon a :Man ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:John_Bowes-Lyon ;\n    :hasDeathYear 1915 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Cecilia_Bowes-Lyon ;\n    :hasSister data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Lady_Christian_Norah_Dawson-Damer a :Woman .\n\ndata:Cecilia_Bowes-Lyon a :Woman .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Elizabeth_Bowes-Lyon a :Woman .\n\ndata:John_Bowes-Lyon a :Man .\n\ndata:Queen_Elizabeth_II a :Woman .\n\n"
+    }
+]

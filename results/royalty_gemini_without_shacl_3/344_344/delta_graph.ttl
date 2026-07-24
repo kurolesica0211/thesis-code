@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Fran%C3%A7oise_d%27Orl%C3%A9ans ;
+    :hasRelation data:Marina_Karella .
+
+data:Princess_Alexandra_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Isabella_Murat a :Person,
+        :Woman ;
+    :hasRelation data:Prince_Pierre_Murat .
+
+data:Princess_Olga_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Prince_Aimone_of_Savoy-Aosta .
+
+data:Fran%C3%A7oise_d%27Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Jean_d%27Orl%C3%A9ans ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:Henri_Count_of_Paris .
+
+data:Grand_Duchess_Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :hasFather data:Jean_d%27Orl%C3%A9ans .
+
+data:Isabelle_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:King_Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:King_Christian_IX_of_Denmark .
+
+data:Marina_Karella a :Person,
+        :Woman .
+
+data:Prince_Aimone_of_Savoy-Aosta a :Man,
+        :Person .
+
+data:Prince_Pierre_Murat a :Man,
+        :Person .
+
+data:Jean_d%27Orl%C3%A9ans a :Man,
+        :Person .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
+

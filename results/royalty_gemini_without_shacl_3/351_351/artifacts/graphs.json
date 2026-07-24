@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man .\n\ndata:ChrysiVardinogianni a :Woman ;\n    :hasFather data:GiorgosVardinogiannis ;\n    :hasMother data:AgapiPoliti .\n\ndata:Irene a :Woman .\n\ndata:Margareta a :Woman .\n\ndata:Marina a :Woman .\n\ndata:Michael a :Man .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 ;\n    :hasBrother data:Pavlos,\n        data:Philippos ;\n    :hasFather data:ConstantineII ;\n    :hasMarriageYear 2010 ;\n    :hasMother data:Anne-Marie ;\n    :hasSister data:Alexia,\n        data:Theodora .\n\ndata:Sofia a :Woman .\n\ndata:TatianaEllinkaBlatnik a :Woman .\n\ndata:AgapiPoliti a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:ConstantineII a :Man .\n\ndata:GiorgosVardinogiannis a :Man .\n\ndata:Pavlos a :Man .\n\ndata:Philippos a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man .\n\ndata:ChrysiVardinogianni a :Woman ;\n    :hasFather data:GiorgosVardinogiannis ;\n    :hasMother data:AgapiPoliti .\n\ndata:Irene a :Woman .\n\ndata:Margareta a :Woman .\n\ndata:Marina a :Woman .\n\ndata:Michael a :Man .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 ;\n    :hasBrother data:Pavlos,\n        data:Philippos ;\n    :hasFather data:ConstantineII ;\n    :hasMarriageYear 2010 ;\n    :hasMother data:Anne-Marie ;\n    :hasSister data:Alexia,\n        data:Theodora .\n\ndata:Sofia a :Woman .\n\ndata:TatianaEllinkaBlatnik a :Woman .\n\ndata:AgapiPoliti a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:ConstantineII a :Man .\n\ndata:GiorgosVardinogiannis a :Man .\n\ndata:Pavlos a :Man .\n\ndata:Philippos a :Man .\n\ndata:Theodora a :Woman .\n\n"
+    }
+]

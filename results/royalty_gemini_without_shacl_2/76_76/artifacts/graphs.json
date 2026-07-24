@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fran%C3%A7oise a :Woman .\n\ndata:Mariam a :Woman .\n\ndata:Mariam_de_Bagration a :Woman ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Bagrat_de_Bagration,\n        data:Jorge_de_Bagration ;\n    :hasFather data:Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;\n    :hasRelation data:Tom%C3%A1s_Ortiz_y_Valero .\n\ndata:Monique a :Woman .\n\ndata:Nuria a :Woman .\n\ndata:Bagrat_de_Bagration a :Man .\n\ndata:Irakli_Bagration_of_Mukhrani a :Man .\n\ndata:Jorge_de_Bagration a :Man .\n\ndata:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman .\n\ndata:Tom%C3%A1s_Ortiz_y_Valero a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fran%C3%A7oise a :Woman .\n\ndata:Mariam a :Woman .\n\ndata:Mariam_de_Bagration a :Woman ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Bagrat_de_Bagration,\n        data:Jorge_de_Bagration ;\n    :hasFather data:Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;\n    :hasRelation data:Tom%C3%A1s_Ortiz_y_Valero .\n\ndata:Monique a :Woman .\n\ndata:Nuria a :Woman .\n\ndata:Bagrat_de_Bagration a :Man .\n\ndata:Irakli_Bagration_of_Mukhrani a :Man .\n\ndata:Jorge_de_Bagration a :Man .\n\ndata:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman .\n\ndata:Tom%C3%A1s_Ortiz_y_Valero a :Man .\n\n"
+    }
+]

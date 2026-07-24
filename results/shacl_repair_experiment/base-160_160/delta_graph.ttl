@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alice_of_Battenberg a :Ancestor .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor .
+
+data:Cecilie_of_Greece_and_Denmark a :Ancestor ;
+    :isMotherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse .
+
+data:Georg_Donatus a :Ancestor ;
+    :isFatherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse .
+

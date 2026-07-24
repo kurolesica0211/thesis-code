@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:SophiaCharlotte a :Person,
+        :Woman ;
+    :hasRelation data:AugustaViktoria,
+        data:SophiaCharlotte,
+        data:WilhelmEitelFriedrich,
+        data:WilhelmII ;
+    :hasSister data:SophiaCharlotte ;
+    :isBloodrelationOf data:SophiaCharlotte ;
+    :isSiblingOf data:SophiaCharlotte ;
+    :isSisterOf data:SophiaCharlotte .
+
+data:AugustaViktoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WilhelmEitelFriedrich ;
+    :hasRelation data:AugustaViktoria,
+        data:SophiaCharlotte,
+        data:WilhelmEitelFriedrich,
+        data:WilhelmII ;
+    :hasSister data:AugustaViktoria ;
+    :hasSon data:WilhelmEitelFriedrich ;
+    :isAncestorOf data:WilhelmEitelFriedrich ;
+    :isAuntOf data:WilhelmEitelFriedrich ;
+    :isBloodrelationOf data:AugustaViktoria ;
+    :isMotherOf data:WilhelmEitelFriedrich ;
+    :isParentOf data:WilhelmEitelFriedrich ;
+    :isSiblingOf data:AugustaViktoria ;
+    :isSisterOf data:AugustaViktoria .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:WilhelmEitelFriedrich ;
+    :hasRelation data:AugustaViktoria,
+        data:SophiaCharlotte,
+        data:WilhelmEitelFriedrich,
+        data:WilhelmII ;
+    :hasSon data:WilhelmEitelFriedrich ;
+    :isAncestorOf data:WilhelmEitelFriedrich ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:WilhelmEitelFriedrich ;
+    :isParentOf data:WilhelmEitelFriedrich ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:WilhelmEitelFriedrich .
+
+data:WilhelmEitelFriedrich a :Man,
+        :Person ;
+    :hasAncestor data:AugustaViktoria,
+        data:WilhelmII ;
+    :hasBirthYear "1883"^^xsd:positiveInteger ;
+    :hasBrother data:WilhelmEitelFriedrich ;
+    :hasDeathYear "1942"^^xsd:positiveInteger ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear "1906"^^xsd:positiveInteger ;
+    :hasMother data:AugustaViktoria ;
+    :hasParent data:AugustaViktoria,
+        data:WilhelmII ;
+    :hasRelation data:AugustaViktoria,
+        data:SophiaCharlotte,
+        data:WilhelmEitelFriedrich,
+        data:WilhelmII ;
+    :isBloodrelationOf data:WilhelmEitelFriedrich ;
+    :isBrotherOf data:WilhelmEitelFriedrich ;
+    :isChildOf data:AugustaViktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:WilhelmEitelFriedrich ;
+    :isSonOf data:AugustaViktoria,
+        data:WilhelmII .
+

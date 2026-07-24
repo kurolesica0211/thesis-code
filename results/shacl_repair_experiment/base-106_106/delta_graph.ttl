@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alfonso_de_Borbon a :Ancestor .
+
+data:Alphonse_de_Borbon :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Emmanuelle_de_Dampierre a :Ancestor .
+
+data:Eugenie_de_Borbon :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Henri_de_Borbon :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Infante_Jaime_Duke_of_Segovia a :Ancestor .
+
+data:Louis_de_Borbon :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor .
+
+data:Victor_Vargas a :Ancestor .
+
+data:Louis_Alphonse_de_Bourbon a :Ancestor .
+
+data:Maria_Margarita_Vargas_Santaella a :Ancestor .
+

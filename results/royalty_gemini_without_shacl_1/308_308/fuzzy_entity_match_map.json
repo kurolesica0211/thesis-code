@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/308_308",
+  "text_file": "Q487309.txt",
+  "text_key": "Q487309",
+  "article": "https://en.wikipedia.org/wiki/Paul_Ilyinsky",
+  "article_key": "Paul Ilyinsky",
+  "main_entity": {
+    "uri": "http://example.com/data#Paul_Ilyinsky",
+    "qid": "Q487309",
+    "label": "Paul Ilyinsky"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Paul_Ilyinsky",
+      "qid": "Q487309",
+      "label": "Paul Ilyinsky",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Audrey_Emery",
+      "qid": "Q450692",
+      "label": "Audrey Emery",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duke_Dmitri_Pavlovich_of_Russia",
+      "qid": "Q372954",
+      "label": "Grand Duke Dmitri Pavlovich of Russia",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Audrey_Emery",
+      "extracted_local_name": "Audrey_Emery",
+      "embedding_text": "Audrey Emery",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Audrey_Emery",
+      "ground_truth_qid": "Q450692",
+      "ground_truth_label": "Audrey Emery",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Audrey Emery",
+      "best_candidate_label": "Audrey Emery",
+      "best_candidate_qid": "Q450692",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_Dmitrievich_Romanovsky-Ilyinsky",
+      "extracted_local_name": "Paul_Dmitrievich_Romanovsky-Ilyinsky",
+      "embedding_text": "Paul Dmitrievich Romanovsky-Ilyinsky",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Paul_Ilyinsky",
+      "ground_truth_qid": "Q487309",
+      "ground_truth_label": "Paul Ilyinsky",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul Dmitrievich Romanovsky-Ilyinsky",
+      "best_candidate_label": "Paul Ilyinsky",
+      "best_candidate_qid": "Q487309",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Dmitri_Pavlovich_of_Russia",
+      "extracted_local_name": "Dmitri_Pavlovich_of_Russia",
+      "embedding_text": "Dmitri Pavlovich of Russia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.872093023255814,
+      "ground_truth_uri": "http://example.com/data#Grand_Duke_Dmitri_Pavlovich_of_Russia",
+      "ground_truth_qid": "Q372954",
+      "ground_truth_label": "Grand Duke Dmitri Pavlovich of Russia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duke Dmitri Pavlovich of Russia",
+      "best_candidate_label": "Grand Duke Dmitri Pavlovich of Russia",
+      "best_candidate_qid": "Q372954",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.872093023255814
+    },
+    {
+      "extracted_uri": "http://example.org/data/Angelica_Philippa_Kauffmann",
+      "extracted_local_name": "Angelica_Philippa_Kauffmann",
+      "embedding_text": "Angelica Philippa Kauffmann",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul Ilyinsky",
+      "best_candidate_label": "Paul Ilyinsky",
+      "best_candidate_qid": "Q487309",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Evelyn_Prince",
+      "extracted_local_name": "Mary_Evelyn_Prince",
+      "embedding_text": "Mary Evelyn Prince",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul Ilyinsky",
+      "best_candidate_label": "Paul Ilyinsky",
+      "best_candidate_qid": "Q487309",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3870967741935484
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne a :Person,
+        :Woman ;
+    :hasMother data:Elizabeth_II .
+
+data:Charles a :Man,
+        :Person ;
+    :hasMother data:Elizabeth_II .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Angela_Marguerite_Bowes-Lyon .
+
+data:Prince_Albert_Duke_of_York a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+
+data:1923 a :DomainEntity .
+
+data:Cecilia_Cavendish-Bentinck a :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person .
+
+data:Princess_Mary a :Person,
+        :Woman .
+
+data:Elizabeth_Angela_Marguerite_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear data:1923 ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :isBrotherOf data:Fergus_Bowes-Lyon .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Angela_Marguerite_Bowes-Lyon .
+
+data:George_V a :Man,
+        :Person .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII ;
+    :isSisterOf data:Princess_Mary .
+
+data:Queen_Mary a :Person,
+        :Woman .
+

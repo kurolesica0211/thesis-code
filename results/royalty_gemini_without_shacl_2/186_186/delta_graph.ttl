@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman ;
+    :hasFather data:Frederick_Augustus_II ;
+    :hasMother data:Elisabeth_Anna .
+
+data:Elisabeth_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Augustus_II ;
+    :isAuntOf data:Alexandrine_Queen_of_Denmark,
+        data:Cecilie_German_Crown_Princess,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Hendrik_Prince_Consort_of_the_Netherlands,
+        data:Marie_Grand_Duchess_of_Russia .
+
+data:Grand_Duke_Cyril_Vladimirovich_of_Russia a :Man ;
+    :hasMother data:Marie_Grand_Duchess_of_Russia .
+
+data:Alexandrine_Queen_of_Denmark a :Woman .
+
+data:Cecilie_German_Crown_Princess a :Woman .
+
+data:Elisabeth_Anna a :Woman .
+
+data:Frederick_Francis_II a :Man ;
+    :hasFather data:Paul_Frederick_Grand_Duke_of_Mecklenburg ;
+    :hasMother data:Princess_Alexandrine_of_Prussia .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man .
+
+data:Hendrik_Prince_Consort_of_the_Netherlands a :Man ;
+    :hasRelation data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Woman ;
+    :hasFather data:Prince_Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Princess_Mathilde_of_Sch%C3%B6nburg-Waldenburg .
+
+data:Paul_Frederick_Grand_Duke_of_Mecklenburg a :Man .
+
+data:Prince_Adolph_of_Schwarzburg-Rudolstadt a :Man .
+
+data:Princess_Alexandrine_of_Prussia a :Woman .
+
+data:Princess_Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Woman .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Woman .
+
+data:Frederick_Augustus_II a :Man ;
+    :hasDeathYear 1931 .
+
+data:Marie_Grand_Duchess_of_Russia a :Woman .
+

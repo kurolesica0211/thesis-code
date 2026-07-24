@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeVI a :Man ;\n    :alsoKnownAs \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasBrother data:DukeOfKent,\n        data:EdwardVIII,\n        data:PrinceHenry ;\n    :hasDaughter data:ElizabethII,\n        data:Margaret ;\n    :hasDeathYear 1952 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:ElizabethBowes-Lyon .\n\ndata:DukeOfKent a :Man .\n\ndata:EdwardVII a :Man .\n\ndata:EdwardVIII a :Man .\n\ndata:ElizabethBowes-Lyon a :Woman .\n\ndata:ElizabethII a :Woman .\n\ndata:FrancisDukeOfTeck a :Man .\n\ndata:GeorgeV a :Man ;\n    :hasFather data:EdwardVII ;\n    :hasMother data:QueenAlexandra .\n\ndata:Margaret a :Woman .\n\ndata:PrinceHenry a :Man .\n\ndata:PrincessMaryAdelaide a :Woman .\n\ndata:QueenAlexandra a :Woman .\n\ndata:QueenMary a :Woman ;\n    :hasFather data:FrancisDukeOfTeck ;\n    :hasMother data:PrincessMaryAdelaide .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeVI a :Man ;\n    :alsoKnownAs \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasBrother data:DukeOfKent,\n        data:EdwardVIII,\n        data:PrinceHenry ;\n    :hasDaughter data:ElizabethII,\n        data:Margaret ;\n    :hasDeathYear 1952 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:ElizabethBowes-Lyon .\n\ndata:DukeOfKent a :Man .\n\ndata:EdwardVII a :Man .\n\ndata:EdwardVIII a :Man .\n\ndata:ElizabethBowes-Lyon a :Woman .\n\ndata:ElizabethII a :Woman .\n\ndata:FrancisDukeOfTeck a :Man .\n\ndata:GeorgeV a :Man ;\n    :hasFather data:EdwardVII ;\n    :hasMother data:QueenAlexandra .\n\ndata:Margaret a :Woman .\n\ndata:PrinceHenry a :Man .\n\ndata:PrincessMaryAdelaide a :Woman .\n\ndata:QueenAlexandra a :Woman .\n\ndata:QueenMary a :Woman ;\n    :hasFather data:FrancisDukeOfTeck ;\n    :hasMother data:PrincessMaryAdelaide .\n\n"
+    }
+]

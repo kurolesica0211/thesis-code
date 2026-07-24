@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeDeMarichalar a :Man,
+        :Person ;
+    :isBrotherOf data:VictoriaFedericaDeMarichalarYBordon .
+
+data:KingFelipeVI a :Man,
+        :Person ;
+    :isFatherOf data:InfantaSofia,
+        data:LeonorPrincessOfAsturias .
+
+data:InfantaElenaDuchessOfLugo a :Person,
+        :Woman ;
+    :hasParent data:KingJuanCarlosI,
+        data:QueenSofiaOfSpain .
+
+data:InfantaSofia a :Person,
+        :Woman .
+
+data:JaimeDeMarichalar a :Man,
+        :Person .
+
+data:KingJuanCarlosI a :Man,
+        :Person .
+
+data:LeonorPrincessOfAsturias a :Person,
+        :Woman .
+
+data:QueenSofiaOfSpain a :Person,
+        :Woman .
+
+data:VictoriaFedericaDeMarichalarYBordon a :Person,
+        :Woman ;
+    :hasBirthYear 2000 ;
+    :isDaughterOf data:InfantaElenaDuchessOfLugo,
+        data:JaimeDeMarichalar .
+

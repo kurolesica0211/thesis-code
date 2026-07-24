@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Emperor_Wilhelm_II_of_Germany ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg ;
+    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg .
+
+data:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman .
+
+data:Emperor_Wilhelm_II_of_Germany a :Man,
+        :Person .
+
+data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg a :Person,
+        :Woman .
+

@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AthenaElizabethRose a :Person,
+        :Woman ;
+    :hasFather data:EdoardoMapelliMozzi ;
+    :hasMother data:Beatrice .
+
+data:SiennaElizabethMapelliMozzi a :Person,
+        :Woman ;
+    :hasFather data:EdoardoMapelliMozzi ;
+    :hasMother data:Beatrice .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :hasParent data:AndrewMountbattenWindsor,
+        data:SarahFerguson ;
+    :isSisterOf data:Beatrice .
+
+data:AndrewMountbattenWindsor a :Man,
+        :Person .
+
+data:SarahFerguson a :Person,
+        :Woman .
+
+data:Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasFather data:AndrewMountbattenWindsor ;
+    :hasMarriageYear 2020 ;
+    :hasMother data:SarahFerguson ;
+    :hasRelation data:EdoardoMapelliMozzi ;
+    :isSisterOf data:Eugenie ;
+    :knownAs "Beatrice Elizabeth Mary"^^xsd:string .
+
+data:EdoardoMapelliMozzi a :Man,
+        :Person .
+

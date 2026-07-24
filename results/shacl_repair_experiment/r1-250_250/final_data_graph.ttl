@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Otto_Heinrich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Ludwig_Rudolf_of_Hanover ;
+    :hasMother data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+
+data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 1996 .
+
+data:Ernst_August_Brother a :Man,
+        :Person .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1987 .
+
+data:Ludwig_Rudolf_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:Ernst_August_Brother ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMarriageYear data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli,
+        1987 ;
+    :hasMother data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+
+data:Maria_Perpetua_Euphemia_von_Auersperg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1929 .
+
+data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 1980 .
+
+data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1962 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasMother data:Maria_Perpetua_Euphemia_von_Auersperg .
+

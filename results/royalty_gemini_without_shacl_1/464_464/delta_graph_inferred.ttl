@@ -1,0 +1,126 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Woman ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
+    :isBloodrelationOf data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
+    :isSiblingOf data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
+    :isSisterOf data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Woman ;
+    :hasChild data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :hasSon data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Lord_Nicholas_Windsor ;
+    :isAuntOf data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isMotherOf data:Lord_Nicholas_Windsor ;
+    :isParentOf data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSon data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Lord_Nicholas_Windsor ;
+    :isParentOf data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Lord_Nicholas_Windsor .
+
+data:Earl_of_St_Andrews a :Man ;
+    :hasBrother data:Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor .
+
+data:Lady_Helen_Taylor a :Woman ;
+    :hasBrother data:Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSisterOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor .
+
+data:Lord_Nicholas_Windsor a :Man ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor,
+        data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent .
+

@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Prince_Philip ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isSiblingOf data:Prince_Philip .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Meghan a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan,
+        data:Prince_Harry ;
+    :hasSister data:Meghan ;
+    :hasSon data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAuntOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Meghan ;
+    :isMotherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSiblingOf data:Meghan ;
+    :isSisterOf data:Meghan .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Prince_Harry ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan,
+        data:Prince_Harry ;
+    :hasSon data:Prince_Harry ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor,
+        data:Prince_Harry ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isFatherOf data:Prince_Harry ;
+    :isParentOf data:Prince_Harry ;
+    :isSiblingOf data:King_Charles_III ;
+    :isUncleOf data:Prince_Harry .
+
+data:Prince_Harry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Charles_III ;
+    :hasBrother data:Prince_Harry ;
+    :hasChild data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasFather data:King_Charles_III ;
+    :hasParent data:King_Charles_III ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan,
+        data:Prince_Harry ;
+    :hasSon data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Prince_Harry ;
+    :isBrotherOf data:Prince_Harry ;
+    :isChildOf data:King_Charles_III ;
+    :isFatherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Harry ;
+    :isSonOf data:King_Charles_III ;
+    :isUncleOf data:Archie_Harrison_Mountbatten-Windsor .
+
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasAncestor data:King_Charles_III,
+        data:Meghan,
+        data:Prince_Harry ;
+    :hasBirthYear 2019 ;
+    :hasBrother data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan ;
+    :hasParent data:Meghan,
+        data:Prince_Harry ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan,
+        data:Prince_Harry ;
+    :isBloodrelationOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBrotherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isChildOf data:Meghan,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSonOf data:Meghan,
+        data:Prince_Harry .
+

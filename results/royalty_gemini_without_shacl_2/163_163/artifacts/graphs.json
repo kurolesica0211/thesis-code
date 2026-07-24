@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Manfredo_de_Borbon a :Man .\n\ndata:Sofia a :Woman .\n\ndata:Carlos_Zurita_y_Delgado a :Man .\n\ndata:Felipe_VI a :Man .\n\ndata:Juan_Count_of_Barcelona a :Man ;\n    :isFatherOf data:Juan_Carlos_I,\n        data:Margarita_de_Borbon .\n\ndata:Mercedes_of_the_Two_Sicilies a :Woman ;\n    :isMotherOf data:Juan_Carlos_I,\n        data:Margarita_de_Borbon .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Mercedes_of_the_Two_Sicilies ;\n    :hasSister data:Margarita_de_Borbon .\n\ndata:Margarita_de_Borbon a :Woman ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Mercedes_of_the_Two_Sicilies ;\n    :hasRelation data:Carlos_Zurita_y_Delgado ;\n    :isAuntOf data:Felipe_VI ;\n    :isSisterOf data:Juan_Carlos_I .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Manfredo_de_Borbon a :Man .\n\ndata:Sofia a :Woman .\n\ndata:Carlos_Zurita_y_Delgado a :Man .\n\ndata:Felipe_VI a :Man .\n\ndata:Juan_Count_of_Barcelona a :Man ;\n    :isFatherOf data:Juan_Carlos_I,\n        data:Margarita_de_Borbon .\n\ndata:Mercedes_of_the_Two_Sicilies a :Woman ;\n    :isMotherOf data:Juan_Carlos_I,\n        data:Margarita_de_Borbon .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Mercedes_of_the_Two_Sicilies ;\n    :hasSister data:Margarita_de_Borbon .\n\ndata:Margarita_de_Borbon a :Woman ;\n    :hasBirthYear 1939 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Mercedes_of_the_Two_Sicilies ;\n    :hasRelation data:Carlos_Zurita_y_Delgado ;\n    :isAuntOf data:Felipe_VI ;\n    :isSisterOf data:Juan_Carlos_I .\n\n"
+    }
+]

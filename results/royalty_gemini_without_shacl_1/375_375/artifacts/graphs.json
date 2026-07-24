@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg ;\n    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,\n        :Woman .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man,\n        :Person .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg ;\n    :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,\n        :Woman .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man,\n        :Person .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg a :Person,\n        :Woman .\n\n"
+    }
+]

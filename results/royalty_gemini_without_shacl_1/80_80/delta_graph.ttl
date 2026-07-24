@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Claude_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Henri_Count_of_Paris_jr ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Enrico_Gandolfi,
+        data:Luigi_Arnaldo_La_Cagnina,
+        data:Prince_Amedeo_of_Savoy_Duke_of_Aosta ;
+    :hasSister data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_W%C3%BCrttemberg .
+
+data:Anne_Duchess_of_Calabria a :Person,
+        :Woman .
+
+data:Diane_Duchess_of_W%C3%BCrttemberg a :Person,
+        :Woman .
+
+data:Enrico_Gandolfi a :Man,
+        :Person .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri_Count_of_Paris_jr a :Man,
+        :Person .
+
+data:Luigi_Arnaldo_La_Cagnina a :Man,
+        :Person .
+
+data:Prince_Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasFather data:Prince_Aimone_Duke_of_Aosta ;
+    :hasRelation data:Silvia_Patern%C3%B2_di_Spedalotto .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Silvia_Patern%C3%B2_di_Spedalotto a :Person,
+        :Woman .
+

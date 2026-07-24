@@ -1,0 +1,2409 @@
+{
+  "random_seed": 42,
+  "inconsistent_quota_per_run": 24,
+  "usual_per_run": 10,
+  "n_inconsistent": 100,
+  "n_usual": 50,
+  "samples": [
+    {
+      "entry_id": "base-440_440",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "440_440",
+      "qid": "Q75248488",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/440_440/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8,
+        "recall": 0.8648648648648649,
+        "f1": 0.8311688311688312,
+        "correct": 96,
+        "extracted": 120,
+        "ground_truth": 111
+      }
+    },
+    {
+      "entry_id": "base-420_420",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "420_420",
+      "qid": "Q71778",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/420_420/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.8823529411764706,
+        "f1": 0.9375,
+        "correct": 15,
+        "extracted": 15,
+        "ground_truth": 17
+      }
+    },
+    {
+      "entry_id": "base-133_133",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "133_133",
+      "qid": "Q21548582",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/133_133/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7571428571428571,
+        "recall": 1.0,
+        "f1": 0.8617886178861789,
+        "correct": 53,
+        "extracted": 70,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "base-37_37",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "37_37",
+      "qid": "Q129179",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/37_37/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.922077922077922,
+        "recall": 0.9659863945578231,
+        "f1": 0.9435215946843853,
+        "correct": 142,
+        "extracted": 154,
+        "ground_truth": 147
+      }
+    },
+    {
+      "entry_id": "base-158_158",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "158_158",
+      "qid": "Q235438",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/158_158/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 18,
+        "extracted": 18,
+        "ground_truth": 18
+      }
+    },
+    {
+      "entry_id": "base-364_364",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "364_364",
+      "qid": "Q60741",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/364_364/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6582278481012658,
+        "recall": 0.7761194029850746,
+        "f1": 0.7123287671232876,
+        "correct": 52,
+        "extracted": 79,
+        "ground_truth": 67
+      }
+    },
+    {
+      "entry_id": "base-455_455",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "455_455",
+      "qid": "Q75486738",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/455_455/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 8,
+        "extracted": 8,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "base-354_354",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "354_354",
+      "qid": "Q587967",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/354_354/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "correct": 65,
+        "extracted": 65,
+        "ground_truth": 75
+      }
+    },
+    {
+      "entry_id": "base-98_98",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "98_98",
+      "qid": "Q1772615",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/98_98/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "correct": 26,
+        "extracted": 26,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "base-160_160",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "160_160",
+      "qid": "Q236196",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/160_160/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8780487804878049,
+        "recall": 0.7578947368421053,
+        "f1": 0.8135593220338984,
+        "correct": 72,
+        "extracted": 82,
+        "ground_truth": 95
+      }
+    },
+    {
+      "entry_id": "base-263_263",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "263_263",
+      "qid": "Q352981",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/263_263/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.4253731343283582,
+        "recall": 0.7307692307692307,
+        "f1": 0.5377358490566038,
+        "correct": 57,
+        "extracted": 134,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "base-117_117",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "117_117",
+      "qid": "Q19943",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/117_117/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9191176470588235,
+        "recall": 0.8064516129032258,
+        "f1": 0.8591065292096218,
+        "correct": 125,
+        "extracted": 136,
+        "ground_truth": 155
+      }
+    },
+    {
+      "entry_id": "base-485_485",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "485_485",
+      "qid": "Q862535",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/485_485/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9649122807017544,
+        "recall": 0.9482758620689655,
+        "f1": 0.9565217391304347,
+        "correct": 55,
+        "extracted": 57,
+        "ground_truth": 58
+      }
+    },
+    {
+      "entry_id": "base-344_344",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "344_344",
+      "qid": "Q577228",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/344_344/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.824390243902439,
+        "recall": 0.786046511627907,
+        "f1": 0.8047619047619048,
+        "correct": 169,
+        "extracted": 205,
+        "ground_truth": 215
+      }
+    },
+    {
+      "entry_id": "base-333_333",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "333_333",
+      "qid": "Q564889",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/333_333/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7466666666666667,
+        "recall": 0.7368421052631579,
+        "f1": 0.7417218543046358,
+        "correct": 56,
+        "extracted": 75,
+        "ground_truth": 76
+      }
+    },
+    {
+      "entry_id": "base-77_77",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "77_77",
+      "qid": "Q1618862",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/77_77/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "base-14_14",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "14_14",
+      "qid": "Q107125551",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/14_14/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8314606741573034,
+        "recall": 1.0,
+        "f1": 0.9079754601226994,
+        "correct": 74,
+        "extracted": 89,
+        "ground_truth": 74
+      }
+    },
+    {
+      "entry_id": "base-46_46",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "46_46",
+      "qid": "Q147663",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/46_46/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6782608695652174,
+        "recall": 1.0,
+        "f1": 0.8082901554404144,
+        "correct": 78,
+        "extracted": 115,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "base-164_164",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "164_164",
+      "qid": "Q237341",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/164_164/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9736842105263158,
+        "recall": 0.7708333333333334,
+        "f1": 0.8604651162790697,
+        "correct": 37,
+        "extracted": 38,
+        "ground_truth": 48
+      }
+    },
+    {
+      "entry_id": "base-172_172",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "172_172",
+      "qid": "Q2414886",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/172_172/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6153846153846154,
+        "recall": 0.7619047619047619,
+        "f1": 0.6808510638297872,
+        "correct": 112,
+        "extracted": 182,
+        "ground_truth": 147
+      }
+    },
+    {
+      "entry_id": "base-106_106",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "106_106",
+      "qid": "Q1871533",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/106_106/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7058823529411765,
+        "recall": 0.9230769230769231,
+        "f1": 0.8000000000000002,
+        "correct": 72,
+        "extracted": 102,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "base-144_144",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "144_144",
+      "qid": "Q2314771",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/144_144/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8175182481751825,
+        "recall": 0.7133757961783439,
+        "f1": 0.761904761904762,
+        "correct": 112,
+        "extracted": 137,
+        "ground_truth": 157
+      }
+    },
+    {
+      "entry_id": "base-61_61",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "61_61",
+      "qid": "Q154952",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/61_61/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6296296296296297,
+        "recall": 0.8947368421052632,
+        "f1": 0.7391304347826088,
+        "correct": 17,
+        "extracted": 27,
+        "ground_truth": 19
+      }
+    },
+    {
+      "entry_id": "r1-324_324",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "324_324",
+      "qid": "Q534961",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/324_324/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8505747126436781,
+        "recall": 1.0,
+        "f1": 0.9192546583850931,
+        "correct": 74,
+        "extracted": 87,
+        "ground_truth": 74
+      }
+    },
+    {
+      "entry_id": "r1-172_172",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "172_172",
+      "qid": "Q2414886",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/172_172/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.5478260869565217,
+        "recall": 0.5887850467289719,
+        "f1": 0.5675675675675675,
+        "correct": 63,
+        "extracted": 115,
+        "ground_truth": 107
+      }
+    },
+    {
+      "entry_id": "r1-35_35",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "35_35",
+      "qid": "Q12495326",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/35_35/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9666666666666667,
+        "recall": 0.9586776859504132,
+        "f1": 0.9626556016597511,
+        "correct": 116,
+        "extracted": 120,
+        "ground_truth": 121
+      }
+    },
+    {
+      "entry_id": "r1-458_458",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "458_458",
+      "qid": "Q75662169",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/458_458/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333333333333333,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "r1-460_460",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "460_460",
+      "qid": "Q75976254",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/460_460/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0,
+        "extracted": 0,
+        "ground_truth": 0
+      }
+    },
+    {
+      "entry_id": "r1-75_75",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "75_75",
+      "qid": "Q160948",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/75_75/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143,
+        "correct": 5,
+        "extracted": 8,
+        "ground_truth": 6
+      }
+    },
+    {
+      "entry_id": "r1-132_132",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "132_132",
+      "qid": "Q2150403",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/132_132/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9863945578231292,
+        "recall": 1.0,
+        "f1": 0.9931506849315068,
+        "correct": 145,
+        "extracted": 147,
+        "ground_truth": 145
+      }
+    },
+    {
+      "entry_id": "r1-364_364",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "364_364",
+      "qid": "Q60741",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/364_364/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9541284403669725,
+        "recall": 0.7323943661971831,
+        "f1": 0.8286852589641435,
+        "correct": 104,
+        "extracted": 109,
+        "ground_truth": 142
+      }
+    },
+    {
+      "entry_id": "r1-184_184",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "184_184",
+      "qid": "Q2468206",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/184_184/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7288135593220338,
+        "recall": 0.9347826086956522,
+        "f1": 0.819047619047619,
+        "correct": 86,
+        "extracted": 118,
+        "ground_truth": 92
+      }
+    },
+    {
+      "entry_id": "r1-197_197",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "197_197",
+      "qid": "Q2635204",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/197_197/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9115646258503401,
+        "recall": 0.9370629370629371,
+        "f1": 0.9241379310344827,
+        "correct": 134,
+        "extracted": 147,
+        "ground_truth": 143
+      }
+    },
+    {
+      "entry_id": "r1-260_260",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "260_260",
+      "qid": "Q3424937",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/260_260/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.875,
+        "recall": 0.6222222222222222,
+        "f1": 0.7272727272727274,
+        "correct": 28,
+        "extracted": 32,
+        "ground_truth": 45
+      }
+    },
+    {
+      "entry_id": "r1-153_153",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "153_153",
+      "qid": "Q235128",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/153_153/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9814814814814815,
+        "recall": 1.0,
+        "f1": 0.9906542056074767,
+        "correct": 53,
+        "extracted": 54,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "r1-106_106",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "106_106",
+      "qid": "Q1871533",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/106_106/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7352941176470589,
+        "recall": 0.9615384615384616,
+        "f1": 0.8333333333333333,
+        "correct": 75,
+        "extracted": 102,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "r1-55_55",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "55_55",
+      "qid": "Q152935",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/55_55/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8351648351648352,
+        "recall": 1.0,
+        "f1": 0.9101796407185628,
+        "correct": 76,
+        "extracted": 91,
+        "ground_truth": 76
+      }
+    },
+    {
+      "entry_id": "r1-390_390",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "390_390",
+      "qid": "Q64217",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/390_390/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7166666666666667,
+        "recall": 0.7962962962962963,
+        "f1": 0.7543859649122806,
+        "correct": 43,
+        "extracted": 60,
+        "ground_truth": 54
+      }
+    },
+    {
+      "entry_id": "r1-313_313",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "313_313",
+      "qid": "Q502763",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/313_313/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 0.7777777777777778,
+        "f1": 0.717948717948718,
+        "correct": 28,
+        "extracted": 42,
+        "ground_truth": 36
+      }
+    },
+    {
+      "entry_id": "r1-451_451",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "451_451",
+      "qid": "Q75392006",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/451_451/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "correct": 6,
+        "extracted": 6,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r1-296_296",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "296_296",
+      "qid": "Q447757",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/296_296/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7281553398058253,
+        "recall": 0.7142857142857143,
+        "f1": 0.7211538461538461,
+        "correct": 75,
+        "extracted": 103,
+        "ground_truth": 105
+      }
+    },
+    {
+      "entry_id": "r1-429_429",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "429_429",
+      "qid": "Q72937",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/429_429/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9444444444444444,
+        "recall": 0.68,
+        "f1": 0.7906976744186047,
+        "correct": 17,
+        "extracted": 18,
+        "ground_truth": 25
+      }
+    },
+    {
+      "entry_id": "r1-483_483",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "483_483",
+      "qid": "Q8562880",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/483_483/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 28,
+        "extracted": 28,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r1-77_77",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "77_77",
+      "qid": "Q1618862",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/77_77/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r2-28_28",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "28_28",
+      "qid": "Q11801765",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/28_28/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9444444444444444,
+        "recall": 1.0,
+        "f1": 0.9714285714285714,
+        "correct": 51,
+        "extracted": 54,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r2-153_153",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "153_153",
+      "qid": "Q235128",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/153_153/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9814814814814815,
+        "recall": 1.0,
+        "f1": 0.9906542056074767,
+        "correct": 53,
+        "extracted": 54,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "r2-173_173",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "173_173",
+      "qid": "Q242298",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/173_173/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.89,
+        "recall": 0.6095890410958904,
+        "f1": 0.7235772357723577,
+        "correct": 89,
+        "extracted": 100,
+        "ground_truth": 146
+      }
+    },
+    {
+      "entry_id": "r2-164_164",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "164_164",
+      "qid": "Q237341",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/164_164/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9714285714285714,
+        "recall": 0.7083333333333334,
+        "f1": 0.8192771084337349,
+        "correct": 34,
+        "extracted": 35,
+        "ground_truth": 48
+      }
+    },
+    {
+      "entry_id": "r2-482_482",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "482_482",
+      "qid": "Q855749",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/482_482/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9607843137254902,
+        "recall": 1.0,
+        "f1": 0.98,
+        "correct": 49,
+        "extracted": 51,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r2-21_21",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "21_21",
+      "qid": "Q11324270",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/21_21/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.875,
+        "recall": 0.6494845360824743,
+        "f1": 0.7455621301775148,
+        "correct": 63,
+        "extracted": 72,
+        "ground_truth": 97
+      }
+    },
+    {
+      "entry_id": "r2-313_313",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "313_313",
+      "qid": "Q502763",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/313_313/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.4528301886792453,
+        "recall": 0.41379310344827586,
+        "f1": 0.4324324324324324,
+        "correct": 24,
+        "extracted": 53,
+        "ground_truth": 58
+      }
+    },
+    {
+      "entry_id": "r2-213_213",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "213_213",
+      "qid": "Q2783067",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/213_213/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9036144578313253,
+        "recall": 0.6607929515418502,
+        "f1": 0.7633587786259544,
+        "correct": 150,
+        "extracted": 166,
+        "ground_truth": 227
+      }
+    },
+    {
+      "entry_id": "r2-455_455",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "455_455",
+      "qid": "Q75486738",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/455_455/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 8,
+        "extracted": 8,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "r2-55_55",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "55_55",
+      "qid": "Q152935",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/55_55/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9743589743589743,
+        "recall": 1.0,
+        "f1": 0.9870129870129869,
+        "correct": 76,
+        "extracted": 78,
+        "ground_truth": 76
+      }
+    },
+    {
+      "entry_id": "r2-232_232",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "232_232",
+      "qid": "Q311442",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/232_232/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r2-57_57",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "57_57",
+      "qid": "Q153815",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/57_57/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7087378640776699,
+        "recall": 0.7156862745098039,
+        "f1": 0.7121951219512195,
+        "correct": 73,
+        "extracted": 103,
+        "ground_truth": 102
+      }
+    },
+    {
+      "entry_id": "r2-64_64",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "64_64",
+      "qid": "Q156531",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/64_64/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8370786516853933,
+        "recall": 0.9933333333333333,
+        "f1": 0.9085365853658537,
+        "correct": 149,
+        "extracted": 178,
+        "ground_truth": 150
+      }
+    },
+    {
+      "entry_id": "r2-241_241",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "241_241",
+      "qid": "Q3239518",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/241_241/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7160493827160493,
+        "recall": 0.8169014084507042,
+        "f1": 0.7631578947368421,
+        "correct": 116,
+        "extracted": 162,
+        "ground_truth": 142
+      }
+    },
+    {
+      "entry_id": "r2-77_77",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "77_77",
+      "qid": "Q1618862",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/77_77/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r2-158_158",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "158_158",
+      "qid": "Q235438",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/158_158/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1": 0.9411764705882353,
+        "correct": 16,
+        "extracted": 16,
+        "ground_truth": 18
+      }
+    },
+    {
+      "entry_id": "r2-284_284",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "284_284",
+      "qid": "Q3991503",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/284_284/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "correct": 26,
+        "extracted": 26,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r2-87_87",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "87_87",
+      "qid": "Q1699743",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/87_87/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8095238095238095,
+        "recall": 1.0,
+        "f1": 0.8947368421052632,
+        "correct": 17,
+        "extracted": 21,
+        "ground_truth": 17
+      }
+    },
+    {
+      "entry_id": "r2-335_335",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "335_335",
+      "qid": "Q570902",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/335_335/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7,
+        "recall": 1.0,
+        "f1": 0.8235294117647058,
+        "correct": 7,
+        "extracted": 10,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r3-43_43",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "43_43",
+      "qid": "Q1362941",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/43_43/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "correct": 26,
+        "extracted": 26,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r3-440_440",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "440_440",
+      "qid": "Q75248488",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/440_440/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9050279329608939,
+        "recall": 0.8307692307692308,
+        "f1": 0.8663101604278074,
+        "correct": 162,
+        "extracted": 179,
+        "ground_truth": 195
+      }
+    },
+    {
+      "entry_id": "r3-1_1",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "1_1",
+      "qid": "Q1004037",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/1_1/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8765432098765432,
+        "recall": 0.9594594594594594,
+        "f1": 0.9161290322580644,
+        "correct": 71,
+        "extracted": 81,
+        "ground_truth": 74
+      }
+    },
+    {
+      "entry_id": "r3-95_95",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "95_95",
+      "qid": "Q1753485",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/95_95/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.879746835443038,
+        "recall": 0.9586206896551724,
+        "f1": 0.9174917491749175,
+        "correct": 139,
+        "extracted": 158,
+        "ground_truth": 145
+      }
+    },
+    {
+      "entry_id": "r3-106_106",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "106_106",
+      "qid": "Q1871533",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/106_106/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6271186440677966,
+        "recall": 0.9487179487179487,
+        "f1": 0.7551020408163266,
+        "correct": 74,
+        "extracted": 118,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "r3-445_445",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "445_445",
+      "qid": "Q75332807",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/445_445/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9722222222222222,
+        "recall": 0.7865168539325843,
+        "f1": 0.8695652173913043,
+        "correct": 70,
+        "extracted": 72,
+        "ground_truth": 89
+      }
+    },
+    {
+      "entry_id": "r3-274_274",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "274_274",
+      "qid": "Q3743378",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/274_274/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6492146596858639,
+        "recall": 0.7315634218289085,
+        "f1": 0.6879334257975034,
+        "correct": 248,
+        "extracted": 382,
+        "ground_truth": 339
+      }
+    },
+    {
+      "entry_id": "r3-465_465",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "465_465",
+      "qid": "Q76306742",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/465_465/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6956521739130435,
+        "recall": 0.9504950495049505,
+        "f1": 0.8033472803347279,
+        "correct": 96,
+        "extracted": 138,
+        "ground_truth": 101
+      }
+    },
+    {
+      "entry_id": "r3-55_55",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "55_55",
+      "qid": "Q152935",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/55_55/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8941176470588236,
+        "recall": 1.0,
+        "f1": 0.9440993788819877,
+        "correct": 76,
+        "extracted": 85,
+        "ground_truth": 76
+      }
+    },
+    {
+      "entry_id": "r3-369_369",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "369_369",
+      "qid": "Q61338",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/369_369/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7586206896551724,
+        "recall": 0.5176470588235295,
+        "f1": 0.6153846153846153,
+        "correct": 44,
+        "extracted": 58,
+        "ground_truth": 85
+      }
+    },
+    {
+      "entry_id": "r3-485_485",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "485_485",
+      "qid": "Q862535",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/485_485/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9482758620689655,
+        "f1": 0.9734513274336283,
+        "correct": 55,
+        "extracted": 55,
+        "ground_truth": 58
+      }
+    },
+    {
+      "entry_id": "r3-187_187",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "187_187",
+      "qid": "Q255382",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/187_187/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 8,
+        "extracted": 8,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "r3-35_35",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "35_35",
+      "qid": "Q12495326",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/35_35/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6111111111111112,
+        "recall": 0.45454545454545453,
+        "f1": 0.5213270142180094,
+        "correct": 55,
+        "extracted": 90,
+        "ground_truth": 121
+      }
+    },
+    {
+      "entry_id": "r3-482_482",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "482_482",
+      "qid": "Q855749",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/482_482/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9607843137254902,
+        "recall": 1.0,
+        "f1": 0.98,
+        "correct": 49,
+        "extracted": 51,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r3-172_172",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "172_172",
+      "qid": "Q2414886",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/172_172/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7246376811594203,
+        "recall": 0.5154639175257731,
+        "f1": 0.6024096385542168,
+        "correct": 50,
+        "extracted": 69,
+        "ground_truth": 97
+      }
+    },
+    {
+      "entry_id": "r3-422_422",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "422_422",
+      "qid": "Q7244117",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/422_422/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6,
+        "recall": 0.54,
+        "f1": 0.5684210526315789,
+        "correct": 27,
+        "extracted": 45,
+        "ground_truth": 50
+      }
+    },
+    {
+      "entry_id": "r3-171_171",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "171_171",
+      "qid": "Q2412713",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/171_171/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7916666666666666,
+        "recall": 0.8085106382978723,
+        "f1": 0.7999999999999999,
+        "correct": 38,
+        "extracted": 48,
+        "ground_truth": 47
+      }
+    },
+    {
+      "entry_id": "r3-61_61",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "61_61",
+      "qid": "Q154952",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/61_61/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9444444444444444,
+        "recall": 0.8947368421052632,
+        "f1": 0.918918918918919,
+        "correct": 17,
+        "extracted": 18,
+        "ground_truth": 19
+      }
+    },
+    {
+      "entry_id": "r3-88_88",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "88_88",
+      "qid": "Q16999217",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/88_88/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9487179487179487,
+        "f1": 0.9736842105263158,
+        "correct": 74,
+        "extracted": 74,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "r3-290_290",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "290_290",
+      "qid": "Q43274",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/290_290/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.5589519650655022,
+        "recall": 0.9922480620155039,
+        "f1": 0.7150837988826816,
+        "correct": 128,
+        "extracted": 229,
+        "ground_truth": 129
+      }
+    },
+    {
+      "entry_id": "r3-225_225",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "225_225",
+      "qid": "Q2958306",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/225_225/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9655172413793104,
+        "recall": 1.0,
+        "f1": 0.9824561403508771,
+        "correct": 28,
+        "extracted": 29,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r3-65_65",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "65_65",
+      "qid": "Q156548",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/65_65/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7151162790697675,
+        "recall": 0.754601226993865,
+        "f1": 0.7343283582089553,
+        "correct": 123,
+        "extracted": 172,
+        "ground_truth": 163
+      }
+    },
+    {
+      "entry_id": "r3-114_114",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "114_114",
+      "qid": "Q1948021",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/114_114/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6283185840707964,
+        "recall": 0.7171717171717171,
+        "f1": 0.669811320754717,
+        "correct": 71,
+        "extracted": 113,
+        "ground_truth": 99
+      }
+    },
+    {
+      "entry_id": "r3-13_13",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "13_13",
+      "qid": "Q10633",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/13_13/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7486631016042781,
+        "recall": 0.7253886010362695,
+        "f1": 0.736842105263158,
+        "correct": 140,
+        "extracted": 187,
+        "ground_truth": 193
+      }
+    },
+    {
+      "entry_id": "r4-490_490",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "490_490",
+      "qid": "Q930013",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/490_490/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.5377358490566038,
+        "recall": 0.8028169014084507,
+        "f1": 0.6440677966101696,
+        "correct": 57,
+        "extracted": 106,
+        "ground_truth": 71
+      }
+    },
+    {
+      "entry_id": "r4-499_499",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "499_499",
+      "qid": "Q978898",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/499_499/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 17,
+        "extracted": 17,
+        "ground_truth": 17
+      }
+    },
+    {
+      "entry_id": "r4-450_450",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "450_450",
+      "qid": "Q75384169",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/450_450/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 48,
+        "extracted": 48,
+        "ground_truth": 48
+      }
+    },
+    {
+      "entry_id": "r4-260_260",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "260_260",
+      "qid": "Q3424937",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/260_260/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.875,
+        "recall": 0.6222222222222222,
+        "f1": 0.7272727272727274,
+        "correct": 28,
+        "extracted": 32,
+        "ground_truth": 45
+      }
+    },
+    {
+      "entry_id": "r4-128_128",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "128_128",
+      "qid": "Q2099997",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/128_128/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9795918367346939,
+        "recall": 0.9411764705882353,
+        "f1": 0.96,
+        "correct": 48,
+        "extracted": 49,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r4-59_59",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "59_59",
+      "qid": "Q154920",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/59_59/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6197183098591549,
+        "recall": 0.616822429906542,
+        "f1": 0.6182669789227165,
+        "correct": 132,
+        "extracted": 213,
+        "ground_truth": 214
+      }
+    },
+    {
+      "entry_id": "r4-333_333",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "333_333",
+      "qid": "Q564889",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/333_333/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7676056338028169,
+        "recall": 0.6606060606060606,
+        "f1": 0.7100977198697068,
+        "correct": 109,
+        "extracted": 142,
+        "ground_truth": 165
+      }
+    },
+    {
+      "entry_id": "r4-285_285",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "285_285",
+      "qid": "Q4006506",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/285_285/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6813186813186813,
+        "recall": 0.7948717948717948,
+        "f1": 0.7337278106508875,
+        "correct": 62,
+        "extracted": 91,
+        "ground_truth": 78
+      }
+    },
+    {
+      "entry_id": "r4-410_410",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "410_410",
+      "qid": "Q680304",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/410_410/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8842975206611571,
+        "recall": 1.0,
+        "f1": 0.9385964912280702,
+        "correct": 107,
+        "extracted": 121,
+        "ground_truth": 107
+      }
+    },
+    {
+      "entry_id": "r4-287_287",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "287_287",
+      "qid": "Q4259487",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/287_287/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.896551724137931,
+        "f1": 0.9454545454545454,
+        "correct": 26,
+        "extracted": 26,
+        "ground_truth": 29
+      }
+    },
+    {
+      "entry_id": "r4-364_364",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "364_364",
+      "qid": "Q60741",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/364_364/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.7638888888888888,
+        "recall": 0.8208955223880597,
+        "f1": 0.7913669064748201,
+        "correct": 55,
+        "extracted": 72,
+        "ground_truth": 67
+      }
+    },
+    {
+      "entry_id": "r4-369_369",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "369_369",
+      "qid": "Q61338",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/369_369/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6923076923076923,
+        "recall": 0.6206896551724138,
+        "f1": 0.6545454545454545,
+        "correct": 54,
+        "extracted": 78,
+        "ground_truth": 87
+      }
+    },
+    {
+      "entry_id": "r4-278_278",
+      "category": "inconsistent",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "278_278",
+      "qid": "Q381069",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/278_278/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 53,
+        "extracted": 53,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "base-339_339",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "339_339",
+      "qid": "Q57355",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/339_339/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333333333333333,
+        "correct": 7,
+        "extracted": 8,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "base-287_287",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "287_287",
+      "qid": "Q4259487",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/287_287/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "correct": 19,
+        "extracted": 19,
+        "ground_truth": 20
+      }
+    },
+    {
+      "entry_id": "base-68_68",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "68_68",
+      "qid": "Q1590241",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/68_68/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 8,
+        "extracted": 8,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "base-300_300",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "300_300",
+      "qid": "Q452039",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/300_300/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9661016949152542,
+        "recall": 0.76,
+        "f1": 0.8507462686567164,
+        "correct": 57,
+        "extracted": 59,
+        "ground_truth": 75
+      }
+    },
+    {
+      "entry_id": "base-442_442",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "442_442",
+      "qid": "Q75317573",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/442_442/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6373626373626373,
+        "recall": 0.5742574257425742,
+        "f1": 0.6041666666666666,
+        "correct": 58,
+        "extracted": 91,
+        "ground_truth": 101
+      }
+    },
+    {
+      "entry_id": "base-421_421",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "421_421",
+      "qid": "Q7243987",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/421_421/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9433962264150944,
+        "f1": 0.970873786407767,
+        "correct": 50,
+        "extracted": 50,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "base-456_456",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "456_456",
+      "qid": "Q75616658",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/456_456/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8651685393258427,
+        "recall": 0.875,
+        "f1": 0.8700564971751412,
+        "correct": 77,
+        "extracted": 89,
+        "ground_truth": 88
+      }
+    },
+    {
+      "entry_id": "base-215_215",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "215_215",
+      "qid": "Q2800847",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/215_215/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333333333333333,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "base-493_493",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "493_493",
+      "qid": "Q962762",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/493_493/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 8,
+        "extracted": 8,
+        "ground_truth": 8
+      }
+    },
+    {
+      "entry_id": "base-426_426",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl",
+      "source_subrun": "426_426",
+      "qid": "Q7244716",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl/426_426/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8018018018018018,
+        "recall": 0.8557692307692307,
+        "f1": 0.8279069767441861,
+        "correct": 89,
+        "extracted": 111,
+        "ground_truth": 104
+      }
+    },
+    {
+      "entry_id": "r1-104_104",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "104_104",
+      "qid": "Q18363",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/104_104/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 138,
+        "extracted": 138,
+        "ground_truth": 138
+      }
+    },
+    {
+      "entry_id": "r1-25_25",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "25_25",
+      "qid": "Q115477",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/25_25/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.7362637362637363,
+        "f1": 0.8481012658227849,
+        "correct": 134,
+        "extracted": 134,
+        "ground_truth": 182
+      }
+    },
+    {
+      "entry_id": "r1-250_250",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "250_250",
+      "qid": "Q3337692",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/250_250/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.821917808219178,
+        "recall": 0.8108108108108109,
+        "f1": 0.8163265306122449,
+        "correct": 60,
+        "extracted": 73,
+        "ground_truth": 74
+      }
+    },
+    {
+      "entry_id": "r1-494_494",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "494_494",
+      "qid": "Q96731",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/494_494/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.962962962962963,
+        "correct": 26,
+        "extracted": 26,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r1-376_376",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "376_376",
+      "qid": "Q621866",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/376_376/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 51,
+        "extracted": 51,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r1-421_421",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "421_421",
+      "qid": "Q7243987",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/421_421/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 53,
+        "extracted": 53,
+        "ground_truth": 53
+      }
+    },
+    {
+      "entry_id": "r1-195_195",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "195_195",
+      "qid": "Q26215204",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/195_195/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9661016949152542,
+        "recall": 0.9827586206896551,
+        "f1": 0.9743589743589743,
+        "correct": 57,
+        "extracted": 59,
+        "ground_truth": 58
+      }
+    },
+    {
+      "entry_id": "r1-350_350",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "350_350",
+      "qid": "Q58304095",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/350_350/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.963963963963964,
+        "recall": 1.0,
+        "f1": 0.9816513761467891,
+        "correct": 107,
+        "extracted": 111,
+        "ground_truth": 107
+      }
+    },
+    {
+      "entry_id": "r1-96_96",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "96_96",
+      "qid": "Q1758535",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/96_96/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0,
+        "extracted": 0,
+        "ground_truth": 0
+      }
+    },
+    {
+      "entry_id": "r1-53_53",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_1",
+      "source_subrun": "53_53",
+      "qid": "Q152099",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_1/53_53/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "correct": 28,
+        "extracted": 42,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r2-249_249",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "249_249",
+      "qid": "Q3312290",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/249_249/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.8952380952380953,
+        "f1": 0.9447236180904524,
+        "correct": 94,
+        "extracted": 94,
+        "ground_truth": 105
+      }
+    },
+    {
+      "entry_id": "r2-423_423",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "423_423",
+      "qid": "Q7244274",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/423_423/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8666666666666667,
+        "recall": 0.7428571428571429,
+        "f1": 0.8,
+        "correct": 78,
+        "extracted": 90,
+        "ground_truth": 105
+      }
+    },
+    {
+      "entry_id": "r2-430_430",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "430_430",
+      "qid": "Q7367831",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/430_430/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0,
+        "extracted": 0,
+        "ground_truth": 0
+      }
+    },
+    {
+      "entry_id": "r2-36_36",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "36_36",
+      "qid": "Q125361",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/36_36/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9607843137254902,
+        "recall": 1.0,
+        "f1": 0.98,
+        "correct": 49,
+        "extracted": 51,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r2-205_205",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "205_205",
+      "qid": "Q269493",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/205_205/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 51,
+        "extracted": 51,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r2-85_85",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "85_85",
+      "qid": "Q16911051",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/85_85/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.98,
+        "recall": 1.0,
+        "f1": 0.98989898989899,
+        "correct": 49,
+        "extracted": 50,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r2-480_480",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "480_480",
+      "qid": "Q84795732",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/480_480/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9333333333333333,
+        "recall": 0.691358024691358,
+        "f1": 0.7943262411347518,
+        "correct": 56,
+        "extracted": 60,
+        "ground_truth": 81
+      }
+    },
+    {
+      "entry_id": "r2-326_326",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "326_326",
+      "qid": "Q538411",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/326_326/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8823529411764706,
+        "recall": 0.9375,
+        "f1": 0.9090909090909091,
+        "correct": 15,
+        "extracted": 17,
+        "ground_truth": 16
+      }
+    },
+    {
+      "entry_id": "r2-139_139",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "139_139",
+      "qid": "Q2278538",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/139_139/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 51,
+        "extracted": 51,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r2-196_196",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_2",
+      "source_subrun": "196_196",
+      "qid": "Q2624237",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_2/196_196/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.56,
+        "recall": 0.9333333333333333,
+        "f1": 0.7000000000000001,
+        "correct": 14,
+        "extracted": 25,
+        "ground_truth": 15
+      }
+    },
+    {
+      "entry_id": "r3-188_188",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "188_188",
+      "qid": "Q255389",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/188_188/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9607843137254902,
+        "recall": 1.0,
+        "f1": 0.98,
+        "correct": 49,
+        "extracted": 51,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r3-121_121",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "121_121",
+      "qid": "Q2031618",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/121_121/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 7,
+        "extracted": 7,
+        "ground_truth": 7
+      }
+    },
+    {
+      "entry_id": "r3-455_455",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "455_455",
+      "qid": "Q75486738",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/455_455/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9655172413793104,
+        "f1": 0.9824561403508771,
+        "correct": 28,
+        "extracted": 28,
+        "ground_truth": 29
+      }
+    },
+    {
+      "entry_id": "r3-350_350",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "350_350",
+      "qid": "Q58304095",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/350_350/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9622641509433962,
+        "recall": 0.9532710280373832,
+        "f1": 0.9577464788732395,
+        "correct": 102,
+        "extracted": 106,
+        "ground_truth": 107
+      }
+    },
+    {
+      "entry_id": "r3-278_278",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "278_278",
+      "qid": "Q381069",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/278_278/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.975,
+        "recall": 0.7647058823529411,
+        "f1": 0.857142857142857,
+        "correct": 39,
+        "extracted": 40,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r3-260_260",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "260_260",
+      "qid": "Q3424937",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/260_260/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.704225352112676,
+        "recall": 0.5952380952380952,
+        "f1": 0.6451612903225805,
+        "correct": 50,
+        "extracted": 71,
+        "ground_truth": 84
+      }
+    },
+    {
+      "entry_id": "r3-111_111",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "111_111",
+      "qid": "Q1936171",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/111_111/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.9411764705882353,
+        "f1": 0.9696969696969697,
+        "correct": 48,
+        "extracted": 48,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r3-444_444",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "444_444",
+      "qid": "Q75328030",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/444_444/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9104477611940298,
+        "recall": 0.953125,
+        "f1": 0.931297709923664,
+        "correct": 122,
+        "extracted": 134,
+        "ground_truth": 128
+      }
+    },
+    {
+      "entry_id": "r3-135_135",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "135_135",
+      "qid": "Q2169403",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/135_135/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8085106382978723,
+        "recall": 0.7916666666666666,
+        "f1": 0.7999999999999999,
+        "correct": 38,
+        "extracted": 47,
+        "ground_truth": 48
+      }
+    },
+    {
+      "entry_id": "r3-79_79",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_3",
+      "source_subrun": "79_79",
+      "qid": "Q162177",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_3/79_79/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.8942307692307693,
+        "recall": 0.744,
+        "f1": 0.8122270742358079,
+        "correct": 279,
+        "extracted": 312,
+        "ground_truth": 375
+      }
+    },
+    {
+      "entry_id": "r4-407_407",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "407_407",
+      "qid": "Q6757730",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/407_407/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6071428571428571,
+        "recall": 0.7083333333333334,
+        "f1": 0.6538461538461539,
+        "correct": 17,
+        "extracted": 28,
+        "ground_truth": 24
+      }
+    },
+    {
+      "entry_id": "r4-276_276",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "276_276",
+      "qid": "Q3756709",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/276_276/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 51,
+        "extracted": 51,
+        "ground_truth": 51
+      }
+    },
+    {
+      "entry_id": "r4-290_290",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "290_290",
+      "qid": "Q43274",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/290_290/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9142857142857143,
+        "recall": 0.9922480620155039,
+        "f1": 0.9516728624535317,
+        "correct": 128,
+        "extracted": 140,
+        "ground_truth": 129
+      }
+    },
+    {
+      "entry_id": "r4-337_337",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "337_337",
+      "qid": "Q57304",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/337_337/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 101,
+        "extracted": 101,
+        "ground_truth": 101
+      }
+    },
+    {
+      "entry_id": "r4-432_432",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "432_432",
+      "qid": "Q7422845",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/432_432/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "correct": 28,
+        "extracted": 28,
+        "ground_truth": 28
+      }
+    },
+    {
+      "entry_id": "r4-412_412",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "412_412",
+      "qid": "Q7028910",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/412_412/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "correct": 0,
+        "extracted": 0,
+        "ground_truth": 0
+      }
+    },
+    {
+      "entry_id": "r4-188_188",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "188_188",
+      "qid": "Q255389",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/188_188/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.9583333333333334,
+        "recall": 0.9387755102040817,
+        "f1": 0.9484536082474228,
+        "correct": 46,
+        "extracted": 48,
+        "ground_truth": 49
+      }
+    },
+    {
+      "entry_id": "r4-497_497",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "497_497",
+      "qid": "Q969754",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/497_497/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.6538461538461539,
+        "recall": 0.7391304347826086,
+        "f1": 0.693877551020408,
+        "correct": 17,
+        "extracted": 26,
+        "ground_truth": 23
+      }
+    },
+    {
+      "entry_id": "r4-84_84",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "84_84",
+      "qid": "Q167423",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/84_84/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 1.0,
+        "recall": 0.90625,
+        "f1": 0.9508196721311475,
+        "correct": 29,
+        "extracted": 29,
+        "ground_truth": 32
+      }
+    },
+    {
+      "entry_id": "r4-5_5",
+      "category": "usual",
+      "source_run": "royalty_gemini_without_shacl_4",
+      "source_subrun": "5_5",
+      "qid": "Q10315513",
+      "seed_data_graph_path": "results/royalty_gemini_without_shacl_4/5_5/delta_graph.ttl",
+      "before_metrics": {
+        "precision": 0.961038961038961,
+        "recall": 0.9487179487179487,
+        "f1": 0.9548387096774195,
+        "correct": 74,
+        "extracted": 77,
+        "ground_truth": 78
+      }
+    }
+  ]
+}

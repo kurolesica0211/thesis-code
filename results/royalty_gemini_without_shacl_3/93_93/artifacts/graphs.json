@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasAncestor data:King_Christian_IX ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Prince_Constantine,\n        data:Prince_Nicholas ;\n    :hasDaughter data:Evgenia ;\n    :hasDeathYear 1957 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Olga_Konstantinovna_of_Russia ;\n    :hasRelation data:Prince_Valdemar_of_Denmark,\n        data:Princess_Marie_Bonaparte ;\n    :hasSon data:Petros .\n\ndata:Evgenia a :Person,\n        :Woman .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:King_Christian_IX a :Man,\n        :Person .\n\ndata:Olga_Konstantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Petros a :Man,\n        :Person .\n\ndata:Prince_Constantine a :Man,\n        :Person .\n\ndata:Prince_Nicholas a :Man,\n        :Person .\n\ndata:Prince_Valdemar_of_Denmark a :Man,\n        :Person .\n\ndata:Princess_Marie_Bonaparte a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasAncestor data:King_Christian_IX ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Prince_Constantine,\n        data:Prince_Nicholas ;\n    :hasDaughter data:Evgenia ;\n    :hasDeathYear 1957 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Olga_Konstantinovna_of_Russia ;\n    :hasRelation data:Prince_Valdemar_of_Denmark,\n        data:Princess_Marie_Bonaparte ;\n    :hasSon data:Petros .\n\ndata:Evgenia a :Person,\n        :Woman .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:King_Christian_IX a :Man,\n        :Person .\n\ndata:Olga_Konstantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Petros a :Man,\n        :Person .\n\ndata:Prince_Constantine a :Man,\n        :Person .\n\ndata:Prince_Nicholas a :Man,\n        :Person .\n\ndata:Prince_Valdemar_of_Denmark a :Man,\n        :Person .\n\ndata:Princess_Marie_Bonaparte a :Person,\n        :Woman .\n\n"
+    }
+]

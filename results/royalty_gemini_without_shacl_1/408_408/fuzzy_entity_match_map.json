@@ -1,0 +1,101 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/408_408",
+  "text_file": "Q6759834.txt",
+  "text_key": "Q6759834",
+  "article": "https://en.wikipedia.org/wiki/Margaret_Rhodes",
+  "article_key": "Margaret Rhodes",
+  "main_entity": {
+    "uri": "http://example.com/data#Margaret_Rhodes",
+    "qid": "Q6759834",
+    "label": "Margaret Rhodes"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Margaret_Rhodes",
+      "qid": "Q6759834",
+      "label": "Margaret Rhodes",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/MargaretRhodes",
+      "extracted_local_name": "MargaretRhodes",
+      "embedding_text": "Margaret Rhodes",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Margaret_Rhodes",
+      "ground_truth_qid": "Q6759834",
+      "ground_truth_label": "Margaret Rhodes",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/DenysGravenorRhodes",
+      "extracted_local_name": "DenysGravenorRhodes",
+      "embedding_text": "Denys Gravenor Rhodes",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4444444444444444
+    },
+    {
+      "extracted_uri": "http://example.org/data/LadyMaryBowesLyon",
+      "extracted_local_name": "LadyMaryBowesLyon",
+      "embedding_text": "Lady Mary Bowes Lyon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rhodes",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/LordElphinstone16th",
+      "extracted_local_name": "LordElphinstone16th",
+      "embedding_text": "Lord Elphinstone16th",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Margaret Elphinstone",
+      "best_candidate_label": "Margaret Rhodes",
+      "best_candidate_qid": "Q6759834",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6222222222222222
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 1,
+    "entities_unmatched": 3
+  }
+}

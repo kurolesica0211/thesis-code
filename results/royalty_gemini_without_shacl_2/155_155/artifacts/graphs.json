@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Ellis_Jones a :Man .\n\ndata:India_Riven_Oxenberg a :Woman ;\n    :isChildOf data:Catherine_Oxenberg,\n        data:William_Weitz_Shaffer .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear \"1998\"^^xsd:string .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear \"1961\"^^xsd:string ;\n    :isChildOf data:Howard_Oxenberg,\n        data:Princess_Elizabeth_of_Yugoslavia ;\n    :isSiblingOf data:Christina_Oxenberg .\n\ndata:Christina_Oxenberg a :Woman .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear \"1919\"^^xsd:string ;\n    :hasDeathYear \"2010\"^^xsd:string .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear \"1936\"^^xsd:string ;\n    :isChildOf data:Prince_Paul_of_Yugoslavia,\n        data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:William_Weitz_Shaffer a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Ellis_Jones a :Man .\n\ndata:India_Riven_Oxenberg a :Woman ;\n    :isChildOf data:Catherine_Oxenberg,\n        data:William_Weitz_Shaffer .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear \"1998\"^^xsd:string .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear \"1961\"^^xsd:string ;\n    :isChildOf data:Howard_Oxenberg,\n        data:Princess_Elizabeth_of_Yugoslavia ;\n    :isSiblingOf data:Christina_Oxenberg .\n\ndata:Christina_Oxenberg a :Woman .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear \"1919\"^^xsd:string ;\n    :hasDeathYear \"2010\"^^xsd:string .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear \"1936\"^^xsd:string ;\n    :isChildOf data:Prince_Paul_of_Yugoslavia,\n        data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:William_Weitz_Shaffer a :Man .\n\n"
+    }
+]

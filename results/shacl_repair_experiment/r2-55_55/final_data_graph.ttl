@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carol_of_Romania a :Man,
+        :Person ;
+    :hasSister data:Elisabeth_of_Romania .
+
+data:Christopher_of_Greece a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBirthYear 1890,
+        "1890"^^xsd:long ;
+    :hasBrother data:Alexander_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1947,
+        "1947"^^xsd:long ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasRelation data:Elisabeth_of_Romania ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Ferdinand_I_of_Romania a :Ancestor,
+        :Man,
+        :Person .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_I_of_Romania ;
+    :hasMother data:Marie_of_Romania .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+

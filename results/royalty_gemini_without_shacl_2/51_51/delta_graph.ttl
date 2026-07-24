@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Princess_Royal a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1973 ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasRelation data:Mark_Phillips,
+        data:Timothy_Laurence .
+
+data:King_Charles_III a :Man .
+
+data:Mark_Phillips a :Man ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Timothy_Laurence a :Man .
+
+data:Peter_Phillips a :Man .
+
+data:Zara_Tindall a :Woman .
+

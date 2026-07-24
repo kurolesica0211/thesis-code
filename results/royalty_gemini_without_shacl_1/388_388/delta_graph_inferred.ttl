@@ -1,0 +1,167 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin .
+
+data:Duchess_Louise_of_Mecklenburg_Schwerin a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Marie_of_Windisch_Graetz ;
+    :hasDaughter data:Princess_Marie_of_Windisch_Graetz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :hasSister data:Duchess_Louise_of_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isAuntOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isBloodrelationOf data:Duchess_Louise_of_Mecklenburg_Schwerin ;
+    :isMotherOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isParentOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isSiblingOf data:Duchess_Louise_of_Mecklenburg_Schwerin ;
+    :isSisterOf data:Duchess_Louise_of_Mecklenburg_Schwerin .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasChild data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :hasSon data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isFatherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isParentOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isUncleOf data:Duke_Paul_Frederick_of_Mecklenburg .
+
+data:Prince_Hugo_of_Windisch_Graetz a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Hugo_of_Windisch_Graetz ;
+    :hasChild data:Princess_Marie_of_Windisch_Graetz ;
+    :hasDaughter data:Princess_Marie_of_Windisch_Graetz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :isAncestorOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isBloodrelationOf data:Prince_Hugo_of_Windisch_Graetz ;
+    :isBrotherOf data:Prince_Hugo_of_Windisch_Graetz ;
+    :isFatherOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isParentOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isSiblingOf data:Prince_Hugo_of_Windisch_Graetz ;
+    :isUncleOf data:Princess_Marie_of_Windisch_Graetz .
+
+data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :hasChild data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasDaughter data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :isBrotherOf data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :isFatherOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isParentOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :isUncleOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :hasChild data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasFather data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :hasSister data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAuntOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isChildOf data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :isDaughterOf data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isParentOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Princess_Marie_of_Windisch_Graetz a :Woman ;
+    :hasAncestor data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Prince_Hugo_of_Windisch_Graetz ;
+    :hasFather data:Prince_Hugo_of_Windisch_Graetz ;
+    :hasMother data:Duchess_Louise_of_Mecklenburg_Schwerin ;
+    :hasParent data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Prince_Hugo_of_Windisch_Graetz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :hasSister data:Princess_Marie_of_Windisch_Graetz ;
+    :isBloodrelationOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isChildOf data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Prince_Hugo_of_Windisch_Graetz ;
+    :isDaughterOf data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Prince_Hugo_of_Windisch_Graetz ;
+    :isSiblingOf data:Princess_Marie_of_Windisch_Graetz ;
+    :isSisterOf data:Princess_Marie_of_Windisch_Graetz .
+
+data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
+    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasBirthYear 1852 ;
+    :hasBrother data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasDeathYear 1923 ;
+    :hasFather data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasMarriageYear 1881 ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Duchess_Louise_of_Mecklenburg_Schwerin,
+        data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz,
+        data:Prince_Hugo_of_Windisch_Graetz,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz,
+        data:Princess_Marie_of_Windisch_Graetz ;
+    :isBloodrelationOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isChildOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSonOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz .
+

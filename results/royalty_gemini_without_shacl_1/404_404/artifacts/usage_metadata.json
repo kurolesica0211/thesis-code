@@ -1,0 +1,146 @@
+{
+    "translation": [],
+    "final": [
+        {
+            "iteration": 17,
+            "metadata": [
+                {
+                    "input_tokens": 11003,
+                    "output_tokens": 27,
+                    "total_tokens": 11030,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11102,
+                    "output_tokens": 50,
+                    "total_tokens": 11152,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11261,
+                    "output_tokens": 26,
+                    "total_tokens": 11287,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11409,
+                    "output_tokens": 27,
+                    "total_tokens": 11436,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11572,
+                    "output_tokens": 38,
+                    "total_tokens": 11610,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11759,
+                    "output_tokens": 39,
+                    "total_tokens": 11798,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 11961,
+                    "output_tokens": 26,
+                    "total_tokens": 11987,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 12163,
+                    "output_tokens": 38,
+                    "total_tokens": 12201,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 12390,
+                    "output_tokens": 30,
+                    "total_tokens": 12420,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 12626,
+                    "output_tokens": 41,
+                    "total_tokens": 12667,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 12890,
+                    "output_tokens": 29,
+                    "total_tokens": 12919,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 13158,
+                    "output_tokens": 52,
+                    "total_tokens": 13210,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 13461,
+                    "output_tokens": 26,
+                    "total_tokens": 13487,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 13751,
+                    "output_tokens": 28,
+                    "total_tokens": 13779,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 14058,
+                    "output_tokens": 40,
+                    "total_tokens": 14098,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 14390,
+                    "output_tokens": 42,
+                    "total_tokens": 14432,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                },
+                {
+                    "input_tokens": 14739,
+                    "output_tokens": 8,
+                    "total_tokens": 14747,
+                    "input_token_details": {
+                        "cache_read": 10998
+                    }
+                }
+            ]
+        }
+    ]
+}

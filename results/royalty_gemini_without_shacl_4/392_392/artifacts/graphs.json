@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Wilhelm Viktor Karl August Heinrich Sigismund\"^^xsd:string ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1978 ;\n    :hasFather data:Prince_Henry_of_Prussia ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Princess_Charlotte_of_Saxe-Altenburg ;\n    :hasSon data:Alfred_of_Prussia .\n\ndata:Alfred_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2013 .\n\ndata:Ernst_II_Duke_of_Saxe-Altenburg a :Man,\n        :Person .\n\ndata:Prince_Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Charlotte_of_Saxe-Altenburg a :Person,\n        :Woman ;\n    :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Wilhelm Viktor Karl August Heinrich Sigismund\"^^xsd:string ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1978 ;\n    :hasFather data:Prince_Henry_of_Prussia ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;\n    :hasRelation data:Princess_Charlotte_of_Saxe-Altenburg ;\n    :hasSon data:Alfred_of_Prussia .\n\ndata:Alfred_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2013 .\n\ndata:Ernst_II_Duke_of_Saxe-Altenburg a :Man,\n        :Person .\n\ndata:Prince_Henry_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Charlotte_of_Saxe-Altenburg a :Person,\n        :Woman ;\n    :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:1898 a :DomainEntity .
+
+data:Alice_of_Battenberg a :Woman ;
+    :hasRelation data:Alice_of_Battenberg ;
+    :hasSister data:Alice_of_Battenberg ;
+    :isBloodrelationOf data:Alice_of_Battenberg ;
+    :isSiblingOf data:Alice_of_Battenberg ;
+    :isSisterOf data:Alice_of_Battenberg .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Woman ;
+    :hasRelation data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Queen_Victoria_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSisterOf data:Queen_Victoria_of_the_United_Kingdom .
+
+data:William_I_German_Emperor a :Man ;
+    :hasBrother data:William_I_German_Emperor ;
+    :hasRelation data:William_I_German_Emperor ;
+    :isBloodrelationOf data:William_I_German_Emperor ;
+    :isBrotherOf data:William_I_German_Emperor ;
+    :isSiblingOf data:William_I_German_Emperor .
+
+data:Heinrich_XXX_Reuss_of_K%C3%B6stritz a :Man ;
+    :hasBirthYear 1864 ;
+    :hasBrother data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :hasDeathYear 1939 ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :isBrotherOf data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Heinrich_XXX_Reuss_of_K%C3%B6stritz .
+
+data:Bernhard_III_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasBrother data:Bernhard_III_of_Saxe-Meiningen ;
+    :hasChild data:Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :isAncestorOf data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Bernhard_III_of_Saxe-Meiningen ;
+    :isBrotherOf data:Bernhard_III_of_Saxe-Meiningen ;
+    :isFatherOf data:Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Bernhard_III_of_Saxe-Meiningen ;
+    :isUncleOf data:Feodora_of_Saxe-Meiningen .
+
+data:Empress_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Charlotte_of_Prussia ;
+    :hasDaughter data:Charlotte_of_Prussia ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Empress_Victoria ;
+    :isAncestorOf data:Charlotte_of_Prussia,
+        data:Feodora_of_Saxe-Meiningen ;
+    :isAuntOf data:Charlotte_of_Prussia ;
+    :isBloodrelationOf data:Empress_Victoria ;
+    :isMotherOf data:Charlotte_of_Prussia ;
+    :isParentOf data:Charlotte_of_Prussia ;
+    :isSiblingOf data:Empress_Victoria ;
+    :isSisterOf data:Empress_Victoria .
+
+data:Friedrich_III_of_Germany a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_III_of_Germany ;
+    :hasChild data:Charlotte_of_Prussia ;
+    :hasDaughter data:Charlotte_of_Prussia ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :isAncestorOf data:Charlotte_of_Prussia,
+        data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Friedrich_III_of_Germany ;
+    :isBrotherOf data:Friedrich_III_of_Germany ;
+    :isFatherOf data:Charlotte_of_Prussia ;
+    :isParentOf data:Charlotte_of_Prussia ;
+    :isSiblingOf data:Friedrich_III_of_Germany ;
+    :isUncleOf data:Charlotte_of_Prussia .
+
+data:Feodora_of_Saxe-Meiningen a :Woman ;
+    :hasAncestor data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Friedrich_III_of_Germany ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;
+    :hasMarriageYear data:1898 ;
+    :hasMother data:Charlotte_of_Prussia ;
+    :hasParent data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Feodora_of_Saxe-Meiningen ;
+    :isChildOf data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia ;
+    :isDaughterOf data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia ;
+    :isSiblingOf data:Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Feodora_of_Saxe-Meiningen ;
+    :knownAs "Feodora Viktoria Auguste Marie Marianne"^^xsd:string .
+
+data:Charlotte_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Empress_Victoria,
+        data:Friedrich_III_of_Germany ;
+    :hasChild data:Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Feodora_of_Saxe-Meiningen ;
+    :hasFather data:Friedrich_III_of_Germany ;
+    :hasMother data:Empress_Victoria ;
+    :hasParent data:Empress_Victoria,
+        data:Friedrich_III_of_Germany ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen,
+        data:Charlotte_of_Prussia,
+        data:Empress_Victoria,
+        data:Feodora_of_Saxe-Meiningen,
+        data:Friedrich_III_of_Germany,
+        data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Charlotte_of_Prussia ;
+    :isAncestorOf data:Feodora_of_Saxe-Meiningen ;
+    :isAuntOf data:Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Charlotte_of_Prussia ;
+    :isChildOf data:Empress_Victoria,
+        data:Friedrich_III_of_Germany ;
+    :isDaughterOf data:Empress_Victoria,
+        data:Friedrich_III_of_Germany ;
+    :isMotherOf data:Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Charlotte_of_Prussia ;
+    :isSisterOf data:Charlotte_of_Prussia .
+

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man ;
+    :hasBirthYear "1945"^^xsd:positiveInteger ;
+    :hasFather data:King_Peter_II ;
+    :hasMother data:Queen_Alexandra_of_Yugoslavia ;
+    :hasSon data:Alexander_son,
+        data:Peter,
+        data:Philip .
+
+data:Katherine_Clairy_Batis a :Woman ;
+    :hasFather data:Robert_Batis ;
+    :hasMother data:Anna_Dosti .
+
+data:Prince_George a :Man .
+
+data:Alexander_son a :Man ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orleans_Braganza .
+
+data:Anna_Dosti a :Woman .
+
+data:King_Peter_II a :Man .
+
+data:Peter a :Man ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orleans_Braganza .
+
+data:Philip a :Man ;
+    :hasMother data:Princess_Maria_da_Gloria_of_Orleans_Braganza .
+
+data:Princess_Aspasia_of_Greece_and_Denmark a :Woman .
+
+data:Queen_Alexandra_of_Yugoslavia a :Woman ;
+    :hasMother data:Princess_Aspasia_of_Greece_and_Denmark .
+
+data:Robert_Batis a :Man .
+
+data:Princess_Maria_da_Gloria_of_Orleans_Braganza a :Woman .
+

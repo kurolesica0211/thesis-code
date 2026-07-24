@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Claude_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Claude_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Claude_of_Orl%C3%A9ans .
+
+data:Prince_Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Aimone_Duke_of_Aosta ;
+    :hasChild data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Prince_Aimone_Duke_of_Aosta ;
+    :hasSon data:Amedeo_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isFatherOf data:Amedeo_of_Savoy-Aosta ;
+    :isParentOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Prince_Aimone_Duke_of_Aosta ;
+    :isUncleOf data:Amedeo_of_Savoy-Aosta .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Amedeo_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta ;
+    :isAuntOf data:Amedeo_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isMotherOf data:Amedeo_of_Savoy-Aosta ;
+    :isParentOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Aimone_of_Savoy-Aosta a :Man,
+        :Person ;
+    :hasAncestor data:Amedeo_of_Savoy-Aosta,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasBrother data:Aimone_of_Savoy-Aosta ;
+    :hasFather data:Amedeo_of_Savoy-Aosta ;
+    :hasParent data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Aimone_of_Savoy-Aosta ;
+    :isBrotherOf data:Aimone_of_Savoy-Aosta ;
+    :isChildOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Aimone_of_Savoy-Aosta ;
+    :isSonOf data:Amedeo_of_Savoy-Aosta .
+
+data:Amedeo_of_Savoy-Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasBrother data:Amedeo_of_Savoy-Aosta ;
+    :hasChild data:Aimone_of_Savoy-Aosta ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Claude_of_Orl%C3%A9ans,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Aimone_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Amedeo_of_Savoy-Aosta ;
+    :isBrotherOf data:Amedeo_of_Savoy-Aosta ;
+    :isChildOf data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isFatherOf data:Aimone_of_Savoy-Aosta ;
+    :isParentOf data:Aimone_of_Savoy-Aosta ;
+    :isSiblingOf data:Amedeo_of_Savoy-Aosta ;
+    :isSonOf data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isUncleOf data:Aimone_of_Savoy-Aosta .
+

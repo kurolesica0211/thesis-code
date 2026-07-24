@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/453_453",
+  "text_file": "Q75411.txt",
+  "text_key": "Q75411",
+  "article": "https://en.wikipedia.org/wiki/John_Bowes-Lyon",
+  "article_key": "John Bowes-Lyon",
+  "main_entity": {
+    "uri": "http://example.com/data#John_Bowes-Lyon",
+    "qid": "Q75411",
+    "label": "John Bowes-Lyon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#John_Bowes-Lyon",
+      "qid": "Q75411",
+      "label": "John Bowes-Lyon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Anne_of_Denmark",
+      "qid": "Q2871729",
+      "label": "Princess Anne of Denmark",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "qid": "Q75381423",
+      "label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/John_Herbert_Bowes-Lyon",
+      "extracted_local_name": "John_Herbert_Bowes-Lyon",
+      "embedding_text": "John Herbert Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#John_Bowes-Lyon",
+      "ground_truth_qid": "Q75411",
+      "ground_truth_label": "John Bowes-Lyon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "John Herbert Bowes-Lyon",
+      "best_candidate_label": "John Bowes-Lyon",
+      "best_candidate_qid": "Q75411",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_local_name": "Charles_Hepburn-Stuart-Forbes-Trefusis",
+      "embedding_text": "Charles Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8148148148148148,
+      "ground_truth_uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "ground_truth_qid": "Q75381423",
+      "ground_truth_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "best_candidate_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "best_candidate_qid": "Q75381423",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8148148148148148
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Bowes-Lyon",
+      "extracted_local_name": "Elizabeth_Bowes-Lyon",
+      "embedding_text": "Elizabeth Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "John Herbert Bowes-Lyon",
+      "best_candidate_label": "John Bowes-Lyon",
+      "best_candidate_qid": "Q75411",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6976744186046512
+    },
+    {
+      "extracted_uri": "http://example.org/data/Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_local_name": "Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "embedding_text": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne Ferelith Fenella Bowes-Lyon",
+      "best_candidate_label": "Princess Anne of Denmark",
+      "best_candidate_qid": "Q2871729",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.37142857142857144
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_II",
+      "extracted_local_name": "Queen_Elizabeth_II",
+      "embedding_text": "Queen Elizabeth II",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Anne Ferelith Fenella Anson",
+      "best_candidate_label": "Princess Anne of Denmark",
+      "best_candidate_qid": "Q2871729",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35555555555555557
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

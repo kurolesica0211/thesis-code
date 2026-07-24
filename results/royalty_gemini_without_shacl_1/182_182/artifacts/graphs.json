@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickAugustusIII a :Man,\n        :Person ;\n    :isBrotherOf data:JohannGeorg .\n\ndata:MariaImmaculata a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:JohannGeorg .\n\ndata:Alfonso a :Man,\n        :Person .\n\ndata:FerdinandIIOfPortugal a :Man,\n        :Person .\n\ndata:GeorgeOfSaxony a :Man,\n        :Person .\n\ndata:MariaAnnaOfPortugal a :Person,\n        :Woman ;\n    :hasFather data:FerdinandIIOfPortugal ;\n    :hasMother data:MariaIIOfPortugal .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaIIOfPortugal a :Person,\n        :Woman .\n\ndata:JohannGeorg a :Man,\n        :Person ;\n    :hasFather data:GeorgeOfSaxony ;\n    :hasMother data:MariaAnnaOfPortugal .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederickAugustusIII a :Man,\n        :Person ;\n    :isBrotherOf data:JohannGeorg .\n\ndata:MariaImmaculata a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:JohannGeorg .\n\ndata:Alfonso a :Man,\n        :Person .\n\ndata:FerdinandIIOfPortugal a :Man,\n        :Person .\n\ndata:GeorgeOfSaxony a :Man,\n        :Person .\n\ndata:MariaAnnaOfPortugal a :Person,\n        :Woman ;\n    :hasFather data:FerdinandIIOfPortugal ;\n    :hasMother data:MariaIIOfPortugal .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaIIOfPortugal a :Person,\n        :Woman .\n\ndata:JohannGeorg a :Man,\n        :Person ;\n    :hasFather data:GeorgeOfSaxony ;\n    :hasMother data:MariaAnnaOfPortugal .\n\n"
+    }
+]

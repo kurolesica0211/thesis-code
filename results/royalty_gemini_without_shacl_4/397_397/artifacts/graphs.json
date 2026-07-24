@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Nikolaus_of_Oldenburg ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man,\n        :Person .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man,\n        :Person .\n\ndata:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2016 .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1948 .\n\ndata:Nikolaus_of_Oldenburg a :Man,\n        :Person ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1970 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,\n        :Person ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Nikolaus_of_Oldenburg ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man,\n        :Person .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man,\n        :Person .\n\ndata:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,\n        :Woman ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2016 .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1948 .\n\ndata:Nikolaus_of_Oldenburg a :Man,\n        :Person ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1970 .\n\n"
+    }
+]

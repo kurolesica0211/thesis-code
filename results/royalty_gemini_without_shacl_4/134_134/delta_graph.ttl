@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :isBrotherOf data:Friedrich_Franz_of_Mecklenburg-Schwerin .
+
+data:Karin_Elisabeth_von_Schaper a :Person,
+        :Woman ;
+    :hasBirthYear "1920"^^xsd:string ;
+    :hasDeathYear "2012"^^xsd:string ;
+    :hasFather data:Walter_von_Schaper ;
+    :hasMother data:Louise_von_M%C3%BCnchhausen .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Friedrich_Franz_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear "1910"^^xsd:string ;
+    :hasDeathYear "2001"^^xsd:string ;
+    :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear "1941"^^xsd:string ;
+    :hasMother data:Alexandra_of_Hanover .
+
+data:Louise_von_M%C3%BCnchhausen a :Person,
+        :Woman .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Walter_von_Schaper a :Man,
+        :Person .
+

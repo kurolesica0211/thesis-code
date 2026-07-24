@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryMalcolm a :Person,\n        :Woman ;\n    :hasFather data:IanMalcolm ;\n    :hasMother data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man,\n        :Person .\n\ndata:EmilieCharlotteLeBreton a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lily Langtry\"^^xsd:string,\n        \"The Jersey Lily\"^^xsd:string ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :knownAs \"Lillie Langtry\"^^xsd:string .\n\ndata:EmilieDavisMartin a :Person,\n        :Woman .\n\ndata:HugoGeraldDeBathe a :Man,\n        :Person .\n\ndata:JeanneMarieLangtry a :Person,\n        :Woman ;\n    :hasFather data:LouisOfBattenberg ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:EmilieCharlotteLeBreton ;\n    :hasRelation data:IanMalcolm .\n\ndata:LouisOfBattenberg a :Man,\n        :Person .\n\ndata:WilliamCorbetLeBreton a :Man,\n        :Person .\n\ndata:IanMalcolm a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryMalcolm a :Person,\n        :Woman ;\n    :hasFather data:IanMalcolm ;\n    :hasMother data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man,\n        :Person .\n\ndata:EmilieCharlotteLeBreton a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lily Langtry\"^^xsd:string,\n        \"The Jersey Lily\"^^xsd:string ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :knownAs \"Lillie Langtry\"^^xsd:string .\n\ndata:EmilieDavisMartin a :Person,\n        :Woman .\n\ndata:HugoGeraldDeBathe a :Man,\n        :Person .\n\ndata:JeanneMarieLangtry a :Person,\n        :Woman ;\n    :hasFather data:LouisOfBattenberg ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:EmilieCharlotteLeBreton ;\n    :hasRelation data:IanMalcolm .\n\ndata:LouisOfBattenberg a :Man,\n        :Person .\n\ndata:WilliamCorbetLeBreton a :Man,\n        :Person .\n\ndata:IanMalcolm a :Man,\n        :Person .\n\n"
+    }
+]

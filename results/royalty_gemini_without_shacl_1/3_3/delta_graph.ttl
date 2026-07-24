@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Philip_Nicholas_Windsor a :Man ;
+    :hasBirthYear "1962-06-26"^^xsd:date ;
+    :hasFather data:Prince_Edward%2C_Duke_of_Kent ;
+    :hasMother data:Katharine%2C_Duchess_of_Kent ;
+    :hasRelation data:Sylvana_Tomaselli .
+
+data:Katharine%2C_Duchess_of_Kent a :Woman ;
+    :isDaughterOf data:Sir_William_Worsley .
+
+data:Prince_Edward%2C_Duke_of_Kent a :Man .
+
+data:Sir_William_Worsley a :Man .
+
+data:Sylvana_Tomaselli a :Woman .
+

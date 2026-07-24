@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Anne_Topping :hasSex data:Female .
+
+data:Bernard_Topping a :Ancestor ;
+    :hasSex data:Male .
+
+data:Florence_Pearson :hasSex data:Female .
+
+data:Granville_George_Fergus_Leveson-Gower :hasSex data:Male .
+
+data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor ;
+    :hasSex data:Male .
+
+data:Rose_Leveson-Gower_Countess_Granville a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

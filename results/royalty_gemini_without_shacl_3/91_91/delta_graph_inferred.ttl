@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sir_Angus_Ogilvy a :Man ;
+    :hasBrother data:Sir_Angus_Ogilvy ;
+    :hasDeathYear 2004 ;
+    :hasRelation data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :isBloodrelationOf data:Sir_Angus_Ogilvy ;
+    :isBrotherOf data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:Sir_Angus_Ogilvy .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_George_Duke_of_Kent ;
+    :hasChild data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasRelation data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:Princess_Alexandra ;
+    :isBloodrelationOf data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George_Duke_of_Kent ;
+    :isFatherOf data:Princess_Alexandra ;
+    :isParentOf data:Princess_Alexandra ;
+    :isSiblingOf data:Prince_George_Duke_of_Kent ;
+    :isUncleOf data:Princess_Alexandra .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Alexandra ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasRelation data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Alexandra ;
+    :isAuntOf data:Princess_Alexandra ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Alexandra ;
+    :isParentOf data:Princess_Alexandra ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Alexandra a :Woman ;
+    :hasAncestor data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBirthYear 1936 ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear 1963 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_George_Duke_of_Kent,
+        data:Princess_Alexandra,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Alexandra ;
+    :isBloodrelationOf data:Princess_Alexandra ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alexandra ;
+    :isSisterOf data:Princess_Alexandra .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeDeMarichalar a :Man,\n        :Person ;\n    :isBrotherOf data:VictoriaFedericaDeMarichalarYBordon .\n\ndata:KingFelipeVI a :Man,\n        :Person ;\n    :isFatherOf data:InfantaSofia,\n        data:LeonorPrincessOfAsturias .\n\ndata:InfantaElenaDuchessOfLugo a :Person,\n        :Woman ;\n    :hasParent data:KingJuanCarlosI,\n        data:QueenSofiaOfSpain .\n\ndata:InfantaSofia a :Person,\n        :Woman .\n\ndata:JaimeDeMarichalar a :Man,\n        :Person .\n\ndata:KingJuanCarlosI a :Man,\n        :Person .\n\ndata:LeonorPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:VictoriaFedericaDeMarichalarYBordon a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :isDaughterOf data:InfantaElenaDuchessOfLugo,\n        data:JaimeDeMarichalar .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeDeMarichalar a :Man,\n        :Person ;\n    :isBrotherOf data:VictoriaFedericaDeMarichalarYBordon .\n\ndata:KingFelipeVI a :Man,\n        :Person ;\n    :isFatherOf data:InfantaSofia,\n        data:LeonorPrincessOfAsturias .\n\ndata:InfantaElenaDuchessOfLugo a :Person,\n        :Woman ;\n    :hasParent data:KingJuanCarlosI,\n        data:QueenSofiaOfSpain .\n\ndata:InfantaSofia a :Person,\n        :Woman .\n\ndata:JaimeDeMarichalar a :Man,\n        :Person .\n\ndata:KingJuanCarlosI a :Man,\n        :Person .\n\ndata:LeonorPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:QueenSofiaOfSpain a :Person,\n        :Woman .\n\ndata:VictoriaFedericaDeMarichalarYBordon a :Person,\n        :Woman ;\n    :hasBirthYear 2000 ;\n    :isDaughterOf data:InfantaElenaDuchessOfLugo,\n        data:JaimeDeMarichalar .\n\n"
+    }
+]

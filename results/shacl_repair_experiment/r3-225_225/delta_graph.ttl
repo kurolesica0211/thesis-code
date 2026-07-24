@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Beatrice_Pasquier_de_Franclieu a :Ancestor .
+
+data:Charles_Philippe_Marie_Louis_dOrleans a :Ancestor .
+
+data:Henri_dOrleans a :Ancestor .
+
+data:Michel_dOrleans a :Ancestor .
+
+data:Naomi_Valeska a :Ancestor .
+

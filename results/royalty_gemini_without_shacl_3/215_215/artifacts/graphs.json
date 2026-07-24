@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessAugusta a :Person,\n        :Woman ;\n    :isMotherOf data:DukeErnestI,\n        data:PrincessVictoriaSCS .\n\ndata:DukeFrancis a :Man,\n        :Person ;\n    :isFatherOf data:DukeErnestI,\n        data:PrincessVictoriaSCS .\n\ndata:KingGeorgeIII a :Man,\n        :Person ;\n    :isFatherOf data:DukeOfKent .\n\ndata:DukeOfKent a :Man,\n        :Person ;\n    :isFatherOf data:QueenVictoria .\n\ndata:DukeErnestI a :Man,\n        :Person ;\n    :isFatherOf data:PrinceAlbert .\n\ndata:PrinceAlbert a :Man,\n        :Person ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:PrincessVictoriaSCS a :Person,\n        :Woman ;\n    :isMotherOf data:QueenVictoria .\n\ndata:QueenVictoria a :Person,\n        :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:PrinceAlbert .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessAugusta a :Person,\n        :Woman ;\n    :isMotherOf data:DukeErnestI,\n        data:PrincessVictoriaSCS .\n\ndata:DukeFrancis a :Man,\n        :Person ;\n    :isFatherOf data:DukeErnestI,\n        data:PrincessVictoriaSCS .\n\ndata:KingGeorgeIII a :Man,\n        :Person ;\n    :isFatherOf data:DukeOfKent .\n\ndata:DukeOfKent a :Man,\n        :Person ;\n    :isFatherOf data:QueenVictoria .\n\ndata:DukeErnestI a :Man,\n        :Person ;\n    :isFatherOf data:PrinceAlbert .\n\ndata:PrinceAlbert a :Man,\n        :Person ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:PrincessVictoriaSCS a :Person,\n        :Woman ;\n    :isMotherOf data:QueenVictoria .\n\ndata:QueenVictoria a :Person,\n        :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:PrinceAlbert .\n\n"
+    }
+]

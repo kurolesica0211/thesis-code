@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,
+        :Person ;
+    :hasMother data:Infanta_Pilar .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :isChildOf data:Juan_Carlos_I .
+
+data:Infanta_Pilar a :Person,
+        :Woman ;
+    :alsoKnownAs "Pilar de Borbón"^^xsd:string ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_Mercedes_of_the_Two_Sicilies ;
+    :knownAs "María del Pilar Alfonsa Juana Luisa Ignacia y Todos los Santos de Borbón y Borbón"^^xsd:string .
+
+data:Infante_Juan_Count_of_Barcelona a :Man,
+        :Person .
+
+data:Princess_Maria_Mercedes_of_the_Two_Sicilies a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+

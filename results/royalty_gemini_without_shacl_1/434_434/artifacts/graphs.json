@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,\n        :Woman .\n\n"
+    }
+]

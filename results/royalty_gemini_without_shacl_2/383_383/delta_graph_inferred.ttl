@@ -1,0 +1,734 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EuniceMcCooey a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:JeanHenriFruchaud ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:EuniceMcCooey ;
+    :hasSon data:JeanHenriFruchaud ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud,
+        data:JeanHenriFruchaud ;
+    :isAuntOf data:JeanHenriFruchaud ;
+    :isBloodrelationOf data:EuniceMcCooey ;
+    :isMotherOf data:JeanHenriFruchaud ;
+    :isParentOf data:JeanHenriFruchaud ;
+    :isSiblingOf data:EuniceMcCooey ;
+    :isSisterOf data:EuniceMcCooey .
+
+data:HenriFruchaud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HenriFruchaud ;
+    :hasChild data:JeanHenriFruchaud ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSon data:JeanHenriFruchaud ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud,
+        data:JeanHenriFruchaud ;
+    :isBloodrelationOf data:HenriFruchaud ;
+    :isBrotherOf data:HenriFruchaud ;
+    :isFatherOf data:JeanHenriFruchaud ;
+    :isParentOf data:JeanHenriFruchaud ;
+    :isSiblingOf data:HenriFruchaud ;
+    :isUncleOf data:JeanHenriFruchaud .
+
+data:HieronimMikolajRadziwill a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HieronimMikolajRadziwill ;
+    :hasChild data:DominikRainerRadziwill ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSon data:DominikRainerRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:HieronimMikolajRadziwill ;
+    :isBrotherOf data:HieronimMikolajRadziwill ;
+    :isFatherOf data:DominikRainerRadziwill ;
+    :isParentOf data:DominikRainerRadziwill ;
+    :isSiblingOf data:HieronimMikolajRadziwill ;
+    :isUncleOf data:DominikRainerRadziwill .
+
+data:RenataOfAustria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DominikRainerRadziwill ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:RenataOfAustria ;
+    :hasSon data:DominikRainerRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isAuntOf data:DominikRainerRadziwill ;
+    :isBloodrelationOf data:RenataOfAustria ;
+    :isMotherOf data:DominikRainerRadziwill ;
+    :isParentOf data:DominikRainerRadziwill ;
+    :isSiblingOf data:RenataOfAustria ;
+    :isSisterOf data:RenataOfAustria .
+
+data:GeorgeOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeOfGreece ;
+    :hasChild data:GeorgeOfGreeceAndDenmark ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSon data:GeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:GeorgeOfGreece ;
+    :isBrotherOf data:GeorgeOfGreece ;
+    :isFatherOf data:GeorgeOfGreeceAndDenmark ;
+    :isParentOf data:GeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeOfGreece ;
+    :isUncleOf data:GeorgeOfGreeceAndDenmark .
+
+data:MarieFelixBlanc a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MarieBonaparte ;
+    :hasDaughter data:MarieBonaparte ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:MarieFelixBlanc ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:MarieBonaparte,
+        data:TatianaRadziwill ;
+    :isAuntOf data:MarieBonaparte ;
+    :isBloodrelationOf data:MarieFelixBlanc ;
+    :isMotherOf data:MarieBonaparte ;
+    :isParentOf data:MarieBonaparte ;
+    :isSiblingOf data:MarieFelixBlanc ;
+    :isSisterOf data:MarieFelixBlanc .
+
+data:OlgaConstantinovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgeOfGreeceAndDenmark ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:OlgaConstantinovnaOfRussia ;
+    :hasSon data:GeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isAuntOf data:GeorgeOfGreeceAndDenmark ;
+    :isBloodrelationOf data:OlgaConstantinovnaOfRussia ;
+    :isMotherOf data:GeorgeOfGreeceAndDenmark ;
+    :isParentOf data:GeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:OlgaConstantinovnaOfRussia ;
+    :isSisterOf data:OlgaConstantinovnaOfRussia .
+
+data:RolandNapoleonBonaparte a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:RolandNapoleonBonaparte ;
+    :hasChild data:MarieBonaparte ;
+    :hasDaughter data:MarieBonaparte ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:MarieBonaparte,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:RolandNapoleonBonaparte ;
+    :isBrotherOf data:RolandNapoleonBonaparte ;
+    :isFatherOf data:MarieBonaparte ;
+    :isParentOf data:MarieBonaparte ;
+    :isSiblingOf data:RolandNapoleonBonaparte ;
+    :isUncleOf data:MarieBonaparte .
+
+data:GeorgeOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasBrother data:GeorgeOfGreeceAndDenmark ;
+    :hasChild data:EugenieOfGreeceAndDenmark ;
+    :hasDaughter data:EugenieOfGreeceAndDenmark ;
+    :hasFather data:GeorgeOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia ;
+    :hasParent data:GeorgeOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:GeorgeOfGreeceAndDenmark ;
+    :isBrotherOf data:GeorgeOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isFatherOf data:EugenieOfGreeceAndDenmark ;
+    :isParentOf data:EugenieOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeOfGreeceAndDenmark ;
+    :isSonOf data:GeorgeOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isUncleOf data:EugenieOfGreeceAndDenmark .
+
+data:MarieBonaparte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:MarieFelixBlanc,
+        data:RolandNapoleonBonaparte ;
+    :hasChild data:EugenieOfGreeceAndDenmark ;
+    :hasDaughter data:EugenieOfGreeceAndDenmark ;
+    :hasFather data:RolandNapoleonBonaparte ;
+    :hasMother data:MarieFelixBlanc ;
+    :hasParent data:MarieFelixBlanc,
+        data:RolandNapoleonBonaparte ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:MarieBonaparte ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:EugenieOfGreeceAndDenmark,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isAuntOf data:EugenieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:MarieBonaparte ;
+    :isChildOf data:MarieFelixBlanc,
+        data:RolandNapoleonBonaparte ;
+    :isDaughterOf data:MarieFelixBlanc,
+        data:RolandNapoleonBonaparte ;
+    :isMotherOf data:EugenieOfGreeceAndDenmark ;
+    :isParentOf data:EugenieOfGreeceAndDenmark ;
+    :isSiblingOf data:MarieBonaparte ;
+    :isSisterOf data:MarieBonaparte .
+
+data:JeanHenriFruchaud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EuniceMcCooey,
+        data:HenriFruchaud ;
+    :hasBrother data:JeanHenriFruchaud ;
+    :hasChild data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :hasDaughter data:FabiolaFruchaud ;
+    :hasFather data:HenriFruchaud ;
+    :hasMother data:EuniceMcCooey ;
+    :hasParent data:EuniceMcCooey,
+        data:HenriFruchaud ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSon data:AlexisFruchaud ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isBloodrelationOf data:JeanHenriFruchaud ;
+    :isBrotherOf data:JeanHenriFruchaud ;
+    :isChildOf data:EuniceMcCooey,
+        data:HenriFruchaud ;
+    :isFatherOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isParentOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isSiblingOf data:JeanHenriFruchaud ;
+    :isSonOf data:EuniceMcCooey,
+        data:HenriFruchaud ;
+    :isUncleOf data:AlexisFruchaud,
+        data:FabiolaFruchaud .
+
+data:DominikRainerRadziwill a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:HieronimMikolajRadziwill,
+        data:RenataOfAustria ;
+    :hasBrother data:DominikRainerRadziwill ;
+    :hasChild data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :hasDaughter data:TatianaRadziwill ;
+    :hasFather data:HieronimMikolajRadziwill ;
+    :hasMother data:RenataOfAustria ;
+    :hasParent data:HieronimMikolajRadziwill,
+        data:RenataOfAustria ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSon data:GeorgeRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:DominikRainerRadziwill ;
+    :isBrotherOf data:DominikRainerRadziwill ;
+    :isChildOf data:HieronimMikolajRadziwill,
+        data:RenataOfAustria ;
+    :isFatherOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isParentOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isSiblingOf data:DominikRainerRadziwill ;
+    :isSonOf data:HieronimMikolajRadziwill,
+        data:RenataOfAustria ;
+    :isUncleOf data:GeorgeRadziwill,
+        data:TatianaRadziwill .
+
+data:GeorgeRadziwill a :Man,
+        :Person ;
+    :hasAncestor data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:HieronimMikolajRadziwill,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte ;
+    :hasBrother data:GeorgeRadziwill ;
+    :hasFather data:DominikRainerRadziwill ;
+    :hasMother data:EugenieOfGreeceAndDenmark ;
+    :hasParent data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:TatianaRadziwill ;
+    :isBloodrelationOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBrotherOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isChildOf data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isSonOf data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :isUncleOf data:AlexisFruchaud,
+        data:FabiolaFruchaud .
+
+data:EugenieOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RolandNapoleonBonaparte ;
+    :hasChild data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :hasDaughter data:TatianaRadziwill ;
+    :hasFather data:GeorgeOfGreeceAndDenmark ;
+    :hasMother data:MarieBonaparte ;
+    :hasParent data:GeorgeOfGreeceAndDenmark,
+        data:MarieBonaparte ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:EugenieOfGreeceAndDenmark ;
+    :hasSon data:GeorgeRadziwill ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud,
+        data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isAuntOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isBloodrelationOf data:EugenieOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeOfGreeceAndDenmark,
+        data:MarieBonaparte ;
+    :isDaughterOf data:GeorgeOfGreeceAndDenmark,
+        data:MarieBonaparte ;
+    :isMotherOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isParentOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isSiblingOf data:EugenieOfGreeceAndDenmark ;
+    :isSisterOf data:EugenieOfGreeceAndDenmark .
+
+data:AlexisFruchaud a :Man,
+        :Person ;
+    :hasAncestor data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:AlexisFruchaud ;
+    :hasFather data:JeanHenriFruchaud ;
+    :hasMother data:TatianaRadziwill ;
+    :hasParent data:JeanHenriFruchaud,
+        data:TatianaRadziwill ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:FabiolaFruchaud ;
+    :isBloodrelationOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isBrotherOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isChildOf data:JeanHenriFruchaud,
+        data:TatianaRadziwill ;
+    :isSiblingOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isSonOf data:JeanHenriFruchaud,
+        data:TatianaRadziwill .
+
+data:FabiolaFruchaud a :Person,
+        :Woman ;
+    :hasAncestor data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:AlexisFruchaud ;
+    :hasFather data:JeanHenriFruchaud ;
+    :hasMother data:TatianaRadziwill ;
+    :hasParent data:JeanHenriFruchaud,
+        data:TatianaRadziwill ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:FabiolaFruchaud ;
+    :isBloodrelationOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isChildOf data:JeanHenriFruchaud,
+        data:TatianaRadziwill ;
+    :isDaughterOf data:JeanHenriFruchaud,
+        data:TatianaRadziwill ;
+    :isSiblingOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isSisterOf data:AlexisFruchaud,
+        data:FabiolaFruchaud .
+
+data:TatianaRadziwill a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:HieronimMikolajRadziwill,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:GeorgeRadziwill ;
+    :hasChild data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :hasDaughter data:FabiolaFruchaud ;
+    :hasDeathYear 2025 ;
+    :hasFather data:DominikRainerRadziwill ;
+    :hasMother data:EugenieOfGreeceAndDenmark ;
+    :hasParent data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :hasRelation data:AlexisFruchaud,
+        data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark,
+        data:EuniceMcCooey,
+        data:FabiolaFruchaud,
+        data:GeorgeOfGreece,
+        data:GeorgeOfGreeceAndDenmark,
+        data:GeorgeRadziwill,
+        data:HenriFruchaud,
+        data:HieronimMikolajRadziwill,
+        data:JeanHenriFruchaud,
+        data:MarieBonaparte,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:RenataOfAustria,
+        data:RolandNapoleonBonaparte,
+        data:TatianaRadziwill ;
+    :hasSister data:TatianaRadziwill ;
+    :hasSon data:AlexisFruchaud ;
+    :isAncestorOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isAuntOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isBloodrelationOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isChildOf data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :isDaughterOf data:DominikRainerRadziwill,
+        data:EugenieOfGreeceAndDenmark ;
+    :isMotherOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isParentOf data:AlexisFruchaud,
+        data:FabiolaFruchaud ;
+    :isSiblingOf data:GeorgeRadziwill,
+        data:TatianaRadziwill ;
+    :isSisterOf data:GeorgeRadziwill,
+        data:TatianaRadziwill .
+

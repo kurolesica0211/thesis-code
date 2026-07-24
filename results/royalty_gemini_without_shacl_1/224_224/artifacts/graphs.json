@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Willem-Alexander a :Man ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Beatrix .\n\ndata:Beatrix a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasFather data:Bernhard ;\n    :hasMarriageYear data:1966 ;\n    :hasMother data:Juliana ;\n    :isSisterOf data:Irene,\n        data:Margriet .\n\ndata:Bernhard a :Man .\n\ndata:Claus_von_Amsberg a :Man .\n\ndata:Irene a :Woman .\n\ndata:Juliana a :Woman .\n\ndata:Margriet a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Willem-Alexander a :Man ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Beatrix .\n\ndata:1966 a :DomainEntity .\n\ndata:Beatrix a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasFather data:Bernhard ;\n    :hasMarriageYear data:1966 ;\n    :hasMother data:Juliana ;\n    :isSisterOf data:Irene,\n        data:Margriet .\n\ndata:Bernhard a :Man .\n\ndata:Claus_von_Amsberg a :Man .\n\ndata:Irene a :Woman .\n\ndata:Juliana a :Woman .\n\ndata:Margriet a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Willem-Alexander a :Man ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Beatrix .\n\ndata:1966 a :DomainEntity .\n\ndata:Beatrix a :Woman ;\n    :hasBirthYear 1938 ;\n    :hasFather data:Bernhard ;\n    :hasMarriageYear data:1966 ;\n    :hasMother data:Juliana ;\n    :isSisterOf data:Irene,\n        data:Margriet .\n\ndata:Bernhard a :Man .\n\ndata:Claus_von_Amsberg a :Man .\n\ndata:Irene a :Woman .\n\ndata:Juliana a :Woman .\n\ndata:Margriet a :Woman .\n\n"
+    }
+]

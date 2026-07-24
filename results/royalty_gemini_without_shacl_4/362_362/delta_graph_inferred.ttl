@@ -1,0 +1,171 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia_cousin a :Man,
+        :Person ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasBrother data:Alessandro_Torlonia_cousin ;
+    :hasDeathYear "2017"^^xsd:positiveInteger ;
+    :hasRelation data:Alessandro_Torlonia_cousin ;
+    :isBloodrelationOf data:Alessandro_Torlonia_cousin ;
+    :isBrotherOf data:Alessandro_Torlonia_cousin ;
+    :isSiblingOf data:Alessandro_Torlonia_cousin .
+
+data:Donna_Marina_Torlonia a :Person,
+        :Woman ;
+    :hasBrother data:Don_Alessandro_Torlonia ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Donna_Marina_Torlonia ;
+    :isBloodrelationOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia ;
+    :isSiblingOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia ;
+    :isSisterOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:King_Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Marino_Torlonia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Marino_Torlonia ;
+    :hasChild data:Don_Alessandro_Torlonia ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Don_Alessandro_Torlonia ;
+    :isAncestorOf data:Don_Alessandro_Torlonia ;
+    :isBloodrelationOf data:Marino_Torlonia ;
+    :isBrotherOf data:Marino_Torlonia ;
+    :isFatherOf data:Don_Alessandro_Torlonia ;
+    :isParentOf data:Don_Alessandro_Torlonia ;
+    :isSiblingOf data:Marino_Torlonia ;
+    :isUncleOf data:Don_Alessandro_Torlonia .
+
+data:Mary_Elsie_Moore a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Don_Alessandro_Torlonia ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Mary_Elsie_Moore ;
+    :hasSon data:Don_Alessandro_Torlonia ;
+    :isAncestorOf data:Don_Alessandro_Torlonia ;
+    :isAuntOf data:Don_Alessandro_Torlonia ;
+    :isBloodrelationOf data:Mary_Elsie_Moore ;
+    :isMotherOf data:Don_Alessandro_Torlonia ;
+    :isParentOf data:Don_Alessandro_Torlonia ;
+    :isSiblingOf data:Mary_Elsie_Moore ;
+    :isSisterOf data:Mary_Elsie_Moore .
+
+data:Princess_Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain ;
+    :isAuntOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Princess_Victoria_Eugenie_of_Battenberg .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isChildOf data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:King_Alfonso_XIII_of_Spain,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+
+data:Don_Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasAncestor data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasBrother data:Don_Alessandro_Torlonia ;
+    :hasDeathYear "1986"^^xsd:positiveInteger ;
+    :hasFather data:Marino_Torlonia ;
+    :hasMarriageYear "1935"^^xsd:positiveInteger ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasParent data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :hasRelation data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Princess_Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Donna_Marina_Torlonia ;
+    :isBloodrelationOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia ;
+    :isBrotherOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia ;
+    :isChildOf data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :isSiblingOf data:Don_Alessandro_Torlonia,
+        data:Donna_Marina_Torlonia ;
+    :isSonOf data:Marino_Torlonia,
+        data:Mary_Elsie_Moore .
+

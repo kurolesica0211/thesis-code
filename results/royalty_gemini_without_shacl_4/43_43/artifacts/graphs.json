@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:MariaPiaOfBourbonTwoSicilies a :Person,\n        :Woman .\n\ndata:PedroGastaoOfOrleansBraganza a :Man,\n        :Person ;\n    :hasFather data:PedroDeAlcantaraPrinceOfGraoPara .\n\ndata:PedroHenriqueOfOrleansBraganza a :Man,\n        :Person ;\n    :alsoKnownAs \"O Pr\u00edncipe Esperado\"^^xsd:string ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:LuisOfOrleansBraganza ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:MariaDiGraziaOfBourbonTwoSicilies ;\n    :hasRelation data:MariaElisabethOfBavaria ;\n    :isSiblingOf data:LuizGastao,\n        data:PiaMaria ;\n    :knownAs \"The Expected Prince\"^^xsd:string .\n\ndata:GastonCountOfEu a :Man,\n        :Person .\n\ndata:IsabelOfBrazil a :Person,\n        :Woman .\n\ndata:LuisOfOrleansBraganza a :Man,\n        :Person ;\n    :hasFather data:GastonCountOfEu ;\n    :hasMother data:IsabelOfBrazil .\n\ndata:LuizGastao a :Man,\n        :Person .\n\ndata:MariaDiGraziaOfBourbonTwoSicilies a :Person,\n        :Woman .\n\ndata:MariaElisabethOfBavaria a :Person,\n        :Woman .\n\ndata:PedroDeAlcantaraPrinceOfGraoPara a :Man,\n        :Person .\n\ndata:PiaMaria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:MariaPiaOfBourbonTwoSicilies a :Person,\n        :Woman .\n\ndata:PedroGastaoOfOrleansBraganza a :Man,\n        :Person ;\n    :hasFather data:PedroDeAlcantaraPrinceOfGraoPara .\n\ndata:PedroHenriqueOfOrleansBraganza a :Man,\n        :Person ;\n    :alsoKnownAs \"O Pr\u00edncipe Esperado\"^^xsd:string ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:LuisOfOrleansBraganza ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:MariaDiGraziaOfBourbonTwoSicilies ;\n    :hasRelation data:MariaElisabethOfBavaria ;\n    :isSiblingOf data:LuizGastao,\n        data:PiaMaria ;\n    :knownAs \"The Expected Prince\"^^xsd:string .\n\ndata:GastonCountOfEu a :Man,\n        :Person .\n\ndata:IsabelOfBrazil a :Person,\n        :Woman .\n\ndata:LuisOfOrleansBraganza a :Man,\n        :Person ;\n    :hasFather data:GastonCountOfEu ;\n    :hasMother data:IsabelOfBrazil .\n\ndata:LuizGastao a :Man,\n        :Person .\n\ndata:MariaDiGraziaOfBourbonTwoSicilies a :Person,\n        :Woman .\n\ndata:MariaElisabethOfBavaria a :Person,\n        :Woman .\n\ndata:PedroDeAlcantaraPrinceOfGraoPara a :Man,\n        :Person .\n\ndata:PiaMaria a :Person,\n        :Woman .\n\n"
+    }
+]

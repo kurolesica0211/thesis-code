@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Ariprand a :Man ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "1996"^^xsd:positiveInteger .
+
+data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Woman ;
+    :hasBirthYear "1929"^^xsd:positiveInteger .
+
+data:Otto_Heinrich a :Man ;
+    :hasFather data:Prince_Ludwig_Rudolph_of_Hannover .
+
+data:Prince_Christian a :Man ;
+    :hasBirthYear "1985"^^xsd:positiveInteger ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Chantal_Hochuli .
+
+data:Prince_Ernst_August_son a :Man ;
+    :hasBirthYear "1983"^^xsd:positiveInteger ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Chantal_Hochuli .
+
+data:Princess_Alexandra a :Woman ;
+    :hasBirthYear "1999"^^xsd:positiveInteger ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMother data:Princess_Caroline_of_Monaco .
+
+data:Johann_Gustav_Hans_Hochuli a :Man ;
+    :hasBirthYear "1912"^^xsd:positiveInteger .
+
+data:Prince_Ernest_Augustus_of_Hannover a :Man ;
+    :hasBirthYear "1914"^^xsd:positiveInteger ;
+    :hasDeathYear "1987"^^xsd:positiveInteger .
+
+data:Prince_Rainier_III a :Man .
+
+data:Princess_Caroline_of_Monaco a :Woman ;
+    :hasFather data:Prince_Rainier_III .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "1980"^^xsd:positiveInteger .
+
+data:Rosmarie_Lembeck a :Woman ;
+    :hasBirthYear "1921"^^xsd:positiveInteger ;
+    :hasDeathYear "2011"^^xsd:positiveInteger .
+
+data:Chantal_Hochuli a :Woman ;
+    :hasBirthYear "1955"^^xsd:positiveInteger ;
+    :hasFather data:Johann_Gustav_Hans_Hochuli ;
+    :hasMother data:Rosmarie_Lembeck .
+
+data:Prince_Ludwig_Rudolph_of_Hannover a :Man .
+
+data:Ernst_August_von_Hannover a :Man ;
+    :hasBirthYear "1954"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasFather data:Prince_Ernest_Augustus_of_Hannover ;
+    :hasMarriageYear "1981"^^xsd:positiveInteger,
+        "1999"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
+

@@ -1,0 +1,117 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III_King_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasAncestor data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Charles_III_King_of_the_United_Kingdom ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isBloodrelationOf data:Charles_III_King_of_the_United_Kingdom ;
+    :isBrotherOf data:Charles_III_King_of_the_United_Kingdom ;
+    :isSiblingOf data:Charles_III_King_of_the_United_Kingdom .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isSiblingOf data:King_George_I_of_Greece .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasSister data:Queen_Olga_of_Greece ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Olga_of_Greece ;
+    :isSiblingOf data:Queen_Olga_of_Greece ;
+    :isSisterOf data:Queen_Olga_of_Greece .
+
+data:Princess_Eugenie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasSister data:Princess_Eugenie_of_Greece_and_Denmark ;
+    :hasSon data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAuntOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Princess_Eugenie_of_Greece_and_Denmark ;
+    :isMotherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isParentOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSiblingOf data:Princess_Eugenie_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Eugenie_of_Greece_and_Denmark .
+
+data:Raimundo_2nd_Duke_of_Castel_Duino a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasChild data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasSon data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isBrotherOf data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isFatherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isParentOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSiblingOf data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isUncleOf data:Carlo_Alessandro_della_Torre_e_Tasso .
+
+data:Carlo_Alessandro_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasAncestor data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasFather data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasMother data:Princess_Eugenie_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III_King_of_the_United_Kingdom,
+        data:King_George_I_of_Greece,
+        data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isBloodrelationOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBrotherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isChildOf data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_2nd_Duke_of_Castel_Duino ;
+    :isSiblingOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSonOf data:Princess_Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_2nd_Duke_of_Castel_Duino .
+

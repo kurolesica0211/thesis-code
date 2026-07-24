@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Georg_Donatus_of_Hesse .\n\ndata:Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Moritz_of_Hesse ;\n    :hasMarriageYear data:2003 ;\n    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :hasRelation data:Floria_Franziska_von_Faber-Castell .\n\ndata:Empress_Frederick a :Person,\n        :Woman .\n\ndata:Frederick_II_of_Hesse-Kassel a :Man,\n        :Person .\n\ndata:Mary_of_Great_Britain a :Person,\n        :Woman .\n\ndata:Floria_Franziska_von_Faber-Castell a :Person,\n        :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Hubertus_von_Faber-Castell .\n\ndata:Georg_Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBrother data:Louis_of_Hesse_and_by_Rhine .\n\ndata:Hubertus_von_Faber-Castell a :Man,\n        :Person .\n\ndata:Louis_of_Hesse_and_by_Rhine a :Man,\n        :Person ;\n    :hasDeathYear 1968 .\n\ndata:Moritz_of_Hesse a :Man,\n        :Person ;\n    :hasFather data:Philipp_of_Hesse .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person ;\n    :hasDeathYear 1980 .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Georg_Donatus_of_Hesse .\n\ndata:Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Moritz_of_Hesse ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :hasRelation data:Floria_Franziska_von_Faber-Castell .\n\ndata:Empress_Frederick a :Person,\n        :Woman .\n\ndata:Frederick_II_of_Hesse-Kassel a :Man,\n        :Person .\n\ndata:Mary_of_Great_Britain a :Person,\n        :Woman .\n\ndata:Floria_Franziska_von_Faber-Castell a :Person,\n        :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Hubertus_von_Faber-Castell .\n\ndata:Georg_Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBrother data:Louis_of_Hesse_and_by_Rhine .\n\ndata:Hubertus_von_Faber-Castell a :Man,\n        :Person .\n\ndata:Louis_of_Hesse_and_by_Rhine a :Man,\n        :Person ;\n    :hasDeathYear 1968 .\n\ndata:Moritz_of_Hesse a :Man,\n        :Person ;\n    :hasFather data:Philipp_of_Hesse .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person ;\n    :hasDeathYear 1980 .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Georg_Donatus_of_Hesse .\n\ndata:Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Moritz_of_Hesse ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :hasRelation data:Floria_Franziska_von_Faber-Castell .\n\ndata:Empress_Frederick a :Person,\n        :Woman .\n\ndata:Frederick_II_of_Hesse-Kassel a :Man,\n        :Person .\n\ndata:Mary_of_Great_Britain a :Person,\n        :Woman .\n\ndata:Floria_Franziska_von_Faber-Castell a :Person,\n        :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Hubertus_von_Faber-Castell .\n\ndata:Georg_Donatus_of_Hesse a :Man,\n        :Person ;\n    :hasBrother data:Louis_of_Hesse_and_by_Rhine .\n\ndata:Hubertus_von_Faber-Castell a :Man,\n        :Person .\n\ndata:Louis_of_Hesse_and_by_Rhine a :Man,\n        :Person ;\n    :hasDeathYear 1968 .\n\ndata:Moritz_of_Hesse a :Man,\n        :Person ;\n    :hasFather data:Philipp_of_Hesse .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person ;\n    :hasDeathYear 1980 .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1940 .\n\n"
+    }
+]

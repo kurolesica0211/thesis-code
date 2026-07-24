@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archie a :Man,
+        :Person ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle .
+
+data:Charles_Spencer a :Man,
+        :Person ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :isBrotherOf data:Diana_Princess_of_Wales .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Prince_Andrew a :Man,
+        :Person ;
+    :isBrotherOf data:King_Charles_III .
+
+data:Prince_Harry a :Man,
+        :Person ;
+    :hasBirthYear "1984"^^xsd:positiveInteger ;
+    :hasBrother data:William_Prince_of_Wales ;
+    :hasFather data:King_Charles_III ;
+    :hasMarriageYear "2018"^^xsd:positiveInteger ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasRelation data:Meghan_Markle ;
+    :isBrotherOf data:William_Prince_of_Wales ;
+    :knownAs "Henry Charles Albert David"^^xsd:string .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Princess_Anne a :Person,
+        :Woman ;
+    :isSisterOf data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman .
+
+data:Meghan_Markle a :Person,
+        :Woman .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasRelation data:Catherine_Princess_of_Wales .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasSister data:Princess_Anne .
+

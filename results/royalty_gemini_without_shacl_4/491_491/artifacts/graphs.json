@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isAncestorOf data:Don_Gonzalo .\n\ndata:Emmanuelle_de_Dampierre a :Person,\n        :Woman ;\n    :isMotherOf data:Don_Gonzalo .\n\ndata:Infante_Jaime a :Man,\n        :Person ;\n    :isFatherOf data:Don_Gonzalo .\n\ndata:Queen_Victoria_Eugenie a :Person,\n        :Woman .\n\ndata:Alfonso_brother a :Man,\n        :Person .\n\ndata:Don_Gonzalo a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2000 ;\n    :isSiblingOf data:Alfonso_brother .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Man,\n        :Person ;\n    :isAncestorOf data:Don_Gonzalo .\n\ndata:Emmanuelle_de_Dampierre a :Person,\n        :Woman ;\n    :isMotherOf data:Don_Gonzalo .\n\ndata:Infante_Jaime a :Man,\n        :Person ;\n    :isFatherOf data:Don_Gonzalo .\n\ndata:Queen_Victoria_Eugenie a :Person,\n        :Woman .\n\ndata:Alfonso_brother a :Man,\n        :Person .\n\ndata:Don_Gonzalo a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2000 ;\n    :isSiblingOf data:Alfonso_brother .\n\n"
+    }
+]

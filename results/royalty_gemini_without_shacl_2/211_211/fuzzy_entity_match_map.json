@@ -1,0 +1,186 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/211_211",
+  "text_file": "Q2752971.txt",
+  "text_key": "Q2752971",
+  "article": "https://en.wikipedia.org/wiki/David_Mountbatten,_3rd_Marquess_of_Milford_Haven",
+  "article_key": "David Mountbatten, 3rd Marquess of Milford Haven",
+  "main_entity": {
+    "uri": "http://example.com/data#David_Mountbatten-_3rd_Marquess_of_Milford_Haven",
+    "qid": "Q2752971",
+    "label": "David Mountbatten, 3rd Marquess of Milford Haven"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#David_Mountbatten-_3rd_Marquess_of_Milford_Haven",
+      "qid": "Q2752971",
+      "label": "David Mountbatten, 3rd Marquess of Milford Haven",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_Mountbatten-_2nd_Marquess_of_Milford_Haven",
+      "qid": "Q335129",
+      "label": "George Mountbatten, 2nd Marquess of Milford Haven",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Nadejda_Mountbatten-_Marchioness_of_Milford_Haven",
+      "qid": "Q259488",
+      "label": "Nadejda Mountbatten, Marchioness of Milford Haven",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Louis_of_Battenberg",
+      "qid": "Q57468",
+      "label": "Prince Louis of Battenberg",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Victoria_of_Hesse_and_by_Rhine",
+      "qid": "Q57658",
+      "label": "Princess Victoria of Hesse and by Rhine",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "qid": "Q157068",
+      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Louise_Mountbatten",
+      "qid": "Q115477",
+      "label": "Louise Mountbatten",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Louis_of_Battenberg",
+      "extracted_local_name": "Prince_Louis_of_Battenberg",
+      "embedding_text": "Prince Louis of Battenberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Louis_of_Battenberg",
+      "ground_truth_qid": "Q57468",
+      "ground_truth_label": "Prince Louis of Battenberg",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Louis of Battenberg",
+      "best_candidate_label": "Prince Louis of Battenberg",
+      "best_candidate_qid": "Q57468",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Victoria_of_Hesse_and_by_Rhine",
+      "extracted_local_name": "Princess_Victoria_of_Hesse_and_by_Rhine",
+      "embedding_text": "Princess Victoria of Hesse and by Rhine",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Victoria_of_Hesse_and_by_Rhine",
+      "ground_truth_qid": "Q57658",
+      "ground_truth_label": "Princess Victoria of Hesse and by Rhine",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Victoria of Hesse and by Rhine",
+      "best_candidate_label": "Princess Victoria of Hesse and by Rhine",
+      "best_candidate_qid": "Q57658",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nadejda_Mikhailovna_of_Torby",
+      "extracted_local_name": "Nadejda_Mikhailovna_of_Torby",
+      "embedding_text": "Nadejda Mikhailovna of Torby",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8,
+      "ground_truth_uri": "http://example.com/data#Nadejda_Mountbatten-_Marchioness_of_Milford_Haven",
+      "ground_truth_qid": "Q259488",
+      "ground_truth_label": "Nadejda Mountbatten, Marchioness of Milford Haven",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Countess Nadejda Mikhailovna de Torby",
+      "best_candidate_label": "Nadejda Mountbatten, Marchioness of Milford Haven",
+      "best_candidate_qid": "Q259488",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8
+    },
+    {
+      "extracted_uri": "http://example.org/data/David_Michael_Mountbatten",
+      "extracted_local_name": "David_Michael_Mountbatten",
+      "embedding_text": "David Michael Mountbatten",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nada Mountbatten",
+      "best_candidate_label": "Nadejda Mountbatten, Marchioness of Milford Haven",
+      "best_candidate_qid": "Q259488",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6829268292682927
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_Mountbatten",
+      "extracted_local_name": "George_Mountbatten",
+      "embedding_text": "George Mountbatten",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lord Louis Mountbatten",
+      "best_candidate_label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "best_candidate_qid": "Q157068",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Philip_of_Greece_and_Denmark",
+      "extracted_local_name": "Prince_Philip_of_Greece_and_Denmark",
+      "embedding_text": "Prince Philip of Greece and Denmark",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George Milford Haven",
+      "best_candidate_label": "George Mountbatten, 2nd Marquess of Milford Haven",
+      "best_candidate_qid": "Q335129",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

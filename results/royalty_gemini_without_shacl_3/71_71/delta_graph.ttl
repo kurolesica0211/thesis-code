@@ -1,0 +1,81 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :alsoKnownAs "Ena"^^xsd:string ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Leopold_of_Battenberg ;
+    :hasDaughter data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Beatrice ;
+    :hasRelation data:Alfonso_XIII_of_Spain ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Infante_Alfonso,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Juan_Count_of_Barcelona .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Juan_Count_of_Barcelona .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Infanta_Beatriz a :Person,
+        :Woman .
+
+data:Infanta_Maria_Cristina a :Person,
+        :Woman .
+
+data:Infante_Alfonso a :Man,
+        :Person .
+
+data:Infante_Gonzalo a :Man,
+        :Person .
+
+data:Infante_Jaime a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasSon data:Felipe_VI .
+
+data:Julia_Princess_of_Battenberg a :Person,
+        :Woman .
+
+data:Leopold_of_Battenberg a :Man,
+        :Person .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Henry_of_Battenberg a :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse ;
+    :hasMother data:Julia_Princess_of_Battenberg .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasSon data:Juan_Carlos_I .
+

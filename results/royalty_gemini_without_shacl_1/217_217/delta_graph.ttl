@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_of_Strathmore a :Person,
+        :Woman ;
+    :isMotherOf data:Elizabeth_Bowes-Lyon .
+
+data:Duke_of_Kent a :Man,
+        :Person ;
+    :isBrotherOf data:George_VI .
+
+data:Earl_of_Strathmore a :Man,
+        :Person ;
+    :isFatherOf data:Elizabeth_Bowes-Lyon .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasRelation data:Wallis_Simpson ;
+    :isBrotherOf data:George_VI .
+
+data:Francis_Duke_of_Teck a :Man,
+        :Person ;
+    :isFatherOf data:Queen_Mary .
+
+data:King_Edward_VII a :Man,
+        :Person ;
+    :isFatherOf data:George_V .
+
+data:Margaret a :Person,
+        :Woman ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasRelation data:Elizabeth_II .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man,
+        :Person .
+
+data:Prince_Henry a :Man,
+        :Person ;
+    :isBrotherOf data:George_VI .
+
+data:Princess_Mary_Adelaide_Duchess_of_Teck a :Person,
+        :Woman ;
+    :isMotherOf data:Queen_Mary .
+
+data:Queen_Alexandra a :Person,
+        :Woman ;
+    :isMotherOf data:George_V .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI .
+
+data:Wallis_Simpson a :Person,
+        :Woman .
+
+data:George_V a :Man,
+        :Person .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasBirthYear 1895 ;
+    :hasDeathYear 1952 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Elizabeth_Bowes-Lyon ;
+    :knownAs "Bertie"^^xsd:string .
+

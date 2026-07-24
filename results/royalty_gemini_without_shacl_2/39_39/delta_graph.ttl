@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alex_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Edoardo_Mapelli_Mozzi .
+
+data:Dara_Huang a :Person,
+        :Woman ;
+    :isMotherOf data:Christopher_Woolf .
+
+data:Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear "1988"^^xsd:positiveInteger ;
+    :hasMarriageYear "2020"^^xsd:positiveInteger ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi ;
+    :isMotherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSisterOf data:Eugenie .
+
+data:Christopher_Woolf a :Man,
+        :Person ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :isSisterOf data:Beatrice .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman .
+
+data:Edoardo_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+

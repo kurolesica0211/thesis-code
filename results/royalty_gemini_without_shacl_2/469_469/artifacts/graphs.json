@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MauritzOttoWenzelDouglas a :Man,\n        :Person ;\n    :hasBirthYear 1994 ;\n    :hasFather data:CarlAxelArchibaldDouglas ;\n    :hasMother data:WalburgaDouglas .\n\ndata:ArchibaldDouglas a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:MargaretaLagerfelt a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:OttoVonHabsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:ReginaOfSaxeMeiningen a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:WalburgaDouglas a :Person,\n        :Woman ;\n    :hasAncestor data:CharlesI ;\n    :hasBirthYear 1958 ;\n    :hasFather data:OttoVonHabsburg ;\n    :hasMarriageYear 1992 ;\n    :hasMother data:ReginaOfSaxeMeiningen ;\n    :hasRelation data:CarlAxelArchibaldDouglas .\n\ndata:CarlAxelArchibaldDouglas a :Man,\n        :Person ;\n    :hasBirthYear 1949 ;\n    :hasFather data:ArchibaldDouglas ;\n    :hasMother data:MargaretaLagerfelt .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MauritzOttoWenzelDouglas a :Man,\n        :Person ;\n    :hasBirthYear 1994 ;\n    :hasFather data:CarlAxelArchibaldDouglas ;\n    :hasMother data:WalburgaDouglas .\n\ndata:ArchibaldDouglas a :Ancestor,\n        :Man,\n        :Person .\n\ndata:CharlesI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:MargaretaLagerfelt a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:OttoVonHabsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:ReginaOfSaxeMeiningen a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:WalburgaDouglas a :Person,\n        :Woman ;\n    :hasAncestor data:CharlesI ;\n    :hasBirthYear 1958 ;\n    :hasFather data:OttoVonHabsburg ;\n    :hasMarriageYear 1992 ;\n    :hasMother data:ReginaOfSaxeMeiningen ;\n    :hasRelation data:CarlAxelArchibaldDouglas .\n\ndata:CarlAxelArchibaldDouglas a :Man,\n        :Person ;\n    :hasBirthYear 1949 ;\n    :hasFather data:ArchibaldDouglas ;\n    :hasMother data:MargaretaLagerfelt .\n\n"
+    }
+]

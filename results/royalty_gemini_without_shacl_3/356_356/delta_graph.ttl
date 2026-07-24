@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Heather_Tonkin .
+
+data:Isla_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Savannah_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Sandy_Pflueger .
+
+data:Harriet_Sperling a :Person,
+        :Woman .
+
+data:Heather_Tonkin a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lindsay_Wallace a :Person,
+        :Woman .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Sandy_Pflueger a :Person,
+        :Woman .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Anne_Princess_Royal a :Person,
+        :Woman ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Peter_Phillips a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:Lindsay_Wallace ;
+    :isSiblingOf data:Zara_Tindall .
+
+data:Autumn_Kelly a :Person,
+        :Woman .
+
+data:Mark_Phillips a :Man,
+        :Person .
+

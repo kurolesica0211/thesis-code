@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Claus-Casimir_of_Orange-Nassau a :Man ;
+    :hasBirthYear 2004 ;
+    :isChildOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isSonOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :knownAs "Claus-Casimir Bernhard Marius Max"^^xsd:string .
+
+data:Countess_Tatiana_Razumovsky_von_Wigstein a :Woman .
+
+data:Ed_P_Spanjaard a :Man .
+
+data:King_Willem-Alexander a :Man .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Maurits_of_Orange-Nassau a :Man .
+
+data:Princess_Beatrix a :Woman .
+
+data:Princess_Margriet a :Woman .
+
+data:Queen_Juliana a :Woman .
+
+data:Prince_Constantijn a :Man .
+
+data:Princess_Laurentien a :Woman .
+

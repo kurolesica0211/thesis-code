@@ -1,0 +1,284 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 1960 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasChild data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 1954 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isAncestorOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isMotherOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Prince_Ruggiero_Maria a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 1914 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Barbara_Maria a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 1927 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Lucia a :Person,
+        :Woman ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 2001 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Antonietta a :Person,
+        :Woman ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 1957 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Cristina a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 1985 ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Prince_Ruggiero_Maria ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasParent data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasRelation data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isDaughterOf data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina,
+        data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+

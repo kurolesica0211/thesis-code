@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Richard_von_Pfeil_und_Klein-Ellguth a :Man,
+        :Person ;
+    :hasMother data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg .
+
+data:Konstantin_Johannsmann a :Man,
+        :Person ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Prince_Gustav_Albrecht a :Man,
+        :Person ;
+    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:Prince_Vincent_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:King_Frederik_X_of_Denmark .
+
+data:Princess_Mafalda a :Person,
+        :Woman ;
+    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:King_Frederik_X_of_Denmark a :Man,
+        :Person .
+
+data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person .
+
+data:Princess_Benedikte_of_Denmark a :Person,
+        :Woman .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
+
+data:Carina_Axelsson a :Person,
+        :Woman .
+
+data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :knownAs "Gustav Frederik Philip Richard"^^xsd:string .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+

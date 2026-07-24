@@ -1,0 +1,799 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingGeorgeIOfGreece ;
+    :hasChild data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasRelation data:Cecilie,
+        data:KingGeorgeIOfGreece,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:PrinceAndrewOfGreeceAndDenmark ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:KingGeorgeIOfGreece ;
+    :isBrotherOf data:KingGeorgeIOfGreece ;
+    :isFatherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isParentOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSiblingOf data:KingGeorgeIOfGreece ;
+    :isUncleOf data:PrinceAndrewOfGreeceAndDenmark .
+
+data:OlgaConstantinovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasRelation data:Cecilie,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:OlgaConstantinovnaOfRussia ;
+    :hasSon data:PrinceAndrewOfGreeceAndDenmark ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBloodrelationOf data:OlgaConstantinovnaOfRussia ;
+    :isMotherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isParentOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSiblingOf data:OlgaConstantinovnaOfRussia ;
+    :isSisterOf data:OlgaConstantinovnaOfRussia .
+
+data:LouisIVGrandDukeOfHesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LouisIVGrandDukeOfHesse ;
+    :hasChild data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasDaughter data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:Cecilie,
+        data:LouisIVGrandDukeOfHesse,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:LouisIVGrandDukeOfHesse ;
+    :isBrotherOf data:LouisIVGrandDukeOfHesse ;
+    :isFatherOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isParentOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSiblingOf data:LouisIVGrandDukeOfHesse ;
+    :isUncleOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:CountessJuliaHauke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceLouisOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:CountessJuliaHauke ;
+    :hasSon data:PrinceLouisOfBattenberg ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:PrinceLouisOfBattenberg ;
+    :isBloodrelationOf data:CountessJuliaHauke ;
+    :isMotherOf data:PrinceLouisOfBattenberg ;
+    :isParentOf data:PrinceLouisOfBattenberg ;
+    :isSiblingOf data:CountessJuliaHauke ;
+    :isSisterOf data:CountessJuliaHauke .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasChild data:PrinceLouisOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:PrinceLouisOfBattenberg ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isBrotherOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isFatherOf data:PrinceLouisOfBattenberg ;
+    :isParentOf data:PrinceLouisOfBattenberg ;
+    :isSiblingOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isUncleOf data:PrinceLouisOfBattenberg .
+
+data:PrincessAliceOfTheUnitedKingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasDaughter data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:Cecilie,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:PrincessAliceOfTheUnitedKingdom ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isBloodrelationOf data:PrincessAliceOfTheUnitedKingdom ;
+    :isMotherOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isParentOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSiblingOf data:PrincessAliceOfTheUnitedKingdom ;
+    :isSisterOf data:PrincessAliceOfTheUnitedKingdom .
+
+data:GeorgeMarquessOfMilfordHaven a :Man ;
+    :hasBrother data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isBrotherOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:LouisEarlMountbattenOfBurma a :Man,
+        :Person ;
+    :hasBrother data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isBrotherOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:LouiseQueenOfSweden a :Person,
+        :Woman ;
+    :hasBrother data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isAuntOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:LouisIVGrandDukeOfHesse,
+        data:PrincessAliceOfTheUnitedKingdom ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasFather data:LouisIVGrandDukeOfHesse ;
+    :hasMother data:PrincessAliceOfTheUnitedKingdom ;
+    :hasParent data:LouisIVGrandDukeOfHesse,
+        data:PrincessAliceOfTheUnitedKingdom ;
+    :hasRelation data:Cecilie,
+        data:LouisIVGrandDukeOfHesse,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:PrincessVictoriaOfHesseAndByRhine ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isChildOf data:LouisIVGrandDukeOfHesse,
+        data:PrincessAliceOfTheUnitedKingdom ;
+    :isDaughterOf data:LouisIVGrandDukeOfHesse,
+        data:PrincessAliceOfTheUnitedKingdom ;
+    :isMotherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSisterOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:CountessJuliaHauke ;
+    :hasParent data:CountessJuliaHauke,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isChildOf data:CountessJuliaHauke,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :isFatherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isSonOf data:CountessJuliaHauke,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :isUncleOf data:PrincessAliceOfBattenberg .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasBrother data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasChild data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasDaughter data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia ;
+    :hasParent data:KingGeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasRelation data:Cecilie,
+        data:KingGeorgeIOfGreece,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:PrincePhilipDukeOfEdinburgh ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isChildOf data:KingGeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isFatherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isParentOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSonOf data:KingGeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isUncleOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:KingGeorgeIOfGreece,
+        data:LouisIVGrandDukeOfHesse,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:KingGeorgeIOfGreece,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:KingGeorgeIOfGreece,
+        data:LouisIVGrandDukeOfHesse,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:KingGeorgeIOfGreece,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:PrincePhilipDukeOfEdinburgh a :Man,
+        :Person ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:KingGeorgeIOfGreece,
+        data:LouisIVGrandDukeOfHesse,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:KingGeorgeIOfGreece,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:KingGeorgeIOfGreece,
+        data:LouisIVGrandDukeOfHesse,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:KingGeorgeIOfGreece,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:KingGeorgeIOfGreece,
+        data:LouisIVGrandDukeOfHesse,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:KingGeorgeIOfGreece,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:PrincessAliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:CountessJuliaHauke,
+        data:LouisIVGrandDukeOfHesse,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma ;
+    :hasChild data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasDaughter data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasDeathYear 1969 ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:Cecilie,
+        data:CountessJuliaHauke,
+        data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouisIVGrandDukeOfHesse,
+        data:LouiseQueenOfSweden,
+        data:Margarita,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessAliceOfTheUnitedKingdom,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :hasSon data:PrincePhilipDukeOfEdinburgh ;
+    :isAncestorOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isDaughterOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isMotherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isParentOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:GeorgeMarquessOfMilfordHaven,
+        data:LouisEarlMountbattenOfBurma,
+        data:LouiseQueenOfSweden,
+        data:PrincessAliceOfBattenberg .
+

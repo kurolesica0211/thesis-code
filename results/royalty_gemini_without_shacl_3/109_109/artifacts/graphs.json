@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leonor a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:FelipeVI ;\n    :hasMother data:LetiziaOrtizRocasolano .\n\ndata:SofiaInfanta a :Woman ;\n    :hasBirthYear 2007 ;\n    :hasFather data:FelipeVI ;\n    :hasMother data:LetiziaOrtizRocasolano .\n\ndata:JuanCarlosI a :Man .\n\ndata:Sofia a :Woman .\n\ndata:FelipeVI a :Man ;\n    :hasBirthYear 1968 ;\n    :hasFather data:JuanCarlosI ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Sofia ;\n    :hasRelation data:LetiziaOrtizRocasolano .\n\ndata:LetiziaOrtizRocasolano a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leonor a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:FelipeVI ;\n    :hasMother data:LetiziaOrtizRocasolano .\n\ndata:SofiaInfanta a :Woman ;\n    :hasBirthYear 2007 ;\n    :hasFather data:FelipeVI ;\n    :hasMother data:LetiziaOrtizRocasolano .\n\ndata:JuanCarlosI a :Man .\n\ndata:Sofia a :Woman .\n\ndata:FelipeVI a :Man ;\n    :hasBirthYear 1968 ;\n    :hasFather data:JuanCarlosI ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Sofia ;\n    :hasRelation data:LetiziaOrtizRocasolano .\n\ndata:LetiziaOrtizRocasolano a :Woman .\n\n"
+    }
+]

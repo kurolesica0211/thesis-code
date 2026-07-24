@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hermann_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear \"1963\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Karl_Leiningen ;\n    :hasMarriageYear \"1987\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marie_Louise_Bulgaria ;\n    :hasRelation data:Deborah_Cully ;\n    :knownAs \"Hermann Leiningen\"^^xsd:string .\n\ndata:Boris_III_Bulgaria a :Man,\n        :Person ;\n    :hasFather data:Victor_Emmanuel_III_Italy .\n\ndata:Deborah_Cully a :Person,\n        :Woman .\n\ndata:Karl_Leiningen a :Man,\n        :Person .\n\ndata:Marie_Louise_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_Bulgaria .\n\ndata:Nicholas_Montenegro a :Man,\n        :Person .\n\ndata:Victor_Emmanuel_III_Italy a :Man,\n        :Person ;\n    :hasFather data:Nicholas_Montenegro .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hermann_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear \"1963\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Karl_Leiningen ;\n    :hasMarriageYear \"1987\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marie_Louise_Bulgaria ;\n    :hasRelation data:Deborah_Cully ;\n    :knownAs \"Hermann Leiningen\"^^xsd:string .\n\ndata:Boris_III_Bulgaria a :Man,\n        :Person ;\n    :hasFather data:Victor_Emmanuel_III_Italy .\n\ndata:Deborah_Cully a :Person,\n        :Woman .\n\ndata:Karl_Leiningen a :Man,\n        :Person .\n\ndata:Marie_Louise_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_Bulgaria .\n\ndata:Nicholas_Montenegro a :Man,\n        :Person .\n\ndata:Victor_Emmanuel_III_Italy a :Man,\n        :Person ;\n    :hasFather data:Nicholas_Montenegro .\n\n"
+    }
+]

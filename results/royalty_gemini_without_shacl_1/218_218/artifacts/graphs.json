@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adam_Karol_Czartoryski a :Man,\n        :Person ;\n    :hasAncestor data:Izabela_Czartoryska ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Ludwik_Piotr ;\n    :hasDaughter data:Tamara_Czartoryska ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores .\n\ndata:Adam_Jerzy_Czartoryski a :Man,\n        :Person .\n\ndata:Augustyn_J%C3%B3zef_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1946 .\n\ndata:Izabela_Czartoryska a :Person,\n        :Woman ;\n    :hasSon data:Adam_Jerzy_Czartoryski .\n\ndata:Ludwik_Piotr a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 .\n\ndata:Mar%C3%ADa_de_los_Dolores a :Person,\n        :Woman ;\n    :hasDeathYear 1996 .\n\ndata:Tamara_Czartoryska a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adam_Karol_Czartoryski a :Man,\n        :Person ;\n    :hasAncestor data:Izabela_Czartoryska ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Ludwik_Piotr ;\n    :hasDaughter data:Tamara_Czartoryska ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores .\n\ndata:Adam_Jerzy_Czartoryski a :Man,\n        :Person .\n\ndata:Augustyn_J%C3%B3zef_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1946 .\n\ndata:Izabela_Czartoryska a :Person,\n        :Woman ;\n    :hasSon data:Adam_Jerzy_Czartoryski .\n\ndata:Ludwik_Piotr a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 .\n\ndata:Mar%C3%ADa_de_los_Dolores a :Person,\n        :Woman ;\n    :hasDeathYear 1996 .\n\ndata:Tamara_Czartoryska a :Person,\n        :Woman .\n\n"
+    }
+]

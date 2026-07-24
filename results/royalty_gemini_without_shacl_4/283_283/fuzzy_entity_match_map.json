@@ -1,0 +1,197 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/283_283",
+  "text_file": "Q38668629.txt",
+  "text_key": "Q38668629",
+  "article": "https://en.wikipedia.org/wiki/Prince_Louis_of_Wales",
+  "article_key": "Prince Louis of Wales",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Louis_of_Wales",
+    "qid": "Q38668629",
+    "label": "Prince Louis of Wales"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Louis_of_Wales",
+      "qid": "Q38668629",
+      "label": "Prince Louis of Wales",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Catherine-_Princess_of_Wales",
+      "qid": "Q10479",
+      "label": "Catherine, Princess of Wales",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#William-_Prince_of_Wales",
+      "qid": "Q36812",
+      "label": "William, Prince of Wales",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Diana-_Princess_of_Wales",
+      "qid": "Q9685",
+      "label": "Diana, Princess of Wales",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_George_of_Wales",
+      "qid": "Q13590412",
+      "label": "Prince George of Wales",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/CatherinePrincessOfWales",
+      "extracted_local_name": "CatherinePrincessOfWales",
+      "embedding_text": "Catherine Princess Of Wales",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Catherine-_Princess_of_Wales",
+      "ground_truth_qid": "Q10479",
+      "ground_truth_label": "Catherine, Princess of Wales",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Catherine Princess of Wales",
+      "best_candidate_label": "Catherine, Princess of Wales",
+      "best_candidate_qid": "Q10479",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/DianaPrincessOfWales",
+      "extracted_local_name": "DianaPrincessOfWales",
+      "embedding_text": "Diana Princess Of Wales",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Diana-_Princess_of_Wales",
+      "ground_truth_qid": "Q9685",
+      "ground_truth_label": "Diana, Princess of Wales",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Diana Princess of Wales",
+      "best_candidate_label": "Diana, Princess of Wales",
+      "best_candidate_qid": "Q9685",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/KingCharlesIII",
+      "extracted_local_name": "KingCharlesIII",
+      "embedding_text": "King Charles III",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Charles_III",
+      "ground_truth_qid": "Q43274",
+      "ground_truth_label": "Charles III",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Charles III",
+      "best_candidate_label": "Charles III",
+      "best_candidate_qid": "Q43274",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceGeorge",
+      "extracted_local_name": "PrinceGeorge",
+      "embedding_text": "Prince George",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_George_of_Wales",
+      "ground_truth_qid": "Q13590412",
+      "ground_truth_label": "Prince George of Wales",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince George",
+      "best_candidate_label": "Prince George of Wales",
+      "best_candidate_qid": "Q13590412",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceLouisOfWales",
+      "extracted_local_name": "PrinceLouisOfWales",
+      "embedding_text": "Prince Louis Of Wales",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Louis_of_Wales",
+      "ground_truth_qid": "Q38668629",
+      "ground_truth_label": "Prince Louis of Wales",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Louis of Wales",
+      "best_candidate_label": "Prince Louis of Wales",
+      "best_candidate_qid": "Q38668629",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceWilliamOfWales",
+      "extracted_local_name": "PrinceWilliamOfWales",
+      "embedding_text": "Prince William Of Wales",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#William-_Prince_of_Wales",
+      "ground_truth_qid": "Q36812",
+      "ground_truth_label": "William, Prince of Wales",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince William of Wales",
+      "best_candidate_label": "William, Prince of Wales",
+      "best_candidate_qid": "Q36812",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessCharlotte",
+      "extracted_local_name": "PrincessCharlotte",
+      "embedding_text": "Princess Charlotte",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Alexandra Mary Windsor",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 6,
+    "entities_unmatched": 1
+  }
+}

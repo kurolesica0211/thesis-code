@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_Fergus_Bowes-Lyon a :Man ;
+    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
+    :hasBirthYear 1957 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter .
+
+data:Percy_Weatherall a :Man ;
+    :hasSister data:Isobel_Charlotte_Weatherall .
+
+data:Damaris_Stuart-William a :Woman .
+
+data:Fergus_Bowes-Lyon a :Man ;
+    :hasFather data:Michael_Bowes-Lyon_LtCol .
+
+data:Karen_Baxter a :Woman .
+
+data:Mary_Pamela_McCorquodale a :Woman .
+
+data:Michael_Bowes-Lyon_LtCol a :Man ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Woman .
+
+data:Isobel_Charlotte_Weatherall a :Woman .
+

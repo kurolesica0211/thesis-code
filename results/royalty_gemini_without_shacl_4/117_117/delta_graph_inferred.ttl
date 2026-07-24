@@ -1,0 +1,309 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasChild data:Queen_Sofia ;
+    :hasDaughter data:Queen_Sofia ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :isAncestorOf data:Felipe_VI,
+        data:Queen_Sofia ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isFatherOf data:Queen_Sofia ;
+    :isParentOf data:Queen_Sofia ;
+    :isSiblingOf data:King_Paul_of_Greece ;
+    :isUncleOf data:Queen_Sofia .
+
+data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Felipe_VI,
+        data:Juan_Carlos_I ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Juan_Carlos_I ;
+    :isParentOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSon data:Infante_Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan_Count_of_Barcelona .
+
+data:Queen_Sofia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Paul_of_Greece ;
+    :hasChild data:Felipe_VI ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasParent data:King_Paul_of_Greece ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Queen_Sofia ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Queen_Sofia ;
+    :isChildOf data:King_Paul_of_Greece ;
+    :isDaughterOf data:King_Paul_of_Greece ;
+    :isMotherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Queen_Sofia ;
+    :isSisterOf data:Queen_Sofia .
+
+data:Alfonso a :Man,
+        :Person ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz ;
+    :isBloodrelationOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isUncleOf data:Felipe_VI .
+
+data:Infanta_Margarita_Duchess_of_Soria a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I .
+
+data:Infanta_Pilar_Duchess_of_Badajoz a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I .
+
+data:Infante_Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan_Count_of_Barcelona ;
+    :hasChild data:Juan_Carlos_I ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Felipe_VI,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Infante_Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Infante_Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Juan_Carlos_I ;
+    :isParentOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Infante_Juan_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Juan_Carlos_I .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia ;
+    :hasParent data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :isSiblingOf data:Felipe_VI ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Queen_Sofia .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasChild data:Felipe_VI ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Felipe_VI,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Infante_Juan_Count_of_Barcelona,
+        data:Juan_Carlos_I,
+        data:King_Paul_of_Greece,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI ;
+    :isBloodrelationOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Alfonso,
+        data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz,
+        data:Juan_Carlos_I ;
+    :isSonOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Felipe_VI .
+

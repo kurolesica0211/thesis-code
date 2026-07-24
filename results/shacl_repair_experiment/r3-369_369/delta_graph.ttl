@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Frederick_Charles_of_Hesse a :Ancestor .
+
+data:Frederick_III a :Ancestor .
+
+data:Margaret_of_Prussia a :Ancestor .
+
+data:Margaret_of_Prussia%2Ctarget a :Ancestor .
+
+data:Princess_Sophie_of_Greece a :Ancestor .
+
+data:Queen_Victoria a :Ancestor .
+
+data:Victor_Emmanuel_III a :Ancestor .
+
+data:Victoria_Princess_Royal a :Ancestor .
+

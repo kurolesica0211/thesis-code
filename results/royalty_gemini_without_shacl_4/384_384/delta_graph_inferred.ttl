@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasBrother data:Louis_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_of_Hesse_and_by_Rhine .
+
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman ;
+    :hasRelation data:Margaret_Campbell_Geddes ;
+    :hasSister data:Margaret_Campbell_Geddes ;
+    :isBloodrelationOf data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Margaret_Campbell_Geddes ;
+    :isSisterOf data:Margaret_Campbell_Geddes .
+
+data:Gustav_Albrecht a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gustav_Albrecht ;
+    :hasChild data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Gustav_Albrecht ;
+    :isBrotherOf data:Gustav_Albrecht ;
+    :isFatherOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Gustav_Albrecht ;
+    :isUncleOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Moritz_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :hasSon data:Moritz_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse ;
+    :isAuntOf data:Moritz_of_Hesse ;
+    :isBloodrelationOf data:Mafalda_of_Savoy ;
+    :isMotherOf data:Moritz_of_Hesse ;
+    :isParentOf data:Moritz_of_Hesse ;
+    :isSiblingOf data:Mafalda_of_Savoy ;
+    :isSisterOf data:Mafalda_of_Savoy .
+
+data:Philip_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philip_of_Hesse ;
+    :hasChild data:Moritz_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Moritz_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse ;
+    :isBloodrelationOf data:Philip_of_Hesse ;
+    :isBrotherOf data:Philip_of_Hesse ;
+    :isFatherOf data:Moritz_of_Hesse ;
+    :isParentOf data:Moritz_of_Hesse ;
+    :isSiblingOf data:Philip_of_Hesse ;
+    :isUncleOf data:Moritz_of_Hesse .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasAncestor data:Gustav_Albrecht ;
+    :hasFather data:Gustav_Albrecht ;
+    :hasParent data:Gustav_Albrecht ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Gustav_Albrecht ;
+    :isDaughterOf data:Gustav_Albrecht ;
+    :isSiblingOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Elisabeth_of_Hesse a :Person,
+        :Woman ;
+    :hasBrother data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSisterOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Heinrich_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Otto_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Mafalda_of_Savoy,
+        data:Philip_of_Hesse ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Philip_of_Hesse ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :hasParent data:Mafalda_of_Savoy,
+        data:Philip_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Gustav_Albrecht,
+        data:Heinrich_of_Hesse,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philip_of_Hesse,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isChildOf data:Mafalda_of_Savoy,
+        data:Philip_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSonOf data:Mafalda_of_Savoy,
+        data:Philip_of_Hesse .
+

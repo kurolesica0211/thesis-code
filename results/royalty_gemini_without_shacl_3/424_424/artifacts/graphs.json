@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antonia_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;\n    :hasBirthYear 1955 ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley ;\n    :hasFather data:Frederick_of_Prussia ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Brigid_Guinness ;\n    :hasRelation data:Charles_Wellesley .\n\ndata:Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Man,\n        :Person ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Charlotte_Wellesley a :Person,\n        :Woman .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antonia_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;\n    :hasBirthYear 1955 ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley ;\n    :hasFather data:Frederick_of_Prussia ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Brigid_Guinness ;\n    :hasRelation data:Charles_Wellesley .\n\ndata:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person .\n\ndata:Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Man,\n        :Person ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Charlotte_Wellesley a :Person,\n        :Woman .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antonia_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;\n    :hasBirthYear 1955 ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley ;\n    :hasFather data:Frederick_of_Prussia ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Brigid_Guinness ;\n    :hasRelation data:Charles_Wellesley .\n\ndata:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person .\n\ndata:Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Man,\n        :Person ;\n    :hasChild data:Charlotte_Wellesley,\n        data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Charlotte_Wellesley a :Person,\n        :Woman .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\n"
+    }
+]

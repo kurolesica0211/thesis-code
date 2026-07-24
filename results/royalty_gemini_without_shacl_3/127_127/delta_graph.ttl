@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Karoline_von_Wartensleben .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
+        :Person .
+
+data:Karoline_von_Wartensleben a :Person,
+        :Woman .
+

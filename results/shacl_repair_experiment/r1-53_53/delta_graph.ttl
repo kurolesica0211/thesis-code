@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Constantine_I a :Ancestor ;
+    :hasAncestor data:Konstantin_Romanov ;
+    :hasSex data:Male ;
+    :isFatherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece .
+
+data:George_I_of_Greece a :Ancestor ;
+    :hasSex data:Male .
+
+data:Sophia_of_Prussia a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Konstantin_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :isParentOf data:Olga_of_Greece .
+
+data:Olga_of_Greece a :Ancestor ;
+    :hasSex data:Female .
+
+data:Wilhelm_II :hasSex data:Male .
+
+data:Alexander_of_Greece :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:George_II_of_Greece :hasSex data:Male .
+
+data:Male a :Sex .
+

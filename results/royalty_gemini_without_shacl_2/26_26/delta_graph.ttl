@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie_of_Greece_and_Denmark a :Woman ;
+    :isDaughterOf data:Alice_of_Battenberg .
+
+data:Margarita_of_Greece_and_Denmark a :Woman ;
+    :isDaughterOf data:Alice_of_Battenberg .
+
+data:Sophie_of_Greece_and_Denmark a :Woman ;
+    :isDaughterOf data:Alice_of_Battenberg .
+
+data:Theodora_of_Greece_and_Denmark a :Woman ;
+    :isDaughterOf data:Alice_of_Battenberg .
+
+data:George_Mountbatten_2nd_Marquess_of_Milford_Haven a :Man .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .
+
+data:Louise_Mountbatten a :Woman .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :isSonOf data:Alice_of_Battenberg .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Woman .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1885 ;
+    :hasDeathYear 1969 ;
+    :hasMarriageYear 1903 ;
+    :hasRelation data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Philip ;
+    :isSisterOf data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+

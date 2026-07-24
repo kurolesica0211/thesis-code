@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Duke_of_Oldenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Augustus_II ;
+    :isChildOf data:Nikolaus .
+
+data:Frederick_Augustus_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Nikolaus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1970 .
+

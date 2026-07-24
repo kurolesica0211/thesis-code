@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Frederik_IX a :Man,\n        :Person ;\n    :isBrotherOf data:Hereditary_Prince_Knud .\n\ndata:Prince_Ingolf a :Man,\n        :Person ;\n    :isBrotherOf data:Christian_of_Rosenborg .\n\ndata:Princess_Caroline-Mathilde a :Person,\n        :Woman ;\n    :isMotherOf data:Christian_of_Rosenborg .\n\ndata:Anne_Dorte_of_Rosenborg a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2014 .\n\ndata:Hereditary_Prince_Knud a :Man,\n        :Person ;\n    :isFatherOf data:Christian_of_Rosenborg .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2013 ;\n    :hasMarriageYear 1971 ;\n    :hasRelation data:Anne_Dorte_of_Rosenborg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Frederik_IX a :Man,\n        :Person ;\n    :isBrotherOf data:Hereditary_Prince_Knud .\n\ndata:Prince_Ingolf a :Man,\n        :Person ;\n    :isBrotherOf data:Christian_of_Rosenborg .\n\ndata:Princess_Caroline-Mathilde a :Person,\n        :Woman ;\n    :isMotherOf data:Christian_of_Rosenborg .\n\ndata:Anne_Dorte_of_Rosenborg a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2014 .\n\ndata:Hereditary_Prince_Knud a :Man,\n        :Person ;\n    :isFatherOf data:Christian_of_Rosenborg .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2013 ;\n    :hasMarriageYear 1971 ;\n    :hasRelation data:Anne_Dorte_of_Rosenborg .\n\n"
+    }
+]

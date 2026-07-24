@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Prince_Michael_of_Kent a :Man ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear data:1978 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Alexandra .
+
+data:1978 a :DomainEntity .
+
+data:Baroness_Marie-Christine_von_Reibnitz a :Woman .
+
+data:Edward_VIII a :Man .
+
+data:George_V a :Man .
+
+data:George_VI a :Man .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Man ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man .
+
+data:Princess_Alexandra a :Woman ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Queen_Mary a :Woman .
+
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+

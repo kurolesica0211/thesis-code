@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasDeathYear 2010 ;
+    :isSonOf data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
+
+data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
+        :Person .
+

@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman ;
+    :hasRelation data:Diana_Princess_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :isBloodrelationOf data:Diana_Princess_of_Wales ;
+    :isSiblingOf data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Diana_Princess_of_Wales .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasChild data:Lady_Mary_Luise_Wellesley ;
+    :hasDaughter data:Lady_Mary_Luise_Wellesley ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Mary_Luise_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :isAncestorOf data:Lady_Mary_Luise_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isBrotherOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isFatherOf data:Lady_Mary_Luise_Wellesley ;
+    :isParentOf data:Lady_Mary_Luise_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley_Marquess_of_Douro ;
+    :isUncleOf data:Lady_Mary_Luise_Wellesley .
+
+data:Princess_Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Mary_Luise_Wellesley ;
+    :hasDaughter data:Lady_Mary_Luise_Wellesley ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Mary_Luise_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSister data:Princess_Antonia_of_Prussia ;
+    :isAncestorOf data:Lady_Mary_Luise_Wellesley ;
+    :isAuntOf data:Lady_Mary_Luise_Wellesley ;
+    :isBloodrelationOf data:Princess_Antonia_of_Prussia ;
+    :isMotherOf data:Lady_Mary_Luise_Wellesley ;
+    :isParentOf data:Lady_Mary_Luise_Wellesley ;
+    :isSiblingOf data:Princess_Antonia_of_Prussia ;
+    :isSisterOf data:Princess_Antonia_of_Prussia .
+
+data:Lady_Mary_Luise_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Charles_Wellesley_Marquess_of_Douro,
+        data:Princess_Antonia_of_Prussia ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasMother data:Princess_Antonia_of_Prussia ;
+    :hasParent data:Charles_Wellesley_Marquess_of_Douro,
+        data:Princess_Antonia_of_Prussia ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro,
+        data:Lady_Mary_Luise_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSister data:Lady_Mary_Luise_Wellesley ;
+    :isBloodrelationOf data:Lady_Mary_Luise_Wellesley ;
+    :isChildOf data:Charles_Wellesley_Marquess_of_Douro,
+        data:Princess_Antonia_of_Prussia ;
+    :isDaughterOf data:Charles_Wellesley_Marquess_of_Douro,
+        data:Princess_Antonia_of_Prussia ;
+    :isSiblingOf data:Lady_Mary_Luise_Wellesley ;
+    :isSisterOf data:Lady_Mary_Luise_Wellesley .
+

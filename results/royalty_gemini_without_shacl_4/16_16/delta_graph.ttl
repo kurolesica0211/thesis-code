@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice .
+
+data:Christopher_Woolf a :Man,
+        :Person ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice .
+
+data:Alex_Mapelli-Mozzi a :Man,
+        :Person .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person .
+
+data:Princess_Eugenie a :Person,
+        :Woman .
+
+data:Sarah_Ferguson a :Person,
+        :Woman .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear "1988"^^xsd:positiveInteger ;
+    :hasMarriageYear "2020"^^xsd:positiveInteger ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isSiblingOf data:Princess_Eugenie .
+
+data:Edoardo_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isChildOf data:Alex_Mapelli-Mozzi .
+

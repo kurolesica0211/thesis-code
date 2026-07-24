@@ -1,0 +1,301 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,
+        :Woman ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :hasSister data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isBloodrelationOf data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isSiblingOf data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isSisterOf data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld .
+
+data:Prince_Julius a :Man,
+        :Person ;
+    :hasBrother data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius ;
+    :isBloodrelationOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isBrotherOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isSiblingOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isUncleOf data:Armin,
+        data:Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasChild data:Leopold_IV_Prince_of_Lippe ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig ;
+    :hasSon data:Leopold_IV_Prince_of_Lippe ;
+    :isAncestorOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig ;
+    :isBloodrelationOf data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Leopold_IV_Prince_of_Lippe ;
+    :isParentOf data:Leopold_IV_Prince_of_Lippe ;
+    :isSiblingOf data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Leopold_IV_Prince_of_Lippe .
+
+data:Karoline_of_Wartensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Leopold_IV_Prince_of_Lippe ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig ;
+    :hasSister data:Karoline_of_Wartensleben ;
+    :hasSon data:Leopold_IV_Prince_of_Lippe ;
+    :isAncestorOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig ;
+    :isAuntOf data:Leopold_IV_Prince_of_Lippe ;
+    :isBloodrelationOf data:Karoline_of_Wartensleben ;
+    :isMotherOf data:Leopold_IV_Prince_of_Lippe ;
+    :isParentOf data:Leopold_IV_Prince_of_Lippe ;
+    :isSiblingOf data:Karoline_of_Wartensleben ;
+    :isSisterOf data:Karoline_of_Wartensleben .
+
+data:Bernhard_of_Biesterfeld a :Man,
+        :Person ;
+    :hasAncestor data:Bernhard_father_of_Bernhard_of_Biesterfeld ;
+    :hasBrother data:Bernhard_of_Biesterfeld ;
+    :hasFather data:Bernhard_father_of_Bernhard_of_Biesterfeld ;
+    :hasParent data:Bernhard_father_of_Bernhard_of_Biesterfeld ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isBloodrelationOf data:Bernhard_of_Biesterfeld ;
+    :isBrotherOf data:Bernhard_of_Biesterfeld ;
+    :isChildOf data:Bernhard_father_of_Bernhard_of_Biesterfeld ;
+    :isSiblingOf data:Bernhard_of_Biesterfeld ;
+    :isSonOf data:Bernhard_father_of_Bernhard_of_Biesterfeld .
+
+data:Bernhard_father_of_Bernhard_of_Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :hasChild data:Bernhard_of_Biesterfeld ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :hasSon data:Bernhard_of_Biesterfeld ;
+    :isAncestorOf data:Bernhard_of_Biesterfeld ;
+    :isBloodrelationOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isBrotherOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isFatherOf data:Bernhard_of_Biesterfeld ;
+    :isParentOf data:Bernhard_of_Biesterfeld ;
+    :isSiblingOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isUncleOf data:Armin,
+        data:Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig .
+
+data:Armin a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe ;
+    :hasBrother data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe ;
+    :hasParent data:Leopold_IV_Prince_of_Lippe ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isBloodrelationOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isBrotherOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isChildOf data:Leopold_IV_Prince_of_Lippe ;
+    :isSiblingOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isSonOf data:Leopold_IV_Prince_of_Lippe .
+
+data:Hereditary_Prince_Ernst a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe ;
+    :hasBrother data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe ;
+    :hasParent data:Leopold_IV_Prince_of_Lippe ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isBloodrelationOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isBrotherOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isChildOf data:Leopold_IV_Prince_of_Lippe ;
+    :isSiblingOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isSonOf data:Leopold_IV_Prince_of_Lippe .
+
+data:Prince_Chlodwig a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe ;
+    :hasBrother data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe ;
+    :hasParent data:Leopold_IV_Prince_of_Lippe ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :isBloodrelationOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isBrotherOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isChildOf data:Leopold_IV_Prince_of_Lippe ;
+    :isSiblingOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isSonOf data:Leopold_IV_Prince_of_Lippe .
+
+data:Leopold_IV_Prince_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :hasBirthYear 1871 ;
+    :hasBrother data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :hasChild data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Karoline_of_Wartensleben ;
+    :hasParent data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :hasRelation data:Armin,
+        data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Bernhard_of_Biesterfeld,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Karoline_of_Wartensleben,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Chlodwig,
+        data:Prince_Julius,
+        data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+    :hasSon data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isAncestorOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isBloodrelationOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isBrotherOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isChildOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :isFatherOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isParentOf data:Armin,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig ;
+    :isSiblingOf data:Bernhard_father_of_Bernhard_of_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Julius ;
+    :isSonOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :isUncleOf data:Armin,
+        data:Bernhard_of_Biesterfeld,
+        data:Hereditary_Prince_Ernst,
+        data:Prince_Chlodwig .
+

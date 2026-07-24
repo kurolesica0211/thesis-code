@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceFranzWilhelm a :Man,
+        :Person ;
+    :hasRelation data:MariaVladimirovnaOfRussia .
+
+data:PrinceKarlFranzJosefWilhelmFriedrichEduardPaul a :Man,
+        :Person ;
+    :hasBirthYear 1916 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:PrinceJoachimOfPrussia ;
+    :hasMother data:PrincessMarieAugusteOfAnhalt ;
+    :hasRelation data:EvaMariaHerreraYValdeavellano,
+        data:LuiseDoraHartmann,
+        data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Person,
+        :Woman .
+
+data:EduardDukeOfAnhalt a :Man,
+        :Person .
+
+data:EvaMariaHerreraYValdeavellano a :Person,
+        :Woman .
+
+data:LuiseDoraHartmann a :Person,
+        :Woman .
+
+data:MariaVladimirovnaOfRussia a :Person,
+        :Woman .
+
+data:PrinceEitelFriedrichOfPrussia a :Man,
+        :Person .
+
+data:PrinceJoachimOfPrussia a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasRelation data:PrincessMarieAugusteOfAnhalt ;
+    :isSiblingOf data:PrinceEitelFriedrichOfPrussia .
+
+data:PrinceMoritzOfSaxeAltenburg a :Man,
+        :Person .
+
+data:PrincessHenrietteHermineWandaIdaLuiseVonSchonaichCarolath a :Person,
+        :Woman .
+
+data:PrincessLuiseOfSaxeAltenburg a :Person,
+        :Woman ;
+    :hasFather data:PrinceMoritzOfSaxeAltenburg .
+
+data:WilhelmII a :Man,
+        :Person .
+
+data:PrincessMarieAugusteOfAnhalt a :Person,
+        :Woman ;
+    :hasFather data:EduardDukeOfAnhalt ;
+    :hasMother data:PrincessLuiseOfSaxeAltenburg .
+

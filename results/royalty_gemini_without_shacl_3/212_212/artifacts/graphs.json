@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul_Frederick_of_Mecklenburg a :Man,\n        :Person ;\n    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Paul_Frederick_the_Elder_of_Mecklenburg ;\n    :hasMother data:Marie_of_Windisch-Graetz ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Marie_of_Windisch-Graetz a :Person,\n        :Woman .\n\ndata:Paul_Frederick_the_Elder_of_Mecklenburg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul_Frederick_of_Mecklenburg a :Man,\n        :Person ;\n    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Paul_Frederick_the_Elder_of_Mecklenburg ;\n    :hasMother data:Marie_of_Windisch-Graetz ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Marie_of_Windisch-Graetz a :Person,\n        :Woman .\n\ndata:Paul_Frederick_the_Elder_of_Mecklenburg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul_Frederick_of_Mecklenburg a :Man,\n        :Person ;\n    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Paul_Frederick_the_Elder_of_Mecklenburg ;\n    :hasMother data:Marie_of_Windisch-Graetz ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Marie_of_Windisch-Graetz a :Person,\n        :Woman .\n\ndata:Paul_Frederick_the_Elder_of_Mecklenburg a :Man,\n        :Person .\n\n"
+    }
+]

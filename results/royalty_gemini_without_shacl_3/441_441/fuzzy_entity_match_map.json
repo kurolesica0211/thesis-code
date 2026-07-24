@@ -1,0 +1,157 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/441_441",
+  "text_file": "Q75251053.txt",
+  "text_key": "Q75251053",
+  "article": "https://en.wikipedia.org/wiki/Nerissa_Bowes-Lyon",
+  "article_key": "Nerissa Bowes-Lyon",
+  "main_entity": {
+    "uri": "http://example.com/data#Nerissa_Bowes-Lyon",
+    "qid": "Q75251053",
+    "label": "Nerissa Bowes-Lyon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Nerissa_Bowes-Lyon",
+      "qid": "Q75251053",
+      "label": "Nerissa Bowes-Lyon",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "qid": "Q75381423",
+      "label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#John_Bowes-Lyon",
+      "qid": "Q75411",
+      "label": "John Bowes-Lyon",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne",
+      "qid": "Q238820",
+      "label": "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne",
+      "qid": "Q335159",
+      "label": "Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Katherine_Bowes-Lyon",
+      "qid": "Q75248488",
+      "label": "Katherine Bowes-Lyon",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Anne_of_Denmark",
+      "qid": "Q2871729",
+      "label": "Princess Anne of Denmark",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lady_Elizabeth_Shakerley",
+      "qid": "Q75332807",
+      "label": "Lady Elizabeth Shakerley",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_local_name": "Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "embedding_text": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
+      "ground_truth_qid": "Q75381423",
+      "ground_truth_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "best_candidate_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "best_candidate_qid": "Q75381423",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/John_Herbert_Bowes-Lyon",
+      "extracted_local_name": "John_Herbert_Bowes-Lyon",
+      "embedding_text": "John Herbert Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#John_Bowes-Lyon",
+      "ground_truth_qid": "Q75411",
+      "ground_truth_label": "John Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "John Herbert Bowes-Lyon",
+      "best_candidate_label": "John Bowes-Lyon",
+      "best_candidate_qid": "Q75411",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Katherine_Bowes-Lyon",
+      "extracted_local_name": "Katherine_Bowes-Lyon",
+      "embedding_text": "Katherine Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Katherine_Bowes-Lyon",
+      "ground_truth_qid": "Q75248488",
+      "ground_truth_label": "Katherine Bowes-Lyon",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Katherine Bowes-Lyon",
+      "best_candidate_label": "Katherine Bowes-Lyon",
+      "best_candidate_qid": "Q75248488",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nerissa_Bowes-Lyon",
+      "extracted_local_name": "Nerissa_Bowes-Lyon",
+      "embedding_text": "Nerissa Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Nerissa_Bowes-Lyon",
+      "ground_truth_qid": "Q75251053",
+      "ground_truth_label": "Nerissa Bowes-Lyon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nerissa Bowes-Lyon",
+      "best_candidate_label": "Nerissa Bowes-Lyon",
+      "best_candidate_qid": "Q75251053",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 4,
+    "entities_unmatched": 0
+  }
+}

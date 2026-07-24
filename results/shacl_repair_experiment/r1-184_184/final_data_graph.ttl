@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Georgievich_Romanov a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:George_Mikhailovich ;
+    :hasMother data:Victoria_Romanovna_Bettarini .
+
+data:Kira_Leonida_Georgievna_Romanova a :Woman ;
+    :hasBirthYear 2025 ;
+    :hasFather data:George_Mikhailovich ;
+    :hasMother data:Victoria_Romanovna_Bettarini .
+
+data:Leonida a :Woman .
+
+data:Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMother data:Henriette_of_Sch%C3%B6naich-Carolath .
+
+data:Henriette_of_Sch%C3%B6naich-Carolath a :Ancestor,
+        :Woman .
+
+data:Karl_Franz_of_Prussia a :Ancestor,
+        :Man .
+
+data:Maria_Vladimirovna a :Ancestor,
+        :Woman ;
+    :hasFather data:Vladimir_Cyrillovich .
+
+data:Vladimir_Cyrillovich a :Ancestor,
+        :Man .
+
+data:George_Mikhailovich a :Ancestor,
+        :Man ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Maria_Vladimirovna .
+
+data:Victoria_Romanovna_Bettarini a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1982 .
+

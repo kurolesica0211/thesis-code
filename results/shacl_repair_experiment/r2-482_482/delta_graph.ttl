@@ -1,0 +1,15 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Beatrix a :Ancestor .
+
+data:JorgeZorreguieta a :Ancestor ;
+    :isFatherOf data:M%C3%A1xima .
+
+data:Mar%C3%ADaDelCarmenCerruti a :Ancestor ;
+    :isMotherOf data:M%C3%A1xima .
+
+data:Willem-Alexander a :Ancestor .
+
+data:M%C3%A1xima a :Ancestor .
+

@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Charles_X a :Ancestor .
+
+data:Henri_Count_of_Paris a :Ancestor .
+
+data:Henri_VI_Count_of_Paris a :Ancestor .
+
+data:Henri_dOrleans_Ancestor a :Ancestor .
+
+data:Louis_Philippe_I a :Ancestor .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor .
+
+data:Philippe_I_Duke_of_Orleans a :Ancestor .
+

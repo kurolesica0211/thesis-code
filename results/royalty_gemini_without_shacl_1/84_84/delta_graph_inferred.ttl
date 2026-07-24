@@ -1,0 +1,249 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:George_II_of_Greece ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :isBloodrelationOf data:George_II_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSister data:Aspasia_Manos ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexandra ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Aspasia_Manos ;
+    :isMotherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Aspasia_Manos ;
+    :isSisterOf data:Aspasia_Manos .
+
+data:Maria_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Peter_II ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSister data:Maria_of_Yugoslavia ;
+    :hasSon data:Peter_II ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Peter_II ;
+    :isAuntOf data:Peter_II ;
+    :isBloodrelationOf data:Maria_of_Yugoslavia ;
+    :isMotherOf data:Peter_II ;
+    :isParentOf data:Peter_II ;
+    :isSiblingOf data:Maria_of_Yugoslavia ;
+    :isSisterOf data:Maria_of_Yugoslavia .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasChild data:Alexander_of_Greece ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSon data:Alexander_of_Greece ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isFatherOf data:Alexander_of_Greece ;
+    :isParentOf data:Alexander_of_Greece ;
+    :isSiblingOf data:Constantine_I ;
+    :isUncleOf data:Alexander_of_Greece .
+
+data:Sophia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_of_Greece ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSister data:Sophia ;
+    :hasSon data:Alexander_of_Greece ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra ;
+    :isAuntOf data:Alexander_of_Greece ;
+    :isBloodrelationOf data:Sophia ;
+    :isMotherOf data:Alexander_of_Greece ;
+    :isParentOf data:Alexander_of_Greece ;
+    :isSiblingOf data:Sophia ;
+    :isSisterOf data:Sophia .
+
+data:Peter_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Maria_of_Yugoslavia ;
+    :hasBrother data:Peter_II ;
+    :hasChild data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasMother data:Maria_of_Yugoslavia ;
+    :hasParent data:Maria_of_Yugoslavia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSon data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBloodrelationOf data:Peter_II ;
+    :isBrotherOf data:Peter_II ;
+    :isChildOf data:Maria_of_Yugoslavia ;
+    :isFatherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isParentOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSiblingOf data:Peter_II ;
+    :isSonOf data:Maria_of_Yugoslavia ;
+    :isUncleOf data:Alexander_Crown_Prince_of_Yugoslavia .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasBrother data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasFather data:Peter_II ;
+    :hasMother data:Alexandra ;
+    :hasParent data:Alexandra,
+        data:Peter_II ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :isBloodrelationOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBrotherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isChildOf data:Alexandra,
+        data:Peter_II ;
+    :isSiblingOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSonOf data:Alexandra,
+        data:Peter_II .
+
+data:Alexander_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Sophia ;
+    :hasBrother data:Alexander_of_Greece ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia ;
+    :hasParent data:Constantine_I,
+        data:Sophia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexandra ;
+    :isBloodrelationOf data:Alexander_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece ;
+    :isChildOf data:Constantine_I,
+        data:Sophia ;
+    :isFatherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Alexander_of_Greece ;
+    :isSonOf data:Constantine_I,
+        data:Sophia ;
+    :isUncleOf data:Alexandra .
+
+data:Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_of_Greece,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Sophia ;
+    :hasBirthYear 1921 ;
+    :hasChild data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alexander_of_Greece ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Aspasia_Manos ;
+    :hasParent data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia,
+        data:Alexander_of_Greece,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:George_II_of_Greece,
+        data:Maria_of_Yugoslavia,
+        data:Peter_II,
+        data:Sophia ;
+    :hasSister data:Alexandra ;
+    :hasSon data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isAncestorOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isAuntOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexandra ;
+    :isChildOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isDaughterOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isMotherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isParentOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+

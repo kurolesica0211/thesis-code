@@ -1,0 +1,91 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sof%C3%ADa_of_Spain a :Woman ;
+    :hasRelation data:Sof%C3%ADa_of_Spain ;
+    :hasSister data:Sof%C3%ADa_of_Spain ;
+    :isBloodrelationOf data:Sof%C3%ADa_of_Spain ;
+    :isSiblingOf data:Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Sof%C3%ADa_of_Spain .
+
+data:Michael a :Ancestor,
+        :Man ;
+    :hasBrother data:Michael ;
+    :hasChild data:Marina ;
+    :hasDaughter data:Marina ;
+    :hasRelation data:Marina,
+        data:Michael ;
+    :isAncestorOf data:Marina ;
+    :isBloodrelationOf data:Michael ;
+    :isBrotherOf data:Michael ;
+    :isFatherOf data:Marina ;
+    :isParentOf data:Marina ;
+    :isSiblingOf data:Michael ;
+    :isUncleOf data:Marina .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasChild data:Philippos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Philippos ;
+    :isAncestorOf data:Philippos ;
+    :isAuntOf data:Philippos ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Philippos ;
+    :isParentOf data:Philippos ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Philippos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos ;
+    :hasSon data:Philippos ;
+    :isAncestorOf data:Philippos ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Philippos ;
+    :isParentOf data:Philippos ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Philippos .
+
+data:Marina a :Woman ;
+    :hasAncestor data:Michael ;
+    :hasFather data:Michael ;
+    :hasParent data:Michael ;
+    :hasRelation data:Marina,
+        data:Michael ;
+    :hasSister data:Marina ;
+    :isBloodrelationOf data:Marina ;
+    :isChildOf data:Michael ;
+    :isDaughterOf data:Michael ;
+    :isSiblingOf data:Marina ;
+    :isSisterOf data:Marina .
+
+data:Philippos a :Man ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBirthYear "1986"^^xsd:positiveInteger ;
+    :hasBrother data:Philippos ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II,
+        data:Philippos ;
+    :isBloodrelationOf data:Philippos ;
+    :isBrotherOf data:Philippos ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isSiblingOf data:Philippos ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II .
+

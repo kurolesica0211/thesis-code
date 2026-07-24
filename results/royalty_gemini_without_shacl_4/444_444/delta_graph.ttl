@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AngelicaMargheritaEdwinaHicks a :Person,
+        :Woman ;
+    :hasBirthYear "1992"^^xsd:positiveInteger ;
+    :hasFather data:AshleyLouisDavidHicks ;
+    :hasMother data:MarinaAllegraFedericaSilviaTondato .
+
+data:AshleyLouisDavidHicks a :Man,
+        :Person ;
+    :hasFather data:DavidNightingaleHicks ;
+    :hasMother data:LadyPamelaMountbatten .
+
+data:DavidNightingaleHicks a :Man,
+        :Person .
+
+data:LadyPamelaMountbatten a :Person,
+        :Woman ;
+    :hasFather data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :hasMother data:TheHonourableEdwinaAshley .
+
+data:LouisMountbatten1stEarlMountbattenOfBurma a :Man,
+        :Person ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine .
+
+data:MarinaAllegraFedericaSilviaTondato a :Person,
+        :Woman .
+
+data:PrinceLouisOfBattenberg a :Man,
+        :Person .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Person,
+        :Woman ;
+    :hasMother data:QueenVictoria .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:TheHonourableEdwinaAshley a :Person,
+        :Woman .
+

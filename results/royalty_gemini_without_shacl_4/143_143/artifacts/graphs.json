@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Marie of Mecklenberg-Schwerin\"^^xsd:string ;\n    :hasBirthYear \"1854\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1920\"^^xsd:positiveInteger ;\n    :hasFather data:Friedrich_Franz_II_of_Mecklenburg_Schwerin ;\n    :hasMarriageYear \"1874\"^^xsd:positiveInteger ;\n    :hasMother data:Augusta_Reuss_of_Kostritz ;\n    :hasRelation data:Vladimir_Alexandrovich_of_Russia ;\n    :knownAs \"Maria Pavlovna Romanova\"^^xsd:string .\n\ndata:Alexander_II_of_Russia a :Man,\n        :Person .\n\ndata:Augusta_Reuss_of_Kostritz a :Person,\n        :Woman .\n\ndata:Friedrich_Franz_II_of_Mecklenburg_Schwerin a :Man,\n        :Person .\n\ndata:Vladimir_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Alexander_II_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Marie of Mecklenberg-Schwerin\"^^xsd:string ;\n    :hasBirthYear \"1854\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1920\"^^xsd:positiveInteger ;\n    :hasFather data:Friedrich_Franz_II_of_Mecklenburg_Schwerin ;\n    :hasMarriageYear \"1874\"^^xsd:positiveInteger ;\n    :hasMother data:Augusta_Reuss_of_Kostritz ;\n    :hasRelation data:Vladimir_Alexandrovich_of_Russia ;\n    :knownAs \"Maria Pavlovna Romanova\"^^xsd:string .\n\ndata:Alexander_II_of_Russia a :Man,\n        :Person .\n\ndata:Augusta_Reuss_of_Kostritz a :Person,\n        :Woman .\n\ndata:Friedrich_Franz_II_of_Mecklenburg_Schwerin a :Man,\n        :Person .\n\ndata:Vladimir_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Alexander_II_of_Russia .\n\n"
+    }
+]

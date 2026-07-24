@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Charles_Troughton a :Ancestor .
+
+data:Jeremiah_Colman a :Ancestor .
+
+data:Mary_Cecilia_Bowes-Lyon a :Ancestor ;
+    :isDaughterOf data:Claude_Bowes-Lyon .
+
+data:Timothy_Colman a :Ancestor .
+
+data:Claude_Bowes-Lyon a :Ancestor .
+

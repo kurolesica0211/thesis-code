@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anna-Elisabeth_von_Pfuel a :Woman .
+
+data:Armgard_von_Cramm a :Woman ;
+    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasMother data:Hedwig_von_Sierstorpff-Driburg .
+
+data:Beatrix_of_the_Netherlands a :Woman .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man .
+
+data:Bodo_von_Oeynhausen a :Man .
+
+data:Clamor_von_dem_Bussche a :Man ;
+    :isAncestorOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen .
+
+data:Claus_von_Amsberg a :Man ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:Dorothea_von_Salviati a :Woman ;
+    :hasFather data:Heinrich_von_Salviati ;
+    :hasMother data:Caroline_Rahlenbeck .
+
+data:Hedwig_von_Sierstorpff-Cramm a :Woman ;
+    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasMother data:Hedwig_von_Sierstorpff-Driburg .
+
+data:Wilhelm_Karl_Ludwig_Kuno_Graf_von_Oeynhausen-Sierstorpff a :Man .
+
+data:Caroline_Rahlenbeck a :Woman .
+
+data:Claus_Felix_von_Amsberg a :Man ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge .
+
+data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg a :Man .
+
+data:Elise_von_Vieregge a :Woman .
+
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Heinrich_von_Salviati a :Man .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1977 .
+
+data:Wilhelm_von_Amsberg a :Man .
+
+data:Aschwin_of_Sierstorpff-Cramm a :Man .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 ;
+    :hasMother data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg .
+
+data:George_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
+
+data:Hedwig_von_Sierstorpff-Driburg a :Woman .
+

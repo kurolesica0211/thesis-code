@@ -1,0 +1,104 @@
+{
+    "conforms": false,
+    "violations": [
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasAncestor",
+            "value": "http://example.org/data/Wilhelm_II",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasAncestor",
+            "message": "Value does not have class :Ancestor",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasFather",
+            "value": "http://example.org/data/Wilhelm-Karl_Prince_of_Prussia",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasFather",
+            "message": "Value class is not in classes (:Ancestor, :Man)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasMother",
+            "value": "http://example.org/data/Armgard_von_Veltheim",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasMother",
+            "message": "Value class is not in classes (:Ancestor, :Woman)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasAncestor",
+            "value": "http://example.org/data/Wilhelm_II",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasAncestor",
+            "message": "Value does not have class :Ancestor",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasFather",
+            "value": "http://example.org/data/Wilhelm-Karl_Prince_of_Prussia",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasFather",
+            "message": "Value class is not in classes (:Ancestor, :Man)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasMother",
+            "value": "http://example.org/data/Armgard_von_Veltheim",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasMother",
+            "message": "Value class is not in classes (:Ancestor, :Woman)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasAncestor",
+            "value": "http://example.org/data/Wilhelm_II",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasAncestor",
+            "message": "Value does not have class :Ancestor",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasFather",
+            "value": "http://example.org/data/Wilhelm-Karl_Prince_of_Prussia",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasFather",
+            "message": "Value class is not in classes (:Ancestor, :Man)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        },
+        {
+            "severity": "Violation",
+            "focus": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+            "path": "http://example.com/family_TBOX.ttl#hasMother",
+            "value": "http://example.org/data/Armgard_von_Veltheim",
+            "constraint": "ClassConstraintComponent",
+            "source_shape": "http://example.com/family_TBOX.ttl#Person-hasMother",
+            "message": "Value class is not in classes (:Ancestor, :Woman)",
+            "llm_explanation": null,
+            "llm_instruction": null
+        }
+    ]
+}

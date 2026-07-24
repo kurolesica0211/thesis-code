@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Hanover a :Woman ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :isSisterOf data:Ernst_August_Hereditary_Prince_of_Hanover .
+
+data:Christian_of_Hanover a :Man ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Chantal_Hochuli ;
+    :isBrotherOf data:Ernst_August_Hereditary_Prince_of_Hanover .
+
+data:Ekaterina_Igorievna_Malysheva a :Woman ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Igor_Malyshev ;
+    :hasMother data:Svetlana_Malysheva .
+
+data:Igor_Malyshev a :Man .
+
+data:Svetlana_Malysheva a :Woman .
+
+data:Chantal_Hochuli a :Woman .
+
+data:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasRelation data:Ekaterina_Igorievna_Malysheva .
+
+data:Ernst_August_Prince_of_Hanover a :Man .
+

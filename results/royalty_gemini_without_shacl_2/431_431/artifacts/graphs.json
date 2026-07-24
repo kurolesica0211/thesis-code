@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Woman ;\n    :hasSister data:Rose_Leveson-Gower_Countess_Granville .\n\ndata:Rosie_Stancer a :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Sir_Samuel_Clayton ;\n    :hasMarriageYear 1993 ;\n    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;\n    :hasSon data:Jock_Stancer .\n\ndata:William_Wordie_Stancer a :Man ;\n    :hasFather data:James_Wordie .\n\ndata:James_Wordie a :Man .\n\ndata:Jock_Stancer a :Man .\n\ndata:Lady_Mary_Cecilia_Leveson-Gower a :Woman ;\n    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;\n    :hasMother data:Rose_Leveson-Gower_Countess_Granville .\n\ndata:Sir_Gilbert_Falkingham_Clayton a :Man .\n\ndata:Sir_Samuel_Clayton a :Man ;\n    :hasFather data:Sir_Gilbert_Falkingham_Clayton .\n\ndata:William_Leveson-Gower_4th_Earl_Granville a :Man .\n\ndata:Rose_Leveson-Gower_Countess_Granville a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Woman ;\n    :hasSister data:Rose_Leveson-Gower_Countess_Granville .\n\ndata:Rosie_Stancer a :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Sir_Samuel_Clayton ;\n    :hasMarriageYear 1993 ;\n    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;\n    :hasSon data:Jock_Stancer .\n\ndata:William_Wordie_Stancer a :Man ;\n    :hasFather data:James_Wordie .\n\ndata:James_Wordie a :Man .\n\ndata:Jock_Stancer a :Man .\n\ndata:Lady_Mary_Cecilia_Leveson-Gower a :Woman ;\n    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;\n    :hasMother data:Rose_Leveson-Gower_Countess_Granville .\n\ndata:Sir_Gilbert_Falkingham_Clayton a :Man .\n\ndata:Sir_Samuel_Clayton a :Man ;\n    :hasFather data:Sir_Gilbert_Falkingham_Clayton .\n\ndata:William_Leveson-Gower_4th_Earl_Granville a :Man .\n\ndata:Rose_Leveson-Gower_Countess_Granville a :Woman .\n\n"
+    }
+]

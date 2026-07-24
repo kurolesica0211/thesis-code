@@ -1,0 +1,90 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/167_167",
+  "text_file": "Q24005341.txt",
+  "text_key": "Q24005341",
+  "article": "https://en.wikipedia.org/wiki/Mafalda_von_Hessen",
+  "article_key": "Mafalda von Hessen",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Mafalda_of_Hesse_and_by_Rhine",
+    "qid": "Q24005341",
+    "label": "Princess Mafalda of Hesse and by Rhine"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Mafalda_of_Hesse_and_by_Rhine",
+      "qid": "Q24005341",
+      "label": "Princess Mafalda of Hesse and by Rhine",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg",
+      "qid": "Q4164797",
+      "label": "Princess Tatiana of Sayn-Wittgenstein-Berleburg",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Tatiana_of_Sayn-Wittgenstein-Berleburg",
+      "extracted_local_name": "Tatiana_of_Sayn-Wittgenstein-Berleburg",
+      "embedding_text": "Tatiana of Sayn-Wittgenstein-Berleburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8043478260869565,
+      "ground_truth_uri": "http://example.com/data#Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg",
+      "ground_truth_qid": "Q4164797",
+      "ground_truth_label": "Princess Tatiana of Sayn-Wittgenstein-Berleburg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Tatiana of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Princess Tatiana of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q4164797",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8043478260869565
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mafalda_Margarethe_von_Hessen",
+      "extracted_local_name": "Mafalda_Margarethe_von_Hessen",
+      "embedding_text": "Mafalda Margarethe von Hessen",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Mafalda Margarethe of Hesse and by Rhine",
+      "best_candidate_label": "Princess Mafalda of Hesse and by Rhine",
+      "best_candidate_qid": "Q24005341",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6923076923076923
+    },
+    {
+      "extracted_uri": "http://example.org/data/Moritz_Landgrave_of_Hesse",
+      "extracted_local_name": "Moritz_Landgrave_of_Hesse",
+      "embedding_text": "Moritz Landgrave of Hesse",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Princess Tatiana of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q4164797",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.15841584158415842
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 1,
+    "entities_unmatched": 2
+  }
+}

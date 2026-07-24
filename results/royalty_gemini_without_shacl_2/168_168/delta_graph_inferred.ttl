@@ -1,0 +1,547 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Prince_Gottfried_of_Hohenlohe-Langenburg .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Margarita_of_Greece_and_Denmark .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Prince_Albrecht_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Prince_Kraft_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Prince_Rupprecht_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isDaughterOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg .
+
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDaughter data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+

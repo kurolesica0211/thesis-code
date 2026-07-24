@@ -1,0 +1,407 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Hugo_of_Bourbon a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Hugo_of_Bourbon ;
+    :hasRelation data:Carlos_Hugo_of_Bourbon,
+        data:Claus_von_Amsberg,
+        data:Irene ;
+    :isBloodrelationOf data:Carlos_Hugo_of_Bourbon ;
+    :isBrotherOf data:Carlos_Hugo_of_Bourbon ;
+    :isSiblingOf data:Carlos_Hugo_of_Bourbon .
+
+data:Claus_von_Amsberg a :Man,
+        :Person ;
+    :hasBrother data:Claus_von_Amsberg ;
+    :hasRelation data:Beatrix,
+        data:Carlos_Hugo_of_Bourbon,
+        data:Claus_von_Amsberg,
+        data:Irene ;
+    :isBloodrelationOf data:Claus_von_Amsberg ;
+    :isBrotherOf data:Claus_von_Amsberg ;
+    :isSiblingOf data:Claus_von_Amsberg .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_of_Mecklenburg-Schwerin ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Christina,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet ;
+    :isBloodrelationOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Juliana .
+
+data:Emma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Beatrix,
+        data:Christina,
+        data:Emma,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :hasSister data:Emma ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isAuntOf data:Wilhelmina ;
+    :isBloodrelationOf data:Emma ;
+    :isMotherOf data:Wilhelmina ;
+    :isParentOf data:Wilhelmina ;
+    :isSiblingOf data:Emma ;
+    :isSisterOf data:Emma .
+
+data:William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_III ;
+    :hasChild data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isBloodrelationOf data:William_III ;
+    :isBrotherOf data:William_III ;
+    :isFatherOf data:Wilhelmina ;
+    :isParentOf data:Wilhelmina ;
+    :isSiblingOf data:William_III ;
+    :isUncleOf data:Wilhelmina .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSiblingOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:William_III ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasFather data:William_III ;
+    :hasMother data:Emma ;
+    :hasParent data:Emma,
+        data:William_III ;
+    :hasRelation data:Beatrix,
+        data:Christina,
+        data:Emma,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Wilhelmina ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Juliana,
+        data:Margriet ;
+    :isAuntOf data:Juliana ;
+    :isBloodrelationOf data:Wilhelmina ;
+    :isChildOf data:Emma,
+        data:William_III ;
+    :isDaughterOf data:Emma,
+        data:William_III ;
+    :isMotherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Wilhelmina ;
+    :isSisterOf data:Wilhelmina .
+
+data:Christina a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard_of_Lippe-Biesterfeld,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Christina,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard_of_Lippe-Biesterfeld,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Christina,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard_of_Lippe-Biesterfeld,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Christina,
+        data:Claus_von_Amsberg,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard_of_Lippe-Biesterfeld,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Carlos_Hugo_of_Bourbon,
+        data:Christina,
+        data:Claus_von_Amsberg,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasBirthYear 1909 ;
+    :hasChild data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Wilhelmina ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :hasRelation data:Beatrix,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Christina,
+        data:Emma,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina,
+        data:William_III ;
+    :hasSister data:Juliana ;
+    :isAncestorOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isAuntOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Juliana ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isDaughterOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isMotherOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :isSiblingOf data:Juliana ;
+    :isSisterOf data:Juliana .
+

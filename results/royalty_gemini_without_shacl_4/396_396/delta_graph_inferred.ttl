@@ -1,0 +1,488 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrew_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Andrew_of_Yugoslavia ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :isBloodrelationOf data:Andrew_of_Yugoslavia ;
+    :isBrotherOf data:Andrew_of_Yugoslavia ;
+    :isSiblingOf data:Andrew_of_Yugoslavia .
+
+data:Robert_van_Eyck a :Man,
+        :Person ;
+    :hasBrother data:Robert_van_Eyck ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :isBloodrelationOf data:Robert_van_Eyck ;
+    :isBrotherOf data:Robert_van_Eyck ;
+    :isSiblingOf data:Robert_van_Eyck .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Christoph_of_Hesse ;
+    :hasChild data:Christina_Margarethe_of_Hesse ;
+    :hasDaughter data:Christina_Margarethe_of_Hesse ;
+    :hasDeathYear 1943 ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :isAncestorOf data:Christina_Margarethe_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse ;
+    :isFatherOf data:Christina_Margarethe_of_Hesse ;
+    :isParentOf data:Christina_Margarethe_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse ;
+    :isUncleOf data:Christina_Margarethe_of_Hesse .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasChild data:Christina_Margarethe_of_Hesse ;
+    :hasDaughter data:Christina_Margarethe_of_Hesse ;
+    :hasDeathYear 2001 ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christina_Margarethe_of_Hesse ;
+    :isAuntOf data:Christina_Margarethe_of_Hesse ;
+    :isBloodrelationOf data:Sophie_of_Greece_and_Denmark ;
+    :isMotherOf data:Christina_Margarethe_of_Hesse ;
+    :isParentOf data:Christina_Margarethe_of_Hesse ;
+    :isSiblingOf data:Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Sophie_of_Greece_and_Denmark .
+
+data:Clarissa_of_Hesse a :Person,
+        :Woman ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSisterOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Dorothea_of_Hesse a :Person,
+        :Woman ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSisterOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Friederike_of_Hanover a :Person,
+        :Woman ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSisterOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Georg_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isBrotherOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Karl_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isBrotherOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Rainer_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isBrotherOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Welf_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isBrotherOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+
+data:Christina_Margarethe_of_Hesse a :Person,
+        :Woman ;
+    :hasAncestor data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_of_Yugoslavia,
+        data:Christina_Margarethe_of_Hesse,
+        data:Christoph_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Robert_van_Eyck,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Welf_of_Hanover ;
+    :hasSister data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover ;
+    :isBloodrelationOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isChildOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover ;
+    :isSisterOf data:Christina_Margarethe_of_Hesse,
+        data:Clarissa_of_Hesse,
+        data:Dorothea_of_Hesse,
+        data:Friederike_of_Hanover,
+        data:Georg_of_Hanover,
+        data:Karl_of_Hesse,
+        data:Rainer_of_Hesse,
+        data:Welf_of_Hanover .
+

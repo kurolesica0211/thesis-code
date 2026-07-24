@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:AlexanderOfGreece ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:AspasiaManos ;
+    :hasRelation data:PeterII ;
+    :hasSon data:AlexanderCrownPrince .
+
+data:KingGeorgeII a :Man,
+        :Person ;
+    :isBrotherOf data:AlexanderOfGreece .
+
+data:AlexanderCrownPrince a :Man,
+        :Person ;
+    :hasFather data:PeterII .
+
+data:AspasiaManos a :Person,
+        :Woman .
+
+data:MariaOfYugoslavia a :Person,
+        :Woman .
+
+data:QueenSophia a :Person,
+        :Woman .
+
+data:AlexanderOfGreece a :Man,
+        :Person ;
+    :hasMother data:QueenSophia .
+
+data:PeterII a :Man,
+        :Person ;
+    :hasMother data:MariaOfYugoslavia .
+

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_David_Chavchavadze a :Man,
+        :Person ;
+    :hasFather data:Prince_Paul_Chavchavadze ;
+    :hasMother data:Princess_Nina_Georgievna_of_Russia .
+
+data:Grand_Duke_Michael_Nicolaievich_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Nina_Georgievna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Grand_Duke_George_Mikhailovich ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :hasRelation data:Prince_Paul_Chavchavadze ;
+    :hasSister data:Princess_Xenia .
+
+data:Princess_Xenia a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_George_Mikhailovich ;
+    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia .
+
+data:Grand_Duchess_Maria_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Grand_Duke_George_Mikhailovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Grand_Duke_Michael_Nicolaievich_of_Russia .
+
+data:Prince_Paul_Chavchavadze a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1971 .
+

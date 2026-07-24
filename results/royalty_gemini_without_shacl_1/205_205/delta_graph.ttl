@@ -1,0 +1,80 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alesandro_Lequio a :Man,
+        :Person ;
+    :hasFather data:Clemente_Lequio ;
+    :hasMother data:Sandra_Torlonia .
+
+data:Giovanni_Torlonia a :Man,
+        :Person ;
+    :hasFather data:Marco_Torlonia .
+
+data:Marino_Torlonia_son a :Man,
+        :Person ;
+    :hasMother data:Infanta_Beatriz_of_Spain .
+
+data:Princess_Sibilla_of_Luxembourg a :Person,
+        :Woman ;
+    :hasFather data:Paul_Annick_Weiller ;
+    :hasMother data:Olimpia_Torlonia .
+
+data:Alessandro_Torlonia a :Man,
+        :Person .
+
+data:Alfonso_Count_of_Covadonga a :Man,
+        :Person .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Don_Juan_of_Spain a :Man,
+        :Person .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Marco_Torlonia a :Man,
+        :Person ;
+    :hasMother data:Infanta_Beatriz_of_Spain .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman .
+
+data:Olimpia_Torlonia a :Person,
+        :Woman ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Paul_Annick_Weiller .
+
+data:Sandra_Torlonia a :Person,
+        :Woman ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Clemente_Lequio .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+
+data:Clemente_Lequio a :Man,
+        :Person .
+
+data:Paul_Annick_Weiller a :Man,
+        :Person .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear "1909-06-22"^^xsd:date ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan_of_Spain,
+        data:Gonzalo_of_Spain ;
+    :hasDeathYear "2002-11-22"^^xsd:date ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isSisterOf data:Maria_Cristina_of_Spain .
+

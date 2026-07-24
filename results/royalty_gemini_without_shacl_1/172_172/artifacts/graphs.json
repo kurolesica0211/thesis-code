@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:SerenaStanhope .\n\ndata:LadySarahChatto a :Person,\n        :Woman ;\n    :isSisterOf data:DavidArmstrong-Jones .\n\ndata:ViscountLinley a :Man,\n        :Person ;\n    :isBrotherOf data:LadyMargaritaArmstrong-Jones .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:LadyMargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isDaughterOf data:DavidArmstrong-Jones,\n        data:SerenaStanhope .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :isDaughterOf data:PrincessMargaret ;\n    :isSonOf data:AntonyArmstrong-Jones .\n\ndata:SerenaStanhope a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CharlesStanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:SerenaStanhope .\n\ndata:LadySarahChatto a :Person,\n        :Woman ;\n    :isSisterOf data:DavidArmstrong-Jones .\n\ndata:ViscountLinley a :Man,\n        :Person ;\n    :isBrotherOf data:LadyMargaritaArmstrong-Jones .\n\ndata:AntonyArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:LadyMargaritaArmstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :isDaughterOf data:DavidArmstrong-Jones,\n        data:SerenaStanhope .\n\ndata:PrincessMargaret a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:DavidArmstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :isDaughterOf data:PrincessMargaret ;\n    :isSonOf data:AntonyArmstrong-Jones .\n\ndata:SerenaStanhope a :Person,\n        :Woman .\n\n"
+    }
+]

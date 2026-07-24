@@ -1,0 +1,309 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Prince_John_of_the_United_Kingdom ;
+    :isAncestorOf data:Prince_John_of_the_United_Kingdom ;
+    :isAuntOf data:Prince_John_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Prince_John_of_the_United_Kingdom ;
+    :isParentOf data:Prince_John_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Edward_VII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Edward_VII ;
+    :hasChild data:King_George_V ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSon data:King_George_V ;
+    :isAncestorOf data:King_George_V,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Edward_VII ;
+    :isBrotherOf data:Edward_VII ;
+    :isFatherOf data:King_George_V ;
+    :isParentOf data:King_George_V ;
+    :isSiblingOf data:Edward_VII ;
+    :isUncleOf data:King_George_V .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Edward_VII ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Prince_John_of_the_United_Kingdom ;
+    :hasFather data:Edward_VII ;
+    :hasParent data:Edward_VII ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSon data:Prince_John_of_the_United_Kingdom ;
+    :isAncestorOf data:Prince_John_of_the_United_Kingdom ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isChildOf data:Edward_VII ;
+    :isFatherOf data:Prince_John_of_the_United_Kingdom ;
+    :isParentOf data:Prince_John_of_the_United_Kingdom ;
+    :isSiblingOf data:King_George_V ;
+    :isSonOf data:Edward_VII ;
+    :isUncleOf data:Prince_John_of_the_United_Kingdom .
+
+data:Prince_Albert a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isBrotherOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary .
+
+data:Prince_Edward a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isBrotherOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary .
+
+data:Prince_George a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isBrotherOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary .
+
+data:Prince_Henry a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isBrotherOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary .
+
+data:Princess_Mary a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSisterOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary .
+
+data:Prince_John_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasAncestor data:Edward_VII,
+        data:King_George_V,
+        data:Queen_Mary ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasDeathYear 1919 ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Edward_VII,
+        data:King_George_V,
+        data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Mary ;
+    :isBloodrelationOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isBrotherOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isChildOf data:King_George_V,
+        data:Queen_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Princess_Mary ;
+    :isSonOf data:King_George_V,
+        data:Queen_Mary ;
+    :knownAs "Johnnie"^^xsd:string .
+

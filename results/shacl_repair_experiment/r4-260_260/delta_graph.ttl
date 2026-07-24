@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Margarita_of_Baden .
+
+data:Elizabeth_II a :Person ;
+    :hasSex data:Female .
+
+data:Maximilian_of_Baden a :Person ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Margarita_of_Baden .
+
+data:Peter_II_of_Yugoslavia a :Person ;
+    :hasSex data:Male .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasSex data:Female ;
+    :isMotherOf data:Margarita_of_Baden .
+
+data:Tomislav_of_Yugoslavia a :Person ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Margarita_of_Baden a :Person ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

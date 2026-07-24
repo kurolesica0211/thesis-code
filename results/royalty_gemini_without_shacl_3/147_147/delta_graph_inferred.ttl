@@ -1,0 +1,395 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeIGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIGreece ;
+    :hasChild data:NicholasGreeceDenmark ;
+    :hasRelation data:ElizabethGreece,
+        data:GeorgeIGreece,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaGreece ;
+    :hasSon data:NicholasGreeceDenmark ;
+    :isAncestorOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:GeorgeIGreece ;
+    :isBrotherOf data:GeorgeIGreece ;
+    :isFatherOf data:NicholasGreeceDenmark ;
+    :isParentOf data:NicholasGreeceDenmark ;
+    :isSiblingOf data:GeorgeIGreece ;
+    :isUncleOf data:NicholasGreeceDenmark .
+
+data:MarieMecklenburgSchwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ElenaVladimirovna ;
+    :hasDaughter data:ElenaVladimirovna ;
+    :hasRelation data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:MarieMecklenburgSchwerin,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasSister data:MarieMecklenburgSchwerin ;
+    :isAncestorOf data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isAuntOf data:ElenaVladimirovna ;
+    :isBloodrelationOf data:MarieMecklenburgSchwerin ;
+    :isMotherOf data:ElenaVladimirovna ;
+    :isParentOf data:ElenaVladimirovna ;
+    :isSiblingOf data:MarieMecklenburgSchwerin ;
+    :isSisterOf data:MarieMecklenburgSchwerin .
+
+data:OlgaConstantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:NicholasGreeceDenmark ;
+    :hasRelation data:ElizabethGreece,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:OlgaGreece ;
+    :hasSister data:OlgaConstantinovna ;
+    :hasSon data:NicholasGreeceDenmark ;
+    :isAncestorOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaGreece ;
+    :isAuntOf data:NicholasGreeceDenmark ;
+    :isBloodrelationOf data:OlgaConstantinovna ;
+    :isMotherOf data:NicholasGreeceDenmark ;
+    :isParentOf data:NicholasGreeceDenmark ;
+    :isSiblingOf data:OlgaConstantinovna ;
+    :isSisterOf data:OlgaConstantinovna .
+
+data:VladimirAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:VladimirAlexandrovich ;
+    :hasChild data:ElenaVladimirovna ;
+    :hasDaughter data:ElenaVladimirovna ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:Kirill,
+        data:MarinaGreece,
+        data:OlgaGreece,
+        data:VladimirAlexandrovich ;
+    :isAncestorOf data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:VladimirAlexandrovich ;
+    :isBrotherOf data:VladimirAlexandrovich ;
+    :isFatherOf data:ElenaVladimirovna ;
+    :isParentOf data:ElenaVladimirovna ;
+    :isSiblingOf data:VladimirAlexandrovich ;
+    :isUncleOf data:ElenaVladimirovna .
+
+data:Andrei a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isUncleOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:Boris a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isUncleOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:Kirill a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isUncleOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:NicholasGreeceDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeIGreece,
+        data:OlgaConstantinovna ;
+    :hasBrother data:NicholasGreeceDenmark ;
+    :hasChild data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDaughter data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDeathYear 1938 ;
+    :hasFather data:GeorgeIGreece ;
+    :hasMother data:OlgaConstantinovna ;
+    :hasParent data:GeorgeIGreece,
+        data:OlgaConstantinovna ;
+    :hasRelation data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:GeorgeIGreece,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:OlgaGreece ;
+    :isAncestorOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:NicholasGreeceDenmark ;
+    :isBrotherOf data:NicholasGreeceDenmark ;
+    :isChildOf data:GeorgeIGreece,
+        data:OlgaConstantinovna ;
+    :isFatherOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isParentOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isSiblingOf data:NicholasGreeceDenmark ;
+    :isSonOf data:GeorgeIGreece,
+        data:OlgaConstantinovna ;
+    :isUncleOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:ElizabethGreece a :Person,
+        :Woman ;
+    :hasAncestor data:ElenaVladimirovna,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:VladimirAlexandrovich ;
+    :hasFather data:NicholasGreeceDenmark ;
+    :hasMother data:ElenaVladimirovna ;
+    :hasParent data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :hasRelation data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:OlgaGreece,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isChildOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isDaughterOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isSiblingOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isSisterOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:MarinaGreece a :Person,
+        :Woman ;
+    :hasAncestor data:ElenaVladimirovna,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:VladimirAlexandrovich ;
+    :hasFather data:NicholasGreeceDenmark ;
+    :hasMother data:ElenaVladimirovna ;
+    :hasParent data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :hasRelation data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:OlgaGreece,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isChildOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isDaughterOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isSiblingOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isSisterOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:OlgaGreece a :Person,
+        :Woman ;
+    :hasAncestor data:ElenaVladimirovna,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:VladimirAlexandrovich ;
+    :hasFather data:NicholasGreeceDenmark ;
+    :hasMother data:ElenaVladimirovna ;
+    :hasParent data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :hasRelation data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:GeorgeIGreece,
+        data:MarieMecklenburgSchwerin,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaConstantinovna,
+        data:OlgaGreece,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isChildOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isDaughterOf data:ElenaVladimirovna,
+        data:NicholasGreeceDenmark ;
+    :isSiblingOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isSisterOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece .
+
+data:ElenaVladimirovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:MarieMecklenburgSchwerin,
+        data:VladimirAlexandrovich ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasChild data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDaughter data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDeathYear 1957 ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:MarieMecklenburgSchwerin ;
+    :hasParent data:MarieMecklenburgSchwerin,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:ElizabethGreece,
+        data:Kirill,
+        data:MarieMecklenburgSchwerin,
+        data:MarinaGreece,
+        data:NicholasGreeceDenmark,
+        data:OlgaGreece,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isAncestorOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isAuntOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isChildOf data:MarieMecklenburgSchwerin,
+        data:VladimirAlexandrovich ;
+    :isDaughterOf data:MarieMecklenburgSchwerin,
+        data:VladimirAlexandrovich ;
+    :isMotherOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isParentOf data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill ;
+    :isSisterOf data:Andrei,
+        data:Boris,
+        data:ElenaVladimirovna,
+        data:Kirill .
+

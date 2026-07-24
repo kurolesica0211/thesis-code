@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_IX a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :isDaughterOf data:Frederik_IX .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMother data:Anastasia_Mikhailovna .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Christian_X a :Man,\n        :Person ;\n    :hasFather data:Frederik_VIII ;\n    :hasMother data:Louise_of_Sweden .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Ingrid_of_Sweden ;\n    :isSiblingOf data:Knud .\n\ndata:Frederik_VIII a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman ;\n    :hasFather data:Gustaf_VI_Adolf ;\n    :hasMother data:Margaret_of_Connaught .\n\ndata:Knud a :Man,\n        :Person .\n\ndata:Louise_of_Sweden a :Person,\n        :Woman .\n\ndata:Margaret_of_Connaught a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_IX a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :isDaughterOf data:Frederik_IX .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMother data:Anastasia_Mikhailovna .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Christian_X a :Man,\n        :Person ;\n    :hasFather data:Frederik_VIII ;\n    :hasMother data:Louise_of_Sweden .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Ingrid_of_Sweden ;\n    :isSiblingOf data:Knud .\n\ndata:Frederik_VIII a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman ;\n    :hasFather data:Gustaf_VI_Adolf ;\n    :hasMother data:Margaret_of_Connaught .\n\ndata:Knud a :Man,\n        :Person .\n\ndata:Louise_of_Sweden a :Person,\n        :Woman .\n\ndata:Margaret_of_Connaught a :Person,\n        :Woman .\n\n"
+    }
+]

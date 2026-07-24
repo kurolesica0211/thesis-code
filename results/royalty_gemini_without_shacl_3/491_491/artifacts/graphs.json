@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gonzalo a :Man,\n        :Person ;\n    :alsoKnownAs \"Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon\"^^xsd:string ;\n    :hasAncestor data:AlfonsoXIII ;\n    :hasBirthYear 1937 ;\n    :hasBrother data:AlfonsoBrother ;\n    :hasDeathYear 2000 ;\n    :hasFather data:InfanteJaime ;\n    :hasMother data:EmmanuelleDeDampierre ;\n    :knownAs \"Gonzalo V\u00edctor Alfonso Jos\u00e9 Bonifacio Antonio Mar\u00eda y Todos los Santos de Borb\u00f3n y Dampierre\"^^xsd:string .\n\ndata:AlfonsoBrother a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person .\n\ndata:EmmanuelleDeDampierre a :Person,\n        :Woman .\n\ndata:InfanteJaime a :Man,\n        :Person ;\n    :hasParent data:QueenVictoriaEugenie .\n\ndata:QueenVictoriaEugenie a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gonzalo a :Man,\n        :Person ;\n    :alsoKnownAs \"Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon\"^^xsd:string ;\n    :hasAncestor data:AlfonsoXIII ;\n    :hasBirthYear 1937 ;\n    :hasBrother data:AlfonsoBrother ;\n    :hasDeathYear 2000 ;\n    :hasFather data:InfanteJaime ;\n    :hasMother data:EmmanuelleDeDampierre ;\n    :knownAs \"Gonzalo V\u00edctor Alfonso Jos\u00e9 Bonifacio Antonio Mar\u00eda y Todos los Santos de Borb\u00f3n y Dampierre\"^^xsd:string .\n\ndata:AlfonsoBrother a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person .\n\ndata:EmmanuelleDeDampierre a :Person,\n        :Woman .\n\ndata:InfanteJaime a :Man,\n        :Person ;\n    :hasParent data:QueenVictoriaEugenie .\n\ndata:QueenVictoriaEugenie a :Person,\n        :Woman .\n\n"
+    }
+]

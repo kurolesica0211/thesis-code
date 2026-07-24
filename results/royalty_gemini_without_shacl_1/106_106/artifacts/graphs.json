@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Alphonse_de_Bourbon a :Man ;\n    :hasBirthYear 1974 ;\n    :hasBrother data:Francisco_de_Borbon ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas ;\n    :hasFather data:Alfonso_de_Borbon,\n        data:Infante_Jaime_Duke_of_Segovia,\n        data:Maria_Margarita_Vargas_Santaella,\n        data:Victor_Vargas ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Francisco_de_Borbon a :Man ;\n    :hasFather data:Alfonso_de_Borbon ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Infante_Jaime_Duke_of_Segovia a :Man .\n\ndata:Maria_Margarita_Vargas_Santaella a :Woman ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas .\n\ndata:Alfonso_de_Borbon a :Man .\n\ndata:Alphonse_de_Borbon_y_Vargas a :Man .\n\ndata:Eugenie_de_Borbon_y_Vargas a :Woman .\n\ndata:Henri_de_Borbon_y_Vargas a :Man .\n\ndata:Louis_de_Borbon_y_Vargas a :Man .\n\ndata:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Alphonse_de_Bourbon a :Man ;\n    :hasBirthYear 1974 ;\n    :hasBrother data:Francisco_de_Borbon ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas ;\n    :hasFather data:Alfonso_de_Borbon,\n        data:Infante_Jaime_Duke_of_Segovia,\n        data:Maria_Margarita_Vargas_Santaella,\n        data:Victor_Vargas ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Francisco_de_Borbon a :Man ;\n    :hasFather data:Alfonso_de_Borbon ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Infante_Jaime_Duke_of_Segovia a :Man .\n\ndata:Maria_Margarita_Vargas_Santaella a :Woman ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas .\n\ndata:Victor_Vargas a :Man .\n\ndata:Alfonso_de_Borbon a :Man .\n\ndata:Alphonse_de_Borbon_y_Vargas a :Man .\n\ndata:Eugenie_de_Borbon_y_Vargas a :Woman .\n\ndata:Henri_de_Borbon_y_Vargas a :Man .\n\ndata:Louis_de_Borbon_y_Vargas a :Man .\n\ndata:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Alphonse_de_Bourbon a :Man ;\n    :hasBirthYear 1974 ;\n    :hasBrother data:Francisco_de_Borbon ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas ;\n    :hasFather data:Alfonso_de_Borbon,\n        data:Infante_Jaime_Duke_of_Segovia,\n        data:Maria_Margarita_Vargas_Santaella,\n        data:Victor_Vargas ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Francisco_de_Borbon a :Man ;\n    :hasFather data:Alfonso_de_Borbon ;\n    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .\n\ndata:Infante_Jaime_Duke_of_Segovia a :Man .\n\ndata:Maria_Margarita_Vargas_Santaella a :Woman ;\n    :hasChild data:Alphonse_de_Borbon_y_Vargas,\n        data:Eugenie_de_Borbon_y_Vargas,\n        data:Henri_de_Borbon_y_Vargas,\n        data:Louis_de_Borbon_y_Vargas .\n\ndata:Victor_Vargas a :Man .\n\ndata:Alfonso_de_Borbon a :Man .\n\ndata:Alphonse_de_Borbon_y_Vargas a :Man .\n\ndata:Eugenie_de_Borbon_y_Vargas a :Woman .\n\ndata:Henri_de_Borbon_y_Vargas a :Man .\n\ndata:Louis_de_Borbon_y_Vargas a :Man .\n\ndata:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman .\n\n"
+    }
+]

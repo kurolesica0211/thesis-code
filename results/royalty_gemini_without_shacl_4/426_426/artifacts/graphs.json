@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Amedeo%2C_3rd_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1898 ;\n    :hasBrother data:Aimone%2C_4th_Duke_of_Aosta ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Prince_Emanuele_Filiberto%2C_2nd_Duke_of_Aosta ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_H%C3%A9l%C3%A8ne ;\n    :hasRelation data:Princess_Anne_of_Orl%C3%A9ans .\n\ndata:Aimone%2C_4th_Duke_of_Aosta a :Man .\n\ndata:Amadeo_I_of_Spain a :Man .\n\ndata:Prince_Emanuele_Filiberto%2C_2nd_Duke_of_Aosta a :Man ;\n    :hasFather data:Amadeo_I_of_Spain ;\n    :hasMother data:Princess_Maria_Vittoria .\n\ndata:Prince_Jean%2C_Duke_of_Guise a :Man .\n\ndata:Prince_Philippe_of_Orl%C3%A9ans a :Man .\n\ndata:Princess_Anne_of_Orl%C3%A9ans a :Woman ;\n    :hasFather data:Prince_Jean%2C_Duke_of_Guise ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans .\n\ndata:Princess_H%C3%A9l%C3%A8ne a :Woman ;\n    :hasFather data:Prince_Philippe_of_Orl%C3%A9ans ;\n    :hasMother data:Princess_Marie_Isabelle_of_Orl%C3%A9ans .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans a :Woman .\n\ndata:Princess_Maria_Vittoria a :Woman .\n\ndata:Princess_Marie_Isabelle_of_Orl%C3%A9ans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Amedeo%2C_3rd_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1898 ;\n    :hasBrother data:Aimone%2C_4th_Duke_of_Aosta ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Prince_Emanuele_Filiberto%2C_2nd_Duke_of_Aosta ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_H%C3%A9l%C3%A8ne ;\n    :hasRelation data:Princess_Anne_of_Orl%C3%A9ans .\n\ndata:Aimone%2C_4th_Duke_of_Aosta a :Man .\n\ndata:Amadeo_I_of_Spain a :Man .\n\ndata:Prince_Emanuele_Filiberto%2C_2nd_Duke_of_Aosta a :Man ;\n    :hasFather data:Amadeo_I_of_Spain ;\n    :hasMother data:Princess_Maria_Vittoria .\n\ndata:Prince_Jean%2C_Duke_of_Guise a :Man .\n\ndata:Prince_Philippe_of_Orl%C3%A9ans a :Man .\n\ndata:Princess_Anne_of_Orl%C3%A9ans a :Woman ;\n    :hasFather data:Prince_Jean%2C_Duke_of_Guise ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans .\n\ndata:Princess_H%C3%A9l%C3%A8ne a :Woman ;\n    :hasFather data:Prince_Philippe_of_Orl%C3%A9ans ;\n    :hasMother data:Princess_Marie_Isabelle_of_Orl%C3%A9ans .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans a :Woman .\n\ndata:Princess_Maria_Vittoria a :Woman .\n\ndata:Princess_Marie_Isabelle_of_Orl%C3%A9ans a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Wurttemberg a :Man .
+
+data:Chantal_of_Orleans a :Woman .
+
+data:Jean_dOrleans a :Man ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Marie-Therese_of_Wurttemberg .
+
+data:Philomena_de_Tornos_y_Steinhart a :Woman ;
+    :hasBirthYear 1977 .
+
+data:Henri_Count_of_Paris a :Man ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_VI_Count_of_Paris .
+
+data:Henri_VI_Count_of_Paris a :Man .
+
+data:Marie-Therese_of_Wurttemberg a :Woman ;
+    :hasBirthYear 1934 .
+

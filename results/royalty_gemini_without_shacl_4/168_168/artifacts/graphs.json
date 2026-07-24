@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1905\"^^xsd:positiveInteger ;\n    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;\n    :hasDaughter data:Beatrix ;\n    :hasDeathYear \"1981\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear \"1931\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Prince_Gottfried_of_Hohenlohe-Langenburg ;\n    :hasSister data:Cecilie,\n        data:Sophie,\n        data:Theodora ;\n    :hasSon data:Albrecht,\n        data:Georg_Andreas,\n        data:Kraft,\n        data:Rupprecht .\n\ndata:Albrecht a :Man,\n        :Person .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:Georg_Andreas a :Man,\n        :Person .\n\ndata:Kraft a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Rupprecht a :Man,\n        :Person .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:Theodora a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1905\"^^xsd:positiveInteger ;\n    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;\n    :hasDaughter data:Beatrix ;\n    :hasDeathYear \"1981\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear \"1931\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Prince_Gottfried_of_Hohenlohe-Langenburg ;\n    :hasSister data:Cecilie,\n        data:Sophie,\n        data:Theodora ;\n    :hasSon data:Albrecht,\n        data:Georg_Andreas,\n        data:Kraft,\n        data:Rupprecht .\n\ndata:Albrecht a :Man,\n        :Person .\n\ndata:Beatrix a :Person,\n        :Woman .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:Georg_Andreas a :Man,\n        :Person .\n\ndata:Kraft a :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\ndata:Princess_Alice_of_Battenberg a :Person,\n        :Woman .\n\ndata:Rupprecht a :Man,\n        :Person .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:Theodora a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,141 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jonkvrouw_Anouk_van_Door a :Woman ;
+    :hasRelation data:Jonkvrouw_Anouk_van_Door ;
+    :hasSister data:Jonkvrouw_Anouk_van_Door ;
+    :isBloodrelationOf data:Jonkvrouw_Anouk_van_Door ;
+    :isSiblingOf data:Jonkvrouw_Anouk_van_Door ;
+    :isSisterOf data:Jonkvrouw_Anouk_van_Door .
+
+data:Prince_Maurits a :Man ;
+    :hasBrother data:Prince_Maurits ;
+    :hasRelation data:Prince_Maurits ;
+    :isBloodrelationOf data:Prince_Maurits ;
+    :isBrotherOf data:Prince_Maurits ;
+    :isSiblingOf data:Prince_Maurits .
+
+data:Princess_Beatrix a :Woman ;
+    :hasRelation data:Princess_Beatrix ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Princess_Beatrix ;
+    :isSiblingOf data:Princess_Beatrix ;
+    :isSisterOf data:Princess_Beatrix .
+
+data:Sandra_Chollet a :Woman ;
+    :hasRelation data:Sandra_Chollet ;
+    :hasSister data:Sandra_Chollet ;
+    :isBloodrelationOf data:Sandra_Chollet ;
+    :isSiblingOf data:Sandra_Chollet ;
+    :isSisterOf data:Sandra_Chollet .
+
+data:Princess_Anita a :Ancestor,
+        :Woman ;
+    :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :hasDaughter data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :hasRelation data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :hasSister data:Princess_Anita ;
+    :isAncestorOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isAuntOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isBloodrelationOf data:Princess_Anita ;
+    :isMotherOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isParentOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isSiblingOf data:Princess_Anita ;
+    :isSisterOf data:Princess_Anita .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :hasRelation data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :hasSon data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isAncestorOf data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isParentOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven .
+
+data:Princess_Margriet a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :hasRelation data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :hasSon data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isAncestorOf data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isAuntOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isMotherOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isParentOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :hasMother data:Princess_Anita ;
+    :hasParent data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita ;
+    :hasRelation data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :hasSister data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isBloodrelationOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isChildOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita ;
+    :isDaughterOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita ;
+    :isSiblingOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isSisterOf data:Emma_Francisca_Catharina_van_Vollenhoven .
+
+data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :hasDaughter data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Emma_Francisca_Catharina_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven,
+        data:Princess_Anita,
+        data:Princess_Margriet ;
+    :isAncestorOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isBrotherOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isFatherOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isParentOf data:Emma_Francisca_Catharina_van_Vollenhoven ;
+    :isSiblingOf data:Prince_Pieter-Christiaan_Michiel_of_Orange-Nassau_van_Vollenhoven ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Emma_Francisca_Catharina_van_Vollenhoven .
+

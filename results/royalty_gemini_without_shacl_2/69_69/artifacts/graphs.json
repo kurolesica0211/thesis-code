@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean_Baptiste_de_Laborde_de_Monpezat a :Man .\n\ndata:King_Frederik_IX a :Man .\n\ndata:King_Harald_V a :Man .\n\ndata:Princess_Benedikte_of_Denmark a :Woman ;\n    :isSisterOf data:Queen_Margrethe_II .\n\ndata:Princess_Christina_of_Sweden a :Woman .\n\ndata:Queen_Ingrid_of_Denmark a :Woman .\n\ndata:Alexandra_Christina_Manley a :Woman .\n\ndata:Count_Henrik a :Man ;\n    :isSonOf data:Prince_Joachim_of_Denmark .\n\ndata:Countess_Athena a :Woman ;\n    :isDaughterOf data:Prince_Joachim_of_Denmark .\n\ndata:King_Frederik_X a :Man .\n\ndata:Marie_Cavallier a :Woman ;\n    :isMotherOf data:Count_Henrik,\n        data:Countess_Athena .\n\ndata:Prince_Joachim_of_Denmark a :Man ;\n    :hasBirthYear \"1969\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"1995\"^^xsd:positiveInteger,\n        \"2007\"^^xsd:positiveInteger ;\n    :hasRelation data:Alexandra_Christina_Manley,\n        data:Marie_Cavallier ;\n    :isBrotherOf data:King_Frederik_X ;\n    :isSonOf data:Queen_Margrethe_II .\n\ndata:Queen_Margrethe_II a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean_Baptiste_de_Laborde_de_Monpezat a :Man .\n\ndata:King_Frederik_IX a :Man .\n\ndata:King_Harald_V a :Man .\n\ndata:Princess_Benedikte_of_Denmark a :Woman ;\n    :isSisterOf data:Queen_Margrethe_II .\n\ndata:Princess_Christina_of_Sweden a :Woman .\n\ndata:Queen_Ingrid_of_Denmark a :Woman .\n\ndata:Alexandra_Christina_Manley a :Woman .\n\ndata:Count_Henrik a :Man ;\n    :isSonOf data:Prince_Joachim_of_Denmark .\n\ndata:Countess_Athena a :Woman ;\n    :isDaughterOf data:Prince_Joachim_of_Denmark .\n\ndata:King_Frederik_X a :Man .\n\ndata:Marie_Cavallier a :Woman ;\n    :isMotherOf data:Count_Henrik,\n        data:Countess_Athena .\n\ndata:Prince_Joachim_of_Denmark a :Man ;\n    :hasBirthYear \"1969\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"1995\"^^xsd:positiveInteger,\n        \"2007\"^^xsd:positiveInteger ;\n    :hasRelation data:Alexandra_Christina_Manley,\n        data:Marie_Cavallier ;\n    :isBrotherOf data:King_Frederik_X ;\n    :isSonOf data:Queen_Margrethe_II .\n\ndata:Queen_Margrethe_II a :Woman .\n\n"
+    }
+]

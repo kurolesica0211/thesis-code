@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Augustus_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Augustus_II ;
+    :hasRelation data:Christian_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Nikolaus ;
+    :isAncestorOf data:Christian_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II ;
+    :isBrotherOf data:Frederick_Augustus_II ;
+    :isSiblingOf data:Frederick_Augustus_II .
+
+data:Nikolaus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Nikolaus ;
+    :hasChild data:Christian_Duke_of_Oldenburg ;
+    :hasDeathYear 1970 ;
+    :hasRelation data:Christian_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Nikolaus ;
+    :hasSon data:Christian_Duke_of_Oldenburg ;
+    :isAncestorOf data:Christian_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Nikolaus ;
+    :isBrotherOf data:Nikolaus ;
+    :isFatherOf data:Christian_Duke_of_Oldenburg ;
+    :isParentOf data:Christian_Duke_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus ;
+    :isUncleOf data:Christian_Duke_of_Oldenburg .
+
+data:Christian_Duke_of_Oldenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Augustus_II,
+        data:Nikolaus ;
+    :hasBrother data:Christian_Duke_of_Oldenburg ;
+    :hasFather data:Nikolaus ;
+    :hasParent data:Nikolaus ;
+    :hasRelation data:Christian_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Nikolaus ;
+    :isBloodrelationOf data:Christian_Duke_of_Oldenburg ;
+    :isBrotherOf data:Christian_Duke_of_Oldenburg ;
+    :isChildOf data:Nikolaus ;
+    :isSiblingOf data:Christian_Duke_of_Oldenburg ;
+    :isSonOf data:Nikolaus .
+

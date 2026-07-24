@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1957 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:Fergus_Bowes-Lyon ;\n    :hasMarriageYear 1984,\n        2005,\n        2012 ;\n    :hasMother data:Mary_Pamela_McCorquodale ;\n    :hasRelation data:Damaris_Stuart-William,\n        data:Isobel_Charlotte_Weatherall,\n        data:Karen_Baxter ;\n    :knownAs \"Mikey Strathmore\"^^xsd:string .\n\ndata:Percy_Weatherall a :Man,\n        :Person ;\n    :hasSister data:Isobel_Charlotte_Weatherall .\n\ndata:Damaris_Stuart-William a :Person,\n        :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasFather data:Michael_Bowes-Lyon .\n\ndata:Karen_Baxter a :Person,\n        :Woman .\n\ndata:Mary_Pamela_McCorquodale a :Person,\n        :Woman .\n\ndata:Michael_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Isobel_Charlotte_Weatherall a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1957 ;\n    :hasDeathYear 2016 ;\n    :hasFather data:Fergus_Bowes-Lyon ;\n    :hasMarriageYear 1984,\n        2005,\n        2012 ;\n    :hasMother data:Mary_Pamela_McCorquodale ;\n    :hasRelation data:Damaris_Stuart-William,\n        data:Isobel_Charlotte_Weatherall,\n        data:Karen_Baxter ;\n    :knownAs \"Mikey Strathmore\"^^xsd:string .\n\ndata:Percy_Weatherall a :Man,\n        :Person ;\n    :hasSister data:Isobel_Charlotte_Weatherall .\n\ndata:Damaris_Stuart-William a :Person,\n        :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasFather data:Michael_Bowes-Lyon .\n\ndata:Karen_Baxter a :Person,\n        :Woman .\n\ndata:Mary_Pamela_McCorquodale a :Person,\n        :Woman .\n\ndata:Michael_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Isobel_Charlotte_Weatherall a :Person,\n        :Woman .\n\n"
+    }
+]

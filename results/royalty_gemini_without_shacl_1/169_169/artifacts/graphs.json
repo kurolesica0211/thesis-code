@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,\n        :Person ;\n    :hasMother data:Infanta_Pilar .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :isChildOf data:Juan_Carlos_I .\n\ndata:Infanta_Pilar a :Person,\n        :Woman ;\n    :alsoKnownAs \"Pilar de Borb\u00f3n\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:Juan_Carlos_I ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_the_Two_Sicilies ;\n    :knownAs \"Mar\u00eda del Pilar Alfonsa Juana Luisa Ignacia y Todos los Santos de Borb\u00f3n y Borb\u00f3n\"^^xsd:string .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person .\n\ndata:Princess_Maria_Mercedes_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,\n        :Person ;\n    :hasMother data:Infanta_Pilar .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :isChildOf data:Juan_Carlos_I .\n\ndata:Infanta_Pilar a :Person,\n        :Woman ;\n    :alsoKnownAs \"Pilar de Borb\u00f3n\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:Juan_Carlos_I ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMother data:Princess_Maria_Mercedes_of_the_Two_Sicilies ;\n    :knownAs \"Mar\u00eda del Pilar Alfonsa Juana Luisa Ignacia y Todos los Santos de Borb\u00f3n y Borb\u00f3n\"^^xsd:string .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person .\n\ndata:Princess_Maria_Mercedes_of_the_Two_Sicilies a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\n"
+    }
+]

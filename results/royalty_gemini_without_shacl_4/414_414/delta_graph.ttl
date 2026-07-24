@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_of_Spain ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
+    :knownAs "Alfonsito"^^xsd:string .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+

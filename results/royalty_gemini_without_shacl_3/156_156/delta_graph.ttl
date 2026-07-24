@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceAlexanderGeorgKarlHeinrich a :Man,
+        :Person ;
+    :isSonOf data:CecilieOfGreeceAndDenmark,
+        data:GeorgDonatus .
+
+data:PrinceLouis a :Man,
+        :Person ;
+    :isBrotherOf data:GeorgDonatus .
+
+data:PrinceLudwigErnstAndreas a :Man,
+        :Person ;
+    :isSonOf data:CecilieOfGreeceAndDenmark,
+        data:GeorgDonatus .
+
+data:PrincessJohannaMarinaEleonore a :Person,
+        :Woman ;
+    :isDaughterOf data:CecilieOfGreeceAndDenmark,
+        data:GeorgDonatus .
+
+data:EleonoreOfSolmsHohensolmsLich a :Person,
+        :Woman .
+
+data:ErnestLouis a :Man,
+        :Person .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincessAliceOfBattenberg a :Person,
+        :Woman .
+
+data:CecilieOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg .
+
+data:GeorgDonatus a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1937 ;
+    :hasFather data:ErnestLouis ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:EleonoreOfSolmsHohensolmsLich ;
+    :hasRelation data:CecilieOfGreeceAndDenmark .
+

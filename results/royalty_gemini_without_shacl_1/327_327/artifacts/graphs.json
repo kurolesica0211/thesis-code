@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Georgievna a :Person,\n        :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Victoria_Romanovna .\n\ndata:George_Mikhailovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Franz_Wilhelm_of_Prussia ;\n    :hasMother data:Maria_Vladimirovna_of_Russia .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :isSisterOf data:Vladimir_Kirillovich_of_Russia .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Leonida_Bagration-Mukhrani a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Maria_Vladimirovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Vladimir_Kirillovich_of_Russia ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Leonida_Bagration-Mukhrani ;\n    :hasRelation data:Franz_Wilhelm_of_Prussia .\n\ndata:Victoria_Fyodorovna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Romanovna a :Person,\n        :Woman .\n\ndata:Franz_Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:Vladimir_Kirillovich_of_Russia a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Victoria_Fyodorovna ;\n    :hasSister data:Kira_Kirillovna_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Georgievna a :Person,\n        :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Victoria_Romanovna .\n\ndata:George_Mikhailovich_of_Russia a :Man,\n        :Person ;\n    :hasFather data:Franz_Wilhelm_of_Prussia ;\n    :hasMother data:Maria_Vladimirovna_of_Russia .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :isSisterOf data:Vladimir_Kirillovich_of_Russia .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Leonida_Bagration-Mukhrani a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Maria_Vladimirovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Vladimir_Kirillovich_of_Russia ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Leonida_Bagration-Mukhrani ;\n    :hasRelation data:Franz_Wilhelm_of_Prussia .\n\ndata:Victoria_Fyodorovna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Romanovna a :Person,\n        :Woman .\n\ndata:Franz_Wilhelm_of_Prussia a :Man,\n        :Person .\n\ndata:Vladimir_Kirillovich_of_Russia a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Victoria_Fyodorovna ;\n    :hasSister data:Kira_Kirillovna_of_Russia .\n\n"
+    }
+]

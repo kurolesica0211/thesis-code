@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kira_Georgievna a :Person,
+        :Woman ;
+    :hasFather data:George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna .
+
+data:George_Mikhailovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Maria_Vladimirovna_of_Russia .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :isSisterOf data:Vladimir_Kirillovich_of_Russia .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Leonida_Bagration-Mukhrani a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Vladimir_Kirillovich_of_Russia ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Leonida_Bagration-Mukhrani ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia .
+
+data:Victoria_Fyodorovna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Victoria_Romanovna a :Person,
+        :Woman .
+
+data:Franz_Wilhelm_of_Prussia a :Man,
+        :Person .
+
+data:Vladimir_Kirillovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Fyodorovna ;
+    :hasSister data:Kira_Kirillovna_of_Russia .
+

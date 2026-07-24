@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasFather data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasMother data:Margaret_Campbell_Geddes .
+
+data:Frederick_II_Landgrave_of_Hesse-Kassel a :Man,
+        :Person ;
+    :isAncestorOf data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell .
+
+data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Man,
+        :Person ;
+    :hasFather data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasMother data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Louis_Prince_of_Hesse_and_by_Rhine .
+
+data:Princess_Mary_of_Great_Britain a :Person,
+        :Woman ;
+    :isAncestorOf data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell .
+
+data:Hubertus_von_Faber-Castell a :Ancestor,
+        :Man,
+        :Person .
+
+data:Moritz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Philipp .
+
+data:Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1980 .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1940 .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Floria_Franziska_von_Faber-Castell .
+
+data:Margaret_Campbell_Geddes a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Floria_Franziska_von_Faber-Castell a :Person,
+        :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Hubertus_von_Faber-Castell .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1968 .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HelenaVictoriaHuttenCzapska a :Person,\n        :Woman .\n\ndata:KinskySon a :Man,\n        :Person ;\n    :hasFather data:FranzUlrich .\n\ndata:AnneRowell a :Person,\n        :Woman .\n\ndata:FranzUlrich a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich10thPrinceKinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:MarieJuliaMathildeVondemBusscheHaddenhausen ;\n    :hasRelation data:RobertaCavanagh .\n\ndata:HilmarVondemBusscheHaddenhausen a :Ancestor,\n        :Man .\n\ndata:MarieJuliaMathildeVondemBusscheHaddenhausen a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:HilmarVondemBusscheHaddenhausen .\n\ndata:RobertaCavanagh a :Person,\n        :Woman ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:RobertoCavanagh ;\n    :hasMother data:AnneRowell .\n\ndata:RobertoCavanagh a :Man,\n        :Person .\n\ndata:Ulrich10thPrinceKinsky a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HelenaVictoriaHuttenCzapska a :Person,\n        :Woman .\n\ndata:KinskySon a :Man,\n        :Person ;\n    :hasFather data:FranzUlrich .\n\ndata:AnneRowell a :Person,\n        :Woman .\n\ndata:FranzUlrich a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich10thPrinceKinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:MarieJuliaMathildeVondemBusscheHaddenhausen ;\n    :hasRelation data:RobertaCavanagh .\n\ndata:HilmarVondemBusscheHaddenhausen a :Ancestor,\n        :Man .\n\ndata:MarieJuliaMathildeVondemBusscheHaddenhausen a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:HilmarVondemBusscheHaddenhausen .\n\ndata:RobertaCavanagh a :Person,\n        :Woman ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:RobertoCavanagh ;\n    :hasMother data:AnneRowell .\n\ndata:RobertoCavanagh a :Man,\n        :Person .\n\ndata:Ulrich10thPrinceKinsky a :Ancestor,\n        :Man .\n\n"
+    }
+]

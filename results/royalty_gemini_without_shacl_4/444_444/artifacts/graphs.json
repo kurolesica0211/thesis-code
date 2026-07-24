@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AngelicaMargheritaEdwinaHicks a :Person,\n        :Woman ;\n    :hasBirthYear \"1992\"^^xsd:positiveInteger ;\n    :hasFather data:AshleyLouisDavidHicks ;\n    :hasMother data:MarinaAllegraFedericaSilviaTondato .\n\ndata:AshleyLouisDavidHicks a :Man,\n        :Person ;\n    :hasFather data:DavidNightingaleHicks ;\n    :hasMother data:LadyPamelaMountbatten .\n\ndata:DavidNightingaleHicks a :Man,\n        :Person .\n\ndata:LadyPamelaMountbatten a :Person,\n        :Woman ;\n    :hasFather data:LouisMountbatten1stEarlMountbattenOfBurma ;\n    :hasMother data:TheHonourableEdwinaAshley .\n\ndata:LouisMountbatten1stEarlMountbattenOfBurma a :Man,\n        :Person ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMother data:PrincessVictoriaOfHesseAndByRhine .\n\ndata:MarinaAllegraFedericaSilviaTondato a :Person,\n        :Woman .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:PrincessVictoriaOfHesseAndByRhine a :Person,\n        :Woman ;\n    :hasMother data:QueenVictoria .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:TheHonourableEdwinaAshley a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AngelicaMargheritaEdwinaHicks a :Person,\n        :Woman ;\n    :hasBirthYear \"1992\"^^xsd:positiveInteger ;\n    :hasFather data:AshleyLouisDavidHicks ;\n    :hasMother data:MarinaAllegraFedericaSilviaTondato .\n\ndata:AshleyLouisDavidHicks a :Man,\n        :Person ;\n    :hasFather data:DavidNightingaleHicks ;\n    :hasMother data:LadyPamelaMountbatten .\n\ndata:DavidNightingaleHicks a :Man,\n        :Person .\n\ndata:LadyPamelaMountbatten a :Person,\n        :Woman ;\n    :hasFather data:LouisMountbatten1stEarlMountbattenOfBurma ;\n    :hasMother data:TheHonourableEdwinaAshley .\n\ndata:LouisMountbatten1stEarlMountbattenOfBurma a :Man,\n        :Person ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMother data:PrincessVictoriaOfHesseAndByRhine .\n\ndata:MarinaAllegraFedericaSilviaTondato a :Person,\n        :Woman .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:PrincessVictoriaOfHesseAndByRhine a :Person,\n        :Woman ;\n    :hasMother data:QueenVictoria .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:TheHonourableEdwinaAshley a :Person,\n        :Woman .\n\n"
+    }
+]

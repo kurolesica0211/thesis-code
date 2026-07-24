@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 ;
+    :isFatherOf data:Woizlawa_Feodora_Princess_Reuss_Father .
+
+data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Man ;
+    :isFatherOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Man ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1956 ;
+    :isFatherOf data:Heinrich_I_Prinz_Reuss .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Woman ;
+    :isMotherOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Woman ;
+    :hasBirthYear 1850 ;
+    :hasDeathYear 1922 ;
+    :isMotherOf data:Woizlawa_Feodora_Princess_Reuss_Father .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Woman ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1968 ;
+    :isMotherOf data:Heinrich_I_Prinz_Reuss .
+
+data:Woizlawa_Feodora_Princess_Reuss a :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 .
+
+data:Heinrich_I_Prinz_Reuss a :Man ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 1982 ;
+    :hasMarriageYear 1939 .
+
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :isMotherOf data:Woizlawa_Feodora_Princess_Reuss .
+
+data:Woizlawa_Feodora_Princess_Reuss_Father a :Man .
+

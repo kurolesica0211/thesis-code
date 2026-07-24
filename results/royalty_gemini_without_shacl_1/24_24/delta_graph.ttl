@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MarieAntoinetteOfMecklenburgSchwerin a :Person,
+        :Woman ;
+    :alsoKnownAs "Manette"^^xsd:string ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:PaulFrederickOfMecklenburg ;
+    :hasMother data:MarieOfWindischGraetz ;
+    :isBloodrelationOf data:FrederickFrancisIVOfMecklenburgSchwerin ;
+    :isSiblingOf data:HeinrichBorwinOfMecklenburgSchwerin,
+        data:JosephOfMecklenburgSchwerin,
+        data:MariaLuiseOfMecklenburgSchwerin,
+        data:PaulFriedrichOfMecklenburg .
+
+data:FrederickFrancisIVOfMecklenburgSchwerin a :Man,
+        :Person .
+
+data:HeinrichBorwinOfMecklenburgSchwerin a :Man,
+        :Person ;
+    :hasBirthYear 1885 ;
+    :hasDeathYear 1942 .
+
+data:JosephOfMecklenburgSchwerin a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1889 .
+
+data:MariaLuiseOfMecklenburgSchwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1883 .
+
+data:MarieOfWindischGraetz a :Person,
+        :Woman .
+
+data:PaulFrederickOfMecklenburg a :Man,
+        :Person .
+
+data:PaulFriedrichOfMecklenburg a :Man,
+        :Person .
+

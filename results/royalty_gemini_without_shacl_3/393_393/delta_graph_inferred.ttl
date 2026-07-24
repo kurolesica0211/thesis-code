@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AdolfII a :Man,
+        :Person ;
+    :hasBrother data:AdolfII ;
+    :hasRelation data:AdolfII ;
+    :isBloodrelationOf data:AdolfII ;
+    :isBrotherOf data:AdolfII ;
+    :isSiblingOf data:AdolfII .
+
+data:PrinceGeorgMoritzOfSchaumburgLippe a :Man,
+        :Person ;
+    :hasBrother data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasSister data:MarieAlixOfSchaumburgLippe ;
+    :isBloodrelationOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :isBrotherOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :isSiblingOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe .
+
+data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MarieAlixOfSchaumburgLippe ;
+    :hasDaughter data:MarieAlixOfSchaumburgLippe ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasSister data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;
+    :isAncestorOf data:MarieAlixOfSchaumburgLippe ;
+    :isAuntOf data:MarieAlixOfSchaumburgLippe ;
+    :isBloodrelationOf data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;
+    :isMotherOf data:MarieAlixOfSchaumburgLippe ;
+    :isParentOf data:MarieAlixOfSchaumburgLippe ;
+    :isSiblingOf data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;
+    :isSisterOf data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe .
+
+data:PrinceStefanOfSchaumburgLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceStefanOfSchaumburgLippe ;
+    :hasChild data:MarieAlixOfSchaumburgLippe ;
+    :hasDaughter data:MarieAlixOfSchaumburgLippe ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isAncestorOf data:MarieAlixOfSchaumburgLippe ;
+    :isBloodrelationOf data:PrinceStefanOfSchaumburgLippe ;
+    :isBrotherOf data:PrinceStefanOfSchaumburgLippe ;
+    :isFatherOf data:MarieAlixOfSchaumburgLippe ;
+    :isParentOf data:MarieAlixOfSchaumburgLippe ;
+    :isSiblingOf data:PrinceStefanOfSchaumburgLippe ;
+    :isUncleOf data:MarieAlixOfSchaumburgLippe .
+
+data:PrincessMarieMelitaOfHohenloheLangenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PeterDukeOfSchleswigHolstein ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasSister data:PrincessMarieMelitaOfHohenloheLangenburg ;
+    :hasSon data:PeterDukeOfSchleswigHolstein ;
+    :isAncestorOf data:PeterDukeOfSchleswigHolstein ;
+    :isAuntOf data:PeterDukeOfSchleswigHolstein ;
+    :isBloodrelationOf data:PrincessMarieMelitaOfHohenloheLangenburg ;
+    :isMotherOf data:PeterDukeOfSchleswigHolstein ;
+    :isParentOf data:PeterDukeOfSchleswigHolstein ;
+    :isSiblingOf data:PrincessMarieMelitaOfHohenloheLangenburg ;
+    :isSisterOf data:PrincessMarieMelitaOfHohenloheLangenburg .
+
+data:WilhelmFriedrichDukeOfSchleswigHolstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasChild data:PeterDukeOfSchleswigHolstein ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasSon data:PeterDukeOfSchleswigHolstein ;
+    :isAncestorOf data:PeterDukeOfSchleswigHolstein ;
+    :isBloodrelationOf data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isBrotherOf data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isFatherOf data:PeterDukeOfSchleswigHolstein ;
+    :isParentOf data:PeterDukeOfSchleswigHolstein ;
+    :isSiblingOf data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isUncleOf data:PeterDukeOfSchleswigHolstein .
+
+data:PeterDukeOfSchleswigHolstein a :Man,
+        :Person ;
+    :hasAncestor data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasBrother data:PeterDukeOfSchleswigHolstein ;
+    :hasFather data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasMother data:PrincessMarieMelitaOfHohenloheLangenburg ;
+    :hasParent data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isBloodrelationOf data:PeterDukeOfSchleswigHolstein ;
+    :isBrotherOf data:PeterDukeOfSchleswigHolstein ;
+    :isChildOf data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :isSiblingOf data:PeterDukeOfSchleswigHolstein ;
+    :isSonOf data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein .
+
+data:MarieAlixOfSchaumburgLippe a :Person,
+        :Woman ;
+    :hasAncestor data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :hasDeathYear 2021 ;
+    :hasFather data:PrinceStefanOfSchaumburgLippe ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;
+    :hasParent data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe ;
+    :hasRelation data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:MarieAlixOfSchaumburgLippe,
+        data:PeterDukeOfSchleswigHolstein,
+        data:PrinceGeorgMoritzOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe,
+        data:PrincessMarieMelitaOfHohenloheLangenburg,
+        data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasSister data:MarieAlixOfSchaumburgLippe ;
+    :isBloodrelationOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :isChildOf data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe ;
+    :isDaughterOf data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe,
+        data:PrinceStefanOfSchaumburgLippe ;
+    :isSiblingOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :isSisterOf data:MarieAlixOfSchaumburgLippe,
+        data:PrinceGeorgMoritzOfSchaumburgLippe .
+

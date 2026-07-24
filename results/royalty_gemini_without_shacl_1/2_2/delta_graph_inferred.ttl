@@ -1,0 +1,175 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Frederik_X a :Man,
+        :Person ;
+    :hasBrother data:King_Frederik_X ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:King_Frederik_X ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isSiblingOf data:King_Frederik_X .
+
+data:Prince_Henrik a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henrik ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isAncestorOf data:Count_Felix_of_Monpezat ;
+    :isBloodrelationOf data:Prince_Henrik ;
+    :isBrotherOf data:Prince_Henrik ;
+    :isSiblingOf data:Prince_Henrik .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Queen_Margrethe_II ;
+    :isAncestorOf data:Count_Felix_of_Monpezat ;
+    :isBloodrelationOf data:Queen_Margrethe_II ;
+    :isSiblingOf data:Queen_Margrethe_II ;
+    :isSisterOf data:Queen_Margrethe_II .
+
+data:Martina_Bent a :Person,
+        :Woman ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :isAuntOf data:Count_Felix_of_Monpezat ;
+    :isBloodrelationOf data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :isSiblingOf data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :isSisterOf data:Countess_Alexandra,
+        data:Martina_Bent .
+
+data:Prince_Nikolai a :Man,
+        :Person ;
+    :hasBrother data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBrotherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSiblingOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai .
+
+data:Prince_Joachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Joachim ;
+    :hasChild data:Count_Felix_of_Monpezat ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Count_Felix_of_Monpezat ;
+    :isAncestorOf data:Count_Felix_of_Monpezat ;
+    :isBloodrelationOf data:Prince_Joachim ;
+    :isBrotherOf data:Prince_Joachim ;
+    :isFatherOf data:Count_Felix_of_Monpezat ;
+    :isParentOf data:Count_Felix_of_Monpezat ;
+    :isSiblingOf data:Prince_Joachim ;
+    :isUncleOf data:Count_Felix_of_Monpezat .
+
+data:Countess_Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Count_Felix_of_Monpezat ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :hasSon data:Count_Felix_of_Monpezat ;
+    :isAncestorOf data:Count_Felix_of_Monpezat ;
+    :isAuntOf data:Count_Felix_of_Monpezat ;
+    :isBloodrelationOf data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :isMotherOf data:Count_Felix_of_Monpezat ;
+    :isParentOf data:Count_Felix_of_Monpezat ;
+    :isSiblingOf data:Countess_Alexandra,
+        data:Martina_Bent ;
+    :isSisterOf data:Countess_Alexandra,
+        data:Martina_Bent .
+
+data:Count_Felix_of_Monpezat a :Man,
+        :Person ;
+    :alsoKnownAs "His Highness Prince Felix of Denmark, Count of Monpezat"^^xsd:string ;
+    :formerlyKnownAs "His Highness Prince Felix of Denmark"^^xsd:string ;
+    :hasAncestor data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Countess_Alexandra ;
+    :hasParent data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:King_Frederik_X,
+        data:Martina_Bent,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBrotherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isChildOf data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSonOf data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :knownAs "His Excellency Count Felix of Monpezat"^^xsd:string .
+

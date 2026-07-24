@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Borbon_Count_of_Caserta a :Man,\n        :Person ;\n    :isFatherOf data:Prince_Carlos_1900 .\n\ndata:Prince_Pedro_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Infante_Carlos_Duke_of_Calabria ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Princess_Anne_of_Orleans ;\n    :hasRelation data:Sofia_Landaluce_y_Melgarejo .\n\ndata:Infante_Carlos_Duke_of_Calabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:Jose_Manuel_Landaluce_y_Dominguez a :Man,\n        :Person .\n\ndata:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Person,\n        :Woman .\n\ndata:Prince_Carlos_1900 a :Man,\n        :Person ;\n    :isSiblingOf data:Prince_Ferdinand .\n\ndata:Prince_Ferdinand a :Man,\n        :Person .\n\ndata:Princess_Anne_of_Orleans a :Person,\n        :Woman .\n\ndata:Sofia_Landaluce_y_Melgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;\n    :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_de_Borbon_Count_of_Caserta a :Man,\n        :Person ;\n    :isFatherOf data:Prince_Carlos_1900 .\n\ndata:Prince_Pedro_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Infante_Carlos_Duke_of_Calabria ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Princess_Anne_of_Orleans ;\n    :hasRelation data:Sofia_Landaluce_y_Melgarejo .\n\ndata:Infante_Carlos_Duke_of_Calabria a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2015 .\n\ndata:Jose_Manuel_Landaluce_y_Dominguez a :Man,\n        :Person .\n\ndata:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Person,\n        :Woman .\n\ndata:Prince_Carlos_1900 a :Man,\n        :Person ;\n    :isSiblingOf data:Prince_Ferdinand .\n\ndata:Prince_Ferdinand a :Man,\n        :Person .\n\ndata:Princess_Anne_of_Orleans a :Person,\n        :Woman .\n\ndata:Sofia_Landaluce_y_Melgarejo a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;\n    :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .\n\n"
+    }
+]

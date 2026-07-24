@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KarinEmmaLouiseNissvandt a :Person,
+        :Woman ;
+    :hasRelation data:KarinEmmaLouiseNissvandt ;
+    :hasSister data:KarinEmmaLouiseNissvandt ;
+    :isBloodrelationOf data:KarinEmmaLouiseNissvandt ;
+    :isSiblingOf data:KarinEmmaLouiseNissvandt ;
+    :isSisterOf data:KarinEmmaLouiseNissvandt .
+
+data:SonjaAnitaMariaHaunz a :Person,
+        :Woman ;
+    :hasRelation data:SonjaAnitaMariaHaunz ;
+    :hasSister data:SonjaAnitaMariaHaunz ;
+    :isBloodrelationOf data:SonjaAnitaMariaHaunz ;
+    :isSiblingOf data:SonjaAnitaMariaHaunz ;
+    :isSisterOf data:SonjaAnitaMariaHaunz .
+
+data:MariaPavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LennartBernadotte ;
+    :hasRelation data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :hasSister data:MariaPavlovna ;
+    :hasSon data:LennartBernadotte ;
+    :isAncestorOf data:LennartBernadotte ;
+    :isAuntOf data:LennartBernadotte ;
+    :isBloodrelationOf data:MariaPavlovna ;
+    :isMotherOf data:LennartBernadotte ;
+    :isParentOf data:LennartBernadotte ;
+    :isSiblingOf data:MariaPavlovna ;
+    :isSisterOf data:MariaPavlovna .
+
+data:PrinceWilhelm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceWilhelm ;
+    :hasChild data:LennartBernadotte ;
+    :hasRelation data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :hasSon data:LennartBernadotte ;
+    :isAncestorOf data:LennartBernadotte ;
+    :isBloodrelationOf data:PrinceWilhelm ;
+    :isBrotherOf data:PrinceWilhelm ;
+    :isFatherOf data:LennartBernadotte ;
+    :isParentOf data:LennartBernadotte ;
+    :isSiblingOf data:PrinceWilhelm ;
+    :isUncleOf data:LennartBernadotte .
+
+data:LennartBernadotte a :Man,
+        :Person ;
+    :hasAncestor data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:LennartBernadotte ;
+    :hasDeathYear 2004 ;
+    :hasFather data:PrinceWilhelm ;
+    :hasMarriageYear 1932,
+        1972 ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :hasRelation data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :isBloodrelationOf data:LennartBernadotte ;
+    :isBrotherOf data:LennartBernadotte ;
+    :isChildOf data:MariaPavlovna,
+        data:PrinceWilhelm ;
+    :isSiblingOf data:LennartBernadotte ;
+    :isSonOf data:MariaPavlovna,
+        data:PrinceWilhelm .
+

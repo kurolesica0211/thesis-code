@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:Lady_Amelia_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1995 ;\n    :hasFather data:George_Windsor_Earl_of_St_Andrews ;\n    :hasMother data:Sylvana_Tomaselli ;\n    :isChildOf data:Prince_Edward_Duke_of_Kent ;\n    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,\n        data:Lady_Marina_Windsor .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person .\n\ndata:George_Windsor_Earl_of_St_Andrews a :Man,\n        :Person ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :isSiblingOf data:Lord_Nicholas_Windsor .\n\ndata:Katharine_Duchess_of_Kent a :Woman ;\n    :hasFather data:William_Worsley_4th_Baronet .\n\ndata:Lady_Marina_Windsor a :Person,\n        :Woman .\n\ndata:Lord_Nicholas_Windsor a :Man,\n        :Person .\n\ndata:Prince_George_Duke_of_Kent a :Man .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Woman .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\ndata:William_Worsley_4th_Baronet a :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:Lady_Amelia_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1995 ;\n    :hasFather data:George_Windsor_Earl_of_St_Andrews ;\n    :hasMother data:Sylvana_Tomaselli ;\n    :isChildOf data:Prince_Edward_Duke_of_Kent ;\n    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,\n        data:Lady_Marina_Windsor .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person .\n\ndata:George_Windsor_Earl_of_St_Andrews a :Man,\n        :Person ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :isSiblingOf data:Lord_Nicholas_Windsor .\n\ndata:Katharine_Duchess_of_Kent a :Woman ;\n    :hasFather data:William_Worsley_4th_Baronet .\n\ndata:Lady_Marina_Windsor a :Person,\n        :Woman .\n\ndata:Lord_Nicholas_Windsor a :Man,\n        :Person .\n\ndata:Prince_George_Duke_of_Kent a :Man .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Woman .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\ndata:William_Worsley_4th_Baronet a :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\n"
+    }
+]

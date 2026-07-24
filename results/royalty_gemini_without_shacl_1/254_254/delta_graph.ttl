@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henry_Viscount_Lascelles a :Man,
+        :Person ;
+    :isFatherOf data:George_Henry_Hubert_Lascelles .
+
+data:King_George_V a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Mary_Princess_Royal .
+
+data:Queen_Mary a :Woman ;
+    :isMotherOf data:Princess_Mary_Princess_Royal .
+
+data:Queen_Mary_Person a :Person .
+
+data:Male a :Male .
+
+data:Marion_Stein a :Person,
+        :Woman .
+
+data:Patricia_Tuckwell a :Person,
+        :Woman ;
+    :isMotherOf data:Mark_Lascelles .
+
+data:George_Henry_Hubert_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2011 ;
+    :hasMarriageYear 1949,
+        1967 ;
+    :hasRelation data:Marion_Stein,
+        data:Patricia_Tuckwell ;
+    :hasSex data:Male ;
+    :isFatherOf data:Mark_Lascelles .
+
+data:Mark_Lascelles a :Man,
+        :Person .
+
+data:Princess_Mary_Princess_Royal a :Person,
+        :Woman ;
+    :isMotherOf data:George_Henry_Hubert_Lascelles .
+

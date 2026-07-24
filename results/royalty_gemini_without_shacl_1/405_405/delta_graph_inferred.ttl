@@ -1,0 +1,184 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nicholas_II a :Man,
+        :Person ;
+    :hasBrother data:Nicholas_II ;
+    :hasRelation data:Nicholas_II ;
+    :isBloodrelationOf data:Nicholas_II ;
+    :isBrotherOf data:Nicholas_II ;
+    :isSiblingOf data:Nicholas_II .
+
+data:Willhelm_II a :Man,
+        :Person ;
+    :hasBrother data:Willhelm_II ;
+    :hasRelation data:Willhelm_II ;
+    :isBloodrelationOf data:Willhelm_II ;
+    :isBrotherOf data:Willhelm_II ;
+    :isSiblingOf data:Willhelm_II .
+
+data:Philipp_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasBrother data:Frederick_Charles_of_Hesse ;
+    :hasChild data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1940 ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSon data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Wolfgang_of_Hesse ;
+    :isParentOf data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Wolfgang_of_Hesse .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasChild data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1954 ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Margaret_of_Prussia ;
+    :hasSon data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Wolfgang_of_Hesse ;
+    :isAuntOf data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Margaret_of_Prussia ;
+    :isMotherOf data:Wolfgang_of_Hesse ;
+    :isParentOf data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Margaret_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia .
+
+data:Marie_Louise_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Marie_Alexandra_of_Baden ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Marie_Louise_of_Hanover ;
+    :isAncestorOf data:Marie_Alexandra_of_Baden ;
+    :isAuntOf data:Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Marie_Louise_of_Hanover ;
+    :isMotherOf data:Marie_Alexandra_of_Baden ;
+    :isParentOf data:Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Marie_Louise_of_Hanover ;
+    :isSisterOf data:Marie_Louise_of_Hanover .
+
+data:Maximilian_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Maximilian_of_Baden ;
+    :hasChild data:Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Marie_Alexandra_of_Baden ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Maximilian_of_Baden ;
+    :isBrotherOf data:Maximilian_of_Baden ;
+    :isFatherOf data:Marie_Alexandra_of_Baden ;
+    :isParentOf data:Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Maximilian_of_Baden ;
+    :isUncleOf data:Marie_Alexandra_of_Baden .
+
+data:Marie_Alexandra_of_Baden a :Person,
+        :Woman ;
+    :hasAncestor data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Marie_Louise_of_Hanover ;
+    :hasParent data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Marie_Alexandra_of_Baden ;
+    :isChildOf data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden ;
+    :isDaughterOf data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden ;
+    :isSiblingOf data:Marie_Alexandra_of_Baden ;
+    :isSisterOf data:Marie_Alexandra_of_Baden .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :alsoKnownAs "Wolfgang Moritz Prinz von Hessen"^^xsd:string ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Marie_Alexandra_of_Baden,
+        data:Marie_Louise_of_Hanover,
+        data:Maximilian_of_Baden,
+        data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Philipp_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia .
+

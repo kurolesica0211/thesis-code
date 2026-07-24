@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philip a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasDaughter data:Anne ;
+    :hasDeathYear 2021 ;
+    :hasFather data:AndrewOfGreece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasRelation data:ElizabethII ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Andrew,
+        data:Charles,
+        data:Edward .
+
+data:AliceOfBattenberg a :Person,
+        :Woman ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMother data:VictoriaMountbattenMarchioness .
+
+data:Andrew a :Man,
+        :Person ;
+    :hasMother data:ElizabethII .
+
+data:AndrewOfGreece a :Man,
+        :Person ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaOfGreece .
+
+data:Anne a :Person,
+        :Woman ;
+    :hasMother data:ElizabethII .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Charles a :Man,
+        :Person ;
+    :hasMother data:ElizabethII .
+
+data:Edward a :Man,
+        :Person ;
+    :hasMother data:ElizabethII .
+
+data:GeorgeIOfGreece a :Man,
+        :Person .
+
+data:LouisMountbatten1stMarquess a :Man,
+        :Person .
+
+data:Margarita a :Person,
+        :Woman .
+
+data:OlgaOfGreece a :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:VictoriaMountbattenMarchioness a :Person,
+        :Woman .
+
+data:ElizabethII a :Person,
+        :Woman .
+

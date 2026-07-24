@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:1964,\n        1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:1964,\n        1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:1964,\n        data:Marriage1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Marriage1964 a :DomainEntity .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:Marriage1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Marriage1964 a :DomainEntity .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMarriageYear data:Marriage1964 ;\n    :hasMother data:Frederica_of_Greece ;\n    :hasRelation data:Anne-Marie_of_Denmark ;\n    :hasSister data:Irene_of_Greece,\n        data:Sofia_of_Greece .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man,\n        :Person .\n\ndata:Frederica_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMother data:Victoria_Louise_of_Prussia .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Marriage1964 a :DomainEntity .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasBrother data:George_II_of_Greece .\n\ndata:Sofia_of_Greece a :Person,\n        :Woman .\n\ndata:Victoria_Louise_of_Prussia a :Person,\n        :Woman .\n\n"
+    }
+]

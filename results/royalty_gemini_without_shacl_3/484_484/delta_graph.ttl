@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Christina_of_W%C3%BCrttemberg a :Person,
+        :Woman ;
+    :hasFather data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Helena_of_Austria .
+
+data:Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Margarete_Sophie_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Peter_Ferdinand_of_Austria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Rosa_of_Austria a :Person,
+        :Woman ;
+    :hasMarriageYear 1928 ;
+    :isSisterOf data:Helena_of_Austria .
+
+data:Helena_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Peter_Ferdinand_of_Austria ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .
+
+data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria ;
+    :hasRelation data:Rosa_of_Austria .
+

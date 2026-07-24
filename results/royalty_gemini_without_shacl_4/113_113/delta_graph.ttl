@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Ferdinand_Pius a :Man,
+        :Person ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :isBrotherOf data:Prince_Ranieri .
+
+data:Countess_Maria_Carolina_Zamoyska a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMother data:Princess_Maria_Antonietta .
+
+data:Prince_Ranieri a :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska .
+
+data:Prince_Alfonso a :Man,
+        :Person .
+
+data:Princess_Maria_Antonietta a :Person,
+        :Woman ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1938 .
+

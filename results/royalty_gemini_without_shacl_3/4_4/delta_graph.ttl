@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Benedikte a :Woman ;
+    :hasParent data:FrederikIX,
+        data:Ingrid ;
+    :isSiblingOf data:AnneMarie .
+
+data:ChristianX a :Man .
+
+data:FrederikX a :Man ;
+    :hasFather data:Henrik ;
+    :hasMother data:MargretheII .
+
+data:GustafVIAldolf a :Man .
+
+data:Joachim a :Man ;
+    :hasFather data:Henrik ;
+    :hasMother data:MargretheII .
+
+data:AnneMarie a :Woman ;
+    :hasParent data:FrederikIX,
+        data:Ingrid .
+
+data:Henrik a :Man .
+
+data:MargretheII a :Woman ;
+    :hasBirthYear 1940 ;
+    :hasChild data:FrederikX,
+        data:Joachim ;
+    :hasFather data:FrederikIX ;
+    :hasMother data:Ingrid ;
+    :isSiblingOf data:AnneMarie,
+        data:Benedikte .
+
+data:FrederikIX a :Man ;
+    :hasFather data:ChristianX .
+
+data:Ingrid a :Woman ;
+    :hasFather data:GustafVIAldolf .
+

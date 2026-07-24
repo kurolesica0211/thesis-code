@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Feodorovna a :Person,
+        :Woman ;
+    :isSisterOf data:Ernest_Louis_of_Hesse .
+
+data:Andrei_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    :hasFather data:Vladimir_of_Russia .
+
+data:Maria_of_Russia a :Person,
+        :Woman ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Louis_Ferdinand_of_Prussia .
+
+data:Cecilie_of_Prussia a :Person,
+        :Woman .
+
+data:Ernest_Louis_of_Hesse a :Man,
+        :Person ;
+    :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Friedrich_Wilhelm_of_Prussia a :Man,
+        :Person .
+
+data:Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Vladimir_of_Russia a :Man,
+        :Person ;
+    :isBrotherOf data:Kira_Kirillovna_of_Russia .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Louis_Ferdinand_of_Prussia ;
+    :hasSon data:Friedrich_Wilhelm_of_Prussia .
+
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :hasMother data:Cecilie_of_Prussia .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+        :Woman .
+

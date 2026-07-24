@@ -1,0 +1,151 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
+        :Woman ;
+    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :hasSister data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isBloodrelationOf data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isSiblingOf data:Eva_Maria_Herrera_y_Valdeavellano ;
+    :isSisterOf data:Eva_Maria_Herrera_y_Valdeavellano .
+
+data:Luise_Dora_Hartmann a :Person,
+        :Woman ;
+    :hasRelation data:Luise_Dora_Hartmann ;
+    :hasSister data:Luise_Dora_Hartmann ;
+    :isBloodrelationOf data:Luise_Dora_Hartmann ;
+    :isSiblingOf data:Luise_Dora_Hartmann ;
+    :isSisterOf data:Luise_Dora_Hartmann .
+
+data:Wilhelm_II%2C_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II%2C_German_Emperor ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :isAncestorOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II%2C_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II%2C_German_Emperor ;
+    :isSiblingOf data:Wilhelm_II%2C_German_Emperor .
+
+data:Princess_Hermine_Reuss_of_Greiz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :hasDaughter data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :hasRelation data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath,
+        data:Princess_Hermine_Reuss_of_Greiz ;
+    :hasSister data:Princess_Hermine_Reuss_of_Greiz ;
+    :isAncestorOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isAuntOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isBloodrelationOf data:Princess_Hermine_Reuss_of_Greiz ;
+    :isMotherOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isParentOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isSiblingOf data:Princess_Hermine_Reuss_of_Greiz ;
+    :isSisterOf data:Princess_Hermine_Reuss_of_Greiz .
+
+data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath a :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Hermine_Reuss_of_Greiz ;
+    :hasMother data:Princess_Hermine_Reuss_of_Greiz ;
+    :hasParent data:Princess_Hermine_Reuss_of_Greiz ;
+    :hasRelation data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath,
+        data:Princess_Hermine_Reuss_of_Greiz ;
+    :hasSister data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isBloodrelationOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isChildOf data:Princess_Hermine_Reuss_of_Greiz ;
+    :isDaughterOf data:Princess_Hermine_Reuss_of_Greiz ;
+    :isSiblingOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath ;
+    :isSisterOf data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath .
+
+data:Prince_Eitel_Friedrich_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Princess_Marie-Auguste_of_Anhalt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :hasSister data:Princess_Marie-Auguste_of_Anhalt ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isAncestorOf data:Prince_Karl_Franz_of_Prussia ;
+    :isAuntOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Princess_Marie-Auguste_of_Anhalt ;
+    :isMotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Princess_Marie-Auguste_of_Anhalt ;
+    :isSisterOf data:Princess_Marie-Auguste_of_Anhalt .
+
+data:Prince_Joachim_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isAncestorOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Prince_Karl_Franz_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :hasBirthYear 1916 ;
+    :hasBrother data:Prince_Karl_Franz_of_Prussia ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasMarriageYear 1940,
+        1946,
+        1959 ;
+    :hasMother data:Princess_Marie-Auguste_of_Anhalt ;
+    :hasParent data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt,
+        data:Wilhelm_II%2C_German_Emperor ;
+    :isBloodrelationOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isChildOf data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt ;
+    :isSiblingOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSonOf data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie-Auguste_of_Anhalt .
+

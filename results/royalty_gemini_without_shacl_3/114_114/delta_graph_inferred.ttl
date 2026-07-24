@@ -1,0 +1,304 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marian_Elizabeth a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasChild data:Penelope_Meredith_Eastwood ;
+    :hasDaughter data:Penelope_Meredith_Eastwood ;
+    :hasDeathYear 2020 ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSister data:Marian_Elizabeth ;
+    :isAncestorOf data:Penelope_Meredith_Eastwood ;
+    :isAuntOf data:Penelope_Meredith_Eastwood ;
+    :isBloodrelationOf data:Marian_Elizabeth ;
+    :isMotherOf data:Penelope_Meredith_Eastwood ;
+    :isParentOf data:Penelope_Meredith_Eastwood ;
+    :isSiblingOf data:Marian_Elizabeth ;
+    :isSisterOf data:Marian_Elizabeth .
+
+data:Reginald_Wray_Frank_Eastwood a :Ancestor,
+        :Man ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Reginald_Wray_Frank_Eastwood ;
+    :hasChild data:Penelope_Meredith_Eastwood ;
+    :hasDaughter data:Penelope_Meredith_Eastwood ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :isAncestorOf data:Penelope_Meredith_Eastwood ;
+    :isBloodrelationOf data:Reginald_Wray_Frank_Eastwood ;
+    :isBrotherOf data:Reginald_Wray_Frank_Eastwood ;
+    :isFatherOf data:Penelope_Meredith_Eastwood ;
+    :isParentOf data:Penelope_Meredith_Eastwood ;
+    :isSiblingOf data:Reginald_Wray_Frank_Eastwood ;
+    :isUncleOf data:Penelope_Meredith_Eastwood .
+
+data:Penelope_Meredith_Eastwood a :Woman ;
+    :hasAncestor data:Marian_Elizabeth,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth ;
+    :hasParent data:Marian_Elizabeth,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSister data:Penelope_Meredith_Eastwood ;
+    :isBloodrelationOf data:Penelope_Meredith_Eastwood ;
+    :isChildOf data:Marian_Elizabeth,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :isDaughterOf data:Marian_Elizabeth,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :isSiblingOf data:Penelope_Meredith_Eastwood ;
+    :isSisterOf data:Penelope_Meredith_Eastwood .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasChild data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasDaughter data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasDeathYear 1979 ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSister data:Louis_Mountbatten ;
+    :isAncestorOf data:Doreen_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isAuntOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isMotherOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isParentOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isSiblingOf data:Louis_Mountbatten ;
+    :isSisterOf data:Louis_Mountbatten .
+
+data:John_Knatchbull a :Ancestor,
+        :Man ;
+    :hasAncestor data:Doreen_Knatchbull ;
+    :hasBrother data:John_Knatchbull ;
+    :hasChild data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :hasFather data:Doreen_Knatchbull ;
+    :hasParent data:Doreen_Knatchbull ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSon data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isAncestorOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isBloodrelationOf data:John_Knatchbull ;
+    :isBrotherOf data:John_Knatchbull ;
+    :isChildOf data:Doreen_Knatchbull ;
+    :isFatherOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isParentOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isSiblingOf data:John_Knatchbull ;
+    :isSonOf data:Doreen_Knatchbull ;
+    :isUncleOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull .
+
+data:Patricia_Knatchbull a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasChild data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :hasMother data:Louis_Mountbatten ;
+    :hasParent data:Louis_Mountbatten ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSister data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasSon data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isAncestorOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isAuntOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isBloodrelationOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isChildOf data:Louis_Mountbatten ;
+    :isDaughterOf data:Louis_Mountbatten ;
+    :isMotherOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isParentOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isSiblingOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull .
+
+data:Nicholas_Knatchbull a :Man ;
+    :hasAncestor data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasBrother data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :hasDeathYear 1979 ;
+    :hasFather data:John_Knatchbull ;
+    :hasMother data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasParent data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :isBloodrelationOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isBrotherOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isChildOf data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isSiblingOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isSonOf data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull .
+
+data:Norton_Louis_Philip_Knatchbull a :Man ;
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasAncestor data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Patricia_Knatchbull ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasParent data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :isBloodrelationOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isBrotherOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isChildOf data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isSiblingOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isSonOf data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Patricia_Knatchbull .
+
+data:Doreen_Knatchbull a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasBrother data:Doreen_Knatchbull ;
+    :hasChild data:John_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :hasDeathYear 1979 ;
+    :hasMother data:Louis_Mountbatten ;
+    :hasParent data:Louis_Mountbatten ;
+    :hasRelation data:Doreen_Knatchbull,
+        data:John_Knatchbull,
+        data:Louis_Mountbatten,
+        data:Marian_Elizabeth,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Knatchbull,
+        data:Penelope_Meredith_Eastwood,
+        data:Reginald_Wray_Frank_Eastwood ;
+    :hasSister data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasSon data:John_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isAncestorOf data:John_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isAuntOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isBloodrelationOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isBrotherOf data:Doreen_Knatchbull ;
+    :isChildOf data:Louis_Mountbatten ;
+    :isDaughterOf data:Louis_Mountbatten ;
+    :isFatherOf data:John_Knatchbull ;
+    :isMotherOf data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isParentOf data:John_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull ;
+    :isSiblingOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isSisterOf data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :isUncleOf data:John_Knatchbull .
+

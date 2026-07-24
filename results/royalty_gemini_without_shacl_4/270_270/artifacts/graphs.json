@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_Charles_III a :Man .\n\ndata:Sarah_Chatto a :Woman ;\n    :hasBirthYear \"1964\"^^xsd:positiveInteger ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Ros_Chatto a :Woman ;\n    :hasDeathYear \"2012\"^^xsd:positiveInteger .\n\ndata:Tom_Chatto a :Man ;\n    :hasBirthYear \"1920\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1982\"^^xsd:positiveInteger .\n\ndata:Antony_Armstrong-Jones a :Man .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:David_Armstrong-Jones a :Man ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_Charles_III a :Man .\n\ndata:Sarah_Chatto a :Woman ;\n    :hasBirthYear \"1964\"^^xsd:positiveInteger ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Ros_Chatto a :Woman ;\n    :hasDeathYear \"2012\"^^xsd:positiveInteger .\n\ndata:Tom_Chatto a :Man ;\n    :hasBirthYear \"1920\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1982\"^^xsd:positiveInteger .\n\ndata:Antony_Armstrong-Jones a :Man .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,82 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig a :Man,
+        :Person ;
+    :hasBrother data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasRelation data:Archduchess_Rosa_of_Austria,
+        data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSiblingOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig .
+
+data:Archduchess_Rosa_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :hasRelation data:Archduchess_Rosa_of_Austria,
+        data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasSister data:Archduchess_Rosa_of_Austria ;
+    :hasSon data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isAuntOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Archduchess_Rosa_of_Austria ;
+    :isMotherOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Archduchess_Rosa_of_Austria ;
+    :isSisterOf data:Archduchess_Rosa_of_Austria .
+
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasChild data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :hasRelation data:Archduchess_Rosa_of_Austria,
+        data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasSon data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Carl_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Carl_Herzog_von_W%C3%BCrttemberg .
+
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasAncestor data:Archduchess_Rosa_of_Austria,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Archduchess_Rosa_of_Austria ;
+    :hasParent data:Archduchess_Rosa_of_Austria,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasRelation data:Archduchess_Rosa_of_Austria,
+        data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isChildOf data:Archduchess_Rosa_of_Austria,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Carl_Herzog_von_W%C3%BCrttemberg,
+        data:Ludwig ;
+    :isSonOf data:Archduchess_Rosa_of_Austria,
+        data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg .
+

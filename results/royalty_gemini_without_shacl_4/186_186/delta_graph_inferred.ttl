@@ -1,0 +1,526 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Alexandrine_of_Denmark ;
+    :hasSister data:Alexandrine_of_Denmark ;
+    :isBloodrelationOf data:Alexandrine_of_Denmark ;
+    :isSiblingOf data:Alexandrine_of_Denmark ;
+    :isSisterOf data:Alexandrine_of_Denmark .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasRelation data:Juliana_of_the_Netherlands ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+data:Elisabeth_Anna_of_Oldenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophia_Charlotte_of_Oldenburg ;
+    :hasDaughter data:Sophia_Charlotte_of_Oldenburg ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Elisabeth_Anna_of_Oldenburg ;
+    :isAncestorOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isAuntOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isBloodrelationOf data:Elisabeth_Anna_of_Oldenburg ;
+    :isMotherOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isParentOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isSiblingOf data:Elisabeth_Anna_of_Oldenburg ;
+    :isSisterOf data:Elisabeth_Anna_of_Oldenburg .
+
+data:Frederick_Augustus_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Augustus_II ;
+    :hasChild data:Sophia_Charlotte_of_Oldenburg ;
+    :hasDaughter data:Sophia_Charlotte_of_Oldenburg ;
+    :hasDeathYear 1931 ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II ;
+    :isBrotherOf data:Frederick_Augustus_II ;
+    :isFatherOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isParentOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II ;
+    :isUncleOf data:Sophia_Charlotte_of_Oldenburg .
+
+data:Adolph_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Man ;
+    :hasBrother data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasChild data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasDaughter data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :isBrotherOf data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :isFatherOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isParentOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :isUncleOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Alexandrine_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederick_Francis_II ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Alexandrine_of_Prussia ;
+    :hasSon data:Frederick_Francis_II ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II ;
+    :isAuntOf data:Frederick_Francis_II ;
+    :isBloodrelationOf data:Alexandrine_of_Prussia ;
+    :isMotherOf data:Frederick_Francis_II ;
+    :isParentOf data:Frederick_Francis_II ;
+    :isSiblingOf data:Alexandrine_of_Prussia ;
+    :isSisterOf data:Alexandrine_of_Prussia .
+
+data:Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasDaughter data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isAuntOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :isMotherOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isParentOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :isSisterOf data:Mathilde_of_Sch%C3%B6nburg-Waldenburg .
+
+data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Paul_Frederick_of_Mecklenburg ;
+    :hasChild data:Frederick_Francis_II ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSon data:Frederick_Francis_II ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II ;
+    :isBloodrelationOf data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Paul_Frederick_of_Mecklenburg ;
+    :isFatherOf data:Frederick_Francis_II ;
+    :isParentOf data:Frederick_Francis_II ;
+    :isSiblingOf data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Frederick_Francis_II .
+
+data:Cyril_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    :hasAncestor data:Marie_of_Russia ;
+    :hasBrother data:Cyril_Vladimirovich_of_Russia ;
+    :hasMother data:Marie_of_Russia ;
+    :hasParent data:Marie_of_Russia ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Cyril_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Cyril_Vladimirovich_of_Russia ;
+    :isChildOf data:Marie_of_Russia ;
+    :isSiblingOf data:Cyril_Vladimirovich_of_Russia ;
+    :isSonOf data:Marie_of_Russia .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Russia ;
+    :isBloodrelationOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isBrotherOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isSiblingOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isUncleOf data:Cyril_Vladimirovich_of_Russia .
+
+data:Hendrik_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Russia ;
+    :isBloodrelationOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isBrotherOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isSiblingOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isUncleOf data:Cyril_Vladimirovich_of_Russia .
+
+data:Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II ;
+    :hasFather data:Frederick_Augustus_II ;
+    :hasMother data:Elisabeth_Anna_of_Oldenburg ;
+    :hasParent data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Sophia_Charlotte_of_Oldenburg ;
+    :isBloodrelationOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isChildOf data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II ;
+    :isDaughterOf data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II ;
+    :isSiblingOf data:Sophia_Charlotte_of_Oldenburg ;
+    :isSisterOf data:Sophia_Charlotte_of_Oldenburg .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alexandrine_of_Prussia,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :hasFather data:Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Alexandrine_of_Prussia ;
+    :hasParent data:Alexandrine_of_Prussia,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isChildOf data:Alexandrine_of_Prussia,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isFatherOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isSonOf data:Alexandrine_of_Prussia,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Elisabeth_of_Mecklenburg-Schwerin .
+
+data:Marie_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands ;
+    :hasChild data:Cyril_Vladimirovich_of_Russia ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Russia ;
+    :hasSon data:Cyril_Vladimirovich_of_Russia ;
+    :isAncestorOf data:Cyril_Vladimirovich_of_Russia ;
+    :isAuntOf data:Cyril_Vladimirovich_of_Russia ;
+    :isBloodrelationOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isMotherOf data:Cyril_Vladimirovich_of_Russia ;
+    :isParentOf data:Cyril_Vladimirovich_of_Russia ;
+    :isSiblingOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isSisterOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :hasChild data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :hasFather data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :hasParent data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isAncestorOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isChildOf data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :isDaughterOf data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg ;
+    :isMotherOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Elisabeth_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasAncestor data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Adolph_of_Schwarzburg-Rudolstadt,
+        data:Alexandrine_of_Prussia,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Elisabeth_Anna_of_Oldenburg,
+        data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Mathilde_of_Sch%C3%B6nburg-Waldenburg,
+        data:Paul_Frederick_of_Mecklenburg,
+        data:Sophia_Charlotte_of_Oldenburg,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Marie_of_Russia ;
+    :isAuntOf data:Alexandrine_of_Denmark,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Cyril_Vladimirovich_of_Russia,
+        data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isDaughterOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia ;
+    :isSisterOf data:Elisabeth_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia .
+

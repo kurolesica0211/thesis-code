@@ -1,0 +1,397 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PaulOfGreece a :Man ;
+    :hasBrother data:PaulOfGreece ;
+    :hasRelation data:PaulOfGreece ;
+    :isBloodrelationOf data:PaulOfGreece ;
+    :isBrotherOf data:PaulOfGreece ;
+    :isSiblingOf data:PaulOfGreece .
+
+data:FredericaOfHanover a :Woman ;
+    :hasBrother data:GeorgeWilliamOfHanover ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:FredericaOfHanover ;
+    :isAuntOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover ;
+    :isSiblingOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover ;
+    :isSisterOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:SophieOfGreeceAndDenmark ;
+    :hasDaughter data:SophieOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:WelfOfHanover ;
+    :hasSister data:AliceOfBattenberg ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:WelfOfHanover ;
+    :isAuntOf data:SophieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:AliceOfBattenberg ;
+    :isMotherOf data:SophieOfGreeceAndDenmark ;
+    :isParentOf data:SophieOfGreeceAndDenmark ;
+    :isSiblingOf data:AliceOfBattenberg ;
+    :isSisterOf data:AliceOfBattenberg .
+
+data:AndrewOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :hasBrother data:AndrewOfGreeceAndDenmark ;
+    :hasChild data:SophieOfGreeceAndDenmark ;
+    :hasDaughter data:SophieOfGreeceAndDenmark ;
+    :hasRelation data:AndrewOfGreeceAndDenmark,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:WelfOfHanover ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:AndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:AndrewOfGreeceAndDenmark ;
+    :isFatherOf data:SophieOfGreeceAndDenmark ;
+    :isParentOf data:SophieOfGreeceAndDenmark ;
+    :isSiblingOf data:AndrewOfGreeceAndDenmark ;
+    :isUncleOf data:SophieOfGreeceAndDenmark .
+
+data:ErnestAugustusDukeOfBrunswick a :Ancestor,
+        :Man ;
+    :hasBrother data:ErnestAugustusDukeOfBrunswick ;
+    :hasChild data:GeorgeWilliamOfHanover ;
+    :hasRelation data:ErnestAugustusDukeOfBrunswick,
+        data:FredericaOfHanover,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:WelfOfHanover ;
+    :hasSon data:GeorgeWilliamOfHanover ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:ErnestAugustusDukeOfBrunswick ;
+    :isBrotherOf data:ErnestAugustusDukeOfBrunswick ;
+    :isFatherOf data:GeorgeWilliamOfHanover ;
+    :isParentOf data:GeorgeWilliamOfHanover ;
+    :isSiblingOf data:ErnestAugustusDukeOfBrunswick ;
+    :isUncleOf data:GeorgeWilliamOfHanover .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Ancestor,
+        :Woman ;
+    :hasChild data:VictoriaLouiseOfPrussia ;
+    :hasDaughter data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:FredericaOfHanover,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover ;
+    :hasSister data:AugustaVictoriaOfSchleswigHolstein ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover ;
+    :isAuntOf data:VictoriaLouiseOfPrussia ;
+    :isBloodrelationOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isMotherOf data:VictoriaLouiseOfPrussia ;
+    :isParentOf data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isSisterOf data:AugustaVictoriaOfSchleswigHolstein .
+
+data:WilhelmII a :Ancestor,
+        :Man ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:VictoriaLouiseOfPrussia ;
+    :hasDaughter data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:FredericaOfHanover,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:VictoriaLouiseOfPrussia ;
+    :isParentOf data:VictoriaLouiseOfPrussia ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:VictoriaLouiseOfPrussia .
+
+data:VictoriaLouiseOfPrussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasChild data:GeorgeWilliamOfHanover ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasParent data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:FredericaOfHanover,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :hasSister data:VictoriaLouiseOfPrussia ;
+    :hasSon data:GeorgeWilliamOfHanover ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:WelfOfHanover ;
+    :isAuntOf data:GeorgeWilliamOfHanover ;
+    :isBloodrelationOf data:VictoriaLouiseOfPrussia ;
+    :isChildOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isDaughterOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isMotherOf data:GeorgeWilliamOfHanover ;
+    :isParentOf data:GeorgeWilliamOfHanover ;
+    :isSiblingOf data:VictoriaLouiseOfPrussia ;
+    :isSisterOf data:VictoriaLouiseOfPrussia .
+
+data:SophieOfGreeceAndDenmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasChild data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasDaughter data:FriederikeOfHanover ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasParent data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:WelfOfHanover ;
+    :hasSister data:SophieOfGreeceAndDenmark ;
+    :hasSon data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isAuntOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:SophieOfGreeceAndDenmark ;
+    :isChildOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isDaughterOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isMotherOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isParentOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isSiblingOf data:SophieOfGreeceAndDenmark ;
+    :isSisterOf data:SophieOfGreeceAndDenmark .
+
+data:FriederikeOfHanover a :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBirthYear 1954 ;
+    :hasBrother data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasFather data:GeorgeWilliamOfHanover ;
+    :hasMother data:SophieOfGreeceAndDenmark ;
+    :hasParent data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :hasSister data:FriederikeOfHanover ;
+    :isBloodrelationOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isChildOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :isDaughterOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :isSiblingOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isSisterOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover .
+
+data:GeorgOfHanover a :Man ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBirthYear 1949 ;
+    :hasBrother data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasFather data:GeorgeWilliamOfHanover ;
+    :hasMother data:SophieOfGreeceAndDenmark ;
+    :hasParent data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :hasSister data:FriederikeOfHanover ;
+    :isBloodrelationOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isBrotherOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isChildOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :isSiblingOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isSonOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark .
+
+data:WelfOfHanover a :Man ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasDeathYear 1981 ;
+    :hasFather data:GeorgeWilliamOfHanover ;
+    :hasMother data:SophieOfGreeceAndDenmark ;
+    :hasParent data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :hasSister data:FriederikeOfHanover ;
+    :isBloodrelationOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isBrotherOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isChildOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark ;
+    :isSiblingOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isSonOf data:GeorgeWilliamOfHanover,
+        data:SophieOfGreeceAndDenmark .
+
+data:GeorgeWilliamOfHanover a :Ancestor,
+        :Man ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:VictoriaLouiseOfPrussia,
+        data:WilhelmII ;
+    :hasBirthYear 1915 ;
+    :hasBrother data:GeorgeWilliamOfHanover ;
+    :hasChild data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :hasDaughter data:FriederikeOfHanover ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustusDukeOfBrunswick ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouiseOfPrussia ;
+    :hasParent data:ErnestAugustusDukeOfBrunswick,
+        data:VictoriaLouiseOfPrussia ;
+    :hasRelation data:AugustaVictoriaOfSchleswigHolstein,
+        data:ErnestAugustusDukeOfBrunswick,
+        data:FredericaOfHanover,
+        data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:GeorgeWilliamOfHanover,
+        data:VictoriaLouiseOfPrussia,
+        data:WelfOfHanover,
+        data:WilhelmII ;
+    :hasSister data:FredericaOfHanover ;
+    :hasSon data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isAncestorOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isBloodrelationOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover ;
+    :isBrotherOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover ;
+    :isChildOf data:ErnestAugustusDukeOfBrunswick,
+        data:VictoriaLouiseOfPrussia ;
+    :isFatherOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isParentOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover ;
+    :isSiblingOf data:FredericaOfHanover,
+        data:GeorgeWilliamOfHanover ;
+    :isSonOf data:ErnestAugustusDukeOfBrunswick,
+        data:VictoriaLouiseOfPrussia ;
+    :isUncleOf data:FriederikeOfHanover,
+        data:GeorgOfHanover,
+        data:WelfOfHanover .
+

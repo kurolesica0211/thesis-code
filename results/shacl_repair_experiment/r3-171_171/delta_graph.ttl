@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:BeatrizOfSpain :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg .
+
+data:AlfonsoOfSpain :isBrotherOf data:GonzaloOfSpain .
+
+data:AlfonsoXIIIOfSpain a :Ancestor .
+
+data:GonzaloOfSpain :isBrotherOf data:AlfonsoOfSpain .
+
+data:VictoriaEugenieOfBattenberg a :Ancestor .
+

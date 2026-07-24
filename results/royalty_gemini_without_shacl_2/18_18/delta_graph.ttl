@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Juan_Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_de_las_Mercedes .
+
+data:Queen_Sofia a :Person,
+        :Woman .
+
+data:Infante_Juan_Count_of_Barcelona a :Man,
+        :Person .
+
+data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Princess_Louise_of_Orleans ;
+    :hasRelation data:Prince_Pedro_Gastao_of_Orleans-Braganza .
+
+data:Philippe_Count_of_Paris a :Man,
+        :Person .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza .
+
+data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza a :Man,
+        :Person .
+
+data:Princess_Louise_of_Orleans a :Person,
+        :Woman ;
+    :hasFather data:Philippe_Count_of_Paris .
+
+data:Princess_Maria_de_las_Mercedes a :Person,
+        :Woman ;
+    :isSisterOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies .
+

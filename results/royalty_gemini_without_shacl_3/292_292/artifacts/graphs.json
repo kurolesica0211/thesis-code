@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JorgeGuillermo a :Man,\n        :Person .\n\ndata:PrinceBernhardJr a :Man,\n        :Person .\n\ndata:PrinceFelix a :Man,\n        :Person .\n\ndata:PrincessAnne a :Person,\n        :Woman .\n\ndata:PrincessChristina a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:PrinceBernhard ;\n    :hasMother data:QueenJuliana ;\n    :isSiblingOf data:PrincessBeatrix,\n        data:PrincessIrene,\n        data:PrincessMargriet .\n\ndata:WilliamII a :Man,\n        :Person .\n\ndata:PrinceBernhard a :Man,\n        :Person ;\n    :hasMother data:PrincessArmgard .\n\ndata:PrinceCarlosHugo a :Man,\n        :Person .\n\ndata:PrincessArmgard a :Person,\n        :Woman .\n\ndata:PrincessBeatrix a :Person,\n        :Woman .\n\ndata:PrincessIrene a :Person,\n        :Woman ;\n    :isSiblingOf data:PrinceCarlosHugo .\n\ndata:PrincessMargriet a :Person,\n        :Woman .\n\ndata:QueenJuliana a :Person,\n        :Woman ;\n    :hasMother data:QueenWilhelmina .\n\ndata:QueenWilhelmina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:JorgeGuillermo a :Man,\n        :Person .\n\ndata:PrinceBernhardJr a :Man,\n        :Person .\n\ndata:PrinceFelix a :Man,\n        :Person .\n\ndata:PrincessAnne a :Person,\n        :Woman .\n\ndata:PrincessChristina a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:PrinceBernhard ;\n    :hasMother data:QueenJuliana ;\n    :isSiblingOf data:PrincessBeatrix,\n        data:PrincessIrene,\n        data:PrincessMargriet .\n\ndata:WilliamII a :Man,\n        :Person .\n\ndata:PrinceBernhard a :Man,\n        :Person ;\n    :hasMother data:PrincessArmgard .\n\ndata:PrinceCarlosHugo a :Man,\n        :Person .\n\ndata:PrincessArmgard a :Person,\n        :Woman .\n\ndata:PrincessBeatrix a :Person,\n        :Woman .\n\ndata:PrincessIrene a :Person,\n        :Woman ;\n    :isSiblingOf data:PrinceCarlosHugo .\n\ndata:PrincessMargriet a :Person,\n        :Woman .\n\ndata:QueenJuliana a :Person,\n        :Woman ;\n    :hasMother data:QueenWilhelmina .\n\ndata:QueenWilhelmina a :Person,\n        :Woman .\n\n"
+    }
+]

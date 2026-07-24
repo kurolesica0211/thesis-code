@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1891 ;\n    :hasBrother data:Prince_Bernard,\n        data:Prince_George ;\n    :hasDeathYear 1971 ;\n    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Prince_Adalbert_of_Prussia .\n\ndata:Prince_Henry_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_III_of_Bavaria .\n\ndata:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .\n\ndata:Ernst_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Feodora_of_Hohenlohe-Langenburg a :Person,\n        :Woman .\n\ndata:George_II_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Kaiser_William_II_of_Germany a :Man,\n        :Person .\n\ndata:Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Prince_Adalbert_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Kaiser_William_II_of_Germany .\n\ndata:Prince_Bernard a :Man,\n        :Person .\n\ndata:Prince_Frederick_John_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasDeathYear 1914 ;\n    :hasFather data:George_II_of_Saxe-Meiningen ;\n    :hasMother data:Feodora_of_Hohenlohe-Langenburg .\n\ndata:Prince_George a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1891 ;\n    :hasBrother data:Prince_Bernard,\n        data:Prince_George ;\n    :hasDeathYear 1971 ;\n    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Prince_Adalbert_of_Prussia .\n\ndata:Prince_Henry_of_Bavaria a :Man,\n        :Person ;\n    :hasFather data:Ludwig_III_of_Bavaria .\n\ndata:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .\n\ndata:Ernst_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Feodora_of_Hohenlohe-Langenburg a :Person,\n        :Woman .\n\ndata:George_II_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Kaiser_William_II_of_Germany a :Man,\n        :Person .\n\ndata:Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Prince_Adalbert_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Kaiser_William_II_of_Germany .\n\ndata:Prince_Bernard a :Man,\n        :Person .\n\ndata:Prince_Frederick_John_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasDeathYear 1914 ;\n    :hasFather data:George_II_of_Saxe-Meiningen ;\n    :hasMother data:Feodora_of_Hohenlohe-Langenburg .\n\ndata:Prince_George a :Man,\n        :Person .\n\n"
+    }
+]

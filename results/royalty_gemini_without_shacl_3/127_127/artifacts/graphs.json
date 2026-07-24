@@ -1,0 +1,121 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Person .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 14,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Person .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 15,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 16,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 17,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adelaide_of_Lippe-Biesterfeld a :Person,\n        :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Karoline_von_Wartensleben .\n\ndata:Friedrich_Johann_of_Saxe-Meiningen a :Man,\n        :Person ;\n    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .\n\ndata:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Karoline_von_Wartensleben a :Person,\n        :Woman .\n\n"
+    }
+]

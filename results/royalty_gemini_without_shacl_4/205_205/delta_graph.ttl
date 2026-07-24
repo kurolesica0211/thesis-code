@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Gonzalo_of_Spain,
+        data:Infante_Don_Juan ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia ;
+    :hasSister data:Maria_Cristina_of_Spain ;
+    :isAuntOf data:Juan_Carlos_I .
+
+data:Alessandro_Torlonia a :Man,
+        :Person .
+
+data:Alfonso_Count_of_Covadonga a :Man,
+        :Person .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person .
+
+data:Infante_Don_Juan a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
+

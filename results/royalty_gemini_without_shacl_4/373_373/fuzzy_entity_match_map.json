@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/373_373",
+  "text_file": "Q619788.txt",
+  "text_key": "Q619788",
+  "article": "https://en.wikipedia.org/wiki/David_Lascelles,_8th_Earl_of_Harewood",
+  "article_key": "David Lascelles, 8th Earl of Harewood",
+  "main_entity": {
+    "uri": "http://example.com/data#David_Lascelles-_8th_Earl_of_Harewood",
+    "qid": "Q619788",
+    "label": "David Lascelles, 8th Earl of Harewood"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#David_Lascelles-_8th_Earl_of_Harewood",
+      "qid": "Q619788",
+      "label": "David Lascelles, 8th Earl of Harewood",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "qid": "Q336609",
+      "label": "George Lascelles, 7th Earl of Harewood",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Marion_Stein",
+      "qid": "Q2010206",
+      "label": "Marion Stein",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Marion_Stein",
+      "extracted_local_name": "Marion_Stein",
+      "embedding_text": "Marion Stein",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Marion_Stein",
+      "ground_truth_qid": "Q2010206",
+      "ground_truth_label": "Marion Stein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marion Stein",
+      "best_candidate_label": "Marion Stein",
+      "best_candidate_qid": "Q2010206",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/David_Henry_George_Lascelles",
+      "extracted_local_name": "David_Henry_George_Lascelles",
+      "embedding_text": "David Henry George Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7272727272727273,
+      "ground_truth_uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "ground_truth_qid": "Q336609",
+      "ground_truth_label": "George Lascelles, 7th Earl of Harewood",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George Lascelles",
+      "best_candidate_label": "George Lascelles, 7th Earl of Harewood",
+      "best_candidate_qid": "Q336609",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7272727272727273
+    },
+    {
+      "extracted_uri": "http://example.org/data/7th_Earl_of_Harewood",
+      "extracted_local_name": "7th_Earl_of_Harewood",
+      "embedding_text": "7th Earl of Harewood",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marion Harewood",
+      "best_candidate_label": "Marion Stein",
+      "best_candidate_qid": "Q2010206",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/Diane_Howse",
+      "extracted_local_name": "Diane_Howse",
+      "embedding_text": "Diane Howse",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "David Lascelles- 8th Earl of Harewood",
+      "best_candidate_label": "David Lascelles, 8th Earl of Harewood",
+      "best_candidate_qid": "Q619788",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2916666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/Edgar_Frank_Messenger",
+      "extracted_local_name": "Edgar_Frank_Messenger",
+      "embedding_text": "Edgar Frank Messenger",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marion Lascelles, Countess of Harewood",
+      "best_candidate_label": "Marion Stein",
+      "best_candidate_qid": "Q2010206",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3050847457627119
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margaret_Rosalind_Messenger",
+      "extracted_local_name": "Margaret_Rosalind_Messenger",
+      "embedding_text": "Margaret Rosalind Messenger",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marion Harewood",
+      "best_candidate_label": "Marion Stein",
+      "best_candidate_qid": "Q2010206",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.38095238095238093
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

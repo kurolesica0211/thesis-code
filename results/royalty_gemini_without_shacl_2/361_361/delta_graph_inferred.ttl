@@ -1,0 +1,416 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_of_Schaumburg_Lippe a :Man ;
+    :hasBrother data:Adolf_of_Schaumburg_Lippe ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :isBloodrelationOf data:Adolf_of_Schaumburg_Lippe ;
+    :isBrotherOf data:Adolf_of_Schaumburg_Lippe ;
+    :isSiblingOf data:Adolf_of_Schaumburg_Lippe .
+
+data:Alexander_Zoubkoff a :Man ;
+    :hasBrother data:Alexander_Zoubkoff ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :isBloodrelationOf data:Alexander_Zoubkoff ;
+    :isBrotherOf data:Alexander_Zoubkoff ;
+    :isSiblingOf data:Alexander_Zoubkoff .
+
+data:Augusta_of_Saxe_Weimar a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederick_III_German_Emperor ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Augusta_of_Saxe_Weimar ;
+    :hasSon data:Frederick_III_German_Emperor ;
+    :isAncestorOf data:Frederick_III_German_Emperor,
+        data:Viktoria_of_Prussia ;
+    :isAuntOf data:Frederick_III_German_Emperor ;
+    :isBloodrelationOf data:Augusta_of_Saxe_Weimar ;
+    :isMotherOf data:Frederick_III_German_Emperor ;
+    :isParentOf data:Frederick_III_German_Emperor ;
+    :isSiblingOf data:Augusta_of_Saxe_Weimar ;
+    :isSisterOf data:Augusta_of_Saxe_Weimar .
+
+data:Prince_Albert a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :isAncestorOf data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Victoria_Princess_Royal .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia ;
+    :isAuntOf data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Wilhelm_I_German_Emperor a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_I_German_Emperor ;
+    :hasChild data:Frederick_III_German_Emperor ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSon data:Frederick_III_German_Emperor ;
+    :isAncestorOf data:Frederick_III_German_Emperor,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_I_German_Emperor ;
+    :isBrotherOf data:Wilhelm_I_German_Emperor ;
+    :isFatherOf data:Frederick_III_German_Emperor ;
+    :isParentOf data:Frederick_III_German_Emperor ;
+    :isSiblingOf data:Wilhelm_I_German_Emperor ;
+    :isUncleOf data:Frederick_III_German_Emperor .
+
+data:Margaret_of_Prussia a :Woman ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia .
+
+data:Sigismund_of_Prussia a :Man ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia .
+
+data:Sophie_of_Prussia a :Woman ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia .
+
+data:Waldemar_of_Prussia a :Man ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man ;
+    :hasAncestor data:Augusta_of_Saxe_Weimar,
+        data:Wilhelm_I_German_Emperor ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasChild data:Viktoria_of_Prussia ;
+    :hasDaughter data:Viktoria_of_Prussia ;
+    :hasFather data:Wilhelm_I_German_Emperor ;
+    :hasMother data:Augusta_of_Saxe_Weimar ;
+    :hasParent data:Augusta_of_Saxe_Weimar,
+        data:Wilhelm_I_German_Emperor ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :isAncestorOf data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isChildOf data:Augusta_of_Saxe_Weimar,
+        data:Wilhelm_I_German_Emperor ;
+    :isFatherOf data:Viktoria_of_Prussia ;
+    :isParentOf data:Viktoria_of_Prussia ;
+    :isSiblingOf data:Frederick_III_German_Emperor ;
+    :isSonOf data:Augusta_of_Saxe_Weimar,
+        data:Wilhelm_I_German_Emperor ;
+    :isUncleOf data:Viktoria_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Viktoria_of_Prussia ;
+    :hasDaughter data:Viktoria_of_Prussia ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Viktoria_of_Prussia ;
+    :isAuntOf data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Viktoria_of_Prussia ;
+    :isParentOf data:Viktoria_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Viktoria_of_Prussia a :Woman ;
+    :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria"^^xsd:string ;
+    :hasAncestor data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_I_German_Emperor ;
+    :hasBirthYear 1866 ;
+    :hasBrother data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1890,
+        1927 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Adolf_of_Schaumburg_Lippe,
+        data:Alexander_Zoubkoff,
+        data:Augusta_of_Saxe_Weimar,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_I_German_Emperor ;
+    :hasSister data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isChildOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Sophie_of_Prussia,
+        data:Viktoria_of_Prussia,
+        data:Waldemar_of_Prussia .
+

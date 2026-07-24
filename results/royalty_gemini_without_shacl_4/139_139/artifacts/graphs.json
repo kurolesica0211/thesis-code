@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Anne_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasBirthYear \"1906\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Jean%2C_Duke_of_Guise ;\n    :hasMarriageYear \"1927\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;\n    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta .\n\ndata:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasBirthYear \"1898\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1942\"^^xsd:positiveInteger .\n\ndata:Prince_Jean%2C_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Anne_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasBirthYear \"1906\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Jean%2C_Duke_of_Guise ;\n    :hasMarriageYear \"1927\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;\n    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta .\n\ndata:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasBirthYear \"1898\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1942\"^^xsd:positiveInteger .\n\ndata:Prince_Jean%2C_Duke_of_Guise a :Man,\n        :Person .\n\ndata:Princess_Isabelle_of_Orl%C3%A9ans a :Person,\n        :Woman .\n\n"
+    }
+]

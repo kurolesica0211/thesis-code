@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Friedrich_Franz_Alexander a :Man ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Heinrich_Albert_Johann_Georg a :Man ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht a :Man ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Princess_Sophie_of_Isenburg .
+
+data:Countess_Donata_of_Castell-R%C3%BCdenhausen a :Woman .
+
+data:Grand_Duchess_Kira_of_Russia a :Woman .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Man ;
+    :hasFather data:Prince_Louis_Ferdinand_of_Prussia .
+
+data:Prince_Louis_Ferdinand_of_Prussia a :Man .
+
+data:Wilhelm_II a :Man .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Man ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1976 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMother data:Countess_Donata_of_Castell-R%C3%BCdenhausen,
+        data:Grand_Duchess_Kira_of_Russia .
+
+data:Princess_Sophie_of_Isenburg a :Woman .
+

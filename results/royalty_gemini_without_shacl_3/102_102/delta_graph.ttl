@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gustav a :Man ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMarriageYear 1998,
+        2019 ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille .
+
+data:Princess_Nathalie a :Woman ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man .
+
+data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man .
+
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man .
+
+data:Princess_Benedikte_of_Denmark a :Woman .
+

@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ivar_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Prince_George_of_Battenberg ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:George_Mountbatten_4th_Marquess ;
+    :hasFather data:David_Mountbatten ;
+    :hasMother data:Janet_Mercedes_Bryce .
+
+data:James_Coyle a :Man,
+        :Person .
+
+data:Lady_Louise_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie .
+
+data:Penelope_Anne_Vere_Thompson a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Colin_Graham_Thompson ;
+    :hasMother data:Rosemary_Vere_Edwardes .
+
+data:Colin_Graham_Thompson a :Man,
+        :Person .
+
+data:David_Mountbatten a :Man,
+        :Person .
+
+data:George_Mountbatten_4th_Marquess a :Man,
+        :Person .
+
+data:Janet_Mercedes_Bryce a :Person,
+        :Woman .
+
+data:Prince_Edward a :Man,
+        :Person .
+
+data:Prince_George_of_Battenberg a :Man,
+        :Person .
+
+data:Rosemary_Vere_Edwardes a :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+

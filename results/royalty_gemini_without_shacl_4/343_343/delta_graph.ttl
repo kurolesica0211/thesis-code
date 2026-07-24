@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica a :Woman ;
+    :hasFather data:Ernest_Augustus ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Paul_of_Greece .
+
+data:Christian a :Man ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark .
+
+data:Ernest_Augustus a :Man ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasRelation data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Christian,
+        data:George .
+
+data:George a :Man ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Thyra_of_Denmark .
+
+data:Paul_of_Greece a :Man .
+
+data:Victoria_Louise_of_Prussia a :Woman .
+
+data:Ernest_Augustus_of_Hanover a :Man .
+
+data:Thyra_of_Denmark a :Woman .
+

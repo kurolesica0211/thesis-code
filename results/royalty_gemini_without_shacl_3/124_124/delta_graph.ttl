@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Fabrizio_Prince_Ruffo_di_Calabria_Santapau a :Man,
+        :Person .
+
+data:Hereditary_Grand_Duchess_Josephine_Charlotte_of_Luxembourg a :Person,
+        :Woman .
+
+data:Princess_Astrid_of_Belgium a :Person,
+        :Woman ;
+    :hasBirthYear 1962 ;
+    :hasFather data:King_Albert_II ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Queen_Paola ;
+    :hasRelation data:Prince_Lorenz_of_Belgium ;
+    :isSisterOf data:King_Philippe .
+
+data:Astrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasDeathYear 1935 ;
+    :isMotherOf data:King_Albert_II .
+
+data:King_Leopold_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Lorenz_of_Belgium a :Man,
+        :Person ;
+    :hasFather data:Robert_Archduke_of_Austria_Este ;
+    :hasMother data:Princess_Margherita_of_Savoy_Aosta .
+
+data:Princess_Margherita_of_Savoy_Aosta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasDeathYear 2022 .
+
+data:Queen_Paola a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:King_Philippe .
+
+data:Robert_Archduke_of_Austria_Este a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1996 .
+
+data:King_Albert_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Leopold_III ;
+    :hasMother data:Astrid_of_Sweden ;
+    :isFatherOf data:King_Philippe .
+
+data:King_Philippe a :Man,
+        :Person .
+

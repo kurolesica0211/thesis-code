@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Alexander_II_of_Russia a :Man .
+
+data:Grand_Duchess_Maria_Kirillovna a :Woman ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich .
+
+data:Grand_Duke_Vladimir_Kirillovich_of_Russia a :Man .
+
+data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man ;
+    :hasFather data:Karl_Emich_of_Leiningen ;
+    :hasMother data:Gabriele_Renate_Thyssen .
+
+data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
+    :hasFather data:Karl_Emich_of_Leiningen ;
+    :hasMother data:Princess_Margarita_of_Hohenlohe-Ohringen .
+
+data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
+    :hasFather data:Karl_Emich_of_Leiningen ;
+    :hasMother data:Gabriele_Renate_Thyssen .
+
+data:Andreas_8th_Prince_of_Leiningen a :Man .
+
+data:Duchess_Eilika_of_Oldenburg a :Woman .
+
+data:Emich_7th_Prince_of_Leiningen a :Man .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man .
+
+data:Princess_Margarita_of_Hohenlohe-Ohringen a :Woman .
+
+data:Gabriele_Renate_Thyssen a :Woman .
+
+data:Karl_Emich_of_Leiningen a :Man ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Emich_7th_Prince_of_Leiningen ;
+    :hasMother data:Duchess_Eilika_of_Oldenburg ;
+    :isBrotherOf data:Andreas_8th_Prince_of_Leiningen .
+

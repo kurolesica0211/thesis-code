@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aschwin_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe_1872 .\n\ndata:Elisabeth_Johanna_Edle_von_Meinertzhagen a :Person,\n        :Woman .\n\ndata:Frederick_William_Count_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :hasMarriageYear 1770 .\n\ndata:Prince_Bernhard_of_Lippe_Biesterfeld_jr a :Man,\n        :Person ;\n    :isSonOf data:Prince_Bernhard_of_Lippe_1872 .\n\ndata:Baroness_Armgard_von_Sierstorpff_Cramm a :Person,\n        :Woman .\n\ndata:Countess_Karoline_von_Wartensleben a :Person,\n        :Woman .\n\ndata:Ernest_II_Count_of_Lippe_Biesterfeld a :Man,\n        :Person .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person .\n\ndata:Prince_Bernhard_of_Lippe_1872 a :Man,\n        :Person ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1934 ;\n    :hasMarriageYear 1909 ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe ;\n    :isSonOf data:Countess_Karoline_von_Wartensleben,\n        data:Ernest_II_Count_of_Lippe_Biesterfeld .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aschwin_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe_1872 .\n\ndata:Elisabeth_Johanna_Edle_von_Meinertzhagen a :Person,\n        :Woman .\n\ndata:Frederick_William_Count_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :hasMarriageYear 1770 .\n\ndata:Prince_Bernhard_of_Lippe_Biesterfeld_jr a :Man,\n        :Person ;\n    :isSonOf data:Prince_Bernhard_of_Lippe_1872 .\n\ndata:Baroness_Armgard_von_Sierstorpff_Cramm a :Person,\n        :Woman .\n\ndata:Countess_Karoline_von_Wartensleben a :Person,\n        :Woman .\n\ndata:Ernest_II_Count_of_Lippe_Biesterfeld a :Man,\n        :Person .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person .\n\ndata:Prince_Bernhard_of_Lippe_1872 a :Man,\n        :Person ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1934 ;\n    :hasMarriageYear 1909 ;\n    :isBrotherOf data:Leopold_IV_Prince_of_Lippe ;\n    :isSonOf data:Countess_Karoline_von_Wartensleben,\n        data:Ernest_II_Count_of_Lippe_Biesterfeld .\n\n"
+    }
+]

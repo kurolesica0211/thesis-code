@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:David_Bowes-Lyon a :Ancestor ;
+    :hasSex data:Male .
+
+data:Davina_Katherine_Bowes-Lyon a :Ancestor ;
+    :hasSex data:Female .
+
+data:Elizabeth_Mary_Hyde_Parker a :Ancestor ;
+    :hasSex data:Female .
+
+data:Emily_Mary_Julia_Stonor :hasSex data:Female .
+
+data:Frederick_Calvert_6th_Baron_Baltimore a :Ancestor ;
+    :hasSex data:Male .
+
+data:John_Dalrymple_13th_Earl_of_Stair a :Ancestor ;
+    :hasSex data:Male .
+
+data:John_David_James_Dalrymple_14th_Earl_of_Stair :hasSex data:Male .
+
+data:Queen_Elizabeth :hasSex data:Female .
+
+data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor ;
+    :hasSex data:Male .
+
+data:Violet_Evelyn_Dalrymple a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

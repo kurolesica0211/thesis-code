@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickFrancisIV a :Man,
+        :Person .
+
+data:JohnAlbertOfMecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1857 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:FrederickFrancisII ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:AugustaReussOfKostritz ;
+    :hasRelation data:ElisabethOfStolbergRossla,
+        data:ElisabethSybilleOfSaxeWeimarEisenach ;
+    :isSiblingOf data:AdolfFriedrich,
+        data:FrederickFrancisIII,
+        data:PaulFrederick .
+
+data:AdolfFriedrich a :Man,
+        :Person .
+
+data:AugustaReussOfKostritz a :Person,
+        :Woman .
+
+data:ElisabethOfStolbergRossla a :Person,
+        :Woman .
+
+data:ElisabethSybilleOfSaxeWeimarEisenach a :Person,
+        :Woman .
+
+data:FrederickFrancisII a :Man,
+        :Person .
+
+data:FrederickFrancisIII a :Man,
+        :Person .
+
+data:PaulFrederick a :Man,
+        :Person .
+

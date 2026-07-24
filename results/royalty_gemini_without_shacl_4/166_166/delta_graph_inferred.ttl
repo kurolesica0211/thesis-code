@@ -1,0 +1,278 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Raymundo_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasBrother data:Raymundo_della_Torre_e_Tasso ;
+    :hasMarriageYear "1949"^^xsd:nonNegativeInteger ;
+    :hasRelation data:Raymundo_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Raymundo_della_Torre_e_Tasso ;
+    :isBrotherOf data:Raymundo_della_Torre_e_Tasso ;
+    :isSiblingOf data:Raymundo_della_Torre_e_Tasso .
+
+data:Hieronim_Radziwill a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hieronim_Radziwill ;
+    :hasChild data:Dominik_Rainer_Radziwill ;
+    :hasRelation data:Dominik_Rainer_Radziwill,
+        data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :hasSon data:Dominik_Rainer_Radziwill ;
+    :isAncestorOf data:Dominik_Rainer_Radziwill ;
+    :isBloodrelationOf data:Hieronim_Radziwill ;
+    :isBrotherOf data:Hieronim_Radziwill ;
+    :isFatherOf data:Dominik_Rainer_Radziwill ;
+    :isParentOf data:Dominik_Rainer_Radziwill ;
+    :isSiblingOf data:Hieronim_Radziwill ;
+    :isUncleOf data:Dominik_Rainer_Radziwill .
+
+data:Renata_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dominik_Rainer_Radziwill ;
+    :hasRelation data:Dominik_Rainer_Radziwill,
+        data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :hasSister data:Renata_of_Austria ;
+    :hasSon data:Dominik_Rainer_Radziwill ;
+    :isAncestorOf data:Dominik_Rainer_Radziwill ;
+    :isAuntOf data:Dominik_Rainer_Radziwill ;
+    :isBloodrelationOf data:Renata_of_Austria ;
+    :isMotherOf data:Dominik_Rainer_Radziwill ;
+    :isParentOf data:Dominik_Rainer_Radziwill ;
+    :isSiblingOf data:Renata_of_Austria ;
+    :isSisterOf data:Renata_of_Austria .
+
+data:Peter_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Peter_of_Greece_and_Denmark ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSister data:Eugenie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark ;
+    :isBrotherOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark ;
+    :isSiblingOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:George_of_Greece_and_Denmark ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSon data:George_of_Greece_and_Denmark ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark,
+        data:George_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:George_of_Greece_and_Denmark ;
+    :isParentOf data:George_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:George_of_Greece_and_Denmark .
+
+data:Marie-Felix_Blanc a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Bonaparte ;
+    :hasDaughter data:Marie_Bonaparte ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSister data:Marie-Felix_Blanc ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark,
+        data:Marie_Bonaparte ;
+    :isAuntOf data:Marie_Bonaparte ;
+    :isBloodrelationOf data:Marie-Felix_Blanc ;
+    :isMotherOf data:Marie_Bonaparte ;
+    :isParentOf data:Marie_Bonaparte ;
+    :isSiblingOf data:Marie-Felix_Blanc ;
+    :isSisterOf data:Marie-Felix_Blanc .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_of_Greece_and_Denmark ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:George_of_Greece_and_Denmark ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark,
+        data:George_of_Greece_and_Denmark ;
+    :isAuntOf data:George_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:George_of_Greece_and_Denmark ;
+    :isParentOf data:George_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Roland_Bonaparte a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Roland_Bonaparte ;
+    :hasChild data:Marie_Bonaparte ;
+    :hasDaughter data:Marie_Bonaparte ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark,
+        data:Marie_Bonaparte ;
+    :isBloodrelationOf data:Roland_Bonaparte ;
+    :isBrotherOf data:Roland_Bonaparte ;
+    :isFatherOf data:Marie_Bonaparte ;
+    :isParentOf data:Marie_Bonaparte ;
+    :isSiblingOf data:Roland_Bonaparte ;
+    :isUncleOf data:Marie_Bonaparte .
+
+data:Dominik_Rainer_Radziwill a :Man,
+        :Person ;
+    :hasAncestor data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :hasBrother data:Dominik_Rainer_Radziwill ;
+    :hasFather data:Hieronim_Radziwill ;
+    :hasMarriageYear "1938"^^xsd:nonNegativeInteger ;
+    :hasMother data:Renata_of_Austria ;
+    :hasParent data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :hasRelation data:Dominik_Rainer_Radziwill,
+        data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :isBloodrelationOf data:Dominik_Rainer_Radziwill ;
+    :isBrotherOf data:Dominik_Rainer_Radziwill ;
+    :isChildOf data:Hieronim_Radziwill,
+        data:Renata_of_Austria ;
+    :isSiblingOf data:Dominik_Rainer_Radziwill ;
+    :isSonOf data:Hieronim_Radziwill,
+        data:Renata_of_Austria .
+
+data:George_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:George_of_Greece_and_Denmark ;
+    :hasChild data:Eugenie_of_Greece_and_Denmark ;
+    :hasDaughter data:Eugenie_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_of_Greece_and_Denmark ;
+    :isBrotherOf data:George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Eugenie_of_Greece_and_Denmark ;
+    :isParentOf data:Eugenie_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Eugenie_of_Greece_and_Denmark .
+
+data:Marie_Bonaparte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Marie-Felix_Blanc,
+        data:Roland_Bonaparte ;
+    :hasChild data:Eugenie_of_Greece_and_Denmark ;
+    :hasDaughter data:Eugenie_of_Greece_and_Denmark ;
+    :hasFather data:Roland_Bonaparte ;
+    :hasMother data:Marie-Felix_Blanc ;
+    :hasParent data:Marie-Felix_Blanc,
+        data:Roland_Bonaparte ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSister data:Marie_Bonaparte ;
+    :isAncestorOf data:Eugenie_of_Greece_and_Denmark ;
+    :isAuntOf data:Eugenie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Marie_Bonaparte ;
+    :isChildOf data:Marie-Felix_Blanc,
+        data:Roland_Bonaparte ;
+    :isDaughterOf data:Marie-Felix_Blanc,
+        data:Roland_Bonaparte ;
+    :isMotherOf data:Eugenie_of_Greece_and_Denmark ;
+    :isParentOf data:Eugenie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Marie_Bonaparte ;
+    :isSisterOf data:Marie_Bonaparte .
+
+data:Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Roland_Bonaparte ;
+    :hasBirthYear "1910"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Peter_of_Greece_and_Denmark ;
+    :hasDeathYear "1989"^^xsd:nonNegativeInteger ;
+    :hasFather data:George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte ;
+    :hasParent data:George_of_Greece_and_Denmark,
+        data:Marie_Bonaparte ;
+    :hasRelation data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:George_of_Greece_and_Denmark,
+        data:Marie-Felix_Blanc,
+        data:Marie_Bonaparte,
+        data:Olga_Constantinovna_of_Russia,
+        data:Peter_of_Greece_and_Denmark,
+        data:Roland_Bonaparte ;
+    :hasSister data:Eugenie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark ;
+    :isChildOf data:George_of_Greece_and_Denmark,
+        data:Marie_Bonaparte ;
+    :isDaughterOf data:George_of_Greece_and_Denmark,
+        data:Marie_Bonaparte ;
+    :isSiblingOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark ;
+    :isSisterOf data:Eugenie_of_Greece_and_Denmark,
+        data:Peter_of_Greece_and_Denmark .
+

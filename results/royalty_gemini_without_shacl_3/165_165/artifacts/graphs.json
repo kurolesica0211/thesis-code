@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jean_Charles_Ullens_de_Schooten_Whettnall a :Man,\n        :Person .\n\ndata:Countess_Leonore a :Person,\n        :Woman ;\n    :hasBirthYear 2006 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Juliana_Guillermo a :Person,\n        :Woman .\n\ndata:Marius_Brinkhorst a :Man,\n        :Person .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Alexia a :Person,\n        :Woman .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Queen_Maxima a :Person,\n        :Woman .\n\ndata:Prince_Constantijn a :Man,\n        :Person .\n\ndata:Princess_Laurentien a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jean_Charles_Ullens_de_Schooten_Whettnall a :Man,\n        :Person .\n\ndata:Countess_Leonore a :Person,\n        :Woman ;\n    :hasBirthYear 2006 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Juliana_Guillermo a :Person,\n        :Woman .\n\ndata:Marius_Brinkhorst a :Man,\n        :Person .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Alexia a :Person,\n        :Woman .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Queen_Maxima a :Person,\n        :Woman .\n\ndata:Prince_Constantijn a :Man,\n        :Person .\n\ndata:Princess_Laurentien a :Person,\n        :Woman .\n\n"
+    }
+]

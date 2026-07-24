@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_David_James_Dalrymple_14th_Earl_of_Stair a :Man,\n        :Person ;\n    :hasBirthYear \"1961\"^^xsd:positiveInteger ;\n    :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;\n    :hasMarriageYear \"2006\"^^xsd:positiveInteger ;\n    :hasMother data:Davina_Katherine_Bowes-Lyon ;\n    :hasRelation data:Emily_Mary_Julia_Stonor .\n\ndata:David_Bowes-Lyon a :Man,\n        :Person ;\n    :isSisterOf data:Queen_Elizabeth .\n\ndata:Davina_Katherine_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear \"1930\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2017\"^^xsd:positiveInteger ;\n    :hasFather data:David_Bowes-Lyon .\n\ndata:Elizabeth_Mary_Hyde_Parker a :Person,\n        :Woman .\n\ndata:Emily_Mary_Julia_Stonor a :Person,\n        :Woman ;\n    :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;\n    :hasMother data:Elizabeth_Mary_Hyde_Parker .\n\ndata:Frederick_Calvert_6th_Baron_Baltimore a :Man,\n        :Person .\n\ndata:John_Dalrymple_13th_Earl_of_Stair a :Man,\n        :Person ;\n    :hasMother data:Violet_Evelyn_Dalrymple .\n\ndata:Queen_Elizabeth a :Person,\n        :Woman .\n\ndata:Ralph_Stonor_7th_Baron_Camoys a :Man,\n        :Person .\n\ndata:Violet_Evelyn_Dalrymple a :Person,\n        :Woman ;\n    :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_David_James_Dalrymple_14th_Earl_of_Stair a :Man,\n        :Person ;\n    :hasBirthYear \"1961\"^^xsd:positiveInteger ;\n    :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;\n    :hasMarriageYear \"2006\"^^xsd:positiveInteger ;\n    :hasMother data:Davina_Katherine_Bowes-Lyon ;\n    :hasRelation data:Emily_Mary_Julia_Stonor .\n\ndata:David_Bowes-Lyon a :Man,\n        :Person ;\n    :isSisterOf data:Queen_Elizabeth .\n\ndata:Davina_Katherine_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear \"1930\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2017\"^^xsd:positiveInteger ;\n    :hasFather data:David_Bowes-Lyon .\n\ndata:Elizabeth_Mary_Hyde_Parker a :Person,\n        :Woman .\n\ndata:Emily_Mary_Julia_Stonor a :Person,\n        :Woman ;\n    :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;\n    :hasMother data:Elizabeth_Mary_Hyde_Parker .\n\ndata:Frederick_Calvert_6th_Baron_Baltimore a :Man,\n        :Person .\n\ndata:John_Dalrymple_13th_Earl_of_Stair a :Man,\n        :Person ;\n    :hasMother data:Violet_Evelyn_Dalrymple .\n\ndata:Queen_Elizabeth a :Person,\n        :Woman .\n\ndata:Ralph_Stonor_7th_Baron_Camoys a :Man,\n        :Person .\n\ndata:Violet_Evelyn_Dalrymple a :Person,\n        :Woman ;\n    :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore .\n\n"
+    }
+]

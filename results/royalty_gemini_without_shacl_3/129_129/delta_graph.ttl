@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_Brenninkmeijer a :Man ;
+    :hasBirthYear 1974 .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Bernhard a :Man ;
+    :isFatherOf data:Princess_Irene .
+
+data:Prince_Jean a :Man ;
+    :isChildOf data:Prince_Louis .
+
+data:Prince_Remy a :Man ;
+    :isChildOf data:Prince_Louis .
+
+data:Princess_Beatrix a :Woman ;
+    :isChildOf data:Prince_Louis .
+
+data:Princess_Carolina a :Woman ;
+    :hasBirthYear 1974 ;
+    :isDaughterOf data:Carlos_Hugo,
+        data:Princess_Irene ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Margarita .
+
+data:Princess_Chantal a :Woman ;
+    :isChildOf data:Prince_Louis .
+
+data:Princess_Elisabeth a :Woman ;
+    :isChildOf data:Prince_Louis .
+
+data:Princess_Joan a :Woman ;
+    :isChildOf data:Prince_Felix .
+
+data:Princess_Margriet a :Woman ;
+    :isChildOf data:Prince_Louis .
+
+data:Princess_Maria_Pia a :Woman ;
+    :isChildOf data:Prince_Rene .
+
+data:Princess_Marina a :Woman ;
+    :isChildOf data:Prince_Rene .
+
+data:Princess_Virginia a :Woman ;
+    :isChildOf data:Prince_Louis .
+
+data:Queen_Juliana a :Woman ;
+    :isMotherOf data:Princess_Irene .
+
+data:Carlos_Hugo a :Man .
+
+data:Prince_Carlos a :Man .
+
+data:Prince_Felix a :Man .
+
+data:Prince_Jaime a :Man .
+
+data:Princess_Margarita a :Woman .
+
+data:Prince_Rene a :Man .
+
+data:Princess_Irene a :Woman .
+
+data:Prince_Louis a :Man .
+

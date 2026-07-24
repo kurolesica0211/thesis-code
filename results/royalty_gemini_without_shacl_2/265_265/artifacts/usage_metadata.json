@@ -1,0 +1,66 @@
+{
+    "translation": [],
+    "final": [
+        {
+            "iteration": 7,
+            "metadata": [
+                {
+                    "input_tokens": 24459,
+                    "output_tokens": 1057,
+                    "total_tokens": 25516,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 27042,
+                    "output_tokens": 58,
+                    "total_tokens": 27100,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 27732,
+                    "output_tokens": 74,
+                    "total_tokens": 27806,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 28258,
+                    "output_tokens": 75,
+                    "total_tokens": 28333,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 28785,
+                    "output_tokens": 38,
+                    "total_tokens": 28823,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 29230,
+                    "output_tokens": 34,
+                    "total_tokens": 29264,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                },
+                {
+                    "input_tokens": 29680,
+                    "output_tokens": 8,
+                    "total_tokens": 29688,
+                    "input_token_details": {
+                        "cache_read": 24454
+                    }
+                }
+            ]
+        }
+    ]
+}

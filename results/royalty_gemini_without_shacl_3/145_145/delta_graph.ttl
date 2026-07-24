@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_X_of_Denmark a :Man,
+        :Person .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :formerlyKnownAs "His Highness Prince Henrik of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasBirthYear 2009 ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :knownAs "His Excellency Count Henrik of Monpezat"^^xsd:string .
+
+data:Henrik_of_Denmark a :Man,
+        :Person .
+
+data:Joachim_of_Denmark a :Man,
+        :Person .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman .
+
+data:Marie_of_Denmark a :Person,
+        :Woman .
+

@@ -1,0 +1,348 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain .
+
+data:Princess_Victoria_Eugenia a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_Mountbatten ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Victoria_Eugenia ;
+    :isBloodrelationOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia ;
+    :isSiblingOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia ;
+    :isSisterOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia .
+
+data:Earl_of_Londesborough_2nd a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Earl_of_Londesborough_2nd ;
+    :hasChild data:Lady_Irene_Denison ;
+    :hasDaughter data:Lady_Irene_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :isAncestorOf data:Lady_Irene_Denison ;
+    :isBloodrelationOf data:Earl_of_Londesborough_2nd ;
+    :isBrotherOf data:Earl_of_Londesborough_2nd ;
+    :isFatherOf data:Lady_Irene_Denison ;
+    :isParentOf data:Lady_Irene_Denison ;
+    :isSiblingOf data:Earl_of_Londesborough_2nd ;
+    :isUncleOf data:Lady_Irene_Denison .
+
+data:Lady_Grace_Adelaide_Fane a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Irene_Denison ;
+    :hasDaughter data:Lady_Irene_Denison ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Lady_Grace_Adelaide_Fane ;
+    :isAncestorOf data:Lady_Irene_Denison ;
+    :isAuntOf data:Lady_Irene_Denison ;
+    :isBloodrelationOf data:Lady_Grace_Adelaide_Fane ;
+    :isMotherOf data:Lady_Irene_Denison ;
+    :isParentOf data:Lady_Irene_Denison ;
+    :isSiblingOf data:Lady_Grace_Adelaide_Fane ;
+    :isSisterOf data:Lady_Grace_Adelaide_Fane .
+
+data:Julie_Countess_of_Hauke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Henry_of_Battenberg ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Julie_Countess_of_Hauke ;
+    :hasSon data:Prince_Henry_of_Battenberg ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Prince_Henry_of_Battenberg ;
+    :isAuntOf data:Prince_Henry_of_Battenberg ;
+    :isBloodrelationOf data:Julie_Countess_of_Hauke ;
+    :isMotherOf data:Prince_Henry_of_Battenberg ;
+    :isParentOf data:Prince_Henry_of_Battenberg ;
+    :isSiblingOf data:Julie_Countess_of_Hauke ;
+    :isSisterOf data:Julie_Countess_of_Hauke .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasChild data:Prince_Henry_of_Battenberg ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSon data:Prince_Henry_of_Battenberg ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Prince_Henry_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Prince_Henry_of_Battenberg ;
+    :isParentOf data:Prince_Henry_of_Battenberg ;
+    :isSiblingOf data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Henry_of_Battenberg .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Alexander_Mountbatten,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isAuntOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Lady_Irene_Denison a :Person,
+        :Woman ;
+    :hasAncestor data:Earl_of_Londesborough_2nd,
+        data:Lady_Grace_Adelaide_Fane ;
+    :hasFather data:Earl_of_Londesborough_2nd ;
+    :hasMother data:Lady_Grace_Adelaide_Fane ;
+    :hasParent data:Earl_of_Londesborough_2nd,
+        data:Lady_Grace_Adelaide_Fane ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Lady_Irene_Denison ;
+    :isBloodrelationOf data:Lady_Irene_Denison ;
+    :isChildOf data:Earl_of_Londesborough_2nd,
+        data:Lady_Grace_Adelaide_Fane ;
+    :isDaughterOf data:Earl_of_Londesborough_2nd,
+        data:Lady_Grace_Adelaide_Fane ;
+    :isSiblingOf data:Lady_Irene_Denison ;
+    :isSisterOf data:Lady_Irene_Denison .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Julie_Countess_of_Hauke,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Henry_of_Battenberg ;
+    :hasChild data:Alexander_Mountbatten ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Countess_of_Hauke ;
+    :hasParent data:Julie_Countess_of_Hauke,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSon data:Alexander_Mountbatten ;
+    :isAncestorOf data:Alexander_Mountbatten ;
+    :isBloodrelationOf data:Prince_Henry_of_Battenberg ;
+    :isBrotherOf data:Prince_Henry_of_Battenberg ;
+    :isChildOf data:Julie_Countess_of_Hauke,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Alexander_Mountbatten ;
+    :isParentOf data:Alexander_Mountbatten ;
+    :isSiblingOf data:Prince_Henry_of_Battenberg ;
+    :isSonOf data:Julie_Countess_of_Hauke,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Alexander_Mountbatten .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Alexander_Mountbatten ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Alexander_Mountbatten ;
+    :isAncestorOf data:Alexander_Mountbatten ;
+    :isAuntOf data:Alexander_Mountbatten ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Alexander_Mountbatten ;
+    :isParentOf data:Alexander_Mountbatten ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Alexander_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Julie_Countess_of_Hauke,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Queen_Victoria ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Alexander_Mountbatten ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMarriageYear 1917 ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_Mountbatten,
+        data:Alfonso_XIII_of_Spain,
+        data:Earl_of_Londesborough_2nd,
+        data:Julie_Countess_of_Hauke,
+        data:Lady_Grace_Adelaide_Fane,
+        data:Lady_Irene_Denison,
+        data:Prince_Albert,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Princess_Victoria_Eugenia,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Victoria_Eugenia ;
+    :isBloodrelationOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia ;
+    :isBrotherOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Alexander_Mountbatten,
+        data:Princess_Victoria_Eugenia ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :knownAs "Drino"^^xsd:string .
+

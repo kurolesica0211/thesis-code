@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/146_146",
+  "text_file": "Q2324276.txt",
+  "text_key": "Q2324276",
+  "article": "https://en.wikipedia.org/wiki/Prince_Ferdinand,_Duke_of_Castro",
+  "article_key": "Prince Ferdinand, Duke of Castro",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Ferdinando-_Duke_of_Castro",
+    "qid": "Q2324276",
+    "label": "Prince Ferdinando, Duke of Castro"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Ferdinando-_Duke_of_Castro",
+      "qid": "Q2324276",
+      "label": "Prince Ferdinando, Duke of Castro",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Countess_Maria_Carolina_Zamoyska",
+      "qid": "Q3847184",
+      "label": "Countess Maria Carolina Zamoyska",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ranieri-_Duke_of_Castro",
+      "qid": "Q1943652",
+      "label": "Prince Ranieri, Duke of Castro",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Maria_Carolina_Zamoyska",
+      "extracted_local_name": "Maria_Carolina_Zamoyska",
+      "embedding_text": "Maria Carolina Zamoyska",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8363636363636363,
+      "ground_truth_uri": "http://example.com/data#Countess_Maria_Carolina_Zamoyska",
+      "ground_truth_qid": "Q3847184",
+      "ground_truth_label": "Countess Maria Carolina Zamoyska",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Countess Maria Carolina Zamoyska",
+      "best_candidate_label": "Countess Maria Carolina Zamoyska",
+      "best_candidate_qid": "Q3847184",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8363636363636363
+    },
+    {
+      "extracted_uri": "http://example.org/data/Chantal_de_Chevron-Villette",
+      "extracted_local_name": "Chantal_de_Chevron-Villette",
+      "embedding_text": "Chantal de Chevron-Villette",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Ranieri- Duke of Castro",
+      "best_candidate_label": "Prince Ranieri, Duke of Castro",
+      "best_candidate_qid": "Q1943652",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3508771929824561
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ferdinand_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Ferdinand_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Ferdinand of Bourbon-Two Sicilies",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinando Maria",
+      "best_candidate_label": "Prince Ferdinando, Duke of Castro",
+      "best_candidate_qid": "Q2324276",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4897959183673469
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ranieri_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Ranieri_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Ranieri of Bourbon-Two Sicilies",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinando Maria Andrea Alfonso Marcus",
+      "best_candidate_label": "Prince Ferdinando, Duke of Castro",
+      "best_candidate_qid": "Q2324276",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34782608695652173
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 1,
+    "entities_unmatched": 3
+  }
+}

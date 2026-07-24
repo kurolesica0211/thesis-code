@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceAlexanderGeorgKarlHeinrich a :Man,\n        :Person ;\n    :isSonOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:PrinceLouis a :Man,\n        :Person ;\n    :isBrotherOf data:GeorgDonatus .\n\ndata:PrinceLudwigErnstAndreas a :Man,\n        :Person ;\n    :isSonOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:PrincessJohannaMarinaEleonore a :Person,\n        :Woman ;\n    :isDaughterOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:EleonoreOfSolmsHohensolmsLich a :Person,\n        :Woman .\n\ndata:ErnestLouis a :Man,\n        :Person .\n\ndata:PrinceAndrewOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincessAliceOfBattenberg a :Person,\n        :Woman .\n\ndata:CecilieOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;\n    :hasMother data:PrincessAliceOfBattenberg .\n\ndata:GeorgDonatus a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1937 ;\n    :hasFather data:ErnestLouis ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:EleonoreOfSolmsHohensolmsLich ;\n    :hasRelation data:CecilieOfGreeceAndDenmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceAlexanderGeorgKarlHeinrich a :Man,\n        :Person ;\n    :isSonOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:PrinceLouis a :Man,\n        :Person ;\n    :isBrotherOf data:GeorgDonatus .\n\ndata:PrinceLudwigErnstAndreas a :Man,\n        :Person ;\n    :isSonOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:PrincessJohannaMarinaEleonore a :Person,\n        :Woman ;\n    :isDaughterOf data:CecilieOfGreeceAndDenmark,\n        data:GeorgDonatus .\n\ndata:EleonoreOfSolmsHohensolmsLich a :Person,\n        :Woman .\n\ndata:ErnestLouis a :Man,\n        :Person .\n\ndata:PrinceAndrewOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrincessAliceOfBattenberg a :Person,\n        :Woman .\n\ndata:CecilieOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;\n    :hasMother data:PrincessAliceOfBattenberg .\n\ndata:GeorgDonatus a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1937 ;\n    :hasFather data:ErnestLouis ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:EleonoreOfSolmsHohensolmsLich ;\n    :hasRelation data:CecilieOfGreeceAndDenmark .\n\n"
+    }
+]

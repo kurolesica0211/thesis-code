@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon a :Man,
+        :Person ;
+    :hasBirthYear 1998 ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena_Duchess_of_Lugo ;
+    :hasSister data:Victoria_de_Marichalar_y_Borbon ;
+    :knownAs "Froilán"^^xsd:string .
+
+data:Amalio_de_Marichalar_y_Bruguera a :Man,
+        :Person .
+
+data:Concepcion_Saenz_de_Tejada a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Sofia_of_Spain a :Person,
+        :Woman .
+
+data:Victoria_de_Marichalar_y_Borbon a :Person,
+        :Woman ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena_Duchess_of_Lugo .
+
+data:Infanta_Elena_Duchess_of_Lugo a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia_of_Spain .
+
+data:Jaime_de_Marichalar a :Man,
+        :Person ;
+    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
+    :hasMother data:Concepcion_Saenz_de_Tejada .
+

@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria_Antonietta a :Woman ;
+    :isSisterOf data:Princess_Urraca_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman .
+
+data:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria .
+

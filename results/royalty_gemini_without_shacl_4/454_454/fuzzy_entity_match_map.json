@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/454_454",
+  "text_file": "Q75426.txt",
+  "text_key": "Q75426",
+  "article": "https://en.wikipedia.org/wiki/Lady_Gabriella_Kingston",
+  "article_key": "Lady Gabriella Kingston",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Gabriella_Windsor",
+    "qid": "Q75426",
+    "label": "Lady Gabriella Windsor"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Gabriella_Windsor",
+      "qid": "Q75426",
+      "label": "Lady Gabriella Windsor",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Marie_Christine-_Princess_Michael_of_Kent",
+      "qid": "Q93535",
+      "label": "Marie Christine, Princess Michael of Kent",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Michael_of_Kent",
+      "qid": "Q313752",
+      "label": "Prince Michael of Kent",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston",
+      "extracted_local_name": "Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston",
+      "embedding_text": "Lady Gabriella Marina Alexandra Ophelia Kingston",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Gabriella_Windsor",
+      "ground_truth_qid": "Q75426",
+      "ground_truth_label": "Lady Gabriella Windsor",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Gabriella Marina Alexandra Ophelia Kingston",
+      "best_candidate_label": "Lady Gabriella Windsor",
+      "best_candidate_qid": "Q75426",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Michael_of_Kent",
+      "extracted_local_name": "Prince_Michael_of_Kent",
+      "embedding_text": "Prince Michael of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Michael_of_Kent",
+      "ground_truth_qid": "Q313752",
+      "ground_truth_label": "Prince Michael of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Michael of Kent",
+      "best_candidate_label": "Prince Michael of Kent",
+      "best_candidate_qid": "Q313752",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Michael_of_Kent",
+      "extracted_local_name": "Princess_Michael_of_Kent",
+      "embedding_text": "Princess Michael of Kent",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Marie_Christine-_Princess_Michael_of_Kent",
+      "ground_truth_qid": "Q93535",
+      "ground_truth_label": "Marie Christine, Princess Michael of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Michael of Kent",
+      "best_candidate_label": "Marie Christine, Princess Michael of Kent",
+      "best_candidate_qid": "Q93535",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Thomas_Henry_Robin_Kingston",
+      "extracted_local_name": "Thomas_Henry_Robin_Kingston",
+      "embedding_text": "Thomas Henry Robin Kingston",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

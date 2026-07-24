@@ -1,0 +1,371 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:1904 a :DomainEntity .
+
+data:Friedrich_Franz_Michael a :Person ;
+    :hasRelation data:Friedrich_Franz_Michael ;
+    :isBloodrelationOf data:Friedrich_Franz_Michael ;
+    :isSiblingOf data:Friedrich_Franz_Michael .
+
+data:Adolphus_Frederick_VI a :Man,
+        :Person ;
+    :hasBrother data:Adolphus_Frederick_VI ;
+    :hasRelation data:Adolphus_Frederick_VI ;
+    :isBloodrelationOf data:Adolphus_Frederick_VI ;
+    :isBrotherOf data:Adolphus_Frederick_VI ;
+    :isSiblingOf data:Adolphus_Frederick_VI .
+
+data:Johann_Albrecht a :Man,
+        :Person ;
+    :hasBrother data:Johann_Albrecht ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Johann_Albrecht ;
+    :isBrotherOf data:Johann_Albrecht ;
+    :isSiblingOf data:Johann_Albrecht .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isAuntOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Christian_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX ;
+    :hasChild data:Thyra_of_Denmark ;
+    :hasDaughter data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX ;
+    :isBrotherOf data:Christian_IX ;
+    :isFatherOf data:Thyra_of_Denmark ;
+    :isParentOf data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian_IX ;
+    :isUncleOf data:Thyra_of_Denmark .
+
+data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasChild data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSon data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBloodrelationOf data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isFatherOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isParentOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isUncleOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin .
+
+data:Alexandrine a :Person,
+        :Woman ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :isAuntOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBloodrelationOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isSisterOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :isAuntOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBloodrelationOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isSisterOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasBrother data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasParent data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBrotherOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isChildOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isSonOf data:Frederick_Francis_IV .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasFather data:Christian_IX ;
+    :hasParent data:Christian_IX ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isChildOf data:Christian_IX ;
+    :isDaughterOf data:Christian_IX ;
+    :isMotherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+
+data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasBrother data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasParent data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBloodrelationOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isChildOf data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isSonOf data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isUncleOf data:Frederick_Francis_IV .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Alexandra_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs data:Friedrich_Franz_Michael ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasChild data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasMarriageYear data:1904 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Alexandrine,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie,
+        data:Christian_IX,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_II_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke,
+        data:Johann_Albrecht,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :hasSon data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isAncestorOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isBloodrelationOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isBrotherOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isChildOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isFatherOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isParentOf data:Friedrich_Franz_Hereditary_Grand_Duke ;
+    :isSiblingOf data:Alexandrine,
+        data:Cecilie,
+        data:Frederick_Francis_IV ;
+    :isSonOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_I_GrandDuke_of_Mecklenburg_Schwerin ;
+    :isUncleOf data:Friedrich_Franz_Hereditary_Grand_Duke .
+

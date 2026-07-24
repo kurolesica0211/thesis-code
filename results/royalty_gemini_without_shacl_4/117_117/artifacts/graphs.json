@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Alfonso a :Man,\n        :Person .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Infanta_Margarita_Duchess_of_Soria a :Person,\n        :Woman .\n\ndata:Infanta_Pilar_Duchess_of_Badajoz a :Person,\n        :Woman .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person ;\n    :hasFather data:Alfonso_XIII .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Alfonso ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Queen_Sofia ;\n    :hasSister data:Infanta_Margarita_Duchess_of_Soria,\n        data:Infanta_Pilar_Duchess_of_Badajoz .\n\ndata:King_Paul_of_Greece a :Man,\n        :Person .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Queen_Sofia a :Person,\n        :Woman ;\n    :hasFather data:King_Paul_of_Greece .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Alfonso a :Man,\n        :Person .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Infanta_Margarita_Duchess_of_Soria a :Person,\n        :Woman .\n\ndata:Infanta_Pilar_Duchess_of_Badajoz a :Person,\n        :Woman .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man,\n        :Person ;\n    :hasFather data:Alfonso_XIII .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Alfonso ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Queen_Sofia ;\n    :hasSister data:Infanta_Margarita_Duchess_of_Soria,\n        data:Infanta_Pilar_Duchess_of_Badajoz .\n\ndata:King_Paul_of_Greece a :Man,\n        :Person .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Queen_Sofia a :Person,\n        :Woman ;\n    :hasFather data:King_Paul_of_Greece .\n\n"
+    }
+]

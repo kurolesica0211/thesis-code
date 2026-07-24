@@ -1,0 +1,311 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Greece a :Woman ;
+    :hasRelation data:Alexandra_of_Greece ;
+    :hasSister data:Alexandra_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece ;
+    :isSisterOf data:Alexandra_of_Greece .
+
+data:Aimone_of_Savoy-Aosta a :Man ;
+    :hasBrother data:Aimone_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Olga_of_Greece ;
+    :isBloodrelationOf data:Aimone_of_Savoy-Aosta ;
+    :isBrotherOf data:Aimone_of_Savoy-Aosta ;
+    :isSiblingOf data:Aimone_of_Savoy-Aosta .
+
+data:Isabella_Princess a :Woman ;
+    :hasRelation data:Isabella_Princess,
+        data:Pierre_Murat ;
+    :hasSister data:Isabella_Princess ;
+    :isBloodrelationOf data:Isabella_Princess ;
+    :isSiblingOf data:Isabella_Princess ;
+    :isSisterOf data:Isabella_Princess .
+
+data:Olga_of_Greece a :Woman ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Olga_of_Greece ;
+    :hasSister data:Olga_of_Greece ;
+    :isBloodrelationOf data:Olga_of_Greece ;
+    :isSiblingOf data:Olga_of_Greece ;
+    :isSisterOf data:Olga_of_Greece .
+
+data:Pierre_Murat a :Man ;
+    :hasBrother data:Pierre_Murat ;
+    :hasRelation data:Isabella_Princess,
+        data:Pierre_Murat ;
+    :isBloodrelationOf data:Pierre_Murat ;
+    :isBrotherOf data:Pierre_Murat ;
+    :isSiblingOf data:Pierre_Murat .
+
+data:Marina_Karella a :Woman ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Marina_Karella ;
+    :isBloodrelationOf data:Marina_Karella ;
+    :isSiblingOf data:Marina_Karella ;
+    :isSisterOf data:Marina_Karella .
+
+data:Henri_Count_of_Paris a :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris ;
+    :isSiblingOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris ;
+    :isUncleOf data:Michael_of_Greece_and_Denmark .
+
+data:Isabelle_of_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasDaughter data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Isabelle_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:Isabelle_of_Orl%C3%A9ans ;
+    :isMotherOf data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isParentOf data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isSiblingOf data:Isabelle_of_Orl%C3%A9ans ;
+    :isSisterOf data:Isabelle_of_Orl%C3%A9ans .
+
+data:Jean_dOrl%C3%A9ans a :Ancestor,
+        :Man ;
+    :hasBrother data:Jean_dOrl%C3%A9ans ;
+    :hasChild data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasDaughter data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Jean_dOrl%C3%A9ans ;
+    :isBrotherOf data:Jean_dOrl%C3%A9ans ;
+    :isFatherOf data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isParentOf data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isSiblingOf data:Jean_dOrl%C3%A9ans ;
+    :isUncleOf data:Fran%C3%A7oise_dOrl%C3%A9ans .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christopher_of_Greece_and_Denmark,
+        data:Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Christopher_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasChild data:George_I_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:George_I_of_Greece ;
+    :isAncestorOf data:Christopher_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:George_I_of_Greece ;
+    :isParentOf data:George_I_of_Greece ;
+    :isSiblingOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:George_I_of_Greece .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Christopher_of_Greece_and_Denmark ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christopher_of_Greece_and_Denmark,
+        data:Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isChildOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isSonOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Christopher_of_Greece_and_Denmark .
+
+data:Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Christopher_of_Greece_and_Denmark ;
+    :hasChild data:Michael_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Michael_of_Greece_and_Denmark .
+
+data:Michael_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Michael_of_Greece_and_Denmark ;
+    :hasFather data:Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasParent data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :isBloodrelationOf data:Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Michael_of_Greece_and_Denmark ;
+    :isChildOf data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :isSiblingOf data:Michael_of_Greece_and_Denmark ;
+    :isSonOf data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans .
+
+data:Fran%C3%A7oise_dOrl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Michael_of_Greece_and_Denmark ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Jean_dOrl%C3%A9ans ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+    :hasParent data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece_and_Denmark,
+        data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:George_I_of_Greece,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans,
+        data:Marina_Karella,
+        data:Michael_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasSon data:Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris ;
+    :isChildOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans ;
+    :isDaughterOf data:Isabelle_of_Orl%C3%A9ans,
+        data:Jean_dOrl%C3%A9ans ;
+    :isMotherOf data:Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris ;
+    :isSisterOf data:Fran%C3%A7oise_dOrl%C3%A9ans,
+        data:Henri_Count_of_Paris .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichWilhelm a :Man,\n        :Person ;\n    :isSonOf data:KiraKirillovna .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:KiraKirillovna a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Vladimir ;\n    :hasDeathYear 1967 ;\n    :hasFather data:KirillVladimirovich ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:VictoriaMelita ;\n    :hasRelation data:LouisFerdinand ;\n    :hasSister data:Maria .\n\ndata:KirillVladimirovich a :Ancestor,\n        :Man .\n\ndata:LouisFerdinand a :Man,\n        :Person ;\n    :hasMother data:Cecilie .\n\ndata:Maria a :Person,\n        :Woman .\n\ndata:VictoriaMelita a :Ancestor,\n        :Woman .\n\ndata:Vladimir a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichWilhelm a :Man,\n        :Person ;\n    :isSonOf data:KiraKirillovna .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:KiraKirillovna a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Vladimir ;\n    :hasDeathYear 1967 ;\n    :hasFather data:KirillVladimirovich ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:VictoriaMelita ;\n    :hasRelation data:LouisFerdinand ;\n    :hasSister data:Maria .\n\ndata:KirillVladimirovich a :Ancestor,\n        :Man .\n\ndata:LouisFerdinand a :Man,\n        :Person ;\n    :hasMother data:Cecilie .\n\ndata:Maria a :Person,\n        :Woman .\n\ndata:VictoriaMelita a :Ancestor,\n        :Woman .\n\ndata:Vladimir a :Man,\n        :Person .\n\n"
+    }
+]

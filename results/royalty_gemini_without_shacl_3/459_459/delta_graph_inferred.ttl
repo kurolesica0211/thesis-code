@@ -1,0 +1,134 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Giovanni_Damiani a :Man ;
+    :hasBrother data:Giovanni_Damiani ;
+    :hasRelation data:Giovanni_Damiani ;
+    :isBloodrelationOf data:Giovanni_Damiani ;
+    :isBrotherOf data:Giovanni_Damiani ;
+    :isSiblingOf data:Giovanni_Damiani .
+
+data:Freddy_Knatchbull a :Man ;
+    :hasBrother data:Freddy_Knatchbull ;
+    :hasRelation data:Freddy_Knatchbull ;
+    :isBloodrelationOf data:Freddy_Knatchbull ;
+    :isBrotherOf data:Freddy_Knatchbull ;
+    :isSiblingOf data:Freddy_Knatchbull .
+
+data:Atalanta_Cowan a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1962 ;
+    :hasChild data:Daisy_Isadora_Louise_Knatchbull ;
+    :hasDaughter data:Daisy_Isadora_Louise_Knatchbull ;
+    :hasRelation data:Atalanta_Cowan,
+        data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull,
+        data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasSister data:Atalanta_Cowan ;
+    :isAncestorOf data:Daisy_Isadora_Louise_Knatchbull ;
+    :isAuntOf data:Daisy_Isadora_Louise_Knatchbull ;
+    :isBloodrelationOf data:Atalanta_Cowan ;
+    :isMotherOf data:Daisy_Isadora_Louise_Knatchbull ;
+    :isParentOf data:Daisy_Isadora_Louise_Knatchbull ;
+    :isSiblingOf data:Atalanta_Cowan ;
+    :isSisterOf data:Atalanta_Cowan .
+
+data:Wendy_Leach a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasChild data:Frederick_Freddy_Knatchbull ;
+    :hasRelation data:Atalanta_Cowan,
+        data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull,
+        data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasSister data:Wendy_Leach ;
+    :hasSon data:Frederick_Freddy_Knatchbull ;
+    :isAncestorOf data:Frederick_Freddy_Knatchbull ;
+    :isAuntOf data:Frederick_Freddy_Knatchbull ;
+    :isBloodrelationOf data:Wendy_Leach ;
+    :isMotherOf data:Frederick_Freddy_Knatchbull ;
+    :isParentOf data:Frederick_Freddy_Knatchbull ;
+    :isSiblingOf data:Wendy_Leach ;
+    :isSisterOf data:Wendy_Leach .
+
+data:Philip_Knatchbull a :Ancestor,
+        :Man ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Philip_Knatchbull ;
+    :hasChild data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :hasDaughter data:Daisy_Isadora_Louise_Knatchbull ;
+    :hasRelation data:Atalanta_Cowan,
+        data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull,
+        data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasSon data:Frederick_Freddy_Knatchbull ;
+    :isAncestorOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isBloodrelationOf data:Philip_Knatchbull ;
+    :isBrotherOf data:Philip_Knatchbull ;
+    :isFatherOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isParentOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isSiblingOf data:Philip_Knatchbull ;
+    :isUncleOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull .
+
+data:Daisy_Isadora_Louise_Knatchbull a :Woman ;
+    :hasAncestor data:Atalanta_Cowan,
+        data:Philip_Knatchbull ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Frederick_Freddy_Knatchbull ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Atalanta_Cowan ;
+    :hasParent data:Atalanta_Cowan,
+        data:Philip_Knatchbull ;
+    :hasRelation data:Atalanta_Cowan,
+        data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull,
+        data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasSister data:Daisy_Isadora_Louise_Knatchbull ;
+    :isBloodrelationOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isChildOf data:Atalanta_Cowan,
+        data:Philip_Knatchbull ;
+    :isDaughterOf data:Atalanta_Cowan,
+        data:Philip_Knatchbull ;
+    :isSiblingOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isSisterOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull .
+
+data:Frederick_Freddy_Knatchbull a :Man ;
+    :hasAncestor data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasBirthYear 2003 ;
+    :hasBrother data:Frederick_Freddy_Knatchbull ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Wendy_Leach ;
+    :hasParent data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasRelation data:Atalanta_Cowan,
+        data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull,
+        data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :hasSister data:Daisy_Isadora_Louise_Knatchbull ;
+    :isBloodrelationOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isBrotherOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isChildOf data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :isSiblingOf data:Daisy_Isadora_Louise_Knatchbull,
+        data:Frederick_Freddy_Knatchbull ;
+    :isSonOf data:Philip_Knatchbull,
+        data:Wendy_Leach ;
+    :knownAs data:Freddy_Knatchbull .
+

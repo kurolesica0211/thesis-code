@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1908 ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+
+data:Patricia_of_Connaught a :Person,
+        :Woman ;
+    :hasFather data:Arthur_of_Connaught ;
+    :hasMother data:Louise_Margaret_of_Prussia .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Arthur_of_Connaught a :Man,
+        :Person .
+
+data:Louise_Margaret_of_Prussia a :Person,
+        :Woman .
+
+data:Lu%C3%ADs_I a :Man,
+        :Person .
+
+data:Am%C3%A9lie_dOrl%C3%A9ans a :Person,
+        :Woman .
+
+data:Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_I .
+

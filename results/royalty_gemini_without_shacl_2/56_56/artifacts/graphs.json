@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Prince_Philip ;\n    :hasMarriageYear 1986 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :hasRelation data:Sarah_Ferguson ;\n    :isBrotherOf data:King_Charles_III ;\n    :isFatherOf data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:Princess_Beatrice a :Person,\n        :Woman .\n\ndata:Princess_Eugenie a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Mountbatten-Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Prince_Philip ;\n    :hasMarriageYear 1986 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :hasRelation data:Sarah_Ferguson ;\n    :isBrotherOf data:King_Charles_III ;\n    :isFatherOf data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sarah_Ferguson a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Beatrice,\n        data:Princess_Eugenie .\n\ndata:Princess_Beatrice a :Person,\n        :Woman .\n\ndata:Princess_Eugenie a :Person,\n        :Woman .\n\n"
+    }
+]

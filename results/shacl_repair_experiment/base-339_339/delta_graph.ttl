@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Donata_of_Castell_R%C3%BCdenhausen a :Ancestor .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Ancestor .
+
+data:Kira_of_Russia a :Ancestor ;
+    :isMotherOf data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Sophie_of_Isenburg a :Ancestor .
+
+data:Wilhelm_II a :Ancestor .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor .
+

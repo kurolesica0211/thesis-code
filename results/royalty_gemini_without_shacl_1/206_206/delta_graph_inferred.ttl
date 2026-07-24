@@ -1,0 +1,389 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isAncestorOf data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAuntOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Catherine_Oxenberg a :Woman ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSisterOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:Howard_Oxenberg ;
+    :hasChild data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasDaughter data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasDeathYear 2010 ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSon data:Robert_Oxenberg ;
+    :isAncestorOf data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Howard_Oxenberg ;
+    :isBrotherOf data:Howard_Oxenberg ;
+    :isFatherOf data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isParentOf data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSiblingOf data:Howard_Oxenberg ;
+    :isUncleOf data:Ashley_Harcourt,
+        data:Christina_Oxenberg,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBirthYear 1936 ;
+    :hasChild data:Christina_Oxenberg,
+        data:Neil_Balfour ;
+    :hasDaughter data:Christina_Oxenberg ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasSon data:Neil_Balfour ;
+    :isAncestorOf data:Christina_Oxenberg,
+        data:Neil_Balfour ;
+    :isAuntOf data:Christina_Oxenberg,
+        data:Neil_Balfour ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Christina_Oxenberg,
+        data:Neil_Balfour ;
+    :isParentOf data:Christina_Oxenberg,
+        data:Neil_Balfour ;
+    :isSiblingOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Ashley_Harcourt a :Woman ;
+    :hasAncestor data:Howard_Oxenberg ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasParent data:Howard_Oxenberg ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg ;
+    :isDaughterOf data:Howard_Oxenberg ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSisterOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg .
+
+data:Robert_Oxenberg a :Man ;
+    :hasAncestor data:Howard_Oxenberg ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasParent data:Howard_Oxenberg ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBrotherOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSonOf data:Howard_Oxenberg .
+
+data:Starr_Oxenberg a :Woman ;
+    :hasAncestor data:Howard_Oxenberg ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasParent data:Howard_Oxenberg ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg ;
+    :isDaughterOf data:Howard_Oxenberg ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSisterOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg .
+
+data:Neil_Balfour a :Man ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasParent data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBrotherOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isChildOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSonOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Christina_Oxenberg a :Woman ;
+    :hasAncestor data:Howard_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:Neil_Balfour,
+        data:Robert_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Neil_Balfour,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :hasSister data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isBloodrelationOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg ;
+    :isSisterOf data:Ashley_Harcourt,
+        data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Neil_Balfour,
+        data:Robert_Oxenberg,
+        data:Starr_Oxenberg .
+

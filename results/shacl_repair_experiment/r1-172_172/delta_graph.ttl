@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AntonyArmstrong-Jones :isFatherOf data:DavidArmstrong-Jones .
+
+data:LadyMargaritaArmstrong-Jones :hasFather data:DavidArmstrong-Jones ;
+    :hasMother data:SerenaStanhope ;
+    :knownAs "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string .
+
+data:LadySarahChatto a :Ancestor .
+
+data:ViscountLinley a :Ancestor .
+
+data:PrincessMargaret :isMotherOf data:DavidArmstrong-Jones .
+
+data:SerenaStanhope a :Ancestor .
+
+data:DavidArmstrong-Jones :isSonOf data:PrincessMargaret .
+

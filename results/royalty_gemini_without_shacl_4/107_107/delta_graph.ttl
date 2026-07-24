@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:BenjaminPieterFloris a :Man,
+        :Person ;
+    :hasBirthYear 2008 ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven .
+
+data:IsabellaLilyJuliana a :Person,
+        :Woman ;
+    :hasBirthYear 2002 ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven .
+
+data:SamuelBernhardLouis a :Man,
+        :Person ;
+    :hasBirthYear 2004 ;
+    :isChildOf data:AnnetteSekreve,
+        data:BernhardVanVollenhoven .
+
+data:Floris a :Man,
+        :Person .
+
+data:Margriet a :Person,
+        :Woman .
+
+data:Maurits a :Man,
+        :Person .
+
+data:PieterChristiaan a :Man,
+        :Person .
+
+data:PieterVanVollenhoven a :Man,
+        :Person .
+
+data:AnnetteSekreve a :Person,
+        :Woman ;
+    :hasBirthYear 1972 .
+
+data:BernhardVanVollenhoven a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasFather data:PieterVanVollenhoven ;
+    :hasMother data:Margriet ;
+    :isBrotherOf data:Floris,
+        data:Maurits,
+        data:PieterChristiaan .
+

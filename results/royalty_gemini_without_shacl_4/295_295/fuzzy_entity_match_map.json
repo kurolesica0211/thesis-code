@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/295_295",
+  "text_file": "Q4383359.txt",
+  "text_key": "Q4383359",
+  "article": "https://en.wikipedia.org/wiki/Prince_Christian_of_Hanover",
+  "article_key": "Prince Christian of Hanover",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Christian_of_Hanover",
+    "qid": "Q4383359",
+    "label": "Prince Christian of Hanover"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Christian_of_Hanover",
+      "qid": "Q4383359",
+      "label": "Prince Christian of Hanover",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Chantal_Hochuli",
+      "qid": "Q3336838",
+      "label": "Chantal Hochuli",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover_1",
+      "qid": "Q58070",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ernst_August_of_Hanover",
+      "qid": "Q4383225",
+      "label": "Prince Ernst August of Hanover",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Chantal_Hochuli",
+      "extracted_local_name": "Chantal_Hochuli",
+      "embedding_text": "Chantal Hochuli",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Chantal_Hochuli",
+      "ground_truth_qid": "Q3336838",
+      "ground_truth_label": "Chantal Hochuli",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Chantal Hochuli",
+      "best_candidate_label": "Chantal Hochuli",
+      "best_candidate_qid": "Q3336838",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_of_Hanover",
+      "extracted_local_name": "Christian_of_Hanover",
+      "embedding_text": "Christian of Hanover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Christian_of_Hanover",
+      "ground_truth_qid": "Q4383359",
+      "ground_truth_label": "Prince Christian of Hanover",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christian of Hanover",
+      "best_candidate_label": "Prince Christian of Hanover",
+      "best_candidate_qid": "Q4383359",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ernst_August_von_Hannover",
+      "extracted_local_name": "Ernst_August_von_Hannover",
+      "embedding_text": "Ernst August von Hannover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Ernst_August_of_Hanover",
+      "ground_truth_qid": "Q4383225",
+      "ground_truth_label": "Prince Ernst August of Hanover",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ernst August von Hannover",
+      "best_candidate_label": "Prince Ernst August of Hanover",
+      "best_candidate_qid": "Q4383225",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alessandra_de_Osma",
+      "extracted_local_name": "Alessandra_de_Osma",
+      "embedding_text": "Alessandra de Osma",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christian Prince of Hanover",
+      "best_candidate_label": "Prince Christian of Hanover",
+      "best_candidate_qid": "Q4383359",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35555555555555557
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

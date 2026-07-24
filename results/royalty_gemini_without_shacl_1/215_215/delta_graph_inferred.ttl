@@ -1,0 +1,173 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasBirthYear 1819 ;
+    :hasBrother data:Prince_Albert ;
+    :hasDeathYear 1861 ;
+    :hasFather data:Duke_Ernest_I ;
+    :hasParent data:Duke_Ernest_I ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isChildOf data:Duke_Ernest_I ;
+    :isSiblingOf data:Prince_Albert ;
+    :isSonOf data:Duke_Ernest_I .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasMarriageYear 1840 ;
+    :hasMother data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasParent data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isChildOf data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isDaughterOf data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Countess_Augusta_Reuss a :Ancestor,
+        :Woman ;
+    :hasChild data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasDaughter data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :hasSister data:Countess_Augusta_Reuss ;
+    :hasSon data:Duke_Ernest_I ;
+    :isAncestorOf data:Duke_Ernest_I,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :isAuntOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isBloodrelationOf data:Countess_Augusta_Reuss ;
+    :isMotherOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isParentOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isSiblingOf data:Countess_Augusta_Reuss ;
+    :isSisterOf data:Countess_Augusta_Reuss .
+
+data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,
+        :Man ;
+    :hasBrother data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasChild data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasDaughter data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :hasSon data:Duke_Ernest_I ;
+    :isAncestorOf data:Duke_Ernest_I,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isBrotherOf data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isFatherOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isParentOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isSiblingOf data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isUncleOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+
+data:Duke_Ernest_I a :Ancestor,
+        :Man ;
+    :hasAncestor data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasBrother data:Duke_Ernest_I ;
+    :hasChild data:Prince_Albert ;
+    :hasFather data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasMother data:Countess_Augusta_Reuss ;
+    :hasParent data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasSon data:Prince_Albert ;
+    :isAncestorOf data:Prince_Albert ;
+    :isBloodrelationOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isBrotherOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isChildOf data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isFatherOf data:Prince_Albert ;
+    :isParentOf data:Prince_Albert ;
+    :isSiblingOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isSonOf data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isUncleOf data:Prince_Albert,
+        data:Queen_Victoria .
+
+data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasBrother data:Duke_Ernest_I ;
+    :hasChild data:Queen_Victoria ;
+    :hasDaughter data:Queen_Victoria ;
+    :hasFather data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasMother data:Countess_Augusta_Reuss ;
+    :hasParent data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :hasRelation data:Countess_Augusta_Reuss,
+        data:Duke_Ernest_I,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld,
+        data:Prince_Albert,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isAncestorOf data:Queen_Victoria ;
+    :isAuntOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isChildOf data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isDaughterOf data:Countess_Augusta_Reuss,
+        data:Duke_Francis_of_Saxe-Coburg-Saalfeld ;
+    :isMotherOf data:Queen_Victoria ;
+    :isParentOf data:Queen_Victoria ;
+    :isSiblingOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :isSisterOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+

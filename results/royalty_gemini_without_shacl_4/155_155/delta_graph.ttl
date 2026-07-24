@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Catherine_Oxenberg a :Woman ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Casper_Van_Dien,
+        data:Robert_Evans ;
+    :isSisterOf data:Christina_Oxenberg .
+
+data:Ellis_Jones a :Man .
+
+data:Casper_Van_Dien a :Man .
+
+data:Christina_Oxenberg a :Woman .
+
+data:Howard_Oxenberg a :Man ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 2010 .
+
+data:India_Riven_Oxenberg a :Woman ;
+    :hasFather data:William_Weitz_Shaffer .
+
+data:Prince_Paul_of_Yugoslavia a :Man .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+
+data:Robert_Evans a :Man .
+
+data:William_Weitz_Shaffer a :Man .
+

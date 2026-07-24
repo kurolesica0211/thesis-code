@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Edward a :Man ;\n    :hasBirthYear 1964 ;\n    :hasChild data:James_Mountbatten-Windsor,\n        data:Lady_Louise_Mountbatten-Windsor ;\n    :hasFather data:Prince_Philip ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :isBrotherOf data:Andrew,\n        data:King_Charles_III ;\n    :isSisterOf data:Anne .\n\ndata:Sophie_Rhys-Jones a :Woman ;\n    :hasChild data:James_Mountbatten-Windsor,\n        data:Lady_Louise_Mountbatten-Windsor ;\n    :hasMarriageYear 1999 .\n\ndata:Andrew a :Man .\n\ndata:Anne a :Woman .\n\ndata:King_Charles_III a :Man .\n\ndata:Prince_Philip a :Man ;\n    :hasDeathYear 2021 .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:James_Mountbatten-Windsor a :Man .\n\ndata:Lady_Louise_Mountbatten-Windsor a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Edward a :Man ;\n    :hasBirthYear 1964 ;\n    :hasChild data:James_Mountbatten-Windsor,\n        data:Lady_Louise_Mountbatten-Windsor ;\n    :hasFather data:Prince_Philip ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :isBrotherOf data:Andrew,\n        data:King_Charles_III ;\n    :isSisterOf data:Anne .\n\ndata:Sophie_Rhys-Jones a :Woman ;\n    :hasChild data:James_Mountbatten-Windsor,\n        data:Lady_Louise_Mountbatten-Windsor ;\n    :hasMarriageYear 1999 .\n\ndata:Andrew a :Man .\n\ndata:Anne a :Woman .\n\ndata:King_Charles_III a :Man .\n\ndata:Prince_Philip a :Man ;\n    :hasDeathYear 2021 .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:James_Mountbatten-Windsor a :Man .\n\ndata:Lady_Louise_Mountbatten-Windsor a :Woman .\n\n"
+    }
+]

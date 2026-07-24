@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelClaudeHamiltonBowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ClaudeBowes-Lyon ;\n    :hasMarriageYear 1928 ;\n    :hasRelation data:ElizabethMargaretCator ;\n    :hasSon data:FergusBowes-Lyon ;\n    :isSiblingOf data:ElizabethQueenMother ;\n    :isUncleOf data:QueenElizabethII ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\ndata:ClaudeBowes-Lyon a :Man,\n        :Person .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 ;\n    :hasFather data:JohnCator .\n\ndata:ElizabethQueenMother a :Person,\n        :Woman ;\n    :hasRelation data:PrinceAlbertDukeOfYork .\n\ndata:FergusBowes-Lyon a :Man,\n        :Person .\n\ndata:JohnCator a :Man,\n        :Person .\n\ndata:PrinceAlbertDukeOfYork a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelClaudeHamiltonBowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ClaudeBowes-Lyon ;\n    :hasMarriageYear 1928 ;\n    :hasRelation data:ElizabethMargaretCator ;\n    :hasSon data:FergusBowes-Lyon ;\n    :isSiblingOf data:ElizabethQueenMother ;\n    :isUncleOf data:QueenElizabethII ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\ndata:ClaudeBowes-Lyon a :Man,\n        :Person .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 ;\n    :hasFather data:JohnCator .\n\ndata:ElizabethQueenMother a :Person,\n        :Woman ;\n    :hasRelation data:PrinceAlbertDukeOfYork .\n\ndata:FergusBowes-Lyon a :Man,\n        :Person .\n\ndata:JohnCator a :Man,\n        :Person .\n\ndata:PrinceAlbertDukeOfYork a :Man,\n        :Person .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\n"
+    }
+]

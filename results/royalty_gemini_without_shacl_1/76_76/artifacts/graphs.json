@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Fran%C3%A7oise a :Woman .\n\ndata:Princess_Mariam a :Woman .\n\ndata:Princess_Mariam_de_Bagration a :Woman ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Bagrat_de_Bagration,\n        data:Jorge_de_Bagration ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;\n    :hasRelation data:Dr_Tom%C3%A1s_Ortiz_y_Valero ;\n    :hasSon data:Son_of_Mariam_and_Tomas .\n\ndata:Princess_Monique a :Woman .\n\ndata:Princess_Nuria a :Woman .\n\ndata:Bagrat_de_Bagration a :Man .\n\ndata:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman .\n\ndata:Jorge_de_Bagration a :Man .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man .\n\ndata:Son_of_Mariam_and_Tomas a :Man ;\n    :hasFather data:Dr_Tom%C3%A1s_Ortiz_y_Valero .\n\ndata:Dr_Tom%C3%A1s_Ortiz_y_Valero a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Fran%C3%A7oise a :Woman .\n\ndata:Princess_Mariam a :Woman .\n\ndata:Princess_Mariam_de_Bagration a :Woman ;\n    :hasBirthYear 1947 ;\n    :hasBrother data:Bagrat_de_Bagration,\n        data:Jorge_de_Bagration ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;\n    :hasRelation data:Dr_Tom%C3%A1s_Ortiz_y_Valero ;\n    :hasSon data:Son_of_Mariam_and_Tomas .\n\ndata:Princess_Monique a :Woman .\n\ndata:Princess_Nuria a :Woman .\n\ndata:Bagrat_de_Bagration a :Man .\n\ndata:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman .\n\ndata:Jorge_de_Bagration a :Man .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man .\n\ndata:Son_of_Mariam_and_Tomas a :Man ;\n    :hasFather data:Dr_Tom%C3%A1s_Ortiz_y_Valero .\n\ndata:Dr_Tom%C3%A1s_Ortiz_y_Valero a :Man .\n\n"
+    }
+]

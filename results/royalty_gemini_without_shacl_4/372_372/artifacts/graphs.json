@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeWilliam a :Man,\n        :Person ;\n    :hasBirthYear 1915 ;\n    :hasChild data:Friederike,\n        data:Georg,\n        data:Welf ;\n    :hasDeathYear 2006 ;\n    :hasFather data:ErnestAugustus ;\n    :hasMarriageYear 1946 ;\n    :hasMother data:VictoriaLouise ;\n    :hasRelation data:Sophie ;\n    :hasSister data:Frederica .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman .\n\ndata:AndrewOfGreece a :Man,\n        :Person .\n\ndata:AugustaVictoria a :Person,\n        :Woman .\n\ndata:ErnestAugustus a :Man,\n        :Person .\n\ndata:Frederica a :Person,\n        :Woman .\n\ndata:Sophie a :Person,\n        :Woman ;\n    :hasChild data:Friederike,\n        data:Georg,\n        data:Welf ;\n    :hasFather data:AndrewOfGreece ;\n    :hasMother data:AliceOfBattenberg .\n\ndata:VictoriaLouise a :Person,\n        :Woman ;\n    :hasFather data:WilhelmII ;\n    :hasMother data:AugustaVictoria .\n\ndata:WilhelmII a :Man,\n        :Person .\n\ndata:Friederike a :Person,\n        :Woman .\n\ndata:Georg a :Man,\n        :Person .\n\ndata:Welf a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeWilliam a :Man,\n        :Person ;\n    :hasBirthYear 1915 ;\n    :hasChild data:Friederike,\n        data:Georg,\n        data:Welf ;\n    :hasDeathYear 2006 ;\n    :hasFather data:ErnestAugustus ;\n    :hasMarriageYear 1946 ;\n    :hasMother data:VictoriaLouise ;\n    :hasRelation data:Sophie ;\n    :hasSister data:Frederica .\n\ndata:AliceOfBattenberg a :Person,\n        :Woman .\n\ndata:AndrewOfGreece a :Man,\n        :Person .\n\ndata:AugustaVictoria a :Person,\n        :Woman .\n\ndata:ErnestAugustus a :Man,\n        :Person .\n\ndata:Frederica a :Person,\n        :Woman .\n\ndata:Sophie a :Person,\n        :Woman ;\n    :hasChild data:Friederike,\n        data:Georg,\n        data:Welf ;\n    :hasFather data:AndrewOfGreece ;\n    :hasMother data:AliceOfBattenberg .\n\ndata:VictoriaLouise a :Person,\n        :Woman ;\n    :hasFather data:WilhelmII ;\n    :hasMother data:AugustaVictoria .\n\ndata:WilhelmII a :Man,\n        :Person .\n\ndata:Friederike a :Person,\n        :Woman .\n\ndata:Georg a :Man,\n        :Person .\n\ndata:Welf a :Man,\n        :Person .\n\n"
+    }
+]

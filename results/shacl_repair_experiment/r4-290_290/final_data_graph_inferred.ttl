@@ -1,0 +1,245 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Camilla_Parker_Bowles a :Person,
+        :Woman ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Female ;
+    :hasSister data:Camilla_Parker_Bowles ;
+    :isBloodrelationOf data:Camilla_Parker_Bowles ;
+    :isSiblingOf data:Camilla_Parker_Bowles ;
+    :isSisterOf data:Camilla_Parker_Bowles .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Male ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Harry,
+        data:William ;
+    :isBloodrelationOf data:Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Philip_Duke_of_Edinburgh ;
+    :isFatherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh ;
+    :isUncleOf data:Charles_III .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_VI ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Charles_III,
+        data:Elizabeth_II,
+        data:Harry,
+        data:William ;
+    :isBloodrelationOf data:George_VI ;
+    :isBrotherOf data:George_VI ;
+    :isFatherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:George_VI ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Lady_Diana_Spencer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Female ;
+    :hasSister data:Lady_Diana_Spencer ;
+    :hasSon data:Harry,
+        data:William ;
+    :isAncestorOf data:Harry,
+        data:William ;
+    :isAuntOf data:Harry,
+        data:William ;
+    :isBloodrelationOf data:Lady_Diana_Spencer ;
+    :isMotherOf data:Harry,
+        data:William ;
+    :isParentOf data:Harry,
+        data:William ;
+    :isSiblingOf data:Lady_Diana_Spencer ;
+    :isSisterOf data:Lady_Diana_Spencer .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_VI ;
+    :hasChild data:Charles_III ;
+    :hasFather data:George_VI ;
+    :hasParent data:George_VI ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Harry,
+        data:William ;
+    :isAuntOf data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:George_VI ;
+    :isDaughterOf data:George_VI ;
+    :isMotherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Harry a :Man,
+        :Person ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasBrother data:Harry,
+        data:William ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasParent data:Charles_III,
+        data:Lady_Diana_Spencer ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Harry,
+        data:William ;
+    :isBrotherOf data:Harry,
+        data:William ;
+    :isChildOf data:Charles_III,
+        data:Lady_Diana_Spencer ;
+    :isSiblingOf data:Harry,
+        data:William ;
+    :isSonOf data:Charles_III,
+        data:Lady_Diana_Spencer .
+
+data:William a :Man,
+        :Person ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasBrother data:Harry,
+        data:William ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasParent data:Charles_III,
+        data:Lady_Diana_Spencer ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Harry,
+        data:William ;
+    :isBrotherOf data:Harry,
+        data:William ;
+    :isChildOf data:Charles_III,
+        data:Lady_Diana_Spencer ;
+    :isSiblingOf data:Harry,
+        data:William ;
+    :isSonOf data:Charles_III,
+        data:Lady_Diana_Spencer .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_VI,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasBirthYear 1948 ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1981,
+        2005 ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Camilla_Parker_Bowles,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Harry,
+        data:Lady_Diana_Spencer,
+        data:Philip_Duke_of_Edinburgh,
+        data:William ;
+    :hasSex data:Male ;
+    :hasSon data:Harry,
+        data:William ;
+    :isAncestorOf data:Harry,
+        data:William ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip_Duke_of_Edinburgh ;
+    :isFatherOf data:Harry,
+        data:William ;
+    :isParentOf data:Harry,
+        data:William ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Philip_Duke_of_Edinburgh ;
+    :isUncleOf data:Harry,
+        data:William .
+

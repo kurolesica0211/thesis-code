@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eitel_Friedrich_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II .
+
+data:Karl_Franz_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1916 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Joachim_of_Prussia ;
+    :hasMarriageYear 1940,
+        1946,
+        1959 ;
+    :hasMother data:Marie-Auguste_of_Anhalt ;
+    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Henriette_of_Schoenaich-Carolath,
+        data:Luise_Dora_Hartmann .
+
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
+        :Woman .
+
+data:Henriette_of_Schoenaich-Carolath a :Person,
+        :Woman ;
+    :hasMother data:Hermine_Reuss_of_Greiz .
+
+data:Joachim_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II .
+
+data:Luise_Dora_Hartmann a :Person,
+        :Woman .
+
+data:Marie-Auguste_of_Anhalt a :Person,
+        :Woman .
+
+data:Hermine_Reuss_of_Greiz a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasMarriageYear 1922 ;
+    :hasRelation data:Hermine_Reuss_of_Greiz .
+

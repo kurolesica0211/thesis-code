@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie ;
+    :hasRelation data:StephanieAnneKaul .
+
+data:Berthold a :Man,
+        :Person .
+
+data:ChristianKaul a :Man,
+        :Person .
+
+data:HanneloreScheel a :Person,
+        :Woman .
+
+data:HubertSalvator a :Man,
+        :Person .
+
+data:Maximilian a :Man,
+        :Person ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora .
+
+data:RosemaryOfSalmSalm a :Person,
+        :Woman .
+
+data:StephanieAnneKaul a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:ChristianKaul ;
+    :hasMother data:HanneloreScheel .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:Valerie a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:HubertSalvator ;
+    :hasMother data:RosemaryOfSalmSalm .
+

@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DuchessMarieThereseOfWurttemberg a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessMarieOfLiechtenstein ;
+    :hasDaughter data:PrincessMarieOfLiechtenstein ;
+    :hasRelation data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis,
+        data:PrincessMarieOfLiechtenstein ;
+    :hasSister data:DuchessMarieThereseOfWurttemberg ;
+    :isAncestorOf data:PrincessMarieOfLiechtenstein ;
+    :isAuntOf data:PrincessMarieOfLiechtenstein ;
+    :isBloodrelationOf data:DuchessMarieThereseOfWurttemberg ;
+    :isMotherOf data:PrincessMarieOfLiechtenstein ;
+    :isParentOf data:PrincessMarieOfLiechtenstein ;
+    :isSiblingOf data:DuchessMarieThereseOfWurttemberg ;
+    :isSisterOf data:DuchessMarieThereseOfWurttemberg .
+
+data:PrinceHenriCountOfParis a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceHenriCountOfParis ;
+    :hasChild data:PrincessMarieOfLiechtenstein ;
+    :hasDaughter data:PrincessMarieOfLiechtenstein ;
+    :hasRelation data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis,
+        data:PrincessMarieOfLiechtenstein ;
+    :isAncestorOf data:PrincessMarieOfLiechtenstein ;
+    :isBloodrelationOf data:PrinceHenriCountOfParis ;
+    :isBrotherOf data:PrinceHenriCountOfParis ;
+    :isFatherOf data:PrincessMarieOfLiechtenstein ;
+    :isParentOf data:PrincessMarieOfLiechtenstein ;
+    :isSiblingOf data:PrinceHenriCountOfParis ;
+    :isUncleOf data:PrincessMarieOfLiechtenstein .
+
+data:PrincessDiemutOfLiechtenstein a :Woman ;
+    :hasBrother data:PrinceGundakarOfLiechtenstein ;
+    :hasRelation data:PrinceAlfredOfLiechtenstein,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis,
+        data:PrincessDiemutOfLiechtenstein ;
+    :hasSister data:PrincessDiemutOfLiechtenstein ;
+    :isBloodrelationOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein ;
+    :isSiblingOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein ;
+    :isSisterOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein .
+
+data:PrincessClothildeOfThurnUndTaxis a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceGundakarOfLiechtenstein ;
+    :hasRelation data:PrinceAlfredOfLiechtenstein,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis,
+        data:PrincessDiemutOfLiechtenstein ;
+    :hasSister data:PrincessClothildeOfThurnUndTaxis ;
+    :hasSon data:PrinceGundakarOfLiechtenstein ;
+    :isAncestorOf data:PrinceGundakarOfLiechtenstein ;
+    :isAuntOf data:PrinceGundakarOfLiechtenstein ;
+    :isBloodrelationOf data:PrincessClothildeOfThurnUndTaxis ;
+    :isMotherOf data:PrinceGundakarOfLiechtenstein ;
+    :isParentOf data:PrinceGundakarOfLiechtenstein ;
+    :isSiblingOf data:PrincessClothildeOfThurnUndTaxis ;
+    :isSisterOf data:PrincessClothildeOfThurnUndTaxis .
+
+data:PrinceJohannOfLiechtenstein a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :hasChild data:PrinceGundakarOfLiechtenstein ;
+    :hasRelation data:PrinceAlfredOfLiechtenstein,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :hasSon data:PrinceGundakarOfLiechtenstein ;
+    :isAncestorOf data:PrinceGundakarOfLiechtenstein ;
+    :isBloodrelationOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isBrotherOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isFatherOf data:PrinceGundakarOfLiechtenstein ;
+    :isParentOf data:PrinceGundakarOfLiechtenstein ;
+    :isSiblingOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isUncleOf data:PrinceGundakarOfLiechtenstein .
+
+data:PrinceAlfredOfLiechtenstein a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :hasChild data:PrinceGundakarOfLiechtenstein ;
+    :hasRelation data:PrinceAlfredOfLiechtenstein,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis,
+        data:PrincessDiemutOfLiechtenstein ;
+    :hasSon data:PrinceGundakarOfLiechtenstein ;
+    :isAncestorOf data:PrinceGundakarOfLiechtenstein ;
+    :isBloodrelationOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isBrotherOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isFatherOf data:PrinceGundakarOfLiechtenstein ;
+    :isParentOf data:PrinceGundakarOfLiechtenstein ;
+    :isSiblingOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :isUncleOf data:PrinceGundakarOfLiechtenstein .
+
+data:PrincessMarieOfLiechtenstein a :Woman ;
+    :hasAncestor data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis ;
+    :hasBirthYear 1959 ;
+    :hasFather data:PrinceHenriCountOfParis ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:DuchessMarieThereseOfWurttemberg ;
+    :hasParent data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis ;
+    :hasRelation data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis,
+        data:PrincessMarieOfLiechtenstein ;
+    :hasSister data:PrincessMarieOfLiechtenstein ;
+    :isBloodrelationOf data:PrincessMarieOfLiechtenstein ;
+    :isChildOf data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis ;
+    :isDaughterOf data:DuchessMarieThereseOfWurttemberg,
+        data:PrinceHenriCountOfParis ;
+    :isSiblingOf data:PrincessMarieOfLiechtenstein ;
+    :isSisterOf data:PrincessMarieOfLiechtenstein .
+
+data:PrinceGundakarOfLiechtenstein a :Man ;
+    :hasAncestor data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis ;
+    :hasBrother data:PrinceGundakarOfLiechtenstein ;
+    :hasFather data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein ;
+    :hasMother data:PrincessClothildeOfThurnUndTaxis ;
+    :hasParent data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis ;
+    :hasRelation data:PrinceAlfredOfLiechtenstein,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis,
+        data:PrincessDiemutOfLiechtenstein ;
+    :hasSister data:PrincessDiemutOfLiechtenstein ;
+    :isBloodrelationOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein ;
+    :isBrotherOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein ;
+    :isChildOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis ;
+    :isSiblingOf data:PrinceGundakarOfLiechtenstein,
+        data:PrincessDiemutOfLiechtenstein ;
+    :isSonOf data:PrinceAlfredOfLiechtenstein,
+        data:PrinceJohannOfLiechtenstein,
+        data:PrincessClothildeOfThurnUndTaxis .
+

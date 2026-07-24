@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:JaimedeMarichalar ;\n    :hasMother data:InfantaElenaDuchessofLugo ;\n    :hasSister data:VictoriaDeMarichalaryBorbon ;\n    :knownAs \"Froilan\"^^xsd:string .\n\ndata:AmaliodeMarichalaryBruguera a :Man,\n        :Person .\n\ndata:ConcepcionSaenzdeTejada a :Person,\n        :Woman .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:SofiaofSpain a :Person,\n        :Woman .\n\ndata:VictoriaDeMarichalaryBorbon a :Person,\n        :Woman ;\n    :hasFather data:JaimedeMarichalar ;\n    :hasMother data:InfantaElenaDuchessofLugo .\n\ndata:InfantaElenaDuchessofLugo a :Person,\n        :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:SofiaofSpain .\n\ndata:JaimedeMarichalar a :Man,\n        :Person ;\n    :hasFather data:AmaliodeMarichalaryBruguera ;\n    :hasMother data:ConcepcionSaenzdeTejada .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:JaimedeMarichalar ;\n    :hasMother data:InfantaElenaDuchessofLugo ;\n    :hasSister data:VictoriaDeMarichalaryBorbon ;\n    :knownAs \"Froilan\"^^xsd:string .\n\ndata:AmaliodeMarichalaryBruguera a :Man,\n        :Person .\n\ndata:ConcepcionSaenzdeTejada a :Person,\n        :Woman .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:SofiaofSpain a :Person,\n        :Woman .\n\ndata:VictoriaDeMarichalaryBorbon a :Person,\n        :Woman ;\n    :hasFather data:JaimedeMarichalar ;\n    :hasMother data:InfantaElenaDuchessofLugo .\n\ndata:InfantaElenaDuchessofLugo a :Person,\n        :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:SofiaofSpain .\n\ndata:JaimedeMarichalar a :Man,\n        :Person ;\n    :hasFather data:AmaliodeMarichalaryBruguera ;\n    :hasMother data:ConcepcionSaenzdeTejada .\n\n"
+    }
+]

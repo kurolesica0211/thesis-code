@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Max a :Man ;
+    :hasFather data:Berthold ;
+    :hasMother data:TheodoraOfGreeceAndDenmark ;
+    :hasSex data:Male .
+
+data:AliceOfBattenberg a :Woman ;
+    :hasSex data:Female .
+
+data:AndrewOfGreeceAndDenmark a :Man ;
+    :hasSex data:Male .
+
+data:Berthold a :Man ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:MarieLouiseOfHanover ;
+    :hasSex data:Male .
+
+data:MarieLouiseOfHanover a :Woman ;
+    :hasSex data:Female .
+
+data:Maximilian a :Man ;
+    :hasSex data:Male .
+
+data:PhilipOfGreeceAndDenmark a :Man ;
+    :hasSex data:Male .
+
+data:TheodoraOfGreeceAndDenmark a :Woman ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasSex data:Female ;
+    :isSisterOf data:PhilipOfGreeceAndDenmark .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

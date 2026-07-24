@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Alfonso_Count_of_Covadonga,\n        data:Gonzalo_of_Spain,\n        data:Infante_Don_Juan ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Alessandro_Torlonia ;\n    :hasSister data:Maria_Cristina_of_Spain ;\n    :isAuntOf data:Juan_Carlos_I .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Alfonso_Count_of_Covadonga a :Man,\n        :Person .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gonzalo_of_Spain a :Man,\n        :Person .\n\ndata:Infante_Don_Juan a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Maria_Cristina_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Alfonso_Count_of_Covadonga,\n        data:Gonzalo_of_Spain,\n        data:Infante_Don_Juan ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Alessandro_Torlonia ;\n    :hasSister data:Maria_Cristina_of_Spain ;\n    :isAuntOf data:Juan_Carlos_I .\n\ndata:Alessandro_Torlonia a :Man,\n        :Person .\n\ndata:Alfonso_Count_of_Covadonga a :Man,\n        :Person .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gonzalo_of_Spain a :Man,\n        :Person .\n\ndata:Infante_Don_Juan a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Maria_Cristina_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Casper_Van_Dien a :Man,
+        :Person .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Unnamed_Daughter_of_Oxenberg a :Person,
+        :Woman ;
+    :hasFather data:Patrick_DIgnazio ;
+    :hasMother data:India_Riven_Oxenberg .
+
+data:Catherine_Oxenberg a :Person,
+        :Woman ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Christina_Oxenberg .
+
+data:Christina_Oxenberg a :Person,
+        :Woman .
+
+data:Howard_Oxenberg a :Man,
+        :Person .
+
+data:India_Riven_Oxenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1991 ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg .
+
+data:Patrick_DIgnazio a :Man,
+        :Person .
+
+data:Prince_Regent_Paul_of_Yugoslavia a :Man,
+        :Person .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasFather data:Prince_Regent_Paul_of_Yugoslavia .
+
+data:William_Weitz_Shaffer a :Man,
+        :Person .
+

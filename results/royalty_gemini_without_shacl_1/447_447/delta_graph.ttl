@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte_Wellesley a :Person,
+        :Woman ;
+    :hasBirthYear "1990-10-08"^^xsd:string ;
+    :hasBrother data:Arthur_Wellesley ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMarriageYear 2016 ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasRelation data:Alejandro_Santo_Domingo ;
+    :hasSister data:Mary_Wellesley .
+
+data:Alejandro_Santo_Domingo a :Man,
+        :Person .
+
+data:Antonia_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Frederick_of_Prussia ;
+    :hasMother data:Brigid_Guinness .
+
+data:Arthur_Wellesley a :Man,
+        :Person .
+
+data:Brigid_Guinness a :Person,
+        :Woman .
+
+data:Charles_Wellesley a :Man,
+        :Person ;
+    :hasFather data:Valerian_Wellesley .
+
+data:Frederick_of_Prussia a :Man,
+        :Person .
+
+data:Mary_Wellesley a :Person,
+        :Woman .
+
+data:Valerian_Wellesley a :Man,
+        :Person ;
+    :hasDeathYear 2014 .
+

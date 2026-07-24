@@ -1,0 +1,273 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Kaul a :Ancestor,
+        :Man ;
+    :hasBrother data:Christian_Kaul ;
+    :hasChild data:Stephanie_Anne_Kaul ;
+    :hasDaughter data:Stephanie_Anne_Kaul ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isAncestorOf data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Christian_Kaul ;
+    :isBrotherOf data:Christian_Kaul ;
+    :isFatherOf data:Stephanie_Anne_Kaul ;
+    :isParentOf data:Stephanie_Anne_Kaul ;
+    :isSiblingOf data:Christian_Kaul ;
+    :isUncleOf data:Stephanie_Anne_Kaul .
+
+data:Hannelore_Scheel a :Ancestor,
+        :Woman ;
+    :hasChild data:Stephanie_Anne_Kaul ;
+    :hasDaughter data:Stephanie_Anne_Kaul ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Hannelore_Scheel ;
+    :isAncestorOf data:Stephanie_Anne_Kaul ;
+    :isAuntOf data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Hannelore_Scheel ;
+    :isMotherOf data:Stephanie_Anne_Kaul ;
+    :isParentOf data:Stephanie_Anne_Kaul ;
+    :isSiblingOf data:Hannelore_Scheel ;
+    :isSisterOf data:Hannelore_Scheel .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man ;
+    :hasBrother data:Berthold_Margrave_of_Baden ;
+    :hasChild data:Maximilian_Margrave_of_Baden ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSon data:Maximilian_Margrave_of_Baden ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden,
+        data:Maximilian_Margrave_of_Baden ;
+    :isBloodrelationOf data:Berthold_Margrave_of_Baden ;
+    :isBrotherOf data:Berthold_Margrave_of_Baden ;
+    :isFatherOf data:Maximilian_Margrave_of_Baden ;
+    :isParentOf data:Maximilian_Margrave_of_Baden ;
+    :isSiblingOf data:Berthold_Margrave_of_Baden ;
+    :isUncleOf data:Maximilian_Margrave_of_Baden .
+
+data:Hubert_Salvator_of_Austria a :Ancestor,
+        :Man ;
+    :hasBrother data:Hubert_Salvator_of_Austria ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Hubert_Salvator_of_Austria ;
+    :isBrotherOf data:Hubert_Salvator_of_Austria ;
+    :isFatherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Hubert_Salvator_of_Austria ;
+    :isUncleOf data:Valerie_of_Austria .
+
+data:Rosemary_of_Salm-Salm a :Ancestor,
+        :Woman ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Rosemary_of_Salm-Salm ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden,
+        data:Valerie_of_Austria ;
+    :isAuntOf data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Rosemary_of_Salm-Salm ;
+    :isSisterOf data:Rosemary_of_Salm-Salm .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Maximilian_Margrave_of_Baden ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Maximilian_Margrave_of_Baden ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden,
+        data:Maximilian_Margrave_of_Baden ;
+    :isAuntOf data:Maximilian_Margrave_of_Baden ;
+    :isBloodrelationOf data:Theodora_of_Greece_and_Denmark ;
+    :isMotherOf data:Maximilian_Margrave_of_Baden ;
+    :isParentOf data:Maximilian_Margrave_of_Baden ;
+    :isSiblingOf data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Theodora_of_Greece_and_Denmark .
+
+data:Stephanie_Anne_Kaul a :Woman ;
+    :hasAncestor data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel ;
+    :hasParent data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Stephanie_Anne_Kaul ;
+    :isChildOf data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :isDaughterOf data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :isSiblingOf data:Stephanie_Anne_Kaul ;
+    :isSisterOf data:Stephanie_Anne_Kaul .
+
+data:Bernhard_Prinz_von_Baden a :Man ;
+    :hasAncestor data:Berthold_Margrave_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Bernhard_Prinz_von_Baden ;
+    :hasFather data:Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasParent data:Maximilian_Margrave_of_Baden,
+        data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Bernhard_Prinz_von_Baden ;
+    :isBrotherOf data:Bernhard_Prinz_von_Baden ;
+    :isChildOf data:Maximilian_Margrave_of_Baden,
+        data:Valerie_of_Austria ;
+    :isSiblingOf data:Bernhard_Prinz_von_Baden ;
+    :isSonOf data:Maximilian_Margrave_of_Baden,
+        data:Valerie_of_Austria .
+
+data:Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man ;
+    :hasAncestor data:Berthold_Margrave_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Maximilian_Margrave_of_Baden ;
+    :hasChild data:Bernhard_Prinz_von_Baden ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold_Margrave_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSon data:Bernhard_Prinz_von_Baden ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden ;
+    :isBloodrelationOf data:Maximilian_Margrave_of_Baden ;
+    :isBrotherOf data:Maximilian_Margrave_of_Baden ;
+    :isChildOf data:Berthold_Margrave_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isFatherOf data:Bernhard_Prinz_von_Baden ;
+    :isParentOf data:Bernhard_Prinz_von_Baden ;
+    :isSiblingOf data:Maximilian_Margrave_of_Baden ;
+    :isSonOf data:Berthold_Margrave_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Bernhard_Prinz_von_Baden .
+
+data:Valerie_of_Austria a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasBirthYear 1941 ;
+    :hasChild data:Bernhard_Prinz_von_Baden ;
+    :hasFather data:Hubert_Salvator_of_Austria ;
+    :hasMother data:Rosemary_of_Salm-Salm ;
+    :hasParent data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasRelation data:Bernhard_Prinz_von_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_Margrave_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Valerie_of_Austria ;
+    :hasSon data:Bernhard_Prinz_von_Baden ;
+    :isAncestorOf data:Bernhard_Prinz_von_Baden ;
+    :isAuntOf data:Bernhard_Prinz_von_Baden ;
+    :isBloodrelationOf data:Valerie_of_Austria ;
+    :isChildOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isDaughterOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Bernhard_Prinz_von_Baden ;
+    :isParentOf data:Bernhard_Prinz_von_Baden ;
+    :isSiblingOf data:Valerie_of_Austria ;
+    :isSisterOf data:Valerie_of_Austria .
+

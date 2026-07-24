@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret ;
+    :hasSister data:Princess_Margaret ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBloodrelationOf data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Elizabeth_Margaret_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasChild data:Michael_Albemarle_Bowes-Lyon ;
+    :hasDeathYear 1959 ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Elizabeth_Margaret_Cator ;
+    :hasSon data:Michael_Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isAuntOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Margaret_Cator ;
+    :isMotherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isParentOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Margaret_Cator ;
+    :isSisterOf data:Elizabeth_Margaret_Cator .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasBrother data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasChild data:Michael_Albemarle_Bowes-Lyon ;
+    :hasDeathYear 1953 ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSon data:Michael_Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isFatherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isParentOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isUncleOf data:Michael_Albemarle_Bowes-Lyon .
+
+data:Michael_Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Michael_Albemarle_Bowes-Lyon ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasParent data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBloodrelationOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isChildOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSonOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon .
+

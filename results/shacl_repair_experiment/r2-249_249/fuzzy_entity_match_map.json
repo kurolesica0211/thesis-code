@@ -1,0 +1,183 @@
+{
+  "run_directory": "results/shacl_repair_experiment",
+  "task_directory": "results/shacl_repair_experiment/r2-249_249",
+  "text_file": "Q3312290.txt",
+  "text_key": "Q3312290",
+  "article": "https://en.wikipedia.org/wiki/Marina_Ogilvy",
+  "article_key": "Marina Ogilvy",
+  "main_entity": {
+    "uri": "http://example.com/data#Marina_Ogilvy",
+    "qid": "Q3312290",
+    "label": "Marina Ogilvy"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Marina_Ogilvy",
+      "qid": "Q3312290",
+      "label": "Marina Ogilvy",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Angus_Ogilvy",
+      "qid": "Q544609",
+      "label": "Angus Ogilvy",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Zenouska_Mowatt",
+      "qid": "Q12379343",
+      "label": "Zenouska Mowatt",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#James_Ogilvy",
+      "qid": "Q662282",
+      "label": "James Ogilvy",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Paul_Mowatt",
+      "qid": "Q17429006",
+      "label": "Paul Mowatt",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/James_Ogilvy",
+      "extracted_local_name": "James_Ogilvy",
+      "embedding_text": "James Ogilvy",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#James_Ogilvy",
+      "ground_truth_qid": "Q662282",
+      "ground_truth_label": "James Ogilvy",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "James Ogilvy",
+      "best_candidate_label": "James Ogilvy",
+      "best_candidate_qid": "Q662282",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marina_Ogilvy",
+      "extracted_local_name": "Marina_Ogilvy",
+      "embedding_text": "Marina Ogilvy",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Marina_Ogilvy",
+      "ground_truth_qid": "Q3312290",
+      "ground_truth_label": "Marina Ogilvy",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marina Ogilvy",
+      "best_candidate_label": "Marina Ogilvy",
+      "best_candidate_qid": "Q3312290",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_Julian_Mowatt",
+      "extracted_local_name": "Paul_Julian_Mowatt",
+      "embedding_text": "Paul Julian Mowatt",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Paul_Mowatt",
+      "ground_truth_qid": "Q17429006",
+      "ground_truth_label": "Paul Mowatt",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul Julian Mowatt",
+      "best_candidate_label": "Paul Mowatt",
+      "best_candidate_qid": "Q17429006",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sir_Angus_Ogilvy",
+      "extracted_local_name": "Sir_Angus_Ogilvy",
+      "embedding_text": "Sir Angus Ogilvy",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Angus_Ogilvy",
+      "ground_truth_qid": "Q544609",
+      "ground_truth_label": "Angus Ogilvy",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sir Angus Ogilvy",
+      "best_candidate_label": "Angus Ogilvy",
+      "best_candidate_qid": "Q544609",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Zenouska_May_Mowatt",
+      "extracted_local_name": "Zenouska_May_Mowatt",
+      "embedding_text": "Zenouska May Mowatt",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Zenouska_Mowatt",
+      "ground_truth_qid": "Q12379343",
+      "ground_truth_label": "Zenouska Mowatt",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Zenouska May Mowatt",
+      "best_candidate_label": "Zenouska Mowatt",
+      "best_candidate_qid": "Q12379343",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_Alexander_Mowatt",
+      "extracted_local_name": "Christian_Alexander_Mowatt",
+      "embedding_text": "Christian Alexander Mowatt",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marina Victoria Alexandra Mowatt",
+      "best_candidate_label": "Marina Ogilvy",
+      "best_candidate_qid": "Q3312290",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7241379310344828
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Alexandra_of_Kent",
+      "extracted_local_name": "Princess_Alexandra_of_Kent",
+      "embedding_text": "Princess Alexandra of Kent",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Zenouska Mowatt",
+      "best_candidate_label": "Zenouska Mowatt",
+      "best_candidate_qid": "Q12379343",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2926829268292683
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 5,
+    "entities_unmatched": 2
+  }
+}

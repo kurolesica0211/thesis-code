@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Charles_Riprand_Victor_Jerome_Marie a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Jean-Christophe_Prince_Napoleon ;
+    :hasMother data:Olympia_Bonaparte .
+
+data:Maria_Beatrice_of_Austria-Este a :Woman .
+
+data:Olympia_Bonaparte a :Woman ;
+    :hasBirthYear 1988 ;
+    :hasFather data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasMarriageYear 2019 ;
+    :hasMother data:Maria_Beatrice_of_Austria-Este ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon .
+
+data:Riprand_von_und_zu_Arco-Zinneberg a :Man ;
+    :hasBirthYear 1955 ;
+    :hasDeathYear 2021 .
+
+data:Jean-Christophe_Prince_Napoleon a :Man .
+

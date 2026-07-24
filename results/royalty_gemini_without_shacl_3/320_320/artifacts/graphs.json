@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1961 ;\n    :hasFather data:Claude_Bowes-Lyon_14th ;\n    :hasMarriageYear 1929 ;\n    :hasRelation data:Rachel_Pauline_Spender-Clay ;\n    :hasSister data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Claude_Bowes-Lyon_13th a :Ancestor,\n        :Man .\n\ndata:Claude_Bowes-Lyon_14th a :Ancestor,\n        :Man ;\n    :hasFather data:Claude_Bowes-Lyon_13th .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Herbert_Henry_Spender-Clay a :Ancestor,\n        :Man .\n\ndata:Pauline_Spender-Clay a :Ancestor,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Rachel_Pauline_Spender-Clay a :Person,\n        :Woman ;\n    :hasFather data:Herbert_Henry_Spender-Clay ;\n    :hasMother data:Pauline_Spender-Clay .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1961 ;\n    :hasFather data:Claude_Bowes-Lyon_14th ;\n    :hasMarriageYear 1929 ;\n    :hasRelation data:Rachel_Pauline_Spender-Clay ;\n    :hasSister data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II .\n\ndata:Claude_Bowes-Lyon_13th a :Ancestor,\n        :Man .\n\ndata:Claude_Bowes-Lyon_14th a :Ancestor,\n        :Man ;\n    :hasFather data:Claude_Bowes-Lyon_13th .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Herbert_Henry_Spender-Clay a :Ancestor,\n        :Man .\n\ndata:Pauline_Spender-Clay a :Ancestor,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Rachel_Pauline_Spender-Clay a :Person,\n        :Woman ;\n    :hasFather data:Herbert_Henry_Spender-Clay ;\n    :hasMother data:Pauline_Spender-Clay .\n\n"
+    }
+]

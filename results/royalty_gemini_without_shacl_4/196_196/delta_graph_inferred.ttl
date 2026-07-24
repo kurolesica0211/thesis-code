@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Francis_II a :Man,
+        :Person ;
+    :hasBrother data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :isBloodrelationOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isBrotherOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isSiblingOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isUncleOf data:Maria_di_Grazia .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Luiz_Maria ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :hasSister data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasSon data:Prince_Luiz_Maria ;
+    :isAncestorOf data:Prince_Luiz_Maria ;
+    :isAuntOf data:Prince_Luiz_Maria ;
+    :isBloodrelationOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isMotherOf data:Prince_Luiz_Maria ;
+    :isParentOf data:Prince_Luiz_Maria ;
+    :isSiblingOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSisterOf data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Prince_Gaston_of_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Gaston_of_Orleans ;
+    :hasChild data:Prince_Luiz_Maria ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :hasSon data:Prince_Luiz_Maria ;
+    :isAncestorOf data:Prince_Luiz_Maria ;
+    :isBloodrelationOf data:Prince_Gaston_of_Orleans ;
+    :isBrotherOf data:Prince_Gaston_of_Orleans ;
+    :isFatherOf data:Prince_Luiz_Maria ;
+    :isParentOf data:Prince_Luiz_Maria ;
+    :isSiblingOf data:Prince_Gaston_of_Orleans ;
+    :isUncleOf data:Prince_Luiz_Maria .
+
+data:Princess_Antonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_di_Grazia ;
+    :hasDaughter data:Maria_di_Grazia ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :hasSister data:Princess_Antonietta ;
+    :isAncestorOf data:Maria_di_Grazia ;
+    :isAuntOf data:Maria_di_Grazia ;
+    :isBloodrelationOf data:Princess_Antonietta ;
+    :isMotherOf data:Maria_di_Grazia ;
+    :isParentOf data:Maria_di_Grazia ;
+    :isSiblingOf data:Princess_Antonietta ;
+    :isSisterOf data:Princess_Antonietta .
+
+data:King_Ferdinand_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Ferdinand_II ;
+    :hasChild data:Prince_Alfonso ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :hasSon data:Prince_Alfonso ;
+    :isAncestorOf data:Maria_di_Grazia,
+        data:Prince_Alfonso ;
+    :isBloodrelationOf data:King_Ferdinand_II ;
+    :isBrotherOf data:King_Ferdinand_II ;
+    :isFatherOf data:Prince_Alfonso ;
+    :isParentOf data:Prince_Alfonso ;
+    :isSiblingOf data:King_Ferdinand_II ;
+    :isUncleOf data:Prince_Alfonso .
+
+data:Prince_Luiz_Maria a :Man,
+        :Person ;
+    :hasAncestor data:Isabel_Princess_Imperial_of_Brazil,
+        data:Prince_Gaston_of_Orleans ;
+    :hasBrother data:Prince_Luiz_Maria ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Prince_Gaston_of_Orleans ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasParent data:Isabel_Princess_Imperial_of_Brazil,
+        data:Prince_Gaston_of_Orleans ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :isBloodrelationOf data:Prince_Luiz_Maria ;
+    :isBrotherOf data:Prince_Luiz_Maria ;
+    :isChildOf data:Isabel_Princess_Imperial_of_Brazil,
+        data:Prince_Gaston_of_Orleans ;
+    :isSiblingOf data:Prince_Luiz_Maria ;
+    :isSonOf data:Isabel_Princess_Imperial_of_Brazil,
+        data:Prince_Gaston_of_Orleans .
+
+data:Maria_di_Grazia a :Person,
+        :Woman ;
+    :hasAncestor data:King_Ferdinand_II,
+        data:Prince_Alfonso,
+        data:Princess_Antonietta ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Princess_Antonietta ;
+    :hasParent data:Prince_Alfonso,
+        data:Princess_Antonietta ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :hasSister data:Maria_di_Grazia ;
+    :isBloodrelationOf data:Maria_di_Grazia ;
+    :isChildOf data:Prince_Alfonso,
+        data:Princess_Antonietta ;
+    :isDaughterOf data:Prince_Alfonso,
+        data:Princess_Antonietta ;
+    :isSiblingOf data:Maria_di_Grazia ;
+    :isSisterOf data:Maria_di_Grazia ;
+    :knownAs "Maria Pia"^^xsd:string .
+
+data:Prince_Alfonso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Ferdinand_II ;
+    :hasBrother data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :hasChild data:Maria_di_Grazia ;
+    :hasDaughter data:Maria_di_Grazia ;
+    :hasFather data:King_Ferdinand_II ;
+    :hasParent data:King_Ferdinand_II ;
+    :hasRelation data:Isabel_Princess_Imperial_of_Brazil,
+        data:King_Ferdinand_II,
+        data:King_Francis_II,
+        data:Maria_di_Grazia,
+        data:Prince_Alfonso,
+        data:Prince_Gaston_of_Orleans,
+        data:Prince_Luiz_Maria,
+        data:Princess_Antonietta ;
+    :isAncestorOf data:Maria_di_Grazia ;
+    :isBloodrelationOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isBrotherOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isChildOf data:King_Ferdinand_II ;
+    :isFatherOf data:Maria_di_Grazia ;
+    :isParentOf data:Maria_di_Grazia ;
+    :isSiblingOf data:King_Francis_II,
+        data:Prince_Alfonso ;
+    :isSonOf data:King_Ferdinand_II ;
+    :isUncleOf data:Maria_di_Grazia .
+

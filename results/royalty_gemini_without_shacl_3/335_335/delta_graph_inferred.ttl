@@ -1,0 +1,323 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Frederick_Walter_Pedersen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Walter_Pedersen ;
+    :hasChild data:Sussie_Hjorhoy-Pedersen ;
+    :hasDaughter data:Sussie_Hjorhoy-Pedersen ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Ingolf_of_Rosenborg,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :isAncestorOf data:Sussie_Hjorhoy-Pedersen ;
+    :isBloodrelationOf data:Frederick_Walter_Pedersen ;
+    :isBrotherOf data:Frederick_Walter_Pedersen ;
+    :isFatherOf data:Sussie_Hjorhoy-Pedersen ;
+    :isParentOf data:Sussie_Hjorhoy-Pedersen ;
+    :isSiblingOf data:Frederick_Walter_Pedersen ;
+    :isUncleOf data:Sussie_Hjorhoy-Pedersen .
+
+data:Georg_Terney a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Georg_Terney ;
+    :hasChild data:Inge_Terney ;
+    :hasDaughter data:Inge_Terney ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen ;
+    :isAncestorOf data:Inge_Terney ;
+    :isBloodrelationOf data:Georg_Terney ;
+    :isBrotherOf data:Georg_Terney ;
+    :isFatherOf data:Inge_Terney ;
+    :isParentOf data:Inge_Terney ;
+    :isSiblingOf data:Georg_Terney ;
+    :isUncleOf data:Inge_Terney .
+
+data:Jenny_Kamilla_Hansen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Inge_Terney ;
+    :hasDaughter data:Inge_Terney ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen ;
+    :hasSister data:Jenny_Kamilla_Hansen ;
+    :isAncestorOf data:Inge_Terney ;
+    :isAuntOf data:Inge_Terney ;
+    :isBloodrelationOf data:Jenny_Kamilla_Hansen ;
+    :isMotherOf data:Inge_Terney ;
+    :isParentOf data:Inge_Terney ;
+    :isSiblingOf data:Jenny_Kamilla_Hansen ;
+    :isSisterOf data:Jenny_Kamilla_Hansen .
+
+data:Ruth_Hjorhoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sussie_Hjorhoy-Pedersen ;
+    :hasDaughter data:Sussie_Hjorhoy-Pedersen ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Ingolf_of_Rosenborg,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSister data:Ruth_Hjorhoy ;
+    :isAncestorOf data:Sussie_Hjorhoy-Pedersen ;
+    :isAuntOf data:Sussie_Hjorhoy-Pedersen ;
+    :isBloodrelationOf data:Ruth_Hjorhoy ;
+    :isMotherOf data:Sussie_Hjorhoy-Pedersen ;
+    :isParentOf data:Sussie_Hjorhoy-Pedersen ;
+    :isSiblingOf data:Ruth_Hjorhoy ;
+    :isSisterOf data:Ruth_Hjorhoy .
+
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person ;
+    :hasAncestor data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Knud_of_Denmark ;
+    :hasBrother data:Leopold_Rosanes_af_Rosenborg ;
+    :hasFather data:Christian_of_Rosenborg ;
+    :hasParent data:Christian_of_Rosenborg ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Knud_of_Denmark,
+        data:Leopold_Rosanes_af_Rosenborg ;
+    :isBloodrelationOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isBrotherOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isChildOf data:Christian_of_Rosenborg ;
+    :isSiblingOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isSonOf data:Christian_of_Rosenborg .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasChild data:Knud_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg,
+        data:Knud_of_Denmark,
+        data:Leopold_Rosanes_af_Rosenborg ;
+    :hasSon data:Knud_of_Denmark ;
+    :isAncestorOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg,
+        data:Knud_of_Denmark,
+        data:Leopold_Rosanes_af_Rosenborg ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Knud_of_Denmark ;
+    :isParentOf data:Knud_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Knud_of_Denmark .
+
+data:Inge_Terney a :Person,
+        :Woman ;
+    :hasAncestor data:Georg_Terney,
+        data:Jenny_Kamilla_Hansen ;
+    :hasFather data:Georg_Terney ;
+    :hasMother data:Jenny_Kamilla_Hansen ;
+    :hasParent data:Georg_Terney,
+        data:Jenny_Kamilla_Hansen ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen ;
+    :hasSister data:Inge_Terney ;
+    :isBloodrelationOf data:Inge_Terney ;
+    :isChildOf data:Georg_Terney,
+        data:Jenny_Kamilla_Hansen ;
+    :isDaughterOf data:Georg_Terney,
+        data:Jenny_Kamilla_Hansen ;
+    :isSiblingOf data:Inge_Terney ;
+    :isSisterOf data:Inge_Terney .
+
+data:Sussie_Hjorhoy-Pedersen a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Walter_Pedersen,
+        data:Ruth_Hjorhoy ;
+    :hasFather data:Frederick_Walter_Pedersen ;
+    :hasMother data:Ruth_Hjorhoy ;
+    :hasParent data:Frederick_Walter_Pedersen,
+        data:Ruth_Hjorhoy ;
+    :hasRelation data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Ingolf_of_Rosenborg,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSister data:Sussie_Hjorhoy-Pedersen ;
+    :isBloodrelationOf data:Sussie_Hjorhoy-Pedersen ;
+    :isChildOf data:Frederick_Walter_Pedersen,
+        data:Ruth_Hjorhoy ;
+    :isDaughterOf data:Frederick_Walter_Pedersen,
+        data:Ruth_Hjorhoy ;
+    :isSiblingOf data:Sussie_Hjorhoy-Pedersen ;
+    :isSisterOf data:Sussie_Hjorhoy-Pedersen .
+
+data:Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_X_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Ingolf_of_Rosenborg ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasParent data:Knud_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen,
+        data:Knud_of_Denmark,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSister data:Elisabeth_of_Denmark ;
+    :isAuntOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isChildOf data:Knud_of_Denmark ;
+    :isDaughterOf data:Knud_of_Denmark ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isSisterOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg .
+
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :hasAncestor data:Christian_X_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Ingolf_of_Rosenborg ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1968,
+        1998 ;
+    :hasParent data:Knud_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen,
+        data:Knud_of_Denmark,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSex data:Male ;
+    :hasSister data:Elisabeth_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isChildOf data:Knud_of_Denmark ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isSonOf data:Knud_of_Denmark ;
+    :isUncleOf data:Leopold_Rosanes_af_Rosenborg .
+
+data:Knud_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Christian_X_of_Denmark ;
+    :hasBrother data:Knud_of_Denmark ;
+    :hasChild data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :hasDaughter data:Elisabeth_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg,
+        data:Knud_of_Denmark,
+        data:Leopold_Rosanes_af_Rosenborg ;
+    :hasSon data:Christian_of_Rosenborg,
+        data:Ingolf_of_Rosenborg ;
+    :isAncestorOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg,
+        data:Leopold_Rosanes_af_Rosenborg ;
+    :isBloodrelationOf data:Knud_of_Denmark ;
+    :isBrotherOf data:Knud_of_Denmark ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isParentOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isSiblingOf data:Knud_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg .
+
+data:Christian_of_Rosenborg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Christian_X_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Ingolf_of_Rosenborg ;
+    :hasChild data:Leopold_Rosanes_af_Rosenborg ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasParent data:Knud_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Frederick_Walter_Pedersen,
+        data:Georg_Terney,
+        data:Inge_Terney,
+        data:Ingolf_of_Rosenborg,
+        data:Jenny_Kamilla_Hansen,
+        data:Knud_of_Denmark,
+        data:Leopold_Rosanes_af_Rosenborg,
+        data:Ruth_Hjorhoy,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSister data:Elisabeth_of_Denmark ;
+    :hasSon data:Leopold_Rosanes_af_Rosenborg ;
+    :isAncestorOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isChildOf data:Knud_of_Denmark ;
+    :isFatherOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isParentOf data:Leopold_Rosanes_af_Rosenborg ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Elisabeth_of_Denmark,
+        data:Ingolf_of_Rosenborg ;
+    :isSonOf data:Knud_of_Denmark ;
+    :isUncleOf data:Leopold_Rosanes_af_Rosenborg .
+

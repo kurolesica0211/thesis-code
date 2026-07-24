@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasFather data:Alexander ;
+    :hasMother data:AspasiaManos .
+
+data:Katherine a :Person,
+        :Woman ;
+    :hasMother data:Sophia .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:ConstantineI ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Sophia ;
+    :hasRelation data:AspasiaManos ;
+    :isSiblingOf data:George,
+        data:Helen,
+        data:Paul .
+
+data:ConstantineI a :Man,
+        :Person ;
+    :hasFather data:GeorgeI ;
+    :hasMother data:OlgaConstantinovna .
+
+data:FrederickIII a :Man,
+        :Person .
+
+data:George a :Man,
+        :Person .
+
+data:GeorgeI a :Man,
+        :Person .
+
+data:Helen a :Person,
+        :Woman .
+
+data:MariaArgyropoulos a :Person,
+        :Woman .
+
+data:OlgaConstantinovna a :Person,
+        :Woman .
+
+data:Paul a :Man,
+        :Person .
+
+data:PetrosManos a :Man,
+        :Person .
+
+data:VictoriaPrincessRoyal a :Person,
+        :Woman .
+
+data:AspasiaManos a :Person,
+        :Woman ;
+    :hasFather data:PetrosManos ;
+    :hasMother data:MariaArgyropoulos .
+
+data:Sophia a :Person,
+        :Woman ;
+    :hasFather data:FrederickIII ;
+    :hasMother data:VictoriaPrincessRoyal .
+

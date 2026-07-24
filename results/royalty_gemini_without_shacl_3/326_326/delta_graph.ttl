@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :isFatherOf data:Henri_dOrleans .
+
+data:Louis_XIII a :Ancestor,
+        :Man ;
+    :isFatherOf data:Philippe_I_Duke_of_Orleans .
+
+data:Louis_XIV a :Ancestor,
+        :Man ;
+    :isFatherOf data:Francoise_Marie_de_Bourbon .
+
+data:Eudes_Duke_of_Angouleme a :Man,
+        :Person .
+
+data:Henri_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Francoise_Marie_de_Bourbon,
+        data:Louis_Philippe_I,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 ;
+    :hasMarriageYear 1931 ;
+    :hasRelation data:Isabelle_of_Orleans_Braganza ;
+    :isFatherOf data:Henri_of_Orleans_son,
+        data:Michel,
+        data:Thibaut .
+
+data:Henri_of_Orleans_son a :Man,
+        :Person ;
+    :isFatherOf data:Eudes_Duke_of_Angouleme .
+
+data:Isabelle_of_Orleans_Braganza a :Person,
+        :Woman .
+
+data:Louis_Philippe_I a :Ancestor,
+        :Man .
+
+data:Michel a :Man,
+        :Person .
+
+data:Thibaut a :Man,
+        :Person .
+
+data:Francoise_Marie_de_Bourbon a :Ancestor,
+        :Woman .
+
+data:Philippe_I_Duke_of_Orleans a :Ancestor,
+        :Man .
+

@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_son_of_Amedeo a :Man ;
+    :hasFather data:Amedeo_of_Savoy-Aosta .
+
+data:Aimone_Duke_of_Aosta a :Man .
+
+data:Amedeo_of_Savoy-Aosta a :Man ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Claude_of_Orleans .
+
+data:Claude_of_Orleans a :Woman ;
+    :hasFather data:Henri_comte_de_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza .
+
+data:Henri_comte_de_Paris a :Man .
+
+data:Irene_of_Greece_and_Denmark a :Woman .
+
+data:Isabelle_of_Orleans-Braganza a :Woman .
+

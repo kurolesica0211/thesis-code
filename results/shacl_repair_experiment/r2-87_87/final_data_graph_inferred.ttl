@@ -1,0 +1,259 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Queen_Elizabeth a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth ;
+    :hasSex data:Female ;
+    :hasSister data:Queen_Elizabeth ;
+    :isBloodrelationOf data:Queen_Elizabeth ;
+    :isSiblingOf data:Queen_Elizabeth ;
+    :isSisterOf data:Queen_Elizabeth .
+
+data:Frederick_Calvert_6th_Baron_Baltimore a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Calvert_6th_Baron_Baltimore ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Male ;
+    :isAncestorOf data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Violet_Evelyn_Dalrymple ;
+    :isBloodrelationOf data:Frederick_Calvert_6th_Baron_Baltimore ;
+    :isBrotherOf data:Frederick_Calvert_6th_Baron_Baltimore ;
+    :isSiblingOf data:Frederick_Calvert_6th_Baron_Baltimore .
+
+data:Elizabeth_Mary_Hyde_Parker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Emily_Mary_Julia_Stonor ;
+    :hasDaughter data:Emily_Mary_Julia_Stonor ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Female ;
+    :hasSister data:Elizabeth_Mary_Hyde_Parker ;
+    :isAncestorOf data:Emily_Mary_Julia_Stonor ;
+    :isAuntOf data:Emily_Mary_Julia_Stonor ;
+    :isBloodrelationOf data:Elizabeth_Mary_Hyde_Parker ;
+    :isMotherOf data:Emily_Mary_Julia_Stonor ;
+    :isParentOf data:Emily_Mary_Julia_Stonor ;
+    :isSiblingOf data:Elizabeth_Mary_Hyde_Parker ;
+    :isSisterOf data:Elizabeth_Mary_Hyde_Parker .
+
+data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ralph_Stonor_7th_Baron_Camoys ;
+    :hasChild data:Emily_Mary_Julia_Stonor ;
+    :hasDaughter data:Emily_Mary_Julia_Stonor ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Emily_Mary_Julia_Stonor ;
+    :isBloodrelationOf data:Ralph_Stonor_7th_Baron_Camoys ;
+    :isBrotherOf data:Ralph_Stonor_7th_Baron_Camoys ;
+    :isFatherOf data:Emily_Mary_Julia_Stonor ;
+    :isParentOf data:Emily_Mary_Julia_Stonor ;
+    :isSiblingOf data:Ralph_Stonor_7th_Baron_Camoys ;
+    :isUncleOf data:Emily_Mary_Julia_Stonor .
+
+data:David_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:David_Bowes-Lyon ;
+    :hasChild data:Davina_Katherine_Bowes-Lyon ;
+    :hasDaughter data:Davina_Katherine_Bowes-Lyon ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Davina_Katherine_Bowes-Lyon,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isBloodrelationOf data:David_Bowes-Lyon ;
+    :isBrotherOf data:David_Bowes-Lyon ;
+    :isFatherOf data:Davina_Katherine_Bowes-Lyon ;
+    :isParentOf data:Davina_Katherine_Bowes-Lyon ;
+    :isSiblingOf data:David_Bowes-Lyon ;
+    :isUncleOf data:Davina_Katherine_Bowes-Lyon .
+
+data:Violet_Evelyn_Dalrymple a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore ;
+    :hasChild data:John_Dalrymple_13th_Earl_of_Stair ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Female ;
+    :hasSister data:Violet_Evelyn_Dalrymple ;
+    :hasSon data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isAncestorOf data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isAuntOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isBloodrelationOf data:Violet_Evelyn_Dalrymple ;
+    :isMotherOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isParentOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isSiblingOf data:Violet_Evelyn_Dalrymple ;
+    :isSisterOf data:Violet_Evelyn_Dalrymple .
+
+data:Davina_Katherine_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:David_Bowes-Lyon ;
+    :hasBirthYear "1930"^^xsd:positiveInteger ;
+    :hasChild data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :hasDeathYear "2017"^^xsd:positiveInteger ;
+    :hasFather data:David_Bowes-Lyon ;
+    :hasParent data:David_Bowes-Lyon ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Female ;
+    :hasSister data:Davina_Katherine_Bowes-Lyon ;
+    :hasSon data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isAncestorOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isAuntOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isBloodrelationOf data:Davina_Katherine_Bowes-Lyon ;
+    :isChildOf data:David_Bowes-Lyon ;
+    :isDaughterOf data:David_Bowes-Lyon ;
+    :isMotherOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isParentOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isSiblingOf data:Davina_Katherine_Bowes-Lyon ;
+    :isSisterOf data:Davina_Katherine_Bowes-Lyon .
+
+data:Emily_Mary_Julia_Stonor a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_Mary_Hyde_Parker,
+        data:Ralph_Stonor_7th_Baron_Camoys ;
+    :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;
+    :hasMother data:Elizabeth_Mary_Hyde_Parker ;
+    :hasParent data:Elizabeth_Mary_Hyde_Parker,
+        data:Ralph_Stonor_7th_Baron_Camoys ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Female ;
+    :hasSister data:Emily_Mary_Julia_Stonor ;
+    :isBloodrelationOf data:Emily_Mary_Julia_Stonor ;
+    :isChildOf data:Elizabeth_Mary_Hyde_Parker,
+        data:Ralph_Stonor_7th_Baron_Camoys ;
+    :isDaughterOf data:Elizabeth_Mary_Hyde_Parker,
+        data:Ralph_Stonor_7th_Baron_Camoys ;
+    :isSiblingOf data:Emily_Mary_Julia_Stonor ;
+    :isSisterOf data:Emily_Mary_Julia_Stonor .
+
+data:John_Dalrymple_13th_Earl_of_Stair a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasBrother data:John_Dalrymple_13th_Earl_of_Stair ;
+    :hasChild data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :hasMother data:Violet_Evelyn_Dalrymple ;
+    :hasParent data:Violet_Evelyn_Dalrymple ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Male ;
+    :hasSon data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isAncestorOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isBloodrelationOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isBrotherOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isChildOf data:Violet_Evelyn_Dalrymple ;
+    :isFatherOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isParentOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isSiblingOf data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isSonOf data:Violet_Evelyn_Dalrymple ;
+    :isUncleOf data:John_David_James_Dalrymple_14th_Earl_of_Stair .
+
+data:John_David_James_Dalrymple_14th_Earl_of_Stair a :Man,
+        :Person ;
+    :hasAncestor data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasBirthYear "1961"^^xsd:positiveInteger ;
+    :hasBrother data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;
+    :hasMarriageYear "2006"^^xsd:positiveInteger ;
+    :hasMother data:Davina_Katherine_Bowes-Lyon ;
+    :hasParent data:Davina_Katherine_Bowes-Lyon,
+        data:John_Dalrymple_13th_Earl_of_Stair ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Davina_Katherine_Bowes-Lyon,
+        data:Elizabeth_Mary_Hyde_Parker,
+        data:Emily_Mary_Julia_Stonor,
+        data:Frederick_Calvert_6th_Baron_Baltimore,
+        data:John_Dalrymple_13th_Earl_of_Stair,
+        data:John_David_James_Dalrymple_14th_Earl_of_Stair,
+        data:Ralph_Stonor_7th_Baron_Camoys,
+        data:Violet_Evelyn_Dalrymple ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isBrotherOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isChildOf data:Davina_Katherine_Bowes-Lyon,
+        data:John_Dalrymple_13th_Earl_of_Stair ;
+    :isSiblingOf data:John_David_James_Dalrymple_14th_Earl_of_Stair ;
+    :isSonOf data:Davina_Katherine_Bowes-Lyon,
+        data:John_Dalrymple_13th_Earl_of_Stair .
+

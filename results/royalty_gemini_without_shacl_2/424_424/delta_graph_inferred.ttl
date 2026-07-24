@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Wellesley a :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley ;
+    :hasRelation data:Charles_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley ;
+    :isBrotherOf data:Charles_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley .
+
+data:Lady_Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasDaughter data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSister data:Lady_Brigid_Guinness ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isAuntOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isBloodrelationOf data:Lady_Brigid_Guinness ;
+    :isMotherOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isParentOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSiblingOf data:Lady_Brigid_Guinness ;
+    :isSisterOf data:Lady_Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasDaughter data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isAncestorOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isParentOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld .
+
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,
+        :Woman ;
+    :hasAncestor data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasBirthYear 1955 ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasParent data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSister data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isBloodrelationOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isChildOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isDaughterOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isSiblingOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld ;
+    :isSisterOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld .
+

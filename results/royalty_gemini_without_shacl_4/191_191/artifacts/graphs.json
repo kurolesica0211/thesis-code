@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amelie_Queen_of_Portugal a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Helene_of_Orleans .\n\ndata:Isabelle_Duchess_of_Guise a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Helene_of_Orleans .\n\ndata:Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Helene_of_Orleans .\n\ndata:Colonel_Otto_Campini a :Man,\n        :Person .\n\ndata:Infanta_Maria_Isabel_of_Spain a :Person,\n        :Woman .\n\ndata:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Prince_Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Princess_Helene_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1871 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Prince_Philippe_Count_of_Paris ;\n    :hasMarriageYear 1895,\n        1936 ;\n    :hasMother data:Infanta_Maria_Isabel_of_Spain ;\n    :hasRelation data:Colonel_Otto_Campini,\n        data:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amelie_Queen_of_Portugal a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Helene_of_Orleans .\n\ndata:Isabelle_Duchess_of_Guise a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Helene_of_Orleans .\n\ndata:Philippe_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Helene_of_Orleans .\n\ndata:Colonel_Otto_Campini a :Man,\n        :Person .\n\ndata:Infanta_Maria_Isabel_of_Spain a :Person,\n        :Woman .\n\ndata:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Prince_Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Princess_Helene_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1871 ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Prince_Philippe_Count_of_Paris ;\n    :hasMarriageYear 1895,\n        1936 ;\n    :hasMother data:Infanta_Maria_Isabel_of_Spain ;\n    :hasRelation data:Colonel_Otto_Campini,\n        data:Prince_Emanuele_Filiberto_of_Savoy_Duke_of_Aosta .\n\n"
+    }
+]

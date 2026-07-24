@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina a :Woman ;
+    :hasBirthYear "1906"^^xsd:nonNegativeInteger ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDeathYear "1968"^^xsd:nonNegativeInteger ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMarriageYear "1934"^^xsd:nonNegativeInteger ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :hasRelation data:PrinceGeorgeDukeOfKent ;
+    :hasSister data:PrincessElizabeth,
+        data:PrincessOlga .
+
+data:PrincePhilipDukeOfEdinburgh a :Man ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark .
+
+data:GeorgeIOfGreece a :Man .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Woman ;
+    :hasFather data:GrandDukeVladimirAlexandrovich ;
+    :hasMother data:GrandDuchessMariaPavlovnaOfRussia .
+
+data:GrandDuchessMariaPavlovnaOfRussia a :Woman .
+
+data:GrandDukeVladimirAlexandrovich a :Man .
+
+data:KingGeorgeV a :Man .
+
+data:PrinceGeorgeDukeOfKent a :Man ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasFather data:KingGeorgeV ;
+    :hasMother data:QueenMary .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Man ;
+    :hasBrother data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:QueenOlgaOfGreece .
+
+data:PrincessElizabeth a :Woman .
+
+data:PrincessOlga a :Woman .
+
+data:QueenMary a :Woman .
+
+data:QueenOlgaOfGreece a :Woman .
+
+data:Alexandra a :Woman .
+
+data:Edward a :Man .
+
+data:Michael a :Man .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Man .
+

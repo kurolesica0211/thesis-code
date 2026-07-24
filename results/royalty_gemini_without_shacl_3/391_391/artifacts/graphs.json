@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth,\n        data:Charles_Prince_of_Wales ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Princess_Alice a :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:2nd_Countess_Mountbatten_of_Burma a :Person,\n        :Woman .\n\ndata:7th_Baron_Brabourne a :Man,\n        :Person .\n\ndata:Charles_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth .\n\ndata:Amanda_Patricia_Victoria_Ellingworth a :Person,\n        :Woman ;\n    :alsoKnownAs data:Amanda_Knatchbull ;\n    :hasBirthYear 1957 ;\n    :hasFather data:7th_Baron_Brabourne ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;\n    :hasRelation data:Charles_Vincent_Ellingworth .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth,\n        data:Charles_Prince_of_Wales ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Princess_Alice a :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:2nd_Countess_Mountbatten_of_Burma a :Person,\n        :Woman .\n\ndata:7th_Baron_Brabourne a :Man,\n        :Person .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman .\n\ndata:Charles_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth .\n\ndata:Amanda_Patricia_Victoria_Ellingworth a :Person,\n        :Woman ;\n    :alsoKnownAs data:Amanda_Knatchbull ;\n    :hasBirthYear 1957 ;\n    :hasFather data:7th_Baron_Brabourne ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;\n    :hasRelation data:Charles_Vincent_Ellingworth .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Mountbatten a :Man,\n        :Person ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth,\n        data:Charles_Prince_of_Wales ;\n    :isUncleOf data:Prince_Philip .\n\ndata:Princess_Alice a :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:2nd_Countess_Mountbatten_of_Burma a :Person,\n        :Woman .\n\ndata:7th_Baron_Brabourne a :Man,\n        :Person .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman .\n\ndata:Charles_Prince_of_Wales a :Man,\n        :Person .\n\ndata:Charles_Vincent_Ellingworth a :Man,\n        :Person .\n\ndata:Prince_Philip a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman ;\n    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth .\n\ndata:Amanda_Patricia_Victoria_Ellingworth a :Person,\n        :Woman ;\n    :alsoKnownAs data:Amanda_Knatchbull ;\n    :hasBirthYear 1957 ;\n    :hasFather data:7th_Baron_Brabourne ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;\n    :hasRelation data:Charles_Vincent_Ellingworth .\n\n"
+    }
+]

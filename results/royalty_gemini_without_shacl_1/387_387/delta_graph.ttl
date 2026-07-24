@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Heather_Tonkin a :Woman ;
+    :isMotherOf data:Felicity_Wade .
+
+data:King_Charles_III a :Man .
+
+data:Queen_Elizabeth_II a :Woman ;
+    :isMotherOf data:Anne_Princess_Royal .
+
+data:Sandy_Pflueger a :Woman ;
+    :isMotherOf data:Stephanie_Phillips .
+
+data:William_Prince_of_Wales a :Man ;
+    :isParentOf data:Prince_George_of_Wales .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear 1981 ;
+    :hasMarriageYear 2011 ;
+    :hasRelation data:Mike_Tindall ;
+    :isDaughterOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isMotherOf data:Lena_Elizabeth_Tindall,
+        data:Mia_Grace_Tindall ;
+    :isSiblingOf data:Peter_Phillips .
+
+data:Felicity_Wade a :Woman ;
+    :isDaughterOf data:Mark_Phillips .
+
+data:Mike_Tindall a :Man ;
+    :isFatherOf data:Lena_Elizabeth_Tindall,
+        data:Mia_Grace_Tindall .
+
+data:Peter_Phillips a :Man .
+
+data:Prince_George_of_Wales a :Man .
+
+data:Stephanie_Phillips a :Woman ;
+    :isDaughterOf data:Mark_Phillips .
+
+data:Anne_Princess_Royal a :Woman .
+
+data:Lena_Elizabeth_Tindall a :Woman .
+
+data:Mia_Grace_Tindall a :Woman .
+
+data:Mark_Phillips a :Man .
+

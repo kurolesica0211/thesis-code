@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Benedikte a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :isSonOf data:Henrik,\n        data:Margrethe_II .\n\ndata:Joachim a :Man,\n        :Person ;\n    :isSonOf data:Henrik,\n        data:Margrethe_II .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Ingrid a :Person,\n        :Woman .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1967 ;\n    :hasMother data:Ingrid ;\n    :hasRelation data:Henrik .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Benedikte a :Person,\n        :Woman ;\n    :isSisterOf data:Margrethe_II .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :isSonOf data:Henrik,\n        data:Margrethe_II .\n\ndata:Joachim a :Man,\n        :Person ;\n    :isSonOf data:Henrik,\n        data:Margrethe_II .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_IX a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Ingrid a :Person,\n        :Woman .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Frederik_IX ;\n    :hasMarriageYear 1967 ;\n    :hasMother data:Ingrid ;\n    :hasRelation data:Henrik .\n\n"
+    }
+]

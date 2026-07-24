@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mike_Tindall a :Man,
+        :Person .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasSex "Female"^^xsd:string .
+
+data:Anne_Princess_Royal a :Person,
+        :Woman .
+
+data:Mark_Phillips a :Man,
+        :Person .
+

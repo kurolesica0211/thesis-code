@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean_Boris_Lacroix a :Man ;\n    :hasFather data:Boris_Vladimirovich ;\n    :hasMother data:Jeanne_Aumont_Lacroix .\n\ndata:Michael_Alexandrovich a :Man .\n\ndata:Nicholas_II_of_Russia a :Man .\n\ndata:Zinaida_Sergeievna_Rachevskaya a :Woman ;\n    :hasFather data:Sergei_Alexandrovich_Rachevsky .\n\ndata:Alexander_III_of_Russia a :Man .\n\ndata:Alexander_II_of_Russia a :Man .\n\ndata:Andrei_Vladimirovich a :Man .\n\ndata:Boris_Vladimirovich a :Man ;\n    :hasBirthYear 1877 ;\n    :hasBrother data:Andrei_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna .\n\ndata:Jeanne_Aumont_Lacroix a :Woman .\n\ndata:Kirill_Vladimirovich a :Man .\n\ndata:Maria_Pavlovna a :Woman .\n\ndata:Sergei_Alexandrovich_Rachevsky a :Man .\n\ndata:Vladimir_Alexandrovich a :Man ;\n    :hasFather data:Alexander_III_of_Russia,\n        data:Alexander_II_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Jean_Boris_Lacroix a :Man ;\n    :hasFather data:Boris_Vladimirovich ;\n    :hasMother data:Jeanne_Aumont_Lacroix .\n\ndata:Michael_Alexandrovich a :Man .\n\ndata:Nicholas_II_of_Russia a :Man .\n\ndata:Zinaida_Sergeievna_Rachevskaya a :Woman ;\n    :hasFather data:Sergei_Alexandrovich_Rachevsky .\n\ndata:Alexander_III_of_Russia a :Man .\n\ndata:Alexander_II_of_Russia a :Man .\n\ndata:Andrei_Vladimirovich a :Man .\n\ndata:Boris_Vladimirovich a :Man ;\n    :hasBirthYear 1877 ;\n    :hasBrother data:Andrei_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna .\n\ndata:Jeanne_Aumont_Lacroix a :Woman .\n\ndata:Kirill_Vladimirovich a :Man .\n\ndata:Maria_Pavlovna a :Woman .\n\ndata:Sergei_Alexandrovich_Rachevsky a :Man .\n\ndata:Vladimir_Alexandrovich a :Man ;\n    :hasFather data:Alexander_III_of_Russia,\n        data:Alexander_II_of_Russia .\n\n"
+    }
+]

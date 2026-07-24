@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Gustav a :Ancestor,
+        :Man,
+        :Person ;
+    :isUncleOf data:Knud .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX .
+
+data:Prince_Christian_of_Denmark_father_of_Knud a :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud .
+
+data:Christian_son_of_Knud a :Man,
+        :Person ;
+    :hasBirthYear "1944"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Frederik_VIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud .
+
+data:Harald a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMother data:Helena .
+
+data:Ingolf a :Man,
+        :Person ;
+    :hasBirthYear "1940"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBirthYear "1900"^^xsd:nonNegativeInteger ;
+    :hasDaughter data:Elisabeth ;
+    :hasDeathYear "1976"^^xsd:nonNegativeInteger ;
+    :hasFather data:Christian_X ;
+    :hasMarriageYear "1933"^^xsd:nonNegativeInteger ;
+    :hasMother data:Alexandrine ;
+    :hasSon data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :isBrotherOf data:Frederik_IX .
+
+data:Alexandrine a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Christian_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Frederik_VIII .
+
+data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud a :Ancestor,
+        :Man,
+        :Person .
+
+data:Elisabeth a :Person,
+        :Woman ;
+    :hasBirthYear "1935"^^xsd:nonNegativeInteger ;
+    :hasMother data:Caroline_Mathilde .
+
+data:Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Christian_X ;
+    :hasMother data:Alexandrine .
+
+data:Helena a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Caroline_Mathilde a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Harald ;
+    :hasMother data:Helena ;
+    :isSisterOf data:Elisabeth .
+

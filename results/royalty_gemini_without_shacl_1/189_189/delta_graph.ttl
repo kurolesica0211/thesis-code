@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HowardOxenberg a :Man .
+
+data:ManuelUlloaElias a :Man ;
+    :hasDeathYear 1992 .
+
+data:NeilBalfourOfDawyck a :Man .
+
+data:PrincessElizabethOfYugoslavia a :Woman ;
+    :alsoKnownAs "Jelisaveta Karađorđević"^^xsd:string ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMarriageYear 1960,
+        1969,
+        1987 ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrinceAlexanderOfYugoslavia a :Man .
+
+data:PrinceNicholasOfYugoslavia a :Man .
+
+data:PrincePaulOfYugoslavia a :Man .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Woman .
+

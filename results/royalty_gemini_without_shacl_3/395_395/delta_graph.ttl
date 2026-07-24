@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nikolaus a :Man,
+        :Person ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 ;
+    :hasMarriageYear 1921,
+        1950 ;
+    :hasMother data:ElisabethAlexandrineMecklenburgSchwerin ;
+    :hasRelation data:AnneMarieSchutzbarMilchling,
+        data:HelenaWaldeckPyrmont ;
+    :isSonOf data:FrederickAugustusII .
+
+data:AnneMarieSchutzbarMilchling a :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1991 ;
+    :hasMother data:RoseMarston ;
+    :hasRelation data:BechtoldBernstorff ;
+    :isDaughterOf data:RudolfSchutzbarMilchling .
+
+data:BathildisSchaumburgLippe a :Person,
+        :Woman .
+
+data:BechtoldBernstorff a :Man,
+        :Person .
+
+data:ElisabethAlexandrineMecklenburgSchwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasMother data:MarieSchwarzburgRudolstadt ;
+    :isDaughterOf data:FrederickFrancisII .
+
+data:ElisabethSaxeAltenburg a :Person,
+        :Woman .
+
+data:FrederickAugustusII a :Man,
+        :Person ;
+    :hasBirthYear 1852 ;
+    :hasDeathYear 1931 ;
+    :hasMother data:ElisabethSaxeAltenburg ;
+    :isSonOf data:PeterII .
+
+data:FrederickFrancisII a :Man,
+        :Person .
+
+data:FriedrichWaldeckPyrmont a :Man,
+        :Person .
+
+data:HelenaWaldeckPyrmont a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasMother data:BathildisSchaumburgLippe ;
+    :isDaughterOf data:FriedrichWaldeckPyrmont .
+
+data:MarieSchwarzburgRudolstadt a :Person,
+        :Woman .
+
+data:PeterII a :Man,
+        :Person .
+
+data:RoseMarston a :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1957 .
+
+data:RudolfSchutzbarMilchling a :Man,
+        :Person ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1935 .
+

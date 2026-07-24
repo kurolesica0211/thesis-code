@@ -1,0 +1,441 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Baroness_Armgard_von_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasSister data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isAuntOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :isMotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :isSisterOf data:Baroness_Armgard_von_Sierstorpff-Cramm .
+
+data:Queen_Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Juliana_of_the_Netherlands ;
+    :hasDaughter data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Queen_Wilhelmina ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isAuntOf data:Queen_Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Wilhelmina ;
+    :isMotherOf data:Queen_Juliana_of_the_Netherlands ;
+    :isParentOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Wilhelmina ;
+    :isSisterOf data:Queen_Wilhelmina .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Leopold_IV_Prince_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Wilhelmina ;
+    :hasChild data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasMother data:Queen_Wilhelmina ;
+    :hasParent data:Queen_Wilhelmina ;
+    :hasRelation data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isAuntOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Juliana_of_the_Netherlands ;
+    :isChildOf data:Queen_Wilhelmina ;
+    :isDaughterOf data:Queen_Wilhelmina ;
+    :isMotherOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isParentOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Queen_Juliana_of_the_Netherlands .
+
+data:Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands .
+
+data:Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands .
+
+data:Margriet_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands .
+
+data:Queen_Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina ;
+    :hasSister data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :hasParent data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasRelation data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Christina_of_the_Netherlands,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Irene_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Margriet_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isAncestorOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isParentOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Baroness_Armgard_von_Sierstorpff-Cramm,
+        data:Ernest_Count_of_Lippe-Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands .
+

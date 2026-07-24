@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryCeciliaColman a :Person,\n        :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:FergusMichaelClaude,\n        data:MichaelAlbemarle ;\n    :hasDeathYear 2021 ;\n    :hasFather data:MichaelBowesLyon ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:ElizabethMargaretCator ;\n    :hasRelation data:TimothyColman ;\n    :hasSister data:PatriciaMaud .\n\ndata:CeciliaBowesLyon a :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Man,\n        :Person .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:FergusMichaelClaude a :Man,\n        :Person .\n\ndata:GeoffreyColman a :Man,\n        :Person .\n\ndata:MichaelAlbemarle a :Man,\n        :Person .\n\ndata:MichaelBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:PatriciaMaud a :Person,\n        :Woman .\n\ndata:TimothyColman a :Man,\n        :Person ;\n    :hasFather data:GeoffreyColman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryCeciliaColman a :Person,\n        :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:FergusMichaelClaude,\n        data:MichaelAlbemarle ;\n    :hasDeathYear 2021 ;\n    :hasFather data:MichaelBowesLyon ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:ElizabethMargaretCator ;\n    :hasRelation data:TimothyColman ;\n    :hasSister data:PatriciaMaud .\n\ndata:CeciliaBowesLyon a :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Man,\n        :Person .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:FergusMichaelClaude a :Man,\n        :Person .\n\ndata:GeoffreyColman a :Man,\n        :Person .\n\ndata:MichaelAlbemarle a :Man,\n        :Person .\n\ndata:MichaelBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:PatriciaMaud a :Person,\n        :Woman .\n\ndata:TimothyColman a :Man,\n        :Person ;\n    :hasFather data:GeoffreyColman .\n\n"
+    }
+]

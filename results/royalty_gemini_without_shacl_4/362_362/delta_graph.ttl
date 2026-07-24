@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia_cousin a :Man,
+        :Person ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "2017"^^xsd:positiveInteger .
+
+data:Don_Alessandro_Torlonia a :Man,
+        :Person ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasDeathYear "1986"^^xsd:positiveInteger ;
+    :hasFather data:Marino_Torlonia ;
+    :hasMarriageYear "1935"^^xsd:positiveInteger ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasRelation data:Infanta_Beatriz_of_Spain ;
+    :hasSister data:Donna_Marina_Torlonia .
+
+data:Donna_Marina_Torlonia a :Person,
+        :Woman .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg .
+
+data:King_Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Marino_Torlonia a :Man,
+        :Person .
+
+data:Mary_Elsie_Moore a :Person,
+        :Woman .
+
+data:Princess_Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

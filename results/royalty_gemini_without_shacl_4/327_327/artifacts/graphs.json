@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Kirillovna a :Person,\n        :Woman ;\n    :isSisterOf data:Vladimir_Kirillovich .\n\ndata:Kirill_Vladimirovich a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Vladimir_Kirillovich .\n\ndata:Leonida_Bagration_Mukhrani a :Person,\n        :Woman ;\n    :isMotherOf data:Maria_Vladimirovna .\n\ndata:Victoria_Fyodorovna a :Person,\n        :Woman ;\n    :isMotherOf data:Vladimir_Kirillovich .\n\ndata:Victoria_Romanovna a :Person,\n        :Woman ;\n    :isMotherOf data:Kira_Georgievna .\n\ndata:Franz_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :isFatherOf data:George_Mikhailovich .\n\ndata:George_Mikhailovich a :Man,\n        :Person ;\n    :isFatherOf data:Kira_Georgievna .\n\ndata:Kira_Georgievna a :Person,\n        :Woman .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasBirthYear \"1953\"^^xsd:positiveInteger ;\n    :hasRelation data:Franz_Wilhelm_of_Prussia ;\n    :isMotherOf data:George_Mikhailovich .\n\ndata:Vladimir_Kirillovich a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Maria_Vladimirovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Kirillovna a :Person,\n        :Woman ;\n    :isSisterOf data:Vladimir_Kirillovich .\n\ndata:Kirill_Vladimirovich a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Vladimir_Kirillovich .\n\ndata:Leonida_Bagration_Mukhrani a :Person,\n        :Woman ;\n    :isMotherOf data:Maria_Vladimirovna .\n\ndata:Victoria_Fyodorovna a :Person,\n        :Woman ;\n    :isMotherOf data:Vladimir_Kirillovich .\n\ndata:Victoria_Romanovna a :Person,\n        :Woman ;\n    :isMotherOf data:Kira_Georgievna .\n\ndata:Franz_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :isFatherOf data:George_Mikhailovich .\n\ndata:George_Mikhailovich a :Man,\n        :Person ;\n    :isFatherOf data:Kira_Georgievna .\n\ndata:Kira_Georgievna a :Person,\n        :Woman .\n\ndata:Maria_Vladimirovna a :Person,\n        :Woman ;\n    :hasBirthYear \"1953\"^^xsd:positiveInteger ;\n    :hasRelation data:Franz_Wilhelm_of_Prussia ;\n    :isMotherOf data:George_Mikhailovich .\n\ndata:Vladimir_Kirillovich a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Maria_Vladimirovna .\n\n"
+    }
+]

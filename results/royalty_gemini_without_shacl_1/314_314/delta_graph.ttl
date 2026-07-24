@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christina_Margaretha_Abbo a :Person,
+        :Woman ;
+    :hasMother data:Willemina_Martina_Wenneker .
+
+data:Edith_Abbo a :Person,
+        :Woman ;
+    :hasMother data:Willemina_Martina_Wenneker .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Willemina_Martina_Wenneker .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Jan_Derk_Lier a :Man,
+        :Person .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Wilhelmina .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Willemina_Martina_Wenneker a :Person,
+        :Woman ;
+    :hasRelation data:Jan_Derk_Lier .
+

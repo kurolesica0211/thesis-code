@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Prince_of_Orange a :Man,\n        :Person ;\n    :hasBirthYear \"1851\"^^xsd:positiveInteger ;\n    :hasBrother data:Prince_Maurice,\n        data:Prince_William ;\n    :hasDeathYear \"1884\"^^xsd:positiveInteger ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Queen_Sophie ;\n    :hasSister data:Queen_Wilhelmina .\n\ndata:King_William_III a :Man,\n        :Person .\n\ndata:Prince_Maurice a :Man,\n        :Person .\n\ndata:Prince_William a :Man,\n        :Person .\n\ndata:Queen_Sophie a :Person,\n        :Woman .\n\ndata:Queen_Wilhelmina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Prince_of_Orange a :Man,\n        :Person ;\n    :hasBirthYear \"1851\"^^xsd:positiveInteger ;\n    :hasBrother data:Prince_Maurice,\n        data:Prince_William ;\n    :hasDeathYear \"1884\"^^xsd:positiveInteger ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Queen_Sophie ;\n    :hasSister data:Queen_Wilhelmina .\n\ndata:King_William_III a :Man,\n        :Person .\n\ndata:Prince_Maurice a :Man,\n        :Person .\n\ndata:Prince_William a :Man,\n        :Person .\n\ndata:Queen_Sophie a :Person,\n        :Woman .\n\ndata:Queen_Wilhelmina a :Person,\n        :Woman .\n\n"
+    }
+]

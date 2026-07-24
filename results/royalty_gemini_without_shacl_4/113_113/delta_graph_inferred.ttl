@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Alfonso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alfonso ;
+    :hasChild data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :hasDaughter data:Countess_Maria_Carolina_Zamoyska ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri,
+        data:Princess_Maria_Antonietta ;
+    :hasSon data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isAncestorOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isBloodrelationOf data:Prince_Alfonso ;
+    :isBrotherOf data:Prince_Alfonso ;
+    :isFatherOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isParentOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isSiblingOf data:Prince_Alfonso ;
+    :isUncleOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri .
+
+data:Princess_Maria_Antonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1851 ;
+    :hasChild data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :hasDaughter data:Countess_Maria_Carolina_Zamoyska ;
+    :hasDeathYear 1938 ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri,
+        data:Princess_Maria_Antonietta ;
+    :hasSister data:Princess_Maria_Antonietta ;
+    :hasSon data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isAncestorOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isAuntOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta ;
+    :isMotherOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isParentOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isSiblingOf data:Princess_Maria_Antonietta ;
+    :isSisterOf data:Princess_Maria_Antonietta .
+
+data:Countess_Maria_Carolina_Zamoyska a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :hasParent data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri,
+        data:Princess_Maria_Antonietta ;
+    :hasSister data:Countess_Maria_Carolina_Zamoyska ;
+    :isBloodrelationOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isChildOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :isDaughterOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :isSiblingOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isSisterOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri .
+
+data:Prince_Ferdinand_Pius a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasBrother data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :hasParent data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri,
+        data:Princess_Maria_Antonietta ;
+    :hasSister data:Countess_Maria_Carolina_Zamoyska ;
+    :isBloodrelationOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isBrotherOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isChildOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :isSiblingOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isSonOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta .
+
+data:Prince_Ranieri a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :hasParent data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri,
+        data:Princess_Maria_Antonietta ;
+    :hasSister data:Countess_Maria_Carolina_Zamoyska ;
+    :isBloodrelationOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isBrotherOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isChildOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta ;
+    :isSiblingOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinand_Pius,
+        data:Prince_Ranieri ;
+    :isSonOf data:Prince_Alfonso,
+        data:Princess_Maria_Antonietta .
+

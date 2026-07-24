@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    :alsoKnownAs data:Lady_Louise_Mountbatten,
+        data:Princess_Louise_of_Battenberg ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Gustaf_VI_Adolf ;
+    :hasSister data:Princess_Alice_of_Battenberg .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasMother data:Princess_Alice_of_Battenberg .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person .
+
+data:Lady_Louise_Mountbatten a :Woman .
+
+data:Louis_Mountbatten a :Man,
+        :Person .
+
+data:Prince_Louis_of_Battenberg a :Man,
+        :Person .
+
+data:Princess_Louise_of_Battenberg a :Woman .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+

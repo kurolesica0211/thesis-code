@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_X_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Knud .
+
+data:Frederick_Walter_Pedersen a :Man,
+        :Person ;
+    :isFatherOf data:Sussie_Hjorhoy_Pedersen .
+
+data:Georg_Terney a :Man,
+        :Person ;
+    :isFatherOf data:Inge_Terney .
+
+data:Jenny_Kamilla_Hansen a :Person,
+        :Woman ;
+    :isMotherOf data:Inge_Terney .
+
+data:Ruth_Hjorhoy a :Person,
+        :Woman ;
+    :isMotherOf data:Sussie_Hjorhoy_Pedersen .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :isFatherOf data:Leopold_Rosanes_af_Rosenborg_Father_Unknown .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person .
+
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :formerlyKnownAs "Prince Ingolf of Denmark"^^xsd:string ;
+    :hasBirthYear 1940 ;
+    :hasMarriageYear 1968 ;
+    :hasRelation data:Inge_Terney,
+        data:Sussie_Hjorhoy_Pedersen ;
+    :isBrotherOf data:Christian_of_Rosenborg ;
+    :isSisterOf data:Princess_Elisabeth_of_Denmark ;
+    :knownAs "Count Ingolf of Rosenborg"^^xsd:string .
+
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person .
+
+data:Leopold_Rosanes_af_Rosenborg_Father_Unknown a :Man,
+        :Person ;
+    :isFatherOf data:Leopold_Rosanes_af_Rosenborg .
+
+data:Prince_Knud a :Man,
+        :Person ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Ingolf_of_Rosenborg .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman .
+
+data:Inge_Terney a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 1996 .
+
+data:Sussie_Hjorhoy_Pedersen a :Person,
+        :Woman ;
+    :hasBirthYear 1950 .
+

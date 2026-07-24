@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claus-Casimir a :Man ;
+    :hasBirthYear "2004"^^xsd:positiveInteger ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
+
+data:Eloise a :Woman ;
+    :hasBirthYear "2002"^^xsd:positiveInteger ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
+
+data:Leonore a :Woman ;
+    :hasBirthYear "2006"^^xsd:positiveInteger ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Beatrix a :Woman .
+
+data:Claus_von_Amsberg a :Man .
+
+data:Johan_Friso a :Man ;
+    :hasBirthYear "1968"^^xsd:positiveInteger ;
+    :hasDeathYear "2013"^^xsd:positiveInteger .
+
+data:Willem-Alexander a :Man ;
+    :hasBirthYear "1967"^^xsd:positiveInteger .
+
+data:Constantijn a :Man ;
+    :hasBirthYear "1969"^^xsd:positiveInteger ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix ;
+    :isBrotherOf data:Johan_Friso,
+        data:Willem-Alexander .
+
+data:Laurentien_Brinkhorst a :Woman .
+

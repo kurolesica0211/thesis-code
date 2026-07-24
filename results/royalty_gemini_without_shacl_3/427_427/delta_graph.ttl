@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Alfred_of_Liechtenstein a :Man .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man ;
+    :hasFather data:Prince_Johann_of_Liechtenstein ;
+    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis ;
+    :hasSister data:Princess_Diemut .
+
+data:Princess_Marie_of_Liechtenstein a :Woman ;
+    :hasBirthYear 1959 ;
+    :hasFather data:Prince_Henri_Count_of_Paris_Duke_of_France ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Woman .
+
+data:Prince_Henri_Count_of_Paris_Duke_of_France a :Man .
+
+data:Princess_Diemut a :Woman ;
+    :hasFather data:Prince_Johann_of_Liechtenstein ;
+    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis .
+
+data:Prince_Johann_of_Liechtenstein a :Man .
+
+data:Princess_Clothilde_of_Thurn_und_Taxis a :Woman .
+

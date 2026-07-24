@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1927,\n        1932 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Princess_Cecylia_Lubomirska,\n        data:Princess_Malgorzata_Izabella_Czartoryska .\n\ndata:Countess_Maria_Ludwika_Krasinska a :Person,\n        :Woman .\n\ndata:Countess_Maria_Theresia_Granow-Wodicka a :Person,\n        :Woman .\n\ndata:Prince_Adam_Ludwik_Czartoryski a :Man,\n        :Person .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Prince_Kasimierz_Lubomirski a :Man,\n        :Person .\n\ndata:Princess_Cecylia_Lubomirska a :Person,\n        :Woman ;\n    :hasFather data:Prince_Kasimierz_Lubomirski ;\n    :hasMother data:Countess_Maria_Theresia_Granow-Wodicka .\n\ndata:Princess_Malgorzata_Izabella_Czartoryska a :Person,\n        :Woman ;\n    :hasFather data:Prince_Adam_Ludwik_Czartoryski ;\n    :hasMother data:Countess_Maria_Ludwika_Krasinska .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1927,\n        1932 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Princess_Cecylia_Lubomirska,\n        data:Princess_Malgorzata_Izabella_Czartoryska .\n\ndata:Countess_Maria_Ludwika_Krasinska a :Person,\n        :Woman .\n\ndata:Countess_Maria_Theresia_Granow-Wodicka a :Person,\n        :Woman .\n\ndata:Prince_Adam_Ludwik_Czartoryski a :Man,\n        :Person .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Prince_Kasimierz_Lubomirski a :Man,\n        :Person .\n\ndata:Princess_Cecylia_Lubomirska a :Person,\n        :Woman ;\n    :hasFather data:Prince_Kasimierz_Lubomirski ;\n    :hasMother data:Countess_Maria_Theresia_Granow-Wodicka .\n\ndata:Princess_Malgorzata_Izabella_Czartoryska a :Person,\n        :Woman ;\n    :hasFather data:Prince_Adam_Ludwik_Czartoryski ;\n    :hasMother data:Countess_Maria_Ludwika_Krasinska .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Frederick_Charles_of_Hesse a :Ancestor .
+
+data:Margaret_of_Prussia a :Ancestor .
+
+data:Richard_of_Hesse :isBrotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Wolfgang_of_Hesse .
+

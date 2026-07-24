@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III,
+        data:Johann_Albrecht ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Alexandra_of_Hanover ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :hasSon data:Friedrich_Franz .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:Anastasia_Mikhailovna a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Ernest_Augustus a :Man,
+        :Person .
+
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_II .
+
+data:Friedrich_Franz a :Man,
+        :Person .
+
+data:Johann_Albrecht a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX .
+

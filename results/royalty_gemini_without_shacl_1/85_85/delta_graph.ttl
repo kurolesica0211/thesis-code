@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceGeorge a :Man,
+        :Person ;
+    :isBrotherOf data:PrincessKatarinaOfYugoslavia .
+
+data:PrinceMichael a :Man,
+        :Person ;
+    :isBrotherOf data:PrincessKatarinaOfYugoslavia .
+
+data:PrinceNikolaOfYugoslavia a :Man,
+        :Person ;
+    :isBrotherOf data:PrincessKatarinaOfYugoslavia .
+
+data:VictoriaMarieEsmeMargarita a :Person,
+        :Woman ;
+    :hasBirthYear "1991-09-06"^^xsd:string ;
+    :hasFather data:SirDesmondDeSilva ;
+    :hasMother data:PrincessKatarinaOfYugoslavia .
+
+data:PrinceTomislavOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessMargaritaOfBaden a :Person,
+        :Woman .
+
+data:SirDesmondDeSilva a :Man,
+        :Person .
+
+data:PrincessKatarinaOfYugoslavia a :Person,
+        :Woman ;
+    :hasBirthYear "1959-11-28"^^xsd:string ;
+    :hasFather data:PrinceTomislavOfYugoslavia ;
+    :hasMarriageYear "1987"^^xsd:string ;
+    :hasMother data:PrincessMargaritaOfBaden ;
+    :hasRelation data:SirDesmondDeSilva .
+

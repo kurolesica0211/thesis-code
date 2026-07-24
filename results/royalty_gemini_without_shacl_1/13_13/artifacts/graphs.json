@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :isBrotherOf data:George_VI .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isBrotherOf data:Elizabeth_Bowes-Lyon .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Cecilia_Cavendish-Bentinck ;\n    :hasRelation data:George_VI ;\n    :hasSex data:Female .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :isBrotherOf data:George_VI .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isBrotherOf data:Elizabeth_Bowes-Lyon .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Female a :Sex .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Cecilia_Cavendish-Bentinck ;\n    :hasRelation data:George_VI ;\n    :hasSex data:Female .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :isBrotherOf data:George_VI .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isBrotherOf data:Elizabeth_Bowes-Lyon .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :isChildOf data:Elizabeth_Bowes-Lyon,\n        data:George_VI .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Female a :Sex .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:Male a :Sex .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Cecilia_Cavendish-Bentinck ;\n    :hasRelation data:George_VI ;\n    :hasSex data:Female .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary ;\n    :hasSex data:Male .\n\n"
+    }
+]

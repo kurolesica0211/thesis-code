@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Princess_Charlotte_of_Croy a :Woman ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Beatrix,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Charlotte_of_Croy ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Croy ;
+    :isSiblingOf data:Princess_Charlotte_of_Croy ;
+    :isSisterOf data:Princess_Charlotte_of_Croy .
+
+data:Princess_Beatrix a :Woman ;
+    :hasBrother data:Kraft ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Beatrix,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Kraft,
+        data:Princess_Beatrix ;
+    :isSiblingOf data:Kraft,
+        data:Princess_Beatrix ;
+    :isSisterOf data:Kraft,
+        data:Princess_Beatrix .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasChild data:Kraft ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Beatrix,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft ;
+    :isAncestorOf data:Kraft ;
+    :isBloodrelationOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isFatherOf data:Kraft ;
+    :isParentOf data:Kraft ;
+    :isSiblingOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isUncleOf data:Kraft .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Kraft ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Beatrix,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft ;
+    :isAncestorOf data:Kraft ;
+    :isAuntOf data:Kraft ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isMotherOf data:Kraft ;
+    :isParentOf data:Kraft ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Kraft a :Man ;
+    :hasAncestor data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:Kraft ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Kraft,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Beatrix,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Kraft,
+        data:Princess_Beatrix ;
+    :isBrotherOf data:Kraft,
+        data:Princess_Beatrix ;
+    :isChildOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Kraft,
+        data:Princess_Beatrix ;
+    :isSonOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark .
+

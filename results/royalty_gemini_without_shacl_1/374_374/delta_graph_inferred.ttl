@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olympia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Olympia ;
+    :hasSon data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Olympia ;
+    :isMotherOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Olympia ;
+    :isSisterOf data:Olympia .
+
+data:Louis_Prince_Napol%C3%A9on a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_Napol%C3%A9on ;
+    :hasChild data:Charles_Prince_Napol%C3%A9on ;
+    :hasDeathYear 1997 ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Charles_Prince_Napol%C3%A9on ;
+    :isAncestorOf data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Louis_Prince_Napol%C3%A9on ;
+    :isBrotherOf data:Louis_Prince_Napol%C3%A9on ;
+    :isFatherOf data:Charles_Prince_Napol%C3%A9on ;
+    :isParentOf data:Charles_Prince_Napol%C3%A9on ;
+    :isSiblingOf data:Louis_Prince_Napol%C3%A9on ;
+    :isUncleOf data:Charles_Prince_Napol%C3%A9on .
+
+data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :hasChild data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :isFatherOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :isUncleOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Charles_Prince_Napol%C3%A9on a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Louis_Prince_Napol%C3%A9on ;
+    :hasBrother data:Charles_Prince_Napol%C3%A9on ;
+    :hasChild data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasFather data:Louis_Prince_Napol%C3%A9on ;
+    :hasParent data:Louis_Prince_Napol%C3%A9on ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isAncestorOf data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Charles_Prince_Napol%C3%A9on ;
+    :isBrotherOf data:Charles_Prince_Napol%C3%A9on ;
+    :isChildOf data:Louis_Prince_Napol%C3%A9on ;
+    :isFatherOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isParentOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isSiblingOf data:Charles_Prince_Napol%C3%A9on ;
+    :isSonOf data:Louis_Prince_Napol%C3%A9on ;
+    :isUncleOf data:Jean-Christophe_Prince_Napol%C3%A9on .
+
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :hasChild data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :hasParent data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isAncestorOf data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isBloodrelationOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :isDaughterOf data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro ;
+    :isMotherOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isParentOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isSiblingOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasAncestor data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 2022 ;
+    :hasBrother data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasMother data:Olympia ;
+    :hasParent data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Olympia ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBrotherOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isChildOf data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Olympia ;
+    :isSiblingOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSonOf data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Olympia .
+
+data:Jean-Christophe_Prince_Napol%C3%A9on a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Charles_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasChild data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Charles_Prince_Napol%C3%A9on ;
+    :hasMother data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Charles_Prince_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Charles_Prince_Napol%C3%A9on,
+        data:Jean-Christophe_Prince_Napol%C3%A9on,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Olympia,
+        data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro,
+        data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isBrotherOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isChildOf data:Charles_Prince_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isSonOf data:Charles_Prince_Napol%C3%A9on,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Prince_Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on .
+

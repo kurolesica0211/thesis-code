@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderKarageorgevitch a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Aleksandar III Karađorđević"^^xsd:string,
+        "Prince Alexander of Serbia and Yugoslavia"^^xsd:string ;
+    :hasBirthYear 1982 ;
+    :hasFather data:AlexanderSr ;
+    :hasMother data:MariaDaGloria .
+
+data:AnaLunaMedinaYOrleansBraganza a :Person,
+        :Woman ;
+    :hasMother data:MariaDaGloria .
+
+data:IgnacioDukeOfSegorbe a :Man,
+        :Person .
+
+data:KatherineClairyBatis a :Person,
+        :Woman .
+
+data:SolMariaDeLaBlancaMedinaYOrleansBraganza a :Person,
+        :Woman ;
+    :hasMother data:MariaDaGloria .
+
+data:AlexanderSr a :Man,
+        :Person .
+
+data:MariaDaGloria a :Person,
+        :Woman .
+

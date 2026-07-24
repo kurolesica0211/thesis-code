@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandIV a :Man,
+        :Person .
+
+data:Sigismund a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:LeopoldoFranz ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:LaetitiaDArenberg ;
+    :hasRelation data:ElyssaEdmonstone .
+
+data:ArchibaldBruceEdmonstone a :Man,
+        :Person .
+
+data:ElyssaEdmonstone a :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:ArchibaldBruceEdmonstone ;
+    :hasMother data:JulietaIsabelDeakin .
+
+data:GottfriedOfAustria a :Man,
+        :Person .
+
+data:JulietaIsabelDeakin a :Person,
+        :Woman ;
+    :hasFather data:PeterDeakin .
+
+data:LaetitiaDArenberg a :Person,
+        :Woman .
+
+data:LeopoldoFranz a :Man,
+        :Person ;
+    :hasFather data:GottfriedOfAustria .
+
+data:PeterDeakin a :Man,
+        :Person .
+

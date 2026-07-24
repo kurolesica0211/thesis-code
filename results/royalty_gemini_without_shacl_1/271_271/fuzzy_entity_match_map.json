@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/271_271",
+  "text_file": "Q3736843.txt",
+  "text_key": "Q3736843",
+  "article": "https://en.wikipedia.org/wiki/Edward_Windsor,_Lord_Downpatrick",
+  "article_key": "Edward Windsor, Lord Downpatrick",
+  "main_entity": {
+    "uri": "http://example.com/data#Edward_Windsor-_Lord_Downpatrick",
+    "qid": "Q3736843",
+    "label": "Edward Windsor, Lord Downpatrick"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Edward_Windsor-_Lord_Downpatrick",
+      "qid": "Q3736843",
+      "label": "Edward Windsor, Lord Downpatrick",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_Windsor-_Earl_of_St_Andrews",
+      "qid": "Q1009513",
+      "label": "George Windsor, Earl of St Andrews",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lord_Nicholas_Windsor",
+      "qid": "Q1217757",
+      "label": "Lord Nicholas Windsor",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Edward_Duke_of_Kent",
+      "extracted_local_name": "Prince_Edward_Duke_of_Kent",
+      "embedding_text": "Prince Edward Duke of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9855072463768115,
+      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "ground_truth_qid": "Q158258",
+      "ground_truth_label": "Prince Edward, Duke of Kent",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Edward- Duke of Kent",
+      "best_candidate_label": "Prince Edward, Duke of Kent",
+      "best_candidate_qid": "Q158258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9855072463768115
+    },
+    {
+      "extracted_uri": "http://example.org/data/Edward_Edmund_Maximilian_George_Windsor",
+      "extracted_local_name": "Edward_Edmund_Maximilian_George_Windsor",
+      "embedding_text": "Edward Edmund Maximilian George Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.5283018867924528,
+      "ground_truth_uri": "http://example.com/data#George_Windsor-_Earl_of_St_Andrews",
+      "ground_truth_qid": "Q1009513",
+      "ground_truth_label": "George Windsor, Earl of St Andrews",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George Windsor",
+      "best_candidate_label": "George Windsor, Earl of St Andrews",
+      "best_candidate_qid": "Q1009513",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5283018867924528
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_Windsor_Earl_of_St_Andrews",
+      "extracted_local_name": "George_Windsor_Earl_of_St_Andrews",
+      "embedding_text": "George Windsor Earl of St Andrews",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Edward Edmund Maximilian George Windsor, Baron Downpatrick",
+      "best_candidate_label": "Edward Windsor, Lord Downpatrick",
+      "best_candidate_qid": "Q3736843",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.46153846153846156
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sylvana_Countess_of_St_Andrews",
+      "extracted_local_name": "Sylvana_Countess_of_St_Andrews",
+      "embedding_text": "Sylvana Countess of St Andrews",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nicholas Windsor",
+      "best_candidate_label": "Lord Nicholas Windsor",
+      "best_candidate_qid": "Q1217757",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.30434782608695654
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

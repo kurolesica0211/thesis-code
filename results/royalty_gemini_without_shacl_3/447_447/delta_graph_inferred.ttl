@@ -1,0 +1,289 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlejandroSantoDomingo a :Man ;
+    :hasBrother data:AlejandroSantoDomingo ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :isBloodrelationOf data:AlejandroSantoDomingo ;
+    :isBrotherOf data:AlejandroSantoDomingo ;
+    :isSiblingOf data:AlejandroSantoDomingo .
+
+data:QueenVictoria a :Ancestor,
+        :Woman ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:LadyCharlotteWellesley ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:WilhelmII a :Ancestor,
+        :Man ;
+    :hasBrother data:WilhelmII ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :isAncestorOf data:LadyCharlotteWellesley ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isSiblingOf data:WilhelmII .
+
+data:LadyBrigidGuinness a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessAntonia ;
+    :hasDaughter data:PrincessAntonia ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:LadyBrigidGuinness ;
+    :isAncestorOf data:LadyCharlotteWellesley,
+        data:PrincessAntonia ;
+    :isAuntOf data:PrincessAntonia ;
+    :isBloodrelationOf data:LadyBrigidGuinness ;
+    :isMotherOf data:PrincessAntonia ;
+    :isParentOf data:PrincessAntonia ;
+    :isSiblingOf data:LadyBrigidGuinness ;
+    :isSisterOf data:LadyBrigidGuinness .
+
+data:PrinceFrederickOfPrussia a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceFrederickOfPrussia ;
+    :hasChild data:PrincessAntonia ;
+    :hasDaughter data:PrincessAntonia ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :isAncestorOf data:LadyCharlotteWellesley,
+        data:PrincessAntonia ;
+    :isBloodrelationOf data:PrinceFrederickOfPrussia ;
+    :isBrotherOf data:PrinceFrederickOfPrussia ;
+    :isFatherOf data:PrincessAntonia ;
+    :isParentOf data:PrincessAntonia ;
+    :isSiblingOf data:PrinceFrederickOfPrussia ;
+    :isUncleOf data:PrincessAntonia .
+
+data:ValerianWellesley a :Ancestor,
+        :Man ;
+    :hasBrother data:ValerianWellesley ;
+    :hasChild data:CharlesWellesley ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSon data:CharlesWellesley ;
+    :isAncestorOf data:CharlesWellesley,
+        data:LadyCharlotteWellesley ;
+    :isBloodrelationOf data:ValerianWellesley ;
+    :isBrotherOf data:ValerianWellesley ;
+    :isFatherOf data:CharlesWellesley ;
+    :isParentOf data:CharlesWellesley ;
+    :isSiblingOf data:ValerianWellesley ;
+    :isUncleOf data:CharlesWellesley .
+
+data:ArthurWellesley a :Man ;
+    :hasBrother data:ArthurWellesley ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isBloodrelationOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isBrotherOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isSiblingOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley .
+
+data:LadyMaryWellesley a :Woman ;
+    :hasBrother data:ArthurWellesley ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isBloodrelationOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isSiblingOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isSisterOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley .
+
+data:CharlesWellesley a :Ancestor,
+        :Man ;
+    :hasAncestor data:ValerianWellesley ;
+    :hasBrother data:CharlesWellesley ;
+    :hasChild data:LadyCharlotteWellesley ;
+    :hasDaughter data:LadyCharlotteWellesley ;
+    :hasFather data:ValerianWellesley ;
+    :hasParent data:ValerianWellesley ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :isAncestorOf data:LadyCharlotteWellesley ;
+    :isBloodrelationOf data:CharlesWellesley ;
+    :isBrotherOf data:CharlesWellesley ;
+    :isChildOf data:ValerianWellesley ;
+    :isFatherOf data:LadyCharlotteWellesley ;
+    :isParentOf data:LadyCharlotteWellesley ;
+    :isSiblingOf data:CharlesWellesley ;
+    :isSonOf data:ValerianWellesley ;
+    :isUncleOf data:LadyCharlotteWellesley .
+
+data:PrincessAntonia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:LadyBrigidGuinness,
+        data:PrinceFrederickOfPrussia ;
+    :hasChild data:LadyCharlotteWellesley ;
+    :hasDaughter data:LadyCharlotteWellesley ;
+    :hasFather data:PrinceFrederickOfPrussia ;
+    :hasMother data:LadyBrigidGuinness ;
+    :hasParent data:LadyBrigidGuinness,
+        data:PrinceFrederickOfPrussia ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:PrincessAntonia ;
+    :isAncestorOf data:LadyCharlotteWellesley ;
+    :isAuntOf data:LadyCharlotteWellesley ;
+    :isBloodrelationOf data:PrincessAntonia ;
+    :isChildOf data:LadyBrigidGuinness,
+        data:PrinceFrederickOfPrussia ;
+    :isDaughterOf data:LadyBrigidGuinness,
+        data:PrinceFrederickOfPrussia ;
+    :isMotherOf data:LadyCharlotteWellesley ;
+    :isParentOf data:LadyCharlotteWellesley ;
+    :isSiblingOf data:PrincessAntonia ;
+    :isSisterOf data:PrincessAntonia .
+
+data:LadyCharlotteWellesley a :Woman ;
+    :hasAncestor data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasBirthYear 1990 ;
+    :hasBrother data:ArthurWellesley ;
+    :hasFather data:CharlesWellesley ;
+    :hasMarriageYear 2016 ;
+    :hasMother data:PrincessAntonia ;
+    :hasParent data:CharlesWellesley,
+        data:PrincessAntonia ;
+    :hasRelation data:AlejandroSantoDomingo,
+        data:ArthurWellesley,
+        data:CharlesWellesley,
+        data:LadyBrigidGuinness,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley,
+        data:PrinceFrederickOfPrussia,
+        data:PrincessAntonia,
+        data:QueenVictoria,
+        data:ValerianWellesley,
+        data:WilhelmII ;
+    :hasSister data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isBloodrelationOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isChildOf data:CharlesWellesley,
+        data:PrincessAntonia ;
+    :isDaughterOf data:CharlesWellesley,
+        data:PrincessAntonia ;
+    :isSiblingOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley ;
+    :isSisterOf data:ArthurWellesley,
+        data:LadyCharlotteWellesley,
+        data:LadyMaryWellesley .
+

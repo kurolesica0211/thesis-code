@@ -1,0 +1,89 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Louis_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1972 ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Diane_dOrleans a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_dOrleans .
+
+data:Foulques_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1974 ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Francois_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Francois_dOrleans_Clermont a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Jean_Robert_Boeuf a :Man,
+        :Person .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Louis_Alphonse_Duke_of_Anjou a :Man,
+        :Person .
+
+data:Marie_dOrleans_1989 a :Person,
+        :Woman ;
+    :isDaughterOf data:Henri_dOrleans,
+        data:Marie_Therese_of_Wurttemberg .
+
+data:Micaela_Anna_Maria_Cousino a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon .
+
+data:Michel_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person .
+
+data:Thibaut_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Antonia_Maria_Quinones_de_Leon a :Person,
+        :Woman .
+
+data:Henri_Count_of_Paris_1908 a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 .
+
+data:Isabelle_of_Orleans_Braganza a :Person,
+        :Woman .
+
+data:Luis_Cousino_y_Sebire a :Man,
+        :Person .
+
+data:Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:Jacques_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Henri_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris_1908 ;
+    :hasMother data:Isabelle_of_Orleans_Braganza .
+

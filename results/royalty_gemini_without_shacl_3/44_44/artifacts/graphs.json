@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie_of_Greece a :Person,\n        :Woman .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Felix a :Man,\n        :Person .\n\ndata:Isabella_of_Denmark a :Person,\n        :Woman ;\n    :hasAncestor data:Christian_X ;\n    :hasBirthYear 2007 ;\n    :isChildOf data:Henrik,\n        data:Margrethe_II ;\n    :isDaughterOf data:Frederik_X,\n        data:Mary ;\n    :isSiblingOf data:Christian,\n        data:Vincent .\n\ndata:Joachim a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person .\n\ndata:Christian a :Man,\n        :Person .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Mary a :Person,\n        :Woman .\n\ndata:Vincent a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne-Marie_of_Greece a :Person,\n        :Woman .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Felix a :Man,\n        :Person .\n\ndata:Isabella_of_Denmark a :Person,\n        :Woman ;\n    :hasAncestor data:Christian_X ;\n    :hasBirthYear 2007 ;\n    :isChildOf data:Henrik,\n        data:Margrethe_II ;\n    :isDaughterOf data:Frederik_X,\n        data:Mary ;\n    :isSiblingOf data:Christian,\n        data:Vincent .\n\ndata:Joachim a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person .\n\ndata:Christian a :Man,\n        :Person .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Mary a :Person,\n        :Woman .\n\ndata:Vincent a :Man,\n        :Person .\n\n"
+    }
+]

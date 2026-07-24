@@ -1,0 +1,381 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MadeleineDeBourbonBusset a :Person,
+        :Woman ;
+    :hasRelation data:MadeleineDeBourbonBusset ;
+    :hasSister data:MadeleineDeBourbonBusset ;
+    :isBloodrelationOf data:MadeleineDeBourbonBusset ;
+    :isSiblingOf data:MadeleineDeBourbonBusset ;
+    :isSisterOf data:MadeleineDeBourbonBusset .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man,
+        :Person ;
+    :hasBrother data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasRelation data:PrinceBernhardOfLippeBiesterfeld ;
+    :isBloodrelationOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isBrotherOf data:PrinceBernhardOfLippeBiesterfeld ;
+    :isSiblingOf data:PrinceBernhardOfLippeBiesterfeld .
+
+data:PrinceXavierOfBourbonParma a :Man,
+        :Person ;
+    :hasBrother data:PrinceXavierOfBourbonParma ;
+    :hasRelation data:PrinceXavierOfBourbonParma ;
+    :isBloodrelationOf data:PrinceXavierOfBourbonParma ;
+    :isBrotherOf data:PrinceXavierOfBourbonParma ;
+    :isSiblingOf data:PrinceXavierOfBourbonParma .
+
+data:QueenJulianaOfTheNetherlands a :Person,
+        :Woman ;
+    :hasRelation data:QueenJulianaOfTheNetherlands ;
+    :hasSister data:QueenJulianaOfTheNetherlands ;
+    :isBloodrelationOf data:QueenJulianaOfTheNetherlands ;
+    :isSiblingOf data:QueenJulianaOfTheNetherlands ;
+    :isSisterOf data:QueenJulianaOfTheNetherlands .
+
+data:AdolphRoderikErnstLeopold a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AdolphRoderikErnstLeopold ;
+    :hasChild data:BrigitteKlynstra ;
+    :hasDaughter data:BrigitteKlynstra ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :isAncestorOf data:BrigitteKlynstra,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isBloodrelationOf data:AdolphRoderikErnstLeopold ;
+    :isBrotherOf data:AdolphRoderikErnstLeopold ;
+    :isFatherOf data:BrigitteKlynstra ;
+    :isParentOf data:BrigitteKlynstra ;
+    :isSiblingOf data:AdolphRoderikErnstLeopold ;
+    :isUncleOf data:BrigitteKlynstra .
+
+data:IngridPieksmaKlynstra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:BrigitteKlynstra ;
+    :hasDaughter data:BrigitteKlynstra ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:IngridPieksmaKlynstra ;
+    :isAncestorOf data:BrigitteKlynstra,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isAuntOf data:BrigitteKlynstra ;
+    :isBloodrelationOf data:IngridPieksmaKlynstra ;
+    :isMotherOf data:BrigitteKlynstra ;
+    :isParentOf data:BrigitteKlynstra ;
+    :isSiblingOf data:IngridPieksmaKlynstra ;
+    :isSisterOf data:IngridPieksmaKlynstra .
+
+data:CarlosHugoDukeOfParma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CarlosHugoDukeOfParma ;
+    :hasChild data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSon data:PrinceCarlosDeBourbonDeParme ;
+    :isAncestorOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:CarlosHugoDukeOfParma ;
+    :isBrotherOf data:CarlosHugoDukeOfParma ;
+    :isFatherOf data:PrinceCarlosDeBourbonDeParme ;
+    :isParentOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:CarlosHugoDukeOfParma ;
+    :isUncleOf data:PrinceCarlosDeBourbonDeParme .
+
+data:PrincessIreneOfTheNetherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:PrincessIreneOfTheNetherlands ;
+    :hasSon data:PrinceCarlosDeBourbonDeParme ;
+    :isAncestorOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isAuntOf data:PrinceCarlosDeBourbonDeParme ;
+    :isBloodrelationOf data:PrincessIreneOfTheNetherlands ;
+    :isMotherOf data:PrinceCarlosDeBourbonDeParme ;
+    :isParentOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:PrincessIreneOfTheNetherlands ;
+    :isSisterOf data:PrincessIreneOfTheNetherlands .
+
+data:BrigitteKlynstra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AdolphRoderikErnstLeopold,
+        data:IngridPieksmaKlynstra ;
+    :hasChild data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :hasFather data:AdolphRoderikErnstLeopold ;
+    :hasMother data:IngridPieksmaKlynstra ;
+    :hasParent data:AdolphRoderikErnstLeopold,
+        data:IngridPieksmaKlynstra ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:BrigitteKlynstra ;
+    :hasSon data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isAncestorOf data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isAuntOf data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isBloodrelationOf data:BrigitteKlynstra ;
+    :isChildOf data:AdolphRoderikErnstLeopold,
+        data:IngridPieksmaKlynstra ;
+    :isDaughterOf data:AdolphRoderikErnstLeopold,
+        data:IngridPieksmaKlynstra ;
+    :isMotherOf data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isParentOf data:CarlosHugoRoderikSybrenDeBourbonDeParme ;
+    :isSiblingOf data:BrigitteKlynstra ;
+    :isSisterOf data:BrigitteKlynstra .
+
+data:PrinceCarlosOfParma a :Man,
+        :Person ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBrother data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme ;
+    :hasParent data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBrotherOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isChildOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isSonOf data:PrinceCarlosDeBourbonDeParme .
+
+data:PrincessCeciliaOfParma a :Person,
+        :Woman ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBrother data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme ;
+    :hasParent data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isChildOf data:PrinceCarlosDeBourbonDeParme ;
+    :isDaughterOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isSisterOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma .
+
+data:PrincessLuisaOfParma a :Person,
+        :Woman ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBrother data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme ;
+    :hasParent data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isChildOf data:PrinceCarlosDeBourbonDeParme ;
+    :isDaughterOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isSisterOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma .
+
+data:CarlosHugoRoderikSybrenDeBourbonDeParme a :Man,
+        :Person ;
+    :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+    :hasAncestor data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBirthYear 1997 ;
+    :hasBrother data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma ;
+    :hasFather data:PrinceCarlosDeBourbonDeParme ;
+    :hasMother data:BrigitteKlynstra ;
+    :hasParent data:BrigitteKlynstra,
+        data:PrinceCarlosDeBourbonDeParme ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSister data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBrotherOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isChildOf data:BrigitteKlynstra,
+        data:PrinceCarlosDeBourbonDeParme ;
+    :isSiblingOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isSonOf data:BrigitteKlynstra,
+        data:PrinceCarlosDeBourbonDeParme .
+
+data:PrinceCarlosDeBourbonDeParme a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasBrother data:PrinceCarlosDeBourbonDeParme ;
+    :hasChild data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :hasDaughter data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands ;
+    :hasParent data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :hasRelation data:AdolphRoderikErnstLeopold,
+        data:BrigitteKlynstra,
+        data:CarlosHugoDukeOfParma,
+        data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:IngridPieksmaKlynstra,
+        data:PrinceCarlosDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessIreneOfTheNetherlands,
+        data:PrincessLuisaOfParma ;
+    :hasSon data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma ;
+    :isAncestorOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isBloodrelationOf data:PrinceCarlosDeBourbonDeParme ;
+    :isBrotherOf data:PrinceCarlosDeBourbonDeParme ;
+    :isChildOf data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :isFatherOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isParentOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma ;
+    :isSiblingOf data:PrinceCarlosDeBourbonDeParme ;
+    :isSonOf data:CarlosHugoDukeOfParma,
+        data:PrincessIreneOfTheNetherlands ;
+    :isUncleOf data:CarlosHugoRoderikSybrenDeBourbonDeParme,
+        data:PrinceCarlosOfParma,
+        data:PrincessCeciliaOfParma,
+        data:PrincessLuisaOfParma .
+

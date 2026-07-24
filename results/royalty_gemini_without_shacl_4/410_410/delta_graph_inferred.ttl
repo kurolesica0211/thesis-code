@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:James a :Man,
+        :Person ;
+    :hasBrother data:James ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasSister data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isBrotherOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Sophie_Duchess_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Louise_Mountbatten-Windsor ;
+    :hasDaughter data:Lady_Louise_Mountbatten-Windsor ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasSister data:Sophie_Duchess_of_Edinburgh ;
+    :isAncestorOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isAuntOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Sophie_Duchess_of_Edinburgh ;
+    :isMotherOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isParentOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:Sophie_Duchess_of_Edinburgh ;
+    :isSisterOf data:Sophie_Duchess_of_Edinburgh .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasChild data:Prince_Edward ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasSon data:Prince_Edward ;
+    :isAncestorOf data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward ;
+    :isBloodrelationOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isBrotherOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:Prince_Edward ;
+    :isParentOf data:Prince_Edward ;
+    :isSiblingOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:Prince_Edward .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Man,
+        :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasChild data:Prince_Edward ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :hasSon data:Prince_Edward ;
+    :isAncestorOf data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward ;
+    :isAuntOf data:Prince_Edward ;
+    :isBloodrelationOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isBrotherOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:Prince_Edward ;
+    :isMotherOf data:Prince_Edward ;
+    :isParentOf data:Prince_Edward ;
+    :isSiblingOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II ;
+    :isUncleOf data:Prince_Edward .
+
+data:Lady_Louise_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasBirthYear "2003"^^xsd:positiveInteger ;
+    :hasBrother data:James ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie_Duchess_of_Edinburgh ;
+    :hasParent data:Prince_Edward,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :hasSister data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :isDaughterOf data:Prince_Edward,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :isSiblingOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :isSisterOf data:James,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Edward a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Edward ;
+    :hasChild data:Lady_Louise_Mountbatten-Windsor ;
+    :hasDaughter data:Lady_Louise_Mountbatten-Windsor ;
+    :hasFather data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:James,
+        data:Lady_Louise_Mountbatten-Windsor,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :isAncestorOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Prince_Edward ;
+    :isBrotherOf data:Prince_Edward ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isParentOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Edward ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:Lady_Louise_Mountbatten-Windsor .
+

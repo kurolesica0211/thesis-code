@@ -1,0 +1,251 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LouisMountbatten1stMarquess a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LouisMountbatten1stMarquess ;
+    :hasChild data:GeorgeMountbatten ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSon data:GeorgeMountbatten ;
+    :isAncestorOf data:GeorgeMountbatten ;
+    :isBloodrelationOf data:LouisMountbatten1stMarquess ;
+    :isBrotherOf data:LouisMountbatten1stMarquess ;
+    :isFatherOf data:GeorgeMountbatten ;
+    :isParentOf data:GeorgeMountbatten ;
+    :isSiblingOf data:LouisMountbatten1stMarquess ;
+    :isUncleOf data:GeorgeMountbatten .
+
+data:MichaelMikhailovichRomanov a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:MichaelMikhailovichRomanov ;
+    :hasChild data:NadejdaMikhailovnaDeTorby ;
+    :hasDaughter data:NadejdaMikhailovnaDeTorby ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :isAncestorOf data:NadejdaMikhailovnaDeTorby ;
+    :isBloodrelationOf data:MichaelMikhailovichRomanov ;
+    :isBrotherOf data:MichaelMikhailovichRomanov ;
+    :isFatherOf data:NadejdaMikhailovnaDeTorby ;
+    :isParentOf data:NadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:MichaelMikhailovichRomanov ;
+    :isUncleOf data:NadejdaMikhailovnaDeTorby .
+
+data:PrincessVictoriaOfHesse a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgeMountbatten ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:PrincessVictoriaOfHesse ;
+    :hasSon data:GeorgeMountbatten ;
+    :isAncestorOf data:GeorgeMountbatten ;
+    :isAuntOf data:GeorgeMountbatten ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesse ;
+    :isMotherOf data:GeorgeMountbatten ;
+    :isParentOf data:GeorgeMountbatten ;
+    :isSiblingOf data:PrincessVictoriaOfHesse ;
+    :isSisterOf data:PrincessVictoriaOfHesse .
+
+data:SophieVonMerenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:NadejdaMikhailovnaDeTorby ;
+    :hasDaughter data:NadejdaMikhailovnaDeTorby ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:SophieVonMerenberg ;
+    :isAncestorOf data:NadejdaMikhailovnaDeTorby ;
+    :isAuntOf data:NadejdaMikhailovnaDeTorby ;
+    :isBloodrelationOf data:SophieVonMerenberg ;
+    :isMotherOf data:NadejdaMikhailovnaDeTorby ;
+    :isParentOf data:NadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:SophieVonMerenberg ;
+    :isSisterOf data:SophieVonMerenberg .
+
+data:LouisMountbatten1stEarl a :Man,
+        :Person ;
+    :hasBrother data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBrotherOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden .
+
+data:NadejdaMikhailovnaDeTorby a :Person,
+        :Woman ;
+    :hasAncestor data:MichaelMikhailovichRomanov,
+        data:SophieVonMerenberg ;
+    :hasFather data:MichaelMikhailovichRomanov ;
+    :hasMother data:SophieVonMerenberg ;
+    :hasParent data:MichaelMikhailovichRomanov,
+        data:SophieVonMerenberg ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:NadejdaMikhailovnaDeTorby ;
+    :isBloodrelationOf data:NadejdaMikhailovnaDeTorby ;
+    :isChildOf data:MichaelMikhailovichRomanov,
+        data:SophieVonMerenberg ;
+    :isDaughterOf data:MichaelMikhailovichRomanov,
+        data:SophieVonMerenberg ;
+    :isSiblingOf data:NadejdaMikhailovnaDeTorby ;
+    :isSisterOf data:NadejdaMikhailovnaDeTorby .
+
+data:PrincessAlice a :Person,
+        :Woman ;
+    :hasBrother data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSisterOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden .
+
+data:QueenLouiseOfSweden a :Person,
+        :Woman ;
+    :hasBrother data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSisterOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden .
+
+data:GeorgeMountbatten a :Man,
+        :Person ;
+    :alsoKnownAs "Lord Milford Haven"^^xsd:string ;
+    :formerlyKnownAs "Earl of Medina"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasAncestor data:LouisMountbatten1stMarquess,
+        data:PrincessVictoriaOfHesse ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl ;
+    :hasDeathYear 1938 ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:PrincessVictoriaOfHesse ;
+    :hasParent data:LouisMountbatten1stMarquess,
+        data:PrincessVictoriaOfHesse ;
+    :hasRelation data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:LouisMountbatten1stMarquess,
+        data:MichaelMikhailovichRomanov,
+        data:NadejdaMikhailovnaDeTorby,
+        data:PrincessAlice,
+        data:PrincessVictoriaOfHesse,
+        data:QueenLouiseOfSweden,
+        data:SophieVonMerenberg ;
+    :hasSister data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBloodrelationOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isBrotherOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isChildOf data:LouisMountbatten1stMarquess,
+        data:PrincessVictoriaOfHesse ;
+    :isSiblingOf data:GeorgeMountbatten,
+        data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :isSonOf data:LouisMountbatten1stMarquess,
+        data:PrincessVictoriaOfHesse ;
+    :knownAs "GeorgeMountbatten"^^xsd:string .
+

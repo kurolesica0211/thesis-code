@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear \"1913\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1999\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;\n    :isBrotherOf data:Prince_Ruggiero_Maria ;\n    :isSisterOf data:Princess_Barbara_Maria,\n        data:Princess_Lucia,\n        data:Princess_Maria_Antonietta,\n        data:Princess_Maria_Cristina .\n\ndata:Archduchess_Maria_Theresa_of_Austria-Este a :Woman .\n\ndata:King_Ludwig_III_of_Bavaria a :Man .\n\ndata:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man ;\n    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ruggiero_Maria a :Man .\n\ndata:Princess_Barbara_Maria a :Woman .\n\ndata:Princess_Lucia a :Woman .\n\ndata:Princess_Maria_Antonietta a :Woman .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Princess_Maria_Cristina a :Woman .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman ;\n    :hasFather data:King_Ludwig_III_of_Bavaria ;\n    :hasMother data:Archduchess_Maria_Theresa_of_Austria-Este .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Urraca_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear \"1913\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1999\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;\n    :isBrotherOf data:Prince_Ruggiero_Maria ;\n    :isSisterOf data:Princess_Barbara_Maria,\n        data:Princess_Lucia,\n        data:Princess_Maria_Antonietta,\n        data:Princess_Maria_Cristina .\n\ndata:Archduchess_Maria_Theresa_of_Austria-Este a :Woman .\n\ndata:King_Ludwig_III_of_Bavaria a :Man .\n\ndata:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man ;\n    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ruggiero_Maria a :Man .\n\ndata:Princess_Barbara_Maria a :Woman .\n\ndata:Princess_Lucia a :Woman .\n\ndata:Princess_Maria_Antonietta a :Woman .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Princess_Maria_Cristina a :Woman .\n\ndata:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Woman ;\n    :hasFather data:King_Ludwig_III_of_Bavaria ;\n    :hasMother data:Archduchess_Maria_Theresa_of_Austria-Este .\n\n"
+    }
+]

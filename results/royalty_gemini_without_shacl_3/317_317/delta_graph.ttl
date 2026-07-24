@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ArchdukeOtto a :Man ;
+    :hasMother data:PrincessZita .
+
+data:CarlosKlynstra a :Man ;
+    :hasFather data:PrinceCarlos ;
+    :hasMother data:BrigitteKlynstra .
+
+data:MariaAmalia a :Woman .
+
+data:PieterVanVollenhoven a :Man .
+
+data:PrinceBernhard a :Man .
+
+data:PrinceCarlosEnrique a :Man ;
+    :hasFather data:PrinceCarlos .
+
+data:PrinceJaime a :Man ;
+    :isChildOf data:CarlosHugo,
+        data:PrincessIrene .
+
+data:PrinceJean a :Man ;
+    :isChildOf data:PrinceLouis .
+
+data:PrinceRemy a :Man ;
+    :isChildOf data:PrinceLouis .
+
+data:PrincessBeatrix a :Woman ;
+    :isChildOf data:PrinceLouis .
+
+data:PrincessCarolina a :Woman ;
+    :isChildOf data:CarlosHugo,
+        data:PrincessIrene .
+
+data:PrincessCecilia a :Woman ;
+    :hasFather data:PrinceCarlos .
+
+data:PrincessChantal a :Woman ;
+    :isChildOf data:PrinceLouis .
+
+data:PrincessElisabeth a :Woman ;
+    :isChildOf data:PrinceLouis .
+
+data:PrincessJoan a :Woman ;
+    :isChildOf data:PrinceFelix .
+
+data:PrincessLuisa a :Woman ;
+    :hasFather data:PrinceCarlos .
+
+data:PrincessMargarita a :Woman ;
+    :isChildOf data:CarlosHugo,
+        data:PrincessIrene .
+
+data:PrincessMargriet a :Woman ;
+    :isChildOf data:PrinceLouis .
+
+data:PrincessMariaPia a :Woman ;
+    :isChildOf data:PrinceRene .
+
+data:PrincessMarina a :Woman ;
+    :isChildOf data:PrinceRene .
+
+data:PrincessVirginia a :Woman ;
+    :isChildOf data:PrinceLouis .
+
+data:QueenAnne a :Woman ;
+    :hasMother data:PrincessRen%C3%A9 .
+
+data:QueenJuliana a :Woman .
+
+data:AnnemarieGualtherieVanWeezel a :Woman .
+
+data:BrigitteKlynstra a :Woman .
+
+data:PrinceFelix a :Man .
+
+data:PrinceXavier a :Man .
+
+data:PrincessRen%C3%A9 a :Woman .
+
+data:PrincessZita a :Woman .
+
+data:PrinceRene a :Man .
+
+data:CarlosHugo a :Man ;
+    :hasFather data:PrinceXavier .
+
+data:PrinceCarlos a :Man ;
+    :hasBirthYear 1970 ;
+    :hasFather data:CarlosHugo ;
+    :hasMarriageYear data:AnnemarieGualtherieVanWeezel ;
+    :hasMother data:PrincessIrene .
+
+data:PrincessIrene a :Woman .
+
+data:PrinceLouis a :Man .
+

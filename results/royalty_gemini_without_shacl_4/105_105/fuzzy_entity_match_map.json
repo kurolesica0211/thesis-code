@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/105_105",
+  "text_file": "Q1850305.txt",
+  "text_key": "Q1850305",
+  "article": "https://en.wikipedia.org/wiki/Prince_Carlo,_Duke_of_Castro",
+  "article_key": "Prince Carlo, Duke of Castro",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Carlo-_Duke_of_Castro",
+    "qid": "Q1850305",
+    "label": "Prince Carlo, Duke of Castro"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Carlo-_Duke_of_Castro",
+      "qid": "Q1850305",
+      "label": "Prince Carlo, Duke of Castro",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ferdinando-_Duke_of_Castro",
+      "qid": "Q2324276",
+      "label": "Prince Ferdinando, Duke of Castro",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Chantal-_Duchess_of_Castro",
+      "qid": "Q3666240",
+      "label": "Princess Chantal, Duchess of Castro",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/PrinceFerdinandDukeOfCastro",
+      "extracted_local_name": "PrinceFerdinandDukeOfCastro",
+      "embedding_text": "Prince Ferdinand Duke Of Castro",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9777777777777779,
+      "ground_truth_uri": "http://example.com/data#Prince_Ferdinando-_Duke_of_Castro",
+      "ground_truth_qid": "Q2324276",
+      "ground_truth_label": "Prince Ferdinando, Duke of Castro",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Ferdinando- Duke of Castro",
+      "best_candidate_label": "Prince Ferdinando, Duke of Castro",
+      "best_candidate_qid": "Q2324276",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9777777777777779
+    },
+    {
+      "extracted_uri": "http://example.org/data/ChantalDeChevronVillette",
+      "extracted_local_name": "ChantalDeChevronVillette",
+      "embedding_text": "Chantal De Chevron Villette",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.96875,
+      "ground_truth_uri": "http://example.com/data#Princess_Chantal-_Duchess_of_Castro",
+      "ground_truth_qid": "Q3666240",
+      "ground_truth_label": "Princess Chantal, Duchess of Castro",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Chantal de Chevron-Villette",
+      "best_candidate_label": "Princess Chantal, Duchess of Castro",
+      "best_candidate_qid": "Q3666240",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.96875
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceCarloOfBourbonTwoSicilies",
+      "extracted_local_name": "PrinceCarloOfBourbonTwoSicilies",
+      "embedding_text": "Prince Carlo Of Bourbon Two Sicilies",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8777777777777778,
+      "ground_truth_uri": "http://example.com/data#Prince_Carlo-_Duke_of_Castro",
+      "ground_truth_qid": "Q1850305",
+      "ground_truth_label": "Prince Carlo, Duke of Castro",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro",
+      "best_candidate_label": "Prince Carlo, Duke of Castro",
+      "best_candidate_qid": "Q1850305",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8777777777777778
+    },
+    {
+      "extracted_uri": "http://example.org/data/CamillaCrociani",
+      "extracted_local_name": "CamillaCrociani",
+      "embedding_text": "Camilla Crociani",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Chantal Françoise Marie Camille de Chevron-Villette",
+      "best_candidate_label": "Princess Chantal, Duchess of Castro",
+      "best_candidate_qid": "Q3666240",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3283582089552239
+    },
+    {
+      "extracted_uri": "http://example.org/data/CamilloCrociani",
+      "extracted_local_name": "CamilloCrociani",
+      "embedding_text": "Camillo Crociani",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Carlo- Duke of Castro",
+      "best_candidate_label": "Prince Carlo, Duke of Castro",
+      "best_candidate_qid": "Q1850305",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.36363636363636365
+    },
+    {
+      "extracted_uri": "http://example.org/data/EdyVessel",
+      "extracted_local_name": "EdyVessel",
+      "embedding_text": "Edy Vessel",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ferdinando Maria Andrea Alfonso Marcus",
+      "best_candidate_label": "Prince Ferdinando, Duke of Castro",
+      "best_candidate_qid": "Q2324276",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.25
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

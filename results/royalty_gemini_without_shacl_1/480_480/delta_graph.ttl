@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MaryMalcolm a :Person,
+        :Woman ;
+    :hasFather data:IanMalcolm ;
+    :hasMother data:JeanneMarieLangtry .
+
+data:EdwardLangtry a :Man,
+        :Person .
+
+data:EmilieCharlotteLeBreton a :Person,
+        :Woman ;
+    :alsoKnownAs "Lily Langtry"^^xsd:string,
+        "The Jersey Lily"^^xsd:string ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:WilliamCorbetLeBreton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:EmilieDavisMartin ;
+    :hasRelation data:EdwardLangtry,
+        data:HugoGeraldDeBathe ;
+    :knownAs "Lillie Langtry"^^xsd:string .
+
+data:EmilieDavisMartin a :Person,
+        :Woman .
+
+data:HugoGeraldDeBathe a :Man,
+        :Person .
+
+data:JeanneMarieLangtry a :Person,
+        :Woman ;
+    :hasFather data:LouisOfBattenberg ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:EmilieCharlotteLeBreton ;
+    :hasRelation data:IanMalcolm .
+
+data:LouisOfBattenberg a :Man,
+        :Person .
+
+data:WilliamCorbetLeBreton a :Man,
+        :Person .
+
+data:IanMalcolm a :Man,
+        :Person .
+

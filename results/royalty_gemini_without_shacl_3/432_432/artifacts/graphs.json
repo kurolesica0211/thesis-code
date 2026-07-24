@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sarah_Rose_Troughton a :Person,\n        :Woman ;\n    :hasAncestor data:Jeremiah_Colman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Timothy_Colman ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Mary_Cecilia_Bowes-Lyon ;\n    :hasRelation data:Peter_Troughton .\n\ndata:Charles_Troughton a :Man,\n        :Person .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Jeremiah_Colman a :Ancestor,\n        :Person ;\n    :hasBirthYear 1777 ;\n    :hasDeathYear 1851 .\n\ndata:Mary_Cecilia_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasAncestor data:Claude_Bowes-Lyon .\n\ndata:Peter_Troughton a :Man,\n        :Person ;\n    :hasBirthYear 1948 ;\n    :hasFather data:Charles_Troughton .\n\ndata:Timothy_Colman a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sarah_Rose_Troughton a :Person,\n        :Woman ;\n    :hasAncestor data:Jeremiah_Colman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Timothy_Colman ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Mary_Cecilia_Bowes-Lyon ;\n    :hasRelation data:Peter_Troughton .\n\ndata:Charles_Troughton a :Man,\n        :Person .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Jeremiah_Colman a :Ancestor,\n        :Person ;\n    :hasBirthYear 1777 ;\n    :hasDeathYear 1851 .\n\ndata:Mary_Cecilia_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasAncestor data:Claude_Bowes-Lyon .\n\ndata:Peter_Troughton a :Man,\n        :Person ;\n    :hasBirthYear 1948 ;\n    :hasFather data:Charles_Troughton .\n\ndata:Timothy_Colman a :Man,\n        :Person .\n\n"
+    }
+]

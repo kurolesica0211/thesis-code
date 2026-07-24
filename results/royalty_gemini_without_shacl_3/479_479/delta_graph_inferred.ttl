@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JuanCarlosI a :Ancestor,
+        :Man ;
+    :hasBrother data:JuanCarlosI ;
+    :hasChild data:FelipeVI ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:FelipeVI,
+        data:InfantaSofia,
+        data:Leonor ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isFatherOf data:FelipeVI ;
+    :isParentOf data:FelipeVI ;
+    :isSiblingOf data:JuanCarlosI ;
+    :isUncleOf data:FelipeVI .
+
+data:Sofia a :Ancestor,
+        :Woman ;
+    :hasChild data:FelipeVI ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :hasSister data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:FelipeVI,
+        data:InfantaSofia,
+        data:Leonor ;
+    :isAuntOf data:FelipeVI ;
+    :isBloodrelationOf data:Sofia ;
+    :isMotherOf data:FelipeVI ;
+    :isParentOf data:FelipeVI ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Letizia a :Ancestor,
+        :Woman ;
+    :hasChild data:InfantaSofia,
+        data:Leonor ;
+    :hasDaughter data:InfantaSofia,
+        data:Leonor ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :hasSister data:Letizia ;
+    :isAncestorOf data:InfantaSofia,
+        data:Leonor ;
+    :isAuntOf data:InfantaSofia,
+        data:Leonor ;
+    :isBloodrelationOf data:Letizia ;
+    :isMotherOf data:InfantaSofia,
+        data:Leonor ;
+    :isParentOf data:InfantaSofia,
+        data:Leonor ;
+    :isSiblingOf data:Letizia ;
+    :isSisterOf data:Letizia .
+
+data:InfantaSofia a :Woman ;
+    :hasAncestor data:FelipeVI,
+        data:JuanCarlosI,
+        data:Letizia,
+        data:Sofia ;
+    :hasBirthYear 2007 ;
+    :hasFather data:FelipeVI ;
+    :hasMother data:Letizia ;
+    :hasParent data:FelipeVI,
+        data:Letizia ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :hasSister data:InfantaSofia,
+        data:Leonor ;
+    :isBloodrelationOf data:InfantaSofia,
+        data:Leonor ;
+    :isChildOf data:FelipeVI,
+        data:Letizia ;
+    :isDaughterOf data:FelipeVI,
+        data:Letizia ;
+    :isSiblingOf data:InfantaSofia,
+        data:Leonor ;
+    :isSisterOf data:InfantaSofia,
+        data:Leonor .
+
+data:Leonor a :Woman ;
+    :hasAncestor data:FelipeVI,
+        data:JuanCarlosI,
+        data:Letizia,
+        data:Sofia ;
+    :hasFather data:FelipeVI ;
+    :hasMother data:Letizia ;
+    :hasParent data:FelipeVI,
+        data:Letizia ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :hasSister data:InfantaSofia,
+        data:Leonor ;
+    :isBloodrelationOf data:InfantaSofia,
+        data:Leonor ;
+    :isChildOf data:FelipeVI,
+        data:Letizia ;
+    :isDaughterOf data:FelipeVI,
+        data:Letizia ;
+    :isSiblingOf data:InfantaSofia,
+        data:Leonor ;
+    :isSisterOf data:InfantaSofia,
+        data:Leonor .
+
+data:FelipeVI a :Ancestor,
+        :Man ;
+    :hasAncestor data:JuanCarlosI,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasChild data:InfantaSofia,
+        data:Leonor ;
+    :hasDaughter data:InfantaSofia,
+        data:Leonor ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:FelipeVI,
+        data:InfantaSofia,
+        data:JuanCarlosI,
+        data:Leonor,
+        data:Letizia,
+        data:Sofia ;
+    :isAncestorOf data:InfantaSofia,
+        data:Leonor ;
+    :isBloodrelationOf data:FelipeVI ;
+    :isBrotherOf data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isFatherOf data:InfantaSofia,
+        data:Leonor ;
+    :isParentOf data:InfantaSofia,
+        data:Leonor ;
+    :isSiblingOf data:FelipeVI ;
+    :isSonOf data:JuanCarlosI,
+        data:Sofia ;
+    :isUncleOf data:InfantaSofia,
+        data:Leonor .
+

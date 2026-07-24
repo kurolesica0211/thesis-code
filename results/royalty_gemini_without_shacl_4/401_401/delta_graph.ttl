@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MargaretaOfRomania a :Woman ;
+    :hasBirthYear 1949 ;
+    :hasFather data:KingMichaelI ;
+    :hasMother data:QueenAnneOfRomania ;
+    :hasRelation data:PrinceRadu .
+
+data:PrincessElena a :Woman ;
+    :isDaughterOf data:KingMichaelI,
+        data:QueenAnneOfRomania .
+
+data:PrincessIrina a :Woman ;
+    :isDaughterOf data:KingMichaelI,
+        data:QueenAnneOfRomania .
+
+data:PrincessMaria a :Woman ;
+    :isDaughterOf data:KingMichaelI,
+        data:QueenAnneOfRomania .
+
+data:PrincessSophie a :Woman ;
+    :isDaughterOf data:KingMichaelI,
+        data:QueenAnneOfRomania .
+
+data:PrinceRadu a :Man .
+
+data:KingMichaelI a :Man .
+
+data:QueenAnneOfRomania a :Woman .
+

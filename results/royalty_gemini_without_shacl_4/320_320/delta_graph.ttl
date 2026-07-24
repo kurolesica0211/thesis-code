@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claude_Bowes-Lyon_13th a :Man,
+        :Person ;
+    :isFatherOf data:Claude_Bowes-Lyon_14th .
+
+data:Herbert_Henry_Spender-Clay a :Man,
+        :Person ;
+    :isFatherOf data:Rachel_Pauline_Spender-Clay .
+
+data:Pauline_Spender-Clay a :Person,
+        :Woman ;
+    :isMotherOf data:Rachel_Pauline_Spender-Clay .
+
+data:Claude_Bowes-Lyon_14th a :Man,
+        :Person ;
+    :isFatherOf data:David_Bowes-Lyon .
+
+data:David_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1961 ;
+    :hasMarriageYear 1929 ;
+    :hasRelation data:Rachel_Pauline_Spender-Clay ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman .
+
+data:Rachel_Pauline_Spender-Clay a :Person,
+        :Woman .
+

@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_of_Savoy-Aosta a :Man ;
+    :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Amedeo_of_Savoy ;
+    :hasMother data:Claude_of_Orleans ;
+    :knownAs "Aimone Umberto Emanuele Filiberto Luigi Amedeo Elena Maria Fiorenzo di Savoia-Aosta"^^xsd:string .
+
+data:Emanuele_Filiberto_of_Savoy a :Man ;
+    :hasFather data:Vittorio_Emanuele .
+
+data:Olga_of_Greece a :Woman ;
+    :hasFather data:Michael_of_Greece_and_Denmark .
+
+data:Amedeo_of_Savoy a :Man .
+
+data:Claude_of_Orleans a :Woman .
+
+data:Michael_of_Greece_and_Denmark a :Man .
+
+data:Vittorio_Emanuele a :Man ;
+    :hasDeathYear 2024 .
+

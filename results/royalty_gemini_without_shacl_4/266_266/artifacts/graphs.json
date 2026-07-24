@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lu%C3%ADs_Filipe a :Man,\n        :Person ;\n    :hasBirthYear \"1887\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1908\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;\n    :isSiblingOf data:Manuel_II .\n\ndata:Patricia_of_Connaught a :Person,\n        :Woman ;\n    :hasFather data:Prince_Arthur ;\n    :hasMother data:Louise_Margaret_of_Prussia .\n\ndata:Louise_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADs_I a :Man,\n        :Person .\n\ndata:Manuel_II a :Man,\n        :Person ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Prince_Arthur a :Man,\n        :Person ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Carlos_I a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADs_I .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lu%C3%ADs_Filipe a :Man,\n        :Person ;\n    :hasBirthYear \"1887\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"1908\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;\n    :isSiblingOf data:Manuel_II .\n\ndata:Patricia_of_Connaught a :Person,\n        :Woman ;\n    :hasFather data:Prince_Arthur ;\n    :hasMother data:Louise_Margaret_of_Prussia .\n\ndata:Louise_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADs_I a :Man,\n        :Person .\n\ndata:Manuel_II a :Man,\n        :Person ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Prince_Arthur a :Man,\n        :Person ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Carlos_I a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADs_I .\n\n"
+    }
+]

@@ -1,0 +1,122 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diane_Howse a :Person,
+        :Woman ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :hasSister data:Diane_Howse ;
+    :isBloodrelationOf data:Diane_Howse ;
+    :isSiblingOf data:Diane_Howse ;
+    :isSisterOf data:Diane_Howse .
+
+data:7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:7th_Earl_of_Harewood ;
+    :hasChild data:David_Henry_George_Lascelles ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :hasSon data:David_Henry_George_Lascelles ;
+    :isAncestorOf data:David_Henry_George_Lascelles ;
+    :isBloodrelationOf data:7th_Earl_of_Harewood ;
+    :isBrotherOf data:7th_Earl_of_Harewood ;
+    :isFatherOf data:David_Henry_George_Lascelles ;
+    :isParentOf data:David_Henry_George_Lascelles ;
+    :isSiblingOf data:7th_Earl_of_Harewood ;
+    :isUncleOf data:David_Henry_George_Lascelles .
+
+data:Edgar_Frank_Messenger a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Edgar_Frank_Messenger ;
+    :hasChild data:Margaret_Rosalind_Messenger ;
+    :hasDaughter data:Margaret_Rosalind_Messenger ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :isAncestorOf data:Margaret_Rosalind_Messenger ;
+    :isBloodrelationOf data:Edgar_Frank_Messenger ;
+    :isBrotherOf data:Edgar_Frank_Messenger ;
+    :isFatherOf data:Margaret_Rosalind_Messenger ;
+    :isParentOf data:Margaret_Rosalind_Messenger ;
+    :isSiblingOf data:Edgar_Frank_Messenger ;
+    :isUncleOf data:Margaret_Rosalind_Messenger .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:David_Henry_George_Lascelles ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :hasSister data:Marion_Stein ;
+    :hasSon data:David_Henry_George_Lascelles ;
+    :isAncestorOf data:David_Henry_George_Lascelles ;
+    :isAuntOf data:David_Henry_George_Lascelles ;
+    :isBloodrelationOf data:Marion_Stein ;
+    :isMotherOf data:David_Henry_George_Lascelles ;
+    :isParentOf data:David_Henry_George_Lascelles ;
+    :isSiblingOf data:Marion_Stein ;
+    :isSisterOf data:Marion_Stein .
+
+data:Margaret_Rosalind_Messenger a :Person,
+        :Woman ;
+    :hasAncestor data:Edgar_Frank_Messenger ;
+    :hasFather data:Edgar_Frank_Messenger ;
+    :hasParent data:Edgar_Frank_Messenger ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :hasSister data:Margaret_Rosalind_Messenger ;
+    :isBloodrelationOf data:Margaret_Rosalind_Messenger ;
+    :isChildOf data:Edgar_Frank_Messenger ;
+    :isDaughterOf data:Edgar_Frank_Messenger ;
+    :isSiblingOf data:Margaret_Rosalind_Messenger ;
+    :isSisterOf data:Margaret_Rosalind_Messenger .
+
+data:David_Henry_George_Lascelles a :Man,
+        :Person ;
+    :formerlyKnownAs "Viscount Lascelles"^^xsd:string ;
+    :hasAncestor data:7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:David_Henry_George_Lascelles ;
+    :hasFather data:7th_Earl_of_Harewood ;
+    :hasMarriageYear 1979,
+        1990 ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasRelation data:7th_Earl_of_Harewood,
+        data:David_Henry_George_Lascelles,
+        data:Diane_Howse,
+        data:Edgar_Frank_Messenger,
+        data:Margaret_Rosalind_Messenger,
+        data:Marion_Stein ;
+    :isBloodrelationOf data:David_Henry_George_Lascelles ;
+    :isBrotherOf data:David_Henry_George_Lascelles ;
+    :isChildOf data:7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSiblingOf data:David_Henry_George_Lascelles ;
+    :isSonOf data:7th_Earl_of_Harewood,
+        data:Marion_Stein .
+

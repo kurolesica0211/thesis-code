@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasAncestor data:Modeste_Christiane_von_Unruh ;
+    :hasBirthYear "1870"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1948"^^xsd:nonNegativeInteger ;
+    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
+    :hasMarriageYear "1889"^^xsd:nonNegativeInteger ;
+    :hasMother data:Karoline_von_Wartensleben ;
+    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
+
+data:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+data:Georg_II_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person .
+
+data:Karoline_von_Wartensleben a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Modeste_Christiane_von_Unruh a :Ancestor,
+        :Person,
+        :Woman .
+

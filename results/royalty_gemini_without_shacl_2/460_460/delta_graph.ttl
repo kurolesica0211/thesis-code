@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickII a :Man,
+        :Person ;
+    :isFatherOf data:Donatus,
+        data:FloriaFranziska .
+
+data:Hubertus a :Man,
+        :Person ;
+    :isFatherOf data:FloriaFranziska .
+
+data:Louis a :Man,
+        :Person ;
+    :hasDeathYear 1968 .
+
+data:Mary a :Person,
+        :Woman ;
+    :isMotherOf data:Donatus,
+        data:FloriaFranziska .
+
+data:Philipp a :Man,
+        :Person ;
+    :hasDeathYear 1980 ;
+    :isFatherOf data:Moritz .
+
+data:Tatiana a :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :isMotherOf data:Donatus .
+
+data:Moritz a :Man,
+        :Person ;
+    :isFatherOf data:Donatus .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasMarriageYear 2003 ;
+    :hasRelation data:FloriaFranziska .
+
+data:FloriaFranziska a :Person,
+        :Woman ;
+    :hasBirthYear 1974 .
+

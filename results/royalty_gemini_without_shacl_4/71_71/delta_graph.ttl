@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I .
+
+data:Infanta_Beatriz a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Infanta_Maria_Cristina a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Juan_Count_of_Barcelona .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Julia_Princess_of_Battenberg a :Person,
+        :Woman .
+
+data:Leopold a :Man,
+        :Person .
+
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Prince_Henry_of_Battenberg a :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Maria_Christina a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :alsoKnownAs "Ena"^^xsd:string ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Leopold ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice ;
+    :hasRelation data:Alfonso_XIII .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Queen_Maria_Christina .
+

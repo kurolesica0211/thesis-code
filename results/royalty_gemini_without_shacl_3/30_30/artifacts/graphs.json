@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_II_of_Monaco a :Man,\n        :Person ;\n    :isUncleOf data:Alexandra_of_Hanover .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasAncestor data:Christian_IX_of_Denmark,\n        data:Queen_Victoria,\n        data:Wilhelm_II_German_Emperor ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Ernst_August_Hereditary_Prince,\n        data:Prince_Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Princess_Caroline_of_Monaco .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ernst_August_Hereditary_Prince a :Man,\n        :Person .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Prince_Christian_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Caroline_of_Monaco a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_II_of_Monaco a :Man,\n        :Person ;\n    :isUncleOf data:Alexandra_of_Hanover .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasAncestor data:Christian_IX_of_Denmark,\n        data:Queen_Victoria,\n        data:Wilhelm_II_German_Emperor ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Ernst_August_Hereditary_Prince,\n        data:Prince_Christian_of_Hanover ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMother data:Princess_Caroline_of_Monaco .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ernst_August_Hereditary_Prince a :Man,\n        :Person .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Prince_Christian_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Caroline_of_Monaco a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\n"
+    }
+]

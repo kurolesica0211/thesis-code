@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Thomas_Henry_Robin_Kingston a :Man,
+        :Person ;
+    :hasBirthYear 1978 ;
+    :hasBrother data:Thomas_Henry_Robin_Kingston ;
+    :hasDeathYear 2024 ;
+    :hasRelation data:Thomas_Henry_Robin_Kingston ;
+    :isBloodrelationOf data:Thomas_Henry_Robin_Kingston ;
+    :isBrotherOf data:Thomas_Henry_Robin_Kingston ;
+    :isSiblingOf data:Thomas_Henry_Robin_Kingston .
+
+data:Lady_Gabriella_Windsor a :Person,
+        :Woman ;
+    :hasRelation data:Lady_Gabriella_Windsor ;
+    :hasSister data:Lady_Gabriella_Windsor ;
+    :isBloodrelationOf data:Lady_Gabriella_Windsor ;
+    :isSiblingOf data:Lady_Gabriella_Windsor ;
+    :isSisterOf data:Lady_Gabriella_Windsor .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasChild data:Lady_Gabriella_Kingston ;
+    :hasDaughter data:Lady_Gabriella_Kingston ;
+    :hasRelation data:Lady_Gabriella_Kingston,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :isAncestorOf data:Lady_Gabriella_Kingston ;
+    :isBloodrelationOf data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Michael_of_Kent ;
+    :isFatherOf data:Lady_Gabriella_Kingston ;
+    :isParentOf data:Lady_Gabriella_Kingston ;
+    :isSiblingOf data:Prince_Michael_of_Kent ;
+    :isUncleOf data:Lady_Gabriella_Kingston .
+
+data:Princess_Michael_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Gabriella_Kingston ;
+    :hasDaughter data:Lady_Gabriella_Kingston ;
+    :hasRelation data:Lady_Gabriella_Kingston,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :hasSister data:Princess_Michael_of_Kent ;
+    :isAncestorOf data:Lady_Gabriella_Kingston ;
+    :isAuntOf data:Lady_Gabriella_Kingston ;
+    :isBloodrelationOf data:Princess_Michael_of_Kent ;
+    :isMotherOf data:Lady_Gabriella_Kingston ;
+    :isParentOf data:Lady_Gabriella_Kingston ;
+    :isSiblingOf data:Princess_Michael_of_Kent ;
+    :isSisterOf data:Princess_Michael_of_Kent .
+
+data:Lady_Gabriella_Kingston a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMarriageYear 2019 ;
+    :hasMother data:Princess_Michael_of_Kent ;
+    :hasParent data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :hasRelation data:Lady_Gabriella_Kingston,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :hasSister data:Lady_Gabriella_Kingston ;
+    :isBloodrelationOf data:Lady_Gabriella_Kingston ;
+    :isChildOf data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :isDaughterOf data:Prince_Michael_of_Kent,
+        data:Princess_Michael_of_Kent ;
+    :isSiblingOf data:Lady_Gabriella_Kingston ;
+    :isSisterOf data:Lady_Gabriella_Kingston ;
+    :knownAs data:Lady_Gabriella_Windsor .
+

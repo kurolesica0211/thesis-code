@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JorgeGuillermo a :Man,
+        :Person .
+
+data:PrincessChristinaOfTheNetherlands a :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Christina"^^xsd:string ;
+    :formerlyKnownAs "Princess Marijke"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:PrinceBernhardOfLippeBiesterfeld ;
+    :hasMarriageYear 1975 ;
+    :hasMother data:QueenJulianaOfTheNetherlands ;
+    :isSisterOf data:PrincessBeatrix,
+        data:PrincessIrene,
+        data:PrincessMargriet .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man,
+        :Person ;
+    :hasMother data:PrincessArmgardOfLippeBiesterfeld .
+
+data:PrincessArmgardOfLippeBiesterfeld a :Person,
+        :Woman .
+
+data:PrincessBeatrix a :Person,
+        :Woman .
+
+data:PrincessIrene a :Person,
+        :Woman .
+
+data:PrincessMargriet a :Person,
+        :Woman .
+
+data:QueenJulianaOfTheNetherlands a :Person,
+        :Woman ;
+    :hasMother data:QueenWilhelminaOfTheNetherlands .
+
+data:QueenWilhelminaOfTheNetherlands a :Person,
+        :Woman .
+

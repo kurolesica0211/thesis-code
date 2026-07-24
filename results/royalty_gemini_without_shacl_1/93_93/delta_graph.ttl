@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Evgenia_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:Petros_of_Greece_and_Denmark a :Man ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:Prince_Aage_of_Denmark a :Man ;
+    :hasFather data:Prince_Valdemar_of_Denmark ;
+    :hasMother data:Marie_dOrleans .
+
+data:Olga_Konstantinovna_of_Russia a :Woman .
+
+data:Prince_Constantine_of_Greece a :Man ;
+    :hasFather data:George_I_of_Greece .
+
+data:Prince_Nicholas_of_Greece a :Man ;
+    :hasFather data:George_I_of_Greece .
+
+data:Prince_Roland_Bonaparte a :Man .
+
+data:Prince_Valdemar_of_Denmark a :Man ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasRelation data:Marie_dOrleans .
+
+data:Christian_IX_of_Denmark a :Man .
+
+data:Marie_dOrleans a :Woman .
+
+data:Prince_George_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Olga_Konstantinovna_of_Russia ;
+    :hasRelation data:Princess_Marie_Bonaparte ;
+    :isSiblingOf data:Prince_Constantine_of_Greece,
+        data:Prince_Nicholas_of_Greece .
+
+data:George_I_of_Greece a :Man ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Princess_Marie_Bonaparte a :Woman ;
+    :hasFather data:Prince_Roland_Bonaparte .
+

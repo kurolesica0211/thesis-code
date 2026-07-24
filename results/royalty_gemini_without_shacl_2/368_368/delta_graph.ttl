@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1871 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Karoline_of_Wartensleben ;
+    :hasSon data:Armin,
+        data:Chlodwig,
+        data:Ernst_Hereditary_Prince ;
+    :isSiblingOf data:Bernhard_of_Biesterfeld_father,
+        data:Prince_Julius .
+
+data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,
+        :Woman ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1919 .
+
+data:Armin a :Man,
+        :Person .
+
+data:Bernhard_of_Biesterfeld_father a :Man,
+        :Person ;
+    :hasSon data:Bernhard_of_Biesterfeld_nephew .
+
+data:Bernhard_of_Biesterfeld_nephew a :Man,
+        :Person .
+
+data:Chlodwig a :Man,
+        :Person .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Ernst_Hereditary_Prince a :Man,
+        :Person .
+
+data:Karoline_of_Wartensleben a :Person,
+        :Woman .
+
+data:Prince_Julius a :Man,
+        :Person .
+

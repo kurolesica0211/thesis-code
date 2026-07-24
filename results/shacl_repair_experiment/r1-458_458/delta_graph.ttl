@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alexia :hasSex data:Female .
+
+data:Anne-Marie a :Ancestor ;
+    :hasSex data:Female .
+
+data:Carlos_Javier_Morales_Quintana :hasSex data:Male .
+
+data:Constantine_II a :Ancestor ;
+    :hasSex data:Male .
+
+data:Ingrid :hasSex data:Female .
+
+data:Kyril a :Ancestor ;
+    :hasSex data:Male .
+
+data:Mafalda :hasSex data:Female .
+
+data:Maria-Olympia :hasSex data:Female .
+
+data:Pavlos :hasSex data:Male .
+
+data:Simeon_of_Bulgaria a :Ancestor ;
+    :hasSex data:Male .
+
+data:Sofia :hasSex data:Female .
+
+data:Theodora :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

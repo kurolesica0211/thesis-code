@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_Alexandra_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasRelation data:Wolfgang_of_Hesse .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person .
+
+data:Maria_Maximilianovna_of_Leuchtenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1841 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasMother data:Maria_Nikolaevna .
+
+data:Maria_Nikolaevna a :Person,
+        :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1876 .
+
+data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
+        :Woman ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
+
+data:Maximilian_Duke_of_Leuchtenberg a :Man,
+        :Person ;
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1852 .
+
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Wilhelm_of_Baden ;
+    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .
+
+data:Wilhelm_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1829 ;
+    :hasDeathYear 1897 .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 .
+

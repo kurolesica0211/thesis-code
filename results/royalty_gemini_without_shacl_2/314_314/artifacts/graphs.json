@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margaretha_Abbo a :Person,\n        :Woman ;\n    :isChildOf data:Willemina_Martina_Wenneker .\n\ndata:Edith_Abbo a :Person,\n        :Woman ;\n    :isChildOf data:Willemina_Martina_Wenneker .\n\ndata:Pim_Lier a :Man,\n        :Person ;\n    :isChildOf data:Henry_of_Mecklenburg-Schwerin,\n        data:Willemina_Martina_Wenneker .\n\ndata:Princess_Juliana a :Person,\n        :Woman ;\n    :isChildOf data:Henry_of_Mecklenburg-Schwerin,\n        data:Queen_Wilhelmina .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Person,\n        :Woman .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :hasRelation data:Queen_Wilhelmina .\n\ndata:Queen_Wilhelmina a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margaretha_Abbo a :Person,\n        :Woman ;\n    :isChildOf data:Willemina_Martina_Wenneker .\n\ndata:Edith_Abbo a :Person,\n        :Woman ;\n    :isChildOf data:Willemina_Martina_Wenneker .\n\ndata:Pim_Lier a :Man,\n        :Person ;\n    :isChildOf data:Henry_of_Mecklenburg-Schwerin,\n        data:Willemina_Martina_Wenneker .\n\ndata:Princess_Juliana a :Person,\n        :Woman ;\n    :isChildOf data:Henry_of_Mecklenburg-Schwerin,\n        data:Queen_Wilhelmina .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Person,\n        :Woman .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :hasRelation data:Queen_Wilhelmina .\n\ndata:Queen_Wilhelmina a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman .\n\n"
+    }
+]

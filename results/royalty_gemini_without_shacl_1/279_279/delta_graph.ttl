@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Achileas-Andreas a :Man ;
+    :hasBirthYear 2000 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Alexia a :Woman ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Aristides-Stavros a :Man ;
+    :hasBirthYear 2008 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Constantine-Alexios a :Man ;
+    :hasBirthYear 1998 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Felipe_VI a :Man .
+
+data:Frederik_X a :Man .
+
+data:Maria-Olympia a :Woman ;
+    :hasBirthYear 1996 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Marina a :Woman .
+
+data:Michael a :Man .
+
+data:Odysseas-Kimon a :Man ;
+    :hasBirthYear 2004 ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Philippos a :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Robert_W_Miller a :Man .
+
+data:Theodora a :Woman ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Frederik_IX a :Man .
+
+data:Ingrid a :Woman .
+
+data:Margrethe_II a :Woman .
+
+data:Paul a :Man .
+
+data:Sofia a :Woman .
+
+data:Anne-Marie a :Woman ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid ;
+    :hasSister data:Margrethe_II .
+
+data:Constantine_II a :Man ;
+    :hasFather data:Paul ;
+    :hasSister data:Sofia .
+
+data:Marie-Chantal_Miller a :Woman .
+
+data:Pavlos a :Man ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+

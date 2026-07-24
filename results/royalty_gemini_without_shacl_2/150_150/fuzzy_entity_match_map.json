@@ -1,0 +1,190 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/150_150",
+  "text_file": "Q232732.txt",
+  "text_key": "Q232732",
+  "article": "https://en.wikipedia.org/wiki/Princess_Maria_of_Greece_and_Denmark",
+  "article_key": "Princess Maria of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
+    "qid": "Q232732",
+    "label": "Princess Maria of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
+      "qid": "Q232732",
+      "label": "Princess Maria of Greece and Denmark",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "qid": "Q155178",
+      "label": "Olga Constantinovna of Russia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Constantine_I_of_Greece",
+      "qid": "Q152099",
+      "label": "Constantine I of Greece",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_II_of_Greece",
+      "qid": "Q152935",
+      "label": "George II of Greece",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Paul_of_Greece",
+      "qid": "Q155394",
+      "label": "Paul of Greece",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/OlgaConstantinovnaOfRussia",
+      "extracted_local_name": "OlgaConstantinovnaOfRussia",
+      "embedding_text": "Olga Constantinovna Of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "ground_truth_qid": "Q155178",
+      "ground_truth_label": "Olga Constantinovna of Russia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olga Constantinovna of Russia",
+      "best_candidate_label": "Olga Constantinovna of Russia",
+      "best_candidate_qid": "Q155178",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/ConstantineIOfGreece",
+      "extracted_local_name": "ConstantineIOfGreece",
+      "embedding_text": "Constantine IOf Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9777777777777777,
+      "ground_truth_uri": "http://example.com/data#Constantine_I_of_Greece",
+      "ground_truth_qid": "Q152099",
+      "ground_truth_label": "Constantine I of Greece",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine I of Greece",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9777777777777777
+    },
+    {
+      "extracted_uri": "http://example.org/data/GeorgeIOfGreece",
+      "extracted_local_name": "GeorgeIOfGreece",
+      "embedding_text": "George IOf Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9714285714285714,
+      "ground_truth_uri": "http://example.com/data#George_I_of_Greece",
+      "ground_truth_qid": "Q17142",
+      "ground_truth_label": "George I of Greece",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George I of Greece",
+      "best_candidate_label": "George I of Greece",
+      "best_candidate_qid": "Q17142",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/MariaOfGreeceAndDenmark",
+      "extracted_local_name": "MariaOfGreeceAndDenmark",
+      "embedding_text": "Maria Of Greece And Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.763157894736842,
+      "ground_truth_uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q232732",
+      "ground_truth_label": "Princess Maria of Greece and Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria of Greece and Denmark",
+      "best_candidate_label": "Princess Maria of Greece and Denmark",
+      "best_candidate_qid": "Q232732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.763157894736842
+    },
+    {
+      "extracted_uri": "http://example.org/data/GeorgeMikhailovichOfRussia",
+      "extracted_local_name": "GeorgeMikhailovichOfRussia",
+      "embedding_text": "George Mikhailovich Of Russia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Laci Marie",
+      "best_candidate_label": "Princess Maria of Greece and Denmark",
+      "best_candidate_qid": "Q232732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.15384615384615385
+    },
+    {
+      "extracted_uri": "http://example.org/data/NinaGeorgievna",
+      "extracted_local_name": "NinaGeorgievna",
+      "embedding_text": "Nina Georgievna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King George II of Greece",
+      "best_candidate_label": "George II of Greece",
+      "best_candidate_qid": "Q152935",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5128205128205128
+    },
+    {
+      "extracted_uri": "http://example.org/data/XeniaGeorgievna",
+      "extracted_local_name": "XeniaGeorgievna",
+      "embedding_text": "Xenia Georgievna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King George II of Greece",
+      "best_candidate_label": "George II of Greece",
+      "best_candidate_qid": "Q152935",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.45
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 4,
+    "entities_unmatched": 3
+  }
+}

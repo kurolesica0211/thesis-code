@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Herbert_Spender-Clay a :Ancestor ;
+    :hasDaughter data:Rachel_Pauline_Spender-Clay .
+
+data:Pauline_Astor a :Ancestor ;
+    :isMotherOf data:Rachel_Pauline_Spender-Clay .
+
+data:Sir_David_Bowes-Lyon a :Ancestor .
+
+data:Rachel_Pauline_Spender-Clay a :Ancestor .
+

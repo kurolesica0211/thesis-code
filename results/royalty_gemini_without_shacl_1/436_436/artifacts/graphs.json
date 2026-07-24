@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isobel_Weatherall a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall .\n\ndata:Michael_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isobel_Weatherall a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall .\n\ndata:Male a :Male .\n\ndata:Michael_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isobel_Weatherall a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall .\n\ndata:Male a :Male .\n\ndata:Michael_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

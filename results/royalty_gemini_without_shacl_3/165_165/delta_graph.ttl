@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall a :Man,
+        :Person .
+
+data:Countess_Leonore a :Person,
+        :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien .
+
+data:Juliana_Guillermo a :Person,
+        :Woman .
+
+data:Marius_Brinkhorst a :Man,
+        :Person .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Princess_Alexia a :Person,
+        :Woman .
+
+data:Princess_Beatrix a :Person,
+        :Woman .
+
+data:Princess_Margriet a :Person,
+        :Woman .
+
+data:Queen_Maxima a :Person,
+        :Woman .
+
+data:Prince_Constantijn a :Man,
+        :Person .
+
+data:Princess_Laurentien a :Person,
+        :Woman .
+

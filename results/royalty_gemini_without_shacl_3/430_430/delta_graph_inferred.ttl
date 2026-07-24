@@ -1,0 +1,118 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret_Rose_of_York a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret_Rose_of_York ;
+    :hasSister data:Princess_Margaret_Rose_of_York ;
+    :isBloodrelationOf data:Princess_Margaret_Rose_of_York ;
+    :isSiblingOf data:Princess_Margaret_Rose_of_York ;
+    :isSisterOf data:Princess_Margaret_Rose_of_York .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:William_Leveson-Gower a :Man,
+        :Person ;
+    :hasBrother data:William_Leveson-Gower ;
+    :hasDeathYear 1953 ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower,
+        data:William_Leveson-Gower ;
+    :isBloodrelationOf data:William_Leveson-Gower ;
+    :isBrotherOf data:William_Leveson-Gower ;
+    :isSiblingOf data:William_Leveson-Gower .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower,
+        data:William_Leveson-Gower ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isBloodrelationOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower .
+
+data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasChild data:Rose_Constance_Leveson-Gower ;
+    :hasDaughter data:Rose_Constance_Leveson-Gower ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower,
+        data:William_Leveson-Gower ;
+    :isAncestorOf data:Rose_Constance_Leveson-Gower ;
+    :isBloodrelationOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:Rose_Constance_Leveson-Gower ;
+    :isParentOf data:Rose_Constance_Leveson-Gower ;
+    :isSiblingOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Rose_Constance_Leveson-Gower .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rose_Constance_Leveson-Gower ;
+    :hasDaughter data:Rose_Constance_Leveson-Gower ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower,
+        data:William_Leveson-Gower ;
+    :hasSister data:Cecilia_Cavendish-Bentinck ;
+    :isAncestorOf data:Rose_Constance_Leveson-Gower ;
+    :isAuntOf data:Rose_Constance_Leveson-Gower ;
+    :isBloodrelationOf data:Cecilia_Cavendish-Bentinck ;
+    :isMotherOf data:Rose_Constance_Leveson-Gower ;
+    :isParentOf data:Rose_Constance_Leveson-Gower ;
+    :isSiblingOf data:Cecilia_Cavendish-Bentinck ;
+    :isSisterOf data:Cecilia_Cavendish-Bentinck .
+
+data:Rose_Constance_Leveson-Gower a :Person,
+        :Woman ;
+    :hasAncestor data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasParent data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower,
+        data:William_Leveson-Gower ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isAuntOf data:Princess_Margaret_Rose_of_York,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isChildOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck ;
+    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Cecilia_Cavendish-Bentinck ;
+    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower ;
+    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother,
+        data:Rose_Constance_Leveson-Gower .
+

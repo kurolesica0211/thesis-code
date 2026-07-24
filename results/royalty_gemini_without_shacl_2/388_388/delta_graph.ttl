@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PaulFrederickOfMecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1852 ;
+    :hasDeathYear 1923 ;
+    :hasFather data:FrederickFrancisII ;
+    :hasMarriageYear 1881 ;
+    :hasMother data:AugustaReussOfKostritz ;
+    :hasRelation data:FrederickFrancisIV,
+        data:MarieOfWindischGraetz .
+
+data:AugustaReussOfKostritz a :Person,
+        :Woman ;
+    :hasFather data:HenryLXIIIReussOfKostritz .
+
+data:FrederickFrancisII a :Man,
+        :Person .
+
+data:FrederickFrancisIV a :Man,
+        :Person .
+
+data:HenryLXIIIReussOfKostritz a :Man,
+        :Person .
+
+data:HugoOfWindischGraetz a :Man,
+        :Person .
+
+data:LouiseOfMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:MarieOfWindischGraetz a :Person,
+        :Woman ;
+    :hasFather data:HugoOfWindischGraetz ;
+    :hasMother data:LouiseOfMecklenburgSchwerin .
+

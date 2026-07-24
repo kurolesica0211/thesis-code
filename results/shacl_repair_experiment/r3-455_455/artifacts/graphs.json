@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana,\n        data:Maria-Olympia_of_Greece ;\n    :hasSister data:Theodora_of_Greece ;\n    :isBloodrelationOf data:Felipe_VI_of_Spain .\n\ndata:Anne-Marie_of_Greece a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person .\n\ndata:Felipe_VI_of_Spain a :Man,\n        :Person .\n\ndata:Maria-Olympia_of_Greece a :Person,\n        :Woman .\n\ndata:Pavlos_of_Greece a :Man,\n        :Person .\n\ndata:Theodora_of_Greece a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana,\n        data:Maria-Olympia_of_Greece ;\n    :hasSister data:Theodora_of_Greece ;\n    :isBloodrelationOf data:Felipe_VI_of_Spain .\n\ndata:Anne-Marie_of_Greece a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Felipe_VI_of_Spain a :Man,\n        :Person .\n\ndata:Maria-Olympia_of_Greece a :Person,\n        :Woman .\n\ndata:Pavlos_of_Greece a :Man,\n        :Person .\n\ndata:Theodora_of_Greece a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Anne-Marie_of_Greece a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Felipe_VI_of_Spain a :Man,\n        :Person .\n\ndata:Maria-Olympia_of_Greece a :Person,\n        :Woman .\n\ndata:Pavlos_of_Greece a :Man,\n        :Person .\n\ndata:Theodora_of_Greece a :Person,\n        :Woman .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana,\n        data:Maria-Olympia_of_Greece ;\n    :hasSister data:Theodora_of_Greece ;\n    :isBloodrelationOf data:Felipe_VI_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Anne-Marie_of_Greece a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Felipe_VI_of_Spain a :Man,\n        :Person .\n\ndata:Maria-Olympia_of_Greece a :Person,\n        :Woman .\n\ndata:Pavlos_of_Greece a :Man,\n        :Person .\n\ndata:Theodora_of_Greece a :Person,\n        :Woman .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana,\n        data:Maria-Olympia_of_Greece ;\n    :hasSister data:Theodora_of_Greece ;\n    :isBloodrelationOf data:Felipe_VI_of_Spain .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "9c683bd2-6584-4e22-a45b-057223200b8d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Anne-Marie_of_Greece a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Alexia_of_Greece_and_Denmark .\n\ndata:Felipe_VI_of_Spain a :Man,\n        :Person .\n\ndata:Maria-Olympia_of_Greece a :Person,\n        :Woman .\n\ndata:Pavlos_of_Greece a :Man,\n        :Person .\n\ndata:Theodora_of_Greece a :Person,\n        :Woman .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana,\n        data:Maria-Olympia_of_Greece ;\n    :hasSister data:Theodora_of_Greece ;\n    :isBloodrelationOf data:Felipe_VI_of_Spain .\n\n"
+    }
+]

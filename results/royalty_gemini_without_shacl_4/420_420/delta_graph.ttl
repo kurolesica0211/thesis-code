@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Donatus_Prince_and_Landgrave_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear "1966"^^xsd:positiveInteger ;
+    :hasFather data:Moritz_Landgrave_of_Hesse ;
+    :hasMarriageYear "2003"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell .
+
+data:Count_Hubertus_von_Faber-Castell a :Man,
+        :Person .
+
+data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell a :Person,
+        :Woman ;
+    :hasBirthYear "1974"^^xsd:positiveInteger ;
+    :hasFather data:Count_Hubertus_von_Faber-Castell .
+
+data:Landgrave_Philipp a :Man,
+        :Person ;
+    :hasDeathYear "1980"^^xsd:positiveInteger .
+
+data:Moritz_Landgrave_of_Hesse a :Man,
+        :Person ;
+    :hasFather data:Landgrave_Philipp .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasBirthYear "1940"^^xsd:positiveInteger .
+

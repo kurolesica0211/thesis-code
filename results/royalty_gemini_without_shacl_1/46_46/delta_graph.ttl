@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:King_Charles_III a :Man .
+
+data:Stephanie_Phillips a :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Mike_Tindall a :Man ;
+    :hasChild data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall .
+
+data:Peter_Phillips a :Man ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Queen_Elizabeth_II a :Woman ;
+    :isMotherOf data:Anne_Princess_Royal .
+
+data:Lena_Tindall a :Woman .
+
+data:Lucas_Tindall a :Man .
+
+data:Mia_Tindall a :Woman .
+
+data:Anne_Princess_Royal a :Woman ;
+    :hasChild data:Zara_Tindall ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :isMotherOf data:Zara_Tindall .
+
+data:Mark_Phillips a :Man ;
+    :hasChild data:Zara_Tindall ;
+    :isFatherOf data:Zara_Tindall .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Lena_Tindall,
+        data:Lucas_Tindall,
+        data:Mia_Tindall ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Mike_Tindall .
+

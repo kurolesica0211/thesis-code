@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1886 ;\n    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear data:1905 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasParent data:Anastasia_Mikhailovna_of_Russia,\n        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasSister data:Alexandrine_of_Denmark .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Alexandrine_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1886 ;\n    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear data:1905,\n        1905 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasParent data:Anastasia_Mikhailovna_of_Russia,\n        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasSister data:Alexandrine_of_Denmark .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Alexandrine_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1886 ;\n    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear data:1905,\n        data:Marriage_1905 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasParent data:Anastasia_Mikhailovna_of_Russia,\n        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasSister data:Alexandrine_of_Denmark .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Alexandrine_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Marriage_1905 a :DomainEntity .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1886 ;\n    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear data:Marriage_1905 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasParent data:Anastasia_Mikhailovna_of_Russia,\n        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasSister data:Alexandrine_of_Denmark .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Alexandrine_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Marriage_1905 a :DomainEntity .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1886 ;\n    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasMarriageYear data:Marriage_1905 ;\n    :hasMother data:Anastasia_Mikhailovna_of_Russia ;\n    :hasParent data:Anastasia_Mikhailovna_of_Russia,\n        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;\n    :hasSister data:Alexandrine_of_Denmark .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Alexandrine_of_Denmark a :Person,\n        :Woman .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Marriage_1905 a :DomainEntity .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\n"
+    }
+]

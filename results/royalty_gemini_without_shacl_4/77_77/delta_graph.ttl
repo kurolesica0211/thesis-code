@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :isChildOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman ;
+    :isChildOf data:George_von_dem_Bussche-Haddenhausen .
+
+data:George_von_dem_Bussche-Haddenhausen a :Man,
+        :Person ;
+    :isBrotherOf data:Hilmar_von_dem_Bussche-Haddenhausen .
+
+data:Hilmar_von_dem_Bussche-Haddenhausen a :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1939 ;
+    :hasFather data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Mathilde_von_Salviati ;
+    :hasRelation data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man,
+        :Person ;
+    :hasBirthYear 1827 ;
+    :hasDeathYear 1882 .
+
+data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz a :Person,
+        :Woman ;
+    :hasBirthYear 1875 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :hasMother data:Mathilde_Stegmann .
+
+data:Mathilde_Stegmann a :Person,
+        :Woman .
+
+data:Mathilde_von_Salviati a :Person,
+        :Woman ;
+    :hasBirthYear 1833 ;
+    :hasDeathYear 1892 .
+
+data:Narciso_Mart%C3%ADnez_de_Hoz a :Man,
+        :Person .
+

@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst_of_Lippe a :Man ;
+    :hasFather data:Leopold_IV_of_Lippe .
+
+data:Friedrich_Wilhelm_of_Lippe a :Man ;
+    :hasBirthYear 1947 ;
+    :hasFather data:Ernst_August_of_Lippe ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:Christa_von_Arnim ;
+    :hasRelation data:Andrea_Messner .
+
+data:Leopold_of_Lippe a :Man ;
+    :hasFather data:Leopold_IV_of_Lippe .
+
+data:Simon_Casimir_of_Lippe a :Man ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1980 .
+
+data:Stephan_of_Lippe a :Man ;
+    :hasFather data:Armin_of_Lippe .
+
+data:Andrea_Messner a :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:G%C3%BCnther_Messner ;
+    :hasMother data:Lieselotte_Trzoska .
+
+data:Armin_of_Lippe a :Ancestor,
+        :Man ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Leopold_IV_of_Lippe .
+
+data:Christa_von_Arnim a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasFather data:Curt_David_von_Arnim ;
+    :hasMother data:Stephanie_von_Stechow .
+
+data:Curt_David_von_Arnim a :Ancestor,
+        :Man .
+
+data:Ernst_August_of_Lippe a :Ancestor,
+        :Man ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Julius_Ernst_of_Lippe ;
+    :hasMother data:Marie_of_Mecklenburg_Strelitz .
+
+data:G%C3%BCnther_Messner a :Ancestor,
+        :Man .
+
+data:Julius_Ernst_of_Lippe a :Ancestor,
+        :Man .
+
+data:Lieselotte_Trzoska a :Ancestor,
+        :Woman .
+
+data:Marie_of_Mecklenburg_Strelitz a :Ancestor,
+        :Woman .
+
+data:Stephanie_von_Stechow a :Ancestor,
+        :Woman .
+
+data:Leopold_IV_of_Lippe a :Ancestor,
+        :Man .
+

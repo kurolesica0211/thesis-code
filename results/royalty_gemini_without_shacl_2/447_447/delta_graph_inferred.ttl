@@ -1,0 +1,241 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alejandro_Santo_Domingo a :Man,
+        :Person ;
+    :hasBrother data:Alejandro_Santo_Domingo ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :isBloodrelationOf data:Alejandro_Santo_Domingo ;
+    :isBrotherOf data:Alejandro_Santo_Domingo ;
+    :isSiblingOf data:Alejandro_Santo_Domingo .
+
+data:Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSister data:Brigid_Guinness ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Charlotte_Wellesley ;
+    :isAuntOf data:Antonia_of_Prussia ;
+    :isBloodrelationOf data:Brigid_Guinness ;
+    :isMotherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Brigid_Guinness ;
+    :isSisterOf data:Brigid_Guinness .
+
+data:Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_of_Prussia ;
+    :hasChild data:Antonia_of_Prussia ;
+    :hasDaughter data:Antonia_of_Prussia ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :isAncestorOf data:Antonia_of_Prussia,
+        data:Charlotte_Wellesley ;
+    :isBloodrelationOf data:Frederick_of_Prussia ;
+    :isBrotherOf data:Frederick_of_Prussia ;
+    :isFatherOf data:Antonia_of_Prussia ;
+    :isParentOf data:Antonia_of_Prussia ;
+    :isSiblingOf data:Frederick_of_Prussia ;
+    :isUncleOf data:Antonia_of_Prussia .
+
+data:Valerian_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Valerian_Wellesley ;
+    :hasChild data:Charles_Wellesley ;
+    :hasDeathYear "2014"^^xsd:positiveInteger ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSon data:Charles_Wellesley ;
+    :isAncestorOf data:Charles_Wellesley,
+        data:Charlotte_Wellesley ;
+    :isBloodrelationOf data:Valerian_Wellesley ;
+    :isBrotherOf data:Valerian_Wellesley ;
+    :isFatherOf data:Charles_Wellesley ;
+    :isParentOf data:Charles_Wellesley ;
+    :isSiblingOf data:Valerian_Wellesley ;
+    :isUncleOf data:Charles_Wellesley .
+
+data:Arthur_Wellesley a :Man,
+        :Person ;
+    :hasBrother data:Arthur_Wellesley ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSister data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBrotherOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSiblingOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+
+data:Mary_Wellesley a :Person,
+        :Woman ;
+    :hasBrother data:Arthur_Wellesley ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSister data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSiblingOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSisterOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+
+data:Charles_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Valerian_Wellesley ;
+    :hasBrother data:Charles_Wellesley ;
+    :hasChild data:Charlotte_Wellesley ;
+    :hasDaughter data:Charlotte_Wellesley ;
+    :hasFather data:Valerian_Wellesley ;
+    :hasParent data:Valerian_Wellesley ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :isAncestorOf data:Charlotte_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley ;
+    :isBrotherOf data:Charles_Wellesley ;
+    :isChildOf data:Valerian_Wellesley ;
+    :isFatherOf data:Charlotte_Wellesley ;
+    :isParentOf data:Charlotte_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley ;
+    :isSonOf data:Valerian_Wellesley ;
+    :isUncleOf data:Charlotte_Wellesley .
+
+data:Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :hasChild data:Charlotte_Wellesley ;
+    :hasDaughter data:Charlotte_Wellesley ;
+    :hasFather data:Frederick_of_Prussia ;
+    :hasMother data:Brigid_Guinness ;
+    :hasParent data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSister data:Antonia_of_Prussia ;
+    :isAncestorOf data:Charlotte_Wellesley ;
+    :isAuntOf data:Charlotte_Wellesley ;
+    :isBloodrelationOf data:Antonia_of_Prussia ;
+    :isChildOf data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :isDaughterOf data:Brigid_Guinness,
+        data:Frederick_of_Prussia ;
+    :isMotherOf data:Charlotte_Wellesley ;
+    :isParentOf data:Charlotte_Wellesley ;
+    :isSiblingOf data:Antonia_of_Prussia ;
+    :isSisterOf data:Antonia_of_Prussia .
+
+data:Charlotte_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Valerian_Wellesley ;
+    :hasBirthYear "1990"^^xsd:positiveInteger ;
+    :hasBrother data:Arthur_Wellesley ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMarriageYear "2016"^^xsd:positiveInteger ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :hasRelation data:Alejandro_Santo_Domingo,
+        data:Antonia_of_Prussia,
+        data:Arthur_Wellesley,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Frederick_of_Prussia,
+        data:Mary_Wellesley,
+        data:Valerian_Wellesley ;
+    :hasSister data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isDaughterOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isSiblingOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley ;
+    :isSisterOf data:Arthur_Wellesley,
+        data:Charlotte_Wellesley,
+        data:Mary_Wellesley .
+

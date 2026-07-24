@@ -1,0 +1,12 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alessandro_Torlonia a :Ancestor .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor ;
+    :isDaughterOf data:King_Alfonso_XIII_of_Spain .
+
+data:Olimpia a :Ancestor .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor .
+

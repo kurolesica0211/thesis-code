@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LouiseMountbatten a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Princess Louise of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:LordMountbatten ;\n    :hasDeathYear 1965 ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:PrincessVictoriaOfHesse ;\n    :hasRelation data:GustafVIAdolf ;\n    :hasSister data:PrincessAliceOfBattenberg ;\n    :knownAs \"Lady Louise Mountbatten\"^^xsd:string .\n\ndata:PrincePhilip a :Man,\n        :Person ;\n    :hasMother data:PrincessAliceOfBattenberg .\n\ndata:GustafVIAdolf a :Man,\n        :Person .\n\ndata:LordMountbatten a :Man,\n        :Person .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman .\n\ndata:PrincessAliceOfBattenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LouiseMountbatten a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Princess Louise of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1889 ;\n    :hasBrother data:LordMountbatten ;\n    :hasDeathYear 1965 ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:PrincessVictoriaOfHesse ;\n    :hasRelation data:GustafVIAdolf ;\n    :hasSister data:PrincessAliceOfBattenberg ;\n    :knownAs \"Lady Louise Mountbatten\"^^xsd:string .\n\ndata:PrincePhilip a :Man,\n        :Person ;\n    :hasMother data:PrincessAliceOfBattenberg .\n\ndata:GustafVIAdolf a :Man,\n        :Person .\n\ndata:LordMountbatten a :Man,\n        :Person .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman .\n\ndata:PrincessAliceOfBattenberg a :Person,\n        :Woman .\n\n"
+    }
+]

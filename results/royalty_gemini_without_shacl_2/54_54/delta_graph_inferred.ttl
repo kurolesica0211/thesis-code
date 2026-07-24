@@ -1,0 +1,444 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Catherine_Princess_of_Wales ;
+    :isBloodrelationOf data:Catherine_Princess_of_Wales ;
+    :isSiblingOf data:Catherine_Princess_of_Wales ;
+    :isSisterOf data:Catherine_Princess_of_Wales .
+
+data:Charles_Spencer a :Man,
+        :Person ;
+    :hasBrother data:Charles_Spencer ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :isBloodrelationOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales ;
+    :isBrotherOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales ;
+    :isSiblingOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales ;
+    :isUncleOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+
+data:Meghan_Markle a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archie ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Meghan_Markle ;
+    :hasSon data:Archie ;
+    :isAncestorOf data:Archie ;
+    :isAuntOf data:Archie ;
+    :isBloodrelationOf data:Meghan_Markle ;
+    :isMotherOf data:Archie ;
+    :isParentOf data:Archie ;
+    :isSiblingOf data:Meghan_Markle ;
+    :isSisterOf data:Meghan_Markle .
+
+data:Prince_Andrew a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III,
+        data:Prince_Andrew ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isBrotherOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isSiblingOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isUncleOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:King_Charles_III ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSon data:King_Charles_III ;
+    :isAncestorOf data:Archie,
+        data:King_Charles_III,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isFatherOf data:King_Charles_III ;
+    :isParentOf data:King_Charles_III ;
+    :isSiblingOf data:Prince_Philip ;
+    :isUncleOf data:King_Charles_III .
+
+data:Princess_Anne a :Person,
+        :Woman ;
+    :hasBrother data:King_Charles_III,
+        data:Prince_Andrew ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Princess_Anne ;
+    :isAuntOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isSiblingOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isSisterOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Elizabeth_II ;
+    :hasDaughter data:Queen_Elizabeth_II ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Archie,
+        data:King_Charles_III,
+        data:Prince_Harry,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:Queen_Elizabeth_II ;
+    :isParentOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasChild data:King_Charles_III ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :hasSon data:King_Charles_III ;
+    :isAncestorOf data:Archie,
+        data:King_Charles_III,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAuntOf data:King_Charles_III ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:King_Charles_III ;
+    :isParentOf data:King_Charles_III ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Charles_Spencer ;
+    :hasChild data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :hasSon data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAncestorOf data:Archie,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAuntOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales ;
+    :isMotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Charles_Spencer,
+        data:Diana_Princess_of_Wales .
+
+data:Archie a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasBrother data:Archie ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle ;
+    :hasParent data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Archie ;
+    :isBrotherOf data:Archie ;
+    :isChildOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie ;
+    :isSonOf data:Meghan_Markle,
+        data:Prince_Harry .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasBrother data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isSiblingOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie .
+
+data:Prince_Harry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasBirthYear "1984"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasChild data:Archie ;
+    :hasFather data:King_Charles_III ;
+    :hasMarriageYear "2018"^^xsd:positiveInteger ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSon data:Archie ;
+    :isAncestorOf data:Archie ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isFatherOf data:Archie ;
+    :isParentOf data:Archie ;
+    :isSiblingOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie ;
+    :knownAs "Henry Charles Albert David"^^xsd:string .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasBrother data:King_Charles_III,
+        data:Prince_Andrew ;
+    :hasChild data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Archie,
+        data:Catherine_Princess_of_Wales,
+        data:Charles_Spencer,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Andrew,
+        data:Prince_Harry,
+        data:Prince_Philip,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Princess_Anne ;
+    :hasSon data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAncestorOf data:Archie,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isBrotherOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:King_Charles_III,
+        data:Prince_Andrew,
+        data:Princess_Anne ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+

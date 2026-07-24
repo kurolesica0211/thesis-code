@@ -1,0 +1,161 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henri_comte_de_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_comte_de_Paris ;
+    :hasChild data:Claude_of_Orleans ;
+    :hasDaughter data:Claude_of_Orleans ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isAncestorOf data:Claude_of_Orleans ;
+    :isBloodrelationOf data:Henri_comte_de_Paris ;
+    :isBrotherOf data:Henri_comte_de_Paris ;
+    :isFatherOf data:Claude_of_Orleans ;
+    :isParentOf data:Claude_of_Orleans ;
+    :isSiblingOf data:Henri_comte_de_Paris ;
+    :isUncleOf data:Claude_of_Orleans .
+
+data:Isabelle_of_Orleans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Claude_of_Orleans ;
+    :hasDaughter data:Claude_of_Orleans ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasSister data:Isabelle_of_Orleans-Braganza ;
+    :isAncestorOf data:Claude_of_Orleans ;
+    :isAuntOf data:Claude_of_Orleans ;
+    :isBloodrelationOf data:Isabelle_of_Orleans-Braganza ;
+    :isMotherOf data:Claude_of_Orleans ;
+    :isParentOf data:Claude_of_Orleans ;
+    :isSiblingOf data:Isabelle_of_Orleans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans-Braganza .
+
+data:Aimone_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasBrother data:Aimone_Duke_of_Aosta ;
+    :hasChild data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasSon data:Amedeo_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Aimone_Duke_of_Aosta ;
+    :isBrotherOf data:Aimone_Duke_of_Aosta ;
+    :isFatherOf data:Amedeo_of_Savoy-Aosta ;
+    :isParentOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Aimone_Duke_of_Aosta ;
+    :isUncleOf data:Amedeo_of_Savoy-Aosta .
+
+data:Irene_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasSister data:Irene_of_Greece_and_Denmark ;
+    :hasSon data:Amedeo_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta ;
+    :isAuntOf data:Amedeo_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Irene_of_Greece_and_Denmark ;
+    :isMotherOf data:Amedeo_of_Savoy-Aosta ;
+    :isParentOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Irene_of_Greece_and_Denmark .
+
+data:Aimone_son_of_Amedeo a :Man ;
+    :hasAncestor data:Aimone_Duke_of_Aosta,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :hasBrother data:Aimone_son_of_Amedeo ;
+    :hasFather data:Amedeo_of_Savoy-Aosta ;
+    :hasParent data:Amedeo_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Aimone_son_of_Amedeo ;
+    :isBrotherOf data:Aimone_son_of_Amedeo ;
+    :isChildOf data:Amedeo_of_Savoy-Aosta ;
+    :isSiblingOf data:Aimone_son_of_Amedeo ;
+    :isSonOf data:Amedeo_of_Savoy-Aosta .
+
+data:Claude_of_Orleans a :Woman ;
+    :hasAncestor data:Henri_comte_de_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasFather data:Henri_comte_de_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza ;
+    :hasParent data:Henri_comte_de_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasSister data:Claude_of_Orleans ;
+    :isBloodrelationOf data:Claude_of_Orleans ;
+    :isChildOf data:Henri_comte_de_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isDaughterOf data:Henri_comte_de_Paris,
+        data:Isabelle_of_Orleans-Braganza ;
+    :isSiblingOf data:Claude_of_Orleans ;
+    :isSisterOf data:Claude_of_Orleans .
+
+data:Amedeo_of_Savoy-Aosta a :Ancestor,
+        :Man ;
+    :hasAncestor data:Aimone_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :hasBrother data:Amedeo_of_Savoy-Aosta ;
+    :hasChild data:Aimone_son_of_Amedeo ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Irene_of_Greece_and_Denmark ;
+    :hasParent data:Aimone_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Aimone_son_of_Amedeo,
+        data:Amedeo_of_Savoy-Aosta,
+        data:Claude_of_Orleans,
+        data:Henri_comte_de_Paris,
+        data:Irene_of_Greece_and_Denmark,
+        data:Isabelle_of_Orleans-Braganza ;
+    :hasSon data:Aimone_son_of_Amedeo ;
+    :isAncestorOf data:Aimone_son_of_Amedeo ;
+    :isBloodrelationOf data:Amedeo_of_Savoy-Aosta ;
+    :isBrotherOf data:Amedeo_of_Savoy-Aosta ;
+    :isChildOf data:Aimone_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :isFatherOf data:Aimone_son_of_Amedeo ;
+    :isParentOf data:Aimone_son_of_Amedeo ;
+    :isSiblingOf data:Amedeo_of_Savoy-Aosta ;
+    :isSonOf data:Aimone_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :isUncleOf data:Aimone_son_of_Amedeo .
+

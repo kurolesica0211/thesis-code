@@ -1,0 +1,300 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Juliana ;
+    :hasDaughter data:Princess_Juliana ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Queen_Wilhelmina ;
+    :isAncestorOf data:Princess_Juliana ;
+    :isAuntOf data:Princess_Juliana ;
+    :isBloodrelationOf data:Queen_Wilhelmina ;
+    :isMotherOf data:Princess_Juliana ;
+    :isParentOf data:Princess_Juliana ;
+    :isSiblingOf data:Queen_Wilhelmina ;
+    :isSisterOf data:Queen_Wilhelmina .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Henry_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSon data:Henry_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Henry_of_Mecklenburg-Schwerin .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henry_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSon data:Henry_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isAuntOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Willemina_Martina_Wenneker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier ;
+    :hasDaughter data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Willemina_Martina_Wenneker ;
+    :hasSon data:Pim_Lier ;
+    :isAncestorOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier ;
+    :isAuntOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier ;
+    :isBloodrelationOf data:Willemina_Martina_Wenneker ;
+    :isMotherOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier ;
+    :isParentOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier ;
+    :isSiblingOf data:Willemina_Martina_Wenneker ;
+    :isSisterOf data:Willemina_Martina_Wenneker .
+
+data:Christina_Margaretha_Abbo a :Person,
+        :Woman ;
+    :hasAncestor data:Willemina_Martina_Wenneker ;
+    :hasBrother data:Pim_Lier ;
+    :hasMother data:Willemina_Martina_Wenneker ;
+    :hasParent data:Willemina_Martina_Wenneker ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isChildOf data:Willemina_Martina_Wenneker ;
+    :isDaughterOf data:Willemina_Martina_Wenneker ;
+    :isSiblingOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isSisterOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana .
+
+data:Edith_Abbo a :Person,
+        :Woman ;
+    :hasAncestor data:Willemina_Martina_Wenneker ;
+    :hasBrother data:Pim_Lier ;
+    :hasMother data:Willemina_Martina_Wenneker ;
+    :hasParent data:Willemina_Martina_Wenneker ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isChildOf data:Willemina_Martina_Wenneker ;
+    :isDaughterOf data:Willemina_Martina_Wenneker ;
+    :isSiblingOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isSisterOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Henry_of_Mecklenburg-Schwerin ;
+    :hasChild data:Pim_Lier,
+        data:Princess_Juliana ;
+    :hasDaughter data:Princess_Juliana ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSon data:Pim_Lier ;
+    :isAncestorOf data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isFatherOf data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isParentOf data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isSiblingOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isUncleOf data:Pim_Lier,
+        data:Princess_Juliana .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Willemina_Martina_Wenneker ;
+    :hasBrother data:Pim_Lier ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Willemina_Martina_Wenneker ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isBrotherOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker ;
+    :isSiblingOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isSonOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker .
+
+data:Princess_Juliana a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Queen_Wilhelmina ;
+    :hasBrother data:Pim_Lier ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Queen_Wilhelmina ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Queen_Wilhelmina ;
+    :hasRelation data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Princess_Juliana,
+        data:Queen_Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Princess_Juliana ;
+    :isBloodrelationOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Queen_Wilhelmina ;
+    :isDaughterOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Queen_Wilhelmina ;
+    :isSiblingOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana ;
+    :isSisterOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier,
+        data:Princess_Juliana .
+

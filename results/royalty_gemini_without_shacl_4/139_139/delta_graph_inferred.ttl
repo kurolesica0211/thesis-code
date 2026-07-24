@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear "1898"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta ;
+    :hasDeathYear "1942"^^xsd:positiveInteger ;
+    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta,
+        data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta .
+
+data:Prince_Jean%2C_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Jean%2C_Duke_of_Guise ;
+    :hasChild data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta,
+        data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Jean%2C_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean%2C_Duke_of_Guise ;
+    :isFatherOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Prince_Jean%2C_Duke_of_Guise ;
+    :isUncleOf data:Princess_Anne_of_Orl%C3%A9ans .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta,
+        data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isAuntOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isMotherOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans .
+
+data:Princess_Anne_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasBirthYear "1906"^^xsd:positiveInteger ;
+    :hasDeathYear "1986"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Jean%2C_Duke_of_Guise ;
+    :hasMarriageYear "1927"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasParent data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Prince_Amedeo_of_Savoy%2C_Duke_of_Aosta,
+        data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isChildOf data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isDaughterOf data:Prince_Jean%2C_Duke_of_Guise,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Anne_of_Orl%C3%A9ans .
+

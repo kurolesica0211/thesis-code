@@ -1,0 +1,214 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Danica_Marinkovi%C4%87 a :Ancestor,
+        :Woman ;
+    :hasChild data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasDaughter data:Marija_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:Danica_Marinkovi%C4%87 ;
+    :hasSon data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAuntOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Danica_Marinkovi%C4%87 ;
+    :isMotherOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Danica_Marinkovi%C4%87 ;
+    :isSisterOf data:Danica_Marinkovi%C4%87 .
+
+data:Alexander_%28Crown_Prince%29 a :Ancestor,
+        :Man ;
+    :hasBrother data:Alexander_%28Crown_Prince%29 ;
+    :hasChild data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSon data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Alexander_%28Crown_Prince%29 ;
+    :isBrotherOf data:Alexander_%28Crown_Prince%29 ;
+    :isFatherOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Alexander_%28Crown_Prince%29 ;
+    :isUncleOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasSon data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAuntOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasAncestor data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasBrother data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:Alexander_%28Crown_Prince%29 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isUncleOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Marija_Kara%C4%91or%C4%91evi%C4%87 a :Woman ;
+    :hasAncestor data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasBrother data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 ;
+    :hasParent data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:Marija_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isDaughterOf data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSisterOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Stefan_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasAncestor data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasBrother data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 ;
+    :hasParent data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:Marija_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87 .
+
+data:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasChild data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasDaughter data:Marija_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:Alexander_%28Crown_Prince%29 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alexander_%28Crown_Prince%29,
+        data:Danica_Marinkovi%C4%87,
+        data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza,
+        data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasSon data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isFatherOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:Filip_Kara%C4%91or%C4%91evi%C4%87,
+        data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:Alexander_%28Crown_Prince%29,
+        data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza ;
+    :isUncleOf data:Marija_Kara%C4%91or%C4%91evi%C4%87,
+        data:Stefan_Kara%C4%91or%C4%91evi%C4%87 .
+

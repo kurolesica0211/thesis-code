@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man,\n        :Person ;\n    :alsoKnownAs \"Johnnie\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary ;\n    :isSiblingOf data:PrinceAlbert,\n        data:PrinceEdward,\n        data:PrinceGeorge,\n        data:PrinceHenry,\n        data:PrincessMary ;\n    :knownAs \"John Charles Francis\"^^xsd:string .\n\ndata:EdwardVII a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Man,\n        :Person ;\n    :hasFather data:EdwardVII .\n\ndata:PrinceAlbert a :Man,\n        :Person .\n\ndata:PrinceEdward a :Man,\n        :Person .\n\ndata:PrinceGeorge a :Man,\n        :Person .\n\ndata:PrinceHenry a :Man,\n        :Person .\n\ndata:PrincessMary a :Person,\n        :Woman .\n\ndata:QueenMary a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man,\n        :Person ;\n    :alsoKnownAs \"Johnnie\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1919 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary ;\n    :isSiblingOf data:PrinceAlbert,\n        data:PrinceEdward,\n        data:PrinceGeorge,\n        data:PrinceHenry,\n        data:PrincessMary ;\n    :knownAs \"John Charles Francis\"^^xsd:string .\n\ndata:EdwardVII a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Man,\n        :Person ;\n    :hasFather data:EdwardVII .\n\ndata:PrinceAlbert a :Man,\n        :Person .\n\ndata:PrinceEdward a :Man,\n        :Person .\n\ndata:PrinceGeorge a :Man,\n        :Person .\n\ndata:PrinceHenry a :Man,\n        :Person .\n\ndata:PrincessMary a :Person,\n        :Woman .\n\ndata:QueenMary a :Person,\n        :Woman .\n\n"
+    }
+]

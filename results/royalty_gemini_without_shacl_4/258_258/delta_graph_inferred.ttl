@@ -1,0 +1,310 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isUncleOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza .
+
+data:Gaston_Count_of_Eu a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gaston_Count_of_Eu ;
+    :hasChild data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSon data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Gaston_Count_of_Eu ;
+    :isBrotherOf data:Gaston_Count_of_Eu ;
+    :isFatherOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Gaston_Count_of_Eu ;
+    :isUncleOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasSon data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isAuntOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isMotherOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSisterOf data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isUncleOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza .
+
+data:Maria_Pia_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasDaughter data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isAuntOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza .
+
+data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasBirthYear 1878 ;
+    :hasBrother data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :hasChild data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasDaughter data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasParent data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasRelation data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Maria_Pia_of_Bourbon-Two_Sicilies,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :hasSon data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :isFatherOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+        data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_of_Orl%C3%A9ans-Braganza ;
+    :isSonOf data:Gaston_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :isUncleOf data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;
+    :knownAs "The Perfect Prince"^^xsd:string .
+

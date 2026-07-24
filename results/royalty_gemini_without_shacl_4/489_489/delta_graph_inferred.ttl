@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FriedrichVonVeltheim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear "1881"^^xsd:nonNegativeInteger ;
+    :hasBrother data:FriedrichVonVeltheim ;
+    :hasChild data:ArmgardElseHeleneVonVeltheim ;
+    :hasDaughter data:ArmgardElseHeleneVonVeltheim ;
+    :hasDeathYear "1955"^^xsd:nonNegativeInteger ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :isAncestorOf data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:FriedrichVonVeltheim ;
+    :isBrotherOf data:FriedrichVonVeltheim ;
+    :isFatherOf data:ArmgardElseHeleneVonVeltheim ;
+    :isParentOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSiblingOf data:FriedrichVonVeltheim ;
+    :isUncleOf data:ArmgardElseHeleneVonVeltheim .
+
+data:InaMarieVonBassewitz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WilhelmKarlPrinzVonPreussen ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :hasSister data:InaMarieVonBassewitz ;
+    :hasSon data:WilhelmKarlPrinzVonPreussen ;
+    :isAncestorOf data:WilhelmKarlPrinzVonPreussen ;
+    :isAuntOf data:WilhelmKarlPrinzVonPreussen ;
+    :isBloodrelationOf data:InaMarieVonBassewitz ;
+    :isMotherOf data:WilhelmKarlPrinzVonPreussen ;
+    :isParentOf data:WilhelmKarlPrinzVonPreussen ;
+    :isSiblingOf data:InaMarieVonBassewitz ;
+    :isSisterOf data:InaMarieVonBassewitz .
+
+data:OskarOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:OskarOfPrussia ;
+    :hasChild data:WilhelmKarlPrinzVonPreussen ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :hasSon data:WilhelmKarlPrinzVonPreussen ;
+    :isAncestorOf data:WilhelmKarlPrinzVonPreussen ;
+    :isBloodrelationOf data:OskarOfPrussia ;
+    :isBrotherOf data:OskarOfPrussia ;
+    :isFatherOf data:WilhelmKarlPrinzVonPreussen ;
+    :isParentOf data:WilhelmKarlPrinzVonPreussen ;
+    :isSiblingOf data:OskarOfPrussia ;
+    :isUncleOf data:WilhelmKarlPrinzVonPreussen .
+
+data:OttonieVonAlvensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1883"^^xsd:nonNegativeInteger ;
+    :hasChild data:ArmgardElseHeleneVonVeltheim ;
+    :hasDaughter data:ArmgardElseHeleneVonVeltheim ;
+    :hasDeathYear "1960"^^xsd:nonNegativeInteger ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :hasSister data:OttonieVonAlvensleben ;
+    :isAncestorOf data:ArmgardElseHeleneVonVeltheim ;
+    :isAuntOf data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:OttonieVonAlvensleben ;
+    :isMotherOf data:ArmgardElseHeleneVonVeltheim ;
+    :isParentOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSiblingOf data:OttonieVonAlvensleben ;
+    :isSisterOf data:OttonieVonAlvensleben .
+
+data:ArmgardElseHeleneVonVeltheim a :Person,
+        :Woman ;
+    :hasAncestor data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :hasBirthYear "1926"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2019"^^xsd:nonNegativeInteger ;
+    :hasFather data:FriedrichVonVeltheim ;
+    :hasMother data:OttonieVonAlvensleben ;
+    :hasParent data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :hasSister data:ArmgardElseHeleneVonVeltheim ;
+    :isBloodrelationOf data:ArmgardElseHeleneVonVeltheim ;
+    :isChildOf data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :isDaughterOf data:FriedrichVonVeltheim,
+        data:OttonieVonAlvensleben ;
+    :isSiblingOf data:ArmgardElseHeleneVonVeltheim ;
+    :isSisterOf data:ArmgardElseHeleneVonVeltheim .
+
+data:WilhelmKarlPrinzVonPreussen a :Man,
+        :Person ;
+    :hasAncestor data:InaMarieVonBassewitz,
+        data:OskarOfPrussia ;
+    :hasBirthYear "1922"^^xsd:nonNegativeInteger ;
+    :hasBrother data:WilhelmKarlPrinzVonPreussen ;
+    :hasDeathYear "2007"^^xsd:nonNegativeInteger ;
+    :hasFather data:OskarOfPrussia ;
+    :hasMarriageYear "1952"^^xsd:nonNegativeInteger ;
+    :hasMother data:InaMarieVonBassewitz ;
+    :hasParent data:InaMarieVonBassewitz,
+        data:OskarOfPrussia ;
+    :hasRelation data:ArmgardElseHeleneVonVeltheim,
+        data:FriedrichVonVeltheim,
+        data:InaMarieVonBassewitz,
+        data:OskarOfPrussia,
+        data:OttonieVonAlvensleben,
+        data:WilhelmKarlPrinzVonPreussen ;
+    :isBloodrelationOf data:WilhelmKarlPrinzVonPreussen ;
+    :isBrotherOf data:WilhelmKarlPrinzVonPreussen ;
+    :isChildOf data:InaMarieVonBassewitz,
+        data:OskarOfPrussia ;
+    :isSiblingOf data:WilhelmKarlPrinzVonPreussen ;
+    :isSonOf data:InaMarieVonBassewitz,
+        data:OskarOfPrussia .
+

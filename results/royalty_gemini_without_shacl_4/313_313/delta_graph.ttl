@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_III a :Man .
+
+data:Nicholas_II a :Man .
+
+data:Sergei_Mikhailovich a :Man .
+
+data:Vladimir_Sergeievich a :Man ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Andrei_Vladimirovich ;
+    :hasMother data:Mathilde_Kschessinska .
+
+data:Alexander_II a :Man .
+
+data:Andrei_Vladimirovich a :Man ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear data:Mathilde_Kschessinska,
+        1921 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasSister data:Elena_Vladimirovna .
+
+data:Boris_Vladimirovich a :Man .
+
+data:Elena_Vladimirovna a :Woman .
+
+data:Kirill_Vladimirovich a :Man .
+
+data:Maria_Pavlovna a :Woman .
+
+data:Vladimir_Alexandrovich a :Man ;
+    :hasFather data:Alexander_II .
+
+data:Mathilde_Kschessinska a :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1971 .
+

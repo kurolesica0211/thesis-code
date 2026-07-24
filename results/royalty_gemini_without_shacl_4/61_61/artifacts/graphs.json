@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia .\n\ndata:Willem-Alexander a :Man ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix ;\n    :isSiblingOf data:Constantijn,\n        data:Friso .\n\ndata:Beatrix a :Woman ;\n    :hasFather data:Bernhard ;\n    :hasMother data:Juliana .\n\ndata:Bernhard a :Man .\n\ndata:Claus a :Man .\n\ndata:Constantijn a :Man .\n\ndata:Friso a :Man .\n\ndata:Juliana a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Ariane a :Woman .\n\ndata:Catharina-Amalia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia .\n\ndata:Willem-Alexander a :Man ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasChild data:Alexia,\n        data:Ariane,\n        data:Catharina-Amalia ;\n    :hasFather data:Claus ;\n    :hasMother data:Beatrix ;\n    :isSiblingOf data:Constantijn,\n        data:Friso .\n\ndata:Beatrix a :Woman ;\n    :hasFather data:Bernhard ;\n    :hasMother data:Juliana .\n\ndata:Bernhard a :Man .\n\ndata:Claus a :Man .\n\ndata:Constantijn a :Man .\n\ndata:Friso a :Man .\n\ndata:Juliana a :Woman .\n\ndata:Alexia a :Woman .\n\ndata:Ariane a :Woman .\n\ndata:Catharina-Amalia a :Woman .\n\n"
+    }
+]

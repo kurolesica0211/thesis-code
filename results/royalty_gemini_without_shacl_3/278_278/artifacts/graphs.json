@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Knud a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:FrederikIX ;\n    :hasChild data:Christian,\n        data:Elisabeth,\n        data:Ingolf ;\n    :hasDeathYear 1976 ;\n    :hasFather data:ChristianX ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasRelation data:CarolineMathilde,\n        data:Gustav .\n\ndata:MargretheII a :Person,\n        :Woman ;\n    :hasFather data:FrederikIX .\n\ndata:CarolineMathilde a :Person,\n        :Woman ;\n    :hasChild data:Christian,\n        data:Elisabeth,\n        data:Ingolf ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\ndata:ChristianIX a :Man,\n        :Person .\n\ndata:FrederikVIII a :Man,\n        :Person ;\n    :hasFather data:ChristianIX .\n\ndata:Gustav a :Man,\n        :Person .\n\ndata:Harald a :Man,\n        :Person .\n\ndata:Helena a :Person,\n        :Woman .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:Christian a :Man,\n        :Person .\n\ndata:ChristianX a :Man,\n        :Person ;\n    :hasFather data:FrederikVIII .\n\ndata:Elisabeth a :Person,\n        :Woman .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :hasFather data:ChristianX ;\n    :hasMother data:Alexandrine .\n\ndata:Ingolf a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Knud a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:FrederikIX ;\n    :hasChild data:Christian,\n        data:Elisabeth,\n        data:Ingolf ;\n    :hasDeathYear 1976 ;\n    :hasFather data:ChristianX ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasRelation data:CarolineMathilde,\n        data:Gustav .\n\ndata:MargretheII a :Person,\n        :Woman ;\n    :hasFather data:FrederikIX .\n\ndata:CarolineMathilde a :Person,\n        :Woman ;\n    :hasChild data:Christian,\n        data:Elisabeth,\n        data:Ingolf ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\ndata:ChristianIX a :Man,\n        :Person .\n\ndata:FrederikVIII a :Man,\n        :Person ;\n    :hasFather data:ChristianIX .\n\ndata:Gustav a :Man,\n        :Person .\n\ndata:Harald a :Man,\n        :Person .\n\ndata:Helena a :Person,\n        :Woman .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:Christian a :Man,\n        :Person .\n\ndata:ChristianX a :Man,\n        :Person ;\n    :hasFather data:FrederikVIII .\n\ndata:Elisabeth a :Person,\n        :Woman .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :hasFather data:ChristianX ;\n    :hasMother data:Alexandrine .\n\ndata:Ingolf a :Man,\n        :Person .\n\n"
+    }
+]

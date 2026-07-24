@@ -1,0 +1,83 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/323_323",
+  "text_file": "Q5312748.txt",
+  "text_key": "Q5312748",
+  "article": "https://en.wikipedia.org/wiki/Christian,_Duke_of_Oldenburg",
+  "article_key": "Christian, Duke of Oldenburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Christian_Duke__of_Oldenburg",
+    "qid": "Q5312748",
+    "label": "Christian Duke  of Oldenburg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Christian_Duke__of_Oldenburg",
+      "qid": "Q5312748",
+      "label": "Christian Duke  of Oldenburg",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Christian_Duke_of_Oldenburg",
+      "extracted_local_name": "Christian_Duke_of_Oldenburg",
+      "embedding_text": "Christian Duke of Oldenburg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Christian_Duke__of_Oldenburg",
+      "ground_truth_qid": "Q5312748",
+      "ground_truth_label": "Christian Duke  of Oldenburg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christian Duke of Oldenburg",
+      "best_candidate_label": "Christian Duke  of Oldenburg",
+      "best_candidate_qid": "Q5312748",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Augustus_II",
+      "extracted_local_name": "Frederick_Augustus_II",
+      "embedding_text": "Frederick Augustus II",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nikolaus",
+      "extracted_local_name": "Nikolaus",
+      "embedding_text": "Nikolaus",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 1,
+    "entities_unmatched": 2
+  }
+}

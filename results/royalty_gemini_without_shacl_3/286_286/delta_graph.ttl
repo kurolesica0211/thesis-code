@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duke_Jean a :Man,
+        :Person .
+
+data:Rafael_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Prince_Bertrand ;
+    :isSiblingOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela .
+
+data:Antoine_13th_Prince_of_Ligne a :Man,
+        :Person .
+
+data:Prince_Antonio a :Man,
+        :Person ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Prince_Bertrand a :Man,
+        :Person .
+
+data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Man,
+        :Person .
+
+data:Prince_Pedro_Luiz a :Man,
+        :Person .
+
+data:Princess_Alix_of_Luxembourg a :Person,
+        :Woman .
+
+data:Princess_Amelia a :Person,
+        :Woman .
+
+data:Princess_Christine_of_Ligne a :Person,
+        :Woman ;
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Princess_Alix_of_Luxembourg .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person,
+        :Woman .
+
+data:Princess_Maria_Gabriela a :Person,
+        :Woman .
+

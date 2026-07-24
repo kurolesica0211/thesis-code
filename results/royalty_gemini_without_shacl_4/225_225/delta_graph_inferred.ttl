@@ -1,0 +1,204 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Naomi_Valeska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :hasDaughter data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSister data:Naomi_Valeska ;
+    :isAncestorOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isAuntOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isBloodrelationOf data:Naomi_Valeska ;
+    :isMotherOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isParentOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isSiblingOf data:Naomi_Valeska ;
+    :isSisterOf data:Naomi_Valeska .
+
+data:Prince_Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henri_dOrleans ;
+    :hasChild data:Prince_Michel_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSon data:Prince_Michel_dOrleans ;
+    :isAncestorOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Prince_Henri_dOrleans ;
+    :isBrotherOf data:Prince_Henri_dOrleans ;
+    :isFatherOf data:Prince_Michel_dOrleans ;
+    :isParentOf data:Prince_Michel_dOrleans ;
+    :isSiblingOf data:Prince_Henri_dOrleans ;
+    :isUncleOf data:Prince_Michel_dOrleans .
+
+data:Beatrice_Pasquier_de_Franclieu a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Isabelle_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSister data:Beatrice_Pasquier_de_Franclieu ;
+    :hasSon data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :isAncestorOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isAuntOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Beatrice_Pasquier_de_Franclieu ;
+    :isMotherOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isParentOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isSiblingOf data:Beatrice_Pasquier_de_Franclieu ;
+    :isSisterOf data:Beatrice_Pasquier_de_Franclieu .
+
+data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans ;
+    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasMother data:Naomi_Valeska ;
+    :hasParent data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSister data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isBloodrelationOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isChildOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska ;
+    :isDaughterOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska ;
+    :isSiblingOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isSisterOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans .
+
+data:Prince_Michel_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Henri_dOrleans ;
+    :hasBrother data:Prince_Michel_dOrleans ;
+    :hasChild data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasDaughter data:Princess_Isabelle_dOrleans ;
+    :hasFather data:Prince_Henri_dOrleans ;
+    :hasParent data:Prince_Henri_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSon data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :isAncestorOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Prince_Michel_dOrleans ;
+    :isBrotherOf data:Prince_Michel_dOrleans ;
+    :isChildOf data:Prince_Henri_dOrleans ;
+    :isFatherOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isParentOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isSiblingOf data:Prince_Michel_dOrleans ;
+    :isSonOf data:Prince_Henri_dOrleans ;
+    :isUncleOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans .
+
+data:Princess_Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans ;
+    :hasBrother data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasFather data:Prince_Michel_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu ;
+    :hasParent data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSister data:Princess_Isabelle_dOrleans ;
+    :isAuntOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isBloodrelationOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isChildOf data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :isDaughterOf data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :isSiblingOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isSisterOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans .
+
+data:Charles_Philippe_Marie_Louis_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans ;
+    :hasBirthYear 1973 ;
+    :hasBrother data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasChild data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :hasDaughter data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :hasFather data:Prince_Michel_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu ;
+    :hasParent data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :hasRelation data:Beatrice_Pasquier_de_Franclieu,
+        data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Naomi_Valeska,
+        data:Prince_Henri_dOrleans,
+        data:Prince_Michel_dOrleans,
+        data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :hasSister data:Princess_Isabelle_dOrleans ;
+    :isAncestorOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isBloodrelationOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isBrotherOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isChildOf data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :isFatherOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isParentOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans ;
+    :isSiblingOf data:Charles_Philippe_Marie_Louis_dOrleans,
+        data:Princess_Isabelle_dOrleans ;
+    :isSonOf data:Beatrice_Pasquier_de_Franclieu,
+        data:Prince_Michel_dOrleans ;
+    :isUncleOf data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans .
+

@@ -1,0 +1,102 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Maria_Carolina_Zamoyska a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Countess_Maria_Carolina_Zamoyska ;
+    :isBloodrelationOf data:Countess_Maria_Carolina_Zamoyska ;
+    :isSiblingOf data:Countess_Maria_Carolina_Zamoyska ;
+    :isSisterOf data:Countess_Maria_Carolina_Zamoyska .
+
+data:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :isBrotherOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :isSiblingOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano .
+
+data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alfonso_Count_of_Caserta ;
+    :hasChild data:Prince_Ranieri_Maria_Gaetano ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Ranieri_Maria_Gaetano ;
+    :isAncestorOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isBloodrelationOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isBrotherOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isFatherOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isParentOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isSiblingOf data:Prince_Alfonso_Count_of_Caserta ;
+    :isUncleOf data:Prince_Ranieri_Maria_Gaetano .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Ranieri_Maria_Gaetano ;
+    :hasDeathYear 1938 ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Ranieri_Maria_Gaetano ;
+    :isAncestorOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isAuntOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isParentOf data:Prince_Ranieri_Maria_Gaetano ;
+    :isSiblingOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ranieri_Maria_Gaetano a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1883 ;
+    :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Alfonso_Count_of_Caserta,
+        data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :isBrotherOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :isChildOf data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Pius_Duke_of_Calabria,
+        data:Prince_Ranieri_Maria_Gaetano ;
+    :isSonOf data:Prince_Alfonso_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+

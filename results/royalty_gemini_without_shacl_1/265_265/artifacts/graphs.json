@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Catherine_Princess_of_Wales a :Woman ;\n    :hasChild data:Prince_George,\n        data:Prince_Louis,\n        data:Princess_Charlotte .\n\ndata:William_Prince_of_Wales a :Man ;\n    :hasBirthYear 1982 ;\n    :hasBrother data:Prince_Harry ;\n    :hasChild data:Prince_George,\n        data:Prince_Louis,\n        data:Princess_Charlotte ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\ndata:Charles_III a :Man .\n\ndata:Diana_Princess_of_Wales a :Woman .\n\ndata:Prince_Harry a :Man .\n\ndata:Prince_George a :Man .\n\ndata:Prince_Louis a :Man .\n\ndata:Princess_Charlotte a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Catherine_Princess_of_Wales a :Woman ;\n    :hasChild data:Prince_George,\n        data:Prince_Louis,\n        data:Princess_Charlotte .\n\ndata:William_Prince_of_Wales a :Man ;\n    :hasBirthYear 1982 ;\n    :hasBrother data:Prince_Harry ;\n    :hasChild data:Prince_George,\n        data:Prince_Louis,\n        data:Princess_Charlotte ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\ndata:Charles_III a :Man .\n\ndata:Diana_Princess_of_Wales a :Woman .\n\ndata:Prince_Harry a :Man .\n\ndata:Prince_George a :Man .\n\ndata:Prince_Louis a :Man .\n\ndata:Princess_Charlotte a :Woman .\n\n"
+    }
+]

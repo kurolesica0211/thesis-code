@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isBloodrelationOf data:Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :isBrotherOf data:Carlos_Prince_of_Bourbon_Two_Sicilies ;
+    :isSiblingOf data:Carlos_Prince_of_Bourbon_Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias .
+
+data:Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Antoine_Duke_of_Montpensier ;
+    :hasChild data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasDaughter data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isAncestorOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isBloodrelationOf data:Antoine_Duke_of_Montpensier ;
+    :isBrotherOf data:Antoine_Duke_of_Montpensier ;
+    :isFatherOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isParentOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isSiblingOf data:Antoine_Duke_of_Montpensier ;
+    :isUncleOf data:Marie_Isabelle_d%27Orl%C3%A9ans .
+
+data:Luisa_Fernanda_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasDaughter data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasSister data:Luisa_Fernanda_of_Spain ;
+    :isAncestorOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isAuntOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isBloodrelationOf data:Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isParentOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isSiblingOf data:Luisa_Fernanda_of_Spain ;
+    :isSisterOf data:Luisa_Fernanda_of_Spain .
+
+data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasAncestor data:Antoine_Duke_of_Montpensier,
+        data:Luisa_Fernanda_of_Spain,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1958 ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasParent data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasSister data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isChildOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isDaughterOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isSiblingOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isSisterOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans .
+
+data:Marie_Isabelle_d%27Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Antoine_Duke_of_Montpensier,
+        data:Luisa_Fernanda_of_Spain ;
+    :hasChild data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :hasDaughter data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Luisa_Fernanda_of_Spain ;
+    :hasParent data:Antoine_Duke_of_Montpensier,
+        data:Luisa_Fernanda_of_Spain ;
+    :hasRelation data:Antoine_Duke_of_Montpensier,
+        data:Carlos_Prince_of_Bourbon_Two_Sicilies,
+        data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans,
+        data:Luisa_Fernanda_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias,
+        data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :hasSister data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isAncestorOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isAuntOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isChildOf data:Antoine_Duke_of_Montpensier,
+        data:Luisa_Fernanda_of_Spain ;
+    :isDaughterOf data:Antoine_Duke_of_Montpensier,
+        data:Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isParentOf data:Louise_Fran%C3%A7oise_Marie_Laure_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Marie_Isabelle_d%27Orl%C3%A9ans ;
+    :isSisterOf data:Marie_Isabelle_d%27Orl%C3%A9ans .
+

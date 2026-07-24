@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Berthold_Margrave_of_Baden a :Ancestor ;
+    :isFatherOf data:Margarita_of_Baden .
+
+data:Prince_Maximilian :isBrotherOf data:Margarita_of_Baden .
+
+data:Prince_Tomislav_of_Yugoslavia :isBrotherOf data:King_Peter_II_of_Yugoslavia .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor ;
+    :isMotherOf data:Margarita_of_Baden .
+

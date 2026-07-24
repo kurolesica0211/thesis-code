@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_George_Duke_of_Kent a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasChild data:Alexandra,\n        data:Edward_Duke_of_Kent,\n        data:Michael ;\n    :hasDeathYear 1942 ;\n    :hasFather data:King_George_V ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;\n    :isBrotherOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasChild data:Alexandra,\n        data:Edward_Duke_of_Kent,\n        data:Michael .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Alexandra a :Person,\n        :Woman .\n\ndata:Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Michael a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_George_Duke_of_Kent a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasChild data:Alexandra,\n        data:Edward_Duke_of_Kent,\n        data:Michael ;\n    :hasDeathYear 1942 ;\n    :hasFather data:King_George_V ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;\n    :isBrotherOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasChild data:Alexandra,\n        data:Edward_Duke_of_Kent,\n        data:Michael .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Alexandra a :Person,\n        :Woman .\n\ndata:Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Michael a :Man,\n        :Person .\n\n"
+    }
+]

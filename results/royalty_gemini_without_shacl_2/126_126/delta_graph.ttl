@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Person,
+        :Woman ;
+    :hasDeathYear 2017 .
+
+data:King_Juan_Carlos_I a :Man,
+        :Person ;
+    :hasRelation data:Queen_Sofia .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Man,
+        :Person .
+
+data:Infante_Carlos_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Person,
+        :Woman .
+
+data:Queen_Sofia a :Person,
+        :Woman .
+

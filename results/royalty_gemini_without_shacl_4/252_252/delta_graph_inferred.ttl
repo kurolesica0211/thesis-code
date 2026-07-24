@@ -1,0 +1,217 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henry_Keswick a :Man,
+        :Person ;
+    :hasBrother data:Henry_Keswick ;
+    :hasRelation data:Henry_Keswick ;
+    :isBloodrelationOf data:Henry_Keswick ;
+    :isBrotherOf data:Henry_Keswick ;
+    :isSiblingOf data:Henry_Keswick .
+
+data:Damaris_Stuart-William a :Person,
+        :Woman ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Damaris_Stuart-William ;
+    :isBloodrelationOf data:Damaris_Stuart-William ;
+    :isSiblingOf data:Damaris_Stuart-William ;
+    :isSisterOf data:Damaris_Stuart-William .
+
+data:Karen_Baxter a :Person,
+        :Woman ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Karen_Baxter ;
+    :isBloodrelationOf data:Karen_Baxter ;
+    :isSiblingOf data:Karen_Baxter ;
+    :isSisterOf data:Karen_Baxter .
+
+data:Isobel_Charlotte_Weatherall a :Person,
+        :Woman ;
+    :hasBrother data:Percy_Weatherall ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Isobel_Charlotte_Weatherall ;
+    :isBloodrelationOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall ;
+    :isSiblingOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall ;
+    :isSisterOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall .
+
+data:Percy_Weatherall a :Man,
+        :Person ;
+    :hasBrother data:Percy_Weatherall ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Isobel_Charlotte_Weatherall ;
+    :isBloodrelationOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall ;
+    :isBrotherOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall ;
+    :isSiblingOf data:Isobel_Charlotte_Weatherall,
+        data:Percy_Weatherall .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :hasBrother data:Michael_Bowes-Lyon_Grandfather ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :isAuntOf data:Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSiblingOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Mary_Pamela_McCorquodale a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Michael_Fergus_Bowes-Lyon ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Mary_Pamela_McCorquodale ;
+    :hasSon data:Michael_Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Fergus_Bowes-Lyon ;
+    :isAuntOf data:Michael_Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Mary_Pamela_McCorquodale ;
+    :isMotherOf data:Michael_Fergus_Bowes-Lyon ;
+    :isParentOf data:Michael_Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Mary_Pamela_McCorquodale ;
+    :isSisterOf data:Mary_Pamela_McCorquodale .
+
+data:Michael_Bowes-Lyon_Grandfather a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Bowes-Lyon_Grandfather ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon,
+        data:Michael_Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBrotherOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isFatherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon_Grandfather,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isUncleOf data:Fergus_Bowes-Lyon .
+
+data:Fergus_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Michael_Bowes-Lyon_Grandfather ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasChild data:Michael_Fergus_Bowes-Lyon ;
+    :hasFather data:Michael_Bowes-Lyon_Grandfather ;
+    :hasParent data:Michael_Bowes-Lyon_Grandfather ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSon data:Michael_Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Fergus_Bowes-Lyon ;
+    :isBrotherOf data:Fergus_Bowes-Lyon ;
+    :isChildOf data:Michael_Bowes-Lyon_Grandfather ;
+    :isFatherOf data:Michael_Fergus_Bowes-Lyon ;
+    :isParentOf data:Michael_Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Bowes-Lyon ;
+    :isSonOf data:Michael_Bowes-Lyon_Grandfather ;
+    :isUncleOf data:Michael_Fergus_Bowes-Lyon .
+
+data:Michael_Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
+    :hasAncestor data:Fergus_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather ;
+    :hasBirthYear 1957 ;
+    :hasBrother data:Michael_Fergus_Bowes-Lyon ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMarriageYear 1984,
+        2005,
+        2012 ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasParent data:Fergus_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Fergus_Bowes-Lyon,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter,
+        data:Mary_Pamela_McCorquodale,
+        data:Michael_Bowes-Lyon_Grandfather,
+        data:Michael_Fergus_Bowes-Lyon,
+        data:Percy_Weatherall,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isBloodrelationOf data:Michael_Fergus_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Fergus_Bowes-Lyon ;
+    :isChildOf data:Fergus_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale ;
+    :isSiblingOf data:Michael_Fergus_Bowes-Lyon ;
+    :isSonOf data:Fergus_Bowes-Lyon,
+        data:Mary_Pamela_McCorquodale .
+

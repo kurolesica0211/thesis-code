@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_IX a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth_of_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1935\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:Prince_Christian,\n        data:Prince_Ingolf ;\n    :hasDeathYear \"2018\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;\n    :hasMother data:Princess_Caroline-Mathilde_of_Denmark .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Knud_Hereditary_Prince_of_Denmark a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Prince_Christian a :Man,\n        :Person .\n\ndata:Prince_Ingolf a :Man,\n        :Person .\n\ndata:Princess_Caroline-Mathilde_of_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_IX a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\ndata:Princess_Elisabeth_of_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1935\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:Prince_Christian,\n        data:Prince_Ingolf ;\n    :hasDeathYear \"2018\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;\n    :hasMother data:Princess_Caroline-Mathilde_of_Denmark .\n\ndata:Christian_X a :Man,\n        :Person .\n\ndata:Knud_Hereditary_Prince_of_Denmark a :Man,\n        :Person ;\n    :hasFather data:Christian_X .\n\ndata:Prince_Christian a :Man,\n        :Person .\n\ndata:Prince_Ingolf a :Man,\n        :Person .\n\ndata:Princess_Caroline-Mathilde_of_Denmark a :Person,\n        :Woman .\n\n"
+    }
+]

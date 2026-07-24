@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Aschwin_of_Sierstorpff-Cramm a :Ancestor .
+
+data:Caroline_Rahlenbeck a :Ancestor .
+
+data:Claus_Felix_von_Amsberg a :Ancestor .
+
+data:Elise_von_Vieregge a :Ancestor .
+
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor ;
+    :hasFather data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor .
+
+data:Hedwig_von_Sierstorpff-Driburg a :Ancestor .
+
+data:Heinrich_von_Salviati a :Ancestor .
+
+data:Wilhelm_von_Amsberg a :Ancestor .
+
+data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg a :Ancestor .
+

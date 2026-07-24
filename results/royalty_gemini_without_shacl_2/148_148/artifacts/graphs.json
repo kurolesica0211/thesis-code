@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Karl_6th_Prince_of_Leiningen ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia .\n\ndata:Princess_Marie_Louise_of_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_of_Bulgaria ;\n    :hasMother data:Princess_Giovanna_of_Italy .\n\ndata:Boris_III_of_Bulgaria a :Man,\n        :Person .\n\ndata:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .\n\ndata:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Karl_6th_Prince_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Princess_Giovanna_of_Italy a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Melita_of_Edinburgh a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Karl_6th_Prince_of_Leiningen ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia .\n\ndata:Princess_Marie_Louise_of_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_of_Bulgaria ;\n    :hasMother data:Princess_Giovanna_of_Italy .\n\ndata:Boris_III_of_Bulgaria a :Man,\n        :Person .\n\ndata:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .\n\ndata:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Karl_6th_Prince_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Princess_Giovanna_of_Italy a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Melita_of_Edinburgh a :Person,\n        :Woman .\n\n"
+    }
+]

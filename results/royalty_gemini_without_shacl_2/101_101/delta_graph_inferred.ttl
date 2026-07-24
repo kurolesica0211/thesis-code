@@ -1,0 +1,244 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Gustav,
+        data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Gustav .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasBrother data:Gustav ;
+    :hasRelation data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Gustav ;
+    :hasRelation data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Benedikte_of_Denmark ;
+    :hasSon data:Gustav ;
+    :isAncestorOf data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isAuntOf data:Gustav ;
+    :isBloodrelationOf data:Princess_Benedikte_of_Denmark ;
+    :isMotherOf data:Gustav ;
+    :isParentOf data:Gustav ;
+    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Princess_Benedikte_of_Denmark .
+
+data:Carina_Axelsson a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :hasDaughter data:Princess_Mafalda ;
+    :hasRelation data:Carina_Axelsson,
+        data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :hasSister data:Carina_Axelsson ;
+    :hasSon data:Prince_Gustav_Albrecht ;
+    :isAncestorOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isAuntOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBloodrelationOf data:Carina_Axelsson ;
+    :isMotherOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isParentOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isSiblingOf data:Carina_Axelsson ;
+    :isSisterOf data:Carina_Axelsson .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasBrother data:Gustav ;
+    :hasRelation data:Gustav,
+        data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Gustav ;
+    :hasRelation data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Gustav ;
+    :isAncestorOf data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBloodrelationOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Gustav ;
+    :isParentOf data:Gustav ;
+    :isSiblingOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Gustav .
+
+data:Prince_Gustav_Albrecht a :Man,
+        :Person ;
+    :hasAncestor data:Carina_Axelsson,
+        data:Gustav,
+        data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Prince_Gustav_Albrecht ;
+    :hasFather data:Gustav ;
+    :hasMother data:Carina_Axelsson ;
+    :hasParent data:Carina_Axelsson,
+        data:Gustav ;
+    :hasRelation data:Carina_Axelsson,
+        data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Mafalda,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Mafalda ;
+    :isBloodrelationOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBrotherOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isChildOf data:Carina_Axelsson,
+        data:Gustav ;
+    :isSiblingOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isSonOf data:Carina_Axelsson,
+        data:Gustav .
+
+data:Princess_Mafalda a :Person,
+        :Woman ;
+    :hasAncestor data:Carina_Axelsson,
+        data:Gustav,
+        data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Prince_Gustav_Albrecht ;
+    :hasFather data:Gustav ;
+    :hasMother data:Carina_Axelsson ;
+    :hasParent data:Carina_Axelsson,
+        data:Gustav ;
+    :hasRelation data:Carina_Axelsson,
+        data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Mafalda ;
+    :isBloodrelationOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isChildOf data:Carina_Axelsson,
+        data:Gustav ;
+    :isDaughterOf data:Carina_Axelsson,
+        data:Gustav ;
+    :isSiblingOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isSisterOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda .
+
+data:Gustav a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Gustav ;
+    :hasChild data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :hasDaughter data:Princess_Mafalda ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Gustav,
+        data:Prince_Gustav_Albrecht,
+        data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Mafalda,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Prince_Gustav_Albrecht ;
+    :isAncestorOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isParentOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda ;
+    :isSiblingOf data:Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSonOf data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Prince_Gustav_Albrecht,
+        data:Princess_Mafalda .
+

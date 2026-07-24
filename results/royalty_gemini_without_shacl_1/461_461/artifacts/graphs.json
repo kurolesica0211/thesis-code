@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Man,\n        :Person ;\n    :alsoKnownAs data:Stephan_Leopold_Justus_Richard_Prinz_zur_Lippe ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria .\n\ndata:Armin_Prince_of_Lippe a :Man,\n        :Person .\n\ndata:Princess_Maria a :Person,\n        :Woman .\n\ndata:Traute_Becker a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Man,\n        :Person ;\n    :alsoKnownAs data:Stephan_Leopold_Justus_Richard_Prinz_zur_Lippe ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria .\n\ndata:Armin_Prince_of_Lippe a :Man,\n        :Person .\n\ndata:Princess_Maria a :Person,\n        :Woman .\n\ndata:Stephan_Leopold_Justus_Richard_Prinz_zur_Lippe a :Person .\n\ndata:Traute_Becker a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Man,\n        :Person ;\n    :alsoKnownAs data:Stephan_Leopold_Justus_Richard_Prinz_zur_Lippe ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria .\n\ndata:Armin_Prince_of_Lippe a :Man,\n        :Person .\n\ndata:Princess_Maria a :Person,\n        :Woman .\n\ndata:Stephan_Leopold_Justus_Richard_Prinz_zur_Lippe a :Person .\n\ndata:Traute_Becker a :Person,\n        :Woman .\n\n"
+    }
+]

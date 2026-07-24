@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoXIIIOfSpain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIIIOfSpain ;
+    :hasChild data:BeatrizOfSpain ;
+    :hasDaughter data:BeatrizOfSpain ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :isAncestorOf data:BeatrizOfSpain ;
+    :isBloodrelationOf data:AlfonsoXIIIOfSpain ;
+    :isBrotherOf data:AlfonsoXIIIOfSpain ;
+    :isFatherOf data:BeatrizOfSpain ;
+    :isParentOf data:BeatrizOfSpain ;
+    :isSiblingOf data:AlfonsoXIIIOfSpain ;
+    :isUncleOf data:BeatrizOfSpain .
+
+data:VictoriaEugenieOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:BeatrizOfSpain ;
+    :hasDaughter data:BeatrizOfSpain ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:VictoriaEugenieOfBattenberg ;
+    :isAncestorOf data:BeatrizOfSpain ;
+    :isAuntOf data:BeatrizOfSpain ;
+    :isBloodrelationOf data:VictoriaEugenieOfBattenberg ;
+    :isMotherOf data:BeatrizOfSpain ;
+    :isParentOf data:BeatrizOfSpain ;
+    :isSiblingOf data:VictoriaEugenieOfBattenberg ;
+    :isSisterOf data:VictoriaEugenieOfBattenberg .
+
+data:MarinoTorlonia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:MarinoTorlonia ;
+    :hasChild data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :hasDaughter data:MarinaTorlonia ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSon data:AlessandroTorlonia ;
+    :isAncestorOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isBloodrelationOf data:MarinoTorlonia ;
+    :isBrotherOf data:MarinoTorlonia ;
+    :isFatherOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isParentOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isSiblingOf data:MarinoTorlonia ;
+    :isUncleOf data:AlessandroTorlonia,
+        data:MarinaTorlonia .
+
+data:MaryElsieMoore a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :hasDaughter data:MarinaTorlonia ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:MaryElsieMoore ;
+    :hasSon data:AlessandroTorlonia ;
+    :isAncestorOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isAuntOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isBloodrelationOf data:MaryElsieMoore ;
+    :isMotherOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isParentOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isSiblingOf data:MaryElsieMoore ;
+    :isSisterOf data:MaryElsieMoore .
+
+data:BeatrizOfSpain a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasFather data:AlfonsoXIIIOfSpain ;
+    :hasMother data:VictoriaEugenieOfBattenberg ;
+    :hasParent data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:BeatrizOfSpain ;
+    :isBloodrelationOf data:BeatrizOfSpain ;
+    :isChildOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isDaughterOf data:AlfonsoXIIIOfSpain,
+        data:VictoriaEugenieOfBattenberg ;
+    :isSiblingOf data:BeatrizOfSpain ;
+    :isSisterOf data:BeatrizOfSpain .
+
+data:AlessandroTorlonia a :Man,
+        :Person ;
+    :hasAncestor data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:AlessandroTorlonia ;
+    :hasDeathYear 1986 ;
+    :hasFather data:MarinoTorlonia ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:MaryElsieMoore ;
+    :hasParent data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:MarinaTorlonia ;
+    :isBloodrelationOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isBrotherOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isChildOf data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :isSiblingOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isSonOf data:MarinoTorlonia,
+        data:MaryElsieMoore .
+
+data:MarinaTorlonia a :Person,
+        :Woman ;
+    :hasAncestor data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :hasBrother data:AlessandroTorlonia ;
+    :hasFather data:MarinoTorlonia ;
+    :hasMother data:MaryElsieMoore ;
+    :hasParent data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIIIOfSpain,
+        data:BeatrizOfSpain,
+        data:MarinaTorlonia,
+        data:MarinoTorlonia,
+        data:MaryElsieMoore,
+        data:VictoriaEugenieOfBattenberg ;
+    :hasSister data:MarinaTorlonia ;
+    :isBloodrelationOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isChildOf data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :isDaughterOf data:MarinoTorlonia,
+        data:MaryElsieMoore ;
+    :isSiblingOf data:AlessandroTorlonia,
+        data:MarinaTorlonia ;
+    :isSisterOf data:AlessandroTorlonia,
+        data:MarinaTorlonia .
+

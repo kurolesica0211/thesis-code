@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GrandDuchessElizabethFeodorovna a :Person,
+        :Woman ;
+    :isSisterOf data:EmpressAlexandraFeodorovna .
+
+data:GrandDuchessMariaPavlovna a :Person,
+        :Woman ;
+    :isSisterOf data:GrandDukeDmitriPavlovich .
+
+data:PaulRomanovskyIlyinsky a :Man,
+        :Person ;
+    :hasFather data:GrandDukeDmitriPavlovich ;
+    :hasMother data:AudreyEmery .
+
+data:EmpressAlexandraFeodorovna a :Person,
+        :Woman .
+
+data:EmpressMariaAlexandrovna a :Person,
+        :Woman .
+
+data:GeorgeIGreece a :Man,
+        :Person .
+
+data:GrandDuchessAlexandraGeorgievna a :Person,
+        :Woman ;
+    :hasFather data:GeorgeIGreece ;
+    :hasMother data:OlgaKonstantinovna .
+
+data:GrandDukePaulAlexandrovich a :Man,
+        :Person ;
+    :hasBrother data:GrandDukeSergeiAlexandrovich ;
+    :hasFather data:TsarAlexanderII ;
+    :hasMother data:EmpressMariaAlexandrovna .
+
+data:GrandDukeSergeiAlexandrovich a :Man,
+        :Person .
+
+data:OlgaKonstantinovna a :Person,
+        :Woman .
+
+data:TsarAlexanderII a :Man,
+        :Person .
+
+data:AudreyEmery a :Person,
+        :Woman .
+
+data:GrandDukeDmitriPavlovich a :Man,
+        :Person ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:GrandDukePaulAlexandrovich ;
+    :hasMarriageYear 1926 ;
+    :hasMother data:GrandDuchessAlexandraGeorgievna ;
+    :hasRelation data:AudreyEmery .
+

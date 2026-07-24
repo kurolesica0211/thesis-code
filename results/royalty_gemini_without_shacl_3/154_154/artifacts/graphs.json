@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Maurice_of_Battenberg a :Man ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasSister data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Julie_Therese_Countess_of_Hauke a :Woman .\n\ndata:Prince_Alexander_of_Hesse_and_by_Rhine a :Man .\n\ndata:Queen_Victoria a :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasRelation data:Alfonso_XIII_of_Spain .\n\ndata:Prince_Henry_of_Battenberg a :Man ;\n    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_Countess_of_Hauke .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Maurice_of_Battenberg a :Man ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasSister data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Julie_Therese_Countess_of_Hauke a :Woman .\n\ndata:Prince_Alexander_of_Hesse_and_by_Rhine a :Man .\n\ndata:Queen_Victoria a :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasRelation data:Alfonso_XIII_of_Spain .\n\ndata:Prince_Henry_of_Battenberg a :Man ;\n    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_Countess_of_Hauke .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\n"
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans .\n\ndata:Prince_Amedeo_Duke_of_Aosta_1943 a :Man .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans ;\n    :hasSon data:Prince_Amedeo_Duke_of_Aosta_1943 .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Amedeo_Duke_of_Aosta_1943 a :Man .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 14,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans ;\n    :hasSon data:Prince_Amedeo_Duke_of_Aosta_1943 .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Amedeo_Duke_of_Aosta_1943 a :Man ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 15,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Aimone_4th_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Helene_of_Orleans ;\n    :hasSon data:Prince_Amedeo_Duke_of_Aosta_1943 .\n\ndata:Prince_Amedeo_3rd_Duke_of_Aosta a :Man .\n\ndata:Prince_Amedeo_Duke_of_Aosta_1943 a :Man ;\n    :hasMother data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man .\n\ndata:Princess_Helene_of_Orleans a :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\n"
+    }
+]

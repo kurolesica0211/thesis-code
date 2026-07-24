@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/173_173",
+  "text_file": "Q242298.txt",
+  "text_key": "Q242298",
+  "article": "https://en.wikipedia.org/wiki/Princess_Irene_of_Greece_and_Denmark",
+  "article_key": "Princess Irene of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Irene_of_Greece_and_Denmark",
+    "qid": "Q242298",
+    "label": "Princess Irene of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Irene_of_Greece_and_Denmark",
+      "qid": "Q242298",
+      "label": "Princess Irene of Greece and Denmark",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Frederica_of_Hanover",
+      "qid": "Q61351",
+      "label": "Frederica of Hanover",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Paul_of_Greece",
+      "qid": "Q155394",
+      "label": "Paul of Greece",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Constantine_II_of_Greece",
+      "qid": "Q151773",
+      "label": "Constantine II of Greece",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Sofía_of_Spain",
+      "qid": "Q156548",
+      "label": "Queen Sofía of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Pavlos-_Crown_Prince_of_Greece",
+      "qid": "Q381700",
+      "label": "Pavlos, Crown Prince of Greece",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/KingPaulOfGreece",
+      "extracted_local_name": "KingPaulOfGreece",
+      "embedding_text": "King Paul Of Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Paul_of_Greece",
+      "ground_truth_qid": "Q155394",
+      "ground_truth_label": "Paul of Greece",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Paul of Greece",
+      "best_candidate_label": "Paul of Greece",
+      "best_candidate_qid": "Q155394",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessIreneOfGreeceAndDenmark",
+      "extracted_local_name": "PrincessIreneOfGreeceAndDenmark",
+      "embedding_text": "Princess Irene Of Greece And Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Irene_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q242298",
+      "ground_truth_label": "Princess Irene of Greece and Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Irene of Greece and Denmark",
+      "best_candidate_label": "Princess Irene of Greece and Denmark",
+      "best_candidate_qid": "Q242298",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenSofiaOfSpain",
+      "extracted_local_name": "QueenSofiaOfSpain",
+      "embedding_text": "Queen Sofia Of Spain",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Queen_Sofía_of_Spain",
+      "ground_truth_qid": "Q156548",
+      "ground_truth_label": "Queen Sofía of Spain",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Sofia of Spain",
+      "best_candidate_label": "Queen Sofía of Spain",
+      "best_candidate_qid": "Q156548",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/KingConstantineIIOfGreece",
+      "extracted_local_name": "KingConstantineIIOfGreece",
+      "embedding_text": "King Constantine IIOf Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8235294117647058,
+      "ground_truth_uri": "http://example.com/data#Constantine_II_of_Greece",
+      "ground_truth_qid": "Q151773",
+      "ground_truth_label": "Constantine II of Greece",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Constantine",
+      "best_candidate_label": "Constantine II of Greece",
+      "best_candidate_qid": "Q151773",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8235294117647058
+    },
+    {
+      "extracted_uri": "http://example.org/data/QueenFrederica",
+      "extracted_local_name": "QueenFrederica",
+      "embedding_text": "Queen Frederica",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.72,
+      "ground_truth_uri": "http://example.com/data#Frederica_of_Hanover",
+      "ground_truth_qid": "Q61351",
+      "ground_truth_label": "Frederica of Hanover",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fredericka",
+      "best_candidate_label": "Frederica of Hanover",
+      "best_candidate_qid": "Q61351",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.72
+    },
+    {
+      "extracted_uri": "http://example.org/data/KingJuanCarlosOfSpain",
+      "extracted_local_name": "KingJuanCarlosOfSpain",
+      "embedding_text": "King Juan Carlos Of Spain",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Pavlos de Grecia",
+      "best_candidate_label": "Pavlos, Crown Prince of Greece",
+      "best_candidate_qid": "Q381700",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34146341463414637
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

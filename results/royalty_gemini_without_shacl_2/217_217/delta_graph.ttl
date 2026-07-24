@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeVI a :Man ;
+    :alsoKnownAs "Bertie"^^xsd:string ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:PrinceHenry ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:QueenMary ;
+    :hasRelation data:ElizabethBowes-Lyon .
+
+data:DukeOfKent a :Man .
+
+data:EdwardVII a :Man .
+
+data:EdwardVIII a :Man .
+
+data:ElizabethBowes-Lyon a :Woman .
+
+data:ElizabethII a :Woman .
+
+data:FrancisDukeOfTeck a :Man .
+
+data:GeorgeV a :Man ;
+    :hasFather data:EdwardVII ;
+    :hasMother data:QueenAlexandra .
+
+data:Margaret a :Woman .
+
+data:PrinceHenry a :Man .
+
+data:PrincessMaryAdelaide a :Woman .
+
+data:QueenAlexandra a :Woman .
+
+data:QueenMary a :Woman ;
+    :hasFather data:FrancisDukeOfTeck ;
+    :hasMother data:PrincessMaryAdelaide .
+

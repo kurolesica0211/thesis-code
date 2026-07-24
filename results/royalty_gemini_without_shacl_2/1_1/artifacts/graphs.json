@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Mary_Elizabeth_Donaldson a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :isBrotherOf data:Frederik_X .\n\ndata:Frederik_IX a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Prince_Henrik ;\n    :hasMother data:Margrethe_II .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasFather data:Frederik_IX .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Gustaf_VI_Adolf a :Man,\n        :Person .\n\ndata:Mary_Elizabeth_Donaldson a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :isBrotherOf data:Frederik_X .\n\ndata:Frederik_IX a :Man,\n        :Person .\n\ndata:Frederik_X a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasFather data:Prince_Henrik ;\n    :hasMother data:Margrethe_II .\n\ndata:Margrethe_II a :Person,\n        :Woman ;\n    :hasFather data:Frederik_IX .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\n"
+    }
+]

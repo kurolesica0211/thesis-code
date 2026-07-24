@@ -1,0 +1,251 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoCountOfCaserta ;
+    :hasRelation data:AlfonsoCountOfCaserta ;
+    :isBloodrelationOf data:AlfonsoCountOfCaserta ;
+    :isBrotherOf data:AlfonsoCountOfCaserta ;
+    :isSiblingOf data:AlfonsoCountOfCaserta .
+
+data:MariaPiaOfBourbonTwoSicilies a :Person,
+        :Woman ;
+    :hasRelation data:MariaPiaOfBourbonTwoSicilies ;
+    :hasSister data:MariaPiaOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:MariaPiaOfBourbonTwoSicilies ;
+    :isSiblingOf data:MariaPiaOfBourbonTwoSicilies ;
+    :isSisterOf data:MariaPiaOfBourbonTwoSicilies .
+
+data:PedroDeAlcantaraPrinceOfGraoPara a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :hasChild data:PedroGastaoOfOrleansBraganza ;
+    :hasRelation data:PedroDeAlcantaraPrinceOfGraoPara,
+        data:PedroGastaoOfOrleansBraganza ;
+    :hasSon data:PedroGastaoOfOrleansBraganza ;
+    :isAncestorOf data:PedroGastaoOfOrleansBraganza ;
+    :isBloodrelationOf data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :isBrotherOf data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :isFatherOf data:PedroGastaoOfOrleansBraganza ;
+    :isParentOf data:PedroGastaoOfOrleansBraganza ;
+    :isSiblingOf data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :isUncleOf data:PedroGastaoOfOrleansBraganza .
+
+data:MariaElisabethOfBavaria a :Person,
+        :Woman ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:MariaElisabethOfBavaria ;
+    :isBloodrelationOf data:MariaElisabethOfBavaria ;
+    :isSiblingOf data:MariaElisabethOfBavaria ;
+    :isSisterOf data:MariaElisabethOfBavaria .
+
+data:PedroGastaoOfOrleansBraganza a :Man,
+        :Person ;
+    :hasAncestor data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :hasBrother data:PedroGastaoOfOrleansBraganza ;
+    :hasFather data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :hasParent data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :hasRelation data:PedroDeAlcantaraPrinceOfGraoPara,
+        data:PedroGastaoOfOrleansBraganza ;
+    :isBloodrelationOf data:PedroGastaoOfOrleansBraganza ;
+    :isBrotherOf data:PedroGastaoOfOrleansBraganza ;
+    :isChildOf data:PedroDeAlcantaraPrinceOfGraoPara ;
+    :isSiblingOf data:PedroGastaoOfOrleansBraganza ;
+    :isSonOf data:PedroDeAlcantaraPrinceOfGraoPara .
+
+data:MariaDiGraziaOfBourbonTwoSicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PedroHenriqueOfOrleansBraganza ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :hasSon data:PedroHenriqueOfOrleansBraganza ;
+    :isAncestorOf data:PedroHenriqueOfOrleansBraganza ;
+    :isAuntOf data:PedroHenriqueOfOrleansBraganza ;
+    :isBloodrelationOf data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :isMotherOf data:PedroHenriqueOfOrleansBraganza ;
+    :isParentOf data:PedroHenriqueOfOrleansBraganza ;
+    :isSiblingOf data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :isSisterOf data:MariaDiGraziaOfBourbonTwoSicilies .
+
+data:GastonCountOfEu a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GastonCountOfEu ;
+    :hasChild data:LuisOfOrleansBraganza ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSon data:LuisOfOrleansBraganza ;
+    :isAncestorOf data:LuisOfOrleansBraganza,
+        data:PedroHenriqueOfOrleansBraganza ;
+    :isBloodrelationOf data:GastonCountOfEu ;
+    :isBrotherOf data:GastonCountOfEu ;
+    :isFatherOf data:LuisOfOrleansBraganza ;
+    :isParentOf data:LuisOfOrleansBraganza ;
+    :isSiblingOf data:GastonCountOfEu ;
+    :isUncleOf data:LuisOfOrleansBraganza .
+
+data:IsabelOfBrazil a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LuisOfOrleansBraganza ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:IsabelOfBrazil ;
+    :hasSon data:LuisOfOrleansBraganza ;
+    :isAncestorOf data:LuisOfOrleansBraganza,
+        data:PedroHenriqueOfOrleansBraganza ;
+    :isAuntOf data:LuisOfOrleansBraganza ;
+    :isBloodrelationOf data:IsabelOfBrazil ;
+    :isMotherOf data:LuisOfOrleansBraganza ;
+    :isParentOf data:LuisOfOrleansBraganza ;
+    :isSiblingOf data:IsabelOfBrazil ;
+    :isSisterOf data:IsabelOfBrazil .
+
+data:LuizGastao a :Man,
+        :Person ;
+    :hasBrother data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:PiaMaria ;
+    :isBloodrelationOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isBrotherOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isSiblingOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria .
+
+data:PiaMaria a :Person,
+        :Woman ;
+    :hasBrother data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:PiaMaria ;
+    :isBloodrelationOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isSiblingOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isSisterOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria .
+
+data:LuisOfOrleansBraganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GastonCountOfEu,
+        data:IsabelOfBrazil ;
+    :hasBrother data:LuisOfOrleansBraganza ;
+    :hasChild data:PedroHenriqueOfOrleansBraganza ;
+    :hasFather data:GastonCountOfEu ;
+    :hasMother data:IsabelOfBrazil ;
+    :hasParent data:GastonCountOfEu,
+        data:IsabelOfBrazil ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSon data:PedroHenriqueOfOrleansBraganza ;
+    :isAncestorOf data:PedroHenriqueOfOrleansBraganza ;
+    :isBloodrelationOf data:LuisOfOrleansBraganza ;
+    :isBrotherOf data:LuisOfOrleansBraganza ;
+    :isChildOf data:GastonCountOfEu,
+        data:IsabelOfBrazil ;
+    :isFatherOf data:PedroHenriqueOfOrleansBraganza ;
+    :isParentOf data:PedroHenriqueOfOrleansBraganza ;
+    :isSiblingOf data:LuisOfOrleansBraganza ;
+    :isSonOf data:GastonCountOfEu,
+        data:IsabelOfBrazil ;
+    :isUncleOf data:PedroHenriqueOfOrleansBraganza .
+
+data:PedroHenriqueOfOrleansBraganza a :Man,
+        :Person ;
+    :alsoKnownAs "O Príncipe Esperado"^^xsd:string ;
+    :hasAncestor data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza ;
+    :hasDeathYear 1981 ;
+    :hasFather data:LuisOfOrleansBraganza ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :hasParent data:LuisOfOrleansBraganza,
+        data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :hasRelation data:GastonCountOfEu,
+        data:IsabelOfBrazil,
+        data:LuisOfOrleansBraganza,
+        data:LuizGastao,
+        data:MariaDiGraziaOfBourbonTwoSicilies,
+        data:MariaElisabethOfBavaria,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :hasSister data:PiaMaria ;
+    :isBloodrelationOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isBrotherOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isChildOf data:LuisOfOrleansBraganza,
+        data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :isSiblingOf data:LuizGastao,
+        data:PedroHenriqueOfOrleansBraganza,
+        data:PiaMaria ;
+    :isSonOf data:LuisOfOrleansBraganza,
+        data:MariaDiGraziaOfBourbonTwoSicilies ;
+    :knownAs "The Expected Prince"^^xsd:string .
+

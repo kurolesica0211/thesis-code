@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:FrederikIX ;
+    :hasChild data:Christian,
+        data:Elisabeth,
+        data:Ingolf ;
+    :hasDeathYear 1976 ;
+    :hasFather data:ChristianX ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:Alexandrine ;
+    :hasRelation data:CarolineMathilde,
+        data:Gustav .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasFather data:FrederikIX .
+
+data:CarolineMathilde a :Person,
+        :Woman ;
+    :hasChild data:Christian,
+        data:Elisabeth,
+        data:Ingolf ;
+    :hasFather data:Harald ;
+    :hasMother data:Helena .
+
+data:ChristianIX a :Man,
+        :Person .
+
+data:FrederikVIII a :Man,
+        :Person ;
+    :hasFather data:ChristianIX .
+
+data:Gustav a :Man,
+        :Person .
+
+data:Harald a :Man,
+        :Person .
+
+data:Helena a :Person,
+        :Woman .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:Christian a :Man,
+        :Person .
+
+data:ChristianX a :Man,
+        :Person ;
+    :hasFather data:FrederikVIII .
+
+data:Elisabeth a :Person,
+        :Woman .
+
+data:FrederikIX a :Man,
+        :Person ;
+    :hasFather data:ChristianX ;
+    :hasMother data:Alexandrine .
+
+data:Ingolf a :Man,
+        :Person .
+

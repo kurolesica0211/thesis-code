@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_I_of_Romania a :Man,
+        :Person ;
+    :hasFather data:Carol_II_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark .
+
+data:Alexander_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Carol_II_of_Romania a :Man,
+        :Person .
+
+data:Helen_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Alexander_I_of_Greece ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman .
+

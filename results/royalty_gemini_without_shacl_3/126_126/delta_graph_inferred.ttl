@@ -1,0 +1,93 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Woman ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:Infanta_Alicia_Duchess_of_Calabria ;
+    :hasSister data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia_Duchess_of_Calabria .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Ancestor,
+        :Man ;
+    :hasBrother data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasChild data:Infante_Carlos_Duke_of_Calabria ;
+    :hasRelation data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria ;
+    :hasSon data:Infante_Carlos_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isFatherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isUncleOf data:Infante_Carlos_Duke_of_Calabria .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Princess_Anne_of_Orl%C3%A9ans .
+
+data:Infante_Carlos_Duke_of_Calabria a :Man ;
+    :hasAncestor data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasBrother data:Infante_Carlos_Duke_of_Calabria ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasParent data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasRelation data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isChildOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isSonOf data:Infante_Alfonso_Duke_of_Calabria .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasDaughter data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isAuntOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isParentOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Princess_Anne_of_Orl%C3%A9ans a :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Orl%C3%A9ans,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Anne_of_Orl%C3%A9ans .
+

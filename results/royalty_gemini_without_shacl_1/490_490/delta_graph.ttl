@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Princess_Elena a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Princess_Irina a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Princess_Margareta a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Princess_Maria a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Princess_Sophie a :Person,
+        :Woman ;
+    :hasFather data:Michael_I ;
+    :hasMother data:Anne_of_Bourbon-Parma .
+
+data:Carol_II a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_I .
+
+data:Elena_of_Romania a :Person,
+        :Woman .
+
+data:Ferdinand_I a :Man,
+        :Person .
+
+data:Michael_I a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1921,
+        1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasRelation data:Anne_of_Bourbon-Parma .
+
+data:Anne_of_Bourbon-Parma a :Person,
+        :Woman .
+

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mabel_Wisse_Smit a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Countess_Emma_Luana_Ninette_Sophie,
+        data:Countess_Joanna_Zaria_Nicoline_Milou .
+
+data:Prince_Bernhard a :Ancestor,
+        :Man ;
+    :isFatherOf data:Queen_Beatrix .
+
+data:Queen_Juliana a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Queen_Beatrix .
+
+data:Claus_von_Amsberg a :Ancestor,
+        :Man ;
+    :isFatherOf data:Prince_Friso .
+
+data:King_Willem-Alexander a :Man .
+
+data:Prince_Constantijn a :Man .
+
+data:Countess_Emma_Luana_Ninette_Sophie a :Woman .
+
+data:Countess_Joanna_Zaria_Nicoline_Milou a :Woman .
+
+data:Prince_Friso a :Ancestor,
+        :Man ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Queen_Beatrix ;
+    :isBrotherOf data:King_Willem-Alexander,
+        data:Prince_Constantijn ;
+    :isFatherOf data:Countess_Emma_Luana_Ninette_Sophie,
+        data:Countess_Joanna_Zaria_Nicoline_Milou .
+
+data:Queen_Beatrix a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Prince_Friso .
+

@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Princess_Isabella a :Person,
+        :Woman ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary ;
+    :isSisterOf data:Prince_Vincent_of_Denmark .
+
+data:Crown_Prince_Christian a :Man,
+        :Person ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary .
+
+data:King_Frederik_X_Father a :Man .
+
+data:Prince_Vincent_of_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 2011 ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Crown_Prince_Christian,
+        data:Princess_Josephine .
+
+data:Princess_Josephine a :Person,
+        :Woman ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Queen_Mary_Father a :Man .
+
+data:Queen_Mary_Mother a :Woman .
+
+data:King_Frederik_X a :Man,
+        :Person ;
+    :hasFather data:King_Frederik_X_Father ;
+    :hasMother data:Queen_Margrethe_II .
+
+data:Queen_Mary a :Person,
+        :Woman ;
+    :hasFather data:Queen_Mary_Father ;
+    :hasMother data:Queen_Mary_Mother .
+

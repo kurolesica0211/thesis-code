@@ -1,0 +1,102 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jeremy_Thorpe a :Man ;
+    :hasBrother data:Jeremy_Thorpe ;
+    :hasRelation data:Jeremy_Thorpe ;
+    :isBloodrelationOf data:Jeremy_Thorpe ;
+    :isBrotherOf data:Jeremy_Thorpe ;
+    :isSiblingOf data:Jeremy_Thorpe .
+
+data:King_George_V a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_V ;
+    :hasRelation data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isAncestorOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isSiblingOf data:King_George_V .
+
+data:James_Lascelles a :Man ;
+    :hasBrother data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasRelation data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBloodrelationOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBrotherOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isSiblingOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles .
+
+data:George_Lascelles%2C_7th_Earl_of_Harewood a :Ancestor,
+        :Man ;
+    :hasBrother data:George_Lascelles%2C_7th_Earl_of_Harewood ;
+    :hasChild data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasRelation data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasSon data:Robert_Jeremy_Hugh_Lascelles ;
+    :isAncestorOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBloodrelationOf data:George_Lascelles%2C_7th_Earl_of_Harewood ;
+    :isBrotherOf data:George_Lascelles%2C_7th_Earl_of_Harewood ;
+    :isFatherOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isParentOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isSiblingOf data:George_Lascelles%2C_7th_Earl_of_Harewood ;
+    :isUncleOf data:Robert_Jeremy_Hugh_Lascelles .
+
+data:Marion_Stein a :Ancestor,
+        :Woman ;
+    :hasChild data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasRelation data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasSister data:Marion_Stein ;
+    :hasSon data:Robert_Jeremy_Hugh_Lascelles ;
+    :isAncestorOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isAuntOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBloodrelationOf data:Marion_Stein ;
+    :isMotherOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isParentOf data:Robert_Jeremy_Hugh_Lascelles ;
+    :isSiblingOf data:Marion_Stein ;
+    :isSisterOf data:Marion_Stein .
+
+data:Robert_Jeremy_Hugh_Lascelles a :Man ;
+    :hasAncestor data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Marion_Stein ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :hasFather data:George_Lascelles%2C_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasRelation data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:King_George_V,
+        data:Marion_Stein,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBloodrelationOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isBrotherOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isChildOf data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSiblingOf data:James_Lascelles,
+        data:Robert_Jeremy_Hugh_Lascelles ;
+    :isSonOf data:George_Lascelles%2C_7th_Earl_of_Harewood,
+        data:Marion_Stein .
+

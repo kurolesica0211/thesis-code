@@ -1,0 +1,244 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AmaliodeMarichalaryBruguera a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AmaliodeMarichalaryBruguera ;
+    :hasChild data:JaimedeMarichalar ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSon data:JaimedeMarichalar ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:JaimedeMarichalar,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:AmaliodeMarichalaryBruguera ;
+    :isBrotherOf data:AmaliodeMarichalaryBruguera ;
+    :isFatherOf data:JaimedeMarichalar ;
+    :isParentOf data:JaimedeMarichalar ;
+    :isSiblingOf data:AmaliodeMarichalaryBruguera ;
+    :isUncleOf data:JaimedeMarichalar .
+
+data:ConcepcionSaenzdeTejada a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:JaimedeMarichalar ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSister data:ConcepcionSaenzdeTejada ;
+    :hasSon data:JaimedeMarichalar ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:JaimedeMarichalar,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isAuntOf data:JaimedeMarichalar ;
+    :isBloodrelationOf data:ConcepcionSaenzdeTejada ;
+    :isMotherOf data:JaimedeMarichalar ;
+    :isParentOf data:JaimedeMarichalar ;
+    :isSiblingOf data:ConcepcionSaenzdeTejada ;
+    :isSisterOf data:ConcepcionSaenzdeTejada .
+
+data:JuanCarlosI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JuanCarlosI ;
+    :hasChild data:InfantaElenaDuchessofLugo ;
+    :hasDaughter data:InfantaElenaDuchessofLugo ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isFatherOf data:InfantaElenaDuchessofLugo ;
+    :isParentOf data:InfantaElenaDuchessofLugo ;
+    :isSiblingOf data:JuanCarlosI ;
+    :isUncleOf data:InfantaElenaDuchessofLugo .
+
+data:SofiaofSpain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:InfantaElenaDuchessofLugo ;
+    :hasDaughter data:InfantaElenaDuchessofLugo ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSister data:SofiaofSpain ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isAuntOf data:InfantaElenaDuchessofLugo ;
+    :isBloodrelationOf data:SofiaofSpain ;
+    :isMotherOf data:InfantaElenaDuchessofLugo ;
+    :isParentOf data:InfantaElenaDuchessofLugo ;
+    :isSiblingOf data:SofiaofSpain ;
+    :isSisterOf data:SofiaofSpain .
+
+data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon a :Man,
+        :Person ;
+    :hasAncestor data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon ;
+    :hasFather data:JaimedeMarichalar ;
+    :hasMother data:InfantaElenaDuchessofLugo ;
+    :hasParent data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSister data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isBrotherOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isChildOf data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :isSiblingOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isSonOf data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :knownAs "Froilan"^^xsd:string .
+
+data:VictoriaDeMarichalaryBorbon a :Person,
+        :Woman ;
+    :hasAncestor data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :hasBrother data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon ;
+    :hasFather data:JaimedeMarichalar ;
+    :hasMother data:InfantaElenaDuchessofLugo ;
+    :hasParent data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSister data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isChildOf data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :isDaughterOf data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar ;
+    :isSiblingOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isSisterOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon .
+
+data:InfantaElenaDuchessofLugo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :hasChild data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasDaughter data:VictoriaDeMarichalaryBorbon ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:SofiaofSpain ;
+    :hasParent data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSister data:InfantaElenaDuchessofLugo ;
+    :hasSon data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isAuntOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:InfantaElenaDuchessofLugo ;
+    :isChildOf data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :isDaughterOf data:JuanCarlosI,
+        data:SofiaofSpain ;
+    :isMotherOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isParentOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isSiblingOf data:InfantaElenaDuchessofLugo ;
+    :isSisterOf data:InfantaElenaDuchessofLugo .
+
+data:JaimedeMarichalar a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada ;
+    :hasBrother data:JaimedeMarichalar ;
+    :hasChild data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasDaughter data:VictoriaDeMarichalaryBorbon ;
+    :hasFather data:AmaliodeMarichalaryBruguera ;
+    :hasMother data:ConcepcionSaenzdeTejada ;
+    :hasParent data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada ;
+    :hasRelation data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada,
+        data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:InfantaElenaDuchessofLugo,
+        data:JaimedeMarichalar,
+        data:JuanCarlosI,
+        data:SofiaofSpain,
+        data:VictoriaDeMarichalaryBorbon ;
+    :hasSon data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon ;
+    :isAncestorOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isBloodrelationOf data:JaimedeMarichalar ;
+    :isBrotherOf data:JaimedeMarichalar ;
+    :isChildOf data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada ;
+    :isFatherOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isParentOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon ;
+    :isSiblingOf data:JaimedeMarichalar ;
+    :isSonOf data:AmaliodeMarichalaryBruguera,
+        data:ConcepcionSaenzdeTejada ;
+    :isUncleOf data:FelipeJuanFroilandeTodoslosSantosdeMarichalaryBorbon,
+        data:VictoriaDeMarichalaryBorbon .
+

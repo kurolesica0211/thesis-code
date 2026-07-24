@@ -1,0 +1,148 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_Adolf_Friedrich a :Man,
+        :Person ;
+    :hasBrother data:Duke_Adolf_Friedrich ;
+    :hasRelation data:Duke_Adolf_Friedrich ;
+    :isBloodrelationOf data:Duke_Adolf_Friedrich ;
+    :isBrotherOf data:Duke_Adolf_Friedrich ;
+    :isSiblingOf data:Duke_Adolf_Friedrich .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg ;
+    :hasRelation data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg .
+
+data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach ;
+    :hasSister data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach ;
+    :isBloodrelationOf data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach ;
+    :isSiblingOf data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach ;
+    :isSisterOf data:Princess_Elisabeth_Sybille_of_Saxe_Weimar_Eisenach .
+
+data:Princess_Elisabeth_of_Stolberg_Rossla a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Elisabeth_of_Stolberg_Rossla ;
+    :hasSister data:Princess_Elisabeth_of_Stolberg_Rossla ;
+    :isBloodrelationOf data:Princess_Elisabeth_of_Stolberg_Rossla ;
+    :isSiblingOf data:Princess_Elisabeth_of_Stolberg_Rossla ;
+    :isSisterOf data:Princess_Elisabeth_of_Stolberg_Rossla .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :hasChild data:Duke_John_Albert_of_Mecklenburg ;
+    :hasRelation data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Duke_John_Albert_of_Mecklenburg ;
+    :isAncestorOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :isFatherOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isParentOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :isUncleOf data:Duke_John_Albert_of_Mecklenburg .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Duke_John_Albert_of_Mecklenburg ;
+    :hasRelation data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Duke_John_Albert_of_Mecklenburg ;
+    :isAncestorOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isAuntOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isBloodrelationOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isParentOf data:Duke_John_Albert_of_Mecklenburg ;
+    :isSiblingOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Duke_Paul_Frederick a :Man,
+        :Person ;
+    :hasBrother data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :hasRelation data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isSiblingOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :hasRelation data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isSiblingOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg .
+
+data:Duke_John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasBirthYear 1857 ;
+    :hasBrother data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isChildOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Duke_John_Albert_of_Mecklenburg,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg ;
+    :isSonOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Augusta_Reuss_of_K%C3%B6stritz .
+

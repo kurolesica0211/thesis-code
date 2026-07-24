@@ -1,0 +1,283 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianKaul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianKaul ;
+    :hasChild data:StephanieAnneKaul ;
+    :hasDaughter data:StephanieAnneKaul ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :isAncestorOf data:StephanieAnneKaul ;
+    :isBloodrelationOf data:ChristianKaul ;
+    :isBrotherOf data:ChristianKaul ;
+    :isFatherOf data:StephanieAnneKaul ;
+    :isParentOf data:StephanieAnneKaul ;
+    :isSiblingOf data:ChristianKaul ;
+    :isUncleOf data:StephanieAnneKaul .
+
+data:HanneloreScheel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:StephanieAnneKaul ;
+    :hasDaughter data:StephanieAnneKaul ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSister data:HanneloreScheel ;
+    :isAncestorOf data:StephanieAnneKaul ;
+    :isAuntOf data:StephanieAnneKaul ;
+    :isBloodrelationOf data:HanneloreScheel ;
+    :isMotherOf data:StephanieAnneKaul ;
+    :isParentOf data:StephanieAnneKaul ;
+    :isSiblingOf data:HanneloreScheel ;
+    :isSisterOf data:HanneloreScheel .
+
+data:Berthold a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold ;
+    :hasChild data:Maximilian ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSon data:Maximilian ;
+    :isAncestorOf data:Bernhard,
+        data:Maximilian ;
+    :isBloodrelationOf data:Berthold ;
+    :isBrotherOf data:Berthold ;
+    :isFatherOf data:Maximilian ;
+    :isParentOf data:Maximilian ;
+    :isSiblingOf data:Berthold ;
+    :isUncleOf data:Maximilian .
+
+data:HubertSalvator a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HubertSalvator ;
+    :hasChild data:Valerie ;
+    :hasDaughter data:Valerie ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :isAncestorOf data:Bernhard,
+        data:Valerie ;
+    :isBloodrelationOf data:HubertSalvator ;
+    :isBrotherOf data:HubertSalvator ;
+    :isFatherOf data:Valerie ;
+    :isParentOf data:Valerie ;
+    :isSiblingOf data:HubertSalvator ;
+    :isUncleOf data:Valerie .
+
+data:RosemaryOfSalmSalm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Valerie ;
+    :hasDaughter data:Valerie ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSister data:RosemaryOfSalmSalm ;
+    :isAncestorOf data:Bernhard,
+        data:Valerie ;
+    :isAuntOf data:Valerie ;
+    :isBloodrelationOf data:RosemaryOfSalmSalm ;
+    :isMotherOf data:Valerie ;
+    :isParentOf data:Valerie ;
+    :isSiblingOf data:RosemaryOfSalmSalm ;
+    :isSisterOf data:RosemaryOfSalmSalm .
+
+data:Theodora a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maximilian ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSister data:Theodora ;
+    :hasSon data:Maximilian ;
+    :isAncestorOf data:Bernhard,
+        data:Maximilian ;
+    :isAuntOf data:Maximilian ;
+    :isBloodrelationOf data:Theodora ;
+    :isMotherOf data:Maximilian ;
+    :isParentOf data:Maximilian ;
+    :isSiblingOf data:Theodora ;
+    :isSisterOf data:Theodora .
+
+data:StephanieAnneKaul a :Person,
+        :Woman ;
+    :hasAncestor data:ChristianKaul,
+        data:HanneloreScheel ;
+    :hasBirthYear 1966 ;
+    :hasFather data:ChristianKaul ;
+    :hasMother data:HanneloreScheel ;
+    :hasParent data:ChristianKaul,
+        data:HanneloreScheel ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSister data:StephanieAnneKaul ;
+    :isBloodrelationOf data:StephanieAnneKaul ;
+    :isChildOf data:ChristianKaul,
+        data:HanneloreScheel ;
+    :isDaughterOf data:ChristianKaul,
+        data:HanneloreScheel ;
+    :isSiblingOf data:StephanieAnneKaul ;
+    :isSisterOf data:StephanieAnneKaul .
+
+data:Bernhard a :Man,
+        :Person ;
+    :hasAncestor data:Berthold,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:Theodora,
+        data:Valerie ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Bernhard ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie ;
+    :hasParent data:Maximilian,
+        data:Valerie ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :isBloodrelationOf data:Bernhard ;
+    :isBrotherOf data:Bernhard ;
+    :isChildOf data:Maximilian,
+        data:Valerie ;
+    :isSiblingOf data:Bernhard ;
+    :isSonOf data:Maximilian,
+        data:Valerie .
+
+data:Maximilian a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Berthold,
+        data:Theodora ;
+    :hasBrother data:Maximilian ;
+    :hasChild data:Bernhard ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasParent data:Berthold,
+        data:Theodora ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSon data:Bernhard ;
+    :isAncestorOf data:Bernhard ;
+    :isBloodrelationOf data:Maximilian ;
+    :isBrotherOf data:Maximilian ;
+    :isChildOf data:Berthold,
+        data:Theodora ;
+    :isFatherOf data:Bernhard ;
+    :isParentOf data:Bernhard ;
+    :isSiblingOf data:Maximilian ;
+    :isSonOf data:Berthold,
+        data:Theodora ;
+    :isUncleOf data:Bernhard .
+
+data:Valerie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:HubertSalvator,
+        data:RosemaryOfSalmSalm ;
+    :hasBirthYear 1941 ;
+    :hasChild data:Bernhard ;
+    :hasFather data:HubertSalvator ;
+    :hasMother data:RosemaryOfSalmSalm ;
+    :hasParent data:HubertSalvator,
+        data:RosemaryOfSalmSalm ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:ChristianKaul,
+        data:HanneloreScheel,
+        data:HubertSalvator,
+        data:Maximilian,
+        data:RosemaryOfSalmSalm,
+        data:StephanieAnneKaul,
+        data:Theodora,
+        data:Valerie ;
+    :hasSister data:Valerie ;
+    :hasSon data:Bernhard ;
+    :isAncestorOf data:Bernhard ;
+    :isAuntOf data:Bernhard ;
+    :isBloodrelationOf data:Valerie ;
+    :isChildOf data:HubertSalvator,
+        data:RosemaryOfSalmSalm ;
+    :isDaughterOf data:HubertSalvator,
+        data:RosemaryOfSalmSalm ;
+    :isMotherOf data:Bernhard ;
+    :isParentOf data:Bernhard ;
+    :isSiblingOf data:Valerie ;
+    :isSisterOf data:Valerie .
+

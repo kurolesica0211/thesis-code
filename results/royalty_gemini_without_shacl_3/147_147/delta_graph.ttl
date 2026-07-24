@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ElenaVladimirovna a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasChild data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDeathYear 1957 ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:MarieMecklenburgSchwerin ;
+    :hasRelation data:NicholasGreeceDenmark ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:Kirill .
+
+data:Andrei a :Man,
+        :Person .
+
+data:Boris a :Man,
+        :Person .
+
+data:GeorgeIGreece a :Man,
+        :Person .
+
+data:Kirill a :Man,
+        :Person .
+
+data:MarieMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:NicholasGreeceDenmark a :Man,
+        :Person ;
+    :hasChild data:ElizabethGreece,
+        data:MarinaGreece,
+        data:OlgaGreece ;
+    :hasDeathYear 1938 ;
+    :hasFather data:GeorgeIGreece ;
+    :hasMother data:OlgaConstantinovna .
+
+data:OlgaConstantinovna a :Person,
+        :Woman .
+
+data:VladimirAlexandrovich a :Man,
+        :Person .
+
+data:ElizabethGreece a :Person,
+        :Woman .
+
+data:MarinaGreece a :Person,
+        :Woman .
+
+data:OlgaGreece a :Person,
+        :Woman .
+

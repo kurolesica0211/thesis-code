@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasChild data:Constantine_II_of_Greece,\n        data:Irene_of_Greece,\n        data:Sophia_of_Greece_and_Spain ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Ernest_Augustus_of_Brunswick ;\n    :hasMother data:Viktoria_Luise_of_Prussia ;\n    :hasRelation data:Paul_of_Greece .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Brunswick a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasChild data:Constantine_II_of_Greece,\n        data:Irene_of_Greece,\n        data:Sophia_of_Greece_and_Spain ;\n    :hasFather data:Constantine_I_of_Greece ;\n    :hasMother data:Sophia_of_Prussia .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Viktoria_Luise_of_Prussia a :Person,\n        :Woman ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Sophia_of_Greece_and_Spain a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasChild data:Constantine_II_of_Greece,\n        data:Irene_of_Greece,\n        data:Sophia_of_Greece_and_Spain ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Ernest_Augustus_of_Brunswick ;\n    :hasMother data:Viktoria_Luise_of_Prussia ;\n    :hasRelation data:Paul_of_Greece .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Brunswick a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person ;\n    :hasChild data:Constantine_II_of_Greece,\n        data:Irene_of_Greece,\n        data:Sophia_of_Greece_and_Spain ;\n    :hasFather data:Constantine_I_of_Greece ;\n    :hasMother data:Sophia_of_Prussia .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Viktoria_Luise_of_Prussia a :Person,\n        :Woman ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person .\n\ndata:Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Sophia_of_Greece_and_Spain a :Person,\n        :Woman .\n\n"
+    }
+]

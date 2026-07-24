@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Herzeleide_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasBrother data:Burchard_of_Prussia,\n        data:Oscar_of_Prussia_brother,\n        data:Wilhelm-Karl_of_Prussia ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Oskar_of_Prussia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Karl_Biron_von_Courland ;\n    :isMotherOf data:Ernst-Johann_Biron .\n\ndata:Burchard_of_Prussia a :Man,\n        :Person .\n\ndata:Ernst-Johann_Biron a :Man,\n        :Person .\n\ndata:Francoise_Levisse_de_Montigny a :Person,\n        :Woman .\n\ndata:Gustav_Biron_von_Courland a :Man,\n        :Person .\n\ndata:Ina_Marie_von_Bassewitz a :Person,\n        :Woman .\n\ndata:Karl_Biron_von_Courland a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Gustav_Biron_von_Courland ;\n    :hasMother data:Francoise_Levisse_de_Montigny .\n\ndata:Oscar_of_Prussia_brother a :Man,\n        :Person .\n\ndata:Oskar_of_Prussia a :Man,\n        :Person .\n\ndata:Wilhelm-Karl_of_Prussia a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Herzeleide_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasBrother data:Burchard_of_Prussia,\n        data:Oscar_of_Prussia_brother,\n        data:Wilhelm-Karl_of_Prussia ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Oskar_of_Prussia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Karl_Biron_von_Courland ;\n    :isMotherOf data:Ernst-Johann_Biron .\n\ndata:Burchard_of_Prussia a :Man,\n        :Person .\n\ndata:Ernst-Johann_Biron a :Man,\n        :Person .\n\ndata:Francoise_Levisse_de_Montigny a :Person,\n        :Woman .\n\ndata:Gustav_Biron_von_Courland a :Man,\n        :Person .\n\ndata:Ina_Marie_von_Bassewitz a :Person,\n        :Woman .\n\ndata:Karl_Biron_von_Courland a :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Gustav_Biron_von_Courland ;\n    :hasMother data:Francoise_Levisse_de_Montigny .\n\ndata:Oscar_of_Prussia_brother a :Man,\n        :Person .\n\ndata:Oskar_of_Prussia a :Man,\n        :Person .\n\ndata:Wilhelm-Karl_of_Prussia a :Man,\n        :Person .\n\n"
+    }
+]

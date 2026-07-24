@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George a :Man ;
+    :hasBirthYear 1902 ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael ;
+    :hasDeathYear 1942 ;
+    :hasFather data:George_V ;
+    :hasMother data:Mary ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI .
+
+data:Marina a :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward,
+        data:Michael .
+
+data:Edward_VIII a :Man .
+
+data:George_V a :Man .
+
+data:George_VI a :Man .
+
+data:Mary a :Woman .
+
+data:Alexandra a :Woman .
+
+data:Edward a :Man .
+
+data:Michael a :Man .
+

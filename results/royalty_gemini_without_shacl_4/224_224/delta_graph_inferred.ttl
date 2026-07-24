@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claus ;
+    :hasChild data:Willem-Alexander ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Willem-Alexander ;
+    :isBloodrelationOf data:Claus ;
+    :isBrotherOf data:Claus ;
+    :isFatherOf data:Willem-Alexander ;
+    :isParentOf data:Willem-Alexander ;
+    :isSiblingOf data:Claus ;
+    :isUncleOf data:Willem-Alexander .
+
+data:Bernhard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Bernhard ;
+    :hasChild data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :isAncestorOf data:Beatrix,
+        data:Irene,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Bernhard ;
+    :isBrotherOf data:Bernhard ;
+    :isFatherOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isSiblingOf data:Bernhard ;
+    :isUncleOf data:Beatrix,
+        data:Irene,
+        data:Margriet .
+
+data:Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :hasSister data:Juliana ;
+    :isAncestorOf data:Beatrix,
+        data:Irene,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :isAuntOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isBloodrelationOf data:Juliana ;
+    :isMotherOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isSiblingOf data:Juliana ;
+    :isSisterOf data:Juliana .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :hasBrother data:Willem-Alexander ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix ;
+    :hasParent data:Beatrix,
+        data:Claus ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Willem-Alexander ;
+    :isBrotherOf data:Willem-Alexander ;
+    :isChildOf data:Beatrix,
+        data:Claus ;
+    :isSiblingOf data:Willem-Alexander ;
+    :isSonOf data:Beatrix,
+        data:Claus .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard,
+        data:Juliana ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isAuntOf data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Irene,
+        data:Margriet .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard,
+        data:Juliana ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isAuntOf data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard,
+        data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Irene,
+        data:Margriet .
+
+data:Beatrix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard,
+        data:Juliana ;
+    :hasBirthYear 1938 ;
+    :hasChild data:Willem-Alexander ;
+    :hasFather data:Bernhard ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard,
+        data:Juliana ;
+    :hasRelation data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Irene,
+        data:Juliana,
+        data:Margriet,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Willem-Alexander ;
+    :isAuntOf data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isChildOf data:Bernhard,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard,
+        data:Juliana ;
+    :isMotherOf data:Willem-Alexander ;
+    :isParentOf data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix,
+        data:Irene,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Irene,
+        data:Margriet .
+

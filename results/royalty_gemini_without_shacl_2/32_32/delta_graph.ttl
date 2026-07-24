@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria_of_Romania a :Woman ;
+    :alsoKnownAs "Marie de Roumanie"^^xsd:string,
+        "Mia Mystkowski"^^xsd:string ;
+    :hasBirthYear 1964 ;
+    :hasFather data:King_Michael_I ;
+    :hasMarriageYear data:Kazimierz_Wieslaw_Mystkowski,
+        1995 ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasSister data:Princess_Margareta .
+
+data:Kazimierz_Wieslaw_Mystkowski a :Man .
+
+data:King_Michael_I a :Man .
+
+data:Princess_Margareta a :Woman .
+
+data:Queen_Anne_of_Romania a :Woman .
+

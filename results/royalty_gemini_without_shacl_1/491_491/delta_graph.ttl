@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :isBrotherOf data:Alfonso .
+
+data:Victoria_Eugenie a :Person,
+        :Woman .
+
+data:Alfonso a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Emmanuelle_de_Dampierre a :Person,
+        :Woman .
+
+data:Jaime a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII .
+

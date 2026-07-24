@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katherine_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Princess_Sophia_of_Prussia ;\n    :hasRelation data:Richard_Campbell_Andrew_Brandram ;\n    :isSiblingOf data:Alexander_of_Greece,\n        data:George_II_of_Greece,\n        data:Paul_of_Greece,\n        data:Princess_Helen_of_Greece,\n        data:Princess_Irene_of_Greece ;\n    :knownAs \"Lady Katherine Brandram\"^^xsd:string .\n\ndata:Alexander_of_Greece a :Man,\n        :Person .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:King_Constantine_I_of_Greece a :Man,\n        :Person ;\n    :hasFather data:King_George_I_of_Greece .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person .\n\ndata:Princess_Helen_of_Greece a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Princess_Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Richard_Campbell_Andrew_Brandram a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katherine_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Princess_Sophia_of_Prussia ;\n    :hasRelation data:Richard_Campbell_Andrew_Brandram ;\n    :isSiblingOf data:Alexander_of_Greece,\n        data:George_II_of_Greece,\n        data:Paul_of_Greece,\n        data:Princess_Helen_of_Greece,\n        data:Princess_Irene_of_Greece ;\n    :knownAs \"Lady Katherine Brandram\"^^xsd:string .\n\ndata:Alexander_of_Greece a :Man,\n        :Person .\n\ndata:George_II_of_Greece a :Man,\n        :Person .\n\ndata:King_Constantine_I_of_Greece a :Man,\n        :Person ;\n    :hasFather data:King_George_I_of_Greece .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person .\n\ndata:Princess_Helen_of_Greece a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_Greece a :Person,\n        :Woman .\n\ndata:Princess_Sophia_of_Prussia a :Person,\n        :Woman .\n\ndata:Richard_Campbell_Andrew_Brandram a :Man,\n        :Person .\n\n"
+    }
+]

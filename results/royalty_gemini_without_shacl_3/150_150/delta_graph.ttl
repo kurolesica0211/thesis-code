@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:King_Constantine_I_of_Greece ;
+    :hasChild data:Princess_Nina_Georgievna,
+        data:Princess_Xenia_Georgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Admiral_Pericles_Ioannides,
+        data:Grand_Duke_George_Mikhailovich_of_Russia .
+
+data:Admiral_Pericles_Ioannides a :Man,
+        :Person .
+
+data:Grand_Duchess_Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Man,
+        :Person .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Princess_Nina_Georgievna a :Person,
+        :Woman .
+
+data:Princess_Xenia_Georgievna a :Person,
+        :Woman .
+

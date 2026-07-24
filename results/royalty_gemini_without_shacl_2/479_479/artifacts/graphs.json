@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Infanta_Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear \"2007\"^^xsd:positiveInteger ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia ;\n    :isSisterOf data:Leonor_Princess_of_Asturias .\n\ndata:King_Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Leonor_Princess_of_Asturias a :Person,\n        :Woman ;\n    :isSisterOf data:Infanta_Sofia_of_Spain .\n\ndata:Queen_Letizia a :Person,\n        :Woman .\n\ndata:Queen_Sofia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Infanta_Sofia_of_Spain a :Person,\n        :Woman ;\n    :hasBirthYear \"2007\"^^xsd:positiveInteger ;\n    :hasFather data:King_Felipe_VI ;\n    :hasMother data:Queen_Letizia ;\n    :isSisterOf data:Leonor_Princess_of_Asturias .\n\ndata:King_Felipe_VI a :Man,\n        :Person ;\n    :hasFather data:King_Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:King_Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Leonor_Princess_of_Asturias a :Person,\n        :Woman ;\n    :isSisterOf data:Infanta_Sofia_of_Spain .\n\ndata:Queen_Letizia a :Person,\n        :Woman .\n\ndata:Queen_Sofia a :Person,\n        :Woman .\n\n"
+    }
+]

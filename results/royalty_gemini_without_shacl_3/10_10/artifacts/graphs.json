@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Philip_Louis_Johnson a :Man,\n        :Person ;\n    :hasFather data:John_Mitchell_Johnson ;\n    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .\n\ndata:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Person,\n        :Woman ;\n    :hasFather data:Clyde_Kenneth_Harris ;\n    :hasMother data:Princess_Cecilie_of_Prussia ;\n    :hasRelation data:John_Mitchell_Johnson .\n\ndata:Princess_Cecilie_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Wilhelm_German_Crown_Prince ;\n    :hasMarriageYear 1949 ;\n    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Clyde_Kenneth_Harris .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person .\n\ndata:Clyde_Kenneth_Harris a :Man,\n        :Person .\n\ndata:John_Mitchell_Johnson a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Philip_Louis_Johnson a :Man,\n        :Person ;\n    :hasFather data:John_Mitchell_Johnson ;\n    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .\n\ndata:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Person,\n        :Woman ;\n    :hasFather data:Clyde_Kenneth_Harris ;\n    :hasMother data:Princess_Cecilie_of_Prussia ;\n    :hasRelation data:John_Mitchell_Johnson .\n\ndata:Princess_Cecilie_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Wilhelm_German_Crown_Prince ;\n    :hasMarriageYear 1949 ;\n    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Clyde_Kenneth_Harris .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person .\n\ndata:Clyde_Kenneth_Harris a :Man,\n        :Person .\n\ndata:John_Mitchell_Johnson a :Man,\n        :Person .\n\n"
+    }
+]

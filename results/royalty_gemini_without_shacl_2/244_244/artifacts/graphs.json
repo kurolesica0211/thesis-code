@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Aleksandar III Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Alexander of Serbia and Yugoslavia\"^^xsd:string ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_Yugoslavia_Sr ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasFather data:Ignacio_Duke_of_Segorbe ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Katherine_Clairy_Batis a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Man,\n        :Person .\n\ndata:Prince_Andrew a :Man,\n        :Person .\n\ndata:Queen_Alexandra a :Person,\n        :Woman .\n\ndata:Queen_Maria a :Person,\n        :Woman .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasFather data:Ignacio_Duke_of_Segorbe ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Alexander_Yugoslavia_Sr a :Man,\n        :Person .\n\ndata:Ignacio_Duke_of_Segorbe a :Man,\n        :Person .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Karageorgevitch a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Aleksandar III Kara\u0111or\u0111evi\u0107\"^^xsd:string,\n        \"Prince Alexander of Serbia and Yugoslavia\"^^xsd:string ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Alexander_Yugoslavia_Sr ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Ana_Luna_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasFather data:Ignacio_Duke_of_Segorbe ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Katherine_Clairy_Batis a :Person,\n        :Woman .\n\ndata:King_Peter_II a :Man,\n        :Person .\n\ndata:Prince_Andrew a :Man,\n        :Person .\n\ndata:Queen_Alexandra a :Person,\n        :Woman .\n\ndata:Queen_Maria a :Person,\n        :Woman .\n\ndata:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,\n        :Woman ;\n    :hasFather data:Ignacio_Duke_of_Segorbe ;\n    :hasMother data:Maria_da_Gloria .\n\ndata:Alexander_Yugoslavia_Sr a :Man,\n        :Person .\n\ndata:Ignacio_Duke_of_Segorbe a :Man,\n        :Person .\n\ndata:Maria_da_Gloria a :Person,\n        :Woman .\n\n"
+    }
+]

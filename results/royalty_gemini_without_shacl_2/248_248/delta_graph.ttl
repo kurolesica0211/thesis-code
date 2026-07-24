@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .
+
+data:Diane_d_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_Count_of_Clermont .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Isabelle_of_Orl%C3%A9ans_Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,
+        :Woman ;
+    :hasBirthYear "1934"^^xsd:positiveInteger ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMarriageYear "1957"^^xsd:positiveInteger ;
+    :hasMother data:Rosa_of_Austria_Princess_of_Tuscany ;
+    :hasRelation data:Henri_Count_of_Clermont .
+
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Rosa_of_Austria_Princess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Henri_Count_of_Clermont a :Man,
+        :Person ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans_Braganza .
+

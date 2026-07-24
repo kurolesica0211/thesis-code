@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Friedrich_Wilhelm_of_Lippe a :Man,
+        :Person ;
+    :isSonOf data:Ernst_August_of_Lippe .
+
+data:Leopold_IV_of_Lippe a :Man,
+        :Person ;
+    :isFatherOf data:Armin_of_Lippe .
+
+data:Simon_Casimir_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1980 .
+
+data:Stephan_of_Lippe a :Man,
+        :Person ;
+    :isSonOf data:Armin_of_Lippe .
+
+data:Adolphus_Frederick_V_Grand_Duke_of_Mecklenburg-Strelitz a :Man,
+        :Person .
+
+data:Caroline_von_Wartensleben a :Person,
+        :Woman .
+
+data:Christa_von_Arnim a :Person,
+        :Woman ;
+    :hasFather data:Curt_David_von_Arnim ;
+    :hasMother data:Stephanie_von_Stechow .
+
+data:Curt_David_von_Arnim a :Man,
+        :Person .
+
+data:Elisabeth_of_Anhalt a :Person,
+        :Woman .
+
+data:Ernst_August_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Julius_Ernst_of_Lippe ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Marie_of_Mecklenburg-Strelitz ;
+    :hasRelation data:Christa_von_Arnim ;
+    :isSiblingOf data:Armin_of_Lippe,
+        data:Leopold_of_Lippe .
+
+data:Ernst_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Julius_Ernst_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1873 ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld ;
+    :hasMother data:Caroline_von_Wartensleben .
+
+data:Leopold_of_Lippe a :Man,
+        :Person .
+
+data:Marie_of_Mecklenburg-Strelitz a :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Adolphus_Frederick_V_Grand_Duke_of_Mecklenburg-Strelitz ;
+    :hasMother data:Elisabeth_of_Anhalt .
+
+data:Stephanie_von_Stechow a :Person,
+        :Woman .
+
+data:Armin_of_Lippe a :Man,
+        :Person .
+

@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Claude_Bowes-Lyon_14th a :Ancestor,
+        :Man,
+        :Person ;
+    :isAncestorOf data:Mary_Cecilia_Bowes-Lyon .
+
+data:Sarah_Rose_Troughton a :Person,
+        :Woman ;
+    :hasAncestor data:Jeremiah_Colman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Timothy_Colman ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Mary_Cecilia_Bowes-Lyon ;
+    :hasRelation data:Peter_Troughton .
+
+data:Charles_Troughton a :Ancestor,
+        :Man,
+        :Person .
+
+data:Jeremiah_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1777 ;
+    :hasDeathYear 1851 .
+
+data:Peter_Troughton a :Man,
+        :Person ;
+    :hasBirthYear 1948 ;
+    :hasFather data:Charles_Troughton .
+
+data:Timothy_Colman a :Ancestor,
+        :Man,
+        :Person .
+
+data:Mary_Cecilia_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman .
+

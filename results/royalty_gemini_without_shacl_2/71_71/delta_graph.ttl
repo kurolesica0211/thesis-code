@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:VictoriaEugenieOfBattenberg a :Person,
+        :Woman ;
+    :alsoKnownAs "Ena"^^xsd:string ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Leopold ;
+    :hasDaughter data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :hasDeathYear 1969 ;
+    :hasFather data:PrinceHenryOfBattenberg ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoXIII ;
+    :hasSon data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:Juan .
+
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person ;
+    :hasFather data:AlfonsoXIII .
+
+data:InfantaBeatriz a :Person,
+        :Woman .
+
+data:InfantaMariaCristina a :Person,
+        :Woman .
+
+data:InfanteAlfonso a :Man,
+        :Person .
+
+data:InfanteGonzalo a :Man,
+        :Person .
+
+data:InfanteJaime a :Man,
+        :Person .
+
+data:Juan a :Man,
+        :Person ;
+    :hasFather data:AlfonsoXIII .
+
+data:JuliaPrincessOfBattenberg a :Person,
+        :Woman .
+
+data:Leopold a :Man,
+        :Person .
+
+data:PrinceAlbertOfSaxeCoburgAndGotha a :Man,
+        :Person .
+
+data:PrinceAlexanderOfHesse a :Man,
+        :Person .
+
+data:PrinceHenryOfBattenberg a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfHesse ;
+    :hasMother data:JuliaPrincessOfBattenberg .
+
+data:PrincessBeatrice a :Person,
+        :Woman ;
+    :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasMother data:QueenVictoria .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:AlfonsoXIII a :Man,
+        :Person .
+

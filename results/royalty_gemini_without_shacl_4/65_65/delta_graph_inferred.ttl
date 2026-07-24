@@ -1,0 +1,299 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ConstantineII a :Man ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isBrotherOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:FredericaOfHanover a :Ancestor,
+        :Woman ;
+    :hasChild data:Sofia ;
+    :hasDaughter data:Sofia ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:FredericaOfHanover ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:Sofia ;
+    :isAuntOf data:Sofia ;
+    :isBloodrelationOf data:FredericaOfHanover ;
+    :isMotherOf data:Sofia ;
+    :isParentOf data:Sofia ;
+    :isSiblingOf data:FredericaOfHanover ;
+    :isSisterOf data:FredericaOfHanover .
+
+data:Irene a :Woman ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSisterOf data:ConstantineII,
+        data:Irene,
+        data:Sofia .
+
+data:PaulOfGreece a :Ancestor,
+        :Man ;
+    :hasBrother data:PaulOfGreece ;
+    :hasChild data:Sofia ;
+    :hasDaughter data:Sofia ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:Sofia ;
+    :isBloodrelationOf data:PaulOfGreece ;
+    :isBrotherOf data:PaulOfGreece ;
+    :isFatherOf data:Sofia ;
+    :isParentOf data:Sofia ;
+    :isSiblingOf data:PaulOfGreece ;
+    :isUncleOf data:Sofia .
+
+data:JuanCarlosI a :Ancestor,
+        :Man ;
+    :hasBrother data:JuanCarlosI ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isFatherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSiblingOf data:JuanCarlosI ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:Cristina a :Woman ;
+    :hasAncestor data:FredericaOfHanover,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isDaughterOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:Elena a :Woman ;
+    :hasAncestor data:FredericaOfHanover,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isDaughterOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:FelipeVI .
+
+data:FelipeVI a :Man ;
+    :hasAncestor data:FredericaOfHanover,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:Sofia ;
+    :hasParent data:JuanCarlosI,
+        data:Sofia ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBrotherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isChildOf data:JuanCarlosI,
+        data:Sofia ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSonOf data:JuanCarlosI,
+        data:Sofia .
+
+data:Sofia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :hasBirthYear "1938"^^xsd:nonNegativeInteger ;
+    :hasBrother data:ConstantineII ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasFather data:PaulOfGreece ;
+    :hasMarriageYear "1962"^^xsd:nonNegativeInteger ;
+    :hasMother data:FredericaOfHanover ;
+    :hasParent data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :hasRelation data:ConstantineII,
+        data:Cristina,
+        data:Elena,
+        data:FelipeVI,
+        data:FredericaOfHanover,
+        data:Irene,
+        data:JuanCarlosI,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Irene,
+        data:Sofia ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isBloodrelationOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isChildOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isDaughterOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isMotherOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:FelipeVI ;
+    :isSiblingOf data:ConstantineII,
+        data:Irene,
+        data:Sofia ;
+    :isSisterOf data:ConstantineII,
+        data:Irene,
+        data:Sofia .
+

@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig a :Man,
+        :Person ;
+    :hasFather data:Philipp_Albrecht ;
+    :hasMother data:Rosa_of_Austria ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .
+
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht ;
+    :hasMother data:Rosa_of_Austria .
+
+data:Philipp_Albrecht a :Man,
+        :Person .
+
+data:Rosa_of_Austria a :Person,
+        :Woman .
+

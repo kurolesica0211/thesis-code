@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Berthold_Margrave_of_Baden a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Maximilian_Margrave_of_Baden .
+
+data:Christian_Kaul a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Stephanie_Anne_Kaul .
+
+data:Hannelore_Scheel a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Stephanie_Anne_Kaul .
+
+data:Hubert_Salvator_of_Austria a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Valerie_of_Austria .
+
+data:Rosemary_of_Salm-Salm a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Valerie_of_Austria .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Maximilian_Margrave_of_Baden .
+
+data:Bernhard_Prinz_von_Baden a :Person ;
+    :hasSex data:Male .
+
+data:Maximilian_Margrave_of_Baden a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:Bernhard_Prinz_von_Baden .
+
+data:Stephanie_Anne_Kaul a :Person ;
+    :hasSex data:Female .
+
+data:Valerie_of_Austria a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:Bernhard_Prinz_von_Baden .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

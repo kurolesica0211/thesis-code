@@ -1,0 +1,158 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Felipe_VI ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Juan_Carlos_I,
+        data:Leonor_Princess_of_Asturias ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Felipe_VI .
+
+data:Sofia_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Felipe_VI ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias,
+        data:Sofia_of_Spain ;
+    :hasSister data:Sofia_of_Spain ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isMotherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Letizia_Ortiz_Rocasolano a :Ancestor,
+        :Woman ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasRelation data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias,
+        data:Letizia_Ortiz_Rocasolano ;
+    :hasSister data:Letizia_Ortiz_Rocasolano ;
+    :isAncestorOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isAuntOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Letizia_Ortiz_Rocasolano ;
+    :isMotherOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSiblingOf data:Letizia_Ortiz_Rocasolano ;
+    :isSisterOf data:Letizia_Ortiz_Rocasolano .
+
+data:Infanta_Sofia a :Woman ;
+    :hasAncestor data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Letizia_Ortiz_Rocasolano,
+        data:Sofia_of_Spain ;
+    :hasBirthYear "2007"^^xsd:positiveInteger ;
+    :hasFather data:Felipe_VI ;
+    :hasMother data:Letizia_Ortiz_Rocasolano ;
+    :hasParent data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Juan_Carlos_I,
+        data:Leonor_Princess_of_Asturias,
+        data:Letizia_Ortiz_Rocasolano,
+        data:Sofia_of_Spain ;
+    :hasSister data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isChildOf data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :isDaughterOf data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :isSiblingOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Leonor_Princess_of_Asturias a :Woman ;
+    :hasAncestor data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Letizia_Ortiz_Rocasolano,
+        data:Sofia_of_Spain ;
+    :hasBirthYear "2005"^^xsd:positiveInteger ;
+    :hasFather data:Felipe_VI ;
+    :hasMother data:Letizia_Ortiz_Rocasolano ;
+    :hasParent data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Juan_Carlos_I,
+        data:Leonor_Princess_of_Asturias,
+        data:Letizia_Ortiz_Rocasolano,
+        data:Sofia_of_Spain ;
+    :hasSister data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isChildOf data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :isDaughterOf data:Felipe_VI,
+        data:Letizia_Ortiz_Rocasolano ;
+    :isSiblingOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Felipe_VI a :Ancestor,
+        :Man ;
+    :hasAncestor data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :hasBirthYear "1968"^^xsd:positiveInteger ;
+    :hasBrother data:Felipe_VI ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear "2004"^^xsd:positiveInteger ;
+    :hasMother data:Sofia_of_Spain ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Juan_Carlos_I,
+        data:Leonor_Princess_of_Asturias,
+        data:Sofia_of_Spain ;
+    :isAncestorOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :isFatherOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSiblingOf data:Felipe_VI ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :isUncleOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+

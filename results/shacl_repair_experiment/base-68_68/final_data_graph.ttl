@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Charles_Augustus .
+
+data:Maud_von_Tr%C3%BCtzschler a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Michael a :Man,
+        :Person ;
+    :hasMother data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasSex data:Male ;
+    :isChildOf data:Charles_Augustus .
+
+data:Othmar_Baron_von_Wangenheim-Winterstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Wilhelm_Ernst a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Charles_Augustus .
+
+data:Charles_Augustus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Wilhelm_Ernst ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein ;
+    :hasSex data:Male ;
+    :isFatherOf data:Michael .
+
+data:Female a :Sex .
+
+data:Elisabeth_of_Wangenheim-Winterstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasMother data:Maud_von_Tr%C3%BCtzschler ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

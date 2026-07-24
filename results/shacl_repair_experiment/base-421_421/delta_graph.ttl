@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Armin_of_Lippe a :Ancestor ;
+    :hasFather data:Leopold_IV_of_Lippe .
+
+data:Christa_von_Arnim a :Ancestor .
+
+data:Curt_David_von_Arnim a :Ancestor .
+
+data:Ernst_August_of_Lippe a :Ancestor .
+
+data:Ernst_of_Lippe :hasFather data:Leopold_IV_of_Lippe .
+
+data:G%C3%BCnther_Messner a :Ancestor .
+
+data:Julius_Ernst_of_Lippe a :Ancestor .
+
+data:Leopold_of_Lippe :hasFather data:Leopold_IV_of_Lippe .
+
+data:Lieselotte_Trzoska a :Ancestor .
+
+data:Marie_of_Mecklenburg_Strelitz a :Ancestor .
+
+data:Stephanie_von_Stechow a :Ancestor .
+
+data:Leopold_IV_of_Lippe a :Ancestor .
+

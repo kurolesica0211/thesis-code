@@ -1,0 +1,186 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/317_317",
+  "text_file": "Q510259.txt",
+  "text_key": "Q510259",
+  "article": "https://en.wikipedia.org/wiki/Prince_Carlos,_Duke_of_Parma",
+  "article_key": "Prince Carlos, Duke of Parma",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Carlos-_Hereditary_Duke_of_Parma",
+    "qid": "Q510259",
+    "label": "Prince Carlos, Hereditary Duke of Parma"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Carlos-_Hereditary_Duke_of_Parma",
+      "qid": "Q510259",
+      "label": "Prince Carlos, Hereditary Duke of Parma",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Carlos_Hugo-_Duke_of_Parma",
+      "qid": "Q537914",
+      "label": "Prince Carlos Hugo, Duke of Parma",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Hugo_de_Bourbon_de_Parme",
+      "qid": "Q75317573",
+      "label": "Prince Hugo de Bourbon de Parme",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Irene_of_the_Netherlands",
+      "qid": "Q263623",
+      "label": "Princess Irene of the Netherlands",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Brigitte_Klynstra",
+      "qid": "Q75317570",
+      "label": "Brigitte Klynstra",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Christina_of_the_Netherlands",
+      "qid": "Q435324",
+      "label": "Princess Christina of the Netherlands",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/CarlosHugo",
+      "extracted_local_name": "CarlosHugo",
+      "embedding_text": "Carlos Hugo",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Hugo_de_Bourbon_de_Parme",
+      "ground_truth_qid": "Q75317573",
+      "ground_truth_label": "Prince Hugo de Bourbon de Parme",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Carlos Hugo",
+      "best_candidate_label": "Prince Hugo de Bourbon de Parme",
+      "best_candidate_qid": "Q75317573",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMargarita",
+      "extracted_local_name": "PrincessMargarita",
+      "embedding_text": "Princess Margarita",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Princess_Christina_of_the_Netherlands",
+      "ground_truth_qid": "Q435324",
+      "ground_truth_label": "Princess Christina of the Netherlands",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Marijke",
+      "best_candidate_label": "Princess Christina of the Netherlands",
+      "best_candidate_qid": "Q435324",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceCarlos",
+      "extracted_local_name": "PrinceCarlos",
+      "embedding_text": "Prince Carlos",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Irene van Oranje",
+      "best_candidate_label": "Princess Irene of the Netherlands",
+      "best_candidate_qid": "Q263623",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.41379310344827586
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceJaime",
+      "extracted_local_name": "PrinceJaime",
+      "embedding_text": "Prince Jaime",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Irene van Oranje",
+      "best_candidate_label": "Princess Irene of the Netherlands",
+      "best_candidate_qid": "Q263623",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.42857142857142855
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessCarolina",
+      "extracted_local_name": "PrincessCarolina",
+      "embedding_text": "Princess Carolina",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Irene van Oranje",
+      "best_candidate_label": "Princess Irene of the Netherlands",
+      "best_candidate_qid": "Q263623",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.42424242424242425
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessIrene",
+      "extracted_local_name": "PrincessIrene",
+      "embedding_text": "Princess Irene",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Beatrix der Nederlanden",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3783783783783784
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

@@ -1,0 +1,65 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman ;\n    :hasSister data:Prince_Philip_Duke_of_Edinburgh .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "71de98c2-69bf-4e65-a5a7-3ecd7a9ca6ee",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ;\n            sh:resultMessage \"Value does not have class :Woman\" ;\n            sh:resultPath :hasSister ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSister ;\n            sh:value <http://example.org/data/Prince_Philip_Duke_of_Edinburgh> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ;\n            sh:resultMessage \"Value does not have class :Woman\" ;\n            sh:resultPath :hasSister ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSister ;\n            sh:value <http://example.org/data/Prince_Philip_Duke_of_Edinburgh> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ;\n            sh:resultMessage \"Value does not have class :Woman\" ;\n            sh:resultPath :hasSister ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSister ;\n            sh:value <http://example.org/data/Prince_Philip_Duke_of_Edinburgh> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Kraft> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Margarita_of_Greece_and_Denmark> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,\n        :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,\n        :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 8,
+        "source": "validate_shacl",
+        "tool_call_id": "e0760ab6-3970-4254-8110-4e61782525a0",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Charles_III a :Man .\n\ndata:Kraft a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;\n    :hasRelation data:Princess_Charlotte_of_Croy ;\n    :hasSister data:Princess_Beatrix .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man ;\n    :hasSister data:Princess_Margarita_of_Greece_and_Denmark .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,\n        :Man .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Charlotte_of_Croy a :Woman .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,\n        :Woman .\n\n"
+    }
+]

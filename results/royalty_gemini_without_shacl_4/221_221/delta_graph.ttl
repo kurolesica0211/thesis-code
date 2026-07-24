@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Cinderella_Somervell a :Person,
+        :Woman ;
+    :isSisterOf data:Anne_Bowes-Lyon .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Anne_Bowes-Lyon .
+
+data:Nerissa_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Anne_Bowes-Lyon .
+
+data:Patricia_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Anne_Bowes-Lyon .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+        :Person .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Elizabeth_Shakerley a :Person,
+        :Woman ;
+    :hasFather data:Thomas_Anson .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+        :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Herbert_Bowes-Lyon a :Man,
+        :Person ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:Patrick_Anson a :Man,
+        :Person ;
+    :hasFather data:Thomas_Anson .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Thomas_Anson a :Man,
+        :Person .
+
+data:Anne_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBirthYear "1917"^^xsd:nonNegativeInteger ;
+    :hasChild data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :hasDeathYear "1980"^^xsd:nonNegativeInteger ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMarriageYear "1938"^^xsd:nonNegativeInteger,
+        "1950"^^xsd:nonNegativeInteger ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Prince_Georg_of_Denmark,
+        data:Thomas_Anson .
+

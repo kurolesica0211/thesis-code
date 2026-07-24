@@ -1,0 +1,237 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louise_von_M%C3%BCnchhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Karin_Elisabeth_von_Schaper ;
+    :hasDaughter data:Karin_Elisabeth_von_Schaper ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper,
+        data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :hasSister data:Louise_von_M%C3%BCnchhausen ;
+    :isAncestorOf data:Karin_Elisabeth_von_Schaper ;
+    :isAuntOf data:Karin_Elisabeth_von_Schaper ;
+    :isBloodrelationOf data:Louise_von_M%C3%BCnchhausen ;
+    :isMotherOf data:Karin_Elisabeth_von_Schaper ;
+    :isParentOf data:Karin_Elisabeth_von_Schaper ;
+    :isSiblingOf data:Louise_von_M%C3%BCnchhausen ;
+    :isSisterOf data:Louise_von_M%C3%BCnchhausen .
+
+data:Walter_von_Schaper a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Walter_von_Schaper ;
+    :hasChild data:Karin_Elisabeth_von_Schaper ;
+    :hasDaughter data:Karin_Elisabeth_von_Schaper ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper,
+        data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :isAncestorOf data:Karin_Elisabeth_von_Schaper ;
+    :isBloodrelationOf data:Walter_von_Schaper ;
+    :isBrotherOf data:Walter_von_Schaper ;
+    :isFatherOf data:Karin_Elisabeth_von_Schaper ;
+    :isParentOf data:Karin_Elisabeth_von_Schaper ;
+    :isSiblingOf data:Walter_von_Schaper ;
+    :isUncleOf data:Karin_Elisabeth_von_Schaper .
+
+data:Christian_Louis a :Man,
+        :Person ;
+    :hasBrother data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :isBloodrelationOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasChild data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :hasSon data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isFatherOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isParentOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isUncleOf data:Friedrich_Franz_Mecklenburg_Schwerin .
+
+data:Ernest_Augustus_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Hanover ;
+    :hasChild data:Alexandra_Hanover ;
+    :hasDaughter data:Alexandra_Hanover ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :isAncestorOf data:Alexandra_Hanover,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Ernest_Augustus_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_Hanover ;
+    :isFatherOf data:Alexandra_Hanover ;
+    :isParentOf data:Alexandra_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_Hanover ;
+    :isUncleOf data:Alexandra_Hanover .
+
+data:Christian_IX_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_Denmark ;
+    :hasChild data:Thyra_Denmark ;
+    :hasDaughter data:Thyra_Denmark ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :isAncestorOf data:Alexandra_Hanover,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :isBloodrelationOf data:Christian_IX_Denmark ;
+    :isBrotherOf data:Christian_IX_Denmark ;
+    :isFatherOf data:Thyra_Denmark ;
+    :isParentOf data:Thyra_Denmark ;
+    :isSiblingOf data:Christian_IX_Denmark ;
+    :isUncleOf data:Thyra_Denmark .
+
+data:Karin_Elisabeth_von_Schaper a :Person,
+        :Woman ;
+    :hasAncestor data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2012 ;
+    :hasFather data:Walter_von_Schaper ;
+    :hasMother data:Louise_von_M%C3%BCnchhausen ;
+    :hasParent data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper,
+        data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :hasSister data:Karin_Elisabeth_von_Schaper ;
+    :isBloodrelationOf data:Karin_Elisabeth_von_Schaper ;
+    :isChildOf data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :isDaughterOf data:Louise_von_M%C3%BCnchhausen,
+        data:Walter_von_Schaper ;
+    :isSiblingOf data:Karin_Elisabeth_von_Schaper ;
+    :isSisterOf data:Karin_Elisabeth_von_Schaper .
+
+data:Thyra_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_Denmark ;
+    :hasChild data:Alexandra_Hanover ;
+    :hasDaughter data:Alexandra_Hanover ;
+    :hasFather data:Christian_IX_Denmark ;
+    :hasParent data:Christian_IX_Denmark ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :hasSister data:Thyra_Denmark ;
+    :isAncestorOf data:Alexandra_Hanover,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isAuntOf data:Alexandra_Hanover ;
+    :isBloodrelationOf data:Thyra_Denmark ;
+    :isChildOf data:Christian_IX_Denmark ;
+    :isDaughterOf data:Christian_IX_Denmark ;
+    :isMotherOf data:Alexandra_Hanover ;
+    :isParentOf data:Alexandra_Hanover ;
+    :isSiblingOf data:Thyra_Denmark ;
+    :isSisterOf data:Thyra_Denmark .
+
+data:Alexandra_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Hanover,
+        data:Thyra_Denmark ;
+    :hasChild data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :hasFather data:Ernest_Augustus_Hanover ;
+    :hasMother data:Thyra_Denmark ;
+    :hasParent data:Ernest_Augustus_Hanover,
+        data:Thyra_Denmark ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :hasSister data:Alexandra_Hanover ;
+    :hasSon data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isAuntOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Alexandra_Hanover ;
+    :isChildOf data:Ernest_Augustus_Hanover,
+        data:Thyra_Denmark ;
+    :isDaughterOf data:Ernest_Augustus_Hanover,
+        data:Thyra_Denmark ;
+    :isMotherOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isParentOf data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Alexandra_Hanover ;
+    :isSisterOf data:Alexandra_Hanover .
+
+data:Friedrich_Franz_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Thyra_Denmark ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMarriageYear 1941 ;
+    :hasMother data:Alexandra_Hanover ;
+    :hasParent data:Alexandra_Hanover,
+        data:Frederick_Francis_IV ;
+    :hasRelation data:Alexandra_Hanover,
+        data:Christian_IX_Denmark,
+        data:Christian_Louis,
+        data:Ernest_Augustus_Hanover,
+        data:Frederick_Francis_IV,
+        data:Friedrich_Franz_Mecklenburg_Schwerin,
+        data:Thyra_Denmark ;
+    :isBloodrelationOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isChildOf data:Alexandra_Hanover,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Christian_Louis,
+        data:Friedrich_Franz_Mecklenburg_Schwerin ;
+    :isSonOf data:Alexandra_Hanover,
+        data:Frederick_Francis_IV .
+

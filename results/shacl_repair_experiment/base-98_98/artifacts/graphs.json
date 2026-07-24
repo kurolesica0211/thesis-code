@@ -1,0 +1,58 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Laurentien a :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn .\n\ndata:Prince_Constantijn a :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Princess_Laurentien a :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Prince_Constantijn a :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Princess_Laurentien a :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Prince_Constantijn a :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "0a1d3af1-6797-4da7-9fbf-8c0623e7cbc4",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Constantijn> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Constantijn> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Constantijn> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Laurentien> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Laurentien> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Eloise_of_Orange-Nassau> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Laurentien> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Princess_Laurentien a :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Prince_Constantijn a :Ancestor,\n        :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Princess_Laurentien a :Ancestor,\n        :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Prince_Constantijn a :Ancestor,\n        :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 7,
+        "source": "validate_shacl",
+        "tool_call_id": "5cbaa25b-378d-4f77-9b46-10b9a51593b9",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Crown_Prince_Haakon a :Man .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Johan_Friso a :Man .\n\ndata:Princess_Beatrix a :Woman ;\n    :hasChild data:Prince_Claus,\n        data:Prince_Constantijn .\n\ndata:Princess_Carolina_de_Bourbon_de_Parme a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Sophie_van_de_Wouw a :Woman .\n\ndata:Prince_Claus a :Man ;\n    :hasChild data:Prince_Constantijn .\n\ndata:Princess_Laurentien a :Ancestor,\n        :Woman ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\ndata:Countess_Eloise_of_Orange-Nassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:Prince_Constantijn ;\n    :hasMother data:Princess_Laurentien .\n\ndata:Prince_Constantijn a :Ancestor,\n        :Man ;\n    :hasChild data:Countess_Eloise_of_Orange-Nassau .\n\n"
+    }
+]

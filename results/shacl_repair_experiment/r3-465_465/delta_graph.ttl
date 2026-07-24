@@ -1,0 +1,7 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Prince_Michael_of_Kent a :Ancestor .
+
+data:Princess_Michael_of_Kent a :Ancestor .
+

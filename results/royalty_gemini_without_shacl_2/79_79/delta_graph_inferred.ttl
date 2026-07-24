@@ -1,0 +1,668 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_of_Bourbon_Parma a :Person,
+        :Woman ;
+    :hasMarriageYear 1948 ;
+    :hasRelation data:Anne_of_Bourbon_Parma ;
+    :hasSister data:Anne_of_Bourbon_Parma ;
+    :isBloodrelationOf data:Anne_of_Bourbon_Parma ;
+    :isSiblingOf data:Anne_of_Bourbon_Parma ;
+    :isSisterOf data:Anne_of_Bourbon_Parma .
+
+data:Nicolae_of_Romania a :Man,
+        :Person ;
+    :hasBrother data:Nicolae_of_Romania ;
+    :hasRelation data:Nicolae_of_Romania ;
+    :isBloodrelationOf data:Nicolae_of_Romania ;
+    :isBrotherOf data:Nicolae_of_Romania ;
+    :isSiblingOf data:Nicolae_of_Romania ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elisabeth_of_Romania ;
+    :hasDaughter data:Elisabeth_of_Romania ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Marie_of_Romania ;
+    :isAncestorOf data:Elisabeth_of_Romania ;
+    :isAuntOf data:Elisabeth_of_Romania ;
+    :isBloodrelationOf data:Marie_of_Romania ;
+    :isMotherOf data:Elisabeth_of_Romania ;
+    :isParentOf data:Elisabeth_of_Romania ;
+    :isSiblingOf data:Marie_of_Romania ;
+    :isSisterOf data:Marie_of_Romania .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Victoria_Dowager_Empress a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Victoria_Dowager_Empress ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Dowager_Empress ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Dowager_Empress ;
+    :isSisterOf data:Victoria_Dowager_Empress .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Helen_of_Greece_and_Denmark ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Helen_of_Greece_and_Denmark ;
+    :isParentOf data:Helen_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Helen_of_Greece_and_Denmark .
+
+data:Ileana_of_Romania a :Person,
+        :Woman ;
+    :hasBrother data:Carol_II_of_Romania ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isSiblingOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isSisterOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia .
+
+data:Maria_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasBrother data:Carol_II_of_Romania ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isSiblingOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isSisterOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Victoria_Dowager_Empress ;
+    :hasChild data:Helen_of_Greece_and_Denmark ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark ;
+    :hasMother data:Victoria_Dowager_Empress ;
+    :hasParent data:Victoria_Dowager_Empress ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania ;
+    :isAuntOf data:Helen_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isChildOf data:Victoria_Dowager_Empress ;
+    :isDaughterOf data:Victoria_Dowager_Empress ;
+    :isMotherOf data:Helen_of_Greece_and_Denmark ;
+    :isParentOf data:Helen_of_Greece_and_Denmark ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Carol_II_of_Romania a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carol_II_of_Romania ;
+    :hasChild data:Michael_I_of_Romania ;
+    :hasMarriageYear 1921 ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :hasSon data:Michael_I_of_Romania ;
+    :isAncestorOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isBrotherOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isFatherOf data:Michael_I_of_Romania ;
+    :isParentOf data:Michael_I_of_Romania ;
+    :isSiblingOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasAncestor data:Marie_of_Romania ;
+    :hasBrother data:Carol_II_of_Romania ;
+    :hasMother data:Marie_of_Romania ;
+    :hasParent data:Marie_of_Romania ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isChildOf data:Marie_of_Romania ;
+    :isDaughterOf data:Marie_of_Romania ;
+    :isSiblingOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia ;
+    :isSisterOf data:Carol_II_of_Romania,
+        data:Elisabeth_of_Romania,
+        data:Ileana_of_Romania,
+        data:Maria_of_Yugoslavia .
+
+data:Alexander_I_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece .
+
+data:Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Michael_I_of_Romania .
+
+data:Michael_I_of_Romania a :Man,
+        :Person ;
+    :hasAncestor data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasBrother data:Michael_I_of_Romania ;
+    :hasFather data:Carol_II_of_Romania ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Helen_of_Greece_and_Denmark ;
+    :hasParent data:Carol_II_of_Romania,
+        data:Helen_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :isBloodrelationOf data:Michael_I_of_Romania ;
+    :isBrotherOf data:Michael_I_of_Romania ;
+    :isChildOf data:Carol_II_of_Romania,
+        data:Helen_of_Greece_and_Denmark ;
+    :isSiblingOf data:Michael_I_of_Romania ;
+    :isSonOf data:Carol_II_of_Romania,
+        data:Helen_of_Greece_and_Denmark .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Michael_I_of_Romania ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I_of_Greece,
+        data:Carol_II_of_Romania,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Ileana_of_Romania,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Maria_of_Yugoslavia,
+        data:Marie_of_Romania,
+        data:Michael_I_of_Romania,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Dowager_Empress ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark ;
+    :hasSon data:Michael_I_of_Romania ;
+    :isAncestorOf data:Michael_I_of_Romania ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isMotherOf data:Michael_I_of_Romania ;
+    :isParentOf data:Michael_I_of_Romania ;
+    :isSiblingOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Irene_of_Greece_and_Denmark,
+        data:Katherine_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :knownAs "Helen of Greece and Denmark"^^xsd:string .
+

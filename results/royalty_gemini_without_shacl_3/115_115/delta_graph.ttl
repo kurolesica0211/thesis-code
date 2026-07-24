@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie a :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Philippos_of_Greece_and_Denmark .
+
+data:Constantine_II a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Philippos_of_Greece_and_Denmark .
+
+data:Katharina_Flohr%2Ctarget a :Woman ;
+    :isMotherOf data:Nina_Nastassja_Flohr .
+
+data:Katharina_Flohr%2Ctype a :Person,
+        :Woman .
+
+data:Marina a :Woman .
+
+data:Marina%2Ctype a :Person .
+
+data:Matthew_Kumar a :Man .
+
+data:Matthew_Kumar%2Ctype a :Person .
+
+data:Nina_Nastassja_Flohr%2Ctype a :Person .
+
+data:Prince_Michael a :Man .
+
+data:Prince_Michael%2Ctype a :Person .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Theodora_of_Greece_and_Denmark%2Ctype a :Person .
+
+data:Thomas_Flohr a :Man .
+
+data:Thomas_Flohr%2Ctarget a :Man ;
+    :isFatherOf data:Nina_Nastassja_Flohr .
+
+data:Thomas_Flohr%2Ctype a :Person .
+
+data:Nina_Nastassja_Flohr a :Woman .
+
+data:Prince_Philippos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1986 .
+

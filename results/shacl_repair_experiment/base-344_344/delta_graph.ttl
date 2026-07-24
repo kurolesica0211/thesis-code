@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:FrancoiseDOrleans a :Person .
+
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Person .
+
+data:IsabelleDOrleans a :Ancestor,
+        :Person .
+
+data:JeanDOrleansDucDeGuise a :Ancestor,
+        :Person .
+
+data:KingChristianIXOfDenmark a :Ancestor,
+        :Person .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Person .
+
+data:MarinaKarella a :Person .
+
+data:PrinceAimoneOfSavoyAosta a :Person .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Person .
+
+data:PrinceHenriCountOfParis a :Person .
+
+data:PrinceMichaelOfGreeceAndDenmark a :Person .
+
+data:PrincePierreMurat a :Person .
+
+data:PrincessAlexandraOfGreece a :Person .
+
+data:PrincessIsabella a :Person .
+
+data:PrincessOlgaOfGreece a :Person .
+

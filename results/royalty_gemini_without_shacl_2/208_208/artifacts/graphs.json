@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :isBrotherOf data:Isabelle_dOrleans ;\n    :isFatherOf data:Prince_Michel_dOrleans .\n\ndata:Prince_Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1940 ;\n    :isFatherOf data:Isabelle_dOrleans .\n\ndata:Princess_Francoise_of_Greece a :Person,\n        :Woman ;\n    :isSisterOf data:Isabelle_dOrleans .\n\ndata:Princess_Isabelle_of_Orleans_Mother a :Person,\n        :Woman ;\n    :isMotherOf data:Isabelle_dOrleans .\n\ndata:Count_Bruno_dHarcourt a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1930 .\n\ndata:Prince_Michel_dOrleans a :Man,\n        :Person .\n\ndata:Prince_Pierre_Murat a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\ndata:Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1983 ;\n    :hasMarriageYear 1923,\n        1934 ;\n    :hasRelation data:Count_Bruno_dHarcourt,\n        data:Prince_Pierre_Murat .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :isBrotherOf data:Isabelle_dOrleans ;\n    :isFatherOf data:Prince_Michel_dOrleans .\n\ndata:Prince_Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1940 ;\n    :isFatherOf data:Isabelle_dOrleans .\n\ndata:Princess_Francoise_of_Greece a :Person,\n        :Woman ;\n    :isSisterOf data:Isabelle_dOrleans .\n\ndata:Princess_Isabelle_of_Orleans_Mother a :Person,\n        :Woman ;\n    :isMotherOf data:Isabelle_dOrleans .\n\ndata:Count_Bruno_dHarcourt a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1930 .\n\ndata:Prince_Michel_dOrleans a :Man,\n        :Person .\n\ndata:Prince_Pierre_Murat a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\ndata:Isabelle_dOrleans a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1983 ;\n    :hasMarriageYear 1923,\n        1934 ;\n    :hasRelation data:Count_Bruno_dHarcourt,\n        data:Prince_Pierre_Murat .\n\n"
+    }
+]

@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Francois_of_Orleans a :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Henri ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :isSiblingOf data:Princess_Blanche .
+
+data:Princess_Blanche a :Person,
+        :Woman ;
+    :hasFather data:Prince_Henri ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg .
+
+data:Duchess_Marie-Therese_of_Wurttemberg a :Person,
+        :Woman .
+
+data:Prince_Henri a :Man,
+        :Person .
+

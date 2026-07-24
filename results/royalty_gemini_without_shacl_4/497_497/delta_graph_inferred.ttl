@@ -1,0 +1,861 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabel_de_Ibarreta_y_Uhagon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasDaughter data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isAncestorOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isAuntOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isMotherOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isParentOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Isabel_de_Ibarreta_y_Uhagon ;
+    :isSisterOf data:Isabel_de_Ibarreta_y_Uhagon .
+
+data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasChild data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasDaughter data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isAncestorOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isBrotherOf data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isFatherOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isParentOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isUncleOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+
+data:Duchess_Helene_of_Mecklenburg_Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Philippe_dOrleans_Count_of_Paris ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Duchess_Helene_of_Mecklenburg_Schwerin ;
+    :hasSon data:Philippe_dOrleans_Count_of_Paris ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isAuntOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isBloodrelationOf data:Duchess_Helene_of_Mecklenburg_Schwerin ;
+    :isMotherOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isParentOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isSiblingOf data:Duchess_Helene_of_Mecklenburg_Schwerin ;
+    :isSisterOf data:Duchess_Helene_of_Mecklenburg_Schwerin .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Isabelle_dOrleans ;
+    :hasDaughter data:Marie_Isabelle_dOrleans ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Marie_Isabelle_dOrleans ;
+    :isAuntOf data:Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Marie_Isabelle_dOrleans ;
+    :isParentOf data:Marie_Isabelle_dOrleans ;
+    :isSiblingOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isSisterOf data:Infanta_Luisa_Fernanda_of_Spain .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasChild data:Marie_Isabelle_dOrleans ;
+    :hasDaughter data:Marie_Isabelle_dOrleans ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Marie_Isabelle_dOrleans ;
+    :isBloodrelationOf data:Prince_Antoine_Duke_of_Montpensier ;
+    :isBrotherOf data:Prince_Antoine_Duke_of_Montpensier ;
+    :isFatherOf data:Marie_Isabelle_dOrleans ;
+    :isParentOf data:Marie_Isabelle_dOrleans ;
+    :isSiblingOf data:Prince_Antoine_Duke_of_Montpensier ;
+    :isUncleOf data:Marie_Isabelle_dOrleans .
+
+data:Louis_Philippe_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Philippe_I ;
+    :hasChild data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSon data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isBloodrelationOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_Philippe_I ;
+    :isFatherOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isParentOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isSiblingOf data:Louis_Philippe_I ;
+    :isUncleOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather .
+
+data:Queen_Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasSon data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isAuntOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isBloodrelationOf data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :isMotherOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isParentOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isSiblingOf data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :isSisterOf data:Queen_Maria_Amalia_of_the_Two_Sicilies .
+
+data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Person,
+        :Woman ;
+    :hasAncestor data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasFather data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasMother data:Isabel_de_Ibarreta_y_Uhagon ;
+    :hasParent data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isChildOf data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isDaughterOf data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :isSiblingOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSisterOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+
+data:Marie_Isabelle_dOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain ;
+    :hasParent data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Marie_Isabelle_dOrleans ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isAuntOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Marie_Isabelle_dOrleans ;
+    :isChildOf data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :isDaughterOf data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :isMotherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Marie_Isabelle_dOrleans ;
+    :isSisterOf data:Marie_Isabelle_dOrleans .
+
+data:Prince_Ferdinand_Duke_of_Orleans_grandfather a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Louis_Philippe_I,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasBrother data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :hasChild data:Philippe_dOrleans_Count_of_Paris ;
+    :hasFather data:Louis_Philippe_I ;
+    :hasMother data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasParent data:Louis_Philippe_I,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSon data:Philippe_dOrleans_Count_of_Paris ;
+    :isAncestorOf data:Ferdinand_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isBloodrelationOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isBrotherOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isChildOf data:Louis_Philippe_I,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :isFatherOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isParentOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isSiblingOf data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isSonOf data:Louis_Philippe_I,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :isUncleOf data:Philippe_dOrleans_Count_of_Paris .
+
+data:Philippe_dOrleans_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Louis_Philippe_I,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasBrother data:Philippe_dOrleans_Count_of_Paris ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :hasMother data:Duchess_Helene_of_Mecklenburg_Schwerin ;
+    :hasParent data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isBrotherOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isChildOf data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isFatherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isSonOf data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather ;
+    :isUncleOf data:Ferdinand_dOrleans .
+
+data:Prince_Charles a :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBrotherOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Prince_Jacques a :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBrotherOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Prince_Philippe_sibling a :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBrotherOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Princess_Amelie a :Person,
+        :Woman ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSisterOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Princess_Helene a :Person,
+        :Woman ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSisterOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Princess_Isabelle a :Person,
+        :Woman ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSisterOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Princess_Louise a :Person,
+        :Woman ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSisterOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
+
+data:Ferdinand_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Louis_Philippe_I,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasParent data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasRelation data:Duchess_Helene_of_Mecklenburg_Schwerin,
+        data:Ferdinand_dOrleans,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Isabel_de_Ibarreta_y_Uhagon,
+        data:Louis_Philippe_I,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Charles,
+        data:Prince_Ferdinand_Duke_of_Orleans_grandfather,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise,
+        data:Queen_Maria_Amalia_of_the_Two_Sicilies,
+        data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasSister data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBloodrelationOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isBrotherOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isChildOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isSiblingOf data:Ferdinand_dOrleans,
+        data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe_sibling,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise ;
+    :isSonOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris .
+

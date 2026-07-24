@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Greece a :Woman .\n\ndata:Isabella_Princess a :Woman ;\n    :hasRelation data:Pierre_Murat .\n\ndata:Michael_of_Greece_and_Denmark a :Man ;\n    :hasFather data:Christopher_of_Greece_and_Denmark ;\n    :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;\n    :hasRelation data:Marina_Karella .\n\ndata:Olga_of_Greece a :Woman ;\n    :hasRelation data:Aimone_of_Savoy-Aosta .\n\ndata:Aimone_of_Savoy-Aosta a :Man .\n\ndata:Christian_IX_of_Denmark a :Man .\n\ndata:Fran%C3%A7oise_dOrl%C3%A9ans a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasBrother data:Henri_Count_of_Paris ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Jean_dOrl%C3%A9ans ;\n    :hasMarriageYear 1929 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans ;\n    :hasRelation data:Christopher_of_Greece_and_Denmark .\n\ndata:George_I_of_Greece a :Man ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans a :Woman .\n\ndata:Jean_dOrl%C3%A9ans a :Man .\n\ndata:Marina_Karella a :Woman .\n\ndata:Olga_Constantinovna_of_Russia a :Woman .\n\ndata:Pierre_Murat a :Man .\n\ndata:Christopher_of_Greece_and_Denmark a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Greece a :Woman .\n\ndata:Isabella_Princess a :Woman ;\n    :hasRelation data:Pierre_Murat .\n\ndata:Michael_of_Greece_and_Denmark a :Man ;\n    :hasFather data:Christopher_of_Greece_and_Denmark ;\n    :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;\n    :hasRelation data:Marina_Karella .\n\ndata:Olga_of_Greece a :Woman ;\n    :hasRelation data:Aimone_of_Savoy-Aosta .\n\ndata:Aimone_of_Savoy-Aosta a :Man .\n\ndata:Christian_IX_of_Denmark a :Man .\n\ndata:Fran%C3%A7oise_dOrl%C3%A9ans a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasBrother data:Henri_Count_of_Paris ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Jean_dOrl%C3%A9ans ;\n    :hasMarriageYear 1929 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans ;\n    :hasRelation data:Christopher_of_Greece_and_Denmark .\n\ndata:George_I_of_Greece a :Man ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans a :Woman .\n\ndata:Jean_dOrl%C3%A9ans a :Man .\n\ndata:Marina_Karella a :Woman .\n\ndata:Olga_Constantinovna_of_Russia a :Woman .\n\ndata:Pierre_Murat a :Man .\n\ndata:Christopher_of_Greece_and_Denmark a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\n"
+    }
+]

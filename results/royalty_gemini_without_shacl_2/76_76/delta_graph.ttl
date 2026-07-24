@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Fran%C3%A7oise a :Woman .
+
+data:Mariam a :Woman .
+
+data:Mariam_de_Bagration a :Woman ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration ;
+    :hasFather data:Irakli_Bagration_of_Mukhrani ;
+    :hasMarriageYear 1982 ;
+    :hasMother data:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;
+    :hasRelation data:Tom%C3%A1s_Ortiz_y_Valero .
+
+data:Monique a :Woman .
+
+data:Nuria a :Woman .
+
+data:Bagrat_de_Bagration a :Man .
+
+data:Irakli_Bagration_of_Mukhrani a :Man .
+
+data:Jorge_de_Bagration a :Man .
+
+data:Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman .
+
+data:Tom%C3%A1s_Ortiz_y_Valero a :Man .
+

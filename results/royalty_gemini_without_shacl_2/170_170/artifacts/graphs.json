@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Person,\n        :Woman ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:Count_Nikolai_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs data:Prince_Nikolai_of_Denmark ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Prince_Felix ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg ;\n    :isChildOf data:Prince_Henrik,\n        data:Queen_Margrethe_II ;\n    :knownAs data:His_Excellency_Count_Nikolai_of_Monpezat .\n\ndata:Henrik a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:Prince_Felix a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Alexandra_Countess_of_Frederiksborg a :Person,\n        :Woman .\n\ndata:Marie_Cavallier a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Person,\n        :Woman ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:Count_Nikolai_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs data:Prince_Nikolai_of_Denmark ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Prince_Felix ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg ;\n    :isChildOf data:Prince_Henrik,\n        data:Queen_Margrethe_II ;\n    :knownAs data:His_Excellency_Count_Nikolai_of_Monpezat .\n\ndata:Henrik a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:His_Excellency_Count_Nikolai_of_Monpezat a :Person .\n\ndata:Prince_Felix a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Prince_Nikolai_of_Denmark a :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Alexandra_Countess_of_Frederiksborg a :Person,\n        :Woman .\n\ndata:Marie_Cavallier a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Person,\n        :Woman ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:Count_Nikolai_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs data:Prince_Nikolai_of_Denmark ;\n    :hasBirthYear 1999 ;\n    :hasBrother data:Prince_Felix ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg ;\n    :isChildOf data:Prince_Henrik,\n        data:Queen_Margrethe_II ;\n    :knownAs data:His_Excellency_Count_Nikolai_of_Monpezat .\n\ndata:Henrik a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:His_Excellency_Count_Nikolai_of_Monpezat a :Person .\n\ndata:Prince_Felix a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Prince_Nikolai_of_Denmark a :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Alexandra_Countess_of_Frederiksborg a :Person,\n        :Woman .\n\ndata:Marie_Cavallier a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\n"
+    }
+]

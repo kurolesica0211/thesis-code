@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Henrik a :Man,
+        :Person ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Joachim .
+
+data:Countess_Athena a :Person,
+        :Woman ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Joachim .
+
+data:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,
+        :Person .
+
+data:King_Frederik_IX a :Man,
+        :Person .
+
+data:King_Harald_V a :Man,
+        :Person .
+
+data:Princess_Christina_of_Sweden a :Person,
+        :Woman .
+
+data:Queen_Ingrid a :Person,
+        :Woman .
+
+data:Alexandra_Christina_Manley a :Person,
+        :Woman .
+
+data:King_Frederik_X a :Man,
+        :Person .
+
+data:Princess_Benedikte a :Person,
+        :Woman .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman ;
+    :hasSister data:Princess_Benedikte .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Marie_Cavallier ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isChildOf data:Queen_Margrethe_II .
+
+data:Marie_Cavallier a :Person,
+        :Woman .
+

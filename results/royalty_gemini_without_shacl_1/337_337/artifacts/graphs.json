@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:BaronessArmgardVonSierstorpffCramm a :Person,\n        :Woman ;\n    :isMotherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:Christina a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:Irene a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:LeopoldIV a :Man,\n        :Person .\n\ndata:LeopoldIV%2Ctarget :isSiblingOf data:PrinceBernhardOfLippe .\n\ndata:Margriet a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:QueenBeatrix a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:PrinceBernhardOfLippe a :Man,\n        :Person ;\n    :isFatherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:QueenJuliana a :Person,\n        :Woman .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 2004 ;\n    :hasMarriageYear 1937 ;\n    :hasRelation data:QueenJuliana .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:BaronessArmgardVonSierstorpffCramm a :Person,\n        :Woman ;\n    :isMotherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:Christina a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:Irene a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:LeopoldIV a :Man,\n        :Person .\n\ndata:LeopoldIV%2Ctarget a :Man ;\n    :isSiblingOf data:PrinceBernhardOfLippe .\n\ndata:Margriet a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:QueenBeatrix a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:PrinceBernhardOfLippe a :Man,\n        :Person ;\n    :isFatherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:QueenJuliana a :Person,\n        :Woman .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 2004 ;\n    :hasMarriageYear 1937 ;\n    :hasRelation data:QueenJuliana .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:BaronessArmgardVonSierstorpffCramm a :Person,\n        :Woman ;\n    :isMotherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:Christina a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:Irene a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:LeopoldIV a :Man,\n        :Person .\n\ndata:LeopoldIV%2Ctarget a :Man ;\n    :isSiblingOf data:PrinceBernhardOfLippe .\n\ndata:Margriet a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:QueenBeatrix a :Person,\n        :Woman ;\n    :isDaughterOf data:PrinceBernhardOfLippeBiesterfeld,\n        data:QueenJuliana .\n\ndata:PrinceBernhardOfLippe a :Man,\n        :Person ;\n    :isFatherOf data:PrinceBernhardOfLippeBiesterfeld .\n\ndata:QueenJuliana a :Person,\n        :Woman .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 2004 ;\n    :hasMarriageYear 1937 ;\n    :hasRelation data:QueenJuliana .\n\n"
+    }
+]

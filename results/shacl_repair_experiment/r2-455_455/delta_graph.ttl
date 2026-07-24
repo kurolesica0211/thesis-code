@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Constantine_II a :Ancestor .
+
+data:Ingrid a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Anne-Marie .
+
+data:Kyril a :Ancestor .
+
+data:Simeon_of_Bulgaria a :Ancestor .
+
+data:Anne-Marie a :Ancestor .
+

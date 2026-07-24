@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andreas8thPrinceOfLeiningen a :Man,
+        :Person ;
+    :isBrotherOf data:KarlEmichOfLeiningen .
+
+data:DuchessEilikaOfOldenburg a :Person,
+        :Woman .
+
+data:Emich7thPrinceOfLeiningen a :Man,
+        :Person .
+
+data:KarlEmichOfLeiningen a :Man,
+        :Person ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasBirthYear 1952 ;
+    :hasDaughter data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,
+        data:PrincessTheresaAnnaElisabethOfLeiningen ;
+    :hasFather data:Emich7thPrinceOfLeiningen ;
+    :hasMarriageYear 1984,
+        1991 ;
+    :hasMother data:DuchessEilikaOfOldenburg ;
+    :hasRelation data:GabrieleRenateThyssen,
+        data:PrincessMargaritaOfHohenloheOhringen ;
+    :hasSon data:PrinceEmichAlbrechtKarlOfLeiningen .
+
+data:PrinceEmichAlbrechtKarlOfLeiningen a :Man,
+        :Person ;
+    :hasMother data:GabrieleRenateThyssen .
+
+data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen a :Person,
+        :Woman ;
+    :hasMother data:PrincessMargaritaOfHohenloheOhringen .
+
+data:PrincessTheresaAnnaElisabethOfLeiningen a :Person,
+        :Woman ;
+    :hasMother data:GabrieleRenateThyssen .
+
+data:PrincessMargaritaOfHohenloheOhringen a :Person,
+        :Woman ;
+    :hasDeathYear 1989 .
+
+data:GabrieleRenateThyssen a :Person,
+        :Woman .
+

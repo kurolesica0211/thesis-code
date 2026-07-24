@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSister data:Anne_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Anne_of_Bourbon-Parma ;
+    :isSiblingOf data:Anne_of_Bourbon-Parma ;
+    :isSisterOf data:Anne_of_Bourbon-Parma .
+
+data:Elena_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Michael_I ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSister data:Elena_of_Romania ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isAuntOf data:Michael_I ;
+    :isBloodrelationOf data:Elena_of_Romania ;
+    :isMotherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Elena_of_Romania ;
+    :isSisterOf data:Elena_of_Romania .
+
+data:Carol_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :hasChild data:Michael_I ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isBloodrelationOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isBrotherOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isFatherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isUncleOf data:Michael_I .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :hasChild data:Michael_I ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isBloodrelationOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isBrotherOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isFatherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isUncleOf data:Michael_I .
+
+data:Ferdinand_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :hasChild data:Michael_I ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isBloodrelationOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isBrotherOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isFatherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :isUncleOf data:Michael_I .
+
+data:Michael_I a :Man,
+        :Person ;
+    :hasAncestor data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:Michael_I ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Ferdinand_I ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasParent data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I ;
+    :hasRelation data:Anne_of_Bourbon-Parma,
+        data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Michael_I ;
+    :isBrotherOf data:Michael_I ;
+    :isChildOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I ;
+    :isSiblingOf data:Michael_I ;
+    :isSonOf data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I .
+

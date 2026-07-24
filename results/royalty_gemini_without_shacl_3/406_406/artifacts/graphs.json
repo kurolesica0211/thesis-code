@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Helen_Windsor a :Person,\n        :Woman ;\n    :hasAncestor data:King_George_V ;\n    :hasBirthYear 1964 ;\n    :hasRelation data:Timothy_Verner_Taylor ;\n    :isDaughterOf data:Katharine_Duchess_of_Kent,\n        data:Prince_Edward_Duke_of_Kent .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Timothy_Verner_Taylor a :Man,\n        :Person ;\n    :hasBirthYear 1963 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Helen_Windsor a :Person,\n        :Woman ;\n    :hasAncestor data:King_George_V ;\n    :hasBirthYear 1964 ;\n    :hasRelation data:Timothy_Verner_Taylor ;\n    :isDaughterOf data:Katharine_Duchess_of_Kent,\n        data:Prince_Edward_Duke_of_Kent .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Timothy_Verner_Taylor a :Man,\n        :Person ;\n    :hasBirthYear 1963 .\n\n"
+    }
+]

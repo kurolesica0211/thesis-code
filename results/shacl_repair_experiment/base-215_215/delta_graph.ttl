@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:CountessAugusta a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:PrinceErnestI,
+        data:PrincessVictoriaMother .
+
+data:DukeFrancis a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:PrinceErnestI,
+        data:PrincessVictoriaMother .
+
+data:PrinceAlbert a :Ancestor ;
+    :hasSex data:Male .
+
+data:QueenVictoria a :Ancestor ;
+    :hasSex data:Female .
+
+data:PrinceErnestI a :Ancestor ;
+    :hasSex data:Male ;
+    :isFatherOf data:PrinceAlbert .
+
+data:PrincessVictoriaMother a :Ancestor ;
+    :hasSex data:Female ;
+    :isMotherOf data:QueenVictoria .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

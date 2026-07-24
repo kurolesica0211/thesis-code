@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_of_Wales a :Man ;\n    :hasBirthYear 2018 ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :isSiblingOf data:Prince_George,\n        data:Princess_Charlotte .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Diana_Princess_of_Wales a :Woman .\n\ndata:King_Charles_III a :Man .\n\ndata:Prince_George a :Man ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :isSiblingOf data:Princess_Charlotte .\n\ndata:Princess_Charlotte a :Woman ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales .\n\ndata:Catherine_Princess_of_Wales a :Woman .\n\ndata:William_Prince_of_Wales a :Man ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_of_Wales a :Man ;\n    :hasBirthYear 2018 ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :isSiblingOf data:Prince_George,\n        data:Princess_Charlotte .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Diana_Princess_of_Wales a :Woman .\n\ndata:King_Charles_III a :Man .\n\ndata:Prince_George a :Man ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :isSiblingOf data:Princess_Charlotte .\n\ndata:Princess_Charlotte a :Woman ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales .\n\ndata:Catherine_Princess_of_Wales a :Woman .\n\ndata:William_Prince_of_Wales a :Man ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\n"
+    }
+]

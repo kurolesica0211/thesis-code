@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceGeorge a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasDeathYear 1942 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:PrincessMarina ;\n    :isSiblingOf data:KingEdwardVIII,\n        data:KingGeorgeVI .\n\ndata:KingEdwardVIII a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Man,\n        :Person .\n\ndata:PrincessMarina a :Person,\n        :Woman ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:Alexandra a :Person,\n        :Woman .\n\ndata:Edward a :Man,\n        :Person .\n\ndata:Michael a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceGeorge a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael ;\n    :hasDeathYear 1942 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:PrincessMarina ;\n    :isSiblingOf data:KingEdwardVIII,\n        data:KingGeorgeVI .\n\ndata:KingEdwardVIII a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Man,\n        :Person .\n\ndata:PrincessMarina a :Person,\n        :Woman ;\n    :hasChild data:Alexandra,\n        data:Edward,\n        data:Michael .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:Alexandra a :Person,\n        :Woman .\n\ndata:Edward a :Man,\n        :Person .\n\ndata:Michael a :Man,\n        :Person .\n\n"
+    }
+]

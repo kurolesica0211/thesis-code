@@ -1,0 +1,161 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina_Torlonia_di_Civitella-Cesi a :Person,
+        :Woman ;
+    :hasBrother data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isBloodrelationOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isSiblingOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isSisterOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Beatriz_of_Spain ;
+    :hasDaughter data:Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Beatriz_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Beatriz_of_Spain ;
+    :isParentOf data:Beatriz_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Beatriz_of_Spain .
+
+data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :hasChild data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isAncestorOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isBloodrelationOf data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :isBrotherOf data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :isFatherOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isParentOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isSiblingOf data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :isUncleOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi .
+
+data:Mary_Elsie_Moore a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Mary_Elsie_Moore ;
+    :hasSon data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isAncestorOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isAuntOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isBloodrelationOf data:Mary_Elsie_Moore ;
+    :isMotherOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isParentOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :isSiblingOf data:Mary_Elsie_Moore ;
+    :isSisterOf data:Mary_Elsie_Moore .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatriz_of_Spain ;
+    :hasDaughter data:Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Beatriz_of_Spain ;
+    :isAuntOf data:Beatriz_of_Spain ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Beatriz_of_Spain ;
+    :isParentOf data:Beatriz_of_Spain ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_of_Spain ;
+    :isBloodrelationOf data:Beatriz_of_Spain ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Beatriz_of_Spain ;
+    :isSisterOf data:Beatriz_of_Spain .
+
+data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi a :Man,
+        :Person ;
+    :hasAncestor data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasParent data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Alfonso_XIII_of_Spain,
+        data:Beatriz_of_Spain,
+        data:Marina_Torlonia_di_Civitella-Cesi,
+        data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isBloodrelationOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isBrotherOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isChildOf data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore ;
+    :isSiblingOf data:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi,
+        data:Marina_Torlonia_di_Civitella-Cesi ;
+    :isSonOf data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi,
+        data:Mary_Elsie_Moore .
+

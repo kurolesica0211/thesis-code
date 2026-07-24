@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    :isSonOf data:Prince_Augustyn_J%C3%B3zef_Czartoryski,
+        data:Princess_Dolores_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ludwik_Piotr_Czartoryski a :Man,
+        :Person ;
+    :hasDeathYear 1946 ;
+    :isSonOf data:Prince_Augustyn_J%C3%B3zef_Czartoryski,
+        data:Princess_Dolores_of_Bourbon-Two_Sicilies .
+
+data:Carlos_Ch%C3%ADas_Osorio a :Man,
+        :Person .
+
+data:Countess_Maria_Ludwika_Krasi%C5%84ska a :Person,
+        :Woman .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Prince_Adam_Ludwik_Czartoryski a :Man,
+        :Person .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Princess_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Princess_Louise_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :isMotherOf data:Juan_Carlos_I_of_Spain .
+
+data:Princess_Dolores_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Carlos_Ch%C3%ADas_Osorio,
+        data:Prince_Augustyn_J%C3%B3zef_Czartoryski ;
+    :isSisterOf data:Princess_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Prince_Augustyn_J%C3%B3zef_Czartoryski a :Man,
+        :Person ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasMother data:Countess_Maria_Ludwika_Krasi%C5%84ska .
+

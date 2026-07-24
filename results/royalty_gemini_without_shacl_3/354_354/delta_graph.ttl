@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasFather data:King_William_III ;
+    :hasMother data:Princess_Sophie_of_Wurttemberg .
+
+data:Countess_Mathilde_van_Limburg-Stirum a :Person,
+        :Woman .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasFather data:King_William_III .
+
+data:William_Prince_of_Orange a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Lemon"^^xsd:string ;
+    :hasBirthYear 1840 ;
+    :hasDeathYear 1879 ;
+    :hasFather data:King_William_III ;
+    :hasMother data:Princess_Sophie_of_Wurttemberg .
+
+data:King_William_I a :Man,
+        :Person .
+
+data:King_William_II a :Man,
+        :Person ;
+    :hasFather data:King_William_I .
+
+data:Princess_Augusta_of_Great_Britain a :Person,
+        :Woman .
+
+data:Princess_Sophie_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasMother data:Princess_Augusta_of_Great_Britain .
+
+data:King_William_III a :Man,
+        :Person ;
+    :hasFather data:King_William_II .
+

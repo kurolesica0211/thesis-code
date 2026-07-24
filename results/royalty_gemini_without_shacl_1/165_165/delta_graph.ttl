@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Leonore_of_Orange-Nassau a :Person,
+        :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Constantijn_of_the_Netherlands ;
+    :hasMother data:Princess_Laurentien_of_the_Netherlands .
+
+data:Prince_Constantijn_of_the_Netherlands a :Man,
+        :Person .
+
+data:Princess_Laurentien_of_the_Netherlands a :Person,
+        :Woman .
+

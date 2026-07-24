@@ -1,0 +1,119 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/214_214",
+  "text_file": "Q2793486.txt",
+  "text_key": "Q2793486",
+  "article": "https://en.wikipedia.org/wiki/Prince_Constantine-Alexios_of_Greece_and_Denmark",
+  "article_key": "Prince Constantine-Alexios of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Constantine_Alexios_of_Greece_and_Denmark",
+    "qid": "Q2793486",
+    "label": "Prince Constantine Alexios of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Constantine_Alexios_of_Greece_and_Denmark",
+      "qid": "Q2793486",
+      "label": "Prince Constantine Alexios of Greece and Denmark",
+      "distance": 0,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Constantine-Alexios_of_Greece_and_Denmark",
+      "extracted_local_name": "Prince_Constantine-Alexios_of_Greece_and_Denmark",
+      "embedding_text": "Prince Constantine-Alexios of Greece and Denmark",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Constantine_Alexios_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q2793486",
+      "ground_truth_label": "Prince Constantine Alexios of Greece and Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Constantine-Alexios of Greece and Denmark",
+      "best_candidate_label": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_qid": "Q2793486",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anne-Marie_of_Denmark",
+      "extracted_local_name": "Anne-Marie_of_Denmark",
+      "embedding_text": "Anne-Marie of Denmark",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Konstantinos Alexios zu Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_label": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_qid": "Q2793486",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.25882352941176473
+    },
+    {
+      "extracted_uri": "http://example.org/data/Constantine_II",
+      "extracted_local_name": "Constantine_II",
+      "embedding_text": "Constantine II",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine-Alexios of Greece and Denmark",
+      "best_candidate_label": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_qid": "Q2793486",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43636363636363634
+    },
+    {
+      "extracted_uri": "http://example.org/data/Crown_Prince_Pavlos",
+      "extracted_local_name": "Crown_Prince_Pavlos",
+      "embedding_text": "Crown Prince Pavlos",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_label": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_qid": "Q2793486",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3283582089552239
+    },
+    {
+      "extracted_uri": "http://example.org/data/Crown_Princess_Marie-Chantal_of_Greece",
+      "extracted_local_name": "Crown_Princess_Marie-Chantal_of_Greece",
+      "embedding_text": "Crown Princess Marie-Chantal of Greece",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Konstantinos Alexios zu Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_label": "Prince Constantine Alexios of Greece and Denmark",
+      "best_candidate_qid": "Q2793486",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.23529411764705882
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Amalio_de_Marichalar_y_Bruguera a :Ancestor .
+
+data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Ancestor .
+
+data:Victoria_de_Marichalar_y_Borb%C3%B3n :isDaughterOf data:Infanta_Elena_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar .
+
+data:Infanta_Elena_Duchess_of_Lugo a :Ancestor ;
+    :isDaughterOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Jaime_de_Marichalar a :Ancestor .
+
+data:King_Juan_Carlos_I a :Ancestor .
+
+data:Queen_Sof%C3%ADa_of_Spain a :Ancestor .
+

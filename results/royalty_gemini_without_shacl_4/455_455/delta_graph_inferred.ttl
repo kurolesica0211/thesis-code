@@ -1,0 +1,293 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kyril_target a :DomainEntity .
+
+data:Sofia_target a :DomainEntity .
+
+data:Felipe_VI%2Ctype a :Person ;
+    :hasRelation data:Felipe_VI%2Ctype ;
+    :isBloodrelationOf data:Felipe_VI%2Ctype ;
+    :isSiblingOf data:Felipe_VI%2Ctype .
+
+data:Kyril%2Ctype a :Person ;
+    :hasRelation data:Kyril%2Ctype ;
+    :isBloodrelationOf data:Kyril%2Ctype ;
+    :isSiblingOf data:Kyril%2Ctype .
+
+data:Simeon%2Ctype a :Person ;
+    :hasRelation data:Simeon%2Ctype ;
+    :isBloodrelationOf data:Simeon%2Ctype ;
+    :isSiblingOf data:Simeon%2Ctype .
+
+data:Sofia%2Ctype a :Person ;
+    :hasRelation data:Sofia%2Ctype ;
+    :isBloodrelationOf data:Sofia%2Ctype ;
+    :isSiblingOf data:Sofia%2Ctype .
+
+data:Felipe_VI a :Man ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Felipe_VI ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Sofia a :Woman ;
+    :hasRelation data:Sofia ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Sofia%2Ctarget a :DomainEntity,
+        :Woman ;
+    :hasRelation data:Sofia%2Ctarget ;
+    :hasSister data:Sofia%2Ctarget ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Sofia%2Ctarget ;
+    :isSiblingOf data:Sofia%2Ctarget ;
+    :isSisterOf data:Sofia%2Ctarget .
+
+data:Kyril%2Ctarget a :DomainEntity,
+        :Person ;
+    :hasAncestor data:Simeon ;
+    :hasFather data:Simeon ;
+    :hasParent data:Simeon ;
+    :hasRelation data:Kyril%2Ctarget,
+        data:Simeon ;
+    :isBloodrelationOf data:Kyril%2Ctarget ;
+    :isChildOf data:Simeon ;
+    :isSiblingOf data:Kyril%2Ctarget .
+
+data:Simeon a :Ancestor,
+        :Man ;
+    :hasBrother data:Simeon ;
+    :hasChild data:Kyril%2Ctarget ;
+    :hasRelation data:Kyril%2Ctarget,
+        data:Simeon ;
+    :isAncestorOf data:Kyril%2Ctarget ;
+    :isBloodrelationOf data:Simeon ;
+    :isBrotherOf data:Simeon ;
+    :isFatherOf data:Kyril%2Ctarget ;
+    :isParentOf data:Kyril%2Ctarget ;
+    :isSiblingOf data:Simeon ;
+    :isUncleOf data:Kyril%2Ctarget .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Javier_Morales_Quintana ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Carlos_Javier_Morales_Quintana ;
+    :isBrotherOf data:Carlos_Javier_Morales_Quintana ;
+    :isSiblingOf data:Carlos_Javier_Morales_Quintana .
+
+data:Kyril a :Ancestor,
+        :Man ;
+    :hasBrother data:Kyril ;
+    :hasChild data:Mafalda ;
+    :hasDaughter data:Mafalda ;
+    :hasRelation data:Kyril,
+        data:Mafalda ;
+    :isAncestorOf data:Mafalda ;
+    :isBloodrelationOf data:Kyril ;
+    :isBrotherOf data:Kyril ;
+    :isFatherOf data:Mafalda ;
+    :isParentOf data:Mafalda ;
+    :isSiblingOf data:Kyril ;
+    :isUncleOf data:Mafalda .
+
+data:Mafalda a :Person,
+        :Woman ;
+    :hasAncestor data:Kyril ;
+    :hasFather data:Kyril ;
+    :hasParent data:Kyril ;
+    :hasRelation data:Kyril,
+        data:Mafalda ;
+    :hasSister data:Mafalda ;
+    :isBloodrelationOf data:Mafalda ;
+    :isChildOf data:Kyril ;
+    :isDaughterOf data:Kyril ;
+    :isSiblingOf data:Mafalda ;
+    :isSisterOf data:Mafalda .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Pavlos ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora .
+
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II,
+        data:Pavlos ;
+    :hasFather data:Pavlos ;
+    :hasParent data:Pavlos ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia ;
+    :isChildOf data:Pavlos ;
+    :isDaughterOf data:Pavlos ;
+    :isSiblingOf data:Maria-Olympia ;
+    :isSisterOf data:Maria-Olympia .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :hasDaughter data:Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Alexia_of_Greece_and_Denmark,
+        data:Maria-Olympia,
+        data:Pavlos ;
+    :isAuntOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :isParentOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :hasDaughter data:Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Alexia_of_Greece_and_Denmark,
+        data:Maria-Olympia,
+        data:Pavlos ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :isParentOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos .
+
+data:Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBirthYear "1965"^^xsd:positiveInteger ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear "1999"^^xsd:positiveInteger ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora .
+
+data:Pavlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBrother data:Pavlos ;
+    :hasChild data:Maria-Olympia ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Alexia_of_Greece_and_Denmark,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia_of_Greece_and_Denmark,
+        data:Theodora ;
+    :isAncestorOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isFatherOf data:Maria-Olympia ;
+    :isParentOf data:Maria-Olympia ;
+    :isSiblingOf data:Alexia_of_Greece_and_Denmark,
+        data:Pavlos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isUncleOf data:Maria-Olympia .
+

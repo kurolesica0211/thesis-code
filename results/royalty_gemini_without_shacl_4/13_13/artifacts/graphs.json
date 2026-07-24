@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman ;\n    :hasChild data:Elizabeth_Bowes-Lyon,\n        data:Fergus .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :hasChild data:Elizabeth_Bowes-Lyon,\n        data:Fergus .\n\ndata:George_V a :Man,\n        :Person ;\n    :hasChild data:Edward_VIII,\n        data:George_VI,\n        data:Princess_Mary .\n\ndata:Queen_Mary a :Person,\n        :Woman ;\n    :hasChild data:Edward_VIII,\n        data:George_VI,\n        data:Princess_Mary .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasChild data:Elizabeth_Bowes-Lyon_II,\n        data:Margaret ;\n    :hasDeathYear 2002 .\n\ndata:Elizabeth_Bowes-Lyon_II a :Person,\n        :Woman .\n\ndata:Fergus a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasChild data:Elizabeth_Bowes-Lyon_II,\n        data:Margaret .\n\ndata:Margaret a :Person,\n        :Woman .\n\ndata:Princess_Mary a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman ;\n    :hasChild data:Elizabeth_Bowes-Lyon,\n        data:Fergus .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :hasChild data:Elizabeth_Bowes-Lyon,\n        data:Fergus .\n\ndata:George_V a :Man,\n        :Person ;\n    :hasChild data:Edward_VIII,\n        data:George_VI,\n        data:Princess_Mary .\n\ndata:Queen_Mary a :Person,\n        :Woman ;\n    :hasChild data:Edward_VIII,\n        data:George_VI,\n        data:Princess_Mary .\n\ndata:Edward_VIII a :Man,\n        :Person .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasBirthYear 1900 ;\n    :hasChild data:Elizabeth_Bowes-Lyon_II,\n        data:Margaret ;\n    :hasDeathYear 2002 .\n\ndata:Elizabeth_Bowes-Lyon_II a :Person,\n        :Woman .\n\ndata:Fergus a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasChild data:Elizabeth_Bowes-Lyon_II,\n        data:Margaret .\n\ndata:Margaret a :Person,\n        :Woman .\n\ndata:Princess_Mary a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Lady_Mary_Bowes-Lyon ;\n    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,\n        data:Margaret_Elphinstone .\n\ndata:Princess_Margaret a :Woman .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Woman .\n\ndata:Alexander_Murray a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man .\n\ndata:Lady_Constance_Euphemia_Woronzow_Murray a :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Lady_Mary_Bowes-Lyon a :Woman .\n\ndata:Margaret_Elphinstone a :Woman .\n\ndata:Sidney_Elphinstone a :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Alexander_Elphinstone a :Man ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Lady_Mary_Bowes-Lyon ;\n    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,\n        data:Margaret_Elphinstone .\n\ndata:Princess_Margaret a :Woman .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Woman .\n\ndata:Alexander_Murray a :Man .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man .\n\ndata:Lady_Constance_Euphemia_Woronzow_Murray a :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Lady_Mary_Bowes-Lyon a :Woman .\n\ndata:Margaret_Elphinstone a :Woman .\n\ndata:Sidney_Elphinstone a :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man .\n\n"
+    }
+]

@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felix a :Man,
+        :Person ;
+    :isBrotherOf data:Athena .
+
+data:Henrik a :Man,
+        :Person ;
+    :isBrotherOf data:Athena .
+
+data:KingFrederikX a :Man,
+        :Person .
+
+data:Nikolai a :Man,
+        :Person ;
+    :isBrotherOf data:Athena .
+
+data:PrinceHenrik a :Man,
+        :Person .
+
+data:QueenMargretheII a :Person,
+        :Woman .
+
+data:PrinceJoachim a :Man,
+        :Person .
+
+data:PrincessMarie a :Person,
+        :Woman .
+
+data:Athena a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:PrinceJoachim ;
+    :hasMother data:PrincessMarie .
+

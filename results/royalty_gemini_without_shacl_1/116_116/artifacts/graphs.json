@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman ;\n    :isAncestorOf data:Bertrand_of_Orleans-Braganza,\n        data:Pedro_Carlos ;\n    :isDaughterOf data:Emperor_Pedro_II .\n\ndata:King_Ludwig_III_of_Bavaria a :Man,\n        :Person ;\n    :isAncestorOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man,\n        :Person ;\n    :isFatherOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman ;\n    :isMotherOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Emperor_Pedro_II a :Man,\n        :Person .\n\ndata:Eudes_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Pedro_Carlos a :Man,\n        :Person .\n\ndata:Bertrand_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1941 ;\n    :isBrotherOf data:Eudes_of_Orleans-Braganza,\n        data:Luiz_of_Orleans-Braganza .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Person,\n        :Woman ;\n    :isAncestorOf data:Bertrand_of_Orleans-Braganza,\n        data:Pedro_Carlos ;\n    :isDaughterOf data:Emperor_Pedro_II .\n\ndata:King_Ludwig_III_of_Bavaria a :Man,\n        :Person ;\n    :isAncestorOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man,\n        :Person ;\n    :isFatherOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman ;\n    :isMotherOf data:Bertrand_of_Orleans-Braganza .\n\ndata:Emperor_Pedro_II a :Man,\n        :Person .\n\ndata:Eudes_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Pedro_Carlos a :Man,\n        :Person .\n\ndata:Bertrand_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1941 ;\n    :isBrotherOf data:Eudes_of_Orleans-Braganza,\n        data:Luiz_of_Orleans-Braganza .\n\n"
+    }
+]

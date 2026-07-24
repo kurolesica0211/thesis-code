@@ -1,0 +1,236 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man ;
+    :hasBirthYear 1827 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1882 ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSon data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen .
+
+data:Mathilde_Stegmann a :Ancestor,
+        :Woman ;
+    :hasChild data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :hasDaughter data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:Mathilde_Stegmann ;
+    :isAncestorOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isAuntOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isBloodrelationOf data:Mathilde_Stegmann ;
+    :isMotherOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isParentOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isSiblingOf data:Mathilde_Stegmann ;
+    :isSisterOf data:Mathilde_Stegmann .
+
+data:Mathilde_von_Salviati a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1833 ;
+    :hasChild data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1892 ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:Mathilde_von_Salviati ;
+    :hasSon data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isAuntOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Mathilde_von_Salviati ;
+    :isMotherOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Mathilde_von_Salviati ;
+    :isSisterOf data:Mathilde_von_Salviati .
+
+data:Narciso_Mart%C3%ADnez_de_Hoz a :Ancestor,
+        :Man ;
+    :hasBrother data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :hasChild data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :hasDaughter data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :isAncestorOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isBloodrelationOf data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :isBrotherOf data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :isFatherOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isParentOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isSiblingOf data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :isUncleOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz .
+
+data:Prince_Claus_of_the_Netherlands a :Man ;
+    :hasAncestor data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasBrother data:Prince_Claus_of_the_Netherlands ;
+    :hasMother data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Claus_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus_of_the_Netherlands ;
+    :isChildOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Prince_Claus_of_the_Netherlands ;
+    :isSonOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:George_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Prince_Claus_of_the_Netherlands ;
+    :hasMother data:George_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:George_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Prince_Claus_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus_of_the_Netherlands ;
+    :isAuntOf data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Prince_Claus_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus_of_the_Netherlands ;
+    :isSiblingOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz a :Woman ;
+    :hasAncestor data:Mathilde_Stegmann,
+        data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :hasBirthYear 1875 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :hasMother data:Mathilde_Stegmann ;
+    :hasParent data:Mathilde_Stegmann,
+        data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isBloodrelationOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isChildOf data:Mathilde_Stegmann,
+        data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :isDaughterOf data:Mathilde_Stegmann,
+        data:Narciso_Mart%C3%ADnez_de_Hoz ;
+    :isSiblingOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz ;
+    :isSisterOf data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasBrother data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:George_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Prince_Claus_of_the_Netherlands ;
+    :isAuntOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen .
+
+data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasAncestor data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mathilde_von_Salviati ;
+    :hasBirthYear 1867 ;
+    :hasBrother data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1939 ;
+    :hasFather data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Mathilde_von_Salviati ;
+    :hasParent data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mathilde_von_Salviati ;
+    :hasRelation data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mar%C3%ADa_Eleonore_Mart%C3%ADnez_de_Hoz,
+        data:Mathilde_Stegmann,
+        data:Mathilde_von_Salviati,
+        data:Narciso_Mart%C3%ADnez_de_Hoz,
+        data:Prince_Claus_of_the_Netherlands ;
+    :hasSister data:George_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mathilde_von_Salviati ;
+    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen,
+        data:Hilmar_Freiherr_von_dem_Bussche-Haddenhausen ;
+    :isSonOf data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Mathilde_von_Salviati ;
+    :isUncleOf data:Baroness_G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+

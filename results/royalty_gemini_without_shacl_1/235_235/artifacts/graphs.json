@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eliane_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Magali_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Willem_Jan_van_Vollenhoven a :Man ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Eleonoor_Stammeijer a :Woman .\n\ndata:Hans_Sohngen a :Man .\n\ndata:Magali_Sohngen a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter_Christiaan a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Aimee_Sohngen a :Woman ;\n    :hasFather data:Hans_Sohngen ;\n    :hasMother data:Eleonoor_Stammeijer ;\n    :hasSister data:Magali_Sohngen .\n\ndata:Prince_Floris_van_Vollenhoven a :Man ;\n    :hasBirthYear 1975 ;\n    :hasBrother data:Prince_Bernhard,\n        data:Prince_Maurits,\n        data:Prince_Pieter_Christiaan ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMother data:Princess_Margriet .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eliane_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Magali_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Willem_Jan_van_Vollenhoven a :Man ;\n    :hasFather data:Prince_Floris_van_Vollenhoven ;\n    :hasMother data:Aimee_Sohngen .\n\ndata:Eleonoor_Stammeijer a :Woman .\n\ndata:Hans_Sohngen a :Man .\n\ndata:Magali_Sohngen a :Woman .\n\ndata:Pieter_van_Vollenhoven a :Man .\n\ndata:Prince_Bernhard a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter_Christiaan a :Man .\n\ndata:Princess_Margriet a :Woman .\n\ndata:Aimee_Sohngen a :Woman ;\n    :hasFather data:Hans_Sohngen ;\n    :hasMother data:Eleonoor_Stammeijer ;\n    :hasSister data:Magali_Sohngen .\n\ndata:Prince_Floris_van_Vollenhoven a :Man ;\n    :hasBirthYear 1975 ;\n    :hasBrother data:Prince_Bernhard,\n        data:Prince_Maurits,\n        data:Prince_Pieter_Christiaan ;\n    :hasFather data:Pieter_van_Vollenhoven ;\n    :hasMother data:Princess_Margriet .\n\n"
+    }
+]

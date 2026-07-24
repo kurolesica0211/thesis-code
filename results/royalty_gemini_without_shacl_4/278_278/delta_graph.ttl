@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Caroline_Mathilde a :Person,
+        :Woman ;
+    :hasFather data:Harald ;
+    :hasMother data:Helena .
+
+data:Christian_IX a :Man,
+        :Person .
+
+data:Gustav a :Man,
+        :Person .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBirthYear "1900"^^xsd:nonNegativeInteger ;
+    :hasDaughter data:Elisabeth ;
+    :hasDeathYear "1976"^^xsd:nonNegativeInteger ;
+    :hasFather data:Christian_X,
+        data:Prince_Christian_of_Denmark_father_of_Knud ;
+    :hasMarriageYear "1933"^^xsd:nonNegativeInteger ;
+    :hasMother data:Alexandrine ;
+    :hasSon data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :isBrotherOf data:Frederik_IX .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX .
+
+data:Christian_son_of_Knud a :Man,
+        :Person .
+
+data:Elisabeth a :Person,
+        :Woman .
+
+data:Frederik_VIII a :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud .
+
+data:Harald a :Man,
+        :Person .
+
+data:Helena a :Person,
+        :Woman .
+
+data:Ingolf a :Man,
+        :Person .
+
+data:Prince_Christian_of_Denmark_father_of_Knud a :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud .
+
+data:Alexandrine a :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person ;
+    :hasFather data:Frederik_VIII .
+
+data:Crown_Prince_Frederik_of_Denmark_grandfather_of_Knud a :Man,
+        :Person .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasFather data:Christian_X ;
+    :hasMother data:Alexandrine .
+

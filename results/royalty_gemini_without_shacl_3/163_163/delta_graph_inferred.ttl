@@ -1,0 +1,107 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Felipe_VI ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Zurita_y_Delgado ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :isBloodrelationOf data:Carlos_Zurita_y_Delgado ;
+    :isBrotherOf data:Carlos_Zurita_y_Delgado ;
+    :isSiblingOf data:Carlos_Zurita_y_Delgado .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :hasSister data:Infanta_Margarita ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Juan_Carlos_I .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasChild data:Infanta_Margarita ;
+    :hasDaughter data:Infanta_Margarita ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :isAncestorOf data:Infanta_Margarita ;
+    :isBloodrelationOf data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Juan_Count_of_Barcelona ;
+    :isFatherOf data:Infanta_Margarita ;
+    :isParentOf data:Infanta_Margarita ;
+    :isSiblingOf data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Infanta_Margarita .
+
+data:Princess_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Margarita ;
+    :hasDaughter data:Infanta_Margarita ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :hasSister data:Princess_Mercedes ;
+    :isAncestorOf data:Infanta_Margarita ;
+    :isAuntOf data:Infanta_Margarita ;
+    :isBloodrelationOf data:Princess_Mercedes ;
+    :isMotherOf data:Infanta_Margarita ;
+    :isParentOf data:Infanta_Margarita ;
+    :isSiblingOf data:Princess_Mercedes ;
+    :isSisterOf data:Princess_Mercedes .
+
+data:Infanta_Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Princess_Mercedes ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :hasSister data:Infanta_Margarita ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :isDaughterOf data:Juan_Count_of_Barcelona,
+        data:Princess_Mercedes ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Infanta_Margarita,
+        data:Juan_Carlos_I .
+

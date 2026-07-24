@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hamilton_Joseph_Keyes_OMalley a :Man,
+        :Person ;
+    :hasMarriageYear 1941 .
+
+data:Robin_Alexander_Bryan a :Man,
+        :Person ;
+    :hasBirthYear 1957 ;
+    :hasMother data:Iris_Mountbatten .
+
+data:William_Alexander_Kemp a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:Clarence_Arthur_Kemp ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Helen_Janet_Ballantyne .
+
+data:Zinnia_Rosemary_Denison a :Person,
+        :Woman ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Hugo_William_Cecil_Denison .
+
+data:Alexander_Mountbatten a :Man,
+        :Person ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice .
+
+data:Clarence_Arthur_Kemp a :Man,
+        :Person .
+
+data:Francis_William_Henry_Fane a :Man,
+        :Person .
+
+data:Grace_Adelaide_Fane a :Person,
+        :Woman ;
+    :hasBirthYear 1860 ;
+    :hasDeathYear 1933 ;
+    :hasFather data:Francis_William_Henry_Fane .
+
+data:Helen_Janet_Ballantyne a :Person,
+        :Woman .
+
+data:Irene_Frances_Adza_Denison a :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Hugo_William_Cecil_Denison ;
+    :hasDeathYear 1956 ;
+    :hasFather data:William_Francis_Henry_Denison ;
+    :hasMother data:Grace_Adelaide_Fane .
+
+data:Iris_Mountbatten a :Person,
+        :Woman ;
+    :formerlyKnownAs "Iris Mountbatten"^^xsd:string ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Alexander_Mountbatten ;
+    :hasMother data:Irene_Frances_Adza_Denison ;
+    :knownAs "Lady Iris Victoria Beatrice Grace Kemp"^^xsd:string .
+
+data:Prince_Henry_of_Battenberg a :Man,
+        :Person .
+
+data:Princess_Beatrice a :Person,
+        :Woman .
+
+data:William_Francis_Henry_Denison a :Man,
+        :Person .
+
+data:Hugo_William_Cecil_Denison a :Man,
+        :Person .
+

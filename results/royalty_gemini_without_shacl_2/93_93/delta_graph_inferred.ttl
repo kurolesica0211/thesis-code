@@ -1,0 +1,181 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingChristianIX a :Man,
+        :Person ;
+    :hasBrother data:KingChristianIX ;
+    :hasRelation data:KingChristianIX ;
+    :isBloodrelationOf data:KingChristianIX ;
+    :isBrotherOf data:KingChristianIX ;
+    :isSiblingOf data:KingChristianIX .
+
+data:PrinceValdemarOfDenmark a :Man,
+        :Person ;
+    :hasBrother data:PrinceValdemarOfDenmark ;
+    :hasRelation data:PrinceValdemarOfDenmark ;
+    :isBloodrelationOf data:PrinceValdemarOfDenmark ;
+    :isBrotherOf data:PrinceValdemarOfDenmark ;
+    :isSiblingOf data:PrinceValdemarOfDenmark ;
+    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:PrincessMarieBonaparte a :Person,
+        :Woman ;
+    :hasRelation data:PrincessMarieBonaparte ;
+    :hasSister data:PrincessMarieBonaparte ;
+    :isBloodrelationOf data:PrincessMarieBonaparte ;
+    :isSiblingOf data:PrincessMarieBonaparte ;
+    :isSisterOf data:PrincessMarieBonaparte .
+
+data:PrinceConstantine a :Man,
+        :Person ;
+    :hasBrother data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:Evgenia,
+        data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isUncleOf data:Evgenia,
+        data:Petros .
+
+data:GeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasChild data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:Evgenia,
+        data:GeorgeIOfGreece,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasSon data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:Evgenia,
+        data:Petros,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isFatherOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isParentOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeIOfGreece ;
+    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:OlgaKonstantinovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:Evgenia,
+        data:OlgaKonstantinovnaOfRussia,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasSister data:OlgaKonstantinovnaOfRussia ;
+    :hasSon data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:Evgenia,
+        data:Petros,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isAuntOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBloodrelationOf data:OlgaKonstantinovnaOfRussia ;
+    :isMotherOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isParentOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:OlgaKonstantinovnaOfRussia ;
+    :isSisterOf data:OlgaKonstantinovnaOfRussia .
+
+data:Evgenia a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasBrother data:Petros ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasParent data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:Evgenia,
+        data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasSister data:Evgenia ;
+    :isBloodrelationOf data:Evgenia,
+        data:Petros ;
+    :isChildOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isDaughterOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:Evgenia,
+        data:Petros ;
+    :isSisterOf data:Evgenia,
+        data:Petros .
+
+data:Petros a :Man,
+        :Person ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasBrother data:Petros ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasParent data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:Evgenia,
+        data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasSister data:Evgenia ;
+    :isBloodrelationOf data:Evgenia,
+        data:Petros ;
+    :isBrotherOf data:Evgenia,
+        data:Petros ;
+    :isChildOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:Evgenia,
+        data:Petros ;
+    :isSonOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:PrinceGeorgeOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasChild data:Evgenia,
+        data:Petros ;
+    :hasDaughter data:Evgenia ;
+    :hasDeathYear 1957 ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:OlgaKonstantinovnaOfRussia ;
+    :hasParent data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia ;
+    :hasRelation data:Evgenia,
+        data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia,
+        data:Petros,
+        data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasSon data:Petros ;
+    :isAncestorOf data:Evgenia,
+        data:Petros ;
+    :isBloodrelationOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia ;
+    :isFatherOf data:Evgenia,
+        data:Petros ;
+    :isParentOf data:Evgenia,
+        data:Petros ;
+    :isSiblingOf data:PrinceConstantine,
+        data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSonOf data:GeorgeIOfGreece,
+        data:OlgaKonstantinovnaOfRussia ;
+    :isUncleOf data:Evgenia,
+        data:Petros .
+

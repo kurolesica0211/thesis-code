@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emma_Luana_Ninette_Sophie a :Person,
+        :Woman ;
+    :isChildOf data:Mabel_Wisse_Smit,
+        data:Prince_Friso .
+
+data:Joanna_Zaria_Nicoline_Milou a :Person,
+        :Woman ;
+    :isChildOf data:Mabel_Wisse_Smit,
+        data:Prince_Friso .
+
+data:Claus_von_Amsberg a :Man,
+        :Person .
+
+data:Prince_Bernhard a :Man,
+        :Person .
+
+data:Prince_Constantijn a :Man,
+        :Person .
+
+data:Queen_Beatrix a :Person,
+        :Woman ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+
+data:Willem-Alexander a :Man,
+        :Person .
+
+data:Prince_Friso a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Queen_Beatrix ;
+    :hasRelation data:Mabel_Wisse_Smit ;
+    :isSiblingOf data:Prince_Constantijn,
+        data:Willem-Alexander .
+
+data:Mabel_Wisse_Smit a :Person,
+        :Woman .
+

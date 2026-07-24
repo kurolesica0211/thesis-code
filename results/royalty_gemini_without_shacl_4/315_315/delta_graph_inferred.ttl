@@ -1,0 +1,117 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:George_I,
+        data:Olga_of_Greece ;
+    :hasBrother data:Charles_III ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III .
+
+data:George_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :isAncestorOf data:Carlo_Alessandro,
+        data:Charles_III ;
+    :isBloodrelationOf data:George_I ;
+    :isBrotherOf data:George_I ;
+    :isSiblingOf data:George_I .
+
+data:Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :hasSister data:Olga_of_Greece ;
+    :isAncestorOf data:Carlo_Alessandro,
+        data:Charles_III ;
+    :isBloodrelationOf data:Olga_of_Greece ;
+    :isSiblingOf data:Olga_of_Greece ;
+    :isSisterOf data:Olga_of_Greece .
+
+data:Eugenie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlo_Alessandro ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :hasSister data:Eugenie_of_Greece_and_Denmark ;
+    :hasSon data:Carlo_Alessandro ;
+    :isAncestorOf data:Carlo_Alessandro ;
+    :isAuntOf data:Carlo_Alessandro ;
+    :isBloodrelationOf data:Eugenie_of_Greece_and_Denmark ;
+    :isMotherOf data:Carlo_Alessandro ;
+    :isParentOf data:Carlo_Alessandro ;
+    :isSiblingOf data:Eugenie_of_Greece_and_Denmark ;
+    :isSisterOf data:Eugenie_of_Greece_and_Denmark .
+
+data:Raimundo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Raimundo ;
+    :hasChild data:Carlo_Alessandro ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :hasSon data:Carlo_Alessandro ;
+    :isAncestorOf data:Carlo_Alessandro ;
+    :isBloodrelationOf data:Raimundo ;
+    :isBrotherOf data:Raimundo ;
+    :isFatherOf data:Carlo_Alessandro ;
+    :isParentOf data:Carlo_Alessandro ;
+    :isSiblingOf data:Raimundo ;
+    :isUncleOf data:Carlo_Alessandro .
+
+data:Carlo_Alessandro a :Man,
+        :Person ;
+    :hasAncestor data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Carlo_Alessandro ;
+    :hasFather data:Raimundo ;
+    :hasMother data:Eugenie_of_Greece_and_Denmark ;
+    :hasParent data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo ;
+    :hasRelation data:Carlo_Alessandro,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I,
+        data:Olga_of_Greece,
+        data:Raimundo ;
+    :isBloodrelationOf data:Carlo_Alessandro ;
+    :isBrotherOf data:Carlo_Alessandro ;
+    :isChildOf data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo ;
+    :isSiblingOf data:Carlo_Alessandro ;
+    :isSonOf data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo .
+

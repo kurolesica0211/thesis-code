@@ -1,0 +1,51 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Stanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Charles_II .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_George_VI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:David_Armstrong-Jones,\n        data:Viscount_Linley_brother ;\n    :hasMother data:Serena_Stanhope .\n\ndata:Princess_Margaret a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Person,\n        :Woman .\n\ndata:Viscount_Linley_brother a :Man,\n        :Person ;\n    :hasSister data:Lady_Margarita_Armstrong-Jones .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Stanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Charles_II .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Viscount_Linley_brother a :Man,\n        :Person ;\n    :hasSister data:Lady_Margarita_Armstrong-Jones .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_George_VI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope .\n\ndata:Princess_Margaret a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Stanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Charles_II .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_George_VI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasBrother data:Viscount_Linley_brother ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope .\n\ndata:Princess_Margaret a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Person,\n        :Woman .\n\ndata:Viscount_Linley_brother a :Man,\n        :Person ;\n    :hasSister data:Lady_Margarita_Armstrong-Jones .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "8c9b369c-5575-4cc7-bfd7-de93c349410e",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Lady_Margarita_Armstrong-Jones> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Serena_Stanhope> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Lady_Margarita_Armstrong-Jones> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Serena_Stanhope> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Lady_Margarita_Armstrong-Jones> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Serena_Stanhope> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Stanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Charles_II .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_George_VI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasBrother data:Viscount_Linley_brother ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope .\n\ndata:Princess_Margaret a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Viscount_Linley_brother a :Man,\n        :Person ;\n    :hasSister data:Lady_Margarita_Armstrong-Jones .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 7,
+        "source": "validate_shacl",
+        "tool_call_id": "e72ec984-05ab-43e8-a44a-98edfa5eba7e",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Stanhope a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Charles_II .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charles_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:King_George_VI a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 2002 ;\n    :hasBrother data:Viscount_Linley_brother ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope .\n\ndata:Princess_Margaret a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Viscount_Linley_brother a :Man,\n        :Person ;\n    :hasSister data:Lady_Margarita_Armstrong-Jones .\n\n"
+    }
+]

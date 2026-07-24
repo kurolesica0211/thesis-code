@@ -1,0 +1,218 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Mary_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:John_Alexander_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSister data:Lady_Mary_Bowes-Lyon ;
+    :hasSon data:John_Alexander_Elphinstone ;
+    :isAncestorOf data:John_Alexander_Elphinstone ;
+    :isAuntOf data:John_Alexander_Elphinstone ;
+    :isBloodrelationOf data:Lady_Mary_Bowes-Lyon ;
+    :isMotherOf data:John_Alexander_Elphinstone ;
+    :isParentOf data:John_Alexander_Elphinstone ;
+    :isSiblingOf data:Lady_Mary_Bowes-Lyon ;
+    :isSisterOf data:Lady_Mary_Bowes-Lyon .
+
+data:William_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Elphinstone ;
+    :hasChild data:Sidney_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSon data:Sidney_Elphinstone ;
+    :isAncestorOf data:John_Alexander_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :isBloodrelationOf data:William_Elphinstone ;
+    :isBrotherOf data:William_Elphinstone ;
+    :isFatherOf data:Sidney_Elphinstone ;
+    :isParentOf data:Sidney_Elphinstone ;
+    :isSiblingOf data:William_Elphinstone ;
+    :isUncleOf data:Sidney_Elphinstone .
+
+data:Alexander_Murray a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Murray ;
+    :hasChild data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :hasDaughter data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :isAncestorOf data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Sidney_Elphinstone ;
+    :isBloodrelationOf data:Alexander_Murray ;
+    :isBrotherOf data:Alexander_Murray ;
+    :isFatherOf data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :isParentOf data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :isSiblingOf data:Alexander_Murray ;
+    :isUncleOf data:Lady_Constance_Euphemia_Woronzow_Murray .
+
+data:Andrew_Charles_Victor_Elphinstone a :Man,
+        :Person ;
+    :hasBrother data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSister data:Margaret_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isBrotherOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone .
+
+data:Margaret_Elphinstone a :Person,
+        :Woman ;
+    :hasBrother data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSister data:Margaret_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isSisterOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone .
+
+data:Lady_Constance_Euphemia_Woronzow_Murray a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Murray ;
+    :hasChild data:Sidney_Elphinstone ;
+    :hasFather data:Alexander_Murray ;
+    :hasParent data:Alexander_Murray ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSister data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :hasSon data:Sidney_Elphinstone ;
+    :isAncestorOf data:John_Alexander_Elphinstone,
+        data:Sidney_Elphinstone ;
+    :isAuntOf data:Sidney_Elphinstone ;
+    :isBloodrelationOf data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :isChildOf data:Alexander_Murray ;
+    :isDaughterOf data:Alexander_Murray ;
+    :isMotherOf data:Sidney_Elphinstone ;
+    :isParentOf data:Sidney_Elphinstone ;
+    :isSiblingOf data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :isSisterOf data:Lady_Constance_Euphemia_Woronzow_Murray .
+
+data:Sidney_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Murray,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:William_Elphinstone ;
+    :hasBrother data:Sidney_Elphinstone ;
+    :hasChild data:John_Alexander_Elphinstone ;
+    :hasFather data:William_Elphinstone ;
+    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray ;
+    :hasParent data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:William_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSon data:John_Alexander_Elphinstone ;
+    :isAncestorOf data:John_Alexander_Elphinstone ;
+    :isBloodrelationOf data:Sidney_Elphinstone ;
+    :isBrotherOf data:Sidney_Elphinstone ;
+    :isChildOf data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:William_Elphinstone ;
+    :isFatherOf data:John_Alexander_Elphinstone ;
+    :isParentOf data:John_Alexander_Elphinstone ;
+    :isSiblingOf data:Sidney_Elphinstone ;
+    :isSonOf data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:William_Elphinstone ;
+    :isUncleOf data:John_Alexander_Elphinstone .
+
+data:John_Alexander_Elphinstone a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Murray,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Sidney_Elphinstone ;
+    :hasMother data:Lady_Mary_Bowes-Lyon ;
+    :hasParent data:Lady_Mary_Bowes-Lyon,
+        data:Sidney_Elphinstone ;
+    :hasRelation data:Alexander_Murray,
+        data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Lady_Constance_Euphemia_Woronzow_Murray,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Elphinstone,
+        data:Sidney_Elphinstone,
+        data:William_Elphinstone ;
+    :hasSister data:Margaret_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isBrotherOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isChildOf data:Lady_Mary_Bowes-Lyon,
+        data:Sidney_Elphinstone ;
+    :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+        data:John_Alexander_Elphinstone,
+        data:Margaret_Elphinstone ;
+    :isSonOf data:Lady_Mary_Bowes-Lyon,
+        data:Sidney_Elphinstone .
+

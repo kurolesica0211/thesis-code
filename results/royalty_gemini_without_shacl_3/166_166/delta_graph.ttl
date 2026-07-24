@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Dominik_Rainer_Radziwill a :Man,
+        :Person ;
+    :hasFather data:Prince_Hieronim_Radziwill ;
+    :hasMother data:Archduchess_Renata_of_Austria .
+
+data:Prince_Raymundo_della_Torre_e_Tasso a :Man,
+        :Person .
+
+data:Princess_Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMarriageYear 1938,
+        1949 ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:Archduchess_Renata_of_Austria a :Person,
+        :Woman .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:Marie-Felix_Blanc a :Person,
+        :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Prince_Hieronim_Radziwill a :Man,
+        :Person .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:Prince_Roland_Bonaparte a :Man,
+        :Person .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
+
+data:Princess_Marie_Bonaparte a :Person,
+        :Woman ;
+    :hasFather data:Prince_Roland_Bonaparte ;
+    :hasMother data:Marie-Felix_Blanc .
+

@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adalbert_of_Prussia a :Man ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Adelheid_of_Saxe-Meiningen .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Woman .
+
+data:Adelheid_of_Saxe-Meiningen a :Woman ;
+    :alsoKnownAs "Adi"^^xsd:string ;
+    :hasFather data:Prince_Frederick ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+
+data:Prince_Frederick a :Man .
+
+data:Wilhelm_II a :Man .
+

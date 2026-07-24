@@ -1,0 +1,365 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EmpressAlexandraFeodorovna a :Person,
+        :Woman ;
+    :hasRelation data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :hasSister data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isBloodrelationOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isSiblingOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isSisterOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna .
+
+data:GrandDuchessElizabethFeodorovna a :Person,
+        :Woman ;
+    :hasRelation data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :hasSister data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isBloodrelationOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isSiblingOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna ;
+    :isSisterOf data:EmpressAlexandraFeodorovna,
+        data:GrandDuchessElizabethFeodorovna .
+
+data:GrandDuchessMariaPavlovna a :Person,
+        :Woman ;
+    :hasBrother data:GrandDukeDmitriPavlovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:GrandDuchessMariaPavlovna ;
+    :isAuntOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich ;
+    :isSiblingOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich ;
+    :isSisterOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich .
+
+data:GrandDukeSergeiAlexandrovich a :Man,
+        :Person ;
+    :hasBrother data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :isBloodrelationOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isBrotherOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isSiblingOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isUncleOf data:GrandDukeDmitriPavlovich .
+
+data:AudreyEmery a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PaulRomanovskyIlyinsky ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:AudreyEmery ;
+    :hasSon data:PaulRomanovskyIlyinsky ;
+    :isAncestorOf data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:AudreyEmery ;
+    :isMotherOf data:PaulRomanovskyIlyinsky ;
+    :isParentOf data:PaulRomanovskyIlyinsky ;
+    :isSiblingOf data:AudreyEmery ;
+    :isSisterOf data:AudreyEmery .
+
+data:EmpressMariaAlexandrovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GrandDukePaulAlexandrovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:EmpressMariaAlexandrovna ;
+    :hasSon data:GrandDukePaulAlexandrovich ;
+    :isAncestorOf data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:GrandDukePaulAlexandrovich ;
+    :isBloodrelationOf data:EmpressMariaAlexandrovna ;
+    :isMotherOf data:GrandDukePaulAlexandrovich ;
+    :isParentOf data:GrandDukePaulAlexandrovich ;
+    :isSiblingOf data:EmpressMariaAlexandrovna ;
+    :isSisterOf data:EmpressMariaAlexandrovna .
+
+data:GeorgeIGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIGreece ;
+    :hasChild data:GrandDuchessAlexandraGeorgievna ;
+    :hasDaughter data:GrandDuchessAlexandraGeorgievna ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :isAncestorOf data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukeDmitriPavlovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:GeorgeIGreece ;
+    :isBrotherOf data:GeorgeIGreece ;
+    :isFatherOf data:GrandDuchessAlexandraGeorgievna ;
+    :isParentOf data:GrandDuchessAlexandraGeorgievna ;
+    :isSiblingOf data:GeorgeIGreece ;
+    :isUncleOf data:GrandDuchessAlexandraGeorgievna .
+
+data:OlgaKonstantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GrandDuchessAlexandraGeorgievna ;
+    :hasDaughter data:GrandDuchessAlexandraGeorgievna ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:OlgaKonstantinovna ;
+    :isAncestorOf data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukeDmitriPavlovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:GrandDuchessAlexandraGeorgievna ;
+    :isBloodrelationOf data:OlgaKonstantinovna ;
+    :isMotherOf data:GrandDuchessAlexandraGeorgievna ;
+    :isParentOf data:GrandDuchessAlexandraGeorgievna ;
+    :isSiblingOf data:OlgaKonstantinovna ;
+    :isSisterOf data:OlgaKonstantinovna .
+
+data:TsarAlexanderII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:TsarAlexanderII ;
+    :hasChild data:GrandDukePaulAlexandrovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSon data:GrandDukePaulAlexandrovich ;
+    :isAncestorOf data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:TsarAlexanderII ;
+    :isBrotherOf data:TsarAlexanderII ;
+    :isFatherOf data:GrandDukePaulAlexandrovich ;
+    :isParentOf data:GrandDukePaulAlexandrovich ;
+    :isSiblingOf data:TsarAlexanderII ;
+    :isUncleOf data:GrandDukePaulAlexandrovich .
+
+data:GrandDuchessAlexandraGeorgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeIGreece,
+        data:OlgaKonstantinovna ;
+    :hasChild data:GrandDukeDmitriPavlovich ;
+    :hasFather data:GeorgeIGreece ;
+    :hasMother data:OlgaKonstantinovna ;
+    :hasParent data:GeorgeIGreece,
+        data:OlgaKonstantinovna ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:GrandDuchessAlexandraGeorgievna ;
+    :hasSon data:GrandDukeDmitriPavlovich ;
+    :isAncestorOf data:GrandDukeDmitriPavlovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isAuntOf data:GrandDukeDmitriPavlovich ;
+    :isBloodrelationOf data:GrandDuchessAlexandraGeorgievna ;
+    :isChildOf data:GeorgeIGreece,
+        data:OlgaKonstantinovna ;
+    :isDaughterOf data:GeorgeIGreece,
+        data:OlgaKonstantinovna ;
+    :isMotherOf data:GrandDukeDmitriPavlovich ;
+    :isParentOf data:GrandDukeDmitriPavlovich ;
+    :isSiblingOf data:GrandDuchessAlexandraGeorgievna ;
+    :isSisterOf data:GrandDuchessAlexandraGeorgievna .
+
+data:PaulRomanovskyIlyinsky a :Man,
+        :Person ;
+    :hasAncestor data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:TsarAlexanderII ;
+    :hasBrother data:PaulRomanovskyIlyinsky ;
+    :hasFather data:GrandDukeDmitriPavlovich ;
+    :hasMother data:AudreyEmery ;
+    :hasParent data:AudreyEmery,
+        data:GrandDukeDmitriPavlovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :isBloodrelationOf data:PaulRomanovskyIlyinsky ;
+    :isBrotherOf data:PaulRomanovskyIlyinsky ;
+    :isChildOf data:AudreyEmery,
+        data:GrandDukeDmitriPavlovich ;
+    :isSiblingOf data:PaulRomanovskyIlyinsky ;
+    :isSonOf data:AudreyEmery,
+        data:GrandDukeDmitriPavlovich .
+
+data:GrandDukePaulAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EmpressMariaAlexandrovna,
+        data:TsarAlexanderII ;
+    :hasBrother data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :hasChild data:GrandDukeDmitriPavlovich ;
+    :hasFather data:TsarAlexanderII ;
+    :hasMother data:EmpressMariaAlexandrovna ;
+    :hasParent data:EmpressMariaAlexandrovna,
+        data:TsarAlexanderII ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSon data:GrandDukeDmitriPavlovich ;
+    :isAncestorOf data:GrandDukeDmitriPavlovich,
+        data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isBrotherOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isChildOf data:EmpressMariaAlexandrovna,
+        data:TsarAlexanderII ;
+    :isFatherOf data:GrandDukeDmitriPavlovich ;
+    :isParentOf data:GrandDukeDmitriPavlovich ;
+    :isSiblingOf data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich ;
+    :isSonOf data:EmpressMariaAlexandrovna,
+        data:TsarAlexanderII ;
+    :isUncleOf data:GrandDukeDmitriPavlovich .
+
+data:GrandDukeDmitriPavlovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukePaulAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:TsarAlexanderII ;
+    :hasBirthYear 1891 ;
+    :hasBrother data:GrandDukeDmitriPavlovich ;
+    :hasChild data:PaulRomanovskyIlyinsky ;
+    :hasDeathYear 1942 ;
+    :hasFather data:GrandDukePaulAlexandrovich ;
+    :hasMarriageYear 1926 ;
+    :hasMother data:GrandDuchessAlexandraGeorgievna ;
+    :hasParent data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukePaulAlexandrovich ;
+    :hasRelation data:AudreyEmery,
+        data:EmpressMariaAlexandrovna,
+        data:GeorgeIGreece,
+        data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich,
+        data:GrandDukePaulAlexandrovich,
+        data:GrandDukeSergeiAlexandrovich,
+        data:OlgaKonstantinovna,
+        data:PaulRomanovskyIlyinsky,
+        data:TsarAlexanderII ;
+    :hasSister data:GrandDuchessMariaPavlovna ;
+    :hasSon data:PaulRomanovskyIlyinsky ;
+    :isAncestorOf data:PaulRomanovskyIlyinsky ;
+    :isBloodrelationOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich ;
+    :isBrotherOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich ;
+    :isChildOf data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukePaulAlexandrovich ;
+    :isFatherOf data:PaulRomanovskyIlyinsky ;
+    :isParentOf data:PaulRomanovskyIlyinsky ;
+    :isSiblingOf data:GrandDuchessMariaPavlovna,
+        data:GrandDukeDmitriPavlovich ;
+    :isSonOf data:GrandDuchessAlexandraGeorgievna,
+        data:GrandDukePaulAlexandrovich ;
+    :isUncleOf data:PaulRomanovskyIlyinsky .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasAncestor data:KingGeorgeIOfGreece ;\n    :hasBirthYear \"1903\"^^xsd:positiveInteger ;\n    :hasChild data:PrinceAlexanderOfYugoslavia,\n        data:PrinceNikolaOfYugoslavia,\n        data:PrincessElizabethOfYugoslavia ;\n    :hasDeathYear \"1997\"^^xsd:positiveInteger ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMarriageYear \"1923\"^^xsd:positiveInteger ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;\n    :hasRelation data:PrincePaulOfYugoslavia ;\n    :hasSister data:PrincessElizabeth,\n        data:PrincessMarina ;\n    :knownAs \"Princess Paul of Yugoslavia\"^^xsd:string .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:KingGeorgeIOfGreece a :Man,\n        :Person .\n\ndata:PrinceAlexanderOfYugoslavia a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrinceNikolaOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincePaulOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincessElizabeth a :Person,\n        :Woman .\n\ndata:PrincessElizabethOfYugoslavia a :Person,\n        :Woman .\n\ndata:PrincessMarina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessOlgaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasAncestor data:KingGeorgeIOfGreece ;\n    :hasBirthYear \"1903\"^^xsd:positiveInteger ;\n    :hasChild data:PrinceAlexanderOfYugoslavia,\n        data:PrinceNikolaOfYugoslavia,\n        data:PrincessElizabethOfYugoslavia ;\n    :hasDeathYear \"1997\"^^xsd:positiveInteger ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMarriageYear \"1923\"^^xsd:positiveInteger ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;\n    :hasRelation data:PrincePaulOfYugoslavia ;\n    :hasSister data:PrincessElizabeth,\n        data:PrincessMarina ;\n    :knownAs \"Princess Paul of Yugoslavia\"^^xsd:string .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:KingGeorgeIOfGreece a :Man,\n        :Person .\n\ndata:PrinceAlexanderOfYugoslavia a :Man,\n        :Person .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:PrinceNikolaOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincePaulOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincessElizabeth a :Person,\n        :Woman .\n\ndata:PrincessElizabethOfYugoslavia a :Person,\n        :Woman .\n\ndata:PrincessMarina a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Anne_of_Orleans a :Woman ;\n    :alsoKnownAs \"Anne H\u00e9l\u00e8ne Marie\"^^xsd:string ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Prince_Jean_Duke_of_Guise ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_Isabelle_of_Orleans ;\n    :hasRelation data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .\n\ndata:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1942 .\n\ndata:Prince_Jean_Duke_of_Guise a :Man .\n\ndata:Princess_Isabelle_of_Orleans a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Anne_of_Orleans a :Woman ;\n    :alsoKnownAs \"Anne H\u00e9l\u00e8ne Marie\"^^xsd:string ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Prince_Jean_Duke_of_Guise ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_Isabelle_of_Orleans ;\n    :hasRelation data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .\n\ndata:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1942 .\n\ndata:Prince_Jean_Duke_of_Guise a :Man .\n\ndata:Princess_Isabelle_of_Orleans a :Woman .\n\n"
+    }
+]

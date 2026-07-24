@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor .
+
+data:Anne-Marie a :Ancestor .
+
+data:Christian_X a :Ancestor .
+
+data:Constantine_II a :Ancestor ;
+    :hasDeathYear "2023"^^xsd:positiveInteger .
+
+data:Frederica_of_Greece a :Ancestor .
+
+data:Frederik_IX a :Ancestor .
+
+data:Gustaf_VI_Adolf a :Ancestor .
+
+data:Ingrid_of_Sweden a :Ancestor .
+
+data:Margaret_of_Connaught a :Ancestor .
+
+data:Paul_of_Greece a :Ancestor .
+

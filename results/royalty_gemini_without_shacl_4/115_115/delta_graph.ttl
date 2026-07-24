@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincePhilipposOfGreeceAndDenmark a :Man ;
+    :hasBirthYear "1986"^^xsd:nonNegativeInteger ;
+    :hasFather data:KingConstantineII ;
+    :hasMother data:QueenAnneMarie .
+
+data:PrincessMarina a :Woman ;
+    :hasRelation data:PrinceMichael .
+
+data:QueenSofiaOfSpain a :Woman .
+
+data:KingConstantineII a :Man .
+
+data:PrinceMichael a :Man .
+
+data:QueenAnneMarie a :Woman .
+

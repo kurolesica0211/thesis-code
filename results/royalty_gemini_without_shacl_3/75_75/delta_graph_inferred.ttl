@@ -1,0 +1,264 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernest_Louis_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Ernest_Louis_of_Hesse ;
+    :hasRelation data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Ernest_Louis_of_Hesse ;
+    :isBrotherOf data:Ernest_Louis_of_Hesse ;
+    :isSiblingOf data:Ernest_Louis_of_Hesse .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_II,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Vladimirovna ;
+    :isSiblingOf data:Maria_Vladimirovna ;
+    :isSisterOf data:Maria_Vladimirovna .
+
+data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+    :hasChild data:Victoria_Melita ;
+    :hasDaughter data:Victoria_Melita ;
+    :hasRelation data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Victoria_Melita ;
+    :isBloodrelationOf data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+    :isBrotherOf data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+    :isFatherOf data:Victoria_Melita ;
+    :isParentOf data:Victoria_Melita ;
+    :isSiblingOf data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+    :isUncleOf data:Victoria_Melita .
+
+data:Maria_Alexandrovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Victoria_Melita ;
+    :hasDaughter data:Victoria_Melita ;
+    :hasRelation data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Alexandrovna ;
+    :isAncestorOf data:Victoria_Melita ;
+    :isAuntOf data:Victoria_Melita ;
+    :isBloodrelationOf data:Maria_Alexandrovna ;
+    :isMotherOf data:Victoria_Melita ;
+    :isParentOf data:Victoria_Melita ;
+    :isSiblingOf data:Maria_Alexandrovna ;
+    :isSisterOf data:Maria_Alexandrovna .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kirill_Vladimirovich ;
+    :hasRelation data:Alexander_brother,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Kirill_Vladimirovich ;
+    :isAncestorOf data:Kirill_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Kirill_Vladimirovich ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Kirill_Vladimirovich ;
+    :isParentOf data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Alexander_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_II ;
+    :hasChild data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Alexandrovich ;
+    :isAncestorOf data:Kirill_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_II ;
+    :isBrotherOf data:Alexander_II ;
+    :isFatherOf data:Vladimir_Alexandrovich ;
+    :isParentOf data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_II ;
+    :isUncleOf data:Vladimir_Alexandrovich .
+
+data:Alexander_brother a :Man,
+        :Person ;
+    :hasBrother data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Maria_Pavlovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+
+data:Victoria_Melita a :Person,
+        :Woman ;
+    :hasAncestor data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Maria_Alexandrovna ;
+    :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+    :hasMother data:Maria_Alexandrovna ;
+    :hasParent data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Maria_Alexandrovna ;
+    :hasRelation data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Victoria_Melita ;
+    :isBloodrelationOf data:Victoria_Melita ;
+    :isChildOf data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Maria_Alexandrovna ;
+    :isDaughterOf data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Maria_Alexandrovna ;
+    :isSiblingOf data:Victoria_Melita ;
+    :isSisterOf data:Victoria_Melita .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II ;
+    :hasBrother data:Vladimir_Alexandrovich ;
+    :hasChild data:Kirill_Vladimirovich ;
+    :hasFather data:Alexander_II ;
+    :hasParent data:Alexander_II ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Kirill_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Kirill_Vladimirovich ;
+    :isAncestorOf data:Kirill_Vladimirovich,
+        data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Vladimir_Alexandrovich ;
+    :isChildOf data:Alexander_II ;
+    :isFatherOf data:Kirill_Vladimirovich ;
+    :isParentOf data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Vladimir_Alexandrovich ;
+    :isSonOf data:Alexander_II ;
+    :isUncleOf data:Kirill_Vladimirovich .
+
+data:Vladimir_Kirillovich a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Vladimir_Kirillovich ;
+    :hasFather data:Kirill_Vladimirovich ;
+    :hasParent data:Kirill_Vladimirovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Vladimir_Kirillovich ;
+    :isBrotherOf data:Vladimir_Kirillovich ;
+    :isChildOf data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Vladimir_Kirillovich ;
+    :isSonOf data:Kirill_Vladimirovich .
+
+data:Kirill_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother,
+        data:Alfred_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Ernest_Louis_of_Hesse,
+        data:Kirill_Vladimirovich,
+        data:Maria_Alexandrovna,
+        data:Maria_Pavlovna,
+        data:Maria_Vladimirovna,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Maria_Vladimirovna,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Alexander_brother,
+        data:Kirill_Vladimirovich ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+

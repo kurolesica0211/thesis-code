@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person .
+
+data:Mary_Elizabeth_Donaldson a :Person,
+        :Woman .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :isBrotherOf data:Frederik_X .
+
+data:Frederik_IX a :Man,
+        :Person .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Prince_Henrik ;
+    :hasMother data:Margrethe_II .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX .
+
+data:Prince_Henrik a :Man,
+        :Person .
+

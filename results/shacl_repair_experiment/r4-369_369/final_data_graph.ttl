@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Henry a :Man .
+
+data:Christoph_son_of_Margaret a :Man ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man .
+
+data:Friedrich_Wilhelm_son_of_Margaret a :Man ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia .
+
+data:Maximilian_son_of_Margaret a :Man ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia .
+
+data:Philipp_son_of_Margaret a :Man ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia .
+
+data:Princess_Charlotte a :Woman .
+
+data:Princess_Sophie a :Woman .
+
+data:Princess_Viktoria a :Woman .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Woman .
+
+data:Wilhelm_II_German_Emperor a :Man .
+
+data:Wolfgang_son_of_Margaret a :Man ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Prince_Frederick_Charles_of_Hesse ;
+    :isSisterOf data:Princess_Charlotte,
+        data:Princess_Sophie,
+        data:Princess_Viktoria,
+        data:Wilhelm_II_German_Emperor .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man ;
+    :isFatherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret .
+

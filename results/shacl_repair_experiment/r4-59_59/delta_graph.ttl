@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Prince_Philip a :Ancestor ;
+    :isFatherOf data:Prince_Edward .
+
+data:Queen_Elizabeth_II a :Ancestor ;
+    :isMotherOf data:Prince_Edward .
+
+data:Sophie_Rhys-Jones a :Ancestor ;
+    :isMotherOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Edward a :Ancestor ;
+    :isFatherOf data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+

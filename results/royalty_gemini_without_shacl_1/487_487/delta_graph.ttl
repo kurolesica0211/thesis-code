@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_I_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Otto_von_Habsburg .
+
+data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Eleonore_von_Habsburg-Lothringen .
+
+data:Regina_von_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Karl_von_Habsburg .
+
+data:Zita_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Otto_von_Habsburg .
+
+data:Ferdinand_Habsburg a :Man,
+        :Person .
+
+data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,
+        :Person ;
+    :isFatherOf data:Otto_d%27Ambrosio .
+
+data:Eleonore_von_Habsburg-Lothringen a :Person,
+        :Woman ;
+    :hasBirthYear 1994 ;
+    :hasMarriageYear 2020 ;
+    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isMotherOf data:Otto_d%27Ambrosio ;
+    :isSiblingOf data:Ferdinand_Habsburg .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Eleonore_von_Habsburg-Lothringen .
+
+data:Otto_d%27Ambrosio a :Man,
+        :Person .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Karl_von_Habsburg .
+

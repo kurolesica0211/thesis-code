@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Frederick_III_German_Emperor a :Ancestor .
+
+data:Margaret_of_Prussia a :Ancestor .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor ;
+    :isFatherOf data:Christoph_son_of_Margaret,
+        data:Friedrich_Wilhelm_son_of_Margaret,
+        data:Maximilian_son_of_Margaret,
+        data:Philipp_son_of_Margaret,
+        data:Wolfgang_son_of_Margaret .
+
+data:Queen_Victoria a :Ancestor .
+
+data:Victoria_Princess_Royal a :Ancestor .
+

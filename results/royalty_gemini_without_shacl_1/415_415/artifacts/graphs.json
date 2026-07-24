@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceFrederickOfPrussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Friedrich von Preussen\"^^xsd:string,\n        \"George Mansfield\"^^xsd:string ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1966 ;\n    :hasFather data:CrownPrinceWilhelmOfGermany ;\n    :hasMarriageYear 1945 ;\n    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;\n    :hasRelation data:LadyBrigidGuinness .\n\ndata:CrownPrinceWilhelmOfGermany a :Man,\n        :Person .\n\ndata:DuchessCecilieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:LadyBrigidGuinness a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceFrederickOfPrussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Friedrich von Preussen\"^^xsd:string,\n        \"George Mansfield\"^^xsd:string ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1966 ;\n    :hasFather data:CrownPrinceWilhelmOfGermany ;\n    :hasMarriageYear 1945 ;\n    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;\n    :hasRelation data:LadyBrigidGuinness .\n\ndata:CrownPrinceWilhelmOfGermany a :Man,\n        :Person .\n\ndata:DuchessCecilieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:LadyBrigidGuinness a :Person,\n        :Woman .\n\n"
+    }
+]

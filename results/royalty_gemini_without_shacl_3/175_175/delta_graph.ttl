@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man .
+
+data:Ingrid a :Woman .
+
+data:Mafalda a :Woman ;
+    :isDaughterOf data:Kyril .
+
+data:Maria-Olympia a :Woman .
+
+data:Sofia a :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Alexia a :Woman ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana ;
+    :hasSister data:Theodora .
+
+data:Carlos_Javier_Morales_Quintana a :Man .
+
+data:Kyril a :Man ;
+    :isSonOf data:Simeon .
+
+data:Pavlos a :Man ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Simeon a :Man .
+
+data:Theodora a :Woman ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Anne-Marie a :Woman .
+
+data:Constantine_II a :Man .
+

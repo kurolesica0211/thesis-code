@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gustav_Albrecht a :Man,
+        :Person ;
+    :isSonOf data:Carina_Axelsson,
+        data:Gustav .
+
+data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person ;
+    :isBrotherOf data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg .
+
+data:Princess_Mafalda a :Person,
+        :Woman ;
+    :isDaughterOf data:Carina_Axelsson,
+        data:Gustav .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+
+data:Princess_Benedikte_of_Denmark a :Person,
+        :Woman .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+
+data:Carina_Axelsson a :Person,
+        :Woman .
+
+data:Gustav a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Alfonso a :Man ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Margarita_Duchess_of_Soria a :Woman ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:Infanta_Pilar_Duchess_of_Badajoz a :Woman ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:King_Paul_of_Greece a :Man .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Alfonso ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Queen_Sofia ;\n    :hasSister data:Infanta_Margarita_Duchess_of_Soria,\n        data:Infanta_Pilar_Duchess_of_Badajoz .\n\ndata:Queen_Sofia a :Woman ;\n    :hasFather data:King_Paul_of_Greece .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man ;\n    :hasFather data:Alfonso_XIII .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Queen_Sofia .\n\ndata:Alfonso a :Man ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Margarita_Duchess_of_Soria a :Woman ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:Infanta_Pilar_Duchess_of_Badajoz a :Woman ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona .\n\ndata:King_Paul_of_Greece a :Man .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasBirthYear 1938 ;\n    :hasBrother data:Alfonso ;\n    :hasFather data:Infante_Juan_Count_of_Barcelona ;\n    :hasMarriageYear 1962 ;\n    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Queen_Sofia ;\n    :hasSister data:Infanta_Margarita_Duchess_of_Soria,\n        data:Infanta_Pilar_Duchess_of_Badajoz .\n\ndata:Queen_Sofia a :Woman ;\n    :hasFather data:King_Paul_of_Greece .\n\ndata:Infante_Juan_Count_of_Barcelona a :Man ;\n    :hasFather data:Alfonso_XIII .\n\n"
+    }
+]

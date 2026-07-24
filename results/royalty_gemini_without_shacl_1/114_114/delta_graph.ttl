@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sir_Nicholas_Nuttall a :Man .
+
+data:Doreen_Knatchbull a :Woman .
+
+data:Eugenie_Lady_Nuttall a :Woman .
+
+data:John_Knatchbull a :Man ;
+    :isFatherOf data:Norton_Louis_Philip_Knatchbull .
+
+data:Louis_Mountbatten a :Man ;
+    :isFatherOf data:Patricia_Knatchbull .
+
+data:Marian_Elizabeth_Hood a :Woman .
+
+data:Nicholas_Knatchbull a :Man .
+
+data:Penelope_Meredith_Eastwood a :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth_Hood .
+
+data:Reginald_Wray_Frank_Eastwood a :Man .
+
+data:Norton_Louis_Philip_Knatchbull a :Man ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Doreen_Knatchbull,
+        data:Patricia_Knatchbull ;
+    :hasRelation data:Eugenie_Lady_Nuttall,
+        data:Penelope_Meredith_Eastwood .
+
+data:Patricia_Knatchbull a :Woman ;
+    :hasFather data:Louis_Mountbatten ;
+    :isMotherOf data:Norton_Louis_Philip_Knatchbull .
+

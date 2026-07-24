@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_III a :Man,\n        :Person ;\n    :hasBirthYear 1851 ;\n    :hasDeathYear 1897 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Anastasia_Mikhailovna_of_Russia ;\n    :hasSon data:Frederick_Francis_IV .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_III a :Man,\n        :Person ;\n    :hasBirthYear 1851 ;\n    :hasDeathYear 1897 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Anastasia_Mikhailovna_of_Russia ;\n    :hasSon data:Frederick_Francis_IV .\n\ndata:Anastasia_Mikhailovna_of_Russia a :Person,\n        :Woman .\n\ndata:Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\n"
+    }
+]

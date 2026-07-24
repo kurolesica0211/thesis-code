@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear "1900"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1904"^^xsd:nonNegativeInteger ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Sigismund,
+        data:Prince_Waldemar .
+
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
+
+data:Prince_Henry_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Frederick_III_German_Emperor .
+
+data:Prince_Waldemar a :Man,
+        :Person ;
+    :isSiblingOf data:Prince_Sigismund .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Prince_Sigismund a :Man,
+        :Person .
+

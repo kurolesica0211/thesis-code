@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Alexander_Mowatt a :Man,
+        :Person ;
+    :hasBirthYear 1993 ;
+    :isChildOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt .
+
+data:Zenouska_May_Mowatt a :Person,
+        :Woman ;
+    :hasBirthYear 1990 ;
+    :isChildOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt .
+
+data:James_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman .
+
+data:Sir_Angus_Ogilvy a :Man,
+        :Person .
+
+data:Marina_Victoria_Alexandra_Ogilvy a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasMarriageYear 1990 ;
+    :hasRelation data:Paul_Julian_Mowatt ;
+    :isDaughterOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:James_Ogilvy .
+
+data:Paul_Julian_Mowatt a :Man,
+        :Person ;
+    :hasBirthYear 1962 .
+

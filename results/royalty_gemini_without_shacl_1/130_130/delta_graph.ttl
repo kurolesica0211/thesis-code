@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale_great_grandfather a :Man,
+        :Person ;
+    :hasFather data:George_III_of_the_United_Kingdom .
+
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Prince_Ernest_Augustus_son a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear "1913"^^xsd:nonNegativeInteger ;
+    :hasRelation data:Princess_Victoria_Louise_of_Prussia .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person .
+
+data:George_V_of_Hanover a :Man,
+        :Person .
+
+data:Princess_Victoria_Louise_of_Prussia a :Person,
+        :Woman .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person ;
+    :hasFather data:George_V_of_Hanover .
+

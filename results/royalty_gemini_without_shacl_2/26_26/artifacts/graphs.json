@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Margarita_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Sophie_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:George_Mountbatten_2nd_Marquess_of_Milford_Haven a :Man .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .\n\ndata:Louise_Mountbatten a :Woman .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,\n        :Man .\n\ndata:Prince_Louis_of_Battenberg a :Ancestor,\n        :Man .\n\ndata:Prince_Philip a :Man,\n        :Person ;\n    :isSonOf data:Alice_of_Battenberg .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,\n        :Woman .\n\ndata:Alice_of_Battenberg a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1969 ;\n    :hasMarriageYear 1903 ;\n    :hasRelation data:Prince_Andrew_of_Greece_and_Denmark ;\n    :isDaughterOf data:Prince_Louis_of_Battenberg,\n        data:Princess_Victoria_of_Hesse_and_by_Rhine ;\n    :isMotherOf data:Prince_Philip ;\n    :isSisterOf data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,\n        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,\n        data:Louise_Mountbatten .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cecilie_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Margarita_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Sophie_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :isDaughterOf data:Alice_of_Battenberg .\n\ndata:George_Mountbatten_2nd_Marquess_of_Milford_Haven a :Man .\n\ndata:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .\n\ndata:Louise_Mountbatten a :Woman .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,\n        :Man .\n\ndata:Prince_Louis_of_Battenberg a :Ancestor,\n        :Man .\n\ndata:Prince_Philip a :Man,\n        :Person ;\n    :isSonOf data:Alice_of_Battenberg .\n\ndata:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,\n        :Woman .\n\ndata:Alice_of_Battenberg a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1885 ;\n    :hasDeathYear 1969 ;\n    :hasMarriageYear 1903 ;\n    :hasRelation data:Prince_Andrew_of_Greece_and_Denmark ;\n    :isDaughterOf data:Prince_Louis_of_Battenberg,\n        data:Princess_Victoria_of_Hesse_and_by_Rhine ;\n    :isMotherOf data:Prince_Philip ;\n    :isSisterOf data:George_Mountbatten_2nd_Marquess_of_Milford_Haven,\n        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,\n        data:Louise_Mountbatten .\n\n"
+    }
+]

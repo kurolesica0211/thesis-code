@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Adam_Ludwik_Czartoryski a :Ancestor .
+
+data:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor .
+
+data:Dolores_of_Bourbon-Two_Sicilies a :Ancestor ;
+    :hasRelation data:Carlos_Ch%C3%ADas_Osorio .
+
+data:Juan_Carlos_I_of_Spain :hasMother data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Louise_of_Orl%C3%A9ans a :Ancestor .
+
+data:Maria_Ludwika_Krasi%C5%84ska a :Ancestor .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor .
+

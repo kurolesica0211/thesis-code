@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+    :hasSister data:Princess_Theodora_Margravine_of_Baden .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Victoria_Marie_Esme_Margarita a :Woman ;
+    :hasBirthYear "1991-09-06"^^xsd:date ;
+    :hasFather data:Sir_Desmond_de_Silva ;
+    :hasMother data:Princess_Katarina_of_Yugoslavia .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man .
+
+data:Prince_George a :Man .
+
+data:Prince_Michael a :Man .
+
+data:Prince_Nikola_of_Yugoslavia a :Man .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man .
+
+data:Princess_Katarina_of_Yugoslavia a :Woman ;
+    :hasBirthYear "1959-11-28"^^xsd:date ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia .
+
+data:Princess_Margarita_of_Baden a :Woman .
+
+data:Princess_Theodora_Margravine_of_Baden a :Woman .
+
+data:Sir_Desmond_de_Silva a :Man .
+

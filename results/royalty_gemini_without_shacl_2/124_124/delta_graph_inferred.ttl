@@ -1,0 +1,184 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Astrid_of_Sweden a :Woman ;
+    :hasDeathYear "1935"^^xsd:positiveInteger ;
+    :hasRelation data:Astrid_of_Sweden ;
+    :hasSister data:Astrid_of_Sweden ;
+    :isBloodrelationOf data:Astrid_of_Sweden ;
+    :isSiblingOf data:Astrid_of_Sweden ;
+    :isSisterOf data:Astrid_of_Sweden .
+
+data:Fabrizio_Ruffo_di_Calabria_Santapau a :Man ;
+    :hasBrother data:Fabrizio_Ruffo_di_Calabria_Santapau ;
+    :hasRelation data:Fabrizio_Ruffo_di_Calabria_Santapau ;
+    :isBloodrelationOf data:Fabrizio_Ruffo_di_Calabria_Santapau ;
+    :isBrotherOf data:Fabrizio_Ruffo_di_Calabria_Santapau ;
+    :isSiblingOf data:Fabrizio_Ruffo_di_Calabria_Santapau .
+
+data:Josephine_Charlotte_of_Luxembourg a :Woman ;
+    :hasRelation data:Josephine_Charlotte_of_Luxembourg ;
+    :hasSister data:Josephine_Charlotte_of_Luxembourg ;
+    :isBloodrelationOf data:Josephine_Charlotte_of_Luxembourg ;
+    :isSiblingOf data:Josephine_Charlotte_of_Luxembourg ;
+    :isSisterOf data:Josephine_Charlotte_of_Luxembourg .
+
+data:Leopold_III a :Man ;
+    :hasBrother data:Leopold_III ;
+    :hasRelation data:Leopold_III ;
+    :isBloodrelationOf data:Leopold_III ;
+    :isBrotherOf data:Leopold_III ;
+    :isSiblingOf data:Leopold_III .
+
+data:Philippe a :Man ;
+    :hasBrother data:Philippe ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasSister data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Astrid_of_Belgium,
+        data:Philippe ;
+    :isBrotherOf data:Astrid_of_Belgium,
+        data:Philippe ;
+    :isSiblingOf data:Astrid_of_Belgium,
+        data:Philippe .
+
+data:Albert_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Albert_II ;
+    :hasChild data:Astrid_of_Belgium ;
+    :hasDaughter data:Astrid_of_Belgium ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :isAncestorOf data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Albert_II ;
+    :isBrotherOf data:Albert_II ;
+    :isFatherOf data:Astrid_of_Belgium ;
+    :isParentOf data:Astrid_of_Belgium ;
+    :isSiblingOf data:Albert_II ;
+    :isUncleOf data:Astrid_of_Belgium .
+
+data:Margherita_of_Savoy_Aosta a :Ancestor,
+        :Woman ;
+    :hasChild data:Lorenz_of_Belgium ;
+    :hasDeathYear "2022"^^xsd:positiveInteger ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasSister data:Margherita_of_Savoy_Aosta ;
+    :hasSon data:Lorenz_of_Belgium ;
+    :isAncestorOf data:Lorenz_of_Belgium ;
+    :isAuntOf data:Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Margherita_of_Savoy_Aosta ;
+    :isMotherOf data:Lorenz_of_Belgium ;
+    :isParentOf data:Lorenz_of_Belgium ;
+    :isSiblingOf data:Margherita_of_Savoy_Aosta ;
+    :isSisterOf data:Margherita_of_Savoy_Aosta .
+
+data:Paola a :Ancestor,
+        :Woman ;
+    :hasChild data:Astrid_of_Belgium ;
+    :hasDaughter data:Astrid_of_Belgium ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasSister data:Paola ;
+    :isAncestorOf data:Astrid_of_Belgium ;
+    :isAuntOf data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Paola ;
+    :isMotherOf data:Astrid_of_Belgium ;
+    :isParentOf data:Astrid_of_Belgium ;
+    :isSiblingOf data:Paola ;
+    :isSisterOf data:Paola .
+
+data:Robert_Archduke_of_Austria_Este a :Ancestor,
+        :Man ;
+    :hasBrother data:Robert_Archduke_of_Austria_Este ;
+    :hasChild data:Lorenz_of_Belgium ;
+    :hasDeathYear "1996"^^xsd:positiveInteger ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasSon data:Lorenz_of_Belgium ;
+    :isAncestorOf data:Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Robert_Archduke_of_Austria_Este ;
+    :isBrotherOf data:Robert_Archduke_of_Austria_Este ;
+    :isFatherOf data:Lorenz_of_Belgium ;
+    :isParentOf data:Lorenz_of_Belgium ;
+    :isSiblingOf data:Robert_Archduke_of_Austria_Este ;
+    :isUncleOf data:Lorenz_of_Belgium .
+
+data:Lorenz_of_Belgium a :Man ;
+    :hasAncestor data:Margherita_of_Savoy_Aosta,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasBrother data:Lorenz_of_Belgium ;
+    :hasFather data:Robert_Archduke_of_Austria_Este ;
+    :hasMother data:Margherita_of_Savoy_Aosta ;
+    :hasParent data:Margherita_of_Savoy_Aosta,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :isBloodrelationOf data:Lorenz_of_Belgium ;
+    :isBrotherOf data:Lorenz_of_Belgium ;
+    :isChildOf data:Margherita_of_Savoy_Aosta,
+        data:Robert_Archduke_of_Austria_Este ;
+    :isSiblingOf data:Lorenz_of_Belgium ;
+    :isSonOf data:Margherita_of_Savoy_Aosta,
+        data:Robert_Archduke_of_Austria_Este .
+
+data:Astrid_of_Belgium a :Woman ;
+    :hasAncestor data:Albert_II,
+        data:Paola ;
+    :hasBirthYear "1962"^^xsd:positiveInteger ;
+    :hasBrother data:Philippe ;
+    :hasFather data:Albert_II ;
+    :hasMarriageYear "1984"^^xsd:positiveInteger ;
+    :hasMother data:Paola ;
+    :hasParent data:Albert_II,
+        data:Paola ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy_Aosta,
+        data:Paola,
+        data:Philippe,
+        data:Robert_Archduke_of_Austria_Este ;
+    :hasSister data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Astrid_of_Belgium,
+        data:Philippe ;
+    :isChildOf data:Albert_II,
+        data:Paola ;
+    :isDaughterOf data:Albert_II,
+        data:Paola ;
+    :isSiblingOf data:Astrid_of_Belgium,
+        data:Philippe ;
+    :isSisterOf data:Astrid_of_Belgium,
+        data:Philippe .
+

@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_of_Cumberland a :Man ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanofver_1887 .
+
+data:Ernest_Augustus_Prince_of_Hanover_1914 a :Man ;
+    :isChildOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia .
+
+data:Frederica_of_Hanover a :Woman ;
+    :hasRelation data:Paul_of_Greece ;
+    :isChildOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia .
+
+data:George_of_Cumberland a :Man ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887 .
+
+data:Ernest_Augustus_of_Hanofver_1887 a :Man .
+
+data:Ernest_Augustus_of_Hanover_Senior a :Man .
+
+data:Paul_of_Greece a :Man .
+
+data:Thyra_of_Denmark a :Woman .
+
+data:Ernest_Augustus_of_Hanover_1887 a :Man ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover_Senior ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasRelation data:Victoria_Louise_of_Prussia .
+
+data:Victoria_Louise_of_Prussia a :Woman .
+

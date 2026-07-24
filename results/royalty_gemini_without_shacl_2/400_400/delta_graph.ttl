@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Robert_Bruce_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
+    :hasSister data:Marina_Ogilvy .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+        :Woman .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Marina_Ogilvy a :Person,
+        :Woman .
+
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
+    :hasFather data:King_George_V .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Sir_Angus_Ogilvy a :Man,
+        :Person .
+

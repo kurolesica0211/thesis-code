@@ -1,0 +1,399 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_II a :Man,
+        :Person ;
+    :hasBrother data:Constantine_II ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Irene,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isBrotherOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Frederica_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sof%C3%ADa ;
+    :hasDaughter data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Frederica_of_Greece ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Frederica_of_Greece ;
+    :isMotherOf data:Sof%C3%ADa ;
+    :isParentOf data:Sof%C3%ADa ;
+    :isSiblingOf data:Frederica_of_Greece ;
+    :isSisterOf data:Frederica_of_Greece .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasBrother data:Constantine_II ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Irene,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isSisterOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasChild data:Paul_of_Greece ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSon data:Paul_of_Greece ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isFatherOf data:Paul_of_Greece ;
+    :isParentOf data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_I ;
+    :isUncleOf data:Paul_of_Greece .
+
+data:Sophia_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Paul_of_Greece ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Sophia_of_Greece ;
+    :hasSon data:Paul_of_Greece ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Paul_of_Greece ;
+    :isBloodrelationOf data:Sophia_of_Greece ;
+    :isMotherOf data:Paul_of_Greece ;
+    :isParentOf data:Paul_of_Greece ;
+    :isSiblingOf data:Sophia_of_Greece ;
+    :isSisterOf data:Sophia_of_Greece .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Sophia_of_Greece ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Sof%C3%ADa ;
+    :hasDaughter data:Sof%C3%ADa ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Greece ;
+    :hasParent data:Constantine_I,
+        data:Sophia_of_Greece ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I,
+        data:Sophia_of_Greece ;
+    :isFatherOf data:Sof%C3%ADa ;
+    :isParentOf data:Sof%C3%ADa ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I,
+        data:Sophia_of_Greece ;
+    :isUncleOf data:Sof%C3%ADa .
+
+data:Cristina a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:Frederica_of_Greece,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:Frederica_of_Greece,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Frederica_of_Greece,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBrotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa .
+
+data:Sof%C3%ADa a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:Frederica_of_Greece,
+        data:Paul_of_Greece,
+        data:Sophia_of_Greece ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece ;
+    :hasParent data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Frederica_of_Greece,
+        data:Irene,
+        data:Juan_Carlos_I,
+        data:Paul_of_Greece,
+        data:Sof%C3%ADa,
+        data:Sophia_of_Greece ;
+    :hasSister data:Irene,
+        data:Sof%C3%ADa ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isChildOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isDaughterOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isMotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa ;
+    :isSisterOf data:Constantine_II,
+        data:Irene,
+        data:Sof%C3%ADa .
+

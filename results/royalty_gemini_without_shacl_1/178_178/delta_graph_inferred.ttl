@@ -1,0 +1,156 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1877 ;
+    :hasChild data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1973 ;
+    :hasRelation data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen,
+        data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasSister data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isAncestorOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isAuntOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isMotherOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isSisterOf data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1923 ;
+    :hasRelation data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen,
+        data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Gosta_von_dem_Bussche-Haddenhausen .
+
+data:Elise_von_Vieregg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1866 ;
+    :hasChild data:Klaus_Felix_von_Amsberg ;
+    :hasDeathYear 1951 ;
+    :hasRelation data:Elise_von_Vieregg,
+        data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:Elise_von_Vieregg ;
+    :hasSon data:Klaus_Felix_von_Amsberg ;
+    :isAncestorOf data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands ;
+    :isAuntOf data:Klaus_Felix_von_Amsberg ;
+    :isBloodrelationOf data:Elise_von_Vieregg ;
+    :isMotherOf data:Klaus_Felix_von_Amsberg ;
+    :isParentOf data:Klaus_Felix_von_Amsberg ;
+    :isSiblingOf data:Elise_von_Vieregg ;
+    :isSisterOf data:Elise_von_Vieregg .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1856 ;
+    :hasBrother data:Wilhelm_von_Amsberg ;
+    :hasChild data:Klaus_Felix_von_Amsberg ;
+    :hasDeathYear 1929 ;
+    :hasRelation data:Elise_von_Vieregg,
+        data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Klaus_Felix_von_Amsberg ;
+    :isAncestorOf data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelm_von_Amsberg ;
+    :isBrotherOf data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Klaus_Felix_von_Amsberg ;
+    :isParentOf data:Klaus_Felix_von_Amsberg ;
+    :isSiblingOf data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Klaus_Felix_von_Amsberg .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :hasAncestor data:Elise_von_Vieregg,
+        data:Klaus_Felix_von_Amsberg,
+        data:Wilhelm_von_Amsberg ;
+    :hasBrother data:Prince_Claus_of_the_Netherlands ;
+    :hasFather data:Klaus_Felix_von_Amsberg ;
+    :hasParent data:Klaus_Felix_von_Amsberg ;
+    :hasRelation data:Elise_von_Vieregg,
+        data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Wilhelm_von_Amsberg ;
+    :isBloodrelationOf data:Prince_Claus_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus_of_the_Netherlands ;
+    :isChildOf data:Klaus_Felix_von_Amsberg ;
+    :isSiblingOf data:Prince_Claus_of_the_Netherlands ;
+    :isSonOf data:Klaus_Felix_von_Amsberg .
+
+data:Gosta_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman ;
+    :hasAncestor data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen,
+        data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasSister data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Gosta_von_dem_Bussche-Haddenhausen .
+
+data:Klaus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elise_von_Vieregg,
+        data:Wilhelm_von_Amsberg ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Klaus_Felix_von_Amsberg ;
+    :hasChild data:Prince_Claus_of_the_Netherlands ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMarriageYear data:Gosta_von_dem_Bussche-Haddenhausen,
+        1924 ;
+    :hasMother data:Elise_von_Vieregg ;
+    :hasParent data:Elise_von_Vieregg,
+        data:Wilhelm_von_Amsberg ;
+    :hasRelation data:Elise_von_Vieregg,
+        data:Klaus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Prince_Claus_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Klaus_Felix_von_Amsberg ;
+    :isBrotherOf data:Klaus_Felix_von_Amsberg ;
+    :isChildOf data:Elise_von_Vieregg,
+        data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Prince_Claus_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus_of_the_Netherlands ;
+    :isSiblingOf data:Klaus_Felix_von_Amsberg ;
+    :isSonOf data:Elise_von_Vieregg,
+        data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Prince_Claus_of_the_Netherlands .
+

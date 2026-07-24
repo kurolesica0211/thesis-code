@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sophie_Habsburg a :Person,\n        :Woman ;\n    :alsoKnownAs \"Archduchess Sophie of Austria\"^^xsd:string ;\n    :hasBirthYear 1959 ;\n    :hasChild data:Alexis_Ferdinand ;\n    :hasFather data:Ferdinand_Karl_Max_of_Austria ;\n    :hasMother data:Helene_of_Torring-Jettenbach ;\n    :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .\n\ndata:Alexis_Ferdinand a :Man,\n        :Person ;\n    :hasDeathYear 2010 .\n\ndata:Ferdinand_Karl_Max_of_Austria a :Man,\n        :Person .\n\ndata:Helene_of_Torring-Jettenbach a :Person,\n        :Woman .\n\ndata:Mariano_Hugo_of_Windisch-Graetz a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sophie_Habsburg a :Person,\n        :Woman ;\n    :alsoKnownAs \"Archduchess Sophie of Austria\"^^xsd:string ;\n    :hasBirthYear 1959 ;\n    :hasChild data:Alexis_Ferdinand ;\n    :hasFather data:Ferdinand_Karl_Max_of_Austria ;\n    :hasMother data:Helene_of_Torring-Jettenbach ;\n    :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .\n\ndata:Alexis_Ferdinand a :Man,\n        :Person ;\n    :hasDeathYear 2010 .\n\ndata:Ferdinand_Karl_Max_of_Austria a :Man,\n        :Person .\n\ndata:Helene_of_Torring-Jettenbach a :Person,\n        :Woman .\n\ndata:Mariano_Hugo_of_Windisch-Graetz a :Man,\n        :Person .\n\n"
+    }
+]

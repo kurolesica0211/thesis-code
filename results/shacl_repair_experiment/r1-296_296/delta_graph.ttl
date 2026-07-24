@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_George_I_of_Greece a :Ancestor ;
+    :hasSex data:Male .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor ;
+    :hasSex data:Male .
+
+data:Prince_Michael_of_Greece_and_Denmark :hasSex data:Male .
+
+data:Princess_Anastasia_of_Greece :alsoKnownAs "Anastasia"^^xsd:string ;
+    :hasDeathYear "1923"^^xsd:int ;
+    :hasSex data:Female ;
+    :knownAs "Nonnie May \"Nancy\" Stewart Worthington Leeds"^^xsd:string .
+
+data:Princess_Francoise_of_Orleans a :Ancestor ;
+    :hasBirthYear "1902"^^xsd:int ;
+    :hasDeathYear "1953"^^xsd:int ;
+    :hasSex data:Female .
+
+data:Queen_Olga_of_Greece a :Ancestor ;
+    :hasSex data:Female .
+
+data:William_Bateman_Leeds_Jr :hasBirthYear "1902"^^xsd:int ;
+    :hasDeathYear "1971"^^xsd:int ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlbertAlphonsLudgerusBrenninkmeijer a :Man ;
+    :hasBirthYear 1974 .
+
+data:PrinceBernhardOfLippeBiesterfeld a :Man ;
+    :isParentOf data:PrincessIreneOfTheNetherlands .
+
+data:PrincessCarolinaOfBourbonParma a :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands ;
+    :isSiblingOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessMargarita .
+
+data:QueenBeatrix a :Woman ;
+    :isSisterOf data:PrincessIreneOfTheNetherlands .
+
+data:QueenJulianaOfTheNetherlands a :Woman ;
+    :isParentOf data:PrincessIreneOfTheNetherlands .
+
+data:CarlosHugoDukeOfParma a :Man .
+
+data:PrinceCarlos a :Man .
+
+data:PrinceJaime a :Man .
+
+data:PrincessMargarita a :Woman .
+
+data:PrincessIreneOfTheNetherlands a :Woman .
+

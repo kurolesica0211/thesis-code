@@ -1,0 +1,366 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:His_Excellency_Count_Nikolai_of_Monpezat a :Person ;
+    :hasRelation data:His_Excellency_Count_Nikolai_of_Monpezat ;
+    :isBloodrelationOf data:His_Excellency_Count_Nikolai_of_Monpezat ;
+    :isSiblingOf data:His_Excellency_Count_Nikolai_of_Monpezat .
+
+data:Prince_Nikolai_of_Denmark a :Person ;
+    :hasRelation data:Prince_Nikolai_of_Denmark ;
+    :isBloodrelationOf data:Prince_Nikolai_of_Denmark ;
+    :isSiblingOf data:Prince_Nikolai_of_Denmark .
+
+data:King_Frederik_X a :Man,
+        :Person ;
+    :hasBrother data:King_Frederik_X ;
+    :hasRelation data:King_Frederik_X ;
+    :isBloodrelationOf data:King_Frederik_X ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isSiblingOf data:King_Frederik_X .
+
+data:Marie_Cavallier a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Athena,
+        data:Henrik ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Marie_Cavallier ;
+    :hasSister data:Marie_Cavallier ;
+    :hasSon data:Henrik ;
+    :isAncestorOf data:Athena,
+        data:Henrik ;
+    :isAuntOf data:Athena,
+        data:Henrik ;
+    :isBloodrelationOf data:Marie_Cavallier ;
+    :isMotherOf data:Athena,
+        data:Henrik ;
+    :isParentOf data:Athena,
+        data:Henrik ;
+    :isSiblingOf data:Marie_Cavallier ;
+    :isSisterOf data:Marie_Cavallier .
+
+data:Alexandra_Countess_of_Frederiksborg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :hasRelation data:Alexandra_Countess_of_Frederiksborg,
+        data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isAncestorOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isAuntOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isBloodrelationOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :isMotherOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isParentOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isSiblingOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :hasRelation data:Alexandra_Countess_of_Frederiksborg,
+        data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isAncestorOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isAuntOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isBloodrelationOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :isMotherOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isParentOf data:Count_Nikolai_of_Monpezat,
+        data:Prince_Felix ;
+    :isSiblingOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II .
+
+data:Prince_Henrik a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasChild data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasSon data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isAncestorOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isBloodrelationOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isBrotherOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isFatherOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isParentOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSiblingOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isUncleOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix .
+
+data:Prince_Joachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasChild data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasSon data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isAncestorOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isBloodrelationOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isBrotherOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isFatherOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isParentOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSiblingOf data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isUncleOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix .
+
+data:Athena a :Person,
+        :Woman ;
+    :hasAncestor data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasBrother data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasFather data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasRelation data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Marie_Cavallier,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isDaughterOf data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSisterOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix .
+
+data:Henrik a :Man,
+        :Person ;
+    :hasAncestor data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasBrother data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasFather data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasRelation data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Marie_Cavallier,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isBrotherOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSonOf data:Marie_Cavallier,
+        data:Prince_Henrik,
+        data:Prince_Joachim .
+
+data:Prince_Felix a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasFather data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasMother data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :hasParent data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasRelation data:Alexandra_Countess_of_Frederiksborg,
+        data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isBrotherOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isChildOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSonOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II .
+
+data:Count_Nikolai_of_Monpezat a :Man,
+        :Person ;
+    :formerlyKnownAs data:Prince_Nikolai_of_Denmark ;
+    :hasAncestor data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :hasFather data:Prince_Henrik,
+        data:Prince_Joachim ;
+    :hasMother data:Alexandra_Countess_of_Frederiksborg,
+        data:Queen_Margrethe_II ;
+    :hasParent data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasRelation data:Alexandra_Countess_of_Frederiksborg,
+        data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Marie_Cavallier,
+        data:Prince_Felix,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isBrotherOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isChildOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Athena,
+        data:Count_Nikolai_of_Monpezat,
+        data:Henrik,
+        data:Prince_Felix ;
+    :isSonOf data:Alexandra_Countess_of_Frederiksborg,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :knownAs data:His_Excellency_Count_Nikolai_of_Monpezat .
+

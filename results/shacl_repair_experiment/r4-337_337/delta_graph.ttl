@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Armgard_von_Sierstorpff-Cramm a :Ancestor .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor .
+
+data:Alicia_of_the_Netherlands a :Person,
+        :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor ;
+    :hasDaughter data:Alicia_of_the_Netherlands .
+

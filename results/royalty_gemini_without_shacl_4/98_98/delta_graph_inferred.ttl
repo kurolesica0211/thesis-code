@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PieterVanVollenhoven a :Man ;
+    :hasBrother data:PieterVanVollenhoven ;
+    :hasRelation data:PieterVanVollenhoven ;
+    :isBloodrelationOf data:PieterVanVollenhoven ;
+    :isBrotherOf data:PieterVanVollenhoven ;
+    :isSiblingOf data:PieterVanVollenhoven .
+
+data:PrincessBeatrix a :Woman ;
+    :hasRelation data:PrincessBeatrix ;
+    :hasSister data:PrincessBeatrix ;
+    :isBloodrelationOf data:PrincessBeatrix ;
+    :isSiblingOf data:PrincessBeatrix ;
+    :isSisterOf data:PrincessBeatrix .
+
+data:PrincessMargriet a :Woman ;
+    :hasRelation data:PrincessMargriet ;
+    :hasSister data:PrincessMargriet ;
+    :isBloodrelationOf data:PrincessMargriet ;
+    :isSiblingOf data:PrincessMargriet ;
+    :isSisterOf data:PrincessMargriet .
+
+data:PrincessLaurentien a :Ancestor,
+        :Woman ;
+    :hasChild data:CountessEloiseOfOrangeNassau ;
+    :hasDaughter data:CountessEloiseOfOrangeNassau ;
+    :hasRelation data:CountessEloiseOfOrangeNassau,
+        data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :hasSister data:PrincessLaurentien ;
+    :isAncestorOf data:CountessEloiseOfOrangeNassau ;
+    :isAuntOf data:CountessEloiseOfOrangeNassau ;
+    :isBloodrelationOf data:PrincessLaurentien ;
+    :isMotherOf data:CountessEloiseOfOrangeNassau ;
+    :isParentOf data:CountessEloiseOfOrangeNassau ;
+    :isSiblingOf data:PrincessLaurentien ;
+    :isSisterOf data:PrincessLaurentien .
+
+data:PrinceClaus a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceClaus ;
+    :hasChild data:PrinceConstantijn ;
+    :hasRelation data:CountessEloiseOfOrangeNassau,
+        data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :hasSon data:PrinceConstantijn ;
+    :isAncestorOf data:CountessEloiseOfOrangeNassau,
+        data:PrinceConstantijn ;
+    :isBloodrelationOf data:PrinceClaus ;
+    :isBrotherOf data:PrinceClaus ;
+    :isFatherOf data:PrinceConstantijn ;
+    :isParentOf data:PrinceConstantijn ;
+    :isSiblingOf data:PrinceClaus ;
+    :isUncleOf data:PrinceConstantijn .
+
+data:QueenBeatrix a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceConstantijn ;
+    :hasRelation data:CountessEloiseOfOrangeNassau,
+        data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :hasSister data:QueenBeatrix ;
+    :hasSon data:PrinceConstantijn ;
+    :isAncestorOf data:CountessEloiseOfOrangeNassau,
+        data:PrinceConstantijn ;
+    :isAuntOf data:PrinceConstantijn ;
+    :isBloodrelationOf data:QueenBeatrix ;
+    :isMotherOf data:PrinceConstantijn ;
+    :isParentOf data:PrinceConstantijn ;
+    :isSiblingOf data:QueenBeatrix ;
+    :isSisterOf data:QueenBeatrix .
+
+data:CountessEloiseOfOrangeNassau a :Woman ;
+    :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+    :hasAncestor data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :hasBirthYear 2002 ;
+    :hasFather data:PrinceConstantijn ;
+    :hasMother data:PrincessLaurentien ;
+    :hasParent data:PrinceConstantijn,
+        data:PrincessLaurentien ;
+    :hasRelation data:CountessEloiseOfOrangeNassau,
+        data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :hasSister data:CountessEloiseOfOrangeNassau ;
+    :isBloodrelationOf data:CountessEloiseOfOrangeNassau ;
+    :isChildOf data:PrinceConstantijn,
+        data:PrincessLaurentien ;
+    :isDaughterOf data:PrinceConstantijn,
+        data:PrincessLaurentien ;
+    :isSiblingOf data:CountessEloiseOfOrangeNassau ;
+    :isSisterOf data:CountessEloiseOfOrangeNassau ;
+    :knownAs "Eloise Beatrix Sophie Laurence"^^xsd:string .
+
+data:PrinceConstantijn a :Ancestor,
+        :Man ;
+    :hasAncestor data:PrinceClaus,
+        data:QueenBeatrix ;
+    :hasBrother data:PrinceConstantijn ;
+    :hasChild data:CountessEloiseOfOrangeNassau ;
+    :hasDaughter data:CountessEloiseOfOrangeNassau ;
+    :hasFather data:PrinceClaus ;
+    :hasMother data:QueenBeatrix ;
+    :hasParent data:PrinceClaus,
+        data:QueenBeatrix ;
+    :hasRelation data:CountessEloiseOfOrangeNassau,
+        data:PrinceClaus,
+        data:PrinceConstantijn,
+        data:PrincessLaurentien,
+        data:QueenBeatrix ;
+    :isAncestorOf data:CountessEloiseOfOrangeNassau ;
+    :isBloodrelationOf data:PrinceConstantijn ;
+    :isBrotherOf data:PrinceConstantijn ;
+    :isChildOf data:PrinceClaus,
+        data:QueenBeatrix ;
+    :isFatherOf data:CountessEloiseOfOrangeNassau ;
+    :isParentOf data:CountessEloiseOfOrangeNassau ;
+    :isSiblingOf data:PrinceConstantijn ;
+    :isSonOf data:PrinceClaus,
+        data:QueenBeatrix ;
+    :isUncleOf data:CountessEloiseOfOrangeNassau .
+

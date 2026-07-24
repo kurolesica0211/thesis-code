@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:RoseConstanceLevesonGower a :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:14thEarlOfStrathmoreAndKinghorne ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:CeciliaCavendishBentinck ;
+    :hasRelation data:WilliamLevesonGower ;
+    :isAuntOf data:PrincessMargaretRoseOfYork,
+        data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethTheQueenMother .
+
+data:14thEarlOfStrathmoreAndKinghorne a :Ancestor,
+        :Man,
+        :Person .
+
+data:CeciliaCavendishBentinck a :Ancestor,
+        :Person,
+        :Woman .
+
+data:PrincessMargaretRoseOfYork a :Person,
+        :Woman .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:QueenElizabethTheQueenMother a :Person,
+        :Woman .
+
+data:WilliamLevesonGower a :Man,
+        :Person ;
+    :hasDeathYear 1953 .
+

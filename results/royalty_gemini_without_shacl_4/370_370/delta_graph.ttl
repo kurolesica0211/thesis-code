@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Paul_I_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasRelation data:Anne-Marie_of_Denmark .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Brunswick a :Man,
+        :Person .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Paul_I_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Sophia_of_Greece_and_Spain a :Person,
+        :Woman ;
+    :hasFather data:Paul_I_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasRelation data:Juan_Carlos_I_of_Spain .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman .
+
+data:Viktoria_Luise_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    :hasBirthYear "1917"^^xsd:positiveInteger ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sophia_of_Greece_and_Spain ;
+    :hasDeathYear "1981"^^xsd:positiveInteger ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Paul_I_of_Greece .
+
+data:Paul_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
+

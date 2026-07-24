@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ann-Kathrin_Johannsmann a :Person,
+        :Woman .
+
+data:King_Constantine_II_of_Greece a :Man,
+        :Person .
+
+data:King_Frederik_X_of_Denmark a :Man,
+        :Person .
+
+data:Konstantin_Gustav_Heinrich_Richard a :Man,
+        :Person ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Louisa_Margareta_Benedikte_Hanna a :Person,
+        :Woman ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Prince_Gustav a :Man,
+        :Person .
+
+data:Queen_Margrethe_II_of_Denmark a :Person,
+        :Woman .
+
+data:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+
+data:Heinrich-Wilhelm_Johannsmann a :Man,
+        :Person .
+
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man,
+        :Person .
+
+data:Princess_Benedikte_of_Denmark a :Person,
+        :Woman .
+
+data:Alexander_Johannsmann a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :isChildOf data:Heinrich-Wilhelm_Johannsmann .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasBirthYear 1975 ;
+    :isChildOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg .
+

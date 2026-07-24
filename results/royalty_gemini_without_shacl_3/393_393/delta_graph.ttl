@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AdolfII a :Man,
+        :Person .
+
+data:MarieAlixOfSchaumburgLippe a :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:PrinceGeorgMoritzOfSchaumburgLippe ;
+    :hasDeathYear 2021 ;
+    :hasFather data:PrinceStefanOfSchaumburgLippe ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe ;
+    :hasRelation data:PeterDukeOfSchleswigHolstein .
+
+data:IngeborgAlixPrincessStephanAlexanderOfSchaumburgLippe a :Person,
+        :Woman .
+
+data:PeterDukeOfSchleswigHolstein a :Man,
+        :Person ;
+    :hasFather data:WilhelmFriedrichDukeOfSchleswigHolstein ;
+    :hasMother data:PrincessMarieMelitaOfHohenloheLangenburg .
+
+data:PrinceGeorgMoritzOfSchaumburgLippe a :Man,
+        :Person .
+
+data:PrinceStefanOfSchaumburgLippe a :Man,
+        :Person .
+
+data:PrincessMarieMelitaOfHohenloheLangenburg a :Person,
+        :Woman .
+
+data:WilhelmFriedrichDukeOfSchleswigHolstein a :Man,
+        :Person .
+

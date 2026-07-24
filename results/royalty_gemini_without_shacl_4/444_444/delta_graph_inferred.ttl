@@ -1,0 +1,315 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MarinaAllegraFedericaSilviaTondato a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AngelicaMargheritaEdwinaHicks ;
+    :hasDaughter data:AngelicaMargheritaEdwinaHicks ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:MarinaAllegraFedericaSilviaTondato ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks ;
+    :isAuntOf data:AngelicaMargheritaEdwinaHicks ;
+    :isBloodrelationOf data:MarinaAllegraFedericaSilviaTondato ;
+    :isMotherOf data:AngelicaMargheritaEdwinaHicks ;
+    :isParentOf data:AngelicaMargheritaEdwinaHicks ;
+    :isSiblingOf data:MarinaAllegraFedericaSilviaTondato ;
+    :isSisterOf data:MarinaAllegraFedericaSilviaTondato .
+
+data:DavidNightingaleHicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:DavidNightingaleHicks ;
+    :hasChild data:AshleyLouisDavidHicks ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSon data:AshleyLouisDavidHicks ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks ;
+    :isBloodrelationOf data:DavidNightingaleHicks ;
+    :isBrotherOf data:DavidNightingaleHicks ;
+    :isFatherOf data:AshleyLouisDavidHicks ;
+    :isParentOf data:AshleyLouisDavidHicks ;
+    :isSiblingOf data:DavidNightingaleHicks ;
+    :isUncleOf data:AshleyLouisDavidHicks .
+
+data:TheHonourableEdwinaAshley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LadyPamelaMountbatten ;
+    :hasDaughter data:LadyPamelaMountbatten ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:TheHonourableEdwinaAshley ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:LadyPamelaMountbatten ;
+    :isAuntOf data:LadyPamelaMountbatten ;
+    :isBloodrelationOf data:TheHonourableEdwinaAshley ;
+    :isMotherOf data:LadyPamelaMountbatten ;
+    :isParentOf data:LadyPamelaMountbatten ;
+    :isSiblingOf data:TheHonourableEdwinaAshley ;
+    :isSisterOf data:TheHonourableEdwinaAshley .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSon data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isFatherOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isParentOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isUncleOf data:LouisMountbatten1stEarlMountbattenOfBurma .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasDaughter data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isAuntOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isMotherOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isParentOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:QueenVictoria ;
+    :hasChild data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :hasMother data:QueenVictoria ;
+    :hasParent data:QueenVictoria ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasSon data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isAuntOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isChildOf data:QueenVictoria ;
+    :isDaughterOf data:QueenVictoria ;
+    :isMotherOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isParentOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isSiblingOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSisterOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:AngelicaMargheritaEdwinaHicks a :Person,
+        :Woman ;
+    :hasAncestor data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasBirthYear "1992"^^xsd:positiveInteger ;
+    :hasFather data:AshleyLouisDavidHicks ;
+    :hasMother data:MarinaAllegraFedericaSilviaTondato ;
+    :hasParent data:AshleyLouisDavidHicks,
+        data:MarinaAllegraFedericaSilviaTondato ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:AngelicaMargheritaEdwinaHicks ;
+    :isBloodrelationOf data:AngelicaMargheritaEdwinaHicks ;
+    :isChildOf data:AshleyLouisDavidHicks,
+        data:MarinaAllegraFedericaSilviaTondato ;
+    :isDaughterOf data:AshleyLouisDavidHicks,
+        data:MarinaAllegraFedericaSilviaTondato ;
+    :isSiblingOf data:AngelicaMargheritaEdwinaHicks ;
+    :isSisterOf data:AngelicaMargheritaEdwinaHicks .
+
+data:LouisMountbatten1stEarlMountbattenOfBurma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria ;
+    :hasBrother data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :hasChild data:LadyPamelaMountbatten ;
+    :hasDaughter data:LadyPamelaMountbatten ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:LadyPamelaMountbatten ;
+    :isBloodrelationOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isBrotherOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isFatherOf data:LadyPamelaMountbatten ;
+    :isParentOf data:LadyPamelaMountbatten ;
+    :isSiblingOf data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :isSonOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isUncleOf data:LadyPamelaMountbatten .
+
+data:LadyPamelaMountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasChild data:AshleyLouisDavidHicks ;
+    :hasFather data:LouisMountbatten1stEarlMountbattenOfBurma ;
+    :hasMother data:TheHonourableEdwinaAshley ;
+    :hasParent data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:TheHonourableEdwinaAshley ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasSister data:LadyPamelaMountbatten ;
+    :hasSon data:AshleyLouisDavidHicks ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks ;
+    :isAuntOf data:AshleyLouisDavidHicks ;
+    :isBloodrelationOf data:LadyPamelaMountbatten ;
+    :isChildOf data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:TheHonourableEdwinaAshley ;
+    :isDaughterOf data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:TheHonourableEdwinaAshley ;
+    :isMotherOf data:AshleyLouisDavidHicks ;
+    :isParentOf data:AshleyLouisDavidHicks ;
+    :isSiblingOf data:LadyPamelaMountbatten ;
+    :isSisterOf data:LadyPamelaMountbatten .
+
+data:AshleyLouisDavidHicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :hasBrother data:AshleyLouisDavidHicks ;
+    :hasChild data:AngelicaMargheritaEdwinaHicks ;
+    :hasDaughter data:AngelicaMargheritaEdwinaHicks ;
+    :hasFather data:DavidNightingaleHicks ;
+    :hasMother data:LadyPamelaMountbatten ;
+    :hasParent data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten ;
+    :hasRelation data:AngelicaMargheritaEdwinaHicks,
+        data:AshleyLouisDavidHicks,
+        data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten,
+        data:LouisMountbatten1stEarlMountbattenOfBurma,
+        data:MarinaAllegraFedericaSilviaTondato,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenVictoria,
+        data:TheHonourableEdwinaAshley ;
+    :isAncestorOf data:AngelicaMargheritaEdwinaHicks ;
+    :isBloodrelationOf data:AshleyLouisDavidHicks ;
+    :isBrotherOf data:AshleyLouisDavidHicks ;
+    :isChildOf data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten ;
+    :isFatherOf data:AngelicaMargheritaEdwinaHicks ;
+    :isParentOf data:AngelicaMargheritaEdwinaHicks ;
+    :isSiblingOf data:AshleyLouisDavidHicks ;
+    :isSonOf data:DavidNightingaleHicks,
+        data:LadyPamelaMountbatten ;
+    :isUncleOf data:AngelicaMargheritaEdwinaHicks .
+

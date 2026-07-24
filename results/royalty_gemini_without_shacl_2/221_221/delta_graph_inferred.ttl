@@ -1,0 +1,454 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Prince_Georg_of_Denmark ;
+    :hasRelation data:Prince_Georg_of_Denmark ;
+    :isBloodrelationOf data:Prince_Georg_of_Denmark ;
+    :isBrotherOf data:Prince_Georg_of_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Denmark .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasChild data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :isAncestorOf data:Anne_Bowes-Lyon,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBrotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isParentOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isUncleOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSon data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:Anne_Bowes-Lyon,
+        data:Elizabeth_Shakerley,
+        data:John_Herbert_Bowes-Lyon,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:John_Herbert_Bowes-Lyon ;
+    :isParentOf data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:John_Herbert_Bowes-Lyon .
+
+data:Thomas_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Thomas_Anson ;
+    :hasChild data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :hasDaughter data:Elizabeth_Shakerley ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSon data:Patrick_Anson ;
+    :isAncestorOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Thomas_Anson ;
+    :isBrotherOf data:Thomas_Anson ;
+    :isFatherOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isParentOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isSiblingOf data:Thomas_Anson ;
+    :isUncleOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasChild data:Anne_Bowes-Lyon ;
+    :hasDaughter data:Anne_Bowes-Lyon ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAncestorOf data:Anne_Bowes-Lyon,
+        data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isAuntOf data:Anne_Bowes-Lyon ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isMotherOf data:Anne_Bowes-Lyon ;
+    :isParentOf data:Anne_Bowes-Lyon ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Herbert_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Claude_Bowes-Lyon ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasChild data:Anne_Bowes-Lyon ;
+    :hasDaughter data:Anne_Bowes-Lyon ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasParent data:Claude_Bowes-Lyon ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :isAncestorOf data:Anne_Bowes-Lyon,
+        data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:John_Herbert_Bowes-Lyon ;
+    :isBrotherOf data:John_Herbert_Bowes-Lyon ;
+    :isChildOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Anne_Bowes-Lyon ;
+    :isParentOf data:Anne_Bowes-Lyon ;
+    :isSiblingOf data:John_Herbert_Bowes-Lyon ;
+    :isSonOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Anne_Bowes-Lyon .
+
+data:Diana_Cinderella_Somervell a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isAuntOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSiblingOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isAuntOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSiblingOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+
+data:Nerissa_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isAuntOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSiblingOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+
+data:Patricia_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isAuntOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSiblingOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+
+data:Elizabeth_Shakerley a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :hasBrother data:Patrick_Anson ;
+    :hasFather data:Thomas_Anson ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasParent data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isChildOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :isDaughterOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :isSiblingOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isSisterOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson .
+
+data:Patrick_Anson a :Man,
+        :Person ;
+    :hasAncestor data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :hasBrother data:Patrick_Anson ;
+    :hasFather data:Thomas_Anson ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasParent data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBrotherOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isChildOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson ;
+    :isSiblingOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isSonOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson .
+
+data:Anne_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :hasDaughter data:Elizabeth_Shakerley ;
+    :hasDeathYear 1980 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMarriageYear 1938,
+        1950 ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Anne_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Claude_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Elizabeth_Shakerley,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon,
+        data:Patrick_Anson,
+        data:Thomas_Anson ;
+    :hasSister data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :hasSon data:Patrick_Anson ;
+    :isAncestorOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isAuntOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isBloodrelationOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isMotherOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isParentOf data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :isSiblingOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon ;
+    :isSisterOf data:Anne_Bowes-Lyon,
+        data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+

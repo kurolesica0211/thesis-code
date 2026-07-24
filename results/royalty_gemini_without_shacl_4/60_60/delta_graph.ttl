@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasChild data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Wilhelmina ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasChild data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet .
+
+data:Carlos_Hugo_of_Bourbon a :Man,
+        :Person .
+
+data:Claus_von_Amsberg a :Man,
+        :Person .
+
+data:Emma a :Person,
+        :Woman .
+
+data:Henry_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasFather data:William_III ;
+    :hasMother data:Emma .
+
+data:William_III a :Man,
+        :Person .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Claus_von_Amsberg .
+
+data:Christina a :Person,
+        :Woman .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasRelation data:Carlos_Hugo_of_Bourbon .
+
+data:Margriet a :Person,
+        :Woman .
+

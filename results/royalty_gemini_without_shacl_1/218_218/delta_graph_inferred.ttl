@@ -1,0 +1,173 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwik_Piotr a :Man,
+        :Person ;
+    :hasBirthYear 1945 ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isUncleOf data:Tamara_Czartoryska .
+
+data:Adam_Jerzy_Czartoryski a :Man,
+        :Person ;
+    :hasAncestor data:Izabela_Czartoryska ;
+    :hasBrother data:Adam_Jerzy_Czartoryski ;
+    :hasMother data:Izabela_Czartoryska ;
+    :hasParent data:Izabela_Czartoryska ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Adam_Jerzy_Czartoryski ;
+    :isBrotherOf data:Adam_Jerzy_Czartoryski ;
+    :isChildOf data:Izabela_Czartoryska ;
+    :isSiblingOf data:Adam_Jerzy_Czartoryski ;
+    :isSonOf data:Izabela_Czartoryska .
+
+data:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isBrotherOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isFatherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :isUncleOf data:Adam_Karol_Czartoryski .
+
+data:Mar%C3%ADa_de_los_Dolores a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasDeathYear 1996 ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :hasSister data:Mar%C3%ADa_de_los_Dolores ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Tamara_Czartoryska ;
+    :isAuntOf data:Adam_Karol_Czartoryski ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_los_Dolores ;
+    :isMotherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Mar%C3%ADa_de_los_Dolores ;
+    :isSisterOf data:Mar%C3%ADa_de_los_Dolores .
+
+data:Izabela_Czartoryska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Adam_Jerzy_Czartoryski ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :hasSister data:Izabela_Czartoryska ;
+    :hasSon data:Adam_Jerzy_Czartoryski ;
+    :isAncestorOf data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Tamara_Czartoryska ;
+    :isAuntOf data:Adam_Jerzy_Czartoryski ;
+    :isBloodrelationOf data:Izabela_Czartoryska ;
+    :isMotherOf data:Adam_Jerzy_Czartoryski ;
+    :isParentOf data:Adam_Jerzy_Czartoryski ;
+    :isSiblingOf data:Izabela_Czartoryska ;
+    :isSisterOf data:Izabela_Czartoryska .
+
+data:Tamara_Czartoryska a :Person,
+        :Woman ;
+    :hasAncestor data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Mar%C3%ADa_de_los_Dolores ;
+    :hasFather data:Adam_Karol_Czartoryski ;
+    :hasParent data:Adam_Karol_Czartoryski ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :hasSister data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Tamara_Czartoryska ;
+    :isChildOf data:Adam_Karol_Czartoryski ;
+    :isDaughterOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Tamara_Czartoryska ;
+    :isSisterOf data:Tamara_Czartoryska .
+
+data:Adam_Karol_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Mar%C3%ADa_de_los_Dolores ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :hasChild data:Tamara_Czartoryska ;
+    :hasDaughter data:Tamara_Czartoryska ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Mar%C3%ADa_de_los_Dolores ;
+    :hasParent data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Mar%C3%ADa_de_los_Dolores ;
+    :hasRelation data:Adam_Jerzy_Czartoryski,
+        data:Adam_Karol_Czartoryski,
+        data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Izabela_Czartoryska,
+        data:Ludwik_Piotr,
+        data:Mar%C3%ADa_de_los_Dolores,
+        data:Tamara_Czartoryska ;
+    :isAncestorOf data:Tamara_Czartoryska ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isBrotherOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isChildOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Mar%C3%ADa_de_los_Dolores ;
+    :isFatherOf data:Tamara_Czartoryska ;
+    :isParentOf data:Tamara_Czartoryska ;
+    :isSiblingOf data:Adam_Karol_Czartoryski,
+        data:Ludwik_Piotr ;
+    :isSonOf data:Augustyn_J%C3%B3zef_Czartoryski,
+        data:Mar%C3%ADa_de_los_Dolores ;
+    :isUncleOf data:Tamara_Czartoryska .
+

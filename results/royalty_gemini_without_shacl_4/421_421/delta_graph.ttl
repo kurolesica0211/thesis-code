@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FriedrichWilhelmOfLippe a :Man,
+        :Person ;
+    :hasBirthYear 1947 ;
+    :hasFather data:ErnstAugustOfLippe ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:ChristaVonArnim ;
+    :hasRelation data:AndreaMessner .
+
+data:HereditaryPrinceErnst a :Man,
+        :Person .
+
+data:LeopoldIV a :Man,
+        :Person .
+
+data:PrinceLeopold a :Man,
+        :Person .
+
+data:PrinceSimonCasimir a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1980 .
+
+data:StephanPrinceOfLippe a :Man,
+        :Person ;
+    :hasFather data:PrinceArmin .
+
+data:AndreaMessner a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:GuntherMessner ;
+    :hasMother data:LieselotteTrzoska .
+
+data:ChristaVonArnim a :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasFather data:CurtDavidVonArnim ;
+    :hasMother data:StephanieVonStechow .
+
+data:CurtDavidVonArnim a :Man,
+        :Person .
+
+data:ErnstAugustOfLippe a :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:JuliusErnstOfLippe ;
+    :hasMother data:MarieOfMecklenburgStrelitz .
+
+data:GuntherMessner a :Man,
+        :Person .
+
+data:JuliusErnstOfLippe a :Man,
+        :Person .
+
+data:LieselotteTrzoska a :Person,
+        :Woman .
+
+data:MarieOfMecklenburgStrelitz a :Person,
+        :Woman .
+
+data:PrinceArmin a :Man,
+        :Person .
+
+data:StephanieVonStechow a :Person,
+        :Woman .
+

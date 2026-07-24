@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear 1928 ;\n    :hasRelation data:Elizabeth_Margaret_Cator ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear 1928 ;\n    :hasRelation data:Elizabeth_Margaret_Cator ;\n    :isSiblingOf data:Elizabeth_Bowes-Lyon ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    }
+]

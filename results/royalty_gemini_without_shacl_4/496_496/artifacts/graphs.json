@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :hasBirthYear \"1926\"^^xsd:positiveInteger ;\n    :hasChild data:Andrew,\n        data:Anne,\n        data:Charles_III,\n        data:Edward ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear \"1947\"^^xsd:positiveInteger ;\n    :hasMother data:Elizabeth_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :hasSister data:Margaret .\n\ndata:Andrew a :Man .\n\ndata:Anne a :Woman .\n\ndata:Charles_III a :Man .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Edward a :Man .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_Queen_Mother a :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:George_V a :Man .\n\ndata:George_VI a :Man ;\n    :hasBrother data:Edward_VIII ;\n    :hasFather data:George_V ;\n    :hasMother data:Mary .\n\ndata:Margaret a :Woman .\n\ndata:Mary a :Woman .\n\ndata:Philip_Mountbatten a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :hasBirthYear \"1926\"^^xsd:positiveInteger ;\n    :hasChild data:Andrew,\n        data:Anne,\n        data:Charles_III,\n        data:Edward ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear \"1947\"^^xsd:positiveInteger ;\n    :hasMother data:Elizabeth_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :hasSister data:Margaret .\n\ndata:Andrew a :Man .\n\ndata:Anne a :Woman .\n\ndata:Charles_III a :Man .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Edward a :Man .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_Queen_Mother a :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:George_V a :Man .\n\ndata:George_VI a :Man ;\n    :hasBrother data:Edward_VIII ;\n    :hasFather data:George_V ;\n    :hasMother data:Mary .\n\ndata:Margaret a :Woman .\n\ndata:Mary a :Woman .\n\ndata:Philip_Mountbatten a :Man .\n\n"
+    }
+]

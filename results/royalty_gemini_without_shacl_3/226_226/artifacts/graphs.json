@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin ;\n    :knownAs data:The_Honourable_Gerald_Lascelles .\n\ndata:King_George_V a :Man ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 ;\n    :knownAs data:Elizabeth_Evelyn_Collingwood .\n\ndata:Henry_Lascelles_6th_Earl_of_Harewood a :Man .\n\ndata:Mary_Princess_Royal a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin ;\n    :knownAs data:The_Honourable_Gerald_Lascelles .\n\ndata:King_George_V a :Man ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 ;\n    :knownAs data:Elizabeth_Evelyn_Collingwood .\n\ndata:Elizabeth_Evelyn_Collingwood a :DomainEntity .\n\ndata:Henry_Lascelles_6th_Earl_of_Harewood a :Man .\n\ndata:The_Honourable_Gerald_Lascelles a :DomainEntity .\n\ndata:Mary_Princess_Royal a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin ;\n    :knownAs data:The_Honourable_Gerald_Lascelles .\n\ndata:King_George_V a :Man ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Queen_Mary a :Woman ;\n    :hasDaughter data:Mary_Princess_Royal .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 ;\n    :knownAs data:Elizabeth_Evelyn_Collingwood .\n\ndata:Elizabeth_Evelyn_Collingwood a :DomainEntity .\n\ndata:Henry_Lascelles_6th_Earl_of_Harewood a :Man .\n\ndata:The_Honourable_Gerald_Lascelles a :DomainEntity .\n\ndata:Mary_Princess_Royal a :Woman .\n\n"
+    }
+]

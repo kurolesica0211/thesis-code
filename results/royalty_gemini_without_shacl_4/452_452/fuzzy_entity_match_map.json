@@ -1,0 +1,90 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/452_452",
+  "text_file": "Q75392606.txt",
+  "text_key": "Q75392606",
+  "article": "https://en.wikipedia.org/wiki/In%C3%A9s_de_Borb%C3%B3n-Dos_Sicilias",
+  "article_key": "Inés de Borbón-Dos Sicilias",
+  "main_entity": {
+    "uri": "http://example.com/data#Inés_de_Borbón-Dos_Sicilias",
+    "qid": "Q75392606",
+    "label": "Inés de Borbón-Dos Sicilias"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Inés_de_Borbón-Dos_Sicilias",
+      "qid": "Q75392606",
+      "label": "Inés de Borbón-Dos Sicilias",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Alicia-_Duchess_of_Calabria",
+      "qid": "Q33218",
+      "label": "Infanta Alicia, Duchess of Calabria",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alicia_of_Bourbon-Parma",
+      "extracted_local_name": "Alicia_of_Bourbon-Parma",
+      "embedding_text": "Alicia of Bourbon-Parma",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7857142857142857,
+      "ground_truth_uri": "http://example.com/data#Infanta_Alicia-_Duchess_of_Calabria",
+      "ground_truth_qid": "Q33218",
+      "ground_truth_label": "Infanta Alicia, Duchess of Calabria",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Alicia of Bourbon-Parma",
+      "best_candidate_label": "Infanta Alicia, Duchess of Calabria",
+      "best_candidate_qid": "Q33218",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/In%C3%A9s_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "In%C3%A9s_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Inés of Bourbon-Two Sicilies",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7636363636363637,
+      "ground_truth_uri": "http://example.com/data#Inés_de_Borbón-Dos_Sicilias",
+      "ground_truth_qid": "Q75392606",
+      "ground_truth_label": "Inés de Borbón-Dos Sicilias",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Inés de Borbón-Dos Sicilias",
+      "best_candidate_label": "Inés de Borbón-Dos Sicilias",
+      "best_candidate_qid": "Q75392606",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7636363636363637
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n",
+      "extracted_local_name": "Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n",
+      "embedding_text": "Alfonso de Borbón-Dos Sicilias y de Borbón",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Alicia of Bourbon-Parma",
+      "best_candidate_label": "Infanta Alicia, Duchess of Calabria",
+      "best_candidate_qid": "Q33218",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32432432432432434
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

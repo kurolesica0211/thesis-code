@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :isSonOf data:Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:Infanta_Cristina a :Woman ;\n    :isDaughterOf data:Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:King_Paul_of_Greece a :Man ;\n    :isFatherOf data:Queen_Sofia .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Margarita a :Woman .\n\ndata:Infanta_Pilar a :Woman .\n\ndata:Infante_Juan a :Man ;\n    :hasFather data:Alfonso_XIII .\n\ndata:Prince_Alfonso a :Man ;\n    :hasBirthYear \"1941\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1956\"^^xsd:positiveInteger .\n\ndata:Princess_Maria_de_las_Mercedes a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasBirthYear \"1938\"^^xsd:positiveInteger ;\n    :hasFather data:Infante_Juan ;\n    :hasMarriageYear \"1962\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Maria_de_las_Mercedes ;\n    :hasRelation data:Queen_Sofia ;\n    :isSiblingOf data:Infanta_Margarita,\n        data:Infanta_Pilar,\n        data:Prince_Alfonso .\n\ndata:Queen_Sofia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man ;\n    :isSonOf data:Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:Infanta_Cristina a :Woman ;\n    :isDaughterOf data:Juan_Carlos_I,\n        data:Queen_Sofia .\n\ndata:King_Paul_of_Greece a :Man ;\n    :isFatherOf data:Queen_Sofia .\n\ndata:Alfonso_XIII a :Man .\n\ndata:Infanta_Margarita a :Woman .\n\ndata:Infanta_Pilar a :Woman .\n\ndata:Infante_Juan a :Man ;\n    :hasFather data:Alfonso_XIII .\n\ndata:Prince_Alfonso a :Man ;\n    :hasBirthYear \"1941\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1956\"^^xsd:positiveInteger .\n\ndata:Princess_Maria_de_las_Mercedes a :Woman .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasBirthYear \"1938\"^^xsd:positiveInteger ;\n    :hasFather data:Infante_Juan ;\n    :hasMarriageYear \"1962\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Maria_de_las_Mercedes ;\n    :hasRelation data:Queen_Sofia ;\n    :isSiblingOf data:Infanta_Margarita,\n        data:Infanta_Pilar,\n        data:Prince_Alfonso .\n\ndata:Queen_Sofia a :Woman .\n\n"
+    }
+]

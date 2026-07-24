@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;\n    :isSonOf data:Grand_Duke_Andrei_Vladimirovich,\n        data:Mathilde_Kschessinska .\n\ndata:Grand_Duchess_Elena_Vladimirovna a :Woman .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Andrei_Vladimirovich a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna ;\n    :hasRelation data:Mathilde_Kschessinska ;\n    :isBrotherOf data:Grand_Duke_Boris_Vladimirovich,\n        data:Grand_Duke_Kirill_Vladimirovich ;\n    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna .\n\ndata:Grand_Duke_Boris_Vladimirovich a :Man .\n\ndata:Grand_Duke_Kirill_Vladimirovich a :Man .\n\ndata:Grand_Duke_Vladimir_Alexandrovich a :Man .\n\ndata:Mathilde_Kschessinska a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;\n    :isSonOf data:Grand_Duke_Andrei_Vladimirovich,\n        data:Mathilde_Kschessinska .\n\ndata:Grand_Duchess_Elena_Vladimirovna a :Woman .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Andrei_Vladimirovich a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna ;\n    :hasRelation data:Mathilde_Kschessinska ;\n    :isBrotherOf data:Grand_Duke_Boris_Vladimirovich,\n        data:Grand_Duke_Kirill_Vladimirovich ;\n    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna .\n\ndata:Grand_Duke_Boris_Vladimirovich a :Man .\n\ndata:Grand_Duke_Kirill_Vladimirovich a :Man .\n\ndata:Grand_Duke_Vladimir_Alexandrovich a :Man .\n\ndata:Mathilde_Kschessinska a :Woman .\n\n"
+    }
+]

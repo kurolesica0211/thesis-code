@@ -1,0 +1,405 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nonnie_May_Stewart_Worthington_Leeds a :Woman ;
+    :hasDeathYear 1923 ;
+    :hasRelation data:Nonnie_May_Stewart_Worthington_Leeds ;
+    :hasSister data:Nonnie_May_Stewart_Worthington_Leeds ;
+    :isBloodrelationOf data:Nonnie_May_Stewart_Worthington_Leeds ;
+    :isSiblingOf data:Nonnie_May_Stewart_Worthington_Leeds ;
+    :isSisterOf data:Nonnie_May_Stewart_Worthington_Leeds .
+
+data:William_Bateman_Leeds_Jr a :Man ;
+    :hasBrother data:William_Bateman_Leeds_Jr ;
+    :hasRelation data:William_Bateman_Leeds_Jr ;
+    :isBloodrelationOf data:William_Bateman_Leeds_Jr ;
+    :isBrotherOf data:William_Bateman_Leeds_Jr ;
+    :isSiblingOf data:William_Bateman_Leeds_Jr .
+
+data:Princess_Francoise_of_Orleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Princess_Francoise_of_Orleans ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Francoise_of_Orleans ;
+    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Francoise_of_Orleans ;
+    :isSisterOf data:Princess_Francoise_of_Orleans .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasChild data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Olga_of_Greece ;
+    :isMotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Olga_of_Greece ;
+    :isSisterOf data:Queen_Olga_of_Greece .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Woman ;
+    :hasAncestor data:Marie_of_Greece ;
+    :hasMother data:Marie_of_Greece ;
+    :hasParent data:Marie_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isChildOf data:Marie_of_Greece ;
+    :isDaughterOf data:Marie_of_Greece ;
+    :isSiblingOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:King_George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_of_Orleans,
+        data:Queen_Olga_of_Greece ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Francoise_of_Orleans ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_of_Orleans ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_of_Orleans ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Francoise_of_Orleans .
+
+data:Constantine_I_of_Greece a :Man ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Prince_Andrew_of_Greece a :Man ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Prince_George_of_Greece a :Man ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Prince_Nicholas_of_Greece a :Man ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Marie_of_Greece a :Ancestor,
+        :Woman ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasChild data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasDaughter data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :isAncestorOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isAuntOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isMotherOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isParentOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSisterOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear 1920 ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasParent data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Princess_Francoise_of_Orleans,
+        data:Princess_Xenia_Georgievna_of_Russia,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isChildOf data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Marie_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :isSonOf data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :knownAs "Christo"^^xsd:string .
+

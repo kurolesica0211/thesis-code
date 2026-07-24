@@ -1,0 +1,359 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis a :Man,
+        :Person ;
+    :hasBrother data:GeorgDonatus,
+        data:Louis ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :isBloodrelationOf data:GeorgDonatus,
+        data:Louis ;
+    :isBrotherOf data:GeorgDonatus,
+        data:Louis ;
+    :isSiblingOf data:GeorgDonatus,
+        data:Louis ;
+    :isUncleOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie ;
+    :hasDaughter data:Cecilie ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:AliceOfBattenberg ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:Cecilie,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isAuntOf data:Cecilie ;
+    :isBloodrelationOf data:AliceOfBattenberg ;
+    :isMotherOf data:Cecilie ;
+    :isParentOf data:Cecilie ;
+    :isSiblingOf data:AliceOfBattenberg ;
+    :isSisterOf data:AliceOfBattenberg .
+
+data:AndrewOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AndrewOfGreeceAndDenmark ;
+    :hasChild data:Cecilie ;
+    :hasDaughter data:Cecilie ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:Cecilie,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBloodrelationOf data:AndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:AndrewOfGreeceAndDenmark ;
+    :isFatherOf data:Cecilie ;
+    :isParentOf data:Cecilie ;
+    :isSiblingOf data:AndrewOfGreeceAndDenmark ;
+    :isUncleOf data:Cecilie .
+
+data:Eleonore a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgDonatus ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:Eleonore ;
+    :hasSon data:GeorgDonatus ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isAuntOf data:GeorgDonatus ;
+    :isBloodrelationOf data:Eleonore ;
+    :isMotherOf data:GeorgDonatus ;
+    :isParentOf data:GeorgDonatus ;
+    :isSiblingOf data:Eleonore ;
+    :isSisterOf data:Eleonore .
+
+data:ErnestLouis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestLouis ;
+    :hasChild data:GeorgDonatus ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSon data:GeorgDonatus ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBloodrelationOf data:ErnestLouis ;
+    :isBrotherOf data:ErnestLouis ;
+    :isFatherOf data:GeorgDonatus ;
+    :isParentOf data:GeorgDonatus ;
+    :isSiblingOf data:ErnestLouis ;
+    :isUncleOf data:GeorgDonatus .
+
+data:AlexanderGeorgKarlHeinrich a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:AlexanderGeorgKarlHeinrich,
+        data:LudwigErnstAndreas ;
+    :hasDeathYear 1937 ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie ;
+    :hasParent data:Cecilie,
+        data:GeorgDonatus ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:JohannaMarinaEleonore ;
+    :isBloodrelationOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBrotherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isChildOf data:Cecilie,
+        data:GeorgDonatus ;
+    :isSiblingOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isSonOf data:Cecilie,
+        data:GeorgDonatus .
+
+data:JohannaMarinaEleonore a :Person,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:AlexanderGeorgKarlHeinrich,
+        data:LudwigErnstAndreas ;
+    :hasDeathYear 1939 ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie ;
+    :hasParent data:Cecilie,
+        data:GeorgDonatus ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:JohannaMarinaEleonore ;
+    :isBloodrelationOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isChildOf data:Cecilie,
+        data:GeorgDonatus ;
+    :isDaughterOf data:Cecilie,
+        data:GeorgDonatus ;
+    :isSiblingOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isSisterOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas .
+
+data:LudwigErnstAndreas a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus ;
+    :hasBirthYear 1931 ;
+    :hasBrother data:AlexanderGeorgKarlHeinrich,
+        data:LudwigErnstAndreas ;
+    :hasDeathYear 1937 ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie ;
+    :hasParent data:Cecilie,
+        data:GeorgDonatus ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:JohannaMarinaEleonore ;
+    :isBloodrelationOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBrotherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isChildOf data:Cecilie,
+        data:GeorgDonatus ;
+    :isSiblingOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isSonOf data:Cecilie,
+        data:GeorgDonatus .
+
+data:Cecilie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasChild data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :hasDaughter data:JohannaMarinaEleonore ;
+    :hasFather data:AndrewOfGreeceAndDenmark ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasParent data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSister data:Cecilie ;
+    :hasSon data:AlexanderGeorgKarlHeinrich,
+        data:LudwigErnstAndreas ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isAuntOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBloodrelationOf data:Cecilie ;
+    :isChildOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isDaughterOf data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark ;
+    :isMotherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isParentOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isSiblingOf data:Cecilie ;
+    :isSisterOf data:Cecilie .
+
+data:GeorgDonatus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Eleonore,
+        data:ErnestLouis ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:GeorgDonatus,
+        data:Louis ;
+    :hasChild data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :hasDaughter data:JohannaMarinaEleonore ;
+    :hasDeathYear 1937 ;
+    :hasFather data:ErnestLouis ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Eleonore ;
+    :hasParent data:Eleonore,
+        data:ErnestLouis ;
+    :hasRelation data:AlexanderGeorgKarlHeinrich,
+        data:AliceOfBattenberg,
+        data:AndrewOfGreeceAndDenmark,
+        data:Cecilie,
+        data:Eleonore,
+        data:ErnestLouis,
+        data:GeorgDonatus,
+        data:JohannaMarinaEleonore,
+        data:Louis,
+        data:LudwigErnstAndreas ;
+    :hasSon data:AlexanderGeorgKarlHeinrich,
+        data:LudwigErnstAndreas ;
+    :isAncestorOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isBloodrelationOf data:GeorgDonatus,
+        data:Louis ;
+    :isBrotherOf data:GeorgDonatus,
+        data:Louis ;
+    :isChildOf data:Eleonore,
+        data:ErnestLouis ;
+    :isFatherOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isParentOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas ;
+    :isSiblingOf data:GeorgDonatus,
+        data:Louis ;
+    :isSonOf data:Eleonore,
+        data:ErnestLouis ;
+    :isUncleOf data:AlexanderGeorgKarlHeinrich,
+        data:JohannaMarinaEleonore,
+        data:LudwigErnstAndreas .
+

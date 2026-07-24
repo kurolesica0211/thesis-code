@@ -1,0 +1,195 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Wilhelmina ;
+    :isAncestorOf data:Juliana ;
+    :isAuntOf data:Juliana ;
+    :isBloodrelationOf data:Wilhelmina ;
+    :isMotherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Wilhelmina ;
+    :isSisterOf data:Wilhelmina .
+
+data:Willemina_Martina_Wenneker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pim_Lier ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Willemina_Martina_Wenneker ;
+    :hasSon data:Pim_Lier ;
+    :isAncestorOf data:Pim_Lier ;
+    :isAuntOf data:Pim_Lier ;
+    :isBloodrelationOf data:Willemina_Martina_Wenneker ;
+    :isMotherOf data:Pim_Lier ;
+    :isParentOf data:Pim_Lier ;
+    :isSiblingOf data:Willemina_Martina_Wenneker ;
+    :isSisterOf data:Willemina_Martina_Wenneker .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Henry_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSon data:Henry_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Pim_Lier ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Henry_of_Mecklenburg-Schwerin .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henry_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSon data:Henry_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Pim_Lier ;
+    :isAuntOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Wilhelmina ;
+    :hasBrother data:Pim_Lier ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Juliana ;
+    :isBloodrelationOf data:Juliana,
+        data:Pim_Lier ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isDaughterOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina ;
+    :isSiblingOf data:Juliana,
+        data:Pim_Lier ;
+    :isSisterOf data:Juliana,
+        data:Pim_Lier .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Willemina_Martina_Wenneker ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:Pim_Lier ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Willemina_Martina_Wenneker ;
+    :hasParent data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSister data:Juliana ;
+    :isBloodrelationOf data:Juliana,
+        data:Pim_Lier ;
+    :isBrotherOf data:Juliana,
+        data:Pim_Lier ;
+    :isChildOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker ;
+    :isSiblingOf data:Juliana,
+        data:Pim_Lier ;
+    :isSonOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Heinrich Wladimir Albrecht Ernst"^^xsd:string,
+        "Hendrik Vladimir Albrecht Ernst"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Henry_of_Mecklenburg-Schwerin ;
+    :hasChild data:Juliana,
+        data:Pim_Lier ;
+    :hasDaughter data:Juliana ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Henry_of_Mecklenburg-Schwerin,
+        data:Juliana,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Pim_Lier,
+        data:Wilhelmina,
+        data:Willemina_Martina_Wenneker ;
+    :hasSon data:Pim_Lier ;
+    :isAncestorOf data:Juliana,
+        data:Pim_Lier ;
+    :isBloodrelationOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isFatherOf data:Juliana,
+        data:Pim_Lier ;
+    :isParentOf data:Juliana,
+        data:Pim_Lier ;
+    :isSiblingOf data:Henry_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isUncleOf data:Juliana,
+        data:Pim_Lier .
+

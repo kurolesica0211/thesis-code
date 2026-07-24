@@ -1,0 +1,679 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeIOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasChild data:AndrewOfGreece ;
+    :hasRelation data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:Philip,
+        data:Sophie ;
+    :hasSon data:AndrewOfGreece ;
+    :isAncestorOf data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isFatherOf data:AndrewOfGreece ;
+    :isParentOf data:AndrewOfGreece ;
+    :isSiblingOf data:GeorgeIOfGreece ;
+    :isUncleOf data:AndrewOfGreece .
+
+data:LouisMountbatten1stMarquess a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LouisMountbatten1stMarquess ;
+    :hasChild data:AliceOfBattenberg ;
+    :hasDaughter data:AliceOfBattenberg ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:LouisMountbatten1stMarquess,
+        data:Philip,
+        data:Sophie ;
+    :isAncestorOf data:AliceOfBattenberg,
+        data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isBloodrelationOf data:LouisMountbatten1stMarquess ;
+    :isBrotherOf data:LouisMountbatten1stMarquess ;
+    :isFatherOf data:AliceOfBattenberg ;
+    :isParentOf data:AliceOfBattenberg ;
+    :isSiblingOf data:LouisMountbatten1stMarquess ;
+    :isUncleOf data:AliceOfBattenberg .
+
+data:OlgaOfGreece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AndrewOfGreece ;
+    :hasRelation data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie ;
+    :hasSister data:OlgaOfGreece ;
+    :hasSon data:AndrewOfGreece ;
+    :isAncestorOf data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isAuntOf data:AndrewOfGreece ;
+    :isBloodrelationOf data:OlgaOfGreece ;
+    :isMotherOf data:AndrewOfGreece ;
+    :isParentOf data:AndrewOfGreece ;
+    :isSiblingOf data:OlgaOfGreece ;
+    :isSisterOf data:OlgaOfGreece .
+
+data:VictoriaMountbattenMarchioness a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AliceOfBattenberg ;
+    :hasDaughter data:AliceOfBattenberg ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:Philip,
+        data:Sophie,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:VictoriaMountbattenMarchioness ;
+    :isAncestorOf data:AliceOfBattenberg,
+        data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isAuntOf data:AliceOfBattenberg ;
+    :isBloodrelationOf data:VictoriaMountbattenMarchioness ;
+    :isMotherOf data:AliceOfBattenberg ;
+    :isParentOf data:AliceOfBattenberg ;
+    :isSiblingOf data:VictoriaMountbattenMarchioness ;
+    :isSisterOf data:VictoriaMountbattenMarchioness .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Philip ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasBrother data:Philip ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Philip ;
+    :hasRelation data:Andrew,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:LouisMountbatten1stMarquess,
+        data:VictoriaMountbattenMarchioness ;
+    :hasChild data:Philip ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMother data:VictoriaMountbattenMarchioness ;
+    :hasParent data:LouisMountbatten1stMarquess,
+        data:VictoriaMountbattenMarchioness ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:LouisMountbatten1stMarquess,
+        data:Philip,
+        data:Sophie,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:AliceOfBattenberg ;
+    :hasSon data:Philip ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isAuntOf data:Philip ;
+    :isBloodrelationOf data:AliceOfBattenberg ;
+    :isChildOf data:LouisMountbatten1stMarquess,
+        data:VictoriaMountbattenMarchioness ;
+    :isDaughterOf data:LouisMountbatten1stMarquess,
+        data:VictoriaMountbattenMarchioness ;
+    :isMotherOf data:Philip ;
+    :isParentOf data:Philip ;
+    :isSiblingOf data:AliceOfBattenberg ;
+    :isSisterOf data:AliceOfBattenberg .
+
+data:AndrewOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaOfGreece ;
+    :hasBrother data:AndrewOfGreece ;
+    :hasChild data:Philip ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaOfGreece ;
+    :hasParent data:GeorgeIOfGreece,
+        data:OlgaOfGreece ;
+    :hasRelation data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie ;
+    :hasSon data:Philip ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward,
+        data:Philip ;
+    :isBloodrelationOf data:AndrewOfGreece ;
+    :isBrotherOf data:AndrewOfGreece ;
+    :isChildOf data:GeorgeIOfGreece,
+        data:OlgaOfGreece ;
+    :isFatherOf data:Philip ;
+    :isParentOf data:Philip ;
+    :isSiblingOf data:AndrewOfGreece ;
+    :isSonOf data:GeorgeIOfGreece,
+        data:OlgaOfGreece ;
+    :isUncleOf data:Philip .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Philip ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:ElizabethII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :hasDaughter data:Anne ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:ElizabethII ;
+    :hasSon data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isAuntOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:ElizabethII ;
+    :isMotherOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isParentOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSiblingOf data:ElizabethII ;
+    :isSisterOf data:ElizabethII .
+
+data:Andrew a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreece,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:VictoriaMountbattenMarchioness ;
+    :hasBrother data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :hasFather data:Philip ;
+    :hasMother data:ElizabethII ;
+    :hasParent data:ElizabethII,
+        data:Philip ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isChildOf data:ElizabethII,
+        data:Philip ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSonOf data:ElizabethII,
+        data:Philip .
+
+data:Anne a :Person,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreece,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:VictoriaMountbattenMarchioness ;
+    :hasBrother data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :hasFather data:Philip ;
+    :hasMother data:ElizabethII ;
+    :hasParent data:ElizabethII,
+        data:Philip ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isChildOf data:ElizabethII,
+        data:Philip ;
+    :isDaughterOf data:ElizabethII,
+        data:Philip ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSisterOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward .
+
+data:Charles a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreece,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:VictoriaMountbattenMarchioness ;
+    :hasBrother data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :hasFather data:Philip ;
+    :hasMother data:ElizabethII ;
+    :hasParent data:ElizabethII,
+        data:Philip ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isChildOf data:ElizabethII,
+        data:Philip ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSonOf data:ElizabethII,
+        data:Philip .
+
+data:Edward a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreece,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:VictoriaMountbattenMarchioness ;
+    :hasBrother data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :hasFather data:Philip ;
+    :hasMother data:ElizabethII ;
+    :hasParent data:ElizabethII,
+        data:Philip ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Anne ;
+    :isBloodrelationOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBrotherOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isChildOf data:ElizabethII,
+        data:Philip ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSonOf data:ElizabethII,
+        data:Philip .
+
+data:Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AndrewOfGreece,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:OlgaOfGreece,
+        data:VictoriaMountbattenMarchioness ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:Philip ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :hasDaughter data:Anne ;
+    :hasDeathYear 2021 ;
+    :hasFather data:AndrewOfGreece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasParent data:AliceOfBattenberg,
+        data:AndrewOfGreece ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Andrew,
+        data:AndrewOfGreece,
+        data:Anne,
+        data:Cecilie,
+        data:Charles,
+        data:Edward,
+        data:ElizabethII,
+        data:GeorgeIOfGreece,
+        data:LouisMountbatten1stMarquess,
+        data:Margarita,
+        data:OlgaOfGreece,
+        data:Philip,
+        data:Sophie,
+        data:Theodora,
+        data:VictoriaMountbattenMarchioness ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Andrew,
+        data:Charles,
+        data:Edward ;
+    :isAncestorOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:AliceOfBattenberg,
+        data:AndrewOfGreece ;
+    :isFatherOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isParentOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:AliceOfBattenberg,
+        data:AndrewOfGreece ;
+    :isUncleOf data:Andrew,
+        data:Anne,
+        data:Charles,
+        data:Edward .
+

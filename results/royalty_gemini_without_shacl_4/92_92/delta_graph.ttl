@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man ;
+    :hasBirthYear "1944"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_William_of_Gloucester ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMarriageYear "1972"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasRelation data:Birgitte_van_Deurs_Henriksen .
+
+data:Birgitte_van_Deurs_Henriksen a :Woman .
+
+data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man .
+
+data:King_George_V a :Man .
+
+data:Lady_Margaret_Bridgeman a :Woman .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Prince_William_of_Gloucester a :Man .
+
+data:Princess_Alice_Duchess_of_Gloucester a :Woman ;
+    :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
+    :hasMother data:Lady_Margaret_Bridgeman .
+
+data:Queen_Mary a :Woman .
+

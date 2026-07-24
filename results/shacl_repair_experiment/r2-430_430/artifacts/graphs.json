@@ -1,0 +1,65 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear 1939 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:Princess_Margaret_Rose_of_York,\n        data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "f0801fd0-ff64-4fa4-a1eb-1d8852c75a18",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Cecilia_Cavendish-Bentinck> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/14th_Earl_of_Strathmore_and_Kinghorne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/14th_Earl_of_Strathmore_and_Kinghorne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Cecilia_Cavendish-Bentinck> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/14th_Earl_of_Strathmore_and_Kinghorne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Constance_Leveson-Gower> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Cecilia_Cavendish-Bentinck> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:Princess_Margaret_Rose_of_York,\n        data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:Princess_Margaret_Rose_of_York,\n        data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 8,
+        "source": "validate_shacl",
+        "tool_call_id": "b43c8e04-acc3-4c6c-a245-92b178d94b6d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear 1890 ;\n    :hasDeathYear 1967 ;\n    :hasMarriageYear 1916 ;\n    :hasRelation data:Princess_Margaret_Rose_of_York,\n        data:William_Leveson-Gower ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,\n        data:Cecilia_Cavendish-Bentinck ;\n    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear 1953 .\n\n"
+    }
+]

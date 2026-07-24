@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_son_of_Carlos a :Man,\n        :Person ;\n    :isSonOf data:Don_Carlos .\n\ndata:Ferdinand a :Man,\n        :Person ;\n    :isBrotherOf data:Don_Carlos .\n\ndata:Francis_II a :Man,\n        :Person .\n\ndata:Louise_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Philippe_Count_of_Paris .\n\ndata:Ranieri a :Man,\n        :Person ;\n    :isBrotherOf data:Don_Carlos .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\ndata:Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :isSiblingOf data:Alfonso_XIII_of_Spain .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Don_Carlos a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Alfonso_of_the_Two_Sicilies ;\n    :hasMarriageYear 1901,\n        1907 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Mercedes_Princess_of_Asturias .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_son_of_Carlos a :Man,\n        :Person ;\n    :isSonOf data:Don_Carlos .\n\ndata:Ferdinand a :Man,\n        :Person ;\n    :isBrotherOf data:Don_Carlos .\n\ndata:Francis_II a :Man,\n        :Person .\n\ndata:Louise_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Philippe_Count_of_Paris .\n\ndata:Ranieri a :Man,\n        :Person ;\n    :isBrotherOf data:Don_Carlos .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\ndata:Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :isSiblingOf data:Alfonso_XIII_of_Spain .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Don_Carlos a :Man,\n        :Person ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Alfonso_of_the_Two_Sicilies ;\n    :hasMarriageYear 1901,\n        1907 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Mercedes_Princess_of_Asturias .\n\n"
+    }
+]

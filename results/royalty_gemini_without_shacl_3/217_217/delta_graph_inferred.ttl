@@ -1,0 +1,361 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceAlbertPrinceConsort a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbertPrinceConsort ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :isAncestorOf data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret ;
+    :isBloodrelationOf data:PrinceAlbertPrinceConsort ;
+    :isBrotherOf data:PrinceAlbertPrinceConsort ;
+    :isSiblingOf data:PrinceAlbertPrinceConsort .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:GeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:GeorgeVI ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSon data:GeorgeVI ;
+    :isAncestorOf data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isFatherOf data:GeorgeVI ;
+    :isParentOf data:GeorgeVI ;
+    :isSiblingOf data:GeorgeV ;
+    :isUncleOf data:GeorgeVI .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgeVI ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSister data:QueenMary ;
+    :hasSon data:GeorgeVI ;
+    :isAncestorOf data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret ;
+    :isAuntOf data:GeorgeVI ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:GeorgeVI ;
+    :isParentOf data:GeorgeVI ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:LadyElizabethBowesLyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ElizabethII,
+        data:Margaret ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSister data:LadyElizabethBowesLyon ;
+    :isAncestorOf data:ElizabethII,
+        data:Margaret ;
+    :isAuntOf data:ElizabethII,
+        data:Margaret ;
+    :isBloodrelationOf data:LadyElizabethBowesLyon ;
+    :isMotherOf data:ElizabethII,
+        data:Margaret ;
+    :isParentOf data:ElizabethII,
+        data:Margaret ;
+    :isSiblingOf data:LadyElizabethBowesLyon ;
+    :isSisterOf data:LadyElizabethBowesLyon .
+
+data:EdwardVIII a :Man,
+        :Person ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isUncleOf data:ElizabethII,
+        data:Margaret .
+
+data:PrinceGeorgeDukeOfKent a :Man,
+        :Person ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isUncleOf data:ElizabethII,
+        data:Margaret .
+
+data:PrinceHenryDukeOfGloucester a :Man,
+        :Person ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isUncleOf data:ElizabethII,
+        data:Margaret .
+
+data:ElizabethII a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:PrinceAlbertPrinceConsort,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasFather data:GeorgeVI ;
+    :hasMother data:LadyElizabethBowesLyon ;
+    :hasParent data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSister data:ElizabethII,
+        data:Margaret ;
+    :isBloodrelationOf data:ElizabethII,
+        data:Margaret ;
+    :isChildOf data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :isDaughterOf data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :isSiblingOf data:ElizabethII,
+        data:Margaret ;
+    :isSisterOf data:ElizabethII,
+        data:Margaret .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:PrinceAlbertPrinceConsort,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasFather data:GeorgeVI ;
+    :hasMother data:LadyElizabethBowesLyon ;
+    :hasParent data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasSister data:ElizabethII,
+        data:Margaret ;
+    :isBloodrelationOf data:ElizabethII,
+        data:Margaret ;
+    :isChildOf data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :isDaughterOf data:GeorgeVI,
+        data:LadyElizabethBowesLyon ;
+    :isSiblingOf data:ElizabethII,
+        data:Margaret ;
+    :isSisterOf data:ElizabethII,
+        data:Margaret .
+
+data:GeorgeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Bertie"^^xsd:string ;
+    :hasAncestor data:GeorgeV,
+        data:PrinceAlbertPrinceConsort,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :hasChild data:ElizabethII,
+        data:Margaret ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:LadyElizabethBowesLyon,
+        data:Margaret,
+        data:PrinceAlbertPrinceConsort,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester,
+        data:QueenMary,
+        data:QueenVictoria ;
+    :isAncestorOf data:ElizabethII,
+        data:Margaret ;
+    :isBloodrelationOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:ElizabethII,
+        data:Margaret ;
+    :isParentOf data:ElizabethII,
+        data:Margaret ;
+    :isSiblingOf data:EdwardVIII,
+        data:GeorgeVI,
+        data:PrinceGeorgeDukeOfKent,
+        data:PrinceHenryDukeOfGloucester ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:ElizabethII,
+        data:Margaret ;
+    :knownAs "Albert Frederick Arthur George"^^xsd:string .
+

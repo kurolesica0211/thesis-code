@@ -1,0 +1,285 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AliceMontaguDouglasScott a :Person,
+        :Woman ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :hasSister data:AliceMontaguDouglasScott ;
+    :isBloodrelationOf data:AliceMontaguDouglasScott ;
+    :isSiblingOf data:AliceMontaguDouglasScott ;
+    :isSisterOf data:AliceMontaguDouglasScott .
+
+data:GeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:Henry ;
+    :hasRelation data:GeorgeV,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :hasSon data:Henry ;
+    :isAncestorOf data:Henry,
+        data:Richard,
+        data:William ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isFatherOf data:Henry ;
+    :isParentOf data:Henry ;
+    :isSiblingOf data:GeorgeV ;
+    :isUncleOf data:Henry .
+
+data:Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henry ;
+    :hasRelation data:Henry,
+        data:Mary,
+        data:Richard,
+        data:William ;
+    :hasSister data:Mary ;
+    :hasSon data:Henry ;
+    :isAncestorOf data:Henry,
+        data:Richard,
+        data:William ;
+    :isAuntOf data:Henry ;
+    :isBloodrelationOf data:Mary ;
+    :isMotherOf data:Henry ;
+    :isParentOf data:Henry ;
+    :isSiblingOf data:Mary ;
+    :isSisterOf data:Mary .
+
+data:ElizabethII a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeVI ;
+    :hasFather data:GeorgeVI ;
+    :hasParent data:GeorgeVI ;
+    :hasRelation data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :hasSister data:ElizabethII ;
+    :isBloodrelationOf data:ElizabethII ;
+    :isChildOf data:GeorgeVI ;
+    :isDaughterOf data:GeorgeVI ;
+    :isSiblingOf data:ElizabethII ;
+    :isSisterOf data:ElizabethII .
+
+data:DukeOfKent a :Man,
+        :Person ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :isBloodrelationOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isBrotherOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isSiblingOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isUncleOf data:ElizabethII,
+        data:Richard,
+        data:William .
+
+data:EdwardVIII a :Man,
+        :Person ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :isBloodrelationOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isBrotherOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isSiblingOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isUncleOf data:ElizabethII,
+        data:Richard,
+        data:William .
+
+data:GeorgeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :hasChild data:ElizabethII ;
+    :hasDaughter data:ElizabethII ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Henry,
+        data:Richard,
+        data:William ;
+    :isAncestorOf data:ElizabethII ;
+    :isBloodrelationOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isBrotherOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isFatherOf data:ElizabethII ;
+    :isParentOf data:ElizabethII ;
+    :isSiblingOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isUncleOf data:ElizabethII,
+        data:Richard,
+        data:William .
+
+data:Richard a :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:Henry,
+        data:Mary ;
+    :hasBrother data:Richard,
+        data:William ;
+    :hasFather data:Henry ;
+    :hasParent data:Henry ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Henry,
+        data:Mary,
+        data:Richard,
+        data:William ;
+    :isBloodrelationOf data:Richard,
+        data:William ;
+    :isBrotherOf data:Richard,
+        data:William ;
+    :isChildOf data:Henry ;
+    :isSiblingOf data:Richard,
+        data:William ;
+    :isSonOf data:Henry .
+
+data:William a :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:Henry,
+        data:Mary ;
+    :hasBrother data:Richard,
+        data:William ;
+    :hasFather data:Henry ;
+    :hasParent data:Henry ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Henry,
+        data:Mary,
+        data:Richard,
+        data:William ;
+    :isBloodrelationOf data:Richard,
+        data:William ;
+    :isBrotherOf data:Richard,
+        data:William ;
+    :isChildOf data:Henry ;
+    :isSiblingOf data:Richard,
+        data:William ;
+    :isSonOf data:Henry .
+
+data:Henry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:Mary ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :hasChild data:Richard,
+        data:William ;
+    :hasDeathYear 1974 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Mary ;
+    :hasParent data:GeorgeV,
+        data:Mary ;
+    :hasRelation data:AliceMontaguDouglasScott,
+        data:DukeOfKent,
+        data:EdwardVIII,
+        data:ElizabethII,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Henry,
+        data:Mary,
+        data:Richard,
+        data:William ;
+    :hasSon data:Richard,
+        data:William ;
+    :isAncestorOf data:Richard,
+        data:William ;
+    :isBloodrelationOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isBrotherOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isChildOf data:GeorgeV,
+        data:Mary ;
+    :isFatherOf data:Richard,
+        data:William ;
+    :isParentOf data:Richard,
+        data:William ;
+    :isSiblingOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI,
+        data:Henry ;
+    :isSonOf data:GeorgeV,
+        data:Mary ;
+    :isUncleOf data:ElizabethII,
+        data:Richard,
+        data:William .
+

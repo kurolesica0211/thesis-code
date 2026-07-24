@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sophie a :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Prince_Philip%2C_Duke_of_Edinburgh ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear 1930,\n        1946 ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Prince_Christoph_of_Hesse,\n        data:Prince_George_William_of_Hanover ;\n    :hasSister data:Cecilie,\n        data:Margarita,\n        data:Theodora .\n\ndata:Cecilie a :Woman .\n\ndata:Margarita a :Woman .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Christoph_of_Hesse a :Man .\n\ndata:Prince_George_William_of_Hanover a :Man .\n\ndata:Prince_Philip%2C_Duke_of_Edinburgh a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Theodora a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sophie a :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Prince_Philip%2C_Duke_of_Edinburgh ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;\n    :hasMarriageYear 1930,\n        1946 ;\n    :hasMother data:Princess_Alice_of_Battenberg ;\n    :hasRelation data:Prince_Christoph_of_Hesse,\n        data:Prince_George_William_of_Hanover ;\n    :hasSister data:Cecilie,\n        data:Margarita,\n        data:Theodora .\n\ndata:Cecilie a :Woman .\n\ndata:Margarita a :Woman .\n\ndata:Prince_Andrew_of_Greece_and_Denmark a :Man .\n\ndata:Prince_Christoph_of_Hesse a :Man .\n\ndata:Prince_George_William_of_Hanover a :Man .\n\ndata:Prince_Philip%2C_Duke_of_Edinburgh a :Man .\n\ndata:Princess_Alice_of_Battenberg a :Woman .\n\ndata:Theodora a :Woman .\n\n"
+    }
+]

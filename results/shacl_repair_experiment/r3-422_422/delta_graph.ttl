@@ -1,0 +1,14 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Duchess_Eilika_of_the_Grand_Duchy_of_Oldenburg a :Ancestor .
+
+data:Emich%2C_7th_Prince_of_Leiningen a :Ancestor .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Ancestor .
+
+data:Prince_Karl_Emich_of_Leiningen a :Ancestor ;
+    :isFatherOf data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_C%C3%A9cilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen .
+

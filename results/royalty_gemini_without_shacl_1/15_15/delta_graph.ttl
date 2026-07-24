@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Willem-Alexander a :Man,
+        :Person ;
+    :hasChild data:Princess_Ariane ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Queen_Maxima a :Person,
+        :Woman ;
+    :hasChild data:Princess_Ariane ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Princess_Ariane a :Person,
+        :Woman ;
+    :hasBirthYear 2007 ;
+    :hasFather data:King_Willem-Alexander ;
+    :hasMother data:Queen_Maxima ;
+    :hasSex data:Female ;
+    :knownAs "Ariane Wilhelmina Máxima Inés"^^xsd:string .
+

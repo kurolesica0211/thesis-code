@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man ;\n    :isBrotherOf data:Timothy_Patrick_Bowes-Lyon .\n\ndata:Princess_Margaret :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Queen_Elizabeth_II :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Lady_Dorothy_Osborne a :Woman ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1946 .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne .\n\ndata:King_George_VI a :Man .\n\ndata:Patrick_Lord_Glamis a :Man .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man ;\n    :isBrotherOf data:Timothy_Patrick_Bowes-Lyon .\n\ndata:Princess_Margaret a :Person ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Queen_Elizabeth_II a :Person ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Lady_Dorothy_Osborne a :Woman ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1946 .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne .\n\ndata:King_George_VI a :Man .\n\ndata:Patrick_Lord_Glamis a :Man .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man ;\n    :isBrotherOf data:Timothy_Patrick_Bowes-Lyon .\n\ndata:Princess_Margaret a :Person ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Queen_Elizabeth_II a :Person ;\n    :hasFather data:King_George_VI ;\n    :hasMother data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Lady_Dorothy_Osborne a :Woman ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1946 .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne .\n\ndata:King_George_VI a :Man .\n\ndata:Patrick_Lord_Glamis a :Man .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\n"
+    }
+]

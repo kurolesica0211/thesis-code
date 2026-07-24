@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_Charles_Riprand_Victor_Jerome_Marie_Napoleon a :Man ;\n    :hasBirthYear \"2022-12-07\"^^xsd:date ;\n    :hasFather data:Jean-Christophe ;\n    :hasMother data:Olympia .\n\ndata:Charles_Prince_Napoleon a :Man .\n\ndata:Jean-Christophe a :Man ;\n    :hasBirthYear \"1986\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Charles_Prince_Napoleon,\n        data:Louis_Prince_Napoleon ;\n    :hasMother data:Princess_Beatrice_of_Bourbon-Two_Sicilies .\n\ndata:Louis_Prince_Napoleon a :Man .\n\ndata:Olympia a :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Man .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Louis_Charles_Riprand_Victor_Jerome_Marie_Napoleon a :Man ;\n    :hasBirthYear \"2022-12-07\"^^xsd:date ;\n    :hasFather data:Jean-Christophe ;\n    :hasMother data:Olympia .\n\ndata:Charles_Prince_Napoleon a :Man .\n\ndata:Jean-Christophe a :Man ;\n    :hasBirthYear \"1986\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Charles_Prince_Napoleon,\n        data:Louis_Prince_Napoleon ;\n    :hasMother data:Princess_Beatrice_of_Bourbon-Two_Sicilies .\n\ndata:Louis_Prince_Napoleon a :Man .\n\ndata:Olympia a :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon_Duke_of_Castro a :Man .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon_Duke_of_Castro .\n\n"
+    }
+]

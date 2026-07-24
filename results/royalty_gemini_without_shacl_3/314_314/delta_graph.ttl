@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasChild data:Pim_Lier,
+        data:Princess_Juliana ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Queen_Wilhelmina .
+
+data:Willemina_Martina_Wenneker a :Person,
+        :Woman ;
+    :hasChild data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier .
+
+data:Christina_Margaretha_Abbo a :Person,
+        :Woman .
+
+data:Edith_Abbo a :Person,
+        :Woman .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Juliana .
+
+data:Pim_Lier a :Man,
+        :Person .
+
+data:Princess_Juliana a :Person,
+        :Woman .
+

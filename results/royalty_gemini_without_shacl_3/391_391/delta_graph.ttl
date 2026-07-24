@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Mountbatten a :Man,
+        :Person ;
+    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth,
+        data:Charles_Prince_of_Wales ;
+    :isUncleOf data:Prince_Philip .
+
+data:Princess_Alice a :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:2nd_Countess_Mountbatten_of_Burma a :Person,
+        :Woman .
+
+data:7th_Baron_Brabourne a :Man,
+        :Person .
+
+data:Amanda_Knatchbull a :Person,
+        :Woman .
+
+data:Charles_Prince_of_Wales a :Man,
+        :Person .
+
+data:Charles_Vincent_Ellingworth a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :isAncestorOf data:Amanda_Patricia_Victoria_Ellingworth .
+
+data:Amanda_Patricia_Victoria_Ellingworth a :Person,
+        :Woman ;
+    :alsoKnownAs data:Amanda_Knatchbull ;
+    :hasBirthYear 1957 ;
+    :hasFather data:7th_Baron_Brabourne ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:Charles_Vincent_Ellingworth .
+

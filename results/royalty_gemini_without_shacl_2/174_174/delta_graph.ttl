@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasRelation data:Major_Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece ;
+    :knownAs "Lady Katherine Brandram"^^xsd:string .
+
+data:Alexander_of_Greece a :Man,
+        :Person .
+
+data:George_II_of_Greece a :Man,
+        :Person .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:King_George_I_of_Greece .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Princess_Helen_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Irene_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Sophia_of_Prussia a :Person,
+        :Woman .
+

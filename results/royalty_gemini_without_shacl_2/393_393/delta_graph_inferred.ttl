@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_II_of_Schaumburg-Lippe a :Man,
+        :Person ;
+    :hasBrother data:Adolf_II_of_Schaumburg-Lippe ;
+    :hasRelation data:Adolf_II_of_Schaumburg-Lippe ;
+    :isBloodrelationOf data:Adolf_II_of_Schaumburg-Lippe ;
+    :isBrotherOf data:Adolf_II_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Adolf_II_of_Schaumburg-Lippe .
+
+data:Prince_Georg_Moritz_of_Schaumburg-Lippe a :Man,
+        :Person ;
+    :hasBrother data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isBloodrelationOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :isBrotherOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe .
+
+data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasDaughter data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;
+    :isAncestorOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isAuntOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isBloodrelationOf data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;
+    :isMotherOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isParentOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;
+    :isSisterOf data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe .
+
+data:Prince_Stefan_of_Schaumburg-Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasChild data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasDaughter data:Marie_Alix_of_Schaumburg-Lippe ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isAncestorOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isBloodrelationOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isBrotherOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isFatherOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isParentOf data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isUncleOf data:Marie_Alix_of_Schaumburg-Lippe .
+
+data:Princess_Marie_Melita_of_Hohenlohe-Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Princess_Marie_Melita_of_Hohenlohe-Langenburg ;
+    :hasSon data:Peter_Duke_of_Schleswig-Holstein ;
+    :isAncestorOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isAuntOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Princess_Marie_Melita_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isParentOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Princess_Marie_Melita_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Princess_Marie_Melita_of_Hohenlohe-Langenburg .
+
+data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasChild data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasSon data:Peter_Duke_of_Schleswig-Holstein ;
+    :isAncestorOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isBrotherOf data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isFatherOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isParentOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isUncleOf data:Peter_Duke_of_Schleswig-Holstein .
+
+data:Peter_Duke_of_Schleswig-Holstein a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasBrother data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasFather data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasMother data:Princess_Marie_Melita_of_Hohenlohe-Langenburg ;
+    :hasParent data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isBrotherOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isChildOf data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Peter_Duke_of_Schleswig-Holstein ;
+    :isSonOf data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein .
+
+data:Marie_Alix_of_Schaumburg-Lippe a :Person,
+        :Woman ;
+    :hasAncestor data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe ;
+    :hasParent data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasRelation data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Peter_Duke_of_Schleswig-Holstein,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe,
+        data:Princess_Marie_Melita_of_Hohenlohe-Langenburg,
+        data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasSister data:Marie_Alix_of_Schaumburg-Lippe ;
+    :isBloodrelationOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :isChildOf data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isDaughterOf data:Ingeborg_Alix_Princess_Stephan_Alexander_of_Schaumburg-Lippe,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :isSisterOf data:Marie_Alix_of_Schaumburg-Lippe,
+        data:Prince_Georg_Moritz_of_Schaumburg-Lippe .
+

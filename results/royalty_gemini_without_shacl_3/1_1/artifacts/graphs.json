@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederikX a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasBrother data:Joachim ;\n    :hasFather data:Henrik ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:MargretheII .\n\ndata:MaryDonaldson a :Person,\n        :Woman .\n\ndata:FrederikIX a :Man,\n        :Person .\n\ndata:Joachim a :Man,\n        :Person ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:MargretheII a :Person,\n        :Woman ;\n    :hasMother data:FrederikIX .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederikX a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasBrother data:Joachim ;\n    :hasFather data:Henrik ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:MargretheII .\n\ndata:MaryDonaldson a :Person,\n        :Woman .\n\ndata:FrederikIX a :Man,\n        :Person .\n\ndata:Joachim a :Man,\n        :Person ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:MargretheII a :Person,\n        :Woman ;\n    :hasMother data:FrederikIX .\n\n"
+    }
+]

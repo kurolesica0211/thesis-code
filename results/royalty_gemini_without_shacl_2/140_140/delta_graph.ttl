@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoDukeOfCalabria a :Man,
+        :Person ;
+    :hasFather data:CarlosBourbonTwoSicilies .
+
+data:FerdinandII a :Man,
+        :Person ;
+    :isFatherOf data:AlfonsoCountOfCaserta .
+
+data:RanieriDukeOfCastro a :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1973 ;
+    :isBrotherOf data:FerdinandPius .
+
+data:CarlosBourbonTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:FerdinandPius .
+
+data:LudwigIII a :Man,
+        :Person .
+
+data:MariaAntonietta a :Person,
+        :Woman .
+
+data:MariaLudwigaTheresia a :Person,
+        :Woman ;
+    :hasFather data:LudwigIII .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person .
+
+data:FerdinandPius a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:MariaLudwigaTheresia .
+

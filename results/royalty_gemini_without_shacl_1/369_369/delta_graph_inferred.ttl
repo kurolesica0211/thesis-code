@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Charles_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Charles_of_Hesse ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Wilhelm_II_Emperor a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_Emperor ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :hasSister data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor ;
+    :isBrotherOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasChild data:Margaret_of_Prussia ;
+    :hasDaughter data:Margaret_of_Prussia ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :isAncestorOf data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isFatherOf data:Margaret_of_Prussia ;
+    :isParentOf data:Margaret_of_Prussia ;
+    :isSiblingOf data:Frederick_III_German_Emperor ;
+    :isUncleOf data:Margaret_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Margaret_of_Prussia ;
+    :hasDaughter data:Margaret_of_Prussia ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Margaret_of_Prussia ;
+    :isAuntOf data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Margaret_of_Prussia ;
+    :isParentOf data:Margaret_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :alsoKnownAs "Mossy"^^xsd:string ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Wilhelm_II_Emperor ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Frederick_Charles_of_Hesse,
+        data:Frederick_III_German_Emperor,
+        data:Margaret_of_Prussia,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II_Emperor ;
+    :hasSister data:Margaret_of_Prussia ;
+    :isBloodrelationOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor ;
+    :isChildOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor ;
+    :isSisterOf data:Margaret_of_Prussia,
+        data:Wilhelm_II_Emperor .
+

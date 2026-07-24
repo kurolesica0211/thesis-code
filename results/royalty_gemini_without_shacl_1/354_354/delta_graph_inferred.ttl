@@ -1,0 +1,326 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Lemon a :DomainEntity .
+
+data:Countess_Mathilde_van_Limburg-Stirum a :Person,
+        :Woman ;
+    :hasRelation data:Countess_Mathilde_van_Limburg-Stirum ;
+    :hasSister data:Countess_Mathilde_van_Limburg-Stirum ;
+    :isBloodrelationOf data:Countess_Mathilde_van_Limburg-Stirum ;
+    :isSiblingOf data:Countess_Mathilde_van_Limburg-Stirum ;
+    :isSisterOf data:Countess_Mathilde_van_Limburg-Stirum .
+
+data:King_William_I a :Man,
+        :Person ;
+    :hasBrother data:King_William_I ;
+    :hasRelation data:King_William_I ;
+    :isBloodrelationOf data:King_William_I ;
+    :isBrotherOf data:King_William_I ;
+    :isSiblingOf data:King_William_I .
+
+data:Princess_Augusta_of_Great_Britain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Princess_Augusta_of_Great_Britain ;
+    :isAncestorOf data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:Princess_Augusta_of_Great_Britain ;
+    :isSiblingOf data:Princess_Augusta_of_Great_Britain ;
+    :isSisterOf data:Princess_Augusta_of_Great_Britain .
+
+data:Princess_Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Augusta_of_Great_Britain ;
+    :hasChild data:William_Prince_of_Orange ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :hasSon data:William_Prince_of_Orange ;
+    :isAncestorOf data:William_Prince_of_Orange ;
+    :isAuntOf data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :isMotherOf data:William_Prince_of_Orange ;
+    :isParentOf data:William_Prince_of_Orange ;
+    :isSiblingOf data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :isSisterOf data:Princess_Sophie_of_W%C3%BCrttemberg .
+
+data:Alexander_Brother_of_William a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Brother_of_William,
+        data:William_Prince_of_Orange ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBrotherOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isSiblingOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange .
+
+data:King_William_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasChild data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSon data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isAncestorOf data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isBrotherOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isFatherOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isParentOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isSiblingOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isUncleOf data:King_William_III,
+        data:King_William_II_Placeholder .
+
+data:King_William_I_Placeholder a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasChild data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSon data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isAncestorOf data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isBrotherOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isFatherOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isParentOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isSiblingOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isUncleOf data:King_William_III,
+        data:King_William_II_Placeholder .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasAncestor data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder ;
+    :hasBrother data:Alexander_Brother_of_William,
+        data:William_Prince_of_Orange ;
+    :hasFather data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasParent data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isChildOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isDaughterOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isSiblingOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isSisterOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange .
+
+data:King_William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasBrother data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasChild data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasDaughter data:Wilhelmina ;
+    :hasFather data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasParent data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSon data:William_Prince_of_Orange ;
+    :isAncestorOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isBrotherOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isChildOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isFatherOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isParentOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isSiblingOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isSonOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isUncleOf data:Wilhelmina,
+        data:William_Prince_of_Orange .
+
+data:King_William_II_Placeholder a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasBrother data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasChild data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasDaughter data:Wilhelmina ;
+    :hasFather data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasParent data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSon data:William_Prince_of_Orange ;
+    :isAncestorOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isBrotherOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isChildOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isFatherOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isParentOf data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isSiblingOf data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :isSonOf data:King_William_II,
+        data:King_William_I_Placeholder ;
+    :isUncleOf data:Wilhelmina,
+        data:William_Prince_of_Orange .
+
+data:William_Prince_of_Orange a :Man,
+        :Person ;
+    :hasAncestor data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :hasBirthYear 1840 ;
+    :hasBrother data:Alexander_Brother_of_William,
+        data:William_Prince_of_Orange ;
+    :hasDeathYear 1879 ;
+    :hasFather data:King_William_III,
+        data:King_William_II_Placeholder ;
+    :hasMother data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :hasParent data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :hasRelation data:Alexander_Brother_of_William,
+        data:King_William_II,
+        data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:King_William_I_Placeholder,
+        data:Princess_Augusta_of_Great_Britain,
+        data:Princess_Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isBrotherOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isChildOf data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Alexander_Brother_of_William,
+        data:Wilhelmina,
+        data:William_Prince_of_Orange ;
+    :isSonOf data:King_William_III,
+        data:King_William_II_Placeholder,
+        data:Princess_Sophie_of_W%C3%BCrttemberg ;
+    :knownAs data:Prince_Lemon .
+

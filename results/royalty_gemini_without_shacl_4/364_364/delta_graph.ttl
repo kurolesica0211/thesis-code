@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Philipp_Prince_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear "1896"^^xsd:positiveInteger ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear "1980"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasMarriageYear "1925"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Moritz_of_Hesse .
+
+data:Princess_Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasMother data:Victor_Emmanuel_III_of_Italy .
+
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person ;
+    :hasSister data:Princess_Margaret_of_Prussia .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
+
+data:Moritz_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Frederick_Charles_of_Hesse a :Man,
+        :Person .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman .
+
+data:Victor_Emmanuel_III_of_Italy a :Man,
+        :Person .
+

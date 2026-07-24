@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessNadejdaMikhailovnaDeTorby a :Person,\n        :Woman .\n\ndata:GeorgeMountbatten a :Man,\n        :Person .\n\ndata:HenryMountbatten a :Man,\n        :Person ;\n    :isBrotherOf data:TatianaMountbatten .\n\ndata:PrinceGeorgeOfBattenberg a :Man,\n        :Person .\n\ndata:SarahGeorginaWalker a :Person,\n        :Woman .\n\ndata:TatianaMountbatten a :Person,\n        :Woman ;\n    :hasAncestor data:CountessNadejdaMikhailovnaDeTorby,\n        data:PrinceGeorgeOfBattenberg ;\n    :hasBirthYear \"1990-04-16\"^^xsd:date ;\n    :hasBrother data:HenryMountbatten ;\n    :hasFather data:GeorgeMountbatten ;\n    :hasMother data:SarahGeorginaWalker ;\n    :knownAs \"Tatiana Helen Georgia Dru\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessNadejdaMikhailovnaDeTorby a :Person,\n        :Woman .\n\ndata:GeorgeMountbatten a :Man,\n        :Person .\n\ndata:HenryMountbatten a :Man,\n        :Person ;\n    :isBrotherOf data:TatianaMountbatten .\n\ndata:PrinceGeorgeOfBattenberg a :Man,\n        :Person .\n\ndata:SarahGeorginaWalker a :Person,\n        :Woman .\n\ndata:TatianaMountbatten a :Person,\n        :Woman ;\n    :hasAncestor data:CountessNadejdaMikhailovnaDeTorby,\n        data:PrinceGeorgeOfBattenberg ;\n    :hasBirthYear \"1990-04-16\"^^xsd:date ;\n    :hasBrother data:HenryMountbatten ;\n    :hasFather data:GeorgeMountbatten ;\n    :hasMother data:SarahGeorginaWalker ;\n    :knownAs \"Tatiana Helen Georgia Dru\"^^xsd:string .\n\n"
+    }
+]

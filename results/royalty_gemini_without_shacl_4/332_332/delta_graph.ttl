@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    :hasBirthYear "1909"^^xsd:positiveInteger ;
+    :hasDeathYear "2004"^^xsd:positiveInteger ;
+    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
+    :hasMarriageYear "1932"^^xsd:positiveInteger,
+        "1972"^^xsd:positiveInteger ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Karin_Emma_Louise_Nissvandt,
+        data:Sonja_Anita_Maria_Haunz .
+
+data:Karin_Emma_Louise_Nissvandt a :Person,
+        :Woman .
+
+data:Maria_Pavlovna_of_Russia a :Person,
+        :Woman .
+
+data:Sonja_Anita_Maria_Haunz a :Person,
+        :Woman .
+
+data:Wilhelm_Duke_of_S%C3%B6dermanland a :Man,
+        :Person .
+

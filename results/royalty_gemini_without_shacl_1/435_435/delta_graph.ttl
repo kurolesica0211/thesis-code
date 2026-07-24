@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1915 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus,
+        data:Louis_Ferdinand,
+        data:Wilhelm_brother .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Woman .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Woman .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Woman ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin .
+
+data:Cecilie_sister a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man .
+
+data:Frederick_brother a :Man,
+        :Person .
+
+data:Hubertus a :Man,
+        :Person .
+
+data:Louis_Ferdinand a :Man,
+        :Person .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II_German_Emperor .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man .
+
+data:Wilhelm_brother a :Man,
+        :Person .
+

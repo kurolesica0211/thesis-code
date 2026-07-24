@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Alexia_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :isChildOf data:M%C3%A1xima,\n        data:Willem-Alexander ;\n    :knownAs data:Alexia_Juliana_Marcela_Laurentien .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:M%C3%A1xima a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Alexia_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :isChildOf data:M%C3%A1xima,\n        data:Willem-Alexander ;\n    :knownAs data:Alexia_Juliana_Marcela_Laurentien .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Alexia_Juliana_Marcela_Laurentien a :Person .\n\ndata:M%C3%A1xima a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person .\n\ndata:Princess_Alexia_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :isChildOf data:M%C3%A1xima,\n        data:Willem-Alexander ;\n    :knownAs data:Alexia_Juliana_Marcela_Laurentien .\n\ndata:Princess_Beatrix a :Person,\n        :Woman .\n\ndata:Princess_Margriet a :Person,\n        :Woman .\n\ndata:Alexia_Juliana_Marcela_Laurentien a :Person .\n\ndata:M%C3%A1xima a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\n"
+    }
+]

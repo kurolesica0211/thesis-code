@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MariaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Georgievna"^^xsd:string ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:ConstantineIOfGreece ;
+    :hasDaughter data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:OlgaConstantinovnaOfRussia ;
+    :hasRelation data:GeorgeMikhailovichOfRussia ;
+    :knownAs "María"^^xsd:string .
+
+data:PericlesIoannides a :Man,
+        :Person .
+
+data:ConstantineIOfGreece a :Man,
+        :Person .
+
+data:GeorgeIOfGreece a :Man,
+        :Person .
+
+data:GeorgeMikhailovichOfRussia a :Man,
+        :Person .
+
+data:NinaGeorgievna a :Person,
+        :Woman .
+
+data:OlgaConstantinovnaOfRussia a :Person,
+        :Woman .
+
+data:XeniaGeorgievna a :Person,
+        :Woman .
+

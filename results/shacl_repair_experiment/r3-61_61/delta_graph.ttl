@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Beatrix a :Ancestor .
+
+data:Bernhard a :Ancestor .
+
+data:Claus a :Ancestor .
+
+data:Juliana a :Ancestor .
+
+data:M%C3%A1xima_Zorreguieta a :Ancestor .
+

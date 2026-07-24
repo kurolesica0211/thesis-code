@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_George_VI a :Man,\n        :Person ;\n    :isFatherOf data:Queen_Elizabeth_II .\n\ndata:Peter_Phillips a :Man,\n        :Person ;\n    :isChildOf data:Anne_Princess_Royal,\n        data:Mark_Phillips .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :isChildOf data:Anne_Princess_Royal,\n        data:Mark_Phillips .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\ndata:Timothy_Laurence a :Man,\n        :Person .\n\ndata:Anne_Princess_Royal a :Person,\n        :Woman ;\n    :hasBirthYear 1950 ;\n    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;\n    :hasMarriageYear 1973,\n        1992 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :hasRelation data:Mark_Phillips,\n        data:Timothy_Laurence ;\n    :isSiblingOf data:King_Charles_III .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Mark_Phillips a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_George_VI a :Man,\n        :Person ;\n    :isFatherOf data:Queen_Elizabeth_II .\n\ndata:Peter_Phillips a :Man,\n        :Person ;\n    :isChildOf data:Anne_Princess_Royal,\n        data:Mark_Phillips .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :isChildOf data:Anne_Princess_Royal,\n        data:Mark_Phillips .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\ndata:Timothy_Laurence a :Man,\n        :Person .\n\ndata:Anne_Princess_Royal a :Person,\n        :Woman ;\n    :hasBirthYear 1950 ;\n    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;\n    :hasMarriageYear 1973,\n        1992 ;\n    :hasMother data:Queen_Elizabeth_II ;\n    :hasRelation data:Mark_Phillips,\n        data:Timothy_Laurence ;\n    :isSiblingOf data:King_Charles_III .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Mark_Phillips a :Man,\n        :Person .\n\n"
+    }
+]

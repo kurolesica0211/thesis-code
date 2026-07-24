@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Louis_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Frederick_Francis_IV ;\n    :hasMarriageYear 1954 ;\n    :hasMother data:Alexandra_of_Hanover ;\n    :hasRelation data:Barbara_of_Prussia ;\n    :hasSister data:Thyra_of_Mecklenburg .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_of_Hanover ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Barbara_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1994 ;\n    :hasFather data:Sigismund_of_Prussia ;\n    :hasMother data:Charlotte_of_Saxe-Altenburg .\n\ndata:Charlotte_of_Saxe-Altenburg a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman .\n\ndata:Thyra_of_Mecklenburg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Louis_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Frederick_Francis_IV ;\n    :hasMarriageYear 1954 ;\n    :hasMother data:Alexandra_of_Hanover ;\n    :hasRelation data:Barbara_of_Prussia ;\n    :hasSister data:Thyra_of_Mecklenburg .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus_of_Hanover ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Barbara_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1994 ;\n    :hasFather data:Sigismund_of_Prussia ;\n    :hasMother data:Charlotte_of_Saxe-Altenburg .\n\ndata:Charlotte_of_Saxe-Altenburg a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person .\n\ndata:Sigismund_of_Prussia a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman .\n\ndata:Thyra_of_Mecklenburg a :Person,\n        :Woman .\n\n"
+    }
+]

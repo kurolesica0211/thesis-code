@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lord_Frederick_Windsor a :Man ;\n    :hasBirthYear 1979 ;\n    :hasChild data:Isabella_Alexandra_May ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :isSiblingOf data:Lady_Gabriella .\n\ndata:Sophie_Winkleman a :Woman ;\n    :hasChild data:Isabella_Alexandra_May .\n\ndata:Lady_Gabriella a :Woman .\n\ndata:Prince_Michael_of_Kent a :Man .\n\ndata:Princess_Michael_of_Kent a :Woman .\n\ndata:Isabella_Alexandra_May a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lord_Frederick_Windsor a :Man ;\n    :hasBirthYear 1979 ;\n    :hasChild data:Isabella_Alexandra_May ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :isSiblingOf data:Lady_Gabriella .\n\ndata:Sophie_Winkleman a :Woman ;\n    :hasChild data:Isabella_Alexandra_May .\n\ndata:Lady_Gabriella a :Woman .\n\ndata:Prince_Michael_of_Kent a :Ancestor,\n        :Man .\n\ndata:Princess_Michael_of_Kent a :Woman .\n\ndata:Isabella_Alexandra_May a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lord_Frederick_Windsor a :Man ;\n    :hasBirthYear 1979 ;\n    :hasChild data:Isabella_Alexandra_May ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :isSiblingOf data:Lady_Gabriella .\n\ndata:Sophie_Winkleman a :Woman ;\n    :hasChild data:Isabella_Alexandra_May .\n\ndata:Lady_Gabriella a :Woman .\n\ndata:Prince_Michael_of_Kent a :Ancestor,\n        :Man .\n\ndata:Princess_Michael_of_Kent a :Ancestor,\n        :Woman .\n\ndata:Isabella_Alexandra_May a :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "130222c4-8b33-46bc-a5df-61e25d62f3ca",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lord_Frederick_Windsor a :Man ;\n    :hasBirthYear 1979 ;\n    :hasChild data:Isabella_Alexandra_May ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :isSiblingOf data:Lady_Gabriella .\n\ndata:Sophie_Winkleman a :Woman ;\n    :hasChild data:Isabella_Alexandra_May .\n\ndata:Lady_Gabriella a :Woman .\n\ndata:Prince_Michael_of_Kent a :Ancestor,\n        :Man .\n\ndata:Princess_Michael_of_Kent a :Ancestor,\n        :Woman .\n\ndata:Isabella_Alexandra_May a :Woman .\n\n"
+    }
+]

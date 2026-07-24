@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/0_0",
+  "text_file": "Q100307.txt",
+  "text_key": "Q100307",
+  "article": "https://en.wikipedia.org/wiki/Oskar_Prinz_von_Preussen",
+  "article_key": "Oskar Prinz von Preussen",
+  "main_entity": {
+    "uri": "http://example.com/data#Oskar_of_Prussia",
+    "qid": "Q100307",
+    "label": "Oskar of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Oskar_of_Prussia",
+      "qid": "Q100307",
+      "label": "Oskar of Prussia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm-Karl_of_Prussia",
+      "qid": "Q92141",
+      "label": "Prince Wilhelm-Karl of Prussia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Oskar_of_Prussia",
+      "qid": "Q61242",
+      "label": "Prince Oskar of Prussia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Wilhelm_II",
+      "extracted_local_name": "Wilhelm_II",
+      "embedding_text": "Wilhelm II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
+      "ground_truth_qid": "Q2677",
+      "ground_truth_label": "Wilhelm II",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Wilhelm-Karl_Prince_of_Prussia",
+      "extracted_local_name": "Wilhelm-Karl_Prince_of_Prussia",
+      "embedding_text": "Wilhelm-Karl Prince of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8870967741935484,
+      "ground_truth_uri": "http://example.com/data#Prince_Wilhelm-Karl_of_Prussia",
+      "ground_truth_qid": "Q92141",
+      "ground_truth_label": "Prince Wilhelm-Karl of Prussia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm-Karl of Prussia",
+      "best_candidate_label": "Prince Wilhelm-Karl of Prussia",
+      "best_candidate_qid": "Q92141",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8870967741935484
+    },
+    {
+      "extracted_uri": "http://example.org/data/Armgard_von_Veltheim",
+      "extracted_local_name": "Armgard_von_Veltheim",
+      "embedding_text": "Armgard von Veltheim",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "German Emperor Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35555555555555557
+    },
+    {
+      "extracted_uri": "http://example.org/data/Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+      "extracted_local_name": "Oskar_Michael_Hans_Karl_Prinz_von_Preussen",
+      "embedding_text": "Oskar Michael Hans Karl Prinz von Preussen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Wilhelm Karl of Prussia",
+      "best_candidate_label": "Prince Wilhelm-Karl of Prussia",
+      "best_candidate_qid": "Q92141",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5277777777777778
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

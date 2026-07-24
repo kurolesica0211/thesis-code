@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kinsky_Son a :Man,\n        :Person ;\n    :hasFather data:Franz_Ulrich_Kinsky ;\n    :hasMother data:Helena_Victoria_Hutten-Czapska .\n\ndata:Anne_Rowell a :Person,\n        :Woman .\n\ndata:Franz_Ulrich_Kinsky a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich_Kinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Roberta_Cavanagh .\n\ndata:Helena_Victoria_Hutten-Czapska a :Person,\n        :Woman .\n\ndata:Hilmar_von_dem_Bussche-Haddenhausen a :Man,\n        :Person .\n\ndata:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Person,\n        :Woman ;\n    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .\n\ndata:Roberta_Cavanagh a :Person,\n        :Woman ;\n    :hasFather data:Roberto_Cavanagh ;\n    :hasMother data:Anne_Rowell .\n\ndata:Roberto_Cavanagh a :Man,\n        :Person .\n\ndata:Ulrich_Kinsky a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kinsky_Son a :Man,\n        :Person ;\n    :hasFather data:Franz_Ulrich_Kinsky ;\n    :hasMother data:Helena_Victoria_Hutten-Czapska .\n\ndata:Anne_Rowell a :Person,\n        :Woman .\n\ndata:Franz_Ulrich_Kinsky a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ulrich_Kinsky ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Roberta_Cavanagh .\n\ndata:Helena_Victoria_Hutten-Czapska a :Person,\n        :Woman .\n\ndata:Hilmar_von_dem_Bussche-Haddenhausen a :Man,\n        :Person .\n\ndata:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Person,\n        :Woman ;\n    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .\n\ndata:Roberta_Cavanagh a :Person,\n        :Woman ;\n    :hasFather data:Roberto_Cavanagh ;\n    :hasMother data:Anne_Rowell .\n\ndata:Roberto_Cavanagh a :Man,\n        :Person .\n\ndata:Ulrich_Kinsky a :Man,\n        :Person .\n\n"
+    }
+]

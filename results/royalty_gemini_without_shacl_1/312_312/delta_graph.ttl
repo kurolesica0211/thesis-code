@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Stefan a :Man,
+        :Person ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Princess_Marija a :Person,
+        :Woman ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Prince_Peter a :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Alexander ;
+    :hasMother data:Princess_Maria_da_Gloria .
+
+data:Crown_Prince_Alexander a :Man,
+        :Person .
+
+data:Filip_Karadjordjevic a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Crown_Prince_Alexander ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :hasRelation data:Danica_Marinkovic ;
+    :isBrotherOf data:Prince_Peter .
+
+data:Princess_Maria_da_Gloria a :Person,
+        :Woman .
+
+data:Danica_Marinkovic a :Person,
+        :Woman .
+

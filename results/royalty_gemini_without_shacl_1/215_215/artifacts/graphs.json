@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Augusta_Reuss a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Man ;\n    :isFatherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Duke_Ernest_I a :Ancestor,\n        :Man ;\n    :isFatherOf data:Prince_Albert .\n\ndata:Prince_Albert a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Queen_Victoria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Augusta_Reuss a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Man ;\n    :isFatherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Duke_Ernest_I a :Ancestor,\n        :Man ;\n    :isFatherOf data:Prince_Albert .\n\ndata:Prince_Albert a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Queen_Victoria .\n\n"
+    }
+]

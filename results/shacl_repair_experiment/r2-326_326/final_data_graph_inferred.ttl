@@ -1,0 +1,232 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henri_the_son ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasSister data:Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Henri_the_son ;
+    :isAncestorOf data:Eudes_Duke_of_Angouleme,
+        data:Henri_the_son ;
+    :isAuntOf data:Henri_the_son ;
+    :isBloodrelationOf data:Isabelle_of_Orleans_Braganza ;
+    :isMotherOf data:Henri_the_son ;
+    :isParentOf data:Henri_the_son ;
+    :isSiblingOf data:Isabelle_of_Orleans_Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans_Braganza .
+
+data:Philippe_Duke_of_Orleans a :Man,
+        :Person ;
+    :hasBrother data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :isBloodrelationOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isBrotherOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isSiblingOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isUncleOf data:Henri_dOrleans .
+
+data:Eudes_Duke_of_Angouleme a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Eudes_Duke_of_Angouleme ;
+    :hasFather data:Henri_the_son ;
+    :hasParent data:Henri_the_son ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isBloodrelationOf data:Eudes_Duke_of_Angouleme ;
+    :isBrotherOf data:Eudes_Duke_of_Angouleme ;
+    :isChildOf data:Henri_the_son ;
+    :isSiblingOf data:Eudes_Duke_of_Angouleme ;
+    :isSonOf data:Henri_the_son .
+
+data:Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :hasChild data:Henri_dOrleans ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :hasSon data:Henri_dOrleans ;
+    :isAncestorOf data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isBloodrelationOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isBrotherOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isFatherOf data:Henri_dOrleans ;
+    :isParentOf data:Henri_dOrleans ;
+    :isSiblingOf data:Jean_Duke_of_Guise,
+        data:Philippe_Duke_of_Orleans ;
+    :isUncleOf data:Henri_dOrleans .
+
+data:Michel a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :isBloodrelationOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isBrotherOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isSonOf data:Henri_dOrleans ;
+    :isUncleOf data:Eudes_Duke_of_Angouleme .
+
+data:Thibaut a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :isBloodrelationOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isBrotherOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isSonOf data:Henri_dOrleans ;
+    :isUncleOf data:Eudes_Duke_of_Angouleme .
+
+data:Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Jean_Duke_of_Guise ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_dOrleans ;
+    :hasChild data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Jean_Duke_of_Guise ;
+    :hasMarriageYear 1931 ;
+    :hasParent data:Jean_Duke_of_Guise ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :hasSon data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isAncestorOf data:Eudes_Duke_of_Angouleme,
+        data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isBloodrelationOf data:Henri_dOrleans ;
+    :isBrotherOf data:Henri_dOrleans ;
+    :isChildOf data:Jean_Duke_of_Guise ;
+    :isFatherOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isParentOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isSiblingOf data:Henri_dOrleans ;
+    :isSonOf data:Jean_Duke_of_Guise ;
+    :isUncleOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut .
+
+data:Henri_the_son a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :hasChild data:Eudes_Duke_of_Angouleme ;
+    :hasFather data:Henri_dOrleans ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasParent data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Eudes_Duke_of_Angouleme,
+        data:Henri_dOrleans,
+        data:Henri_the_son,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel,
+        data:Philippe_Duke_of_Orleans,
+        data:Thibaut ;
+    :hasSon data:Eudes_Duke_of_Angouleme ;
+    :isAncestorOf data:Eudes_Duke_of_Angouleme ;
+    :isBloodrelationOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isBrotherOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isChildOf data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isFatherOf data:Eudes_Duke_of_Angouleme ;
+    :isParentOf data:Eudes_Duke_of_Angouleme ;
+    :isSiblingOf data:Henri_the_son,
+        data:Michel,
+        data:Thibaut ;
+    :isSonOf data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isUncleOf data:Eudes_Duke_of_Angouleme .
+

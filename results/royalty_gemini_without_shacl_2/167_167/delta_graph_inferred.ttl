@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Moritz_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Moritz_Landgrave_of_Hesse ;
+    :hasChild data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :hasDaughter data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :hasRelation data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isBloodrelationOf data:Moritz_Landgrave_of_Hesse ;
+    :isBrotherOf data:Moritz_Landgrave_of_Hesse ;
+    :isFatherOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isParentOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isSiblingOf data:Moritz_Landgrave_of_Hesse ;
+    :isUncleOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :hasDaughter data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :hasRelation data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isAuntOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isBloodrelationOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isParentOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isSiblingOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen a :Person,
+        :Woman ;
+    :hasAncestor data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Moritz_Landgrave_of_Hesse ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen,
+        data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isBloodrelationOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isChildOf data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Moritz_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :isSisterOf data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen ;
+    :knownAs "Princess Mafalda of Hesse"^^xsd:string .
+

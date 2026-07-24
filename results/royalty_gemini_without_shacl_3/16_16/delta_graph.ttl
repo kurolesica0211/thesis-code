@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexMapelliMozzi a :Man,
+        :Person ;
+    :isFatherOf data:EdoardoMapelliMozzi .
+
+data:AndrewMountbattenWindsor a :Man,
+        :Person ;
+    :isFatherOf data:PrincessBeatrice .
+
+data:KingCharlesIII a :Man,
+        :Person .
+
+data:PrincePhilip a :Man,
+        :Person .
+
+data:PrincessEugenie a :Person,
+        :Woman ;
+    :isSisterOf data:PrincessBeatrice .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:SarahFerguson a :Person,
+        :Woman ;
+    :isMotherOf data:PrincessBeatrice .
+
+data:AthenaElizabethRose a :Person,
+        :Woman .
+
+data:EdoardoMapelliMozzi a :Man,
+        :Person ;
+    :isFatherOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi .
+
+data:SiennaElizabethMapelliMozzi a :Person,
+        :Woman .
+
+data:PrincessBeatrice a :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasMarriageYear data:EdoardoMapelliMozzi,
+        2020 ;
+    :isMotherOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi .
+

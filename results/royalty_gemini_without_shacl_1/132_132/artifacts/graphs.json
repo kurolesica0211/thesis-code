@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :isFatherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear data:1930 .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :isSisterOf data:Margaret_of_Prussia .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :isMotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :isSisterOf data:Emperor_Wilhelm_II .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :isBrotherOf data:Richard_of_Hesse .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :knownAs \"Ri\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :isFatherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear data:1930,\n        \"1930\"^^xsd:string .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :isSisterOf data:Margaret_of_Prussia .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :isMotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :isSisterOf data:Emperor_Wilhelm_II .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :isBrotherOf data:Richard_of_Hesse .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :knownAs \"Ri\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :isFatherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear \"1930\"^^xsd:string .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :isSisterOf data:Margaret_of_Prussia .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :isMotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :isSisterOf data:Emperor_Wilhelm_II .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :isBrotherOf data:Richard_of_Hesse .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :knownAs \"Ri\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :isFatherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse .\n\ndata:Mafalda_of_Italy a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasMarriageYear \"1930\"^^xsd:string .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :isSisterOf data:Margaret_of_Prussia .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :isMotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Richard_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :isSisterOf data:Emperor_Wilhelm_II .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :isBrotherOf data:Richard_of_Hesse .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :knownAs \"Ri\"^^xsd:string .\n\n"
+    }
+]

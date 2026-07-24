@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica_of_Brunswick a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Paul_of_Greece .
+
+data:Prince_Ernest_Augustus_of_Brunswick_Junior a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Christian_of_Cumberland a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+
+data:George_of_Cumberland a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman .
+
+data:Ernest_Augustus_of_Brunswick a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasRelation data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:George_of_Cumberland .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman .
+

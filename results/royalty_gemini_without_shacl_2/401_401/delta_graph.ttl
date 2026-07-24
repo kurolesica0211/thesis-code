@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margareta_of_Romania a :Woman ;
+    :hasBirthYear "1949"^^xsd:positiveInteger ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania .
+
+data:Prince_Radu a :Man .
+
+data:Princess_Elena_of_Romania a :Woman ;
+    :hasBirthYear "1950"^^xsd:positiveInteger ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania .
+
+data:Princess_Irina a :Woman ;
+    :hasBirthYear "1953"^^xsd:positiveInteger ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania .
+
+data:Princess_Maria a :Woman ;
+    :hasBirthYear "1964"^^xsd:positiveInteger ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania .
+
+data:Princess_Sophie a :Woman ;
+    :hasBirthYear "1957"^^xsd:positiveInteger ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania .
+
+data:King_Michael_I a :Man ;
+    :hasDeathYear "2017"^^xsd:positiveInteger .
+
+data:Queen_Anne_of_Romania a :Woman .
+

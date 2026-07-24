@@ -1,0 +1,399 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Lu%C3%ADs_I_of_Portugal a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Lu%C3%ADs_I_of_Portugal ;
+    :hasChild data:Carlos_I_of_Portugal ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSon data:Carlos_I_of_Portugal ;
+    :isAncestorOf data:Carlos_I_of_Portugal ;
+    :isBloodrelationOf data:King_Lu%C3%ADs_I_of_Portugal ;
+    :isBrotherOf data:King_Lu%C3%ADs_I_of_Portugal ;
+    :isFatherOf data:Carlos_I_of_Portugal ;
+    :isParentOf data:Carlos_I_of_Portugal ;
+    :isSiblingOf data:King_Lu%C3%ADs_I_of_Portugal ;
+    :isUncleOf data:Carlos_I_of_Portugal .
+
+data:Maria_Pia_of_Savoy a :Ancestor,
+        :Woman ;
+    :hasChild data:Carlos_I_of_Portugal ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Maria_Pia_of_Savoy ;
+    :hasSon data:Carlos_I_of_Portugal ;
+    :isAncestorOf data:Carlos_I_of_Portugal ;
+    :isAuntOf data:Carlos_I_of_Portugal ;
+    :isBloodrelationOf data:Maria_Pia_of_Savoy ;
+    :isMotherOf data:Carlos_I_of_Portugal ;
+    :isParentOf data:Carlos_I_of_Portugal ;
+    :isSiblingOf data:Maria_Pia_of_Savoy ;
+    :isSisterOf data:Maria_Pia_of_Savoy .
+
+data:Duchess_Helena_of_Mecklenburg-Schwerin a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Philippe_Count_of_Paris ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Duchess_Helena_of_Mecklenburg-Schwerin ;
+    :hasSon data:Prince_Philippe_Count_of_Paris ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isAuntOf data:Prince_Philippe_Count_of_Paris ;
+    :isBloodrelationOf data:Duchess_Helena_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Prince_Philippe_Count_of_Paris ;
+    :isParentOf data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Duchess_Helena_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Helena_of_Mecklenburg-Schwerin .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasDaughter data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isAuntOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isMotherOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isParentOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isSiblingOf data:Infanta_Luisa_Fernanda_of_Spain ;
+    :isSisterOf data:Infanta_Luisa_Fernanda_of_Spain .
+
+data:Carlos_I_of_Portugal a :Man,
+        :Person ;
+    :hasAncestor data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Pia_of_Savoy ;
+    :hasBrother data:Carlos_I_of_Portugal ;
+    :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy ;
+    :hasParent data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Pia_of_Savoy ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:Carlos_I_of_Portugal ;
+    :isBrotherOf data:Carlos_I_of_Portugal ;
+    :isChildOf data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Carlos_I_of_Portugal ;
+    :isSonOf data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Pia_of_Savoy .
+
+data:King_Louis-Philippe_I_of_France a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Louis-Philippe_I_of_France ;
+    :hasChild data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSon data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:King_Louis-Philippe_I_of_France ;
+    :isBrotherOf data:King_Louis-Philippe_I_of_France ;
+    :isFatherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isParentOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:King_Louis-Philippe_I_of_France ;
+    :isUncleOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasSon data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isAuntOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isMotherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isParentOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isSisterOf data:Maria_Amalia_of_the_Two_Sicilies .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1886 ;
+    :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasParent data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isChildOf data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isDaughterOf data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasBrother data:Prince_Philippe_Count_of_Paris ;
+    :hasChild data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasDaughter data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Duchess_Helena_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Philippe_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe_Count_of_Paris ;
+    :isChildOf data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isFatherOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isParentOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Prince_Philippe_Count_of_Paris ;
+    :isSonOf data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isUncleOf data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasChild data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasDaughter data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain ;
+    :hasParent data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSister data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isAuntOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isChildOf data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :isDaughterOf data:Infanta_Luisa_Fernanda_of_Spain,
+        data:Prince_Antoine_Duke_of_Montpensier ;
+    :isMotherOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isParentOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isSisterOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasBrother data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasChild data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasDaughter data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasFather data:King_Louis-Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasParent data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isBrotherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isChildOf data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isFatherOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isParentOf data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :isSiblingOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSonOf data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isUncleOf data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans .
+
+data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasBrother data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasChild data:Prince_Philippe_Count_of_Paris ;
+    :hasFather data:King_Louis-Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasParent data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I_of_Portugal,
+        data:Duchess_Helena_of_Mecklenburg-Schwerin,
+        data:Infanta_Luisa_Fernanda_of_Spain,
+        data:King_Louis-Philippe_I_of_France,
+        data:King_Lu%C3%ADs_I_of_Portugal,
+        data:Maria_Amalia_of_the_Two_Sicilies,
+        data:Maria_Pia_of_Savoy,
+        data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasSon data:Prince_Philippe_Count_of_Paris ;
+    :isAncestorOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Prince_Philippe_Count_of_Paris ;
+    :isBloodrelationOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isBrotherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isChildOf data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isFatherOf data:Prince_Philippe_Count_of_Paris ;
+    :isParentOf data:Prince_Philippe_Count_of_Paris ;
+    :isSiblingOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :isSonOf data:King_Louis-Philippe_I_of_France,
+        data:Maria_Amalia_of_the_Two_Sicilies ;
+    :isUncleOf data:Prince_Philippe_Count_of_Paris,
+        data:Princess_Marie_Isabelle_dOrl%C3%A9ans .
+

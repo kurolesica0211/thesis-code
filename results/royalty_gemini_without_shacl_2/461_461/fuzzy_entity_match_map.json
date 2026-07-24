@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/461_461",
+  "text_file": "Q7608111.txt",
+  "text_key": "Q7608111",
+  "article": "https://en.wikipedia.org/wiki/Stephan,_Prince_of_Lippe",
+  "article_key": "Stephan, Prince of Lippe",
+  "main_entity": {
+    "uri": "http://example.com/data#Stephan-_Hereditary_Prince_of_Lippe",
+    "qid": "Q7608111",
+    "label": "Stephan, Hereditary Prince of Lippe"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Stephan-_Hereditary_Prince_of_Lippe",
+      "qid": "Q7608111",
+      "label": "Stephan, Hereditary Prince of Lippe",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Armin-_Prince_of_Lippe",
+      "qid": "Q73464",
+      "label": "Armin, Prince of Lippe",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Traute_Becker",
+      "qid": "Q75374290",
+      "label": "Traute Becker",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Traute_Becker",
+      "extracted_local_name": "Traute_Becker",
+      "embedding_text": "Traute Becker",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Traute_Becker",
+      "ground_truth_qid": "Q75374290",
+      "ground_truth_label": "Traute Becker",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Traute Becker",
+      "best_candidate_label": "Traute Becker",
+      "best_candidate_qid": "Q75374290",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Armin_Prince_of_Lippe",
+      "extracted_local_name": "Armin_Prince_of_Lippe",
+      "embedding_text": "Armin Prince of Lippe",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.98,
+      "ground_truth_uri": "http://example.com/data#Armin-_Prince_of_Lippe",
+      "ground_truth_qid": "Q73464",
+      "ground_truth_label": "Armin, Prince of Lippe",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Armin- Prince of Lippe",
+      "best_candidate_label": "Armin, Prince of Lippe",
+      "best_candidate_qid": "Q73464",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.98
+    },
+    {
+      "extracted_uri": "http://example.org/data/Stephan_Prince_of_Lippe",
+      "extracted_local_name": "Stephan_Prince_of_Lippe",
+      "embedding_text": "Stephan Prince of Lippe",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.85,
+      "ground_truth_uri": "http://example.com/data#Stephan-_Hereditary_Prince_of_Lippe",
+      "ground_truth_qid": "Q7608111",
+      "ground_truth_label": "Stephan, Hereditary Prince of Lippe",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Stephan- Hereditary Prince of Lippe",
+      "best_candidate_label": "Stephan, Hereditary Prince of Lippe",
+      "best_candidate_qid": "Q7608111",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.85
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Maria",
+      "extracted_local_name": "Princess_Maria",
+      "embedding_text": "Princess Maria",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Traute, Princess of Lippe",
+      "best_candidate_label": "Traute Becker",
+      "best_candidate_qid": "Q75374290",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5128205128205128
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

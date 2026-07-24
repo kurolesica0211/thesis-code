@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Enrique a :Man,\n        :Person ;\n    :isChildOf data:Carlos_Duke_of_Parma .\n\ndata:Gloria_Irene a :Person,\n        :Woman ;\n    :isChildOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Princess_Madeleine_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man,\n        :Person ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :isSiblingOf data:Carlos_Duke_of_Parma,\n        data:Princess_Carolina,\n        data:Princess_Margarita .\n\ndata:Princess_Carolina a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Princess_Margarita a :Person,\n        :Woman .\n\ndata:Carlos_Duke_of_Parma a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Enrique a :Man,\n        :Person ;\n    :isChildOf data:Carlos_Duke_of_Parma .\n\ndata:Gloria_Irene a :Person,\n        :Woman ;\n    :isChildOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Princess_Madeleine_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man,\n        :Person .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man,\n        :Person ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :isSiblingOf data:Carlos_Duke_of_Parma,\n        data:Princess_Carolina,\n        data:Princess_Margarita .\n\ndata:Princess_Carolina a :Person,\n        :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Person,\n        :Woman .\n\ndata:Princess_Margarita a :Person,\n        :Woman .\n\ndata:Carlos_Duke_of_Parma a :Man,\n        :Person .\n\n"
+    }
+]

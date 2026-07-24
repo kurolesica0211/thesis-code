@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Birgitte_van_Deurs_Henriksen a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasBirthYear 1944 ;\n    :hasBrother data:Prince_William_of_Gloucester ;\n    :hasFather data:Prince_Henry_Duke_of_Gloucester ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Princess_Alice_Duchess_of_Gloucester .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man,\n        :Person .\n\ndata:Lady_Margaret_Bridgeman a :Person,\n        :Woman .\n\ndata:Prince_William_of_Gloucester a :Man,\n        :Person ;\n    :hasFather data:Prince_Henry_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice_Duchess_of_Gloucester .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Prince_Henry_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Alice_Duchess_of_Gloucester a :Person,\n        :Woman ;\n    :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Birgitte_van_Deurs_Henriksen a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasBirthYear 1944 ;\n    :hasBrother data:Prince_William_of_Gloucester ;\n    :hasFather data:Prince_Henry_Duke_of_Gloucester ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Princess_Alice_Duchess_of_Gloucester .\n\ndata:George_V a :Man,\n        :Person .\n\ndata:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man,\n        :Person .\n\ndata:Lady_Margaret_Bridgeman a :Person,\n        :Woman .\n\ndata:Prince_William_of_Gloucester a :Man,\n        :Person ;\n    :hasFather data:Prince_Henry_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice_Duchess_of_Gloucester .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\ndata:Prince_Henry_Duke_of_Gloucester a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Alice_Duchess_of_Gloucester a :Person,\n        :Woman ;\n    :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\n"
+    }
+]

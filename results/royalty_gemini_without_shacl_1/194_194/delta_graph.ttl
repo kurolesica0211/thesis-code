@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Chavchavadze a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Prince_Paul_Chavchavadze ;
+    :hasMother data:Princess_Nina_Georgievna_of_Russia .
+
+data:Paul_George_Olkhovsky a :Man,
+        :Person ;
+    :hasBirthYear "August 11, 1960"^^xsd:string .
+
+data:Prince_Paul_Chavchavadze a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1971 .
+
+data:Princess_Nina_Georgievna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1974 .
+

@@ -1,0 +1,16 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Regina_von_Habsburg a :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2010 ;
+    :hasRelation data:Otto_von_Habsburg ;
+    :knownAs data:Archduchess_Regina_of_Austria .
+
+data:Archduchess_Regina_of_Austria a :DomainEntity .
+
+data:Otto_von_Habsburg a :Man,
+        :Person .
+

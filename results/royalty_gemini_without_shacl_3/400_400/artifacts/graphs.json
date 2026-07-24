@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent ;\n    :hasSister data:Marina_Ogilvy .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Princess_Nicholas_of_Greece_and_Denmark .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Prince_George_Duke_of_Kent a :Man,\n        :Person ;\n    :hasFather data:King_George_V .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Sir_Angus_Ogilvy a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent ;\n    :hasSister data:Marina_Ogilvy .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Princess_Nicholas_of_Greece_and_Denmark .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Prince_George_Duke_of_Kent a :Man,\n        :Person ;\n    :hasFather data:King_George_V .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\ndata:Princess_Nicholas_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Sir_Angus_Ogilvy a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Robert_Bruce_Ogilvy a :Man,\n        :Person ;\n    :hasBirthYear 1964 ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent ;\n    :hasSister data:Marina_Ogilvy .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,\n        :Woman ;\n    :alsoKnownAs data:Princess_Nicholas_of_Greece_and_Denmark .\n\ndata:King_George_V a :Man,\n        :Person .\n\ndata:Marina_Ogilvy a :Person,\n        :Woman ;\n    :hasFather data:Sir_Angus_Ogilvy ;\n    :hasMother data:Princess_Alexandra_of_Kent .\n\ndata:Prince_George_Duke_of_Kent a :Man,\n        :Person ;\n    :hasFather data:King_George_V .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\ndata:Princess_Nicholas_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Alexandra_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Sir_Angus_Ogilvy a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte a :Woman ;\n    :hasParent data:FrederikIX,\n        data:Ingrid ;\n    :isSiblingOf data:AnneMarie .\n\ndata:ChristianX a :Man .\n\ndata:FrederikX a :Man ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:GustafVIAldolf a :Man .\n\ndata:Joachim a :Man ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:AnneMarie a :Woman ;\n    :hasParent data:FrederikIX,\n        data:Ingrid .\n\ndata:Henrik a :Man .\n\ndata:MargretheII a :Woman ;\n    :hasBirthYear 1940 ;\n    :hasChild data:FrederikX,\n        data:Joachim ;\n    :hasFather data:FrederikIX ;\n    :hasMother data:Ingrid ;\n    :isSiblingOf data:AnneMarie,\n        data:Benedikte .\n\ndata:FrederikIX a :Man ;\n    :hasFather data:ChristianX .\n\ndata:Ingrid a :Woman ;\n    :hasFather data:GustafVIAldolf .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Benedikte a :Woman ;\n    :hasParent data:FrederikIX,\n        data:Ingrid ;\n    :isSiblingOf data:AnneMarie .\n\ndata:ChristianX a :Man .\n\ndata:FrederikX a :Man ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:GustafVIAldolf a :Man .\n\ndata:Joachim a :Man ;\n    :hasFather data:Henrik ;\n    :hasMother data:MargretheII .\n\ndata:AnneMarie a :Woman ;\n    :hasParent data:FrederikIX,\n        data:Ingrid .\n\ndata:Henrik a :Man .\n\ndata:MargretheII a :Woman ;\n    :hasBirthYear 1940 ;\n    :hasChild data:FrederikX,\n        data:Joachim ;\n    :hasFather data:FrederikIX ;\n    :hasMother data:Ingrid ;\n    :isSiblingOf data:AnneMarie,\n        data:Benedikte .\n\ndata:FrederikIX a :Man ;\n    :hasFather data:ChristianX .\n\ndata:Ingrid a :Woman ;\n    :hasFather data:GustafVIAldolf .\n\n"
+    }
+]

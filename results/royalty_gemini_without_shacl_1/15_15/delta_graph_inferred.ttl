@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Female a :Female,
+        :Sex .
+
+data:King_Willem-Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Willem-Alexander ;
+    :hasChild data:Princess_Ariane ;
+    :hasDaughter data:Princess_Ariane ;
+    :hasRelation data:King_Willem-Alexander,
+        data:Princess_Ariane,
+        data:Queen_Maxima ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Princess_Ariane ;
+    :isBloodrelationOf data:King_Willem-Alexander ;
+    :isBrotherOf data:King_Willem-Alexander ;
+    :isFatherOf data:Princess_Ariane ;
+    :isParentOf data:Princess_Ariane ;
+    :isSiblingOf data:King_Willem-Alexander ;
+    :isUncleOf data:Princess_Ariane .
+
+data:Queen_Maxima a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Ariane ;
+    :hasDaughter data:Princess_Ariane ;
+    :hasRelation data:King_Willem-Alexander,
+        data:Princess_Ariane,
+        data:Queen_Maxima ;
+    :hasSex data:Female ;
+    :hasSister data:Queen_Maxima ;
+    :isAncestorOf data:Princess_Ariane ;
+    :isAuntOf data:Princess_Ariane ;
+    :isBloodrelationOf data:Queen_Maxima ;
+    :isMotherOf data:Princess_Ariane ;
+    :isParentOf data:Princess_Ariane ;
+    :isSiblingOf data:Queen_Maxima ;
+    :isSisterOf data:Queen_Maxima .
+
+data:Princess_Ariane a :Person,
+        :Woman ;
+    :hasAncestor data:King_Willem-Alexander,
+        data:Queen_Maxima ;
+    :hasBirthYear 2007 ;
+    :hasFather data:King_Willem-Alexander ;
+    :hasMother data:Queen_Maxima ;
+    :hasParent data:King_Willem-Alexander,
+        data:Queen_Maxima ;
+    :hasRelation data:King_Willem-Alexander,
+        data:Princess_Ariane,
+        data:Queen_Maxima ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Ariane ;
+    :isBloodrelationOf data:Princess_Ariane ;
+    :isChildOf data:King_Willem-Alexander,
+        data:Queen_Maxima ;
+    :isDaughterOf data:King_Willem-Alexander,
+        data:Queen_Maxima ;
+    :isSiblingOf data:Princess_Ariane ;
+    :isSisterOf data:Princess_Ariane ;
+    :knownAs "Ariane Wilhelmina Máxima Inés"^^xsd:string .
+

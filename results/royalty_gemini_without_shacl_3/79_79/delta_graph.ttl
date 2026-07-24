@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Michael_I_of_Romania a :Man,
+        :Person ;
+    :hasFather data:King_Carol_II_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark .
+
+data:Alexander_I_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Alexander_I_of_Greece,
+        data:King_George_II_of_Greece,
+        data:Prince_Paul_of_Greece_and_Denmark ;
+    :hasDeathYear 1982 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:King_Carol_II_of_Romania a :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicolae_of_Romania ;
+    :hasMother data:Queen_Marie_of_Romania ;
+    :hasSister data:Princess_Elisabeth_of_Romania,
+        data:Princess_Ileana_of_Romania,
+        data:Princess_Maria_of_Romania .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:King_George_I_of_Greece .
+
+data:King_George_II_of_Greece a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Prince_Nicolae_of_Romania a :Man,
+        :Person .
+
+data:Prince_Paul_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Princess_Elisabeth_of_Romania a :Person,
+        :Woman .
+
+data:Princess_Ileana_of_Romania a :Person,
+        :Woman .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Maria_of_Romania a :Person,
+        :Woman .
+
+data:Princess_Sophia_of_Prussia a :Person,
+        :Woman .
+
+data:Queen_Marie_of_Romania a :Person,
+        :Woman .
+

@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeorgeMountbatten a :Man,
+        :Person ;
+    :alsoKnownAs "Lord Milford Haven"^^xsd:string ;
+    :formerlyKnownAs "Earl of Medina"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:PrincessVictoriaOfHesse ;
+    :hasRelation data:NadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :knownAs "GeorgeMountbatten"^^xsd:string .
+
+data:LouisMountbatten1stEarl a :Man,
+        :Person .
+
+data:LouisMountbatten1stMarquess a :Man,
+        :Person .
+
+data:MichaelMikhailovichRomanov a :Man,
+        :Person .
+
+data:NadejdaMikhailovnaDeTorby a :Person,
+        :Woman ;
+    :hasFather data:MichaelMikhailovichRomanov ;
+    :hasMother data:SophieVonMerenberg .
+
+data:PrincessAlice a :Person,
+        :Woman .
+
+data:PrincessVictoriaOfHesse a :Person,
+        :Woman .
+
+data:QueenLouiseOfSweden a :Person,
+        :Woman .
+
+data:SophieVonMerenberg a :Person,
+        :Woman .
+

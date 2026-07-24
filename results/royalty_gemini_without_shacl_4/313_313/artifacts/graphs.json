@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_III a :Man .\n\ndata:Nicholas_II a :Man .\n\ndata:Sergei_Mikhailovich a :Man .\n\ndata:Vladimir_Sergeievich a :Man ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Andrei_Vladimirovich ;\n    :hasMother data:Mathilde_Kschessinska .\n\ndata:Alexander_II a :Man .\n\ndata:Andrei_Vladimirovich a :Man ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Boris_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMarriageYear data:Mathilde_Kschessinska,\n        1921 ;\n    :hasMother data:Maria_Pavlovna ;\n    :hasSister data:Elena_Vladimirovna .\n\ndata:Boris_Vladimirovich a :Man .\n\ndata:Elena_Vladimirovna a :Woman .\n\ndata:Kirill_Vladimirovich a :Man .\n\ndata:Maria_Pavlovna a :Woman .\n\ndata:Vladimir_Alexandrovich a :Man ;\n    :hasFather data:Alexander_II .\n\ndata:Mathilde_Kschessinska a :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1971 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_III a :Man .\n\ndata:Nicholas_II a :Man .\n\ndata:Sergei_Mikhailovich a :Man .\n\ndata:Vladimir_Sergeievich a :Man ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:Andrei_Vladimirovich ;\n    :hasMother data:Mathilde_Kschessinska .\n\ndata:Alexander_II a :Man .\n\ndata:Andrei_Vladimirovich a :Man ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Boris_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMarriageYear data:Mathilde_Kschessinska,\n        1921 ;\n    :hasMother data:Maria_Pavlovna ;\n    :hasSister data:Elena_Vladimirovna .\n\ndata:Boris_Vladimirovich a :Man .\n\ndata:Elena_Vladimirovna a :Woman .\n\ndata:Kirill_Vladimirovich a :Man .\n\ndata:Maria_Pavlovna a :Woman .\n\ndata:Vladimir_Alexandrovich a :Man ;\n    :hasFather data:Alexander_II .\n\ndata:Mathilde_Kschessinska a :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1971 .\n\n"
+    }
+]

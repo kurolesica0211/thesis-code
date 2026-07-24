@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Mossy\"^^xsd:string ;\n    :hasAncestor data:Queen_Victoria ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III_German_Emperor ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSiblingOf data:Wilhelm_II_Emperor .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person .\n\ndata:Frederick_III_German_Emperor a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Wilhelm_II_Emperor a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Mossy\"^^xsd:string ;\n    :hasAncestor data:Queen_Victoria ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III_German_Emperor ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSiblingOf data:Wilhelm_II_Emperor .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person .\n\ndata:Frederick_III_German_Emperor a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Wilhelm_II_Emperor a :Man,\n        :Person .\n\n"
+    }
+]

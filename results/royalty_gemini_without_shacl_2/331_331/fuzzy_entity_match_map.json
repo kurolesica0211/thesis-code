@@ -1,0 +1,211 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/331_331",
+  "text_file": "Q550183.txt",
+  "text_key": "Q550183",
+  "article": "https://en.wikipedia.org/wiki/James,_Earl_of_Wessex",
+  "article_key": "James, Earl of Wessex",
+  "main_entity": {
+    "uri": "http://example.com/data#James-_Earl_of_Wessex",
+    "qid": "Q550183",
+    "label": "James, Earl of Wessex"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#James-_Earl_of_Wessex",
+      "qid": "Q550183",
+      "label": "James, Earl of Wessex",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Edinburgh",
+      "qid": "Q154920",
+      "label": "Prince Edward, Duke of Edinburgh",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Sophie-_Duchess_of_Edinburgh",
+      "qid": "Q155203",
+      "label": "Sophie, Duchess of Edinburgh",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Edward",
+      "extracted_local_name": "Prince_Edward",
+      "embedding_text": "Prince Edward",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Edinburgh",
+      "ground_truth_qid": "Q154920",
+      "ground_truth_label": "Prince Edward, Duke of Edinburgh",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Edward",
+      "best_candidate_label": "Prince Edward, Duke of Edinburgh",
+      "best_candidate_qid": "Q154920",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Philip",
+      "extracted_local_name": "Prince_Philip",
+      "embedding_text": "Prince Philip",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "ground_truth_qid": "Q80976",
+      "ground_truth_label": "Prince Philip, Duke of Edinburgh",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Philip",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_II",
+      "extracted_local_name": "Queen_Elizabeth_II",
+      "embedding_text": "Queen Elizabeth II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Elizabeth_II",
+      "ground_truth_qid": "Q9682",
+      "ground_truth_label": "Elizabeth II",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/James_Mountbatten-Windsor",
+      "extracted_local_name": "James_Mountbatten-Windsor",
+      "embedding_text": "James Mountbatten-Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Charles_III",
+      "ground_truth_qid": "Q43274",
+      "ground_truth_label": "Charles III",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Charles Mountbatten-Windsor",
+      "best_candidate_label": "Charles III",
+      "best_candidate_qid": "Q43274",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Charles_III",
+      "extracted_local_name": "King_Charles_III",
+      "embedding_text": "King Charles III",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35714285714285715
+    },
+    {
+      "extracted_uri": "http://example.org/data/Louise_Mountbatten-Windsor",
+      "extracted_local_name": "Louise_Mountbatten-Windsor",
+      "embedding_text": "Louise Mountbatten-Windsor",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Andrew Albert Christian Edward Mountbatten-Windsor",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.631578947368421
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sophie_Mountbatten-Windsor",
+      "extracted_local_name": "Sophie_Mountbatten-Windsor",
+      "embedding_text": "Sophie Mountbatten-Windsor",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "James Alexander Philip Theo Mountbatten-Windsor",
+      "best_candidate_label": "James, Earl of Wessex",
+      "best_candidate_qid": "Q550183",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.684931506849315
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 4,
+    "entities_unmatched": 3
+  }
+}

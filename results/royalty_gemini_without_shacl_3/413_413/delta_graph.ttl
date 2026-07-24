@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_de_Borbon_son_of_Jaime a :Man,
+        :Person ;
+    :hasFather data:Jaime_of_Spain ;
+    :hasMother data:Emanuela_de_Dampierre .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+        :Woman ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1979 ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein .
+
+data:Gonzalo_de_Borbon_son_of_Jaime a :Man,
+        :Person ;
+    :hasFather data:Jaime_of_Spain ;
+    :hasMother data:Emanuela_de_Dampierre .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Luise_Amalia_Klein a :Person,
+        :Woman .
+
+data:Otto_Eugen_Tiedemann a :Man,
+        :Person .
+
+data:Emanuela_de_Dampierre a :Person,
+        :Woman .
+
+data:Jaime_of_Spain a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

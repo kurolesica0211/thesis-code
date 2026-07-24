@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasMarriageYear 1997 ;
+    :hasRelation data:Eilika_of_Oldenburg ;
+    :hasSex data:Male .
+
+data:Eilika_of_Oldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Johann_of_Oldenburg ;
+    :hasMother data:Ilka_of_Ortenburg ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Ilka_of_Ortenburg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Johann_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Male a :Sex .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person .
+

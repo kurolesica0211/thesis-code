@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philip_Louis_Johnson a :Man,
+        :Person ;
+    :hasFather data:John_Mitchell_Johnson ;
+    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Person,
+        :Woman ;
+    :hasFather data:Clyde_Kenneth_Harris ;
+    :hasMother data:Princess_Cecilie_of_Prussia ;
+    :hasRelation data:John_Mitchell_Johnson .
+
+data:Princess_Cecilie_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Clyde_Kenneth_Harris .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person .
+
+data:Clyde_Kenneth_Harris a :Man,
+        :Person .
+
+data:John_Mitchell_Johnson a :Man,
+        :Person .
+

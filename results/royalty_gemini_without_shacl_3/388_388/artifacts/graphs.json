@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duchess_Louise_of_Mecklenburg_Schwerin a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin a :Man,\n        :Person ;\n    :isFatherOf data:Duke_Paul_Frederick_of_Mecklenburg .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,\n        :Person .\n\ndata:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz .\n\ndata:Prince_Hugo_of_Windisch_Graetz a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman ;\n    :isMotherOf data:Duke_Paul_Frederick_of_Mecklenburg .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1852 ;\n    :hasDeathYear 1923 ;\n    :hasMarriageYear 1881 ;\n    :hasRelation data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Princess_Marie_of_Windisch_Graetz a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duchess_Louise_of_Mecklenburg_Schwerin a :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin a :Man,\n        :Person ;\n    :isFatherOf data:Duke_Paul_Frederick_of_Mecklenburg .\n\ndata:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,\n        :Person .\n\ndata:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Augusta_Reuss_of_K%C3%B6stritz .\n\ndata:Prince_Hugo_of_Windisch_Graetz a :Man,\n        :Person ;\n    :isFatherOf data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman ;\n    :isMotherOf data:Duke_Paul_Frederick_of_Mecklenburg .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1852 ;\n    :hasDeathYear 1923 ;\n    :hasMarriageYear 1881 ;\n    :hasRelation data:Princess_Marie_of_Windisch_Graetz .\n\ndata:Princess_Marie_of_Windisch_Graetz a :Person,\n        :Woman .\n\n"
+    }
+]

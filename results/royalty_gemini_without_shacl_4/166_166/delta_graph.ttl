@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dominik_Rainer_Radziwill a :Man,
+        :Person ;
+    :hasFather data:Hieronim_Radziwill ;
+    :hasMarriageYear "1938"^^xsd:nonNegativeInteger ;
+    :hasMother data:Renata_of_Austria .
+
+data:Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1910"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Peter_of_Greece_and_Denmark ;
+    :hasDeathYear "1989"^^xsd:nonNegativeInteger ;
+    :hasFather data:George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte .
+
+data:Raymundo_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasMarriageYear "1949"^^xsd:nonNegativeInteger .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
+
+data:Hieronim_Radziwill a :Man,
+        :Person .
+
+data:Marie-Felix_Blanc a :Person,
+        :Woman .
+
+data:Marie_Bonaparte a :Person,
+        :Woman ;
+    :hasFather data:Roland_Bonaparte ;
+    :hasMother data:Marie-Felix_Blanc .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Peter_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Renata_of_Austria a :Person,
+        :Woman .
+
+data:Roland_Bonaparte a :Man,
+        :Person .
+

@@ -1,0 +1,179 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingFrederikX a :Man,
+        :Person ;
+    :hasBrother data:KingFrederikX ;
+    :hasRelation data:KingFrederikX ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isSiblingOf data:KingFrederikX .
+
+data:PrinceHenrik a :Man,
+        :Person ;
+    :hasBrother data:PrinceHenrik ;
+    :hasRelation data:PrinceHenrik ;
+    :isBloodrelationOf data:PrinceHenrik ;
+    :isBrotherOf data:PrinceHenrik ;
+    :isSiblingOf data:PrinceHenrik .
+
+data:QueenMargretheII a :Person,
+        :Woman ;
+    :hasRelation data:QueenMargretheII ;
+    :hasSister data:QueenMargretheII ;
+    :isBloodrelationOf data:QueenMargretheII ;
+    :isSiblingOf data:QueenMargretheII ;
+    :isSisterOf data:QueenMargretheII .
+
+data:PrinceJoachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceJoachim ;
+    :hasChild data:Athena ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :isAncestorOf data:Athena ;
+    :isBloodrelationOf data:PrinceJoachim ;
+    :isBrotherOf data:PrinceJoachim ;
+    :isFatherOf data:Athena ;
+    :isParentOf data:Athena ;
+    :isSiblingOf data:PrinceJoachim ;
+    :isUncleOf data:Athena .
+
+data:PrincessMarie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Athena ;
+    :hasDaughter data:Athena ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasSister data:PrincessMarie ;
+    :isAncestorOf data:Athena ;
+    :isAuntOf data:Athena ;
+    :isBloodrelationOf data:PrincessMarie ;
+    :isMotherOf data:Athena ;
+    :isParentOf data:Athena ;
+    :isSiblingOf data:PrincessMarie ;
+    :isSisterOf data:PrincessMarie .
+
+data:Felix a :Man,
+        :Person ;
+    :hasBrother data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai .
+
+data:Henrik a :Man,
+        :Person ;
+    :hasBrother data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai .
+
+data:Nikolai a :Man,
+        :Person ;
+    :hasBrother data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isBrotherOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai .
+
+data:Athena a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasBirthYear 2012 ;
+    :hasBrother data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :hasFather data:PrinceJoachim ;
+    :hasMother data:PrincessMarie ;
+    :hasParent data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasRelation data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai,
+        data:PrinceJoachim,
+        data:PrincessMarie ;
+    :hasSister data:Athena ;
+    :isBloodrelationOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isChildOf data:PrinceJoachim,
+        data:PrincessMarie ;
+    :isDaughterOf data:PrinceJoachim,
+        data:PrincessMarie ;
+    :isSiblingOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :isSisterOf data:Athena,
+        data:Felix,
+        data:Henrik,
+        data:Nikolai .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;\n    :hasMother data:Alicia_of_Bourbon-Parma .\n\ndata:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:Alicia_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;\n    :hasMother data:Alicia_of_Bourbon-Parma .\n\ndata:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:Alicia_of_Bourbon-Parma a :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
+    }
+]

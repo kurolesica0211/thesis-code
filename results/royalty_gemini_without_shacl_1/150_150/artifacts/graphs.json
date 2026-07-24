@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .\n\ndata:Grand_Duchess_Olga_Constantinovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_George_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .\n\ndata:Grand_Duchess_Olga_Constantinovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_George_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

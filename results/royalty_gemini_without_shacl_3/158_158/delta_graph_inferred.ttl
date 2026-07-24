@@ -1,0 +1,304 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Feodorovna_Tsarina a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :hasSister data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isBloodrelationOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isSiblingOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isSisterOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna .
+
+data:Elizabeth_Feodorovna a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :hasSister data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isBloodrelationOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isSiblingOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna ;
+    :isSisterOf data:Alexandra_Feodorovna_Tsarina,
+        data:Elizabeth_Feodorovna .
+
+data:Sergei_Alexandrovich a :Man,
+        :Person ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :hasRelation data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isUncleOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia .
+
+data:Sergei_Mikhailovich_Putyatin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sergei_Mikhailovich_Putyatin ;
+    :hasChild data:Roman_Sergeievich_Putyatin ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSon data:Roman_Sergeievich_Putyatin ;
+    :isAncestorOf data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Sergei_Mikhailovich_Putyatin ;
+    :isBrotherOf data:Sergei_Mikhailovich_Putyatin ;
+    :isFatherOf data:Roman_Sergeievich_Putyatin ;
+    :isParentOf data:Roman_Sergeievich_Putyatin ;
+    :isSiblingOf data:Sergei_Mikhailovich_Putyatin ;
+    :isUncleOf data:Roman_Sergeievich_Putyatin .
+
+data:Wilhelm_Duke_of_Sodermanland a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_Duke_of_Sodermanland ;
+    :hasChild data:Lennart_Duke_of_Smaland ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSon data:Lennart_Duke_of_Smaland ;
+    :isAncestorOf data:Lennart_Duke_of_Smaland ;
+    :isBloodrelationOf data:Wilhelm_Duke_of_Sodermanland ;
+    :isBrotherOf data:Wilhelm_Duke_of_Sodermanland ;
+    :isFatherOf data:Lennart_Duke_of_Smaland ;
+    :isParentOf data:Lennart_Duke_of_Smaland ;
+    :isSiblingOf data:Wilhelm_Duke_of_Sodermanland ;
+    :isUncleOf data:Lennart_Duke_of_Smaland .
+
+data:Alexandra_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSister data:Alexandra_Georgievna_of_Russia ;
+    :hasSon data:Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAuntOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Alexandra_Georgievna_of_Russia ;
+    :isMotherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Alexandra_Georgievna_of_Russia ;
+    :isSisterOf data:Alexandra_Georgievna_of_Russia .
+
+data:Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :hasChild data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSon data:Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isFatherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Alexandrovich ;
+    :isUncleOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia .
+
+data:Dmitri_Pavlovich_of_Russia a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_Georgievna_of_Russia ;
+    :hasParent data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSister data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isBrotherOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isChildOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSonOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isUncleOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin .
+
+data:Lennart_Duke_of_Smaland a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Georgievna_of_Russia,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasBrother data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasFather data:Wilhelm_Duke_of_Sodermanland ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasParent data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :isBloodrelationOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBrotherOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isChildOf data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :isSiblingOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSonOf data:Maria_Pavlovna_of_Russia,
+        data:Wilhelm_Duke_of_Sodermanland .
+
+data:Roman_Sergeievich_Putyatin a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_Georgievna_of_Russia,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Sergei_Mikhailovich_Putyatin ;
+    :hasBrother data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasFather data:Sergei_Mikhailovich_Putyatin ;
+    :hasMother data:Maria_Pavlovna_of_Russia ;
+    :hasParent data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Mikhailovich_Putyatin ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :isBloodrelationOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBrotherOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isChildOf data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Mikhailovich_Putyatin ;
+    :isSiblingOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSonOf data:Maria_Pavlovna_of_Russia,
+        data:Sergei_Mikhailovich_Putyatin .
+
+data:Maria_Pavlovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBirthYear "1890-04-18"^^xsd:date ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasChild data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :hasDeathYear "1958-12-13"^^xsd:date ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:Alexandra_Georgievna_of_Russia ;
+    :hasParent data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexandra_Georgievna_of_Russia,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Lennart_Duke_of_Smaland,
+        data:Maria_Pavlovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia,
+        data:Roman_Sergeievich_Putyatin,
+        data:Sergei_Alexandrovich,
+        data:Sergei_Mikhailovich_Putyatin,
+        data:Wilhelm_Duke_of_Sodermanland ;
+    :hasSister data:Maria_Pavlovna_of_Russia ;
+    :hasSon data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAncestorOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isAuntOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isBloodrelationOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isChildOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Alexandra_Georgievna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isMotherOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isParentOf data:Lennart_Duke_of_Smaland,
+        data:Roman_Sergeievich_Putyatin ;
+    :isSiblingOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :isSisterOf data:Dmitri_Pavlovich_of_Russia,
+        data:Maria_Pavlovna_of_Russia ;
+    :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+

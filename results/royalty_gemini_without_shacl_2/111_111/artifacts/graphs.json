@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:India_Hicks a :Person,\n        :Woman ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMother data:Lady_Pamela_Mountbatten ;\n    :hasRelation data:David_Flint_Wood ;\n    :isBloodrelationOf data:David_Armstrong-Jones,\n        data:Lady_Helen_Windsor .\n\ndata:Susannah_Constantine a :Person,\n        :Woman .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person .\n\ndata:David_Flint_Wood a :Man,\n        :Person .\n\ndata:David_Nightingale_Hicks a :Man,\n        :Person .\n\ndata:Lady_Helen_Windsor a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Mountbatten a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:India_Hicks a :Person,\n        :Woman ;\n    :hasBirthYear \"1967\"^^xsd:positiveInteger ;\n    :hasFather data:David_Nightingale_Hicks ;\n    :hasMother data:Lady_Pamela_Mountbatten ;\n    :hasRelation data:David_Flint_Wood ;\n    :isBloodrelationOf data:David_Armstrong-Jones,\n        data:Lady_Helen_Windsor .\n\ndata:Susannah_Constantine a :Person,\n        :Woman .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person .\n\ndata:David_Flint_Wood a :Man,\n        :Person .\n\ndata:David_Nightingale_Hicks a :Man,\n        :Person .\n\ndata:Lady_Helen_Windsor a :Person,\n        :Woman .\n\ndata:Lady_Pamela_Mountbatten a :Person,\n        :Woman .\n\n"
+    }
+]

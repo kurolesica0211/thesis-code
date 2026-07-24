@@ -1,0 +1,220 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mathilde_van_Limburg-Stirum a :Person,
+        :Woman ;
+    :hasRelation data:Mathilde_van_Limburg-Stirum ;
+    :hasSister data:Mathilde_van_Limburg-Stirum ;
+    :isBloodrelationOf data:Mathilde_van_Limburg-Stirum ;
+    :isSiblingOf data:Mathilde_van_Limburg-Stirum ;
+    :isSisterOf data:Mathilde_van_Limburg-Stirum .
+
+data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:William_Prince_of_Orange ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Sophie_of_W%C3%BCrttemberg ;
+    :hasSon data:William_Prince_of_Orange ;
+    :isAncestorOf data:William_Prince_of_Orange ;
+    :isAuntOf data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isMotherOf data:William_Prince_of_Orange ;
+    :isParentOf data:William_Prince_of_Orange ;
+    :isSiblingOf data:Sophie_of_W%C3%BCrttemberg ;
+    :isSisterOf data:Sophie_of_W%C3%BCrttemberg .
+
+data:William_I_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_I_of_the_Netherlands ;
+    :hasChild data:William_II_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSon data:William_II_of_the_Netherlands ;
+    :isAncestorOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:William_I_of_the_Netherlands ;
+    :isBrotherOf data:William_I_of_the_Netherlands ;
+    :isFatherOf data:William_II_of_the_Netherlands ;
+    :isParentOf data:William_II_of_the_Netherlands ;
+    :isSiblingOf data:William_I_of_the_Netherlands ;
+    :isUncleOf data:William_II_of_the_Netherlands .
+
+data:William_II_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:William_I_of_the_Netherlands ;
+    :hasBrother data:William_II_of_the_Netherlands ;
+    :hasChild data:William_III_of_the_Netherlands ;
+    :hasFather data:William_I_of_the_Netherlands ;
+    :hasParent data:William_I_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSon data:William_III_of_the_Netherlands ;
+    :isAncestorOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:William_II_of_the_Netherlands ;
+    :isBrotherOf data:William_II_of_the_Netherlands ;
+    :isChildOf data:William_I_of_the_Netherlands ;
+    :isFatherOf data:William_III_of_the_Netherlands ;
+    :isParentOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:William_II_of_the_Netherlands ;
+    :isSonOf data:William_I_of_the_Netherlands ;
+    :isUncleOf data:William_III_of_the_Netherlands .
+
+data:Alexander_Netherlands a :Man,
+        :Person ;
+    :hasAncestor data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands ;
+    :hasBrother data:Alexander_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasParent data:William_III_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina_Netherlands ;
+    :isBloodrelationOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isBrotherOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isChildOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isSonOf data:William_III_of_the_Netherlands .
+
+data:Wilhelmina_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands ;
+    :hasBrother data:Alexander_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasParent data:William_III_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina_Netherlands ;
+    :isBloodrelationOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isChildOf data:William_III_of_the_Netherlands ;
+    :isDaughterOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isSisterOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands ;
+    :hasBrother data:William_III_of_the_Netherlands ;
+    :hasChild data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasDaughter data:Wilhelmina_Netherlands ;
+    :hasFather data:William_II_of_the_Netherlands ;
+    :hasParent data:William_II_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSon data:Alexander_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isAncestorOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isBloodrelationOf data:William_III_of_the_Netherlands ;
+    :isBrotherOf data:William_III_of_the_Netherlands ;
+    :isChildOf data:William_II_of_the_Netherlands ;
+    :isFatherOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isParentOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isSiblingOf data:William_III_of_the_Netherlands ;
+    :isSonOf data:William_II_of_the_Netherlands ;
+    :isUncleOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange .
+
+data:William_Prince_of_Orange a :Man,
+        :Person ;
+    :hasAncestor data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands ;
+    :hasBirthYear 1840 ;
+    :hasBrother data:Alexander_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasDeathYear 1879 ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :hasParent data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasRelation data:Alexander_Netherlands,
+        data:Sophie_of_W%C3%BCrttemberg,
+        data:Wilhelmina_Netherlands,
+        data:William_III_of_the_Netherlands,
+        data:William_II_of_the_Netherlands,
+        data:William_I_of_the_Netherlands,
+        data:William_Prince_of_Orange ;
+    :hasSister data:Wilhelmina_Netherlands ;
+    :isBloodrelationOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isBrotherOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isChildOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Alexander_Netherlands,
+        data:Wilhelmina_Netherlands,
+        data:William_Prince_of_Orange ;
+    :isSonOf data:Sophie_of_W%C3%BCrttemberg,
+        data:William_III_of_the_Netherlands .
+

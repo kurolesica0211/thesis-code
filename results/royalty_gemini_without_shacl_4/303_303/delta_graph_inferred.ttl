@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Princess_Margarita_of_Baden .
+
+data:King_Peter_II_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :isBloodrelationOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia .
+
+data:King_Alexander_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alexander_I ;
+    :hasChild data:Prince_Tomislav_of_Yugoslavia ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :hasSon data:Prince_Tomislav_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBloodrelationOf data:King_Alexander_I ;
+    :isBrotherOf data:King_Alexander_I ;
+    :isFatherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isParentOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:King_Alexander_I ;
+    :isUncleOf data:Prince_Tomislav_of_Yugoslavia .
+
+data:King_Ferdinand_of_Romania a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Ferdinand_of_Romania ;
+    :hasChild data:Queen_Maria_of_Yugoslavia ;
+    :hasDaughter data:Queen_Maria_of_Yugoslavia ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :isAncestorOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Queen_Maria_of_Yugoslavia ;
+    :isBloodrelationOf data:King_Ferdinand_of_Romania ;
+    :isBrotherOf data:King_Ferdinand_of_Romania ;
+    :isFatherOf data:Queen_Maria_of_Yugoslavia ;
+    :isParentOf data:Queen_Maria_of_Yugoslavia ;
+    :isSiblingOf data:King_Ferdinand_of_Romania ;
+    :isUncleOf data:Queen_Maria_of_Yugoslavia .
+
+data:Queen_Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Maria_of_Yugoslavia ;
+    :hasDaughter data:Queen_Maria_of_Yugoslavia ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :hasSister data:Queen_Marie_of_Romania ;
+    :isAncestorOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Queen_Maria_of_Yugoslavia ;
+    :isAuntOf data:Queen_Maria_of_Yugoslavia ;
+    :isBloodrelationOf data:Queen_Marie_of_Romania ;
+    :isMotherOf data:Queen_Maria_of_Yugoslavia ;
+    :isParentOf data:Queen_Maria_of_Yugoslavia ;
+    :isSiblingOf data:Queen_Marie_of_Romania ;
+    :isSisterOf data:Queen_Marie_of_Romania .
+
+data:Queen_Maria_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Ferdinand_of_Romania,
+        data:Queen_Marie_of_Romania ;
+    :hasChild data:Prince_Tomislav_of_Yugoslavia ;
+    :hasFather data:King_Ferdinand_of_Romania ;
+    :hasMother data:Queen_Marie_of_Romania ;
+    :hasParent data:King_Ferdinand_of_Romania,
+        data:Queen_Marie_of_Romania ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :hasSister data:Queen_Maria_of_Yugoslavia ;
+    :hasSon data:Prince_Tomislav_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isAuntOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBloodrelationOf data:Queen_Maria_of_Yugoslavia ;
+    :isChildOf data:King_Ferdinand_of_Romania,
+        data:Queen_Marie_of_Romania ;
+    :isDaughterOf data:King_Ferdinand_of_Romania,
+        data:Queen_Marie_of_Romania ;
+    :isMotherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isParentOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:Queen_Maria_of_Yugoslavia ;
+    :isSisterOf data:Queen_Maria_of_Yugoslavia .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :hasBirthYear "1928"^^xsd:nonNegativeInteger ;
+    :hasBrother data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :hasDeathYear "2000"^^xsd:nonNegativeInteger ;
+    :hasFather data:King_Alexander_I ;
+    :hasMarriageYear "1957"^^xsd:nonNegativeInteger ;
+    :hasMother data:Queen_Maria_of_Yugoslavia ;
+    :hasParent data:King_Alexander_I,
+        data:Queen_Maria_of_Yugoslavia ;
+    :hasRelation data:King_Alexander_I,
+        data:King_Ferdinand_of_Romania,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Queen_Maria_of_Yugoslavia,
+        data:Queen_Marie_of_Romania ;
+    :isBloodrelationOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isChildOf data:King_Alexander_I,
+        data:Queen_Maria_of_Yugoslavia ;
+    :isSiblingOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isSonOf data:King_Alexander_I,
+        data:Queen_Maria_of_Yugoslavia .
+

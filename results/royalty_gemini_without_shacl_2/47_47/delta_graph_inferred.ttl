@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix_von_Storch a :Person,
+        :Woman ;
+    :hasBirthYear "1971"^^xsd:positiveInteger ;
+    :hasMarriageYear "2010"^^xsd:positiveInteger ;
+    :hasRelation data:Antje_Liete_Kruger-Franke,
+        data:Beatrix_von_Storch,
+        data:Berndt_Detlev_von_Storch,
+        data:Sven_von_Storch ;
+    :hasSister data:Beatrix_von_Storch ;
+    :isBloodrelationOf data:Beatrix_von_Storch ;
+    :isSiblingOf data:Beatrix_von_Storch ;
+    :isSisterOf data:Beatrix_von_Storch ;
+    :knownAs "Beatrix Amelie Ehrengard Eilika von Storch"^^xsd:string .
+
+data:Antje_Liete_Kruger-Franke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasChild data:Sven_von_Storch ;
+    :hasRelation data:Antje_Liete_Kruger-Franke,
+        data:Beatrix_von_Storch,
+        data:Berndt_Detlev_von_Storch,
+        data:Sven_von_Storch ;
+    :hasSister data:Antje_Liete_Kruger-Franke ;
+    :hasSon data:Sven_von_Storch ;
+    :isAncestorOf data:Sven_von_Storch ;
+    :isAuntOf data:Sven_von_Storch ;
+    :isBloodrelationOf data:Antje_Liete_Kruger-Franke ;
+    :isMotherOf data:Sven_von_Storch ;
+    :isParentOf data:Sven_von_Storch ;
+    :isSiblingOf data:Antje_Liete_Kruger-Franke ;
+    :isSisterOf data:Antje_Liete_Kruger-Franke .
+
+data:Berndt_Detlev_von_Storch a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear "1930"^^xsd:positiveInteger ;
+    :hasBrother data:Berndt_Detlev_von_Storch ;
+    :hasChild data:Sven_von_Storch ;
+    :hasDeathYear "2004"^^xsd:positiveInteger ;
+    :hasRelation data:Antje_Liete_Kruger-Franke,
+        data:Beatrix_von_Storch,
+        data:Berndt_Detlev_von_Storch,
+        data:Sven_von_Storch ;
+    :hasSon data:Sven_von_Storch ;
+    :isAncestorOf data:Sven_von_Storch ;
+    :isBloodrelationOf data:Berndt_Detlev_von_Storch ;
+    :isBrotherOf data:Berndt_Detlev_von_Storch ;
+    :isFatherOf data:Sven_von_Storch ;
+    :isParentOf data:Sven_von_Storch ;
+    :isSiblingOf data:Berndt_Detlev_von_Storch ;
+    :isUncleOf data:Sven_von_Storch .
+
+data:Sven_von_Storch a :Man,
+        :Person ;
+    :hasAncestor data:Antje_Liete_Kruger-Franke,
+        data:Berndt_Detlev_von_Storch ;
+    :hasBirthYear "1970"^^xsd:positiveInteger ;
+    :hasBrother data:Sven_von_Storch ;
+    :hasFather data:Berndt_Detlev_von_Storch ;
+    :hasMother data:Antje_Liete_Kruger-Franke ;
+    :hasParent data:Antje_Liete_Kruger-Franke,
+        data:Berndt_Detlev_von_Storch ;
+    :hasRelation data:Antje_Liete_Kruger-Franke,
+        data:Beatrix_von_Storch,
+        data:Berndt_Detlev_von_Storch,
+        data:Sven_von_Storch ;
+    :isBloodrelationOf data:Sven_von_Storch ;
+    :isBrotherOf data:Sven_von_Storch ;
+    :isChildOf data:Antje_Liete_Kruger-Franke,
+        data:Berndt_Detlev_von_Storch ;
+    :isSiblingOf data:Sven_von_Storch ;
+    :isSonOf data:Antje_Liete_Kruger-Franke,
+        data:Berndt_Detlev_von_Storch .
+

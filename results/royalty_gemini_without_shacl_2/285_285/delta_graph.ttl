@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 .
+
+data:Prince_Ruggiero_Maria a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1914 .
+
+data:Princess_Barbara_Maria a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1927 .
+
+data:Princess_Lucia a :Person,
+        :Woman ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 2001 .
+
+data:Princess_Maria_Antonietta a :Person,
+        :Woman ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1957 .
+
+data:Princess_Maria_Cristina a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1985 .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 .
+

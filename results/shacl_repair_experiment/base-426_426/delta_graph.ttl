@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Amadeo_I_of_Spain a :Ancestor .
+
+data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor .
+
+data:Prince_Philippe_of_Orleans a :Ancestor .
+
+data:Princess_Helene a :Ancestor .
+
+data:Princess_Isabelle_of_Orleans a :Ancestor .
+
+data:Princess_Maria_Vittoria a :Ancestor .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Ancestor .
+

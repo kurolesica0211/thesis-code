@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:George_William_of_Hanover ;
+    :hasRelation data:George_William_of_Hanover ;
+    :isBloodrelationOf data:George_William_of_Hanover ;
+    :isBrotherOf data:George_William_of_Hanover ;
+    :isSiblingOf data:George_William_of_Hanover .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:King_Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasRelation data:King_Paul_of_Greece ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isSiblingOf data:King_Paul_of_Greece .
+
+data:Queen_Frederica a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Frederica ;
+    :hasSister data:Queen_Frederica ;
+    :isBloodrelationOf data:Queen_Frederica ;
+    :isSiblingOf data:Queen_Frederica ;
+    :isSisterOf data:Queen_Frederica .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Wilhelm_II ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Wolfgang_of_Hesse ;
+    :hasRelation data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Wolfgang_of_Hesse .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Christoph_of_Hesse,
+        data:Karl_Adolf_Andreas_von_Hesse,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isUncleOf data:Karl_Adolf_Andreas_von_Hesse .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse ;
+    :hasChild data:Karl_Adolf_Andreas_von_Hesse ;
+    :hasRelation data:Christoph_of_Hesse,
+        data:Karl_Adolf_Andreas_von_Hesse,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Karl_Adolf_Andreas_von_Hesse ;
+    :isAncestorOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse ;
+    :isFatherOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isParentOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse ;
+    :isUncleOf data:Karl_Adolf_Andreas_von_Hesse .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Karl_Adolf_Andreas_von_Hesse ;
+    :hasRelation data:Christoph_of_Hesse,
+        data:Karl_Adolf_Andreas_von_Hesse,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Karl_Adolf_Andreas_von_Hesse ;
+    :isAncestorOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isAuntOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isBloodrelationOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isMotherOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isParentOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isSiblingOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark .
+
+data:Karl_Adolf_Andreas_von_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Karl_Adolf_Andreas_von_Hesse ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMother data:Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Christoph_of_Hesse,
+        data:Karl_Adolf_Andreas_von_Hesse,
+        data:Prince_Philip,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isBrotherOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isChildOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Karl_Adolf_Andreas_von_Hesse ;
+    :isSonOf data:Christoph_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark .
+

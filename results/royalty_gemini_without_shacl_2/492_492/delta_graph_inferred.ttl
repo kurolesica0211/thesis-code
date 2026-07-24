@@ -1,0 +1,179 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anna_Elspeth_Campbell a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1986 ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :hasSister data:Anna_Elspeth_Campbell ;
+    :isAncestorOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Anna_Elspeth_Campbell ;
+    :isSiblingOf data:Anna_Elspeth_Campbell ;
+    :isSisterOf data:Anna_Elspeth_Campbell .
+
+data:Prince_Alexander_of_Croy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Prince_Alexander_of_Croy ;
+    :hasDeathYear 2002 ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :isAncestorOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Prince_Alexander_of_Croy ;
+    :isBrotherOf data:Prince_Alexander_of_Croy ;
+    :isSiblingOf data:Prince_Alexander_of_Croy .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isAncestorOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Hans_Peter_Binder a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hans_Peter_Binder ;
+    :hasChild data:Saskia_Binder ;
+    :hasDaughter data:Saskia_Binder ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :isAncestorOf data:Saskia_Binder ;
+    :isBloodrelationOf data:Hans_Peter_Binder ;
+    :isBrotherOf data:Hans_Peter_Binder ;
+    :isFatherOf data:Saskia_Binder ;
+    :isParentOf data:Saskia_Binder ;
+    :isSiblingOf data:Hans_Peter_Binder ;
+    :isUncleOf data:Saskia_Binder .
+
+data:Kraft_Prince_of_Hohenlohe_Langenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:Kraft_Prince_of_Hohenlohe_Langenburg ;
+    :hasChild data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :hasDeathYear 2004 ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :hasSon data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isAncestorOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Kraft_Prince_of_Hohenlohe_Langenburg ;
+    :isBrotherOf data:Kraft_Prince_of_Hohenlohe_Langenburg ;
+    :isFatherOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isParentOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isSiblingOf data:Kraft_Prince_of_Hohenlohe_Langenburg ;
+    :isUncleOf data:Philipp_Prince_of_Hohenlohe_Langenburg .
+
+data:Princess_Charlotte_of_Croy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasChild data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :hasSister data:Princess_Charlotte_of_Croy ;
+    :hasSon data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isAncestorOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isAuntOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Croy ;
+    :isMotherOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isParentOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isSiblingOf data:Princess_Charlotte_of_Croy ;
+    :isSisterOf data:Princess_Charlotte_of_Croy .
+
+data:Saskia_Binder a :Person,
+        :Woman ;
+    :hasAncestor data:Hans_Peter_Binder ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Hans_Peter_Binder ;
+    :hasParent data:Hans_Peter_Binder ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :hasSister data:Saskia_Binder ;
+    :isBloodrelationOf data:Saskia_Binder ;
+    :isChildOf data:Hans_Peter_Binder ;
+    :isDaughterOf data:Hans_Peter_Binder ;
+    :isSiblingOf data:Saskia_Binder ;
+    :isSisterOf data:Saskia_Binder .
+
+data:Philipp_Prince_of_Hohenlohe_Langenburg a :Man,
+        :Person ;
+    :hasAncestor data:Anna_Elspeth_Campbell,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :hasFather data:Kraft_Prince_of_Hohenlohe_Langenburg ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Princess_Charlotte_of_Croy ;
+    :hasParent data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Princess_Charlotte_of_Croy ;
+    :hasRelation data:Anna_Elspeth_Campbell,
+        data:Hans_Peter_Binder,
+        data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Philipp_Prince_of_Hohenlohe_Langenburg,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Charlotte_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Saskia_Binder ;
+    :isBloodrelationOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isBrotherOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isChildOf data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Princess_Charlotte_of_Croy ;
+    :isSiblingOf data:Philipp_Prince_of_Hohenlohe_Langenburg ;
+    :isSonOf data:Kraft_Prince_of_Hohenlohe_Langenburg,
+        data:Princess_Charlotte_of_Croy .
+

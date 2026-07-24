@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Jean a :Man,\n        :Person .\n\ndata:Prince_Bertrand a :Man,\n        :Person .\n\ndata:Rafael_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Prince_Ant%C3%B4nio ;\n    :hasMother data:Princess_Christine_of_Ligne ;\n    :isSiblingOf data:Prince_Pedro_Luiz,\n        data:Princess_Am%C3%A9lia,\n        data:Princess_Maria_Gabriela .\n\ndata:Antoine_13th_Prince_of_Ligne a :Man,\n        :Person .\n\ndata:Prince_Ant%C3%B4nio a :Man,\n        :Person ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Prince_Pedro_Henrique ;\n    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .\n\ndata:Prince_Pedro_Henrique a :Man,\n        :Person .\n\ndata:Prince_Pedro_Luiz a :Man,\n        :Person .\n\ndata:Princess_Alix_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Princess_Am%C3%A9lia a :Person,\n        :Woman .\n\ndata:Princess_Christine_of_Ligne a :Person,\n        :Woman ;\n    :hasFather data:Antoine_13th_Prince_of_Ligne ;\n    :hasMother data:Princess_Alix_of_Luxembourg .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Princess_Maria_Gabriela a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Jean a :Man,\n        :Person .\n\ndata:Prince_Bertrand a :Man,\n        :Person .\n\ndata:Rafael_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Prince_Ant%C3%B4nio ;\n    :hasMother data:Princess_Christine_of_Ligne ;\n    :isSiblingOf data:Prince_Pedro_Luiz,\n        data:Princess_Am%C3%A9lia,\n        data:Princess_Maria_Gabriela .\n\ndata:Antoine_13th_Prince_of_Ligne a :Man,\n        :Person .\n\ndata:Prince_Ant%C3%B4nio a :Man,\n        :Person ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Prince_Pedro_Henrique ;\n    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .\n\ndata:Prince_Pedro_Henrique a :Man,\n        :Person .\n\ndata:Prince_Pedro_Luiz a :Man,\n        :Person .\n\ndata:Princess_Alix_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Princess_Am%C3%A9lia a :Person,\n        :Woman .\n\ndata:Princess_Christine_of_Ligne a :Person,\n        :Woman ;\n    :hasFather data:Antoine_13th_Prince_of_Ligne ;\n    :hasMother data:Princess_Alix_of_Luxembourg .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Princess_Maria_Gabriela a :Person,\n        :Woman .\n\n"
+    }
+]

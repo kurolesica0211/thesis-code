@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_II_of_Greece a :Ancestor ;
+    :hasDeathYear "2023"^^xsd:int .
+
+data:Crown_Prince_Pavlos :hasMother data:Anne-Marie .
+
+data:Frederik_IX_of_Denmark a :Ancestor .
+
+data:Ingrid_of_Sweden a :Ancestor .
+
+data:King_Paul_of_Greece a :Ancestor .
+
+data:Prince_Nikolaos :hasMother data:Anne-Marie .
+
+data:Prince_Philippos :hasMother data:Anne-Marie .
+
+data:Princess_Alexia :hasMother data:Anne-Marie .
+
+data:Princess_Theodora :hasMother data:Anne-Marie .
+
+data:Queen_Frederica_of_Greece a :Ancestor .
+
+data:Anne-Marie a :Ancestor ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :knownAs "Queen of Greece"^^xsd:string .
+

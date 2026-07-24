@@ -1,0 +1,13 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Henriette_von_Sch%C3%B6naich-Carolath a :Ancestor .
+
+data:Karl_Franz_of_Prussia a :Ancestor .
+
+data:Maria_Vladimirovna_of_Russia :hasFather data:Vladimir_of_Russia .
+
+data:Wilhelm_II a :Ancestor .
+
+data:Vladimir_of_Russia a :Ancestor .
+

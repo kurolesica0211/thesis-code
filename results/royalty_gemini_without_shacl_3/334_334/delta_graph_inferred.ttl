@@ -1,0 +1,94 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenBeatrix a :Person,
+        :Woman ;
+    :hasRelation data:QueenBeatrix ;
+    :hasSister data:QueenBeatrix ;
+    :isBloodrelationOf data:QueenBeatrix ;
+    :isSiblingOf data:QueenBeatrix ;
+    :isSisterOf data:QueenBeatrix .
+
+data:QueenJuliana a :Person,
+        :Woman ;
+    :hasBrother data:AlbrechtWillemLier ;
+    :hasRelation data:AlbrechtWillemLier,
+        data:PrinceHenry,
+        data:QueenJuliana,
+        data:WilleminaMartinaWenneker ;
+    :hasSister data:QueenJuliana ;
+    :isBloodrelationOf data:AlbrechtWillemLier,
+        data:QueenJuliana ;
+    :isSiblingOf data:AlbrechtWillemLier,
+        data:QueenJuliana ;
+    :isSisterOf data:AlbrechtWillemLier,
+        data:QueenJuliana .
+
+data:PrinceHenry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceHenry ;
+    :hasChild data:AlbrechtWillemLier ;
+    :hasRelation data:AlbrechtWillemLier,
+        data:PrinceHenry,
+        data:QueenJuliana,
+        data:WilleminaMartinaWenneker ;
+    :hasSon data:AlbrechtWillemLier ;
+    :isAncestorOf data:AlbrechtWillemLier ;
+    :isBloodrelationOf data:PrinceHenry ;
+    :isBrotherOf data:PrinceHenry ;
+    :isFatherOf data:AlbrechtWillemLier ;
+    :isParentOf data:AlbrechtWillemLier ;
+    :isSiblingOf data:PrinceHenry ;
+    :isUncleOf data:AlbrechtWillemLier .
+
+data:WilleminaMartinaWenneker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1887 ;
+    :hasChild data:AlbrechtWillemLier ;
+    :hasDeathYear 1973 ;
+    :hasRelation data:AlbrechtWillemLier,
+        data:PrinceHenry,
+        data:QueenJuliana,
+        data:WilleminaMartinaWenneker ;
+    :hasSister data:WilleminaMartinaWenneker ;
+    :hasSon data:AlbrechtWillemLier ;
+    :isAncestorOf data:AlbrechtWillemLier ;
+    :isAuntOf data:AlbrechtWillemLier ;
+    :isBloodrelationOf data:WilleminaMartinaWenneker ;
+    :isMotherOf data:AlbrechtWillemLier ;
+    :isParentOf data:AlbrechtWillemLier ;
+    :isSiblingOf data:WilleminaMartinaWenneker ;
+    :isSisterOf data:WilleminaMartinaWenneker .
+
+data:AlbrechtWillemLier a :Man,
+        :Person ;
+    :alsoKnownAs "Pim"^^xsd:string ;
+    :hasAncestor data:PrinceHenry,
+        data:WilleminaMartinaWenneker ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:AlbrechtWillemLier ;
+    :hasDeathYear 2015 ;
+    :hasFather data:PrinceHenry ;
+    :hasMother data:WilleminaMartinaWenneker ;
+    :hasParent data:PrinceHenry,
+        data:WilleminaMartinaWenneker ;
+    :hasRelation data:AlbrechtWillemLier,
+        data:PrinceHenry,
+        data:QueenJuliana,
+        data:WilleminaMartinaWenneker ;
+    :hasSister data:QueenJuliana ;
+    :isBloodrelationOf data:AlbrechtWillemLier,
+        data:QueenJuliana ;
+    :isBrotherOf data:AlbrechtWillemLier,
+        data:QueenJuliana ;
+    :isChildOf data:PrinceHenry,
+        data:WilleminaMartinaWenneker ;
+    :isSiblingOf data:AlbrechtWillemLier,
+        data:QueenJuliana ;
+    :isSonOf data:PrinceHenry,
+        data:WilleminaMartinaWenneker ;
+    :isUncleOf data:QueenBeatrix .
+

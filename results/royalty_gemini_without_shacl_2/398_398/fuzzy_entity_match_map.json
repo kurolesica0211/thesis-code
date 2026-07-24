@@ -1,0 +1,179 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/398_398",
+  "text_file": "Q657778.txt",
+  "text_key": "Q657778",
+  "article": "https://en.wikipedia.org/wiki/Prince_William_of_Gloucester",
+  "article_key": "Prince William of Gloucester",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_William_of_Gloucester",
+    "qid": "Q657778",
+    "label": "Prince William of Gloucester"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_William_of_Gloucester",
+      "qid": "Q657778",
+      "label": "Prince William of Gloucester",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
+      "qid": "Q117174",
+      "label": "Prince Henry, Duke of Gloucester",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice-_Duchess_of_Gloucester",
+      "qid": "Q246915",
+      "label": "Princess Alice, Duchess of Gloucester",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_V",
+      "qid": "Q269412",
+      "label": "George V",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_VI",
+      "qid": "Q280856",
+      "label": "George VI",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
+      "qid": "Q160770",
+      "label": "Prince George, Duke of Kent",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/George_V",
+      "extracted_local_name": "George_V",
+      "embedding_text": "George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_William_of_Gloucester",
+      "extracted_local_name": "Prince_William_of_Gloucester",
+      "embedding_text": "Prince William of Gloucester",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_William_of_Gloucester",
+      "ground_truth_qid": "Q657778",
+      "ground_truth_label": "Prince William of Gloucester",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince William of Gloucester",
+      "best_candidate_label": "Prince William of Gloucester",
+      "best_candidate_qid": "Q657778",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Alice_Duchess_of_Gloucester",
+      "extracted_local_name": "Princess_Alice_Duchess_of_Gloucester",
+      "embedding_text": "Princess Alice Duchess of Gloucester",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9876543209876543,
+      "ground_truth_uri": "http://example.com/data#Princess_Alice-_Duchess_of_Gloucester",
+      "ground_truth_qid": "Q246915",
+      "ground_truth_label": "Princess Alice, Duchess of Gloucester",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Alice- Duchess of Gloucester",
+      "best_candidate_label": "Princess Alice, Duchess of Gloucester",
+      "best_candidate_qid": "Q246915",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9876543209876543
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Henry_Duke_of_Gloucester",
+      "extracted_local_name": "Prince_Henry_Duke_of_Gloucester",
+      "embedding_text": "Prince Henry Duke of Gloucester",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9841269841269842,
+      "ground_truth_uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
+      "ground_truth_qid": "Q117174",
+      "ground_truth_label": "Prince Henry, Duke of Gloucester",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Henry- Duke of Gloucester",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9841269841269842
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Richard",
+      "extracted_local_name": "Prince_Richard",
+      "embedding_text": "Prince Richard",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Edward, Prince of Wales",
+      "best_candidate_label": "Edward VIII",
+      "best_candidate_qid": "Q590227",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43243243243243246
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Mary",
+      "extracted_local_name": "Queen_Mary",
+      "embedding_text": "Queen Mary",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George of Wales",
+      "best_candidate_label": "Prince George, Duke of Kent",
+      "best_candidate_qid": "Q160770",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 4,
+    "entities_unmatched": 2
+  }
+}

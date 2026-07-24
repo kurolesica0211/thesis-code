@@ -1,0 +1,197 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Anne_of_Bourbon_Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Anne_of_Bourbon_Parma ;
+    :hasSex data:Female ;
+    :hasSister data:Anne_of_Bourbon_Parma ;
+    :isBloodrelationOf data:Anne_of_Bourbon_Parma ;
+    :isSiblingOf data:Anne_of_Bourbon_Parma ;
+    :isSisterOf data:Anne_of_Bourbon_Parma .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Elena_of_Romania ;
+    :hasDaughter data:Elena_of_Romania ;
+    :hasRelation data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Carol_II,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isFatherOf data:Elena_of_Romania ;
+    :isParentOf data:Elena_of_Romania ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isUncleOf data:Elena_of_Romania .
+
+data:Elena_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I_of_Greece ;
+    :hasChild data:Ferdinand_I,
+        data:Michael_I ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasRelation data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSex data:Female ;
+    :hasSister data:Elena_of_Romania ;
+    :hasSon data:Ferdinand_I,
+        data:Michael_I ;
+    :isAncestorOf data:Carol_II,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isAuntOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Elena_of_Romania ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isDaughterOf data:Constantine_I_of_Greece ;
+    :isMotherOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isParentOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isSiblingOf data:Elena_of_Romania ;
+    :isSisterOf data:Elena_of_Romania .
+
+data:Carol_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasBrother data:Carol_II ;
+    :hasChild data:Ferdinand_I,
+        data:Michael_I ;
+    :hasFather data:Ferdinand_I,
+        data:Michael_I ;
+    :hasMarriageYear 1921 ;
+    :hasParent data:Ferdinand_I,
+        data:Michael_I ;
+    :hasRelation data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSex data:Male ;
+    :hasSon data:Ferdinand_I,
+        data:Michael_I ;
+    :isAncestorOf data:Carol_II,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Carol_II ;
+    :isBrotherOf data:Carol_II ;
+    :isChildOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isFatherOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isParentOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isSiblingOf data:Carol_II ;
+    :isSonOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isUncleOf data:Ferdinand_I,
+        data:Michael_I .
+
+data:Ferdinand_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasBrother data:Ferdinand_I,
+        data:Michael_I ;
+    :hasChild data:Carol_II ;
+    :hasFather data:Carol_II ;
+    :hasMother data:Elena_of_Romania ;
+    :hasParent data:Carol_II,
+        data:Elena_of_Romania ;
+    :hasRelation data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSex data:Male ;
+    :hasSon data:Carol_II ;
+    :isAncestorOf data:Carol_II,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isBrotherOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isChildOf data:Carol_II,
+        data:Elena_of_Romania ;
+    :isFatherOf data:Carol_II ;
+    :isParentOf data:Carol_II ;
+    :isSiblingOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isSonOf data:Carol_II,
+        data:Elena_of_Romania ;
+    :isUncleOf data:Carol_II .
+
+data:Michael_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:Ferdinand_I,
+        data:Michael_I ;
+    :hasChild data:Carol_II ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasParent data:Carol_II,
+        data:Elena_of_Romania ;
+    :hasRelation data:Carol_II,
+        data:Constantine_I_of_Greece,
+        data:Elena_of_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSex data:Male ;
+    :hasSon data:Carol_II ;
+    :isAncestorOf data:Carol_II,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isBrotherOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isChildOf data:Carol_II,
+        data:Elena_of_Romania ;
+    :isFatherOf data:Carol_II ;
+    :isParentOf data:Carol_II ;
+    :isSiblingOf data:Ferdinand_I,
+        data:Michael_I ;
+    :isSonOf data:Carol_II,
+        data:Elena_of_Romania ;
+    :isUncleOf data:Carol_II .
+

@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Alexander_of_the_Netherlands a :Man,
+        :Person ;
+    :hasFather data:King_William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg .
+
+data:Prince_Maurice_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBirthYear 1843 ;
+    :hasBrother data:Prince_William_of_the_Netherlands ;
+    :hasDeathYear 1850 ;
+    :hasFather data:King_William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg .
+
+data:Prince_William_of_the_Netherlands a :Man,
+        :Person .
+
+data:King_William_III_of_the_Netherlands a :Man,
+        :Person .
+
+data:Sophie_of_W%C3%BCrttemberg a :Person,
+        :Woman .
+

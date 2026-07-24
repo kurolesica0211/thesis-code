@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall a :Man,
+        :Person ;
+    :hasBrother data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall ;
+    :hasRelation data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall ;
+    :isBloodrelationOf data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall ;
+    :isBrotherOf data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall ;
+    :isSiblingOf data:Count_Jean_Charles_Ullens_de_Schooten_Whettnall .
+
+data:Juliana_Guillermo a :Person,
+        :Woman ;
+    :hasRelation data:Juliana_Guillermo ;
+    :hasSister data:Juliana_Guillermo ;
+    :isBloodrelationOf data:Juliana_Guillermo ;
+    :isSiblingOf data:Juliana_Guillermo ;
+    :isSisterOf data:Juliana_Guillermo .
+
+data:Marius_Brinkhorst a :Man,
+        :Person ;
+    :hasBrother data:Marius_Brinkhorst ;
+    :hasRelation data:Marius_Brinkhorst ;
+    :isBloodrelationOf data:Marius_Brinkhorst ;
+    :isBrotherOf data:Marius_Brinkhorst ;
+    :isSiblingOf data:Marius_Brinkhorst .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Alexia ;
+    :hasSister data:Princess_Alexia ;
+    :isBloodrelationOf data:Princess_Alexia ;
+    :isSiblingOf data:Princess_Alexia ;
+    :isSisterOf data:Princess_Alexia .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrix ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Princess_Beatrix ;
+    :isSiblingOf data:Princess_Beatrix ;
+    :isSisterOf data:Princess_Beatrix .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Queen_Maxima a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Maxima ;
+    :hasSister data:Queen_Maxima ;
+    :isBloodrelationOf data:Queen_Maxima ;
+    :isSiblingOf data:Queen_Maxima ;
+    :isSisterOf data:Queen_Maxima .
+
+data:Prince_Constantijn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Constantijn ;
+    :hasChild data:Countess_Leonore ;
+    :hasDaughter data:Countess_Leonore ;
+    :hasRelation data:Countess_Leonore,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isAncestorOf data:Countess_Leonore ;
+    :isBloodrelationOf data:Prince_Constantijn ;
+    :isBrotherOf data:Prince_Constantijn ;
+    :isFatherOf data:Countess_Leonore ;
+    :isParentOf data:Countess_Leonore ;
+    :isSiblingOf data:Prince_Constantijn ;
+    :isUncleOf data:Countess_Leonore .
+
+data:Princess_Laurentien a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Countess_Leonore ;
+    :hasDaughter data:Countess_Leonore ;
+    :hasRelation data:Countess_Leonore,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasSister data:Princess_Laurentien ;
+    :isAncestorOf data:Countess_Leonore ;
+    :isAuntOf data:Countess_Leonore ;
+    :isBloodrelationOf data:Princess_Laurentien ;
+    :isMotherOf data:Countess_Leonore ;
+    :isParentOf data:Countess_Leonore ;
+    :isSiblingOf data:Princess_Laurentien ;
+    :isSisterOf data:Princess_Laurentien .
+
+data:Countess_Leonore a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien ;
+    :hasParent data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasRelation data:Countess_Leonore,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasSister data:Countess_Leonore ;
+    :isBloodrelationOf data:Countess_Leonore ;
+    :isChildOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isDaughterOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isSiblingOf data:Countess_Leonore ;
+    :isSisterOf data:Countess_Leonore .
+

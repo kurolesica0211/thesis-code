@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasAncestor data:King_Charles_III,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasFather data:Prince_Harry_Duke_of_Sussex ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :knownAs "Prince Archie of Sussex"^^xsd:string .
+
+data:Meghan_Duchess_of_Sussex a :Person,
+        :Woman .
+
+data:Prince_Harry_Duke_of_Sussex a :Man,
+        :Person ;
+    :hasFather data:King_Charles_III .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+

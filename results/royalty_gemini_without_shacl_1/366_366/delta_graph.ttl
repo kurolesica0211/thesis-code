@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Prince_Wilhelm a :Man ;
+    :isBrotherOf data:Oskar_Prince_of_Prussia .
+
+data:Oskar_son_of_Oskar a :Man ;
+    :isSonOf data:Oskar_Prince_of_Prussia .
+
+data:Prince_Adalbert a :Man ;
+    :isBrotherOf data:Oskar_Prince_of_Prussia .
+
+data:Prince_August_Wilhelm a :Man ;
+    :isBrotherOf data:Oskar_Prince_of_Prussia .
+
+data:Prince_Eitel_Friedrich a :Man ;
+    :isBrotherOf data:Oskar_Prince_of_Prussia .
+
+data:Prince_Joachim a :Man ;
+    :isBrotherOf data:Oskar_Prince_of_Prussia .
+
+data:Princess_Viktoria_Luise a :Woman ;
+    :isSisterOf data:Oskar_Prince_of_Prussia .
+
+data:Wilhelm_Karl_Prince_of_Prussia a :Man ;
+    :isSonOf data:Oskar_Prince_of_Prussia .
+
+data:Augusta_Victoria a :Woman .
+
+data:Ina_Marie_von_Bassewitz a :Woman .
+
+data:Wilhelm_II a :Man .
+
+data:Oskar_Prince_of_Prussia a :Man ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria ;
+    :hasRelation data:Ina_Marie_von_Bassewitz .
+

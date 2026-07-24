@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MaryCeciliaColman a :Person,
+        :Woman ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasDeathYear 2021 ;
+    :hasFather data:MichaelBowesLyon ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:ElizabethMargaretCator ;
+    :hasRelation data:TimothyColman ;
+    :hasSister data:PatriciaMaud .
+
+data:CeciliaBowesLyon a :Person,
+        :Woman .
+
+data:ClaudeBowesLyon a :Man,
+        :Person .
+
+data:ElizabethMargaretCator a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 .
+
+data:FergusMichaelClaude a :Man,
+        :Person .
+
+data:GeoffreyColman a :Man,
+        :Person .
+
+data:MichaelAlbemarle a :Man,
+        :Person .
+
+data:MichaelBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMother data:CeciliaBowesLyon .
+
+data:PatriciaMaud a :Person,
+        :Woman .
+
+data:TimothyColman a :Man,
+        :Person ;
+    :hasFather data:GeoffreyColman .
+

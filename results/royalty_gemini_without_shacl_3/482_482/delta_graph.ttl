@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 2005 ;
+    :isSisterOf data:Catharina-Amalia .
+
+data:Ariane a :Person,
+        :Woman ;
+    :hasBirthYear 2007 ;
+    :isSisterOf data:Catharina-Amalia .
+
+data:Laurentien a :Person,
+        :Woman ;
+    :isSisterOf data:Constantijn .
+
+data:Margriet a :Person,
+        :Woman .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Constantijn a :Man,
+        :Person ;
+    :hasFather data:Beatrix .
+
+data:Jorge_Zorreguieta a :Man,
+        :Person .
+
+data:M%C3%A1xima a :Person,
+        :Woman ;
+    :hasFather data:Jorge_Zorreguieta ;
+    :hasMother data:Maria_del_Carmen_Cerruti .
+
+data:Maria_del_Carmen_Cerruti a :Person,
+        :Woman .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasMother data:Beatrix .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:Catharina-Amalia a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima .
+

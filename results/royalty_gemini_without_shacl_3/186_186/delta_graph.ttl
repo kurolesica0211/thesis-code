@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cyril_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    :hasMother data:Marie_of_Russia .
+
+data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Augustus_II_of_Oldenburg ;
+    :isAuntOf data:Alexandrine_of_Denmark,
+        data:Cecilie_of_Germany,
+        data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Hendrik_of_the_Netherlands,
+        data:Marie_of_Russia .
+
+data:Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_Anna_of_Oldenburg .
+
+data:Adolph_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Man .
+
+data:Alexandrine_of_Denmark a :Person,
+        :Woman .
+
+data:Alexandrine_of_Prussia a :Ancestor,
+        :Woman .
+
+data:Cecilie_of_Germany a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
+        :Man ;
+    :hasFather data:Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Alexandrine_of_Prussia .
+
+data:Hendrik_of_the_Netherlands a :Man,
+        :Person ;
+    :hasRelation data:Wilhelmina_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasFather data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Mathilde_of_Sch%C3%B6nburg-Waldenburg .
+
+data:Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Ancestor,
+        :Woman .
+
+data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Elisabeth_Anna_of_Oldenburg a :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Man,
+        :Person ;
+    :hasRelation data:Elisabeth_Anna_of_Oldenburg .
+
+data:Marie_of_Russia a :Person,
+        :Woman .
+

@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Maria_Teresa a :Woman .
+
+data:Grand_Duke_Henri a :Man .
+
+data:Guillaume_V%2C_Grand_Duke_of_Luxembourg a :Man ;
+    :hasFather data:Prince_Jean .
+
+data:King_Felipe_VI_of_Spain a :Man .
+
+data:Prince_Achileas-Andreas_of_Greece_and_Denmark a :Man ;
+    :hasFather data:Pavlos%2C_Crown_Prince_of_Greece .
+
+data:Prince_Felix a :Man .
+
+data:Prince_Guillaume_of_Luxembourg a :Man ;
+    :hasBirthYear 1963 ;
+    :hasFather data:Grand_Duke_Jean ;
+    :hasMother data:Grand_Duchess_Josephine-Charlotte .
+
+data:Prince_Louis a :Man .
+
+data:Prince_R%C3%A9my a :Man .
+
+data:Prince_Ren%C3%A9 a :Man .
+
+data:Princess_Chantal a :Woman .
+
+data:Princess_Elisabeth a :Woman .
+
+data:Princess_Joan a :Woman .
+
+data:Princess_Maria_Pia a :Woman .
+
+data:Princess_Marina a :Woman .
+
+data:Princess_Sibilla a :Woman ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Paul-Annik_Weiller ;
+    :hasMother data:Donna_Olimpia_Torlonia_di_Civitella-Cesi .
+
+data:Princess_Virginia a :Woman .
+
+data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi a :Man .
+
+data:Aliki%2C_Lady_Russell a :Woman .
+
+data:Donna_Olimpia_Torlonia_di_Civitella-Cesi a :Woman ;
+    :hasFather data:Alessandro_Torlonia%2C_5th_Prince_of_Civitella-Cesi ;
+    :hasMother data:Infanta_Beatriz_of_Spain .
+
+data:Grand_Duchess_Josephine-Charlotte a :Woman .
+
+data:Grand_Duke_Jean a :Man .
+
+data:Infanta_Beatriz_of_Spain a :Woman .
+
+data:Paul-Annik_Weiller a :Man ;
+    :hasFather data:Paul-Louis_Weiller ;
+    :hasMother data:Aliki%2C_Lady_Russell .
+
+data:Paul-Louis_Weiller a :Man .
+
+data:Pavlos%2C_Crown_Prince_of_Greece a :Man .
+
+data:Prince_Jean a :Man .
+

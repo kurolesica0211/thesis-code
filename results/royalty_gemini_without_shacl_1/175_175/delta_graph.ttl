@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FelipeVI a :Man .
+
+data:FelipeVI%2Ctarget a :Man ;
+    :isBloodrelationOf data:Alexia .
+
+data:Mafalda a :Woman ;
+    :hasFather data:Kyril .
+
+data:MariaOlympia a :Woman .
+
+data:MariaOlympia%2Ctarget a :Woman ;
+    :hasSister data:Alexia ;
+    :isSisterOf data:Alexia .
+
+data:Sofia a :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Theodora a :Woman ;
+    :isSisterOf data:Alexia .
+
+data:CarlosJavierMoralesQuintana a :Man .
+
+data:Kyril a :Man ;
+    :hasFather data:Simeon .
+
+data:Pavlos a :Man ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:AnneMarie .
+
+data:Simeon a :Man .
+
+data:AnneMarie a :Woman .
+
+data:ConstantineII a :Man .
+
+data:Alexia a :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:AnneMarie ;
+    :hasRelation data:CarlosJavierMoralesQuintana ;
+    :isSiblingOf data:Pavlos .
+

@@ -1,0 +1,396 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Nixon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Nixon ;
+    :hasChild data:Elisabeta-Karina ;
+    :hasDaughter data:Elisabeta-Karina ;
+    :hasRelation data:Alexander_Nixon,
+        data:Elisabeta-Karina,
+        data:Princess_Elena ;
+    :isAncestorOf data:Elisabeta-Karina ;
+    :isBloodrelationOf data:Alexander_Nixon ;
+    :isBrotherOf data:Alexander_Nixon ;
+    :isFatherOf data:Elisabeta-Karina ;
+    :isParentOf data:Elisabeta-Karina ;
+    :isSiblingOf data:Alexander_Nixon ;
+    :isUncleOf data:Elisabeta-Karina .
+
+data:Robin_Medforth-Mills a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Robin_Medforth-Mills ;
+    :hasChild data:Prince_Nicholas ;
+    :hasRelation data:Prince_Nicholas,
+        data:Princess_Elena,
+        data:Robin_Medforth-Mills ;
+    :hasSon data:Prince_Nicholas ;
+    :isAncestorOf data:Prince_Nicholas ;
+    :isBloodrelationOf data:Robin_Medforth-Mills ;
+    :isBrotherOf data:Robin_Medforth-Mills ;
+    :isFatherOf data:Prince_Nicholas ;
+    :isParentOf data:Prince_Nicholas ;
+    :isSiblingOf data:Robin_Medforth-Mills ;
+    :isUncleOf data:Prince_Nicholas .
+
+data:Queen_Anne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Elena ;
+    :hasDaughter data:Princess_Elena ;
+    :hasRelation data:Elisabeta-Karina,
+        data:Prince_Nicholas,
+        data:Princess_Elena,
+        data:Queen_Anne ;
+    :hasSister data:Queen_Anne ;
+    :isAncestorOf data:Elisabeta-Karina,
+        data:Prince_Nicholas,
+        data:Princess_Elena ;
+    :isAuntOf data:Princess_Elena ;
+    :isBloodrelationOf data:Queen_Anne ;
+    :isMotherOf data:Princess_Elena ;
+    :isParentOf data:Princess_Elena ;
+    :isSiblingOf data:Queen_Anne ;
+    :isSisterOf data:Queen_Anne .
+
+data:King_Michael_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Michael_I ;
+    :hasChild data:Princess_Elena ;
+    :hasDaughter data:Princess_Elena ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:Elisabeta-Karina,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isAncestorOf data:Elisabeta-Karina,
+        data:Prince_Nicholas,
+        data:Princess_Elena ;
+    :isBloodrelationOf data:King_Michael_I ;
+    :isBrotherOf data:King_Michael_I ;
+    :isFatherOf data:Princess_Elena ;
+    :isParentOf data:Princess_Elena ;
+    :isSiblingOf data:King_Michael_I ;
+    :isUncleOf data:Princess_Elena .
+
+data:Crown_Princess_Margareta a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Radu ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isAuntOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+
+data:Prince_Radu a :Man,
+        :Person ;
+    :hasBrother data:Prince_Radu ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isBrotherOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isUncleOf data:Elisabeta-Karina,
+        data:Prince_Nicholas .
+
+data:Princess_Irina a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Radu ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isAuntOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+
+data:Princess_Maria a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Radu ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isAuntOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+
+data:Princess_Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Radu ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isAuntOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+
+data:Elisabeta-Karina a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Nixon,
+        data:King_Michael_I,
+        data:Princess_Elena,
+        data:Queen_Anne ;
+    :hasBrother data:Prince_Nicholas ;
+    :hasFather data:Alexander_Nixon ;
+    :hasMother data:Princess_Elena ;
+    :hasParent data:Alexander_Nixon,
+        data:Princess_Elena ;
+    :hasRelation data:Alexander_Nixon,
+        data:Elisabeta-Karina,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Princess_Elena,
+        data:Queen_Anne ;
+    :hasSister data:Elisabeta-Karina ;
+    :isBloodrelationOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isChildOf data:Alexander_Nixon,
+        data:Princess_Elena ;
+    :isDaughterOf data:Alexander_Nixon,
+        data:Princess_Elena ;
+    :isSiblingOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isSisterOf data:Elisabeta-Karina,
+        data:Prince_Nicholas .
+
+data:Prince_Nicholas a :Man,
+        :Person ;
+    :hasAncestor data:King_Michael_I,
+        data:Princess_Elena,
+        data:Queen_Anne,
+        data:Robin_Medforth-Mills ;
+    :hasBrother data:Prince_Nicholas ;
+    :hasFather data:Robin_Medforth-Mills ;
+    :hasMother data:Princess_Elena ;
+    :hasParent data:Princess_Elena,
+        data:Robin_Medforth-Mills ;
+    :hasRelation data:Crown_Princess_Margareta,
+        data:Elisabeta-Karina,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie,
+        data:Queen_Anne,
+        data:Robin_Medforth-Mills ;
+    :hasSister data:Elisabeta-Karina ;
+    :isBloodrelationOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBrotherOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isChildOf data:Princess_Elena,
+        data:Robin_Medforth-Mills ;
+    :isSiblingOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isSonOf data:Princess_Elena,
+        data:Robin_Medforth-Mills .
+
+data:Princess_Elena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:Prince_Radu ;
+    :hasChild data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :hasDaughter data:Elisabeta-Karina ;
+    :hasFather data:King_Michael_I ;
+    :hasMarriageYear 1983,
+        1998 ;
+    :hasMother data:Queen_Anne ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne ;
+    :hasRelation data:Alexander_Nixon,
+        data:Crown_Princess_Margareta,
+        data:Elisabeta-Karina,
+        data:King_Michael_I,
+        data:Prince_Nicholas,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie,
+        data:Queen_Anne,
+        data:Robin_Medforth-Mills ;
+    :hasSister data:Crown_Princess_Margareta,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :hasSon data:Prince_Nicholas ;
+    :isAncestorOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isAuntOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isBloodrelationOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne ;
+    :isMotherOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isParentOf data:Elisabeta-Karina,
+        data:Prince_Nicholas ;
+    :isSiblingOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Prince_Radu,
+        data:Princess_Elena,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+

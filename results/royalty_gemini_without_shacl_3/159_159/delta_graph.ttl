@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_X_of_Denmark a :Man .
+
+data:Dorothea_von_Salviati a :Woman .
+
+data:Hubertus_of_Prussia a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Kira_Kirillovna_of_Russia a :Woman ;
+    :hasFather data:Cyril_Vladimirovich_of_Russia .
+
+data:Louis_Ferdinand_of_Prussia a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Victoria_Marina_of_Prussia a :Woman ;
+    :hasFather data:Frederick_of_Prussia .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Anastasia_Mikhailovna_of_Russia a :Woman ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Auguste_Viktoria a :Woman .
+
+data:Cyril_Vladimirovich_of_Russia a :Man .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Frederick_of_Prussia a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Michael_Nikolaevich_of_Russia a :Man .
+
+data:Wilhelm_II_German_Emperor a :Man .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Michael_Nikolaevich_of_Russia ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Wilhelm_German_Crown_Prince .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man .
+
+data:Wilhelm_German_Crown_Prince a :Man ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMother data:Auguste_Viktoria .
+

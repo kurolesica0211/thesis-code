@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :isSiblingOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man,\n        :Person .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_of_Hauke .\n\ndata:Julie_Therese_of_Hauke a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :hasMarriageYear data:1906 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :isSiblingOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man,\n        :Person .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_of_Hauke .\n\ndata:Julie_Therese_of_Hauke a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :hasMarriageYear data:1906,\n        \"1906\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :isSiblingOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man,\n        :Person .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_of_Hauke .\n\ndata:Julie_Therese_of_Hauke a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :hasMarriageYear \"1906\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person ;\n    :hasBirthYear 1891 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Henry_of_Battenberg ;\n    :hasMother data:Beatrice_of_the_United_Kingdom ;\n    :isSiblingOf data:Victoria_Eugenie_of_Battenberg .\n\ndata:Albert_Prince_Consort a :Man,\n        :Person .\n\ndata:Alexander_of_Hesse_and_by_Rhine a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Person,\n        :Woman ;\n    :hasFather data:Albert_Prince_Consort ;\n    :hasMother data:Queen_Victoria .\n\ndata:Henry_of_Battenberg a :Man,\n        :Person ;\n    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Therese_of_Hauke .\n\ndata:Julie_Therese_of_Hauke a :Person,\n        :Woman .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :hasMarriageYear \"1906\"^^xsd:positiveInteger .\n\n"
+    }
+]

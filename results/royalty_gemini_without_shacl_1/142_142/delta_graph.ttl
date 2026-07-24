@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear data:Inaki_Urdangarin,
+        1997 ;
+    :hasMother data:Sofia ;
+    :knownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y de Grecia"^^xsd:string .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia .
+
+data:Inaki_Urdangarin a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Sofia a :Person,
+        :Woman .
+

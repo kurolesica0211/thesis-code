@@ -1,0 +1,310 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:QueenMary ;
+    :hasSon data:PrinceJohn ;
+    :isAncestorOf data:PrinceJohn ;
+    :isAuntOf data:PrinceJohn ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:PrinceJohn ;
+    :isParentOf data:PrinceJohn ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:EdwardVII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:EdwardVII ;
+    :hasChild data:KingGeorgeV ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSon data:KingGeorgeV ;
+    :isAncestorOf data:KingGeorgeV,
+        data:PrinceJohn ;
+    :isBloodrelationOf data:EdwardVII ;
+    :isBrotherOf data:EdwardVII ;
+    :isFatherOf data:KingGeorgeV ;
+    :isParentOf data:KingGeorgeV ;
+    :isSiblingOf data:EdwardVII ;
+    :isUncleOf data:KingGeorgeV .
+
+data:KingGeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:EdwardVII ;
+    :hasBrother data:KingGeorgeV ;
+    :hasChild data:PrinceJohn ;
+    :hasFather data:EdwardVII ;
+    :hasParent data:EdwardVII ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSon data:PrinceJohn ;
+    :isAncestorOf data:PrinceJohn ;
+    :isBloodrelationOf data:KingGeorgeV ;
+    :isBrotherOf data:KingGeorgeV ;
+    :isChildOf data:EdwardVII ;
+    :isFatherOf data:PrinceJohn ;
+    :isParentOf data:PrinceJohn ;
+    :isSiblingOf data:KingGeorgeV ;
+    :isSonOf data:EdwardVII ;
+    :isUncleOf data:PrinceJohn .
+
+data:PrinceAlbert a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isBrotherOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary .
+
+data:PrinceEdward a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isBrotherOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary .
+
+data:PrinceGeorge a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isBrotherOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary .
+
+data:PrinceHenry a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isBrotherOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary .
+
+data:PrincessMary a :Person,
+        :Woman ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSisterOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary .
+
+data:PrinceJohn a :Man,
+        :Person ;
+    :alsoKnownAs "Johnnie"^^xsd:string ;
+    :hasAncestor data:EdwardVII,
+        data:KingGeorgeV,
+        data:QueenMary ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn ;
+    :hasDeathYear 1919 ;
+    :hasFather data:KingGeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:KingGeorgeV,
+        data:QueenMary ;
+    :hasRelation data:EdwardVII,
+        data:KingGeorgeV,
+        data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary,
+        data:QueenMary ;
+    :hasSister data:PrincessMary ;
+    :isBloodrelationOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isBrotherOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isChildOf data:KingGeorgeV,
+        data:QueenMary ;
+    :isSiblingOf data:PrinceAlbert,
+        data:PrinceEdward,
+        data:PrinceGeorge,
+        data:PrinceHenry,
+        data:PrinceJohn,
+        data:PrincessMary ;
+    :isSonOf data:KingGeorgeV,
+        data:QueenMary ;
+    :knownAs "John Charles Francis"^^xsd:string .
+

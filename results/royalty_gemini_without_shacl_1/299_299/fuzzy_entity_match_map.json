@@ -1,0 +1,90 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/299_299",
+  "text_file": "Q451724.txt",
+  "text_key": "Q451724",
+  "article": "https://en.wikipedia.org/wiki/Diane,_Duchess_of_W%C3%BCrttemberg",
+  "article_key": "Diane, Duchess of Württemberg",
+  "main_entity": {
+    "uri": "http://example.com/data#Duchess_Diane-_Duchess_of_Württemberg",
+    "qid": "Q451724",
+    "label": "Duchess Diane, Duchess of Württemberg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duchess_Diane-_Duchess_of_Württemberg",
+      "qid": "Q451724",
+      "label": "Duchess Diane, Duchess of Württemberg",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Isabelle_of_Orléans-Braganza",
+      "qid": "Q261284",
+      "label": "Isabelle of Orléans-Braganza",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Diane_Dowager_Duchess_of_W%C3%BCrttemberg",
+      "extracted_local_name": "Diane_Dowager_Duchess_of_W%C3%BCrttemberg",
+      "embedding_text": "Diane Dowager Duchess of Württemberg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9117647058823529,
+      "ground_truth_uri": "http://example.com/data#Duchess_Diane-_Duchess_of_Württemberg",
+      "ground_truth_qid": "Q451724",
+      "ground_truth_label": "Duchess Diane, Duchess of Württemberg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duchess Diane, Dowager Duchess of Württemberg",
+      "best_candidate_label": "Duchess Diane, Duchess of Württemberg",
+      "best_candidate_qid": "Q451724",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9117647058823529
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Isabelle_of_Orl%C3%A9ans-Braganza",
+      "extracted_local_name": "Princess_Isabelle_of_Orl%C3%A9ans-Braganza",
+      "embedding_text": "Princess Isabelle of Orléans-Braganza",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8200000000000001,
+      "ground_truth_uri": "http://example.com/data#Isabelle_of_Orléans-Braganza",
+      "ground_truth_qid": "Q261284",
+      "ground_truth_label": "Isabelle of Orléans-Braganza",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Isabelle of Orléans-Braganza",
+      "best_candidate_label": "Isabelle of Orléans-Braganza",
+      "best_candidate_qid": "Q261284",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8200000000000001
+    },
+    {
+      "extracted_uri": "http://example.org/data/Henri_Count_of_Paris",
+      "extracted_local_name": "Henri_Count_of_Paris",
+      "embedding_text": "Henri Count of Paris",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Isabelle of Orléans-Braganza",
+      "best_candidate_label": "Isabelle of Orléans-Braganza",
+      "best_candidate_qid": "Q261284",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

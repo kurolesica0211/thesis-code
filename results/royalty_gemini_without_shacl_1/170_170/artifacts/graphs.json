@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:Henrik a :Man ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:King_Frederik_X a :Man .\n\ndata:Prince_Felix a :Man ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg .\n\ndata:Prince_Nikolai_of_Denmark a :Man ;\n    :hasBirthYear 1999 ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg ;\n    :isChildOf data:Alexandra_Countess_of_Frederiksborg,\n        data:Prince_Joachim ;\n    :knownAs \"Count Nikolai of Monpezat\"^^xsd:string .\n\ndata:Prince_Henrik a :Man .\n\ndata:Queen_Margrethe_II a :Woman .\n\ndata:Marie_Cavallier a :Woman .\n\ndata:Alexandra_Countess_of_Frederiksborg a :Woman .\n\ndata:Prince_Joachim a :Man ;\n    :hasFather data:Prince_Henrik ;\n    :hasMother data:Queen_Margrethe_II .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:Henrik a :Man ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Marie_Cavallier .\n\ndata:King_Frederik_X a :Man .\n\ndata:Prince_Felix a :Man ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg .\n\ndata:Prince_Nikolai_of_Denmark a :Man ;\n    :hasBirthYear 1999 ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Alexandra_Countess_of_Frederiksborg ;\n    :isChildOf data:Alexandra_Countess_of_Frederiksborg,\n        data:Prince_Joachim ;\n    :knownAs \"Count Nikolai of Monpezat\"^^xsd:string .\n\ndata:Prince_Henrik a :Man .\n\ndata:Queen_Margrethe_II a :Woman .\n\ndata:Marie_Cavallier a :Woman .\n\ndata:Alexandra_Countess_of_Frederiksborg a :Woman .\n\ndata:Prince_Joachim a :Man ;\n    :hasFather data:Prince_Henrik ;\n    :hasMother data:Queen_Margrethe_II .\n\n"
+    }
+]

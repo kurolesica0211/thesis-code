@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessAugusta a :Woman ;\n    :isMotherOf data:DukeErnestI,\n        data:PrincessVictoriaOfSaxeCoburgSaalfeld .\n\ndata:DukeFrancis a :Man ;\n    :isFatherOf data:DukeErnestI,\n        data:PrincessVictoriaOfSaxeCoburgSaalfeld .\n\ndata:QueenVictoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:PrinceAlbert .\n\ndata:DukeErnestI a :Man ;\n    :isFatherOf data:PrinceAlbert .\n\ndata:PrinceAlbert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:PrincessVictoriaOfSaxeCoburgSaalfeld a :Woman ;\n    :isMotherOf data:QueenVictoria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessAugusta a :Woman ;\n    :isMotherOf data:DukeErnestI,\n        data:PrincessVictoriaOfSaxeCoburgSaalfeld .\n\ndata:DukeFrancis a :Man ;\n    :isFatherOf data:DukeErnestI,\n        data:PrincessVictoriaOfSaxeCoburgSaalfeld .\n\ndata:QueenVictoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:PrinceAlbert .\n\ndata:DukeErnestI a :Man ;\n    :isFatherOf data:PrinceAlbert .\n\ndata:PrinceAlbert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:PrincessVictoriaOfSaxeCoburgSaalfeld a :Woman ;\n    :isMotherOf data:QueenVictoria .\n\n"
+    }
+]

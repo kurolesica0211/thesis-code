@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Frederick_Francis_III,\n        data:Johann_Albrecht ;\n    :hasMarriageYear 1904 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Alexandra_of_Hanover ;\n    :hasSister data:Alexandrine,\n        data:Cecilie ;\n    :hasSon data:Friedrich_Franz .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:Christian_IX a :Man,\n        :Person .\n\ndata:Ernest_Augustus a :Man,\n        :Person .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Frederick_Francis_III a :Man,\n        :Person ;\n    :hasFather data:Frederick_Francis_II .\n\ndata:Friedrich_Franz a :Man,\n        :Person .\n\ndata:Johann_Albrecht a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_IV a :Man,\n        :Person ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Frederick_Francis_III,\n        data:Johann_Albrecht ;\n    :hasMarriageYear 1904 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Alexandra_of_Hanover ;\n    :hasSister data:Alexandrine,\n        data:Cecilie ;\n    :hasSon data:Friedrich_Franz .\n\ndata:Alexandra_of_Hanover a :Person,\n        :Woman ;\n    :hasFather data:Ernest_Augustus ;\n    :hasMother data:Thyra_of_Denmark .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Cecilie a :Person,\n        :Woman .\n\ndata:Christian_IX a :Man,\n        :Person .\n\ndata:Ernest_Augustus a :Man,\n        :Person .\n\ndata:Frederick_Francis_II a :Man,\n        :Person .\n\ndata:Frederick_Francis_III a :Man,\n        :Person ;\n    :hasFather data:Frederick_Francis_II .\n\ndata:Friedrich_Franz a :Man,\n        :Person .\n\ndata:Johann_Albrecht a :Man,\n        :Person .\n\ndata:Thyra_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Christian_IX .\n\n"
+    }
+]

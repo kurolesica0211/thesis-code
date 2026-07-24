@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasMother data:Wilhelmina_of_the_Netherlands .
+
+data:Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasBirthYear "1911"^^xsd:positiveInteger ;
+    :hasDeathYear "1988"^^xsd:positiveInteger ;
+    :hasFather data:William_Ernest_of_Saxe-Weimar-Eisenach ;
+    :hasMarriageYear "1938"^^xsd:positiveInteger ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Friedrich_Gunther_of_Schwarzburg .
+
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman .
+
+data:Friedrich_Gunther_of_Schwarzburg a :Man,
+        :Person ;
+    :hasSister data:Marie_Antoinette_of_Schwarzburg .
+
+data:Marie_Antoinette_of_Schwarzburg a :Person,
+        :Woman .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:William_Ernest_of_Saxe-Weimar-Eisenach a :Man,
+        :Person .
+

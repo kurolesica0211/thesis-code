@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Woman .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Friso a :Man ;
+    :isBrotherOf data:Willem-Alexander .
+
+data:Juan_Zorreguieta a :Man ;
+    :isBrotherOf data:Maxima .
+
+data:Alexia_of_the_Netherlands a :Woman ;
+    :hasBirthYear 2005 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:Maxima ;
+    :isDaughterOf data:Maxima,
+        data:Willem-Alexander .
+
+data:Maxima a :Woman ;
+    :hasBrother data:Juan_Zorreguieta ;
+    :isMotherOf data:Alexia_of_the_Netherlands .
+
+data:Willem-Alexander a :Man ;
+    :hasBrother data:Friso ;
+    :isFatherOf data:Alexia_of_the_Netherlands .
+

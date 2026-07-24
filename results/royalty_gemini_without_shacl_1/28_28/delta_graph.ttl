@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sir_Simon_Alexander_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1932 ;
+    :hasFather data:Sir_David_Bowes-Lyon ;
+    :hasMother data:Rachel_Pauline_Spender-Clay ;
+    :hasRelation data:Queen_Elizabeth_The_Queen_Mother,
+        "aunt"^^xsd:string .
+
+data:Herbert_Spender-Clay a :Man,
+        :Person .
+
+data:Pauline_Astor a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman .
+
+data:Rachel_Pauline_Spender-Clay a :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Herbert_Spender-Clay ;
+    :hasMother data:Pauline_Astor .
+
+data:Sir_David_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1961 .
+

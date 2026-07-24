@@ -1,0 +1,289 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mafalda_of_Italy a :Person,
+        :Woman ;
+    :hasRelation data:Mafalda_of_Italy ;
+    :hasSister data:Mafalda_of_Italy ;
+    :isBloodrelationOf data:Mafalda_of_Italy ;
+    :isSiblingOf data:Mafalda_of_Italy ;
+    :isSisterOf data:Mafalda_of_Italy .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasMarriageYear "1930"^^xsd:string ;
+    :hasRelation data:Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Sophie_of_Greece_and_Denmark .
+
+data:Emperor_Wilhelm_II a :Man,
+        :Person,
+        :Woman ;
+    :hasBrother data:Emperor_Wilhelm_II ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isAuntOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isBrotherOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isSisterOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isUncleOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Charles_of_Hesse ;
+    :hasChild data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSon data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isParentOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Emperor_Wilhelm_II ;
+    :hasChild data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :hasSon data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAuntOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isMotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isParentOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia ;
+    :isSisterOf data:Emperor_Wilhelm_II,
+        data:Margaret_of_Prussia .
+
+data:Christoph_of_Hesse-Kassel a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBrother data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia .
+
+data:Philippe_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBrother data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia .
+
+data:Richard_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :knownAs "Ri"^^xsd:string .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBrother data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Christoph_of_Hesse-Kassel,
+        data:Emperor_Wilhelm_II,
+        data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Christoph_of_Hesse-Kassel,
+        data:Philippe_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia .
+

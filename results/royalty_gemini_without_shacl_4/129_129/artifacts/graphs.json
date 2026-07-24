@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlbertAlphonsLudgerusBrenninkmeijer a :Man ;\n    :hasBirthYear 1974 .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man ;\n    :isParentOf data:PrincessIreneOfTheNetherlands .\n\ndata:PrincessCarolinaOfBourbonParma a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:CarlosHugoDukeOfParma ;\n    :hasMother data:PrincessIreneOfTheNetherlands ;\n    :isSiblingOf data:PrinceCarlos,\n        data:PrinceJaime,\n        data:PrincessMargarita .\n\ndata:QueenBeatrix a :Woman ;\n    :isSisterOf data:PrincessIreneOfTheNetherlands .\n\ndata:QueenJulianaOfTheNetherlands a :Woman ;\n    :isParentOf data:PrincessIreneOfTheNetherlands .\n\ndata:CarlosHugoDukeOfParma a :Man .\n\ndata:PrinceCarlos a :Man .\n\ndata:PrinceJaime a :Man .\n\ndata:PrincessMargarita a :Woman .\n\ndata:PrincessIreneOfTheNetherlands a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlbertAlphonsLudgerusBrenninkmeijer a :Man ;\n    :hasBirthYear 1974 .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man ;\n    :isParentOf data:PrincessIreneOfTheNetherlands .\n\ndata:PrincessCarolinaOfBourbonParma a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasFather data:CarlosHugoDukeOfParma ;\n    :hasMother data:PrincessIreneOfTheNetherlands ;\n    :isSiblingOf data:PrinceCarlos,\n        data:PrinceJaime,\n        data:PrincessMargarita .\n\ndata:QueenBeatrix a :Woman ;\n    :isSisterOf data:PrincessIreneOfTheNetherlands .\n\ndata:QueenJulianaOfTheNetherlands a :Woman ;\n    :isParentOf data:PrincessIreneOfTheNetherlands .\n\ndata:CarlosHugoDukeOfParma a :Man .\n\ndata:PrinceCarlos a :Man .\n\ndata:PrinceJaime a :Man .\n\ndata:PrincessMargarita a :Woman .\n\ndata:PrincessIreneOfTheNetherlands a :Woman .\n\n"
+    }
+]

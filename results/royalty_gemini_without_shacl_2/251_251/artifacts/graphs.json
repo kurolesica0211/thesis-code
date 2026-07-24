@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMountbatten a :Man,\n        :Person ;\n    :alsoKnownAs \"Lord Milford Haven\"^^xsd:string ;\n    :formerlyKnownAs \"Earl of Medina\"^^xsd:string,\n        \"Prince George of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:LouisMountbatten1stMarquess ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:PrincessVictoriaOfHesse ;\n    :hasRelation data:NadejdaMikhailovnaDeTorby ;\n    :isSiblingOf data:LouisMountbatten1stEarl,\n        data:PrincessAlice,\n        data:QueenLouiseOfSweden ;\n    :knownAs \"GeorgeMountbatten\"^^xsd:string .\n\ndata:LouisMountbatten1stEarl a :Man,\n        :Person .\n\ndata:LouisMountbatten1stMarquess a :Man,\n        :Person .\n\ndata:MichaelMikhailovichRomanov a :Man,\n        :Person .\n\ndata:NadejdaMikhailovnaDeTorby a :Person,\n        :Woman ;\n    :hasFather data:MichaelMikhailovichRomanov ;\n    :hasMother data:SophieVonMerenberg .\n\ndata:PrincessAlice a :Person,\n        :Woman .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman .\n\ndata:QueenLouiseOfSweden a :Person,\n        :Woman .\n\ndata:SophieVonMerenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMountbatten a :Man,\n        :Person ;\n    :alsoKnownAs \"Lord Milford Haven\"^^xsd:string ;\n    :formerlyKnownAs \"Earl of Medina\"^^xsd:string,\n        \"Prince George of Battenberg\"^^xsd:string ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:LouisMountbatten1stMarquess ;\n    :hasMarriageYear 1916 ;\n    :hasMother data:PrincessVictoriaOfHesse ;\n    :hasRelation data:NadejdaMikhailovnaDeTorby ;\n    :isSiblingOf data:LouisMountbatten1stEarl,\n        data:PrincessAlice,\n        data:QueenLouiseOfSweden ;\n    :knownAs \"GeorgeMountbatten\"^^xsd:string .\n\ndata:LouisMountbatten1stEarl a :Man,\n        :Person .\n\ndata:LouisMountbatten1stMarquess a :Man,\n        :Person .\n\ndata:MichaelMikhailovichRomanov a :Man,\n        :Person .\n\ndata:NadejdaMikhailovnaDeTorby a :Person,\n        :Woman ;\n    :hasFather data:MichaelMikhailovichRomanov ;\n    :hasMother data:SophieVonMerenberg .\n\ndata:PrincessAlice a :Person,\n        :Woman .\n\ndata:PrincessVictoriaOfHesse a :Person,\n        :Woman .\n\ndata:QueenLouiseOfSweden a :Person,\n        :Woman .\n\ndata:SophieVonMerenberg a :Person,\n        :Woman .\n\n"
+    }
+]

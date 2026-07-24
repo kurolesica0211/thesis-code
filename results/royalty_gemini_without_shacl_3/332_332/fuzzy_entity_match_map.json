@@ -1,0 +1,97 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/332_332",
+  "text_file": "Q564226.txt",
+  "text_key": "Q564226",
+  "article": "https://en.wikipedia.org/wiki/Lennart_Bernadotte",
+  "article_key": "Lennart Bernadotte",
+  "main_entity": {
+    "uri": "http://example.com/data#Lennart_Bernadotte",
+    "qid": "Q564226",
+    "label": "Lennart Bernadotte"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lennart_Bernadotte",
+      "qid": "Q564226",
+      "label": "Lennart Bernadotte",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duchess_Maria_Pavlovna_of_Russia",
+      "qid": "Q235438",
+      "label": "Grand Duchess Maria Pavlovna of Russia",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm-_Duke_of_Södermanland",
+      "qid": "Q435739",
+      "label": "Prince Wilhelm, Duke of Södermanland",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/LennartBernadotte",
+      "extracted_local_name": "LennartBernadotte",
+      "embedding_text": "Lennart Bernadotte",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lennart_Bernadotte",
+      "ground_truth_qid": "Q564226",
+      "ground_truth_label": "Lennart Bernadotte",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lennart Bernadotte",
+      "best_candidate_label": "Lennart Bernadotte",
+      "best_candidate_qid": "Q564226",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceWilhelm",
+      "extracted_local_name": "PrinceWilhelm",
+      "embedding_text": "Prince Wilhelm",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7916666666666667,
+      "ground_truth_uri": "http://example.com/data#Prince_Wilhelm-_Duke_of_Södermanland",
+      "ground_truth_qid": "Q435739",
+      "ground_truth_label": "Prince Wilhelm, Duke of Södermanland",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Wilhelm of Sweden",
+      "best_candidate_label": "Prince Wilhelm, Duke of Södermanland",
+      "best_candidate_qid": "Q435739",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7916666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/MariaPavlovna",
+      "extracted_local_name": "MariaPavlovna",
+      "embedding_text": "Maria Pavlovna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duchess Maria Pavlovna of Russia",
+      "best_candidate_label": "Grand Duchess Maria Pavlovna of Russia",
+      "best_candidate_qid": "Q235438",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5384615384615384
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

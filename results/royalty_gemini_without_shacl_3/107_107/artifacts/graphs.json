@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Annette_Sekreve a :Woman ;\n    :hasBirthYear 1972 ;\n    :isMotherOf data:Benjamin_Pieter_Floris,\n        data:Isabella_Lily_Juliana,\n        data:Samuel_Bernhard_Louis .\n\ndata:Pieter_van_Vollenhoven a :Man ;\n    :isFatherOf data:Prince_Bernhard_van_Vollenhoven,\n        data:Prince_Floris,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman ;\n    :isMotherOf data:Prince_Bernhard_van_Vollenhoven,\n        data:Prince_Floris,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan .\n\ndata:Benjamin_Pieter_Floris a :Man ;\n    :hasBirthYear 2008 .\n\ndata:Isabella_Lily_Juliana a :Woman ;\n    :hasBirthYear 2002 .\n\ndata:Prince_Bernhard_van_Vollenhoven a :Man ;\n    :hasBirthYear 1969 ;\n    :isFatherOf data:Benjamin_Pieter_Floris,\n        data:Isabella_Lily_Juliana,\n        data:Samuel_Bernhard_Louis .\n\ndata:Prince_Floris a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man .\n\ndata:Samuel_Bernhard_Louis a :Man ;\n    :hasBirthYear 2004 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Annette_Sekreve a :Woman ;\n    :hasBirthYear 1972 ;\n    :isMotherOf data:Benjamin_Pieter_Floris,\n        data:Isabella_Lily_Juliana,\n        data:Samuel_Bernhard_Louis .\n\ndata:Pieter_van_Vollenhoven a :Man ;\n    :isFatherOf data:Prince_Bernhard_van_Vollenhoven,\n        data:Prince_Floris,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan .\n\ndata:Princess_Beatrix a :Woman .\n\ndata:Princess_Margriet a :Woman ;\n    :isMotherOf data:Prince_Bernhard_van_Vollenhoven,\n        data:Prince_Floris,\n        data:Prince_Maurits,\n        data:Prince_Pieter-Christiaan .\n\ndata:Benjamin_Pieter_Floris a :Man ;\n    :hasBirthYear 2008 .\n\ndata:Isabella_Lily_Juliana a :Woman ;\n    :hasBirthYear 2002 .\n\ndata:Prince_Bernhard_van_Vollenhoven a :Man ;\n    :hasBirthYear 1969 ;\n    :isFatherOf data:Benjamin_Pieter_Floris,\n        data:Isabella_Lily_Juliana,\n        data:Samuel_Bernhard_Louis .\n\ndata:Prince_Floris a :Man .\n\ndata:Prince_Maurits a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man .\n\ndata:Samuel_Bernhard_Louis a :Man ;\n    :hasBirthYear 2004 .\n\n"
+    }
+]

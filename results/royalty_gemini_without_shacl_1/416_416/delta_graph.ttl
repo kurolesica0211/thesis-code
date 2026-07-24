@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Wilhelm_of_Prussia_brother ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Magdalena_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Wilhelm_of_Germany a :Man,
+        :Person .
+
+data:Wilhelm_of_Prussia_brother a :Man,
+        :Person .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Frederik_X a :Man .\n\ndata:Martina_Bent a :Woman ;\n    :isSisterOf data:Countess_Alexandra .\n\ndata:Prince_Henrik a :Man ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Queen_Margrethe_II a :Woman ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Prince_Nikolai a :Man ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim .\n\ndata:Count_Felix_of_Monpezat a :Man ;\n    :formerlyKnownAs \"His Highness Prince Felix of Denmark\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasSex data:Male ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim ;\n    :isSiblingOf data:Prince_Nikolai ;\n    :knownAs \"Felix Henrik Valdemar Christian\"^^xsd:string,\n        \"His Excellency Count Felix of Monpezat\"^^xsd:string .\n\ndata:Countess_Alexandra a :Woman .\n\ndata:Prince_Joachim a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Frederik_X a :Man .\n\ndata:Martina_Bent a :Woman ;\n    :isSisterOf data:Countess_Alexandra .\n\ndata:Prince_Henrik a :Man ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Queen_Margrethe_II a :Woman ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Male a :Sex .\n\ndata:Prince_Nikolai a :Man ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim .\n\ndata:Count_Felix_of_Monpezat a :Man ;\n    :formerlyKnownAs \"His Highness Prince Felix of Denmark\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasSex data:Male ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim ;\n    :isSiblingOf data:Prince_Nikolai ;\n    :knownAs \"Felix Henrik Valdemar Christian\"^^xsd:string,\n        \"His Excellency Count Felix of Monpezat\"^^xsd:string .\n\ndata:Countess_Alexandra a :Woman .\n\ndata:Prince_Joachim a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Frederik_X a :Man .\n\ndata:Martina_Bent a :Woman ;\n    :isSisterOf data:Countess_Alexandra .\n\ndata:Prince_Henrik a :Man ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Queen_Margrethe_II a :Woman ;\n    :isAncestorOf data:Count_Felix_of_Monpezat,\n        data:Prince_Joachim .\n\ndata:Male a :Sex .\n\ndata:Prince_Nikolai a :Man ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim .\n\ndata:Count_Felix_of_Monpezat a :Man ;\n    :formerlyKnownAs \"His Highness Prince Felix of Denmark\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasSex data:Male ;\n    :isChildOf data:Countess_Alexandra,\n        data:Prince_Joachim ;\n    :isSiblingOf data:Prince_Nikolai ;\n    :knownAs \"Felix Henrik Valdemar Christian\"^^xsd:string,\n        \"His Excellency Count Felix of Monpezat\"^^xsd:string .\n\ndata:Countess_Alexandra a :Woman .\n\ndata:Prince_Joachim a :Man .\n\n"
+    }
+]

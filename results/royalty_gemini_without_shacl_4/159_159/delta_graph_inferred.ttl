@@ -1,0 +1,331 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasChild data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II_German_Emperor,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasSon data:Wilhelm_German_Crown_Prince ;
+    :isAncestorOf data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isFatherOf data:Wilhelm_German_Crown_Prince ;
+    :isParentOf data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Wilhelm_German_Crown_Prince .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAncestorOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 .
+
+data:Michael_Nikolaevich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Nikolaevich_of_Russia ;
+    :hasChild data:Anastasia_Mikhailovna_of_Russia ;
+    :hasDaughter data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAncestorOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Michael_Nikolaevich_of_Russia ;
+    :isBrotherOf data:Michael_Nikolaevich_of_Russia ;
+    :isFatherOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isParentOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Michael_Nikolaevich_of_Russia ;
+    :isUncleOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II_German_Emperor ;
+    :hasBrother data:Wilhelm_German_Crown_Prince ;
+    :hasChild data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasParent data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II_German_Emperor,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasSon data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAncestorOf data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Wilhelm_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm_German_Crown_Prince ;
+    :isChildOf data:Wilhelm_II_German_Emperor ;
+    :isFatherOf data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isParentOf data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isSiblingOf data:Wilhelm_German_Crown_Prince ;
+    :isSonOf data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Wilhelm_Prince_of_Prussia_1906 .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Michael_Nikolaevich_of_Russia ;
+    :hasChild data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasFather data:Michael_Nikolaevich_of_Russia ;
+    :hasParent data:Michael_Nikolaevich_of_Russia ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasSister data:Anastasia_Mikhailovna_of_Russia ;
+    :isAncestorOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAuntOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isChildOf data:Michael_Nikolaevich_of_Russia ;
+    :isDaughterOf data:Michael_Nikolaevich_of_Russia ;
+    :isMotherOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Hubertus_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Michael_Nikolaevich_of_Russia ;
+    :hasBrother data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBrotherOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Michael_Nikolaevich_of_Russia ;
+    :hasBrother data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II_German_Emperor,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBrotherOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_Prince_of_Prussia_1906 a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBrother data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_II_German_Emperor,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBrotherOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isChildOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Michael_Nikolaevich_of_Russia ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasChild data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Nikolaevich_of_Russia,
+        data:Wilhelm_German_Crown_Prince,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAncestorOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isAuntOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isParentOf data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin .
+

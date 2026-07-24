@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Ludwik_Piotr_Czartoryski ;
+    :hasFather data:Augustyn_Jozef_Czartoryski ;
+    :hasMother data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies ;
+    :hasSex data:Male ;
+    :isFatherOf data:Tamara_Czartoryska .
+
+data:August_Aleksander_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1697 ;
+    :hasDeathYear 1782 .
+
+data:Gediminas a :Man,
+        :Person ;
+    :hasDeathYear 1341 .
+
+data:Izabela_Czartoryska a :Person,
+        :Woman ;
+    :isMotherOf data:Adam_Jerzy_Czartoryski .
+
+data:Zofia_von_Donhoff a :Person,
+        :Woman .
+
+data:Adam_Jerzy_Czartoryski a :Man,
+        :Person .
+
+data:Augustyn_Jozef_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1946 .
+
+data:Ludwik_Piotr_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1945 ;
+    :hasDeathYear 1946 .
+
+data:Male a :Sex .
+
+data:Maria_de_los_Dolores_of_Bourbon_Two_Sicilies a :Person,
+        :Woman ;
+    :hasDeathYear 1996 .
+
+data:Tamara_Czartoryska a :Person,
+        :Woman .
+

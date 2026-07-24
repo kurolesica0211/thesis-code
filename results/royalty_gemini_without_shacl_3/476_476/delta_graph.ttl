@@ -1,0 +1,82 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasBirthYear 1921 ;
+    :hasChild data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Queen_Elizabeth_II .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:King_George_VI a :Man,
+        :Person .
+
+data:Louis_Mountbatten_1st_Marquess_of_Milford_Haven a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasChild data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman ;
+    :hasChild data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasFather data:Louis_Mountbatten_1st_Marquess_of_Milford_Haven ;
+    :hasMother data:Victoria_Mountbatten_Marchioness_of_Milford_Haven .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasChild data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasFather data:King_George_VI .
+
+data:Queen_Olga_of_Greece a :Person,
+        :Woman .
+
+data:Victoria_Mountbatten_Marchioness_of_Milford_Haven a :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Margarita a :Person,
+        :Woman .
+
+data:Prince_Andrew a :Man,
+        :Person .
+
+data:Prince_Charles a :Man,
+        :Person .
+
+data:Prince_Edward a :Man,
+        :Person .
+
+data:Princess_Anne a :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman .
+

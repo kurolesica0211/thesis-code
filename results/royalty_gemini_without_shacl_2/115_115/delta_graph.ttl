@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina a :Woman ;
+    :hasFather data:Michael .
+
+data:Philippos a :Man ;
+    :hasBirthYear "1986"^^xsd:positiveInteger ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Sof%C3%ADa_of_Spain a :Woman .
+
+data:Anne-Marie a :Woman .
+
+data:Constantine_II a :Man .
+
+data:Michael a :Man .
+

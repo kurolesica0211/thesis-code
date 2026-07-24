@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Camilla_Parker_Bowles :hasSex data:Female .
+
+data:Elizabeth_II a :Ancestor ;
+    :hasSex data:Female .
+
+data:George_VI a :Ancestor ;
+    :hasSex data:Male .
+
+data:Harry :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor ;
+    :hasSex data:Male .
+
+data:William :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer ;
+    :hasSex data:Male .
+
+data:Charles_III a :Ancestor ;
+    :hasSex data:Male .
+
+data:Lady_Diana_Spencer a :Ancestor ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lady_Louise_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :hasBirthYear "2003"^^xsd:positiveInteger ;
+    :isDaughterOf data:Prince_Edward,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :isSiblingOf data:James .
+
+data:James a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Edward .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :isFatherOf data:Prince_Edward ;
+    :isMotherOf data:Prince_Edward .
+
+data:Sophie_Duchess_of_Edinburgh a :Person,
+        :Woman .
+
+data:Prince_Edward a :Man,
+        :Person ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II .
+

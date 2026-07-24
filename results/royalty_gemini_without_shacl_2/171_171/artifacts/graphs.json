@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaCristinaOfSpain a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :hasMother data:VictoriaEugenieOfBattenberg ;\n    :isAuntOf data:JuanCarlosI ;\n    :isSiblingOf data:AlfonsoOfSpain,\n        data:BeatrizOfSpain,\n        data:GonzaloOfSpain ;\n    :knownAs \"Infanta Maria Cristina of Spain, Countess Marone-Cinzano\"^^xsd:string .\n\ndata:StepSonOfMariaCristina a :Man,\n        :Person ;\n    :hasFather data:EnricoEugenio ;\n    :hasMother data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla .\n\ndata:AlfonsoOfSpain a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Ancestor,\n        :Man .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman .\n\ndata:EnricoEugenio a :Man,\n        :Person .\n\ndata:GonzaloOfSpain a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla a :Person,\n        :Woman .\n\ndata:VictoriaEugenieOfBattenberg a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MariaCristinaOfSpain a :Person,\n        :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:AlfonsoXIIIOfSpain ;\n    :hasMother data:VictoriaEugenieOfBattenberg ;\n    :isAuntOf data:JuanCarlosI ;\n    :isSiblingOf data:AlfonsoOfSpain,\n        data:BeatrizOfSpain,\n        data:GonzaloOfSpain ;\n    :knownAs \"Infanta Maria Cristina of Spain, Countess Marone-Cinzano\"^^xsd:string .\n\ndata:StepSonOfMariaCristina a :Man,\n        :Person ;\n    :hasFather data:EnricoEugenio ;\n    :hasMother data:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla .\n\ndata:AlfonsoOfSpain a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Ancestor,\n        :Man .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman .\n\ndata:EnricoEugenio a :Man,\n        :Person .\n\ndata:GonzaloOfSpain a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:NoemiRosaDeAlcortaYGarc%C3%ADaMansilla a :Person,\n        :Woman .\n\ndata:VictoriaEugenieOfBattenberg a :Ancestor,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,291 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nicholas_II a :Man,
+        :Person ;
+    :hasBrother data:Nicholas_II ;
+    :hasRelation data:Nicholas_II ;
+    :isBloodrelationOf data:Nicholas_II ;
+    :isBrotherOf data:Nicholas_II ;
+    :isSiblingOf data:Nicholas_II .
+
+data:Sergei_Alexandrovich_Rachevsky a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sergei_Alexandrovich_Rachevsky ;
+    :hasChild data:Zinaida_Sergeievna_Rachevskaya ;
+    :hasDaughter data:Zinaida_Sergeievna_Rachevskaya ;
+    :hasRelation data:Sergei_Alexandrovich_Rachevsky,
+        data:Zinaida_Sergeievna_Rachevskaya ;
+    :isAncestorOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isBloodrelationOf data:Sergei_Alexandrovich_Rachevsky ;
+    :isBrotherOf data:Sergei_Alexandrovich_Rachevsky ;
+    :isFatherOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isParentOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isSiblingOf data:Sergei_Alexandrovich_Rachevsky ;
+    :isUncleOf data:Zinaida_Sergeievna_Rachevskaya .
+
+data:Zinaida_Sergeievna_Rachevskaya a :Person,
+        :Woman ;
+    :hasAncestor data:Sergei_Alexandrovich_Rachevsky ;
+    :hasFather data:Sergei_Alexandrovich_Rachevsky ;
+    :hasParent data:Sergei_Alexandrovich_Rachevsky ;
+    :hasRelation data:Sergei_Alexandrovich_Rachevsky,
+        data:Zinaida_Sergeievna_Rachevskaya ;
+    :hasSister data:Zinaida_Sergeievna_Rachevskaya ;
+    :isBloodrelationOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isChildOf data:Sergei_Alexandrovich_Rachevsky ;
+    :isDaughterOf data:Sergei_Alexandrovich_Rachevsky ;
+    :isSiblingOf data:Zinaida_Sergeievna_Rachevskaya ;
+    :isSisterOf data:Zinaida_Sergeievna_Rachevskaya .
+
+data:Alexander_III a :Man,
+        :Person ;
+    :hasBrother data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isBloodrelationOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Boris_Vladimirovich .
+
+data:Jeanne_Aumont-Lacroix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Jean_Boris_Lacroix ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasSister data:Jeanne_Aumont-Lacroix ;
+    :hasSon data:Jean_Boris_Lacroix ;
+    :isAncestorOf data:Jean_Boris_Lacroix ;
+    :isAuntOf data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Jeanne_Aumont-Lacroix ;
+    :isMotherOf data:Jean_Boris_Lacroix ;
+    :isParentOf data:Jean_Boris_Lacroix ;
+    :isSiblingOf data:Jeanne_Aumont-Lacroix ;
+    :isSisterOf data:Jeanne_Aumont-Lacroix .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Boris_Vladimirovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Boris_Vladimirovich ;
+    :isAncestorOf data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix ;
+    :isAuntOf data:Boris_Vladimirovich ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Boris_Vladimirovich ;
+    :isParentOf data:Boris_Vladimirovich ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Alexander_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_II ;
+    :hasChild data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasSon data:Vladimir_Alexandrovich ;
+    :isAncestorOf data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Vladimir_Alexandrovich ;
+    :isBloodrelationOf data:Alexander_II ;
+    :isBrotherOf data:Alexander_II ;
+    :isFatherOf data:Vladimir_Alexandrovich ;
+    :isParentOf data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_II ;
+    :isUncleOf data:Vladimir_Alexandrovich .
+
+data:Andrei_Vladimirovich a :Man,
+        :Person ;
+    :hasBrother data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isBloodrelationOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+
+data:Kirill_Vladimirovich a :Man,
+        :Person ;
+    :hasBrother data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isBloodrelationOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isSiblingOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II ;
+    :hasBrother data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :hasChild data:Boris_Vladimirovich ;
+    :hasFather data:Alexander_II ;
+    :hasParent data:Alexander_II ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasSon data:Boris_Vladimirovich ;
+    :isAncestorOf data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isChildOf data:Alexander_II ;
+    :isFatherOf data:Boris_Vladimirovich ;
+    :isParentOf data:Boris_Vladimirovich ;
+    :isSiblingOf data:Alexander_III,
+        data:Vladimir_Alexandrovich ;
+    :isSonOf data:Alexander_II ;
+    :isUncleOf data:Boris_Vladimirovich .
+
+data:Jean_Boris_Lacroix a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Boris_Vladimirovich,
+        data:Jeanne_Aumont-Lacroix,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Jean_Boris_Lacroix ;
+    :hasFather data:Boris_Vladimirovich ;
+    :hasMother data:Jeanne_Aumont-Lacroix ;
+    :hasParent data:Boris_Vladimirovich,
+        data:Jeanne_Aumont-Lacroix ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isBloodrelationOf data:Jean_Boris_Lacroix ;
+    :isBrotherOf data:Jean_Boris_Lacroix ;
+    :isChildOf data:Boris_Vladimirovich,
+        data:Jeanne_Aumont-Lacroix ;
+    :isSiblingOf data:Jean_Boris_Lacroix ;
+    :isSonOf data:Boris_Vladimirovich,
+        data:Jeanne_Aumont-Lacroix .
+
+data:Boris_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :hasChild data:Jean_Boris_Lacroix ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_III,
+        data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Jean_Boris_Lacroix,
+        data:Jeanne_Aumont-Lacroix,
+        data:Kirill_Vladimirovich,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasSon data:Jean_Boris_Lacroix ;
+    :isAncestorOf data:Jean_Boris_Lacroix ;
+    :isBloodrelationOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isBrotherOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Jean_Boris_Lacroix ;
+    :isParentOf data:Jean_Boris_Lacroix ;
+    :isSiblingOf data:Andrei_Vladimirovich,
+        data:Boris_Vladimirovich,
+        data:Kirill_Vladimirovich ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Jean_Boris_Lacroix .
+

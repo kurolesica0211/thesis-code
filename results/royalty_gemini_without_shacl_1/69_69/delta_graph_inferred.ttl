@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Christina_Manley a :Woman ;
+    :hasRelation data:Alexandra_Christina_Manley ;
+    :hasSister data:Alexandra_Christina_Manley ;
+    :isBloodrelationOf data:Alexandra_Christina_Manley ;
+    :isSiblingOf data:Alexandra_Christina_Manley ;
+    :isSisterOf data:Alexandra_Christina_Manley .
+
+data:Frederik_X a :Man ;
+    :hasAncestor data:Margrethe_II ;
+    :hasBrother data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Margrethe_II ;
+    :hasRelation data:Frederik_X,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isChildOf data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isSonOf data:Margrethe_II ;
+    :isUncleOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat .
+
+data:Marie_Cavallier a :Ancestor,
+        :Woman ;
+    :hasChild data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :hasDaughter data:Athena_of_Monpezat ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :hasSister data:Marie_Cavallier ;
+    :hasSon data:Henrik_of_Monpezat ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isAuntOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Marie_Cavallier ;
+    :isMotherOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isParentOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isSiblingOf data:Marie_Cavallier ;
+    :isSisterOf data:Marie_Cavallier .
+
+data:Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Frederik_X,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II ;
+    :hasSister data:Margrethe_II ;
+    :hasSon data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Frederik_X,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark ;
+    :isAuntOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isMotherOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isParentOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Athena_of_Monpezat a :Woman ;
+    :hasAncestor data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_Cavallier ;
+    :hasBrother data:Henrik_of_Monpezat ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_Cavallier ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :isDaughterOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isSisterOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat .
+
+data:Henrik_of_Monpezat a :Man ;
+    :hasAncestor data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_Cavallier ;
+    :hasBrother data:Henrik_of_Monpezat ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_Cavallier ;
+    :hasSister data:Athena_of_Monpezat ;
+    :isBloodrelationOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isBrotherOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier ;
+    :isSiblingOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isSonOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
+
+data:Joachim_of_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:Margrethe_II ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :hasChild data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :hasDaughter data:Athena_of_Monpezat ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Margrethe_II ;
+    :hasRelation data:Athena_of_Monpezat,
+        data:Frederik_X,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II,
+        data:Marie_Cavallier ;
+    :hasSon data:Henrik_of_Monpezat ;
+    :isAncestorOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isChildOf data:Margrethe_II ;
+    :isFatherOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isParentOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim_of_Denmark ;
+    :isSonOf data:Margrethe_II ;
+    :isUncleOf data:Athena_of_Monpezat,
+        data:Henrik_of_Monpezat .
+

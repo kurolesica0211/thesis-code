@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_Prince_of_Saxe-Meiningen a :Man ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Bernhard,\n        data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock ;\n    :hasSon data:Prince_Frederick_Alfred .\n\ndata:Bernhard a :Man .\n\ndata:Count_Ernst_of_Lippe-Biesterfeld a :Man .\n\ndata:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .\n\ndata:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Woman .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Man .\n\ndata:Prince_Frederick_Alfred a :Man .\n\ndata:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man ;\n    :hasBirthYear 1861 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_Prince_of_Saxe-Meiningen a :Man ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;\n    :hasMarriageYear 1919 ;\n    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;\n    :hasRelation data:Bernhard,\n        data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock ;\n    :hasSon data:Prince_Frederick_Alfred .\n\ndata:Bernhard a :Man .\n\ndata:Count_Ernst_of_Lippe-Biesterfeld a :Man .\n\ndata:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;\n    :hasBirthYear 1870 ;\n    :hasDeathYear 1948 ;\n    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .\n\ndata:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Woman .\n\ndata:Georg_II_Duke_of_Saxe-Meiningen a :Man .\n\ndata:Prince_Frederick_Alfred a :Man .\n\ndata:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man ;\n    :hasBirthYear 1861 ;\n    :hasDeathYear 1914 ;\n    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .\n\n"
+    }
+]

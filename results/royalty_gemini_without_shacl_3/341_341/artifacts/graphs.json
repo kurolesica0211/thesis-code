@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Heinrich_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1862 ;\n    :hasBrother data:Wilhelm_II ;\n    :hasChild data:Heinrich_son_of_Henry,\n        data:Waldemar ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:Empress_Victoria ;\n    :hasRelation data:Princess_Irene_of_Hesse_and_by_Rhine .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman ;\n    :hasChild data:Heinrich_son_of_Henry,\n        data:Waldemar .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_son_of_Henry a :Man,\n        :Person .\n\ndata:Waldemar a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Heinrich_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1862 ;\n    :hasBrother data:Wilhelm_II ;\n    :hasChild data:Heinrich_son_of_Henry,\n        data:Waldemar ;\n    :hasDeathYear 1929 ;\n    :hasFather data:Frederick_III ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:Empress_Victoria ;\n    :hasRelation data:Princess_Irene_of_Hesse_and_by_Rhine .\n\ndata:Princess_Irene_of_Hesse_and_by_Rhine a :Person,\n        :Woman ;\n    :hasChild data:Heinrich_son_of_Henry,\n        data:Waldemar .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Person,\n        :Woman ;\n    :hasMother data:Queen_Victoria .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Heinrich_son_of_Henry a :Man,\n        :Person .\n\ndata:Waldemar a :Man,\n        :Person .\n\n"
+    }
+]

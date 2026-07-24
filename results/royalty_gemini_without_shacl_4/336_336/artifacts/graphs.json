@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Frederick_Francis_IV ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Christian_X ;\n    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .\n\ndata:Ingrid_of_Sweden a :Woman .\n\ndata:Irina_Alexandrovna_of_Russia a :Woman ;\n    :hasRelation data:Felix_Yusupov .\n\ndata:Nicholas_I_of_Russia a :Man .\n\ndata:Anastasia_Mikhailovna a :Woman .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Woman ;\n    :hasRelation data:Wilhelm_of_Prussia .\n\ndata:Christian_IX_of_Denmark a :Man .\n\ndata:Christian_X a :Man ;\n    :hasFather data:Frederik_VIII_of_Denmark ;\n    :hasMother data:Louise_of_Denmark .\n\ndata:Felix_Yusupov a :Man .\n\ndata:Frederick_Francis_II a :Man .\n\ndata:Frederick_Francis_III a :Man ;\n    :hasFather data:Frederick_Francis_II .\n\ndata:Frederick_Francis_IV a :Man .\n\ndata:Frederik_VIII_of_Denmark a :Man ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Louise_of_Denmark a :Woman .\n\ndata:Wilhelm_of_Prussia a :Man ;\n    :hasFather data:William_II_of_Germany .\n\ndata:William_II_of_Germany a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Frederick_Francis_IV ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Christian_X ;\n    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .\n\ndata:Ingrid_of_Sweden a :Woman .\n\ndata:Irina_Alexandrovna_of_Russia a :Woman ;\n    :hasRelation data:Felix_Yusupov .\n\ndata:Nicholas_I_of_Russia a :Man .\n\ndata:Anastasia_Mikhailovna a :Woman .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Woman ;\n    :hasRelation data:Wilhelm_of_Prussia .\n\ndata:Christian_IX_of_Denmark a :Man .\n\ndata:Christian_X a :Man ;\n    :hasFather data:Frederik_VIII_of_Denmark ;\n    :hasMother data:Louise_of_Denmark .\n\ndata:Felix_Yusupov a :Man .\n\ndata:Frederick_Francis_II a :Man .\n\ndata:Frederick_Francis_III a :Man ;\n    :hasFather data:Frederick_Francis_II .\n\ndata:Frederick_Francis_IV a :Man .\n\ndata:Frederik_VIII_of_Denmark a :Man ;\n    :hasFather data:Christian_IX_of_Denmark .\n\ndata:Louise_of_Denmark a :Woman .\n\ndata:Wilhelm_of_Prussia a :Man ;\n    :hasFather data:William_II_of_Germany .\n\ndata:William_II_of_Germany a :Man .\n\n"
+    }
+]

@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarlosEnrique a :Man,
+        :Person ;
+    :hasFather data:PrinceCarlos ;
+    :hasMother data:AnnemarieGualtherieVanWeezel .
+
+data:PrincessCecilia a :Person,
+        :Woman ;
+    :hasFather data:PrinceCarlos ;
+    :hasMother data:AnnemarieGualtherieVanWeezel .
+
+data:PrincessLuisa a :Person,
+        :Woman ;
+    :hasFather data:PrinceCarlos ;
+    :hasMother data:AnnemarieGualtherieVanWeezel .
+
+data:PrinceJaime a :Man,
+        :Person ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:PrinceXavier a :Man,
+        :Person .
+
+data:PrincessCarolina a :Person,
+        :Woman ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:PrincessMargarita a :Person,
+        :Woman ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene .
+
+data:AnnemarieGualtherieVanWeezel a :Person,
+        :Woman .
+
+data:PrinceCarlos a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:PrinceJaime ;
+    :hasFather data:CarlosHugo ;
+    :hasMother data:PrincessIrene ;
+    :hasSister data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:CarlosHugo a :Man,
+        :Person ;
+    :hasFather data:PrinceXavier .
+
+data:PrincessIrene a :Person,
+        :Woman .
+

@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Jaime a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Juan_de_Borbon a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XII a :Ancestor,
+        :Man,
+        :Person .
+
+data:Leopold a :Man,
+        :Person ;
+    :hasMother data:Princess_Beatrice .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Beatrice a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Alphonse Léon Ferdinand Marie Jacques Isidore Pascal Antoine de Bourbon"^^xsd:string,
+        "El Africano"^^xsd:string,
+        "the African"^^xsd:string ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Alfonso_XII ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasRelation data:Victoria_Eugenie_of_Battenberg ;
+    :knownAs "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Habsburgo-Lorena"^^xsd:string .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Leopold ;
+    :hasMother data:Princess_Beatrice .
+

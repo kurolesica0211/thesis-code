@@ -1,0 +1,97 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/446_446",
+  "text_file": "Q75383406.txt",
+  "text_key": "Q75383406",
+  "article": "https://en.wikipedia.org/wiki/Lady_Mary_Wellesley",
+  "article_key": "Lady Mary Wellesley",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Mary_Wellesley",
+    "qid": "Q75383406",
+    "label": "Lady Mary Wellesley"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Mary_Wellesley",
+      "qid": "Q75383406",
+      "label": "Lady Mary Wellesley",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Charles_Wellesley-_9th_Duke_of_Wellington",
+      "qid": "Q2960441",
+      "label": "Charles Wellesley, 9th Duke of Wellington",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Antonia_of_Prussia",
+      "qid": "Q7244552",
+      "label": "Princess Antonia of Prussia",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Antonia_of_Prussia",
+      "extracted_local_name": "Antonia_of_Prussia",
+      "embedding_text": "Antonia of Prussia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8043478260869565,
+      "ground_truth_uri": "http://example.com/data#Princess_Antonia_of_Prussia",
+      "ground_truth_qid": "Q7244552",
+      "ground_truth_label": "Princess Antonia of Prussia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Antonia of Prussia",
+      "best_candidate_label": "Princess Antonia of Prussia",
+      "best_candidate_qid": "Q7244552",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8043478260869565
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_Wellesley",
+      "extracted_local_name": "Charles_Wellesley",
+      "embedding_text": "Charles Wellesley",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7567567567567568,
+      "ground_truth_uri": "http://example.com/data#Lady_Mary_Wellesley",
+      "ground_truth_qid": "Q75383406",
+      "ground_truth_label": "Lady Mary Wellesley",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Mary Luise Wellesley",
+      "best_candidate_label": "Lady Mary Wellesley",
+      "best_candidate_qid": "Q75383406",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7567567567567568
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Wellesley",
+      "extracted_local_name": "Mary_Wellesley",
+      "embedding_text": "Mary Wellesley",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Charles Wellesley, Marquess of Douro",
+      "best_candidate_label": "Charles Wellesley, 9th Duke of Wellington",
+      "best_candidate_qid": "Q2960441",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.48
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

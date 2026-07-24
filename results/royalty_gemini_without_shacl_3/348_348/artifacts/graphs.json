@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man ;\n    :hasBirthYear 1972 ;\n    :isFatherOf data:Gloria_Irene ;\n    :isSiblingOf data:Carlos_Duke_of_Parma,\n        data:Princess_Carolina,\n        data:Princess_Margarita ;\n    :isSonOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands .\n\ndata:Princess_Viktoria a :Woman ;\n    :isMotherOf data:Gloria_Irene .\n\ndata:Carlos_Duke_of_Parma a :Man ;\n    :isFatherOf data:Carlos_Enrique .\n\ndata:Carlos_Enrique a :Man .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Princess_Carolina a :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman .\n\ndata:Princess_Margarita a :Woman .\n\ndata:Gloria_Irene a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man ;\n    :hasBirthYear 1972 ;\n    :isFatherOf data:Gloria_Irene ;\n    :isSiblingOf data:Carlos_Duke_of_Parma,\n        data:Princess_Carolina,\n        data:Princess_Margarita ;\n    :isSonOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands .\n\ndata:Princess_Viktoria a :Woman ;\n    :isMotherOf data:Gloria_Irene .\n\ndata:Carlos_Duke_of_Parma a :Man ;\n    :isFatherOf data:Carlos_Enrique .\n\ndata:Carlos_Enrique a :Man .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Princess_Carolina a :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman .\n\ndata:Princess_Margarita a :Woman .\n\ndata:Gloria_Irene a :Woman .\n\n"
+    }
+]

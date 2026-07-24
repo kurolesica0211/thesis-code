@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:India_Hicks a :Woman ;\n    :isChildOf data:David_Nightingale_Hicks,\n        data:Lady_Pamela_Hicks .\n\ndata:David_Nightingale_Hicks a :Man ;\n    :hasBirthYear 1929 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Herbert_Hicks ;\n    :hasMother data:Iris_Elsie_Platten .\n\ndata:Herbert_Hicks a :Man .\n\ndata:Iris_Elsie_Platten a :Woman .\n\ndata:Lady_Pamela_Hicks a :Woman ;\n    :hasBirthYear 1929 ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley ;\n    :isSisterOf data:Patricia_Mountbatten .\n\ndata:Patricia_Mountbatten a :Woman ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley .\n\ndata:Edwina_Ashley a :Woman .\n\ndata:Louis_Mountbatten a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:India_Hicks a :Woman ;\n    :isChildOf data:David_Nightingale_Hicks,\n        data:Lady_Pamela_Hicks .\n\ndata:David_Nightingale_Hicks a :Man ;\n    :hasBirthYear 1929 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Herbert_Hicks ;\n    :hasMother data:Iris_Elsie_Platten .\n\ndata:Herbert_Hicks a :Man .\n\ndata:Iris_Elsie_Platten a :Woman .\n\ndata:Lady_Pamela_Hicks a :Woman ;\n    :hasBirthYear 1929 ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley ;\n    :isSisterOf data:Patricia_Mountbatten .\n\ndata:Patricia_Mountbatten a :Woman ;\n    :hasFather data:Louis_Mountbatten ;\n    :hasMother data:Edwina_Ashley .\n\ndata:Edwina_Ashley a :Woman .\n\ndata:Louis_Mountbatten a :Man .\n\n"
+    }
+]

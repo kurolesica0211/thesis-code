@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoDukeOfCalabria a :Man,\n        :Person ;\n    :hasFather data:CarlosBourbonTwoSicilies .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:AlfonsoCountOfCaserta .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:CarlosBourbonTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:LudwigIII a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIII .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear data:1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoDukeOfCalabria a :Man,\n        :Person ;\n    :hasFather data:CarlosBourbonTwoSicilies .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:AlfonsoCountOfCaserta .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:CarlosBourbonTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:LudwigIII a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIII .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear data:1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoDukeOfCalabria a :Man,\n        :Person ;\n    :hasFather data:CarlosBourbonTwoSicilies .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:AlfonsoCountOfCaserta .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:CarlosBourbonTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:LudwigIII a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIII .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoDukeOfCalabria a :Man,\n        :Person ;\n    :hasFather data:CarlosBourbonTwoSicilies .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:AlfonsoCountOfCaserta .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:CarlosBourbonTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:LudwigIII a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIII .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlfonsoDukeOfCalabria a :Man,\n        :Person ;\n    :hasFather data:CarlosBourbonTwoSicilies .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:AlfonsoCountOfCaserta .\n\ndata:RanieriDukeOfCastro a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1973 ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:CarlosBourbonTwoSicilies a :Man,\n        :Person ;\n    :isBrotherOf data:FerdinandPius .\n\ndata:LudwigIII a :Man,\n        :Person .\n\ndata:MariaAntonietta a :Person,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Person,\n        :Woman ;\n    :hasFather data:LudwigIII .\n\ndata:AlfonsoCountOfCaserta a :Man,\n        :Person .\n\ndata:FerdinandPius a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\n"
+    }
+]

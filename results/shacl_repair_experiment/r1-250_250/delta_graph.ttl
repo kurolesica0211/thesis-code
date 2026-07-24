@@ -1,0 +1,11 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor ;
+    :hasDeathYear 1988 .
+
+data:Ludwig_Rudolf_of_Hanover a :Ancestor .
+
+data:Otto_Heinrich a :Ancestor .
+

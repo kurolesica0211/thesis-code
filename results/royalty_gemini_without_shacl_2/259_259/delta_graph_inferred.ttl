@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarloDukeOfCastro a :Man,
+        :Person ;
+    :hasBrother data:PrinceCarloDukeOfCastro ;
+    :hasRelation data:PrinceCarloDukeOfCastro ;
+    :isBloodrelationOf data:PrinceCarloDukeOfCastro ;
+    :isBrotherOf data:PrinceCarloDukeOfCastro ;
+    :isSiblingOf data:PrinceCarloDukeOfCastro .
+
+data:MariaDeLasMercedesPrincessOfAsturias a :Person,
+        :Woman ;
+    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias,
+        data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :hasSister data:MariaDeLasMercedesPrincessOfAsturias ;
+    :isBloodrelationOf data:MariaDeLasMercedesPrincessOfAsturias ;
+    :isSiblingOf data:MariaDeLasMercedesPrincessOfAsturias ;
+    :isSisterOf data:MariaDeLasMercedesPrincessOfAsturias .
+
+data:PrinceCarlosDukeOfCalabria1900 a :Man,
+        :Person ;
+    :hasBrother data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias,
+        data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isBloodrelationOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isBrotherOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isSiblingOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand .
+
+data:PrinceFerdinand a :Man,
+        :Person ;
+    :hasBrother data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias,
+        data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isBloodrelationOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isBrotherOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand ;
+    :isSiblingOf data:PrinceCarlosDukeOfCalabria1900,
+        data:PrinceFerdinand .
+
+data:InfanteCarlosDukeOfCalabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:InfanteCarlosDukeOfCalabria ;
+    :hasChild data:PrincePedroOfBourbonTwoSicilies ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:InfanteCarlosDukeOfCalabria,
+        data:PrincePedroOfBourbonTwoSicilies,
+        data:PrincessAnneOfOrleans ;
+    :hasSon data:PrincePedroOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:InfanteCarlosDukeOfCalabria ;
+    :isBrotherOf data:InfanteCarlosDukeOfCalabria ;
+    :isFatherOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isParentOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isSiblingOf data:InfanteCarlosDukeOfCalabria ;
+    :isUncleOf data:PrincePedroOfBourbonTwoSicilies .
+
+data:JoseManuelLandaluceYDominguez a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JoseManuelLandaluceYDominguez ;
+    :hasChild data:SofiaLandaluceYMelgarejo ;
+    :hasDaughter data:SofiaLandaluceYMelgarejo ;
+    :hasRelation data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez,
+        data:SofiaLandaluceYMelgarejo ;
+    :isAncestorOf data:SofiaLandaluceYMelgarejo ;
+    :isBloodrelationOf data:JoseManuelLandaluceYDominguez ;
+    :isBrotherOf data:JoseManuelLandaluceYDominguez ;
+    :isFatherOf data:SofiaLandaluceYMelgarejo ;
+    :isParentOf data:SofiaLandaluceYMelgarejo ;
+    :isSiblingOf data:JoseManuelLandaluceYDominguez ;
+    :isUncleOf data:SofiaLandaluceYMelgarejo .
+
+data:MariaDeLasNievesBlancaMelgarejoYGonzalez a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:SofiaLandaluceYMelgarejo ;
+    :hasDaughter data:SofiaLandaluceYMelgarejo ;
+    :hasRelation data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasSister data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :isAncestorOf data:SofiaLandaluceYMelgarejo ;
+    :isAuntOf data:SofiaLandaluceYMelgarejo ;
+    :isBloodrelationOf data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :isMotherOf data:SofiaLandaluceYMelgarejo ;
+    :isParentOf data:SofiaLandaluceYMelgarejo ;
+    :isSiblingOf data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :isSisterOf data:MariaDeLasNievesBlancaMelgarejoYGonzalez .
+
+data:PrincessAnneOfOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincePedroOfBourbonTwoSicilies ;
+    :hasRelation data:InfanteCarlosDukeOfCalabria,
+        data:PrincePedroOfBourbonTwoSicilies,
+        data:PrincessAnneOfOrleans ;
+    :hasSister data:PrincessAnneOfOrleans ;
+    :hasSon data:PrincePedroOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isAuntOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrincessAnneOfOrleans ;
+    :isMotherOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isParentOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincessAnneOfOrleans ;
+    :isSisterOf data:PrincessAnneOfOrleans .
+
+data:PrincePedroOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :alsoKnownAs "Pedro Juan María Alejo Saturnino de Todos los Santos"^^xsd:string ;
+    :hasAncestor data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:PrincePedroOfBourbonTwoSicilies ;
+    :hasFather data:InfanteCarlosDukeOfCalabria ;
+    :hasMarriageYear data:SofiaLandaluceYMelgarejo,
+        2001 ;
+    :hasMother data:PrincessAnneOfOrleans ;
+    :hasParent data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :hasRelation data:InfanteCarlosDukeOfCalabria,
+        data:PrincePedroOfBourbonTwoSicilies,
+        data:PrincessAnneOfOrleans ;
+    :isBloodrelationOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isChildOf data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans ;
+    :isSiblingOf data:PrincePedroOfBourbonTwoSicilies ;
+    :isSonOf data:InfanteCarlosDukeOfCalabria,
+        data:PrincessAnneOfOrleans .
+
+data:SofiaLandaluceYMelgarejo a :Person,
+        :Woman ;
+    :hasAncestor data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :hasBirthYear 1973 ;
+    :hasFather data:JoseManuelLandaluceYDominguez ;
+    :hasMother data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :hasParent data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :hasRelation data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez,
+        data:SofiaLandaluceYMelgarejo ;
+    :hasSister data:SofiaLandaluceYMelgarejo ;
+    :isBloodrelationOf data:SofiaLandaluceYMelgarejo ;
+    :isChildOf data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :isDaughterOf data:JoseManuelLandaluceYDominguez,
+        data:MariaDeLasNievesBlancaMelgarejoYGonzalez ;
+    :isSiblingOf data:SofiaLandaluceYMelgarejo ;
+    :isSisterOf data:SofiaLandaluceYMelgarejo .
+

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander a :Man .
+
+data:ChrysiVardinogianni a :Woman ;
+    :hasFather data:GiorgosVardinogiannis ;
+    :hasMother data:AgapiPoliti .
+
+data:Irene a :Woman .
+
+data:Margareta a :Woman .
+
+data:Marina a :Woman .
+
+data:Michael a :Man .
+
+data:Nikolaos a :Man ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Anne-Marie ;
+    :hasSister data:Alexia,
+        data:Theodora .
+
+data:Sofia a :Woman .
+
+data:TatianaEllinkaBlatnik a :Woman .
+
+data:AgapiPoliti a :Woman .
+
+data:Alexia a :Woman .
+
+data:Anne-Marie a :Woman .
+
+data:ConstantineII a :Man .
+
+data:GiorgosVardinogiannis a :Man .
+
+data:Pavlos a :Man .
+
+data:Philippos a :Man .
+
+data:Theodora a :Woman .
+

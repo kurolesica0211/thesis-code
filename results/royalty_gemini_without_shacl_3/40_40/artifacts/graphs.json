@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infante_Gonzalo_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Alfonso_eldest_brother ;\n    :hasDeathYear 1934 ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg ;\n    :hasSister data:Infanta_Beatriz ;\n    :knownAs \"Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borb\u00f3n y Battenberg\"^^xsd:string .\n\ndata:Prince_Maurice_of_Battenberg a :Man,\n        :Person .\n\ndata:Alfonso_eldest_brother a :Man,\n        :Person .\n\ndata:Infanta_Beatriz a :Person,\n        :Woman .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infante_Gonzalo_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Alfonso_eldest_brother ;\n    :hasDeathYear 1934 ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg ;\n    :hasSister data:Infanta_Beatriz ;\n    :knownAs \"Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borb\u00f3n y Battenberg\"^^xsd:string .\n\ndata:Prince_Maurice_of_Battenberg a :Man,\n        :Person .\n\ndata:Alfonso_eldest_brother a :Man,\n        :Person .\n\ndata:Infanta_Beatriz a :Person,\n        :Woman .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    }
+]

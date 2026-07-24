@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Fruchaud a :Man ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Fabiola_Fruchaud a :Woman ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Dominik_Rainer_Radziwill a :Man ;\n    :hasFather data:Hieronim_Mikolaj_Radziwill ;\n    :hasMother data:Renata_of_Austria .\n\ndata:Eugenie_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:George_of_Greece_and_Denmark ;\n    :hasMother data:Marie_Bonaparte .\n\ndata:George_Radziwill a :Man .\n\ndata:George_of_Greece_and_Denmark a :Man .\n\ndata:Hieronim_Mikolaj_Radziwill a :Man .\n\ndata:Marie_Bonaparte a :Woman .\n\ndata:Renata_of_Austria a :Woman .\n\ndata:Jean_Henri_Fruchaud a :Man ;\n    :hasFather data:Henri_Fruchard ;\n    :hasMother data:Eunice_McCooey .\n\ndata:Tatiana_Radziwill a :Woman ;\n    :hasBirthYear 1939 ;\n    :hasBrother data:George_Radziwill ;\n    :hasDeathYear 2025 ;\n    :hasFather data:Dominik_Rainer_Radziwill ;\n    :hasMother data:Eugenie_of_Greece_and_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Fruchaud a :Man ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Fabiola_Fruchaud a :Woman ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Dominik_Rainer_Radziwill a :Man ;\n    :hasFather data:Hieronim_Mikolaj_Radziwill ;\n    :hasMother data:Renata_of_Austria .\n\ndata:Eugenie_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:George_of_Greece_and_Denmark ;\n    :hasMother data:Marie_Bonaparte .\n\ndata:Eunice_McCooey a :Woman .\n\ndata:George_Radziwill a :Man .\n\ndata:George_of_Greece_and_Denmark a :Man .\n\ndata:Henri_Fruchard a :Man .\n\ndata:Hieronim_Mikolaj_Radziwill a :Man .\n\ndata:Marie_Bonaparte a :Woman .\n\ndata:Renata_of_Austria a :Woman .\n\ndata:Jean_Henri_Fruchaud a :Man ;\n    :hasFather data:Henri_Fruchard ;\n    :hasMother data:Eunice_McCooey .\n\ndata:Tatiana_Radziwill a :Woman ;\n    :hasBirthYear 1939 ;\n    :hasBrother data:George_Radziwill ;\n    :hasDeathYear 2025 ;\n    :hasFather data:Dominik_Rainer_Radziwill ;\n    :hasMother data:Eugenie_of_Greece_and_Denmark .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Fruchaud a :Man ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Fabiola_Fruchaud a :Woman ;\n    :hasFather data:Jean_Henri_Fruchaud ;\n    :hasMother data:Tatiana_Radziwill .\n\ndata:Dominik_Rainer_Radziwill a :Man ;\n    :hasFather data:Hieronim_Mikolaj_Radziwill ;\n    :hasMother data:Renata_of_Austria .\n\ndata:Eugenie_of_Greece_and_Denmark a :Woman ;\n    :hasFather data:George_of_Greece_and_Denmark ;\n    :hasMother data:Marie_Bonaparte .\n\ndata:Eunice_McCooey a :Woman .\n\ndata:George_Radziwill a :Man .\n\ndata:George_of_Greece_and_Denmark a :Man .\n\ndata:Henri_Fruchard a :Man .\n\ndata:Hieronim_Mikolaj_Radziwill a :Man .\n\ndata:Marie_Bonaparte a :Woman .\n\ndata:Renata_of_Austria a :Woman .\n\ndata:Jean_Henri_Fruchaud a :Man ;\n    :hasFather data:Henri_Fruchard ;\n    :hasMother data:Eunice_McCooey .\n\ndata:Tatiana_Radziwill a :Woman ;\n    :hasBirthYear 1939 ;\n    :hasBrother data:George_Radziwill ;\n    :hasDeathYear 2025 ;\n    :hasFather data:Dominik_Rainer_Radziwill ;\n    :hasMother data:Eugenie_of_Greece_and_Denmark .\n\n"
+    }
+]

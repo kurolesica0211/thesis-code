@@ -1,0 +1,94 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret a :Woman ;
+    :hasRelation data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSisterOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+
+data:Queen_Elizabeth_II a :Woman ;
+    :hasRelation data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSisterOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+
+data:Elizabeth_Bowes-Lyon a :Woman ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon .
+
+data:John_Herbert_Bowes-Lyon a :Man ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasDeathYear 1930 ;
+    :hasMarriageYear 1914 ;
+    :hasRelation data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Man ;
+    :hasBrother data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasChild data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBloodrelationOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBrotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isParentOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isUncleOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1966 ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Charles_Hepburn-Stuart-Forbes-Trefusis,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+

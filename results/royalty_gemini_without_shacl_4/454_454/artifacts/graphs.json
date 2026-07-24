@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,\n        :Woman ;\n    :hasBirthYear \"1981\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2019\"^^xsd:positiveInteger ;\n    :hasRelation data:Thomas_Henry_Robin_Kingston ;\n    :isDaughterOf data:Prince_Michael_of_Kent,\n        data:Princess_Michael_of_Kent .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person .\n\ndata:Princess_Michael_of_Kent a :Person,\n        :Woman .\n\ndata:Thomas_Henry_Robin_Kingston a :Man,\n        :Person ;\n    :hasBirthYear \"1978\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2024\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,\n        :Woman ;\n    :hasBirthYear \"1981\"^^xsd:positiveInteger ;\n    :hasMarriageYear \"2019\"^^xsd:positiveInteger ;\n    :hasRelation data:Thomas_Henry_Robin_Kingston ;\n    :isDaughterOf data:Prince_Michael_of_Kent,\n        data:Princess_Michael_of_Kent .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person .\n\ndata:Princess_Michael_of_Kent a :Person,\n        :Woman .\n\ndata:Thomas_Henry_Robin_Kingston a :Man,\n        :Person ;\n    :hasBirthYear \"1978\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2024\"^^xsd:positiveInteger .\n\n"
+    }
+]

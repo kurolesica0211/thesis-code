@@ -1,0 +1,99 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Calixta_of_Lippe a :Person,
+        :Woman ;
+    :hasRelation data:Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia,
+        data:Princess_Calixta_of_Lippe,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Calixta_of_Lippe ;
+    :isBloodrelationOf data:Princess_Calixta_of_Lippe ;
+    :isSiblingOf data:Princess_Calixta_of_Lippe ;
+    :isSisterOf data:Princess_Calixta_of_Lippe .
+
+data:Henry_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :hasRelation data:Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia,
+        data:Princess_Calixta_of_Lippe,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :isBrotherOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :isSiblingOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Henry_of_Prussia ;
+    :hasChild data:Prince_Waldemar_of_Prussia ;
+    :hasRelation data:Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia,
+        data:Princess_Calixta_of_Lippe,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Waldemar_of_Prussia ;
+    :isAncestorOf data:Prince_Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia ;
+    :isBrotherOf data:Prince_Henry_of_Prussia ;
+    :isFatherOf data:Prince_Waldemar_of_Prussia ;
+    :isParentOf data:Prince_Waldemar_of_Prussia ;
+    :isSiblingOf data:Prince_Henry_of_Prussia ;
+    :isUncleOf data:Prince_Waldemar_of_Prussia .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Waldemar_of_Prussia ;
+    :hasRelation data:Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia,
+        data:Princess_Calixta_of_Lippe,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Waldemar_of_Prussia ;
+    :isAncestorOf data:Prince_Waldemar_of_Prussia ;
+    :isAuntOf data:Prince_Waldemar_of_Prussia ;
+    :isBloodrelationOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Waldemar_of_Prussia ;
+    :isParentOf data:Prince_Waldemar_of_Prussia ;
+    :isSiblingOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Irene_of_Hesse_and_by_Rhine .
+
+data:Prince_Waldemar_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia,
+        data:Princess_Calixta_of_Lippe,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :isBrotherOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Henry_of_Prussia,
+        data:Prince_Waldemar_of_Prussia ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+

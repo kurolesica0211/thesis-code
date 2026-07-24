@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexanderNixon a :Man ;\n    :hasBirthYear 1964 .\n\ndata:PrinceRadu a :Man .\n\ndata:PrincessElena a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasDaughter data:ElisabetaKarina ;\n    :hasFather data:KingMichaelI ;\n    :hasMarriageYear 1983,\n        1998 ;\n    :hasMother data:QueenAnne ;\n    :hasSister data:Margareta,\n        data:PrincessIrina,\n        data:PrincessMaria,\n        data:PrincessSophie ;\n    :hasSon data:PrinceNicholas .\n\ndata:RobinMedforthMills a :Man ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 .\n\ndata:ElisabetaKarina a :Woman .\n\ndata:KingMichaelI a :Man .\n\ndata:Margareta a :Woman .\n\ndata:PrinceNicholas a :Man .\n\ndata:PrincessIrina a :Woman .\n\ndata:PrincessMaria a :Woman .\n\ndata:PrincessSophie a :Woman .\n\ndata:QueenAnne a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexanderNixon a :Man ;\n    :hasBirthYear 1964 .\n\ndata:PrinceRadu a :Man .\n\ndata:PrincessElena a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasDaughter data:ElisabetaKarina ;\n    :hasFather data:KingMichaelI ;\n    :hasMarriageYear 1983,\n        1998 ;\n    :hasMother data:QueenAnne ;\n    :hasSister data:Margareta,\n        data:PrincessIrina,\n        data:PrincessMaria,\n        data:PrincessSophie ;\n    :hasSon data:PrinceNicholas .\n\ndata:RobinMedforthMills a :Man ;\n    :hasBirthYear 1942 ;\n    :hasDeathYear 2002 .\n\ndata:ElisabetaKarina a :Woman .\n\ndata:KingMichaelI a :Man .\n\ndata:Margareta a :Woman .\n\ndata:PrinceNicholas a :Man .\n\ndata:PrincessIrina a :Woman .\n\ndata:PrincessMaria a :Woman .\n\ndata:PrincessSophie a :Woman .\n\ndata:QueenAnne a :Woman .\n\n"
+    }
+]

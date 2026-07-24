@@ -1,0 +1,300 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XII ;
+    :hasChild data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBloodrelationOf data:Alfonso_XII ;
+    :isBrotherOf data:Alfonso_XII ;
+    :isFatherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XII ;
+    :isUncleOf data:Alfonso_XIII .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isAuntOf data:Alfonso_XIII ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isAuntOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isParentOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Jaime a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Juan a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "El Africano"^^xsd:string,
+        "King Buby"^^xsd:string,
+        "the African"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Alfonso_XII ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan,
+        data:Maria_Christina_of_Austria ;
+    :hasSon data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isAncestorOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isChildOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isFatherOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isParentOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isSonOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isUncleOf data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan .
+

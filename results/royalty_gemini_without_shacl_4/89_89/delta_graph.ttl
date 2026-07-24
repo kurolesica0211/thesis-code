@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Marie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich .
+
+data:Kostas_Simitis a :Man,
+        :Person ;
+    :hasFather data:George_Simitis .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :alsoKnownAs "Nicolas Leprince"^^xsd:string ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:Queen_Olga ;
+    :isSiblingOf data:Constantine,
+        data:George ;
+    :knownAs "Greek Nicky"^^xsd:string .
+
+data:Constantine a :Man,
+        :Person .
+
+data:George a :Man,
+        :Person .
+
+data:George_Simitis a :Man,
+        :Person .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man,
+        :Person .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
+        :Person .
+
+data:King_George_I_of_Greece a :Man,
+        :Person .
+
+data:Marie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Queen_Olga a :Person,
+        :Woman .
+

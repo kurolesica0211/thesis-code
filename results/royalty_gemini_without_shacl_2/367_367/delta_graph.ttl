@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasRelation data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin .
+
+data:Charlotte_of_Mecklenburg_Strelitz a :Person,
+        :Woman ;
+    :hasBirthYear 1744 ;
+    :hasDeathYear 1818 .
+
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasBirthYear 1738 ;
+    :hasDeathYear 1820 .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1818 ;
+    :hasDeathYear 1906 .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1845 ;
+    :hasDeathYear 1923 .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+data:Louise_of_Hesse_Kassel a :Person,
+        :Woman ;
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1898 .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1933 ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse_Kassel .
+

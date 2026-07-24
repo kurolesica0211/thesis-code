@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1943 ;\n    :hasBrother data:Henri_Count_of_Paris_jr ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Amedeo_Duke_of_Aosta,\n        data:Enrico_Gandolfi,\n        data:Luigi_Arnaldo_La_Cagnina ;\n    :hasSister data:Anne_Duchess_of_Calabria,\n        data:Diane_Duchess_of_W%C3%BCrttemberg .\n\ndata:Aimone_Duke_of_Aosta a :Man .\n\ndata:Amedeo_Duke_of_Aosta a :Man ;\n    :hasFather data:Aimone_Duke_of_Aosta ;\n    :hasRelation data:Silvia_Patern%C3%B2_di_Spedalotto .\n\ndata:Anne_Duchess_of_Calabria a :Woman .\n\ndata:Diane_Duchess_of_W%C3%BCrttemberg a :Woman .\n\ndata:Enrico_Gandolfi a :Man .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Henri_Count_of_Paris_jr a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .\n\ndata:Luigi_Arnaldo_La_Cagnina a :Man .\n\ndata:Silvia_Patern%C3%B2_di_Spedalotto a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1943 ;\n    :hasBrother data:Henri_Count_of_Paris_jr ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1964 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Amedeo_Duke_of_Aosta,\n        data:Enrico_Gandolfi,\n        data:Luigi_Arnaldo_La_Cagnina ;\n    :hasSister data:Anne_Duchess_of_Calabria,\n        data:Diane_Duchess_of_W%C3%BCrttemberg .\n\ndata:Aimone_Duke_of_Aosta a :Man .\n\ndata:Amedeo_Duke_of_Aosta a :Man ;\n    :hasFather data:Aimone_Duke_of_Aosta ;\n    :hasRelation data:Silvia_Patern%C3%B2_di_Spedalotto .\n\ndata:Anne_Duchess_of_Calabria a :Woman .\n\ndata:Diane_Duchess_of_W%C3%BCrttemberg a :Woman .\n\ndata:Enrico_Gandolfi a :Man .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Henri_Count_of_Paris_jr a :Man .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .\n\ndata:Luigi_Arnaldo_La_Cagnina a :Man .\n\ndata:Silvia_Patern%C3%B2_di_Spedalotto a :Woman .\n\n"
+    }
+]

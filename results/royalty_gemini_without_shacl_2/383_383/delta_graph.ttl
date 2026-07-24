@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexisFruchaud a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasFather data:JeanHenriFruchaud ;
+    :hasMother data:TatianaRadziwill .
+
+data:FabiolaFruchaud a :Person,
+        :Woman ;
+    :hasBirthYear 1967 ;
+    :hasFather data:JeanHenriFruchaud ;
+    :hasMother data:TatianaRadziwill .
+
+data:GeorgeRadziwill a :Man,
+        :Person ;
+    :hasFather data:DominikRainerRadziwill ;
+    :hasMother data:EugenieOfGreeceAndDenmark .
+
+data:EuniceMcCooey a :Person,
+        :Woman .
+
+data:GeorgeOfGreece a :Man,
+        :Person .
+
+data:GeorgeOfGreeceAndDenmark a :Man,
+        :Person ;
+    :hasFather data:GeorgeOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia .
+
+data:HenriFruchaud a :Man,
+        :Person .
+
+data:HieronimMikolajRadziwill a :Man,
+        :Person .
+
+data:MarieBonaparte a :Person,
+        :Woman ;
+    :hasFather data:RolandNapoleonBonaparte ;
+    :hasMother data:MarieFelixBlanc .
+
+data:MarieFelixBlanc a :Person,
+        :Woman .
+
+data:OlgaConstantinovnaOfRussia a :Person,
+        :Woman .
+
+data:RenataOfAustria a :Person,
+        :Woman .
+
+data:RolandNapoleonBonaparte a :Man,
+        :Person .
+
+data:DominikRainerRadziwill a :Man,
+        :Person ;
+    :hasFather data:HieronimMikolajRadziwill ;
+    :hasMother data:RenataOfAustria .
+
+data:EugenieOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasFather data:GeorgeOfGreeceAndDenmark ;
+    :hasMother data:MarieBonaparte .
+
+data:JeanHenriFruchaud a :Man,
+        :Person ;
+    :hasFather data:HenriFruchaud ;
+    :hasMother data:EuniceMcCooey .
+
+data:TatianaRadziwill a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2025 ;
+    :hasFather data:DominikRainerRadziwill ;
+    :hasMother data:EugenieOfGreeceAndDenmark .
+

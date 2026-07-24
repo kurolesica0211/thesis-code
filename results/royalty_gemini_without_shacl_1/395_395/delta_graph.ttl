@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nikolaus a :Man,
+        :Person ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 ;
+    :hasMarriageYear 1921,
+        1950 ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSonOf data:Frederick_Augustus_II .
+
+data:Anne-Marie_von_Schutzbar_genannt_Milchling a :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1991 ;
+    :hasMother data:Rose_Marston ;
+    :isDaughterOf data:Rudolf_von_Schutzbar_gen_Milchling .
+
+data:Bathildis_of_Schaumburg-Lippe a :Person,
+        :Woman .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isDaughterOf data:Frederick_Francis_II .
+
+data:Elisabeth_of_Saxe-Altenburg a :Person,
+        :Woman .
+
+data:Frederick_Augustus_II a :Man,
+        :Person ;
+    :hasBirthYear 1852 ;
+    :hasDeathYear 1931 ;
+    :hasMother data:Elisabeth_of_Saxe-Altenburg ;
+    :isSonOf data:Peter_II .
+
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Man,
+        :Person .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasMother data:Bathildis_of_Schaumburg-Lippe ;
+    :isDaughterOf data:Friedrich_of_Waldeck_and_Pyrmont .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman .
+
+data:Peter_II a :Man,
+        :Person .
+
+data:Rose_Marston a :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1957 .
+
+data:Rudolf_von_Schutzbar_gen_Milchling a :Man,
+        :Person ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1935 .
+

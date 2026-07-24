@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1946"^^xsd:positiveInteger ;
+    :hasFather data:Frederik_IX ;
+    :hasMarriageYear "1964"^^xsd:positiveInteger ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasRelation data:Constantine_II ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Frederik_X ;
+    :isBloodrelationOf data:Carl_XVI_Gustaf ;
+    :isMotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSisterOf data:Benedikte,
+        data:Margrethe_II .
+
+data:Irene_of_Greece a :Person,
+        :Woman .
+
+data:Katherine_of_Greece a :Person,
+        :Woman .
+
+data:Sophia_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Juan_Carlos_of_Spain .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Benedikte a :Person,
+        :Woman .
+
+data:Carl_XVI_Gustaf a :Man,
+        :Person .
+
+data:Christian_X a :Ancestor,
+        :Man,
+        :Person .
+
+data:Constantine_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear "2023"^^xsd:positiveInteger ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMarriageYear "1964"^^xsd:positiveInteger ;
+    :hasMother data:Frederica_of_Greece ;
+    :isFatherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person .
+
+data:Frederica_of_Greece a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Christian_X ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederik_X a :Man,
+        :Person .
+
+data:Gustaf_VI_Adolf a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasMother data:Margaret_of_Connaught .
+
+data:Juan_Carlos_of_Spain a :Man,
+        :Person .
+
+data:Margaret_of_Connaught a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Marie-Chantal_Miller a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alexia a :Person,
+        :Woman .
+
+data:Nikolaos a :Man,
+        :Person .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasRelation data:Marie-Chantal_Miller .
+
+data:Philippos a :Man,
+        :Person .
+
+data:Theodora a :Person,
+        :Woman .
+

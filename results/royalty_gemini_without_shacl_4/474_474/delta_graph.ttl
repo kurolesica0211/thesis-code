@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    :alsoKnownAs "Karl Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Charles_I ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1993,
+        2022 ;
+    :hasMother data:Regina_von_Sachsen-Meiningen ;
+    :hasRelation data:Christian_Nicolau_de_Almeida_Reid,
+        data:Francesca_Thyssen-Bornemisza ;
+    :knownAs "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string .
+
+data:Charles_I a :Man,
+        :Person .
+
+data:Christian_Nicolau_de_Almeida_Reid a :Person,
+        :Woman .
+
+data:Francesca_Thyssen-Bornemisza a :Person,
+        :Woman .
+
+data:Otto_von_Habsburg a :Man,
+        :Person .
+
+data:Regina_von_Sachsen-Meiningen a :Person,
+        :Woman .
+

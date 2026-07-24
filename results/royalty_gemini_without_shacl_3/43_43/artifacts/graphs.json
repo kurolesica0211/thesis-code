@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Count_of_Caserta a :Man .\n\ndata:Maria_Pia_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .\n\ndata:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,\n        data:Maria_Elisabeth_of_Bavaria ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;\n    :isSiblingOf data:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,\n        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;\n    :knownAs \"The Expected Prince\"^^xsd:string .\n\ndata:Gaston_Count_of_Eu a :Man .\n\ndata:Isabel_of_Brazil a :Woman .\n\ndata:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasFather data:Gaston_Count_of_Eu ;\n    :hasMother data:Isabel_of_Brazil .\n\ndata:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man .\n\ndata:Maria_Elisabeth_of_Bavaria a :Woman .\n\ndata:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .\n\ndata:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_Count_of_Caserta a :Man .\n\ndata:Maria_Pia_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .\n\ndata:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,\n        data:Maria_Elisabeth_of_Bavaria ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;\n    :isSiblingOf data:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza,\n        data:Pia_Maria_of_Orl%C3%A9ans-Braganza ;\n    :knownAs \"The Expected Prince\"^^xsd:string .\n\ndata:Gaston_Count_of_Eu a :Man .\n\ndata:Isabel_of_Brazil a :Woman .\n\ndata:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;\n    :hasFather data:Gaston_Count_of_Eu ;\n    :hasMother data:Isabel_of_Brazil .\n\ndata:Luiz_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man .\n\ndata:Maria_Elisabeth_of_Bavaria a :Woman .\n\ndata:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .\n\ndata:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .\n\ndata:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Woman .\n\n"
+    }
+]

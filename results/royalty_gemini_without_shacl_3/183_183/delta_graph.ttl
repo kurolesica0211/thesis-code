@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ana_Luna_Medina a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasBirthYear 2017 ;
+    :hasFather data:Peter_Karageorgevitch ;
+    :hasMother data:Lauren_Estelle_Jones .
+
+data:Sol_Maria_Medina a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Alexander_Karageorgevitch_Jr a :Man,
+        :Person .
+
+data:Alexander_Yugoslavia a :Man,
+        :Person .
+
+data:Lauren_Estelle_Jones a :Person,
+        :Woman ;
+    :hasBirthYear 1984 .
+
+data:Male a :Sex .
+
+data:Peter_Karageorgevitch a :Man,
+        :Person ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Karageorgevitch_Jr,
+        data:Philip_Karageorgevitch ;
+    :hasFather data:Alexander_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasSex data:Male .
+
+data:Philip_Karageorgevitch a :Man,
+        :Person .
+
+data:Maria_da_Gloria a :Person,
+        :Woman .
+

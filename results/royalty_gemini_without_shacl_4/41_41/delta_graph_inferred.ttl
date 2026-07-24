@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Alfonso_cousin ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_cousin,
+        data:Victoria_Eugenie ;
+    :hasSon data:Alfonso_cousin ;
+    :isAncestorOf data:Alfonso_cousin ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso_cousin ;
+    :isParentOf data:Alfonso_cousin ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Alfonso_cousin .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_cousin ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_cousin,
+        data:Victoria_Eugenie ;
+    :hasSister data:Victoria_Eugenie ;
+    :hasSon data:Alfonso_cousin ;
+    :isAncestorOf data:Alfonso_cousin ;
+    :isAuntOf data:Alfonso_cousin ;
+    :isBloodrelationOf data:Victoria_Eugenie ;
+    :isMotherOf data:Alfonso_cousin ;
+    :isParentOf data:Alfonso_cousin ;
+    :isSiblingOf data:Victoria_Eugenie ;
+    :isSisterOf data:Victoria_Eugenie .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Alfonso ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasSon data:Alfonso ;
+    :isAncestorOf data:Alfonso ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Alfonso ;
+    :isParentOf data:Alfonso ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Alfonso .
+
+data:Elias_of_Parma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Elias_of_Parma ;
+    :hasChild data:Alice_of_Bourbon-Parma ;
+    :hasDaughter data:Alice_of_Bourbon-Parma ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :isAncestorOf data:Alice_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Elias_of_Parma ;
+    :isBrotherOf data:Elias_of_Parma ;
+    :isFatherOf data:Alice_of_Bourbon-Parma ;
+    :isParentOf data:Alice_of_Bourbon-Parma ;
+    :isSiblingOf data:Elias_of_Parma ;
+    :isUncleOf data:Alice_of_Bourbon-Parma .
+
+data:Maria_Anna_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alice_of_Bourbon-Parma ;
+    :hasDaughter data:Alice_of_Bourbon-Parma ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_Anna_of_Austria ;
+    :isAncestorOf data:Alice_of_Bourbon-Parma ;
+    :isAuntOf data:Alice_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Maria_Anna_of_Austria ;
+    :isMotherOf data:Alice_of_Bourbon-Parma ;
+    :isParentOf data:Alice_of_Bourbon-Parma ;
+    :isSiblingOf data:Maria_Anna_of_Austria ;
+    :isSisterOf data:Maria_Anna_of_Austria .
+
+data:Maria_de_las_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_de_las_Mercedes ;
+    :hasSon data:Alfonso ;
+    :isAncestorOf data:Alfonso ;
+    :isAuntOf data:Alfonso ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes ;
+    :isMotherOf data:Alfonso ;
+    :isParentOf data:Alfonso ;
+    :isSiblingOf data:Maria_de_las_Mercedes ;
+    :isSisterOf data:Maria_de_las_Mercedes .
+
+data:Alfonso_cousin a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasBrother data:Alfonso_cousin ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_cousin,
+        data:Victoria_Eugenie ;
+    :isBloodrelationOf data:Alfonso_cousin ;
+    :isBrotherOf data:Alfonso_cousin ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :isSiblingOf data:Alfonso_cousin ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie .
+
+data:Alfonso a :Man,
+        :Person ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :hasBirthYear "1901"^^xsd:positiveInteger ;
+    :hasBrother data:Alfonso ;
+    :hasDeathYear "1964"^^xsd:positiveInteger ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear "1936"^^xsd:positiveInteger ;
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Alfonso ;
+    :isBrotherOf data:Alfonso ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso ;
+    :isSonOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes .
+
+data:Alice_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasAncestor data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria ;
+    :hasFather data:Elias_of_Parma ;
+    :hasMother data:Maria_Anna_of_Austria ;
+    :hasParent data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria ;
+    :hasRelation data:Alfonso,
+        data:Alice_of_Bourbon-Parma,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Alice_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Alice_of_Bourbon-Parma ;
+    :isChildOf data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria ;
+    :isDaughterOf data:Elias_of_Parma,
+        data:Maria_Anna_of_Austria ;
+    :isSiblingOf data:Alice_of_Bourbon-Parma ;
+    :isSisterOf data:Alice_of_Bourbon-Parma .
+

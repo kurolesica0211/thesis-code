@@ -1,0 +1,221 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Emperor_Alexander_II_of_Russia a :Man,
+        :Person ;
+    :hasBrother data:Emperor_Alexander_II_of_Russia ;
+    :hasRelation data:Emperor_Alexander_II_of_Russia ;
+    :isBloodrelationOf data:Emperor_Alexander_II_of_Russia ;
+    :isBrotherOf data:Emperor_Alexander_II_of_Russia ;
+    :isSiblingOf data:Emperor_Alexander_II_of_Russia .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Queen_Victoria_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSisterOf data:Queen_Victoria_of_the_United_Kingdom .
+
+data:Boris_III_of_Bulgaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Boris_III_of_Bulgaria ;
+    :hasChild data:Marie_Louise_of_Bulgaria ;
+    :hasDaughter data:Marie_Louise_of_Bulgaria ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isAncestorOf data:Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:Boris_III_of_Bulgaria ;
+    :isBrotherOf data:Boris_III_of_Bulgaria ;
+    :isFatherOf data:Marie_Louise_of_Bulgaria ;
+    :isParentOf data:Marie_Louise_of_Bulgaria ;
+    :isSiblingOf data:Boris_III_of_Bulgaria ;
+    :isUncleOf data:Marie_Louise_of_Bulgaria .
+
+data:Giovanna_of_Italy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Louise_of_Bulgaria ;
+    :hasDaughter data:Marie_Louise_of_Bulgaria ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Giovanna_of_Italy ;
+    :isAncestorOf data:Marie_Louise_of_Bulgaria ;
+    :isAuntOf data:Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:Giovanna_of_Italy ;
+    :isMotherOf data:Marie_Louise_of_Bulgaria ;
+    :isParentOf data:Marie_Louise_of_Bulgaria ;
+    :isSiblingOf data:Giovanna_of_Italy ;
+    :isSisterOf data:Giovanna_of_Italy .
+
+data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:Karl_6th_Prince_of_Leiningen ;
+    :hasChild data:Karl_of_Leiningen ;
+    :hasDeathYear 1946 ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSon data:Karl_of_Leiningen ;
+    :isAncestorOf data:Karl_of_Leiningen ;
+    :isBloodrelationOf data:Karl_6th_Prince_of_Leiningen ;
+    :isBrotherOf data:Karl_6th_Prince_of_Leiningen ;
+    :isFatherOf data:Karl_of_Leiningen ;
+    :isParentOf data:Karl_of_Leiningen ;
+    :isSiblingOf data:Karl_6th_Prince_of_Leiningen ;
+    :isUncleOf data:Karl_of_Leiningen .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isAncestorOf data:Karl_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Maria_Kirillovna_of_Russia .
+
+data:Victoria_Melita_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Victoria_Melita_of_Edinburgh ;
+    :isAncestorOf data:Karl_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isAuntOf data:Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Victoria_Melita_of_Edinburgh ;
+    :isMotherOf data:Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Victoria_Melita_of_Edinburgh ;
+    :isSisterOf data:Victoria_Melita_of_Edinburgh .
+
+data:Marie_Louise_of_Bulgaria a :Person,
+        :Woman ;
+    :hasAncestor data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Giovanna_of_Italy ;
+    :hasParent data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Marie_Louise_of_Bulgaria ;
+    :isBloodrelationOf data:Marie_Louise_of_Bulgaria ;
+    :isChildOf data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy ;
+    :isDaughterOf data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy ;
+    :isSiblingOf data:Marie_Louise_of_Bulgaria ;
+    :isSisterOf data:Marie_Louise_of_Bulgaria .
+
+data:Karl_of_Leiningen a :Man,
+        :Person ;
+    :hasAncestor data:Karl_6th_Prince_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:Karl_of_Leiningen ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasParent data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isBloodrelationOf data:Karl_of_Leiningen ;
+    :isBrotherOf data:Karl_of_Leiningen ;
+    :isChildOf data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Karl_of_Leiningen ;
+    :isSonOf data:Karl_6th_Prince_of_Leiningen,
+        data:Maria_Kirillovna_of_Russia .
+
+data:Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasChild data:Karl_of_Leiningen ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Melita_of_Edinburgh ;
+    :hasParent data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasRelation data:Boris_III_of_Bulgaria,
+        data:Giovanna_of_Italy,
+        data:Karl_6th_Prince_of_Leiningen,
+        data:Karl_of_Leiningen,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Maria_Kirillovna_of_Russia,
+        data:Marie_Louise_of_Bulgaria,
+        data:Victoria_Melita_of_Edinburgh ;
+    :hasSister data:Maria_Kirillovna_of_Russia ;
+    :hasSon data:Karl_of_Leiningen ;
+    :isAncestorOf data:Karl_of_Leiningen ;
+    :isAuntOf data:Karl_of_Leiningen ;
+    :isBloodrelationOf data:Maria_Kirillovna_of_Russia ;
+    :isChildOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isDaughterOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Melita_of_Edinburgh ;
+    :isMotherOf data:Karl_of_Leiningen ;
+    :isParentOf data:Karl_of_Leiningen ;
+    :isSiblingOf data:Maria_Kirillovna_of_Russia ;
+    :isSisterOf data:Maria_Kirillovna_of_Russia .
+

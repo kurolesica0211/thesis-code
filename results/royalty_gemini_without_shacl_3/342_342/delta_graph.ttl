@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelm_Crown_Prince a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Prince_Oskar ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Augusta_Victoria ;
+    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :hasSon data:Prince_Wilhelm_of_Prussia .
+
+data:Anastasia_Mikhailovna a :Person,
+        :Woman .
+
+data:Augusta_Victoria a :Person,
+        :Woman .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+
+data:Prince_Adalbert a :Man,
+        :Person .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person .
+
+data:Prince_Joachim a :Man,
+        :Person .
+
+data:Prince_Oskar a :Man,
+        :Person .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Princess_Viktoria_Luise a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna .
+

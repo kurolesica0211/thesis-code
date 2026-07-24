@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Herbert_Bowes-Lyon a :Man ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1930 ;
+    :hasMarriageYear 1914 ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+    :isSonOf data:Countess_of_Strathmore_and_Kinghorne,
+        data:Earl_of_Strathmore_and_Kinghorne_14th ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Philip_Mountbatten a :Man .
+
+data:Princess_Margaret a :Woman .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .
+
+data:Countess_of_Strathmore_and_Kinghorne a :Woman .
+
+data:Earl_of_Strathmore_and_Kinghorne_14th a :Man .
+
+data:Elizabeth_Bowes-Lyon a :Woman .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1966 ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
+
+data:Queen_Elizabeth_II a :Woman .
+

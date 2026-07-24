@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Crown_Prince_of_Denmark a :Man,\n        :Person ;\n    :hasBirthYear \"2005\"^^xsd:positiveInteger ;\n    :hasFather data:King_Frederik_X ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Henrik a :Man .\n\ndata:King_Frederik_X a :Man,\n        :Person ;\n    :hasFather data:Prince_Henrik_of_Denmark ;\n    :hasMother data:Queen_Margrethe_II .\n\ndata:Prince_Henrik_of_Denmark a :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Crown_Prince_of_Denmark a :Man,\n        :Person ;\n    :hasBirthYear \"2005\"^^xsd:positiveInteger ;\n    :hasFather data:King_Frederik_X ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Henrik a :Man .\n\ndata:King_Frederik_X a :Man,\n        :Person ;\n    :hasFather data:Prince_Henrik_of_Denmark ;\n    :hasMother data:Queen_Margrethe_II .\n\ndata:Prince_Henrik_of_Denmark a :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Queen_Mary a :Person,\n        :Woman .\n\n"
+    }
+]

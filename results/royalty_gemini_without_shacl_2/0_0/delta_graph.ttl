@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1959 ;
+    :isSonOf data:Armgard_von_Veltheim,
+        data:Wilhelm-Karl_Prince_of_Prussia .
+
+data:Oskar_of_Prussia_grandfather a :Ancestor,
+        :Man .
+
+data:Armgard_von_Veltheim a :Ancestor,
+        :Woman .
+
+data:Wilhelm-Karl_Prince_of_Prussia a :Ancestor,
+        :Man .
+
+data:Wilhelm_II a :Ancestor,
+        :Man .
+

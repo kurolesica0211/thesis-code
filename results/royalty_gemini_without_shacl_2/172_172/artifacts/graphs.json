@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear \"2002\"^^xsd:positiveInteger ;\n    :hasBrother data:Viscount_Linley ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope ;\n    :hasRelation data:Lady_Sarah_Chatto .\n\ndata:Antony_Armstrong-Jones a :Man,\n        :Person .\n\ndata:Charles_Stanhope a :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Person,\n        :Woman ;\n    :hasFather data:Charles_Stanhope .\n\ndata:Viscount_Linley a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Margarita_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear \"2002\"^^xsd:positiveInteger ;\n    :hasBrother data:Viscount_Linley ;\n    :hasFather data:David_Armstrong-Jones ;\n    :hasMother data:Serena_Stanhope ;\n    :hasRelation data:Lady_Sarah_Chatto .\n\ndata:Antony_Armstrong-Jones a :Man,\n        :Person .\n\ndata:Charles_Stanhope a :Man,\n        :Person .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Serena_Stanhope a :Person,\n        :Woman ;\n    :hasFather data:Charles_Stanhope .\n\ndata:Viscount_Linley a :Man,\n        :Person .\n\n"
+    }
+]

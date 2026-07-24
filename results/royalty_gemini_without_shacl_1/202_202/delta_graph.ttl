@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gottfried_of_Austria a :Man ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1984 ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Dorothea_of_Bavaria ;
+    :isSonOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria .
+
+data:Dorothea_of_Bavaria a :Woman ;
+    :isDaughterOf data:Franz_of_Bavaria,
+        data:Isabella_Antonie_of_Croy .
+
+data:Ferdinando_IV_of_Tuscany a :Man .
+
+data:Franz_of_Bavaria a :Man .
+
+data:Isabella_Antonie_of_Croy a :Woman .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Woman .
+
+data:Peter_Ferdinand_of_Austria a :Man ;
+    :isSonOf data:Ferdinando_IV_of_Tuscany .
+

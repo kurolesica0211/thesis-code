@@ -1,0 +1,156 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_William_III ;
+    :hasChild data:Alexander_Prince_of_Orange ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSon data:Alexander_Prince_of_Orange ;
+    :isAncestorOf data:Alexander_Prince_of_Orange ;
+    :isBloodrelationOf data:King_William_III ;
+    :isBrotherOf data:King_William_III ;
+    :isFatherOf data:Alexander_Prince_of_Orange ;
+    :isParentOf data:Alexander_Prince_of_Orange ;
+    :isSiblingOf data:King_William_III ;
+    :isUncleOf data:Alexander_Prince_of_Orange .
+
+data:Queen_Sophie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Prince_of_Orange ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSister data:Queen_Sophie ;
+    :hasSon data:Alexander_Prince_of_Orange ;
+    :isAncestorOf data:Alexander_Prince_of_Orange ;
+    :isAuntOf data:Alexander_Prince_of_Orange ;
+    :isBloodrelationOf data:Queen_Sophie ;
+    :isMotherOf data:Alexander_Prince_of_Orange ;
+    :isParentOf data:Alexander_Prince_of_Orange ;
+    :isSiblingOf data:Queen_Sophie ;
+    :isSisterOf data:Queen_Sophie .
+
+data:Prince_Maurice a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isBrotherOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isSiblingOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina .
+
+data:Prince_William a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isBrotherOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isSiblingOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isSiblingOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isSisterOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina .
+
+data:Alexander_Prince_of_Orange a :Man,
+        :Person ;
+    :hasAncestor data:King_William_III,
+        data:Queen_Sophie ;
+    :hasBirthYear 1851 ;
+    :hasBrother data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William ;
+    :hasDeathYear 1884 ;
+    :hasFather data:King_William_III ;
+    :hasMother data:Queen_Sophie ;
+    :hasParent data:King_William_III,
+        data:Queen_Sophie ;
+    :hasRelation data:Alexander_Prince_of_Orange,
+        data:King_William_III,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Queen_Sophie,
+        data:Wilhelmina ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isBrotherOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isChildOf data:King_William_III,
+        data:Queen_Sophie ;
+    :isSiblingOf data:Alexander_Prince_of_Orange,
+        data:Prince_Maurice,
+        data:Prince_William,
+        data:Wilhelmina ;
+    :isSonOf data:King_William_III,
+        data:Queen_Sophie .
+

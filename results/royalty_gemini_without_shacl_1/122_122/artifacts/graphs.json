@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :hasBirthYear \"2012-01-24\"^^xsd:date ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark .\n\ndata:Felix a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim .\n\ndata:Henrik_Jr a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Princess_Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :hasParent data:Prince_Henrik,\n        data:Queen_Margrethe_II .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :hasBirthYear \"2012-01-24\"^^xsd:date ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark .\n\ndata:Felix a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim .\n\ndata:Henrik_Jr a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person ;\n    :hasFather data:Prince_Joachim .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\ndata:Princess_Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :hasParent data:Prince_Henrik,\n        data:Queen_Margrethe_II .\n\n"
+    }
+]

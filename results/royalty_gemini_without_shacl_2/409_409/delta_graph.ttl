@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary_Frances_Elphinstone a :Person,
+        :Woman ;
+    :formerlyKnownAs "Mary Frances Bowes-Lyon"^^xsd:string ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1961 ;
+    :hasFather data:Claude_Bowes-Lyon_14th ;
+    :hasMarriageYear 1910 ;
+    :hasRelation data:Sidney_Elphinstone_16th_Lord_Elphinstone ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon .
+
+data:Claude_Bowes-Lyon_14th a :Man,
+        :Person .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Sidney_Elphinstone_16th_Lord_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 .
+

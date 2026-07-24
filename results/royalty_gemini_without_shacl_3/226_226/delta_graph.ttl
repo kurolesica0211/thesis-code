@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man .
+
+data:Gerald_David_Lascelles a :Man ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Mary_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin ;
+    :knownAs data:The_Honourable_Gerald_Lascelles .
+
+data:King_George_V a :Man ;
+    :hasDaughter data:Mary_Princess_Royal .
+
+data:Queen_Mary a :Woman ;
+    :hasDaughter data:Mary_Princess_Royal .
+
+data:Elizabeth_Colvin a :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2006 ;
+    :knownAs data:Elizabeth_Evelyn_Collingwood .
+
+data:Elizabeth_Evelyn_Collingwood a :DomainEntity .
+
+data:Henry_Lascelles_6th_Earl_of_Harewood a :Man .
+
+data:The_Honourable_Gerald_Lascelles a :DomainEntity .
+
+data:Mary_Princess_Royal a :Woman .
+

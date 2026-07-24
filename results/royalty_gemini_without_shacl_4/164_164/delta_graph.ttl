@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Friedrich_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :isSonOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia .
+
+data:Maria_of_Russia a :Person,
+        :Woman ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:Vladimir_of_Russia a :Man,
+        :Person ;
+    :isBrotherOf data:Kira_Kirillovna_of_Russia .
+
+data:Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+        :Woman .
+
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Louis_Ferdinand_of_Prussia .
+

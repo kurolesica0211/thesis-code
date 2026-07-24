@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person .\n\ndata:Charles_X a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_XVI .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person .\n\ndata:Jean_d_Orleans a :Man,\n        :Person ;\n    :hasBirthYear \"1965\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Louis_Philippe_I a :Man,\n        :Person .\n\ndata:Philippe_I_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_XIV .\n\ndata:Princess_Chantal_of_Orleans a :Person,\n        :Woman .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :hasBirthYear \"1933\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2019\"^^xsd:nonNegativeInteger .\n\ndata:Louis_XIV a :Man,\n        :Person .\n\ndata:Louis_XVI a :Man,\n        :Person .\n\ndata:Marie_Therese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear \"1934\"^^xsd:nonNegativeInteger .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear \"1977\"^^xsd:nonNegativeInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person .\n\ndata:Charles_X a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_XVI .\n\ndata:Henri_VI_Count_of_Paris a :Man,\n        :Person .\n\ndata:Jean_d_Orleans a :Man,\n        :Person ;\n    :hasBirthYear \"1965\"^^xsd:nonNegativeInteger ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasRelation data:Philomena_de_Tornos_y_Steinhart .\n\ndata:Louis_Philippe_I a :Man,\n        :Person .\n\ndata:Philippe_I_Duke_of_Orleans a :Man,\n        :Person ;\n    :isBrotherOf data:Louis_XIV .\n\ndata:Princess_Chantal_of_Orleans a :Person,\n        :Woman .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person ;\n    :hasBirthYear \"1933\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2019\"^^xsd:nonNegativeInteger .\n\ndata:Louis_XIV a :Man,\n        :Person .\n\ndata:Louis_XVI a :Man,\n        :Person .\n\ndata:Marie_Therese_of_Wurttemberg a :Person,\n        :Woman ;\n    :hasBirthYear \"1934\"^^xsd:nonNegativeInteger .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear \"1977\"^^xsd:nonNegativeInteger .\n\n"
+    }
+]

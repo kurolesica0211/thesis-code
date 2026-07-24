@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Anne_Princess_Royal a :Ancestor .
+
+data:Heather_Tonkin a :Ancestor .
+
+data:Mark_Phillips a :Ancestor .
+
+data:Mike_Tindall a :Ancestor .
+
+data:Queen_Elizabeth_II a :Ancestor .
+
+data:Sandy_Pflueger a :Ancestor .
+
+data:Zara_Tindall a :Ancestor ;
+    :hasChild data:Lena_Elizabeth_Tindall,
+        data:Lucas_Philip_Tindall,
+        data:Mia_Grace_Tindall .
+

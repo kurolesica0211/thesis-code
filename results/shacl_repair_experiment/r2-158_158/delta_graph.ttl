@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:AlexandraGeorgievna a :Ancestor .
+
+data:MariaPavlovna :hasSex data:Female .
+
+data:PaulAlexandrovich a :Ancestor .
+
+data:SergeiAlexandrovich a :Ancestor .
+
+data:SergeiPutyatin a :Ancestor .
+
+data:WilhelmSweden a :Ancestor .
+
+data:Female a :Sex .
+

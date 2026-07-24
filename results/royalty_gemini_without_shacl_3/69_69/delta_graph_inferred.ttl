@@ -1,0 +1,240 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,
+        :Person ;
+    :hasBrother data:Jean_Baptiste_de_Laborde_de_Monpezat ;
+    :hasRelation data:Jean_Baptiste_de_Laborde_de_Monpezat ;
+    :isBloodrelationOf data:Jean_Baptiste_de_Laborde_de_Monpezat ;
+    :isBrotherOf data:Jean_Baptiste_de_Laborde_de_Monpezat ;
+    :isSiblingOf data:Jean_Baptiste_de_Laborde_de_Monpezat .
+
+data:King_Frederik_IX a :Man,
+        :Person ;
+    :hasBrother data:King_Frederik_IX ;
+    :hasRelation data:King_Frederik_IX ;
+    :isBloodrelationOf data:King_Frederik_IX ;
+    :isBrotherOf data:King_Frederik_IX ;
+    :isSiblingOf data:King_Frederik_IX .
+
+data:King_Harald_V a :Man,
+        :Person ;
+    :hasBrother data:King_Harald_V ;
+    :hasRelation data:King_Harald_V ;
+    :isBloodrelationOf data:King_Harald_V ;
+    :isBrotherOf data:King_Harald_V ;
+    :isSiblingOf data:King_Harald_V .
+
+data:Princess_Christina_of_Sweden a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Christina_of_Sweden ;
+    :hasSister data:Princess_Christina_of_Sweden ;
+    :isBloodrelationOf data:Princess_Christina_of_Sweden ;
+    :isSiblingOf data:Princess_Christina_of_Sweden ;
+    :isSisterOf data:Princess_Christina_of_Sweden .
+
+data:Queen_Ingrid a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Ingrid ;
+    :hasSister data:Queen_Ingrid ;
+    :isBloodrelationOf data:Queen_Ingrid ;
+    :isSiblingOf data:Queen_Ingrid ;
+    :isSisterOf data:Queen_Ingrid .
+
+data:Alexandra_Christina_Manley a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Count_Henrik,
+        data:Countess_Athena,
+        data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :hasSister data:Alexandra_Christina_Manley ;
+    :isBloodrelationOf data:Alexandra_Christina_Manley ;
+    :isSiblingOf data:Alexandra_Christina_Manley ;
+    :isSisterOf data:Alexandra_Christina_Manley .
+
+data:King_Frederik_X a :Man,
+        :Person ;
+    :hasBrother data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Count_Henrik,
+        data:Countess_Athena,
+        data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isBloodrelationOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isBrotherOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isSiblingOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isUncleOf data:Count_Henrik,
+        data:Countess_Athena .
+
+data:Princess_Benedikte a :Person,
+        :Woman ;
+    :hasRelation data:Count_Henrik,
+        data:Countess_Athena,
+        data:Prince_Joachim,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:Prince_Joachim ;
+    :isBloodrelationOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
+
+data:Marie_Cavallier a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Count_Henrik,
+        data:Countess_Athena ;
+    :hasDaughter data:Countess_Athena ;
+    :hasRelation data:Count_Henrik,
+        data:Countess_Athena,
+        data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :hasSister data:Marie_Cavallier ;
+    :hasSon data:Count_Henrik ;
+    :isAncestorOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isAuntOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isBloodrelationOf data:Marie_Cavallier ;
+    :isMotherOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isParentOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isSiblingOf data:Marie_Cavallier ;
+    :isSisterOf data:Marie_Cavallier .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Joachim ;
+    :hasRelation data:Count_Henrik,
+        data:Countess_Athena,
+        data:Prince_Joachim,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Prince_Joachim ;
+    :isAncestorOf data:Count_Henrik,
+        data:Countess_Athena,
+        data:Prince_Joachim ;
+    :isAuntOf data:Prince_Joachim ;
+    :isBloodrelationOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isMotherOf data:Prince_Joachim ;
+    :isParentOf data:Prince_Joachim ;
+    :isSiblingOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
+
+data:Count_Henrik a :Man,
+        :Person ;
+    :hasAncestor data:Marie_Cavallier,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:Count_Henrik ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Count_Henrik,
+        data:Countess_Athena,
+        data:King_Frederik_X,
+        data:Marie_Cavallier,
+        data:Prince_Joachim,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Countess_Athena ;
+    :isBloodrelationOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isBrotherOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isSonOf data:Marie_Cavallier,
+        data:Prince_Joachim .
+
+data:Countess_Athena a :Person,
+        :Woman ;
+    :hasAncestor data:Marie_Cavallier,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:Count_Henrik ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier ;
+    :hasParent data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Count_Henrik,
+        data:Countess_Athena,
+        data:King_Frederik_X,
+        data:Marie_Cavallier,
+        data:Prince_Joachim,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Countess_Athena ;
+    :isBloodrelationOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isChildOf data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :isDaughterOf data:Marie_Cavallier,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isSisterOf data:Count_Henrik,
+        data:Countess_Athena .
+
+data:Prince_Joachim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Queen_Margrethe_II ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :hasChild data:Count_Henrik,
+        data:Countess_Athena ;
+    :hasDaughter data:Countess_Athena ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasMother data:Queen_Margrethe_II ;
+    :hasParent data:Queen_Margrethe_II ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Count_Henrik,
+        data:Countess_Athena,
+        data:King_Frederik_X,
+        data:Marie_Cavallier,
+        data:Prince_Joachim,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Count_Henrik ;
+    :isAncestorOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isBloodrelationOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isBrotherOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isChildOf data:Queen_Margrethe_II ;
+    :isFatherOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isParentOf data:Count_Henrik,
+        data:Countess_Athena ;
+    :isSiblingOf data:King_Frederik_X,
+        data:Prince_Joachim ;
+    :isSonOf data:Queen_Margrethe_II ;
+    :isUncleOf data:Count_Henrik,
+        data:Countess_Athena .
+

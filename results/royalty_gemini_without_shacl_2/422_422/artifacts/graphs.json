@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andreas8thPrinceOfLeiningen a :Man,\n        :Person ;\n    :isBrotherOf data:KarlEmichOfLeiningen .\n\ndata:DuchessEilikaOfOldenburg a :Person,\n        :Woman .\n\ndata:Emich7thPrinceOfLeiningen a :Man,\n        :Person .\n\ndata:KarlEmichOfLeiningen a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikolai Kirillovich Romanov\"^^xsd:string ;\n    :hasBirthYear 1952 ;\n    :hasDaughter data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,\n        data:PrincessTheresaAnnaElisabethOfLeiningen ;\n    :hasFather data:Emich7thPrinceOfLeiningen ;\n    :hasMarriageYear 1984,\n        1991 ;\n    :hasMother data:DuchessEilikaOfOldenburg ;\n    :hasRelation data:GabrieleRenateThyssen,\n        data:PrincessMargaritaOfHohenloheOhringen ;\n    :hasSon data:PrinceEmichAlbrechtKarlOfLeiningen .\n\ndata:PrinceEmichAlbrechtKarlOfLeiningen a :Man,\n        :Person ;\n    :hasMother data:GabrieleRenateThyssen .\n\ndata:PrincessCeciliaMarieStephanieMargaritaOfLeiningen a :Person,\n        :Woman ;\n    :hasMother data:PrincessMargaritaOfHohenloheOhringen .\n\ndata:PrincessTheresaAnnaElisabethOfLeiningen a :Person,\n        :Woman ;\n    :hasMother data:GabrieleRenateThyssen .\n\ndata:PrincessMargaritaOfHohenloheOhringen a :Person,\n        :Woman ;\n    :hasDeathYear 1989 .\n\ndata:GabrieleRenateThyssen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andreas8thPrinceOfLeiningen a :Man,\n        :Person ;\n    :isBrotherOf data:KarlEmichOfLeiningen .\n\ndata:DuchessEilikaOfOldenburg a :Person,\n        :Woman .\n\ndata:Emich7thPrinceOfLeiningen a :Man,\n        :Person .\n\ndata:KarlEmichOfLeiningen a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikolai Kirillovich Romanov\"^^xsd:string ;\n    :hasBirthYear 1952 ;\n    :hasDaughter data:PrincessCeciliaMarieStephanieMargaritaOfLeiningen,\n        data:PrincessTheresaAnnaElisabethOfLeiningen ;\n    :hasFather data:Emich7thPrinceOfLeiningen ;\n    :hasMarriageYear 1984,\n        1991 ;\n    :hasMother data:DuchessEilikaOfOldenburg ;\n    :hasRelation data:GabrieleRenateThyssen,\n        data:PrincessMargaritaOfHohenloheOhringen ;\n    :hasSon data:PrinceEmichAlbrechtKarlOfLeiningen .\n\ndata:PrinceEmichAlbrechtKarlOfLeiningen a :Man,\n        :Person ;\n    :hasMother data:GabrieleRenateThyssen .\n\ndata:PrincessCeciliaMarieStephanieMargaritaOfLeiningen a :Person,\n        :Woman ;\n    :hasMother data:PrincessMargaritaOfHohenloheOhringen .\n\ndata:PrincessTheresaAnnaElisabethOfLeiningen a :Person,\n        :Woman ;\n    :hasMother data:GabrieleRenateThyssen .\n\ndata:PrincessMargaritaOfHohenloheOhringen a :Person,\n        :Woman ;\n    :hasDeathYear 1989 .\n\ndata:GabrieleRenateThyssen a :Person,\n        :Woman .\n\n"
+    }
+]

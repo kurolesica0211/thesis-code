@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;\n    :isDaughterOf data:Princess_Charlotte_of_Prussia .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Princess_Charlotte_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Emperor_Wilhelm_II ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe-Meiningen .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Prince_Frederick_of_Prussia a :Ancestor,\n        :Man .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;\n    :isDaughterOf data:Princess_Charlotte_of_Prussia .\n\ndata:Emperor_Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Princess_Charlotte_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Emperor_Wilhelm_II ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe-Meiningen .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Prince_Frederick_of_Prussia a :Ancestor,\n        :Man .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Woman .\n\n"
+    }
+]

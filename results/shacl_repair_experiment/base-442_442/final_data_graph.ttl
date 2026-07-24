@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolph_Roderik_Ernst_Leopold a :Ancestor,
+        :Man .
+
+data:Adolph_Roderik_Ernst_Leopold%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:Beatrix%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man .
+
+data:Bernhard_of_Lippe-Biesterfeld%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Brigitte_Klynstra%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Carlos_Hugo_Duke_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;
+    :alsoKnownAs data:Hugo_Klynstra ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra .
+
+data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme%2Ctarget a :Sex ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra ;
+    :hasSex data:Male .
+
+data:Carlos_de_Bourbon_de_Parme%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Carlos_of_Parma a :Man ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+data:Carlos_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Cecilia_of_Parma a :Woman ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+data:Cecilia_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Ingrid_Pieksma-Klynstra a :Ancestor,
+        :Woman .
+
+data:Ingrid_Pieksma-Klynstra%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Irene_of_the_Netherlands%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Woman .
+
+data:Juliana_of_the_Netherlands%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Luisa_of_Parma a :Woman ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+data:Luisa_of_Parma%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Madeleine_de_Bourbon-Busset a :Ancestor,
+        :Woman .
+
+data:Madeleine_de_Bourbon-Busset%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Margriet a :Person,
+        :Woman .
+
+data:Margriet%2Ctarget a :Sex ;
+    :hasSex data:Female .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Pieter_van_Vollenhoven%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Xavier_of_Bourbon-Parma a :Ancestor,
+        :Man .
+
+data:Xavier_of_Bourbon-Parma%2Ctarget a :Sex ;
+    :hasSex data:Male .
+
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+        :Man .
+
+data:Hugo_Klynstra a :Person .
+
+data:Irene_of_the_Netherlands a :Ancestor,
+        :Woman .
+
+data:Brigitte_Klynstra a :Ancestor,
+        :Woman .
+
+data:Carlos_de_Bourbon_de_Parme a :Ancestor,
+        :Man ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Irene_of_the_Netherlands .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

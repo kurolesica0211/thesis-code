@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Alfred_of_Liechtenstein a :Man .\n\ndata:Prince_Gundakar_of_Liechtenstein a :Man ;\n    :hasFather data:Prince_Johann_of_Liechtenstein ;\n    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis ;\n    :isSiblingOf data:Princess_Diemut .\n\ndata:Princess_Marie_of_Liechtenstein a :Woman ;\n    :hasBirthYear \"1959\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Henri_Count_of_Paris ;\n    :hasMarriageYear \"1989\"^^xsd:positiveInteger ;\n    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .\n\ndata:Duchess_Marie_Therese_of_Wurttemberg a :Woman .\n\ndata:Prince_Henri_Count_of_Paris a :Man .\n\ndata:Prince_Johann_of_Liechtenstein a :Man .\n\ndata:Princess_Clothilde_of_Thurn_und_Taxis a :Woman .\n\ndata:Princess_Diemut a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Alfred_of_Liechtenstein a :Man .\n\ndata:Prince_Gundakar_of_Liechtenstein a :Man ;\n    :hasFather data:Prince_Johann_of_Liechtenstein ;\n    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis ;\n    :isSiblingOf data:Princess_Diemut .\n\ndata:Princess_Marie_of_Liechtenstein a :Woman ;\n    :hasBirthYear \"1959\"^^xsd:positiveInteger ;\n    :hasFather data:Prince_Henri_Count_of_Paris ;\n    :hasMarriageYear \"1989\"^^xsd:positiveInteger ;\n    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .\n\ndata:Duchess_Marie_Therese_of_Wurttemberg a :Woman .\n\ndata:Prince_Henri_Count_of_Paris a :Man .\n\ndata:Prince_Johann_of_Liechtenstein a :Man .\n\ndata:Princess_Clothilde_of_Thurn_und_Taxis a :Woman .\n\ndata:Princess_Diemut a :Woman .\n\n"
+    }
+]

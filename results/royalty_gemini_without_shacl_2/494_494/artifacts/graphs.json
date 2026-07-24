@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_Prinz_von_Baden a :Man,\n        :Person ;\n    :hasBirthYear \"1970\"^^xsd:positiveInteger ;\n    :hasFather data:Maximilian_Markgraf_von_Baden ;\n    :hasMarriageYear \"2001\"^^xsd:positiveInteger ;\n    :hasMother data:Valerie_von_Oesterreich ;\n    :hasRelation data:Stephanie_Anne_Kaul .\n\ndata:Berthold_Markgraf_von_Baden a :Man,\n        :Person .\n\ndata:Christian_Kaul a :Man,\n        :Person .\n\ndata:Hannelore_Scheel a :Person,\n        :Woman .\n\ndata:Hubert_Salvator_von_Oesterreich a :Man,\n        :Person .\n\ndata:Maximilian_Markgraf_von_Baden a :Man,\n        :Person ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger ;\n    :hasFather data:Berthold_Markgraf_von_Baden ;\n    :hasMother data:Theodora_von_Griechenland_und_Daenemark .\n\ndata:Rosemary_von_Salm-Salm a :Person,\n        :Woman .\n\ndata:Stephanie_Anne_Kaul a :Person,\n        :Woman ;\n    :hasBirthYear \"1966\"^^xsd:positiveInteger ;\n    :hasFather data:Christian_Kaul ;\n    :hasMother data:Hannelore_Scheel .\n\ndata:Theodora_von_Griechenland_und_Daenemark a :Person,\n        :Woman .\n\ndata:Valerie_von_Oesterreich a :Person,\n        :Woman ;\n    :hasBirthYear \"1941\"^^xsd:positiveInteger ;\n    :hasFather data:Hubert_Salvator_von_Oesterreich ;\n    :hasMother data:Rosemary_von_Salm-Salm .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_Prinz_von_Baden a :Man,\n        :Person ;\n    :hasBirthYear \"1970\"^^xsd:positiveInteger ;\n    :hasFather data:Maximilian_Markgraf_von_Baden ;\n    :hasMarriageYear \"2001\"^^xsd:positiveInteger ;\n    :hasMother data:Valerie_von_Oesterreich ;\n    :hasRelation data:Stephanie_Anne_Kaul .\n\ndata:Berthold_Markgraf_von_Baden a :Man,\n        :Person .\n\ndata:Christian_Kaul a :Man,\n        :Person .\n\ndata:Hannelore_Scheel a :Person,\n        :Woman .\n\ndata:Hubert_Salvator_von_Oesterreich a :Man,\n        :Person .\n\ndata:Maximilian_Markgraf_von_Baden a :Man,\n        :Person ;\n    :hasDeathYear \"2022\"^^xsd:positiveInteger ;\n    :hasFather data:Berthold_Markgraf_von_Baden ;\n    :hasMother data:Theodora_von_Griechenland_und_Daenemark .\n\ndata:Rosemary_von_Salm-Salm a :Person,\n        :Woman .\n\ndata:Stephanie_Anne_Kaul a :Person,\n        :Woman ;\n    :hasBirthYear \"1966\"^^xsd:positiveInteger ;\n    :hasFather data:Christian_Kaul ;\n    :hasMother data:Hannelore_Scheel .\n\ndata:Theodora_von_Griechenland_und_Daenemark a :Person,\n        :Woman .\n\ndata:Valerie_von_Oesterreich a :Person,\n        :Woman ;\n    :hasBirthYear \"1941\"^^xsd:positiveInteger ;\n    :hasFather data:Hubert_Salvator_von_Oesterreich ;\n    :hasMother data:Rosemary_von_Salm-Salm .\n\n"
+    }
+]

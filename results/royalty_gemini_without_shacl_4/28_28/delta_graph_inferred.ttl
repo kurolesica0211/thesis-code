@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenElizabethTheQueenMother a :Person,
+        :Woman ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :hasSister data:QueenElizabethTheQueenMother ;
+    :isBloodrelationOf data:QueenElizabethTheQueenMother ;
+    :isSiblingOf data:QueenElizabethTheQueenMother ;
+    :isSisterOf data:QueenElizabethTheQueenMother .
+
+data:DavidBowesLyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:DavidBowesLyon ;
+    :hasChild data:SimonAlexanderBowesLyon ;
+    :hasDeathYear 1961 ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :hasSon data:SimonAlexanderBowesLyon ;
+    :isAncestorOf data:SimonAlexanderBowesLyon ;
+    :isBloodrelationOf data:DavidBowesLyon ;
+    :isBrotherOf data:DavidBowesLyon ;
+    :isFatherOf data:SimonAlexanderBowesLyon ;
+    :isParentOf data:SimonAlexanderBowesLyon ;
+    :isSiblingOf data:DavidBowesLyon ;
+    :isUncleOf data:SimonAlexanderBowesLyon .
+
+data:HerbertSpenderClay a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HerbertSpenderClay ;
+    :hasChild data:RachelPaulineSpenderClay ;
+    :hasDaughter data:RachelPaulineSpenderClay ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :isAncestorOf data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :isBloodrelationOf data:HerbertSpenderClay ;
+    :isBrotherOf data:HerbertSpenderClay ;
+    :isFatherOf data:RachelPaulineSpenderClay ;
+    :isParentOf data:RachelPaulineSpenderClay ;
+    :isSiblingOf data:HerbertSpenderClay ;
+    :isUncleOf data:RachelPaulineSpenderClay .
+
+data:PaulineAstor a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:RachelPaulineSpenderClay ;
+    :hasDaughter data:RachelPaulineSpenderClay ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :hasSister data:PaulineAstor ;
+    :isAncestorOf data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :isAuntOf data:RachelPaulineSpenderClay ;
+    :isBloodrelationOf data:PaulineAstor ;
+    :isMotherOf data:RachelPaulineSpenderClay ;
+    :isParentOf data:RachelPaulineSpenderClay ;
+    :isSiblingOf data:PaulineAstor ;
+    :isSisterOf data:PaulineAstor .
+
+data:SimonAlexanderBowesLyon a :Man,
+        :Person ;
+    :hasAncestor data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:RachelPaulineSpenderClay ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:SimonAlexanderBowesLyon ;
+    :hasFather data:DavidBowesLyon ;
+    :hasMother data:RachelPaulineSpenderClay ;
+    :hasParent data:DavidBowesLyon,
+        data:RachelPaulineSpenderClay ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :isBloodrelationOf data:SimonAlexanderBowesLyon ;
+    :isBrotherOf data:SimonAlexanderBowesLyon ;
+    :isChildOf data:DavidBowesLyon,
+        data:RachelPaulineSpenderClay ;
+    :isSiblingOf data:SimonAlexanderBowesLyon ;
+    :isSonOf data:DavidBowesLyon,
+        data:RachelPaulineSpenderClay .
+
+data:RachelPaulineSpenderClay a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:HerbertSpenderClay,
+        data:PaulineAstor ;
+    :hasBirthYear 1907 ;
+    :hasChild data:SimonAlexanderBowesLyon ;
+    :hasDeathYear 1996 ;
+    :hasFather data:HerbertSpenderClay ;
+    :hasMother data:PaulineAstor ;
+    :hasParent data:HerbertSpenderClay,
+        data:PaulineAstor ;
+    :hasRelation data:DavidBowesLyon,
+        data:HerbertSpenderClay,
+        data:PaulineAstor,
+        data:QueenElizabethTheQueenMother,
+        data:RachelPaulineSpenderClay,
+        data:SimonAlexanderBowesLyon ;
+    :hasSister data:RachelPaulineSpenderClay ;
+    :hasSon data:SimonAlexanderBowesLyon ;
+    :isAncestorOf data:SimonAlexanderBowesLyon ;
+    :isAuntOf data:SimonAlexanderBowesLyon ;
+    :isBloodrelationOf data:RachelPaulineSpenderClay ;
+    :isChildOf data:HerbertSpenderClay,
+        data:PaulineAstor ;
+    :isDaughterOf data:HerbertSpenderClay,
+        data:PaulineAstor ;
+    :isMotherOf data:SimonAlexanderBowesLyon ;
+    :isParentOf data:SimonAlexanderBowesLyon ;
+    :isSiblingOf data:RachelPaulineSpenderClay ;
+    :isSisterOf data:RachelPaulineSpenderClay .
+

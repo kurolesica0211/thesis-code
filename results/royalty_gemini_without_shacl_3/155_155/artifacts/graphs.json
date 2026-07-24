@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Christina_Oxenberg a :Woman ;\n    :isSisterOf data:Catherine_Oxenberg .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear data:1998 .\n\ndata:William_Weitz_Shaffer a :Man ;\n    :isFatherOf data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Elizabeth_of_Yugoslavia ;\n    :isMotherOf data:India_Riven_Oxenberg .\n\ndata:Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1936 ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 2010 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:India_Riven_Oxenberg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Christina_Oxenberg a :Woman ;\n    :isSisterOf data:Catherine_Oxenberg .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear data:1998,\n        1998 .\n\ndata:William_Weitz_Shaffer a :Man ;\n    :isFatherOf data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Elizabeth_of_Yugoslavia ;\n    :isMotherOf data:India_Riven_Oxenberg .\n\ndata:Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1936 ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 2010 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:India_Riven_Oxenberg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Christina_Oxenberg a :Woman ;\n    :isSisterOf data:Catherine_Oxenberg .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear 1998 .\n\ndata:William_Weitz_Shaffer a :Man ;\n    :isFatherOf data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Elizabeth_of_Yugoslavia ;\n    :isMotherOf data:India_Riven_Oxenberg .\n\ndata:Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1936 ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 2010 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:India_Riven_Oxenberg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Casper_Van_Dien a :Man .\n\ndata:Christina_Oxenberg a :Woman ;\n    :isSisterOf data:Catherine_Oxenberg .\n\ndata:Robert_Evans a :Man ;\n    :hasMarriageYear 1998 .\n\ndata:William_Weitz_Shaffer a :Man ;\n    :isFatherOf data:India_Riven_Oxenberg .\n\ndata:Catherine_Oxenberg a :Woman ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Howard_Oxenberg ;\n    :hasMother data:Elizabeth_of_Yugoslavia ;\n    :isMotherOf data:India_Riven_Oxenberg .\n\ndata:Elizabeth_of_Yugoslavia a :Woman ;\n    :hasBirthYear 1936 ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark .\n\ndata:Howard_Oxenberg a :Man ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 2010 .\n\ndata:Prince_Paul_of_Yugoslavia a :Man .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Woman .\n\ndata:India_Riven_Oxenberg a :Woman .\n\n"
+    }
+]

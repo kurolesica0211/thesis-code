@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Boris_Vladimirovich a :Man,\n        :Person ;\n    :hasBirthYear 1877 ;\n    :hasBrother data:Andrei_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna ;\n    :isFatherOf data:Jean_Boris_Lacroix .\n\ndata:Jeanne_Aumont-Lacroix a :Person,\n        :Woman ;\n    :isMotherOf data:Jean_Boris_Lacroix .\n\ndata:Nicholas_II a :Man,\n        :Person .\n\ndata:Zinaida_Sergeievna_Rachevskaya a :Person,\n        :Woman ;\n    :hasFather data:Sergei_Alexandrovich_Rachevsky .\n\ndata:Alexander_II a :Man,\n        :Person .\n\ndata:Alexander_III a :Man,\n        :Person .\n\ndata:Andrei_Vladimirovich a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich a :Man,\n        :Person .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Sergei_Alexandrovich_Rachevsky a :Man,\n        :Person .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person ;\n    :hasBrother data:Alexander_III ;\n    :hasFather data:Alexander_II .\n\ndata:Jean_Boris_Lacroix a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Boris_Vladimirovich a :Man,\n        :Person ;\n    :hasBirthYear 1877 ;\n    :hasBrother data:Andrei_Vladimirovich,\n        data:Kirill_Vladimirovich ;\n    :hasDeathYear 1943 ;\n    :hasFather data:Vladimir_Alexandrovich ;\n    :hasMother data:Maria_Pavlovna ;\n    :isFatherOf data:Jean_Boris_Lacroix .\n\ndata:Jeanne_Aumont-Lacroix a :Person,\n        :Woman ;\n    :isMotherOf data:Jean_Boris_Lacroix .\n\ndata:Nicholas_II a :Man,\n        :Person .\n\ndata:Zinaida_Sergeievna_Rachevskaya a :Person,\n        :Woman ;\n    :hasFather data:Sergei_Alexandrovich_Rachevsky .\n\ndata:Alexander_II a :Man,\n        :Person .\n\ndata:Alexander_III a :Man,\n        :Person .\n\ndata:Andrei_Vladimirovich a :Man,\n        :Person .\n\ndata:Kirill_Vladimirovich a :Man,\n        :Person .\n\ndata:Maria_Pavlovna a :Person,\n        :Woman .\n\ndata:Sergei_Alexandrovich_Rachevsky a :Man,\n        :Person .\n\ndata:Vladimir_Alexandrovich a :Man,\n        :Person ;\n    :hasBrother data:Alexander_III ;\n    :hasFather data:Alexander_II .\n\ndata:Jean_Boris_Lacroix a :Man,\n        :Person .\n\n"
+    }
+]

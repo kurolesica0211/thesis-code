@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Friedrich_Franz_Alexander a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Heinrich_Albert_Johann_Georg a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Louis_Ferdinand_Christian_Albrecht a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Countess_Donata_of_Castell-R%C3%BCdenhausen a :Woman .\n\ndata:Grand_Duchess_Kira_of_Russia a :Woman .\n\ndata:Louis_Ferdinand_Prinz_von_Preussen a :Man ;\n    :hasFather data:Prince_Louis_Ferdinand_of_Prussia .\n\ndata:Wilhelm_II a :Man .\n\ndata:Georg_Friedrich_Prinz_von_Preussen a :Man ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1976 ;\n    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;\n    :hasMother data:Countess_Donata_of_Castell-R%C3%BCdenhausen,\n        data:Grand_Duchess_Kira_of_Russia .\n\ndata:Princess_Sophie_of_Isenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Friedrich_Franz_Alexander a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Heinrich_Albert_Johann_Georg a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Louis_Ferdinand_Christian_Albrecht a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Countess_Donata_of_Castell-R%C3%BCdenhausen a :Woman .\n\ndata:Grand_Duchess_Kira_of_Russia a :Woman .\n\ndata:Louis_Ferdinand_Prinz_von_Preussen a :Man ;\n    :hasFather data:Prince_Louis_Ferdinand_of_Prussia .\n\ndata:Prince_Louis_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\ndata:Georg_Friedrich_Prinz_von_Preussen a :Man ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1976 ;\n    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;\n    :hasMother data:Countess_Donata_of_Castell-R%C3%BCdenhausen,\n        data:Grand_Duchess_Kira_of_Russia .\n\ndata:Princess_Sophie_of_Isenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Friedrich_Franz_Alexander a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Heinrich_Albert_Johann_Georg a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Louis_Ferdinand_Christian_Albrecht a :Man ;\n    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;\n    :hasMother data:Princess_Sophie_of_Isenburg .\n\ndata:Countess_Donata_of_Castell-R%C3%BCdenhausen a :Woman .\n\ndata:Grand_Duchess_Kira_of_Russia a :Woman .\n\ndata:Louis_Ferdinand_Prinz_von_Preussen a :Man ;\n    :hasFather data:Prince_Louis_Ferdinand_of_Prussia .\n\ndata:Prince_Louis_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II a :Man .\n\ndata:Georg_Friedrich_Prinz_von_Preussen a :Man ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1976 ;\n    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;\n    :hasMother data:Countess_Donata_of_Castell-R%C3%BCdenhausen,\n        data:Grand_Duchess_Kira_of_Russia .\n\ndata:Princess_Sophie_of_Isenburg a :Woman .\n\n"
+    }
+]

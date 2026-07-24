@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"2003-06-23\"^^xsd:string ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Chiara .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;\n    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ferdinand_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Princess_Maria_Chiara a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"2003-06-23\"^^xsd:string ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Chiara .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;\n    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .\n\ndata:Prince_Ferdinand_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Princess_Maria_Chiara a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Charlotte_Wellesley a :Person,\n        :Woman ;\n    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,\n        data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Lady_Mary_Wellesley a :Person,\n        :Woman ;\n    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,\n        data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Lady_Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Prince_Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Queen_Victoria_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Rupert_Guinness_2nd_Earl_of_Iveagh a :Man,\n        :Person .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,\n        :Woman ;\n    :hasAncestor data:Queen_Victoria_of_the_United_Kingdom,\n        data:Rupert_Guinness_2nd_Earl_of_Iveagh,\n        data:Wilhelm_II_German_Emperor ;\n    :hasBirthYear 1955 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Lady_Brigid_Guinness ;\n    :hasRelation data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Charles_Wellesley_Marquess_of_Douro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Charlotte_Wellesley a :Person,\n        :Woman ;\n    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,\n        data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Lady_Mary_Wellesley a :Person,\n        :Woman ;\n    :isChildOf data:Antonia_Elizabeth_Brigid_Louise_Mansfeld,\n        data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Lady_Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Prince_Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Queen_Victoria_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Rupert_Guinness_2nd_Earl_of_Iveagh a :Man,\n        :Person .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,\n        :Woman ;\n    :hasAncestor data:Queen_Victoria_of_the_United_Kingdom,\n        data:Rupert_Guinness_2nd_Earl_of_Iveagh,\n        data:Wilhelm_II_German_Emperor ;\n    :hasBirthYear 1955 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Lady_Brigid_Guinness ;\n    :hasRelation data:Charles_Wellesley_Marquess_of_Douro .\n\ndata:Charles_Wellesley_Marquess_of_Douro a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:Lady_Mary_Luise_Wellesley a :Person,
+        :Woman ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;
+    :hasMother data:Princess_Antonia_of_Prussia .
+
+data:Charles_Wellesley_Marquess_of_Douro a :Man,
+        :Person .
+
+data:Princess_Antonia_of_Prussia a :Person,
+        :Woman .
+

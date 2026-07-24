@@ -1,0 +1,585 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean-Robert_Boeuf a :Man ;
+    :hasBrother data:Jean-Robert_Boeuf ;
+    :hasRelation data:Jean-Robert_Boeuf ;
+    :isBloodrelationOf data:Jean-Robert_Boeuf ;
+    :isBrotherOf data:Jean-Robert_Boeuf ;
+    :isSiblingOf data:Jean-Robert_Boeuf .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man ;
+    :hasBrother data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Gundakar_of_Liechtenstein .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+        :Woman ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isAuntOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isMotherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isSisterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Luis_Cousino_y_Sebire a :Ancestor,
+        :Man ;
+    :hasBrother data:Luis_Cousino_y_Sebire ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Luis_Cousino_y_Sebire ;
+    :isBrotherOf data:Luis_Cousino_y_Sebire ;
+    :isFatherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Luis_Cousino_y_Sebire ;
+    :isUncleOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Woman ;
+    :hasAncestor data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :hasParent data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isChildOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isDaughterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isSiblingOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSisterOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasDeathYear 1999 ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isAncestorOf data:Francois_Count_of_Clermont,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Princess_Isabelle_of_Orleans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isAncestorOf data:Francois_Count_of_Clermont,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isAuntOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orleans-Braganza ;
+    :isMotherOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orleans-Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orleans-Braganza .
+
+data:Charles-Louis_dOrleans_Duke_of_Chartres a :Man ;
+    :hasAncestor data:Jacques_Duke_of_Orleans ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :hasFather data:Jacques_Duke_of_Orleans ;
+    :hasParent data:Jacques_Duke_of_Orleans ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBloodrelationOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isBrotherOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isChildOf data:Jacques_Duke_of_Orleans ;
+    :isSiblingOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isSonOf data:Jacques_Duke_of_Orleans .
+
+data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu a :Man ;
+    :hasAncestor data:Jacques_Duke_of_Orleans ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :hasFather data:Jacques_Duke_of_Orleans ;
+    :hasParent data:Jacques_Duke_of_Orleans ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBloodrelationOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isBrotherOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isChildOf data:Jacques_Duke_of_Orleans ;
+    :isSiblingOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isSonOf data:Jacques_Duke_of_Orleans .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :hasDaughter data:Marie_de_Liechtenstein ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :hasSon data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome ;
+    :isAncestorOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isAuntOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isParentOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isSiblingOf data:Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Marie_Therese_of_Wurttemberg .
+
+data:Diane_of_Orleans a :Woman ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Diane_of_Orleans ;
+    :isAuntOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isSiblingOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isSisterOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche .
+
+data:Michel_Count_of_Evreux a :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Diane_of_Orleans ;
+    :isBloodrelationOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBrotherOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isSiblingOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isUncleOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein .
+
+data:Thibaut_Count_of_La_Marche a :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Diane_of_Orleans ;
+    :isBloodrelationOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBrotherOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isSiblingOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isUncleOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein .
+
+data:Francois_Count_of_Clermont a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasBrother data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBrotherOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg .
+
+data:Jacques_Duke_of_Orleans a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasChild data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Diane_of_Orleans ;
+    :hasSon data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isAncestorOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isBloodrelationOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBrotherOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isFatherOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isParentOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu ;
+    :isSiblingOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isUncleOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein .
+
+data:Jean_Duke_of_Vendome a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasBrother data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBrotherOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg .
+
+data:Marie_de_Liechtenstein a :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasBrother data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isDaughterOf data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isSisterOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Ancestor,
+        :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasChild data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :hasDaughter data:Marie_de_Liechtenstein ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :hasRelation data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Diane_of_Orleans,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_de_Liechtenstein,
+        data:Michel_Count_of_Evreux,
+        data:Princess_Isabelle_of_Orleans-Braganza,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasSister data:Diane_of_Orleans ;
+    :hasSon data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome ;
+    :isAncestorOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isBloodrelationOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isBrotherOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :isFatherOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isParentOf data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein ;
+    :isSiblingOf data:Diane_of_Orleans,
+        data:Henri_Philippe_Pierre_Marie_dOrleans,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :isSonOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans-Braganza ;
+    :isUncleOf data:Charles-Louis_dOrleans_Duke_of_Chartres,
+        data:Foulques_dOrleans_Duke_of_Aumale_and_Count_of_Eu,
+        data:Francois_Count_of_Clermont,
+        data:Jean_Duke_of_Vendome,
+        data:Marie_de_Liechtenstein .
+

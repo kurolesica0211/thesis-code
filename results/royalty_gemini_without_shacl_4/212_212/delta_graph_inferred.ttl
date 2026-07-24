@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :hasRelation data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg .
+
+data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :hasChild data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSon data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :isBrotherOf data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :isFatherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isParentOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :isUncleOf data:Duke_Paul_Frederick_of_Mecklenburg .
+
+data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSister data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSon data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAncestorOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isAuntOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isMotherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isParentOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isSisterOf data:Princess_Marie_of_Windisch-Graetz .
+
+data:Duke_Paul_Frederick_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+    :hasParent data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasRelation data:Duke_Paul_Frederick_of_Mecklenburg,
+        data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isChildOf data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isSiblingOf data:Duke_Paul_Frederick_of_Mecklenburg ;
+    :isSonOf data:Duke_Paul_Frederick_the_Elder_of_Mecklenburg,
+        data:Princess_Marie_of_Windisch-Graetz .
+

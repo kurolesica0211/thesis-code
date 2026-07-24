@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felix_of_Monpezat a :Man,
+        :Person ;
+    :hasBirthYear "2002-07-22"^^xsd:date ;
+    :isChildOf data:Alexandra,
+        data:Joachim ;
+    :isSiblingOf data:Nikolai .
+
+data:Frederik_X a :Man,
+        :Person .
+
+data:Henrik a :Man,
+        :Person .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Nikolai a :Man,
+        :Person ;
+    :isChildOf data:Alexandra,
+        data:Joachim .
+
+data:Alexandra a :Person,
+        :Woman .
+
+data:Joachim a :Man,
+        :Person .
+

@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessElizabethCountessOfToerringJettenbach a :Person,
+        :Woman ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia .
+
+data:PrincessMarinaDuchessOfKent a :Person,
+        :Woman ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia .
+
+data:ArsenKara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
+        :Woman .
+
+data:PrinceAlexander a :Man,
+        :Person .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincePaulOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessAuroraPavlovnaDemidovaDiSanDonato a :Person,
+        :Woman .
+
+data:PrincessElizabeth a :Person,
+        :Woman .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .
+
+data:PrinceNikolaOfYugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Nikola Karađorđević"^^xsd:string,
+        "Prince Nicholas"^^xsd:string ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:PrinceAlexander ;
+    :hasDeathYear 1954 ;
+    :hasFather data:ArsenKara%C4%91or%C4%91evi%C4%87,
+        data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabeth ;
+    :knownAs "Nicky"^^xsd:string .
+

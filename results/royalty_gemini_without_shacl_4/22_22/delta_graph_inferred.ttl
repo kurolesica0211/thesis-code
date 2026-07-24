@@ -1,0 +1,386 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBrother data:Charles_III ;
+    :hasRelation data:Charles_III ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III .
+
+data:Marina%2C_consort_of_Prince_Michael a :Person,
+        :Woman ;
+    :hasRelation data:Marina%2C_consort_of_Prince_Michael ;
+    :hasSister data:Marina%2C_consort_of_Prince_Michael ;
+    :isBloodrelationOf data:Marina%2C_consort_of_Prince_Michael ;
+    :isSiblingOf data:Marina%2C_consort_of_Prince_Michael ;
+    :isSisterOf data:Marina%2C_consort_of_Prince_Michael .
+
+data:Matthew_Kumar a :Man,
+        :Person ;
+    :hasBrother data:Matthew_Kumar ;
+    :hasRelation data:Matthew_Kumar ;
+    :isBloodrelationOf data:Matthew_Kumar ;
+    :isBrotherOf data:Matthew_Kumar ;
+    :isSiblingOf data:Matthew_Kumar .
+
+data:Pia_Getty a :Person,
+        :Woman ;
+    :hasRelation data:Pia_Getty ;
+    :hasSister data:Pia_Getty ;
+    :isBloodrelationOf data:Pia_Getty ;
+    :isSiblingOf data:Pia_Getty ;
+    :isSisterOf data:Pia_Getty .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Alexia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Alexia_of_Greece_and_Denmark .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Queen_Sof%C3%ADa_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSister data:Queen_Sof%C3%ADa_of_Spain ;
+    :isBloodrelationOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isSiblingOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Anne-Marie_of_Denmark ;
+    :hasSon data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isAncestorOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isAuntOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark ;
+    :isMotherOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isParentOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Anne-Marie_of_Denmark ;
+    :isSisterOf data:Anne-Marie_of_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSon data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isAncestorOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isParentOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isUncleOf data:Pavlos%2C_Crown_Prince_of_Greece .
+
+data:Robert_Warren_Miller a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Robert_Warren_Miller ;
+    :hasChild data:Marie-Chantal_Miller ;
+    :hasDaughter data:Marie-Chantal_Miller ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :isAncestorOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller ;
+    :isBloodrelationOf data:Robert_Warren_Miller ;
+    :isBrotherOf data:Robert_Warren_Miller ;
+    :isFatherOf data:Marie-Chantal_Miller ;
+    :isParentOf data:Marie-Chantal_Miller ;
+    :isSiblingOf data:Robert_Warren_Miller ;
+    :isUncleOf data:Marie-Chantal_Miller .
+
+data:Marie-Chantal_Miller a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Robert_Warren_Miller ;
+    :hasChild data:Maria-Olympia_of_Greece_and_Denmark ;
+    :hasDaughter data:Maria-Olympia_of_Greece_and_Denmark ;
+    :hasFather data:Robert_Warren_Miller ;
+    :hasParent data:Robert_Warren_Miller ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Marie-Chantal_Miller ;
+    :isAncestorOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isAuntOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Marie-Chantal_Miller ;
+    :isChildOf data:Robert_Warren_Miller ;
+    :isDaughterOf data:Robert_Warren_Miller ;
+    :isMotherOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isParentOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Marie-Chantal_Miller ;
+    :isSisterOf data:Marie-Chantal_Miller .
+
+data:Prince_Achileas-Andreas a :Man,
+        :Person ;
+    :hasBrother data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isBrotherOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isSiblingOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon .
+
+data:Prince_Aristidis-Stavros a :Man,
+        :Person ;
+    :hasBrother data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isBrotherOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isSiblingOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon .
+
+data:Prince_Constantine-Alexios a :Man,
+        :Person ;
+    :hasBrother data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isBrotherOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isSiblingOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon .
+
+data:Prince_Odysseas_Kimon a :Man,
+        :Person ;
+    :hasBrother data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isBrotherOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isSiblingOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon .
+
+data:Pavlos%2C_Crown_Prince_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :hasBrother data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasChild data:Maria-Olympia_of_Greece_and_Denmark ;
+    :hasDaughter data:Maria-Olympia_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark ;
+    :hasParent data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :isAncestorOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isBrotherOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isChildOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :isFatherOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isParentOf data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isSonOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :isUncleOf data:Maria-Olympia_of_Greece_and_Denmark .
+
+data:Maria-Olympia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Robert_Warren_Miller ;
+    :hasBirthYear "1996"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :hasFather data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon,
+        data:Robert_Warren_Miller ;
+    :hasSister data:Maria-Olympia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isDaughterOf data:Marie-Chantal_Miller,
+        data:Pavlos%2C_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :isSisterOf data:Maria-Olympia_of_Greece_and_Denmark,
+        data:Prince_Achileas-Andreas,
+        data:Prince_Aristidis-Stavros,
+        data:Prince_Constantine-Alexios,
+        data:Prince_Odysseas_Kimon ;
+    :knownAs "Olympia"^^xsd:string .
+

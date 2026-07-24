@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceRaduOfRomania a :Man .\n\ndata:KingMichaelI a :Man ;\n    :hasChild data:MargaretaOfRomania,\n        data:PrincessElenaOfRomania,\n        data:PrincessIrinaOfRomania,\n        data:PrincessMariaOfRomania,\n        data:PrincessSophieOfRomania .\n\ndata:QueenAnneOfRomania a :Woman ;\n    :hasChild data:MargaretaOfRomania,\n        data:PrincessElenaOfRomania,\n        data:PrincessIrinaOfRomania,\n        data:PrincessMariaOfRomania,\n        data:PrincessSophieOfRomania .\n\ndata:MargaretaOfRomania a :Woman ;\n    :hasBirthYear 1949 ;\n    :hasFather data:KingMichaelI ;\n    :hasMother data:QueenAnneOfRomania .\n\ndata:PrincessElenaOfRomania a :Woman ;\n    :hasBirthYear 1950 .\n\ndata:PrincessIrinaOfRomania a :Woman ;\n    :hasBirthYear 1953 .\n\ndata:PrincessMariaOfRomania a :Woman ;\n    :hasBirthYear 1964 .\n\ndata:PrincessSophieOfRomania a :Woman ;\n    :hasBirthYear 1957 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceRaduOfRomania a :Man .\n\ndata:KingMichaelI a :Man ;\n    :hasChild data:MargaretaOfRomania,\n        data:PrincessElenaOfRomania,\n        data:PrincessIrinaOfRomania,\n        data:PrincessMariaOfRomania,\n        data:PrincessSophieOfRomania .\n\ndata:QueenAnneOfRomania a :Woman ;\n    :hasChild data:MargaretaOfRomania,\n        data:PrincessElenaOfRomania,\n        data:PrincessIrinaOfRomania,\n        data:PrincessMariaOfRomania,\n        data:PrincessSophieOfRomania .\n\ndata:MargaretaOfRomania a :Woman ;\n    :hasBirthYear 1949 ;\n    :hasFather data:KingMichaelI ;\n    :hasMother data:QueenAnneOfRomania .\n\ndata:PrincessElenaOfRomania a :Woman ;\n    :hasBirthYear 1950 .\n\ndata:PrincessIrinaOfRomania a :Woman ;\n    :hasBirthYear 1953 .\n\ndata:PrincessMariaOfRomania a :Woman ;\n    :hasBirthYear 1964 .\n\ndata:PrincessSophieOfRomania a :Woman ;\n    :hasBirthYear 1957 .\n\n"
+    }
+]

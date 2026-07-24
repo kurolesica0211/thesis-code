@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Achileas-Andreas a :Man ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Alexia_of_Greece a :Woman ;
+    :isSisterOf data:Pavlos .
+
+data:Aristides-Stavros a :Man ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Constantine-Alexios a :Man ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Felipe_VI_of_Spain a :Man .
+
+data:Frederik_X_of_Denmark a :Man .
+
+data:Margrethe_II_of_Denmark a :Woman ;
+    :isSisterOf data:Anne-Marie .
+
+data:Maria-Olympia a :Woman ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Marina_of_Greece a :Woman .
+
+data:Michael_of_Greece a :Man .
+
+data:Nikolaos_of_Greece a :Man ;
+    :isBrotherOf data:Pavlos .
+
+data:Odysseas-Kimon a :Man ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal_Miller .
+
+data:Philippos_of_Greece a :Man ;
+    :isBrotherOf data:Pavlos .
+
+data:Sof%C3%ADa_of_Spain a :Woman ;
+    :isSisterOf data:Constantine_II .
+
+data:Theodora_of_Greece a :Woman ;
+    :isSisterOf data:Pavlos .
+
+data:Frederik_IX_of_Denmark a :Man .
+
+data:Ingrid_of_Sweden a :Woman .
+
+data:Paul_of_Greece a :Man .
+
+data:Anne-Marie a :Woman ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden .
+
+data:Constantine_II a :Man ;
+    :hasFather data:Paul_of_Greece .
+
+data:Marie-Chantal_Miller a :Woman .
+
+data:Pavlos a :Man ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+

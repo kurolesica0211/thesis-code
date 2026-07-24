@@ -1,0 +1,105 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_X_of_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Frederik_X_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark ;
+    :isBloodrelationOf data:Frederik_X_of_Denmark ;
+    :isBrotherOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Frederik_X_of_Denmark .
+
+data:Henrik_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henrik_of_Denmark ;
+    :hasRelation data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :isAncestorOf data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Henrik_of_Denmark ;
+    :isBrotherOf data:Henrik_of_Denmark ;
+    :isSiblingOf data:Henrik_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isAncestorOf data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Joachim_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Joachim_of_Denmark ;
+    :hasChild data:Henrik_of_Monpezat ;
+    :hasRelation data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasSon data:Henrik_of_Monpezat ;
+    :isAncestorOf data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Joachim_of_Denmark ;
+    :isBrotherOf data:Joachim_of_Denmark ;
+    :isFatherOf data:Henrik_of_Monpezat ;
+    :isParentOf data:Henrik_of_Monpezat ;
+    :isSiblingOf data:Joachim_of_Denmark ;
+    :isUncleOf data:Henrik_of_Monpezat .
+
+data:Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henrik_of_Monpezat ;
+    :hasRelation data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasSister data:Marie_of_Denmark ;
+    :hasSon data:Henrik_of_Monpezat ;
+    :isAncestorOf data:Henrik_of_Monpezat ;
+    :isAuntOf data:Henrik_of_Monpezat ;
+    :isBloodrelationOf data:Marie_of_Denmark ;
+    :isMotherOf data:Henrik_of_Monpezat ;
+    :isParentOf data:Henrik_of_Monpezat ;
+    :isSiblingOf data:Marie_of_Denmark ;
+    :isSisterOf data:Marie_of_Denmark .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :formerlyKnownAs "His Highness Prince Henrik of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasAncestor data:Henrik_of_Denmark,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasBirthYear 2009 ;
+    :hasBrother data:Henrik_of_Monpezat ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :hasParent data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :hasRelation data:Henrik_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Joachim_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Marie_of_Denmark ;
+    :isBloodrelationOf data:Henrik_of_Monpezat ;
+    :isBrotherOf data:Henrik_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :isSiblingOf data:Henrik_of_Monpezat ;
+    :isSonOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :knownAs "His Excellency Count Henrik of Monpezat"^^xsd:string .
+

@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+        :Person .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1913"^^xsd:nonNegativeInteger ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasDeathYear "2007"^^xsd:nonNegativeInteger ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear "1947"^^xsd:nonNegativeInteger ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :knownAs "Lady Katherine Brandram"^^xsd:string .
+
+data:Alexander_King_of_the_Hellenes a :Man .
+
+data:George_King_of_the_Hellenes a :Man .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
+
+data:Paul_King_of_the_Hellenes a :Man .
+
+data:Princess_Helen_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Sophia_of_Prussia a :Person,
+        :Woman .
+

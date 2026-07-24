@@ -1,0 +1,272 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Philippe_I a :Man,
+        :Person ;
+    :hasBrother data:Louis_Philippe_I ;
+    :hasRelation data:Louis_Philippe_I ;
+    :isBloodrelationOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_Philippe_I ;
+    :isSiblingOf data:Louis_Philippe_I .
+
+data:Micaela_Cousino_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasRelation data:Micaela_Cousino_Quinones_de_Leon ;
+    :hasSister data:Micaela_Cousino_Quinones_de_Leon ;
+    :isBloodrelationOf data:Micaela_Cousino_Quinones_de_Leon ;
+    :isSiblingOf data:Micaela_Cousino_Quinones_de_Leon ;
+    :isSisterOf data:Micaela_Cousino_Quinones_de_Leon .
+
+data:Philippe_Duke_of_Orleans_maternal_uncle a :Man,
+        :Person ;
+    :hasBrother data:Philippe_Duke_of_Orleans_maternal_uncle ;
+    :hasRelation data:Philippe_Duke_of_Orleans_maternal_uncle ;
+    :isBloodrelationOf data:Philippe_Duke_of_Orleans_maternal_uncle ;
+    :isBrotherOf data:Philippe_Duke_of_Orleans_maternal_uncle ;
+    :isSiblingOf data:Philippe_Duke_of_Orleans_maternal_uncle .
+
+data:Prince_Eudes_Duke_of_Angouleme a :Man,
+        :Person ;
+    :hasBrother data:Prince_Eudes_Duke_of_Angouleme ;
+    :hasRelation data:Prince_Eudes_Duke_of_Angouleme ;
+    :isBloodrelationOf data:Prince_Eudes_Duke_of_Angouleme ;
+    :isBrotherOf data:Prince_Eudes_Duke_of_Angouleme ;
+    :isSiblingOf data:Prince_Eudes_Duke_of_Angouleme .
+
+data:Louis_Philippe_of_France a :Man,
+        :Person ;
+    :hasBrother data:Louis_Philippe_of_France ;
+    :hasMarriageYear 1809 ;
+    :hasRelation data:Louis_Philippe_of_France,
+        data:Maria_Amalia ;
+    :isBloodrelationOf data:Louis_Philippe_of_France ;
+    :isBrotherOf data:Louis_Philippe_of_France ;
+    :isSiblingOf data:Louis_Philippe_of_France .
+
+data:Maria_Amalia a :Person,
+        :Woman ;
+    :hasRelation data:Louis_Philippe_of_France,
+        data:Maria_Amalia ;
+    :hasSister data:Maria_Amalia ;
+    :isBloodrelationOf data:Maria_Amalia ;
+    :isSiblingOf data:Maria_Amalia ;
+    :isSisterOf data:Maria_Amalia .
+
+data:Isabelle_of_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasSister data:Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Isabelle_of_Orleans_Braganza ;
+    :isSiblingOf data:Isabelle_of_Orleans_Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans_Braganza .
+
+data:Louis_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_XIII ;
+    :hasChild data:Philippe_I_Duke_of_Orleans ;
+    :hasRelation data:Louis_XIII,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasSon data:Philippe_I_Duke_of_Orleans ;
+    :isAncestorOf data:Philippe_I_Duke_of_Orleans ;
+    :isBloodrelationOf data:Louis_XIII ;
+    :isBrotherOf data:Louis_XIII ;
+    :isFatherOf data:Philippe_I_Duke_of_Orleans ;
+    :isParentOf data:Philippe_I_Duke_of_Orleans ;
+    :isSiblingOf data:Louis_XIII ;
+    :isUncleOf data:Philippe_I_Duke_of_Orleans .
+
+data:Louis_XIV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_XIV ;
+    :hasChild data:Francoise_Marie_de_Bourbon ;
+    :hasDaughter data:Francoise_Marie_de_Bourbon ;
+    :hasRelation data:Francoise_Marie_de_Bourbon,
+        data:Louis_XIV ;
+    :isAncestorOf data:Francoise_Marie_de_Bourbon ;
+    :isBloodrelationOf data:Louis_XIV ;
+    :isBrotherOf data:Louis_XIV ;
+    :isFatherOf data:Francoise_Marie_de_Bourbon ;
+    :isParentOf data:Francoise_Marie_de_Bourbon ;
+    :isSiblingOf data:Louis_XIV ;
+    :isUncleOf data:Francoise_Marie_de_Bourbon .
+
+data:Francoise_Marie_de_Bourbon a :Person,
+        :Woman ;
+    :hasAncestor data:Louis_XIV ;
+    :hasFather data:Louis_XIV ;
+    :hasParent data:Louis_XIV ;
+    :hasRelation data:Francoise_Marie_de_Bourbon,
+        data:Louis_XIV ;
+    :hasSister data:Francoise_Marie_de_Bourbon ;
+    :isBloodrelationOf data:Francoise_Marie_de_Bourbon ;
+    :isChildOf data:Louis_XIV ;
+    :isDaughterOf data:Louis_XIV ;
+    :isSiblingOf data:Francoise_Marie_de_Bourbon ;
+    :isSisterOf data:Francoise_Marie_de_Bourbon .
+
+data:Philippe_I_Duke_of_Orleans a :Man,
+        :Person ;
+    :hasAncestor data:Louis_XIII ;
+    :hasBrother data:Philippe_I_Duke_of_Orleans ;
+    :hasFather data:Louis_XIII ;
+    :hasParent data:Louis_XIII ;
+    :hasRelation data:Louis_XIII,
+        data:Philippe_I_Duke_of_Orleans ;
+    :isBloodrelationOf data:Philippe_I_Duke_of_Orleans ;
+    :isBrotherOf data:Philippe_I_Duke_of_Orleans ;
+    :isChildOf data:Louis_XIII ;
+    :isSiblingOf data:Philippe_I_Duke_of_Orleans ;
+    :isSonOf data:Louis_XIII .
+
+data:Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jean_Duke_of_Guise ;
+    :hasChild data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasSon data:Henri_dOrleans ;
+    :isAncestorOf data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBloodrelationOf data:Jean_Duke_of_Guise ;
+    :isBrotherOf data:Jean_Duke_of_Guise ;
+    :isFatherOf data:Henri_dOrleans ;
+    :isParentOf data:Henri_dOrleans ;
+    :isSiblingOf data:Jean_Duke_of_Guise ;
+    :isUncleOf data:Henri_dOrleans .
+
+data:Henri_son_of_Henri a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBloodrelationOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBrotherOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Michel_son_of_Henri a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBloodrelationOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBrotherOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Thibaut_son_of_Henri a :Man,
+        :Person ;
+    :hasAncestor data:Henri_dOrleans,
+        data:Jean_Duke_of_Guise ;
+    :hasBrother data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBloodrelationOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBrotherOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Jean_Duke_of_Guise ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_dOrleans ;
+    :hasChild data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Jean_Duke_of_Guise ;
+    :hasMarriageYear 1931 ;
+    :hasParent data:Jean_Duke_of_Guise ;
+    :hasRelation data:Henri_dOrleans,
+        data:Henri_son_of_Henri,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jean_Duke_of_Guise,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :hasSon data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isAncestorOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isBloodrelationOf data:Henri_dOrleans ;
+    :isBrotherOf data:Henri_dOrleans ;
+    :isChildOf data:Jean_Duke_of_Guise ;
+    :isFatherOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isParentOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri ;
+    :isSiblingOf data:Henri_dOrleans ;
+    :isSonOf data:Jean_Duke_of_Guise ;
+    :isUncleOf data:Henri_son_of_Henri,
+        data:Michel_son_of_Henri,
+        data:Thibaut_son_of_Henri .
+

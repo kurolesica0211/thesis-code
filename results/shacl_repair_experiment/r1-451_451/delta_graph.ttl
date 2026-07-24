@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Adolf_Friedrich_of_Mecklenburg a :Ancestor .
+
+data:Elena :hasFather data:Heinrich_XIII_Prinz_Reuss .
+
+data:Heinrich_I_Reuss a :Ancestor .
+
+data:Heinrich_XXVIII :hasFather data:Heinrich_XIII_Prinz_Reuss .
+
+data:Henry_II_Count_of_Reuss_Gera a :Ancestor .
+
+data:Susan_Doukht_Jalali a :Ancestor .
+
+data:Woizlawa_Feodora_of_Mecklenburg a :Ancestor .
+
+data:Heinrich_XIII_Prinz_Reuss a :Ancestor .
+

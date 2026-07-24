@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceCarloDukeOfCastro a :Man,
+        :Person .
+
+data:PrinceCarlosDukeOfCalabria1900 a :Man,
+        :Person ;
+    :hasRelation data:MariaDeLasMercedesPrincessOfAsturias ;
+    :isBrotherOf data:PrinceFerdinand .
+
+data:PrincePedroOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :alsoKnownAs "Pedro Juan María Alejo Saturnino de Todos los Santos"^^xsd:string ;
+    :hasBirthYear 1968 ;
+    :hasFather data:InfanteCarlosDukeOfCalabria ;
+    :hasMarriageYear data:SofiaLandaluceYMelgarejo,
+        2001 ;
+    :hasMother data:PrincessAnneOfOrleans .
+
+data:InfanteCarlosDukeOfCalabria a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 .
+
+data:JoseManuelLandaluceYDominguez a :Man,
+        :Person .
+
+data:MariaDeLasMercedesPrincessOfAsturias a :Person,
+        :Woman .
+
+data:MariaDeLasNievesBlancaMelgarejoYGonzalez a :Person,
+        :Woman .
+
+data:PrinceFerdinand a :Man,
+        :Person .
+
+data:PrincessAnneOfOrleans a :Person,
+        :Woman .
+
+data:SofiaLandaluceYMelgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:JoseManuelLandaluceYDominguez ;
+    :hasMother data:MariaDeLasNievesBlancaMelgarejoYGonzalez .
+

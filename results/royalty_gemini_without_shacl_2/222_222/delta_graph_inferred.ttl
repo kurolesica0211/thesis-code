@@ -1,0 +1,216 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Sofia_of_Spain ;
+    :hasSister data:Sofia_of_Spain ;
+    :isAuntOf data:Theodora ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Matthew_Jeremiah_Kumar a :Man,
+        :Person ;
+    :hasBrother data:Matthew_Jeremiah_Kumar ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :isBloodrelationOf data:Matthew_Jeremiah_Kumar ;
+    :isBrotherOf data:Matthew_Jeremiah_Kumar ;
+    :isSiblingOf data:Matthew_Jeremiah_Kumar .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Theodora ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Anne-Marie_of_Greece ;
+    :hasDaughter data:Anne-Marie_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :isAncestorOf data:Anne-Marie_of_Greece,
+        data:Theodora ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Anne-Marie_of_Greece ;
+    :isParentOf data:Anne-Marie_of_Greece ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Anne-Marie_of_Greece .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Anne-Marie_of_Greece ;
+    :hasDaughter data:Anne-Marie_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Anne-Marie_of_Greece,
+        data:Theodora ;
+    :isAuntOf data:Anne-Marie_of_Greece ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isMotherOf data:Anne-Marie_of_Greece ;
+    :isParentOf data:Anne-Marie_of_Greece ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Theodora ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isFatherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasChild data:Theodora ;
+    :hasDaughter data:Theodora ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :hasSister data:Anne-Marie_of_Greece ;
+    :isAncestorOf data:Theodora ;
+    :isAuntOf data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie_of_Greece ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Theodora ;
+    :isParentOf data:Theodora ;
+    :isSiblingOf data:Anne-Marie_of_Greece ;
+    :isSisterOf data:Anne-Marie_of_Greece .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Theodora ;
+    :hasDaughter data:Theodora ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :isAncestorOf data:Theodora ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isFatherOf data:Theodora ;
+    :isParentOf data:Theodora ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Paul_of_Greece ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear 2024 ;
+    :hasMother data:Anne-Marie_of_Greece ;
+    :hasParent data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Matthew_Jeremiah_Kumar,
+        data:Paul_of_Greece,
+        data:Theodora ;
+    :hasSister data:Theodora ;
+    :isBloodrelationOf data:Theodora ;
+    :isChildOf data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Anne-Marie_of_Greece,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Theodora ;
+    :isSisterOf data:Theodora ;
+    :knownAs "Theodora Greece"^^xsd:string .
+

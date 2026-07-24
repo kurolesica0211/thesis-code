@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichAugustOfOldenburg a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;\n    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont ;\n    :hasRelation data:DonataCountessOfCastellRudenhausen,\n        data:PrincessMarieCecileOfPrussia ;\n    :isUncleOf data:Christian_DukeOfOldenburg .\n\ndata:Christian_DukeOfOldenburg a :Man .\n\ndata:DonataCountessOfCastellRudenhausen a :Woman ;\n    :hasMarriageYear 1991 .\n\ndata:DuchessElisabethAlexandrineOfMecklenburgSchwerin a :Woman .\n\ndata:FrederickAugustusII_GrandDukeOfOldenburg a :Man .\n\ndata:Friedrich_PrinceOfWaldeckAndPyrmont a :Man .\n\ndata:GrandDuchessKiraKirillovnaOfRussia a :Woman .\n\ndata:LouisFerdinand_PrinceOfPrussia a :Man .\n\ndata:NikolausHereditaryGrandDukeOfOldenburg a :Man ;\n    :hasFather data:FrederickAugustusII_GrandDukeOfOldenburg ;\n    :hasMother data:DuchessElisabethAlexandrineOfMecklenburgSchwerin .\n\ndata:PrincessBathildisOfSchaumburgLippe a :Woman .\n\ndata:PrincessHelenaOfWaldeckAndPyrmont a :Woman ;\n    :hasFather data:Friedrich_PrinceOfWaldeckAndPyrmont ;\n    :hasMother data:PrincessBathildisOfSchaumburgLippe .\n\ndata:PrincessMarieCecileOfPrussia a :Woman ;\n    :hasFather data:LouisFerdinand_PrinceOfPrussia ;\n    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FriedrichAugustOfOldenburg a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:NikolausHereditaryGrandDukeOfOldenburg ;\n    :hasMother data:PrincessHelenaOfWaldeckAndPyrmont ;\n    :hasRelation data:DonataCountessOfCastellRudenhausen,\n        data:PrincessMarieCecileOfPrussia ;\n    :isUncleOf data:Christian_DukeOfOldenburg .\n\ndata:Christian_DukeOfOldenburg a :Man .\n\ndata:DonataCountessOfCastellRudenhausen a :Woman ;\n    :hasMarriageYear 1991 .\n\ndata:DuchessElisabethAlexandrineOfMecklenburgSchwerin a :Woman .\n\ndata:FrederickAugustusII_GrandDukeOfOldenburg a :Man .\n\ndata:Friedrich_PrinceOfWaldeckAndPyrmont a :Man .\n\ndata:GrandDuchessKiraKirillovnaOfRussia a :Woman .\n\ndata:LouisFerdinand_PrinceOfPrussia a :Man .\n\ndata:NikolausHereditaryGrandDukeOfOldenburg a :Man ;\n    :hasFather data:FrederickAugustusII_GrandDukeOfOldenburg ;\n    :hasMother data:DuchessElisabethAlexandrineOfMecklenburgSchwerin .\n\ndata:PrincessBathildisOfSchaumburgLippe a :Woman .\n\ndata:PrincessHelenaOfWaldeckAndPyrmont a :Woman ;\n    :hasFather data:Friedrich_PrinceOfWaldeckAndPyrmont ;\n    :hasMother data:PrincessBathildisOfSchaumburgLippe .\n\ndata:PrincessMarieCecileOfPrussia a :Woman ;\n    :hasFather data:LouisFerdinand_PrinceOfPrussia ;\n    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .\n\n"
+    }
+]

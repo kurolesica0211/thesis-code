@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryMalcolm a :Person,\n        :Woman ;\n    :hasFather data:SirIanMalcolm ;\n    :hasMother data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man,\n        :Person .\n\ndata:EmilieCharlotteLeBreton a :Person,\n        :Woman ;\n    :alsoKnownAs data:TheJerseyLily ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :knownAs data:LillieLangtry .\n\ndata:EmilieDavisMartin a :Person,\n        :Woman .\n\ndata:HugoGeraldDeBathe a :Man,\n        :Person .\n\ndata:JeanneMarieLangtry a :Person,\n        :Woman ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:EmilieCharlotteLeBreton ;\n    :hasRelation data:SirIanMalcolm .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:WilliamCorbetLeBreton a :Man,\n        :Person .\n\ndata:SirIanMalcolm a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryMalcolm a :Person,\n        :Woman ;\n    :hasFather data:SirIanMalcolm ;\n    :hasMother data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man,\n        :Person .\n\ndata:EmilieCharlotteLeBreton a :Person,\n        :Woman ;\n    :alsoKnownAs data:TheJerseyLily ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :knownAs data:LillieLangtry .\n\ndata:EmilieDavisMartin a :Person,\n        :Woman .\n\ndata:HugoGeraldDeBathe a :Man,\n        :Person .\n\ndata:JeanneMarieLangtry a :Person,\n        :Woman ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:EmilieCharlotteLeBreton ;\n    :hasRelation data:SirIanMalcolm .\n\ndata:LillieLangtry a :Woman .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:TheJerseyLily a :Woman .\n\ndata:WilliamCorbetLeBreton a :Man,\n        :Person .\n\ndata:SirIanMalcolm a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MaryMalcolm a :Person,\n        :Woman ;\n    :hasFather data:SirIanMalcolm ;\n    :hasMother data:JeanneMarieLangtry .\n\ndata:EdwardLangtry a :Man,\n        :Person .\n\ndata:EmilieCharlotteLeBreton a :Person,\n        :Woman ;\n    :alsoKnownAs data:TheJerseyLily ;\n    :hasBirthYear 1853 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:WilliamCorbetLeBreton ;\n    :hasMarriageYear 1874,\n        1899 ;\n    :hasMother data:EmilieDavisMartin ;\n    :hasRelation data:EdwardLangtry,\n        data:HugoGeraldDeBathe ;\n    :knownAs data:LillieLangtry .\n\ndata:EmilieDavisMartin a :Person,\n        :Woman .\n\ndata:HugoGeraldDeBathe a :Man,\n        :Person .\n\ndata:JeanneMarieLangtry a :Person,\n        :Woman ;\n    :hasFather data:PrinceLouisOfBattenberg ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:EmilieCharlotteLeBreton ;\n    :hasRelation data:SirIanMalcolm .\n\ndata:LillieLangtry a :Woman .\n\ndata:PrinceLouisOfBattenberg a :Man,\n        :Person .\n\ndata:TheJerseyLily a :Woman .\n\ndata:WilliamCorbetLeBreton a :Man,\n        :Person .\n\ndata:SirIanMalcolm a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Fergus_Bowes-Lyon .\n\ndata:John_Bowes-Lyon a :Man,\n        :Person ;\n    :isBrotherOf data:Fergus_Bowes-Lyon .\n\ndata:Rosemary_Bowes-Lyon a :Person,\n        :Woman ;\n    :isChildOf data:Christian_Norah_Dawson-Damer,\n        data:Fergus_Bowes-Lyon .\n\ndata:Cecilia_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Christian_Norah_Dawson-Damer a :Person,\n        :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1915 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Cecilia_Bowes-Lyon ;\n    :hasRelation data:Christian_Norah_Dawson-Damer .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Fergus_Bowes-Lyon .\n\ndata:John_Bowes-Lyon a :Man,\n        :Person ;\n    :isBrotherOf data:Fergus_Bowes-Lyon .\n\ndata:Rosemary_Bowes-Lyon a :Person,\n        :Woman ;\n    :isChildOf data:Christian_Norah_Dawson-Damer,\n        data:Fergus_Bowes-Lyon .\n\ndata:Cecilia_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Christian_Norah_Dawson-Damer a :Person,\n        :Woman .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1915 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Cecilia_Bowes-Lyon ;\n    :hasRelation data:Christian_Norah_Dawson-Damer .\n\n"
+    }
+]

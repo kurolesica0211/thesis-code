@@ -1,0 +1,122 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:NicholasMontenegro a :Man,
+        :Person ;
+    :hasBrother data:NicholasMontenegro ;
+    :hasRelation data:NicholasMontenegro ;
+    :isBloodrelationOf data:NicholasMontenegro ;
+    :isBrotherOf data:NicholasMontenegro ;
+    :isSiblingOf data:NicholasMontenegro .
+
+data:VictorEmmanuelIII a :Man,
+        :Person ;
+    :hasBrother data:VictorEmmanuelIII ;
+    :hasRelation data:VictorEmmanuelIII ;
+    :isBloodrelationOf data:VictorEmmanuelIII ;
+    :isBrotherOf data:VictorEmmanuelIII ;
+    :isSiblingOf data:VictorEmmanuelIII .
+
+data:DeborahCully a :Person,
+        :Woman ;
+    :hasBirthYear 1961 ;
+    :hasRelation data:BorisIII%E4%B8%8D%E9%94%99,
+        data:DeborahCully,
+        data:HermannLeiningen,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :hasSister data:DeborahCully ;
+    :isBloodrelationOf data:DeborahCully ;
+    :isSiblingOf data:DeborahCully ;
+    :isSisterOf data:DeborahCully .
+
+data:KarlLeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KarlLeiningen ;
+    :hasChild data:HermannLeiningen ;
+    :hasRelation data:BorisIII%E4%B8%8D%E9%94%99,
+        data:DeborahCully,
+        data:HermannLeiningen,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :hasSon data:HermannLeiningen ;
+    :isAncestorOf data:HermannLeiningen ;
+    :isBloodrelationOf data:KarlLeiningen ;
+    :isBrotherOf data:KarlLeiningen ;
+    :isFatherOf data:HermannLeiningen ;
+    :isParentOf data:HermannLeiningen ;
+    :isSiblingOf data:KarlLeiningen ;
+    :isUncleOf data:HermannLeiningen .
+
+data:BorisIII%E4%B8%8D%E9%94%99 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :hasChild data:MarieLouiseBulgaria ;
+    :hasDaughter data:MarieLouiseBulgaria ;
+    :hasRelation data:BorisIII%E4%B8%8D%E9%94%99,
+        data:DeborahCully,
+        data:HermannLeiningen,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :isAncestorOf data:HermannLeiningen,
+        data:MarieLouiseBulgaria ;
+    :isBloodrelationOf data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :isBrotherOf data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :isFatherOf data:MarieLouiseBulgaria ;
+    :isParentOf data:MarieLouiseBulgaria ;
+    :isSiblingOf data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :isUncleOf data:MarieLouiseBulgaria .
+
+data:MarieLouiseBulgaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :hasChild data:HermannLeiningen ;
+    :hasFather data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :hasParent data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :hasRelation data:BorisIII%E4%B8%8D%E9%94%99,
+        data:DeborahCully,
+        data:HermannLeiningen,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :hasSister data:MarieLouiseBulgaria ;
+    :hasSon data:HermannLeiningen ;
+    :isAncestorOf data:HermannLeiningen ;
+    :isAuntOf data:HermannLeiningen ;
+    :isBloodrelationOf data:MarieLouiseBulgaria ;
+    :isChildOf data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :isDaughterOf data:BorisIII%E4%B8%8D%E9%94%99 ;
+    :isMotherOf data:HermannLeiningen ;
+    :isParentOf data:HermannLeiningen ;
+    :isSiblingOf data:MarieLouiseBulgaria ;
+    :isSisterOf data:MarieLouiseBulgaria .
+
+data:HermannLeiningen a :Man,
+        :Person ;
+    :hasAncestor data:BorisIII%E4%B8%8D%E9%94%99,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:HermannLeiningen ;
+    :hasFather data:KarlLeiningen ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:MarieLouiseBulgaria ;
+    :hasParent data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :hasRelation data:BorisIII%E4%B8%8D%E9%94%99,
+        data:DeborahCully,
+        data:HermannLeiningen,
+        data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :isBloodrelationOf data:HermannLeiningen ;
+    :isBrotherOf data:HermannLeiningen ;
+    :isChildOf data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :isSiblingOf data:HermannLeiningen ;
+    :isSonOf data:KarlLeiningen,
+        data:MarieLouiseBulgaria ;
+    :knownAs "Hermann Leiningen"^^xsd:string .
+

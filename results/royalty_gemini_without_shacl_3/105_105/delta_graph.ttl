@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasMarriageYear 1901 ;
+    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:Chantal_de_Chevron-Villette ;
+    :hasRelation data:Camilla_Crociani .
+
+data:Camilla_Crociani a :Person,
+        :Woman ;
+    :hasFather data:Camillo_Crociani ;
+    :hasMother data:Edy_Vessel .
+
+data:Camillo_Crociani a :Man,
+        :Person .
+
+data:Chantal_de_Chevron-Villette a :Person,
+        :Woman .
+
+data:Edy_Vessel a :Person,
+        :Woman .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Man,
+        :Person .
+

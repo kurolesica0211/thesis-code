@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alex_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Edoardo_Mapelli_Mozzi .
+
+data:Christopher_Woolf a :Man,
+        :Person ;
+    :isSonOf data:Dara_Huang,
+        data:Edoardo_Mapelli_Mozzi .
+
+data:Luis_Alvarado_Martinez a :Man,
+        :Person .
+
+data:Paolo_Mapelli_Mozzi a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :isAncestorOf data:Beatrice .
+
+data:Dara_Huang a :Person,
+        :Woman .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :isSisterOf data:Beatrice .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman .
+
+data:Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasMarriageYear 2020 ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi ;
+    :isMotherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSisterOf data:Princess_Eugenie .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman .
+
+data:Edoardo_Mapelli_Mozzi a :Man,
+        :Person ;
+    :isFatherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+

@@ -1,0 +1,116 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret ;
+    :hasSister data:Princess_Margaret ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Denys_Gravenor_Rhodes a :Man,
+        :Person ;
+    :hasBrother data:Denys_Gravenor_Rhodes ;
+    :hasRelation data:16th_Lord_Elphinstone,
+        data:Denys_Gravenor_Rhodes,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Rhodes,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isBloodrelationOf data:Denys_Gravenor_Rhodes ;
+    :isBrotherOf data:Denys_Gravenor_Rhodes ;
+    :isSiblingOf data:Denys_Gravenor_Rhodes .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman ;
+    :hasRelation data:16th_Lord_Elphinstone,
+        data:Denys_Gravenor_Rhodes,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Rhodes,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAuntOf data:Margaret_Rhodes ;
+    :isBloodrelationOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSiblingOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother .
+
+data:16th_Lord_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:16th_Lord_Elphinstone ;
+    :hasChild data:Margaret_Rhodes ;
+    :hasDaughter data:Margaret_Rhodes ;
+    :hasRelation data:16th_Lord_Elphinstone,
+        data:Denys_Gravenor_Rhodes,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Rhodes,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Margaret_Rhodes ;
+    :isBloodrelationOf data:16th_Lord_Elphinstone ;
+    :isBrotherOf data:16th_Lord_Elphinstone ;
+    :isFatherOf data:Margaret_Rhodes ;
+    :isParentOf data:Margaret_Rhodes ;
+    :isSiblingOf data:16th_Lord_Elphinstone ;
+    :isUncleOf data:Margaret_Rhodes .
+
+data:Lady_Mary_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Margaret_Rhodes ;
+    :hasDaughter data:Margaret_Rhodes ;
+    :hasRelation data:16th_Lord_Elphinstone,
+        data:Denys_Gravenor_Rhodes,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Rhodes,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Margaret_Rhodes ;
+    :isAuntOf data:Margaret_Rhodes ;
+    :isBloodrelationOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:Margaret_Rhodes ;
+    :isParentOf data:Margaret_Rhodes ;
+    :isSiblingOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Lady_Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Margaret_Rhodes a :Person,
+        :Woman ;
+    :hasAncestor data:16th_Lord_Elphinstone,
+        data:Lady_Mary_Bowes-Lyon ;
+    :hasBirthYear "1925"^^xsd:positiveInteger ;
+    :hasDeathYear "2016"^^xsd:positiveInteger ;
+    :hasFather data:16th_Lord_Elphinstone ;
+    :hasMarriageYear "1950"^^xsd:positiveInteger ;
+    :hasMother data:Lady_Mary_Bowes-Lyon ;
+    :hasParent data:16th_Lord_Elphinstone,
+        data:Lady_Mary_Bowes-Lyon ;
+    :hasRelation data:16th_Lord_Elphinstone,
+        data:Denys_Gravenor_Rhodes,
+        data:Lady_Mary_Bowes-Lyon,
+        data:Margaret_Rhodes,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasSister data:Margaret_Rhodes ;
+    :isBloodrelationOf data:Margaret_Rhodes ;
+    :isChildOf data:16th_Lord_Elphinstone,
+        data:Lady_Mary_Bowes-Lyon ;
+    :isDaughterOf data:16th_Lord_Elphinstone,
+        data:Lady_Mary_Bowes-Lyon ;
+    :isSiblingOf data:Margaret_Rhodes ;
+    :isSisterOf data:Margaret_Rhodes .
+

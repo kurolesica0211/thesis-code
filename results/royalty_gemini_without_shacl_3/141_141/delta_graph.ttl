@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolphus_Frederick_V_Grand_Duke_of_Mecklenburg-Strelitz a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+data:Countess_Caroline_von_Wartensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Julius_Ernst_of_Lippe .
+
+data:Curt_David_von_Arnim a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Christa_von_Arnim .
+
+data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Prince_Julius_Ernst_of_Lippe .
+
+data:Prince_Friedrich_Wilhelm a :Man,
+        :Person ;
+    :isSonOf data:Prince_Ernst_August_of_Lippe .
+
+data:Prince_Leopold a :Man,
+        :Person .
+
+data:Prince_Simon_Casimir a :Man,
+        :Person .
+
+data:Princess_Elisabeth_of_Anhalt a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+data:Stephan_Prince_of_Lippe a :Man,
+        :Person ;
+    :isSonOf data:Prince_Armin .
+
+data:Stephanie_von_Stechow a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Christa_von_Arnim .
+
+data:Prince_Armin a :Man,
+        :Person .
+
+data:Prince_Ernst_August_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Prince_Julius_Ernst_of_Lippe ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasRelation data:Christa_von_Arnim .
+
+data:Christa_von_Arnim a :Person,
+        :Woman .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1948 .
+
+data:Prince_Julius_Ernst_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1873 ;
+    :hasDeathYear 1952 .
+

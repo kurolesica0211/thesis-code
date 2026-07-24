@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :isSonOf data:Constantine_I .\n\ndata:George_II a :Man,\n        :Person ;\n    :isSonOf data:Constantine_I .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:Konstantin_Romanov a :Man,\n        :Person .\n\ndata:Olga a :Person,\n        :Woman .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman ;\n    :isSiblingOf data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Constantine_I a :Man,\n        :Person ;\n    :hasAncestor data:Konstantin_Romanov ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasRelation data:Sophia_of_Prussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :isSonOf data:Constantine_I .\n\ndata:George_II a :Man,\n        :Person ;\n    :isSonOf data:Constantine_I .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:Konstantin_Romanov a :Man,\n        :Person .\n\ndata:Olga a :Person,\n        :Woman .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman ;\n    :isSiblingOf data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Constantine_I a :Man,\n        :Person ;\n    :hasAncestor data:Konstantin_Romanov ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasRelation data:Sophia_of_Prussia .\n\n"
+    }
+]

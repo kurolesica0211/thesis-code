@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :hasBirthYear 1894 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:George_V ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Wallis_Simpson .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :hasFather data:George_VI .\n\ndata:Prince_John a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Edward_VII a :Man,\n        :Person .\n\ndata:Francis_Duke_of_Teck a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Mary_Adelaide_of_Cambridge a :Person,\n        :Woman .\n\ndata:Queen_Alexandra a :Person,\n        :Woman .\n\ndata:Wallis_Simpson a :Person,\n        :Woman .\n\ndata:George_V a :Man,\n        :Person ;\n    :hasFather data:Edward_VII ;\n    :hasMother data:Queen_Alexandra .\n\ndata:Queen_Mary a :Person,\n        :Woman ;\n    :hasFather data:Francis_Duke_of_Teck ;\n    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Edward_VIII a :Man,\n        :Person ;\n    :hasBirthYear 1894 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:George_V ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Wallis_Simpson .\n\ndata:Elizabeth_II a :Person,\n        :Woman ;\n    :hasFather data:George_VI .\n\ndata:Prince_John a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Edward_VII a :Man,\n        :Person .\n\ndata:Francis_Duke_of_Teck a :Man,\n        :Person .\n\ndata:George_VI a :Man,\n        :Person ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Mary_Adelaide_of_Cambridge a :Person,\n        :Woman .\n\ndata:Queen_Alexandra a :Person,\n        :Woman .\n\ndata:Wallis_Simpson a :Person,\n        :Woman .\n\ndata:George_V a :Man,\n        :Person ;\n    :hasFather data:Edward_VII ;\n    :hasMother data:Queen_Alexandra .\n\ndata:Queen_Mary a :Person,\n        :Woman ;\n    :hasFather data:Francis_Duke_of_Teck ;\n    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .\n\n"
+    }
+]

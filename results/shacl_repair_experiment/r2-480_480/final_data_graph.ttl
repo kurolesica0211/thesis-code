@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jeanne_Marie_Langtry a :Woman ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Emilie_Charlotte_Le_Breton ;
+    :hasSex data:Female .
+
+data:Edward_Langtry a :Man ;
+    :hasBirthYear 1847 ;
+    :hasDeathYear 1897 ;
+    :hasSex data:Male .
+
+data:Emilie_Charlotte_Le_Breton a :Ancestor,
+        :Woman ;
+    :alsoKnownAs "Lily Langtry"^^xsd:string ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:William_Corbet_Le_Breton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:Emilie_Davis_Martin ;
+    :hasRelation data:Edward_Langtry,
+        data:Hugo_Gerald_de_Bathe ;
+    :hasSex data:Female ;
+    :knownAs "Lillie Langtry"^^xsd:string,
+        "The Jersey Lily"^^xsd:string .
+
+data:Emilie_Davis_Martin a :Ancestor,
+        :Woman ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasSex data:Female .
+
+data:Hugo_Gerald_de_Bathe a :Man ;
+    :hasSex data:Male .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:William_Corbet_Le_Breton a :Ancestor,
+        :Man ;
+    :hasMarriageYear "1842"^^xsd:long ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

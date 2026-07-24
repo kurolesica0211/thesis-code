@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Person,
+        :Woman ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:Infanta_Alicia_Duchess_of_Calabria ;
+    :hasSister data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia_Duchess_of_Calabria .
+
+data:King_Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:King_Juan_Carlos_I ;
+    :hasRelation data:King_Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :isBloodrelationOf data:King_Juan_Carlos_I ;
+    :isBrotherOf data:King_Juan_Carlos_I ;
+    :isSiblingOf data:King_Juan_Carlos_I .
+
+data:Queen_Sofia a :Person,
+        :Woman ;
+    :hasRelation data:King_Juan_Carlos_I,
+        data:Queen_Sofia ;
+    :hasSister data:Queen_Sofia ;
+    :isBloodrelationOf data:Queen_Sofia ;
+    :isSiblingOf data:Queen_Sofia ;
+    :isSisterOf data:Queen_Sofia .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Princess_Anne_of_Orleans ;
+    :hasDaughter data:Princess_Anne_of_Orleans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Princess_Anne_of_Orleans ;
+    :isParentOf data:Princess_Anne_of_Orleans ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Princess_Anne_of_Orleans .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasChild data:Infante_Carlos_Duke_of_Calabria ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Infante_Carlos_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isFatherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isUncleOf data:Infante_Carlos_Duke_of_Calabria .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Anne_of_Orleans ;
+    :hasDaughter data:Princess_Anne_of_Orleans ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSister data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Orleans ;
+    :isAuntOf data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isMotherOf data:Princess_Anne_of_Orleans ;
+    :isParentOf data:Princess_Anne_of_Orleans ;
+    :isSiblingOf data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orleans_Braganza .
+
+data:Infante_Carlos_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasAncestor data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasBrother data:Infante_Carlos_Duke_of_Calabria ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasParent data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isChildOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isSonOf data:Infante_Alfonso_Duke_of_Calabria .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSister data:Princess_Anne_of_Orleans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orleans ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isSiblingOf data:Princess_Anne_of_Orleans ;
+    :isSisterOf data:Princess_Anne_of_Orleans .
+

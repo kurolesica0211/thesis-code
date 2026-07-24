@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LeopoldIV a :Man,\n        :Person .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasChild data:Christina,\n        data:Irene,\n        data:Margriet,\n        data:QueenBeatrix ;\n    :hasDeathYear 2004 ;\n    :hasFather data:PrinceBernhardOfLippe ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:BaronessArmgardVonSierstorpffCramm ;\n    :hasRelation data:QueenJuliana .\n\ndata:BaronessArmgardVonSierstorpffCramm a :Person,\n        :Woman .\n\ndata:ErnestCountOfLippeBiesterfeld a :Man,\n        :Person .\n\ndata:PrinceBernhardOfLippe a :Man,\n        :Person ;\n    :hasFather data:ErnestCountOfLippeBiesterfeld .\n\ndata:QueenJuliana a :Person,\n        :Woman ;\n    :hasChild data:Christina,\n        data:Irene,\n        data:Margriet,\n        data:QueenBeatrix ;\n    :hasMother data:QueenWilhelmina .\n\ndata:QueenWilhelmina a :Person,\n        :Woman .\n\ndata:Christina a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:QueenBeatrix a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LeopoldIV a :Man,\n        :Person .\n\ndata:PrinceBernhardOfLippeBiesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasChild data:Christina,\n        data:Irene,\n        data:Margriet,\n        data:QueenBeatrix ;\n    :hasDeathYear 2004 ;\n    :hasFather data:PrinceBernhardOfLippe ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:BaronessArmgardVonSierstorpffCramm ;\n    :hasRelation data:QueenJuliana .\n\ndata:BaronessArmgardVonSierstorpffCramm a :Person,\n        :Woman .\n\ndata:ErnestCountOfLippeBiesterfeld a :Man,\n        :Person .\n\ndata:PrinceBernhardOfLippe a :Man,\n        :Person ;\n    :hasFather data:ErnestCountOfLippeBiesterfeld .\n\ndata:QueenJuliana a :Person,\n        :Woman ;\n    :hasChild data:Christina,\n        data:Irene,\n        data:Margriet,\n        data:QueenBeatrix ;\n    :hasMother data:QueenWilhelmina .\n\ndata:QueenWilhelmina a :Person,\n        :Woman .\n\ndata:Christina a :Person,\n        :Woman .\n\ndata:Irene a :Person,\n        :Woman .\n\ndata:Margriet a :Person,\n        :Woman .\n\ndata:QueenBeatrix a :Person,\n        :Woman .\n\n"
+    }
+]

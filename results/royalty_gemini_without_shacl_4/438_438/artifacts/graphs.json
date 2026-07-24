@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelAlbemarleBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear \"1940\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2023\"^^xsd:positiveInteger ;\n    :hasFather data:MichaelClaudeHamiltonBowesLyon ;\n    :hasMother data:ElizabethMargaretCator ;\n    :isBloodrelationOf data:QueenElizabethTheQueenMother .\n\ndata:PrincessMargaret a :Person,\n        :Woman .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear \"1899\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1959\"^^xsd:positiveInteger .\n\ndata:MichaelClaudeHamiltonBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear \"1893\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1953\"^^xsd:positiveInteger .\n\ndata:QueenElizabethTheQueenMother a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MichaelAlbemarleBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear \"1940\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2023\"^^xsd:positiveInteger ;\n    :hasFather data:MichaelClaudeHamiltonBowesLyon ;\n    :hasMother data:ElizabethMargaretCator ;\n    :isBloodrelationOf data:QueenElizabethTheQueenMother .\n\ndata:PrincessMargaret a :Person,\n        :Woman .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:ElizabethMargaretCator a :Person,\n        :Woman ;\n    :hasBirthYear \"1899\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1959\"^^xsd:positiveInteger .\n\ndata:MichaelClaudeHamiltonBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear \"1893\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1953\"^^xsd:positiveInteger .\n\ndata:QueenElizabethTheQueenMother a :Person,\n        :Woman .\n\n"
+    }
+]

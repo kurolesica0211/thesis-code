@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Heinrich_XIV_Fuerst_Reuss a :Man .
+
+data:Vitalia_B a :Woman .
+
+data:Adolf_Friedrich_of_Mecklenburg a :Ancestor,
+        :Man .
+
+data:Elena a :Woman ;
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali .
+
+data:Heinrich_I_Reuss a :Ancestor,
+        :Man .
+
+data:Heinrich_XXVIII a :Man ;
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali .
+
+data:Henry_II_Count_of_Reuss_Gera a :Ancestor,
+        :Man .
+
+data:Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
+        :Woman ;
+    :hasFather data:Adolf_Friedrich_of_Mecklenburg .
+
+data:Heinrich_XIII_Prinz_Reuss a :Ancestor,
+        :Man ;
+    :hasAncestor data:Henry_II_Count_of_Reuss_Gera ;
+    :hasBirthYear 1951 ;
+    :hasDaughter data:Elena ;
+    :hasFather data:Heinrich_I_Reuss ;
+    :hasMother data:Woizlawa_Feodora_of_Mecklenburg ;
+    :hasSon data:Heinrich_XXVIII .
+
+data:Susan_Doukht_Jalali a :Ancestor,
+        :Woman .
+

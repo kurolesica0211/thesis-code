@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasFather data:Vladimir_Kirillovich .
+
+data:Alexander_II a :Man,
+        :Person .
+
+data:Alexander_brother a :Man,
+        :Person .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+
+data:Vladimir_Alexandrovich a :Man,
+        :Person ;
+    :hasFather data:Alexander_II .
+
+data:Vladimir_Kirillovich a :Man,
+        :Person ;
+    :hasFather data:Kirill_Vladimirovich_Romanov ;
+    :hasMother data:Victoria_Melita .
+
+data:Kirill_Vladimirovich_Romanov a :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_brother ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasRelation data:Victoria_Melita .
+
+data:Victoria_Melita a :Person,
+        :Woman ;
+    :hasRelation data:Kirill_Vladimirovich_Romanov .
+

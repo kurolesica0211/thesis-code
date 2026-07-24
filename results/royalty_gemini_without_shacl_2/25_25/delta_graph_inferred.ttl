@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Louise_Mountbatten a :Woman ;
+    :hasRelation data:Lady_Louise_Mountbatten ;
+    :hasSister data:Lady_Louise_Mountbatten ;
+    :isBloodrelationOf data:Lady_Louise_Mountbatten ;
+    :isSiblingOf data:Lady_Louise_Mountbatten ;
+    :isSisterOf data:Lady_Louise_Mountbatten .
+
+data:Princess_Louise_of_Battenberg a :Woman ;
+    :hasRelation data:Princess_Louise_of_Battenberg ;
+    :hasSister data:Princess_Louise_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Louise_of_Battenberg ;
+    :isSiblingOf data:Princess_Louise_of_Battenberg ;
+    :isSisterOf data:Princess_Louise_of_Battenberg .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person ;
+    :hasBrother data:Gustaf_VI_Adolf ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Gustaf_VI_Adolf ;
+    :isBrotherOf data:Gustaf_VI_Adolf ;
+    :isSiblingOf data:Gustaf_VI_Adolf .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Louise_Mountbatten ;
+    :hasDaughter data:Louise_Mountbatten ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Louise_Mountbatten ;
+    :isParentOf data:Louise_Mountbatten ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Louise_Mountbatten .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Louise_Mountbatten ;
+    :hasDaughter data:Louise_Mountbatten ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Louise_Mountbatten ;
+    :isAuntOf data:Louise_Mountbatten ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Louise_Mountbatten ;
+    :isParentOf data:Louise_Mountbatten ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:Louis_Mountbatten a :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Prince_Philip .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip ;
+    :isSonOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasChild data:Prince_Philip ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Prince_Philip ;
+    :isAuntOf data:Prince_Philip ;
+    :isBloodrelationOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip ;
+    :isParentOf data:Prince_Philip ;
+    :isSiblingOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    :alsoKnownAs data:Lady_Louise_Mountbatten,
+        data:Princess_Louise_of_Battenberg ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasDeathYear 1965 ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Gustaf_VI_Adolf,
+        data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Prince_Philip ;
+    :isBloodrelationOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+

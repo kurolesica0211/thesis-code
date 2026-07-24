@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granville_James_Leveson-Gower a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:William_Leveson-Gower ;\n    :hasMarriageYear 1958 ;\n    :hasMother data:Lady_Rose_Bowes-Lyon ;\n    :hasRelation data:Doon_Aileen_Plunket .\n\ndata:Aileen_Sibell_Mary_Guinness a :Person,\n        :Woman ;\n    :hasFather data:Edward_Guinness .\n\ndata:Brindsley_Sheridan_Bushe_Plunket a :Man,\n        :Person ;\n    :hasFather data:William_Plunket .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Doon_Aileen_Plunket a :Person,\n        :Woman ;\n    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;\n    :hasMother data:Aileen_Sibell_Mary_Guinness .\n\ndata:Edward_Guinness a :Man,\n        :Person .\n\ndata:Lady_Rose_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:William_Leveson-Gower a :Man,\n        :Person .\n\ndata:William_Plunket a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granville_James_Leveson-Gower a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:William_Leveson-Gower ;\n    :hasMarriageYear 1958 ;\n    :hasMother data:Lady_Rose_Bowes-Lyon ;\n    :hasRelation data:Doon_Aileen_Plunket .\n\ndata:Aileen_Sibell_Mary_Guinness a :Person,\n        :Woman ;\n    :hasFather data:Edward_Guinness .\n\ndata:Brindsley_Sheridan_Bushe_Plunket a :Man,\n        :Person ;\n    :hasFather data:William_Plunket .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Doon_Aileen_Plunket a :Person,\n        :Woman ;\n    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;\n    :hasMother data:Aileen_Sibell_Mary_Guinness .\n\ndata:Edward_Guinness a :Man,\n        :Person .\n\ndata:Lady_Rose_Bowes-Lyon a :Person,\n        :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:William_Leveson-Gower a :Man,\n        :Person .\n\ndata:William_Plunket a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Fran%C3%A7oise_Cazaudehore a :Person,\n        :Woman .\n\ndata:Ilia_II_of_Georgia a :Man,\n        :Person .\n\ndata:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;\n    :hasMarriageYear 2014 ;\n    :hasMother data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves ;\n    :hasRelation data:Kristine_Dzidziguri .\n\ndata:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Person,\n        :Woman ;\n    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro .\n\ndata:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro a :Man,\n        :Person .\n\ndata:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bavaria .\n\ndata:Kristine_Dzidziguri a :Person,\n        :Woman .\n\ndata:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,\n        :Person ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain .\n\ndata:Prince_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Fran%C3%A7oise_Cazaudehore a :Person,\n        :Woman .\n\ndata:Ilia_II_of_Georgia a :Man,\n        :Person .\n\ndata:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;\n    :hasMarriageYear 2014 ;\n    :hasMother data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves ;\n    :hasRelation data:Kristine_Dzidziguri .\n\ndata:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Person,\n        :Woman ;\n    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro .\n\ndata:Gonzalo_Maria_de_Ulloa_y_Ram%C3%ADrez_de_Haro a :Man,\n        :Person .\n\ndata:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:Prince_Ferdinand_of_Bavaria .\n\ndata:Kristine_Dzidziguri a :Person,\n        :Woman .\n\ndata:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,\n        :Person ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_of_Spain .\n\ndata:Prince_Ferdinand_of_Bavaria a :Man,\n        :Person .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man,\n        :Person .\n\n"
+    }
+]

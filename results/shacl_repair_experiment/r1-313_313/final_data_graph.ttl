@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Elena_Vladimirovna a :Woman .
+
+data:Grand_Duchess_Maria_Pavlovna_Jr a :Woman .
+
+data:Grand_Duchess_Maria_Pavlovna_Jr%2Ctarget a :Female ;
+    :hasSex data:Female .
+
+data:Grand_Duchess_Maria_Vladimirovna a :Woman .
+
+data:Grand_Duchess_Maria_Vladimirovna%2Ctarget a :Female ;
+    :hasSex data:Female .
+
+data:Grand_Duke_Dmitri_Pavlovich a :Man .
+
+data:Grand_Duke_Dmitri_Pavlovich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Grand_Duke_Michael_Alexandrovich a :Man .
+
+data:Grand_Duke_Michael_Alexandrovich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Grand_Duke_Nikolai_Nikolayevich a :Man .
+
+data:Grand_Duke_Nikolai_Nikolayevich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Grand_Duke_Sergei_Mikhailovich a :Man .
+
+data:Grand_Duke_Sergei_Mikhailovich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Grand_Duke_Vladimir_Kirillovich a :Man .
+
+data:Grand_Duke_Vladimir_Kirillovich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Prince_Felix_Yusupov a :Man .
+
+data:Prince_Felix_Yusupov%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Prince_Gabriel_Constantinovich a :Man .
+
+data:Prince_Gabriel_Constantinovich%2Ctarget a :Male ;
+    :hasSex data:Male .
+
+data:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1974 ;
+    :isSonOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska .
+
+data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
+        :Woman .
+
+data:Grand_Duke_Andrei_Vladimirovich a :Ancestor,
+        :Man ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :hasRelation data:Mathilde_Kschessinska ;
+    :isBrotherOf data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich .
+
+data:Grand_Duke_Boris_Vladimirovich a :Man .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man .
+
+data:Grand_Duke_Vladimir_Alexandrovich a :Ancestor,
+        :Man .
+
+data:Female a :Female .
+
+data:Mathilde_Kschessinska a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1971 .
+
+data:Male a :Male .
+

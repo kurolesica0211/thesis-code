@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexia a :Woman ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana ;
+    :hasSex data:Female ;
+    :hasSister data:Theodora .
+
+data:Ingrid a :Woman ;
+    :hasSex data:Female .
+
+data:Kyril a :Ancestor,
+        :Man ;
+    :hasFather data:Simeon_of_Bulgaria ;
+    :hasSex data:Male .
+
+data:Mafalda a :Woman ;
+    :hasSex data:Female .
+
+data:Maria-Olympia a :Woman ;
+    :hasSex data:Female .
+
+data:Sofia a :Woman ;
+    :hasSex data:Female .
+
+data:Carlos_Javier_Morales_Quintana a :Man ;
+    :hasSex data:Male .
+
+data:Pavlos a :Man ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasSex data:Male .
+
+data:Simeon_of_Bulgaria a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Theodora a :Woman ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie ;
+    :hasSex data:Female .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

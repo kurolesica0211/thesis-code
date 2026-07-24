@@ -1,0 +1,230 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sir_Desmond_de_Silva a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_Desmond_de_Silva ;
+    :hasChild data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasDaughter data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isAncestorOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isBloodrelationOf data:Sir_Desmond_de_Silva ;
+    :isBrotherOf data:Sir_Desmond_de_Silva ;
+    :isFatherOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isParentOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isSiblingOf data:Sir_Desmond_de_Silva ;
+    :isUncleOf data:Victoria_Marie_Esm%C3%A9_Margarita .
+
+data:Prince_Tomislav_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Tomislav_of_Yugoslavia ;
+    :hasChild data:Princess_Katarina_of_Yugoslavia ;
+    :hasDaughter data:Princess_Katarina_of_Yugoslavia ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isAncestorOf data:Princess_Katarina_of_Yugoslavia,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isBloodrelationOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isFatherOf data:Princess_Katarina_of_Yugoslavia ;
+    :isParentOf data:Princess_Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isUncleOf data:Princess_Katarina_of_Yugoslavia .
+
+data:Princess_Margarita_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Katarina_of_Yugoslavia ;
+    :hasDaughter data:Princess_Katarina_of_Yugoslavia ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isAncestorOf data:Princess_Katarina_of_Yugoslavia,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isAuntOf data:Princess_Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Margarita_of_Baden ;
+    :isMotherOf data:Princess_Katarina_of_Yugoslavia ;
+    :isParentOf data:Princess_Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Princess_Margarita_of_Baden .
+
+data:Prince_George a :Man,
+        :Person ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Princess_Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isBrotherOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esm%C3%A9_Margarita .
+
+data:Prince_Michael a :Man,
+        :Person ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Princess_Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isBrotherOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esm%C3%A9_Margarita .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Princess_Katarina_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isBrotherOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isUncleOf data:Victoria_Marie_Esm%C3%A9_Margarita .
+
+data:Victoria_Marie_Esm%C3%A9_Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva ;
+    :hasFather data:Sir_Desmond_de_Silva ;
+    :hasMother data:Princess_Katarina_of_Yugoslavia ;
+    :hasParent data:Princess_Katarina_of_Yugoslavia,
+        data:Sir_Desmond_de_Silva ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isBloodrelationOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isChildOf data:Princess_Katarina_of_Yugoslavia,
+        data:Sir_Desmond_de_Silva ;
+    :isDaughterOf data:Princess_Katarina_of_Yugoslavia,
+        data:Sir_Desmond_de_Silva ;
+    :isSiblingOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isSisterOf data:Victoria_Marie_Esm%C3%A9_Margarita .
+
+data:Princess_Katarina_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Lady de Silva"^^xsd:string ;
+    :hasAncestor data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia ;
+    :hasChild data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasDaughter data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Princess_Margarita_of_Baden ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :hasSister data:Princess_Katarina_of_Yugoslavia ;
+    :isAncestorOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isAuntOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isBloodrelationOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isChildOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isDaughterOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isMotherOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isParentOf data:Victoria_Marie_Esm%C3%A9_Margarita ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia ;
+    :isSisterOf data:Prince_George,
+        data:Prince_Michael,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Katarina_of_Yugoslavia .
+

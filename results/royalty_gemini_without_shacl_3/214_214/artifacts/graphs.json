@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine-Alexios a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Pavlos ;\n    :hasMother data:Marie-Chantal .\n\ndata:Marina a :Person,\n        :Woman .\n\ndata:Michael a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:Marie-Chantal a :Person,\n        :Woman .\n\ndata:Pavlos a :Man,\n        :Person ;\n    :hasFather data:ConstantineII ;\n    :hasMother data:Anne-Marie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine-Alexios a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Pavlos ;\n    :hasMother data:Marie-Chantal .\n\ndata:Marina a :Person,\n        :Woman .\n\ndata:Michael a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:Marie-Chantal a :Person,\n        :Woman .\n\ndata:Pavlos a :Man,\n        :Person ;\n    :hasFather data:ConstantineII ;\n    :hasMother data:Anne-Marie .\n\n"
+    }
+]

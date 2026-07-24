@@ -1,0 +1,82 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Willem-Alexander a :Man,
+        :Person ;
+    :hasBrother data:King_Willem-Alexander ;
+    :hasRelation data:King_Willem-Alexander ;
+    :isBloodrelationOf data:King_Willem-Alexander ;
+    :isBrotherOf data:King_Willem-Alexander ;
+    :isSiblingOf data:King_Willem-Alexander .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Princess_Margriet,
+        data:Queen_Juliana ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Prince_Bernhard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Bernhard ;
+    :hasChild data:Princess_Margriet ;
+    :hasDaughter data:Princess_Margriet ;
+    :hasRelation data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Princess_Margriet,
+        data:Queen_Juliana ;
+    :isAncestorOf data:Princess_Margriet ;
+    :isBloodrelationOf data:Prince_Bernhard ;
+    :isBrotherOf data:Prince_Bernhard ;
+    :isFatherOf data:Princess_Margriet ;
+    :isParentOf data:Princess_Margriet ;
+    :isSiblingOf data:Prince_Bernhard ;
+    :isUncleOf data:Princess_Margriet .
+
+data:Queen_Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Margriet ;
+    :hasDaughter data:Princess_Margriet ;
+    :hasRelation data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Princess_Margriet,
+        data:Queen_Juliana ;
+    :hasSister data:Queen_Juliana ;
+    :isAncestorOf data:Princess_Margriet ;
+    :isAuntOf data:Princess_Margriet ;
+    :isBloodrelationOf data:Queen_Juliana ;
+    :isMotherOf data:Princess_Margriet ;
+    :isParentOf data:Princess_Margriet ;
+    :isSiblingOf data:Queen_Juliana ;
+    :isSisterOf data:Queen_Juliana .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Bernhard,
+        data:Queen_Juliana ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana ;
+    :hasParent data:Prince_Bernhard,
+        data:Queen_Juliana ;
+    :hasRelation data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard,
+        data:Princess_Margriet,
+        data:Queen_Juliana ;
+    :hasSister data:Princess_Margriet ;
+    :isAuntOf data:King_Willem-Alexander ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isChildOf data:Prince_Bernhard,
+        data:Queen_Juliana ;
+    :isDaughterOf data:Prince_Bernhard,
+        data:Queen_Juliana ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+

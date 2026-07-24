@@ -1,0 +1,152 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Mary_1924 a :Person ;
+    :hasRelation data:Queen_Mary_1924 ;
+    :isBloodrelationOf data:Queen_Mary_1924 ;
+    :isSiblingOf data:Queen_Mary_1924 .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII ;
+    :hasRelation data:Edward_VIII ;
+    :isBloodrelationOf data:Edward_VIII ;
+    :isBrotherOf data:Edward_VIII ;
+    :isSiblingOf data:Edward_VIII ;
+    :isUncleOf data:Gerald_David_Lascelles .
+
+data:Elizabeth_Colvin a :Person,
+        :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2006 ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_Colvin ;
+    :isBloodrelationOf data:Elizabeth_Colvin ;
+    :isSiblingOf data:Elizabeth_Colvin ;
+    :isSisterOf data:Elizabeth_Colvin .
+
+data:Henry_Lascelles_6th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isAncestorOf data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :isBrotherOf data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :isFatherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :isUncleOf data:Gerald_David_Lascelles .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Mary_Princess_Royal ;
+    :hasDaughter data:Mary_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :isAncestorOf data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isFatherOf data:Mary_Princess_Royal ;
+    :isParentOf data:Mary_Princess_Royal ;
+    :isSiblingOf data:King_George_V ;
+    :isUncleOf data:Mary_Princess_Royal .
+
+data:Queen_Mary a :Ancestor,
+        :Woman ;
+    :hasChild data:Mary_Princess_Royal ;
+    :hasDaughter data:Mary_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :isAncestorOf data:Gerald_David_Lascelles,
+        data:Mary_Princess_Royal ;
+    :isAuntOf data:Mary_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Mary_Princess_Royal ;
+    :isParentOf data:Mary_Princess_Royal ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    :hasAncestor data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:Gerald_David_Lascelles ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Mary_Princess_Royal ;
+    :hasParent data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:Mary_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Gerald_David_Lascelles ;
+    :isBrotherOf data:Gerald_David_Lascelles ;
+    :isChildOf data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:Mary_Princess_Royal ;
+    :isSiblingOf data:Gerald_David_Lascelles ;
+    :isSonOf data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:Mary_Princess_Royal .
+
+data:Mary_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_George_V,
+        data:Queen_Mary ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Elizabeth_Colvin,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles_6th_Earl_of_Harewood,
+        data:King_George_V,
+        data:Mary_Princess_Royal,
+        data:Queen_Mary ;
+    :hasSister data:Mary_Princess_Royal ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isAncestorOf data:Gerald_David_Lascelles ;
+    :isAuntOf data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Mary_Princess_Royal ;
+    :isChildOf data:King_George_V,
+        data:Queen_Mary ;
+    :isDaughterOf data:King_George_V,
+        data:Queen_Mary ;
+    :isMotherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Mary_Princess_Royal ;
+    :isSisterOf data:Mary_Princess_Royal .
+

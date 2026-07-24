@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_Massenet a :Woman ;
+    :hasMother data:Dame_Natalie_Massenet .
+
+data:Marina_consort_of_Prince_Michael a :Woman .
+
+data:Matthew_Kumar a :Man .
+
+data:Prince_Achileas-Andreas_of_Greece_and_Denmark a :Man ;
+    :hasFather data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos_of_Greece ;
+    :hasMother data:Marie-Chantal_Miller,
+        data:Queen_Anne-Marie ;
+    :knownAs "Achi Miller"^^xsd:string .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman .
+
+data:Queen_Sofia_of_Spain a :Woman .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:Crown_Prince_Pavlos_of_Greece a :Man .
+
+data:Dame_Natalie_Massenet a :Woman .
+
+data:Marie-Chantal_Miller a :Woman .
+
+data:Queen_Anne-Marie a :Woman .
+

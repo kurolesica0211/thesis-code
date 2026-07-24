@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:King_Michael_I_of_Romania a :Ancestor .
+
+data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Ancestor ;
+    :isFatherOf data:Illegitimate_daughter_of_Nicholas .
+
+data:Princess_Elena_of_Romania a :Ancestor .
+
+data:Queen_Anne_of_Romania a :Ancestor .
+
+data:Robin_Medforth-Mills a :Ancestor .
+
+data:Illegitimate_daughter_of_Nicholas a :Person ;
+    :hasMother data:Nicoleta_C%C3%AErjan .
+
+data:Nicoleta_C%C3%AErjan a :Ancestor .
+

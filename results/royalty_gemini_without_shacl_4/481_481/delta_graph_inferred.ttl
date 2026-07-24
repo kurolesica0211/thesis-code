@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasChild data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :hasSon data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isAncestorOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Albrecht_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Albrecht_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isParentOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Albrecht_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Philipp_Albrecht_of_W%C3%BCrttemberg .
+
+data:Margarete_Sophie_of_Austria a :Ancestor,
+        :Woman ;
+    :hasChild data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :hasSister data:Margarete_Sophie_of_Austria ;
+    :hasSon data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isAncestorOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isAuntOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Margarete_Sophie_of_Austria ;
+    :isMotherOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isParentOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Margarete_Sophie_of_Austria ;
+    :isSisterOf data:Margarete_Sophie_of_Austria .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:Rosa_Maria_of_Austria ;
+    :hasDaughter data:Rosa_Maria_of_Austria ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :hasSister data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Rosa_Maria_of_Austria ;
+    :isAuntOf data:Rosa_Maria_of_Austria ;
+    :isBloodrelationOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Rosa_Maria_of_Austria ;
+    :isParentOf data:Rosa_Maria_of_Austria ;
+    :isSiblingOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies .
+
+data:Peter_Ferdinand_of_Austria a :Ancestor,
+        :Man ;
+    :hasBrother data:Peter_Ferdinand_of_Austria ;
+    :hasChild data:Rosa_Maria_of_Austria ;
+    :hasDaughter data:Rosa_Maria_of_Austria ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :isAncestorOf data:Rosa_Maria_of_Austria ;
+    :isBloodrelationOf data:Peter_Ferdinand_of_Austria ;
+    :isBrotherOf data:Peter_Ferdinand_of_Austria ;
+    :isFatherOf data:Rosa_Maria_of_Austria ;
+    :isParentOf data:Rosa_Maria_of_Austria ;
+    :isSiblingOf data:Peter_Ferdinand_of_Austria ;
+    :isUncleOf data:Rosa_Maria_of_Austria .
+
+data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasAncestor data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :hasBrother data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria ;
+    :hasParent data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :isBloodrelationOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isChildOf data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :isSiblingOf data:Philipp_Albrecht_of_W%C3%BCrttemberg ;
+    :isSonOf data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria .
+
+data:Rosa_Maria_of_Austria a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasBirthYear "1906"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "1983"^^xsd:nonNegativeInteger ;
+    :hasFather data:Peter_Ferdinand_of_Austria ;
+    :hasMarriageYear "1928"^^xsd:nonNegativeInteger ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :hasRelation data:Albrecht_of_W%C3%BCrttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria,
+        data:Philipp_Albrecht_of_W%C3%BCrttemberg,
+        data:Rosa_Maria_of_Austria ;
+    :hasSister data:Rosa_Maria_of_Austria ;
+    :isBloodrelationOf data:Rosa_Maria_of_Austria ;
+    :isChildOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isDaughterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand_of_Austria ;
+    :isSiblingOf data:Rosa_Maria_of_Austria ;
+    :isSisterOf data:Rosa_Maria_of_Austria .
+

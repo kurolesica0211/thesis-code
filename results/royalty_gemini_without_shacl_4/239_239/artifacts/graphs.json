@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,\n        :Woman ;\n    :hasAncestor data:Juan_Carlos_I ;\n    :hasBirthYear \"2005-06-05\"^^xsd:date ;\n    :hasRelation data:Juan_Urquijo ;\n    :isDaughterOf data:Inaki_Urdangarin,\n        data:Infanta_Cristina .\n\ndata:Inaki_Urdangarin a :Man,\n        :Person .\n\ndata:Infanta_Cristina a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Juan_Urquijo a :Man,\n        :Person ;\n    :hasAncestor data:Princess_Teresa .\n\ndata:Princess_Teresa a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,\n        :Woman ;\n    :hasAncestor data:Juan_Carlos_I ;\n    :hasBirthYear \"2005-06-05\"^^xsd:date ;\n    :hasRelation data:Juan_Urquijo ;\n    :isDaughterOf data:Inaki_Urdangarin,\n        data:Infanta_Cristina .\n\ndata:Inaki_Urdangarin a :Man,\n        :Person .\n\ndata:Infanta_Cristina a :Person,\n        :Woman .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Juan_Urquijo a :Man,\n        :Person ;\n    :hasAncestor data:Princess_Teresa .\n\ndata:Princess_Teresa a :Person,\n        :Woman .\n\n"
+    }
+]

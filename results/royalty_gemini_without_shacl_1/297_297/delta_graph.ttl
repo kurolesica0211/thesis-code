@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jeremy_Thorpe a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Robert_Jeremy_Hugh_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:James_Lascelles ;
+    :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasSex data:Male .
+
+data:George_Lascelles_7th_Earl_of_Harewood a :Man,
+        :Person .
+
+data:James_Lascelles a :Man,
+        :Person .
+
+data:Male a :Male .
+
+data:Marion_Stein a :Person,
+        :Woman .
+

@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Donatus_Prince_of_Hesse a :Man ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Moritz_Landgrave_of_Hesse ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Floria_Franziska_von_Faber-Castell .
+
+data:Frederick_II_Landgrave_of_Hesse-Kassel a :Man .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man ;
+    :hasDeathYear 1968 .
+
+data:Mary_of_Great_Britain a :Woman .
+
+data:Floria_Franziska_von_Faber-Castell a :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Hubertus_von_Faber-Castell .
+
+data:Hubertus_von_Faber-Castell a :Man .
+
+data:Moritz_Landgrave_of_Hesse a :Man ;
+    :hasFather data:Philipp_Landgrave_of_Hesse .
+
+data:Philipp_Landgrave_of_Hesse a :Man ;
+    :hasDeathYear 1980 .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman ;
+    :hasBirthYear 1940 .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman ;\n    :hasRelation data:King_George_VI ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne ;\n    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man,\n        :Person .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Lady_Dorothy_Osborne a :Person,\n        :Woman ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1946 .\n\ndata:Patrick_Lord_Glamis a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman ;\n    :hasRelation data:King_George_VI ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne ;\n    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man,\n        :Person .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Lady_Dorothy_Osborne a :Person,\n        :Woman ;\n    :hasBirthYear 1888 ;\n    :hasDeathYear 1946 .\n\ndata:Patrick_Lord_Glamis a :Man,\n        :Person .\n\n"
+    }
+]

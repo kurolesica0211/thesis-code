@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderII a :Man,
+        :Person ;
+    :isFatherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich .
+
+data:ElizabethFeodorovna a :Person,
+        :Woman ;
+    :isSisterOf data:AlexandraFeodorovna .
+
+data:GeorgeIOfGreece a :Man,
+        :Person ;
+    :isFatherOf data:AlexandraGeorgievna .
+
+data:MariaAlexandrovna a :Person,
+        :Woman ;
+    :isMotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich .
+
+data:OlgaKonstantinovna a :Person,
+        :Woman ;
+    :isMotherOf data:AlexandraGeorgievna .
+
+data:AlexandraFeodorovna a :Person,
+        :Woman .
+
+data:AudreyEmery a :Person,
+        :Woman ;
+    :isMotherOf data:PaulRomanovskyIlyinsky .
+
+data:Male a :Sex .
+
+data:AlexandraGeorgievna a :Person,
+        :Woman ;
+    :isMotherOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+
+data:MariaPavlovna a :Person,
+        :Woman ;
+    :isSisterOf data:DmitriPavlovich .
+
+data:PaulRomanovskyIlyinsky a :Man,
+        :Person .
+
+data:SergeiAlexandrovich a :Man,
+        :Person ;
+    :isBrotherOf data:PaulAlexandrovich .
+
+data:DmitriPavlovich a :Man,
+        :Person ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1942 ;
+    :hasMarriageYear 1926 ;
+    :hasRelation data:AudreyEmery ;
+    :hasSex data:Male ;
+    :isFatherOf data:PaulRomanovskyIlyinsky .
+
+data:PaulAlexandrovich a :Man,
+        :Person ;
+    :isFatherOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+

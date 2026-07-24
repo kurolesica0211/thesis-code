@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:KingChristianIX a :Man,\n        :Person .\n\ndata:PrinceConstantine a :Man,\n        :Person ;\n    :isBrotherOf data:PrinceGeorgeOfGreeceAndDenmark .\n\ndata:PrinceValdemarOfDenmark a :Man,\n        :Person ;\n    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .\n\ndata:PrincessMarieBonaparte a :Person,\n        :Woman .\n\ndata:Evgenia a :Person,\n        :Woman .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:OlgaKonstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:Petros a :Man,\n        :Person .\n\ndata:PrinceGeorgeOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasChild data:Evgenia,\n        data:Petros ;\n    :hasDeathYear 1957 ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:OlgaKonstantinovnaOfRussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:KingChristianIX a :Man,\n        :Person .\n\ndata:PrinceConstantine a :Man,\n        :Person ;\n    :isBrotherOf data:PrinceGeorgeOfGreeceAndDenmark .\n\ndata:PrinceValdemarOfDenmark a :Man,\n        :Person ;\n    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .\n\ndata:PrincessMarieBonaparte a :Person,\n        :Woman .\n\ndata:Evgenia a :Person,\n        :Woman .\n\ndata:GeorgeIOfGreece a :Man,\n        :Person .\n\ndata:OlgaKonstantinovnaOfRussia a :Person,\n        :Woman .\n\ndata:Petros a :Man,\n        :Person .\n\ndata:PrinceGeorgeOfGreeceAndDenmark a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasChild data:Evgenia,\n        data:Petros ;\n    :hasDeathYear 1957 ;\n    :hasFather data:GeorgeIOfGreece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:OlgaKonstantinovnaOfRussia .\n\n"
+    }
+]

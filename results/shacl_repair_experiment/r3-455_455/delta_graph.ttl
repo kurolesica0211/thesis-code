@@ -1,0 +1,9 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Anne-Marie_of_Greece a :Ancestor ;
+    :isMotherOf data:Alexia_of_Greece_and_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor ;
+    :isFatherOf data:Alexia_of_Greece_and_Denmark .
+

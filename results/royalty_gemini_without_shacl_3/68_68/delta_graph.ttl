@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael a :Man,
+        :Person ;
+    :hasFather data:Charles_Augustus .
+
+data:Charles_Augustus a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Wilhelm_Ernst ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Elisabeth_of_Wangenheim-Winterstein a :Person,
+        :Woman ;
+    :hasFather data:Othmar_von_Wangenheim-Winterstein ;
+    :hasMother data:Maud_von_Tr%C3%BCtzschler .
+
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman .
+
+data:Maud_von_Tr%C3%BCtzschler a :Person,
+        :Woman .
+
+data:Othmar_von_Wangenheim-Winterstein a :Man,
+        :Person .
+
+data:Wilhelm_Ernst a :Man,
+        :Person .
+

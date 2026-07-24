@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_X_of_Denmark a :Man,\n        :Person ;\n    :isFatherOf data:Knud_of_Denmark .\n\ndata:Frederick_Walter_Pedersen a :Man,\n        :Person ;\n    :isFatherOf data:Sussie_Hjorhoy-Pedersen .\n\ndata:Georg_Terney a :Man,\n        :Person ;\n    :isFatherOf data:Inge_Terney .\n\ndata:Jenny_Kamilla_Hansen a :Person,\n        :Woman ;\n    :isMotherOf data:Inge_Terney .\n\ndata:Leopold_Rosanes_af_Rosenborg a :Man,\n        :Person ;\n    :isSonOf data:Christian_of_Rosenborg .\n\ndata:Ruth_Hjorhoy a :Person,\n        :Woman ;\n    :isMotherOf data:Sussie_Hjorhoy-Pedersen .\n\ndata:Elisabeth_of_Denmark a :Person,\n        :Woman .\n\ndata:Ingolf_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasMarriageYear 1968,\n        1998 ;\n    :hasRelation data:Inge_Terney,\n        data:Sussie_Hjorhoy-Pedersen ;\n    :hasSex data:Male .\n\ndata:Knud_of_Denmark a :Man,\n        :Person ;\n    :isFatherOf data:Christian_of_Rosenborg,\n        data:Elisabeth_of_Denmark,\n        data:Ingolf_of_Rosenborg .\n\ndata:Male a :Male,\n        :Sex .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person .\n\ndata:Inge_Terney a :Person,\n        :Woman .\n\ndata:Sussie_Hjorhoy-Pedersen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_X_of_Denmark a :Man,\n        :Person ;\n    :isFatherOf data:Knud_of_Denmark .\n\ndata:Frederick_Walter_Pedersen a :Man,\n        :Person ;\n    :isFatherOf data:Sussie_Hjorhoy-Pedersen .\n\ndata:Georg_Terney a :Man,\n        :Person ;\n    :isFatherOf data:Inge_Terney .\n\ndata:Jenny_Kamilla_Hansen a :Person,\n        :Woman ;\n    :isMotherOf data:Inge_Terney .\n\ndata:Leopold_Rosanes_af_Rosenborg a :Man,\n        :Person ;\n    :isSonOf data:Christian_of_Rosenborg .\n\ndata:Ruth_Hjorhoy a :Person,\n        :Woman ;\n    :isMotherOf data:Sussie_Hjorhoy-Pedersen .\n\ndata:Elisabeth_of_Denmark a :Person,\n        :Woman .\n\ndata:Ingolf_of_Rosenborg a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasMarriageYear 1968,\n        1998 ;\n    :hasRelation data:Inge_Terney,\n        data:Sussie_Hjorhoy-Pedersen ;\n    :hasSex data:Male .\n\ndata:Knud_of_Denmark a :Man,\n        :Person ;\n    :isFatherOf data:Christian_of_Rosenborg,\n        data:Elisabeth_of_Denmark,\n        data:Ingolf_of_Rosenborg .\n\ndata:Male a :Male,\n        :Sex .\n\ndata:Christian_of_Rosenborg a :Man,\n        :Person .\n\ndata:Inge_Terney a :Person,\n        :Woman .\n\ndata:Sussie_Hjorhoy-Pedersen a :Person,\n        :Woman .\n\n"
+    }
+]

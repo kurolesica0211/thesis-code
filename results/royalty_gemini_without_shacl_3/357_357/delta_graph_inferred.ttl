@@ -1,0 +1,228 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Wurttemberg a :Man,
+        :Person ;
+    :hasBrother data:Carl_of_Wurttemberg ;
+    :hasRelation data:Carl_of_Wurttemberg ;
+    :isBloodrelationOf data:Carl_of_Wurttemberg ;
+    :isBrotherOf data:Carl_of_Wurttemberg ;
+    :isSiblingOf data:Carl_of_Wurttemberg ;
+    :isUncleOf data:Jean_dOrleans .
+
+data:Chantal_of_Orleans a :Person,
+        :Woman ;
+    :hasRelation data:Chantal_of_Orleans ;
+    :hasSister data:Chantal_of_Orleans ;
+    :isAuntOf data:Jean_dOrleans ;
+    :isBloodrelationOf data:Chantal_of_Orleans ;
+    :isSiblingOf data:Chantal_of_Orleans ;
+    :isSisterOf data:Chantal_of_Orleans .
+
+data:Philomena_de_Tornos_y_Steinhart a :Person,
+        :Woman ;
+    :hasBirthYear 1977 ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :hasSister data:Philomena_de_Tornos_y_Steinhart ;
+    :isBloodrelationOf data:Philomena_de_Tornos_y_Steinhart ;
+    :isSiblingOf data:Philomena_de_Tornos_y_Steinhart ;
+    :isSisterOf data:Philomena_de_Tornos_y_Steinhart .
+
+data:Charles_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_X ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :isAncestorOf data:Jean_dOrleans ;
+    :isBloodrelationOf data:Charles_X ;
+    :isBrotherOf data:Charles_X ;
+    :isSiblingOf data:Charles_X .
+
+data:Louis_Philippe_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philippe_I_Duke_of_Orleans ;
+    :hasBrother data:Louis_Philippe_I ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :isAncestorOf data:Jean_dOrleans ;
+    :isBloodrelationOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_Philippe_I ;
+    :isSiblingOf data:Louis_Philippe_I .
+
+data:Louis_XIV a :Man,
+        :Person ;
+    :hasBrother data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :isBloodrelationOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :isBrotherOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :isSiblingOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:Jean_dOrleans ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :hasSon data:Jean_dOrleans ;
+    :isAncestorOf data:Jean_dOrleans ;
+    :isAuntOf data:Jean_dOrleans ;
+    :isBloodrelationOf data:Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Jean_dOrleans ;
+    :isParentOf data:Jean_dOrleans ;
+    :isSiblingOf data:Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Marie_Therese_of_Wurttemberg .
+
+data:Henri_VI_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henri_VI_Count_of_Paris ;
+    :hasChild data:Henri_Count_of_Paris_1933 ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :hasSon data:Henri_Count_of_Paris_1933 ;
+    :isAncestorOf data:Henri_Count_of_Paris_1933,
+        data:Jean_dOrleans ;
+    :isBloodrelationOf data:Henri_VI_Count_of_Paris ;
+    :isBrotherOf data:Henri_VI_Count_of_Paris ;
+    :isFatherOf data:Henri_Count_of_Paris_1933 ;
+    :isParentOf data:Henri_Count_of_Paris_1933 ;
+    :isSiblingOf data:Henri_VI_Count_of_Paris ;
+    :isUncleOf data:Henri_Count_of_Paris_1933 .
+
+data:Philippe_I_Duke_of_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :isAncestorOf data:Jean_dOrleans,
+        data:Louis_Philippe_I ;
+    :isBloodrelationOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :isBrotherOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :isSiblingOf data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans .
+
+data:Henri_Count_of_Paris_1933 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henri_VI_Count_of_Paris ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Henri_Count_of_Paris_1933 ;
+    :hasChild data:Jean_dOrleans ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_VI_Count_of_Paris ;
+    :hasParent data:Henri_VI_Count_of_Paris ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :hasSon data:Jean_dOrleans ;
+    :isAncestorOf data:Jean_dOrleans ;
+    :isBloodrelationOf data:Henri_Count_of_Paris_1933 ;
+    :isBrotherOf data:Henri_Count_of_Paris_1933 ;
+    :isChildOf data:Henri_VI_Count_of_Paris ;
+    :isFatherOf data:Jean_dOrleans ;
+    :isParentOf data:Jean_dOrleans ;
+    :isSiblingOf data:Henri_Count_of_Paris_1933 ;
+    :isSonOf data:Henri_VI_Count_of_Paris ;
+    :isUncleOf data:Jean_dOrleans .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Louis_Philippe_I,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Jean_dOrleans ;
+    :hasFather data:Henri_Count_of_Paris_1933 ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_Count_of_Paris_1933,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Charles_X,
+        data:Henri_Count_of_Paris_1933,
+        data:Henri_VI_Count_of_Paris,
+        data:Jean_dOrleans,
+        data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philippe_I_Duke_of_Orleans,
+        data:Philomena_de_Tornos_y_Steinhart ;
+    :isBloodrelationOf data:Jean_dOrleans ;
+    :isBrotherOf data:Jean_dOrleans ;
+    :isChildOf data:Henri_Count_of_Paris_1933,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Jean_dOrleans ;
+    :isSonOf data:Henri_Count_of_Paris_1933,
+        data:Marie_Therese_of_Wurttemberg .
+

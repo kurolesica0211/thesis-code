@@ -1,0 +1,305 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBrother data:Vladimir_Kirillovich_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia .
+
+data:Victoria_Romanovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kira_Georgievna ;
+    :hasDaughter data:Kira_Georgievna ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Victoria_Romanovna ;
+    :isAncestorOf data:Kira_Georgievna ;
+    :isAuntOf data:Kira_Georgievna ;
+    :isBloodrelationOf data:Victoria_Romanovna ;
+    :isMotherOf data:Kira_Georgievna ;
+    :isParentOf data:Kira_Georgievna ;
+    :isSiblingOf data:Victoria_Romanovna ;
+    :isSisterOf data:Victoria_Romanovna .
+
+data:Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Franz_Wilhelm_of_Prussia ;
+    :hasChild data:George_Mikhailovich_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSon data:George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna ;
+    :isBloodrelationOf data:Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Franz_Wilhelm_of_Prussia ;
+    :isFatherOf data:George_Mikhailovich_of_Russia ;
+    :isParentOf data:George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Franz_Wilhelm_of_Prussia ;
+    :isUncleOf data:George_Mikhailovich_of_Russia .
+
+data:Leonida_Bagration-Mukhrani a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Leonida_Bagration-Mukhrani ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Maria_Vladimirovna_of_Russia ;
+    :isAuntOf data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Leonida_Bagration-Mukhrani ;
+    :isMotherOf data:Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Leonida_Bagration-Mukhrani ;
+    :isSisterOf data:Leonida_Bagration-Mukhrani .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Vladimir_Kirillovich_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSon data:Vladimir_Kirillovich_of_Russia ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isBloodrelationOf data:Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Vladimir_Kirillovich_of_Russia ;
+    :isParentOf data:Vladimir_Kirillovich_of_Russia ;
+    :isSiblingOf data:Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Vladimir_Kirillovich_of_Russia .
+
+data:Victoria_Fyodorovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Vladimir_Kirillovich_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Victoria_Fyodorovna ;
+    :hasSon data:Vladimir_Kirillovich_of_Russia ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isAuntOf data:Vladimir_Kirillovich_of_Russia ;
+    :isBloodrelationOf data:Victoria_Fyodorovna ;
+    :isMotherOf data:Vladimir_Kirillovich_of_Russia ;
+    :isParentOf data:Vladimir_Kirillovich_of_Russia ;
+    :isSiblingOf data:Victoria_Fyodorovna ;
+    :isSisterOf data:Victoria_Fyodorovna .
+
+data:Kira_Georgievna a :Person,
+        :Woman ;
+    :hasAncestor data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasFather data:George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna ;
+    :hasParent data:George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Kira_Georgievna ;
+    :isBloodrelationOf data:Kira_Georgievna ;
+    :isChildOf data:George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna ;
+    :isDaughterOf data:George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna ;
+    :isSiblingOf data:Kira_Georgievna ;
+    :isSisterOf data:Kira_Georgievna .
+
+data:George_Mikhailovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Franz_Wilhelm_of_Prussia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasBrother data:George_Mikhailovich_of_Russia ;
+    :hasChild data:Kira_Georgievna ;
+    :hasDaughter data:Kira_Georgievna ;
+    :hasFather data:Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Maria_Vladimirovna_of_Russia ;
+    :hasParent data:Franz_Wilhelm_of_Prussia,
+        data:Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isAncestorOf data:Kira_Georgievna ;
+    :isBloodrelationOf data:George_Mikhailovich_of_Russia ;
+    :isBrotherOf data:George_Mikhailovich_of_Russia ;
+    :isChildOf data:Franz_Wilhelm_of_Prussia,
+        data:Maria_Vladimirovna_of_Russia ;
+    :isFatherOf data:Kira_Georgievna ;
+    :isParentOf data:Kira_Georgievna ;
+    :isSiblingOf data:George_Mikhailovich_of_Russia ;
+    :isSonOf data:Franz_Wilhelm_of_Prussia,
+        data:Maria_Vladimirovna_of_Russia ;
+    :isUncleOf data:Kira_Georgievna .
+
+data:Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Victoria_Fyodorovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasBirthYear 1953 ;
+    :hasChild data:George_Mikhailovich_of_Russia ;
+    :hasFather data:Vladimir_Kirillovich_of_Russia ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Leonida_Bagration-Mukhrani ;
+    :hasParent data:Leonida_Bagration-Mukhrani,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Maria_Vladimirovna_of_Russia ;
+    :hasSon data:George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna ;
+    :isAuntOf data:George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Maria_Vladimirovna_of_Russia ;
+    :isChildOf data:Leonida_Bagration-Mukhrani,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isDaughterOf data:Leonida_Bagration-Mukhrani,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isMotherOf data:George_Mikhailovich_of_Russia ;
+    :isParentOf data:George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Maria_Vladimirovna_of_Russia .
+
+data:Vladimir_Kirillovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Fyodorovna ;
+    :hasBrother data:Vladimir_Kirillovich_of_Russia ;
+    :hasChild data:Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Maria_Vladimirovna_of_Russia ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Fyodorovna ;
+    :hasParent data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Fyodorovna ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia,
+        data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Kira_Kirillovna_of_Russia,
+        data:Kirill_Vladimirovich_of_Russia,
+        data:Leonida_Bagration-Mukhrani,
+        data:Maria_Vladimirovna_of_Russia,
+        data:Victoria_Fyodorovna,
+        data:Victoria_Romanovna,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:George_Mikhailovich_of_Russia,
+        data:Kira_Georgievna,
+        data:Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isBrotherOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isChildOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Fyodorovna ;
+    :isFatherOf data:Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia,
+        data:Vladimir_Kirillovich_of_Russia ;
+    :isSonOf data:Kirill_Vladimirovich_of_Russia,
+        data:Victoria_Fyodorovna ;
+    :isUncleOf data:Maria_Vladimirovna_of_Russia .
+

@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :alsoKnownAs "Wolfgang Moritz Prinz von Hessen"^^xsd:string ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Philipp_of_Hesse .
+
+data:Frederick_Charles_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1940 .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 .
+
+data:Marie_Alexandra_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Marie_Louise_of_Hanover .
+
+data:Marie_Louise_of_Hanover a :Person,
+        :Woman .
+
+data:Maximilian_of_Baden a :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Man,
+        :Person .
+

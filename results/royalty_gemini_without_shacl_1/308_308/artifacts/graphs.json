@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Dmitri_Pavlovich_of_Russia ;\n    :hasMarriageYear 1948,\n        1953 ;\n    :hasMother data:Audrey_Emery ;\n    :hasRelation data:Angelica_Philippa_Kauffmann,\n        data:Mary_Evelyn_Prince .\n\ndata:Angelica_Philippa_Kauffmann a :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich_of_Russia a :Man,\n        :Person ;\n    :hasDeathYear 1942 ;\n    :hasMarriageYear 1926 ;\n    :hasRelation data:Audrey_Emery .\n\ndata:Mary_Evelyn_Prince a :Person,\n        :Woman .\n\ndata:Audrey_Emery a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Dmitri_Pavlovich_of_Russia ;\n    :hasMarriageYear 1948,\n        1953 ;\n    :hasMother data:Audrey_Emery ;\n    :hasRelation data:Angelica_Philippa_Kauffmann,\n        data:Mary_Evelyn_Prince .\n\ndata:Angelica_Philippa_Kauffmann a :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich_of_Russia a :Man,\n        :Person ;\n    :hasDeathYear 1942 ;\n    :hasMarriageYear 1926 ;\n    :hasRelation data:Audrey_Emery .\n\ndata:Mary_Evelyn_Prince a :Person,\n        :Woman .\n\ndata:Audrey_Emery a :Person,\n        :Woman .\n\n"
+    }
+]

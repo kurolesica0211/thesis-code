@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :alsoKnownAs \"Albert Frederick Arthur George\"^^xsd:string,\n        \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasBrother data:EdwardVIII,\n        data:PrinceGeorgeDukeOfKent,\n        data:PrinceHenry ;\n    :hasDaughter data:ElizabethII,\n        data:Margaret ;\n    :hasDeathYear 1952 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:ElizabethBowes-Lyon ;\n    :knownAs \"George VI\"^^xsd:string .\n\ndata:EdwardVIII a :Man,\n        :Person ;\n    :hasRelation data:WallisSimpson .\n\ndata:ElizabethII a :Person,\n        :Woman ;\n    :hasMother data:ElizabethBowes-Lyon .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :hasMother data:ElizabethBowes-Lyon .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person .\n\ndata:PrinceHenry a :Man,\n        :Person .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:WallisSimpson a :Person,\n        :Woman .\n\ndata:ElizabethBowes-Lyon a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :alsoKnownAs \"Albert Frederick Arthur George\"^^xsd:string,\n        \"Bertie\"^^xsd:string ;\n    :hasBirthYear 1895 ;\n    :hasBrother data:EdwardVIII,\n        data:PrinceGeorgeDukeOfKent,\n        data:PrinceHenry ;\n    :hasDaughter data:ElizabethII,\n        data:Margaret ;\n    :hasDeathYear 1952 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:ElizabethBowes-Lyon ;\n    :knownAs \"George VI\"^^xsd:string .\n\ndata:EdwardVIII a :Man,\n        :Person ;\n    :hasRelation data:WallisSimpson .\n\ndata:ElizabethII a :Person,\n        :Woman ;\n    :hasMother data:ElizabethBowes-Lyon .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:Margaret a :Person,\n        :Woman ;\n    :hasMother data:ElizabethBowes-Lyon .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person .\n\ndata:PrinceHenry a :Man,\n        :Person .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:WallisSimpson a :Person,\n        :Woman .\n\ndata:ElizabethBowes-Lyon a :Person,\n        :Woman .\n\n"
+    }
+]

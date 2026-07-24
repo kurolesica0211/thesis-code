@@ -1,0 +1,24 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Paul_Frederick_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Paul_Frederick_the_Elder_of_Mecklenburg ;
+    :hasMother data:Marie_of_Windisch-Graetz ;
+    :hasSex data:Male .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Marie_of_Windisch-Graetz a :Person,
+        :Woman .
+
+data:Paul_Frederick_the_Elder_of_Mecklenburg a :Man,
+        :Person .
+

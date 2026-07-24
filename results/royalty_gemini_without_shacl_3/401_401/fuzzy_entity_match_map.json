@@ -1,0 +1,183 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/401_401",
+  "text_file": "Q663875.txt",
+  "text_key": "Q663875",
+  "article": "https://en.wikipedia.org/wiki/Margareta_of_Romania",
+  "article_key": "Margareta of Romania",
+  "main_entity": {
+    "uri": "http://example.com/data#Margareta_of_Romania",
+    "qid": "Q663875",
+    "label": "Margareta of Romania"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Margareta_of_Romania",
+      "qid": "Q663875",
+      "label": "Margareta of Romania",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Michael_I_of_Romania",
+      "qid": "Q930013",
+      "label": "Michael I of Romania",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Queen_Anne_of_Romania",
+      "qid": "Q563765",
+      "label": "Queen Anne of Romania",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Helen_of_Greece_and_Denmark",
+      "qid": "Q162177",
+      "label": "Helen of Greece and Denmark",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Elena_of_Romania",
+      "qid": "Q2423576",
+      "label": "Princess Elena of Romania",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/King_Michael_I",
+      "extracted_local_name": "King_Michael_I",
+      "embedding_text": "King Michael I",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Michael_I_of_Romania",
+      "ground_truth_qid": "Q930013",
+      "ground_truth_label": "Michael I of Romania",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Michael I",
+      "best_candidate_label": "Michael I of Romania",
+      "best_candidate_qid": "Q930013",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margareta_of_Romania",
+      "extracted_local_name": "Margareta_of_Romania",
+      "embedding_text": "Margareta of Romania",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Margareta_of_Romania",
+      "ground_truth_qid": "Q663875",
+      "ground_truth_label": "Margareta of Romania",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margareta of Romania",
+      "best_candidate_label": "Margareta of Romania",
+      "best_candidate_qid": "Q663875",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Anne_of_Romania",
+      "extracted_local_name": "Queen_Anne_of_Romania",
+      "embedding_text": "Queen Anne of Romania",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Queen_Anne_of_Romania",
+      "ground_truth_qid": "Q563765",
+      "ground_truth_label": "Queen Anne of Romania",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Anne of Romania",
+      "best_candidate_label": "Queen Anne of Romania",
+      "best_candidate_qid": "Q563765",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Elena",
+      "extracted_local_name": "Princess_Elena",
+      "embedding_text": "Princess Elena",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.875,
+      "ground_truth_uri": "http://example.com/data#Princess_Elena_of_Romania",
+      "ground_truth_qid": "Q2423576",
+      "ground_truth_label": "Princess Elena of Romania",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Princess Elena",
+      "best_candidate_label": "Princess Elena of Romania",
+      "best_candidate_qid": "Q2423576",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.875
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Irina",
+      "extracted_local_name": "Princess_Irina",
+      "embedding_text": "Princess Irina",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helen of Greece and Denmark",
+      "best_candidate_label": "Helen of Greece and Denmark",
+      "best_candidate_qid": "Q162177",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.24390243902439024
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Maria",
+      "extracted_local_name": "Princess_Maria",
+      "embedding_text": "Princess Maria",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helen of Greece and Denmark",
+      "best_candidate_label": "Helen of Greece and Denmark",
+      "best_candidate_qid": "Q162177",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34146341463414637
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Sophie",
+      "extracted_local_name": "Princess_Sophie",
+      "embedding_text": "Princess Sophie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helen of Greece and Denmark",
+      "best_candidate_label": "Helen of Greece and Denmark",
+      "best_candidate_qid": "Q162177",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.23809523809523808
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 4,
+    "entities_unmatched": 3
+  }
+}

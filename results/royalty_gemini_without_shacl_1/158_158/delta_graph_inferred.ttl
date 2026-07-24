@@ -1,0 +1,290 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ElizabethFeodorovna a :Person,
+        :Woman ;
+    :hasRelation data:ElizabethFeodorovna ;
+    :hasSister data:ElizabethFeodorovna ;
+    :isBloodrelationOf data:ElizabethFeodorovna ;
+    :isSiblingOf data:ElizabethFeodorovna ;
+    :isSisterOf data:ElizabethFeodorovna .
+
+data:SergeiAlexandrovich a :Man,
+        :Person ;
+    :hasBrother data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :isBloodrelationOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isBrotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isSiblingOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isUncleOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+
+data:SergeiPutyatin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:SergeiPutyatin ;
+    :hasChild data:RomanPutyatin ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSon data:RomanPutyatin ;
+    :isAncestorOf data:RomanPutyatin ;
+    :isBloodrelationOf data:SergeiPutyatin ;
+    :isBrotherOf data:SergeiPutyatin ;
+    :isFatherOf data:RomanPutyatin ;
+    :isParentOf data:RomanPutyatin ;
+    :isSiblingOf data:SergeiPutyatin ;
+    :isUncleOf data:RomanPutyatin .
+
+data:WilhelmOfSweden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmOfSweden ;
+    :hasChild data:LennartBernadotte ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSon data:LennartBernadotte ;
+    :isAncestorOf data:LennartBernadotte ;
+    :isBloodrelationOf data:WilhelmOfSweden ;
+    :isBrotherOf data:WilhelmOfSweden ;
+    :isFatherOf data:LennartBernadotte ;
+    :isParentOf data:LennartBernadotte ;
+    :isSiblingOf data:WilhelmOfSweden ;
+    :isUncleOf data:LennartBernadotte .
+
+data:AlexandraGeorgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :hasDaughter data:MariaPavlovna ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSister data:AlexandraGeorgievna ;
+    :hasSon data:DmitriPavlovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:RomanPutyatin ;
+    :isAuntOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isBloodrelationOf data:AlexandraGeorgievna ;
+    :isMotherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isParentOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSiblingOf data:AlexandraGeorgievna ;
+    :isSisterOf data:AlexandraGeorgievna .
+
+data:PaulAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :hasChild data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :hasDaughter data:MariaPavlovna ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSon data:DmitriPavlovich ;
+    :isAncestorOf data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:RomanPutyatin ;
+    :isBloodrelationOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isBrotherOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isFatherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isParentOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSiblingOf data:PaulAlexandrovich,
+        data:SergeiAlexandrovich ;
+    :isUncleOf data:DmitriPavlovich,
+        data:MariaPavlovna .
+
+data:DmitriPavlovich a :Man,
+        :Person ;
+    :hasAncestor data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasBrother data:DmitriPavlovich ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMother data:AlexandraGeorgievna ;
+    :hasParent data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSister data:MariaPavlovna ;
+    :isBloodrelationOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isBrotherOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isChildOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isSiblingOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSonOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isUncleOf data:LennartBernadotte,
+        data:RomanPutyatin .
+
+data:LennartBernadotte a :Man,
+        :Person ;
+    :hasAncestor data:AlexandraGeorgievna,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:WilhelmOfSweden ;
+    :hasBrother data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :hasFather data:WilhelmOfSweden ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:WilhelmOfSweden ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :isBloodrelationOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isBrotherOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isChildOf data:MariaPavlovna,
+        data:WilhelmOfSweden ;
+    :isSiblingOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isSonOf data:MariaPavlovna,
+        data:WilhelmOfSweden .
+
+data:RomanPutyatin a :Man,
+        :Person ;
+    :hasAncestor data:AlexandraGeorgievna,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:SergeiPutyatin ;
+    :hasBrother data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :hasFather data:SergeiPutyatin ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:SergeiPutyatin ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :isBloodrelationOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isBrotherOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isChildOf data:MariaPavlovna,
+        data:SergeiPutyatin ;
+    :isSiblingOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isSonOf data:MariaPavlovna,
+        data:SergeiPutyatin .
+
+data:MariaPavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:DmitriPavlovich ;
+    :hasChild data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :hasDeathYear 1958 ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:AlexandraGeorgievna ;
+    :hasParent data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :hasRelation data:AlexandraGeorgievna,
+        data:DmitriPavlovich,
+        data:LennartBernadotte,
+        data:MariaPavlovna,
+        data:PaulAlexandrovich,
+        data:RomanPutyatin,
+        data:SergeiAlexandrovich,
+        data:SergeiPutyatin,
+        data:WilhelmOfSweden ;
+    :hasSister data:MariaPavlovna ;
+    :hasSon data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isAncestorOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isAuntOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isBloodrelationOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isChildOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isDaughterOf data:AlexandraGeorgievna,
+        data:PaulAlexandrovich ;
+    :isMotherOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isParentOf data:LennartBernadotte,
+        data:RomanPutyatin ;
+    :isSiblingOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :isSisterOf data:DmitriPavlovich,
+        data:MariaPavlovna ;
+    :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+

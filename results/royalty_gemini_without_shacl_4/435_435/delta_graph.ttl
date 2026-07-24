@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear "1915"^^xsd:positiveInteger ;
+    :hasDeathYear "1980"^^xsd:positiveInteger ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Cecilie_sister a :Person,
+        :Woman ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Frederick a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Hubertus a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Louis_Ferdinand a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_brother a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+

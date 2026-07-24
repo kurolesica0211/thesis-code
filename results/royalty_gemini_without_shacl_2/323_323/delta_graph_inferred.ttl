@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickAugustusII a :Ancestor,
+        :Man ;
+    :hasBrother data:FrederickAugustusII ;
+    :hasRelation data:Christian,
+        data:FrederickAugustusII,
+        data:Nikolaus ;
+    :isAncestorOf data:Christian ;
+    :isBloodrelationOf data:FrederickAugustusII ;
+    :isBrotherOf data:FrederickAugustusII ;
+    :isSiblingOf data:FrederickAugustusII .
+
+data:Nikolaus a :Ancestor,
+        :Man ;
+    :hasBrother data:Nikolaus ;
+    :hasChild data:Christian ;
+    :hasDeathYear "1970-04-03T00:00:00"^^xsd:dateTime ;
+    :hasRelation data:Christian,
+        data:FrederickAugustusII,
+        data:Nikolaus ;
+    :hasSon data:Christian ;
+    :isAncestorOf data:Christian ;
+    :isBloodrelationOf data:Nikolaus ;
+    :isBrotherOf data:Nikolaus ;
+    :isFatherOf data:Christian ;
+    :isParentOf data:Christian ;
+    :isSiblingOf data:Nikolaus ;
+    :isUncleOf data:Christian .
+
+data:Christian a :Man ;
+    :hasAncestor data:FrederickAugustusII,
+        data:Nikolaus ;
+    :hasBrother data:Christian ;
+    :hasFather data:Nikolaus ;
+    :hasParent data:Nikolaus ;
+    :hasRelation data:Christian,
+        data:FrederickAugustusII,
+        data:Nikolaus ;
+    :isBloodrelationOf data:Christian ;
+    :isBrotherOf data:Christian ;
+    :isChildOf data:Nikolaus ;
+    :isSiblingOf data:Christian ;
+    :isSonOf data:Nikolaus .
+

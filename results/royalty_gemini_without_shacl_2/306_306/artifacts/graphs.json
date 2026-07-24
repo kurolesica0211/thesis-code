@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivy_Lascelles a :Person,\n        :Woman ;\n    :hasBirthYear 2018 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Annika_Reed .\n\ndata:Kit_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 2023 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Annika_Reed .\n\ndata:Leo_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 2008 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Laleh_Yeganegy .\n\ndata:David_Lascelles a :Man,\n        :Person .\n\ndata:Laleh_Yeganegy a :Person,\n        :Woman .\n\ndata:Margaret_Lascelles a :Person,\n        :Woman .\n\ndata:Annika_Reed a :Person,\n        :Woman .\n\ndata:Alexander_Edgar_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:David_Lascelles ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Margaret_Lascelles .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ivy_Lascelles a :Person,\n        :Woman ;\n    :hasBirthYear 2018 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Annika_Reed .\n\ndata:Kit_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 2023 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Annika_Reed .\n\ndata:Leo_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 2008 ;\n    :hasFather data:Alexander_Edgar_Lascelles ;\n    :hasMother data:Laleh_Yeganegy .\n\ndata:David_Lascelles a :Man,\n        :Person .\n\ndata:Laleh_Yeganegy a :Person,\n        :Woman .\n\ndata:Margaret_Lascelles a :Person,\n        :Woman .\n\ndata:Annika_Reed a :Person,\n        :Woman .\n\ndata:Alexander_Edgar_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1980 ;\n    :hasFather data:David_Lascelles ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Margaret_Lascelles .\n\n"
+    }
+]

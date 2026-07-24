@@ -1,0 +1,133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albrecht_of_Wurttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Albrecht_of_Wurttemberg ;
+    :hasChild data:Philipp_Albrecht_of_Wurttemberg ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasSon data:Philipp_Albrecht_of_Wurttemberg ;
+    :isAncestorOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isBloodrelationOf data:Albrecht_of_Wurttemberg ;
+    :isBrotherOf data:Albrecht_of_Wurttemberg ;
+    :isFatherOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isParentOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isSiblingOf data:Albrecht_of_Wurttemberg ;
+    :isUncleOf data:Philipp_Albrecht_of_Wurttemberg .
+
+data:Margarete_Sophie_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Philipp_Albrecht_of_Wurttemberg ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasSister data:Margarete_Sophie_of_Austria ;
+    :hasSon data:Philipp_Albrecht_of_Wurttemberg ;
+    :isAncestorOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isAuntOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isBloodrelationOf data:Margarete_Sophie_of_Austria ;
+    :isMotherOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isParentOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isSiblingOf data:Margarete_Sophie_of_Austria ;
+    :isSisterOf data:Margarete_Sophie_of_Austria .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasDaughter data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasSister data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isAuntOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isBloodrelationOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isParentOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isSiblingOf data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies .
+
+data:Peter_Ferdinand a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Peter_Ferdinand ;
+    :hasChild data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasDaughter data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isAncestorOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isBloodrelationOf data:Peter_Ferdinand ;
+    :isBrotherOf data:Peter_Ferdinand ;
+    :isFatherOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isParentOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isSiblingOf data:Peter_Ferdinand ;
+    :isUncleOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia .
+
+data:Philipp_Albrecht_of_Wurttemberg a :Man,
+        :Person ;
+    :hasAncestor data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :hasBrother data:Philipp_Albrecht_of_Wurttemberg ;
+    :hasFather data:Albrecht_of_Wurttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria ;
+    :hasParent data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isBloodrelationOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isBrotherOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isChildOf data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria ;
+    :isSiblingOf data:Philipp_Albrecht_of_Wurttemberg ;
+    :isSonOf data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria .
+
+data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia a :Person,
+        :Woman ;
+    :hasAncestor data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Peter_Ferdinand ;
+    :hasMarriageYear 1928 ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand ;
+    :hasRelation data:Albrecht_of_Wurttemberg,
+        data:Margarete_Sophie_of_Austria,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand,
+        data:Philipp_Albrecht_of_Wurttemberg,
+        data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :hasSister data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isBloodrelationOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isChildOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand ;
+    :isDaughterOf data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Peter_Ferdinand ;
+    :isSiblingOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia ;
+    :isSisterOf data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia .
+

@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adam_Karol_Czartoryski a :Man ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Dolores_of_Bourbon-Two_Sicilies .
+
+data:Carlos_Ch%C3%ADas_Osorio a :Man .
+
+data:Juan_Carlos_I_of_Spain a :Man ;
+    :hasFather data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Ludwik_Piotr_Czartoryski a :Man ;
+    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
+    :hasMother data:Dolores_of_Bourbon-Two_Sicilies .
+
+data:Adam_Ludwik_Czartoryski a :Man .
+
+data:Esperanza_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans .
+
+data:Maria_Ludwika_Krasi%C5%84ska a :Woman .
+
+data:Augustyn_J%C3%B3zef_Czartoryski a :Man ;
+    :hasFather data:Adam_Ludwik_Czartoryski ;
+    :hasMother data:Maria_Ludwika_Krasi%C5%84ska .
+
+data:Dolores_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans ;
+    :hasSister data:Esperanza_of_Bourbon-Two_Sicilies,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orl%C3%A9ans .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man .
+
+data:Louise_of_Orl%C3%A9ans a :Woman .
+

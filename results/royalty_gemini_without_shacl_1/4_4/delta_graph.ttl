@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid_of_Sweden .
+
+data:Benedikte_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid_of_Sweden .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Frederik_IX ;
+    :hasMarriageYear 1967 ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasRelation data:Henrik_of_Denmark ;
+    :hasSon data:Frederik_X,
+        data:Joachim_of_Denmark .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasFather data:Henrik_of_Denmark .
+
+data:Gustaf_VI_Adolf a :Man,
+        :Person .
+
+data:Joachim_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Henrik_of_Denmark .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasFather data:Christian_X .
+
+data:Henrik_of_Denmark a :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasFather data:Gustaf_VI_Adolf .
+

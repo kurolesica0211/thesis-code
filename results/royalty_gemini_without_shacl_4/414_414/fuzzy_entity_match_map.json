@@ -1,0 +1,154 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/414_414",
+  "text_file": "Q704310.txt",
+  "text_key": "Q704310",
+  "article": "https://en.wikipedia.org/wiki/Infante_Alfonso_of_Spain",
+  "article_key": "Infante Alfonso of Spain",
+  "main_entity": {
+    "uri": "http://example.com/data#Infante_Alfonso_of_Spain",
+    "qid": "Q704310",
+    "label": "Infante Alfonso of Spain"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Infante_Alfonso_of_Spain",
+      "qid": "Q704310",
+      "label": "Infante Alfonso of Spain",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+      "qid": "Q235128",
+      "label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
+      "qid": "Q313857",
+      "label": "Infante Juan, Count of Barcelona",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "qid": "Q19943",
+      "label": "Juan Carlos I of Spain",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_María_Cristina_of_Spain",
+      "qid": "Q2412713",
+      "label": "Infanta María Cristina of Spain",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_XIII_of_Spain",
+      "extracted_local_name": "Alfonso_XIII_of_Spain",
+      "embedding_text": "Alfonso XIII of Spain",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alfonso_XIII",
+      "ground_truth_qid": "Q18363",
+      "ground_truth_label": "Alfonso XIII",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso XIII of Spain",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I_of_Spain",
+      "extracted_local_name": "Juan_Carlos_I_of_Spain",
+      "embedding_text": "Juan Carlos I of Spain",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "ground_truth_qid": "Q19943",
+      "ground_truth_label": "Juan Carlos I of Spain",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I of Spain",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Count_of_Barcelona",
+      "extracted_local_name": "Juan_Count_of_Barcelona",
+      "embedding_text": "Juan Count of Barcelona",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8448275862068966,
+      "ground_truth_uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
+      "ground_truth_qid": "Q313857",
+      "ground_truth_label": "Infante Juan, Count of Barcelona",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Juan- Count of Barcelona",
+      "best_candidate_label": "Infante Juan, Count of Barcelona",
+      "best_candidate_qid": "Q313857",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8448275862068966
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alfonso_of_Spain",
+      "extracted_local_name": "Alfonso_of_Spain",
+      "embedding_text": "Alfonso of Spain",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8181818181818181,
+      "ground_truth_uri": "http://example.com/data#Infante_Alfonso_of_Spain",
+      "ground_truth_qid": "Q704310",
+      "ground_truth_label": "Infante Alfonso of Spain",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Alfonso of Spain",
+      "best_candidate_label": "Infante Alfonso of Spain",
+      "best_candidate_qid": "Q704310",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8181818181818181
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Mercedes_of_Bourbon_Two_Sicilies",
+      "extracted_local_name": "Maria_Mercedes_of_Bourbon_Two_Sicilies",
+      "embedding_text": "Maria Mercedes of Bourbon Two Sicilies",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7931818181818182,
+      "ground_truth_uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+      "ground_truth_qid": "Q235128",
+      "ground_truth_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria de las Mercedes of Bourbon-Two Sicilies",
+      "best_candidate_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "best_candidate_qid": "Q235128",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7931818181818182
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 5,
+    "entities_unmatched": 0
+  }
+}

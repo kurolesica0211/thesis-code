@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexMapelliMozzi a :Man,\n        :Person ;\n    :isFatherOf data:EdoardoMapelliMozzi .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person ;\n    :isFatherOf data:PrincessBeatrice .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:PrincessEugenie a :Person,\n        :Woman ;\n    :isSisterOf data:PrincessBeatrice .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman ;\n    :isMotherOf data:PrincessBeatrice .\n\ndata:AthenaElizabethRose a :Person,\n        :Woman .\n\ndata:EdoardoMapelliMozzi a :Man,\n        :Person ;\n    :isFatherOf data:AthenaElizabethRose,\n        data:SiennaElizabethMapelliMozzi .\n\ndata:SiennaElizabethMapelliMozzi a :Person,\n        :Woman .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasMarriageYear data:EdoardoMapelliMozzi,\n        2020 ;\n    :isMotherOf data:AthenaElizabethRose,\n        data:SiennaElizabethMapelliMozzi .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlexMapelliMozzi a :Man,\n        :Person ;\n    :isFatherOf data:EdoardoMapelliMozzi .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person ;\n    :isFatherOf data:PrincessBeatrice .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:PrincePhilip a :Man,\n        :Person .\n\ndata:PrincessEugenie a :Person,\n        :Woman ;\n    :isSisterOf data:PrincessBeatrice .\n\ndata:QueenElizabethII a :Person,\n        :Woman .\n\ndata:SarahFerguson a :Person,\n        :Woman ;\n    :isMotherOf data:PrincessBeatrice .\n\ndata:AthenaElizabethRose a :Person,\n        :Woman .\n\ndata:EdoardoMapelliMozzi a :Man,\n        :Person ;\n    :isFatherOf data:AthenaElizabethRose,\n        data:SiennaElizabethMapelliMozzi .\n\ndata:SiennaElizabethMapelliMozzi a :Person,\n        :Woman .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasMarriageYear data:EdoardoMapelliMozzi,\n        2020 ;\n    :isMotherOf data:AthenaElizabethRose,\n        data:SiennaElizabethMapelliMozzi .\n\n"
+    }
+]

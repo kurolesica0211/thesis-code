@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaretRhodes a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Margaret Elphinstone\"^^xsd:string ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2016 ;\n    :hasMarriageYear 1950 ;\n    :hasRelation data:DenysGravenorRhodes ;\n    :isDaughterOf data:LadyMaryBowesLyon,\n        data:LordElphinstone16th .\n\ndata:DenysGravenorRhodes a :Man,\n        :Person .\n\ndata:LadyMaryBowesLyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:LordElphinstone16th a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:MargaretRhodes a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Margaret Elphinstone\"^^xsd:string ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2016 ;\n    :hasMarriageYear 1950 ;\n    :hasRelation data:DenysGravenorRhodes ;\n    :isDaughterOf data:LadyMaryBowesLyon,\n        data:LordElphinstone16th .\n\ndata:DenysGravenorRhodes a :Man,\n        :Person .\n\ndata:LadyMaryBowesLyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:LordElphinstone16th a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

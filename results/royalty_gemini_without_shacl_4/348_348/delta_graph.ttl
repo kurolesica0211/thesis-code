@@ -1,0 +1,72 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CarlosEnrique a :Man,
+        :Person ;
+    :isChildOf data:CarlosDukeOfParma .
+
+data:GloriaIrene a :Person,
+        :Woman ;
+    :isChildOf data:PrinceJaimeBernardoOfBourbonParma .
+
+data:PieterVanVollenhoven a :Man,
+        :Person .
+
+data:PrinceJean a :Man,
+        :Person .
+
+data:PrinceRemy a :Man,
+        :Person .
+
+data:PrincessBeatrix a :Person,
+        :Woman .
+
+data:PrincessChantal a :Person,
+        :Woman .
+
+data:PrincessElisabeth a :Person,
+        :Woman .
+
+data:PrincessJoan a :Person,
+        :Woman .
+
+data:PrincessMargriet a :Person,
+        :Woman .
+
+data:PrincessMariaPia a :Person,
+        :Woman .
+
+data:PrincessMarina a :Person,
+        :Woman .
+
+data:PrincessViktoria a :Person,
+        :Woman .
+
+data:PrincessVirginia a :Person,
+        :Woman .
+
+data:CarlosHugoDukeOfParma a :Man,
+        :Person .
+
+data:PrinceJaimeBernardoOfBourbonParma a :Man,
+        :Person ;
+    :hasBirthYear "1972"^^xsd:positiveInteger ;
+    :hasFather data:CarlosHugoDukeOfParma ;
+    :hasMother data:PrincessIreneOfTheNetherlands ;
+    :isSiblingOf data:CarlosDukeOfParma,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
+
+data:PrincessCarolina a :Person,
+        :Woman .
+
+data:PrincessIreneOfTheNetherlands a :Person,
+        :Woman .
+
+data:PrincessMargarita a :Person,
+        :Woman .
+
+data:CarlosDukeOfParma a :Man,
+        :Person .
+

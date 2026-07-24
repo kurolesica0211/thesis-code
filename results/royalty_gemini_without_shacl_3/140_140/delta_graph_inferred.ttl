@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_II_of_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_II_of_Two_Sicilies ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isAncestorOf data:Ferdinand_Pius ;
+    :isBloodrelationOf data:Ferdinand_II_of_Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_II_of_Two_Sicilies ;
+    :isSiblingOf data:Ferdinand_II_of_Two_Sicilies .
+
+data:Alfonso_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Caserta ;
+    :hasChild data:Ferdinand_Pius ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasSon data:Ferdinand_Pius ;
+    :isAncestorOf data:Ferdinand_Pius ;
+    :isBloodrelationOf data:Alfonso_Count_of_Caserta ;
+    :isBrotherOf data:Alfonso_Count_of_Caserta ;
+    :isFatherOf data:Ferdinand_Pius ;
+    :isParentOf data:Ferdinand_Pius ;
+    :isSiblingOf data:Alfonso_Count_of_Caserta ;
+    :isUncleOf data:Ferdinand_Pius .
+
+data:Ludwig_III_of_Bavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ludwig_III_of_Bavaria ;
+    :hasChild data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasDaughter data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isAncestorOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isBloodrelationOf data:Ludwig_III_of_Bavaria ;
+    :isBrotherOf data:Ludwig_III_of_Bavaria ;
+    :isFatherOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isParentOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Ludwig_III_of_Bavaria ;
+    :isUncleOf data:Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Maria_Antonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ferdinand_Pius ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasSister data:Maria_Antonietta ;
+    :hasSon data:Ferdinand_Pius ;
+    :isAncestorOf data:Ferdinand_Pius ;
+    :isAuntOf data:Ferdinand_Pius ;
+    :isBloodrelationOf data:Maria_Antonietta ;
+    :isMotherOf data:Ferdinand_Pius ;
+    :isParentOf data:Ferdinand_Pius ;
+    :isSiblingOf data:Maria_Antonietta ;
+    :isSisterOf data:Maria_Antonietta .
+
+data:Maria_Ludwiga_Theresia_of_Bavaria a :Person,
+        :Woman ;
+    :hasAncestor data:Ludwig_III_of_Bavaria ;
+    :hasFather data:Ludwig_III_of_Bavaria ;
+    :hasParent data:Ludwig_III_of_Bavaria ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasSister data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isBloodrelationOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isChildOf data:Ludwig_III_of_Bavaria ;
+    :isDaughterOf data:Ludwig_III_of_Bavaria ;
+    :isSiblingOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSisterOf data:Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Ferdinand_Pius a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Maria_Antonietta ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Ferdinand_Pius ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:Maria_Antonietta ;
+    :hasParent data:Alfonso_Count_of_Caserta,
+        data:Maria_Antonietta ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Ferdinand_II_of_Two_Sicilies,
+        data:Ferdinand_Pius,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isBloodrelationOf data:Ferdinand_Pius ;
+    :isBrotherOf data:Ferdinand_Pius ;
+    :isChildOf data:Alfonso_Count_of_Caserta,
+        data:Maria_Antonietta ;
+    :isSiblingOf data:Ferdinand_Pius ;
+    :isSonOf data:Alfonso_Count_of_Caserta,
+        data:Maria_Antonietta .
+

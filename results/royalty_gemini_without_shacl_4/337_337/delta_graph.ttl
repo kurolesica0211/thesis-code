@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasBirthYear "1911"^^xsd:nonNegativeInteger ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands ;
+    :hasDeathYear "2004"^^xsd:nonNegativeInteger ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear "1937"^^xsd:nonNegativeInteger ;
+    :hasMother data:Armgard_von_Sierstorpff-Cramm ;
+    :hasRelation data:Juliana_of_the_Netherlands,
+        data:Leopold_IV_Prince_of_Lippe .
+
+data:Armgard_von_Sierstorpff-Cramm a :Person,
+        :Woman .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Christina_of_the_Netherlands,
+        data:Irene_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe a :Man,
+        :Person .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Christina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Irene_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Margriet_of_the_Netherlands a :Person,
+        :Woman .
+

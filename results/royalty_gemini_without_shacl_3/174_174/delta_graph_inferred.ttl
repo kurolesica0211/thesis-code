@@ -1,0 +1,287 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Major_Richard_Campbell_Andrew_Brandram a :Man ;
+    :hasBrother data:Major_Richard_Campbell_Andrew_Brandram ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :isBloodrelationOf data:Major_Richard_Campbell_Andrew_Brandram ;
+    :isBrotherOf data:Major_Richard_Campbell_Andrew_Brandram ;
+    :isSiblingOf data:Major_Richard_Campbell_Andrew_Brandram .
+
+data:King_Constantine_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Constantine_I_of_Greece ;
+    :hasChild data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :isAncestorOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Constantine_I_of_Greece ;
+    :isBrotherOf data:King_Constantine_I_of_Greece ;
+    :isFatherOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Constantine_I_of_Greece ;
+    :isUncleOf data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Sophia_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Sophia_of_Prussia ;
+    :isAncestorOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Sophia_of_Prussia ;
+    :isMotherOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Sophia_of_Prussia ;
+    :isSisterOf data:Princess_Sophia_of_Prussia .
+
+data:Alexander_King_of_the_Hellenes a :Man ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:George_King_of_the_Hellenes a :Man ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Paul_King_of_the_Hellenes a :Man ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Helen_of_Greece_and_Denmark a :Woman ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Woman ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Woman ;
+    :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+    :hasAncestor data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasParent data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :hasRelation data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:King_Constantine_I_of_Greece,
+        data:Major_Richard_Campbell_Andrew_Brandram,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isChildOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :isDaughterOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+

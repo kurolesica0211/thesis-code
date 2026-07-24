@@ -1,0 +1,106 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Ludwig_III_of_Bavaria a :Man,
+        :Person ;
+    :hasBrother data:King_Ludwig_III_of_Bavaria ;
+    :hasRelation data:King_Ludwig_III_of_Bavaria ;
+    :isBloodrelationOf data:King_Ludwig_III_of_Bavaria ;
+    :isBrotherOf data:King_Ludwig_III_of_Bavaria ;
+    :isSiblingOf data:King_Ludwig_III_of_Bavaria .
+
+data:Pedro_Carlos_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Pedro_Carlos_Orleans-Braganza ;
+    :hasRelation data:Pedro_Carlos_Orleans-Braganza ;
+    :isBloodrelationOf data:Pedro_Carlos_Orleans-Braganza ;
+    :isBrotherOf data:Pedro_Carlos_Orleans-Braganza ;
+    :isSiblingOf data:Pedro_Carlos_Orleans-Braganza .
+
+data:Emperor_Pedro_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Emperor_Pedro_II ;
+    :hasChild data:Princess_Isabel ;
+    :hasDaughter data:Princess_Isabel ;
+    :hasRelation data:Emperor_Pedro_II,
+        data:Princess_Isabel ;
+    :isAncestorOf data:Princess_Isabel ;
+    :isBloodrelationOf data:Emperor_Pedro_II ;
+    :isBrotherOf data:Emperor_Pedro_II ;
+    :isFatherOf data:Princess_Isabel ;
+    :isParentOf data:Princess_Isabel ;
+    :isSiblingOf data:Emperor_Pedro_II ;
+    :isUncleOf data:Princess_Isabel .
+
+data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasChild data:Prince_Luiz_of_Orleans-Braganza ;
+    :hasRelation data:Prince_Luiz_of_Orleans-Braganza,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Prince_Luiz_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isParentOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Prince_Luiz_of_Orleans-Braganza .
+
+data:Princess_Isabel a :Person,
+        :Woman ;
+    :hasAncestor data:Emperor_Pedro_II ;
+    :hasFather data:Emperor_Pedro_II ;
+    :hasParent data:Emperor_Pedro_II ;
+    :hasRelation data:Emperor_Pedro_II,
+        data:Princess_Isabel ;
+    :hasSister data:Princess_Isabel ;
+    :isBloodrelationOf data:Princess_Isabel ;
+    :isChildOf data:Emperor_Pedro_II ;
+    :isDaughterOf data:Emperor_Pedro_II ;
+    :isSiblingOf data:Princess_Isabel ;
+    :isSisterOf data:Princess_Isabel .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Luiz_of_Orleans-Braganza ;
+    :hasRelation data:Prince_Luiz_of_Orleans-Braganza,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSister data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Prince_Luiz_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isAuntOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isParentOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isSiblingOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Prince_Luiz_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Prince_Luiz_of_Orleans-Braganza ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasRelation data:Prince_Luiz_of_Orleans-Braganza,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isBloodrelationOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSiblingOf data:Prince_Luiz_of_Orleans-Braganza ;
+    :isSonOf data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria .
+

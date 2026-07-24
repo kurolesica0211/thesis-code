@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Elisabeth_Victoire_Jeanne_Marie_d_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 2026 ;
+    :hasFather data:Charles_Philippe_d_Orleans ;
+    :hasMother data:Naomi_Valeska .
+
+data:Princess_Isabelle_d_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Prince_Michel_d_Orleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+
+data:Charles_Philippe_d_Orleans a :Man,
+        :Person ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Prince_Michel_d_Orleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+
+data:Naomi_Valeska a :Person,
+        :Woman .
+
+data:Prince_Henri_d_Orleans a :Man,
+        :Person .
+
+data:Beatrice_Pasquier_de_Franclieu a :Person,
+        :Woman .
+
+data:Prince_Michel_d_Orleans a :Man,
+        :Person ;
+    :hasFather data:Prince_Henri_d_Orleans .
+

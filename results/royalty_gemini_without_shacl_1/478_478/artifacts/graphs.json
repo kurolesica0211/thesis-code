@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederikX a :Man,\n        :Person ;\n    :hasMother data:MargretheII .\n\ndata:Nathalie a :Person,\n        :Woman ;\n    :hasMother data:Benedikte .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:AnneMarie a :Person,\n        :Woman ;\n    :hasRelation data:ConstantineII .\n\ndata:Benedikte a :Person,\n        :Woman ;\n    :hasBirthYear 1944 ;\n    :hasFather data:FrederikIX ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Ingrid ;\n    :hasRelation data:Richard ;\n    :isSisterOf data:AnneMarie,\n        data:MargretheII .\n\ndata:ChristianX a :Man,\n        :Person .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :hasFather data:ChristianX ;\n    :hasMother data:Alexandrine .\n\ndata:GustavAdolf a :Man,\n        :Person .\n\ndata:Ingrid a :Person,\n        :Woman ;\n    :hasFather data:GustavAdolf ;\n    :hasMother data:MargaretConnaught .\n\ndata:MargaretConnaught a :Person,\n        :Woman .\n\ndata:Richard a :Man,\n        :Person .\n\ndata:MargretheII a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FrederikX a :Man,\n        :Person ;\n    :hasMother data:MargretheII .\n\ndata:Nathalie a :Person,\n        :Woman ;\n    :hasMother data:Benedikte .\n\ndata:Alexandrine a :Person,\n        :Woman .\n\ndata:AnneMarie a :Person,\n        :Woman ;\n    :hasRelation data:ConstantineII .\n\ndata:Benedikte a :Person,\n        :Woman ;\n    :hasBirthYear 1944 ;\n    :hasFather data:FrederikIX ;\n    :hasMarriageYear 1968 ;\n    :hasMother data:Ingrid ;\n    :hasRelation data:Richard ;\n    :isSisterOf data:AnneMarie,\n        data:MargretheII .\n\ndata:ChristianX a :Man,\n        :Person .\n\ndata:ConstantineII a :Man,\n        :Person .\n\ndata:FrederikIX a :Man,\n        :Person ;\n    :hasFather data:ChristianX ;\n    :hasMother data:Alexandrine .\n\ndata:GustavAdolf a :Man,\n        :Person .\n\ndata:Ingrid a :Person,\n        :Woman ;\n    :hasFather data:GustavAdolf ;\n    :hasMother data:MargaretConnaught .\n\ndata:MargaretConnaught a :Person,\n        :Woman .\n\ndata:Richard a :Man,\n        :Person .\n\ndata:MargretheII a :Person,\n        :Woman .\n\n"
+    }
+]

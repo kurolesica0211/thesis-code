@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Carlos_Duke_of_Calabria a :Man ;
+    :hasDeathYear "2015"^^xsd:positiveInteger ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasMother data:Infanta_Alicia_Duchess_of_Calabria .
+
+data:Princess_Anne_of_Orleans a :Woman ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza .
+
+data:Henri_Count_of_Paris a :Man .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Woman ;
+    :hasDeathYear "2017"^^xsd:positiveInteger .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Man .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Woman .
+

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Birgitte_Gloucester a :Person,
+        :Woman ;
+    :isMotherOf data:Rose_Windsor .
+
+data:Prince_Richard a :Man,
+        :Person ;
+    :isFatherOf data:Rose_Windsor .
+
+data:George_Gilman a :Man,
+        :Person ;
+    :isFatherOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Lyla_Gilman a :Person,
+        :Woman .
+
+data:Rose_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear "1980"^^xsd:string ;
+    :hasRelation data:George_Gilman ;
+    :isMotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Rufus_Gilman a :Man,
+        :Person .
+

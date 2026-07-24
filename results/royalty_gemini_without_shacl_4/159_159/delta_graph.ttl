@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasChild data:Hubertus_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Michael_Nikolaevich_of_Russia .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Hubertus_Prince_of_Prussia a :Man,
+        :Person .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person .
+
+data:Michael_Nikolaevich_of_Russia a :Man,
+        :Person .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person ;
+    :hasChild data:Wilhelm_Prince_of_Prussia_1906 ;
+    :hasFather data:Wilhelm_II_German_Emperor .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Wilhelm_Prince_of_Prussia_1906 a :Man,
+        :Person .
+

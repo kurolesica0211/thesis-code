@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Camilla a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Emperor_Naruhito a :Man,\n        :Person .\n\ndata:Meghan_Markle a :Person,\n        :Woman .\n\ndata:Prince_Harry a :Man,\n        :Person .\n\ndata:Samuel_Chatto a :Man,\n        :Person ;\n    :hasBirthYear 1996 ;\n    :isChildOf data:Daniel_Chatto,\n        data:Lady_Sarah_Chatto .\n\ndata:Daniel_Chatto a :Man,\n        :Person .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :isChildOf data:Princess_Margaret .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Camilla a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Emperor_Naruhito a :Man,\n        :Person .\n\ndata:Meghan_Markle a :Person,\n        :Woman .\n\ndata:Prince_Harry a :Man,\n        :Person .\n\ndata:Samuel_Chatto a :Man,\n        :Person ;\n    :hasBirthYear 1996 ;\n    :isChildOf data:Daniel_Chatto,\n        data:Lady_Sarah_Chatto .\n\ndata:Daniel_Chatto a :Man,\n        :Person .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :isChildOf data:Princess_Margaret .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\n"
+    }
+]

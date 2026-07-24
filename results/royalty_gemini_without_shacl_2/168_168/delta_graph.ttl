@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasDaughter data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Albrecht_of_Hohenlohe-Langenburg,
+        data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg,
+        data:Prince_Kraft_of_Hohenlohe-Langenburg,
+        data:Prince_Rupprecht_of_Hohenlohe-Langenburg .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Prince_Albrecht_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Georg_Andreas_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Kraft_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Prince_Rupprecht_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
+

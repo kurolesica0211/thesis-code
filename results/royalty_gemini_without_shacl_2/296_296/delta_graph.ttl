@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nonnie_May_Stewart_Worthington_Leeds a :Woman ;
+    :hasDeathYear 1923 .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1939 ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Francoise_of_Orleans .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Woman ;
+    :hasMother data:Marie_of_Greece .
+
+data:William_Bateman_Leeds_Jr a :Man .
+
+data:Constantine_I_of_Greece a :Man .
+
+data:King_George_I_of_Greece a :Man .
+
+data:Prince_Andrew_of_Greece a :Man .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece,
+        data:Prince_George_of_Greece,
+        data:Prince_Nicholas_of_Greece ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMarriageYear 1920 ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasSister data:Marie_of_Greece ;
+    :knownAs "Christo"^^xsd:string .
+
+data:Prince_George_of_Greece a :Man .
+
+data:Prince_Nicholas_of_Greece a :Man .
+
+data:Princess_Francoise_of_Orleans a :Woman .
+
+data:Queen_Olga_of_Greece a :Woman .
+
+data:Marie_of_Greece a :Woman .
+

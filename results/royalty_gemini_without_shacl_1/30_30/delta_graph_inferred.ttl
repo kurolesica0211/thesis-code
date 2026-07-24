@@ -1,0 +1,140 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_II_of_Monaco a :Man,
+        :Person ;
+    :hasBrother data:Albert_II_of_Monaco ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isBloodrelationOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco ;
+    :isBrotherOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco ;
+    :isUncleOf data:Princess_Alexandra_of_Hanover .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Prince_of_Hanover ;
+    :hasChild data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Prince_of_Hanover ;
+    :isFatherOf data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Prince_of_Hanover ;
+    :isUncleOf data:Princess_Alexandra_of_Hanover .
+
+data:Hereditary_Prince_Ernst_August a :Man,
+        :Person ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isBrotherOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isBrotherOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Albert_II_of_Monaco ;
+    :hasChild data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Princess_Alexandra_of_Hanover ;
+    :isAuntOf data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco ;
+    :isMotherOf data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco ;
+    :isSisterOf data:Albert_II_of_Monaco,
+        data:Princess_Caroline_of_Monaco .
+
+data:Princess_Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Princess_Caroline_of_Monaco ;
+    :hasParent data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasRelation data:Albert_II_of_Monaco,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isChildOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isDaughterOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSisterOf data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Alexandra_of_Hanover .
+

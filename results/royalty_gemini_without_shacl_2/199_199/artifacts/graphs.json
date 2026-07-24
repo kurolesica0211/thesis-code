@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fernando_Sanz_y_Martinez_de_Arizala a :Man ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1925 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Elena_Sanz ;\n    :knownAs \"Fernand\"^^xsd:string .\n\ndata:Alfonso_XII_of_Spain a :Man .\n\ndata:Elena_Sanz a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fernando_Sanz_y_Martinez_de_Arizala a :Man ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1925 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Elena_Sanz ;\n    :knownAs \"Fernand\"^^xsd:string .\n\ndata:Alfonso_XII_of_Spain a :Man .\n\ndata:Elena_Sanz a :Woman .\n\n"
+    }
+]

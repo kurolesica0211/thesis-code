@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexandraOfGreece a :Woman ;
+    :hasFather data:Alexander ;
+    :hasMother data:AspasiaManos .
+
+data:Alexander a :Man ;
+    :hasBirthYear "1893"^^xsd:positiveInteger ;
+    :hasBrother data:GeorgeCrownPrince,
+        data:PaulOfGreece ;
+    :hasDeathYear "1920"^^xsd:positiveInteger ;
+    :hasFather data:ConstantineI ;
+    :hasMarriageYear "1919"^^xsd:positiveInteger ;
+    :hasMother data:SophiaOfPrussia ;
+    :hasRelation data:AspasiaManos ;
+    :hasSister data:HelenOfRomania .
+
+data:ConstantineI a :Man ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia .
+
+data:FrederickIIIOfGermany a :Man .
+
+data:GeorgeCrownPrince a :Man .
+
+data:GeorgeIOfGreece a :Man .
+
+data:HelenOfRomania a :Woman .
+
+data:MariaArgyropoulos a :Woman .
+
+data:OlgaConstantinovnaOfRussia a :Woman .
+
+data:PaulOfGreece a :Man .
+
+data:PetrosManos a :Man .
+
+data:SophiaOfPrussia a :Woman ;
+    :hasFather data:FrederickIIIOfGermany ;
+    :hasMother data:VictoriaPrincessRoyal .
+
+data:VictoriaPrincessRoyal a :Woman .
+
+data:AspasiaManos a :Woman ;
+    :hasFather data:PetrosManos ;
+    :hasMother data:MariaArgyropoulos .
+

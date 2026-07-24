@@ -1,0 +1,505 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isUncleOf data:Elizabeth_II,
+        data:Princess_Margaret .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:George_VI .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret ;
+    :isAuntOf data:George_VI ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Queen_Elizabeth_the_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isAncestorOf data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret ;
+    :isAuntOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isSiblingOf data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isAuntOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Princess_Margaret .
+
+data:Philip_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philip_Mountbatten ;
+    :hasChild data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDaughter data:Princess_Anne ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSon data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Philip_Mountbatten ;
+    :isBrotherOf data:Philip_Mountbatten ;
+    :isFatherOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isParentOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSiblingOf data:Philip_Mountbatten ;
+    :isUncleOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasBrother data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :hasFather data:Philip_Mountbatten ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :isSiblingOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Elizabeth_II,
+        data:Philip_Mountbatten .
+
+data:Prince_Andrew a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasBrother data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :hasFather data:Philip_Mountbatten ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :isSiblingOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Elizabeth_II,
+        data:Philip_Mountbatten .
+
+data:Prince_Edward a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasBrother data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :hasFather data:Philip_Mountbatten ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :isSiblingOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Elizabeth_II,
+        data:Philip_Mountbatten .
+
+data:Princess_Anne a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasBrother data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :hasFather data:Philip_Mountbatten ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :isDaughterOf data:Elizabeth_II,
+        data:Philip_Mountbatten ;
+    :isSiblingOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSisterOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :isAncestorOf data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Elizabeth_II,
+        data:Princess_Margaret .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasBirthYear "1926"^^xsd:positiveInteger ;
+    :hasChild data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDaughter data:Princess_Anne ;
+    :hasDeathYear "2022"^^xsd:positiveInteger ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear "1947"^^xsd:positiveInteger ;
+    :hasMother data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :hasRelation data:Charles_III,
+        data:Edward_VIII,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Philip_Mountbatten,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_the_Queen_Mother,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :hasSon data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isAuntOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth_the_Queen_Mother ;
+    :isMotherOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isParentOf data:Charles_III,
+        data:Prince_Andrew,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Princess_Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Princess_Margaret .
+

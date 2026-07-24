@@ -1,0 +1,278 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Infanta_Elena ;
+    :isBloodrelationOf data:Felipe_VI,
+        data:Infanta_Elena ;
+    :isBrotherOf data:Felipe_VI,
+        data:Infanta_Elena ;
+    :isSiblingOf data:Felipe_VI,
+        data:Infanta_Elena ;
+    :isUncleOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Amalio_de_Marichalar_y_Bruguera a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Amalio_de_Marichalar_y_Bruguera ;
+    :hasChild data:Jaime_de_Marichalar ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:Jaime_de_Marichalar ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Amalio_de_Marichalar_y_Bruguera ;
+    :isBrotherOf data:Amalio_de_Marichalar_y_Bruguera ;
+    :isFatherOf data:Jaime_de_Marichalar ;
+    :isParentOf data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Amalio_de_Marichalar_y_Bruguera ;
+    :isUncleOf data:Jaime_de_Marichalar .
+
+data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Jaime_de_Marichalar ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :hasSon data:Jaime_de_Marichalar ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Jaime_de_Marichalar ;
+    :isBloodrelationOf data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :isMotherOf data:Jaime_de_Marichalar ;
+    :isParentOf data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :isSisterOf data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Infanta_Elena ;
+    :hasDaughter data:Infanta_Elena ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Infanta_Elena,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Infanta_Elena ;
+    :isParentOf data:Infanta_Elena ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Infanta_Elena .
+
+data:Sof%C3%ADa_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Elena ;
+    :hasDaughter data:Infanta_Elena ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Sof%C3%ADa_of_Spain ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Infanta_Elena,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Infanta_Elena ;
+    :isBloodrelationOf data:Sof%C3%ADa_of_Spain ;
+    :isMotherOf data:Infanta_Elena ;
+    :isParentOf data:Infanta_Elena ;
+    :isSiblingOf data:Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Sof%C3%ADa_of_Spain .
+
+data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,
+        :Person ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena ;
+    :hasParent data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBrotherOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSonOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :knownAs "Froilán"^^xsd:string .
+
+data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
+        :Woman ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :hasBrother data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena ;
+    :hasParent data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :isDaughterOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSisterOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Jaime_de_Marichalar a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :hasBrother data:Jaime_de_Marichalar ;
+    :hasChild data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
+    :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :hasParent data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Jaime_de_Marichalar ;
+    :isBrotherOf data:Jaime_de_Marichalar ;
+    :isChildOf data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :isFatherOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Jaime_de_Marichalar ;
+    :isSonOf data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada ;
+    :isUncleOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Infanta_Elena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :hasBrother data:Felipe_VI ;
+    :hasChild data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa_of_Spain ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera,
+        data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada,
+        data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Felipe_VI,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Infanta_Elena ;
+    :hasSon data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe_VI,
+        data:Infanta_Elena ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa_of_Spain ;
+    :isMotherOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Felipe_VI,
+        data:Infanta_Elena ;
+    :isSisterOf data:Felipe_VI,
+        data:Infanta_Elena .
+

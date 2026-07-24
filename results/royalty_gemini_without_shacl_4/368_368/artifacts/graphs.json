@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:Bernhard_father_of_Bernhard_of_Biesterfeld,\n        data:Prince_Julius ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline_of_Wartensleben ;\n    :hasRelation data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;\n    :hasSon data:Armin,\n        data:Hereditary_Prince_Ernst,\n        data:Prince_Chlodwig .\n\ndata:Armin a :Man,\n        :Person .\n\ndata:Bernhard_father_of_Bernhard_of_Biesterfeld a :Man,\n        :Person ;\n    :hasSon data:Bernhard_of_Biesterfeld .\n\ndata:Bernhard_of_Biesterfeld a :Man,\n        :Person .\n\ndata:Ernest_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Hereditary_Prince_Ernst a :Man,\n        :Person .\n\ndata:Karoline_of_Wartensleben a :Person,\n        :Woman .\n\ndata:Prince_Chlodwig a :Man,\n        :Person .\n\ndata:Prince_Julius a :Man,\n        :Person .\n\ndata:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:Bernhard_father_of_Bernhard_of_Biesterfeld,\n        data:Prince_Julius ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline_of_Wartensleben ;\n    :hasRelation data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;\n    :hasSon data:Armin,\n        data:Hereditary_Prince_Ernst,\n        data:Prince_Chlodwig .\n\ndata:Armin a :Man,\n        :Person .\n\ndata:Bernhard_father_of_Bernhard_of_Biesterfeld a :Man,\n        :Person ;\n    :hasSon data:Bernhard_of_Biesterfeld .\n\ndata:Bernhard_of_Biesterfeld a :Man,\n        :Person .\n\ndata:Ernest_Count_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Hereditary_Prince_Ernst a :Man,\n        :Person .\n\ndata:Karoline_of_Wartensleben a :Person,\n        :Woman .\n\ndata:Prince_Chlodwig a :Man,\n        :Person .\n\ndata:Prince_Julius a :Man,\n        :Person .\n\ndata:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,\n        :Woman .\n\n"
+    }
+]

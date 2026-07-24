@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Camilla_Parker_Bowles%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:Charles_III%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Diana_Spencer a :Ancestor .
+
+data:Diana_Spencer%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:Elizabeth_II%2Ctarget a :Person ;
+    :hasSex data:Female .
+
+data:George_VI a :Ancestor .
+
+data:George_VI%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Harry%2Cdata_William a :Person ;
+    :hasFather data:Charles_III .
+
+data:Harry%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor .
+
+data:Philip_Duke_of_Edinburgh%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:William%2Cdata_Harry a :Person ;
+    :hasMother data:Elizabeth_II .
+
+data:William%2Ctarget a :Person ;
+    :hasSex data:Male .
+
+data:Charles_III :hasMarriageYear "1996"^^xsd:long,
+        "2005"^^xsd:long ;
+    :knownAs "Charles Philip Arthur George"^^xsd:string .
+
+data:Elizabeth_II a :Ancestor .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

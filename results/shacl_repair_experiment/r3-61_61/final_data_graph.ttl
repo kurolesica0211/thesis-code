@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Wilhelmina a :Woman .
+
+data:Willem-Alexander a :Man ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Constantijn,
+        data:Friso ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:William_III a :Man .
+
+data:Alexia a :Woman ;
+    :hasMother data:M%C3%A1xima_Zorreguieta .
+
+data:Ariane a :Woman ;
+    :hasMother data:M%C3%A1xima_Zorreguieta .
+
+data:Bernhard a :Ancestor,
+        :Man .
+
+data:Catharina-Amalia a :Woman ;
+    :hasMother data:M%C3%A1xima_Zorreguieta .
+
+data:Constantijn a :Man ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Friso a :Man ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Juliana a :Ancestor,
+        :Woman .
+
+data:Beatrix a :Ancestor,
+        :Woman ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Claus a :Ancestor,
+        :Man .
+
+data:M%C3%A1xima_Zorreguieta a :Ancestor,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ann-Kathrin_Johannsmann a :Person,\n        :Woman .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Konstantin_Gustav_Heinrich_Richard a :Man,\n        :Person ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Louisa_Margareta_Benedikte_Hanna a :Person,\n        :Woman ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Heinrich-Wilhelm_Johannsmann a :Man,\n        :Person .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Alexander_Johannsmann a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Heinrich-Wilhelm_Johannsmann .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1975 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear 2010 ;\n    :hasMother data:Benedikte_of_Denmark ;\n    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ann-Kathrin_Johannsmann a :Person,\n        :Woman .\n\ndata:Gustav_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Konstantin_Gustav_Heinrich_Richard a :Man,\n        :Person ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Louisa_Margareta_Benedikte_Hanna a :Person,\n        :Woman ;\n    :hasFather data:Alexander_Johannsmann ;\n    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\ndata:Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Heinrich-Wilhelm_Johannsmann a :Man,\n        :Person .\n\ndata:Richard_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Alexander_Johannsmann a :Man,\n        :Person ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Heinrich-Wilhelm_Johannsmann .\n\ndata:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1975 ;\n    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear 2010 ;\n    :hasMother data:Benedikte_of_Denmark ;\n    :isSiblingOf data:Alexandra_of_Sayn-Wittgenstein-Berleburg .\n\n"
+    }
+]

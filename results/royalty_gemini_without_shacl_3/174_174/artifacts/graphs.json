@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katherine_of_Greece_and_Denmark a :Woman ;\n    :alsoKnownAs \"Lady Katherine Brandram\"^^xsd:string ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Princess_Sophia_of_Prussia ;\n    :hasRelation data:Major_Richard_Campbell_Andrew_Brandram ;\n    :isSiblingOf data:Alexander_King_of_the_Hellenes,\n        data:George_King_of_the_Hellenes,\n        data:Paul_King_of_the_Hellenes,\n        data:Princess_Helen_of_Greece_and_Denmark,\n        data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Alexander_King_of_the_Hellenes a :Man .\n\ndata:George_King_of_the_Hellenes a :Man .\n\ndata:King_Constantine_I_of_Greece a :Man .\n\ndata:Major_Richard_Campbell_Andrew_Brandram a :Man .\n\ndata:Paul_King_of_the_Hellenes a :Man .\n\ndata:Princess_Helen_of_Greece_and_Denmark a :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Princess_Sophia_of_Prussia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katherine_of_Greece_and_Denmark a :Woman ;\n    :alsoKnownAs \"Lady Katherine Brandram\"^^xsd:string ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1947 ;\n    :hasMother data:Princess_Sophia_of_Prussia ;\n    :hasRelation data:Major_Richard_Campbell_Andrew_Brandram ;\n    :isSiblingOf data:Alexander_King_of_the_Hellenes,\n        data:George_King_of_the_Hellenes,\n        data:Paul_King_of_the_Hellenes,\n        data:Princess_Helen_of_Greece_and_Denmark,\n        data:Princess_Irene_of_Greece_and_Denmark .\n\ndata:Alexander_King_of_the_Hellenes a :Man .\n\ndata:George_King_of_the_Hellenes a :Man .\n\ndata:King_Constantine_I_of_Greece a :Man .\n\ndata:Major_Richard_Campbell_Andrew_Brandram a :Man .\n\ndata:Paul_King_of_the_Hellenes a :Man .\n\ndata:Princess_Helen_of_Greece_and_Denmark a :Woman .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Princess_Sophia_of_Prussia a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasMarriageYear 1898 ;\n    :hasRelation data:Henry_XXX_of_Reuss ;\n    :isDaughterOf data:Bernhard_III_of_Saxe-Meiningen,\n        data:Charlotte_of_Prussia .\n\ndata:Charlotte_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Wilhelm_II_of_Germany ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Frederick_III_of_Germany ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe-Meiningen .\n\ndata:Henry_XXX_of_Reuss a :Man,\n        :Person .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_of_Germany a :Man,\n        :Person ;\n    :hasFather data:Frederick_III_of_Germany ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Frederick_III_of_Germany a :Man,\n        :Person .\n\ndata:Victoria_Princess_Royal a :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasMarriageYear 1898 ;\n    :hasRelation data:Henry_XXX_of_Reuss ;\n    :isDaughterOf data:Bernhard_III_of_Saxe-Meiningen,\n        data:Charlotte_of_Prussia .\n\ndata:Charlotte_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Wilhelm_II_of_Germany ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Frederick_III_of_Germany ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe-Meiningen .\n\ndata:Henry_XXX_of_Reuss a :Man,\n        :Person .\n\ndata:Prince_Albert a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_of_Germany a :Man,\n        :Person ;\n    :hasFather data:Frederick_III_of_Germany ;\n    :hasMother data:Victoria_Princess_Royal .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man,\n        :Person .\n\ndata:Frederick_III_of_Germany a :Man,\n        :Person .\n\ndata:Victoria_Princess_Royal a :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\n"
+    }
+]

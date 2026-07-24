@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary ;\n    :isBrotherOf data:EdwardVIII .\n\ndata:PrincessElizabeth a :Person,\n        :Woman ;\n    :isDaughterOf data:GeorgeVI .\n\ndata:EdwardVII a :Man,\n        :Person .\n\ndata:FrancisDukeOfTeck a :Man,\n        :Person .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary ;\n    :isBrotherOf data:EdwardVIII .\n\ndata:PrincessMaryAdelaideOfCambridge a :Person,\n        :Woman .\n\ndata:QueenAlexandra a :Person,\n        :Woman .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:WallisSimpson a :Person,\n        :Woman .\n\ndata:EdwardVIII a :Man,\n        :Person ;\n    :alsoKnownAs \"Duke of Windsor\"^^xsd:string ;\n    :hasAncestor data:QueenVictoria ;\n    :hasBirthYear 1894 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:WallisSimpson .\n\ndata:GeorgeV a :Man,\n        :Person ;\n    :hasFather data:EdwardVII ;\n    :hasMother data:QueenAlexandra .\n\ndata:QueenMary a :Person,\n        :Woman ;\n    :hasFather data:FrancisDukeOfTeck ;\n    :hasMother data:PrincessMaryAdelaideOfCambridge .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary ;\n    :isBrotherOf data:EdwardVIII .\n\ndata:PrincessElizabeth a :Person,\n        :Woman ;\n    :isDaughterOf data:GeorgeVI .\n\ndata:EdwardVII a :Man,\n        :Person .\n\ndata:FrancisDukeOfTeck a :Man,\n        :Person .\n\ndata:GeorgeVI a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary ;\n    :isBrotherOf data:EdwardVIII .\n\ndata:PrincessMaryAdelaideOfCambridge a :Person,\n        :Woman .\n\ndata:QueenAlexandra a :Person,\n        :Woman .\n\ndata:QueenVictoria a :Person,\n        :Woman .\n\ndata:WallisSimpson a :Person,\n        :Woman .\n\ndata:EdwardVIII a :Man,\n        :Person ;\n    :alsoKnownAs \"Duke of Windsor\"^^xsd:string ;\n    :hasAncestor data:QueenVictoria ;\n    :hasBirthYear 1894 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:GeorgeV ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:QueenMary ;\n    :hasRelation data:WallisSimpson .\n\ndata:GeorgeV a :Man,\n        :Person ;\n    :hasFather data:EdwardVII ;\n    :hasMother data:QueenAlexandra .\n\ndata:QueenMary a :Person,\n        :Woman ;\n    :hasFather data:FrancisDukeOfTeck ;\n    :hasMother data:PrincessMaryAdelaideOfCambridge .\n\n"
+    }
+]

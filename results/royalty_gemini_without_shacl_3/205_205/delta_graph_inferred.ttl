@@ -1,0 +1,462 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Marino_Torlonia a :Ancestor,
+        :Man ;
+    :hasBrother data:Marino_Torlonia ;
+    :hasChild data:Alessandro_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia ;
+    :hasSon data:Alessandro_Torlonia ;
+    :isAncestorOf data:Alessandro_Torlonia ;
+    :isBloodrelationOf data:Marino_Torlonia ;
+    :isBrotherOf data:Marino_Torlonia ;
+    :isFatherOf data:Alessandro_Torlonia ;
+    :isParentOf data:Alessandro_Torlonia ;
+    :isSiblingOf data:Marino_Torlonia ;
+    :isUncleOf data:Alessandro_Torlonia .
+
+data:Mary_Elsie_Moore a :Ancestor,
+        :Woman ;
+    :hasChild data:Alessandro_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia ;
+    :hasSister data:Mary_Elsie_Moore ;
+    :hasSon data:Alessandro_Torlonia ;
+    :isAncestorOf data:Alessandro_Torlonia ;
+    :isAuntOf data:Alessandro_Torlonia ;
+    :isBloodrelationOf data:Mary_Elsie_Moore ;
+    :isMotherOf data:Alessandro_Torlonia ;
+    :isParentOf data:Alessandro_Torlonia ;
+    :isSiblingOf data:Mary_Elsie_Moore ;
+    :isSisterOf data:Mary_Elsie_Moore .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasDaughter data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isAncestorOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isParentOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasDaughter data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isAuntOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isParentOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Alessandro_Torlonia a :Man ;
+    :hasAncestor data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :hasBrother data:Alessandro_Torlonia ;
+    :hasFather data:Marino_Torlonia ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasParent data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia ;
+    :isBloodrelationOf data:Alessandro_Torlonia ;
+    :isBrotherOf data:Alessandro_Torlonia ;
+    :isChildOf data:Marino_Torlonia,
+        data:Mary_Elsie_Moore ;
+    :isSiblingOf data:Alessandro_Torlonia ;
+    :isSonOf data:Marino_Torlonia,
+        data:Mary_Elsie_Moore .
+
+data:Alfonso_de_Borb%C3%B3n_y_Battenberg a :Man ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Olimpia_Torlonia ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Gonzalo_de_Borb%C3%B3n_y_Battenberg a :Man ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Olimpia_Torlonia ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Juan_de_Borb%C3%B3n_y_Battenberg a :Man ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Olimpia_Torlonia ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isUncleOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg a :Woman ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isAuntOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSisterOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg .
+
+data:Marco_Torlonia a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_jr ;
+    :hasMother data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasParent data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBrotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSonOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg .
+
+data:Marino_Torlonia_jr a :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_jr ;
+    :hasMother data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasParent data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBrotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSonOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg .
+
+data:Sandra_Torlonia a :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_jr ;
+    :hasMother data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasParent data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isDaughterOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSisterOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Olimpia_Torlonia a :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco_Torlonia,
+        data:Marino_Torlonia_jr ;
+    :hasMother data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasParent data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isChildOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isDaughterOf data:Beatriz_de_Borb%C3%B3n_y_Battenberg ;
+    :isSiblingOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSisterOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia .
+
+data:Beatriz_de_Borb%C3%B3n_y_Battenberg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg ;
+    :hasChild data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasDaughter data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Alfonso_XIII_of_Spain,
+        data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Marco_Torlonia,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg,
+        data:Marino_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Mary_Elsie_Moore,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :hasSon data:Marco_Torlonia,
+        data:Marino_Torlonia_jr ;
+    :isAncestorOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isAuntOf data:Juan_Carlos_I,
+        data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isParentOf data:Marco_Torlonia,
+        data:Marino_Torlonia_jr,
+        data:Olimpia_Torlonia,
+        data:Sandra_Torlonia ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg ;
+    :isSisterOf data:Alfonso_de_Borb%C3%B3n_y_Battenberg,
+        data:Beatriz_de_Borb%C3%B3n_y_Battenberg,
+        data:Gonzalo_de_Borb%C3%B3n_y_Battenberg,
+        data:Juan_de_Borb%C3%B3n_y_Battenberg,
+        data:Maria_Cristina_de_Borb%C3%B3n_y_Battenberg .
+

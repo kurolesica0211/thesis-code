@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceAlbert a :Man ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis ;
+    :hasBirthYear 1819 ;
+    :hasBrother data:PrinceAlbert ;
+    :hasDeathYear 1861 ;
+    :hasFather data:DukeErnestI ;
+    :hasParent data:DukeErnestI ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:PrinceAlbert ;
+    :isBrotherOf data:PrinceAlbert ;
+    :isChildOf data:DukeErnestI ;
+    :isSiblingOf data:PrinceAlbert ;
+    :isSonOf data:DukeErnestI .
+
+data:QueenVictoria a :Woman ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasMarriageYear 1840 ;
+    :hasMother data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasParent data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :hasSister data:QueenVictoria ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isChildOf data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isDaughterOf data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:CountessAugusta a :Ancestor,
+        :Woman ;
+    :hasChild data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasDaughter data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :hasSister data:CountessAugusta ;
+    :hasSon data:DukeErnestI ;
+    :isAncestorOf data:DukeErnestI,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :isAuntOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isBloodrelationOf data:CountessAugusta ;
+    :isMotherOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isParentOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isSiblingOf data:CountessAugusta ;
+    :isSisterOf data:CountessAugusta .
+
+data:DukeFrancis a :Ancestor,
+        :Man ;
+    :hasBrother data:DukeFrancis ;
+    :hasChild data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasDaughter data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :hasSon data:DukeErnestI ;
+    :isAncestorOf data:DukeErnestI,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:DukeFrancis ;
+    :isBrotherOf data:DukeFrancis ;
+    :isFatherOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isParentOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isSiblingOf data:DukeFrancis ;
+    :isUncleOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld .
+
+data:DukeErnestI a :Ancestor,
+        :Man ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasBrother data:DukeErnestI ;
+    :hasChild data:PrinceAlbert ;
+    :hasFather data:DukeFrancis ;
+    :hasMother data:CountessAugusta ;
+    :hasParent data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :hasSister data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :hasSon data:PrinceAlbert ;
+    :isAncestorOf data:PrinceAlbert ;
+    :isBloodrelationOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isBrotherOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isChildOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isFatherOf data:PrinceAlbert ;
+    :isParentOf data:PrinceAlbert ;
+    :isSiblingOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isSonOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isUncleOf data:PrinceAlbert,
+        data:QueenVictoria .
+
+data:PrincessVictoriaOfSaxeCoburgSaalfeld a :Ancestor,
+        :Woman ;
+    :hasAncestor data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasBrother data:DukeErnestI ;
+    :hasChild data:QueenVictoria ;
+    :hasDaughter data:QueenVictoria ;
+    :hasFather data:DukeFrancis ;
+    :hasMother data:CountessAugusta ;
+    :hasParent data:CountessAugusta,
+        data:DukeFrancis ;
+    :hasRelation data:CountessAugusta,
+        data:DukeErnestI,
+        data:DukeFrancis,
+        data:PrinceAlbert,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld,
+        data:QueenVictoria ;
+    :hasSister data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isAncestorOf data:QueenVictoria ;
+    :isAuntOf data:PrinceAlbert,
+        data:QueenVictoria ;
+    :isBloodrelationOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isChildOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isDaughterOf data:CountessAugusta,
+        data:DukeFrancis ;
+    :isMotherOf data:QueenVictoria ;
+    :isParentOf data:QueenVictoria ;
+    :isSiblingOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld ;
+    :isSisterOf data:DukeErnestI,
+        data:PrincessVictoriaOfSaxeCoburgSaalfeld .
+

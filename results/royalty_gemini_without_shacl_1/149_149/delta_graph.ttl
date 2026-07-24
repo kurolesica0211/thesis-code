@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Alexandra Georgievna"^^xsd:string ;
+    :hasBirthYear 1870 ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :knownAs "Aline"^^xsd:string .
+
+data:Alexander_II_of_Russia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Maria_of_Greece a :Person,
+        :Woman .
+
+data:Marie_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Nicholas_of_Greece a :Man,
+        :Person .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasMother data:Marie_of_Hesse_and_by_Rhine .
+
+data:Dmitri_Pavlovich a :Man,
+        :Person .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+

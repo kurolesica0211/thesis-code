@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Alexandra_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Grand Duchess Alexandra Georgievna of Russia"^^xsd:string ;
+    :hasBirthYear 1870 ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Maria_of_Greece,
+        data:Nicholas_of_Greece .
+
+data:Alexander_II_of_Russia a :Man,
+        :Person .
+
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Grand_Duke_Paul_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasMother data:Marie_of_Hesse_and_by_Rhine .
+
+data:Maria_of_Greece a :Person,
+        :Woman .
+
+data:Marie_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
+
+data:Nicholas_of_Greece a :Man,
+        :Person .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Dmitri_Pavlovich a :Man,
+        :Person .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
+

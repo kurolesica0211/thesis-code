@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Person,\n        :Woman .\n\ndata:King_Alfonso_XII a :Man,\n        :Person .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Prince_Jorge_de_Bagration a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Bagrat_Bagration_y_de_Baviera .\n\ndata:Princess_Mariam a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Bagrat_Bagration_y_de_Baviera .\n\ndata:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Person,\n        :Woman .\n\ndata:Prince_Irakli_Bagration_Mukhrani a :Man,\n        :Person .\n\ndata:Prince_Bagrat_Bagration_y_de_Baviera a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Bagrat Bagration-Moukhransky\"^^xsd:string,\n        \"Prince Bagrat Bagrationi-Mukhraneli\"^^xsd:string ;\n    :hasBirthYear 1949 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Prince_Irakli_Bagration_Mukhrani ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Person,\n        :Woman .\n\ndata:King_Alfonso_XII a :Man,\n        :Person .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Prince_Jorge_de_Bagration a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Bagrat_Bagration_y_de_Baviera .\n\ndata:Princess_Mariam a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Bagrat_Bagration_y_de_Baviera .\n\ndata:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Person,\n        :Woman .\n\ndata:Prince_Irakli_Bagration_Mukhrani a :Man,\n        :Person .\n\ndata:Prince_Bagrat_Bagration_y_de_Baviera a :Man,\n        :Person ;\n    :alsoKnownAs \"Prince Bagrat Bagration-Moukhransky\"^^xsd:string,\n        \"Prince Bagrat Bagrationi-Mukhraneli\"^^xsd:string ;\n    :hasBirthYear 1949 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Prince_Irakli_Bagration_Mukhrani ;\n    :hasMarriageYear 1976 ;\n    :hasMother data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n .\n\n"
+    }
+]

@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Christian_X ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Ingrid_of_Sweden a :Woman .
+
+data:Irina_Alexandrovna_of_Russia a :Woman ;
+    :hasRelation data:Felix_Yusupov .
+
+data:Nicholas_I_of_Russia a :Man .
+
+data:Anastasia_Mikhailovna a :Woman .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+    :hasRelation data:Wilhelm_of_Prussia .
+
+data:Christian_IX_of_Denmark a :Man .
+
+data:Christian_X a :Man ;
+    :hasFather data:Frederik_VIII_of_Denmark ;
+    :hasMother data:Louise_of_Denmark .
+
+data:Felix_Yusupov a :Man .
+
+data:Frederick_Francis_II a :Man .
+
+data:Frederick_Francis_III a :Man ;
+    :hasFather data:Frederick_Francis_II .
+
+data:Frederick_Francis_IV a :Man .
+
+data:Frederik_VIII_of_Denmark a :Man ;
+    :hasFather data:Christian_IX_of_Denmark .
+
+data:Louise_of_Denmark a :Woman .
+
+data:Wilhelm_of_Prussia a :Man ;
+    :hasFather data:William_II_of_Germany .
+
+data:William_II_of_Germany a :Man .
+

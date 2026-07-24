@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katarina_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasBirthYear 1959 ;\n    :hasBrother data:Prince_George,\n        data:Prince_Michael,\n        data:Prince_Nikola_of_Yugoslavia ;\n    :hasDaughter data:Victoria_Marie_Esm%C3%A9_Margarita ;\n    :hasFather data:Prince_Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Princess_Margarita_of_Baden .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Michael a :Man,\n        :Person .\n\ndata:Prince_Nikola_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Margarita_of_Baden a :Person,\n        :Woman .\n\ndata:Sir_Desmond_de_Silva a :Man,\n        :Person .\n\ndata:Victoria_Marie_Esm%C3%A9_Margarita a :Person,\n        :Woman ;\n    :hasFather data:Sir_Desmond_de_Silva .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Katarina_of_Yugoslavia a :Person,\n        :Woman ;\n    :hasBirthYear 1959 ;\n    :hasBrother data:Prince_George,\n        data:Prince_Michael,\n        data:Prince_Nikola_of_Yugoslavia ;\n    :hasDaughter data:Victoria_Marie_Esm%C3%A9_Margarita ;\n    :hasFather data:Prince_Tomislav_of_Yugoslavia ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Princess_Margarita_of_Baden .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Michael a :Man,\n        :Person .\n\ndata:Prince_Nikola_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Princess_Margarita_of_Baden a :Person,\n        :Woman .\n\ndata:Sir_Desmond_de_Silva a :Man,\n        :Person .\n\ndata:Victoria_Marie_Esm%C3%A9_Margarita a :Person,\n        :Woman ;\n    :hasFather data:Sir_Desmond_de_Silva .\n\n"
+    }
+]

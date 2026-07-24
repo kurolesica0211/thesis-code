@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Ferdinand a :Man,\n        :Person ;\n    :isBrotherOf data:Wilhelm_of_Prussia .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Dorothea_von_Salviati a :Person,\n        :Woman .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:Wilhelm_German_Crown_Prince ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Dorothea_von_Salviati .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_Ferdinand a :Man,\n        :Person ;\n    :isBrotherOf data:Wilhelm_of_Prussia .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman .\n\ndata:Dorothea_von_Salviati a :Person,\n        :Woman .\n\ndata:Wilhelm_German_Crown_Prince a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:Wilhelm_German_Crown_Prince ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Dorothea_von_Salviati .\n\n"
+    }
+]

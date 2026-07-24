@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1940 ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
+
+data:Grand_Duchess_Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+

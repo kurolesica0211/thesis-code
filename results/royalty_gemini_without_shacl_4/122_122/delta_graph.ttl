@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederik_X a :Man,
+        :Person .
+
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :knownAs "Athena Marguerite Françoise Marie"^^xsd:string .
+
+data:Felix_of_Denmark a :Man,
+        :Person .
+
+data:Henrik_of_Denmark a :Man,
+        :Person .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :isBrotherOf data:Athena_of_Monpezat .
+
+data:Joachim_of_Denmark a :Man,
+        :Person ;
+    :hasParent data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isFatherOf data:Felix_of_Denmark,
+        data:Henrik_of_Monpezat,
+        data:Nikolai_of_Denmark .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Nikolai_of_Denmark a :Man,
+        :Person .
+

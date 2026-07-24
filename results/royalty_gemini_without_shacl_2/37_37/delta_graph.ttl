@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoXIII a :Man,
+        :Person ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaOfAustria .
+
+data:InfantaMariaTeresa a :Person,
+        :Woman ;
+    :hasFather data:AlfonsoXII ;
+    :hasMother data:MariaChristinaOfAustria .
+
+data:PrinceAlfonso a :Man,
+        :Person ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes .
+
+data:PrinceFernando a :Man,
+        :Person ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes .
+
+data:PrincessIsabellaAlfonsa a :Person,
+        :Woman ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:MariaDeLasMercedes .
+
+data:AlfonsoXII a :Man,
+        :Person .
+
+data:MariaChristinaOfAustria a :Person,
+        :Woman .
+
+data:MariaDeLasMercedes a :Person,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:AlfonsoXII ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:MariaChristinaOfAustria ;
+    :hasRelation data:PrinceCarlosOfBourbonTwoSicilies .
+
+data:PrinceCarlosOfBourbonTwoSicilies a :Man,
+        :Person .
+

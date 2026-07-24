@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Athena a :Person,
+        :Woman ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier .
+
+data:Count_Nikolai_of_Monpezat a :Man,
+        :Person ;
+    :formerlyKnownAs data:Prince_Nikolai_of_Denmark ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Prince_Felix ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Alexandra_Countess_of_Frederiksborg ;
+    :isChildOf data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :knownAs data:His_Excellency_Count_Nikolai_of_Monpezat .
+
+data:Henrik a :Man,
+        :Person ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Marie_Cavallier .
+
+data:King_Frederik_X a :Man,
+        :Person .
+
+data:His_Excellency_Count_Nikolai_of_Monpezat a :Person .
+
+data:Prince_Felix a :Man,
+        :Person ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Alexandra_Countess_of_Frederiksborg .
+
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Prince_Nikolai_of_Denmark a :Person .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Alexandra_Countess_of_Frederiksborg a :Person,
+        :Woman .
+
+data:Marie_Cavallier a :Person,
+        :Woman .
+
+data:Prince_Joachim a :Man,
+        :Person .
+

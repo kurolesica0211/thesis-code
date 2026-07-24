@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person ;\n    :alsoKnownAs \"Wolfgang Moritz Prinz von Hessen\"^^xsd:string ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1924 ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasRelation data:Marie_Alexandra_of_Baden ;\n    :isSiblingOf data:Philipp_of_Hesse .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1940 .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\ndata:Marie_Alexandra_of_Baden a :Person,\n        :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:Maximilian_of_Baden ;\n    :hasMother data:Marie_Louise_of_Hanover .\n\ndata:Marie_Louise_of_Hanover a :Person,\n        :Woman .\n\ndata:Maximilian_of_Baden a :Man,\n        :Person .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person ;\n    :alsoKnownAs \"Wolfgang Moritz Prinz von Hessen\"^^xsd:string ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1989 ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1924 ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasRelation data:Marie_Alexandra_of_Baden ;\n    :isSiblingOf data:Philipp_of_Hesse .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1940 .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\ndata:Marie_Alexandra_of_Baden a :Person,\n        :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1944 ;\n    :hasFather data:Maximilian_of_Baden ;\n    :hasMother data:Marie_Louise_of_Hanover .\n\ndata:Marie_Louise_of_Hanover a :Person,\n        :Woman .\n\ndata:Maximilian_of_Baden a :Man,\n        :Person .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person .\n\n"
+    }
+]

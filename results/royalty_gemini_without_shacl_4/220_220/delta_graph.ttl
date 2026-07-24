@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mike_Tindall a :Man ;
+    :hasChild data:Lena_Tindall,
+        data:Mia_Tindall .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Lena_Tindall,
+        data:Mia_Tindall ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasSister data:Felicity_Wade,
+        data:Stephanie_Phillips ;
+    :knownAs data:Zara_Phillips .
+
+data:Anne_Princess_Royal a :Woman .
+
+data:Felicity_Wade a :Woman .
+
+data:Mark_Phillips a :Man .
+
+data:Peter_Phillips a :Man .
+
+data:Stephanie_Phillips a :Woman .
+
+data:Zara_Phillips a :Woman .
+
+data:Lena_Tindall a :Woman .
+
+data:Mia_Tindall a :Woman .
+

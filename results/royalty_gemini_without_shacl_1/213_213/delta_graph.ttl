@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandPius a :Man,
+        :Person ;
+    :hasAncestor data:FerdinandII ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:MariaLudwigaTheresiaOfBavaria ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosOfBourbonTwoSicilies,
+        data:GabrielOfBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipOfBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:InfanteAlfonsoDukeOfCalabria a :Man,
+        :Person ;
+    :hasFather data:CarlosOfBourbonTwoSicilies .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person .
+
+data:ArchduchessPeterFerdinandOfAustria a :Person,
+        :Woman .
+
+data:FerdinandII a :Man,
+        :Person .
+
+data:GabrielOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:LudwigIIIOfBavaria a :Man,
+        :Person .
+
+data:MariaAntonietta a :Person,
+        :Woman .
+
+data:MariaCristina a :Person,
+        :Woman .
+
+data:MariaDiGrazia a :Person,
+        :Woman .
+
+data:MariaImmaculata a :Person,
+        :Woman .
+
+data:MariaLudwigaTheresiaOfBavaria a :Person,
+        :Woman ;
+    :hasFather data:LudwigIIIOfBavaria .
+
+data:PhilipOfBourbonTwoSicilies a :Man,
+        :Person .
+
+data:PrincessImperialOfBrazil a :Person,
+        :Woman .
+
+data:PrincessJohannGeorgOfSaxony a :Person,
+        :Woman .
+
+data:RanieriDukeOfCastro a :Man,
+        :Person .
+
+data:CarlosOfBourbonTwoSicilies a :Man,
+        :Person .
+

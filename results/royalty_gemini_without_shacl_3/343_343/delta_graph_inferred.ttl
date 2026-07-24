@@ -1,0 +1,227 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_of_Cumberland a :Man ;
+    :hasBrother data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isBloodrelationOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isSiblingOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 .
+
+data:Ernest_Augustus_of_Hanofver_1887 a :Man ;
+    :hasBrother data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :hasRelation data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isBloodrelationOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isBrotherOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 ;
+    :isSiblingOf data:Christian_of_Cumberland,
+        data:Ernest_Augustus_of_Hanofver_1887 .
+
+data:Paul_of_Greece a :Man ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Frederica_of_Hanover,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isSiblingOf data:Paul_of_Greece .
+
+data:George_of_Cumberland a :Man ;
+    :hasBrother data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Frederica_of_Hanover,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isUncleOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover .
+
+data:Ernest_Augustus_of_Hanover_Senior a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_Augustus_of_Hanover_Senior ;
+    :hasChild data:Ernest_Augustus_of_Hanover_1887 ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSon data:Ernest_Augustus_of_Hanover_1887 ;
+    :isAncestorOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover_Senior ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover_Senior ;
+    :isFatherOf data:Ernest_Augustus_of_Hanover_1887 ;
+    :isParentOf data:Ernest_Augustus_of_Hanover_1887 ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover_Senior ;
+    :isUncleOf data:Ernest_Augustus_of_Hanover_1887 .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Ernest_Augustus_of_Hanover_1887 ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Thyra_of_Denmark ;
+    :hasSon data:Ernest_Augustus_of_Hanover_1887 ;
+    :isAncestorOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Frederica_of_Hanover ;
+    :isAuntOf data:Ernest_Augustus_of_Hanover_1887 ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isMotherOf data:Ernest_Augustus_of_Hanover_1887 ;
+    :isParentOf data:Ernest_Augustus_of_Hanover_1887 ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasChild data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Ernest_Augustus_Prince_of_Hanover_1914 ;
+    :isAncestorOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isAuntOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isParentOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isSiblingOf data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Victoria_Louise_of_Prussia .
+
+data:Ernest_Augustus_Prince_of_Hanover_1914 a :Man ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Ernest_Augustus_Prince_of_Hanover_1914 ;
+    :hasFather data:Ernest_Augustus_of_Hanover_1887 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Frederica_of_Hanover,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isSonOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia .
+
+data:Frederica_of_Hanover a :Woman ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Ernest_Augustus_Prince_of_Hanover_1914 ;
+    :hasFather data:Ernest_Augustus_of_Hanover_1887 ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Frederica_of_Hanover,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus_of_Hanover_1887,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isSisterOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover .
+
+data:Ernest_Augustus_of_Hanover_1887 a :Ancestor,
+        :Man ;
+    :hasAncestor data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :hasChild data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ernest_Augustus_of_Hanover_Senior ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Ernest_Augustus_of_Hanover_1887,
+        data:Ernest_Augustus_of_Hanover_Senior,
+        data:Frederica_of_Hanover,
+        data:George_of_Cumberland,
+        data:Paul_of_Greece,
+        data:Thyra_of_Denmark,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Ernest_Augustus_Prince_of_Hanover_1914 ;
+    :isAncestorOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isChildOf data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark ;
+    :isFatherOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isParentOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover_1887,
+        data:George_of_Cumberland ;
+    :isSonOf data:Ernest_Augustus_of_Hanover_Senior,
+        data:Thyra_of_Denmark ;
+    :isUncleOf data:Ernest_Augustus_Prince_of_Hanover_1914,
+        data:Frederica_of_Hanover .
+

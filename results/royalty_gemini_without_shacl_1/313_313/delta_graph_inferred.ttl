@@ -1,0 +1,238 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Grand_Duchess_Elena_Vladimirovna a :Woman ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isAuntOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska .
+
+data:Grand_Duke_Boris_Vladimirovich a :Man ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasRelation data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isUncleOf data:Prince_Vladimir_Romanovsky-Krasinsky .
+
+data:Grand_Duke_Kirill_Vladimirovich a :Man ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isUncleOf data:Prince_Vladimir_Romanovsky-Krasinsky .
+
+data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
+        :Woman ;
+    :hasChild data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasDaughter data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasSister data:Grand_Duchess_Maria_Pavlovna ;
+    :hasSon data:Grand_Duke_Andrei_Vladimirovich ;
+    :isAncestorOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isAuntOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Pavlovna ;
+    :isMotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isParentOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSiblingOf data:Grand_Duchess_Maria_Pavlovna ;
+    :isSisterOf data:Grand_Duchess_Maria_Pavlovna .
+
+data:Grand_Duke_Vladimir_Alexandrovich a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasChild data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasDaughter data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasRelation data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasSon data:Grand_Duke_Andrei_Vladimirovich ;
+    :isAncestorOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isFatherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isParentOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isUncleOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska .
+
+data:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska ;
+    :hasBrother data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasFather data:Grand_Duke_Andrei_Vladimirovich ;
+    :hasMother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasParent data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBrotherOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isChildOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSiblingOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isSonOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska .
+
+data:Mathilde_Kschessinska a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasChild data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isAncestorOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isAuntOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isDaughterOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isMotherOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isParentOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska .
+
+data:Grand_Duke_Andrei_Vladimirovich a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :hasChild data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Grand_Duke_Vladimir_Alexandrovich,
+        data:Mathilde_Kschessinska,
+        data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isAncestorOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isAuntOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isDaughterOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isFatherOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isMotherOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isParentOf data:Prince_Vladimir_Romanovsky-Krasinsky ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Grand_Duke_Boris_Vladimirovich,
+        data:Grand_Duke_Kirill_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna,
+        data:Grand_Duke_Andrei_Vladimirovich,
+        data:Mathilde_Kschessinska ;
+    :isSonOf data:Grand_Duchess_Maria_Pavlovna,
+        data:Grand_Duke_Vladimir_Alexandrovich ;
+    :isUncleOf data:Prince_Vladimir_Romanovsky-Krasinsky .
+

@@ -1,0 +1,431 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Casper_Van_Dien a :Man,
+        :Person ;
+    :hasBrother data:Casper_Van_Dien ;
+    :hasRelation data:Casper_Van_Dien ;
+    :isBloodrelationOf data:Casper_Van_Dien ;
+    :isBrotherOf data:Casper_Van_Dien ;
+    :isSiblingOf data:Casper_Van_Dien .
+
+data:Ellis_Jones a :Man,
+        :Person ;
+    :hasBrother data:Ellis_Jones ;
+    :hasRelation data:Ellis_Jones ;
+    :isBloodrelationOf data:Ellis_Jones ;
+    :isBrotherOf data:Ellis_Jones ;
+    :isSiblingOf data:Ellis_Jones .
+
+data:Robert_Evans a :Man,
+        :Person ;
+    :hasBrother data:Robert_Evans ;
+    :hasRelation data:Robert_Evans ;
+    :isBloodrelationOf data:Robert_Evans ;
+    :isBrotherOf data:Robert_Evans ;
+    :isSiblingOf data:Robert_Evans .
+
+data:Christina_Oxenberg a :Person,
+        :Woman ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAuntOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:William_Weitz_Shaffer a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Weitz_Shaffer ;
+    :hasChild data:India_Riven_Oxenberg ;
+    :hasDaughter data:India_Riven_Oxenberg ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:William_Weitz_Shaffer ;
+    :isBrotherOf data:William_Weitz_Shaffer ;
+    :isFatherOf data:India_Riven_Oxenberg ;
+    :isParentOf data:India_Riven_Oxenberg ;
+    :isSiblingOf data:William_Weitz_Shaffer ;
+    :isUncleOf data:India_Riven_Oxenberg .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:Howard_Oxenberg ;
+    :hasChild data:Catherine_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg ;
+    :hasDeathYear 2010 ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Howard_Oxenberg ;
+    :isBrotherOf data:Howard_Oxenberg ;
+    :isFatherOf data:Catherine_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg ;
+    :isSiblingOf data:Howard_Oxenberg ;
+    :isUncleOf data:Catherine_Oxenberg .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:King_George_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_of_Greece ;
+    :hasChild data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSon data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_of_Greece ;
+    :isBrotherOf data:King_George_of_Greece ;
+    :isFatherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_George_of_Greece ;
+    :isUncleOf data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Queen_Olga_Konstantinovna_of_the_Hellenes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasSon data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :isMotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :isSisterOf data:Queen_Olga_Konstantinovna_of_the_Hellenes .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_of_Greece,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasFather data:King_George_of_Greece ;
+    :hasMother data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasParent data:King_George_of_Greece,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:King_George_of_Greece,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :isFatherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:King_George_of_Greece,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :isUncleOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:India_Riven_Oxenberg a :Person,
+        :Woman ;
+    :hasAncestor data:Catherine_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg ;
+    :hasParent data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:India_Riven_Oxenberg ;
+    :isChildOf data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :isDaughterOf data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :isSiblingOf data:India_Riven_Oxenberg ;
+    :isSisterOf data:India_Riven_Oxenberg .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAuntOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasBirthYear 1936 ;
+    :hasChild data:Catherine_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg ;
+    :isAuntOf data:Catherine_Oxenberg ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Catherine_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg ;
+    :isSiblingOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes ;
+    :hasBirthYear 1961 ;
+    :hasChild data:India_Riven_Oxenberg ;
+    :hasDaughter data:India_Riven_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMarriageYear data:Robert_Evans,
+        1998 ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:King_George_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:Queen_Olga_Konstantinovna_of_the_Hellenes,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAncestorOf data:India_Riven_Oxenberg ;
+    :isAuntOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isMotherOf data:India_Riven_Oxenberg ;
+    :isParentOf data:India_Riven_Oxenberg ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+

@@ -1,0 +1,331 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Frederick_III_German_Emperor a :Man,
+        :Person ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasRelation data:Frederick_III_German_Emperor ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isSiblingOf data:Frederick_III_German_Emperor .
+
+data:King_Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:King_Constantine_I_of_Greece ;
+    :hasRelation data:King_Constantine_I_of_Greece ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:King_Constantine_I_of_Greece ;
+    :isBrotherOf data:King_Constantine_I_of_Greece ;
+    :isSiblingOf data:King_Constantine_I_of_Greece .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_Prince_of_Hesse_and_by_Rhine .
+
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Sophie_of_Prussia ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Sophie_of_Prussia ;
+    :isBloodrelationOf data:Princess_Sophie_of_Prussia ;
+    :isSiblingOf data:Princess_Sophie_of_Prussia ;
+    :isSisterOf data:Princess_Sophie_of_Prussia .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSex data:Female ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Wilhelm_II_German_Emperor ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor .
+
+data:Male a :Male,
+        :Sex .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Princess_Mafalda_of_Savoy ;
+    :hasDaughter data:Princess_Mafalda_of_Savoy ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Moritz_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Victor_Emmanuel_III_of_Italy ;
+    :isBrotherOf data:Victor_Emmanuel_III_of_Italy ;
+    :isFatherOf data:Princess_Mafalda_of_Savoy ;
+    :isParentOf data:Princess_Mafalda_of_Savoy ;
+    :isSiblingOf data:Victor_Emmanuel_III_of_Italy ;
+    :isUncleOf data:Princess_Mafalda_of_Savoy .
+
+data:Princess_Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Moritz_of_Hesse ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy ;
+    :hasParent data:Victor_Emmanuel_III_of_Italy ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Mafalda_of_Savoy ;
+    :hasSon data:Moritz_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse ;
+    :isAuntOf data:Moritz_of_Hesse ;
+    :isBloodrelationOf data:Princess_Mafalda_of_Savoy ;
+    :isChildOf data:Victor_Emmanuel_III_of_Italy ;
+    :isDaughterOf data:Victor_Emmanuel_III_of_Italy ;
+    :isMotherOf data:Moritz_of_Hesse ;
+    :isParentOf data:Moritz_of_Hesse ;
+    :isSiblingOf data:Princess_Mafalda_of_Savoy ;
+    :isSisterOf data:Princess_Mafalda_of_Savoy .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_Charles_of_Hesse ;
+    :hasChild data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :hasSon data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isParentOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Prince_Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isAuntOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia ;
+    :isMotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isParentOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasBrother data:Moritz_of_Hesse ;
+    :hasFather data:Philipp_Prince_and_Landgrave_of_Hesse ;
+    :hasMother data:Princess_Mafalda_of_Savoy ;
+    :hasParent data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Moritz_of_Hesse ;
+    :isBrotherOf data:Moritz_of_Hesse ;
+    :isChildOf data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :isSiblingOf data:Moritz_of_Hesse ;
+    :isSonOf data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Moritz_of_Hesse .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Moritz_of_Hesse .
+
+data:Philipp_Prince_and_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasChild data:Moritz_of_Hesse ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Friedrich_Wilhelm_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Mafalda_of_Savoy,
+        data:Princess_Margaret_of_Prussia,
+        data:Victor_Emmanuel_III_of_Italy,
+        data:Wolfgang_of_Hesse ;
+    :hasSex data:Male ;
+    :hasSon data:Moritz_of_Hesse ;
+    :isAncestorOf data:Moritz_of_Hesse ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isFatherOf data:Moritz_of_Hesse ;
+    :isParentOf data:Moritz_of_Hesse ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Philipp_Prince_and_Landgrave_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Moritz_of_Hesse .
+

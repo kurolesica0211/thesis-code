@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XII a :Man,
+        :Person ;
+    :isFatherOf data:Alfonso_XIII .
+
+data:Gonzalo_de_Borbon a :Man,
+        :Person ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Jaime_de_Borbon a :Man,
+        :Person ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Juan_de_Borbon a :Man,
+        :Person ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Leopold_of_Battenberg a :Man,
+        :Person ;
+    :isBrotherOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Maria_Christina_of_Austria a :Person,
+        :Woman ;
+    :isMotherOf data:Alfonso_XIII .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :isMotherOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Male a :Sex .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1941 ;
+    :hasMarriageYear 1906 ;
+    :hasRelation data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:Male .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+

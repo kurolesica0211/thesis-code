@@ -1,0 +1,314 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Felipe_VI%2Ctype a :Person ;
+    :hasRelation data:Felipe_VI%2Ctype ;
+    :isBloodrelationOf data:Felipe_VI%2Ctype ;
+    :isSiblingOf data:Felipe_VI%2Ctype .
+
+data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona ;
+    :isAncestorOf data:Elena,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona ;
+    :isSiblingOf data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona ;
+    :isSisterOf data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona .
+
+data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :hasChild data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isAncestorOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :isBrotherOf data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :isFatherOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isParentOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isSiblingOf data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :isUncleOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Elena ;
+    :hasDaughter data:Elena ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Elena,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Elena ;
+    :isParentOf data:Elena ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Elena .
+
+data:Sof%C3%ADa a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elena ;
+    :hasDaughter data:Elena ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Sof%C3%ADa ;
+    :isAncestorOf data:Elena,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Elena ;
+    :isBloodrelationOf data:Sof%C3%ADa ;
+    :isMotherOf data:Elena ;
+    :isParentOf data:Elena ;
+    :isSiblingOf data:Sof%C3%ADa ;
+    :isSisterOf data:Sof%C3%ADa .
+
+data:Cristina a :Person,
+        :Woman ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isAuntOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Felipe_VI a :Man ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBrotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isUncleOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :hasBrother data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasChild data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :hasParent data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:Felipe_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isBrotherOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isChildOf data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :isFatherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isSonOf data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda ;
+    :isUncleOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Felipe_de_Marichalar_y_Borb%C3%B3n a :Man,
+        :Person ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasMother data:Elena ;
+    :hasParent data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBrotherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isSiblingOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSonOf data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada .
+
+data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
+        :Woman ;
+    :hasAncestor data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasMother data:Elena ;
+    :hasParent data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isDaughterOf data:Elena,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada ;
+    :isSiblingOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSisterOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n .
+
+data:Elena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_VI ;
+    :hasChild data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Amalio_de_Marichalar_y_Bruguera%2C_8th_Count_of_Ripalda,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Jaime_de_Marichalar_y_S%C3%A1enz_de_Tejada,
+        data:Juan_Carlos_I,
+        data:Mar%C3%ADa_de_las_Mercedes%2C_Countess_of_Barcelona,
+        data:Sof%C3%ADa,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :hasSon data:Felipe_de_Marichalar_y_Borb%C3%B3n ;
+    :isAncestorOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isMotherOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe_de_Marichalar_y_Borb%C3%B3n,
+        data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+

@@ -1,0 +1,201 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_Johanna_Edle_von_Meinertzhagen a :Person,
+        :Woman ;
+    :hasRelation data:Elisabeth_Johanna_Edle_von_Meinertzhagen ;
+    :hasSister data:Elisabeth_Johanna_Edle_von_Meinertzhagen ;
+    :isBloodrelationOf data:Elisabeth_Johanna_Edle_von_Meinertzhagen ;
+    :isSiblingOf data:Elisabeth_Johanna_Edle_von_Meinertzhagen ;
+    :isSisterOf data:Elisabeth_Johanna_Edle_von_Meinertzhagen .
+
+data:Frederick_William_Count_of_Lippe_Biesterfeld a :Man,
+        :Person ;
+    :hasBrother data:Frederick_William_Count_of_Lippe_Biesterfeld ;
+    :hasMarriageYear 1770 ;
+    :hasRelation data:Frederick_William_Count_of_Lippe_Biesterfeld ;
+    :isBloodrelationOf data:Frederick_William_Count_of_Lippe_Biesterfeld ;
+    :isBrotherOf data:Frederick_William_Count_of_Lippe_Biesterfeld ;
+    :isSiblingOf data:Frederick_William_Count_of_Lippe_Biesterfeld .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person ;
+    :hasBrother data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isBrotherOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSiblingOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isUncleOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr .
+
+data:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Aschwin_of_Lippe_Biesterfeld ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasSister data:Baroness_Armgard_von_Sierstorpff_Cramm ;
+    :hasSon data:Aschwin_of_Lippe_Biesterfeld ;
+    :isAncestorOf data:Aschwin_of_Lippe_Biesterfeld ;
+    :isAuntOf data:Aschwin_of_Lippe_Biesterfeld ;
+    :isBloodrelationOf data:Baroness_Armgard_von_Sierstorpff_Cramm ;
+    :isMotherOf data:Aschwin_of_Lippe_Biesterfeld ;
+    :isParentOf data:Aschwin_of_Lippe_Biesterfeld ;
+    :isSiblingOf data:Baroness_Armgard_von_Sierstorpff_Cramm ;
+    :isSisterOf data:Baroness_Armgard_von_Sierstorpff_Cramm .
+
+data:Countess_Karoline_von_Wartensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasSister data:Countess_Karoline_von_Wartensleben ;
+    :hasSon data:Prince_Bernhard_of_Lippe_1872 ;
+    :isAncestorOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isAuntOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isBloodrelationOf data:Countess_Karoline_von_Wartensleben ;
+    :isMotherOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isParentOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSiblingOf data:Countess_Karoline_von_Wartensleben ;
+    :isSisterOf data:Countess_Karoline_von_Wartensleben .
+
+data:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :hasChild data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasSon data:Prince_Bernhard_of_Lippe_1872 ;
+    :isAncestorOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBloodrelationOf data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :isBrotherOf data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isParentOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSiblingOf data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe_1872 .
+
+data:Prince_Bernhard_of_Lippe_Biesterfeld_jr a :Man,
+        :Person ;
+    :hasAncestor data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasBrother data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasFather data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasParent data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBloodrelationOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBrotherOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isChildOf data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSiblingOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isSonOf data:Prince_Bernhard_of_Lippe_1872 .
+
+data:Aschwin_of_Lippe_Biesterfeld a :Man,
+        :Person ;
+    :hasAncestor data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasBrother data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasFather data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff_Cramm ;
+    :hasParent data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBloodrelationOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBrotherOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isChildOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSiblingOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Prince_Bernhard_of_Lippe_1872 .
+
+data:Prince_Bernhard_of_Lippe_1872 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :hasChild data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :hasMarriageYear 1909 ;
+    :hasMother data:Countess_Karoline_von_Wartensleben ;
+    :hasParent data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :hasRelation data:Aschwin_of_Lippe_Biesterfeld,
+        data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld,
+        data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :hasSon data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isAncestorOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isBrotherOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isChildOf data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :isFatherOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isParentOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr ;
+    :isSiblingOf data:Leopold_IV_Prince_of_Lippe,
+        data:Prince_Bernhard_of_Lippe_1872 ;
+    :isSonOf data:Countess_Karoline_von_Wartensleben,
+        data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :isUncleOf data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_jr .
+

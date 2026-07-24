@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hubertus_son_of_Cecilie a :Man,
+        :Person ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Louis_Ferdinand_son_of_Cecilie a :Man,
+        :Person ;
+    :hasRelation data:Kira_Kirillovna_of_Russia ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Victoria_Marina_of_Prussia a :Person,
+        :Woman ;
+    :isDaughterOf data:Frederick_son_of_Cecilie .
+
+data:Wilhelm_son_of_Cecilie a :Man,
+        :Person ;
+    :hasRelation data:Dorothea_von_Salviati ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasRelation data:Christian_X_of_Denmark .
+
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Michael_Nikolaevich_of_Russia .
+
+data:Christian_X_of_Denmark a :Man,
+        :Person .
+
+data:Cyril_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Dorothea_von_Salviati a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_son_of_Cecilie a :Man,
+        :Person ;
+    :isSonOf data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm_German_Crown_Prince .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Cyril_Vladimirovich_of_Russia .
+
+data:Michael_Nikolaevich_of_Russia a :Man,
+        :Person .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Wilhelm_German_Crown_Prince ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II_German_Emperor .
+

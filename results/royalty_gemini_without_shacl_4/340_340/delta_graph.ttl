@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Prince_Wilhelm a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Prince_August_Wilhelm a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Prince_Christian_Oscar_1919 a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_Eitel_Friedrich a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Prince_Ernest_Augustus_1914 a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_George_William_1915 a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Prince_Welf_Henry_1923 a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Princess_Frederica_1917 a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
+
+data:Victoria_Louise_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Ernest_Augustus_of_Hanover ;
+    :knownAs "Sissy"^^xsd:string .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
+

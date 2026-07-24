@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/459_459",
+  "text_file": "Q75774742.txt",
+  "text_key": "Q75774742",
+  "article": "https://en.wikipedia.org/wiki/Daisy_Knatchbull",
+  "article_key": "Daisy Knatchbull",
+  "main_entity": {
+    "uri": "http://example.com/data#Daisy_Knatchbull",
+    "qid": "Q75774742",
+    "label": "Daisy Knatchbull"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Daisy_Knatchbull",
+      "qid": "Q75774742",
+      "label": "Daisy Knatchbull",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Atalanta_Cowen",
+      "qid": "Q75716787",
+      "label": "Atalanta Cowen",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Philip_Knatchbull",
+      "qid": "Q75383945",
+      "label": "Philip Knatchbull",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Daisy_Isadora_Louise_Knatchbull",
+      "extracted_local_name": "Daisy_Isadora_Louise_Knatchbull",
+      "embedding_text": "Daisy Isadora Louise Knatchbull",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Daisy_Knatchbull",
+      "ground_truth_qid": "Q75774742",
+      "ground_truth_label": "Daisy Knatchbull",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Daisy Isadora Louise Knatchbull",
+      "best_candidate_label": "Daisy Knatchbull",
+      "best_candidate_qid": "Q75774742",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philip_Knatchbull",
+      "extracted_local_name": "Philip_Knatchbull",
+      "embedding_text": "Philip Knatchbull",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Philip_Knatchbull",
+      "ground_truth_qid": "Q75383945",
+      "ground_truth_label": "Philip Knatchbull",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Philip Knatchbull",
+      "best_candidate_label": "Philip Knatchbull",
+      "best_candidate_qid": "Q75383945",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Atalanta_Cowan",
+      "extracted_local_name": "Atalanta_Cowan",
+      "embedding_text": "Atalanta Cowan",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9,
+      "ground_truth_uri": "http://example.com/data#Atalanta_Cowen",
+      "ground_truth_qid": "Q75716787",
+      "ground_truth_label": "Atalanta Cowen",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Atalanta Cowen",
+      "best_candidate_label": "Atalanta Cowen",
+      "best_candidate_qid": "Q75716787",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Freddy_Knatchbull",
+      "extracted_local_name": "Frederick_Freddy_Knatchbull",
+      "embedding_text": "Frederick Freddy Knatchbull",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Philip Knatchbull",
+      "best_candidate_label": "Philip Knatchbull",
+      "best_candidate_qid": "Q75383945",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5454545454545454
+    },
+    {
+      "extracted_uri": "http://example.org/data/Wendy_Leach",
+      "extracted_local_name": "Wendy_Leach",
+      "embedding_text": "Wendy Leach",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

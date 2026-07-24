@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Bernhard a :Ancestor,
+        :Man ;
+    :hasChild data:Beatrix .
+
+data:Claus a :Ancestor,
+        :Man ;
+    :hasChild data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander .
+
+data:Juliana a :Ancestor,
+        :Woman ;
+    :hasChild data:Beatrix .
+
+data:Alexia a :Woman .
+
+data:Ariane a :Woman .
+
+data:Catharina-Amalia a :Woman .
+
+data:Willem-Alexander a :Man ;
+    :hasBirthYear 1967 ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasFather data:Claus ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Beatrix ;
+    :isSiblingOf data:Constantijn,
+        data:Friso .
+
+data:Beatrix a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Friso a :Man ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :isSiblingOf data:Constantijn .
+
+data:Constantijn a :Man ;
+    :hasBirthYear 1969 .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederica a :Woman ;\n    :hasFather data:Ernest_Augustus ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Louise_of_Prussia ;\n    :hasRelation data:Paul_of_Greece .\n\ndata:Christian a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Ernest_Augustus a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Ernest_Augustus_of_Hanover ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_of_Denmark ;\n    :hasRelation data:Victoria_Louise_of_Prussia ;\n    :isBrotherOf data:Christian,\n        data:George .\n\ndata:George a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Victoria_Louise_of_Prussia a :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Man .\n\ndata:Thyra_of_Denmark a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederica a :Woman ;\n    :hasFather data:Ernest_Augustus ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Louise_of_Prussia ;\n    :hasRelation data:Paul_of_Greece .\n\ndata:Christian a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Ernest_Augustus a :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:Ernest_Augustus_of_Hanover ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_of_Denmark ;\n    :hasRelation data:Victoria_Louise_of_Prussia ;\n    :isBrotherOf data:Christian,\n        data:George .\n\ndata:George a :Man ;\n    :isChildOf data:Ernest_Augustus_of_Hanover,\n        data:Thyra_of_Denmark .\n\ndata:Paul_of_Greece a :Man .\n\ndata:Victoria_Louise_of_Prussia a :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Man .\n\ndata:Thyra_of_Denmark a :Woman .\n\n"
+    }
+]

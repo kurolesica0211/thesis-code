@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Alexander ;
+    :hasMother data:Aspasia_Manos .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasBirthYear "1893"^^xsd:positiveInteger ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear "1920"^^xsd:positiveInteger ;
+    :hasFather data:Constantine_I ;
+    :hasMarriageYear "1919"^^xsd:positiveInteger ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasRelation data:Aspasia_Manos ;
+    :hasSister data:Helen_of_Romania,
+        data:Princess_Katherine .
+
+data:Constantine_I a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
+
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
+
+data:George_II_of_Greece a :Man,
+        :Person .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:Helen_of_Romania a :Person,
+        :Woman .
+
+data:Maria_Argyropoulos a :Person,
+        :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Petros_Manos a :Man,
+        :Person .
+
+data:Princess_Katherine a :Person,
+        :Woman .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Victoria_Princess_Royal a :Person,
+        :Woman .
+
+data:Aspasia_Manos a :Person,
+        :Woman ;
+    :hasFather data:Petros_Manos ;
+    :hasMother data:Maria_Argyropoulos .
+

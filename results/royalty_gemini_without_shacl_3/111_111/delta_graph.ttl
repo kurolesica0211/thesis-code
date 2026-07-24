@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Flint_Wood a :Man .
+
+data:India_Hicks a :Woman ;
+    :hasBirthYear 1967 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+
+data:David_Nightingale_Hicks a :Man .
+
+data:Lady_Pamela_Hicks a :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;\n    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,\n        data:Lucia_of_Bourbon-Two_Sicilies,\n        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,\n        data:Maria_Cristina_of_Bourbon-Two_Sicilies .\n\ndata:Barbara_Maria_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 .\n\ndata:Lucia_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898 a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Ludwiga_Theresia_of_Bavaria a :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\ndata:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Urraca_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1913 ;\n    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;\n    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,\n        data:Lucia_of_Bourbon-Two_Sicilies,\n        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,\n        data:Maria_Cristina_of_Bourbon-Two_Sicilies .\n\ndata:Barbara_Maria_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 .\n\ndata:Lucia_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898 a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_Ludwiga_Theresia_of_Bavaria a :Person,\n        :Woman ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 .\n\ndata:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\n"
+    }
+]

@@ -1,0 +1,331 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis a :Man,
+        :Person ;
+    :hasBrother data:Louis ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Louis ;
+    :isBloodrelationOf data:Louis ;
+    :isBrotherOf data:Louis ;
+    :isSiblingOf data:Louis .
+
+data:Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Donatus,
+        data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:Mary,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isAuntOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:Mary,
+        data:Tatiana ;
+    :isMotherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isParentOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSiblingOf data:Mary,
+        data:Tatiana ;
+    :isSisterOf data:Mary,
+        data:Tatiana .
+
+data:Tatiana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasChild data:Donatus,
+        data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:Mary,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isAuntOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:Mary,
+        data:Tatiana ;
+    :isMotherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isParentOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSiblingOf data:Mary,
+        data:Tatiana ;
+    :isSisterOf data:Mary,
+        data:Tatiana .
+
+data:Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp ;
+    :hasChild data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isBloodrelationOf data:Philipp ;
+    :isBrotherOf data:Philipp ;
+    :isFatherOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isParentOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isSiblingOf data:Philipp ;
+    :isUncleOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz .
+
+data:FrederickII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philipp ;
+    :hasBrother data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasChild data:Donatus,
+        data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasFather data:Philipp ;
+    :hasParent data:Philipp ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isBrotherOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isChildOf data:Philipp ;
+    :isFatherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isParentOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSiblingOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isSonOf data:Philipp ;
+    :isUncleOf data:Donatus,
+        data:FloriaFranziska .
+
+data:Hubertus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philipp ;
+    :hasBrother data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasChild data:Donatus,
+        data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasFather data:Philipp ;
+    :hasParent data:Philipp ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isBrotherOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isChildOf data:Philipp ;
+    :isFatherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isParentOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSiblingOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isSonOf data:Philipp ;
+    :isUncleOf data:Donatus,
+        data:FloriaFranziska .
+
+data:Moritz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philipp ;
+    :hasBrother data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasChild data:Donatus,
+        data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasFather data:Philipp ;
+    :hasParent data:Philipp ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isBrotherOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isChildOf data:Philipp ;
+    :isFatherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isParentOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSiblingOf data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :isSonOf data:Philipp ;
+    :isUncleOf data:Donatus,
+        data:FloriaFranziska .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasAncestor data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Donatus ;
+    :hasFather data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Mary,
+        data:Tatiana ;
+    :hasParent data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:FloriaFranziska ;
+    :isBloodrelationOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBrotherOf data:Donatus,
+        data:FloriaFranziska ;
+    :isChildOf data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana ;
+    :isSiblingOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSonOf data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana .
+
+data:FloriaFranziska a :Person,
+        :Woman ;
+    :hasAncestor data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Donatus ;
+    :hasFather data:FrederickII,
+        data:Hubertus,
+        data:Moritz ;
+    :hasMother data:Mary,
+        data:Tatiana ;
+    :hasParent data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:FloriaFranziska ;
+    :isBloodrelationOf data:Donatus,
+        data:FloriaFranziska ;
+    :isChildOf data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana ;
+    :isDaughterOf data:FrederickII,
+        data:Hubertus,
+        data:Mary,
+        data:Moritz,
+        data:Tatiana ;
+    :isSiblingOf data:Donatus,
+        data:FloriaFranziska ;
+    :isSisterOf data:Donatus,
+        data:FloriaFranziska .
+

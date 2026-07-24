@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena ;\n    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;\n    :knownAs \"Froil\u00e1n\"^^xsd:string .\n\ndata:Amalio_de_Marichalar_y_Bruguera a :Man,\n        :Person .\n\ndata:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Person,\n        :Woman .\n\ndata:Felipe_VI a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sof%C3%ADa_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena .\n\ndata:Infanta_Elena a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sof%C3%ADa_of_Spain ;\n    :isSiblingOf data:Felipe_VI .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person ;\n    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;\n    :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena ;\n    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;\n    :knownAs \"Froil\u00e1n\"^^xsd:string .\n\ndata:Amalio_de_Marichalar_y_Bruguera a :Man,\n        :Person .\n\ndata:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Person,\n        :Woman .\n\ndata:Felipe_VI a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person .\n\ndata:Sof%C3%ADa_of_Spain a :Person,\n        :Woman .\n\ndata:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,\n        :Woman ;\n    :hasFather data:Jaime_de_Marichalar ;\n    :hasMother data:Infanta_Elena .\n\ndata:Infanta_Elena a :Person,\n        :Woman ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sof%C3%ADa_of_Spain ;\n    :isSiblingOf data:Felipe_VI .\n\ndata:Jaime_de_Marichalar a :Man,\n        :Person ;\n    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;\n    :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .\n\n"
+    }
+]

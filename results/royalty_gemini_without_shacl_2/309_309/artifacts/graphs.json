@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Napoleon_I_of_France a :Man .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasBrother data:Prince_Carlo%2C_Duke_of_Castro ;\n    :hasFather data:Prince_Ferdinand%2C_Duke_of_Castro ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Chantal_de_Chevron-Villette ;\n    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .\n\ndata:Alix_de_Foresta a :Woman .\n\ndata:Charles_Napol%C3%A9on_Bonaparte a :Man ;\n    :hasFather data:Louis%2C_Prince_Napol%C3%A9on ;\n    :hasMother data:Alix_de_Foresta .\n\ndata:Louis%2C_Prince_Napol%C3%A9on a :Man .\n\ndata:Prince_Carlo%2C_Duke_of_Castro a :Man ;\n    :hasFather data:Prince_Ferdinand%2C_Duke_of_Castro ;\n    :hasMother data:Chantal_de_Chevron-Villette .\n\ndata:Chantal_de_Chevron-Villette a :Woman .\n\ndata:Prince_Ferdinand%2C_Duke_of_Castro a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Napoleon_I_of_France a :Man .\n\ndata:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasBrother data:Prince_Carlo%2C_Duke_of_Castro ;\n    :hasFather data:Prince_Ferdinand%2C_Duke_of_Castro ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Chantal_de_Chevron-Villette ;\n    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .\n\ndata:Alix_de_Foresta a :Woman .\n\ndata:Charles_Napol%C3%A9on_Bonaparte a :Man ;\n    :hasFather data:Louis%2C_Prince_Napol%C3%A9on ;\n    :hasMother data:Alix_de_Foresta .\n\ndata:Louis%2C_Prince_Napol%C3%A9on a :Man .\n\ndata:Prince_Carlo%2C_Duke_of_Castro a :Man ;\n    :hasFather data:Prince_Ferdinand%2C_Duke_of_Castro ;\n    :hasMother data:Chantal_de_Chevron-Villette .\n\ndata:Chantal_de_Chevron-Villette a :Woman .\n\ndata:Prince_Ferdinand%2C_Duke_of_Castro a :Man .\n\n"
+    }
+]

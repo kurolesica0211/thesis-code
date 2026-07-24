@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Friedrich_Gunther_Prince_of_Schwarzburg .
+
+data:Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Friedrich_Gunther_Prince_of_Schwarzburg a :Man,
+        :Person ;
+    :hasSister data:Marie_Antoinette_of_Schwarzburg .
+
+data:Marie_Antoinette_of_Schwarzburg a :Person,
+        :Woman .
+
+data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach a :Ancestor,
+        :Man,
+        :Person .
+

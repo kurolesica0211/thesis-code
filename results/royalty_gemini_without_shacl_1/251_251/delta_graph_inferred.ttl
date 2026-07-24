@@ -1,0 +1,247 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Mountbatten_1st_Marquess a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten_1st_Marquess ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten ;
+    :isBloodrelationOf data:Louis_Mountbatten_1st_Marquess ;
+    :isBrotherOf data:Louis_Mountbatten_1st_Marquess ;
+    :isFatherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Louis_Mountbatten_1st_Marquess ;
+    :isUncleOf data:George_Mountbatten .
+
+data:Michael_Mikhailovich_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Mikhailovich_Romanov ;
+    :hasChild data:Nadejda_Mikhailovna_de_Torby ;
+    :hasDaughter data:Nadejda_Mikhailovna_de_Torby ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isBloodrelationOf data:Michael_Mikhailovich_Romanov ;
+    :isBrotherOf data:Michael_Mikhailovich_Romanov ;
+    :isFatherOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isParentOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isSiblingOf data:Michael_Mikhailovich_Romanov ;
+    :isUncleOf data:Nadejda_Mikhailovna_de_Torby .
+
+data:Sophie_von_Merenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Nadejda_Mikhailovna_de_Torby ;
+    :hasDaughter data:Nadejda_Mikhailovna_de_Torby ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Sophie_von_Merenberg ;
+    :isAncestorOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isAuntOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isBloodrelationOf data:Sophie_von_Merenberg ;
+    :isMotherOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isParentOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isSiblingOf data:Sophie_von_Merenberg ;
+    :isSisterOf data:Sophie_von_Merenberg .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten ;
+    :isAuntOf data:George_Mountbatten ;
+    :isBloodrelationOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Victoria_of_Hesse_and_by_Rhine .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden .
+
+data:Nadejda_Mikhailovna_de_Torby a :Person,
+        :Woman ;
+    :hasAncestor data:Michael_Mikhailovich_Romanov,
+        data:Sophie_von_Merenberg ;
+    :hasFather data:Michael_Mikhailovich_Romanov ;
+    :hasMother data:Sophie_von_Merenberg ;
+    :hasParent data:Michael_Mikhailovich_Romanov,
+        data:Sophie_von_Merenberg ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Nadejda_Mikhailovna_de_Torby ;
+    :isBloodrelationOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isChildOf data:Michael_Mikhailovich_Romanov,
+        data:Sophie_von_Merenberg ;
+    :isDaughterOf data:Michael_Mikhailovich_Romanov,
+        data:Sophie_von_Merenberg ;
+    :isSiblingOf data:Nadejda_Mikhailovna_de_Torby ;
+    :isSisterOf data:Nadejda_Mikhailovna_de_Torby .
+
+data:Princess_Alice a :Person,
+        :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden .
+
+data:Queen_Louise_of_Sweden a :Person,
+        :Woman ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSisterOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden .
+
+data:George_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten_1st_Marquess,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Louis_Mountbatten_1st_Marquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Louis_Mountbatten_1st_Marquess,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Louis_Mountbatten_1st_Marquess,
+        data:Michael_Mikhailovich_Romanov,
+        data:Nadejda_Mikhailovna_de_Torby,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden,
+        data:Sophie_von_Merenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBloodrelationOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isBrotherOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isChildOf data:Louis_Mountbatten_1st_Marquess,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Louise_of_Sweden ;
+    :isSonOf data:Louis_Mountbatten_1st_Marquess,
+        data:Victoria_of_Hesse_and_by_Rhine .
+

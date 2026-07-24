@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .\n\ndata:Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .\n\ndata:Pedro_II_of_Brazil a :Man,\n        :Person .\n\ndata:Pedro_Luiz_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1983 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza ;\n    :hasMother data:Christine_of_Ligne .\n\ndata:Teresa_Cristina_of_Brazil a :Person,\n        :Woman .\n\ndata:Alix_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Antoine_13th_Prince_of_Ligne a :Man,\n        :Person .\n\ndata:Christine_of_Ligne a :Person,\n        :Woman ;\n    :hasFather data:Antoine_13th_Prince_of_Ligne ;\n    :hasMother data:Alix_of_Luxembourg .\n\ndata:Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person .\n\ndata:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;\n    :hasMother data:Maria_Elisabeth_of_Bavaria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .\n\ndata:Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Man,\n        :Person .\n\ndata:Isabel_of_Brazil a :Person,\n        :Woman .\n\ndata:Luiz_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .\n\ndata:Pedro_II_of_Brazil a :Man,\n        :Person .\n\ndata:Pedro_Luiz_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1983 ;\n    :hasDeathYear 2009 ;\n    :hasFather data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza ;\n    :hasMother data:Christine_of_Ligne .\n\ndata:Teresa_Cristina_of_Brazil a :Person,\n        :Woman .\n\ndata:Alix_of_Luxembourg a :Person,\n        :Woman .\n\ndata:Antoine_13th_Prince_of_Ligne a :Man,\n        :Person .\n\ndata:Christine_of_Ligne a :Person,\n        :Woman ;\n    :hasFather data:Antoine_13th_Prince_of_Ligne ;\n    :hasMother data:Alix_of_Luxembourg .\n\ndata:Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person .\n\ndata:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza a :Man,\n        :Person ;\n    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;\n    :hasMother data:Maria_Elisabeth_of_Bavaria .\n\n"
+    }
+]

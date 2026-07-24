@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alexandra_Feodorovna a :Person .
+
+data:Andrei_Vladimirovich_of_Russia a :Person .
+
+data:Cecilie_of_Prussia a :Ancestor,
+        :Person .
+
+data:Ernest_Louis_Grand_Duke_of_Hesse a :Person .
+
+data:Friedrich_Wilhelm_of_Prussia a :Person .
+
+data:Kira_Kirillovna_of_Russia a :Person .
+
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Person .
+
+data:Louis_Ferdinand_of_Prussia a :Person .
+
+data:Maria_of_Russia a :Person .
+
+data:Victoria_Melita_of_Saxe_Coburg_and_Gotha a :Ancestor,
+        :Person .
+
+data:Vladimir_of_Russia a :Person .
+

@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I a :Man,
+        :Person .
+
+data:Frederick_III a :Man,
+        :Person .
+
+data:Friedrich_Wilhelm a :Man,
+        :Person ;
+    :isBrotherOf data:Philipp .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Sophie_of_Prussia a :Person,
+        :Woman ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Wolfgang a :Man,
+        :Person ;
+    :isBrotherOf data:Philipp .
+
+data:Frederick_Charles_of_Hesse a :Man,
+        :Person .
+
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Moritz a :Man,
+        :Person ;
+    :hasFather data:Philipp ;
+    :hasMother data:Mafalda_of_Savoy .
+
+data:Victor_Emmanuel_III a :Man,
+        :Person ;
+    :isFatherOf data:Mafalda_of_Savoy .
+
+data:Mafalda_of_Savoy a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Philipp a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasChild data:Moritz ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Frederick_Charles_of_Hesse,
+        data:Victor_Emmanuel_III ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Margaret_of_Prussia .
+

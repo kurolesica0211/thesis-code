@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:ClausVonAmsberg a :Ancestor .
+
+data:MabelWisseSmit a :Ancestor ;
+    :isMotherOf data:CountessEmmaLuana,
+        data:CountessJoannaZaria .
+
+data:PrinceBernhard a :Ancestor .
+
+data:PrinceFriso a :Ancestor ;
+    :isFatherOf data:CountessEmmaLuana,
+        data:CountessJoannaZaria .
+
+data:QueenBeatrix a :Ancestor .
+
+data:QueenJuliana a :Ancestor .
+

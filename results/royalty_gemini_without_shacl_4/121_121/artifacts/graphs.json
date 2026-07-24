@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_of_Savoy-Aosta a :Man ;\n    :formerlyKnownAs \"Duke of Apulia\"^^xsd:string ;\n    :hasBirthYear 1967 ;\n    :hasFather data:Amedeo_of_Savoy ;\n    :hasMother data:Claude_of_Orleans ;\n    :knownAs \"Aimone Umberto Emanuele Filiberto Luigi Amedeo Elena Maria Fiorenzo di Savoia-Aosta\"^^xsd:string .\n\ndata:Emanuele_Filiberto_of_Savoy a :Man ;\n    :hasFather data:Vittorio_Emanuele .\n\ndata:Olga_of_Greece a :Woman ;\n    :hasFather data:Michael_of_Greece_and_Denmark .\n\ndata:Amedeo_of_Savoy a :Man .\n\ndata:Claude_of_Orleans a :Woman .\n\ndata:Michael_of_Greece_and_Denmark a :Man .\n\ndata:Vittorio_Emanuele a :Man ;\n    :hasDeathYear 2024 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone_of_Savoy-Aosta a :Man ;\n    :formerlyKnownAs \"Duke of Apulia\"^^xsd:string ;\n    :hasBirthYear 1967 ;\n    :hasFather data:Amedeo_of_Savoy ;\n    :hasMother data:Claude_of_Orleans ;\n    :knownAs \"Aimone Umberto Emanuele Filiberto Luigi Amedeo Elena Maria Fiorenzo di Savoia-Aosta\"^^xsd:string .\n\ndata:Emanuele_Filiberto_of_Savoy a :Man ;\n    :hasFather data:Vittorio_Emanuele .\n\ndata:Olga_of_Greece a :Woman ;\n    :hasFather data:Michael_of_Greece_and_Denmark .\n\ndata:Amedeo_of_Savoy a :Man .\n\ndata:Claude_of_Orleans a :Woman .\n\ndata:Michael_of_Greece_and_Denmark a :Man .\n\ndata:Vittorio_Emanuele a :Man ;\n    :hasDeathYear 2024 .\n\n"
+    }
+]

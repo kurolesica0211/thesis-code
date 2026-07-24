@@ -1,0 +1,305 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_II_Landgrave_of_Hesse-Kassel a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_II_Landgrave_of_Hesse-Kassel ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell ;
+    :isBloodrelationOf data:Frederick_II_Landgrave_of_Hesse-Kassel ;
+    :isBrotherOf data:Frederick_II_Landgrave_of_Hesse-Kassel ;
+    :isSiblingOf data:Frederick_II_Landgrave_of_Hesse-Kassel .
+
+data:Princess_Mary_of_Great_Britain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Mary_of_Great_Britain ;
+    :isAncestorOf data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell ;
+    :isBloodrelationOf data:Princess_Mary_of_Great_Britain ;
+    :isSiblingOf data:Princess_Mary_of_Great_Britain ;
+    :isSisterOf data:Princess_Mary_of_Great_Britain .
+
+data:Hubertus_von_Faber-Castell a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hubertus_von_Faber-Castell ;
+    :hasChild data:Floria_Franziska_von_Faber-Castell ;
+    :hasDaughter data:Floria_Franziska_von_Faber-Castell ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Floria_Franziska_von_Faber-Castell ;
+    :isBloodrelationOf data:Hubertus_von_Faber-Castell ;
+    :isBrotherOf data:Hubertus_von_Faber-Castell ;
+    :isFatherOf data:Floria_Franziska_von_Faber-Castell ;
+    :isParentOf data:Floria_Franziska_von_Faber-Castell ;
+    :isSiblingOf data:Hubertus_von_Faber-Castell ;
+    :isUncleOf data:Floria_Franziska_von_Faber-Castell .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasChild data:Donatus ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus ;
+    :isAuntOf data:Donatus ;
+    :isBloodrelationOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Donatus ;
+    :isParentOf data:Donatus ;
+    :isSiblingOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Margaret_Campbell_Geddes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :hasDaughter data:Cecilie ;
+    :hasRelation data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasSister data:Margaret_Campbell_Geddes ;
+    :hasSon data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isAncestorOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isAuntOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isBloodrelationOf data:Margaret_Campbell_Geddes ;
+    :isMotherOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isParentOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isSiblingOf data:Margaret_Campbell_Geddes ;
+    :isSisterOf data:Margaret_Campbell_Geddes .
+
+data:Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp ;
+    :hasChild data:Moritz ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Donatus,
+        data:Moritz ;
+    :isBloodrelationOf data:Philipp ;
+    :isBrotherOf data:Philipp ;
+    :isFatherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:Philipp ;
+    :isUncleOf data:Moritz .
+
+data:Floria_Franziska_von_Faber-Castell a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Princess_Mary_of_Great_Britain ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Hubertus_von_Faber-Castell ;
+    :hasParent data:Hubertus_von_Faber-Castell ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Floria_Franziska_von_Faber-Castell ;
+    :isBloodrelationOf data:Floria_Franziska_von_Faber-Castell ;
+    :isChildOf data:Hubertus_von_Faber-Castell ;
+    :isDaughterOf data:Hubertus_von_Faber-Castell ;
+    :isSiblingOf data:Floria_Franziska_von_Faber-Castell ;
+    :isSisterOf data:Floria_Franziska_von_Faber-Castell .
+
+data:Moritz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philipp ;
+    :hasBrother data:Moritz ;
+    :hasChild data:Donatus ;
+    :hasFather data:Philipp ;
+    :hasParent data:Philipp ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus ;
+    :isBloodrelationOf data:Moritz ;
+    :isBrotherOf data:Moritz ;
+    :isChildOf data:Philipp ;
+    :isFatherOf data:Donatus ;
+    :isParentOf data:Donatus ;
+    :isSiblingOf data:Moritz ;
+    :isSonOf data:Philipp ;
+    :isUncleOf data:Donatus .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasChild data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :hasDaughter data:Cecilie ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasSister data:Cecilie ;
+    :hasSon data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isAncestorOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isBloodrelationOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isParentOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :isSiblingOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Donatus ;
+    :hasFather data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Moritz,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Donatus,
+        data:Floria_Franziska_von_Faber-Castell,
+        data:Frederick_II_Landgrave_of_Hesse-Kassel,
+        data:Hubertus_von_Faber-Castell,
+        data:Moritz,
+        data:Philipp,
+        data:Princess_Mary_of_Great_Britain,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Donatus ;
+    :isBrotherOf data:Donatus ;
+    :isChildOf data:Moritz,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Donatus ;
+    :isSonOf data:Moritz,
+        data:Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasBrother data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasFather data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasMother data:Margaret_Campbell_Geddes ;
+    :hasParent data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasRelation data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasSister data:Cecilie ;
+    :isBloodrelationOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :isUncleOf data:Cecilie .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasAncestor data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasBrother data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasFather data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasMother data:Margaret_Campbell_Geddes ;
+    :hasParent data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasRelation data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :hasSister data:Cecilie ;
+    :isBloodrelationOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :isDaughterOf data:Louis_Prince_of_Hesse_and_by_Rhine,
+        data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Cecilie,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis_Prince_of_Hesse_and_by_Rhine .
+

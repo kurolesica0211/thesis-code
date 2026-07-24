@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Granddaughter1OfKiraMarina a :Person,
+        :Woman ;
+    :hasFather data:AndreasFelixPaulVonBismarck ;
+    :hasMother data:KiraMarinaLiepsner .
+
+data:Granddaughter2OfKiraMarina a :Person,
+        :Woman ;
+    :hasFather data:AndreasFelixPaulVonBismarck ;
+    :hasMother data:KiraMarinaLiepsner .
+
+data:GrandDuchessKiraKirillovnaOfRussia a :Person,
+        :Woman .
+
+data:LouisFerdinandPrinceOfPrussia a :Man,
+        :Person .
+
+data:PrincessKiraOfPrussia a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:LouisFerdinandPrinceOfPrussia ;
+    :hasMother data:GrandDuchessKiraKirillovnaOfRussia .
+
+data:KiraMarinaLiepsner a :Person,
+        :Woman ;
+    :hasBirthYear 1977 ;
+    :hasMother data:PrincessKiraOfPrussia ;
+    :hasRelation data:AndreasFelixPaulVonBismarck .
+
+data:AndreasFelixPaulVonBismarck a :Man,
+        :Person ;
+    :hasBirthYear 1979 ;
+    :hasDeathYear 2019 .
+

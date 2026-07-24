@@ -1,0 +1,108 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_2",
+  "task_directory": "results/royalty_gemini_without_shacl_2/223_223",
+  "text_file": "Q29474202.txt",
+  "text_key": "Q29474202",
+  "article": "https://en.wikipedia.org/wiki/Luiz_Philippe_of_Orl%C3%A9ans-Braganza",
+  "article_key": "Luiz Philippe of Orléans-Braganza",
+  "main_entity": {
+    "uri": "http://example.com/data#Luiz_Philippe_of_Orléans-Braganza",
+    "qid": "Q29474202",
+    "label": "Luiz Philippe of Orléans-Braganza"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Luiz_Philippe_of_Orléans-Braganza",
+      "qid": "Q29474202",
+      "label": "Luiz Philippe of Orléans-Braganza",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Eudes_de_Orléans_e_Bragança",
+      "qid": "Q7243973",
+      "label": "Eudes de Orléans e Bragança",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Eudes_of_Orleans-Braganza",
+      "extracted_local_name": "Eudes_of_Orleans-Braganza",
+      "embedding_text": "Eudes of Orleans-Braganza",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Eudes_de_Orléans_e_Bragança",
+      "ground_truth_qid": "Q7243973",
+      "ground_truth_label": "Eudes de Orléans e Bragança",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Eudes of Orleans-Braganza",
+      "best_candidate_label": "Eudes de Orléans e Bragança",
+      "best_candidate_qid": "Q7243973",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Luiz_Philippe_of_Orleans-Braganza",
+      "extracted_local_name": "Luiz_Philippe_of_Orleans-Braganza",
+      "embedding_text": "Luiz Philippe of Orleans-Braganza",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.96875,
+      "ground_truth_uri": "http://example.com/data#Luiz_Philippe_of_Orléans-Braganza",
+      "ground_truth_qid": "Q29474202",
+      "ground_truth_label": "Luiz Philippe of Orléans-Braganza",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Luiz Philippe of Orléans-Braganza",
+      "best_candidate_label": "Luiz Philippe of Orléans-Braganza",
+      "best_candidate_qid": "Q29474202",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.96875
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ana_Maria_de_Moraes_Barros",
+      "extracted_local_name": "Ana_Maria_de_Moraes_Barros",
+      "embedding_text": "Ana Maria de Moraes Barros",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Eudes of Orleans-Braganza",
+      "best_candidate_label": "Eudes de Orléans e Bragança",
+      "best_candidate_qid": "Q7243973",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.23529411764705882
+    },
+    {
+      "extracted_uri": "http://example.org/data/Pedro_Henrique_of_Orleans-Braganza",
+      "extracted_local_name": "Pedro_Henrique_of_Orleans-Braganza",
+      "embedding_text": "Pedro Henrique of Orleans-Braganza",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

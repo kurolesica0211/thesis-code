@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Camilla a :Person,
+        :Woman .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:Emperor_Naruhito a :Man,
+        :Person .
+
+data:Meghan_Markle a :Person,
+        :Woman .
+
+data:Prince_Harry a :Man,
+        :Person .
+
+data:Samuel_Chatto a :Man,
+        :Person ;
+    :hasBirthYear 1996 ;
+    :isChildOf data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto .
+
+data:Daniel_Chatto a :Man,
+        :Person .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :isChildOf data:Princess_Margaret .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+

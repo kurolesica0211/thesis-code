@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Woman ;
+    :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasRelation data:Major_Richard_Campbell_Andrew_Brandram ;
+    :isSiblingOf data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes,
+        data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Alexander_King_of_the_Hellenes a :Man .
+
+data:George_King_of_the_Hellenes a :Man .
+
+data:King_Constantine_I_of_Greece a :Man .
+
+data:Major_Richard_Campbell_Andrew_Brandram a :Man .
+
+data:Paul_King_of_the_Hellenes a :Man .
+
+data:Princess_Helen_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Sophia_of_Prussia a :Woman .
+

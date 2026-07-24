@@ -1,0 +1,344 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :hasDaughter data:Isabella_Alfonsa ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSon data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes ;
+    :isAncestorOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isParentOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa .
+
+data:Alfonso_XII a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XII ;
+    :hasChild data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasDaughter data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Alfonso_XII ;
+    :isBrotherOf data:Alfonso_XII ;
+    :isFatherOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isParentOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso_XII ;
+    :isUncleOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Woman ;
+    :hasChild data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasDaughter data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isAuntOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isParentOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Alfonso_XIII a :Man ;
+    :hasAncestor data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasFather data:Alfonso_XII ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isChildOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isSonOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isUncleOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa .
+
+data:Maria_Teresa a :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasFather data:Alfonso_XII ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isAuntOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isChildOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isSisterOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes .
+
+data:Alfonso_son_of_Mercedes a :Man ;
+    :hasAncestor data:Alfonso_XII,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasBrother data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isBrotherOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isSonOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes .
+
+data:Fernando_son_of_Mercedes a :Man ;
+    :hasAncestor data:Alfonso_XII,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasBrother data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isBrotherOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isSonOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes .
+
+data:Isabella_Alfonsa a :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Maria_de_las_Mercedes ;
+    :hasBrother data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :isDaughterOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Maria_de_las_Mercedes ;
+    :isSiblingOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isSisterOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa .
+
+data:Maria_de_las_Mercedes a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :hasDaughter data:Isabella_Alfonsa ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Alfonso_XII ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XII,
+        data:Alfonso_XIII,
+        data:Alfonso_son_of_Mercedes,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa,
+        data:Maria_Christina_of_Austria,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSister data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :hasSon data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes ;
+    :isAncestorOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isAuntOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isChildOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII,
+        data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isParentOf data:Alfonso_son_of_Mercedes,
+        data:Fernando_son_of_Mercedes,
+        data:Isabella_Alfonsa ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes ;
+    :isSisterOf data:Alfonso_XIII,
+        data:Maria_Teresa,
+        data:Maria_de_las_Mercedes .
+

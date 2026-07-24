@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .\n\ndata:Diane_d_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri_Count_of_Clermont .\n\ndata:Henri_Count_of_Paris a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isabelle_of_Orl%C3%A9ans_Braganza a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear \"1934\"^^xsd:positiveInteger ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMarriageYear \"1957\"^^xsd:positiveInteger ;\n    :hasMother data:Rosa_of_Austria_Princess_of_Tuscany ;\n    :hasRelation data:Henri_Count_of_Clermont .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Rosa_of_Austria_Princess_of_Tuscany a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Henri_Count_of_Clermont a :Man,\n        :Person ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans_Braganza .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .\n\ndata:Diane_d_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri_Count_of_Clermont .\n\ndata:Henri_Count_of_Paris a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Isabelle_of_Orl%C3%A9ans_Braganza a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear \"1934\"^^xsd:positiveInteger ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMarriageYear \"1957\"^^xsd:positiveInteger ;\n    :hasMother data:Rosa_of_Austria_Princess_of_Tuscany ;\n    :hasRelation data:Henri_Count_of_Clermont .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Rosa_of_Austria_Princess_of_Tuscany a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Henri_Count_of_Clermont a :Man,\n        :Person ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans_Braganza .\n\n"
+    }
+]

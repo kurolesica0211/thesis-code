@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :hasRelation data:QueenElizabethII ;
+    :hasSister data:QueenElizabethII ;
+    :isBloodrelationOf data:QueenElizabethII ;
+    :isSiblingOf data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethII .
+
+data:PrinceAlbertDukeOfYork a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbertDukeOfYork ;
+    :hasRelation data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :isBloodrelationOf data:PrinceAlbertDukeOfYork ;
+    :isBrotherOf data:PrinceAlbertDukeOfYork ;
+    :isSiblingOf data:PrinceAlbertDukeOfYork .
+
+data:ClaudeBowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ClaudeBowes-Lyon ;
+    :hasChild data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasRelation data:ClaudeBowes-Lyon,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :hasSon data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isAncestorOf data:FergusBowes-Lyon,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isBloodrelationOf data:ClaudeBowes-Lyon ;
+    :isBrotherOf data:ClaudeBowes-Lyon ;
+    :isFatherOf data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isParentOf data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isSiblingOf data:ClaudeBowes-Lyon ;
+    :isUncleOf data:MichaelClaudeHamiltonBowes-Lyon .
+
+data:ElizabethQueenMother a :Person,
+        :Woman ;
+    :hasBrother data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasRelation data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :hasSister data:ElizabethQueenMother ;
+    :isAuntOf data:FergusBowes-Lyon ;
+    :isBloodrelationOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isSiblingOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isSisterOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon .
+
+data:JohnCator a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:JohnCator ;
+    :hasChild data:ElizabethMargaretCator ;
+    :hasDaughter data:ElizabethMargaretCator ;
+    :hasRelation data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :isAncestorOf data:ElizabethMargaretCator ;
+    :isBloodrelationOf data:JohnCator ;
+    :isBrotherOf data:JohnCator ;
+    :isFatherOf data:ElizabethMargaretCator ;
+    :isParentOf data:ElizabethMargaretCator ;
+    :isSiblingOf data:JohnCator ;
+    :isUncleOf data:ElizabethMargaretCator .
+
+data:ElizabethMargaretCator a :Person,
+        :Woman ;
+    :hasAncestor data:JohnCator ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 ;
+    :hasFather data:JohnCator ;
+    :hasParent data:JohnCator ;
+    :hasRelation data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :hasSister data:ElizabethMargaretCator ;
+    :isBloodrelationOf data:ElizabethMargaretCator ;
+    :isChildOf data:JohnCator ;
+    :isDaughterOf data:JohnCator ;
+    :isSiblingOf data:ElizabethMargaretCator ;
+    :isSisterOf data:ElizabethMargaretCator .
+
+data:FergusBowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:ClaudeBowes-Lyon,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasBrother data:FergusBowes-Lyon ;
+    :hasFather data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasParent data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasRelation data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :isBloodrelationOf data:FergusBowes-Lyon ;
+    :isBrotherOf data:FergusBowes-Lyon ;
+    :isChildOf data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isSiblingOf data:FergusBowes-Lyon ;
+    :isSonOf data:MichaelClaudeHamiltonBowes-Lyon .
+
+data:MichaelClaudeHamiltonBowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:ClaudeBowes-Lyon ;
+    :hasBirthYear 1893 ;
+    :hasBrother data:MichaelClaudeHamiltonBowes-Lyon ;
+    :hasChild data:FergusBowes-Lyon ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ClaudeBowes-Lyon ;
+    :hasMarriageYear 1928 ;
+    :hasParent data:ClaudeBowes-Lyon ;
+    :hasRelation data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:ElizabethQueenMother,
+        data:FergusBowes-Lyon,
+        data:JohnCator,
+        data:MichaelClaudeHamiltonBowes-Lyon,
+        data:PrinceAlbertDukeOfYork ;
+    :hasSister data:ElizabethQueenMother ;
+    :hasSon data:FergusBowes-Lyon ;
+    :isAncestorOf data:FergusBowes-Lyon ;
+    :isBloodrelationOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isBrotherOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isChildOf data:ClaudeBowes-Lyon ;
+    :isFatherOf data:FergusBowes-Lyon ;
+    :isParentOf data:FergusBowes-Lyon ;
+    :isSiblingOf data:ElizabethQueenMother,
+        data:MichaelClaudeHamiltonBowes-Lyon ;
+    :isSonOf data:ClaudeBowes-Lyon ;
+    :isUncleOf data:FergusBowes-Lyon,
+        data:QueenElizabethII ;
+    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
+

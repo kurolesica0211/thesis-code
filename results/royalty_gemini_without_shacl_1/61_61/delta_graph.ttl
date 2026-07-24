@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Ariane a :Person,
+        :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Catharina-Amalia a :Person,
+        :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Constantijn a :Man,
+        :Person ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Friso a :Man,
+        :Person ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Margriet a :Person,
+        :Woman .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Bernhard a :Man,
+        :Person .
+
+data:Juliana a :Person,
+        :Woman .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Claus a :Man,
+        :Person .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Claus ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Beatrix ;
+    :hasRelation data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:M%C3%A1xima_Zorreguieta_Cerruti a :Person,
+        :Woman .
+

@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte_of_Mecklenburg_Strelitz a :Person,
+        :Woman ;
+    :hasBirthYear 1744 ;
+    :hasDeathYear 1818 ;
+    :hasRelation data:Charlotte_of_Mecklenburg_Strelitz ;
+    :hasSister data:Charlotte_of_Mecklenburg_Strelitz ;
+    :isBloodrelationOf data:Charlotte_of_Mecklenburg_Strelitz ;
+    :isSiblingOf data:Charlotte_of_Mecklenburg_Strelitz ;
+    :isSisterOf data:Charlotte_of_Mecklenburg_Strelitz .
+
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasBirthYear 1738 ;
+    :hasBrother data:George_III_of_the_United_Kingdom ;
+    :hasDeathYear 1820 ;
+    :hasRelation data:George_III_of_the_United_Kingdom ;
+    :isBloodrelationOf data:George_III_of_the_United_Kingdom ;
+    :isBrotherOf data:George_III_of_the_United_Kingdom ;
+    :isSiblingOf data:George_III_of_the_United_Kingdom .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasSister data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isAuntOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isParentOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasChild data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasSon data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isFatherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isParentOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isUncleOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1845 ;
+    :hasBrother data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasDeathYear 1923 ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1818 ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasChild data:Thyra_of_Denmark ;
+    :hasDaughter data:Thyra_of_Denmark ;
+    :hasDeathYear 1906 ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Thyra_of_Denmark ;
+    :isParentOf data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Thyra_of_Denmark .
+
+data:Louise_of_Hesse_Kassel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1817 ;
+    :hasChild data:Thyra_of_Denmark ;
+    :hasDaughter data:Thyra_of_Denmark ;
+    :hasDeathYear 1898 ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Louise_of_Hesse_Kassel ;
+    :isAncestorOf data:Alexandra_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isAuntOf data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Louise_of_Hesse_Kassel ;
+    :isMotherOf data:Thyra_of_Denmark ;
+    :isParentOf data:Thyra_of_Denmark ;
+    :isSiblingOf data:Louise_of_Hesse_Kassel ;
+    :isSisterOf data:Louise_of_Hesse_Kassel .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
+        :Person ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isBrotherOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isChildOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :isSonOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg_Schwerin .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Alexandra_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse_Kassel ;
+    :hasBirthYear 1853 ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasDeathYear 1933 ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse_Kassel ;
+    :hasParent data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse_Kassel ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse_Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Thyra_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse_Kassel ;
+    :isDaughterOf data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse_Kassel ;
+    :isMotherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Thyra_of_Denmark ;
+    :isSisterOf data:Thyra_of_Denmark .
+

@@ -1,0 +1,475 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francisco a :Man ;
+    :hasBrother data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :isBloodrelationOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isBrotherOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isSiblingOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isUncleOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+
+data:MariaDelCarmenMartinezBordiuYFranco a :Ancestor,
+        :Woman ;
+    :hasChild data:LouisAlphonseDeBourbon ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:MariaDelCarmenMartinezBordiuYFranco ;
+    :hasSon data:LouisAlphonseDeBourbon ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis,
+        data:LouisAlphonseDeBourbon ;
+    :isAuntOf data:LouisAlphonseDeBourbon ;
+    :isBloodrelationOf data:MariaDelCarmenMartinezBordiuYFranco ;
+    :isMotherOf data:LouisAlphonseDeBourbon ;
+    :isParentOf data:LouisAlphonseDeBourbon ;
+    :isSiblingOf data:MariaDelCarmenMartinezBordiuYFranco ;
+    :isSisterOf data:MariaDelCarmenMartinezBordiuYFranco .
+
+data:VictorVargas a :Ancestor,
+        :Man ;
+    :hasBrother data:VictorVargas ;
+    :hasChild data:MariaMargaritaVargasSantaella ;
+    :hasDaughter data:MariaMargaritaVargasSantaella ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis,
+        data:MariaMargaritaVargasSantaella ;
+    :isBloodrelationOf data:VictorVargas ;
+    :isBrotherOf data:VictorVargas ;
+    :isFatherOf data:MariaMargaritaVargasSantaella ;
+    :isParentOf data:MariaMargaritaVargasSantaella ;
+    :isSiblingOf data:VictorVargas ;
+    :isUncleOf data:MariaMargaritaVargasSantaella .
+
+data:EmmanuelleDeDampierre a :Ancestor,
+        :Woman ;
+    :hasChild data:AlfonsoDeBorbon ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:EmmanuelleDeDampierre ;
+    :hasSon data:AlfonsoDeBorbon ;
+    :isAncestorOf data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis,
+        data:LouisAlphonseDeBourbon ;
+    :isAuntOf data:AlfonsoDeBorbon ;
+    :isBloodrelationOf data:EmmanuelleDeDampierre ;
+    :isMotherOf data:AlfonsoDeBorbon ;
+    :isParentOf data:AlfonsoDeBorbon ;
+    :isSiblingOf data:EmmanuelleDeDampierre ;
+    :isSisterOf data:EmmanuelleDeDampierre .
+
+data:InfanteJaime a :Ancestor,
+        :Man ;
+    :hasBrother data:InfanteJaime ;
+    :hasChild data:AlfonsoDeBorbon ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSon data:AlfonsoDeBorbon ;
+    :isAncestorOf data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis,
+        data:LouisAlphonseDeBourbon ;
+    :isBloodrelationOf data:InfanteJaime ;
+    :isBrotherOf data:InfanteJaime ;
+    :isFatherOf data:AlfonsoDeBorbon ;
+    :isParentOf data:AlfonsoDeBorbon ;
+    :isSiblingOf data:InfanteJaime ;
+    :isUncleOf data:AlfonsoDeBorbon .
+
+data:AlfonsoDeBorbon a :Ancestor,
+        :Man ;
+    :hasAncestor data:EmmanuelleDeDampierre,
+        data:InfanteJaime ;
+    :hasBrother data:AlfonsoDeBorbon ;
+    :hasChild data:LouisAlphonseDeBourbon ;
+    :hasFather data:InfanteJaime ;
+    :hasMother data:EmmanuelleDeDampierre ;
+    :hasParent data:EmmanuelleDeDampierre,
+        data:InfanteJaime ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSon data:LouisAlphonseDeBourbon ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis,
+        data:LouisAlphonseDeBourbon ;
+    :isBloodrelationOf data:AlfonsoDeBorbon ;
+    :isBrotherOf data:AlfonsoDeBorbon ;
+    :isChildOf data:EmmanuelleDeDampierre,
+        data:InfanteJaime ;
+    :isFatherOf data:LouisAlphonseDeBourbon ;
+    :isParentOf data:LouisAlphonseDeBourbon ;
+    :isSiblingOf data:AlfonsoDeBorbon ;
+    :isSonOf data:EmmanuelleDeDampierre,
+        data:InfanteJaime ;
+    :isUncleOf data:LouisAlphonseDeBourbon .
+
+data:MariaMargaritaVargasSantaella a :Ancestor,
+        :Woman ;
+    :hasAncestor data:VictorVargas ;
+    :hasChild data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :hasDaughter data:Eugenie ;
+    :hasFather data:VictorVargas ;
+    :hasParent data:VictorVargas ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:MariaMargaritaVargasSantaella ;
+    :hasSon data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isAuntOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBloodrelationOf data:MariaMargaritaVargasSantaella ;
+    :isChildOf data:VictorVargas ;
+    :isDaughterOf data:VictorVargas ;
+    :isMotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isParentOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSiblingOf data:MariaMargaritaVargasSantaella ;
+    :isSisterOf data:MariaMargaritaVargasSantaella .
+
+data:Alphonse a :Man ;
+    :hasAncestor data:AlfonsoDeBorbon,
+        data:EmmanuelleDeDampierre,
+        data:InfanteJaime,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella ;
+    :hasParent data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella .
+
+data:Eugenie a :Woman ;
+    :hasAncestor data:AlfonsoDeBorbon,
+        data:EmmanuelleDeDampierre,
+        data:InfanteJaime,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella ;
+    :hasParent data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :isDaughterOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSisterOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+
+data:Henri a :Man ;
+    :hasAncestor data:AlfonsoDeBorbon,
+        data:EmmanuelleDeDampierre,
+        data:InfanteJaime,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella ;
+    :hasParent data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella .
+
+data:Louis a :Man ;
+    :hasAncestor data:AlfonsoDeBorbon,
+        data:EmmanuelleDeDampierre,
+        data:InfanteJaime,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:LouisAlphonseDeBourbon ;
+    :hasMother data:MariaMargaritaVargasSantaella ;
+    :hasParent data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:LouisAlphonseDeBourbon,
+        data:MariaMargaritaVargasSantaella .
+
+data:LouisAlphonseDeBourbon a :Ancestor,
+        :Man ;
+    :hasAncestor data:AlfonsoDeBorbon,
+        data:EmmanuelleDeDampierre,
+        data:InfanteJaime,
+        data:MariaDelCarmenMartinezBordiuYFranco ;
+    :hasBirthYear "1974"^^xsd:positiveInteger ;
+    :hasBrother data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :hasChild data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :hasDaughter data:Eugenie ;
+    :hasFather data:AlfonsoDeBorbon ;
+    :hasMother data:MariaDelCarmenMartinezBordiuYFranco ;
+    :hasParent data:AlfonsoDeBorbon,
+        data:MariaDelCarmenMartinezBordiuYFranco ;
+    :hasRelation data:AlfonsoDeBorbon,
+        data:Alphonse,
+        data:EmmanuelleDeDampierre,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:InfanteJaime,
+        data:Louis,
+        data:LouisAlphonseDeBourbon,
+        data:MariaDelCarmenMartinezBordiuYFranco,
+        data:MariaMargaritaVargasSantaella,
+        data:VictorVargas ;
+    :hasSon data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBloodrelationOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isBrotherOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isChildOf data:AlfonsoDeBorbon,
+        data:MariaDelCarmenMartinezBordiuYFranco ;
+    :isFatherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isParentOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSiblingOf data:Francisco,
+        data:LouisAlphonseDeBourbon ;
+    :isSonOf data:AlfonsoDeBorbon,
+        data:MariaDelCarmenMartinezBordiuYFranco ;
+    :isUncleOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+

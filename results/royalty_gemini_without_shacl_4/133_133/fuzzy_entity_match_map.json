@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/133_133",
+  "text_file": "Q21548582.txt",
+  "text_key": "Q21548582",
+  "article": "https://en.wikipedia.org/wiki/Fergus_Leveson-Gower,_6th_Earl_Granville",
+  "article_key": "Fergus Leveson-Gower, 6th Earl Granville",
+  "main_entity": {
+    "uri": "http://example.com/data#Granville_Leveson-Gower-_6th_Earl_Granville",
+    "qid": "Q21548582",
+    "label": "Granville Leveson-Gower, 6th Earl Granville"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Granville_Leveson-Gower-_6th_Earl_Granville",
+      "qid": "Q21548582",
+      "label": "Granville Leveson-Gower, 6th Earl Granville",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Granville_Leveson-Gower-_5th_Earl_Granville",
+      "qid": "Q25998958",
+      "label": "Granville Leveson-Gower, 5th Earl Granville",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Rose_Leveson-Gower-_Countess_Granville",
+      "qid": "Q7367831",
+      "label": "Rose Leveson-Gower, Countess Granville",
+      "distance": 2,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Granville_George_Fergus_Leveson-Gower",
+      "extracted_local_name": "Granville_George_Fergus_Leveson-Gower",
+      "embedding_text": "Granville George Fergus Leveson-Gower",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Granville_Leveson-Gower-_6th_Earl_Granville",
+      "ground_truth_qid": "Q21548582",
+      "ground_truth_label": "Granville Leveson-Gower, 6th Earl Granville",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Granville George Fergus Leveson-Gower",
+      "best_candidate_label": "Granville Leveson-Gower, 6th Earl Granville",
+      "best_candidate_qid": "Q21548582",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Granville_Leveson-Gower_5th_Earl_Granville",
+      "extracted_local_name": "Granville_Leveson-Gower_5th_Earl_Granville",
+      "embedding_text": "Granville Leveson-Gower 5th Earl Granville",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9882352941176471,
+      "ground_truth_uri": "http://example.com/data#Granville_Leveson-Gower-_5th_Earl_Granville",
+      "ground_truth_qid": "Q25998958",
+      "ground_truth_label": "Granville Leveson-Gower, 5th Earl Granville",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Granville Leveson-Gower- 5th Earl Granville",
+      "best_candidate_label": "Granville Leveson-Gower, 5th Earl Granville",
+      "best_candidate_qid": "Q25998958",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9882352941176471
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anne_Topping",
+      "extracted_local_name": "Anne_Topping",
+      "embedding_text": "Anne Topping",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Granville James Leveson-Gower",
+      "best_candidate_label": "Granville Leveson-Gower, 5th Earl Granville",
+      "best_candidate_qid": "Q25998958",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34146341463414637
+    },
+    {
+      "extracted_uri": "http://example.org/data/Bernard_Topping",
+      "extracted_local_name": "Bernard_Topping",
+      "embedding_text": "Bernard Topping",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fergus Leveson-Gower, 6th Earl Granville",
+      "best_candidate_label": "Granville Leveson-Gower, 6th Earl Granville",
+      "best_candidate_qid": "Q21548582",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2545454545454545
+    },
+    {
+      "extracted_uri": "http://example.org/data/Florence_Pearson",
+      "extracted_local_name": "Florence_Pearson",
+      "embedding_text": "Florence Pearson",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Rose Constance Bowes-Lyon",
+      "best_candidate_label": "Rose Leveson-Gower, Countess Granville",
+      "best_candidate_qid": "Q7367831",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4782608695652174
+    },
+    {
+      "extracted_uri": "http://example.org/data/Rose_Leveson-Gower",
+      "extracted_local_name": "Rose_Leveson-Gower",
+      "embedding_text": "Rose Leveson-Gower",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Rose Leveson-Gower- Countess Granville",
+      "best_candidate_label": "Rose Leveson-Gower, Countess Granville",
+      "best_candidate_qid": "Q7367831",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6428571428571429
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

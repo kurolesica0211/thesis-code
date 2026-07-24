@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor .
+
+data:Claude_Bowes-Lyon a :Ancestor .
+
+data:Elizabeth_II a :Ancestor .
+
+data:Fergus_Bowes-Lyon :isBrotherOf data:Elizabeth_Angela_Marguerite_Bowes-Lyon .
+
+data:George_V a :Ancestor .
+
+data:George_VI a :Ancestor .
+
+data:Queen_Mary a :Ancestor .
+
+data:Elizabeth_Angela_Marguerite_Bowes-Lyon a :Ancestor .
+

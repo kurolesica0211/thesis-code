@@ -1,0 +1,477 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_dOrleans a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Aage_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSister data:Marie_dOrleans ;
+    :hasSon data:Prince_Aage_of_Denmark ;
+    :isAncestorOf data:Prince_Aage_of_Denmark ;
+    :isAuntOf data:Prince_Aage_of_Denmark ;
+    :isBloodrelationOf data:Marie_dOrleans ;
+    :isMotherOf data:Prince_Aage_of_Denmark ;
+    :isParentOf data:Prince_Aage_of_Denmark ;
+    :isSiblingOf data:Marie_dOrleans ;
+    :isSisterOf data:Marie_dOrleans .
+
+data:Olga_Konstantinovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_George_of_Greece_and_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSister data:Olga_Konstantinovna_of_Russia ;
+    :hasSon data:Prince_George_of_Greece_and_Denmark ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_George_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Konstantinovna_of_Russia ;
+    :isMotherOf data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Konstantinovna_of_Russia ;
+    :isSisterOf data:Olga_Konstantinovna_of_Russia .
+
+data:Prince_Roland_Bonaparte a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Roland_Bonaparte ;
+    :hasChild data:Princess_Marie_Bonaparte ;
+    :hasDaughter data:Princess_Marie_Bonaparte ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isBloodrelationOf data:Prince_Roland_Bonaparte ;
+    :isBrotherOf data:Prince_Roland_Bonaparte ;
+    :isFatherOf data:Princess_Marie_Bonaparte ;
+    :isParentOf data:Princess_Marie_Bonaparte ;
+    :isSiblingOf data:Prince_Roland_Bonaparte ;
+    :isUncleOf data:Princess_Marie_Bonaparte .
+
+data:Prince_Aage_of_Denmark a :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Marie_dOrleans,
+        data:Prince_Valdemar_of_Denmark ;
+    :hasBrother data:Prince_Aage_of_Denmark ;
+    :hasFather data:Prince_Valdemar_of_Denmark ;
+    :hasMother data:Marie_dOrleans ;
+    :hasParent data:Marie_dOrleans,
+        data:Prince_Valdemar_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isBloodrelationOf data:Prince_Aage_of_Denmark ;
+    :isBrotherOf data:Prince_Aage_of_Denmark ;
+    :isChildOf data:Marie_dOrleans,
+        data:Prince_Valdemar_of_Denmark ;
+    :isSiblingOf data:Prince_Aage_of_Denmark ;
+    :isSonOf data:Marie_dOrleans,
+        data:Prince_Valdemar_of_Denmark .
+
+data:Prince_Valdemar_of_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark ;
+    :hasBrother data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :hasChild data:Prince_Aage_of_Denmark ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSon data:Prince_Aage_of_Denmark ;
+    :isAncestorOf data:Prince_Aage_of_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isBrotherOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Prince_Aage_of_Denmark ;
+    :isParentOf data:Prince_Aage_of_Denmark ;
+    :isSiblingOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isSonOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasChild data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSon data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isParentOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark .
+
+data:Prince_Constantine_of_Greece a :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isBloodrelationOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece a :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isBloodrelationOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark .
+
+data:Princess_Marie_Bonaparte a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Roland_Bonaparte ;
+    :hasChild data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :hasDaughter data:Evgenia_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Roland_Bonaparte ;
+    :hasParent data:Prince_Roland_Bonaparte ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSister data:Princess_Marie_Bonaparte ;
+    :hasSon data:Petros_of_Greece_and_Denmark ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isAuntOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Marie_Bonaparte ;
+    :isChildOf data:Prince_Roland_Bonaparte ;
+    :isDaughterOf data:Prince_Roland_Bonaparte ;
+    :isMotherOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isParentOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marie_Bonaparte ;
+    :isSisterOf data:Princess_Marie_Bonaparte .
+
+data:Evgenia_of_Greece_and_Denmark a :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Roland_Bonaparte,
+        data:Princess_Marie_Bonaparte ;
+    :hasBrother data:Petros_of_Greece_and_Denmark ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte ;
+    :hasParent data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSister data:Evgenia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isDaughterOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isSiblingOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isSisterOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark .
+
+data:Petros_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Roland_Bonaparte,
+        data:Princess_Marie_Bonaparte ;
+    :hasBrother data:Petros_of_Greece_and_Denmark ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte ;
+    :hasParent data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSister data:Evgenia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isBrotherOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :isSiblingOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark ;
+    :hasBrother data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :hasChild data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSon data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isBrotherOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isParentOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece,
+        data:Prince_Valdemar_of_Denmark ;
+    :isSonOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece .
+
+data:Prince_George_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :hasChild data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :hasDaughter data:Evgenia_of_Greece_and_Denmark ;
+    :hasDeathYear 1957 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Olga_Konstantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Evgenia_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_dOrleans,
+        data:Olga_Konstantinovna_of_Russia,
+        data:Petros_of_Greece_and_Denmark,
+        data:Prince_Aage_of_Denmark,
+        data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece,
+        data:Prince_Roland_Bonaparte,
+        data:Prince_Valdemar_of_Denmark,
+        data:Princess_Marie_Bonaparte ;
+    :hasSon data:Petros_of_Greece_and_Denmark ;
+    :isAncestorOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isBrotherOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia ;
+    :isFatherOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isParentOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Constantine_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Konstantinovna_of_Russia ;
+    :isUncleOf data:Evgenia_of_Greece_and_Denmark,
+        data:Petros_of_Greece_and_Denmark .
+

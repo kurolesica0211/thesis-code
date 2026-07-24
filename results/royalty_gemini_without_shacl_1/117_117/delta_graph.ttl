@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia .
+
+data:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia .
+
+data:Alfonso a :Man ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona .
+
+data:Alfonso_XIII a :Man .
+
+data:Infanta_Margarita_Duchess_of_Soria a :Woman ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona .
+
+data:Infanta_Pilar_Duchess_of_Badajoz a :Woman ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona .
+
+data:King_Paul_of_Greece a :Man .
+
+data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman .
+
+data:Juan_Carlos_I a :Man ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Alfonso ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz .
+
+data:Queen_Sofia a :Woman ;
+    :hasFather data:King_Paul_of_Greece .
+
+data:Infante_Juan_Count_of_Barcelona a :Man ;
+    :hasFather data:Alfonso_XIII .
+

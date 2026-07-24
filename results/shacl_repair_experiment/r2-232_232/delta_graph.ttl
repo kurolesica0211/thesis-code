@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Grand_Duke_Kyril_Vladimirovich a :Ancestor .
+
+data:Kaiser_Wilhelm_II a :Ancestor .
+
+data:Prince_Louis_Ferdinand_Jr a :Ancestor .
+
+data:Prince_Wilhelm_of_Prussia :hasFather data:William_German_Crown_Prince ;
+    :isSiblingOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor .
+
+data:William_German_Crown_Prince a :Ancestor .
+

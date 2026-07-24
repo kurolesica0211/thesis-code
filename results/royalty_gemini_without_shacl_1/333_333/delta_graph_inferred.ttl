@@ -1,0 +1,820 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CarlXVIGustafOfSweden a :Man,
+        :Person ;
+    :hasBrother data:CarlXVIGustafOfSweden ;
+    :hasRelation data:CarlXVIGustafOfSweden ;
+    :isBloodrelationOf data:CarlXVIGustafOfSweden ;
+    :isBrotherOf data:CarlXVIGustafOfSweden ;
+    :isSiblingOf data:CarlXVIGustafOfSweden .
+
+data:FelipeVIOfSpain a :Man,
+        :Person ;
+    :hasBrother data:FelipeVIOfSpain ;
+    :hasRelation data:FelipeVIOfSpain ;
+    :isBloodrelationOf data:FelipeVIOfSpain ;
+    :isBrotherOf data:FelipeVIOfSpain ;
+    :isSiblingOf data:FelipeVIOfSpain .
+
+data:FrederikXOfDenmark a :Man,
+        :Person ;
+    :hasBrother data:FrederikXOfDenmark ;
+    :hasRelation data:FrederikXOfDenmark ;
+    :isBloodrelationOf data:FrederikXOfDenmark ;
+    :isBrotherOf data:FrederikXOfDenmark ;
+    :isSiblingOf data:FrederikXOfDenmark .
+
+data:JuanCarlosOfSpain a :Man,
+        :Person ;
+    :hasBrother data:JuanCarlosOfSpain ;
+    :hasRelation data:Alexia,
+        data:ConstantineII,
+        data:JuanCarlosOfSpain,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :isBloodrelationOf data:JuanCarlosOfSpain ;
+    :isBrotherOf data:JuanCarlosOfSpain ;
+    :isSiblingOf data:JuanCarlosOfSpain .
+
+data:SophiaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasBrother data:ConstantineII ;
+    :hasRelation data:Alexia,
+        data:ConstantineII,
+        data:JuanCarlosOfSpain,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:SophiaOfGreeceAndDenmark ;
+    :isAuntOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark ;
+    :isSiblingOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark ;
+    :isSisterOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark .
+
+data:FredericaOfGreece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ConstantineII ;
+    :hasRelation data:Alexia,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:FredericaOfGreece ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:Alexia,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:FredericaOfGreece ;
+    :isMotherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:FredericaOfGreece ;
+    :isSisterOf data:FredericaOfGreece .
+
+data:PaulOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PaulOfGreece ;
+    :hasChild data:ConstantineII ;
+    :hasRelation data:Alexia,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:Alexia,
+        data:ConstantineII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:PaulOfGreece ;
+    :isBrotherOf data:PaulOfGreece ;
+    :isFatherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:PaulOfGreece ;
+    :isUncleOf data:ConstantineII .
+
+data:GustafVIAdolf a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GustafVIAdolf ;
+    :hasChild data:IngridOfSweden ;
+    :hasDaughter data:IngridOfSweden ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:IngridOfSweden,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:GustafVIAdolf ;
+    :isBrotherOf data:GustafVIAdolf ;
+    :isFatherOf data:IngridOfSweden ;
+    :isParentOf data:IngridOfSweden ;
+    :isSiblingOf data:GustafVIAdolf ;
+    :isUncleOf data:IngridOfSweden .
+
+data:Benedikte a :Person,
+        :Woman ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:FrederikIX,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isAuntOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:FrederikIX,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isAuntOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII .
+
+data:AlexandrineOfMecklenburgSchwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FrederikIX ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:FrederikIX,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:AlexandrineOfMecklenburgSchwerin ;
+    :hasSon data:FrederikIX ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:FrederikIX,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAuntOf data:FrederikIX ;
+    :isBloodrelationOf data:AlexandrineOfMecklenburgSchwerin ;
+    :isMotherOf data:FrederikIX ;
+    :isParentOf data:FrederikIX ;
+    :isSiblingOf data:AlexandrineOfMecklenburgSchwerin ;
+    :isSisterOf data:AlexandrineOfMecklenburgSchwerin .
+
+data:ChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianX ;
+    :hasChild data:FrederikIX ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:FrederikIX,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSon data:FrederikIX ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:FrederikIX,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:ChristianX ;
+    :isBrotherOf data:ChristianX ;
+    :isFatherOf data:FrederikIX ;
+    :isParentOf data:FrederikIX ;
+    :isSiblingOf data:ChristianX ;
+    :isUncleOf data:FrederikIX .
+
+data:MargaretOfConnaught a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:IngridOfSweden ;
+    :hasDaughter data:IngridOfSweden ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:MargaretOfConnaught ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:IngridOfSweden,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAuntOf data:IngridOfSweden ;
+    :isBloodrelationOf data:MargaretOfConnaught ;
+    :isMotherOf data:IngridOfSweden ;
+    :isParentOf data:IngridOfSweden ;
+    :isSiblingOf data:MargaretOfConnaught ;
+    :isSisterOf data:MargaretOfConnaught .
+
+data:IngridOfSweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GustafVIAdolf,
+        data:MargaretOfConnaught ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasFather data:GustafVIAdolf ;
+    :hasMother data:MargaretOfConnaught ;
+    :hasParent data:GustafVIAdolf,
+        data:MargaretOfConnaught ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:IngridOfSweden ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAuntOf data:Anne-Marie ;
+    :isBloodrelationOf data:IngridOfSweden ;
+    :isChildOf data:GustafVIAdolf,
+        data:MargaretOfConnaught ;
+    :isDaughterOf data:GustafVIAdolf,
+        data:MargaretOfConnaught ;
+    :isMotherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:IngridOfSweden ;
+    :isSisterOf data:IngridOfSweden .
+
+data:FrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:ChristianX ;
+    :hasBrother data:FrederikIX ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasFather data:ChristianX ;
+    :hasMother data:AlexandrineOfMecklenburgSchwerin ;
+    :hasParent data:AlexandrineOfMecklenburgSchwerin,
+        data:ChristianX ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:FrederikIX,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAncestorOf data:Alexia,
+        data:Anne-Marie,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:FrederikIX ;
+    :isBrotherOf data:FrederikIX ;
+    :isChildOf data:AlexandrineOfMecklenburgSchwerin,
+        data:ChristianX ;
+    :isFatherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:FrederikIX ;
+    :isSonOf data:AlexandrineOfMecklenburgSchwerin,
+        data:ChristianX ;
+    :isUncleOf data:Anne-Marie .
+
+data:ConstantineII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FredericaOfGreece,
+        data:PaulOfGreece ;
+    :hasBrother data:ConstantineII ;
+    :hasChild data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasDaughter data:Alexia,
+        data:Theodora ;
+    :hasDeathYear 2023 ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:FredericaOfGreece ;
+    :hasParent data:FredericaOfGreece,
+        data:PaulOfGreece ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:JuanCarlosOfSpain,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:SophiaOfGreeceAndDenmark ;
+    :hasSon data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :isAncestorOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark ;
+    :isBrotherOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark ;
+    :isChildOf data:FredericaOfGreece,
+        data:PaulOfGreece ;
+    :isFatherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isParentOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:ConstantineII,
+        data:SophiaOfGreeceAndDenmark ;
+    :isSonOf data:FredericaOfGreece,
+        data:PaulOfGreece ;
+    :isUncleOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:Anne-Marie,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:PaulOfGreece ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:JuanCarlosOfSpain,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isDaughterOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Nikolaos a :Man,
+        :Person ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:Anne-Marie,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:PaulOfGreece ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:JuanCarlosOfSpain,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:Anne-Marie,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:PaulOfGreece ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:JuanCarlosOfSpain,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Philippos a :Man,
+        :Person ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:Anne-Marie,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:PaulOfGreece ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:JuanCarlosOfSpain,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:ConstantineII .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:Anne-Marie,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:PaulOfGreece ;
+    :hasBrother data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FredericaOfGreece,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:JuanCarlosOfSpain,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:PaulOfGreece,
+        data:Pavlos,
+        data:Philippos,
+        data:SophiaOfGreeceAndDenmark,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isDaughterOf data:Anne-Marie,
+        data:ConstantineII ;
+    :isSiblingOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AlexandrineOfMecklenburgSchwerin,
+        data:ChristianX,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught ;
+    :hasBirthYear 1946 ;
+    :hasChild data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasDaughter data:Alexia,
+        data:Theodora ;
+    :hasFather data:FrederikIX ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:IngridOfSweden ;
+    :hasParent data:FrederikIX,
+        data:IngridOfSweden ;
+    :hasRelation data:AlexandrineOfMecklenburgSchwerin,
+        data:Alexia,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:ChristianX,
+        data:ConstantineII,
+        data:FrederikIX,
+        data:GustafVIAdolf,
+        data:IngridOfSweden,
+        data:MargaretOfConnaught,
+        data:MargretheII,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :hasSon data:Nikolaos,
+        data:Pavlos,
+        data:Philippos ;
+    :isAncestorOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isAuntOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isChildOf data:FrederikIX,
+        data:IngridOfSweden ;
+    :isDaughterOf data:FrederikIX,
+        data:IngridOfSweden ;
+    :isMotherOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isParentOf data:Alexia,
+        data:Nikolaos,
+        data:Pavlos,
+        data:Philippos,
+        data:Theodora ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:MargretheII .
+

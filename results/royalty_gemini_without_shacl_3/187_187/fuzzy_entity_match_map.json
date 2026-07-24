@@ -1,0 +1,307 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_3",
+  "task_directory": "results/royalty_gemini_without_shacl_3/187_187",
+  "text_file": "Q255382.txt",
+  "text_key": "Q255382",
+  "article": "https://en.wikipedia.org/wiki/Princess_Theodora_of_Greece_and_Denmark_(1906%E2%80%931969)",
+  "article_key": "Princess Theodora of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Theodora_of_Greece_and_Denmark_1",
+    "qid": "Q255382",
+    "label": "Princess Theodora of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Theodora_of_Greece_and_Denmark_1",
+      "qid": "Q255382",
+      "label": "Princess Theodora of Greece and Denmark",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Andrew_of_Greece_and_Denmark",
+      "qid": "Q156531",
+      "label": "Prince Andrew of Greece and Denmark",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "qid": "Q155178",
+      "label": "Olga Constantinovna of Russia",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Louis_of_Battenberg",
+      "qid": "Q57468",
+      "label": "Prince Louis of Battenberg",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Sophie_of_Greece_and_Denmark",
+      "qid": "Q630371",
+      "label": "Princess Sophie of Greece and Denmark",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Constantine_I_of_Greece",
+      "qid": "Q152099",
+      "label": "Constantine I of Greece",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "qid": "Q157068",
+      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Louise_Mountbatten",
+      "qid": "Q115477",
+      "label": "Louise Mountbatten",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Christopher_of_Greece_and_Denmark",
+      "qid": "Q447757",
+      "label": "Prince Christopher of Greece and Denmark",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alice",
+      "extracted_local_name": "Alice",
+      "embedding_text": "Alice",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "ground_truth_qid": "Q116062",
+      "ground_truth_label": "Princess Alice of Battenberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alice",
+      "best_candidate_label": "Princess Alice of Battenberg",
+      "best_candidate_qid": "Q116062",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Andrew",
+      "extracted_local_name": "Andrew",
+      "embedding_text": "Andrew",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Andrew",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.631578947368421
+    },
+    {
+      "extracted_uri": "http://example.org/data/Berthold",
+      "extracted_local_name": "Berthold",
+      "embedding_text": "Berthold",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christo",
+      "best_candidate_label": "Prince Christopher of Greece and Denmark",
+      "best_candidate_qid": "Q447757",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Cecilie",
+      "extracted_local_name": "Cecilie",
+      "embedding_text": "Cecilie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Philip",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ludwig",
+      "extracted_local_name": "Ludwig",
+      "embedding_text": "Ludwig",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Louis of Battenberg",
+      "best_candidate_label": "Prince Louis of Battenberg",
+      "best_candidate_qid": "Q57468",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margarita",
+      "extracted_local_name": "Margarita",
+      "embedding_text": "Margarita",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christo",
+      "best_candidate_label": "Prince Christopher of Greece and Denmark",
+      "best_candidate_qid": "Q447757",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.375
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maximilian_Baden",
+      "extracted_local_name": "Maximilian_Baden",
+      "embedding_text": "Maximilian Baden",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Theodora, Margravine of Baden",
+      "best_candidate_label": "Princess Theodora of Greece and Denmark",
+      "best_candidate_qid": "Q255382",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4444444444444444
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philip",
+      "extracted_local_name": "Philip",
+      "embedding_text": "Philip",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Philip",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.631578947368421
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sophie",
+      "extracted_local_name": "Sophie",
+      "embedding_text": "Sophie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Sophie of Greece",
+      "best_candidate_label": "Princess Sophie of Greece and Denmark",
+      "best_candidate_qid": "Q630371",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3870967741935484
+    },
+    {
+      "extracted_uri": "http://example.org/data/Theodora",
+      "extracted_local_name": "Theodora",
+      "embedding_text": "Theodora",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Charles Windsor",
+      "best_candidate_label": "Charles III",
+      "best_candidate_qid": "Q43274",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43478260869565216
+    }
+  ],
+  "summary": {
+    "entities_total": 10,
+    "entities_matched": 1,
+    "entities_unmatched": 9
+  }
+}

@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ErnstCountOfLippeBiesterfeld a :Man,
+        :Person ;
+    :isFatherOf data:CountessAdelaideOfLippeBiesterfeld .
+
+data:PrinceHenryOfBavaria a :Man,
+        :Person ;
+    :hasAncestor data:LudwigIIIOfBavaria .
+
+data:PrincessAdelaideOfSaxeMeiningen a :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:PrinceFrederickJohnOfSaxeMeiningen ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:CountessAdelaideOfLippeBiesterfeld ;
+    :hasRelation data:PrinceAdalbertOfPrussia ;
+    :isSiblingOf data:PrinceBernard,
+        data:PrinceGeorge .
+
+data:FeodoraOfHohenloheLangenburg a :Person,
+        :Woman .
+
+data:GeorgeIIOfSaxeMeiningen a :Man,
+        :Person .
+
+data:KaiserWilliamIIOfGermany a :Man,
+        :Person .
+
+data:LudwigIIIOfBavaria a :Man,
+        :Person .
+
+data:PrinceAdalbertOfPrussia a :Man,
+        :Person ;
+    :hasFather data:KaiserWilliamIIOfGermany .
+
+data:PrinceBernard a :Man,
+        :Person .
+
+data:PrinceFrederickJohnOfSaxeMeiningen a :Man,
+        :Person ;
+    :hasDeathYear 1914 ;
+    :hasFather data:GeorgeIIOfSaxeMeiningen ;
+    :hasMother data:FeodoraOfHohenloheLangenburg .
+
+data:PrinceGeorge a :Man,
+        :Person .
+
+data:CountessAdelaideOfLippeBiesterfeld a :Person,
+        :Woman .
+

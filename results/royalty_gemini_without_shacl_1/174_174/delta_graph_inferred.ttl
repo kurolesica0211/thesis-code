@@ -1,0 +1,336 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Richard_Campbell_Andrew_Brandram a :Man,
+        :Person ;
+    :hasBrother data:Richard_Campbell_Andrew_Brandram ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :isBloodrelationOf data:Richard_Campbell_Andrew_Brandram ;
+    :isBrotherOf data:Richard_Campbell_Andrew_Brandram ;
+    :isSiblingOf data:Richard_Campbell_Andrew_Brandram .
+
+data:Princess_Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Sophia_of_Prussia ;
+    :isAncestorOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Sophia_of_Prussia ;
+    :isMotherOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Sophia_of_Prussia ;
+    :isSisterOf data:Princess_Sophia_of_Prussia .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasChild data:King_Constantine_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSon data:King_Constantine_I_of_Greece ;
+    :isAncestorOf data:King_Constantine_I_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isFatherOf data:King_Constantine_I_of_Greece ;
+    :isParentOf data:King_Constantine_I_of_Greece ;
+    :isSiblingOf data:King_George_I_of_Greece ;
+    :isUncleOf data:King_Constantine_I_of_Greece .
+
+data:King_Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_I_of_Greece ;
+    :hasBrother data:King_Constantine_I_of_Greece ;
+    :hasChild data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasParent data:King_George_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :isAncestorOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Constantine_I_of_Greece ;
+    :isBrotherOf data:King_Constantine_I_of_Greece ;
+    :isChildOf data:King_George_I_of_Greece ;
+    :isFatherOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Constantine_I_of_Greece ;
+    :isSonOf data:King_George_I_of_Greece ;
+    :isUncleOf data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Helen_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Irene_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasParent data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :hasRelation data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Sophia_of_Prussia,
+        data:Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isChildOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :isDaughterOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Helen_of_Greece,
+        data:Princess_Irene_of_Greece,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :knownAs "Lady Katherine Brandram"^^xsd:string .
+

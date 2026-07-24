@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :hasFather data:Klaus_Felix_von_Amsberg .
+
+data:Elise_von_Vieregg a :Person,
+        :Woman ;
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1951 .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
+
+data:Gosta_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Klaus_Felix_von_Amsberg a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMarriageYear data:Gosta_von_dem_Bussche-Haddenhausen,
+        1924 ;
+    :hasMother data:Elise_von_Vieregg .
+
+data:Wilhelm_von_Amsberg a :Man,
+        :Person ;
+    :hasBirthYear 1856 ;
+    :hasDeathYear 1929 .
+

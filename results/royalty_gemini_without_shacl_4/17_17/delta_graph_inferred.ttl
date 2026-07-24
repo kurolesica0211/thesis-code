@@ -1,0 +1,302 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Serena_Alleyne_Stanhope a :Person,
+        :Woman ;
+    :hasRelation data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Serena_Alleyne_Stanhope ;
+    :hasSister data:Serena_Alleyne_Stanhope ;
+    :isBloodrelationOf data:Serena_Alleyne_Stanhope ;
+    :isSiblingOf data:Serena_Alleyne_Stanhope ;
+    :isSisterOf data:Serena_Alleyne_Stanhope .
+
+data:Antony_Armstrong_Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Antony_Armstrong_Jones ;
+    :hasChild data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Viscount_Linley_son ;
+    :hasSon data:David_Armstrong_Jones ;
+    :isAncestorOf data:David_Armstrong_Jones,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:Antony_Armstrong_Jones ;
+    :isBrotherOf data:Antony_Armstrong_Jones ;
+    :isFatherOf data:David_Armstrong_Jones ;
+    :isParentOf data:David_Armstrong_Jones ;
+    :isSiblingOf data:Antony_Armstrong_Jones ;
+    :isUncleOf data:David_Armstrong_Jones .
+
+data:King_George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_VI ;
+    :hasChild data:Princess_Margaret ;
+    :hasDaughter data:Princess_Margaret ;
+    :hasRelation data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Viscount_Linley_son ;
+    :isAncestorOf data:David_Armstrong_Jones,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Princess_Margaret,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:King_George_VI ;
+    :isBrotherOf data:King_George_VI ;
+    :isFatherOf data:Princess_Margaret ;
+    :isParentOf data:Princess_Margaret ;
+    :isSiblingOf data:King_George_VI ;
+    :isUncleOf data:Princess_Margaret .
+
+data:Lady_Frances_von_Hofmannsthal a :Person,
+        :Woman ;
+    :hasBrother data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Serena_Alleyne_Stanhope ;
+    :hasSister data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isAuntOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSiblingOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSisterOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :hasBrother data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Serena_Alleyne_Stanhope ;
+    :hasSister data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isAuntOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSiblingOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSisterOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry .
+
+data:Polly_Fry a :Person,
+        :Woman ;
+    :hasBrother data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Serena_Alleyne_Stanhope ;
+    :hasSister data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isAuntOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSiblingOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSisterOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry .
+
+data:Princess_Margaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_George_VI ;
+    :hasChild data:David_Armstrong_Jones ;
+    :hasFather data:King_George_VI ;
+    :hasParent data:King_George_VI ;
+    :hasRelation data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Viscount_Linley_son ;
+    :hasSister data:Princess_Margaret ;
+    :hasSon data:David_Armstrong_Jones ;
+    :isAncestorOf data:David_Armstrong_Jones,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isAuntOf data:David_Armstrong_Jones ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isChildOf data:King_George_VI ;
+    :isDaughterOf data:King_George_VI ;
+    :isMotherOf data:David_Armstrong_Jones ;
+    :isParentOf data:David_Armstrong_Jones ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Lady_Margarita_Armstrong_Jones a :Person,
+        :Woman ;
+    :hasAncestor data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Princess_Margaret ;
+    :hasBrother data:Viscount_Linley_son ;
+    :hasFather data:David_Armstrong_Jones ;
+    :hasParent data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Princess_Margaret,
+        data:Viscount_Linley_son ;
+    :hasSister data:Lady_Margarita_Armstrong_Jones ;
+    :isBloodrelationOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isChildOf data:David_Armstrong_Jones ;
+    :isDaughterOf data:David_Armstrong_Jones ;
+    :isSiblingOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isSisterOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son .
+
+data:Viscount_Linley_son a :Man,
+        :Person ;
+    :hasAncestor data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Princess_Margaret ;
+    :hasBrother data:Viscount_Linley_son ;
+    :hasFather data:David_Armstrong_Jones ;
+    :hasParent data:David_Armstrong_Jones ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Princess_Margaret,
+        data:Viscount_Linley_son ;
+    :hasSister data:Lady_Margarita_Armstrong_Jones ;
+    :isBloodrelationOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBrotherOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isChildOf data:David_Armstrong_Jones ;
+    :isSiblingOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isSonOf data:David_Armstrong_Jones .
+
+data:David_Armstrong_Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :formerlyKnownAs "Viscount Linley"^^xsd:string ;
+    :hasAncestor data:Antony_Armstrong_Jones,
+        data:King_George_VI,
+        data:Princess_Margaret ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:David_Armstrong_Jones ;
+    :hasChild data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :hasDaughter data:Lady_Margarita_Armstrong_Jones ;
+    :hasFather data:Antony_Armstrong_Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasParent data:Antony_Armstrong_Jones,
+        data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong_Jones,
+        data:David_Armstrong_Jones,
+        data:King_George_VI,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Margarita_Armstrong_Jones,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Serena_Alleyne_Stanhope,
+        data:Viscount_Linley_son ;
+    :hasSister data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :hasSon data:Viscount_Linley_son ;
+    :isAncestorOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isBloodrelationOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isBrotherOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isChildOf data:Antony_Armstrong_Jones,
+        data:Princess_Margaret ;
+    :isFatherOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isParentOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :isSiblingOf data:David_Armstrong_Jones,
+        data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :isSonOf data:Antony_Armstrong_Jones,
+        data:Princess_Margaret ;
+    :isUncleOf data:Lady_Margarita_Armstrong_Jones,
+        data:Viscount_Linley_son ;
+    :knownAs "David Linley"^^xsd:string .
+

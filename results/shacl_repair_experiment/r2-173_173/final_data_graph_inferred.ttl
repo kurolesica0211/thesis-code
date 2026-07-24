@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingJuanCarlosOfSpain a :Man,
+        :Person ;
+    :hasBrother data:KingJuanCarlosOfSpain ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:KingJuanCarlosOfSpain ;
+    :isBrotherOf data:KingJuanCarlosOfSpain ;
+    :isSiblingOf data:KingJuanCarlosOfSpain .
+
+data:KingPaulOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingPaulOfGreece ;
+    :hasChild data:PrincessIreneOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessIreneOfGreeceAndDenmark ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :isAncestorOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isBloodrelationOf data:KingPaulOfGreece ;
+    :isBrotherOf data:KingPaulOfGreece ;
+    :isFatherOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isParentOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isSiblingOf data:KingPaulOfGreece ;
+    :isUncleOf data:PrincessIreneOfGreeceAndDenmark .
+
+data:QueenFrederica a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessIreneOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessIreneOfGreeceAndDenmark ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :hasSister data:QueenFrederica ;
+    :isAncestorOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isAuntOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isBloodrelationOf data:QueenFrederica ;
+    :isMotherOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isParentOf data:PrincessIreneOfGreeceAndDenmark ;
+    :isSiblingOf data:QueenFrederica ;
+    :isSisterOf data:QueenFrederica .
+
+data:KingConstantineIIOfGreece a :Man,
+        :Person ;
+    :hasBrother data:KingConstantineIIOfGreece ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :hasSister data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isBrotherOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isSiblingOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain .
+
+data:QueenSofiaOfSpain a :Person,
+        :Woman ;
+    :hasBrother data:KingConstantineIIOfGreece ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :hasSister data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isSiblingOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isSisterOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain .
+
+data:PrincessIreneOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasAncestor data:KingPaulOfGreece,
+        data:QueenFrederica ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:KingConstantineIIOfGreece ;
+    :hasDeathYear 2026 ;
+    :hasFather data:KingPaulOfGreece ;
+    :hasMother data:QueenFrederica ;
+    :hasParent data:KingPaulOfGreece,
+        data:QueenFrederica ;
+    :hasRelation data:KingConstantineIIOfGreece,
+        data:KingJuanCarlosOfSpain,
+        data:KingPaulOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenFrederica,
+        data:QueenSofiaOfSpain ;
+    :hasSister data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isBloodrelationOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isChildOf data:KingPaulOfGreece,
+        data:QueenFrederica ;
+    :isDaughterOf data:KingPaulOfGreece,
+        data:QueenFrederica ;
+    :isSiblingOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain ;
+    :isSisterOf data:KingConstantineIIOfGreece,
+        data:PrincessIreneOfGreeceAndDenmark,
+        data:QueenSofiaOfSpain .
+

@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrix ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Princess_Beatrix ;
+    :isSiblingOf data:Princess_Beatrix ;
+    :isSisterOf data:Princess_Beatrix .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Prince_Constantijn_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Constantijn_of_the_Netherlands ;
+    :hasChild data:Countess_Leonore_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Leonore_of_Orange-Nassau ;
+    :hasRelation data:Countess_Leonore_of_Orange-Nassau,
+        data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :isAncestorOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isBloodrelationOf data:Prince_Constantijn_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Constantijn_of_the_Netherlands ;
+    :isFatherOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isParentOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isSiblingOf data:Prince_Constantijn_of_the_Netherlands ;
+    :isUncleOf data:Countess_Leonore_of_Orange-Nassau .
+
+data:Princess_Laurentien_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Countess_Leonore_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Leonore_of_Orange-Nassau ;
+    :hasRelation data:Countess_Leonore_of_Orange-Nassau,
+        data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSister data:Princess_Laurentien_of_the_Netherlands ;
+    :isAncestorOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isAuntOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isBloodrelationOf data:Princess_Laurentien_of_the_Netherlands ;
+    :isMotherOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isParentOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isSiblingOf data:Princess_Laurentien_of_the_Netherlands ;
+    :isSisterOf data:Princess_Laurentien_of_the_Netherlands .
+
+data:Countess_Leonore_of_Orange-Nassau a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Constantijn_of_the_Netherlands ;
+    :hasMother data:Princess_Laurentien_of_the_Netherlands ;
+    :hasParent data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasRelation data:Countess_Leonore_of_Orange-Nassau,
+        data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSister data:Countess_Leonore_of_Orange-Nassau ;
+    :isBloodrelationOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isChildOf data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :isSiblingOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Leonore_of_Orange-Nassau .
+

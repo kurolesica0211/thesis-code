@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasBirthYear "2002"^^xsd:positiveInteger ;
+    :hasBrother data:Viscount_Linley ;
+    :hasFather data:David_Armstrong-Jones ;
+    :hasMother data:Serena_Stanhope ;
+    :hasRelation data:Lady_Sarah_Chatto .
+
+data:Antony_Armstrong-Jones a :Man,
+        :Person .
+
+data:Charles_Stanhope a :Man,
+        :Person .
+
+data:David_Armstrong-Jones a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Serena_Stanhope a :Person,
+        :Woman ;
+    :hasFather data:Charles_Stanhope .
+
+data:Viscount_Linley a :Man,
+        :Person .
+

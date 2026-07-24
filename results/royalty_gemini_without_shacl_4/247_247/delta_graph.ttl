@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Windsor a :Man,
+        :Person ;
+    :alsoKnownAs "Alex Ulster"^^xsd:string ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Prince_Richard ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Birgitte_Gloucester ;
+    :hasRelation data:Claire_Booth .
+
+data:Birgitte_Gloucester a :Person,
+        :Woman .
+
+data:Claire_Booth a :Person,
+        :Woman .
+
+data:Prince_Richard a :Man,
+        :Person .
+

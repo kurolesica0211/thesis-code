@@ -1,0 +1,69 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Man,
+        :Person ;
+    :hasBrother data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
+    :hasRelation data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
+    :isBloodrelationOf data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
+    :isBrotherOf data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
+    :isSiblingOf data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasBirthYear 1904 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+

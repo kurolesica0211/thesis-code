@@ -1,0 +1,508 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Princess_Nathalie ;
+    :hasDaughter data:Princess_Nathalie ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Princess_Nathalie ;
+    :isBloodrelationOf data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Princess_Nathalie ;
+    :isParentOf data:Princess_Nathalie ;
+    :isSiblingOf data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Princess_Nathalie .
+
+data:Crown_Prince_Gustav_Adolf_of_Sweden a :Ancestor,
+        :Man ;
+    :hasBrother data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :hasChild data:Queen_Ingrid ;
+    :hasDaughter data:Queen_Ingrid ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :isBrotherOf data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :isFatherOf data:Queen_Ingrid ;
+    :isParentOf data:Queen_Ingrid ;
+    :isSiblingOf data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :isUncleOf data:Queen_Ingrid .
+
+data:King_Christian_X a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Christian_X ;
+    :hasChild data:King_Frederik_IX ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:King_Frederik_IX ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:King_Christian_X ;
+    :isBrotherOf data:King_Christian_X ;
+    :isFatherOf data:King_Frederik_IX ;
+    :isParentOf data:King_Frederik_IX ;
+    :isSiblingOf data:King_Christian_X ;
+    :isUncleOf data:King_Frederik_IX .
+
+data:Princess_Margaret_of_Connaught a :Ancestor,
+        :Woman ;
+    :hasChild data:Queen_Ingrid ;
+    :hasDaughter data:Queen_Ingrid ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Margaret_of_Connaught ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:Queen_Ingrid ;
+    :isBloodrelationOf data:Princess_Margaret_of_Connaught ;
+    :isMotherOf data:Queen_Ingrid ;
+    :isParentOf data:Queen_Ingrid ;
+    :isSiblingOf data:Princess_Margaret_of_Connaught ;
+    :isSisterOf data:Princess_Margaret_of_Connaught .
+
+data:Queen_Alexandrine a :Ancestor,
+        :Woman ;
+    :hasChild data:King_Frederik_IX ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Queen_Alexandrine ;
+    :hasSon data:King_Frederik_IX ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:King_Frederik_IX ;
+    :isBloodrelationOf data:Queen_Alexandrine ;
+    :isMotherOf data:King_Frederik_IX ;
+    :isParentOf data:King_Frederik_IX ;
+    :isSiblingOf data:Queen_Alexandrine ;
+    :isSisterOf data:Queen_Alexandrine .
+
+data:Constantine_II_of_Greece a :Man ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie ;
+    :hasParent data:Queen_Anne-Marie ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Queen_Anne-Marie ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Queen_Anne-Marie .
+
+data:King_Frederik_X a :Man ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:King_Frederik_X ;
+    :hasMother data:Queen_Margrethe_II ;
+    :hasParent data:Queen_Margrethe_II ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:King_Frederik_X ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isChildOf data:Queen_Margrethe_II ;
+    :isSiblingOf data:King_Frederik_X ;
+    :isSonOf data:Queen_Margrethe_II .
+
+data:Princess_Nathalie a :Woman ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Ingrid,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte ;
+    :hasParent data:Princess_Benedikte,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Nathalie ;
+    :isBloodrelationOf data:Princess_Nathalie ;
+    :isChildOf data:Princess_Benedikte,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Princess_Benedikte,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Princess_Nathalie ;
+    :isSisterOf data:Princess_Nathalie .
+
+data:Princess_Benedikte a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Ingrid ;
+    :hasBirthYear 1944 ;
+    :hasChild data:Princess_Nathalie ;
+    :hasDaughter data:Princess_Nathalie ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Queen_Ingrid ;
+    :hasParent data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isAncestorOf data:Princess_Nathalie ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isChildOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isDaughterOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isMotherOf data:Princess_Nathalie ;
+    :isParentOf data:Princess_Nathalie ;
+    :isSiblingOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II .
+
+data:Queen_Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Ingrid ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMother data:Queen_Ingrid ;
+    :hasParent data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isChildOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isDaughterOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:Princess_Margaret_of_Connaught,
+        data:Queen_Alexandrine,
+        data:Queen_Ingrid ;
+    :hasChild data:King_Frederik_X ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMother data:Queen_Ingrid ;
+    :hasParent data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasSon data:King_Frederik_X ;
+    :isAncestorOf data:King_Frederik_X ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isChildOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isDaughterOf data:King_Frederik_IX,
+        data:Queen_Ingrid ;
+    :isMotherOf data:King_Frederik_X ;
+    :isParentOf data:King_Frederik_X ;
+    :isSiblingOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II .
+
+data:King_Frederik_IX a :Ancestor,
+        :Man ;
+    :hasAncestor data:King_Christian_X,
+        data:Queen_Alexandrine ;
+    :hasBrother data:King_Frederik_IX ;
+    :hasChild data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasDaughter data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasFather data:King_Christian_X ;
+    :hasMother data:Queen_Alexandrine ;
+    :hasParent data:King_Christian_X,
+        data:Queen_Alexandrine ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:King_Frederik_IX ;
+    :isBrotherOf data:King_Frederik_IX ;
+    :isChildOf data:King_Christian_X,
+        data:Queen_Alexandrine ;
+    :isFatherOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isParentOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:King_Frederik_IX ;
+    :isSonOf data:King_Christian_X,
+        data:Queen_Alexandrine ;
+    :isUncleOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II .
+
+data:Queen_Ingrid a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:Princess_Margaret_of_Connaught ;
+    :hasChild data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasDaughter data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :hasFather data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :hasMother data:Princess_Margaret_of_Connaught ;
+    :hasParent data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:Princess_Margaret_of_Connaught ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:King_Christian_X,
+        data:King_Frederik_IX,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Margaret_of_Connaught,
+        data:Princess_Nathalie,
+        data:Queen_Alexandrine,
+        data:Queen_Anne-Marie,
+        data:Queen_Ingrid,
+        data:Queen_Margrethe_II,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSister data:Queen_Ingrid ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:King_Frederik_X,
+        data:Princess_Benedikte,
+        data:Princess_Nathalie,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Queen_Ingrid ;
+    :isChildOf data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:Princess_Margaret_of_Connaught ;
+    :isDaughterOf data:Crown_Prince_Gustav_Adolf_of_Sweden,
+        data:Princess_Margaret_of_Connaught ;
+    :isMotherOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isParentOf data:Princess_Benedikte,
+        data:Queen_Anne-Marie,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Queen_Ingrid ;
+    :isSisterOf data:Queen_Ingrid .
+

@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alix_of_Hesse a :Person,
+        :Woman .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :isSisterOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+data:Augusta_Victoria_German_Empress a :Person,
+        :Woman ;
+    :isSisterOf data:Ernst_Gunther_Duke_of_Schleswig-Holstein .
+
+data:Carlos_of_Braganza-Coburg a :Man,
+        :Person .
+
+data:Edward_VII a :Man,
+        :Person ;
+    :isFatherOf data:Albert_Victor_Duke_of_Clarence .
+
+data:Henri_Duke_of_Aumale a :Man,
+        :Person .
+
+data:Isabelle_Duchess_of_Guise a :Person,
+        :Woman .
+
+data:Louis_Philippe_I a :Man,
+        :Person ;
+    :isFatherOf data:Philippe_Count_of_Paris .
+
+data:Maria_Dorothea_of_Austria a :Person,
+        :Woman .
+
+data:Maria_Isabel_of_Spain a :Person,
+        :Woman ;
+    :isMotherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+data:Nicholas_II_of_Russia a :Man,
+        :Person .
+
+data:Philippe_Duke_of_Orl%C3%A9ans a :Man,
+        :Person ;
+    :isBrotherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+data:Princess_Louise_Duchess_of_Fife a :Person,
+        :Woman ;
+    :isSisterOf data:Albert_Victor_Duke_of_Clarence .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+
+data:Sophie_Chotek a :Person,
+        :Woman .
+
+data:Emanuele_Filiberto_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Ernst_Gunther_Duke_of_Schleswig-Holstein a :Man,
+        :Person .
+
+data:Otto_Campini a :Man,
+        :Person .
+
+data:Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :isFatherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+data:Albert_Victor_Duke_of_Clarence a :Man,
+        :Person .
+
+data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1871 ;
+    :hasDeathYear 1951 ;
+    :hasMarriageYear data:1895,
+        data:1936,
+        1895,
+        1936 ;
+    :hasRelation data:Emanuele_Filiberto_Duke_of_Aosta,
+        data:Otto_Campini .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie,\n        data:Ingrid ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Mafalda a :Woman ;\n    :hasMother data:Kyril .\n\ndata:Maria-Olympia a :Woman .\n\ndata:Sofia a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Ingrid a :Woman .\n\ndata:Kyril a :Man ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Pavlos a :Man ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora a :Woman ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie,\n        data:Ingrid ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Mafalda a :Woman ;\n    :hasMother data:Kyril .\n\ndata:Maria-Olympia a :Woman .\n\ndata:Sofia a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Ingrid a :Woman .\n\ndata:Kyril a :Man ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Pavlos a :Man ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora a :Woman ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\n"
+    }
+]

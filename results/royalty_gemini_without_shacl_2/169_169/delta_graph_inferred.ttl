@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :hasSister data:Pilar_de_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isBrotherOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isUncleOf data:Bruno_Alejandro_Gomez_Acebo_Borbon .
+
+data:Juan_de_Borbon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_de_Borbon ;
+    :hasChild data:Pilar_de_Borbon ;
+    :hasDaughter data:Pilar_de_Borbon ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Juan_Carlos_I,
+        data:Juan_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Pilar_de_Borbon ;
+    :isBloodrelationOf data:Juan_de_Borbon ;
+    :isBrotherOf data:Juan_de_Borbon ;
+    :isFatherOf data:Pilar_de_Borbon ;
+    :isParentOf data:Pilar_de_Borbon ;
+    :isSiblingOf data:Juan_de_Borbon ;
+    :isUncleOf data:Pilar_de_Borbon .
+
+data:Maria_Mercedes_de_Borbon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pilar_de_Borbon ;
+    :hasDaughter data:Pilar_de_Borbon ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Juan_Carlos_I,
+        data:Maria_Mercedes_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :hasSister data:Maria_Mercedes_de_Borbon ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Pilar_de_Borbon ;
+    :isAuntOf data:Pilar_de_Borbon ;
+    :isBloodrelationOf data:Maria_Mercedes_de_Borbon ;
+    :isMotherOf data:Pilar_de_Borbon ;
+    :isParentOf data:Pilar_de_Borbon ;
+    :isSiblingOf data:Maria_Mercedes_de_Borbon ;
+    :isSisterOf data:Maria_Mercedes_de_Borbon .
+
+data:Bruno_Alejandro_Gomez_Acebo_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :hasBrother data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :hasMother data:Pilar_de_Borbon ;
+    :hasParent data:Pilar_de_Borbon ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :isBloodrelationOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isBrotherOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isChildOf data:Pilar_de_Borbon ;
+    :isSiblingOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isSonOf data:Pilar_de_Borbon .
+
+data:Pilar_de_Borbon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Juan_de_Borbon ;
+    :hasMother data:Maria_Mercedes_de_Borbon ;
+    :hasParent data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon,
+        data:Pilar_de_Borbon ;
+    :hasSister data:Pilar_de_Borbon ;
+    :hasSon data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isAuntOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isChildOf data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon ;
+    :isDaughterOf data:Juan_de_Borbon,
+        data:Maria_Mercedes_de_Borbon ;
+    :isMotherOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isParentOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :isSisterOf data:Juan_Carlos_I,
+        data:Pilar_de_Borbon ;
+    :knownAs "Pilar de Borbón"^^xsd:string .
+

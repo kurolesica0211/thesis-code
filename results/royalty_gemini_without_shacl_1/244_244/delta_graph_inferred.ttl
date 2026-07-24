@@ -1,0 +1,199 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Aleksandar_III_Karadjordjevic a :Person ;
+    :hasRelation data:Prince_Aleksandar_III_Karadjordjevic ;
+    :isBloodrelationOf data:Prince_Aleksandar_III_Karadjordjevic ;
+    :isSiblingOf data:Prince_Aleksandar_III_Karadjordjevic .
+
+data:Prince_Alexander_of_Serbia_and_Yugoslavia a :Person ;
+    :hasRelation data:Prince_Alexander_of_Serbia_and_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Serbia_and_Yugoslavia ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia_and_Yugoslavia .
+
+data:Ignacio_19th_Duke_of_Segorbe a :Man,
+        :Person ;
+    :hasBrother data:Ignacio_19th_Duke_of_Segorbe ;
+    :hasRelation data:Ignacio_19th_Duke_of_Segorbe ;
+    :isBloodrelationOf data:Ignacio_19th_Duke_of_Segorbe ;
+    :isBrotherOf data:Ignacio_19th_Duke_of_Segorbe ;
+    :isSiblingOf data:Ignacio_19th_Duke_of_Segorbe .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman ;
+    :hasRelation data:Katherine_Clairy_Batis ;
+    :hasSister data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Katherine_Clairy_Batis ;
+    :isSiblingOf data:Katherine_Clairy_Batis ;
+    :isSisterOf data:Katherine_Clairy_Batis .
+
+data:King_Peter_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Peter_II ;
+    :hasRelation data:King_Peter_II ;
+    :isBloodrelationOf data:King_Peter_II ;
+    :isBrotherOf data:King_Peter_II ;
+    :isSiblingOf data:King_Peter_II .
+
+data:Prince_Andrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew ;
+    :hasRelation data:Prince_Andrew ;
+    :isBloodrelationOf data:Prince_Andrew ;
+    :isBrotherOf data:Prince_Andrew ;
+    :isSiblingOf data:Prince_Andrew .
+
+data:Queen_Alexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Queen_Alexandra ;
+    :hasSister data:Queen_Alexandra ;
+    :isBloodrelationOf data:Queen_Alexandra ;
+    :isSiblingOf data:Queen_Alexandra ;
+    :isSisterOf data:Queen_Alexandra .
+
+data:Queen_Maria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Queen_Maria ;
+    :hasSister data:Queen_Maria ;
+    :isBloodrelationOf data:Queen_Maria ;
+    :isSiblingOf data:Queen_Maria ;
+    :isSisterOf data:Queen_Maria .
+
+data:Alexander_Father a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Father ;
+    :hasChild data:Alexander_Karageorgevitch ;
+    :hasRelation data:Alexander_Father,
+        data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Princess_Maria_da_Gloria,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSon data:Alexander_Karageorgevitch ;
+    :isAncestorOf data:Alexander_Karageorgevitch ;
+    :isBloodrelationOf data:Alexander_Father ;
+    :isBrotherOf data:Alexander_Father ;
+    :isFatherOf data:Alexander_Karageorgevitch ;
+    :isParentOf data:Alexander_Karageorgevitch ;
+    :isSiblingOf data:Alexander_Father ;
+    :isUncleOf data:Alexander_Karageorgevitch .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Maria_da_Gloria ;
+    :hasBrother data:Alexander_Karageorgevitch ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :hasParent data:Princess_Maria_da_Gloria ;
+    :hasRelation data:Alexander_Father,
+        data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Princess_Maria_da_Gloria,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Princess_Maria_da_Gloria ;
+    :isDaughterOf data:Princess_Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Maria_da_Gloria ;
+    :hasBrother data:Alexander_Karageorgevitch ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :hasParent data:Princess_Maria_da_Gloria ;
+    :hasRelation data:Alexander_Father,
+        data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Princess_Maria_da_Gloria,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Princess_Maria_da_Gloria ;
+    :isDaughterOf data:Princess_Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Princess_Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasDaughter data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasRelation data:Alexander_Father,
+        data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Princess_Maria_da_Gloria,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Princess_Maria_da_Gloria ;
+    :hasSon data:Alexander_Karageorgevitch ;
+    :isAncestorOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Princess_Maria_da_Gloria ;
+    :isMotherOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isParentOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Princess_Maria_da_Gloria ;
+    :isSisterOf data:Princess_Maria_da_Gloria .
+
+data:Alexander_Karageorgevitch a :Man,
+        :Person ;
+    :alsoKnownAs data:Prince_Aleksandar_III_Karadjordjevic,
+        data:Prince_Alexander_of_Serbia_and_Yugoslavia ;
+    :hasAncestor data:Alexander_Father,
+        data:Princess_Maria_da_Gloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Alexander_Karageorgevitch ;
+    :hasFather data:Alexander_Father ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :hasParent data:Alexander_Father,
+        data:Princess_Maria_da_Gloria ;
+    :hasRelation data:Alexander_Father,
+        data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Princess_Maria_da_Gloria,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Alexander_Father,
+        data:Princess_Maria_da_Gloria ;
+    :isSiblingOf data:Alexander_Karageorgevitch,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSonOf data:Alexander_Father,
+        data:Princess_Maria_da_Gloria .
+

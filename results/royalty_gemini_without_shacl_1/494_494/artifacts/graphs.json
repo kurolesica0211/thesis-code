@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_Prinz_von_Baden a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian_Margrave_of_Baden ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie_of_Austria ;\n    :hasRelation data:Stephanie_Anne_Kaul .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Christian_Kaul a :Man .\n\ndata:Hannelore_Scheel a :Woman .\n\ndata:Hubert_Salvator_of_Austria a :Man .\n\ndata:Maximilian_Margrave_of_Baden a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMother data:Theodora_of_Greece_and_Denmark .\n\ndata:Rosemary_of_Salm-Salm a :Woman .\n\ndata:Stephanie_Anne_Kaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Christian_Kaul ;\n    :hasMother data:Hannelore_Scheel .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman .\n\ndata:Valerie_of_Austria a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:Hubert_Salvator_of_Austria ;\n    :hasMother data:Rosemary_of_Salm-Salm .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard_Prinz_von_Baden a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian_Margrave_of_Baden ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie_of_Austria ;\n    :hasRelation data:Stephanie_Anne_Kaul .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Christian_Kaul a :Man .\n\ndata:Hannelore_Scheel a :Woman .\n\ndata:Hubert_Salvator_of_Austria a :Man .\n\ndata:Maximilian_Margrave_of_Baden a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMother data:Theodora_of_Greece_and_Denmark .\n\ndata:Rosemary_of_Salm-Salm a :Woman .\n\ndata:Stephanie_Anne_Kaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Christian_Kaul ;\n    :hasMother data:Hannelore_Scheel .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman .\n\ndata:Valerie_of_Austria a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:Hubert_Salvator_of_Austria ;\n    :hasMother data:Rosemary_of_Salm-Salm .\n\n"
+    }
+]

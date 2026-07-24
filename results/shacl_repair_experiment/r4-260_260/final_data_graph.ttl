@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isAuntOf data:Margarita_of_Baden .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Margarita_of_Baden .
+
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Margarita_of_Baden .
+
+data:Peter_II_of_Yugoslavia a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasSex data:Female ;
+    :isMotherOf data:Margarita_of_Baden .
+
+data:Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Peter_II_of_Yugoslavia ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:Maximilian_of_Baden ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear "1957"^^xsd:nonNegativeInteger ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Tomislav_of_Yugoslavia ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

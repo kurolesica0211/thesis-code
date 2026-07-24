@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ernst_August_Hereditary_Prince_of_Brunswick a :Man ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Prince_George_William ;\n    :hasDeathYear 1987 ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMarriageYear 1951,\n        1981 ;\n    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;\n    :hasRelation data:Countess_Monika_zu_Solms-Laubach,\n        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;\n    :hasSister data:Princess_Frederica ;\n    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden .\n\ndata:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden a :Man .\n\ndata:Countess_Monika_zu_Solms-Laubach a :Woman ;\n    :hasFather data:Georg_9th_Count_of_Solms-Laubach ;\n    :hasMother data:Princess_Johanna_of_Solms-Hohensolms-Lich .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man .\n\ndata:Georg_9th_Count_of_Solms-Laubach a :Man .\n\ndata:Prince_George_William a :Man .\n\ndata:Princess_Frederica a :Woman .\n\ndata:Princess_Johanna_of_Solms-Hohensolms-Lich a :Woman .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\ndata:Princess_Viktoria_Luise_of_Prussia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ernst_August_Hereditary_Prince_of_Brunswick a :Man ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Prince_George_William ;\n    :hasDeathYear 1987 ;\n    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;\n    :hasMarriageYear 1951,\n        1981 ;\n    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;\n    :hasRelation data:Countess_Monika_zu_Solms-Laubach,\n        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;\n    :hasSister data:Princess_Frederica ;\n    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden .\n\ndata:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt-Dachroeden a :Man .\n\ndata:Countess_Monika_zu_Solms-Laubach a :Woman ;\n    :hasFather data:Georg_9th_Count_of_Solms-Laubach ;\n    :hasMother data:Princess_Johanna_of_Solms-Hohensolms-Lich .\n\ndata:Ernest_Augustus_Duke_of_Brunswick a :Man .\n\ndata:Georg_9th_Count_of_Solms-Laubach a :Man .\n\ndata:Prince_George_William a :Man .\n\ndata:Princess_Frederica a :Woman .\n\ndata:Princess_Johanna_of_Solms-Hohensolms-Lich a :Woman .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\ndata:Princess_Viktoria_Luise_of_Prussia a :Woman .\n\n"
+    }
+]

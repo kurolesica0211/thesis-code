@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_van_Vollenhoven a :Man ;
+    :isBrotherOf data:Prince_Maurits .
+
+data:Floris_van_Vollenhoven a :Man ;
+    :isBrotherOf data:Prince_Maurits .
+
+data:Pieter-Christiaan_van_Vollenhoven a :Man ;
+    :isBrotherOf data:Prince_Maurits .
+
+data:Princess_Beatrix a :Woman .
+
+data:Hans_van_den_Broek a :Man .
+
+data:Josee_van_Schendel a :Woman .
+
+data:Maril%C3%A8ne_van_den_Broek a :Woman ;
+    :hasBirthYear "1970"^^xsd:nonNegativeInteger ;
+    :hasFather data:Hans_van_den_Broek ;
+    :hasMother data:Josee_van_Schendel .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Princess_Margriet a :Woman .
+
+data:Prince_Maurits a :Man ;
+    :hasBirthYear "1968"^^xsd:nonNegativeInteger ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMarriageYear "1989"^^xsd:nonNegativeInteger ;
+    :hasMother data:Princess_Margriet ;
+    :hasRelation data:Maril%C3%A8ne_van_den_Broek .
+

@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_son_of_Amedeo a :Man,
+        :Person ;
+    :hasFather data:Amedeo_of_Savoy-Aosta .
+
+data:Emanuele_Filiberto_Prince_of_Venice a :Man,
+        :Person ;
+    :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
+
+data:Maria_Gabriella_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:Umberto_II .
+
+data:Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Amedeo_of_Savoy-Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Amedeo Umberto Costantino Giorgio"^^xsd:string ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Princess_Claude_of_Orleans .
+
+data:Henri_comte_de_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Isabelle_of_Orleans-Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Claude_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Henri_comte_de_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Umberto_II .
+
+data:Umberto_II a :Ancestor,
+        :Man,
+        :Person .
+

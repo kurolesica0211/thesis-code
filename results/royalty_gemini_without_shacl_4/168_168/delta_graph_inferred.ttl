@@ -1,0 +1,493 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Albrecht,
+        data:Georg_Andreas,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Sophie ;
+    :isBloodrelationOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Prince_Gottfried_of_Hohenlohe-Langenburg .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Rupprecht,
+        data:Sophie ;
+    :isAncestorOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Rupprecht ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Margarita_of_Greece_and_Denmark .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht,
+        data:Sophie ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Rupprecht ;
+    :isAuntOf data:Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Albrecht,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Albrecht,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isUncleOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Albrecht,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Albrecht,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isDaughterOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSisterOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht .
+
+data:Kraft a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBrotherOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Rupprecht a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBrotherOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Albrecht a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBrotherOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Georg_Andreas a :Man,
+        :Person ;
+    :hasAncestor data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBrotherOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isChildOf data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSonOf data:Margarita_of_Greece_and_Denmark .
+
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBirthYear "1905"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :hasDaughter data:Beatrix ;
+    :hasDeathYear "1981"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear "1931"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Albrecht,
+        data:Beatrix,
+        data:Cecilie,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Gottfried_of_Hohenlohe-Langenburg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Rupprecht,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Albrecht,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isAncestorOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isAuntOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isParentOf data:Albrecht,
+        data:Beatrix,
+        data:Georg_Andreas,
+        data:Kraft,
+        data:Rupprecht ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Sophie,
+        data:Theodora .
+

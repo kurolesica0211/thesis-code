@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear 1997 ;\n    :hasMother data:Sofia ;\n    :isSiblingOf data:Elena,\n        data:Felipe_VI .\n\ndata:Inaki_Urdangarin a :Man .\n\ndata:Elena a :Woman .\n\ndata:Felipe_VI a :Man .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Cristina a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMarriageYear 1997 ;\n    :hasMother data:Sofia ;\n    :isSiblingOf data:Elena,\n        data:Felipe_VI .\n\ndata:Inaki_Urdangarin a :Man .\n\ndata:Elena a :Woman .\n\ndata:Felipe_VI a :Man .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Sofia a :Woman .\n\n"
+    }
+]

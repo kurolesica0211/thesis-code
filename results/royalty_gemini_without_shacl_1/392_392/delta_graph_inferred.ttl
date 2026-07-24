@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst_II_Duke_of_Saxe-Altenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :hasChild data:Charlotte_of_Saxe-Altenburg ;
+    :hasDaughter data:Charlotte_of_Saxe-Altenburg ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :isAncestorOf data:Charlotte_of_Saxe-Altenburg ;
+    :isBloodrelationOf data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :isBrotherOf data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :isFatherOf data:Charlotte_of_Saxe-Altenburg ;
+    :isParentOf data:Charlotte_of_Saxe-Altenburg ;
+    :isSiblingOf data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :isUncleOf data:Charlotte_of_Saxe-Altenburg .
+
+data:Charlotte_of_Saxe-Altenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :hasParent data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :hasSister data:Charlotte_of_Saxe-Altenburg ;
+    :isBloodrelationOf data:Charlotte_of_Saxe-Altenburg ;
+    :isChildOf data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :isDaughterOf data:Ernst_II_Duke_of_Saxe-Altenburg ;
+    :isSiblingOf data:Charlotte_of_Saxe-Altenburg ;
+    :isSisterOf data:Charlotte_of_Saxe-Altenburg .
+
+data:Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry_of_Prussia ;
+    :hasChild data:Sigismund_of_Prussia ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :hasSon data:Sigismund_of_Prussia ;
+    :isAncestorOf data:Alfred_of_Prussia,
+        data:Sigismund_of_Prussia ;
+    :isBloodrelationOf data:Henry_of_Prussia ;
+    :isBrotherOf data:Henry_of_Prussia ;
+    :isFatherOf data:Sigismund_of_Prussia ;
+    :isParentOf data:Sigismund_of_Prussia ;
+    :isSiblingOf data:Henry_of_Prussia ;
+    :isUncleOf data:Sigismund_of_Prussia .
+
+data:Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sigismund_of_Prussia ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :hasSister data:Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Sigismund_of_Prussia ;
+    :isAncestorOf data:Alfred_of_Prussia,
+        data:Sigismund_of_Prussia ;
+    :isAuntOf data:Sigismund_of_Prussia ;
+    :isBloodrelationOf data:Irene_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Sigismund_of_Prussia ;
+    :isParentOf data:Sigismund_of_Prussia ;
+    :isSiblingOf data:Irene_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Irene_of_Hesse_and_by_Rhine .
+
+data:Alfred_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:Alfred_of_Prussia ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Sigismund_of_Prussia ;
+    :hasParent data:Sigismund_of_Prussia ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :isBloodrelationOf data:Alfred_of_Prussia ;
+    :isBrotherOf data:Alfred_of_Prussia ;
+    :isChildOf data:Sigismund_of_Prussia ;
+    :isSiblingOf data:Alfred_of_Prussia ;
+    :isSonOf data:Sigismund_of_Prussia .
+
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Sigismund_of_Prussia ;
+    :hasChild data:Alfred_of_Prussia ;
+    :hasDeathYear 1978 ;
+    :hasFather data:Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alfred_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_Duke_of_Saxe-Altenburg,
+        data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine,
+        data:Sigismund_of_Prussia ;
+    :hasSon data:Alfred_of_Prussia ;
+    :isAncestorOf data:Alfred_of_Prussia ;
+    :isBloodrelationOf data:Sigismund_of_Prussia ;
+    :isBrotherOf data:Sigismund_of_Prussia ;
+    :isChildOf data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Alfred_of_Prussia ;
+    :isParentOf data:Alfred_of_Prussia ;
+    :isSiblingOf data:Sigismund_of_Prussia ;
+    :isSonOf data:Henry_of_Prussia,
+        data:Irene_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Alfred_of_Prussia .
+

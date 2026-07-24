@@ -1,0 +1,126 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Inaki_Urdangarin a :Man ;
+    :hasBrother data:Inaki_Urdangarin ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :isBloodrelationOf data:Inaki_Urdangarin ;
+    :isBrotherOf data:Inaki_Urdangarin ;
+    :isSiblingOf data:Inaki_Urdangarin .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Cristina_de_Borbon ;
+    :hasDaughter data:Cristina_de_Borbon ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :isAncestorOf data:Cristina_de_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Cristina_de_Borbon ;
+    :isParentOf data:Cristina_de_Borbon ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Cristina_de_Borbon .
+
+data:Sofia a :Ancestor,
+        :Woman ;
+    :hasChild data:Cristina_de_Borbon ;
+    :hasDaughter data:Cristina_de_Borbon ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasSister data:Sofia ;
+    :isAncestorOf data:Cristina_de_Borbon ;
+    :isAuntOf data:Cristina_de_Borbon ;
+    :isBloodrelationOf data:Sofia ;
+    :isMotherOf data:Cristina_de_Borbon ;
+    :isParentOf data:Cristina_de_Borbon ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Elena_de_Borbon a :Woman ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasSister data:Cristina_de_Borbon,
+        data:Elena_de_Borbon ;
+    :isBloodrelationOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isSiblingOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI .
+
+data:Felipe_VI a :Man ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasSister data:Cristina_de_Borbon,
+        data:Elena_de_Borbon ;
+    :isBloodrelationOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isBrotherOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isSiblingOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI .
+
+data:Cristina_de_Borbon a :Woman ;
+    :hasAncestor data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear 1997 ;
+    :hasMother data:Sofia ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasRelation data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI,
+        data:Inaki_Urdangarin,
+        data:Juan_Carlos_I,
+        data:Sofia ;
+    :hasSister data:Cristina_de_Borbon,
+        data:Elena_de_Borbon ;
+    :isBloodrelationOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sofia ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sofia ;
+    :isSiblingOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina_de_Borbon,
+        data:Elena_de_Borbon,
+        data:Felipe_VI .
+

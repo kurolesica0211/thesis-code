@@ -1,0 +1,142 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andrew_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Andrew_of_Yugoslavia ;
+    :hasRelation data:Andrew_of_Yugoslavia ;
+    :isBloodrelationOf data:Andrew_of_Yugoslavia ;
+    :isBrotherOf data:Andrew_of_Yugoslavia ;
+    :isSiblingOf data:Andrew_of_Yugoslavia .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBrother data:Charles_III ;
+    :hasRelation data:Charles_III ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III .
+
+data:Christina_of_Hesse a :Person,
+        :Woman ;
+    :hasRelation data:Christina_of_Hesse ;
+    :hasSister data:Christina_of_Hesse ;
+    :isBloodrelationOf data:Christina_of_Hesse ;
+    :isSiblingOf data:Christina_of_Hesse ;
+    :isSisterOf data:Christina_of_Hesse .
+
+data:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    :hasRelation data:Margaret_Princess_of_Hesse_and_by_Rhine ;
+    :hasSister data:Margaret_Princess_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Margaret_Princess_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Margaret_Princess_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Margaret_Princess_of_Hesse_and_by_Rhine .
+
+data:Maximilian_Hereditary_Prince_of_Baden a :Man,
+        :Person ;
+    :hasBrother data:Maximilian_Hereditary_Prince_of_Baden ;
+    :hasMarriageYear 1966 ;
+    :hasRelation data:Maximilian_Hereditary_Prince_of_Baden,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Maximilian_Hereditary_Prince_of_Baden ;
+    :isBrotherOf data:Maximilian_Hereditary_Prince_of_Baden ;
+    :isSiblingOf data:Maximilian_Hereditary_Prince_of_Baden .
+
+data:Valerie_of_Austria a :Person,
+        :Woman ;
+    :hasRelation data:Maximilian_Hereditary_Prince_of_Baden,
+        data:Valerie_of_Austria ;
+    :hasSister data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Valerie_of_Austria ;
+    :isSisterOf data:Valerie_of_Austria .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasSister data:Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isUncleOf data:Beatrix_of_Hohenlohe-Langenburg .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasChild data:Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDaughter data:Beatrix_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isAncestorOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isFatherOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :isUncleOf data:Beatrix_of_Hohenlohe-Langenburg .
+
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasChild data:Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDaughter data:Beatrix_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasSister data:Margarita_of_Greece_and_Denmark ;
+    :isAncestorOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isMotherOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :isSisterOf data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh .
+
+data:Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Beatrix_of_Hohenlohe-Langenburg,
+        data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh ;
+    :hasSister data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :isDaughterOf data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg,
+        data:Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Beatrix_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Beatrix_of_Hohenlohe-Langenburg .
+

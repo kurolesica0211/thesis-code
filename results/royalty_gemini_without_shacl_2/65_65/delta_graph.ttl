@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina a :Person,
+        :Woman ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa .
+
+data:Elena a :Person,
+        :Woman ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa .
+
+data:Constantine_I a :Man,
+        :Person .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Frederica_of_Greece a :Person,
+        :Woman .
+
+data:Irene a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :isChildOf data:Constantine_I,
+        data:Sophia_of_Greece .
+
+data:Sophia_of_Greece a :Person,
+        :Woman .
+
+data:Sof%C3%ADa a :Person,
+        :Woman ;
+    :hasBirthYear "1938"^^xsd:positiveInteger ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isChildOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+

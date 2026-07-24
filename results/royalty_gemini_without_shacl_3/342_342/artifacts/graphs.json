@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm_Crown_Prince a :Man,\n        :Person ;\n    :hasBirthYear 1882 ;\n    :hasBrother data:Prince_Adalbert,\n        data:Prince_August_Wilhelm,\n        data:Prince_Eitel_Friedrich,\n        data:Prince_Joachim,\n        data:Prince_Oskar ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1905 ;\n    :hasMother data:Augusta_Victoria ;\n    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasSister data:Princess_Viktoria_Luise ;\n    :hasSon data:Prince_Wilhelm_of_Prussia .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Augusta_Victoria a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\ndata:Prince_Adalbert a :Man,\n        :Person .\n\ndata:Prince_August_Wilhelm a :Man,\n        :Person .\n\ndata:Prince_Eitel_Friedrich a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\ndata:Prince_Oskar a :Man,\n        :Person .\n\ndata:Prince_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .\n\ndata:Princess_Viktoria_Luise a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMother data:Anastasia_Mikhailovna .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm_Crown_Prince a :Man,\n        :Person ;\n    :hasBirthYear 1882 ;\n    :hasBrother data:Prince_Adalbert,\n        data:Prince_August_Wilhelm,\n        data:Prince_Eitel_Friedrich,\n        data:Prince_Joachim,\n        data:Prince_Oskar ;\n    :hasDeathYear 1951 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1905 ;\n    :hasMother data:Augusta_Victoria ;\n    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;\n    :hasSister data:Princess_Viktoria_Luise ;\n    :hasSon data:Prince_Wilhelm_of_Prussia .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman .\n\ndata:Augusta_Victoria a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III a :Man,\n        :Person .\n\ndata:Prince_Adalbert a :Man,\n        :Person .\n\ndata:Prince_August_Wilhelm a :Man,\n        :Person .\n\ndata:Prince_Eitel_Friedrich a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person .\n\ndata:Prince_Oskar a :Man,\n        :Person .\n\ndata:Prince_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .\n\ndata:Princess_Viktoria_Luise a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\ndata:Cecilie_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMother data:Anastasia_Mikhailovna .\n\n"
+    }
+]

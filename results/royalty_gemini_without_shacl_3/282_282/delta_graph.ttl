@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_son_of_Fergus a :Man,
+        :Person ;
+    :hasFather data:Fergus_Michael_Claude_Bowes-Lyon ;
+    :hasMother data:Mary_Pamela_McCorquodale .
+
+data:Elizabeth_Margaret_Cator a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 ;
+    :hasFather data:John_Cator .
+
+data:Fergus_Michael_Claude_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMarriageYear 1956 ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasRelation data:Mary_Pamela_McCorquodale .
+
+data:John_Cator a :Man,
+        :Person .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+        :Person .
+
+data:Mary_Pamela_McCorquodale a :Person,
+        :Woman ;
+    :hasBirthYear 1932 ;
+    :hasDeathYear 2025 .
+

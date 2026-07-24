@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_%2821st_Baron_Clinton%29 ;
+    :hasMother data:Lady_Jane_McDonnell .
+
+data:Katherine_Bowes-Lyon a :Woman ;
+    :hasBirthYear "1926"^^xsd:string ;
+    :hasDeathYear "2014"^^xsd:string ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Lady_Elizabeth_Bowes-Lyon a :Woman ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon .
+
+data:Major_Henry_Nevile_Fane a :Man .
+
+data:Nerissa_Bowes-Lyon a :Woman ;
+    :hasBirthYear "1919"^^xsd:string ;
+    :hasDeathYear "1986"^^xsd:string ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Princess_Margaret a :Woman .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_%2820th_Baron_Clinton%29 a :Man .
+
+data:Harriet_Williamina_Hepburn-Forbes a :Woman .
+
+data:Cecilia_Bowes-Lyon a :Woman .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_%2821st_Baron_Clinton%29 a :Man ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_%2820th_Baron_Clinton%29 ;
+    :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+
+data:Claude_Bowes-Lyon a :Man .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_%2821st_Baron_Clinton%29 ;
+    :hasMother data:Lady_Jane_McDonnell .
+
+data:John_Herbert_Bowes-Lyon a :Man ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon .
+
+data:Lady_Jane_McDonnell a :Woman .
+

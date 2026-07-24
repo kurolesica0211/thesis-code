@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Baroness_Gosta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Claus_of_the_Netherlands ;
+    :hasRelation data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Queen_Beatrix,
+        data:Queen_Juliana ;
+    :hasSister data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Prince_Claus_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus_of_the_Netherlands ;
+    :isAuntOf data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Prince_Claus_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus_of_the_Netherlands ;
+    :isSiblingOf data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Baroness_Gosta_von_dem_Bussche-Haddenhausen .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claus_Felix_von_Amsberg ;
+    :hasChild data:Prince_Claus_of_the_Netherlands ;
+    :hasRelation data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Queen_Beatrix,
+        data:Queen_Juliana ;
+    :hasSon data:Prince_Claus_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus_of_the_Netherlands ;
+    :isBloodrelationOf data:Claus_Felix_von_Amsberg ;
+    :isBrotherOf data:Claus_Felix_von_Amsberg ;
+    :isFatherOf data:Prince_Claus_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus_of_the_Netherlands ;
+    :isSiblingOf data:Claus_Felix_von_Amsberg ;
+    :isUncleOf data:Prince_Claus_of_the_Netherlands .
+
+data:Queen_Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Beatrix ;
+    :hasDaughter data:Queen_Beatrix ;
+    :hasRelation data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Queen_Beatrix,
+        data:Queen_Juliana ;
+    :hasSister data:Queen_Juliana ;
+    :isAncestorOf data:Queen_Beatrix ;
+    :isAuntOf data:Queen_Beatrix ;
+    :isBloodrelationOf data:Queen_Juliana ;
+    :isMotherOf data:Queen_Beatrix ;
+    :isParentOf data:Queen_Beatrix ;
+    :isSiblingOf data:Queen_Juliana ;
+    :isSisterOf data:Queen_Juliana .
+
+data:Queen_Beatrix a :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Juliana ;
+    :hasMother data:Queen_Juliana ;
+    :hasParent data:Queen_Juliana ;
+    :hasRelation data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Queen_Beatrix,
+        data:Queen_Juliana ;
+    :hasSister data:Queen_Beatrix ;
+    :isBloodrelationOf data:Queen_Beatrix ;
+    :isChildOf data:Queen_Juliana ;
+    :isDaughterOf data:Queen_Juliana ;
+    :isSiblingOf data:Queen_Beatrix ;
+    :isSisterOf data:Queen_Beatrix .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :hasAncestor data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:Prince_Claus_of_the_Netherlands ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus_of_the_Netherlands,
+        data:Queen_Beatrix,
+        data:Queen_Juliana ;
+    :isBloodrelationOf data:Prince_Claus_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus_of_the_Netherlands ;
+    :isChildOf data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Prince_Claus_of_the_Netherlands ;
+    :isSonOf data:Baroness_Gosta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg .
+

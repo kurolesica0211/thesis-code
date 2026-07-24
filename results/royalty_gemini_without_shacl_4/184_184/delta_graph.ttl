@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderGeorgievichRomanov a :Man ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini .
+
+data:KiraLeonidaGeorgievnaRomanova a :Woman ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini .
+
+data:Leonida a :Woman .
+
+data:FranzWilhelmOfPrussia a :Man ;
+    :hasFather data:KarlFranzOfPrussia ;
+    :hasMother data:HenrietteOfSch%C3%B6naichCarolath .
+
+data:HenrietteOfSch%C3%B6naichCarolath a :Woman .
+
+data:KarlFranzOfPrussia a :Man .
+
+data:MariaVladimirovna a :Woman ;
+    :hasFather data:VladimirCyrillovich .
+
+data:VladimirCyrillovich a :Man .
+
+data:GeorgeMikhailovich a :Man ;
+    :hasBirthYear 1981 ;
+    :hasFather data:FranzWilhelmOfPrussia ;
+    :hasMother data:MariaVladimirovna .
+
+data:VictoriaRomanovnaBettarini a :Woman .
+

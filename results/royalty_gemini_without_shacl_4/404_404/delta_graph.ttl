@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:IvarMountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:GeorgeMountbatten ;
+    :hasFather data:DavidMountbatten ;
+    :hasMother data:JanetMercedesBryce .
+
+data:PenelopeAnneVereThompson a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:ColinGrahamThompson ;
+    :hasMother data:RosemaryVereEdwardes .
+
+data:ColinGrahamThompson a :Man,
+        :Person .
+
+data:DavidMountbatten a :Man,
+        :Person ;
+    :hasFather data:PrinceGeorgeOfBattenberg .
+
+data:GeorgeMountbatten a :Man,
+        :Person .
+
+data:JanetMercedesBryce a :Person,
+        :Woman .
+
+data:PrinceGeorgeOfBattenberg a :Man,
+        :Person .
+
+data:RosemaryVereEdwardes a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Roger_de_Vilmorin a :Man,\n        :Person ;\n    :alsoKnownAs \"Roger Marie Vincent Philippe L\u00e9v\u00eaque de Vilmorin\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Alfonso_XIII_of_Spain,\n        data:Philippe_de_Vilmorin ;\n    :hasMother data:M%C3%A9lanie_de_Gaufridy_de_Dortan ;\n    :isSiblingOf data:Olivier .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:M%C3%A9lanie_de_Gaufridy_de_Dortan a :Person,\n        :Woman .\n\ndata:Olivier a :Man,\n        :Person .\n\ndata:Philippe_de_Vilmorin a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Roger_de_Vilmorin a :Man,\n        :Person ;\n    :alsoKnownAs \"Roger Marie Vincent Philippe L\u00e9v\u00eaque de Vilmorin\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Alfonso_XIII_of_Spain,\n        data:Philippe_de_Vilmorin ;\n    :hasMother data:M%C3%A9lanie_de_Gaufridy_de_Dortan ;\n    :isSiblingOf data:Olivier .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:M%C3%A9lanie_de_Gaufridy_de_Dortan a :Person,\n        :Woman .\n\ndata:Olivier a :Man,\n        :Person .\n\ndata:Philippe_de_Vilmorin a :Man,\n        :Person .\n\n"
+    }
+]

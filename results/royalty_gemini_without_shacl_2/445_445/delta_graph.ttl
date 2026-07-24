@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_Georgiana_Anson a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_Anson_Viscount_Anson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :hasParent data:Prince_Georg_of_Denmark ;
+    :isSiblingOf data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :knownAs "Lady Elizabeth Georgiana Shakerley"^^xsd:string .
+
+data:Geoffrey_Shakerley a :Man,
+        :Person .
+
+data:Anne_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+        :Person .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Thomas_Anson_Viscount_Anson a :Man,
+        :Person .
+

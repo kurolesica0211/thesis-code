@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Luiz_Philippe_of_Orleans-Braganza a :Man,
+        :Person ;
+    :alsoKnownAs data:Luiz_Philippe_de_Orleans_e_Braganca ;
+    :hasAncestor data:Emperor_Pedro_II,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasBirthYear "1969"^^xsd:positiveInteger ;
+    :hasFather data:Eudes_of_Orleans-Braganza ;
+    :hasMother data:Ana_Maria_de_Moraes_Barros .
+
+data:Ana_Maria_de_Moraes_Barros a :Person,
+        :Woman .
+
+data:Emperor_Pedro_II a :Man,
+        :Person .
+
+data:Eudes_of_Orleans-Braganza a :Man,
+        :Person .
+
+data:Luiz_Philippe_de_Orleans_e_Braganca a :Person .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Man,
+        :Person .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Stefan a :Man,\n        :Person ;\n    :hasFather data:Filip_Karadjordjevic ;\n    :hasMother data:Danica_Marinkovic .\n\ndata:Princess_Marija a :Person,\n        :Woman ;\n    :hasFather data:Filip_Karadjordjevic ;\n    :hasMother data:Danica_Marinkovic .\n\ndata:Prince_Peter a :Man,\n        :Person ;\n    :hasFather data:Crown_Prince_Alexander ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Crown_Prince_Alexander a :Man,\n        :Person .\n\ndata:Filip_Karadjordjevic a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Crown_Prince_Alexander ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Princess_Maria_da_Gloria ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isBrotherOf data:Prince_Peter .\n\ndata:Princess_Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Stefan a :Man,\n        :Person ;\n    :hasFather data:Filip_Karadjordjevic ;\n    :hasMother data:Danica_Marinkovic .\n\ndata:Princess_Marija a :Person,\n        :Woman ;\n    :hasFather data:Filip_Karadjordjevic ;\n    :hasMother data:Danica_Marinkovic .\n\ndata:Prince_Peter a :Man,\n        :Person ;\n    :hasFather data:Crown_Prince_Alexander ;\n    :hasMother data:Princess_Maria_da_Gloria .\n\ndata:Crown_Prince_Alexander a :Man,\n        :Person .\n\ndata:Filip_Karadjordjevic a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Crown_Prince_Alexander ;\n    :hasMarriageYear 2017 ;\n    :hasMother data:Princess_Maria_da_Gloria ;\n    :hasRelation data:Danica_Marinkovic ;\n    :isBrotherOf data:Prince_Peter .\n\ndata:Princess_Maria_da_Gloria a :Person,\n        :Woman .\n\ndata:Danica_Marinkovic a :Person,\n        :Woman .\n\n"
+    }
+]

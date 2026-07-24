@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_of_Spain a :Man,
+        :Person .
+
+data:Nikolaos_of_Greece a :Man,
+        :Person .
+
+data:Alexia_of_Greece a :Person,
+        :Woman .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Alexia_of_Greece .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasDeathYear 2026 ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasSister data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Irene_of_Greece_and_Denmark .
+

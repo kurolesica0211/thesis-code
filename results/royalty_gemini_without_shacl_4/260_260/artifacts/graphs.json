@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :isAuntOf data:Margarita_of_Baden .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Margarita_of_Baden a :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Maximilian_of_Baden ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear data:1957 ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Tomislav_of_Yugoslavia .\n\ndata:Maximilian_of_Baden a :Man .\n\ndata:Peter_II_of_Yugoslavia a :Man .\n\ndata:Philip_Duke_of_Edinburgh a :Man .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasSister data:Philip_Duke_of_Edinburgh .\n\ndata:Tomislav_of_Yugoslavia a :Man ;\n    :hasBrother data:Peter_II_of_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :isAuntOf data:Margarita_of_Baden .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Margarita_of_Baden a :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Maximilian_of_Baden ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear data:1957,\n        \"1957\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Tomislav_of_Yugoslavia .\n\ndata:Maximilian_of_Baden a :Man .\n\ndata:Peter_II_of_Yugoslavia a :Man .\n\ndata:Philip_Duke_of_Edinburgh a :Man .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasSister data:Philip_Duke_of_Edinburgh .\n\ndata:Tomislav_of_Yugoslavia a :Man ;\n    :hasBrother data:Peter_II_of_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :isAuntOf data:Margarita_of_Baden .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Margarita_of_Baden a :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Maximilian_of_Baden ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear \"1957\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Tomislav_of_Yugoslavia .\n\ndata:Maximilian_of_Baden a :Man .\n\ndata:Peter_II_of_Yugoslavia a :Man .\n\ndata:Philip_Duke_of_Edinburgh a :Man .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasSister data:Philip_Duke_of_Edinburgh .\n\ndata:Tomislav_of_Yugoslavia a :Man ;\n    :hasBrother data:Peter_II_of_Yugoslavia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_II a :Woman ;\n    :isAuntOf data:Margarita_of_Baden .\n\ndata:Berthold_Margrave_of_Baden a :Man .\n\ndata:Margarita_of_Baden a :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Maximilian_of_Baden ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear \"1957\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Tomislav_of_Yugoslavia .\n\ndata:Maximilian_of_Baden a :Man .\n\ndata:Peter_II_of_Yugoslavia a :Man .\n\ndata:Philip_Duke_of_Edinburgh a :Man .\n\ndata:Theodora_of_Greece_and_Denmark a :Woman ;\n    :hasSister data:Philip_Duke_of_Edinburgh .\n\ndata:Tomislav_of_Yugoslavia a :Man ;\n    :hasBrother data:Peter_II_of_Yugoslavia .\n\n"
+    }
+]

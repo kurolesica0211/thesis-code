@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasFather data:Vladimir_Kirillovich ;
+    :hasSex data:Female .
+
+data:Alexander_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isFatherOf data:Vladimir_Alexandrovich .
+
+data:Alexander_Romanov a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Kirill_Vladimirovich_Romanov a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_Romanov ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasRelation data:Victoria_Melita ;
+    :hasSex data:Male .
+
+data:Maria_Alexandrovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Alexander_II ;
+    :hasSex data:Female .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Vladimir_Kirillovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Kirill_Vladimirovich_Romanov ;
+    :hasMother data:Victoria_Melita ;
+    :hasSex data:Male .
+
+data:Victoria_Melita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Maria_Alexandrovna_of_Russia ;
+    :hasSex data:Female .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

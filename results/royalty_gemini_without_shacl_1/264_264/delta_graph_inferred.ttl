@@ -1,0 +1,301 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantijn ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix ;
+    :hasSon data:Constantijn ;
+    :isAncestorOf data:Claus-Casimir,
+        data:Constantijn,
+        data:Eloise,
+        data:Leonore ;
+    :isAuntOf data:Constantijn ;
+    :isBloodrelationOf data:Beatrix ;
+    :isMotherOf data:Constantijn ;
+    :isParentOf data:Constantijn ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Claus_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Claus_von_Amsberg ;
+    :hasChild data:Constantijn ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSon data:Constantijn ;
+    :isAncestorOf data:Claus-Casimir,
+        data:Constantijn,
+        data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Claus_von_Amsberg ;
+    :isBrotherOf data:Claus_von_Amsberg ;
+    :isFatherOf data:Constantijn ;
+    :isParentOf data:Constantijn ;
+    :isSiblingOf data:Claus_von_Amsberg ;
+    :isUncleOf data:Constantijn .
+
+data:Johan_Friso a :Man ;
+    :hasBrother data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore .
+
+data:Willem-Alexander a :Man ;
+    :hasBrother data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore .
+
+data:Laurentien a :Ancestor,
+        :Woman ;
+    :hasChild data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :hasDaughter data:Eloise,
+        data:Leonore ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSister data:Laurentien ;
+    :hasSon data:Claus-Casimir ;
+    :isAncestorOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isAuntOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Laurentien ;
+    :isMotherOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isParentOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isSiblingOf data:Laurentien ;
+    :isSisterOf data:Laurentien .
+
+data:Claus-Casimir a :Man ;
+    :hasAncestor data:Beatrix,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Laurentien ;
+    :hasBirthYear 2004 ;
+    :hasBrother data:Claus-Casimir ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien ;
+    :hasParent data:Constantijn,
+        data:Laurentien ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSister data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isBrotherOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isChildOf data:Constantijn,
+        data:Laurentien ;
+    :isSiblingOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isSonOf data:Constantijn,
+        data:Laurentien .
+
+data:Eloise a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Laurentien ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Claus-Casimir ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien ;
+    :hasParent data:Constantijn,
+        data:Laurentien ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSister data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isChildOf data:Constantijn,
+        data:Laurentien ;
+    :isDaughterOf data:Constantijn,
+        data:Laurentien ;
+    :isSiblingOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isSisterOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore .
+
+data:Leonore a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Laurentien ;
+    :hasBirthYear 2006 ;
+    :hasBrother data:Claus-Casimir ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien ;
+    :hasParent data:Constantijn,
+        data:Laurentien ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSister data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isChildOf data:Constantijn,
+        data:Laurentien ;
+    :isDaughterOf data:Constantijn,
+        data:Laurentien ;
+    :isSiblingOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isSisterOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore .
+
+data:Constantijn a :Ancestor,
+        :Man ;
+    :hasAncestor data:Beatrix,
+        data:Claus_von_Amsberg ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :hasChild data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :hasDaughter data:Eloise,
+        data:Leonore ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix ;
+    :hasParent data:Beatrix,
+        data:Claus_von_Amsberg ;
+    :hasRelation data:Beatrix,
+        data:Claus-Casimir,
+        data:Claus_von_Amsberg,
+        data:Constantijn,
+        data:Eloise,
+        data:Johan_Friso,
+        data:Laurentien,
+        data:Leonore,
+        data:Willem-Alexander ;
+    :hasSon data:Claus-Casimir ;
+    :isAncestorOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isBloodrelationOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isChildOf data:Beatrix,
+        data:Claus_von_Amsberg ;
+    :isFatherOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isParentOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore ;
+    :isSiblingOf data:Constantijn,
+        data:Johan_Friso,
+        data:Willem-Alexander ;
+    :isSonOf data:Beatrix,
+        data:Claus_von_Amsberg ;
+    :isUncleOf data:Claus-Casimir,
+        data:Eloise,
+        data:Leonore .
+

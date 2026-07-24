@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasBirthYear "1967"^^xsd:positiveInteger ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Mountbatten ;
+    :hasRelation data:David_Flint_Wood ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Lady_Helen_Windsor .
+
+data:Susannah_Constantine a :Person,
+        :Woman .
+
+data:David_Armstrong-Jones a :Man,
+        :Person .
+
+data:David_Flint_Wood a :Man,
+        :Person .
+
+data:David_Nightingale_Hicks a :Man,
+        :Person .
+
+data:Lady_Helen_Windsor a :Person,
+        :Woman .
+
+data:Lady_Pamela_Mountbatten a :Person,
+        :Woman .
+

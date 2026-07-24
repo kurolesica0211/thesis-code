@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man ;\n    :hasSex data:Male .\n\ndata:Chantal_of_Orleans a :Woman ;\n    :hasSex data:Female .\n\ndata:Jean_dOrleans a :Man ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasSex data:Male .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Woman ;\n    :hasBirthYear 1977 ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasSex data:Male .\n\ndata:Marie_Therese_of_Wurttemberg a :Woman ;\n    :hasBirthYear 1934 ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man ;\n    :hasSex data:Male .\n\ndata:Chantal_of_Orleans a :Woman ;\n    :hasSex data:Female .\n\ndata:Jean_dOrleans a :Man ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasSex data:Male .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Woman ;\n    :hasBirthYear 1977 ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasSex data:Male .\n\ndata:Marie_Therese_of_Wurttemberg a :Woman ;\n    :hasBirthYear 1934 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man ;\n    :hasSex data:Male .\n\ndata:Chantal_of_Orleans a :Woman ;\n    :hasSex data:Female .\n\ndata:Jean_dOrleans a :Man ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :hasSex data:Male .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Woman ;\n    :hasBirthYear 1977 ;\n    :hasSex data:Female .\n\ndata:Henri_Count_of_Paris a :Man ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasSex data:Male .\n\ndata:Marie_Therese_of_Wurttemberg a :Woman ;\n    :hasBirthYear 1934 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

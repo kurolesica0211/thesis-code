@@ -1,0 +1,180 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CatherinePrincessOfWales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceLouisOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSister data:CatherinePrincessOfWales ;
+    :hasSon data:PrinceLouisOfWales ;
+    :isAncestorOf data:PrinceLouisOfWales ;
+    :isAuntOf data:PrinceLouisOfWales ;
+    :isBloodrelationOf data:CatherinePrincessOfWales ;
+    :isMotherOf data:PrinceLouisOfWales ;
+    :isParentOf data:PrinceLouisOfWales ;
+    :isSiblingOf data:CatherinePrincessOfWales ;
+    :isSisterOf data:CatherinePrincessOfWales .
+
+data:DianaPrincessOfWales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceWilliamOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSister data:DianaPrincessOfWales ;
+    :hasSon data:PrinceWilliamOfWales ;
+    :isAncestorOf data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales ;
+    :isAuntOf data:PrinceWilliamOfWales ;
+    :isBloodrelationOf data:DianaPrincessOfWales ;
+    :isMotherOf data:PrinceWilliamOfWales ;
+    :isParentOf data:PrinceWilliamOfWales ;
+    :isSiblingOf data:DianaPrincessOfWales ;
+    :isSisterOf data:DianaPrincessOfWales .
+
+data:KingCharlesIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingCharlesIII ;
+    :hasChild data:PrinceWilliamOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSon data:PrinceWilliamOfWales ;
+    :isAncestorOf data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales ;
+    :isBloodrelationOf data:KingCharlesIII ;
+    :isBrotherOf data:KingCharlesIII ;
+    :isFatherOf data:PrinceWilliamOfWales ;
+    :isParentOf data:PrinceWilliamOfWales ;
+    :isSiblingOf data:KingCharlesIII ;
+    :isUncleOf data:PrinceWilliamOfWales .
+
+data:PrinceGeorge a :Man,
+        :Person ;
+    :hasBrother data:PrinceGeorge,
+        data:PrinceLouisOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSister data:PrincessCharlotte ;
+    :isBloodrelationOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isBrotherOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isSiblingOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte .
+
+data:PrincessCharlotte a :Person,
+        :Woman ;
+    :hasBrother data:PrinceGeorge,
+        data:PrinceLouisOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSister data:PrincessCharlotte ;
+    :isBloodrelationOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isSiblingOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isSisterOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte .
+
+data:PrinceWilliamOfWales a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:DianaPrincessOfWales,
+        data:KingCharlesIII ;
+    :hasBrother data:PrinceWilliamOfWales ;
+    :hasChild data:PrinceLouisOfWales ;
+    :hasFather data:KingCharlesIII ;
+    :hasMother data:DianaPrincessOfWales ;
+    :hasParent data:DianaPrincessOfWales,
+        data:KingCharlesIII ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSon data:PrinceLouisOfWales ;
+    :isAncestorOf data:PrinceLouisOfWales ;
+    :isBloodrelationOf data:PrinceWilliamOfWales ;
+    :isBrotherOf data:PrinceWilliamOfWales ;
+    :isChildOf data:DianaPrincessOfWales,
+        data:KingCharlesIII ;
+    :isFatherOf data:PrinceLouisOfWales ;
+    :isParentOf data:PrinceLouisOfWales ;
+    :isSiblingOf data:PrinceWilliamOfWales ;
+    :isSonOf data:DianaPrincessOfWales,
+        data:KingCharlesIII ;
+    :isUncleOf data:PrinceLouisOfWales .
+
+data:PrinceLouisOfWales a :Man,
+        :Person ;
+    :hasAncestor data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceWilliamOfWales ;
+    :hasBirthYear 2018 ;
+    :hasBrother data:PrinceGeorge,
+        data:PrinceLouisOfWales ;
+    :hasFather data:PrinceWilliamOfWales ;
+    :hasMother data:CatherinePrincessOfWales ;
+    :hasParent data:CatherinePrincessOfWales,
+        data:PrinceWilliamOfWales ;
+    :hasRelation data:CatherinePrincessOfWales,
+        data:DianaPrincessOfWales,
+        data:KingCharlesIII,
+        data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrinceWilliamOfWales,
+        data:PrincessCharlotte ;
+    :hasSister data:PrincessCharlotte ;
+    :isBloodrelationOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isBrotherOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isChildOf data:CatherinePrincessOfWales,
+        data:PrinceWilliamOfWales ;
+    :isSiblingOf data:PrinceGeorge,
+        data:PrinceLouisOfWales,
+        data:PrincessCharlotte ;
+    :isSonOf data:CatherinePrincessOfWales,
+        data:PrinceWilliamOfWales ;
+    :knownAs "Louis Arthur Charles"^^xsd:string .
+

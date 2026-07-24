@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Man,
+        :Person .
+
+data:Prince_Ferdinand_Pius a :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:Princess_Maria_Antonietta ;
+    :hasRelation data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Gabriel_of_Bourbon-Two_Sicilies,
+        data:Prince_Philip_of_Bourbon-Two_Sicilies,
+        data:Prince_Ranieri_Duke_of_Castro,
+        data:Princess_Maria_Cristina,
+        data:Princess_Maria_Immaculata,
+        data:Princess_Maria_di_Grazia .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person .
+
+data:King_Ludwig_III_of_Bavaria a :Man,
+        :Person .
+
+data:Prince_Alfonso_Count_of_Caserta a :Man,
+        :Person .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Gabriel_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Prince_Ranieri_Duke_of_Castro a :Man,
+        :Person .
+
+data:Princess_Maria_Antonietta a :Person,
+        :Woman .
+
+data:Princess_Maria_Cristina a :Person,
+        :Woman .
+
+data:Princess_Maria_Immaculata a :Person,
+        :Woman .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Person,
+        :Woman ;
+    :hasFather data:King_Ludwig_III_of_Bavaria .
+
+data:Princess_Maria_di_Grazia a :Person,
+        :Woman .
+

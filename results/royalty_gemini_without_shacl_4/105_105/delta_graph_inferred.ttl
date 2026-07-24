@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:CamilloCrociani a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CamilloCrociani ;
+    :hasChild data:CamillaCrociani ;
+    :hasDaughter data:CamillaCrociani ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :isAncestorOf data:CamillaCrociani ;
+    :isBloodrelationOf data:CamilloCrociani ;
+    :isBrotherOf data:CamilloCrociani ;
+    :isFatherOf data:CamillaCrociani ;
+    :isParentOf data:CamillaCrociani ;
+    :isSiblingOf data:CamilloCrociani ;
+    :isUncleOf data:CamillaCrociani .
+
+data:ChantalDeChevronVillette a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceCarloOfBourbonTwoSicilies ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasSister data:ChantalDeChevronVillette ;
+    :hasSon data:PrinceCarloOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isAuntOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:ChantalDeChevronVillette ;
+    :isMotherOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isParentOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isSiblingOf data:ChantalDeChevronVillette ;
+    :isSisterOf data:ChantalDeChevronVillette .
+
+data:EdyVessel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:CamillaCrociani ;
+    :hasDaughter data:CamillaCrociani ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasSister data:EdyVessel ;
+    :isAncestorOf data:CamillaCrociani ;
+    :isAuntOf data:CamillaCrociani ;
+    :isBloodrelationOf data:EdyVessel ;
+    :isMotherOf data:CamillaCrociani ;
+    :isParentOf data:CamillaCrociani ;
+    :isSiblingOf data:EdyVessel ;
+    :isSisterOf data:EdyVessel .
+
+data:PrinceFerdinandDukeOfCastro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceFerdinandDukeOfCastro ;
+    :hasChild data:PrinceCarloOfBourbonTwoSicilies ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasSon data:PrinceCarloOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrinceFerdinandDukeOfCastro ;
+    :isBrotherOf data:PrinceFerdinandDukeOfCastro ;
+    :isFatherOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isParentOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceFerdinandDukeOfCastro ;
+    :isUncleOf data:PrinceCarloOfBourbonTwoSicilies .
+
+data:CamillaCrociani a :Person,
+        :Woman ;
+    :hasAncestor data:CamilloCrociani,
+        data:EdyVessel ;
+    :hasFather data:CamilloCrociani ;
+    :hasMother data:EdyVessel ;
+    :hasParent data:CamilloCrociani,
+        data:EdyVessel ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasSister data:CamillaCrociani ;
+    :isBloodrelationOf data:CamillaCrociani ;
+    :isChildOf data:CamilloCrociani,
+        data:EdyVessel ;
+    :isDaughterOf data:CamilloCrociani,
+        data:EdyVessel ;
+    :isSiblingOf data:CamillaCrociani ;
+    :isSisterOf data:CamillaCrociani .
+
+data:PrinceCarloOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :hasAncestor data:ChantalDeChevronVillette,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:PrinceCarloOfBourbonTwoSicilies ;
+    :hasFather data:PrinceFerdinandDukeOfCastro ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:ChantalDeChevronVillette ;
+    :hasParent data:ChantalDeChevronVillette,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasRelation data:CamillaCrociani,
+        data:CamilloCrociani,
+        data:ChantalDeChevronVillette,
+        data:EdyVessel,
+        data:PrinceCarloOfBourbonTwoSicilies,
+        data:PrinceFerdinandDukeOfCastro ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isChildOf data:ChantalDeChevronVillette,
+        data:PrinceFerdinandDukeOfCastro ;
+    :isSiblingOf data:PrinceCarloOfBourbonTwoSicilies ;
+    :isSonOf data:ChantalDeChevronVillette,
+        data:PrinceFerdinandDukeOfCastro .
+

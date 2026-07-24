@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MichaelAlbemarleBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear "1940"^^xsd:positiveInteger ;
+    :hasDeathYear "2023"^^xsd:positiveInteger ;
+    :hasFather data:MichaelClaudeHamiltonBowesLyon ;
+    :hasMother data:ElizabethMargaretCator ;
+    :isBloodrelationOf data:QueenElizabethTheQueenMother .
+
+data:PrincessMargaret a :Person,
+        :Woman .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:ElizabethMargaretCator a :Person,
+        :Woman ;
+    :hasBirthYear "1899"^^xsd:positiveInteger ;
+    :hasDeathYear "1959"^^xsd:positiveInteger .
+
+data:MichaelClaudeHamiltonBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear "1893"^^xsd:positiveInteger ;
+    :hasDeathYear "1953"^^xsd:positiveInteger .
+
+data:QueenElizabethTheQueenMother a :Person,
+        :Woman .
+

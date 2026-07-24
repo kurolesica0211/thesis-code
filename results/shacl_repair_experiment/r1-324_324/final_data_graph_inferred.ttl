@@ -1,0 +1,718 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person ;
+    :hasBrother data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Gundakar_of_Liechtenstein .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isAuntOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isMotherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :isSisterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Luis_Cousino_y_Sebire a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Luis_Cousino_y_Sebire ;
+    :hasChild data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Luis_Cousino_y_Sebire ;
+    :isBrotherOf data:Luis_Cousino_y_Sebire ;
+    :isFatherOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSiblingOf data:Luis_Cousino_y_Sebire ;
+    :isUncleOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos ;
+    :hasParent data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isBloodrelationOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isChildOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isDaughterOf data:Antonia_Maria_Quinones_de_Leon_y_Banuelos,
+        data:Luis_Cousino_y_Sebire ;
+    :isSiblingOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :isSisterOf data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
+
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:Marie_d_Orleans ;
+    :hasDaughter data:Marie_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isAncestorOf data:Marie_d_Orleans ;
+    :isAuntOf data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Marie_d_Orleans ;
+    :isParentOf data:Marie_d_Orleans ;
+    :isSiblingOf data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Duchess_Marie_Therese_of_Wurttemberg .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasDaughter data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasDeathYear 1999 ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isAncestorOf data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza .
+
+data:Charles_Louis_d_Orleans a :Man,
+        :Person ;
+    :hasAncestor data:Jacques_d_Orleans ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :hasFather data:Jacques_d_Orleans ;
+    :hasParent data:Jacques_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBloodrelationOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isBrotherOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isChildOf data:Jacques_d_Orleans ;
+    :isSiblingOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isSonOf data:Jacques_d_Orleans .
+
+data:Foulques_d_Orleans a :Man,
+        :Person ;
+    :hasAncestor data:Jacques_d_Orleans ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :hasFather data:Jacques_d_Orleans ;
+    :hasParent data:Jacques_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBloodrelationOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isBrotherOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isChildOf data:Jacques_d_Orleans ;
+    :isSiblingOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isSonOf data:Jacques_d_Orleans .
+
+data:Francois_d_Orleans_son_of_Henri a :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isBrotherOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isSiblingOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_d_Orleans .
+
+data:Jean_d_Orleans a :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasParent data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isBrotherOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isChildOf data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isSiblingOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isSonOf data:Henri_Philippe_Pierre_Marie_d_Orleans .
+
+data:Diane_d_Orleans a :Person,
+        :Woman ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isAuntOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSisterOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans .
+
+data:Francois_d_Orleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBrotherOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isUncleOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+
+data:Michel_d_Orleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBrotherOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isUncleOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+
+data:Thibaut_d_Orleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBrotherOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isUncleOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+
+data:Marie_d_Orleans a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isChildOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isDaughterOf data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isSiblingOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isSisterOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+
+data:Jacques_d_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasChild data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isAncestorOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBrotherOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isFatherOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isParentOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isUncleOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasChild data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasParent data:Henri_Count_of_Paris ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isAncestorOf data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isAuntOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isChildOf data:Henri_Count_of_Paris ;
+    :isDaughterOf data:Henri_Count_of_Paris ;
+    :isMotherOf data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isParentOf data:Henri_Philippe_Pierre_Marie_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSisterOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans .
+
+data:Henri_Philippe_Pierre_Marie_d_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Thibaut_d_Orleans ;
+    :hasChild data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :hasDaughter data:Marie_d_Orleans ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMarriageYear data:Duchess_Marie_Therese_of_Wurttemberg,
+        1984 ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Charles_Louis_d_Orleans,
+        data:Diane_d_Orleans,
+        data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Henri_Count_of_Paris,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :hasSister data:Diane_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans ;
+    :isAncestorOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isBloodrelationOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isBrotherOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isFatherOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isParentOf data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans ;
+    :isSiblingOf data:Diane_d_Orleans,
+        data:Francois_d_Orleans,
+        data:Henri_Philippe_Pierre_Marie_d_Orleans,
+        data:Jacques_d_Orleans,
+        data:Michel_d_Orleans,
+        data:Princess_Isabelle_of_Orleans_Braganza,
+        data:Thibaut_d_Orleans ;
+    :isSonOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orleans_Braganza ;
+    :isUncleOf data:Charles_Louis_d_Orleans,
+        data:Foulques_d_Orleans,
+        data:Francois_d_Orleans_son_of_Henri,
+        data:Jean_d_Orleans,
+        data:Marie_d_Orleans .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donatus_Prince_and_Landgrave_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear \"1966\"^^xsd:positiveInteger ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMarriageYear \"2003\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :hasRelation data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell .\n\ndata:Count_Hubertus_von_Faber-Castell a :Man,\n        :Person .\n\ndata:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell a :Person,\n        :Woman ;\n    :hasBirthYear \"1974\"^^xsd:positiveInteger ;\n    :hasFather data:Count_Hubertus_von_Faber-Castell .\n\ndata:Landgrave_Philipp a :Man,\n        :Person ;\n    :hasDeathYear \"1980\"^^xsd:positiveInteger .\n\ndata:Moritz_Landgrave_of_Hesse a :Man,\n        :Person ;\n    :hasFather data:Landgrave_Philipp .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear \"1940\"^^xsd:positiveInteger .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donatus_Prince_and_Landgrave_of_Hesse a :Man,\n        :Person ;\n    :hasBirthYear \"1966\"^^xsd:positiveInteger ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMarriageYear \"2003\"^^xsd:positiveInteger ;\n    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;\n    :hasRelation data:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell .\n\ndata:Count_Hubertus_von_Faber-Castell a :Man,\n        :Person .\n\ndata:Countess_Floria_Franziska_Marie-Luisa_Erika_von_Faber-Castell a :Person,\n        :Woman ;\n    :hasBirthYear \"1974\"^^xsd:positiveInteger ;\n    :hasFather data:Count_Hubertus_von_Faber-Castell .\n\ndata:Landgrave_Philipp a :Man,\n        :Person ;\n    :hasDeathYear \"1980\"^^xsd:positiveInteger .\n\ndata:Moritz_Landgrave_of_Hesse a :Man,\n        :Person ;\n    :hasFather data:Landgrave_Philipp .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear \"1940\"^^xsd:positiveInteger .\n\n"
+    }
+]

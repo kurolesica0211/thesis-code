@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Alexandra_of_Baden a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1944 ;\n    :hasMarriageYear 1924 ;\n    :isDaughterOf data:Prince_Maximilian_of_Baden,\n        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .\n\ndata:Prince_Wilhelm_of_Baden a :Man ;\n    :hasBirthYear 1829 ;\n    :hasDeathYear 1897 ;\n    :isFatherOf data:Prince_Maximilian_of_Baden .\n\ndata:Prince_Wolfgang_of_Hesse a :Man ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1989 .\n\ndata:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Woman ;\n    :hasBirthYear 1841 ;\n    :hasDeathYear 1914 ;\n    :isDaughterOf data:Grand_Duchess_Maria_Nikolaevna,\n        data:Maximilian_Duke_of_Leuchtenberg ;\n    :isMotherOf data:Prince_Maximilian_of_Baden .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man .\n\ndata:Grand_Duchess_Maria_Nikolaevna a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1876 .\n\ndata:Maximilian_Duke_of_Leuchtenberg a :Man ;\n    :hasBirthYear 1817 ;\n    :hasDeathYear 1852 .\n\ndata:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover .\n\ndata:Prince_Maximilian_of_Baden a :Man ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marie_Alexandra_of_Baden a :Woman ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1944 ;\n    :hasMarriageYear 1924 ;\n    :isDaughterOf data:Prince_Maximilian_of_Baden,\n        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .\n\ndata:Prince_Wilhelm_of_Baden a :Man ;\n    :hasBirthYear 1829 ;\n    :hasDeathYear 1897 ;\n    :isFatherOf data:Prince_Maximilian_of_Baden .\n\ndata:Prince_Wolfgang_of_Hesse a :Man ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1989 .\n\ndata:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Woman ;\n    :hasBirthYear 1841 ;\n    :hasDeathYear 1914 ;\n    :isDaughterOf data:Grand_Duchess_Maria_Nikolaevna,\n        data:Maximilian_Duke_of_Leuchtenberg ;\n    :isMotherOf data:Prince_Maximilian_of_Baden .\n\ndata:Ernest_Augustus_Crown_Prince_of_Hanover a :Man .\n\ndata:Grand_Duchess_Maria_Nikolaevna a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1876 .\n\ndata:Maximilian_Duke_of_Leuchtenberg a :Man ;\n    :hasBirthYear 1817 ;\n    :hasDeathYear 1852 .\n\ndata:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1948 ;\n    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover .\n\ndata:Prince_Maximilian_of_Baden a :Man ;\n    :hasBirthYear 1867 ;\n    :hasDeathYear 1929 .\n\n"
+    }
+]

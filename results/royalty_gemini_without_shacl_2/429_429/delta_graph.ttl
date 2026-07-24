@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kraft_of_Hohenlohe-Langenburg a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Charlotte_of_Croy ;
+    :hasSister data:Beatrix_of_Hohenlohe-Langenburg .
+
+data:Beatrix_of_Hohenlohe-Langenburg a :Woman .
+
+data:Charlotte_of_Croy a :Woman .
+
+data:Gottfried_of_Hohenlohe-Langenburg a :Man .
+
+data:Margarita_of_Greece_and_Denmark a :Woman .
+

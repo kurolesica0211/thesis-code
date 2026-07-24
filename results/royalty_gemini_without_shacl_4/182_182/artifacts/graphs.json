@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Augustus_III_of_Saxony a :Man,\n        :Person ;\n    :isBrotherOf data:Johann_Georg_of_Saxony .\n\ndata:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Johann_Georg_of_Saxony .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Ferdinand_II_of_Portugal a :Man,\n        :Person .\n\ndata:George_of_Saxony a :Man,\n        :Person .\n\ndata:Maria_Anna_of_Portugal a :Person,\n        :Woman ;\n    :hasFather data:Ferdinand_II_of_Portugal ;\n    :hasMother data:Maria_II_of_Portugal .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_II_of_Portugal a :Person,\n        :Woman .\n\ndata:Johann_Georg_of_Saxony a :Man,\n        :Person ;\n    :hasFather data:George_of_Saxony ;\n    :hasMother data:Maria_Anna_of_Portugal .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Augustus_III_of_Saxony a :Man,\n        :Person ;\n    :isBrotherOf data:Johann_Georg_of_Saxony .\n\ndata:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Johann_Georg_of_Saxony .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\ndata:Ferdinand_II_of_Portugal a :Man,\n        :Person .\n\ndata:George_of_Saxony a :Man,\n        :Person .\n\ndata:Maria_Anna_of_Portugal a :Person,\n        :Woman ;\n    :hasFather data:Ferdinand_II_of_Portugal ;\n    :hasMother data:Maria_II_of_Portugal .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Maria_II_of_Portugal a :Person,\n        :Woman .\n\ndata:Johann_Georg_of_Saxony a :Man,\n        :Person ;\n    :hasFather data:George_of_Saxony ;\n    :hasMother data:Maria_Anna_of_Portugal .\n\n"
+    }
+]

@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eloise_van_Oranje-Nassau a :Woman ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien .
+
+data:Johan_Friso a :Man .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Beatrix a :Woman .
+
+data:Claus a :Man .
+
+data:Constantijn a :Man ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Laurentien a :Woman .
+

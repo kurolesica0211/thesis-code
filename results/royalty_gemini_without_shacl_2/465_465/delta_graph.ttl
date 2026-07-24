@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_Alexandra_May a :Woman ;
+    :hasBirthYear 2016 ;
+    :hasFather data:Frederick_Windsor ;
+    :hasMother data:Sophie_Winkleman .
+
+data:Frederick_Windsor a :Man ;
+    :hasBirthYear 1979 ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMother data:Princess_Michael_of_Kent ;
+    :isSiblingOf data:Lady_Gabriella .
+
+data:Lady_Gabriella a :Woman ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMother data:Princess_Michael_of_Kent .
+
+data:Sophie_Winkleman a :Woman .
+
+data:Prince_Michael_of_Kent a :Man .
+
+data:Princess_Michael_of_Kent a :Woman .
+

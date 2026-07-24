@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dmitri_Pavlovich a :Man,
+        :Person ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man .
+
+data:Maria_Pavlovna a :Person,
+        :Woman ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark .
+
+data:Maria_of_Greece a :Person,
+        :Woman .
+
+data:Nicholas_of_Greece a :Man,
+        :Person .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Woman .
+
+data:Alexandra_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Grand Duchess Alexandra Georgievna of Russia"^^xsd:string ;
+    :hasBirthYear 1870 ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :knownAs "Alexandra"^^xsd:string .
+
+data:Paul_Alexandrovich_of_Russia a :Man .
+

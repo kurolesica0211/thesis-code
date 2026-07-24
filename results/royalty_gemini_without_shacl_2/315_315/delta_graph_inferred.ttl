@@ -1,0 +1,117 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_of_Greece ;
+    :hasBrother data:Charles_III ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :hasSister data:Olga_of_Greece ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III ;
+    :isBloodrelationOf data:Olga_of_Greece ;
+    :isSiblingOf data:Olga_of_Greece ;
+    :isSisterOf data:Olga_of_Greece .
+
+data:Eugenie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :hasSister data:Eugenie_of_Greece_and_Denmark ;
+    :hasSon data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAuntOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Eugenie_of_Greece_and_Denmark ;
+    :isMotherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isParentOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSiblingOf data:Eugenie_of_Greece_and_Denmark ;
+    :isSisterOf data:Eugenie_of_Greece_and_Denmark .
+
+data:Raimundo_della_Torre_e_Tasso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Raimundo_della_Torre_e_Tasso ;
+    :hasChild data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :hasSon data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Raimundo_della_Torre_e_Tasso ;
+    :isBrotherOf data:Raimundo_della_Torre_e_Tasso ;
+    :isFatherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isParentOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSiblingOf data:Raimundo_della_Torre_e_Tasso ;
+    :isUncleOf data:Carlo_Alessandro_della_Torre_e_Tasso .
+
+data:Carlo_Alessandro_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasAncestor data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :hasFather data:Raimundo_della_Torre_e_Tasso ;
+    :hasMother data:Eugenie_of_Greece_and_Denmark ;
+    :hasParent data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :hasRelation data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III,
+        data:Eugenie_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_of_Greece,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :isBloodrelationOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isBrotherOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isChildOf data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_della_Torre_e_Tasso ;
+    :isSiblingOf data:Carlo_Alessandro_della_Torre_e_Tasso ;
+    :isSonOf data:Eugenie_of_Greece_and_Denmark,
+        data:Raimundo_della_Torre_e_Tasso .
+

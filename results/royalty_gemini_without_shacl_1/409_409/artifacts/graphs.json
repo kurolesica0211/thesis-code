@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :isFatherOf data:Mary_Frances_Elphinstone .\n\ndata:Philip_Mountbatten a :Man,\n        :Person .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Mary_Frances_Elphinstone a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1961 ;\n    :hasMarriageYear 1910 ;\n    :hasRelation data:Sidney_Elphinstone ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isSisterOf data:Elizabeth_Bowes-Lyon .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1955 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :isFatherOf data:Mary_Frances_Elphinstone .\n\ndata:Philip_Mountbatten a :Man,\n        :Person .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Mary_Frances_Elphinstone a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1961 ;\n    :hasMarriageYear 1910 ;\n    :hasRelation data:Sidney_Elphinstone ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isSisterOf data:Elizabeth_Bowes-Lyon .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1955 .\n\n"
+    }
+]

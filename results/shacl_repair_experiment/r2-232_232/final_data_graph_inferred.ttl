@@ -1,0 +1,279 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_William_I_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Frederick_William_I_of_Prussia ;
+    :hasRelation data:Frederick_William_I_of_Prussia ;
+    :isBloodrelationOf data:Frederick_William_I_of_Prussia ;
+    :isBrotherOf data:Frederick_William_I_of_Prussia ;
+    :isSiblingOf data:Frederick_William_I_of_Prussia .
+
+data:Prince_Ferdinand_of_Hohenzollern a :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_of_Hohenzollern ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :isBloodrelationOf data:Prince_Ferdinand_of_Hohenzollern ;
+    :isBrotherOf data:Prince_Ferdinand_of_Hohenzollern ;
+    :isSiblingOf data:Prince_Ferdinand_of_Hohenzollern .
+
+data:Kaiser_Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Kaiser_Wilhelm_II ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :isAncestorOf data:Georg_Friedrich_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Louis_Ferdinand_Jr ;
+    :isBloodrelationOf data:Kaiser_Wilhelm_II ;
+    :isBrotherOf data:Kaiser_Wilhelm_II ;
+    :isSiblingOf data:Kaiser_Wilhelm_II .
+
+data:Grand_Duke_Kyril_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Kyril_Vladimirovich ;
+    :hasChild data:Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :isAncestorOf data:Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Kyril_Vladimirovich ;
+    :isBrotherOf data:Grand_Duke_Kyril_Vladimirovich ;
+    :isFatherOf data:Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Kyril_Vladimirovich ;
+    :isUncleOf data:Kira_Kirillovna_of_Russia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Georg_Friedrich_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Kaiser_Wilhelm_II,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:William_German_Crown_Prince ;
+    :hasBrother data:Georg_Friedrich_Prince_of_Prussia ;
+    :hasFather data:Prince_Louis_Ferdinand_Jr ;
+    :hasParent data:Prince_Louis_Ferdinand_Jr ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :isBloodrelationOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isBrotherOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isChildOf data:Prince_Louis_Ferdinand_Jr ;
+    :isSiblingOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:William_German_Crown_Prince ;
+    :hasBrother data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:William_German_Crown_Prince ;
+    :hasParent data:William_German_Crown_Prince ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :isBloodrelationOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:William_German_Crown_Prince ;
+    :isSiblingOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:William_German_Crown_Prince ;
+    :isUncleOf data:Prince_Louis_Ferdinand_Jr .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duke_Kyril_Vladimirovich,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Grand_Duke_Kyril_Vladimirovich,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia ;
+    :isChildOf data:Grand_Duke_Kyril_Vladimirovich,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Grand_Duke_Kyril_Vladimirovich,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:William_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_German_Crown_Prince ;
+    :hasChild data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :hasSon data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Georg_Friedrich_Prince_of_Prussia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:William_German_Crown_Prince ;
+    :isBrotherOf data:William_German_Crown_Prince ;
+    :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:William_German_Crown_Prince ;
+    :isUncleOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Louis_Ferdinand_Jr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Kaiser_Wilhelm_II,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:William_German_Crown_Prince ;
+    :hasBrother data:Prince_Louis_Ferdinand_Jr ;
+    :hasChild data:Georg_Friedrich_Prince_of_Prussia ;
+    :hasDeathYear 1977 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasParent data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :hasSon data:Georg_Friedrich_Prince_of_Prussia ;
+    :isAncestorOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isBloodrelationOf data:Prince_Louis_Ferdinand_Jr ;
+    :isBrotherOf data:Prince_Louis_Ferdinand_Jr ;
+    :isChildOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isFatherOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isParentOf data:Georg_Friedrich_Prince_of_Prussia ;
+    :isSiblingOf data:Prince_Louis_Ferdinand_Jr ;
+    :isSonOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isUncleOf data:Georg_Friedrich_Prince_of_Prussia .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Kaiser_Wilhelm_II,
+        data:William_German_Crown_Prince ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasChild data:Prince_Louis_Ferdinand_Jr ;
+    :hasDeathYear 1994 ;
+    :hasFather data:William_German_Crown_Prince ;
+    :hasMarriageYear 1938 ;
+    :hasParent data:William_German_Crown_Prince ;
+    :hasRelation data:Georg_Friedrich_Prince_of_Prussia,
+        data:Grand_Duke_Kyril_Vladimirovich,
+        data:Kaiser_Wilhelm_II,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Ferdinand_of_Hohenzollern,
+        data:Prince_Louis_Ferdinand_Jr,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha,
+        data:William_German_Crown_Prince ;
+    :hasSon data:Prince_Louis_Ferdinand_Jr ;
+    :isAncestorOf data:Georg_Friedrich_Prince_of_Prussia,
+        data:Prince_Louis_Ferdinand_Jr ;
+    :isBloodrelationOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:William_German_Crown_Prince ;
+    :isFatherOf data:Prince_Louis_Ferdinand_Jr ;
+    :isParentOf data:Prince_Louis_Ferdinand_Jr ;
+    :isSiblingOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:William_German_Crown_Prince ;
+    :isUncleOf data:Prince_Louis_Ferdinand_Jr .
+

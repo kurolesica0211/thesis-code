@@ -1,0 +1,21 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alfonso_Count_of_Caserta a :Ancestor .
+
+data:Antonietta_of_Bourbon-Two_Sicilies a :Ancestor .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor .
+
+data:Francis_II_of_the_Two_Sicilies :hasSex data:Male .
+
+data:Gaston_of_Orleans_Count_of_Eu a :Ancestor .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor .
+
+data:Maria_di_Grazia :hasSex data:Female .
+
+data:Female a :Female .
+
+data:Male a :Male .
+

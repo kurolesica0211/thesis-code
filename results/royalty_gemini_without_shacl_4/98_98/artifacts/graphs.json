@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessEloiseOfOrangeNassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:PrinceConstantijn ;\n    :hasMother data:PrincessLaurentien ;\n    :knownAs \"Eloise Beatrix Sophie Laurence\"^^xsd:string .\n\ndata:PieterVanVollenhoven a :Man .\n\ndata:PrincessBeatrix a :Woman .\n\ndata:PrincessMargriet a :Woman .\n\ndata:PrinceClaus a :Man .\n\ndata:PrinceConstantijn a :Man ;\n    :hasFather data:PrinceClaus ;\n    :hasMother data:QueenBeatrix .\n\ndata:PrincessLaurentien a :Woman .\n\ndata:QueenBeatrix a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:CountessEloiseOfOrangeNassau a :Woman ;\n    :alsoKnownAs \"Eloise van Oranje\"^^xsd:string ;\n    :hasBirthYear 2002 ;\n    :hasFather data:PrinceConstantijn ;\n    :hasMother data:PrincessLaurentien ;\n    :knownAs \"Eloise Beatrix Sophie Laurence\"^^xsd:string .\n\ndata:PieterVanVollenhoven a :Man .\n\ndata:PrincessBeatrix a :Woman .\n\ndata:PrincessMargriet a :Woman .\n\ndata:PrinceClaus a :Man .\n\ndata:PrinceConstantijn a :Man ;\n    :hasFather data:PrinceClaus ;\n    :hasMother data:QueenBeatrix .\n\ndata:PrincessLaurentien a :Woman .\n\ndata:QueenBeatrix a :Woman .\n\n"
+    }
+]

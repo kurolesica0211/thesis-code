@@ -1,0 +1,666 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean_Robert_Boeuf a :Man,
+        :Person ;
+    :hasBrother data:Jean_Robert_Boeuf ;
+    :hasRelation data:Jean_Robert_Boeuf ;
+    :isBloodrelationOf data:Jean_Robert_Boeuf ;
+    :isBrotherOf data:Jean_Robert_Boeuf ;
+    :isSiblingOf data:Jean_Robert_Boeuf .
+
+data:Louis_Alphonse_Duke_of_Anjou a :Man,
+        :Person ;
+    :hasBrother data:Louis_Alphonse_Duke_of_Anjou ;
+    :hasRelation data:Louis_Alphonse_Duke_of_Anjou ;
+    :isBloodrelationOf data:Louis_Alphonse_Duke_of_Anjou ;
+    :isBrotherOf data:Louis_Alphonse_Duke_of_Anjou ;
+    :isSiblingOf data:Louis_Alphonse_Duke_of_Anjou .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person ;
+    :hasBrother data:Prince_Gundakar_of_Liechtenstein ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Gundakar_of_Liechtenstein .
+
+data:Antonia_Maria_Quinones_de_Leon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Micaela_Anna_Maria_Cousino ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino ;
+    :hasSister data:Antonia_Maria_Quinones_de_Leon ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino ;
+    :isAuntOf data:Micaela_Anna_Maria_Cousino ;
+    :isBloodrelationOf data:Antonia_Maria_Quinones_de_Leon ;
+    :isMotherOf data:Micaela_Anna_Maria_Cousino ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino ;
+    :isSiblingOf data:Antonia_Maria_Quinones_de_Leon ;
+    :isSisterOf data:Antonia_Maria_Quinones_de_Leon .
+
+data:Luis_Cousino_y_Sebire a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Luis_Cousino_y_Sebire ;
+    :hasChild data:Micaela_Anna_Maria_Cousino ;
+    :hasDaughter data:Micaela_Anna_Maria_Cousino ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino ;
+    :isAncestorOf data:Micaela_Anna_Maria_Cousino ;
+    :isBloodrelationOf data:Luis_Cousino_y_Sebire ;
+    :isBrotherOf data:Luis_Cousino_y_Sebire ;
+    :isFatherOf data:Micaela_Anna_Maria_Cousino ;
+    :isParentOf data:Micaela_Anna_Maria_Cousino ;
+    :isSiblingOf data:Luis_Cousino_y_Sebire ;
+    :isUncleOf data:Micaela_Anna_Maria_Cousino .
+
+data:Micaela_Anna_Maria_Cousino a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon ;
+    :hasParent data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire ;
+    :hasRelation data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire,
+        data:Micaela_Anna_Maria_Cousino ;
+    :hasSister data:Micaela_Anna_Maria_Cousino ;
+    :isBloodrelationOf data:Micaela_Anna_Maria_Cousino ;
+    :isChildOf data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire ;
+    :isDaughterOf data:Antonia_Maria_Quinones_de_Leon,
+        data:Luis_Cousino_y_Sebire ;
+    :isSiblingOf data:Micaela_Anna_Maria_Cousino ;
+    :isSisterOf data:Micaela_Anna_Maria_Cousino .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:Marie_dOrleans_1989 ;
+    :hasDaughter data:Marie_dOrleans_1989 ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :isAncestorOf data:Marie_dOrleans_1989 ;
+    :isAuntOf data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Marie_Therese_of_Wurttemberg ;
+    :isMotherOf data:Marie_dOrleans_1989 ;
+    :isParentOf data:Marie_dOrleans_1989 ;
+    :isSiblingOf data:Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Marie_Therese_of_Wurttemberg .
+
+data:Henri_Count_of_Paris_1908 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Henri_Count_of_Paris_1908 ;
+    :hasChild data:Henri_dOrleans ;
+    :hasDeathYear 1999 ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSon data:Henri_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans_Clermont,
+        data:Henri_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Henri_Count_of_Paris_1908 ;
+    :isBrotherOf data:Henri_Count_of_Paris_1908 ;
+    :isFatherOf data:Henri_dOrleans ;
+    :isParentOf data:Henri_dOrleans ;
+    :isSiblingOf data:Henri_Count_of_Paris_1908 ;
+    :isUncleOf data:Henri_dOrleans .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henri_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Henri_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans_Clermont,
+        data:Henri_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isAuntOf data:Henri_dOrleans ;
+    :isBloodrelationOf data:Isabelle_of_Orleans_Braganza ;
+    :isMotherOf data:Henri_dOrleans ;
+    :isParentOf data:Henri_dOrleans ;
+    :isSiblingOf data:Isabelle_of_Orleans_Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans_Braganza .
+
+data:Charles_Louis_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Jacques_dOrleans ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasFather data:Jacques_dOrleans ;
+    :hasParent data:Jacques_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBrotherOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isChildOf data:Jacques_dOrleans ;
+    :isSiblingOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Foulques_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Jacques_dOrleans ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasFather data:Jacques_dOrleans ;
+    :hasParent data:Jacques_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBloodrelationOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBrotherOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isChildOf data:Jacques_dOrleans ;
+    :isSiblingOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSonOf data:Jacques_dOrleans .
+
+data:Diane_dOrleans a :Person,
+        :Woman ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isAuntOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSisterOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans .
+
+data:Francois_dOrleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+
+data:Michel_dOrleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+
+data:Thibaut_dOrleans a :Man,
+        :Person ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+
+data:Francois_dOrleans_Clermont a :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isBrotherOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_dOrleans ;
+    :hasParent data:Henri_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isBrotherOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isChildOf data:Henri_dOrleans ;
+    :isSiblingOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isSonOf data:Henri_dOrleans .
+
+data:Marie_dOrleans_1989 a :Person,
+        :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasBrother data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans ;
+    :hasFather data:Henri_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasParent data:Henri_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isChildOf data:Henri_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isDaughterOf data:Henri_dOrleans,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isSisterOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+
+data:Jacques_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasChild data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :hasSon data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isAncestorOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isFatherOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isParentOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isUncleOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+
+data:Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris_1908,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasChild data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :hasDaughter data:Marie_dOrleans_1989 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris_1908 ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasParent data:Henri_Count_of_Paris_1908,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Charles_Louis_dOrleans,
+        data:Diane_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Henri_Count_of_Paris_1908,
+        data:Henri_dOrleans,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Jacques_dOrleans,
+        data:Jean_dOrleans,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Marie_dOrleans_1989,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :hasSister data:Diane_dOrleans ;
+    :hasSon data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans ;
+    :isAncestorOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isChildOf data:Henri_Count_of_Paris_1908,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isFatherOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isParentOf data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Francois_dOrleans,
+        data:Henri_dOrleans,
+        data:Jacques_dOrleans,
+        data:Michel_dOrleans,
+        data:Thibaut_dOrleans ;
+    :isSonOf data:Henri_Count_of_Paris_1908,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isUncleOf data:Charles_Louis_dOrleans,
+        data:Foulques_dOrleans,
+        data:Francois_dOrleans_Clermont,
+        data:Jean_dOrleans,
+        data:Marie_dOrleans_1989 .
+

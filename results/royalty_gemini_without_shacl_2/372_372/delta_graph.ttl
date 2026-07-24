@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Friederike_of_Hanover a :Woman ;
+    :hasFather data:George_William_of_Hanover_and_Cumberland ;
+    :hasMother data:Sophie_of_Greece_and_Denmark .
+
+data:Georg_of_Hanover a :Man ;
+    :hasFather data:George_William_of_Hanover_and_Cumberland ;
+    :hasMother data:Sophie_of_Greece_and_Denmark .
+
+data:Welf_of_Hanover a :Man ;
+    :hasFather data:George_William_of_Hanover_and_Cumberland ;
+    :hasMother data:Sophie_of_Greece_and_Denmark .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+
+data:Ernest_Augustus_Duke_of_Brunswick a :Man .
+
+data:Frederica_of_Hanover a :Woman ;
+    :hasRelation data:King_Paul_of_Greece .
+
+data:King_Paul_of_Greece a :Man .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man .
+
+data:Princess_Alice_of_Battenberg a :Woman .
+
+data:Victoria_Louise_of_Prussia a :Woman ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II_German_Emperor a :Man .
+
+data:George_William_of_Hanover_and_Cumberland a :Man ;
+    :hasBirthYear "1915"^^xsd:positiveInteger ;
+    :hasDeathYear "2006"^^xsd:positiveInteger ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMarriageYear "1946"^^xsd:positiveInteger ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Frederica_of_Hanover .
+
+data:Sophie_of_Greece_and_Denmark a :Woman ;
+    :hasDeathYear "2001"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+

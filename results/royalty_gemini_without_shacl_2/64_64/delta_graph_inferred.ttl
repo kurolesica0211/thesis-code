@@ -1,0 +1,369 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Berthold_Margrave_of_Baden a :Man,
+        :Person ;
+    :hasBrother data:Berthold_Margrave_of_Baden ;
+    :hasRelation data:Berthold_Margrave_of_Baden ;
+    :isBloodrelationOf data:Berthold_Margrave_of_Baden ;
+    :isBrotherOf data:Berthold_Margrave_of_Baden ;
+    :isSiblingOf data:Berthold_Margrave_of_Baden .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Cecilie_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Prince_Christoph_of_Hesse ;
+    :hasRelation data:Prince_Christoph_of_Hesse ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse .
+
+data:Prince_Gottfried_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Prince_Gottfried_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Prince_Gottfried_of_Hohenlohe-Langenburg .
+
+data:Victoria_Mountbatten_Marchioness_of_Milford_Haven a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasFather data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasSister data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isBloodrelationOf data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isSisterOf data:Victoria_Mountbatten_Marchioness_of_Milford_Haven .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh ;
+    :isAuntOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Olga_of_Greece ;
+    :isMotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Olga_of_Greece ;
+    :isSisterOf data:Queen_Olga_of_Greece .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_of_Greece ;
+    :hasBrother data:Alexander_of_Greece ;
+    :hasFather data:Constantine_of_Greece ;
+    :hasParent data:Constantine_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece ;
+    :isChildOf data:Constantine_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece ;
+    :isSonOf data:Constantine_of_Greece .
+
+data:Constantine_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Alexander_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasSon data:Alexander_of_Greece ;
+    :isAncestorOf data:Alexander_of_Greece ;
+    :isBloodrelationOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Alexander_of_Greece ;
+    :isParentOf data:Alexander_of_Greece ;
+    :isSiblingOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Alexander_of_Greece,
+        data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasSon data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isAuntOf data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:King_Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Andrew_of_Greece_and_Denmark .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Andrew_of_Greece_and_Denmark .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasAncestor data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasDeathYear 1944 ;
+    :hasFather data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasParent data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Philip_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isChildOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isFatherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Constantine_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSonOf data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isUncleOf data:Alexander_of_Greece,
+        data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Man,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Princess_Alice_of_Battenberg ;
+    :hasChild data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasDaughter data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_of_Greece,
+        data:King_Christian_IX_of_Denmark,
+        data:King_George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:Queen_Olga_of_Greece,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isAuntOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isMotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Victoria_Mountbatten_Marchioness_of_Milford_Haven ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Victoria_Mountbatten_Marchioness_of_Milford_Haven .
+

@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Ancestor .
+
+data:Prince_Adalbert_of_Prussia a :Ancestor ;
+    :alsoKnownAs "Graf von Lingen"^^xsd:string .
+
+data:Princess_Adelheid_of_Saxe-Meiningen a :Ancestor .
+
+data:Princess_Viktoria_Marina :isSisterOf data:Kirby_William_Patterson .
+
+data:Sophie_Duchess_of_Hohenberg :isSisterOf data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .
+
+data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Ancestor .
+

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceHenry a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:KingGeorgeV ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:QueenMary ;
+    :hasRelation data:LadyAliceMontaguDouglasScott ;
+    :hasSon data:PrinceRichard,
+        data:PrinceWilliam ;
+    :isBrotherOf data:DukeOfKent,
+        data:EdwardVIII,
+        data:GeorgeVI .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :hasFather data:GeorgeVI .
+
+data:DukeOfKent a :Man,
+        :Person .
+
+data:EdwardVIII a :Man,
+        :Person .
+
+data:KingGeorgeV a :Man,
+        :Person .
+
+data:PrinceRichard a :Man,
+        :Person ;
+    :hasMother data:LadyAliceMontaguDouglasScott .
+
+data:PrinceWilliam a :Man,
+        :Person ;
+    :hasMother data:LadyAliceMontaguDouglasScott .
+
+data:QueenMary a :Person,
+        :Woman .
+
+data:GeorgeVI a :Man,
+        :Person .
+
+data:LadyAliceMontaguDouglasScott a :Person,
+        :Woman .
+

@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickWindsor a :Man,
+        :Person ;
+    :hasAncestor data:KingGeorgeV,
+        data:QueenMary ;
+    :hasBirthYear 1979 ;
+    :hasDaughter data:IsabellaAlexandraMayWindsor ;
+    :hasFather data:PrinceMichaelOfKent ;
+    :hasMarriageYear 2009 ;
+    :hasMother data:PrincessMichaelOfKent ;
+    :hasRelation data:SophieWinkleman ;
+    :hasSister data:GabriellaWindsor .
+
+data:GabriellaWindsor a :Person,
+        :Woman .
+
+data:KingGeorgeV a :Man,
+        :Person .
+
+data:PrinceMichaelOfKent a :Man,
+        :Person .
+
+data:PrincessMichaelOfKent a :Person,
+        :Woman .
+
+data:QueenMary a :Person,
+        :Woman .
+
+data:SophieWinkleman a :Person,
+        :Woman ;
+    :hasDaughter data:IsabellaAlexandraMayWindsor .
+
+data:IsabellaAlexandraMayWindsor a :Person,
+        :Woman .
+

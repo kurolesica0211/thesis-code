@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderOfYugoslavia a :Man .
+
+data:IreneOfGreeceAndDenmark a :Woman .
+
+data:MargaretaOfRomania a :Woman .
+
+data:Michael a :Man ;
+    :hasRelation data:Marina .
+
+data:NikolaosOfGreeceAndDenmark a :Man ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Pavlos,
+        data:Philippos ;
+    :hasFather data:ConstantineII ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:ChrysiVardinogianni,
+        data:TatianaEllinkaBlatnik ;
+    :hasSister data:Alexia,
+        data:Theodora .
+
+data:SofiaOfSpain a :Woman .
+
+data:AgapiPoliti a :Woman .
+
+data:Alexia a :Woman .
+
+data:Anne-Marie a :Woman .
+
+data:ChrysiVardinogianni a :Woman ;
+    :hasFather data:GiorgosVardinogiannis ;
+    :hasMother data:AgapiPoliti .
+
+data:ConstantineII a :Man .
+
+data:GiorgosVardinogiannis a :Man .
+
+data:Marina a :Woman .
+
+data:Pavlos a :Man .
+
+data:Philippos a :Man .
+
+data:TatianaEllinkaBlatnik a :Woman .
+
+data:Theodora a :Woman .
+

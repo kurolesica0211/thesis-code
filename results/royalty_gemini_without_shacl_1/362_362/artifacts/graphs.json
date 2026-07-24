@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Donna_Marina_Torlonia_di_Civitella-Cesi .\n\ndata:Donna_Marina_Torlonia_di_Civitella-Cesi a :Person,\n        :Woman .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Marino_Torlonia_4th_Prince_di_Civitella-Cesi a :Man,\n        :Person .\n\ndata:Mary_Elsie_Moore a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia_5th_Prince_of_Civitella-Cesi a :Man,\n        :Person ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella-Cesi ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Donna_Marina_Torlonia_di_Civitella-Cesi .\n\ndata:Donna_Marina_Torlonia_di_Civitella-Cesi a :Person,\n        :Woman .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Marino_Torlonia_4th_Prince_di_Civitella-Cesi a :Man,\n        :Person .\n\ndata:Mary_Elsie_Moore a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    }
+]

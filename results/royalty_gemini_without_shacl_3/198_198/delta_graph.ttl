@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Armgard_of_Sierstorpff-Cramm a :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Bernhard .
+
+data:Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasMarriageYear 1964 ;
+    :hasRelation data:Carlos_Hugo_of_Bourbon-Parma ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Christina_of_the_Netherlands,
+        data:Margriet_of_the_Netherlands .
+
+data:Xavier_Duke_of_Parma a :Man,
+        :Person ;
+    :isFatherOf data:Carlos_Hugo_of_Bourbon-Parma .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Christina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Margriet_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person .
+
+data:Prince_Bernhard a :Man,
+        :Person .
+

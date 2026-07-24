@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia_cousin a :Man,\n        :Person ;\n    :hasBirthYear \"1925\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2017\"^^xsd:positiveInteger .\n\ndata:Don_Alessandro_Torlonia a :Man,\n        :Person ;\n    :hasBirthYear \"1911\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Marino_Torlonia ;\n    :hasMarriageYear \"1935\"^^xsd:positiveInteger ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Donna_Marina_Torlonia .\n\ndata:Donna_Marina_Torlonia a :Person,\n        :Woman .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Marino_Torlonia a :Man,\n        :Person .\n\ndata:Mary_Elsie_Moore a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia_cousin a :Man,\n        :Person ;\n    :hasBirthYear \"1925\"^^xsd:positiveInteger ;\n    :hasDeathYear \"2017\"^^xsd:positiveInteger .\n\ndata:Don_Alessandro_Torlonia a :Man,\n        :Person ;\n    :hasBirthYear \"1911\"^^xsd:positiveInteger ;\n    :hasDeathYear \"1986\"^^xsd:positiveInteger ;\n    :hasFather data:Marino_Torlonia ;\n    :hasMarriageYear \"1935\"^^xsd:positiveInteger ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Infanta_Beatriz_of_Spain ;\n    :hasSister data:Donna_Marina_Torlonia .\n\ndata:Donna_Marina_Torlonia a :Person,\n        :Woman .\n\ndata:Infanta_Beatriz_of_Spain a :Person,\n        :Woman ;\n    :hasFather data:King_Alfonso_XIII_of_Spain ;\n    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg .\n\ndata:King_Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Marino_Torlonia a :Man,\n        :Person .\n\ndata:Mary_Elsie_Moore a :Person,\n        :Woman .\n\ndata:Princess_Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman .\n\n"
+    }
+]

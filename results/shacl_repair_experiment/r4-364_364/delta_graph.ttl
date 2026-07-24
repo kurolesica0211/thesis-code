@@ -1,0 +1,10 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor .
+
+data:Princess_Margaret_of_Prussia a :Ancestor .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor ;
+    :isFatherOf data:Princess_Mafalda_of_Savoy .
+

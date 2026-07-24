@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_Angela_Marguerite_Bowes-Lyon a :Woman ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Fergus ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Cecilia_Cavendish-Bentinck .
+
+data:George_VI a :Man ;
+    :hasBrother data:Edward_VIII ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasSister data:Princess_Mary .
+
+data:Cecilia_Cavendish-Bentinck a :Woman .
+
+data:Claude_Bowes-Lyon a :Man .
+
+data:Edward_VIII a :Man .
+
+data:Elizabeth_II a :Woman .
+
+data:Fergus a :Man .
+
+data:George_V a :Man .
+
+data:Margaret a :Woman .
+
+data:Princess_Mary a :Woman .
+
+data:Queen_Mary a :Woman .
+

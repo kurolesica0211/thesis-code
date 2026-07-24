@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_4",
+  "task_directory": "results/royalty_gemini_without_shacl_4/375_375",
+  "text_file": "Q62056.txt",
+  "text_key": "Q62056",
+  "article": "https://en.wikipedia.org/wiki/Prince_Eitel_Friedrich_of_Prussia",
+  "article_key": "Prince Eitel Friedrich of Prussia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Eitel_Friedrich_of_Prussia",
+    "qid": "Q62056",
+    "label": "Prince Eitel Friedrich of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Eitel_Friedrich_of_Prussia",
+      "qid": "Q62056",
+      "label": "Prince Eitel Friedrich of Prussia",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "qid": "Q161247",
+      "label": "Augusta Victoria of Schleswig-Holstein",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 1,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/AugustaViktoria",
+      "extracted_local_name": "AugustaViktoria",
+      "embedding_text": "Augusta Viktoria",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q161247",
+      "ground_truth_label": "Augusta Victoria of Schleswig-Holstein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Augusta Viktoria",
+      "best_candidate_label": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_qid": "Q161247",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/WilhelmII",
+      "extracted_local_name": "WilhelmII",
+      "embedding_text": "Wilhelm II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
+      "ground_truth_qid": "Q2677",
+      "ground_truth_label": "Wilhelm II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/WilhelmEitelFriedrich",
+      "extracted_local_name": "WilhelmEitelFriedrich",
+      "embedding_text": "Wilhelm Eitel Friedrich",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7894736842105263,
+      "ground_truth_uri": "http://example.com/data#Prince_Eitel_Friedrich_of_Prussia",
+      "ground_truth_qid": "Q62056",
+      "ground_truth_label": "Prince Eitel Friedrich of Prussia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Eitel Friedrich",
+      "best_candidate_label": "Prince Eitel Friedrich of Prussia",
+      "best_candidate_qid": "Q62056",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7894736842105263
+    },
+    {
+      "extracted_uri": "http://example.org/data/SophiaCharlotte",
+      "extracted_local_name": "SophiaCharlotte",
+      "embedding_text": "Sophia Charlotte",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
+      "best_candidate_label": "Prince Eitel Friedrich of Prussia",
+      "best_candidate_qid": "Q62056",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2777777777777778
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

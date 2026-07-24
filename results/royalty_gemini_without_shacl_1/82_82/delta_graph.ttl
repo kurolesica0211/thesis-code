@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Paolo_Mapelli_Mozzi a :Man,
+        :Person .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice .
+
+data:Alex_Mapelli-Mozzi a :Man,
+        :Person .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person .
+
+data:Princess_Beatrice a :Person,
+        :Woman ;
+    :hasBirthYear 1988 ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMarriageYear 2020 ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi ;
+    :isSisterOf data:Princess_Eugenie ;
+    :knownAs "Beatrice Elizabeth Mary"^^xsd:string .
+
+data:Sarah_Ferguson a :Person,
+        :Woman .
+
+data:Edoardo_Mapelli_Mozzi a :Man,
+        :Person ;
+    :hasFather data:Alex_Mapelli-Mozzi .
+

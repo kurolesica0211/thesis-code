@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_William_of_Hanover a :Man,
+        :Person .
+
+data:Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMother data:Sophie_of_Greece_and_Denmark .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:King_Paul_of_Greece a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasSister data:Sophie_of_Greece_and_Denmark .
+
+data:Queen_Frederica a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Christoph_of_Hesse a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+

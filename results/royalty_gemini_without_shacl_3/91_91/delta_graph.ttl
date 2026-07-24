@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Alexandra a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear 1963 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Sir_Angus_Ogilvy .
+
+data:Prince_George_Duke_of_Kent a :Man .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman .
+
+data:Sir_Angus_Ogilvy a :Man ;
+    :hasDeathYear 2004 .
+

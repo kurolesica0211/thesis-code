@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SamuelChatto a :Man,\n        :Person ;\n    :hasAncestor data:ElizabethII,\n        data:PrincessMargaret ;\n    :hasBirthYear 1996 ;\n    :hasFather data:DanielChatto ;\n    :hasMother data:LadySarahChatto ;\n    :hasSex data:Male ;\n    :isChildOf data:DanielChatto,\n        data:LadySarahChatto .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:PrincessMargaret a :Person,\n        :Woman .\n\ndata:DanielChatto a :Man,\n        :Person .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SamuelChatto a :Man,\n        :Person ;\n    :hasAncestor data:ElizabethII,\n        data:PrincessMargaret ;\n    :hasBirthYear 1996 ;\n    :hasFather data:DanielChatto ;\n    :hasMother data:LadySarahChatto ;\n    :hasSex data:Male ;\n    :isChildOf data:DanielChatto,\n        data:LadySarahChatto .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:PrincessMargaret a :Person,\n        :Woman .\n\ndata:DanielChatto a :Man,\n        :Person .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SamuelChatto a :Man,\n        :Person ;\n    :hasAncestor data:ElizabethII,\n        data:PrincessMargaret ;\n    :hasBirthYear 1996 ;\n    :hasFather data:DanielChatto ;\n    :hasMother data:LadySarahChatto ;\n    :hasSex data:Male ;\n    :isChildOf data:DanielChatto,\n        data:LadySarahChatto .\n\ndata:ElizabethII a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:PrincessMargaret a :Person,\n        :Woman .\n\ndata:DanielChatto a :Man,\n        :Person .\n\ndata:LadySarahChatto a :Person,\n        :Woman .\n\n"
+    }
+]

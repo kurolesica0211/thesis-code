@@ -1,0 +1,51 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:William .\n\ndata:Louis%2Ctarget :hasParent data:Catherine_Middleton .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:William .\n\ndata:Louis%2Ctarget :hasParent data:Catherine_Middleton .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:William .\n\ndata:Louis%2Ctarget :hasParent data:Catherine_Middleton .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:William .\n\ndata:Louis%2Ctarget :hasParent data:Catherine_Middleton .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:William .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charlotte a :Person,\n        :Woman ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:George a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis a :Man,\n        :Person ;\n    :hasParent data:Catherine_Middleton,\n        data:William .\n\ndata:Louis_target a :Man,\n        :Person .\n\ndata:Philip_Duke_of_Edinburgh a :Man,\n        :Person ;\n    :isFatherOf data:Charles_III .\n\ndata:Charles_Spencer a :Man,\n        :Person .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:Harry a :Man,\n        :Person ;\n    :hasParent data:Charles_III,\n        data:Diana .\n\ndata:Diana a :Person,\n        :Woman ;\n    :isSiblingOf data:Charles_Spencer .\n\ndata:Catherine_Middleton a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasMother data:Elizabeth_II .\n\ndata:William a :Man,\n        :Person ;\n    :hasBirthYear 1982 ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana ;\n    :isSiblingOf data:Harry .\n\n"
+    }
+]

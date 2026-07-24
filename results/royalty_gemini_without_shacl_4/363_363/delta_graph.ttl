@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
+
+data:John_Albert a :Man,
+        :Person ;
+    :isBrotherOf data:Adolf_Friedrich .
+
+data:Viktoria_Feodora_of_Reuss-Schleiz a :Person,
+        :Woman ;
+    :hasFather data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasMother data:Elise_of_Hohenlohe-Langenburg .
+
+data:Adolf_Friedrich a :Man,
+        :Person ;
+    :hasBirthYear "1873"^^xsd:positiveInteger ;
+    :hasDeathYear "1969"^^xsd:positiveInteger ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear "1917"^^xsd:positiveInteger,
+        "1924"^^xsd:positiveInteger ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Elise_of_Hohenlohe-Langenburg a :Person,
+        :Woman .
+
+data:Frederick_Francis_II a :Man,
+        :Person ;
+    :hasBirthYear "1823"^^xsd:positiveInteger ;
+    :hasDeathYear "1883"^^xsd:positiveInteger .
+
+data:Heinrich_XXVII_Prince_Reuss_Younger_Line a :Man,
+        :Person .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman .
+

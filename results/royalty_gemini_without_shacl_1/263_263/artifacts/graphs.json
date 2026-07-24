@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma_Luana_Ninette_Sophie a :Person,\n        :Woman ;\n    :isChildOf data:Mabel_Wisse_Smit,\n        data:Prince_Friso .\n\ndata:Joanna_Zaria_Nicoline_Milou a :Person,\n        :Woman ;\n    :isChildOf data:Mabel_Wisse_Smit,\n        data:Prince_Friso .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person .\n\ndata:Prince_Constantijn a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Queen_Beatrix ;\n    :hasRelation data:Mabel_Wisse_Smit ;\n    :isSiblingOf data:Prince_Constantijn,\n        data:Willem-Alexander .\n\ndata:Mabel_Wisse_Smit a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma_Luana_Ninette_Sophie a :Person,\n        :Woman ;\n    :isChildOf data:Mabel_Wisse_Smit,\n        data:Prince_Friso .\n\ndata:Joanna_Zaria_Nicoline_Milou a :Person,\n        :Woman ;\n    :isChildOf data:Mabel_Wisse_Smit,\n        data:Prince_Friso .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Prince_Bernhard a :Man,\n        :Person .\n\ndata:Prince_Constantijn a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman ;\n    :hasFather data:Prince_Bernhard ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Queen_Beatrix ;\n    :hasRelation data:Mabel_Wisse_Smit ;\n    :isSiblingOf data:Prince_Constantijn,\n        data:Willem-Alexander .\n\ndata:Mabel_Wisse_Smit a :Person,\n        :Woman .\n\n"
+    }
+]

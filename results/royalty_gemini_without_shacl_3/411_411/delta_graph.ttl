@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianLouisOfMecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:FrederickFrancisIV ;
+    :hasMarriageYear 1954 ;
+    :hasMother data:AlexandraOfHanover ;
+    :hasRelation data:BarbaraOfPrussia ;
+    :hasSister data:ThyraOfMecklenburg .
+
+data:BarbaraOfPrussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:SigismundOfPrussia ;
+    :hasMother data:CharlotteOfSaxeAltenburg .
+
+data:CharlotteOfSaxeAltenburg a :Person,
+        :Woman .
+
+data:ErnestAugustusCrownPrinceOfHanover a :Man,
+        :Person .
+
+data:SigismundOfPrussia a :Man,
+        :Person .
+
+data:ThyraOfDenmark a :Person,
+        :Woman .
+
+data:ThyraOfMecklenburg a :Person,
+        :Woman ;
+    :hasFather data:FrederickFrancisIV ;
+    :hasMother data:AlexandraOfHanover .
+
+data:AlexandraOfHanover a :Person,
+        :Woman ;
+    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
+    :hasMother data:ThyraOfDenmark .
+
+data:FrederickFrancisIV a :Man,
+        :Person .
+

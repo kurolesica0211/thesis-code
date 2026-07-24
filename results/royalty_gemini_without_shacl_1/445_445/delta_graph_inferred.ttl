@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Prince_Georg_of_Denmark ;
+    :hasRelation data:Prince_Georg_of_Denmark ;
+    :isBloodrelationOf data:Prince_Georg_of_Denmark ;
+    :isBrotherOf data:Prince_Georg_of_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Denmark .
+
+data:Geoffrey_Shakerley_6th_Bt a :Man,
+        :Person ;
+    :hasBrother data:Geoffrey_Shakerley_6th_Bt ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Elizabeth_Georgiana_Anson,
+        data:Geoffrey_Shakerley_6th_Bt,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Anson_Viscount_Anson ;
+    :isBloodrelationOf data:Geoffrey_Shakerley_6th_Bt ;
+    :isBrotherOf data:Geoffrey_Shakerley_6th_Bt ;
+    :isSiblingOf data:Geoffrey_Shakerley_6th_Bt .
+
+data:Anne_Bowes_Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasDaughter data:Elizabeth_Georgiana_Anson ;
+    :hasMarriageYear data:Prince_Georg_of_Denmark ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Elizabeth_Georgiana_Anson,
+        data:Geoffrey_Shakerley_6th_Bt,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasSister data:Anne_Bowes_Lyon ;
+    :hasSon data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isAuntOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Anne_Bowes_Lyon ;
+    :isMotherOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isParentOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Anne_Bowes_Lyon ;
+    :isSisterOf data:Anne_Bowes_Lyon .
+
+data:Thomas_Anson_Viscount_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Thomas_Anson_Viscount_Anson ;
+    :hasChild data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasDaughter data:Elizabeth_Georgiana_Anson ;
+    :hasDeathYear 1958 ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Elizabeth_Georgiana_Anson,
+        data:Geoffrey_Shakerley_6th_Bt,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasSon data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Thomas_Anson_Viscount_Anson ;
+    :isBrotherOf data:Thomas_Anson_Viscount_Anson ;
+    :isFatherOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isParentOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_Anson_Viscount_Anson ;
+    :isUncleOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield .
+
+data:Elizabeth_Georgiana_Anson a :Person,
+        :Woman ;
+    :hasAncestor data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_Anson_Viscount_Anson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Anne_Bowes_Lyon ;
+    :hasParent data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Elizabeth_Georgiana_Anson,
+        data:Geoffrey_Shakerley_6th_Bt,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasSister data:Elizabeth_Georgiana_Anson ;
+    :isBloodrelationOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isChildOf data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :isDaughterOf data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :isSiblingOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSisterOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield .
+
+data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+        :Person ;
+    :hasAncestor data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasFather data:Thomas_Anson_Viscount_Anson ;
+    :hasMother data:Anne_Bowes_Lyon ;
+    :hasParent data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasRelation data:Anne_Bowes_Lyon,
+        data:Elizabeth_Georgiana_Anson,
+        data:Geoffrey_Shakerley_6th_Bt,
+        data:Patrick_Anson_5th_Earl_of_Lichfield,
+        data:Thomas_Anson_Viscount_Anson ;
+    :hasSister data:Elizabeth_Georgiana_Anson ;
+    :isBloodrelationOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isBrotherOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isChildOf data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson ;
+    :isSiblingOf data:Elizabeth_Georgiana_Anson,
+        data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :isSonOf data:Anne_Bowes_Lyon,
+        data:Thomas_Anson_Viscount_Anson .
+

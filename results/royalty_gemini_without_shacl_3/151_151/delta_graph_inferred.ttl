@@ -1,0 +1,221 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantijn_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBrother data:Constantijn_of_the_Netherlands ;
+    :hasRelation data:Constantijn_of_the_Netherlands ;
+    :isBloodrelationOf data:Constantijn_of_the_Netherlands ;
+    :isBrotherOf data:Constantijn_of_the_Netherlands ;
+    :isSiblingOf data:Constantijn_of_the_Netherlands .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBrother data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Aschwin_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasSister data:Armgard_of_Sierstorpff-Cramm ;
+    :hasSon data:Aschwin_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isAuntOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isMotherOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isParentOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_of_Sierstorpff-Cramm .
+
+data:Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Bernhard_of_Lippe ;
+    :hasChild data:Aschwin_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasSon data:Aschwin_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Bernhard_of_Lippe ;
+    :isBrotherOf data:Bernhard_of_Lippe ;
+    :isFatherOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isParentOf data:Aschwin_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Bernhard_of_Lippe ;
+    :isUncleOf data:Aschwin_of_Lippe-Biesterfeld .
+
+data:Gottfried_Adam_Vollrat_von_Watzdorf a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :hasChild data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasSon data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isAncestorOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :isBrotherOf data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :isFatherOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isParentOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isSiblingOf data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :isUncleOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf .
+
+data:Simone_Arnoux a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasSister data:Simone_Arnoux ;
+    :hasSon data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isAncestorOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isAuntOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Simone_Arnoux ;
+    :isMotherOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isParentOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isSiblingOf data:Simone_Arnoux ;
+    :isSisterOf data:Simone_Arnoux .
+
+data:Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Bernhard_of_Lippe ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Bernhard_of_Lippe ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Bernhard_of_Lippe ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Bernhard_of_Lippe ;
+    :isSiblingOf data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Bernhard_of_Lippe .
+
+data:Stephan_von_Watzdorf a :Man,
+        :Person ;
+    :hasAncestor data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :hasBrother data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :hasMother data:Simone_Arnoux ;
+    :hasParent data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBrotherOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isChildOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :isSiblingOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux .
+
+data:Thilo_von_Watzdorf a :Man,
+        :Person ;
+    :hasAncestor data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :hasBrother data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
+    :hasMother data:Simone_Arnoux ;
+    :hasParent data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Aschwin_of_Lippe-Biesterfeld,
+        data:Bernhard_of_Lippe,
+        data:Bernhard_of_Lippe-Biesterfeld,
+        data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux,
+        data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBloodrelationOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isBrotherOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isChildOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux ;
+    :isSiblingOf data:Stephan_von_Watzdorf,
+        data:Thilo_von_Watzdorf ;
+    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux .
+

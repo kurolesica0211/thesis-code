@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasSex data:Male .
+
+data:Maximilian_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasSex data:Male .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Margarita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora ;
+    :hasSex data:Female .
+
+data:Philip a :Man,
+        :Person ;
+    :hasFather data:Andrew ;
+    :hasMother data:Alice ;
+    :hasSex data:Male .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Alice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Andrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Theodora a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Philip ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice ;
+    :hasRelation data:Berthold ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie .
+
+data:Berthold a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

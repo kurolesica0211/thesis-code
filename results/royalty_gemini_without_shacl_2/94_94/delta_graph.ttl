@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasFather data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasMarriageYear 2023 ;
+    :hasRelation data:Gaby_Maier .
+
+data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBirthYear 1994 ;
+    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Princess_Marie_Wilhelmine_of_Wied .
+
+data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasDeathYear 2018 ;
+    :hasFather data:Carl_Duke_of_W%C3%BCrttemberg .
+
+data:Gaby_Maier a :Person,
+        :Woman .
+
+data:Princess_Marie_Wilhelmine_of_Wied a :Person,
+        :Woman ;
+    :hasBirthYear 1973 .
+
+data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasDeathYear 2022 .
+

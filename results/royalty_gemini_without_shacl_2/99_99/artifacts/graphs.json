@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_of_Battenberg a :Woman .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;\n    :hasMarriageYear data:1898 ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasRelation data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;\n    :knownAs \"Feodora Viktoria Auguste Marie Marianne\"^^xsd:string .\n\ndata:Queen_Victoria_of_the_United_Kingdom a :Woman .\n\ndata:William_I_German_Emperor a :Man .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man .\n\ndata:Charlotte_of_Prussia a :Woman ;\n    :hasFather data:Friedrich_III_of_Germany ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Woman .\n\ndata:Friedrich_III_of_Germany a :Man .\n\ndata:Heinrich_XXX_Reuss_of_K%C3%B6stritz a :Man ;\n    :hasBirthYear 1864 ;\n    :hasDeathYear 1939 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_of_Battenberg a :Woman .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;\n    :hasMarriageYear data:1898 ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasRelation data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;\n    :knownAs \"Feodora Viktoria Auguste Marie Marianne\"^^xsd:string .\n\ndata:Queen_Victoria_of_the_United_Kingdom a :Woman .\n\ndata:William_I_German_Emperor a :Man .\n\ndata:1898 a :DomainEntity .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man .\n\ndata:Charlotte_of_Prussia a :Woman ;\n    :hasFather data:Friedrich_III_of_Germany ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Woman .\n\ndata:Friedrich_III_of_Germany a :Man .\n\ndata:Heinrich_XXX_Reuss_of_K%C3%B6stritz a :Man ;\n    :hasBirthYear 1864 ;\n    :hasDeathYear 1939 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_of_Battenberg a :Woman .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;\n    :hasMarriageYear data:1898 ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasRelation data:Heinrich_XXX_Reuss_of_K%C3%B6stritz ;\n    :knownAs \"Feodora Viktoria Auguste Marie Marianne\"^^xsd:string .\n\ndata:Queen_Victoria_of_the_United_Kingdom a :Woman .\n\ndata:William_I_German_Emperor a :Man .\n\ndata:1898 a :DomainEntity .\n\ndata:Bernhard_III_of_Saxe-Meiningen a :Man .\n\ndata:Charlotte_of_Prussia a :Woman ;\n    :hasFather data:Friedrich_III_of_Germany ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Woman .\n\ndata:Friedrich_III_of_Germany a :Man .\n\ndata:Heinrich_XXX_Reuss_of_K%C3%B6stritz a :Man ;\n    :hasBirthYear 1864 ;\n    :hasDeathYear 1939 .\n\n"
+    }
+]

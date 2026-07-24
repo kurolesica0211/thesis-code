@@ -1,0 +1,264 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Elizabeth_II ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isAuntOf data:Andrew_Elphinstone ;
+    :isBloodrelationOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSiblingOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother .
+
+data:George_Chetwode a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_Chetwode ;
+    :hasChild data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasDaughter data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:George_Chetwode ;
+    :isBrotherOf data:George_Chetwode ;
+    :isFatherOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isParentOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSiblingOf data:George_Chetwode ;
+    :isUncleOf data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Victor_Elliot-Murray-Kynynmound ;
+    :hasChild data:Willa_Elliot-Murray-Kynynmound ;
+    :hasDaughter data:Willa_Elliot-Murray-Kynynmound ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isBrotherOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isFatherOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isParentOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isSiblingOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isUncleOf data:Willa_Elliot-Murray-Kynynmound .
+
+data:Mary_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrew_Elphinstone ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSon data:Andrew_Elphinstone ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:James_Elphinstone ;
+    :isAuntOf data:Andrew_Elphinstone ;
+    :isBloodrelationOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isMotherOf data:Andrew_Elphinstone ;
+    :isParentOf data:Andrew_Elphinstone ;
+    :isSiblingOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother .
+
+data:James_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Elphinstone,
+        data:Mary_Bowes-Lyon ;
+    :hasBrother data:James_Elphinstone ;
+    :hasChild data:Alexander_Mountstuart_Elphinstone ;
+    :hasFather data:Andrew_Elphinstone ;
+    :hasParent data:Andrew_Elphinstone ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSon data:Alexander_Mountstuart_Elphinstone ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone ;
+    :isBloodrelationOf data:James_Elphinstone ;
+    :isBrotherOf data:James_Elphinstone ;
+    :isChildOf data:Andrew_Elphinstone ;
+    :isFatherOf data:Alexander_Mountstuart_Elphinstone ;
+    :isParentOf data:Alexander_Mountstuart_Elphinstone ;
+    :isSiblingOf data:James_Elphinstone ;
+    :isSonOf data:Andrew_Elphinstone ;
+    :isUncleOf data:Alexander_Mountstuart_Elphinstone .
+
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Victor_Elliot-Murray-Kynynmound ;
+    :hasChild data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasDaughter data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+    :hasParent data:Victor_Elliot-Murray-Kynynmound ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Willa_Elliot-Murray-Kynynmound ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isAuntOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isChildOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isDaughterOf data:Victor_Elliot-Murray-Kynynmound ;
+    :isMotherOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isParentOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSiblingOf data:Willa_Elliot-Murray-Kynynmound ;
+    :isSisterOf data:Willa_Elliot-Murray-Kynynmound .
+
+data:Andrew_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Mary_Bowes-Lyon ;
+    :hasBrother data:Andrew_Elphinstone ;
+    :hasChild data:James_Elphinstone ;
+    :hasMother data:Mary_Bowes-Lyon ;
+    :hasParent data:Mary_Bowes-Lyon ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSon data:James_Elphinstone ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone,
+        data:James_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Elphinstone ;
+    :isBrotherOf data:Andrew_Elphinstone ;
+    :isChildOf data:Mary_Bowes-Lyon ;
+    :isFatherOf data:James_Elphinstone ;
+    :isParentOf data:James_Elphinstone ;
+    :isSiblingOf data:Andrew_Elphinstone ;
+    :isSonOf data:Mary_Bowes-Lyon ;
+    :isUncleOf data:James_Elphinstone .
+
+data:Alexander_Mountstuart_Elphinstone a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Mountstuart_Elphinstone ;
+    :hasFather data:James_Elphinstone ;
+    :hasMother data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasParent data:James_Elphinstone,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isBloodrelationOf data:Alexander_Mountstuart_Elphinstone ;
+    :isBrotherOf data:Alexander_Mountstuart_Elphinstone ;
+    :isChildOf data:James_Elphinstone,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSiblingOf data:Alexander_Mountstuart_Elphinstone ;
+    :isSonOf data:James_Elphinstone,
+        data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_Chetwode,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :hasChild data:Alexander_Mountstuart_Elphinstone ;
+    :hasFather data:George_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound ;
+    :hasParent data:George_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :hasRelation data:Alexander_Mountstuart_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:George_Chetwode,
+        data:James_Elphinstone,
+        data:Mary_Bowes-Lyon,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Victor_Elliot-Murray-Kynynmound,
+        data:Willa_Elliot-Murray-Kynynmound,
+        data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSister data:Willa_Mary_Gabrielle_Chetwode ;
+    :hasSon data:Alexander_Mountstuart_Elphinstone ;
+    :isAncestorOf data:Alexander_Mountstuart_Elphinstone ;
+    :isAuntOf data:Alexander_Mountstuart_Elphinstone ;
+    :isBloodrelationOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isChildOf data:George_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :isDaughterOf data:George_Chetwode,
+        data:Willa_Elliot-Murray-Kynynmound ;
+    :isMotherOf data:Alexander_Mountstuart_Elphinstone ;
+    :isParentOf data:Alexander_Mountstuart_Elphinstone ;
+    :isSiblingOf data:Willa_Mary_Gabrielle_Chetwode ;
+    :isSisterOf data:Willa_Mary_Gabrielle_Chetwode .
+

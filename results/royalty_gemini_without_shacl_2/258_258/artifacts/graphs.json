@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Luis_Gastao_of_Orleans-Braganza a :Man ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Pia_Maria_of_Orleans-Braganza a :Woman ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Antonio_of_Orleans-Braganza a :Man .\n\ndata:Gaston_Count_of_Eu a :Man .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Woman .\n\ndata:Pedro_of_Orleans-Braganza a :Man .\n\ndata:Luis_of_Orleans-Braganza a :Man ;\n    :hasBirthYear 1878 ;\n    :hasBrother data:Antonio_of_Orleans-Braganza,\n        data:Pedro_of_Orleans-Braganza ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_Count_of_Eu ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;\n    :hasRelation data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Maria_Pia_of_Bourbon-Two_Sicilies a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Luis_Gastao_of_Orleans-Braganza a :Man ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Pia_Maria_of_Orleans-Braganza a :Woman ;\n    :hasFather data:Luis_of_Orleans-Braganza ;\n    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Antonio_of_Orleans-Braganza a :Man .\n\ndata:Gaston_Count_of_Eu a :Man .\n\ndata:Isabel_Princess_Imperial_of_Brazil a :Woman .\n\ndata:Pedro_of_Orleans-Braganza a :Man .\n\ndata:Luis_of_Orleans-Braganza a :Man ;\n    :hasBirthYear 1878 ;\n    :hasBrother data:Antonio_of_Orleans-Braganza,\n        data:Pedro_of_Orleans-Braganza ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Gaston_Count_of_Eu ;\n    :hasMarriageYear 1908 ;\n    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;\n    :hasRelation data:Maria_Pia_of_Bourbon-Two_Sicilies .\n\ndata:Maria_Pia_of_Bourbon-Two_Sicilies a :Woman .\n\n"
+    }
+]

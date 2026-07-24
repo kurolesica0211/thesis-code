@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male_Sex a :Male .
+
+data:Alois-Konstantin_L%C3%B6wenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alois-Konstantin_L%C3%B6wenstein ;
+    :hasChild data:Carl-Friedrich_L%C3%B6wenstein ;
+    :hasRelation data:Alois-Konstantin_L%C3%B6wenstein,
+        data:Carl-Friedrich_L%C3%B6wenstein ;
+    :hasSex data:Male_Sex ;
+    :hasSon data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isAncestorOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isBloodrelationOf data:Alois-Konstantin_L%C3%B6wenstein ;
+    :isBrotherOf data:Alois-Konstantin_L%C3%B6wenstein ;
+    :isFatherOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isParentOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isSiblingOf data:Alois-Konstantin_L%C3%B6wenstein ;
+    :isUncleOf data:Carl-Friedrich_L%C3%B6wenstein .
+
+data:Carl-Friedrich_L%C3%B6wenstein a :Man,
+        :Person ;
+    :alsoKnownAs "Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg"^^xsd:string ;
+    :hasAncestor data:Alois-Konstantin_L%C3%B6wenstein ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Carl-Friedrich_L%C3%B6wenstein ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Alois-Konstantin_L%C3%B6wenstein ;
+    :hasParent data:Alois-Konstantin_L%C3%B6wenstein ;
+    :hasRelation data:Alois-Konstantin_L%C3%B6wenstein,
+        data:Carl-Friedrich_L%C3%B6wenstein ;
+    :hasSex data:Male_Sex ;
+    :isBloodrelationOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isBrotherOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isChildOf data:Alois-Konstantin_L%C3%B6wenstein ;
+    :isSiblingOf data:Carl-Friedrich_L%C3%B6wenstein ;
+    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
+

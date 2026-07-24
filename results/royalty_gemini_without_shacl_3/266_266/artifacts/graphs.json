@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_of_Saxe-Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Manuel_II a :Man,\n        :Person ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;\n    :isBrotherOf data:Lu%C3%ADs_Filipe .\n\ndata:Patricia_of_Connaught a :Person,\n        :Woman ;\n    :hasFather data:Arthur_Duke_of_Connaught_and_Strathearn ;\n    :hasMother data:Louise_Margaret_of_Prussia .\n\ndata:Victoria_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Arthur_Duke_of_Connaught_and_Strathearn a :Man,\n        :Person .\n\ndata:Louise_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADs_Filipe a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1908 ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Lu%C3%ADs_I a :Man,\n        :Person .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Carlos_I a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADs_I .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_of_Saxe-Coburg_and_Gotha a :Man,\n        :Person .\n\ndata:Manuel_II a :Man,\n        :Person ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans ;\n    :isBrotherOf data:Lu%C3%ADs_Filipe .\n\ndata:Patricia_of_Connaught a :Person,\n        :Woman ;\n    :hasFather data:Arthur_Duke_of_Connaught_and_Strathearn ;\n    :hasMother data:Louise_Margaret_of_Prussia .\n\ndata:Victoria_of_the_United_Kingdom a :Person,\n        :Woman .\n\ndata:Arthur_Duke_of_Connaught_and_Strathearn a :Man,\n        :Person .\n\ndata:Louise_Margaret_of_Prussia a :Person,\n        :Woman .\n\ndata:Lu%C3%ADs_Filipe a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1908 ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Lu%C3%ADs_I a :Man,\n        :Person .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Person,\n        :Woman .\n\ndata:Carlos_I a :Man,\n        :Person ;\n    :hasFather data:Lu%C3%ADs_I .\n\n"
+    }
+]

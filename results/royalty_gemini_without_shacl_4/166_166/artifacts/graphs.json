@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dominik_Rainer_Radziwill a :Man,\n        :Person ;\n    :hasFather data:Hieronim_Radziwill ;\n    :hasMarriageYear \"1938\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Renata_of_Austria .\n\ndata:Eugenie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1910\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:Peter_of_Greece_and_Denmark ;\n    :hasDeathYear \"1989\"^^xsd:nonNegativeInteger ;\n    :hasFather data:George_of_Greece_and_Denmark ;\n    :hasMother data:Marie_Bonaparte .\n\ndata:Raymundo_della_Torre_e_Tasso a :Man,\n        :Person ;\n    :hasMarriageYear \"1949\"^^xsd:nonNegativeInteger .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\ndata:Hieronim_Radziwill a :Man,\n        :Person .\n\ndata:Marie-Felix_Blanc a :Person,\n        :Woman .\n\ndata:Marie_Bonaparte a :Person,\n        :Woman ;\n    :hasFather data:Roland_Bonaparte ;\n    :hasMother data:Marie-Felix_Blanc .\n\ndata:Olga_Constantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Peter_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Renata_of_Austria a :Person,\n        :Woman .\n\ndata:Roland_Bonaparte a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dominik_Rainer_Radziwill a :Man,\n        :Person ;\n    :hasFather data:Hieronim_Radziwill ;\n    :hasMarriageYear \"1938\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Renata_of_Austria .\n\ndata:Eugenie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear \"1910\"^^xsd:nonNegativeInteger ;\n    :hasBrother data:Peter_of_Greece_and_Denmark ;\n    :hasDeathYear \"1989\"^^xsd:nonNegativeInteger ;\n    :hasFather data:George_of_Greece_and_Denmark ;\n    :hasMother data:Marie_Bonaparte .\n\ndata:Raymundo_della_Torre_e_Tasso a :Man,\n        :Person ;\n    :hasMarriageYear \"1949\"^^xsd:nonNegativeInteger .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\ndata:Hieronim_Radziwill a :Man,\n        :Person .\n\ndata:Marie-Felix_Blanc a :Person,\n        :Woman .\n\ndata:Marie_Bonaparte a :Person,\n        :Woman ;\n    :hasFather data:Roland_Bonaparte ;\n    :hasMother data:Marie-Felix_Blanc .\n\ndata:Olga_Constantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Peter_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Renata_of_Austria a :Person,\n        :Woman .\n\ndata:Roland_Bonaparte a :Man,\n        :Person .\n\n"
+    }
+]

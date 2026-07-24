@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl_1",
+  "task_directory": "results/royalty_gemini_without_shacl_1/30_30",
+  "text_file": "Q1208034.txt",
+  "text_key": "Q1208034",
+  "article": "https://en.wikipedia.org/wiki/Princess_Alexandra_of_Hanover_(born_1999)",
+  "article_key": "Princess Alexandra of Hanover",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Alexandra_of_Hanover_1",
+    "qid": "Q1208034",
+    "label": "Princess Alexandra of Hanover"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Alexandra_of_Hanover_1",
+      "qid": "Q1208034",
+      "label": "Princess Alexandra of Hanover",
+      "distance": 0,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover_1",
+      "qid": "Q58070",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Caroline_of_Monaco",
+      "qid": "Q233966",
+      "label": "Princess Caroline of Monaco",
+      "distance": 1,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "qid": "Q61079",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Christian_of_Hanover",
+      "qid": "Q4383359",
+      "label": "Prince Christian of Hanover",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "qid": "Q57672",
+      "label": "Ernst August, Duke of Brunswick",
+      "distance": 3,
+      "gender": null
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Christian_of_Hanover",
+      "extracted_local_name": "Prince_Christian_of_Hanover",
+      "embedding_text": "Prince Christian of Hanover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Christian_of_Hanover",
+      "ground_truth_qid": "Q4383359",
+      "ground_truth_label": "Prince Christian of Hanover",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Christian of Hanover",
+      "best_candidate_label": "Prince Christian of Hanover",
+      "best_candidate_qid": "Q4383359",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Alexandra_of_Hanover",
+      "extracted_local_name": "Princess_Alexandra_of_Hanover",
+      "embedding_text": "Princess Alexandra of Hanover",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Alexandra_of_Hanover_1",
+      "ground_truth_qid": "Q1208034",
+      "ground_truth_label": "Princess Alexandra of Hanover",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Alexandra of Hanover",
+      "best_candidate_label": "Princess Alexandra of Hanover",
+      "best_candidate_qid": "Q1208034",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Caroline_of_Monaco",
+      "extracted_local_name": "Princess_Caroline_of_Monaco",
+      "embedding_text": "Princess Caroline of Monaco",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Caroline_of_Monaco",
+      "ground_truth_qid": "Q233966",
+      "ground_truth_label": "Princess Caroline of Monaco",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Caroline of Monaco",
+      "best_candidate_label": "Princess Caroline of Monaco",
+      "best_candidate_qid": "Q233966",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ernst_August_Prince_of_Hanover",
+      "extracted_local_name": "Ernst_August_Prince_of_Hanover",
+      "embedding_text": "Ernst August Prince of Hanover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9871794871794872,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "ground_truth_qid": "Q61079",
+      "ground_truth_label": "Ernst August, Prince of Hanover",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ernst August- Prince of Hanover",
+      "best_candidate_label": "Ernst August, Prince of Hanover",
+      "best_candidate_qid": "Q61079",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9871794871794872
+    },
+    {
+      "extracted_uri": "http://example.org/data/Hereditary_Prince_Ernst_August",
+      "extracted_local_name": "Hereditary_Prince_Ernst_August",
+      "embedding_text": "Hereditary Prince Ernst August",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.5333333333333333,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "ground_truth_qid": "Q57672",
+      "ground_truth_label": "Ernst August, Duke of Brunswick",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ernest Augustus",
+      "best_candidate_label": "Ernst August, Duke of Brunswick",
+      "best_candidate_qid": "Q57672",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Albert_II_of_Monaco",
+      "extracted_local_name": "Albert_II_of_Monaco",
+      "embedding_text": "Albert II of Monaco",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ernst August von Hanover",
+      "best_candidate_label": "Ernst August, Prince of Hanover",
+      "best_candidate_qid": "Q58070",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4186046511627907
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

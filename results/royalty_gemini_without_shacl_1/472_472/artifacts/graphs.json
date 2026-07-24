@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granddaughter1 a :Person,\n        :Woman ;\n    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;\n    :hasMother data:Kira-Marina_Liepsner .\n\ndata:Granddaughter2 a :Person,\n        :Woman ;\n    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;\n    :hasMother data:Kira-Marina_Liepsner .\n\ndata:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Kira_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear \"1943\"^^xsd:string ;\n    :hasDeathYear \"2004\"^^xsd:string ;\n    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;\n    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .\n\ndata:Kira-Marina_Liepsner a :Person,\n        :Woman ;\n    :hasBirthYear \"1977\"^^xsd:string ;\n    :hasMother data:Princess_Kira_of_Prussia ;\n    :hasRelation data:Andreas_Felix_Paul_von_Bismarck .\n\ndata:Andreas_Felix_Paul_von_Bismarck a :Man,\n        :Person ;\n    :hasBirthYear \"1979\"^^xsd:string ;\n    :hasDeathYear \"2019\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granddaughter1 a :Person,\n        :Woman ;\n    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;\n    :hasMother data:Kira-Marina_Liepsner .\n\ndata:Granddaughter2 a :Person,\n        :Woman ;\n    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;\n    :hasMother data:Kira-Marina_Liepsner .\n\ndata:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,\n        :Woman .\n\ndata:Louis_Ferdinand_Prince_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Kira_of_Prussia a :Person,\n        :Woman ;\n    :hasBirthYear \"1943\"^^xsd:string ;\n    :hasDeathYear \"2004\"^^xsd:string ;\n    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;\n    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .\n\ndata:Kira-Marina_Liepsner a :Person,\n        :Woman ;\n    :hasBirthYear \"1977\"^^xsd:string ;\n    :hasMother data:Princess_Kira_of_Prussia ;\n    :hasRelation data:Andreas_Felix_Paul_von_Bismarck .\n\ndata:Andreas_Felix_Paul_von_Bismarck a :Man,\n        :Person ;\n    :hasBirthYear \"1979\"^^xsd:string ;\n    :hasDeathYear \"2019\"^^xsd:string .\n\n"
+    }
+]

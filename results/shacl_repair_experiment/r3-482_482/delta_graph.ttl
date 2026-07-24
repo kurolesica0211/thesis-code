@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Alexia :isSisterOf data:Ariane .
+
+data:Beatrix a :Ancestor .
+
+data:Constantijn a :Ancestor .
+
+data:Jorge_Zorreguieta a :Ancestor .
+
+data:M%C3%A1xima a :Ancestor .
+
+data:Maria_del_Carmen_Cerruti a :Ancestor .
+
+data:Willem-Alexander a :Ancestor .
+

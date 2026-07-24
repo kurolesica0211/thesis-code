@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :isSonOf data:Constantine_I .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :isSonOf data:Constantine_I .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :isBrotherOf data:Sophia_of_Prussia .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:Olga_of_Greece a :Person,
+        :Woman .
+
+data:Constantine_I a :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1923 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_of_Greece ;
+    :hasRelation data:Sophia_of_Prussia .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman .
+

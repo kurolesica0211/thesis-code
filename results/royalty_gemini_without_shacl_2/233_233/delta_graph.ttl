@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Michael_of_Kent a :Man ;
+    :hasBirthYear "1942"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Edward%2C_Duke_of_Kent ;
+    :hasFather data:Prince_George%2C_Duke_of_Kent ;
+    :hasMarriageYear "1978"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;
+    :hasSister data:Princess_Alexandra .
+
+data:Baroness_Marie-Christine_von_Reibnitz a :Woman .
+
+data:Edward_VIII a :Man .
+
+data:George_V a :Man .
+
+data:George_VI a :Man .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+data:Prince_Edward%2C_Duke_of_Kent a :Man .
+
+data:Prince_George%2C_Duke_of_Kent a :Man ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man .
+
+data:Princess_Alexandra a :Woman .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Queen_Mary a :Woman .
+

@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Gottfried a :Man ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Peter_Ferdinand ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Maria_Cristina ;
+    :hasRelation data:Dorothea .
+
+data:Dorothea a :Woman ;
+    :hasFather data:Franz_of_Bavaria ;
+    :hasMother data:Isabella_Antonie .
+
+data:Ferdinand_IV a :Man .
+
+data:Franz_of_Bavaria a :Man .
+
+data:Isabella_Antonie a :Woman .
+
+data:Maria_Cristina a :Woman .
+
+data:Peter_Ferdinand a :Man ;
+    :hasFather data:Ferdinand_IV .
+

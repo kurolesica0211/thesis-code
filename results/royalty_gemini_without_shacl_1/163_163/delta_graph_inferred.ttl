@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Felipe_VI ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Zurita_y_Delgado ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Margarita_de_Borbon,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Carlos_Zurita_y_Delgado ;
+    :isBrotherOf data:Carlos_Zurita_y_Delgado ;
+    :isSiblingOf data:Carlos_Zurita_y_Delgado .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasChild data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :hasDaughter data:Margarita_de_Borbon ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Margarita_de_Borbon,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isBloodrelationOf data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Juan_Count_of_Barcelona ;
+    :isFatherOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isParentOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isSiblingOf data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon .
+
+data:Mercedes_of_the_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :hasDaughter data:Margarita_de_Borbon ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Margarita_de_Borbon,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasSister data:Mercedes_of_the_Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isAuntOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isBloodrelationOf data:Mercedes_of_the_Two_Sicilies ;
+    :isMotherOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isParentOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isSiblingOf data:Mercedes_of_the_Two_Sicilies ;
+    :isSisterOf data:Mercedes_of_the_Two_Sicilies .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Mercedes_of_the_Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Margarita_de_Borbon,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasSister data:Margarita_de_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isBrotherOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isSonOf data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies .
+
+data:Margarita_de_Borbon a :Person,
+        :Woman ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Mercedes_of_the_Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Margarita_de_Borbon,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :hasSister data:Margarita_de_Borbon ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :isDaughterOf data:Juan_Count_of_Barcelona,
+        data:Mercedes_of_the_Two_Sicilies ;
+    :isSiblingOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon ;
+    :isSisterOf data:Juan_Carlos_I,
+        data:Margarita_de_Borbon .
+
