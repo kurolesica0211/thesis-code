@@ -1477,5 +1477,109 @@
       "subrun": "r4-84_84",
       "qid": "Q167423"
     }
-  ]
+  ],
+  "group_aggregated": {
+    "description": "Aggregated precision/recall/F1 for the repair subruns, split by group, compared against the metrics of their original SHACL-off baseline subruns (asserted delta graphs). 'before' = original baseline subrun metrics, 'after' = repair-experiment (SHACL-on) rerun metrics, 'delta' = after - before. Subruns whose rerun produced no metrics (reasoner error) are excluded from both sides.",
+    "before_source": "per-subrun entries of subrun_metrics in the source run metrics.json (see subrun_groups.json -> source_runs)",
+    "groups": {
+      "inconsistent": {
+        "num_subruns": 97,
+        "subruns_excluded_no_metrics": [
+          "r1-313_313",
+          "r3-485_485",
+          "r3-65_65"
+        ],
+        "before": {
+          "micro": {
+            "precision": 0.7892916613295761,
+            "recall": 0.8133579725448785,
+            "f1": 0.8011441201326138,
+            "total_correct": 6162,
+            "total_extracted": 7807,
+            "total_ground_truth": 7576
+          },
+          "macro": {
+            "precision": 0.8335475174472119,
+            "recall": 0.845128477810168,
+            "f1": 0.8320929310462102
+          }
+        },
+        "after": {
+          "micro": {
+            "precision": 0.8724518686296716,
+            "recall": 0.8322754895340986,
+            "f1": 0.8518902481166633,
+            "total_correct": 6163,
+            "total_extracted": 7064,
+            "total_ground_truth": 7405
+          },
+          "macro": {
+            "precision": 0.8748041832135028,
+            "recall": 0.8590774764875354,
+            "f1": 0.8617960796067592
+          }
+        },
+        "delta": {
+          "micro": {
+            "precision": 0.08316020730009555,
+            "recall": 0.018917516989220062,
+            "f1": 0.05074612798404943
+          },
+          "macro": {
+            "precision": 0.041256665766290945,
+            "recall": 0.01394899867736743,
+            "f1": 0.02970314856054901
+          }
+        }
+      },
+      "control": {
+        "num_subruns": 49,
+        "subruns_excluded_no_metrics": [
+          "base-442_442"
+        ],
+        "before": {
+          "micro": {
+            "precision": 0.9239766081871345,
+            "recall": 0.8789267015706806,
+            "f1": 0.9008888143551903,
+            "total_correct": 2686,
+            "total_extracted": 2907,
+            "total_ground_truth": 3056
+          },
+          "macro": {
+            "precision": 0.8657136618339015,
+            "recall": 0.8542859657746121,
+            "f1": 0.8561487166540895
+          }
+        },
+        "after": {
+          "micro": {
+            "precision": 0.9036652611093091,
+            "recall": 0.9110529758011773,
+            "f1": 0.9073440807686045,
+            "total_correct": 2786,
+            "total_extracted": 3083,
+            "total_ground_truth": 3058
+          },
+          "macro": {
+            "precision": 0.8430274733321436,
+            "recall": 0.8659843815878239,
+            "f1": 0.8499004513727545
+          }
+        },
+        "delta": {
+          "micro": {
+            "precision": -0.020311347077825337,
+            "recall": 0.03212627423049663,
+            "f1": 0.006455266413414207
+          },
+          "macro": {
+            "precision": -0.022686188501757965,
+            "recall": 0.011698415813211738,
+            "f1": -0.0062482652813350414
+          }
+        }
+      }
+    }
+  }
 }

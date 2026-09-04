@@ -1,0 +1,1118 @@
+{
+  "description": "Group assignment for each subrun of the SHACL repair experiment. Each subrun is a rerun (with SHACL enabled) of a baseline subrun that was originally produced with SHACL switched off. A subrun belongs to the \"inconsistent\" group if its original baseline graph was listed in that run's inconsistent_subruns.txt, and to the \"control\" group otherwise.",
+  "experiment_dir": "results/shacl_repair_experiment",
+  "naming_convention": "{run_key}-{original_subrun_id}, e.g. base-14_14 == results/royalty_gemini_without_shacl/14_14",
+  "source_runs": {
+    "base": {
+      "dir": "results/royalty_gemini_without_shacl",
+      "inconsistent_list": "results/royalty_gemini_without_shacl/inconsistent_subruns.txt"
+    },
+    "r1": {
+      "dir": "results/royalty_gemini_without_shacl_1",
+      "inconsistent_list": "results/royalty_gemini_without_shacl_1/inconsistent_subruns.txt"
+    },
+    "r2": {
+      "dir": "results/royalty_gemini_without_shacl_2",
+      "inconsistent_list": "results/royalty_gemini_without_shacl_2/inconsistent_subruns.txt"
+    },
+    "r3": {
+      "dir": "results/royalty_gemini_without_shacl_3",
+      "inconsistent_list": "results/royalty_gemini_without_shacl_3/inconsistent_subruns.txt"
+    },
+    "r4": {
+      "dir": "results/royalty_gemini_without_shacl_4",
+      "inconsistent_list": "results/royalty_gemini_without_shacl_4/inconsistent_subruns.txt"
+    }
+  },
+  "group_definitions": {
+    "inconsistent": "original baseline graph was inconsistent (listed in the source run inconsistent_subruns.txt)",
+    "control": "original baseline graph was consistent (not listed)"
+  },
+  "totals": {
+    "subruns": 150,
+    "inconsistent": 100,
+    "control": 50
+  },
+  "per_source_run_counts": {
+    "base": {
+      "inconsistent": 23,
+      "control": 10
+    },
+    "r1": {
+      "inconsistent": 21,
+      "control": 10
+    },
+    "r2": {
+      "inconsistent": 19,
+      "control": 10
+    },
+    "r3": {
+      "inconsistent": 24,
+      "control": 10
+    },
+    "r4": {
+      "inconsistent": 13,
+      "control": 10
+    }
+  },
+  "inconsistent_originals_not_included": {
+    "base": [
+      "372_372"
+    ],
+    "r3": [
+      "77_77"
+    ]
+  },
+  "subruns": {
+    "base-14_14": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "14_14",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/14_14"
+    },
+    "base-37_37": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "37_37",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/37_37"
+    },
+    "base-46_46": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "46_46",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/46_46"
+    },
+    "base-61_61": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "61_61",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/61_61"
+    },
+    "base-68_68": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "68_68",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/68_68"
+    },
+    "base-77_77": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "77_77",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/77_77"
+    },
+    "base-98_98": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "98_98",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/98_98"
+    },
+    "base-106_106": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "106_106",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/106_106"
+    },
+    "base-117_117": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "117_117",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/117_117"
+    },
+    "base-133_133": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "133_133",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/133_133"
+    },
+    "base-144_144": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "144_144",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/144_144"
+    },
+    "base-158_158": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "158_158",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/158_158"
+    },
+    "base-160_160": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "160_160",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/160_160"
+    },
+    "base-164_164": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "164_164",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/164_164"
+    },
+    "base-172_172": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "172_172",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/172_172"
+    },
+    "base-215_215": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "215_215",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/215_215"
+    },
+    "base-263_263": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "263_263",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/263_263"
+    },
+    "base-287_287": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "287_287",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/287_287"
+    },
+    "base-300_300": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "300_300",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/300_300"
+    },
+    "base-333_333": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "333_333",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/333_333"
+    },
+    "base-339_339": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "339_339",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/339_339"
+    },
+    "base-344_344": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "344_344",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/344_344"
+    },
+    "base-354_354": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "354_354",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/354_354"
+    },
+    "base-364_364": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "364_364",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/364_364"
+    },
+    "base-420_420": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "420_420",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/420_420"
+    },
+    "base-421_421": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "421_421",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/421_421"
+    },
+    "base-426_426": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "426_426",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/426_426"
+    },
+    "base-440_440": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "440_440",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/440_440"
+    },
+    "base-442_442": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "442_442",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/442_442"
+    },
+    "base-455_455": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "455_455",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/455_455"
+    },
+    "base-456_456": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "456_456",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/456_456"
+    },
+    "base-485_485": {
+      "group": "inconsistent",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "485_485",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/485_485"
+    },
+    "base-493_493": {
+      "group": "control",
+      "source_run": "base",
+      "source_run_dir": "results/royalty_gemini_without_shacl",
+      "original_subrun": "493_493",
+      "original_subrun_path": "results/royalty_gemini_without_shacl/493_493"
+    },
+    "r1-25_25": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "25_25",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/25_25"
+    },
+    "r1-35_35": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "35_35",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/35_35"
+    },
+    "r1-53_53": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "53_53",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/53_53"
+    },
+    "r1-55_55": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "55_55",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/55_55"
+    },
+    "r1-75_75": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "75_75",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/75_75"
+    },
+    "r1-77_77": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "77_77",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/77_77"
+    },
+    "r1-96_96": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "96_96",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/96_96"
+    },
+    "r1-104_104": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "104_104",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/104_104"
+    },
+    "r1-106_106": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "106_106",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/106_106"
+    },
+    "r1-132_132": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "132_132",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/132_132"
+    },
+    "r1-153_153": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "153_153",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/153_153"
+    },
+    "r1-172_172": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "172_172",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/172_172"
+    },
+    "r1-184_184": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "184_184",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/184_184"
+    },
+    "r1-195_195": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "195_195",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/195_195"
+    },
+    "r1-197_197": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "197_197",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/197_197"
+    },
+    "r1-250_250": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "250_250",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/250_250"
+    },
+    "r1-260_260": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "260_260",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/260_260"
+    },
+    "r1-296_296": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "296_296",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/296_296"
+    },
+    "r1-313_313": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "313_313",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/313_313"
+    },
+    "r1-324_324": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "324_324",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/324_324"
+    },
+    "r1-350_350": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "350_350",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/350_350"
+    },
+    "r1-364_364": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "364_364",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/364_364"
+    },
+    "r1-376_376": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "376_376",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/376_376"
+    },
+    "r1-390_390": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "390_390",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/390_390"
+    },
+    "r1-421_421": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "421_421",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/421_421"
+    },
+    "r1-429_429": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "429_429",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/429_429"
+    },
+    "r1-451_451": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "451_451",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/451_451"
+    },
+    "r1-458_458": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "458_458",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/458_458"
+    },
+    "r1-460_460": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "460_460",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/460_460"
+    },
+    "r1-483_483": {
+      "group": "inconsistent",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "483_483",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/483_483"
+    },
+    "r1-494_494": {
+      "group": "control",
+      "source_run": "r1",
+      "source_run_dir": "results/royalty_gemini_without_shacl_1",
+      "original_subrun": "494_494",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_1/494_494"
+    },
+    "r2-21_21": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "21_21",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/21_21"
+    },
+    "r2-28_28": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "28_28",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/28_28"
+    },
+    "r2-36_36": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "36_36",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/36_36"
+    },
+    "r2-55_55": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "55_55",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/55_55"
+    },
+    "r2-57_57": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "57_57",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/57_57"
+    },
+    "r2-64_64": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "64_64",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/64_64"
+    },
+    "r2-77_77": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "77_77",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/77_77"
+    },
+    "r2-85_85": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "85_85",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/85_85"
+    },
+    "r2-87_87": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "87_87",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/87_87"
+    },
+    "r2-139_139": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "139_139",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/139_139"
+    },
+    "r2-153_153": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "153_153",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/153_153"
+    },
+    "r2-158_158": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "158_158",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/158_158"
+    },
+    "r2-164_164": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "164_164",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/164_164"
+    },
+    "r2-173_173": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "173_173",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/173_173"
+    },
+    "r2-196_196": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "196_196",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/196_196"
+    },
+    "r2-205_205": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "205_205",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/205_205"
+    },
+    "r2-213_213": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "213_213",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/213_213"
+    },
+    "r2-232_232": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "232_232",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/232_232"
+    },
+    "r2-241_241": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "241_241",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/241_241"
+    },
+    "r2-249_249": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "249_249",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/249_249"
+    },
+    "r2-284_284": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "284_284",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/284_284"
+    },
+    "r2-313_313": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "313_313",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/313_313"
+    },
+    "r2-326_326": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "326_326",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/326_326"
+    },
+    "r2-335_335": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "335_335",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/335_335"
+    },
+    "r2-423_423": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "423_423",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/423_423"
+    },
+    "r2-430_430": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "430_430",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/430_430"
+    },
+    "r2-455_455": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "455_455",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/455_455"
+    },
+    "r2-480_480": {
+      "group": "control",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "480_480",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/480_480"
+    },
+    "r2-482_482": {
+      "group": "inconsistent",
+      "source_run": "r2",
+      "source_run_dir": "results/royalty_gemini_without_shacl_2",
+      "original_subrun": "482_482",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_2/482_482"
+    },
+    "r3-1_1": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "1_1",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/1_1"
+    },
+    "r3-13_13": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "13_13",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/13_13"
+    },
+    "r3-35_35": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "35_35",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/35_35"
+    },
+    "r3-43_43": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "43_43",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/43_43"
+    },
+    "r3-55_55": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "55_55",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/55_55"
+    },
+    "r3-61_61": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "61_61",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/61_61"
+    },
+    "r3-65_65": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "65_65",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/65_65"
+    },
+    "r3-79_79": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "79_79",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/79_79"
+    },
+    "r3-88_88": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "88_88",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/88_88"
+    },
+    "r3-95_95": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "95_95",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/95_95"
+    },
+    "r3-106_106": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "106_106",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/106_106"
+    },
+    "r3-111_111": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "111_111",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/111_111"
+    },
+    "r3-114_114": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "114_114",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/114_114"
+    },
+    "r3-121_121": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "121_121",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/121_121"
+    },
+    "r3-135_135": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "135_135",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/135_135"
+    },
+    "r3-171_171": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "171_171",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/171_171"
+    },
+    "r3-172_172": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "172_172",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/172_172"
+    },
+    "r3-187_187": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "187_187",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/187_187"
+    },
+    "r3-188_188": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "188_188",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/188_188"
+    },
+    "r3-225_225": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "225_225",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/225_225"
+    },
+    "r3-260_260": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "260_260",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/260_260"
+    },
+    "r3-274_274": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "274_274",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/274_274"
+    },
+    "r3-278_278": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "278_278",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/278_278"
+    },
+    "r3-290_290": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "290_290",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/290_290"
+    },
+    "r3-350_350": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "350_350",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/350_350"
+    },
+    "r3-369_369": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "369_369",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/369_369"
+    },
+    "r3-422_422": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "422_422",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/422_422"
+    },
+    "r3-440_440": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "440_440",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/440_440"
+    },
+    "r3-444_444": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "444_444",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/444_444"
+    },
+    "r3-445_445": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "445_445",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/445_445"
+    },
+    "r3-455_455": {
+      "group": "control",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "455_455",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/455_455"
+    },
+    "r3-465_465": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "465_465",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/465_465"
+    },
+    "r3-482_482": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "482_482",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/482_482"
+    },
+    "r3-485_485": {
+      "group": "inconsistent",
+      "source_run": "r3",
+      "source_run_dir": "results/royalty_gemini_without_shacl_3",
+      "original_subrun": "485_485",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_3/485_485"
+    },
+    "r4-5_5": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "5_5",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/5_5"
+    },
+    "r4-59_59": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "59_59",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/59_59"
+    },
+    "r4-84_84": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "84_84",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/84_84"
+    },
+    "r4-128_128": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "128_128",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/128_128"
+    },
+    "r4-188_188": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "188_188",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/188_188"
+    },
+    "r4-260_260": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "260_260",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/260_260"
+    },
+    "r4-276_276": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "276_276",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/276_276"
+    },
+    "r4-278_278": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "278_278",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/278_278"
+    },
+    "r4-285_285": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "285_285",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/285_285"
+    },
+    "r4-287_287": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "287_287",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/287_287"
+    },
+    "r4-290_290": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "290_290",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/290_290"
+    },
+    "r4-333_333": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "333_333",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/333_333"
+    },
+    "r4-337_337": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "337_337",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/337_337"
+    },
+    "r4-364_364": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "364_364",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/364_364"
+    },
+    "r4-369_369": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "369_369",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/369_369"
+    },
+    "r4-407_407": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "407_407",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/407_407"
+    },
+    "r4-410_410": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "410_410",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/410_410"
+    },
+    "r4-412_412": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "412_412",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/412_412"
+    },
+    "r4-432_432": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "432_432",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/432_432"
+    },
+    "r4-450_450": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "450_450",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/450_450"
+    },
+    "r4-490_490": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "490_490",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/490_490"
+    },
+    "r4-497_497": {
+      "group": "control",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "497_497",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/497_497"
+    },
+    "r4-499_499": {
+      "group": "inconsistent",
+      "source_run": "r4",
+      "source_run_dir": "results/royalty_gemini_without_shacl_4",
+      "original_subrun": "499_499",
+      "original_subrun_path": "results/royalty_gemini_without_shacl_4/499_499"
+    }
+  }
+}
